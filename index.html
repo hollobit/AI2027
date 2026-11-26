@@ -230,6 +230,8 @@
       <a href="#part14">수학·물리 난제</a>
       <a href="#part15">AI for Science·문샷</a>
       <a href="#part16">사이버 회복력</a>
+      <a href="#part17">토큰 경제</a>
+      <a href="#part18">기기·온디바이스 AI</a>
       <a href="report.html">상세 보고서 →</a>
     </nav>
     <div class="ai27-search" role="search">
@@ -1098,6 +1100,95 @@
       <table data-source="res_forecast" data-row-key="text" aria-label="2027 회복력 전망">
         <thead><tr><th data-field="likelihood">가능성</th><th data-field="area">영역</th><th data-field="text">전망</th></tr></thead>
         <tbody data-draw="res-fc-rows"></tbody>
+      </table>
+    </div>
+  </section>
+  <!-- ============ PART 17 ============ -->
+  <section class="ai27-part" id="part17">
+    <div class="ai27-parthead">
+      <span class="ai27-partno" aria-hidden="true">17</span>
+      <h2>토큰 경제</h2>
+      <p class="ai27-muted">같은 성능의 토큰 단가는 연 수십 배 떨어지지만 물량은 연 3~6배 늘어 총지출이 커지는 '제번스 확장'이 기준입니다. 과제당 토큰이 늘어 '단가는 하락, 태스크 비용은 정체'가 기업 체감의 표준이 되고, 관심은 AI FinOps와 '좌석 + 토큰 크레딧 + 결과' 하이브리드 과금으로 옮겨 갑니다.</p>
+    </div>
+    <div class="ai27-card" id="tok-scen">
+      <h3>2027 토큰 경제 시나리오</h3>
+      <div class="ai27-chart" data-draw="tok-strip" data-source="tok_scenarios" style="min-height:40px"></div>
+      <div class="ai27-grid3" data-draw="tok-cards" data-source="tok_scenarios"></div>
+    </div>
+    <div class="ai27-sub" id="tok-metrics"><h3>2027 수치 전망 (낮음 / 기준 / 높음)</h3></div>
+    <div class="ai27-tablewrap">
+      <table data-source="tok_metrics" data-row-key="metric" aria-label="토큰 경제 2027 수치 전망">
+        <thead><tr><th data-field="metric">지표</th><th data-field="low">낮음</th><th data-field="base">기준</th><th data-field="high">높음</th><th data-field="unit">단위</th></tr></thead>
+        <tbody data-draw="tok-met-rows"></tbody>
+      </table>
+    </div>
+    <div class="ai27-grid2">
+      <div class="ai27-card" id="tok-volume">
+        <h3>토큰 물량</h3>
+        <ul class="ai27-list" data-draw="tok-vol-list" data-source="tok_volume"></ul>
+      </div>
+      <div class="ai27-card" id="tok-price">
+        <h3>토큰 가격</h3>
+        <ul class="ai27-list" data-draw="tok-price-list" data-source="tok_price"></ul>
+      </div>
+    </div>
+    <div class="ai27-sub" id="tok-pay"><h3>에이전트 결제와 기계 경제</h3></div>
+    <div class="ai27-tablewrap">
+      <table data-source="tok_payments" data-row-key="item" aria-label="에이전트 결제">
+        <thead><tr><th data-field="item">항목</th><th data-field="status">2026 현황</th><th data-field="outlook">2027 전망</th></tr></thead>
+        <tbody data-draw="tok-pay-rows"></tbody>
+      </table>
+    </div>
+    <div class="ai27-sub" id="tok-fc"><h3>2027 토큰 경제 전망</h3></div>
+    <div class="ai27-tablewrap">
+      <table data-source="tok_forecast" data-row-key="text" aria-label="2027 토큰 경제 전망">
+        <thead><tr><th data-field="likelihood">가능성</th><th data-field="area">영역</th><th data-field="text">전망</th></tr></thead>
+        <tbody data-draw="tok-fc-rows"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============ PART 18 ============ -->
+  <section class="ai27-part" id="part18">
+    <div class="ai27-parthead">
+      <span class="ai27-partno" aria-hidden="true">18</span>
+      <h2>스마트폰·글래스·웨어러블·온디바이스 AI·AI IoT</h2>
+      <p class="ai27-muted">2027년 기기 AI의 최대 변수는 메모리입니다. 폰·PC 출하는 소폭 회복에 그치지만 생성형 AI폰은 출하의 절반을 넘어 기본 사양이 되고, 스마트 글래스는 40% 안팎 성장합니다. 기기 → 프라이빗 클라우드 → 프런티어의 3단 하이브리드가 표준이 됩니다.</p>
+    </div>
+    <div class="ai27-card" id="dev-scen">
+      <h3>2027 기기 AI 시나리오</h3>
+      <div class="ai27-chart" data-draw="dev-strip" data-source="dev_scenarios" style="min-height:40px"></div>
+      <div class="ai27-grid3" data-draw="dev-cards" data-source="dev_scenarios"></div>
+    </div>
+    <div class="ai27-sub" id="dev-seg"><h3>영역별 2026 현황과 2027 전망</h3></div>
+    <div class="ai27-tablewrap">
+      <table data-source="dev_segments" data-row-key="segment" aria-label="기기 영역별 전망">
+        <thead><tr><th data-field="segment">영역</th><th data-field="status">2026 현황</th><th data-field="outlook">2027 전망</th></tr></thead>
+        <tbody data-draw="dev-seg-rows"></tbody>
+      </table>
+    </div>
+    <div class="ai27-grid2">
+      <div class="ai27-card" id="dev-metrics">
+        <h3>2027 수치 전망 (낮음 / 기준 / 높음)</h3>
+        <ul class="ai27-list" data-draw="dev-met-list" data-source="dev_metrics"></ul>
+      </div>
+      <div class="ai27-card" id="dev-events">
+        <h3>2027 주요 일정</h3>
+        <ul class="ai27-list" data-draw="dev-ev-list" data-source="dev_events"></ul>
+      </div>
+    </div>
+    <div class="ai27-sub" id="dev-issues"><h3>이슈: 프라이버시·가격·보안·메모리</h3></div>
+    <div class="ai27-tablewrap">
+      <table data-source="dev_issues" data-row-key="issue" aria-label="기기 AI 이슈">
+        <thead><tr><th data-field="issue">이슈</th><th data-field="outlook">2027 전망</th></tr></thead>
+        <tbody data-draw="dev-iss-rows"></tbody>
+      </table>
+    </div>
+    <div class="ai27-sub" id="dev-fc"><h3>2027 기기 AI 전망</h3></div>
+    <div class="ai27-tablewrap">
+      <table data-source="dev_forecast" data-row-key="text" aria-label="2027 기기 AI 전망">
+        <thead><tr><th data-field="likelihood">가능성</th><th data-field="area">영역</th><th data-field="text">전망</th></tr></thead>
+        <tbody data-draw="dev-fc-rows"></tbody>
       </table>
     </div>
   </section>
@@ -2158,6 +2249,61 @@
       const s = document.createElement('span'); s.className = 'ai27-muted'; s.textContent = r.milestone + ' (' + r.status + ')'; li.append(b, s); });
     fill('res-reg-rows', 'res_regulation', (tr, r) => tr.append(A.td(r.jurisdiction), A.td(r.instrument, 'mid'), A.td(r.milestone, 'wide')));
     fill('res-fc-rows', 'res_forecast', (tr, r) => tr.append(A.td(pill(r.likelihood)), A.td(r.area), A.td(r.text, 'wide')));
+  })();
+</script>
+
+<script>
+  // ---------- Part 17–18 (shared helpers) ----------
+  (function () {
+    const A = window.AI27;
+    const LV = { '높음': 'missed', '중간': 'partial', '낮음': 'unclear', '확정': 'realized', '예상': 'partial', '루머': 'unclear' };
+    const pill = (t) => { const s = document.createElement('span'); s.className = 'ai27-pill'; s.dataset.v = LV[t] || 'mostly'; s.textContent = t; return s; };
+    const rowsOf = (id) => { const d = dash.data(id); return d.status === 'ok' ? d.data : null; };
+    const fmt = (v) => (v === null || v === undefined || v === '') ? '—' : (typeof v === 'number' ? v.toLocaleString('ko-KR') : String(v));
+    const fill = (name, id, build) => dash.draw(name, (tbody) => {
+      const rows = rowsOf(id); if (!rows) return;
+      tbody.replaceChildren(...rows.map((r) => { const tr = document.createElement('tr'); build(tr, r); return tr; }));
+    });
+    const list = (name, id, build) => dash.draw(name, (el) => {
+      const got = A.ready(el, [id]); if (!got) return;
+      el.replaceChildren(...got[0].map((r) => { const li = document.createElement('li'); build(li, r); return li; }));
+    });
+    const pair = (li, head, body, mono) => { const b = document.createElement('b'); b.textContent = head; if (mono) { b.style.fontFamily = 'var(--ai27-mono)'; b.style.fontWeight = '500'; }
+      const s = document.createElement('span'); s.className = 'ai27-muted'; s.textContent = body; li.append(b, s); };
+    const sc = [dash.colors[0], 'var(--color-bad)', dash.colors[1] || 'var(--color-warn)', dash.colors[2] || dash.colors[0]];
+    function scenarios(pfx, id) {
+      dash.draw(pfx + '-strip', (el) => {
+        const got = A.ready(el, [id]); if (!got) return;
+        el.replaceChildren(); const tt = A.tooltip(el);
+        const s = document.createElement('div'); s.className = 'ai27-scen-strip'; s.setAttribute('role', 'img');
+        s.setAttribute('aria-label', '시나리오: ' + got[0].map((r) => r.name + ' ' + r.prob + '%').join(', '));
+        got[0].forEach((r, i) => { const d = document.createElement('div'); d.style.flex = String(r.prob); d.style.background = sc[i % 4];
+          d.textContent = r.prob + '%'; A.attachTip(d, tt, r.name, r.prob + '%'); s.appendChild(d); });
+        el.prepend(s);
+      });
+      dash.draw(pfx + '-cards', (el) => {
+        const got = A.ready(el, [id]); if (!got) return;
+        el.replaceChildren(...got[0].map((r, i) => { const c = document.createElement('article'); c.className = 'ai27-card'; c.style.borderTop = '3px solid ' + sc[i % 4];
+          const h = document.createElement('h3'); h.textContent = r.name; const p = document.createElement('span'); p.className = 'ai27-scen-prob'; p.textContent = r.prob + '%';
+          const d = document.createElement('p'); d.className = 'ai27-muted'; d.textContent = r.description; c.append(h, p, d); return c; }));
+      });
+    }
+    // Part 17
+    scenarios('tok', 'tok_scenarios');
+    fill('tok-met-rows', 'tok_metrics', (tr, r) => { const m = A.td(r.metric, 'wide'); m.title = r.basis || '';
+      tr.append(m, A.td(fmt(r.low)), A.td(fmt(r.base)), A.td(fmt(r.high)), A.td(r.unit)); });
+    list('tok-vol-list', 'tok_volume', (li, r) => pair(li, r.entity + ' · ' + r.date, r.metric + ': ' + r.value + ' ' + r.unit));
+    list('tok-price-list', 'tok_price', (li, r) => pair(li, r.date, r.item + ' — ' + r.value + ' ' + r.unit, true));
+    fill('tok-pay-rows', 'tok_payments', (tr, r) => tr.append(A.td(r.item, 'mid'), A.td(r.status, 'wide'), A.td(r.outlook, 'wide')));
+    fill('tok-fc-rows', 'tok_forecast', (tr, r) => tr.append(A.td(pill(r.likelihood)), A.td(r.area), A.td(r.text, 'wide')));
+    // Part 18
+    scenarios('dev', 'dev_scenarios');
+    fill('dev-seg-rows', 'dev_segments', (tr, r) => tr.append(A.td(r.segment, 'mid'), A.td(r.status, 'wide'), A.td(r.outlook, 'wide')));
+    list('dev-met-list', 'dev_metrics', (li, r) => pair(li, r.metric, `${fmt(r.low)} / ${fmt(r.base)} / ${fmt(r.high)} ${r.unit}`));
+    list('dev-ev-list', 'dev_events', (li, r) => { const b = document.createElement('b'); b.textContent = r.date + ' '; b.style.fontFamily = 'var(--ai27-mono)'; b.style.fontWeight = '500';
+      b.append(pill(r.status)); const s = document.createElement('span'); s.textContent = r.event; li.append(b, s); });
+    fill('dev-iss-rows', 'dev_issues', (tr, r) => tr.append(A.td(r.issue, 'mid'), A.td(r.outlook, 'wide')));
+    fill('dev-fc-rows', 'dev_forecast', (tr, r) => tr.append(A.td(pill(r.likelihood)), A.td(r.area), A.td(r.text, 'wide')));
   })();
 </script>
 <!-- search:start -->

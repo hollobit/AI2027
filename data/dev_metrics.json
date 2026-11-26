@@ -1,0 +1,58 @@
+[
+ {
+  "metric": "세계 스마트폰 출하 증감률",
+  "low": -3,
+  "base": 2,
+  "high": 5,
+  "unit": "% YoY",
+  "basis": "IDC 기준선 +1.9%. 메모리 안정이 2027 하반기로 밀리면 역성장, 중반 안정+2026 이연수요면 상단"
+ },
+ {
+  "metric": "생성형 AI 지원폰 출하 비중",
+  "low": 48,
+  "base": 52,
+  "high": 57,
+  "unit": "%",
+  "basis": "Counterpoint 52%. 메모리로 저가폰 탑재가 늦으면 하단, 저가 구간 축소로 비중이 기계적으로 오르면 상단"
+ },
+ {
+  "metric": "세계 PC 출하 증감률",
+  "low": -6,
+  "base": 0,
+  "high": 5,
+  "unit": "% YoY",
+  "basis": "IDC '2027 말 전 해소 없음' + 2026 −11% 저기저. Windows 교체 수요·Mac 강세 vs 메모리 가격"
+ },
+ {
+  "metric": "XR(스마트 글래스 포함) 출하 증가율",
+  "low": 20,
+  "base": 40,
+  "high": 60,
+  "unit": "% YoY",
+  "basis": "IDC 2027 +40.5%. Android XR·Meta VR Glasses·중국 저가 확대 시 상단, 프라이버시 반발·메모리 원가 시 하단"
+ },
+ {
+  "metric": "스마트 글래스 출하",
+  "low": 14,
+  "base": 18,
+  "high": 25,
+  "unit": "백만 대",
+  "basis": "IDC 2026 약 1,300만 대 × 성장률 가정. 기관별 정의 차이 큼(Smart Analytics Global 2026 2,000만 대)"
+ },
+ {
+  "metric": "Meta 스마트 글래스 점유율",
+  "low": 50,
+  "base": 60,
+  "high": 70,
+  "unit": "%",
+  "basis": "2Q26 68.7%. Android XR·중국 업체 진입으로 희석"
+ },
+ {
+  "metric": "OpenAI 첫 기기 2027 출하량",
+  "low": 0.3,
+  "base": 2,
+  "high": 8,
+  "unit": "백만 대",
+  "basis": "스피커 2027 초 + Kuo 에이전트폰 2027~28 합산 3,000만 대 전망; 소송·일정 지연 위험"
+ }
+]

@@ -1,0 +1,100 @@
+[
+ {
+  "entity": "Google (1st-party 모델 API)",
+  "metric": "API 토큰 처리 속도",
+  "value": "약 320억(nearly 32B)",
+  "unit": "토큰/분",
+  "date": "2026-10-28 (Q3 2026)"
+ },
+ {
+  "entity": "Google (1st-party 모델 API)",
+  "metric": "API 토큰 처리 속도 추이",
+  "value": "100억(2025 Q4) → 160억(2026 Q1) → 220억(2026 Q2) → 320억(2026 Q3)",
+  "unit": "토큰/분",
+  "date": "2026-01~2026-10"
+ },
+ {
+  "entity": "Google (API, 월 환산)",
+  "metric": "월간 API 토큰(환산)",
+  "value": "약 1.38경(1.38×10^15)",
+  "unit": "토큰/월",
+  "date": "2026-10"
+ },
+ {
+  "entity": "Google (전체 서비스)",
+  "metric": "월간 처리 토큰",
+  "value": "1.3경(1.3 quadrillion) 초과",
+  "unit": "토큰/월",
+  "date": "2025-10 (Q3 2025 실적)"
+ },
+ {
+  "entity": "Google (전체 서비스)",
+  "metric": "월간 처리 토큰(I/O 2026 발언 보도)",
+  "value": "3.2경 초과",
+  "unit": "토큰/월",
+  "date": "2026-05 (I/O 2026)"
+ },
+ {
+  "entity": "OpenRouter",
+  "metric": "주간 토큰 처리량",
+  "value": "4.89조(2025-10) → 172조(2026-10), 약 35배",
+  "unit": "토큰/주",
+  "date": "2026-10"
+ },
+ {
+  "entity": "OpenRouter",
+  "metric": "주간 토큰 처리량(Menlo 집계)",
+  "value": "160조+ (에이전트 130.9조=80%)",
+  "unit": "토큰/주",
+  "date": "2026-09-28"
+ },
+ {
+  "entity": "오픈소스 모델 전체(시장 추정)",
+  "metric": "월간 토큰",
+  "value": "약 2.9경 (전년 대비 22.5배); 폐쇄형 토큰은 12.1배 증가",
+  "unit": "토큰/월",
+  "date": "2026-09"
+ },
+ {
+  "entity": "기업 LLM API 전체(역산)",
+  "metric": "월간 토큰(오픈소스 2.9경 ÷ 토큰 점유율 19%)",
+  "value": "약 15경",
+  "unit": "토큰/월",
+  "date": "2026-09"
+ },
+ {
+  "entity": "Microsoft (Azure AI Foundry)",
+  "metric": "연간 1조 토큰 이상 처리 예정 고객 수",
+  "value": "250곳+(2026-01) → 300곳+(2026-04, 전분기 대비 +30%)",
+  "unit": "고객 수",
+  "date": "2026-04-29 (FY26 Q3)"
+ },
+ {
+  "entity": "Microsoft (Foundry)",
+  "metric": "연간 처리 토큰",
+  "value": "500조 초과(전년 대비 7배+), 2025-04 분기 100조",
+  "unit": "토큰/년",
+  "date": "FY25(2025-07 발표)"
+ },
+ {
+  "entity": "OpenAI (API)",
+  "metric": "API 토큰 처리 속도",
+  "value": "약 60억",
+  "unit": "토큰/분",
+  "date": "2025-10 (DevDay 2025)"
+ },
+ {
+  "entity": "태스크당 토큰(AA 지수)",
+  "metric": "평가 태스크당 출력 토큰 중앙값",
+  "value": "3.5만 → 5.9만(1.7배)",
+  "unit": "토큰/태스크",
+  "date": "2026 (AA Intelligence Index v…"
+ },
+ {
+  "entity": "한국(정부 데이터 사업)",
+  "metric": "프런티어 AI 학습용 고품질 데이터 확보 목표",
+  "value": "약 1조",
+  "unit": "토큰(학습 데이터)",
+  "date": "2027 예산안"
+ }
+]

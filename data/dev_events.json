@@ -1,0 +1,72 @@
+[
+ {
+  "date": "2027-01",
+  "event": "CES 2027(라스베이거스) — AI PC·글래스·가전 신제품",
+  "status": "예상"
+ },
+ {
+  "date": "2027-01~02",
+  "event": "Samsung Galaxy S27 Unpacked(1월 초~2월 설 분분)",
+  "status": "루머"
+ },
+ {
+  "date": "2027-01-22",
+  "event": "한국 AI 기본법 과태료 계도기간(최소 1년) 종료 이후 시점 — AI 글래스 등 하위법령 보완 진행",
+  "status": "예상"
+ },
+ {
+  "date": "2027-Q1",
+  "event": "OpenAI 첫 하드웨어(화면 없는 스마트 스피커) 출시 — 2월 말 이전 출하 없음",
+  "status": "루머"
+ },
+ {
+  "date": "2027-Q1",
+  "event": "Gentle Monster Android XR 글래스",
+  "status": "루머"
+ },
+ {
+  "date": "2027-03",
+  "event": "MWC 2027(바르셀로나)",
+  "status": "예상"
+ },
+ {
+  "date": "2027-봄",
+  "event": "Meta VR Glasses(1,299.99달러)·Hologram 아바타 출시",
+  "status": "확정"
+ },
+ {
+  "date": "2027-05",
+  "event": "Google I/O 2027 — Gemini/Android XR 업데이트",
+  "status": "예상"
+ },
+ {
+  "date": "2027-06",
+  "event": "Apple WWDC 2027 — Siri AI 다국어·EU 확대 여부",
+  "status": "예상"
+ },
+ {
+  "date": "2027-H1",
+  "event": "OpenAI 'AI 에이전트폰' 양산(Kuo, MediaTek Dimensity 9600 맞춤형)",
+  "status": "루머"
+ },
+ {
+  "date": "2027",
+  "event": "삼성 디스플레이형 Android XR 글래스, Gucci(Kering) Android XR 글래스",
+  "status": "루머"
+ },
+ {
+  "date": "2027-09",
+  "event": "iPhone 19/iOS 28·Meta Connect 2027",
+  "status": "예상"
+ },
+ {
+  "date": "2027-중반",
+  "event": "IDC가 예상한 메모리 가격 안정 시점(2025년 수준 회귀는 없음)",
+  "status": "예상"
+ },
+ {
+  "date": "2027",
+  "event": "한국 K-AI반도체 풀스택 레퍼런스(900억) 신규사업 착수(국회 확정 시)",
+  "status": "예상"
+ }
+]
