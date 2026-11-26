@@ -2409,7 +2409,9 @@
     fill('dip-bi-rows', 'dip_bilateral', (tr, r) => {
       const p = document.createElement('b'); p.textContent = r.pair; const k = document.createElement('div'); k.className = 'ai27-muted'; k.textContent = r.korea;
       const c = A.td(''); c.replaceChildren(p, k);
-      tr.append(c, A.td(pill(r.likelihood)), A.td(r.agenda, 'wide'), A.td(r.events, 'mid'), A.td(r.implication, 'wide'), A.td(pill(r.status)));
+      const ag = A.td('', 'wide'); const st = document.createElement('div'); st.className = 'ai27-muted'; st.textContent = r.state ? '2026: ' + r.state : '';
+      const at = document.createElement('div'); at.textContent = r.agenda; ag.replaceChildren(...(r.state ? [st, at] : [at]));
+      tr.append(c, A.td(pill(r.likelihood)), ag, A.td(r.events, 'mid'), A.td(r.implication, 'wide'), A.td(pill(r.status)));
     });
     fill('dip-multi-rows', 'dip_multilateral', (tr, r) => tr.append(A.td(r.forum, 'mid'), A.td(r.when, 'mid'), A.td(r.agenda, 'wide'),
       A.td(r.outcome, 'wide'), A.td(pill(r.likelihood)), A.td(r.korea_role, 'wide')));

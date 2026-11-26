@@ -25,8 +25,14 @@
  },
  {
   "source": "Metaculus",
-  "question": "AGI 도래",
-  "value": "2030–33년",
-  "url": ""
+  "question": "약한 AGI / AGI 도래",
+  "value": "약한 AGI 2027–28년(스냅샷 차이), AGI 2030-12~2033년",
+  "url": "https://www.metaculus.com/questions/3479/date-weakly-general-ai-is-devised/"
+ },
+ {
+  "source": "FRI LEAP 8차",
+  "question": "조건부 AGI 중앙값",
+  "value": "전문가 2050년, 슈퍼예측가 2047년",
+  "url": "https://forecastingresearch.substack.com/p/leap-wave-8-ai-timelines"
  }
 ]

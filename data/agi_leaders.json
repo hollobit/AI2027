@@ -26,10 +26,10 @@
  {
   "who": "Dario Amodei",
   "org": "Anthropic",
-  "claim": "Dwarkesh 팟캐스트 'We are near the end of the exponential': '데이터센터 속 천재들의 나라'가 1–2년 내 가능(약 50/50), 10년 내 ~90% 확신",
+  "claim": "'데이터센터 속 천재들의 나라' 1–2년(길게는 1–3년) 내 '직감상 반반', 10년 내 90%",
   "date": "2026-02",
-  "status": "확률 수치는 2차 요약(iTiger, zby) 기반 — 원문 대조 필요. 2027 중반 vs 2028 중반 논의(Fortune)",
-  "url": "https://podcasts.happyscribe.com/dwarkesh-podcast/dario-amodei-we-are-near-the-end-of-the-exponential"
+  "status": "대담 원문으로 확인",
+  "url": "https://dwarkesh.com/p/dario-amodei-2"
  },
  {
   "who": "Dario Amodei",
@@ -70,5 +70,21 @@
   "date": "2026-01-22",
   "status": "2026-03 $10.3억 시드(보도)",
   "url": "https://www.technologyreview.com/2026/01/22/1131661/yann-lecuns-new-venture-ami-labs/454/"
+ },
+ {
+  "who": "Ilya Sutskever",
+  "org": "SSI",
+  "claim": "인간 수준 학습 능력 시스템까지 5–20년",
+  "date": "2025-11",
+  "status": "2026년 시점 발언 없음",
+  "url": "https://thezvi.substack.com/p/on-dwarkesh-patels-second-interview"
+ },
+ {
+  "who": "DeepSeek",
+  "org": "DeepSeek",
+  "claim": "제품·매출보다 AGI 연구 우선, 컴퓨트가 제약",
+  "date": "2026-05",
+  "status": "유출된 투자자 회의 대본 보도, 공식 로드맵 없음",
+  "url": "https://technode.com/2026/07/23/deepseek-puts-agi-research-ahead-of-products-and-commercial-growth/"
  }
 ]

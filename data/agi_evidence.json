@@ -42,6 +42,12 @@
   "url": "https://deepmind.google/blog/alphaevolve-impact/"
  },
  {
+  "metric": "MLE-bench(ML 엔지니어링 자동화)",
+  "value": "64.44%, 2026-04 이후 제출 동결",
+  "date": "2026-02",
+  "url": "https://github.com/openai/mle-bench"
+ },
+ {
   "metric": "Hendrycks AGI Score",
   "value": "GPT-5 57% (2026 재채점 없음)",
   "date": "2025-10",
