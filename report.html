@@ -72,11 +72,35 @@
   #appendix h4 { font-family: var(--display); font-weight: 700; font-size: 1.02rem; padding-top: 1em; border-top: 1px dashed var(--line); }
   .tag-hi { color: var(--ok); font-weight: 600; } .tag-mid { color: var(--warn); font-weight: 600; } .tag-lo { color: var(--bad); font-weight: 600; }
   :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  /* full-text search */
+  .q { margin-bottom: 22px; }
+  .q input { width: 100%; box-sizing: border-box; font: inherit; font-size: 13.5px; color: var(--fg); background: var(--paper); border: 1px solid var(--line); border-radius: 10px; padding: 8px 11px; }
+  .q input:focus { outline: 2px solid var(--accent); outline-offset: 1px; border-color: transparent; }
+  .q-info { font-family: var(--mono); font-size: 11px; color: var(--muted); margin: 6px 2px 0; min-height: 1em; }
+  .q-results { list-style: none; margin: 6px 0 0; padding: 0; max-height: 46vh; overflow: auto; border-left: 1px solid var(--line); }
+  .q-results:empty { display: none; }
+  .q-results button { all: unset; box-sizing: border-box; display: block; width: 100%; cursor: pointer; padding: 6px 8px 6px 10px; border-radius: 0 8px 8px 0; line-height: 1.45; }
+  .q-results button:hover, .q-results button:focus-visible, .q-results button[aria-current="true"] { background: var(--soft); }
+  .q-ctx { display: block; font-size: 11px; color: var(--accent); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .q-snip { display: block; font-size: 12px; color: var(--muted); }
+  .q-snip mark { background: none; color: var(--fg); font-weight: 600; }
+  ::highlight(q-hit) { background-color: rgba(229, 163, 59, .35); }
+  ::highlight(q-active) { background-color: #e5a33b; color: #14161c; }
+  figure { margin: 1.6em 0; max-width: none; }
+  figure svg { display: block; width: 100%; height: auto; }
+  figcaption { font-size: 13px; color: var(--muted); margin-top: 8px; line-height: 1.6; }
+  main > figure { max-width: none; }
   @media print { .rail { display: none; } .wrap { display: block; } main { border: 0; } }
 </style>
 
 <div class="wrap">
   <nav class="rail" aria-label="목차">
+    <div class="q" role="search">
+      <label class="label" for="q-input" style="display:block">Search</label>
+      <input id="q-input" type="search" placeholder="보고서 검색  ( / )" autocomplete="off" aria-describedby="q-info">
+      <div id="q-info" class="q-info" aria-live="polite"></div>
+      <ul id="q-results" class="q-results" aria-label="검색 결과"></ul>
+    </div>
     <div class="label">Contents</div>
     <ul>
     <li><a href="#ai-2027-전망-보고서" id="toc-ai-2027-전망-보고서">AI
@@ -290,6 +314,10 @@
     <li><a href="#6-시나리오" id="toc-6-시나리오">6. 시나리오</a></li>
     <li><a href="#7-한국-시사점" id="toc-7-한국-시사점">7. 한국
     시사점</a></li>
+    <li><a
+    href="#8-미국-수출통제-강화가-한국의-글로벌-ai-협력에-주는-부담"
+    id="toc-8-미국-수출통제-강화가-한국의-글로벌-ai-협력에-주는-부담">8.
+    미국 수출통제 강화가 한국의 글로벌 AI 협력에 주는 부담</a></li>
     </ul></li>
     <li><a href="#14-ai-반도체메모리aidc전력망-투자-시장-기업국가-전략"
     id="toc-14-ai-반도체메모리aidc전력망-투자-시장-기업국가-전략">14. AI
@@ -626,6 +654,11 @@ R&amp;D 가속이 다른 연구소로 번지는지가 2027년의 메타 변수�
 2027–28년이 취약 구간입니다. 클라우드·CDN 장애와 AI 에이전트발 장애가 새
 단일 장애점이고, 미국 CNSA 2.0(2027-01)으로 PQC 전환도
 본격화됩니다.</p></li>
+<li><p><strong>미국 수출통제의 한국 전이(13.8절)</strong>: 미국의 대중국
+통제가 칩에서 클라우드·모델로 넓어지면서 한국 클라우드의 고객 확인, 중국
+팹의 연간 허가, 장비 정렬, 모델 접근 지연, 232조 관세라는 다섯 경로로
+한국의 글로벌 AI 협력(동남아·걸프 공동 AIDC, 중국 교역)에 부담이
+됩니다.</p></li>
 </ul>
 <p><strong>시나리오(주관적 확률).</strong></p>
 <table>
@@ -3859,6 +3892,133 @@ ITU AI for Good과 연계하기 좋고, ETRI의 표준화 역량을 활용할 �
 <li><strong>다중 규제 준수</strong>: 수출 AI 제품은 EU AI Act(08-02,
 12-02), 뉴욕 RAISE Act(01-01), AI 기본법 계도기간 종료를 함께 대비해야
 합니다.</li>
+</ol>
+<h3 id="8-미국-수출통제-강화가-한국의-글로벌-ai-협력에-주는-부담">8.
+미국 수출통제 강화가 한국의 글로벌 AI 협력에 주는 부담</h3>
+<p>미국의 대중국 통제는 2026년 말 칩에서 <strong>클라우드(원격접속)와
+모델</strong>로 범위가 넓어졌습니다.</p>
+<ul>
+<li><strong>원격접속 규칙</strong>: 2026-11-19 시행</li>
+<li><strong>프런티어 모델 임시 통제</strong>: Mythos 5에 18일간
+적용</li>
+<li><strong>의회 입법 시도</strong>: Chip Security Act, MATCH Act</li>
+</ul>
+<p>이 조치들은 중국만 겨냥하지 않습니다. <strong>제3국 데이터센터,
+동맹국 장비, 동맹국의 모델 접근</strong>까지 조건을 겁니다. 그래서
+2027년 한국의 글로벌 AI 협력에는 상당한 부담이자 압력이 됩니다. 한국은
+미국과 협력선(Pax Silica, 3,500억 달러 MOU)과 압력선(팹 허가, 관세,
+KYC)이 동시에 걸려 있고, 중국과도 교역 채널과 보복 위험이 함께 걸려
+있습니다. 두 축 사이에 끼인 구조입니다.</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 640" role="img" aria-label="2027년 AI 국가 관계도. 미국은 중국에 칩·모델·클라우드 통제를 걸고 중국은 희토류·미국 칩 수입 거부로 맞선다. 한국은 미국·중국 모두와 협력선과 압력선이 동시에 걸려 있다. 미국 축은 영국·캐나다·일본·대만·호주·인도·걸프, 중국 축은 WAICO 29개국이고, 동남아와 EU는 양쪽 사이에서 이중 참여하거나 디지털 주권을 추구한다." style="max-width:100%;height:auto;font-family:inherit"><defs><marker id="m-bad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" style="fill:var(--color-bad, var(--bad, #b3362f))"/></marker><marker id="m-warn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" style="fill:var(--color-warn, var(--warn, #985a00))"/></marker><marker id="m-ok" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" style="fill:var(--color-ok, var(--ok, #1f7a4a))"/></marker></defs><rect x="14" y="160" width="340" height="430" rx="18" style="fill:none;stroke:var(--color-border-line, var(--line, #dcdfe4));stroke-width:1.5;stroke-dasharray:5 6"/><text x="28.0" y="182.0" text-anchor="start" style="fill:var(--ai27-accent, var(--accent, #3d40d4));font-size:12px;font-weight:700">미국 축 · Pax Silica</text><rect x="700" y="160" width="326" height="430" rx="18" style="fill:none;stroke:var(--color-border-line, var(--line, #dcdfe4));stroke-width:1.5;stroke-dasharray:5 6"/><text x="1012.0" y="182.0" text-anchor="end" style="fill:var(--color-bad, var(--bad, #b3362f));font-size:12px;font-weight:700">중국 축 · AI+ · WAICO</text><path d="M228,268 Q520,20 812,268" marker-end="url(#m-bad)" style="fill:none;stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:2.4;"/><rect x="275.6" y="156.0" width="232.8" height="19" rx="4" style="fill:var(--color-panel, var(--paper, #ffffff))"/><text x="392.0" y="170.0" text-anchor="middle" style="fill:var(--color-bad, var(--bad, #b3362f));font-size:11.5px;font-weight:600">칩·모델·클라우드 통제 · Entity List</text><path d="M804,280 Q520,130 236,280" marker-end="url(#m-bad)" style="fill:none;stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:2.4;"/><rect x="579.8" y="212.0" width="168.4" height="19" rx="4" style="fill:var(--color-panel, var(--paper, #ffffff))"/><text x="664.0" y="226.0" text-anchor="middle" style="fill:var(--color-bad, var(--bad, #b3362f));font-size:11.5px;font-weight:600">희토류 · 미국 칩 수입 거부</text><path d="M240,286 L466,286" marker-end="url(#m-warn)" style="fill:none;stroke:var(--color-warn, var(--warn, #985a00));stroke-width:2.2;stroke-dasharray:7 5;"/><path d="M240,314 L472,314" style="fill:none;stroke:var(--color-ok, var(--ok, #1f7a4a));stroke-width:1.6;"/><rect x="222.8" y="256.0" width="260.4" height="19" rx="4" style="fill:var(--color-panel, var(--paper, #ffffff))"/><text x="353.0" y="270.0" text-anchor="middle" style="fill:var(--color-warn, var(--warn, #985a00));font-size:11.5px;font-weight:600">중국 팹 허가 · 232조 관세 · 클라우드 KYC</text><rect x="250.4" y="326.0" width="205.2" height="19" rx="4" style="fill:var(--color-panel, var(--paper, #ffffff))"/><text x="353.0" y="340.0" text-anchor="middle" style="fill:var(--color-ok, var(--ok, #1f7a4a));font-size:11.5px;font-weight:500">Pax Silica · 3,500억 달러 MOU</text><path d="M800,286 L574,286" marker-end="url(#m-warn)" style="fill:none;stroke:var(--color-warn, var(--warn, #985a00));stroke-width:2.2;stroke-dasharray:7 5;"/><path d="M800,314 L568,314" style="fill:none;stroke:var(--color-ok, var(--ok, #1f7a4a));stroke-width:1.6;"/><rect x="613.1" y="256.0" width="147.7" height="19" rx="4" style="fill:var(--color-panel, var(--paper, #ffffff))"/><text x="687.0" y="270.0" text-anchor="middle" style="fill:var(--color-warn, var(--warn, #985a00));font-size:11.5px;font-weight:600">HBM 판로 차단 · 희토류</text><rect x="617.8" y="326.0" width="138.5" height="19" rx="4" style="fill:var(--color-panel, var(--paper, #ffffff))"/><text x="687.0" y="340.0" text-anchor="middle" style="fill:var(--color-ok, var(--ok, #1f7a4a));font-size:11.5px;font-weight:500">범용 교역 · 휴전 채널</text><path d="M190.0,247.0 L190.0,94.0" style="fill:none;stroke:var(--color-ok, var(--ok, #1f7a4a));stroke-width:1.6;"/><path d="M152.8,337.8 L95.6,396.0" marker-end="url(#m-warn)" style="fill:none;stroke:var(--color-warn, var(--warn, #985a00));stroke-width:2.2;stroke-dasharray:7 5;"/><path d="M171.7,349.7 L108.8,521.0" style="fill:none;stroke:var(--color-ok, var(--ok, #1f7a4a));stroke-width:1.6;"/><path d="M203.6,351.2 L248.6,521.0" style="fill:none;stroke:var(--color-ok, var(--ok, #1f7a4a));stroke-width:1.6;"/><path d="M227.1,337.9 L406.5,521.0" style="fill:none;stroke:var(--color-ok, var(--ok, #1f7a4a));stroke-width:1.6;"/><path d="M236.8,324.9 L604.9,521.0" marker-end="url(#m-bad)" style="fill:none;stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:2.4;"/><path d="M860.6,351.9 L895.1,521.0" style="fill:none;stroke:var(--color-ok, var(--ok, #1f7a4a));stroke-width:1.6;"/><path d="M816,337 L688,521" style="fill:none;stroke:var(--color-ok, var(--ok, #1f7a4a));stroke-width:1.6;"/><path d="M520,247 L520,94" style="fill:none;stroke:var(--color-ok, var(--ok, #1f7a4a));stroke-width:1.6;"/><rect x="451.9" y="226.0" width="136.2" height="19" rx="4" style="fill:var(--color-panel, var(--paper, #ffffff))"/><text x="520.0" y="240.0" text-anchor="middle" style="fill:var(--color-ok, var(--ok, #1f7a4a));font-size:11.5px;font-weight:500">소버린 AI · Mistral</text><path d="M500,346 L452,521" style="fill:none;stroke:var(--color-ok, var(--ok, #1f7a4a));stroke-width:1.6;"/><rect x="431.2" y="410.0" width="69.5" height="19" rx="4" style="fill:var(--color-panel, var(--paper, #ffffff))"/><text x="466.0" y="424.0" text-anchor="middle" style="fill:var(--color-ok, var(--ok, #1f7a4a));font-size:11.5px;font-weight:500">공동 AIDC</text><rect x="473.5" y="478.0" width="173.0" height="19" rx="4" style="fill:var(--color-panel, var(--paper, #ffffff))"/><text x="560.0" y="492.0" text-anchor="middle" style="fill:var(--color-bad, var(--bad, #b3362f));font-size:11.5px;font-weight:600">원격접속 허가제 · 밀수 단속</text><rect x="121.9" y="48" width="136.2" height="44" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-fg, var(--fg, #14161c));stroke-width:1.3"/><text x="190.0" y="67.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13.5px;font-weight:700">영국 · 캐나다</text><text x="190.0" y="84.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">기술 번영 협정 · G7</text><rect x="425.5" y="48" width="189.0" height="44" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-fg, var(--fg, #14161c));stroke-width:1.3"/><text x="520.0" y="67.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13.5px;font-weight:700">EU(프랑스·독일)</text><text x="520.0" y="84.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">디지털 주권 · ASML 장비 정렬</text><rect x="20.4" y="398" width="103.2" height="44" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-fg, var(--fg, #14161c));stroke-width:1.3"/><text x="72.0" y="417.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13.5px;font-weight:700">일본</text><text x="72.0" y="434.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">장비 통제 정렬</text><rect x="35.2" y="523" width="129.6" height="44" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-fg, var(--fg, #14161c));stroke-width:1.3"/><text x="100.0" y="542.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13.5px;font-weight:700">대만</text><text x="100.0" y="559.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">TSMC · 232조 쿼터</text><rect x="179.2" y="523" width="151.6" height="44" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-fg, var(--fg, #14161c));stroke-width:1.3"/><text x="255.0" y="542.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13.5px;font-weight:700">호주 · 인도</text><text x="255.0" y="559.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">핵심광물 · AI 파트너십</text><rect x="356.4" y="523" width="147.2" height="44" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-fg, var(--fg, #14161c));stroke-width:1.3"/><text x="430.0" y="542.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13.5px;font-weight:700">UAE · 사우디</text><text x="430.0" y="559.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">Stargate · 조건부 칩</text><rect x="564.3" y="523" width="171.4" height="44" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-fg, var(--fg, #14161c));stroke-width:1.3"/><text x="650.0" y="542.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13.5px;font-weight:700">싱가포르 · 동남아</text><text x="650.0" y="559.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">Pax Silica + WAICO 이중</text><rect x="814.3" y="523" width="171.4" height="44" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-fg, var(--fg, #14161c));stroke-width:1.3"/><text x="900.0" y="542.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13.5px;font-weight:700">WAICO 29개국</text><text x="900.0" y="559.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">글로벌 사우스 · 오픈웨이트</text><circle cx="190" cy="300" r="50" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--ai27-accent, var(--accent, #3d40d4));stroke-width:3"/><text x="190.0" y="302.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:18px;font-weight:700">미국</text><text x="190.0" y="319.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:10.5px;font-weight:400">통제 강화</text><circle cx="850" cy="300" r="50" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:3"/><text x="850.0" y="302.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:18px;font-weight:700">중국</text><text x="850.0" y="319.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:10.5px;font-weight:400">국산화 · 보복</text><circle cx="520" cy="300" r="46" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-warn, var(--warn, #985a00));stroke-width:3"/><text x="520.0" y="302.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:18px;font-weight:700">한국</text><text x="520.0" y="319.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:10.5px;font-weight:400">동맹 기반 헤징</text><line x1="330" y1="618" x2="364" y2="618" style="stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:2.4;"/><text x="372.0" y="622.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:400">통제·제재</text><line x1="480" y1="618" x2="514" y2="618" style="stroke:var(--color-warn, var(--warn, #985a00));stroke-width:2.2;stroke-dasharray:7 5;"/><text x="522.0" y="622.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:400">압력·정렬 요구</text><line x1="630" y1="618" x2="664" y2="618" style="stroke:var(--color-ok, var(--ok, #1f7a4a));stroke-width:1.6;"/><text x="672.0" y="622.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:400">협력</text></svg><figcaption>그림 13-1. 2027년 AI 국가 관계도. 미국 축(Pax Silica)과 중국 축(AI+·WAICO) 사이에서 한국은 양쪽과 협력선(초록)과 압력선(주황 점선)이 동시에 걸린 위치에 있습니다. 동남아는 이중 참여 지역이지만 미국 원격접속 규칙의 허가 대상이 되었습니다.</figcaption></figure>
+
+<table>
+<thead>
+<tr>
+<th>전달 경로</th>
+<th>미국 조치</th>
+<th>한국에 걸리는 부담</th>
+<th>영향받는 협력</th>
+<th>2027 가능성</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>① 클라우드</td>
+<td>원격접속 규칙(유예 2027-02 종료, 지정국 확대 가능)</td>
+<td>국가 AI컴퓨트센터·민간 클라우드의 <strong>중국 본사 고객
+확인(KYC)·보고</strong> 책임</td>
+<td>동남아 AIDC 협력 위축, <strong>UAE·사우디 공동 AIDC는 미국 칩 재수출
+허가가 전제</strong></td>
+<td>높음</td>
+</tr>
+<tr>
+<td>② 중국 팹</td>
+<td>VEU 폐지(2025-12-31) 후 연간 장비 허가</td>
+<td>삼성·SK하이닉스 중국 팹의 <strong>2027분 허가(12월 결정)</strong>,
+증설 금지 조건</td>
+<td>메모리 생산 거점 재편, 중국 보복 위험</td>
+<td>높음</td>
+</tr>
+<tr>
+<td>③ 장비·부품</td>
+<td>MATCH Act 등 동맹 장비통제 정렬</td>
+<td>한국 장비·부품사의 <strong>중국 판매·서비스 제한</strong> 압력</td>
+<td>중국 매출 감소, 중국산 장비 대체 가속</td>
+<td>중간</td>
+</tr>
+<tr>
+<td>④ 모델</td>
+<td>프런티어 모델 임시 통제의 반복·제도화</td>
+<td>최신 모델 <strong>접근 지연·조건부 제공</strong></td>
+<td>독자 모델·EU(Mistral) 등 소버린 파트너 수요 증가</td>
+<td>중간</td>
+</tr>
+<tr>
+<td>⑤ 관세</td>
+<td>232조 반도체 관세 2단계</td>
+<td>대만(쿼터·15% 상한)과 대우 격차 우려</td>
+<td>3,500억 달러 MOU를 지렛대로 한 협상</td>
+<td>중간</td>
+</tr>
+<tr>
+<td>⑥ 중국 반작용</td>
+<td>(중국) 희토류 통제 유예 종료 가능(2027-01-10), 미국 칩 수입
+거부</td>
+<td>소재 조달 차질, HBM 중국 판로 소멸, 중국산 메모리 공세</td>
+<td>범용 교역 채널 유지 필요</td>
+<td>중간</td>
+</tr>
+</tbody>
+</table>
+<figure><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 450" role="img" aria-label="미국의 대중국 수출통제 강화가 한국으로 전달되는 경로. 원격접속 규칙은 한국 클라우드의 고객 확인 부담이 되어 동남아·걸프 데이터센터 협력을 조건부로 만들고, 연간 장비 허가와 동맹 장비 정렬 요구는 중국 팹과 중국 매출을 압박해 중국 보복 위험을 키운다. 모델 통제는 소버린 AI 다변화 수요를, 232조 관세는 3,500억 달러 MOU를 지렛대로 한 협상을 부른다." style="max-width:100%;height:auto;font-family:inherit"><defs><marker id="m-bad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" style="fill:var(--color-bad, var(--bad, #b3362f))"/></marker><marker id="m-warn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" style="fill:var(--color-warn, var(--warn, #985a00))"/></marker><marker id="m-ok" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" style="fill:var(--color-ok, var(--ok, #1f7a4a))"/></marker></defs><text x="144.0" y="36.0" text-anchor="middle" style="fill:var(--color-bad, var(--bad, #b3362f));font-size:14px;font-weight:700">미국 조치 (2026 말 – 2027)</text><text x="490.0" y="36.0" text-anchor="middle" style="fill:var(--color-warn, var(--warn, #985a00));font-size:14px;font-weight:700">한국에 걸리는 부담</text><text x="896.0" y="36.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:14px;font-weight:700">흔들리는 협력 축</text><path d="M272,90.0 L358,90.0" marker-end="url(#m-bad)" style="fill:none;stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:2.4;"/><path d="M272,164.0 L358,164.0" marker-end="url(#m-bad)" style="fill:none;stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:2.4;"/><path d="M272,238.0 L358,238.0" marker-end="url(#m-bad)" style="fill:none;stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:2.4;"/><path d="M272,312.0 L358,312.0" marker-end="url(#m-bad)" style="fill:none;stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:2.4;"/><path d="M272,386.0 L358,386.0" marker-end="url(#m-bad)" style="fill:none;stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:2.4;"/><path d="M618,90.0 C698,90.0 684,90.0 764,90.0" marker-end="url(#m-warn)" style="fill:none;stroke:var(--color-warn, var(--warn, #985a00));stroke-width:2.2;stroke-dasharray:7 5;"/><rect x="659.7" y="80.0" width="62.6" height="19" rx="4" style="fill:var(--color-panel, var(--paper, #ffffff))"/><text x="691.0" y="94.0" text-anchor="middle" style="fill:var(--color-warn, var(--warn, #985a00));font-size:11px;font-weight:600">투자 위축</text><path d="M618,90.0 C698,90.0 684,164.0 764,164.0" marker-end="url(#m-warn)" style="fill:none;stroke:var(--color-warn, var(--warn, #985a00));stroke-width:2.2;stroke-dasharray:7 5;"/><path d="M618,164.0 C698,164.0 684,238.0 764,238.0" marker-end="url(#m-warn)" style="fill:none;stroke:var(--color-warn, var(--warn, #985a00));stroke-width:2.2;stroke-dasharray:7 5;"/><path d="M618,238.0 C698,238.0 684,238.0 764,238.0" marker-end="url(#m-warn)" style="fill:none;stroke:var(--color-warn, var(--warn, #985a00));stroke-width:2.2;stroke-dasharray:7 5;"/><rect x="645.4" y="228.0" width="91.2" height="19" rx="4" style="fill:var(--color-panel, var(--paper, #ffffff))"/><text x="691.0" y="242.0" text-anchor="middle" style="fill:var(--color-warn, var(--warn, #985a00));font-size:11px;font-weight:600">보복·매출 감소</text><path d="M618,312.0 C698,312.0 684,312.0 764,312.0" marker-end="url(#m-ok)" style="fill:none;stroke:var(--color-ok, var(--ok, #1f7a4a));stroke-width:1.6;"/><rect x="659.7" y="302.0" width="62.6" height="19" rx="4" style="fill:var(--color-panel, var(--paper, #ffffff))"/><text x="691.0" y="316.0" text-anchor="middle" style="fill:var(--color-ok, var(--ok, #1f7a4a));font-size:11px;font-weight:600">대안 수요</text><path d="M618,386.0 C698,386.0 684,386.0 764,386.0" marker-end="url(#m-ok)" style="fill:none;stroke:var(--color-ok, var(--ok, #1f7a4a));stroke-width:1.6;"/><rect x="659.7" y="376.0" width="62.6" height="19" rx="4" style="fill:var(--color-panel, var(--paper, #ffffff))"/><text x="691.0" y="390.0" text-anchor="middle" style="fill:var(--color-ok, var(--ok, #1f7a4a));font-size:11px;font-weight:600">협상 연계</text><rect x="16" y="64" width="256" height="52" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:1.4"/><text x="144.0" y="85.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13px;font-weight:700">원격접속(클라우드) 규칙</text><text x="144.0" y="103.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">2026-11-19 시행 · 유예 2027-02 종료</text><rect x="16" y="138" width="256" height="52" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:1.4"/><text x="144.0" y="159.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13px;font-weight:700">VEU 폐지 → 연간 장비 허가</text><text x="144.0" y="177.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">2027분 허가 12월 결정</text><rect x="16" y="212" width="256" height="52" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:1.4"/><text x="144.0" y="233.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13px;font-weight:700">의회 입법(NDAA)</text><text x="144.0" y="251.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">Chip Security · MATCH Act</text><rect x="16" y="286" width="256" height="52" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:1.4"/><text x="144.0" y="307.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13px;font-weight:700">프런티어 모델 임시 통제</text><text x="144.0" y="325.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">Mythos 5 · 18일 접근 제한</text><rect x="16" y="360" width="256" height="52" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:1.4"/><text x="144.0" y="381.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13px;font-weight:700">232조 반도체 관세 2단계</text><text x="144.0" y="399.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">대만은 쿼터·15% 상한 확보</text><rect x="362" y="64" width="256" height="52" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-warn, var(--warn, #985a00));stroke-width:1.4"/><text x="490.0" y="85.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13px;font-weight:700">클라우드 · 국가 AI컴퓨트센터 KYC</text><text x="490.0" y="103.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">중국 본사 고객 확인 · 월간 보고</text><rect x="362" y="138" width="256" height="52" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-warn, var(--warn, #985a00));stroke-width:1.4"/><text x="490.0" y="159.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13px;font-weight:700">삼성 · SK하이닉스 중국 팹</text><text x="490.0" y="177.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">장비 반입 · 증설 제한</text><rect x="362" y="212" width="256" height="52" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-warn, var(--warn, #985a00));stroke-width:1.4"/><text x="490.0" y="233.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13px;font-weight:700">장비 · 부품 중국 서비스</text><text x="490.0" y="251.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">동맹 정렬 압력</text><rect x="362" y="286" width="256" height="52" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-warn, var(--warn, #985a00));stroke-width:1.4"/><text x="490.0" y="307.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13px;font-weight:700">최신 프런티어 모델 접근</text><text x="490.0" y="325.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">지연 · 조건부 제공</text><rect x="362" y="360" width="256" height="52" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-warn, var(--warn, #985a00));stroke-width:1.4"/><text x="490.0" y="381.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13px;font-weight:700">대미 반도체 수출</text><text x="490.0" y="399.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">'불리하지 않은 대우' 내용이 관건</text><rect x="768" y="64" width="256" height="52" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:1.4"/><text x="896.0" y="85.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13px;font-weight:700">동남아 AIDC 협력</text><text x="896.0" y="103.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">싱가포르·말레이시아 허가제</text><rect x="768" y="138" width="256" height="52" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-warn, var(--warn, #985a00));stroke-width:1.4"/><text x="896.0" y="159.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13px;font-weight:700">UAE · 사우디 공동 AIDC</text><text x="896.0" y="177.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">미국 칩 재수출 조건</text><rect x="768" y="212" width="256" height="52" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:1.4"/><text x="896.0" y="233.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13px;font-weight:700">중국 시장 · 소재</text><text x="896.0" y="251.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">희토류 보복 · 중국산 메모리 공세</text><rect x="768" y="286" width="256" height="52" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-ok, var(--ok, #1f7a4a));stroke-width:1.4"/><text x="896.0" y="307.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13px;font-weight:700">소버린 AI 파트너 다변화</text><text x="896.0" y="325.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">EU·Mistral · 독자 모델 정당성↑</text><rect x="768" y="360" width="256" height="52" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-ok, var(--ok, #1f7a4a));stroke-width:1.4"/><text x="896.0" y="381.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13px;font-weight:700">한미 3,500억 달러 MOU</text><text x="896.0" y="399.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">관세 협상 지렛대</text><line x1="300" y1="430" x2="334" y2="430" style="stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:2.4;"/><text x="342.0" y="434.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:400">통제 전달</text><line x1="450" y1="430" x2="484" y2="430" style="stroke:var(--color-warn, var(--warn, #985a00));stroke-width:2.2;stroke-dasharray:7 5;"/><text x="492.0" y="434.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:400">협력 위축·위험</text><line x1="600" y1="430" x2="634" y2="430" style="stroke:var(--color-ok, var(--ok, #1f7a4a));stroke-width:1.6;"/><text x="642.0" y="434.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:400">대응·대안</text></svg><figcaption>그림 13-2. 미국 수출통제가 한국을 거쳐 협력 축으로 전달되는 경로. 클라우드 규칙 하나가 동남아·걸프 협력을 동시에 조건부로 만들고, 장비 허가와 장비 정렬 요구는 중국 쪽 위험으로 모입니다. 모델 통제와 관세는 소버린 AI 다변화와 MOU 협상이라는 대응을 부릅니다.</figcaption></figure>
+
+<p><strong>2027년에 볼 일정</strong></p>
+<table>
+<thead>
+<tr>
+<th>시점</th>
+<th>일정</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01-10</td>
+<td>미중 휴전 유예 일괄 만료(희토류·관세)</td>
+</tr>
+<tr>
+<td>01-19</td>
+<td>원격접속 규칙 의견수렴 마감</td>
+</tr>
+<tr>
+<td>02월 중순</td>
+<td>기존 데이터센터 유예 종료</td>
+</tr>
+<tr>
+<td>상반기</td>
+<td>232조 협상, NDAA 칩 통제 조항의 집행</td>
+</tr>
+<tr>
+<td>12월</td>
+<td>중국 팹 2028분 장비 허가</td>
+</tr>
+</tbody>
+</table>
+<p><strong>대응</strong></p>
+<ol type="1">
+<li><strong>'신뢰 동맹' 예외 확보</strong>: Pax Silica 회원 지위로
+원격접속 규칙의 동맹국 면제, VEU를 대체할 다년 허가, 232조 대만 수준
+대우를 한 패키지로 협상합니다.</li>
+<li><strong>KYC를 먼저 갖춤</strong>: 국가 AI컴퓨트센터와 민간
+클라우드에 고객 실사·사용량 보고 체계를 2027년 상반기까지 갖춰, 지정국
+확대 때 '규정 준수 동맹'으로 남습니다.</li>
+<li><strong>제3국 협력은 미국 허가를 전제로 설계</strong>:
+UAE·사우디·동남아 공동 AIDC는 칩 공급·재수출 허가, 원격 사용자 제한을
+계약 단계에서 반영합니다.</li>
+<li><strong>모델 접근 다변화</strong>: 독자 파운데이션 모델, EU·중동
+소버린 파트너, 오픈웨이트(중국계는 공공·국방에서 단계 축소)로 단일 공급
+의존을 줄입니다.</li>
+<li><strong>중국 채널 관리</strong>: 범용 품목과 소재 교역은 유지하면서
+희토류 비축과 공급처 분산(호주·카자흐스탄)을 확대합니다.</li>
 </ol>
 <hr />
 <h2 id="14-ai-반도체메모리aidc전력망-투자-시장-기업국가-전략">14. AI
@@ -12295,6 +12455,164 @@ href="https://www.lawtimes.co.kr/news/articleViewAmp.html?idxno=219835">https://
     const v = td.textContent.trim();
     if (v === '높음') td.classList.add('tag-hi'); else if (v === '중간') td.classList.add('tag-mid'); else if (v === '낮음') td.classList.add('tag-lo');
   });
+</script>
+<script>
+/* AI2027 in-page full-text search (shared by dashboard and report).
+ * Uses the CSS Custom Highlight API so matched text is highlighted WITHOUT mutating the DOM
+ * (keeps the dashboard's one-writer rule intact). Falls back to scroll-only where unsupported.
+ * Usage: AI27Search({ root: 'main', input: 'q-input', results: 'q-results', info: 'q-info',
+ *                     exclude: '.rail', reportLink: 'a[href="report.html"]' })
+ */
+window.AI27Search = function (cfg) {
+  const root = document.querySelector(cfg.root);
+  const input = document.getElementById(cfg.input);
+  const out = document.getElementById(cfg.results);
+  const info = document.getElementById(cfg.info);
+  if (!root || !input || !out || !info) return;
+  const BLOCKS = 'h2,h3,h4,p,li,td,th,blockquote,figcaption,summary,dt,dd,article';
+  const MAX_RESULTS = 80;
+  const MAX_RANGES = 3000;
+  const hl = typeof CSS !== 'undefined' && CSS.highlights && typeof Highlight === 'function';
+  let results = [];
+  let active = -1;
+  let timer = 0;
+
+  const norm = (s) => s.toLocaleLowerCase('ko');
+  const terms = (q) => norm(q).split(/\s+/).filter(Boolean).slice(0, 6);
+  const excluded = (el) => (cfg.exclude && el.closest(cfg.exclude)) || el.closest('[data-search-skip]');
+
+  function leafMatches(ts) {
+    const hits = [];
+    root.querySelectorAll(BLOCKS).forEach((el) => {
+      if (excluded(el)) return;
+      const t = norm(el.textContent || '');
+      if (ts.every((w) => t.includes(w))) hits.push(el);
+    });
+    const set = new Set(hits);
+    // keep the innermost matching block only
+    return hits.filter((el) => ![...el.querySelectorAll(BLOCKS)].some((c) => set.has(c)));
+  }
+
+  function headingFor(el, heads) {
+    let h = null;
+    for (const x of heads) {
+      if (x === el || x.compareDocumentPosition(el) & Node.DOCUMENT_POSITION_FOLLOWING) h = x; else break;
+    }
+    return h;
+  }
+
+  function contextOf(el, heads) {
+    const sec = el.closest('section');
+    const h2 = sec && sec.querySelector('h2');
+    const card = el.closest('.ai27-card, .ai27-tablewrap');
+    let h3 = card && card.querySelector('h3');
+    if (!h3 && card && card.previousElementSibling) h3 = card.previousElementSibling.querySelector && card.previousElementSibling.querySelector('h3');
+    if (h2) return [h2.textContent.trim(), h3 ? h3.textContent.trim() : ''].filter(Boolean).join(' › ');
+    const h = headingFor(el, heads);
+    return h ? h.textContent.trim() : '';
+  }
+
+  function rangesIn(el, ts, acc) {
+    const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
+    let n;
+    while ((n = walker.nextNode()) && acc.length < MAX_RANGES) {
+      const t = norm(n.nodeValue);
+      for (const w of ts) {
+        let i = t.indexOf(w);
+        while (i !== -1 && acc.length < MAX_RANGES) {
+          const r = new Range(); r.setStart(n, i); r.setEnd(n, i + w.length); acc.push(r);
+          i = t.indexOf(w, i + w.length);
+        }
+      }
+    }
+    return acc;
+  }
+
+  function snippet(el, ts) {
+    const text = (el.textContent || '').replace(/\s+/g, ' ').trim();
+    const lower = norm(text);
+    const at = Math.max(0, lower.indexOf(ts[0]));
+    const start = Math.max(0, at - 40);
+    const s = (start > 0 ? '…' : '') + text.slice(start, start + 130) + (start + 130 < text.length ? '…' : '');
+    const frag = document.createDocumentFragment();
+    const ls = norm(s);
+    let i = 0;
+    while (i < s.length) {
+      let best = -1; let len = 0;
+      for (const w of ts) { const j = ls.indexOf(w, i); if (j !== -1 && (best === -1 || j < best)) { best = j; len = w.length; } }
+      if (best === -1) { frag.append(s.slice(i)); break; }
+      frag.append(s.slice(i, best));
+      const m = document.createElement('mark'); m.textContent = s.slice(best, best + len); frag.append(m);
+      i = best + len;
+    }
+    return frag;
+  }
+
+  function clear() {
+    results = []; active = -1;
+    out.replaceChildren(); info.textContent = '';
+    if (hl) { CSS.highlights.delete('q-hit'); CSS.highlights.delete('q-active'); }
+  }
+
+  function go(i) {
+    if (!results.length) return;
+    active = (i + results.length) % results.length;
+    const el = results[active].el;
+    const det = el.closest('details'); if (det && !det.open) det.open = true;
+    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    if (hl) CSS.highlights.set('q-active', new Highlight(...rangesIn(el, results[active].ts, [])));
+    out.querySelectorAll('button').forEach((b, k) => b.setAttribute('aria-current', k === active ? 'true' : 'false'));
+    info.textContent = `${active + 1} / ${results.length}${results.length >= MAX_RESULTS ? '+' : ''}건`;
+  }
+
+  function run(q) {
+    const ts = terms(q);
+    if (!ts.length) { clear(); return; }
+    const heads = [...root.querySelectorAll('h2,h3')];
+    const els = leafMatches(ts).slice(0, MAX_RESULTS);
+    results = els.map((el) => ({ el, ts }));
+    active = -1;
+    if (hl) {
+      const acc = [];
+      els.forEach((el) => rangesIn(el, ts, acc));
+      CSS.highlights.set('q-hit', new Highlight(...acc));
+      CSS.highlights.delete('q-active');
+    }
+    info.textContent = els.length ? `${els.length}${els.length >= MAX_RESULTS ? '+' : ''}건` : '결과 없음';
+    out.replaceChildren(...els.map((el, k) => {
+      const li = document.createElement('li');
+      const b = document.createElement('button'); b.type = 'button';
+      const ctx = document.createElement('span'); ctx.className = 'q-ctx'; ctx.textContent = (contextOf(el, heads) || '본문').replace(/\s+/g, ' ');
+      const sn = document.createElement('span'); sn.className = 'q-snip'; sn.append(snippet(el, ts));
+      b.append(ctx, sn); b.addEventListener('click', () => go(k));
+      li.append(b); return li;
+    }));
+    const rl = cfg.reportLink && document.querySelector(cfg.reportLink);
+    if (rl) {
+      const li = document.createElement('li'); li.className = 'q-more';
+      const a = document.createElement('a');
+      a.href = rl.getAttribute('href').split('#')[0] + '#q=' + encodeURIComponent(q.trim());
+      a.target = rl.target || ''; if (a.target) a.rel = 'noopener';
+      a.textContent = `상세 보고서에서 '${q.trim()}' 검색 →`;
+      li.append(a); out.append(li);
+    }
+  }
+
+  input.addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(() => run(input.value), 180); });
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') { e.preventDefault(); if (!results.length) run(input.value); go(e.shiftKey ? active - 1 : active + 1); }
+    if (e.key === 'Escape') { input.value = ''; clear(); }
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === '/' && !/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName)) { e.preventDefault(); input.focus(); }
+  });
+  try {
+    const m = /[#&?]q=([^&]+)/.exec(location.hash + '&' + location.search);
+    if (m) { input.value = decodeURIComponent(m[1]); setTimeout(() => { run(input.value); go(0); }, cfg.delay || 300); }
+  } catch (_) { /* sandboxed location: ignore */ }
+};
+
+AI27Search({ root: 'main', input: 'q-input', results: 'q-results', info: 'q-info' });
 </script>
 
 </body>
