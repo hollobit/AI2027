@@ -1,0 +1,610 @@
+[
+ {
+  "org": "Gartner",
+  "theme": "에이전트"
+ },
+ {
+  "org": "Gartner",
+  "theme": "거버넌스·신뢰"
+ },
+ {
+  "org": "Gartner",
+  "theme": "보안"
+ },
+ {
+  "org": "Gartner",
+  "theme": "주권·규제"
+ },
+ {
+  "org": "Gartner",
+  "theme": "모델 역량"
+ },
+ {
+  "org": "Gartner",
+  "theme": "물리 AI·로봇"
+ },
+ {
+  "org": "Gartner",
+  "theme": "에이전트"
+ },
+ {
+  "org": "Gartner",
+  "theme": "물리 AI·로봇"
+ },
+ {
+  "org": "Gartner",
+  "theme": "기업 ROI"
+ },
+ {
+  "org": "Gartner",
+  "theme": "보안"
+ },
+ {
+  "org": "Gartner",
+  "theme": "거버넌스·신뢰"
+ },
+ {
+  "org": "Gartner",
+  "theme": "인프라·에너지"
+ },
+ {
+  "org": "Gartner",
+  "theme": "시장·금융"
+ },
+ {
+  "org": "Gartner",
+  "theme": "인프라·에너지"
+ },
+ {
+  "org": "Gartner",
+  "theme": "에이전트"
+ },
+ {
+  "org": "Gartner",
+  "theme": "인프라·에너지"
+ },
+ {
+  "org": "Gartner",
+  "theme": "기업 ROI"
+ },
+ {
+  "org": "Gartner",
+  "theme": "보안"
+ },
+ {
+  "org": "Gartner",
+  "theme": "주권·규제"
+ },
+ {
+  "org": "Gartner",
+  "theme": "거버넌스·신뢰"
+ },
+ {
+  "org": "Gartner",
+  "theme": "기업 ROI"
+ },
+ {
+  "org": "Gartner",
+  "theme": "에이전트"
+ },
+ {
+  "org": "Gartner",
+  "theme": "보안"
+ },
+ {
+  "org": "Forrester",
+  "theme": "시장·금융"
+ },
+ {
+  "org": "Forrester",
+  "theme": "에이전트"
+ },
+ {
+  "org": "Forrester",
+  "theme": "거버넌스·신뢰"
+ },
+ {
+  "org": "Forrester",
+  "theme": "인프라·에너지"
+ },
+ {
+  "org": "Forrester",
+  "theme": "보안"
+ },
+ {
+  "org": "Forrester",
+  "theme": "기업 ROI"
+ },
+ {
+  "org": "Forrester",
+  "theme": "인프라·에너지"
+ },
+ {
+  "org": "Forrester",
+  "theme": "시장·금융"
+ },
+ {
+  "org": "Forrester",
+  "theme": "에이전트"
+ },
+ {
+  "org": "Forrester",
+  "theme": "주권·규제"
+ },
+ {
+  "org": "IDC",
+  "theme": "에이전트"
+ },
+ {
+  "org": "IDC",
+  "theme": "기업 ROI"
+ },
+ {
+  "org": "IDC",
+  "theme": "거버넌스·신뢰"
+ },
+ {
+  "org": "IDC",
+  "theme": "노동·인재"
+ },
+ {
+  "org": "IDC",
+  "theme": "주권·규제"
+ },
+ {
+  "org": "IDC",
+  "theme": "모델 역량"
+ },
+ {
+  "org": "McKinsey",
+  "theme": "기업 ROI"
+ },
+ {
+  "org": "McKinsey",
+  "theme": "에이전트"
+ },
+ {
+  "org": "McKinsey",
+  "theme": "노동·인재"
+ },
+ {
+  "org": "McKinsey",
+  "theme": "시장·금융"
+ },
+ {
+  "org": "McKinsey",
+  "theme": "에이전트"
+ },
+ {
+  "org": "McKinsey",
+  "theme": "과학"
+ },
+ {
+  "org": "McKinsey",
+  "theme": "인프라·에너지"
+ },
+ {
+  "org": "McKinsey",
+  "theme": "물리 AI·로봇"
+ },
+ {
+  "org": "McKinsey",
+  "theme": "시장·금융"
+ },
+ {
+  "org": "BCG",
+  "theme": "기업 ROI"
+ },
+ {
+  "org": "BCG",
+  "theme": "에이전트"
+ },
+ {
+  "org": "BCG",
+  "theme": "거버넌스·신뢰"
+ },
+ {
+  "org": "BCG",
+  "theme": "노동·인재"
+ },
+ {
+  "org": "Capgemini",
+  "theme": "에이전트"
+ },
+ {
+  "org": "Capgemini",
+  "theme": "거버넌스·신뢰"
+ },
+ {
+  "org": "Capgemini",
+  "theme": "보안"
+ },
+ {
+  "org": "Capgemini",
+  "theme": "과학"
+ },
+ {
+  "org": "Omdia",
+  "theme": "기업 ROI"
+ },
+ {
+  "org": "Omdia",
+  "theme": "주권·규제"
+ },
+ {
+  "org": "Omdia",
+  "theme": "물리 AI·로봇"
+ },
+ {
+  "org": "Omdia",
+  "theme": "인프라·에너지"
+ },
+ {
+  "org": "Omdia",
+  "theme": "시장·금융"
+ },
+ {
+  "org": "SAS",
+  "theme": "기업 ROI"
+ },
+ {
+  "org": "SAS",
+  "theme": "에이전트"
+ },
+ {
+  "org": "SAS",
+  "theme": "거버넌스·신뢰"
+ },
+ {
+  "org": "SAS",
+  "theme": "시장·금융"
+ },
+ {
+  "org": "Air Street Capital (State of AI Report)",
+  "theme": "에이전트"
+ },
+ {
+  "org": "Air Street Capital (State of AI Report)",
+  "theme": "모델 역량"
+ },
+ {
+  "org": "Air Street Capital (State of AI Report)",
+  "theme": "보안"
+ },
+ {
+  "org": "Air Street Capital (State of AI Report)",
+  "theme": "주권·규제"
+ },
+ {
+  "org": "Air Street Capital (State of AI Report)",
+  "theme": "과학"
+ },
+ {
+  "org": "IITP (정보통신기획평가원)",
+  "theme": "기업 ROI"
+ },
+ {
+  "org": "IITP (정보통신기획평가원)",
+  "theme": "에이전트"
+ },
+ {
+  "org": "IITP (정보통신기획평가원)",
+  "theme": "물리 AI·로봇"
+ },
+ {
+  "org": "IITP (정보통신기획평가원)",
+  "theme": "모델 역량"
+ },
+ {
+  "org": "IITP (정보통신기획평가원)",
+  "theme": "인프라·에너지"
+ },
+ {
+  "org": "IITP (정보통신기획평가원)",
+  "theme": "디바이스·엣지"
+ },
+ {
+  "org": "IITP (정보통신기획평가원)",
+  "theme": "보안"
+ },
+ {
+  "org": "IITP (정보통신기획평가원)",
+  "theme": "주권·규제"
+ },
+ {
+  "org": "Accenture",
+  "theme": "거버넌스·신뢰"
+ },
+ {
+  "org": "Accenture",
+  "theme": "노동·인재"
+ },
+ {
+  "org": "AI Futures Project (Kokotajlo, Lifland, Larsen, Dean 외)",
+  "theme": "모델 역량"
+ },
+ {
+  "org": "AI Futures Project (Kokotajlo, Lifland, Larsen, Dean 외)",
+  "theme": "에이전트"
+ },
+ {
+  "org": "AI Futures Project (Kokotajlo, Lifland, Larsen, Dean 외)",
+  "theme": "보안"
+ },
+ {
+  "org": "AI Futures Project (Kokotajlo, Lifland, Larsen, Dean 외)",
+  "theme": "거버넌스·신뢰"
+ },
+ {
+  "org": "AI Futures Project (Kokotajlo, Lifland, Larsen, Dean 외)",
+  "theme": "주권·규제"
+ },
+ {
+  "org": "AI Futures Project",
+  "theme": "모델 역량"
+ },
+ {
+  "org": "AI Futures Project",
+  "theme": "시장·금융"
+ },
+ {
+  "org": "AI Futures Project",
+  "theme": "거버넌스·신뢰"
+ },
+ {
+  "org": "AI Futures Project",
+  "theme": "모델 역량"
+ },
+ {
+  "org": "AI Futures Project",
+  "theme": "에이전트"
+ },
+ {
+  "org": "AI Futures Project",
+  "theme": "거버넌스·신뢰"
+ },
+ {
+  "org": "AI Futures Project",
+  "theme": "보안"
+ },
+ {
+  "org": "METR",
+  "theme": "모델 역량"
+ },
+ {
+  "org": "METR",
+  "theme": "에이전트"
+ },
+ {
+  "org": "METR",
+  "theme": "모델 역량"
+ },
+ {
+  "org": "METR",
+  "theme": "에이전트"
+ },
+ {
+  "org": "METR",
+  "theme": "거버넌스·신뢰"
+ },
+ {
+  "org": "METR",
+  "theme": "보안"
+ },
+ {
+  "org": "Epoch AI",
+  "theme": "인프라·에너지"
+ },
+ {
+  "org": "Epoch AI",
+  "theme": "모델 역량"
+ },
+ {
+  "org": "Epoch AI",
+  "theme": "시장·금융"
+ },
+ {
+  "org": "Epoch AI",
+  "theme": "인프라·에너지"
+ },
+ {
+  "org": "Epoch AI",
+  "theme": "모델 역량"
+ },
+ {
+  "org": "Polymarket / Kalshi / Manifold (aggregated snapshots)",
+  "theme": "시장·금융"
+ },
+ {
+  "org": "Polymarket / Kalshi / Manifold (aggregated snapshots)",
+  "theme": "모델 역량"
+ },
+ {
+  "org": "Metaculus",
+  "theme": "모델 역량"
+ },
+ {
+  "org": "Leopold Aschenbrenner / Situational Awareness LP",
+  "theme": "시장·금융"
+ },
+ {
+  "org": "Leopold Aschenbrenner / Situational Awareness LP",
+  "theme": "인프라·에너지"
+ },
+ {
+  "org": "Leopold Aschenbrenner / Situational Awareness LP",
+  "theme": "모델 역량"
+ },
+ {
+  "org": "Anthropic (Dario Amodei)",
+  "theme": "모델 역량"
+ },
+ {
+  "org": "Anthropic (Dario Amodei)",
+  "theme": "노동·인재"
+ },
+ {
+  "org": "Anthropic (Dario Amodei)",
+  "theme": "거버넌스·신뢰"
+ },
+ {
+  "org": "Anthropic (Dario Amodei)",
+  "theme": "과학"
+ },
+ {
+  "org": "OpenAI (Sam Altman)",
+  "theme": "에이전트"
+ },
+ {
+  "org": "OpenAI (Sam Altman)",
+  "theme": "모델 역량"
+ },
+ {
+  "org": "OpenAI (Sam Altman)",
+  "theme": "물리 AI·로봇"
+ },
+ {
+  "org": "OpenAI (Sam Altman)",
+  "theme": "과학"
+ },
+ {
+  "org": "Google DeepMind (Demis Hassabis)",
+  "theme": "모델 역량"
+ },
+ {
+  "org": "Google DeepMind (Demis Hassabis)",
+  "theme": "에이전트"
+ },
+ {
+  "org": "Google DeepMind (Demis Hassabis)",
+  "theme": "거버넌스·신뢰"
+ },
+ {
+  "org": "Google DeepMind (Demis Hassabis)",
+  "theme": "과학"
+ },
+ {
+  "org": "Sequoia Capital",
+  "theme": "에이전트"
+ },
+ {
+  "org": "Sequoia Capital",
+  "theme": "기업 ROI"
+ },
+ {
+  "org": "Sequoia Capital",
+  "theme": "노동·인재"
+ },
+ {
+  "org": "Menlo Ventures",
+  "theme": "기업 ROI"
+ },
+ {
+  "org": "Menlo Ventures",
+  "theme": "에이전트"
+ },
+ {
+  "org": "Menlo Ventures",
+  "theme": "시장·금융"
+ },
+ {
+  "org": "ARK Invest",
+  "theme": "물리 AI·로봇"
+ },
+ {
+  "org": "ARK Invest",
+  "theme": "시장·금융"
+ },
+ {
+  "org": "ARK Invest",
+  "theme": "인프라·에너지"
+ },
+ {
+  "org": "Goldman Sachs",
+  "theme": "인프라·에너지"
+ },
+ {
+  "org": "Goldman Sachs",
+  "theme": "시장·금융"
+ },
+ {
+  "org": "BlackRock Investment Institute",
+  "theme": "시장·금융"
+ },
+ {
+  "org": "BlackRock Investment Institute",
+  "theme": "인프라·에너지"
+ },
+ {
+  "org": "Morgan Stanley",
+  "theme": "인프라·에너지"
+ },
+ {
+  "org": "Morgan Stanley",
+  "theme": "시장·금융"
+ },
+ {
+  "org": "IEA",
+  "theme": "인프라·에너지"
+ },
+ {
+  "org": "IEA",
+  "theme": "주권·규제"
+ },
+ {
+  "org": "Stanford HAI",
+  "theme": "모델 역량"
+ },
+ {
+  "org": "Stanford HAI",
+  "theme": "노동·인재"
+ },
+ {
+  "org": "Stanford HAI",
+  "theme": "물리 AI·로봇"
+ },
+ {
+  "org": "Stanford HAI",
+  "theme": "거버넌스·신뢰"
+ },
+ {
+  "org": "Stanford HAI",
+  "theme": "주권·규제"
+ },
+ {
+  "org": "Air Street Capital (Nathan Benaich)",
+  "theme": "에이전트"
+ },
+ {
+  "org": "Air Street Capital (Nathan Benaich)",
+  "theme": "보안"
+ },
+ {
+  "org": "Air Street Capital (Nathan Benaich)",
+  "theme": "주권·규제"
+ },
+ {
+  "org": "Air Street Capital (Nathan Benaich)",
+  "theme": "모델 역량"
+ },
+ {
+  "org": "Air Street Capital (Nathan Benaich)",
+  "theme": "시장·금융"
+ },
+ {
+  "org": "Christopher S. Penn (Trust Insights)",
+  "theme": "시장·금융"
+ },
+ {
+  "org": "Christopher S. Penn (Trust Insights)",
+  "theme": "기업 ROI"
+ },
+ {
+  "org": "Christopher S. Penn (Trust Insights)",
+  "theme": "디바이스·엣지"
+ },
+ {
+  "org": "Christopher S. Penn (Trust Insights)",
+  "theme": "거버넌스·신뢰"
+ }
+]

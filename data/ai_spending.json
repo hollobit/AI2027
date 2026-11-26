@@ -1,0 +1,29 @@
+[
+ {
+  "label": "2026 예측 (2025.12)",
+  "year": "2026",
+  "kind": "예측",
+  "value": 2000,
+  "scope": "Neontri (덱 인용)",
+  "url": "https://neontri.com/blog/ai-trends/",
+  "jo": 2.0
+ },
+ {
+  "label": "2026 Gartner (2026.9)",
+  "year": "2026",
+  "kind": "실적",
+  "value": 2670,
+  "scope": "Gartner 전 세계 AI 지출",
+  "url": "https://gartner.com/en/newsroom/press-releases/2026-09-16-gartner-forecasts-worldwide-ai-spending-to-grow-49-point-5-percent-in-2026",
+  "jo": 2.67
+ },
+ {
+  "label": "2027 Gartner 전망",
+  "year": "2027",
+  "kind": "전망",
+  "value": 4050,
+  "scope": "Gartner 전 세계 AI 지출 (+47.5%)",
+  "url": "https://www.gartner.com/en/newsroom/press-releases/2026-11-12-gartner-forecasts-artificial-intelligence-infrastructure-spending-to-represent-59-percent-of-total-global-artificial-intelligence-spending-in-2027",
+  "jo": 4.05
+ }
+]

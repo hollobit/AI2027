@@ -1,0 +1,46 @@
+/* Observatory tokens: stand-ins for the claude.ai dashboard theme variables (light + dark). */
+:root {
+  --color-bg: #f3f4f1; --color-panel: #ffffff; --color-fg: #14161c; --color-fg-muted: #5b6170;
+  --color-border-line: #dcdfe4; --color-ok: #1f7a4a; --color-warn: #985a00; --color-bad: #b3362f;
+  --chart-0: #3d40d4; --chart-1: #d9692f; --chart-2: #13897d; --chart-3: #bf3f78;
+  --chart-4: #6f7b8f; --chart-5: #b8901c; --chart-6: #3f7ee0; --chart-7: #7a4bb5;
+  --font-anthropic-sans: 'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', system-ui, sans-serif;
+  --font-anthropic-serif: 'Noto Serif KR', AppleMyungjo, Georgia, serif;
+  --cds-font-size-caption: 12px; --cds-font-size-body: 14px; --cds-font-size-heading: 17px; --cds-font-size-title: 30px;
+  --cds-font-weight-medium: 600;
+  --cds-gap-xs: 4px; --cds-gap-sm: 8px; --cds-gap-md: 12px; --cds-gap-lg: 16px; --cds-gap-xl: 28px;
+  --cds-pad-xs: 4px; --cds-pad-sm: 8px; --cds-pad-md: 12px; --cds-pad-lg: 18px; --cds-pad-xl: 28px;
+  --cds-radius: 12px;
+  --cds-chart-muted: #a3a9b5; --cds-chart-grid: #e7e9ed; --cds-chart-axis: #c9cdd4; --cds-chart-reference: #8c93a1;
+  --cds-chart-status-critical: #b3362f; --cds-text-secondary: #5b6170;
+  --cds-surface-popover: #ffffff; --cds-border: #dcdfe4; --cds-shadow-popover: 0 8px 24px rgba(20, 22, 28, .12);
+  --cds-dur-slow: 480ms; --cds-ease-out: cubic-bezier(.2, .7, .2, 1);
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #0b0d12; --color-panel: #141821; --color-fg: #eef0f4; --color-fg-muted: #8f96a5;
+    --color-border-line: #252a35; --color-ok: #4cc38a; --color-warn: #e5a33b; --color-bad: #f07b72;
+    --chart-0: #8d90f8; --chart-1: #f29a62; --chart-2: #3cc4b3; --chart-3: #e46fa2;
+    --chart-4: #9aa6b8; --chart-5: #e3c050; --chart-6: #86acf5; --chart-7: #ac88e3;
+    --cds-chart-muted: #5c6474; --cds-chart-grid: #1e2330; --cds-chart-axis: #343b4a; --cds-chart-reference: #7c8494;
+    --cds-chart-status-critical: #f07b72; --cds-text-secondary: #8f96a5;
+    --cds-surface-popover: #1b2030; --cds-border: #2c3240; --cds-shadow-popover: 0 8px 24px rgba(0, 0, 0, .5);
+    color-scheme: dark;
+  }
+}
+html, body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-family: var(--font-anthropic-sans); font-size: 14px; }
+#dash-root { max-width: 1240px; margin: 0 auto; padding-block: clamp(16px, 3vw, 36px);
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.dash-select { appearance: none; font: inherit; font-size: 13px; color: var(--color-fg); background-color: var(--color-panel);
+  border: 1px solid var(--color-border-line); border-radius: 8px; padding: 6px 30px 6px 10px;
+  background-image: linear-gradient(45deg, transparent 50%, currentColor 50%), linear-gradient(135deg, currentColor 50%, transparent 50%);
+  background-position: calc(100% - 14px) 52%, calc(100% - 9px) 52%; background-size: 5px 5px; background-repeat: no-repeat; }
+.dash-skeleton { color: transparent !important; position: relative; }
+.dash-skeleton::after { content: ""; position: absolute; left: 0; top: 20%; width: 2.5em; height: 60%; border-radius: 4px;
+  background: var(--cds-chart-grid); }
+.site-bar { display: flex; flex-wrap: wrap; gap: 8px 16px; justify-content: space-between; align-items: center;
+  font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: var(--color-fg-muted); margin-bottom: 18px; }
+.site-bar a { color: inherit; text-decoration: none; border-bottom: 1px solid var(--color-border-line); }
+.site-bar a:hover { color: var(--chart-0); }
+.site-foot { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--color-border-line); font-size: 12px; color: var(--color-fg-muted); line-height: 1.7; }

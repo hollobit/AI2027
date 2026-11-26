@@ -1,0 +1,1169 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AI 2027 전망 대시보드</title>
+<meta name="description" content="2026 AI 예측 61건 재채점과 160여 건의 원문 자료로 본 2027 AI 전망: 모델 성능, 소버린 AI, RSI·사이버 위협, 지재권·창작.">
+<meta property="og:title" content="AI 2027 전망 대시보드">
+<meta property="og:description" content="2026 AI 예측 61건 재채점과 160여 건의 원문 자료로 본 2027 AI 전망: 모델 성능, 소버린 AI, RSI·사이버 위협, 지재권·창작.">
+<link rel="stylesheet" href="assets/tokens.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script src="assets/dash-shim.js"></script>
+</head>
+<body>
+<div id="dash-root">
+<div class="site-bar"><span>hollobit · AI 2027 Outlook</span><span><a href="report.html">상세 보고서</a> · <a href="https://hollobit.github.io/SOTA/">SOTA 대시보드</a></span></div>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;600&family=Noto+Serif+KR:wght@500;700;900&display=swap');
+  /* Observatory: forecast (accent) vs reality (accent-2) ; editorial serif display, plex body, mono figures */
+  .ai27 {
+    --ai27-accent: var(--color-fg);
+    --ai27-accent-2: var(--color-fg-muted);
+    --ai27-display: 'Noto Serif KR', var(--font-anthropic-serif), 'AppleMyungjo', Georgia, serif;
+    --ai27-text: 'IBM Plex Sans KR', var(--font-anthropic-sans), 'Apple SD Gothic Neo', system-ui, sans-serif;
+    --ai27-mono: 'IBM Plex Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+    --ai27-soft: color-mix(in oklab, var(--color-fg) 4%, var(--color-panel));
+    --ai27-line: color-mix(in oklab, var(--color-border-line) 70%, transparent);
+    display: grid; gap: clamp(28px, 4vw, 48px); font-family: var(--ai27-text); color: var(--color-fg);
+    font-size: 14.5px; letter-spacing: -0.005em;
+  }
+  .ai27 * { box-sizing: border-box; }
+  .ai27 h1 { font-family: var(--ai27-display); font-weight: 900; font-size: clamp(2.1rem, 5.4vw, 3.6rem); line-height: 1.08; letter-spacing: -0.03em; margin: 0; text-wrap: balance; }
+  .ai27 h1 em { font-style: normal; color: var(--ai27-accent); }
+  .ai27 h2 { font-family: var(--ai27-display); font-weight: 700; font-size: clamp(1.5rem, 3vw, 2.1rem); letter-spacing: -0.02em; line-height: 1.2; margin: 0; text-wrap: balance; }
+  .ai27 h3 { font-size: 1.02rem; font-weight: 600; margin: 0; letter-spacing: -0.01em; text-wrap: balance; }
+  .ai27 p { margin: 0; line-height: 1.7; max-width: 70ch; }
+  .ai27-muted { color: var(--color-fg-muted); font-size: 13px; line-height: 1.6; }
+  .ai27-eyebrow { font-family: var(--ai27-mono); font-size: 11.5px; letter-spacing: .14em; text-transform: uppercase; color: var(--color-fg-muted); }
+  .ai27-head { display: grid; gap: 10px; }
+  .ai27-lede { font-size: clamp(1rem, 1.6vw, 1.15rem); line-height: 1.75; max-width: 64ch; }
+  .ai27-lede b { font-family: var(--ai27-mono); font-weight: 500; color: var(--ai27-accent); }
+  /* hero */
+  .ai27-hero { display: grid; gap: 22px; padding: clamp(24px, 4vw, 44px); border-radius: calc(var(--cds-radius) * 1.6); background:
+      radial-gradient(120% 140% at 100% 0%, color-mix(in oklab, var(--ai27-accent) 16%, transparent) 0%, transparent 55%),
+      radial-gradient(90% 120% at 0% 100%, color-mix(in oklab, var(--ai27-accent-2) 14%, transparent) 0%, transparent 60%),
+      var(--color-panel);
+    border: 1px solid var(--ai27-line); position: relative; overflow: hidden; }
+  .ai27-ledger { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; border-top: 1px solid var(--ai27-line); padding-top: 16px; }
+  .ai27-ledger div { display: grid; gap: 4px; padding-right: 14px; position: relative; }
+  .ai27-ledger div + div { padding-left: 16px; border-left: 1px dashed var(--ai27-line); }
+  .ai27-ledger b { font-family: var(--ai27-mono); font-weight: 500; font-size: 12px; letter-spacing: .06em; color: var(--ai27-accent); }
+  .ai27-ledger div:nth-child(2) b { color: var(--ai27-accent-2); }
+  .ai27-ledger span { font-size: 13px; color: var(--color-fg-muted); line-height: 1.45; }
+  @media (max-width: 560px) { .ai27-ledger { grid-template-columns: 1fr; gap: 12px; } .ai27-ledger div + div { border-left: 0; padding-left: 0; } }
+  .ai27-nav { display: flex; flex-wrap: wrap; gap: 8px; }
+  .ai27-nav a { font-size: 12.5px; color: var(--color-fg); text-decoration: none; border: 1px solid var(--ai27-line); background: var(--color-bg); border-radius: 999px; padding: 6px 13px; transition: border-color .15s, background .15s; }
+  .ai27-nav a:hover, .ai27-nav a:focus-visible { border-color: var(--ai27-accent); outline: none; }
+  /* parts */
+  .ai27-part { display: grid; gap: 24px; }
+  .ai27-parthead { display: grid; grid-template-columns: auto 1fr; gap: 6px 20px; align-items: end; padding-bottom: 18px; border-bottom: 1px solid var(--ai27-line); }
+  .ai27-partno { font-family: var(--ai27-display); font-weight: 900; font-size: clamp(3rem, 8vw, 5.2rem); line-height: .85; color: transparent; -webkit-text-stroke: 1.2px var(--ai27-accent); grid-row: span 2; }
+  .ai27-parthead p { grid-column: 2; }
+  @media (max-width: 560px) { .ai27-parthead { grid-template-columns: 1fr; } .ai27-partno { grid-row: auto; } .ai27-parthead p { grid-column: 1; } }
+  .ai27-sub { display: grid; gap: 6px; margin-top: 8px; }
+  .ai27-sub h3 { font-family: var(--ai27-display); font-weight: 700; font-size: 1.25rem; }
+  /* tiles & cards */
+  .ai27-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 14px; }
+  .ai27-tile { background: var(--color-panel); border: 1px solid var(--ai27-line); border-radius: var(--cds-radius); padding: 18px 18px 16px; display: grid; gap: 8px; align-content: start; min-width: 0; position: relative; }
+  .ai27-tile::before { content: ""; position: absolute; left: 18px; right: 18px; top: 0; height: 2px; background: var(--ai27-accent); border-radius: 0 0 2px 2px; }
+  .ai27-tile.is-reality::before { background: var(--ai27-accent-2); }
+  .ai27-big { font-family: var(--ai27-display); font-weight: 700; font-size: clamp(2rem, 4vw, 2.6rem); line-height: 1; font-variant-numeric: tabular-nums; letter-spacing: -0.02em; }
+  .ai27-big small { font-family: var(--ai27-text); font-weight: 400; font-size: 13px; color: var(--color-fg-muted); margin-left: 5px; letter-spacing: 0; }
+  .ai27-grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap: 16px; }
+  .ai27-grid3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 16px; }
+  .ai27-card { background: var(--color-panel); border: 1px solid var(--ai27-line); border-radius: var(--cds-radius); padding: 20px; display: grid; gap: 10px; align-content: start; min-width: 0; }
+  .ai27-card > h3 + .ai27-muted { margin-top: -4px; }
+  .ai27-chart { position: relative; min-height: 120px; }
+  /* bars */
+  .ai27-bars { display: grid; gap: 9px; }
+  .ai27-bar { display: grid; grid-template-columns: minmax(96px, 36%) 1fr auto; align-items: center; gap: 12px; font-size: 13px; border-radius: 6px; padding: 2px 4px; margin: 0 -4px; }
+  .ai27-bar:hover, .ai27-bar:focus-visible { background: var(--ai27-soft); outline: none; }
+  .ai27-bar-label { min-width: 0; overflow-wrap: anywhere; line-height: 1.35; }
+  .ai27-bar-track { height: 10px; background: color-mix(in oklab, var(--color-fg) 7%, transparent); border-radius: 999px; position: relative; overflow: hidden; }
+  .ai27-bar-fill { position: absolute; inset: 0 auto 0 0; border-radius: 999px; }
+  .ai27-bar-val { font-family: var(--ai27-mono); font-size: 12.5px; font-variant-numeric: tabular-nums; min-width: 3.4em; text-align: right; }
+  @media (prefers-reduced-motion: no-preference) { .ai27-bar-fill, .ai27-col-fill { transition: width var(--cds-dur-slow) var(--cds-ease-out), height var(--cds-dur-slow) var(--cds-ease-out); } }
+  .ai27-strip { display: flex; height: 34px; border-radius: 8px; overflow: hidden; gap: 2px; }
+  .ai27-strip > div { min-width: 3px; }
+  .ai27-legend { display: flex; flex-wrap: wrap; gap: 8px 16px; font-size: 12.5px; }
+  .ai27-legend span { display: inline-flex; align-items: center; gap: 7px; }
+  .ai27-sw { width: 10px; height: 10px; border-radius: 3px; display: inline-block; }
+  /* columns */
+  .ai27-cols { display: flex; align-items: flex-end; gap: 12px; height: 180px; padding-top: 24px; border-bottom: 1px solid var(--ai27-line); }
+  .ai27-col { flex: 1; display: grid; grid-template-rows: auto 1fr; height: 100%; min-width: 0; text-align: center; }
+  .ai27-col-val { font-family: var(--ai27-mono); font-size: 12.5px; font-variant-numeric: tabular-nums; padding-bottom: 4px; }
+  .ai27-col-area { position: relative; }
+  .ai27-col-fill { position: absolute; left: 14%; right: 14%; bottom: 0; border-radius: 6px 6px 0 0; }
+  .ai27-col-fill.is-forecast { background: repeating-linear-gradient(135deg, color-mix(in oklab, var(--ai27-accent) 22%, transparent) 0 4px, transparent 4px 8px) !important; border: 1.5px dashed var(--ai27-accent); border-bottom: 0; }
+  .ai27-col-labels { display: flex; gap: 12px; padding-top: 8px; }
+  .ai27-col-labels span { flex: 1; text-align: center; font-size: 12px; color: var(--cds-text-secondary); line-height: 1.35; min-width: 0; overflow-wrap: anywhere; }
+  /* dumbbell */
+  .ai27-dumb { display: grid; gap: 16px; }
+  .ai27-dumb-row { display: grid; gap: 6px; font-size: 13px; border-radius: 6px; }
+  .ai27-dumb-track { position: relative; height: 20px; }
+  .ai27-dumb-track::before { content: ""; position: absolute; left: 0; right: 0; top: 9px; height: 2px; background: color-mix(in oklab, var(--color-fg) 8%, transparent); border-radius: 2px; }
+  .ai27-dumb-line { position: absolute; top: 8px; height: 4px; border-radius: 2px; background: color-mix(in oklab, var(--ai27-accent-2) 45%, transparent); }
+  .ai27-dot { position: absolute; top: 3px; width: 14px; height: 14px; margin-left: -7px; border-radius: 50%; border: 2px solid var(--color-panel); }
+  .ai27-dumb-vals { display: flex; justify-content: space-between; color: var(--color-fg-muted); font-family: var(--ai27-mono); font-size: 12px; font-variant-numeric: tabular-nums; }
+  /* pills */
+  .ai27-pill { display: inline-block; padding: 3px 9px; border-radius: 999px; font-size: 12px; white-space: nowrap; font-weight: 500; background: color-mix(in oklab, currentColor 12%, transparent); }
+  .ai27-pill[data-v="realized"] { color: var(--color-ok); }
+  .ai27-pill[data-v="mostly"] { color: var(--color-ok); background: transparent; box-shadow: inset 0 0 0 1px currentColor; }
+  .ai27-pill[data-v="partial"] { color: var(--color-warn); }
+  .ai27-pill[data-v="not_yet"], .ai27-pill[data-v="missed"] { color: var(--color-bad); }
+  .ai27-pill[data-v="unclear"] { color: var(--color-fg-muted); }
+  /* tables */
+  .ai27-controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .ai27-tablewrap { overflow-x: auto; border: 1px solid var(--ai27-line); border-radius: var(--cds-radius); max-height: 680px; overflow-y: auto; background: var(--color-panel); }
+  .ai27 table { border-collapse: collapse; width: 100%; font-size: 13px; }
+  .ai27 th { text-align: left; font-family: var(--ai27-mono); font-weight: 500; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--color-fg-muted); padding: 11px 12px; border-bottom: 1px solid var(--ai27-line); position: sticky; top: 0; background: var(--color-panel); z-index: 1; }
+  .ai27 td { padding: 11px 12px; border-bottom: 1px solid var(--ai27-line); vertical-align: top; line-height: 1.55; }
+  .ai27 tbody tr:hover td { background: var(--ai27-soft); }
+  .ai27 td:first-child { font-family: var(--ai27-mono); font-size: 12px; color: var(--color-fg-muted); white-space: nowrap; }
+  .ai27 td.wide { min-width: 280px; }
+  .ai27 td.mid { min-width: 150px; }
+  .ai27 a { color: inherit; text-decoration-color: color-mix(in oklab, var(--ai27-accent) 60%, transparent); text-underline-offset: 3px; }
+  .ai27 a:hover { color: var(--ai27-accent); }
+  .ai27-score { display: inline-grid; grid-template-columns: 26px 52px; gap: 8px; align-items: center; font-family: var(--ai27-mono); font-size: 12.5px; }
+  .ai27-score i { display: block; height: 6px; border-radius: 3px; background: color-mix(in oklab, var(--color-fg) 8%, transparent); position: relative; overflow: hidden; }
+  .ai27-score i b { position: absolute; inset: 0 auto 0 0; border-radius: 3px; }
+  .ai27-note { color: var(--color-warn); display: block; margin-top: 6px; font-size: 12px; }
+  /* scenario */
+  .ai27-scen-strip { display: flex; height: 44px; border-radius: 10px; overflow: hidden; gap: 3px; font-size: 13px; }
+  .ai27-scen-strip div { display: flex; align-items: center; justify-content: center; color: var(--color-bg); font-weight: 600; min-width: 0; white-space: nowrap; overflow: hidden; }
+  .ai27-scen-prob { font-family: var(--ai27-display); font-weight: 700; font-size: 2.2rem; font-variant-numeric: tabular-nums; line-height: 1; }
+  .ai27-list { display: grid; gap: 14px; margin: 0; padding: 0; list-style: none; }
+  .ai27-list li { display: grid; gap: 5px; padding-bottom: 14px; border-bottom: 1px solid var(--ai27-line); }
+  .ai27-list li:last-child { border-bottom: 0; padding-bottom: 0; }
+  .ai27-tags { display: flex; flex-wrap: wrap; gap: 5px; }
+  .ai27-tag { font-size: 11.5px; padding: 2px 8px; border-radius: 999px; background: var(--ai27-soft); border: 1px solid var(--ai27-line); color: var(--color-fg); text-decoration: none; }
+  /* synthesis */
+  .ai27-synthcard { background: var(--color-panel); border: 1px solid var(--ai27-line); border-radius: var(--cds-radius); padding: clamp(20px, 3vw, 30px); display: grid; gap: 18px; }
+  .ai27-synth { display: grid; gap: 16px; counter-reset: s; margin: 0; padding: 0; }
+  .ai27-synth li { list-style: none; display: grid; grid-template-columns: 2.4em 1fr; gap: 10px; line-height: 1.7; }
+  .ai27-synth li::before { counter-increment: s; content: counter(s, decimal-leading-zero); font-family: var(--ai27-mono); font-size: 12px; color: var(--ai27-accent); padding-top: 4px; }
+  .ai27-synth b { font-weight: 600; }
+  .ai27-synth b[data-draw] { font-family: var(--ai27-mono); font-weight: 500; color: var(--ai27-accent); }
+  .ai27 details { border: 1px solid var(--ai27-line); border-radius: var(--cds-radius); padding: 16px 20px; background: var(--color-panel); }
+  .ai27 summary { cursor: pointer; font-weight: 600; }
+  .ai27 details[open] summary { margin-bottom: 16px; }
+  .ai27-tip { position: absolute; pointer-events: none; background: var(--cds-surface-popover); border: 1px solid var(--cds-border); box-shadow: var(--cds-shadow-popover); border-radius: 8px; padding: 8px 11px; font-size: 12.5px; max-width: 280px; z-index: 5; line-height: 1.45; }
+  .ai27-tip em { font-style: normal; color: var(--cds-text-secondary); display: block; margin-top: 2px; }
+  .ai27-err { color: var(--color-bad); font-size: 12.5px; }
+  .ai27 :focus-visible { outline: 2px solid var(--ai27-accent); outline-offset: 2px; }
+  @media print { .ai27-tablewrap { max-height: none; overflow: visible; } .ai27-controls, .ai27-nav { display: none; } }
+</style>
+
+<div class="ai27">
+  <header class="ai27-hero" id="top">
+    <span class="ai27-eyebrow">ETRI · AI Outlook · 기준일 2026-11-26</span>
+    <h1>AI 2027 <em>전망</em> 대시보드</h1>
+    <p class="ai27-lede" data-read lang="ko">2025년 12월 「Tech Trends 2026: 증명의 해」가 모은 2026년 예측 <b data-draw="lede-n" data-source="kpi_2026" data-field="n" data-row="0" class="dash-skeleton">—</b>건을 다시 채점한 결과, 평균 실현도는 <b data-draw="lede-avg" data-source="kpi_2026" data-field="avg" data-row="0" class="dash-skeleton">—</b>점이며 <b data-draw="lede-hit" data-source="kpi_2026" data-field="hit_share" data-row="0" class="dash-skeleton">—</b>%가 실현 또는 대부분 실현되었습니다. 방향은 대체로 맞았지만 자본과 물리 AI의 규모는 과소평가했고, 조직 변화의 속도는 과대평가했습니다.</p>
+    <div class="ai27-ledger" aria-label="분석 흐름">
+      <div><b>2025.12 · 예측</b><span>15개 기관의 2026 전망을 검증 가능한 문장으로 분해</span></div>
+      <div><b>2026.11 · 검증</b><span>공개 자료로 0–100점 채점, 예측 밖 사건 수집</span></div>
+      <div><b>2027 · 전망</b><span>리서치·투자·예측시장·연구소 40건을 테마와 시나리오로 종합</span></div>
+    </div>
+    <nav class="ai27-nav" aria-label="섹션 이동">
+      <a href="#part1">2026 예측 실현도</a>
+      <a href="#bigger">예측보다 컸던 현실</a>
+      <a href="#pred-list">예측별 판정</a>
+      <a href="#part2">2027 전망</a>
+      <a href="#scenarios">시나리오</a>
+      <a href="#quant">수치 전망</a>
+      <a href="#outlook-sources">전망 자료</a>
+      <a href="#part3">모델 성능·소버린</a>
+      <a href="#part4">위험·위협·안전</a>
+      <a href="#part5">지식·창작</a>
+      <a href="report.html">상세 보고서 →</a>
+    </nav>
+  </header>
+
+  <!-- ============ PART 1 ============ -->
+  <section class="ai27-part" id="part1">
+    <div class="ai27-parthead">
+      <span class="ai27-partno" aria-hidden="true">01</span>
+      <h2>2026 예측은 얼마나 실현되었나</h2>
+      <p class="ai27-muted">Arm, Gartner, Deloitte, a16z, Menlo, SAS, Penn, Neontri 등 15개 원 출처와 슬라이드 인용 자료(Sapphire, McKinsey, BlackRock)의 예측을 검증 가능한 문장으로 나눠, 2026년 11월까지의 공개 자료로 0–100점을 매겼습니다.</p>
+    </div>
+
+    <div class="ai27-tiles">
+      <div class="ai27-tile" id="tile-n"><span class="ai27-muted">채점한 예측</span><span class="ai27-big"><span data-draw="kpi-n" data-source="kpi_2026" data-field="n" data-row="0" class="dash-skeleton">—</span><small>건</small></span><span class="ai27-muted">세 영역, 19개 예측 기관</span></div>
+      <div class="ai27-tile" id="tile-avg"><span class="ai27-muted">평균 실현도</span><span class="ai27-big"><span data-draw="kpi-avg" data-source="kpi_2026" data-field="avg" data-row="0" class="dash-skeleton">—</span><small>/ 100</small></span><span class="ai27-muted">판정 근거는 아래 표에</span></div>
+      <div class="ai27-tile is-reality" id="tile-hit"><span class="ai27-muted">실현 + 대부분 실현</span><span class="ai27-big"><span data-draw="kpi-hit" data-source="kpi_2026" data-field="hit_share" data-row="0" class="dash-skeleton">—</span><small>%</small></span><span class="ai27-muted">부분 실현은 제외</span></div>
+      <div class="ai27-tile" id="tile-miss"><span class="ai27-muted">아직·빗나감</span><span class="ai27-big"><span data-draw="kpi-miss" data-source="kpi_2026" data-field="miss" data-row="0" class="dash-skeleton">—</span><small>건</small></span><span class="ai27-muted">휴머노이드는 '초과 달성'으로 빗나감</span></div>
+    </div>
+
+    <div class="ai27-card" id="verdict-dist">
+      <h3>판정 분포</h3>
+      <div class="ai27-chart" data-draw="verdict-strip" data-source="verdict_counts" style="min-height:64px"></div>
+    </div>
+
+    <div class="ai27-grid2">
+      <div class="ai27-card" id="group-scores">
+        <h3>영역별 평균 실현도</h3>
+        <p class="ai27-muted">모델·제품 예측이 가장 잘 맞았고, 기업 조직·노동 예측이 가장 낮았습니다.</p>
+        <div class="ai27-chart" data-draw="group-bars" data-source="group_scores"></div>
+      </div>
+      <div class="ai27-card" id="forecaster-scores">
+        <h3>예측 기관별 평균 실현도</h3>
+        <p class="ai27-muted">괄호 안은 채점한 예측 수. 1–2건인 기관은 표본이 작아 참고용입니다.</p>
+        <div class="ai27-chart" data-draw="forecaster-bars" data-source="forecaster_scores"></div>
+      </div>
+    </div>
+
+    <div class="ai27-sub" id="bigger">
+      <h3>예측보다 컸던 현실</h3>
+      <p class="ai27-muted">빗금 막대는 2025년 12월의 예측, 앰버 막대는 2026년 실적·가이던스, 옅은 인디고 막대는 2027 전망입니다.</p>
+    </div>
+    <div class="ai27-grid3">
+      <div class="ai27-card" id="capex-chart">
+        <h3>하이퍼스케일러 capex</h3>
+        <span class="ai27-muted">억 달러</span>
+        <div class="ai27-chart" data-draw="capex-cols" data-source="capex"></div>
+        <span class="ai27-muted">2027은 빅5 기준(Goldman Sachs)이라 범위가 다릅니다.</span>
+      </div>
+      <div class="ai27-card" id="spending-chart">
+        <h3>전 세계 AI 지출</h3>
+        <span class="ai27-muted">조 달러</span>
+        <div class="ai27-chart" data-draw="spending-cols" data-source="ai_spending"></div>
+        <span class="ai27-muted">Gartner 정의 (하드웨어·서비스·소프트웨어 포함).</span>
+      </div>
+      <div class="ai27-card" id="humanoid-chart">
+        <h3>휴머노이드 출하</h3>
+        <span class="ai27-muted">대 · 예측은 "2026년 수천 대"</span>
+        <div class="ai27-chart" data-draw="humanoid-cols" data-source="humanoid"></div>
+        <span class="ai27-muted">출하의 약 95%가 중국 업체.</span>
+      </div>
+    </div>
+
+    <div class="ai27-card" id="shifts-chart">
+      <h3>1년 사이 달라진 지표 (2025 → 2026)</h3>
+      <div class="ai27-chart" data-draw="shifts" data-source="shifts"></div>
+    </div>
+
+    <div class="ai27-sub" id="surprises">
+      <h3>예측에 없던 2026년의 일들</h3>
+    </div>
+    <div class="ai27-grid3" data-draw="surprise-cards" data-source="surprises"></div>
+
+    <div class="ai27-sub" id="pred-list">
+      <h3>예측별 판정과 근거</h3>
+      <div class="ai27-controls">
+        <select class="dash-select" id="f-group" aria-label="영역">
+          <option value="">모든 영역</option>
+          <option value="A">모델·에이전트·제품</option>
+          <option value="B">인프라·자본·시장</option>
+          <option value="C">기업·노동·보안·물리 AI</option>
+        </select>
+        <select class="dash-select" id="f-verdict" aria-label="판정">
+          <option value="">모든 판정</option>
+          <option value="realized">실현</option>
+          <option value="mostly">대부분 실현</option>
+          <option value="partial">부분 실현</option>
+          <option value="not_yet">아직</option>
+          <option value="missed">빗나감</option>
+          <option value="unclear">판단 보류</option>
+        </select>
+        <select class="dash-select" id="f-sort" aria-label="정렬">
+          <option value="id">ID 순</option>
+          <option value="desc">점수 높은 순</option>
+          <option value="asc">점수 낮은 순</option>
+        </select>
+        <span class="ai27-muted" data-draw="pred-count"></span>
+      </div>
+    </div>
+    <div class="ai27-tablewrap">
+      <table data-source="predictions" data-row-key="id" aria-label="2026 예측별 판정">
+        <thead><tr>
+          <th data-field="id">ID</th>
+          <th data-field="forecaster">예측 기관</th>
+          <th data-field="prediction">예측 (2025.12)</th>
+          <th data-field="verdict_ko">판정</th>
+          <th data-field="score">점수</th>
+          <th data-field="evidence">2026년 근거</th>
+          <th>출처</th>
+        </tr></thead>
+        <tbody data-draw="pred-rows"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============ PART 2 ============ -->
+  <section class="ai27-part" id="part2">
+    <div class="ai27-parthead">
+      <span class="ai27-partno" aria-hidden="true">02</span>
+      <h2>2027년 AI 전망</h2>
+      <p class="ai27-muted">2026년 8–11월에 공개된 리서치·컨설팅사, 투자사, 예측 시장, AI 연구 기관의 2027 전망 <span data-draw="p2-n" data-source="kpi_2027" data-field="sources" data-row="0" class="dash-skeleton">—</span>건을 모아 테마별로 묶었습니다.</p>
+    </div>
+
+    <div class="ai27-synthcard" id="synthesis">
+      <h3>종합: 2027년은 '통제'와 '규모'의 해</h3>
+      <ol class="ai27-synth" data-read lang="ko">
+        <li><span><b>역량은 계속 가속합니다.</b> AI Futures Project는 2026년 11월 업데이트에서 '초인적 AI 연구자' 도달 시점의 중앙값을 2027년으로 앞당겼고, METR은 50% 시간지평이 16시간 이상으로 기존 과제군의 측정 한계에 이르렀다고 밝혔습니다. 다만 예측 시장은 2027년 이전 AGI 선언 가능성을 낮게 봅니다. 2027년은 'AI가 AI 연구를 자동화하기 시작하는지'가 실제로 판가름 나는 해입니다.</span></li>
+        <li><span><b>자본 투입은 한 단계 더 커집니다.</b> Gartner는 2027년 AI 지출을 <b data-draw="s-spend" data-source="ai_spending" data-field="jo" data-where="year=2027" class="dash-skeleton">—</b>조 달러로, Goldman Sachs는 빅5 AI 인프라 capex를 <b data-draw="s-capex" data-source="capex" data-field="eok" data-where="year=2027" class="dash-skeleton">—</b>억 달러로 봅니다. 전력, HBM, 지역 반대가 실질적인 병목입니다.</span></li>
+        <li><span><b>기업 의제는 '증명'에서 '통제'로 넘어갑니다.</b> 리서치사들이 가장 많이 합의한 테마는 에이전트의 신원·권한·감사·비용 통제입니다. AI의 EBIT 기여를 보고한 기업 비율은 1년째 정체해 ROI 압박도 이어집니다.</span></li>
+        <li><span><b>물리 AI는 중국 주도의 양산 단계로 갑니다.</b> 2026년 휴머노이드 출하가 예측을 크게 넘었고, 2027년에는 월드 모델과 물류·제조 현장 배치가 핵심입니다.</span></li>
+        <li><span><b>보안 사고의 주체가 에이전트가 됩니다.</b> 2026년에 평가용 에이전트가 실제 인프라를 침해했고, State of AI Report는 2027년에 AI가 주도하는 모델 가중치 탈취와 자기복제 에이전트 사건을 예측합니다.</span></li>
+        <li><span><b>규제는 2027년에 본격 시행됩니다.</b> 한국 AI 기본법은 과태료 유예가 끝나고, EU AI Act의 고위험 의무는 Digital Omnibus로 2027년 12월로 늦춰졌습니다.</span></li>
+        <li><span><b>2026년 회고가 주는 보정법:</b> 자본·인프라·모델 역량 예측은 상향 조정하고, 조직 개편·직무 대체·AGI 도입 같은 '사람과 제도' 예측은 1–2년 늦춰 읽는 편이 2026년 실적과 맞았습니다.</span></li>
+      </ol>
+    </div>
+
+    <div class="ai27-tiles">
+      <div class="ai27-tile is-reality" id="tile-spend27"><span class="ai27-muted">2027 AI 지출 (Gartner)</span><span class="ai27-big"><span data-draw="t-spend27" data-source="ai_spending" data-field="jo" data-where="year=2027" class="dash-skeleton">—</span><small>조 달러</small></span><span class="ai27-muted">2026년 2.67조 대비 +47.5%</span></div>
+      <div class="ai27-tile is-reality" id="tile-capex27"><span class="ai27-muted">2027 빅5 AI capex (Goldman)</span><span class="ai27-big"><span data-draw="t-capex27" data-source="capex" data-field="eok" data-where="year=2027" class="dash-skeleton">—</span><small>억 달러</small></span><span class="ai27-muted">컨센서스 1.1조, 낙관 1.4조 달러</span></div>
+      <div class="ai27-tile" id="tile-base"><span class="ai27-muted">기준 시나리오 확률</span><span class="ai27-big"><span data-draw="t-base" data-source="scenarios" data-field="prob" data-where="order=2" class="dash-skeleton">—</span><small>%</small></span><span class="ai27-muted">가속 · 기준 · 조정 중 기준</span></div>
+      <div class="ai27-tile" id="tile-orgs"><span class="ai27-muted">전망 출처 기관</span><span class="ai27-big"><span data-draw="t-orgs" data-source="kpi_2027" data-field="orgs" data-row="0" class="dash-skeleton">—</span><small>곳</small></span><span class="ai27-muted">리서치·투자·예측 시장·연구소</span></div>
+    </div>
+
+    <div class="ai27-card" id="scenarios">
+      <h3>2027 시나리오</h3>
+      <p class="ai27-muted">확률은 수집한 전망을 종합한 주관적 판단입니다. 각 시나리오 아래의 신호가 나타나는지로 갱신하세요.</p>
+      <div class="ai27-chart" data-draw="scenario-strip" data-source="scenarios" style="min-height:40px"></div>
+      <div class="ai27-grid3" data-draw="scenario-cards" data-source="scenarios"></div>
+    </div>
+
+    <div class="ai27-grid2">
+      <div class="ai27-card" id="consensus">
+        <h3>리서치·컨설팅사의 합의 테마</h3>
+        <p class="ai27-muted">막대는 같은 테마를 제시한 기관 수.</p>
+        <div class="ai27-chart" data-draw="consensus-bars" data-source="consensus"></div>
+      </div>
+      <div class="ai27-card" id="theme-coverage">
+        <h3>전체 전망 자료의 테마 분포</h3>
+        <p class="ai27-muted">전망 자료 하나가 여러 테마를 다룰 수 있습니다.</p>
+        <div class="ai27-chart" data-draw="theme-bars" data-source="theme_counts"></div>
+      </div>
+    </div>
+
+    <div class="ai27-card" id="consensus-detail">
+      <h3>합의 테마 해설</h3>
+      <ul class="ai27-list" data-draw="consensus-list" data-source="consensus"></ul>
+    </div>
+
+    <div class="ai27-grid2">
+      <div class="ai27-card" id="signposts">
+        <h3>2027년에 지켜볼 신호</h3>
+        <ul class="ai27-list" data-draw="signpost-list" data-source="signposts"></ul>
+      </div>
+      <div class="ai27-card" id="disagreements">
+        <h3>전망이 갈리는 지점</h3>
+        <ul class="ai27-list" data-draw="disagree-list" data-source="disagreements"></ul>
+      </div>
+    </div>
+
+    <div class="ai27-sub" id="quant">
+      <h3>수치로 본 2027 전망</h3>
+      <div class="ai27-controls">
+        <select class="dash-select" id="f-year" aria-label="연도">
+          <option value="">모든 연도</option>
+          <option value="2026">2026 (기준선)</option>
+          <option value="2027" selected>2027</option>
+          <option value="later">2028 이후</option>
+        </select>
+      </div>
+    </div>
+    <div class="ai27-tablewrap">
+      <table data-source="quant_2027" data-row-key="org,metric" aria-label="2027 수치 전망">
+        <thead><tr>
+          <th data-field="year">연도</th>
+          <th data-field="org">기관</th>
+          <th data-field="metric">지표</th>
+          <th data-field="value">전망치</th>
+          <th>출처</th>
+        </tr></thead>
+        <tbody data-draw="quant-rows"></tbody>
+      </table>
+    </div>
+
+    <div class="ai27-sub" id="outlook-sources">
+      <h3>2027 전망 자료 목록</h3>
+      <div class="ai27-controls">
+        <select class="dash-select" id="f-kind" aria-label="자료 유형">
+          <option value="">모든 유형</option>
+          <option value="리서치·컨설팅">리서치·컨설팅</option>
+          <option value="투자·예측·연구">투자·예측·연구</option>
+        </select>
+      </div>
+    </div>
+    <div class="ai27-tablewrap">
+      <table data-source="outlook_sources" data-row-key="org,title" aria-label="2027 전망 자료">
+        <thead><tr>
+          <th data-field="org">기관</th>
+          <th data-field="title">자료</th>
+          <th data-field="date">발표</th>
+          <th data-field="stance">관점</th>
+          <th data-field="predictions">핵심 전망</th>
+          <th data-field="themes">테마</th>
+        </tr></thead>
+        <tbody data-draw="source-rows"></tbody>
+      </table>
+    </div>
+
+    <details id="method">
+      <summary>방법, 한계, 아직 나오지 않은 자료</summary>
+      <div class="ai27-grid2">
+        <div class="ai27-head">
+          <h3>채점 방법</h3>
+          <p class="ai27-muted">예측마다 실현 · 대부분 실현 · 부분 실현 · 아직 · 빗나감 · 판단 보류로 판정하고 0–100점을 매겼습니다. 수치 예측은 실제 값과 비교하고, 서술형 예측은 방향과 확산 정도로 판단했습니다. 예측보다 현실이 훨씬 큰 경우(휴머노이드)도 예측의 정확도로는 빗나감으로 처리했습니다. 근거의 일부는 2차 보도와 검색 요약에 기대고 있고, 리더보드 수치는 출처마다 다릅니다. Gartner 원문 일부는 접근이 막혀 업계 보도로 확인했습니다. 시나리오 확률은 주관적 판단입니다.</p>
+          <p class="ai27-muted">원 자료: 「Tech Trends 2026: 증명의 해」(2025.12, 49쪽)와 NotebookLM 노트북 「2025 AI 결산 및 2026 전망」(소스 66개).</p>
+        </div>
+        <div class="ai27-head">
+          <h3>아직 발간되지 않았거나 확인하지 못한 자료</h3>
+          <ul class="ai27-list" data-draw="pending-list" data-source="pending_reports"></ul>
+        </div>
+      </div>
+      <div class="ai27-head" style="margin-top:var(--cds-gap-lg)">
+        <h3>2026 예측의 원 출처</h3>
+        <div class="ai27-tags" data-draw="deck-sources" data-source="deck_sources"></div>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 3 ============ -->
+  <section class="ai27-part" id="part3">
+    <div class="ai27-parthead">
+      <span class="ai27-partno" aria-hidden="true">03</span>
+      <h2>모델 성능과 소버린 AI</h2>
+      <p class="ai27-muted">SOTA 대시보드(hollobit.github.io/SOTA) 스냅샷과 Epoch·METR·Artificial Analysis·ARC Prize 자료로 2026년 성능 변화와 2027년 말 수준을 추정했습니다. 벤더 보고치와 독립 측정치가 다르면 둘 다 표시합니다.</p>
+    </div>
+    <div class="ai27-sub" id="perf-bench">
+      <h3>2026년 핵심 벤치마크 변화</h3>
+      <p class="ai27-muted">1년 안에 FrontierMath·ARC-AGI-2·OSWorld·SWE-bench Verified가 포화되었고, 평가의 무게는 ARC-AGI-3, 실제 원격 업무(RLI), 연구 수준 문제로 옮겨 갔습니다.</p>
+    </div>
+    <div class="ai27-tablewrap">
+      <table data-source="perf_benchmarks" data-row-key="benchmark" aria-label="벤치마크 SOTA 변화">
+        <thead><tr>
+          <th data-field="benchmark">벤치마크</th>
+          <th data-field="end2025">2025년 말</th>
+          <th data-field="now">2026년 11월</th>
+          <th data-field="holder">보유 모델</th>
+          <th data-field="status">상태</th>
+        </tr></thead>
+        <tbody data-draw="perf-rows"></tbody>
+      </table>
+    </div>
+    <div class="ai27-sub" id="perf-forecast">
+      <h3>2027년 말 성능 전망 (낮음 · 기준 · 높음)</h3>
+      <p class="ai27-muted">METR 시간지평은 배가 주기를 외삽한 함의값이며, 현재 과제군으로는 16시간 이상을 측정할 수 없습니다.</p>
+    </div>
+    <div class="ai27-tablewrap">
+      <table data-source="perf_forecast" data-row-key="metric" aria-label="2027 성능 전망">
+        <thead><tr>
+          <th data-field="metric">지표</th>
+          <th data-field="end2026">2026년 말</th>
+          <th data-field="low">낮음</th>
+          <th data-field="base">기준</th>
+          <th data-field="high">높음</th>
+          <th data-field="confidence">신뢰</th>
+        </tr></thead>
+        <tbody data-draw="perf-forecast-rows"></tbody>
+      </table>
+    </div>
+    <div class="ai27-grid2">
+      <div class="ai27-card" id="sovereign-gap">
+        <h3>국가별 최고 모델 수준</h3>
+        <p class="ai27-muted">Artificial Analysis Intelligence Index 기준, 글로벌 1위 대비 비율(%). 2026년 9–11월.</p>
+        <div class="ai27-chart" data-draw="sovereign-bars" data-source="sovereign_gap"></div>
+      </div>
+      <div class="ai27-card" id="korea-gap">
+        <h3>한국 모델: 어려울수록 벌어지는 격차</h3>
+        <p class="ai27-muted">한국 최고 모델 점수 ÷ 글로벌 최고 점수(%).</p>
+        <div class="ai27-chart" data-draw="korea-gap-bars" data-source="korea_gap"></div>
+      </div>
+    </div>
+    <div class="ai27-card" id="dokpamo">
+      <h3>독자 AI 파운데이션 모델 2차 평가 (2026-08-18)</h3>
+      <p class="ai27-muted">상위 세 팀이 1.6점 안에 모였고, AAII 최고점이던 모티프는 국민 사용성 평가에서 밀려 탈락했습니다. 2027년 3차 평가에서 최종 2개 팀을 고르며, 정부는 경쟁 구조 개편을 검토 중입니다. 막대는 60점부터 그렸습니다.</p>
+      <div class="ai27-chart" data-draw="dokpamo-bars" data-source="dokpamo"></div>
+    </div>
+  </section>
+
+  <!-- ============ PART 4 ============ -->
+  <section class="ai27-part" id="part4">
+    <div class="ai27-parthead">
+      <span class="ai27-partno" aria-hidden="true">04</span>
+      <h2>위험·위협·안전</h2>
+      <p class="ai27-muted">재귀적 자기개선(RSI) 지표, 2025–2026 AI 안전·사이버 사고, 그리고 2027 위험 전망입니다. 공격 기법은 다루지 않고 동향과 영향만 정리했습니다.</p>
+    </div>
+    <div class="ai27-tiles">
+      <div class="ai27-tile" id="tile-kc1"><span class="ai27-muted">국내 침해사고 신고 (2025)</span><span class="ai27-big"><span data-draw="kc1" data-source="korea_cyber" data-field="value" data-where="label=2025 침해사고 신고" class="dash-skeleton">—</span><small>건</small></span><span class="ai27-muted">전년 대비 +26.3%</span></div>
+      <div class="ai27-tile" id="tile-kc2"><span class="ai27-muted">국내 신고 (2026 상반기)</span><span class="ai27-big"><span data-draw="kc2" data-source="korea_cyber" data-field="value" data-where="label=2026 상반기 신고" class="dash-skeleton">—</span><small>건</small></span><span class="ai27-muted">전년 동기 대비 +19.5%</span></div>
+      <div class="ai27-tile is-reality" id="tile-kc3"><span class="ai27-muted">랜섬웨어 증가율 (상반기)</span><span class="ai27-big"><span data-draw="kc3" data-source="korea_cyber" data-field="value" data-where="label=상반기 랜섬웨어 증가율" class="dash-skeleton">—</span><small>%</small></span><span class="ai27-muted">과기정통부·KISA</span></div>
+      <div class="ai27-tile is-reality" id="tile-kc4"><span class="ai27-muted">DDoS 증가율 (상반기)</span><span class="ai27-big"><span data-draw="kc4" data-source="korea_cyber" data-field="value" data-where="label=상반기 DDoS 증가율" class="dash-skeleton">—</span><small>%</small></span><span class="ai27-muted">과기정통부·KISA</span></div>
+    </div>
+    <div class="ai27-card" id="rsi">
+      <h3>RSI(재귀적 자기개선) 지표</h3>
+      <p class="ai27-muted">METR은 Anthropic의 연구 진척이 약 2배 빨라졌고 그 약 80%가 AI 덕분이라고 평가했습니다. 핵심 근거 상당수가 비공개 처리되어, 검증과 공시 규칙이 새 쟁점이 되었습니다.</p>
+      <div class="ai27-grid2" data-draw="rsi-cards" data-source="rsi"></div>
+    </div>
+    <div class="ai27-sub" id="incidents">
+      <h3>2025–2026 주요 사고·사건</h3>
+      <p class="ai27-muted">냉장고·냉동고 등 백색가전이 AI 자동 공격으로 대규모 침해됐다는 2026년 공개 사례는 확인되지 않았습니다. 공유기·카메라·안드로이드 TV 봇넷이 커졌고, LLM은 봇넷 제작을 돕는 단계입니다.</p>
+      <div class="ai27-controls">
+        <select class="dash-select" id="f-inc" aria-label="사고 분야">
+          <option value="">모든 분야</option>
+          <option value="AI 안전">AI 안전</option>
+          <option value="AI 사이버">AI 사이버</option>
+        </select>
+      </div>
+    </div>
+    <div class="ai27-tablewrap">
+      <table data-source="incidents" data-row-key="date,title" aria-label="AI 사고 타임라인">
+        <thead><tr>
+          <th data-field="date">시점</th>
+          <th data-field="area">분야</th>
+          <th data-field="category">유형·대상</th>
+          <th data-field="title">사건</th>
+          <th data-field="impact">영향</th>
+          <th>출처</th>
+        </tr></thead>
+        <tbody data-draw="incident-rows"></tbody>
+      </table>
+    </div>
+    <div class="ai27-sub" id="risk-forecast">
+      <h3>2027 위험·이슈 전망</h3>
+      <div class="ai27-controls">
+        <select class="dash-select" id="f-risk" aria-label="전망 분야">
+          <option value="">모든 분야</option>
+          <option value="AI 안전·RSI">AI 안전·RSI</option>
+          <option value="AI 사이버">AI 사이버</option>
+          <option value="논문·특허·지재권">논문·특허·지재권</option>
+          <option value="창작·AI 의존">창작·AI 의존</option>
+        </select>
+        <span class="ai27-muted" data-draw="risk-count"></span>
+      </div>
+    </div>
+    <div class="ai27-tablewrap">
+      <table data-source="risk_forecasts" data-row-key="forecast" aria-label="2027 위험 전망">
+        <thead><tr>
+          <th data-field="likelihood">가능성</th>
+          <th data-field="area">분야</th>
+          <th data-field="forecast">전망</th>
+          <th data-field="by">근거</th>
+        </tr></thead>
+        <tbody data-draw="risk-rows"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============ PART 5 ============ -->
+  <section class="ai27-part" id="part5">
+    <div class="ai27-parthead">
+      <span class="ai27-partno" aria-hidden="true">05</span>
+      <h2>지식·창작 생태계와 AI 의존</h2>
+      <p class="ai27-muted">논문·특허·저작권과 음악·영상·웹에서 AI 생성물이 빠르게 늘고 있습니다. 2027년에는 '누가 만들었나'보다 출처·검증·보상이 쟁점이 됩니다. 분야별 전망은 위 표에서 '논문·특허·지재권', '창작·AI 의존'을 고르세요.</p>
+    </div>
+    <div class="ai27-grid2">
+      <div class="ai27-card" id="ai-music">
+        <h3>Deezer 업로드 중 완전 AI 곡 비중</h3>
+        <span class="ai27-muted">% · 재생 비중은 1–3%에 그침</span>
+        <div class="ai27-chart" data-draw="music-cols" data-source="ai_music"></div>
+      </div>
+      <div class="ai27-card" id="knowledge-notes">
+        <h3>2026년 지식 생산의 변화</h3>
+        <ul class="ai27-list">
+          <li><b>논문</b><span class="ai27-muted">ICLR 2026 심사평의 약 21%가 완전 AI 생성으로 추정되고, 2027 투고는 4만 건을 넘었습니다. 학회는 저자당 투고 상한을 도입했습니다.</span></li>
+          <li><b>특허</b><span class="ai27-muted">세계 출원 390만 건 중 중국이 48.8%입니다. USPTO는 자연인만 발명자로 인정한다는 원칙을 재확인했습니다.</span></li>
+          <li><b>저작권</b><span class="ai27-muted">Anthropic의 15억 달러 도서 합의가 확정됐고, 음반사는 Suno·Udio와 라이선스로 돌아섰습니다. 미국 소송은 169건입니다.</span></li>
+          <li><b>웹과 의존</b><span class="ai27-muted">새 영어 웹 기사의 약 절반이 AI 작성이고, AI 요약이 뜨면 검색 클릭률이 15%에서 8%로 떨어집니다.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</div>
+
+<script>
+  // ---------- shared helpers ----------
+  window.AI27 = (function () {
+    const VERDICTS = [
+      { v: 'realized', ko: '실현', color: 'var(--color-ok)' },
+      { v: 'mostly', ko: '대부분 실현', color: 'var(--dash-c-mostly)' },
+      { v: 'partial', ko: '부분 실현', color: 'var(--color-warn)' },
+      { v: 'not_yet', ko: '아직', color: 'var(--cds-chart-status-critical)' },
+      { v: 'missed', ko: '빗나감', color: 'var(--color-bad)' },
+      { v: 'unclear', ko: '판단 보류', color: 'var(--cds-chart-muted)' },
+    ];
+    const KIND_COLOR = { '예측': 'var(--cds-chart-reference)', '실적': null, '전망': null };
+    const fmt0 = d3.format(',.0f');
+    const fmt1 = d3.format(',.1f');
+    const fmt2 = d3.format(',.2f');
+
+    function safeUrl(u) { return typeof u === 'string' && /^https?:\/\//.test(u) ? u : null; }
+
+    function ready(el, ids) {
+      const states = ids.map((id) => dash.data(id));
+      const bad = states.find((s) => s.status === 'error');
+      if (bad) { el.replaceChildren(errBox()); return null; }
+      if (states.some((s) => s.status !== 'ok')) { return null; }
+      return states.map((s) => s.data);
+    }
+    function errBox() { const p = document.createElement('p'); p.className = 'ai27-err'; p.textContent = '이 데이터를 불러오지 못했습니다. Sources에서 파일을 확인하세요.'; return p; }
+
+    function tooltip(container) {
+      let tip = container.querySelector(':scope > .ai27-tip');
+      if (!tip) { tip = document.createElement('div'); tip.className = 'ai27-tip'; tip.hidden = true; container.appendChild(tip); }
+      return {
+        show(ev, title, body) {
+          tip.replaceChildren();
+          const t = document.createElement('div'); t.textContent = title; tip.appendChild(t);
+          if (body) { const e = document.createElement('em'); e.textContent = body; tip.appendChild(e); }
+          tip.hidden = false;
+          const r = container.getBoundingClientRect();
+          const x = Math.min(ev.clientX - r.left + 12, Math.max(0, r.width - tip.offsetWidth));
+          tip.style.left = x + 'px';
+          tip.style.top = (ev.clientY - r.top + 14) + 'px';
+        },
+        hide() { tip.hidden = true; },
+      };
+    }
+
+    function attachTip(node, tt, title, body) {
+      node.addEventListener('pointermove', (ev) => tt.show(ev, title, body));
+      node.addEventListener('pointerleave', () => tt.hide());
+      node.tabIndex = 0;
+      node.addEventListener('focus', () => { const r = node.getBoundingClientRect(); tt.show({ clientX: r.left, clientY: r.bottom }, title, body); });
+      node.addEventListener('blur', () => tt.hide());
+    }
+
+    function hbars(el, rows, opt) {
+      el.replaceChildren();
+      const wrap = document.createElement('div'); wrap.className = 'ai27-bars';
+      wrap.setAttribute('role', 'img'); wrap.setAttribute('aria-label', opt.aria);
+      const max = opt.max ?? d3.max(rows, opt.value) ?? 1;
+      const tt = tooltip(el);
+      rows.forEach((r, i) => {
+        const row = document.createElement('div'); row.className = 'ai27-bar';
+        const lab = document.createElement('span'); lab.className = 'ai27-bar-label'; lab.textContent = opt.label(r);
+        const track = document.createElement('span'); track.className = 'ai27-bar-track';
+        const fill = document.createElement('span'); fill.className = 'ai27-bar-fill';
+        fill.style.width = (100 * opt.value(r) / max) + '%';
+        fill.style.background = opt.color ? opt.color(r, i) : dash.colors[0];
+        track.appendChild(fill);
+        const val = document.createElement('span'); val.className = 'ai27-bar-val'; val.textContent = opt.fmt(opt.value(r));
+        row.append(lab, track, val);
+        attachTip(row, tt, opt.label(r) + ' · ' + opt.fmt(opt.value(r)), opt.tip ? opt.tip(r) : '');
+        wrap.appendChild(row);
+      });
+      el.prepend(wrap);
+    }
+
+    function cols(el, rows, opt) {
+      el.replaceChildren();
+      const max = d3.max(rows, opt.value) || 1;
+      const box = document.createElement('div'); box.className = 'ai27-cols';
+      box.setAttribute('role', 'img'); box.setAttribute('aria-label', opt.aria);
+      const labels = document.createElement('div'); labels.className = 'ai27-col-labels';
+      const tt = tooltip(el);
+      rows.forEach((r, i) => {
+        const c = document.createElement('div'); c.className = 'ai27-col';
+        const v = document.createElement('span'); v.className = 'ai27-col-val'; v.textContent = opt.fmt(opt.value(r));
+        const area = document.createElement('div'); area.className = 'ai27-col-area';
+        const f = document.createElement('div'); f.className = 'ai27-col-fill';
+        f.style.height = (100 * opt.value(r) / max) + '%';
+        if (r.kind === '예측') f.classList.add('is-forecast');
+        f.style.background = r.kind === '실적' ? (dash.colors[1] || dash.colors[0]) : dash.colors[0];
+        if (r.kind === '전망') f.style.opacity = '0.5';
+        area.appendChild(f);
+        c.append(v, area);
+        attachTip(c, tt, r.label + ' · ' + opt.fmt(opt.value(r)) + ' ' + opt.unit, r.scope || r.kind);
+        box.appendChild(c);
+        const l = document.createElement('span'); l.textContent = r.label; labels.appendChild(l);
+      });
+      el.append(box, labels);
+    }
+
+    function link(u, text) {
+      const ok = safeUrl(u);
+      if (!ok) { const s = document.createElement('span'); s.textContent = u ? u : ''; return s; }
+      const a = document.createElement('a'); a.href = ok; a.target = '_blank'; a.rel = 'noopener'; a.textContent = text || new URL(ok).hostname.replace(/^www\./, '');
+      return a;
+    }
+    function td(text, cls) { const c = document.createElement('td'); if (cls) c.className = cls; if (text instanceof Node) c.appendChild(text); else c.textContent = text ?? ''; return c; }
+
+    return { VERDICTS, KIND_COLOR, fmt0, fmt1, fmt2, safeUrl, ready, hbars, cols, link, td, tooltip, attachTip };
+  })();
+  window.AI27_STATE = { group: '', verdict: '', sort: 'id', year: '2027', kind: '' };
+  document.querySelectorAll('.ai27').forEach((root) => {
+    root.style.setProperty('--ai27-accent', dash.colors[0]);
+    root.style.setProperty('--ai27-accent-2', dash.colors[1] || dash.colors[0]);
+  });
+</script>
+
+<script>
+  // ---------- calcs ----------
+  dash.calc('kpi_2026', {
+    title: '2026 예측 채점 요약',
+    description: '채점한 예측 수, 평균 점수, 실현+대부분 실현 비율(%), 아직·빗나감 건수.',
+    inputs: ['predictions'],
+    fn: (predictions) => {
+      const n = predictions.length;
+      const avg = n ? Math.round(10 * predictions.reduce((s, r) => s + Number(r.score), 0) / n) / 10 : 0;
+      const hit = predictions.filter((r) => r.verdict === 'realized' || r.verdict === 'mostly').length;
+      const miss = predictions.filter((r) => r.verdict === 'missed' || r.verdict === 'not_yet').length;
+      return [{ n, avg, hit_share: n ? Math.round(100 * hit / n) : 0, miss }];
+    },
+  });
+  dash.calc('verdict_counts', {
+    title: '판정별 예측 수',
+    description: '판정(verdict)별 예측 건수와 비율.',
+    inputs: ['predictions'],
+    fn: (predictions) => {
+      const order = ['realized', 'mostly', 'partial', 'not_yet', 'missed', 'unclear'];
+      const ko = { realized: '실현', mostly: '대부분 실현', partial: '부분 실현', not_yet: '아직', missed: '빗나감', unclear: '판단 보류' };
+      const n = predictions.length || 1;
+      return order.map((v) => {
+        const c = predictions.filter((r) => r.verdict === v).length;
+        return { verdict: v, verdict_ko: ko[v], n: c, share: Math.round(1000 * c / n) / 10 };
+      });
+    },
+  });
+  dash.calc('group_scores', {
+    title: '영역별 평균 실현도',
+    description: '영역(group)별 평균 점수와 예측 수.',
+    inputs: ['predictions'],
+    fn: (predictions) => {
+      const groups = d3.groups(predictions, (r) => r.group_ko);
+      return groups.map(([g, rs]) => ({ group_ko: g, avg: Math.round(10 * d3.mean(rs, (r) => Number(r.score))) / 10, n: rs.length }))
+        .sort((a, b) => b.avg - a.avg);
+    },
+  });
+  dash.calc('forecaster_scores', {
+    title: '예측 기관별 평균 실현도',
+    description: '예측 기관(forecaster)별 평균 점수와 예측 수, 평균 높은 순.',
+    inputs: ['predictions'],
+    fn: (predictions) => d3.groups(predictions, (r) => r.forecaster)
+      .map(([f, rs]) => ({ forecaster: f, avg: Math.round(10 * d3.mean(rs, (r) => Number(r.score))) / 10, n: rs.length }))
+      .sort((a, b) => b.avg - a.avg || b.n - a.n),
+  });
+  dash.calc('theme_counts', {
+    title: '2027 전망 테마 분포',
+    description: '전망 자료별 테마 태그를 세어, 테마마다 언급한 자료 수.',
+    inputs: ['outlook_themes'],
+    fn: (outlook_themes) => d3.rollups(outlook_themes, (rs) => rs.length, (r) => r.theme)
+      .map(([theme, n]) => ({ theme, n }))
+      .sort((a, b) => b.n - a.n),
+  });
+  dash.calc('kpi_2027', {
+    title: '2027 전망 자료 요약',
+    description: '수집한 2027 전망 자료 수와 서로 다른 기관 수.',
+    inputs: ['outlook_sources'],
+    fn: (outlook_sources) => [{ sources: outlook_sources.length, orgs: new Set(outlook_sources.map((r) => r.org.split('(')[0].trim())).size }],
+  });
+</script>
+
+<script>
+  // ---------- control listeners (outside drawings: listen only) ----------
+  (function () {
+    const bind = (id, key, draw) => {
+      document.querySelectorAll('#' + id).forEach((sel) => {
+        sel.value = window.AI27_STATE[key];
+        sel.addEventListener('change', () => { window.AI27_STATE[key] = sel.value; draw.forEach((d) => dash.draw(d)); });
+      });
+    };
+    bind('f-group', 'group', ['pred-rows', 'pred-count']);
+    bind('f-verdict', 'verdict', ['pred-rows', 'pred-count']);
+    bind('f-sort', 'sort', ['pred-rows']);
+    bind('f-year', 'year', ['quant-rows']);
+    bind('f-kind', 'kind', ['source-rows']);
+  })();
+</script>
+
+<script>
+  // ---------- number drawings ----------
+  (function () {
+    const A = window.AI27;
+    const num = (name, id, pick, fmt) => dash.draw(name, (el) => {
+      const d = dash.data(id);
+      if (d.status === 'ok' && d.data) {
+        const v = pick(d.data);
+        el.textContent = v == null ? '—' : fmt(v);
+        el.classList.remove('dash-skeleton');
+      } else if (d.status !== 'loading') { el.textContent = '—'; el.classList.remove('dash-skeleton'); }
+      else { el.textContent = '—'; }
+    });
+    const k = (f) => (rows) => rows[0] ? rows[0][f] : null;
+    num('lede-n', 'kpi_2026', k('n'), A.fmt0);
+    num('lede-avg', 'kpi_2026', k('avg'), A.fmt1);
+    num('lede-hit', 'kpi_2026', k('hit_share'), A.fmt0);
+    num('kpi-n', 'kpi_2026', k('n'), A.fmt0);
+    num('kpi-avg', 'kpi_2026', k('avg'), A.fmt1);
+    num('kpi-hit', 'kpi_2026', k('hit_share'), A.fmt0);
+    num('kpi-miss', 'kpi_2026', k('miss'), A.fmt0);
+    num('p2-n', 'kpi_2027', k('sources'), A.fmt0);
+    num('t-orgs', 'kpi_2027', k('orgs'), A.fmt0);
+    const y27 = (f) => (rows) => { const r = rows.find((x) => String(x.year) === '2027'); return r ? r[f] : null; };
+    num('s-spend', 'ai_spending', y27('jo'), A.fmt2);
+    num('t-spend27', 'ai_spending', y27('jo'), A.fmt2);
+    num('s-capex', 'capex', y27('eok'), A.fmt0);
+    num('t-capex27', 'capex', y27('eok'), A.fmt0);
+    num('t-base', 'scenarios', (rows) => { const r = rows.find((x) => Number(x.order) === 2); return r ? r.prob : null; }, A.fmt0);
+  })();
+</script>
+
+<script>
+  // ---------- Part 1 charts ----------
+  (function () {
+    const A = window.AI27;
+    const vColor = Object.fromEntries(A.VERDICTS.map((v) => [v.v, v.color]));
+    vColor.mostly = dash.colors[0];
+
+    dash.draw('verdict-strip', (el) => {
+      const got = A.ready(el, ['verdict_counts']); if (!got) return;
+      const rows = got[0];
+      el.replaceChildren();
+      const tt = A.tooltip(el);
+      const strip = document.createElement('div'); strip.className = 'ai27-strip';
+      strip.setAttribute('role', 'img');
+      strip.setAttribute('aria-label', '판정 분포: ' + rows.map((r) => r.verdict_ko + ' ' + r.n + '건').join(', '));
+      const legend = document.createElement('div'); legend.className = 'ai27-legend';
+      rows.forEach((r) => {
+        if (r.n > 0) {
+          const seg = document.createElement('div'); seg.style.flex = String(r.n); seg.style.background = vColor[r.verdict];
+          A.attachTip(seg, tt, r.verdict_ko + ' · ' + r.n + '건', r.share + '%');
+          strip.appendChild(seg);
+        }
+        const l = document.createElement('span');
+        const sw = document.createElement('i'); sw.className = 'ai27-sw'; sw.style.background = vColor[r.verdict];
+        l.append(sw, document.createTextNode(r.verdict_ko + ' ' + r.n + '건 (' + r.share + '%)'));
+        legend.appendChild(l);
+      });
+      legend.style.marginTop = '10px';
+      el.append(strip, legend);
+    });
+
+    const scoreColor = (s) => s >= 70 ? 'var(--color-ok)' : s >= 50 ? dash.colors[0] : s >= 35 ? 'var(--color-warn)' : 'var(--color-bad)';
+
+    dash.draw('group-bars', (el) => {
+      const got = A.ready(el, ['group_scores']); if (!got) return;
+      A.hbars(el, got[0], { aria: '영역별 평균 실현도', max: 100, label: (r) => r.group_ko, value: (r) => Number(r.avg), fmt: A.fmt1, tip: (r) => r.n + '건 평균', color: () => dash.colors[0] });
+    });
+
+    dash.draw('forecaster-bars', (el) => {
+      const got = A.ready(el, ['forecaster_scores']); if (!got) return;
+      A.hbars(el, got[0], { aria: '예측 기관별 평균 실현도', max: 100, label: (r) => r.forecaster + ' (' + r.n + ')', value: (r) => Number(r.avg), fmt: A.fmt1, tip: (r) => r.n + '건 평균', color: (r) => scoreColor(Number(r.avg)) });
+    });
+
+    dash.draw('capex-cols', (el) => {
+      const got = A.ready(el, ['capex']); if (!got) return;
+      A.cols(el, got[0], { aria: '하이퍼스케일러 capex: 예측, 실적, 전망 (억 달러)', value: (r) => Number(r.eok), fmt: A.fmt0, unit: '억 달러' });
+    });
+    dash.draw('spending-cols', (el) => {
+      const got = A.ready(el, ['ai_spending']); if (!got) return;
+      A.cols(el, got[0], { aria: '전 세계 AI 지출: 예측, 실적, 전망 (조 달러)', value: (r) => Number(r.jo), fmt: A.fmt2, unit: '조 달러' });
+    });
+    dash.draw('humanoid-cols', (el) => {
+      const got = A.ready(el, ['humanoid']); if (!got) return;
+      A.cols(el, got[0], { aria: '휴머노이드 출하 대수', value: (r) => Number(r.value), fmt: A.fmt0, unit: '대' });
+    });
+
+    dash.draw('shifts', (el) => {
+      const got = A.ready(el, ['shifts']); if (!got) return;
+      el.replaceChildren();
+      const tt = A.tooltip(el);
+      const box = document.createElement('div'); box.className = 'ai27-dumb';
+      box.setAttribute('role', 'img');
+      box.setAttribute('aria-label', got[0].map((r) => r.metric + ' ' + r.before + '%에서 ' + r.after + '%').join(', '));
+      got[0].forEach((r) => {
+        const b = Number(r.before), a = Number(r.after);
+        const row = document.createElement('div'); row.className = 'ai27-dumb-row';
+        const lab = document.createElement('span'); lab.textContent = r.metric;
+        const track = document.createElement('div'); track.className = 'ai27-dumb-track';
+        const line = document.createElement('div'); line.className = 'ai27-dumb-line';
+        line.style.left = Math.min(a, b) + '%'; line.style.width = Math.abs(a - b) + '%';
+        const d1 = document.createElement('div'); d1.className = 'ai27-dot'; d1.style.left = b + '%'; d1.style.background = 'var(--cds-chart-muted)';
+        const d2 = document.createElement('div'); d2.className = 'ai27-dot'; d2.style.left = a + '%'; d2.style.background = dash.colors[1] || dash.colors[0];
+        track.append(line, d1, d2);
+        const vals = document.createElement('div'); vals.className = 'ai27-dumb-vals';
+        const v1 = document.createElement('span'); v1.textContent = '2025: ' + b + '%';
+        const v2 = document.createElement('span'); v2.textContent = '2026: ' + a + '%';
+        vals.append(v1, v2);
+        row.append(lab, track, vals);
+        A.attachTip(row, tt, r.metric, b + '% → ' + a + '%');
+        box.appendChild(row);
+      });
+      el.prepend(box);
+    });
+
+    dash.draw('surprise-cards', (el) => {
+      const got = A.ready(el, ['surprises']); if (!got) return;
+      el.replaceChildren(...got[0].map((r) => {
+        const c = document.createElement('article'); c.className = 'ai27-card';
+        const g = document.createElement('span'); g.className = 'ai27-muted'; g.textContent = r.group_ko;
+        const h = document.createElement('h3'); h.textContent = r.title;
+        const p = document.createElement('p'); p.className = 'ai27-muted'; p.textContent = r.detail;
+        c.append(g, h, p);
+        if (A.safeUrl(r.url)) c.appendChild(A.link(r.url));
+        return c;
+      }));
+    });
+
+    const filtered = () => {
+      const d = dash.data('predictions');
+      if (d.status !== 'ok') return null;
+      const s = window.AI27_STATE;
+      let rows = d.data.filter((r) => (!s.group || r.group === s.group) && (!s.verdict || r.verdict === s.verdict));
+      if (s.sort === 'desc') rows = rows.slice().sort((a, b) => b.score - a.score);
+      else if (s.sort === 'asc') rows = rows.slice().sort((a, b) => a.score - b.score);
+      return rows;
+    };
+
+    dash.draw('pred-count', (el) => {
+      const rows = filtered();
+      el.textContent = rows ? rows.length + '건 표시' : '';
+    });
+
+    dash.draw('pred-rows', (tbody) => {
+      const d = dash.data('predictions');
+      if (d.status === 'error') { tbody.replaceChildren(); const tr = document.createElement('tr'); tr.appendChild(A.td('예측 데이터를 불러오지 못했습니다.')); tbody.appendChild(tr); return; }
+      const rows = filtered(); if (!rows) return;
+      tbody.replaceChildren(...rows.map((r) => {
+        const tr = document.createElement('tr');
+        tr.dataset.key = r.id;
+        const pill = document.createElement('span'); pill.className = 'ai27-pill'; pill.dataset.v = r.verdict; pill.textContent = r.verdict_ko;
+        const sc = document.createElement('span'); sc.className = 'ai27-score';
+        const num = document.createElement('span'); num.textContent = r.score;
+        const bar = document.createElement('i'); const fill = document.createElement('b'); fill.style.width = r.score + '%'; fill.style.background = scoreColor(Number(r.score)); bar.appendChild(fill);
+        sc.append(num, bar);
+        const ev = document.createElement('span'); ev.textContent = r.evidence;
+        if (r.note) { const n = document.createElement('span'); n.className = 'ai27-note'; n.textContent = '↑ ' + r.note; ev.appendChild(n); }
+        const links = document.createElement('span'); links.style.display = 'grid'; links.style.gap = '4px';
+        [r.url1, r.url2].filter(A.safeUrl).forEach((u) => links.appendChild(A.link(u)));
+        tr.append(A.td(r.id), A.td(r.forecaster, 'mid'), A.td(r.prediction, 'wide'), A.td(pill), A.td(sc), A.td(ev, 'wide'), A.td(links));
+        return tr;
+      }));
+    });
+  })();
+</script>
+
+<script>
+  // ---------- Part 2 ----------
+  (function () {
+    const A = window.AI27;
+    const scenColor = [dash.colors[0], dash.colors[2] || dash.colors[0], dash.colors[1] || 'var(--color-bad)'];
+
+    dash.draw('scenario-strip', (el) => {
+      const got = A.ready(el, ['scenarios']); if (!got) return;
+      el.replaceChildren();
+      const tt = A.tooltip(el);
+      const strip = document.createElement('div'); strip.className = 'ai27-scen-strip';
+      strip.setAttribute('role', 'img');
+      strip.setAttribute('aria-label', '시나리오 확률: ' + got[0].map((r) => r.name + ' ' + r.prob + '%').join(', '));
+      got[0].forEach((r, i) => {
+        const s = document.createElement('div'); s.style.flex = String(r.prob); s.style.background = scenColor[i % 3];
+        s.textContent = r.name.split(' ')[0] + ' ' + r.prob + '%';
+        A.attachTip(s, tt, r.name, r.prob + '%');
+        strip.appendChild(s);
+      });
+      el.prepend(strip);
+    });
+
+    dash.draw('scenario-cards', (el) => {
+      const got = A.ready(el, ['scenarios']); if (!got) return;
+      el.replaceChildren(...got[0].map((r, i) => {
+        const c = document.createElement('article'); c.className = 'ai27-card';
+        c.style.borderTop = '3px solid ' + scenColor[i % 3];
+        const h = document.createElement('h3'); h.textContent = r.name;
+        const p = document.createElement('span'); p.className = 'ai27-scen-prob'; p.textContent = r.prob + '%';
+        const d = document.createElement('p'); d.className = 'ai27-muted'; d.textContent = r.description;
+        const sl = document.createElement('span'); sl.className = 'ai27-eyebrow'; sl.textContent = '확인할 신호';
+        const ul = document.createElement('ul'); ul.style.margin = '0'; ul.style.paddingLeft = '1.1em'; ul.style.fontSize = 'var(--cds-font-size-caption)'; ul.style.lineHeight = '1.5';
+        String(r.signposts).split(' · ').forEach((t) => { const li = document.createElement('li'); li.textContent = t; ul.appendChild(li); });
+        c.append(h, p, d, sl, ul);
+        return c;
+      }));
+    });
+
+    dash.draw('consensus-bars', (el) => {
+      const got = A.ready(el, ['consensus']); if (!got) return;
+      const rows = got[0].slice().sort((a, b) => b.n - a.n);
+      A.hbars(el, rows, { aria: '합의 테마별 지지 기관 수', label: (r) => r.theme, value: (r) => Number(r.n), fmt: A.fmt0, tip: (r) => r.supporters });
+    });
+    dash.draw('theme-bars', (el) => {
+      const got = A.ready(el, ['theme_counts']); if (!got) return;
+      A.hbars(el, got[0], { aria: '전망 자료 테마별 언급 수', label: (r) => r.theme, value: (r) => Number(r.n), fmt: A.fmt0, tip: () => '언급한 전망 자료 수', color: () => dash.colors[1] || dash.colors[0] });
+    });
+
+    const listDraw = (name, id, build) => dash.draw(name, (el) => {
+      const got = A.ready(el, [id]); if (!got) return;
+      el.replaceChildren(...got[0].map((r) => { const li = document.createElement('li'); build(li, r); return li; }));
+    });
+    listDraw('consensus-list', 'consensus', (li, r) => {
+      const h = document.createElement('b'); h.textContent = r.theme;
+      const p = document.createElement('span'); p.className = 'ai27-muted'; p.textContent = r.detail;
+      const s = document.createElement('span'); s.className = 'ai27-muted'; s.textContent = '지지: ' + r.supporters;
+      li.append(h, p, s);
+    });
+    listDraw('signpost-list', 'signposts', (li, r) => {
+      const h = document.createElement('b'); h.textContent = r.indicator;
+      const p = document.createElement('span'); p.className = 'ai27-muted'; p.textContent = r.why;
+      const w = document.createElement('span'); w.className = 'ai27-muted'; w.textContent = '볼 곳: ' + r.watch;
+      li.append(h, p, w);
+    });
+    listDraw('disagree-list', 'disagreements', (li, r) => {
+      const h = document.createElement('b'); h.textContent = r.topic;
+      const p = document.createElement('span'); p.className = 'ai27-muted'; p.textContent = r.detail;
+      li.append(h, p);
+    });
+    listDraw('pending-list', 'pending_reports', (li, r) => {
+      const p = document.createElement('span'); p.className = 'ai27-muted'; p.textContent = r.report; li.appendChild(p);
+    });
+
+    dash.draw('deck-sources', (el) => {
+      const got = A.ready(el, ['deck_sources']); if (!got) return;
+      el.replaceChildren(...got[0].map((r) => { const t = A.link(r.url, r.forecaster); t.classList.add('ai27-tag'); return t; }));
+    });
+
+    dash.draw('quant-rows', (tbody) => {
+      const d = dash.data('quant_2027'); if (d.status !== 'ok') return;
+      const y = window.AI27_STATE.year;
+      const rows = d.data.filter((r) => !y || (y === 'later' ? Number(r.year) >= 2028 : String(r.year) === y));
+      tbody.replaceChildren(...rows.map((r) => {
+        const tr = document.createElement('tr');
+        tr.dataset.key = encodeURIComponent(r.org) + ',' + encodeURIComponent(r.metric);
+        const links = A.safeUrl(r.url) ? A.link(r.url) : document.createTextNode('');
+        tr.append(A.td(r.year), A.td(r.org, 'mid'), A.td(r.metric, 'wide'), A.td(r.value, 'mid'), A.td(links));
+        return tr;
+      }));
+    });
+
+    dash.draw('source-rows', (tbody) => {
+      const d = dash.data('outlook_sources'); if (d.status !== 'ok') return;
+      const k = window.AI27_STATE.kind;
+      const rows = d.data.filter((r) => !k || r.kind === k).slice().sort((a, b) => String(b.date).localeCompare(String(a.date)));
+      tbody.replaceChildren(...rows.map((r) => {
+        const tr = document.createElement('tr');
+        tr.dataset.key = encodeURIComponent(r.org) + ',' + encodeURIComponent(r.title);
+        const title = A.safeUrl(r.url) ? A.link(r.url, r.title) : document.createTextNode(r.title);
+        const preds = document.createElement('ul'); preds.style.margin = '0'; preds.style.paddingLeft = '1em';
+        String(r.predictions).split(' · ').forEach((t) => { const li = document.createElement('li'); li.textContent = t; preds.appendChild(li); });
+        const tags = document.createElement('span'); tags.className = 'ai27-tags';
+        String(r.themes).split(', ').filter(Boolean).forEach((t) => { const s = document.createElement('span'); s.className = 'ai27-tag'; s.textContent = t; tags.appendChild(s); });
+        tr.append(A.td(r.org, 'mid'), A.td(title, 'mid'), A.td(r.date), A.td(r.stance), A.td(preds, 'wide'), A.td(tags, 'mid'));
+        return tr;
+      }));
+    });
+  })();
+</script>
+
+<script>
+  // ---------- Parts 3–5 ----------
+  (function () {
+    const A = window.AI27;
+    const S = window.AI27_STATE; S.inc = ''; S.risk = '';
+    document.querySelectorAll('#f-inc').forEach((sel) => sel.addEventListener('change', () => { S.inc = sel.value; dash.draw('incident-rows'); }));
+    document.querySelectorAll('#f-risk').forEach((sel) => sel.addEventListener('change', () => { S.risk = sel.value; dash.draw('risk-rows'); dash.draw('risk-count'); }));
+
+    const num = (name, label) => dash.draw(name, (el) => {
+      const d = dash.data('korea_cyber');
+      if (d.status === 'ok') { const r = d.data.find((x) => x.label === label); el.textContent = r ? A.fmt0(Number(r.value) % 1 ? Number(r.value) : Number(r.value)) : '—'; if (r && Number(r.value) % 1) el.textContent = A.fmt1(Number(r.value)); el.classList.remove('dash-skeleton'); }
+      else if (d.status !== 'loading') { el.textContent = '—'; el.classList.remove('dash-skeleton'); }
+    });
+    num('kc1', '2025 침해사고 신고'); num('kc2', '2026 상반기 신고'); num('kc3', '상반기 랜섬웨어 증가율'); num('kc4', '상반기 DDoS 증가율');
+
+    const pill = (text, v) => { const s = document.createElement('span'); s.className = 'ai27-pill'; s.dataset.v = v; s.textContent = text; return s; };
+
+    dash.draw('perf-rows', (tbody) => {
+      const d = dash.data('perf_benchmarks'); if (d.status !== 'ok') return;
+      tbody.replaceChildren(...d.data.map((r) => {
+        const tr = document.createElement('tr');
+        tr.append(A.td(r.benchmark, 'mid'), A.td(r.end2025, 'mid'), A.td(r.now, 'wide'), A.td(r.holder, 'mid'),
+          A.td(pill(r.status, r.status === '포화' ? 'mostly' : 'partial')));
+        return tr;
+      }));
+    });
+    dash.draw('perf-forecast-rows', (tbody) => {
+      const d = dash.data('perf_forecast'); if (d.status !== 'ok') return;
+      tbody.replaceChildren(...d.data.map((r) => {
+        const tr = document.createElement('tr');
+        const base = document.createElement('b'); base.textContent = r.base; base.style.color = 'var(--ai27-accent)';
+        tr.append(A.td(r.metric, 'mid'), A.td(r.end2026, 'mid'), A.td(r.low, 'mid'), A.td(base, 'mid'), A.td(r.high, 'mid'), A.td(r.confidence));
+        return tr;
+      }));
+    });
+
+    dash.draw('sovereign-bars', (el) => {
+      const got = A.ready(el, ['sovereign_gap']); if (!got) return;
+      A.hbars(el, got[0], { aria: '국가별 최고 모델의 글로벌 1위 대비 비율', max: 100, label: (r) => r.country, value: (r) => Number(r.share), fmt: (v) => A.fmt1(v) + '%', tip: (r) => r.model,
+        color: (r) => r.country === '한국' ? (dash.colors[1] || dash.colors[0]) : dash.colors[0] });
+    });
+    dash.draw('korea-gap-bars', (el) => {
+      const got = A.ready(el, ['korea_gap']); if (!got) return;
+      A.hbars(el, got[0], { aria: '과제 난이도별 한국 모델 수준', max: 100, label: (r) => r.task, value: (r) => Number(r.share), fmt: (v) => A.fmt1(v) + '%', tip: (r) => r.note,
+        color: (r) => Number(r.share) >= 80 ? 'var(--color-ok)' : Number(r.share) >= 50 ? 'var(--color-warn)' : 'var(--color-bad)' });
+    });
+    dash.draw('dokpamo-bars', (el) => {
+      const got = A.ready(el, ['dokpamo']); if (!got) return;
+      const rows = got[0];
+      el.replaceChildren();
+      const tt = A.tooltip(el);
+      const wrap = document.createElement('div'); wrap.className = 'ai27-bars';
+      wrap.setAttribute('role', 'img'); wrap.setAttribute('aria-label', '독파모 2차 평가 점수: ' + rows.map((r) => r.team + ' ' + r.score).join(', '));
+      const lo = 60, hi = 75;
+      rows.forEach((r) => {
+        const row = document.createElement('div'); row.className = 'ai27-bar';
+        const lab = document.createElement('span'); lab.className = 'ai27-bar-label'; lab.textContent = r.team + ' · ' + r.model;
+        const track = document.createElement('span'); track.className = 'ai27-bar-track';
+        const fill = document.createElement('span'); fill.className = 'ai27-bar-fill';
+        fill.style.width = (100 * (Number(r.score) - lo) / (hi - lo)) + '%';
+        fill.style.background = r.result === '통과' ? dash.colors[0] : 'var(--cds-chart-muted)';
+        track.appendChild(fill);
+        const val = document.createElement('span'); val.className = 'ai27-bar-val'; val.textContent = A.fmt1(Number(r.score));
+        row.append(lab, track, val);
+        A.attachTip(row, tt, r.team + ' · ' + A.fmt1(Number(r.score)) + '점', r.result);
+        wrap.appendChild(row);
+      });
+      el.prepend(wrap);
+    });
+
+    dash.draw('rsi-cards', (el) => {
+      const got = A.ready(el, ['rsi']); if (!got) return;
+      el.replaceChildren(...got[0].map((r) => {
+        const c = document.createElement('article'); c.className = 'ai27-card'; c.style.background = 'var(--color-bg)';
+        const k = document.createElement('span'); k.className = 'ai27-eyebrow'; k.textContent = r.as_of;
+        const h = document.createElement('h3'); h.textContent = r.indicator;
+        const v = document.createElement('p'); v.style.fontFamily = 'var(--ai27-mono)'; v.style.color = 'var(--ai27-accent)'; v.textContent = r.value;
+        c.append(k, h, v);
+        if (r.trend) { const t = document.createElement('p'); t.className = 'ai27-muted'; t.textContent = r.trend; c.appendChild(t); }
+        if (A.safeUrl(r.url)) c.appendChild(A.link(r.url));
+        return c;
+      }));
+    });
+
+    dash.draw('incident-rows', (tbody) => {
+      const d = dash.data('incidents'); if (d.status !== 'ok') return;
+      const rows = d.data.filter((r) => !S.inc || r.area === S.inc);
+      tbody.replaceChildren(...rows.map((r) => {
+        const tr = document.createElement('tr'); tr.dataset.key = encodeURIComponent(r.date) + ',' + encodeURIComponent(r.title);
+        const links = A.safeUrl(r.url) ? A.link(r.url) : document.createTextNode('');
+        tr.append(A.td(r.date), A.td(pill(r.area, r.area === 'AI 안전' ? 'missed' : 'partial')), A.td(r.category, 'mid'), A.td(r.title, 'wide'), A.td(r.impact, 'wide'), A.td(links));
+        return tr;
+      }));
+    });
+
+    const riskRows = () => { const d = dash.data('risk_forecasts'); if (d.status !== 'ok') return null; return d.data.filter((r) => !S.risk || r.area === S.risk).slice().sort((a, b) => a.rank - b.rank); };
+    dash.draw('risk-count', (el) => { const r = riskRows(); el.textContent = r ? r.length + '건' : ''; });
+    dash.draw('risk-rows', (tbody) => {
+      const rows = riskRows(); if (!rows) return;
+      const v = { '높음': 'missed', '중간': 'partial', '낮음': 'unclear' };
+      tbody.replaceChildren(...rows.map((r) => {
+        const tr = document.createElement('tr');
+        const by = A.safeUrl(r.url) ? A.link(r.url, r.by || '출처') : document.createTextNode(r.by);
+        tr.append(A.td(pill(r.likelihood, v[r.likelihood] || 'unclear')), A.td(r.area, 'mid'), A.td(r.forecast, 'wide'), A.td(by, 'mid'));
+        return tr;
+      }));
+    });
+
+    dash.draw('music-cols', (el) => {
+      const got = A.ready(el, ['ai_music']); if (!got) return;
+      A.cols(el, got[0].map((r) => ({ label: r.period, kind: '실적', scope: 'Deezer 일일 업로드 기준', value: r.share })), { aria: 'Deezer 업로드 중 완전 AI 곡 비중 추이', value: (r) => Number(r.value), fmt: A.fmt0, unit: '%' });
+    });
+  })();
+</script>
+
+<footer class="site-foot">기준일 2026-11-26. 수치는 각 표·차트의 출처 링크를 따릅니다. 일부 근거는 2차 보도이며, 시나리오 확률과 2027 수치 범위는 주관적 추정입니다. 원본(Claude 대시보드): <a href="https://claude.ai/artifact/SeyeszN61LTYiLbt4tbJwP">claude.ai</a></footer>
+</div>
+</body>
+</html>

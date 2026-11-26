@@ -1,0 +1,20 @@
+[
+ {
+  "label": "2025 출하",
+  "kind": "실적",
+  "value": 13000,
+  "url": "https://www.bloomberg.com/news/articles/2026-01-08/chinese-firms-dominated-global-humanoid-robot-shipments-in-2025"
+ },
+ {
+  "label": "2026 상반기",
+  "kind": "실적",
+  "value": 22000,
+  "url": "https://counterpointresearch.com/en/insights/global-humanoid-robot-shipments-soar-nearly-300-percent-yoy-in-h1-2026"
+ },
+ {
+  "label": "2026 연간 전망",
+  "kind": "전망",
+  "value": 50000,
+  "url": "https://counterpointresearch.com/en/insights/global-humanoid-robot-shipments-soar-nearly-300-percent-yoy-in-h1-2026"
+ }
+]

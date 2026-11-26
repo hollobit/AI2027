@@ -1,0 +1,317 @@
+[
+ {
+  "year": "2027",
+  "org": "Gartner",
+  "metric": "전 세계 AI 지출",
+  "value": "약 4조 달러(4.05조, +47.5% YoY)",
+  "url": "https://www.gartner.com/en/newsroom/press-releases/2026-11-12-gartner-forecasts-artificial-intelligence-infrastructure-spending-to-represent-59-percent-of-total-global-artificial-intelligence-spending-in-2027"
+ },
+ {
+  "year": "2027",
+  "org": "Gartner",
+  "metric": "AI 인프라 지출 및 비중",
+  "value": "약 2.4조 달러(+53%), AI 지출의 59%",
+  "url": "https://www.gartner.com/en/newsroom/press-releases/2026-11-12-gartner-forecasts-artificial-intelligence-infrastructure-spending-to-represent-59-percent-of-total-global-artificial-intelligence-spending-in-2027"
+ },
+ {
+  "year": "2027",
+  "org": "Gartner",
+  "metric": "AI 서비스 / AI 소프트웨어 지출",
+  "value": "7,460억 달러(+29.5%) / 6,490억 달러(+42%)",
+  "url": "https://aa.com.tr/en/economy/global-ai-spending-forecast-to-top-4-trillion-next-year/4122558"
+ },
+ {
+  "year": "2027",
+  "org": "Gartner",
+  "metric": "전 세계 IT 지출",
+  "value": "7.35조 달러(+15%)",
+  "url": "https://www.gartner.com/en/newsroom/press-releases/2026-10-21-gartner-forecasts-worldwide-it-spending-to-grow-15-percent-in-2027-totaling-7-point-35-trillion"
+ },
+ {
+  "year": "2027",
+  "org": "Gartner",
+  "metric": "시맨틱 우선 AI-ready 데이터의 에이전틱 AI 효과",
+  "value": "정확도 최대 +80%, 비용 최대 -60%",
+  "url": "https://www.gartner.com/en/articles/top-technology-trends-2027"
+ },
+ {
+  "year": "2027",
+  "org": "Gartner",
+  "metric": "토큰 종량제 IT운영 AI 에이전트 비용 초과",
+  "value": "초기 예상 대비 50% 이상 초과(2027년까지)",
+  "url": "https://www.gartner.com/en/newsroom/press-releases/2026-10-26-gartner-identifies-the-top-ai-trends-in-infrastructure-and-it-operations-for-2027"
+ },
+ {
+  "year": "2027",
+  "org": "Forrester",
+  "metric": "비즈니스 기술 지출 중 AI 비중",
+  "value": "20%(1달러 중 1/5)",
+  "url": "https://www.forrester.com/blogs/predictions-2027-disruption-unleashed/"
+ },
+ {
+  "year": "2027",
+  "org": "Forrester",
+  "metric": "전 세계 기술 지출",
+  "value": "6조 달러 초과",
+  "url": "https://www.forrester.com/blogs/predictions-2027-disruption-unleashed/"
+ },
+ {
+  "year": "2027",
+  "org": "Forrester",
+  "metric": "하네스가 좌우하는 AI 플랫폼 결정 비중",
+  "value": "75%",
+  "url": "https://www.forrester.com/blogs/predictions-2027-disruption-unleashed/"
+ },
+ {
+  "year": "2027",
+  "org": "Forrester",
+  "metric": "프로덕션 규모 에이전틱 AI를 지원 가능한 기업 컨텍스트 레이어 비중",
+  "value": "25%",
+  "url": "https://www.forrester.com/blogs/predictions-2027-disruption-unleashed/"
+ },
+ {
+  "year": "2027",
+  "org": "Forrester",
+  "metric": "비-NVIDIA 가속기 대안을 요구하는 AI 인프라 RFP 비중",
+  "value": "25%",
+  "url": "https://www.forrester.com/press-newsroom/forresters-2027-technology-and-security-predictions-ai-will-account-for-20-of-all-business-technology-spend/"
+ },
+ {
+  "year": "2027",
+  "org": "Forrester",
+  "metric": "중국 vs 미국 클라우드 신규 에이전틱 AI 플랫폼 기능 수",
+  "value": "중국이 50% 더 많음(2027년 말)",
+  "url": "https://www.forrester.com/blogs/predictions-2027-clouds-ai-race-gets-messier/"
+ },
+ {
+  "year": "2027",
+  "org": "IDC",
+  "metric": "가격 변경 없이 에이전틱 비용이 증가하는 기업 비중",
+  "value": "20% → 55%",
+  "url": "https://www.idc.com/resource-center/press-releases/idc-futurescape-2027-predicts-60-of-enterprises-will-run-a-majority-of-their-business-processes-ai-first-by-2029-up-from-13-in-2026/"
+ },
+ {
+  "year": "2027",
+  "org": "Omdia",
+  "metric": "통신사 AI 데이터센터 투자 누적",
+  "value": "600억 달러 이상(2027년 말까지)",
+  "url": "https://omdia.tech.informa.com/pr/2026/sep/omdia-identifies-four-forces-set-to-reshape-technology-in-2027"
+ },
+ {
+  "year": "2027",
+  "org": "Omdia",
+  "metric": "AI 예산을 10% 이상 증액하는 기업 비중",
+  "value": "59%(2027년까지, 보도 기준)",
+  "url": "https://www.digitaltoday.co.kr/en/view/120473/digital-sovereignty-often-not-necessary-should-be-pursued-selectively"
+ },
+ {
+  "year": "2027",
+  "org": "IITP (정보통신기획평가원)",
+  "metric": "한국 정부 AI·ICT R&D 예산",
+  "value": "2조 원 첫 돌파 예상(국회 심의 전)",
+  "url": "https://www.digitaltoday.co.kr/en/view/124277/2027-ai-ict-top-theme-ax-productivity-agent-semiconductor-race-accelerates"
+ },
+ {
+  "year": "2029",
+  "org": "IDC",
+  "metric": "AI 업무 프로세스 AI-first 운영 G2000 비중(참고, 2029)",
+  "value": "60%(2026년 13%)",
+  "url": "https://www.idc.com/resource-center/press-releases/idc-futurescape-2027-predicts-60-of-enterprises-will-run-a-majority-of-their-business-processes-ai-first-by-2029-up-from-13-in-2026/"
+ },
+ {
+  "year": "2028",
+  "org": "Gartner",
+  "metric": "AI 에이전트 악용에 기인한 기업 보안 침해 비중(참고, 2028)",
+  "value": "25%",
+  "url": "https://www.networkworld.com/article/4238030/gartners-top-tech-trends-for-2027-expand-and-accelerate.html"
+ },
+ {
+  "year": "2027",
+  "org": "Goldman Sachs",
+  "metric": "빅5 하이퍼스케일러 AI 인프라 capex",
+  "value": "$1.2T (컨센서스 $1.1T, 낙관 $1.4T)",
+  "url": "https://the-decoder.com/goldman-sachs-expects-big-tech-to-spend-1-2-trillion-on-ai-infrastructure-by-2027-dwarfing-wall-street-estimates/"
+ },
+ {
+  "year": "2027",
+  "org": "Goldman Sachs",
+  "metric": "미국 AI 하드웨어+IP 연환산 지출(연말)",
+  "value": "$1.4T (GDP 약 4%)",
+  "url": "https://www.timeslive.co.za/news/sci-tech/2026-11-12-ai-to-stay-dominant-force-behind-us-business-investment-in-2027-goldman-says/"
+ },
+ {
+  "year": "2027",
+  "org": "Goldman Sachs",
+  "metric": "AI의 미국 GDP 성장 기여",
+  "value": "+0.6%p",
+  "url": "https://www.timeslive.co.za/news/sci-tech/2026-11-12-ai-to-stay-dominant-force-behind-us-business-investment-in-2027-goldman-says/"
+ },
+ {
+  "year": "2026",
+  "org": "Air Street / State of AI 2026",
+  "metric": "빅4 capex(기준선)",
+  "value": "$733B (+79% YoY)",
+  "url": "https://www.stateof.ai/"
+ },
+ {
+  "year": "2027",
+  "org": "Epoch AI",
+  "metric": "미국 AI 데이터센터 전력 수요(연말)",
+  "value": "20–30 GW",
+  "url": "https://epoch.ai/publications/what-you-need-to-know-about-ai-data-centers"
+ },
+ {
+  "year": "2028",
+  "org": "Morgan Stanley",
+  "metric": "미국 데이터센터 전력 부족분(2028까지 누적)",
+  "value": "30GW대 중반",
+  "url": "https://morganstanley.com/insights/articles/powering-ai-energy-market-outlook-2026"
+ },
+ {
+  "year": "2030",
+  "org": "IEA",
+  "metric": "세계 데이터센터 전력 소비",
+  "value": "약 950 TWh (2025년 485TWh)",
+  "url": "https://iea.org/reports/key-questions-on-energy-and-ai/executive-summary"
+ },
+ {
+  "year": "2027",
+  "org": "IEA",
+  "metric": "서버 전력밀도 추가 증가",
+  "value": "4배",
+  "url": "https://iea.org/reports/key-questions-on-energy-and-ai/executive-summary"
+ },
+ {
+  "year": "2027",
+  "org": "IEA",
+  "metric": "HBM 공급부족 지속",
+  "value": "최소 2027년 말까지",
+  "url": "https://iea.org/reports/key-questions-on-energy-and-ai/executive-summary"
+ },
+ {
+  "year": "2026",
+  "org": "Epoch AI",
+  "metric": "프런티어 훈련 컴퓨트 증가율",
+  "value": "연 약 5배 (5.2개월 배가)",
+  "url": "https://epoch.ai/trends"
+ },
+ {
+  "year": "2027",
+  "org": "Epoch AI",
+  "metric": "3e29 FLOP 훈련 런 도달 가능 시점(공격적 시나리오)",
+  "value": "2027년 말 가능",
+  "url": "https://epoch.ai/gradient-updates/how-big-could-an-ai-manhattan-project-get"
+ },
+ {
+  "year": "2027",
+  "org": "Epoch AI",
+  "metric": "최대 훈련 런 GPU 규모",
+  "value": "약 250만 H100-등가",
+  "url": "https://epoch.ai/publications/what-you-need-to-know-about-ai-data-centers"
+ },
+ {
+  "year": "2026",
+  "org": "METR",
+  "metric": "METR 50% 시간지평(Claude Mythos Preview 초기)",
+  "value": "≥16시간 (CI 8.5–55h)",
+  "url": "https://metr.org/time-horizons/"
+ },
+ {
+  "year": "2026",
+  "org": "METR",
+  "metric": "METR 시간지평 배가 기간(2024년 이후)",
+  "value": "약 89일 (장기 약 7개월)",
+  "url": "https://metr.org/blog/2026-01-29-time-horizon-1-1/"
+ },
+ {
+  "year": "2026",
+  "org": "METR",
+  "metric": "Anthropic AI R&D 가속",
+  "value": "약 2배 (AECI 1.9배, CI 1.5–2.8)",
+  "url": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment"
+ },
+ {
+  "year": "2027",
+  "org": "AI Futures Project",
+  "metric": "초인적 AI 연구자(SAR) 중앙값 — Kokotajlo",
+  "value": "2027년 5월",
+  "url": "https://www.lesswrong.com/posts/f9PajMLmBYzmWzyDv/aifp-looks-like-the-intelligence-explosion-will-happen-in"
+ },
+ {
+  "year": "2027",
+  "org": "AI Futures Project",
+  "metric": "SAR 중앙값 — Lifland / Dean",
+  "value": "2027년 8월",
+  "url": "https://cryptobriefing.com/ai-superhuman-researcher-2027/"
+ },
+ {
+  "year": "2027",
+  "org": "AI Futures Project",
+  "metric": "TED-AI 2028년 이전 확률",
+  "value": "35–65%",
+  "url": "https://www.lesswrong.com/posts/f9PajMLmBYzmWzyDv/aifp-looks-like-the-intelligence-explosion-will-happen-in"
+ },
+ {
+  "year": "2026",
+  "org": "Polymarket",
+  "metric": "OpenAI AGI 발표 2027년 이전 (시장확률)",
+  "value": "약 9–19%",
+  "url": "https://polymarket.com/predictions/agi"
+ },
+ {
+  "year": "2027",
+  "org": "Kalshi",
+  "metric": "OpenAI AGI 발표 2028년 이전 (시장확률)",
+  "value": "약 44–45%",
+  "url": "https://coinstats.app/prediction-markets/odds/tech/kalshi-oaiagi/"
+ },
+ {
+  "year": "2026",
+  "org": "Manifold",
+  "metric": "AGI before 2027 (플레이머니)",
+  "value": "약 2%",
+  "url": "https://tech-insider.org/agi-before-2027-manifold-2-percent-odds/"
+ },
+ {
+  "year": "2030",
+  "org": "Metaculus",
+  "metric": "Metaculus 강한 AGI 커뮤니티 중앙값(스냅샷)",
+  "value": "약 2030–2033",
+  "url": "https://www.metaculus.com/questions/5121/date-of-artificial-general-intelligence/"
+ },
+ {
+  "year": "2026",
+  "org": "Menlo Ventures",
+  "metric": "기업 AI 배포 지출 연환산(2026-09)",
+  "value": "$176.8B (5.4배)",
+  "url": "https://menlovc.com/wp-content/uploads/2026/11/menlo_ventures_enterprise_ai_report-2026-110326.pdf"
+ },
+ {
+  "year": "2026",
+  "org": "Air Street / State of AI 2026",
+  "metric": "OpenAI+Anthropic 합산 매출 run-rate(2026 늦여름)",
+  "value": "약 $105B",
+  "url": "https://www.the-ai-corner.com/p/state-of-ai-report-2026-findings"
+ },
+ {
+  "year": "2028",
+  "org": "OpenAI",
+  "metric": "OpenAI 정식 자동화 AI 연구자 목표",
+  "value": "2028년 3월",
+  "url": "https://techcrunch.com/2025/10/28/sam-altman-says-openai-will-have-a-legitimate-ai-researcher-by-2028/"
+ },
+ {
+  "year": "2030",
+  "org": "Google DeepMind",
+  "metric": "Hassabis AGI 중심 추정",
+  "value": "2030 (2029 가능)",
+  "url": "https://www.axios.com/2026/05/26/deepmind-ceo-demis-hassabis"
+ },
+ {
+  "year": "2031",
+  "org": "Goldman Sachs",
+  "metric": "2026–2031 누적 AI 인프라 지출",
+  "value": "$7.6T",
+  "url": "https://www.pymnts.com/big-tech/2026/goldman-sachs-projects-big-tech-ai-infrastructure-spending-to-hit-1-2-trillion-in-2027/"
+ }
+]

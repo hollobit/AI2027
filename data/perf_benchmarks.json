@@ -1,0 +1,164 @@
+[
+ {
+  "benchmark": "Humanity's Last Exam (no tools)",
+  "category": "knowledge/reasoning",
+  "end2025": "37.5% (Epoch 독립평가)",
+  "now": "73.2% (벤더, max effort) / 54.8% (Epoch 독립)",
+  "holder": "Claude Fable 5.2 (벤더) / GPT-6 Astra (Epoch)",
+  "status": "진행 중",
+  "url": "https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf ; https://epoch.ai/data/benchmark_data.zip"
+ },
+ {
+  "benchmark": "GPQA Diamond",
+  "category": "science QA",
+  "end2025": "92.6%",
+  "now": "96.8%",
+  "holder": "GPT-6.2 Astra (max)",
+  "status": "포화",
+  "url": "https://epoch.ai/data/benchmark_data.zip"
+ },
+ {
+  "benchmark": "FrontierMath Tier 1-3 (v2)",
+  "category": "math",
+  "end2025": "74.0%",
+  "now": "95.1%",
+  "holder": "Claude Fable 5.2 (max)",
+  "status": "포화",
+  "url": "https://epoch.ai/data/benchmark_data.zip"
+ },
+ {
+  "benchmark": "FrontierMath Tier 4 (v2)",
+  "category": "math (research-level)",
+  "end2025": "46%",
+  "now": "100%",
+  "holder": "GPT-6.2 Astra (max)",
+  "status": "포화",
+  "url": "https://epoch.ai/data/benchmark_data.zip"
+ },
+ {
+  "benchmark": "ARC-AGI-2",
+  "category": "abstract reasoning",
+  "end2025": "54.2%",
+  "now": "95.8%",
+  "holder": "GPT-6.2 Astra (xhigh)",
+  "status": "포화",
+  "url": "https://arcprize.org/leaderboard"
+ },
+ {
+  "benchmark": "ARC-AGI-3 (interactive, Standard harness)",
+  "category": "agentic reasoning",
+  "end2025": "해당없음(2026년 출시); 출시 직후 0.37%",
+  "now": "81.2% (Standard, 비용 $21.9K)",
+  "holder": "Claude Fable 5.2 (xhigh)",
+  "status": "진행 중",
+  "url": "https://arcprize.org/leaderboard"
+ },
+ {
+  "benchmark": "SWE-bench Verified",
+  "category": "coding",
+  "end2025": "80.9% (벤더) / 76.7% (Epoch)",
+  "now": "96.0% (벤더) / 83.5% (Epoch)",
+  "holder": "Claude Opus 5 (벤더) / Claude Opus 4.7 (Epoch)",
+  "status": "포화",
+  "url": ""
+ },
+ {
+  "benchmark": "SWE-bench Pro",
+  "category": "coding",
+  "end2025": "55.6% (public, 벤더)",
+  "now": "93.0% (벤더) / 64.3% (public 독립 집계)",
+  "holder": "Claude Fable 5.2 (벤더) / Claude Opus 4.7",
+  "status": "진행 중",
+  "url": "https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf ; https://labs.scale.com/leaderboard/swe_bench_pro_public"
+ },
+ {
+  "benchmark": "Terminal-Bench 2.0 / 2.1",
+  "category": "agentic coding",
+  "end2025": "69.4% (에이전트 하니스 포함)",
+  "now": "84.7% (TB2.0, NexAU 하니스) / 91.9% (TB2.1, 벤더)",
+  "holder": "GPT-5.5 / GPT-5.6 Sol Ultra",
+  "status": "포화",
+  "url": "https://epoch.ai/data/benchmark_data.zip ; https://openai.com/index/gpt-5-6/"
+ },
+ {
+  "benchmark": "OSWorld-Verified",
+  "category": "computer use",
+  "end2025": "66.3%",
+  "now": "86.2% (벤더) / 72.1% (Epoch 집계)",
+  "holder": "Qwen-CUA (벤더) / Claude Sonnet 4.6",
+  "status": "포화",
+  "url": "https://arxiv.org/abs/2608.02352 ; https://epoch.ai/data/benchmark_data.zip"
+ },
+ {
+  "benchmark": "METR 50% Time Horizon (TH1.1)",
+  "category": "agentic autonomy",
+  "end2025": "352분(5.9h), CI 191–862분",
+  "now": "1,045분(17.4h), CI 509–3,304분",
+  "holder": "Claude Mythos Preview (early)",
+  "status": "포화",
+  "url": "https://epoch.ai/data/benchmark_data.zip ; https://metr.org/time-horizons/"
+ },
+ {
+  "benchmark": "GDPval (OpenAI, win+tie vs 전문가)",
+  "category": "knowledge work",
+  "end2025": "70.9%",
+  "now": "84.9%",
+  "holder": "GPT-5.5",
+  "status": "진행 중",
+  "url": "https://openai.com/index/introducing-gpt-5-5/"
+ },
+ {
+  "benchmark": "Cybench (unguided)",
+  "category": "cyber",
+  "end2025": "82%",
+  "now": "93% (Epoch) / 100% (벤더)",
+  "holder": "Claude Opus 4.6 / Claude Mythos Preview",
+  "status": "포화",
+  "url": "https://epoch.ai/data/benchmark_data.zip ; hollobit SOTA dashboard snapshot 2026-11-26 (sota.json / scores_history_compact.json)"
+ },
+ {
+  "benchmark": "Epoch Capabilities Index",
+  "category": "composite",
+  "end2025": "157.35",
+  "now": "173.4 (90% CI 170.0–177.2)",
+  "holder": "Claude Fable 5.2 (2026-11-09); 2위 GPT-6.2 Astra 172.8",
+  "status": "진행 중",
+  "url": "https://epoch.ai/data/eci_scores.csv"
+ },
+ {
+  "benchmark": "Artificial Analysis Intelligence Index",
+  "category": "composite",
+  "end2025": "30.4 (v4.3 재환산)",
+  "now": "v4.3: 57.6 (Claude Opus 5.5) / v5: 58–59 (Opus 5.5 58; Gemini 4 Carbo…",
+  "holder": "Claude Opus 5.5 / Gemini 4 Carbon",
+  "status": "진행 중",
+  "url": "https://artificialanalysis.ai/articles/artificial-analysis-intelligence-index-v5"
+ },
+ {
+  "benchmark": "LMArena (Text Arena) Elo",
+  "category": "human preference",
+  "end2025": "약 1,501",
+  "now": "1,527",
+  "holder": "Gemini 4 Carbon (High)",
+  "status": "진행 중",
+  "url": "https://arena.ai/leaderboard/text"
+ },
+ {
+  "benchmark": "τ²-bench (telecom)",
+  "category": "agent tool use",
+  "end2025": "~98% (telecom)",
+  "now": "99.3%",
+  "holder": "Claude Opus 4.6",
+  "status": "포화",
+  "url": ""
+ },
+ {
+  "benchmark": "SimpleQA Verified",
+  "category": "factuality",
+  "end2025": "66.8%",
+  "now": "94.0%",
+  "holder": "Claude Fable 5.2 (max)",
+  "status": "진행 중",
+  "url": "https://epoch.ai/data/benchmark_data.zip"
+ }
+]

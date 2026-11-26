@@ -1,0 +1,26 @@
+[
+ {
+  "task": "GPQA (과학 지식)",
+  "share": 89.6,
+  "note": "글로벌 최고 대비",
+  "url": "https://hollobit.github.io/SOTA/"
+ },
+ {
+  "task": "SWE-bench Verified (코딩)",
+  "share": 73.0,
+  "note": "70.4 vs 96.0",
+  "url": "https://hollobit.github.io/SOTA/"
+ },
+ {
+  "task": "HLE (최고난도)",
+  "share": 52.2,
+  "note": "글로벌 최고 대비",
+  "url": "https://hollobit.github.io/SOTA/"
+ },
+ {
+  "task": "K-BrowseComp (한국어 에이전트)",
+  "share": 22.5,
+  "note": "10.3 vs GPT-5.5 45.7",
+  "url": "https://hollobit.github.io/SOTA/"
+ }
+]

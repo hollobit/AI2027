@@ -1,0 +1,30 @@
+[
+ {
+  "team": "SKT",
+  "model": "A.X K2 (688B-A33B)",
+  "score": 70.6,
+  "result": "통과",
+  "url": "https://www.msit.go.kr/"
+ },
+ {
+  "team": "업스테이지",
+  "model": "Solar Open 2 (250B-A15B)",
+  "score": 69.9,
+  "result": "통과",
+  "url": "https://www.msit.go.kr/"
+ },
+ {
+  "team": "LG AI연구원",
+  "model": "K-EXAONE 2.0 (750B-A37B)",
+  "score": 69.0,
+  "result": "통과",
+  "url": "https://www.msit.go.kr/"
+ },
+ {
+  "team": "모티프",
+  "model": "Motif 3 (314B-A13B)",
+  "score": 65.8,
+  "result": "탈락",
+  "url": "https://www.msit.go.kr/"
+ }
+]

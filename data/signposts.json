@@ -1,0 +1,52 @@
+[
+ {
+  "indicator": "AI R&D 가속 배수 (METR·랩 자체 공개)",
+  "why": "가속/기준 시나리오를 가르는 핵심 변수 — AIFP 타임라인이 이 수치에 직접 연동",
+  "watch": "METR 후속 평가, Anthropic/OpenAI 리스크 리포트, 'Claude가 주도한 R&D 비중'(2026-08 26%)"
+ },
+ {
+  "indicator": "METR 시간지평 (새 과업군 기준)",
+  "why": "16h+ 구간 측정 포화 — 새 벤치마크에서 주~월 단위 지평이 나오는지",
+  "watch": "METR 신규 task suite, 80% 지평 추세, Epoch Capabilities Index"
+ },
+ {
+  "indicator": "하이퍼스케일러 2027 capex 가이던스",
+  "why": "골드만 $1.2T vs BlackRock 둔화 경고 — 조정 시나리오의 1차 신호",
+  "watch": "2027년 1–2월 4Q 실적 발표, 리스 취소·데이터센터 계약 뉴스"
+ },
+ {
+  "indicator": "미국 데이터센터 전력 연결·지역 반대",
+  "why": "Epoch 20–30GW 궤도와 MS 30GW대 중반 부족분의 실현 여부",
+  "watch": "PJM/ERCOT 연결 대기열, 가스터빈 납기, 지역 모라토리엄 건수(Data Center Watch)"
+ },
+ {
+  "indicator": "프런티어 랩 매출 및 IPO",
+  "why": "OpenAI+Anthropic run-rate가 약정($900B급)을 정당화하는지",
+  "watch": "Anthropic S-1/IPO 경과, 소비형 API 매출 변동, 다운라운드"
+ },
+ {
+  "indicator": "기업 에이전트 ROI",
+  "why": "Menlo 지출 5.4배 성장 vs 맥킨지 EBIT 기여 37% — 지출 지속 가능성",
+  "watch": "Menlo/맥킨지 후속 조사, 코딩 에이전트 좌석 수, OpenRouter 에이전트 토큰 비중"
+ },
+ {
+  "indicator": "보안 사고: 가중치 탈취·자기복제 에이전트",
+  "why": "State of AI 2026 예측 및 AI 2027 시나리오(2027년 2월 가중치 탈취)의 핵심 분기점",
+  "watch": "랩 침해 공시, CISA/AISI 경보, 에이전트 탈출 사례 보고"
+ },
+ {
+  "indicator": "예측시장·Metaculus AGI 확률",
+  "why": "군중 컨센서스의 이동 방향 — 연구자 예측과의 괴리 축소 여부",
+  "watch": "Kalshi 2028 전 AGI, Polymarket 2027 시장 재상장, Metaculus Q5121/Q3479 중앙값"
+ },
+ {
+  "indicator": "미·중 격차와 수출통제",
+  "why": "Stanford 2.7%p 격차, 오픈웨이트 중국 모델(Kimi, GLM) — 주권·규제 압력",
+  "watch": "신규 칩 수출규제, 중국 프런티어 모델 벤치마크 순위"
+ },
+ {
+  "indicator": "초급 화이트칼라 고용",
+  "why": "Amodei 경고 vs 실제 — 22–25세 개발자 고용 -20% 추세 확대 여부",
+  "watch": "BLS 청년 고용 데이터, 대기업 채용 동결 공시"
+ }
+]

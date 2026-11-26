@@ -1,0 +1,38 @@
+[
+ {
+  "label": "2025 실적",
+  "year": "2025",
+  "kind": "실적",
+  "value": 410,
+  "scope": "빅4 (MSFT·GOOGL·AMZN·META)",
+  "url": "https://finance.yahoo.com/markets/article/magnificent-7-earnings-rush-reveals-ai-spending-surge-with-hyperscaler-capex-set-to-reach-725-billion-in-2026-224901707.html",
+  "eok": 4100
+ },
+ {
+  "label": "2026 예측 (2025.12)",
+  "year": "2026",
+  "kind": "예측",
+  "value": 527,
+  "scope": "월가 컨센서스 (덱 p.24, '2025년 AI 10대 트렌드' 인용)",
+  "url": "",
+  "eok": 5270
+ },
+ {
+  "label": "2026 가이던스",
+  "year": "2026",
+  "kind": "실적",
+  "value": 725,
+  "scope": "빅4 가이던스 (2026.4 상단)",
+  "url": "https://finance.yahoo.com/markets/article/magnificent-7-earnings-rush-reveals-ai-spending-surge-with-hyperscaler-capex-set-to-reach-725-billion-in-2026-224901707.html",
+  "eok": 7250
+ },
+ {
+  "label": "2027 전망",
+  "year": "2027",
+  "kind": "전망",
+  "value": 1200,
+  "scope": "빅5 AI 인프라 (Goldman Sachs)",
+  "url": "https://the-decoder.com/goldman-sachs-expects-big-tech-to-spend-1-2-trillion-on-ai-infrastructure-by-2027-dwarfing-wall-street-estimates/",
+  "eok": 12000
+ }
+]

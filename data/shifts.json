@@ -1,0 +1,23 @@
+[
+ {
+  "metric": "AI 에이전트를 전사 확산 중인 대기업",
+  "before": 27,
+  "after": 40,
+  "unit": "%",
+  "url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai"
+ },
+ {
+  "metric": "최고AI책임자(CAIO) 보유 조직",
+  "before": 26,
+  "after": 76,
+  "unit": "%",
+  "url": "https://www.peoplematters.in/news/ai-and-emerging-tech/76percent-of-firms-now-have-a-chief-ai-officer-up-from-26percent-in-a-year-ibm-49550"
+ },
+ {
+  "metric": "AI 고노출 직군 22–25세 고용 격차",
+  "before": 15,
+  "after": 19,
+  "unit": "%",
+  "url": "https://digitaleconomy.stanford.edu/news/canariesaug26/"
+ }
+]

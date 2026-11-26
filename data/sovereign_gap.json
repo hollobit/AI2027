@@ -1,0 +1,44 @@
+[
+ {
+  "country": "중국",
+  "share": 90.9,
+  "model": "Kimi K3",
+  "url": "https://hollobit.github.io/SOTA/"
+ },
+ {
+  "country": "한국",
+  "share": 66.7,
+  "model": "Motif 3",
+  "url": "https://hollobit.github.io/SOTA/"
+ },
+ {
+  "country": "프랑스",
+  "share": 59.1,
+  "model": "Mistral Medium 3.5",
+  "url": "https://hollobit.github.io/SOTA/"
+ },
+ {
+  "country": "캐나다",
+  "share": 56.1,
+  "model": "Command A+",
+  "url": "https://hollobit.github.io/SOTA/"
+ },
+ {
+  "country": "인도",
+  "share": 27.3,
+  "model": "Sarvam",
+  "url": "https://hollobit.github.io/SOTA/"
+ },
+ {
+  "country": "UAE",
+  "share": 24.2,
+  "model": "K2 / Falcon",
+  "url": "https://hollobit.github.io/SOTA/"
+ },
+ {
+  "country": "스위스",
+  "share": 12.1,
+  "model": "Apertus",
+  "url": "https://hollobit.github.io/SOTA/"
+ }
+]

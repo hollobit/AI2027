@@ -1,0 +1,58 @@
+[
+ {
+  "indicator": "Anthropic AI R&D 진전 속도 배율(METR 독립평가, AECI 기준)",
+  "value": "1.9x (95% CI 1.5–2.8x); 종합 판단 ~2x",
+  "as_of": "2026-10",
+  "trend": "2025-10 이후 가속, 추가 가속 가능성",
+  "url": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment"
+ },
+ {
+  "indicator": "가속 중 AI 귀속 비율(METR 추정)",
+  "value": "≈80%",
+  "as_of": "2026-10",
+  "trend": "AI 기여 비중 시간에 따라 증가",
+  "url": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment"
+ },
+ {
+  "indicator": "AI 귀속 진전 가속(AI Futures Project 환산)",
+  "value": "1.7x (2026-11) vs ~1.2x (2026-05)",
+  "as_of": "2026-11",
+  "trend": "6개월 새 급상승",
+  "url": "https://www.lesswrong.com/posts/f9PajMLmBYzmWzyDv/aifp-looks-like-the-intelligence-explosion-will-happen-in"
+ },
+ {
+  "indicator": "Anthropic 자체 평가 AI R&D 가속",
+  "value": "상당히 빠르나 2배 미만; Claude가 병합 코드의 대다수 작성",
+  "as_of": "2026-07",
+  "trend": "과제 기반 평가 포화, 초기 가속 신호",
+  "url": "https://www-cdn.anthropic.com/f61d49fa5596956a5dec75fea0e973bf6a6a8378/Redacted%20Risk%20Report%20August%202026%20.pdf"
+ },
+ {
+  "indicator": "METR 50% 시간 지평 배증 주기",
+  "value": "89일(2024년 이후, TH1.1); 131일(2023년 이후)",
+  "as_of": "2026-01",
+  "trend": "배증 주기 단축",
+  "url": "https://metr.org/blog/2026-01-29-time-horizon-1-1/"
+ },
+ {
+  "indicator": "OpenAI AI 자기개선 Preparedness 등급(GPT-5.6)",
+  "value": "High 미만",
+  "as_of": "2026-07",
+  "trend": "평가 스위트 포화로 개편",
+  "url": "https://deploymentsafety.openai.com/gpt-5-6/gpt-5-6.pdf"
+ },
+ {
+  "indicator": "AISI 자기복제 평가 성공률",
+  "value": "60%",
+  "as_of": "2025-10",
+  "trend": "5%(2023)→60%(2025)",
+  "url": "https://aisi.gov.uk/frontier-ai-trends-report"
+ },
+ {
+  "indicator": "SAR(초인적 AI 연구자) 예측 중앙값(AIFP 6인)",
+  "value": "2027-05 ~ 2027-11",
+  "as_of": "2026-11",
+  "trend": "약 1~1.5년 앞당겨짐(Daniel 2028-12→2027-05 보도)",
+  "url": "https://www.lesswrong.com/posts/f9PajMLmBYzmWzyDv/aifp-looks-like-the-intelligence-explosion-will-happen-in"
+ }
+]

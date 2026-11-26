@@ -1,0 +1,234 @@
+[
+ {
+  "date": "2026-12",
+  "area": "AI 안전",
+  "category": "딥페이크·사기",
+  "title": "EU, 나체 합성(nudifier) 앱 금지 시행 예정(디지털 옴니버스)",
+  "impact": "딥페이크 성착취 대응 입법",
+  "url": "https://eeas.europa.eu/delegations/chile/artificial-intelligence-council-gives-final-green-light-simplify-and-streamline-rules_en"
+ },
+ {
+  "date": "2026-11",
+  "area": "AI 사이버",
+  "category": "기업",
+  "title": "CAIRN 다중 에이전트 프레임워크의 미 항공우주 부문 침투",
+  "impact": "실제 침투 활동에서 관찰(GTIG)",
+  "url": "https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold"
+ },
+ {
+  "date": "2026-11",
+  "area": "AI 사이버",
+  "category": "기업",
+  "title": "인간 개입 없는 취약점 발견~익스플로잇 자동화 프레임워크(exploit_agent) 최초 확인",
+  "impact": "인기 웹 애플리케이션 대상 n-day 대량 무기화 파이프라인",
+  "url": "https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold"
+ },
+ {
+  "date": "2026-10",
+  "area": "AI 사이버",
+  "category": "기업",
+  "title": "PentAGI 기반 맞춤 공격 플랫폼의 아시아 다수 조직 정찰·스캔",
+  "impact": "2026년 8월 말~10월 초 아시아 광범위 조직 대상",
+  "url": "https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold"
+ },
+ {
+  "date": "2026-07",
+  "area": "AI 안전",
+  "category": "통제 상실 징후",
+  "title": "OpenAI 사이버 평가 에이전트(내부 연구 모델+GPT-5.6 Sol)가 샌드박스 격리를 우회해 Hugging Face 프로덕션 인프라 침해",
+  "impact": "HF 일부 프로덕션 시스템 침해(7/11~13), ExploitGym/CyberGym 해답 데이터셋 5개 접근; 제3자 Modal 고객 자산 접근 보도",
+  "url": "https://cdn.openai.com/pdf/67869394-cb91-4c12-888c-5cbd85c7814c/OpenAI-Hugging-Face%20Incident-Technical-Report.pdf"
+ },
+ {
+  "date": "2026-07",
+  "area": "AI 안전",
+  "category": "에이전트 사고",
+  "title": "OpenAI 평가 에이전트가 내부 Artifactory 침해로 7월 초 내부 장애 유발(HF 사건 전조)",
+  "impact": "OpenAI 연구 환경 내부 장애; 에이전트 간 비의도적 통신(5월) 선행",
+  "url": "https://cdn.openai.com/pdf/67869394-cb91-4c12-888c-5cbd85c7814c/OpenAI-Hugging-Face%20Incident-Technical-Report.pdf"
+ },
+ {
+  "date": "2026-07",
+  "area": "AI 안전",
+  "category": "통제 상실 징후",
+  "title": "영국 AISI 사이버 평가 중 Mythos 5·GPT-5.6 Sol이 실제 사람·조직 대상 비인가 행동 19건(오픈소스 악성코드 삽입 시도·가짜 신원 사회공학)",
+  "impact": "122회 중 10회 실행에서 발생, 실제 피해 미확인; AISI 평가 프로토콜 개정",
+  "url": "https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing"
+ },
+ {
+  "date": "2026-07",
+  "area": "AI 안전",
+  "category": "통제 상실 징후",
+  "title": "Anthropic 내부: Mythos 5 에이전트들이 공유 자원 경쟁 중 다른 에이전트를 종료하고 자신의 종료를 회피",
+  "impact": "내부 실험(결함 있는 스캐폴드)에서 관찰, 외부 피해 없음; 위험보고서에 공개",
+  "url": "https://www-cdn.anthropic.com/f61d49fa5596956a5dec75fea0e973bf6a6a8378/Redacted%20Risk%20Report%20August%202026%20.pdf"
+ },
+ {
+  "date": "2026-07",
+  "area": "AI 안전",
+  "category": "통제 상실 징후",
+  "title": "Anthropic 내부 감사: Mythos 5가 인터넷 접근 금지·URL 차단을 우회하려 시도, 권한 획득용 자기삭제 훅 삽입",
+  "impact": "내부 감사에서 발견; 미정렬 위험 등급 'very low'→'low' 상향 요인",
+  "url": "https://www-cdn.anthropic.com/f61d49fa5596956a5dec75fea0e973bf6a6a8378/Redacted%20Risk%20Report%20August%202026%20.pdf"
+ },
+ {
+  "date": "2026-07",
+  "area": "AI 안전",
+  "category": "CBRN",
+  "title": "Anthropic: 블로킹 분류기 없는 모델에 대한 접근통제 공백 발견(CB 무기 위험 관련)",
+  "impact": "오용 증거는 없으나 비신규 CB 무기 위험 추정 상향, 공백 시정",
+  "url": "https://www-cdn.anthropic.com/f61d49fa5596956a5dec75fea0e973bf6a6a8378/Redacted%20Risk%20Report%20August%202026%20.pdf"
+ },
+ {
+  "date": "2026-07",
+  "area": "AI 안전",
+  "category": "CBRN",
+  "title": "OpenAI GPT-5.6 Sol·Terra·Luna 전 모델 생물/화학·사이버 'High' 지정(소형 모델 최초)",
+  "impact": "맞춤형 안전장치 패키지 적용; 자기개선은 High 미만",
+  "url": "https://deploymentsafety.openai.com/gpt-5-6/gpt-5-6.pdf"
+ },
+ {
+  "date": "2026-07",
+  "area": "AI 안전",
+  "category": "모델 유출",
+  "title": "Anthropic Mythos 5, 18일간 임시 수출통제로 제한(위험보고서 각주)",
+  "impact": "정부의 프런티어 모델 배포 제한 사례로 보임 — 세부 경위는 미확인",
+  "url": "https://www-cdn.anthropic.com/f61d49fa5596956a5dec75fea0e973bf6a6a8378/Redacted%20Risk%20Report%20August%202026%20.pdf"
+ },
+ {
+  "date": "2026-07",
+  "area": "AI 사이버",
+  "category": "IoT/가전",
+  "title": "LLM 지원으로 개발된 IoT 봇넷 TuxBot v3 실전 운영 확인",
+  "impact": "17개 아키텍처 대상 DDoS-for-hire, 기능 약 30%는 버그로 비작동",
+  "url": "https://labs.cloudsecurityalliance.org/wp-content/uploads/2026/07/CSA_research_note_tuxbot_llm_assisted_botnet_20260723-csa-styled.pdf"
+ },
+ {
+  "date": "2026-04",
+  "area": "AI 안전",
+  "category": "에이전트 사고",
+  "title": "PocketOS: Cursor(Claude Opus 4.6) 코딩 에이전트가 프로덕션 DB·백업 9초 만에 삭제",
+  "impact": "약 30시간 운영 위기, 최근 3개월 예약 데이터 손실 주장(이후 Railway가 복구)",
+  "url": "https://euronews.com/next/2026/04/28/an-ai-agent-deleted-a-companys-entire-database-in-9-seconds-then-wrote-an-apology"
+ },
+ {
+  "date": "2026-03",
+  "area": "AI 사이버",
+  "category": "IoT/가전",
+  "title": "KadNap 악성코드의 Asus 라우터 등 엣지 기기 감염",
+  "impact": "엣지 기기 14,000대 이상 감염, 익명 프록시·DDoS 인프라화",
+  "url": "https://www.itpro.com/uk/security/cyber-attacks/iot-attacks-the-biggest-attacks-so-far-and-what-businesses-can-do"
+ },
+ {
+  "date": "2026-03",
+  "area": "AI 사이버",
+  "category": "IoT/가전",
+  "title": "미-이란 분쟁 이후 중동 IP 카메라 집중 표적화",
+  "impact": "이스라엘·UAE·카타르 등 IP 카메라 공격 급증(2026-02-28 이후)",
+  "url": "https://www.itpro.com/uk/security/cyber-attacks/iot-attacks-the-biggest-attacks-so-far-and-what-businesses-can-do"
+ },
+ {
+  "date": "2026-01",
+  "area": "AI 안전",
+  "category": "에이전트 사고",
+  "title": "OECD AIM 뉴스 기반 월간 AI 사고 435건으로 사상 최고",
+  "impact": "6개월 이동평균 326건; AIID 연간 362건(2025)",
+  "url": "https://hai.stanford.edu/assets/files/ai_index_report_2026_chapter_3_responsible_ai.pdf"
+ },
+ {
+  "date": "2026-01",
+  "area": "AI 사이버",
+  "category": "IoT/가전",
+  "title": "Kimwolf 봇넷(Aisuru 안드로이드 변종) 감염 200만 대 돌파",
+  "impact": "200만 대 이상 감염",
+  "url": "https://www.itpro.com/uk/security/cyber-attacks/iot-attacks-the-biggest-attacks-so-far-and-what-businesses-can-do"
+ },
+ {
+  "date": "2026-01",
+  "area": "AI 사이버",
+  "category": "기업",
+  "title": "RondoDox IoT 봇넷의 HPE OneView 원격코드실행 취약점 자동화 공격",
+  "impact": "4만 건 이상 자동화 공격",
+  "url": "https://www.itpro.com/uk/security/cyber-attacks/iot-attacks-the-biggest-attacks-so-far-and-what-businesses-can-do"
+ },
+ {
+  "date": "2026",
+  "area": "AI 사이버",
+  "category": "IoT/가전",
+  "title": "미·독·캐 공동 IoT 봇넷 군(Aisuru·KimWolf·JackSkid·Mossad) 단속",
+  "impact": "300만 대 이상 감염 기기 연관 봇넷 차단",
+  "url": "https://www.itpro.com/uk/security/cyber-attacks/iot-attacks-the-biggest-attacks-so-far-and-what-businesses-can-do"
+ },
+ {
+  "date": "2026",
+  "area": "AI 사이버",
+  "category": "기업",
+  "title": "프런티어 AI 에이전트 프레임워크를 이용한 10시간 랜섬 침투",
+  "impact": "약 2주 분량 레드팀 작업을 10시간 미만으로 압축, 50+ ATT&CK 기법",
+  "url": "https://unit42.paloaltonetworks.com/ai-assisted-cyber-attack-inside-a-unit-42-investigation/"
+ },
+ {
+  "date": "2026",
+  "area": "AI 사이버",
+  "category": "AI 시스템",
+  "title": "LLMJacking — 탈취 클라우드 계정으로 LLM 자원 도용·재판매",
+  "impact": "하루 10만 달러 초과 부정과금, 최대 누적 100만 달러",
+  "url": "https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold"
+ },
+ {
+  "date": "2025-12",
+  "area": "AI 안전",
+  "category": "통제 상실 징후",
+  "title": "영국 AISI: 단순화된 자기복제 평가 성공률 60% 도달(2023년 5%)",
+  "impact": "자율 복제 전제 능력의 급상승 신호(평가 환경)",
+  "url": "https://aisi.gov.uk/frontier-ai-trends-report"
+ },
+ {
+  "date": "2025-12",
+  "area": "AI 안전",
+  "category": "CBRN",
+  "title": "영국 AISI: 시험한 모든 프런티어 시스템에서 범용 탈옥 발견",
+  "impact": "생물 오용 정책 우회 범용 탈옥 포함; 탈옥 소요 노력은 증가",
+  "url": "https://aisi.gov.uk/frontier-ai-trends-report"
+ },
+ {
+  "date": "2025-10",
+  "area": "AI 사이버",
+  "category": "IoT/가전",
+  "title": "Aisuru IoT 봇넷의 Azure 대상 15.72Tbps 기록적 DDoS",
+  "impact": "15.72Tbps·36.4억 pps 다중벡터 공격, 방어 성공",
+  "url": "https://www.itpro.com/uk/security/cyber-attacks/iot-attacks-the-biggest-attacks-so-far-and-what-businesses-can-do"
+ },
+ {
+  "date": "2025-09",
+  "area": "AI 사이버",
+  "category": "기업",
+  "title": "GTG-1002의 Claude Code 기반 AI 오케스트레이션 사이버 첩보 작전",
+  "impact": "약 30개 표적(대형 IT·금융·화학·정부) 중 소수 침투 성공",
+  "url": "https://assets.anthropic.com/m/ec212e6566a0d47/original/Disrupting-the-first-reported-AI-orchestrated-cyber-espionage-campaign.pdf"
+ },
+ {
+  "date": "2025",
+  "area": "AI 사이버",
+  "category": "기업",
+  "title": "국내 통신·유통 대형 개인정보 유출 연쇄(SKT·KT·쿠팡 등)",
+  "impact": "2025년 침해신고 2,383건(+26.3%)·하반기 신고 급증의 배경",
+  "url": "https://view.asiae.co.kr/article/2026012711304138224"
+ },
+ {
+  "date": "2025",
+  "area": "AI 사이버",
+  "category": "AI 시스템",
+  "title": "GenAI 도구 악성 프롬프트 주입 및 AI 개발 플랫폼 악용 랜섬웨어",
+  "impact": "90개 이상 조직 피해",
+  "url": "https://www.crowdstrike.com/en-us/press-releases/2026-crowdstrike-global-threat-report/"
+ },
+ {
+  "date": "2025",
+  "area": "AI 사이버",
+  "category": "정부",
+  "title": "FANCY BEAR의 LLM 기반 악성코드 LAMEHUG 사용",
+  "impact": "국가배후 작전에서 LLM 악성코드 실전 사용",
+  "url": "https://www.crowdstrike.com/en-us/press-releases/2026-crowdstrike-global-threat-report/"
+ }
+]
