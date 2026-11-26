@@ -210,6 +210,7 @@
       <a href="#part13">AI 발전 법칙</a>
       <a href="#part14">수학·물리 난제</a>
       <a href="#part15">AI for Science·문샷</a>
+      <a href="#part16">사이버 회복력</a>
       <a href="report.html">상세 보고서 →</a>
     </nav>
   </header>
@@ -1020,6 +1021,50 @@
       <table data-source="ai4s_colleagues" data-row-key="system" aria-label="AI 연구 동료">
         <thead><tr><th data-field="system">시스템</th><th data-field="org">주체</th><th data-field="results">검증된 성과</th></tr></thead>
         <tbody data-draw="ai4s-col-rows"></tbody>
+      </table>
+    </div>
+  </section>
+  <!-- ============ PART 16 ============ -->
+  <section class="ai27-part" id="part16">
+    <div class="ai27-parthead">
+      <span class="ai27-partno" aria-hidden="true">16</span>
+      <h2>사이버 회복력과 디지털 재난안전</h2>
+      <p class="ai27-muted">회복력은 사고를 예측하고, 견디고, 복구하고, 적응하는 능력입니다. 2027년은 회복력 규제의 집행 원년입니다(EU 사이버복원력법 12-11, 한국 정보보호수준 평가 04-01). 국정자원 화재 뒤 완전 이중화(2028)까지 2027–28년이 취약 구간이고, 클라우드 장애와 AI 에이전트발 장애가 새로운 단일 장애점입니다.</p>
+    </div>
+    <div class="ai27-card" id="res-scen">
+      <h3>2027 회복력 시나리오</h3>
+      <div class="ai27-chart" data-draw="res-strip" data-source="res_scenarios" style="min-height:40px"></div>
+      <div class="ai27-grid3" data-draw="res-cards" data-source="res_scenarios"></div>
+    </div>
+    <div class="ai27-sub" id="res-disasters"><h3>2022–2026 디지털 재난과 교훈</h3></div>
+    <div class="ai27-tablewrap">
+      <table data-source="res_disasters" data-row-key="event" aria-label="디지털 재난">
+        <thead><tr><th data-field="date">시점</th><th data-field="type">유형</th><th data-field="event">사건</th><th data-field="impact">영향</th><th data-field="lesson">교훈</th></tr></thead>
+        <tbody data-draw="res-dis-rows"></tbody>
+      </table>
+    </div>
+    <div class="ai27-grid2">
+      <div class="ai27-card" id="res-dates">
+        <h3>2027 주요 일정</h3>
+        <ul class="ai27-list" data-draw="res-date-list" data-source="res_dates"></ul>
+      </div>
+      <div class="ai27-card" id="res-pqc">
+        <h3>양자내성암호(PQC) 전환 이정표</h3>
+        <ul class="ai27-list" data-draw="res-pqc-list" data-source="res_pqc"></ul>
+      </div>
+    </div>
+    <div class="ai27-sub" id="res-reg"><h3>회복력 규제와 2027 이정표</h3></div>
+    <div class="ai27-tablewrap">
+      <table data-source="res_regulation" data-row-key="instrument" aria-label="회복력 규제">
+        <thead><tr><th data-field="jurisdiction">관할</th><th data-field="instrument">제도</th><th data-field="milestone">2027 이정표</th></tr></thead>
+        <tbody data-draw="res-reg-rows"></tbody>
+      </table>
+    </div>
+    <div class="ai27-sub" id="res-fc"><h3>2027 회복력 전망</h3></div>
+    <div class="ai27-tablewrap">
+      <table data-source="res_forecast" data-row-key="text" aria-label="2027 회복력 전망">
+        <thead><tr><th data-field="likelihood">가능성</th><th data-field="area">영역</th><th data-field="text">전망</th></tr></thead>
+        <tbody data-draw="res-fc-rows"></tbody>
       </table>
     </div>
   </section>
@@ -2036,6 +2081,50 @@
         const s = document.createElement('span'); s.textContent = r.text; li.append(p, s); return li; }));
     });
     fill('ai4s-col-rows', 'ai4s_colleagues', (tr, r) => tr.append(A.td(r.system, 'mid'), A.td(r.org, 'mid'), A.td(r.results, 'wide')));
+  })();
+</script>
+
+<script>
+  // ---------- Part 16 ----------
+  (function () {
+    const A = window.AI27;
+    const LV = { '높음': 'missed', '중간': 'partial', '낮음': 'unclear' };
+    const pill = (t, v) => { const s = document.createElement('span'); s.className = 'ai27-pill'; s.dataset.v = v || LV[t] || 'mostly'; s.textContent = t; return s; };
+    const rowsOf = (id) => { const d = dash.data(id); return d.status === 'ok' ? d.data : null; };
+    const fill = (name, id, build) => dash.draw(name, (tbody) => {
+      const rows = rowsOf(id); if (!rows) return;
+      tbody.replaceChildren(...rows.map((r) => { const tr = document.createElement('tr'); build(tr, r); return tr; }));
+    });
+    const sc = [dash.colors[0], 'var(--color-bad)', dash.colors[1] || 'var(--color-warn)', dash.colors[2] || dash.colors[0]];
+    dash.draw('res-strip', (el) => {
+      const got = A.ready(el, ['res_scenarios']); if (!got) return;
+      el.replaceChildren(); const tt = A.tooltip(el);
+      const s = document.createElement('div'); s.className = 'ai27-scen-strip'; s.setAttribute('role', 'img');
+      s.setAttribute('aria-label', '회복력 시나리오: ' + got[0].map((r) => r.name + ' ' + r.prob + '%').join(', '));
+      got[0].forEach((r, i) => { const d = document.createElement('div'); d.style.flex = String(r.prob); d.style.background = sc[i % 4];
+        d.textContent = r.prob + '%'; A.attachTip(d, tt, r.name, r.prob + '%'); s.appendChild(d); });
+      el.prepend(s);
+    });
+    dash.draw('res-cards', (el) => {
+      const got = A.ready(el, ['res_scenarios']); if (!got) return;
+      el.replaceChildren(...got[0].map((r, i) => { const c = document.createElement('article'); c.className = 'ai27-card'; c.style.borderTop = '3px solid ' + sc[i % 4];
+        const h = document.createElement('h3'); h.textContent = r.name; const p = document.createElement('span'); p.className = 'ai27-scen-prob'; p.textContent = r.prob + '%';
+        const d = document.createElement('p'); d.className = 'ai27-muted'; d.textContent = r.description; c.append(h, p, d); return c; }));
+    });
+    fill('res-dis-rows', 'res_disasters', (tr, r) => {
+      const ev = A.safeUrl(r.url) ? A.link(r.url, r.event) : document.createTextNode(r.event);
+      tr.append(A.td(r.date), A.td(r.type, 'mid'), A.td(ev, 'wide'), A.td(r.impact, 'wide'), A.td(r.lesson, 'wide'));
+    });
+    const list = (name, id, build) => dash.draw(name, (el) => {
+      const got = A.ready(el, [id]); if (!got) return;
+      el.replaceChildren(...got[0].map((r) => { const li = document.createElement('li'); build(li, r); return li; }));
+    });
+    list('res-date-list', 'res_dates', (li, r) => { const b = document.createElement('b'); b.textContent = r.date + ' · ' + r.jurisdiction; b.style.fontFamily = 'var(--ai27-mono)'; b.style.fontWeight = '500';
+      const s = document.createElement('span'); s.textContent = r.event; li.append(b, s); });
+    list('res-pqc-list', 'res_pqc', (li, r) => { const b = document.createElement('b'); b.textContent = r.jurisdiction + ' · ' + r.date;
+      const s = document.createElement('span'); s.className = 'ai27-muted'; s.textContent = r.milestone + ' (' + r.status + ')'; li.append(b, s); });
+    fill('res-reg-rows', 'res_regulation', (tr, r) => tr.append(A.td(r.jurisdiction), A.td(r.instrument, 'mid'), A.td(r.milestone, 'wide')));
+    fill('res-fc-rows', 'res_forecast', (tr, r) => tr.append(A.td(pill(r.likelihood)), A.td(r.area), A.td(r.text, 'wide')));
   })();
 </script>
 

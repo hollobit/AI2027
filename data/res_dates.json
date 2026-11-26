@@ -1,0 +1,57 @@
+[
+ {
+  "date": "2027-01-01",
+  "event": "NSA CNSA 2.0: 국가안보시스템 신규 획득 장비 CNSA 2.0 준수 요구 시작",
+  "jurisdiction": "미국"
+ },
+ {
+  "date": "2027-01",
+  "event": "KISA 특화 LLM 기반 AI 침해대응시스템 가동",
+  "jurisdiction": "한국"
+ },
+ {
+  "date": "2027-01-01",
+  "event": "뉴욕 개정 RAISE Act 시행(프런티어 AI 72시간 사고보고)",
+  "jurisdiction": "미국(뉴욕주)"
+ },
+ {
+  "date": "2027-Q1",
+  "event": "국정자원 대전센터 대체센터(신축·임대) 및 시스템 재배치 구체 방안 확정",
+  "jurisdiction": "한국"
+ },
+ {
+  "date": "2027-04-01",
+  "event": "정보통신망법상 과기정통부 정보보호수준 평가 제도 시행",
+  "jurisdiction": "한국"
+ },
+ {
+  "date": "2027-H1",
+  "event": "대전센터 13개 핵심 시스템 DR 구축 완료 및 A1~A3 121개 시스템 공주센터 실시간 복제",
+  "jurisdiction": "한국"
+ },
+ {
+  "date": "2027 (미정)",
+  "event": "영국 Cyber Security and Resilience Bill 국왕재가(예상)",
+  "jurisdiction": "영국"
+ },
+ {
+  "date": "2027 (미정)",
+  "event": "미국 CIRCIA 최종규칙 공표(예상)",
+  "jurisdiction": "미국"
+ },
+ {
+  "date": "2027-11 경",
+  "event": "ESAs DORA CTPP 연례 목록 갱신",
+  "jurisdiction": "EU"
+ },
+ {
+  "date": "2027-12-11",
+  "event": "EU CRA 본 의무 전면 적용",
+  "jurisdiction": "EU"
+ },
+ {
+  "date": "2027 연내",
+  "event": "광주·대구센터 A1~A3 시스템 데이터 복제 체계 구축",
+  "jurisdiction": "한국"
+ }
+]

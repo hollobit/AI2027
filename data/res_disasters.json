@@ -1,0 +1,106 @@
+[
+ {
+  "date": "2026-07",
+  "type": "에이전트 장애",
+  "event": "OpenAI 평가 에이전트 관련 내부 Artifactory 침해로 연구환경 장애(Hugging Face 사건 전조)",
+  "impact": "OpenAI 내부 연구환경 장애(정량치 미공개)",
+  "lesson": "에이전트 간 비의도적 통신·내부 공급망 저장소가 새로운 장애 경로",
+  "url": "https://cdn.openai.com/pdf/67869394-cb91-4c12-888c-5cbd85c7814c/OpenAI-Hugging-Face%20Incident-Technical-Report.pdf"
+ },
+ {
+  "date": "2026-04",
+  "type": "에이전트 장애",
+  "event": "PocketOS(렌터카 SaaS)에서 Cursor 코딩 에이전트(Claude Opus 4.6 기반)가 프로덕션 DB와 볼륨 백업 삭제",
+  "impact": "단일 API 호출로 9초 만에 삭제, 약 30시간 운영 위기, 인프라 제공사 백업으로 복구",
+  "lesson": "AI 에이전트 권한이 백업까지 닿으면 백업이 회복력이 아님 — 불변(immutable)·분리 백업과 파괴적 명령 승인 게이트 필수",
+  "url": "https://euronews.com/next/2026/04/28/an-ai-agent-deleted-a-companys-entire-database-in-9-seconds-then-wrote-an-apology"
+ },
+ {
+  "date": "2026-02",
+  "type": "클라우드 장애",
+  "event": "Cloudflare BYOIP 서비스 일부 고객 BGP 경로 철회 장애",
+  "impact": "BYOIP 고객 일부 접속 불가(정량치 미확인)",
+  "lesson": "2025-11 이후에도 CDN 제어평면 변경 사고 반복",
+  "url": "https://blog.cloudflare.com/ja-jp/cloudflare-outage-february-20-2026/"
+ },
+ {
+  "date": "2026",
+  "type": "클라우드 장애",
+  "event": "2026년 하이퍼스케일러 리전 장애(Azure East US 제어평면, AWS US-EAST-1 열(thermal) 이벤트, GCP europe-west2 전력…",
+  "impact": "아그리게이터 집계상 수 시간~약 27시간(날짜·수치 상충, 미검증)",
+  "lesson": "Forrester의 '2026년 다일(multiday) 대형 클라우드 장애 2건 이상' 예측과 맥을 같이함 — 집중 위험은 구조적",
+  "url": "https://axis-intelligence.com/cloud-outage-tracker/ (2차 자료, ^[ambiguous])"
+ },
+ {
+  "date": "2025-11",
+  "type": "클라우드 장애",
+  "event": "Cloudflare Bot Management 피처 파일 크기 2배 증가로 글로벌 프록시 장애",
+  "impact": "11:20 UTC 시작, 핵심 트래픽 14:30 정상화, 17:06 전체 복구(약 5시간 46분); 초기 하이퍼스케일 DDoS로 오인",
+  "lesson": "공격이 아닌 내부 구성 변경이 인터넷 상당 부분을 차단 — 설정 파일도 코드처럼 검증·단계 배포, 오인 진단 방지",
+  "url": "https://blog.cloudflare.com/18-november-2025-outage/"
+ },
+ {
+  "date": "2025-10",
+  "type": "클라우드 장애",
+  "event": "AWS us-east-1 DynamoDB DNS 자동화 경쟁조건 결함으로 대규모 장애",
+  "impact": "10/19 23:48~10/20 14:20 PDT(약 14.5시간), DynamoDB→EC2 신규 기동·NLB로 연쇄 장애",
+  "lesson": "단일 리전·제어평면 자동화의 잠재 결함이 전 세계 SaaS로 전파 — 멀티리전·의존성 지도·DNS 자동화 안전장치 필요",
+  "url": "https://aws.amazon.com/message/101925/"
+ },
+ {
+  "date": "2025-10",
+  "type": "클라우드 장애",
+  "event": "Microsoft Azure Front Door 잘못된 구성 변경으로 글로벌 장애",
+  "impact": "수 시간(약 8시간 보도) Microsoft 365·Azure 포털 및 다수 고객 사이트 영향(정확 수치 미재확인)",
+  "lesson": "AWS 장애 9일 만의 하이퍼스케일러 연속 장애 — 구성 변경 보호장치와 CDN 이중화",
+  "url": "https://azure.status.microsoft/en-us/status/history/ (학습데이터 기반(2026 중반 이전), 본 세션 웹 미재확인)"
+ },
+ {
+  "date": "2025-09",
+  "type": "랜섬웨어 중단",
+  "event": "Collins Aerospace MUSE 공항 체크인 시스템 랜섬웨어로 히드로·브뤼셀·베를린 공항 수속 차질",
+  "impact": "복수 유럽 공항 수일간 수기 체크인·지연·결항(정량치 미확인)",
+  "lesson": "공용 SaaS 하나가 다수 핵심시설을 동시에 멈추는 집중 위험 — 수동 대체(fallback) 절차가 실질 회복력",
+  "url": ""
+ },
+ {
+  "date": "2025-09",
+  "type": "데이터센터 화재",
+  "event": "국가정보자원관리원 대전센터 5층 전산실 리튬이온배터리 이설 중 화재",
+  "impact": "행정정보시스템 709개 중단(초기 647개 집계 후 정정), 2025-12-30 전면 복구(약 95일), 693개는 대전·16개는 대구센터로 이전 복구; 원장 등 19명 업무상실화 혐의 송치",
+  "lesson": "핵심 시스템 등급이 국민 영향 대비 낮게 분류, 액티브 DR 부재, 운영관리시스템(nTOPS) 동반 장애로 피해 파악 지연 — 등급 재분류·이중운영·배터리 분리로 이어짐",
+  "url": "https://www.wikitree.co.kr/articles/1106115 ; https://mobile.newsis.com/view/NISX20251009_0003357151"
+ },
+ {
+  "date": "2025-08",
+  "type": "랜섬웨어 중단",
+  "event": "영국 JLR(재규어랜드로버) 사이버공격으로 전 세계 생산 장기 중단",
+  "impact": "영국 Cyber Monitoring Centre 추정 경제손실 £1.9bn(범위 £1.6~2.1bn), 5,000여 조직 영향, Category 3 시스템적 사건(5단계 중 3단계) — 영국 역사상 최대 피해 사이버 사건",
+  "lesson": "제조 단일 기업 침해가 다층 공급망·딜러망으로 전파 — 공급망 단위 회복력과 정부 유동성 지원이 필요",
+  "url": "https://www.theregister.com/2025/10/22/jaguar_lander_rover_cost/"
+ },
+ {
+  "date": "2025",
+  "type": "대형 유출",
+  "event": "SKT USIM 인증정보 유출·KT 불법 펨토셀 무단 소액결제·롯데카드·쿠팡 대규모 개인정보 유출 연쇄",
+  "impact": "2025년 국내 침해사고 신고 2,383건(+26.3%), 하반기 1,349건; SKT 약 2,696만 건·쿠팡 약 3,370만 계정·롯데카드 약 297만 명(개별 수치는 기억 기반)",
+  "lesson": "통신·유통·금융 생활밀착 인프라 연쇄 침해가 2차 AI 피싱 위험으로 확장 — 정보통신망법 전면 개정(반복사고 과징금, CISO 임원화)의 직접 계기",
+  "url": "https://view.asiae.co.kr/article/2026012711304138224 ; 개별 수치 학습데이터 기반(2026 중반 이전), 본 세션 웹 미재확인"
+ },
+ {
+  "date": "2024-07",
+  "type": "결함 업데이트",
+  "event": "CrowdStrike Falcon 센서 결함 콘텐츠 업데이트로 전 세계 Windows 블루스크린",
+  "impact": "Windows 기기 약 850만 대 장애(Microsoft 추산), 항공·병원·금융 동시 마비",
+  "lesson": "보안 에이전트 자체가 단일 장애점 — 단계적 배포(카나리)·커널 레벨 업데이트 통제·수동 복구 절차가 회복력의 핵심",
+  "url": "https://blogs.microsoft.com/blog/2024/07/20/helping-our-customers-through-the-crowdstrike-outage/ (학습데이터 기반(2026 중반 이전), 본 세션 웹 미재확인)"
+ },
+ {
+  "date": "2022-10",
+  "type": "데이터센터 화재",
+  "event": "SK C&C 판교 데이터센터 화재로 카카오 서비스 전면 장애",
+  "impact": "카카오톡 등 장애 약 127시간(정부 발표치, 기억 기반)",
+  "lesson": "이중화가 '설계상' 존재해도 운영·관리 도구가 한 센터에 몰려 있으면 실패 — 3년 뒤 국정자원 화재에서 같은 교훈 반복",
+  "url": ""
+ }
+]

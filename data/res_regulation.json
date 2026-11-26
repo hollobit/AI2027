@@ -1,0 +1,57 @@
+[
+ {
+  "jurisdiction": "EU",
+  "instrument": "Cyber Resilience Act (Reg. 2024/2847)",
+  "milestone": "2027-12-11 본 의무(보안 설계·취약점 처리·CE 적합성) 전면 적용"
+ },
+ {
+  "jurisdiction": "EU",
+  "instrument": "NIS2 Directive (2022/2555)",
+  "milestone": "잔여 회원국 전환 완료·CJEU 회부 가능성, 필수·중요 기관 감독 본격화; 2027 NIS2 검토 보고"
+ },
+ {
+  "jurisdiction": "EU",
+  "instrument": "DORA (Reg. 2022/2554)",
+  "milestone": "CTPP 연례 목록 갱신, 첫 현장 검사·권고, 위협주도 침투시험(TLPT) 주기 진행"
+ },
+ {
+  "jurisdiction": "EU",
+  "instrument": "Cybersecurity Act 개정(CSA2)",
+  "milestone": "의회·이사회 협상, 2027 중 합의 가능성 중간"
+ },
+ {
+  "jurisdiction": "영국",
+  "instrument": "Cyber Security and Resilience (NIS) Bill",
+  "milestone": "2027 초 국왕재가 예상(NCC Group), 이후 이사회 책임 등 2차 입법·MSP·데이터센터 규제 편입"
+ },
+ {
+  "jurisdiction": "미국",
+  "instrument": "CIRCIA 최종규칙(72시간 사고·24시간 랜섬 지급 보고)",
+  "milestone": "2027 상반기 최종규칙 공표 가능성(중간), 적용은 공표 후 유예기간 거쳐 2028 이후"
+ },
+ {
+  "jurisdiction": "미국",
+  "instrument": "CISA 운영·예산 / SEC 사이버 공시 규칙",
+  "milestone": "CISA 인력·예산 축소 기조 지속 시 주·민간 ISAC 의존 확대"
+ },
+ {
+  "jurisdiction": "한국",
+  "instrument": "정보통신망법 개정(법률 제21500호)",
+  "milestone": "2027-04-01 과기정통부 정보보호수준 평가 제도 시행(결과 공개·개선 권고)"
+ },
+ {
+  "jurisdiction": "한국",
+  "instrument": "행정기관 및 공공기관 정보시스템 안정성 고시 / AI정부 인프라·거버넌스 혁신 추진방향",
+  "milestone": "대전센터 13개 핵심 시스템 DR 2027 상반기 완료, A1~A3 121개 공주센터 실시간 복제 2027 상반기, 광주·대구 A1~A3 복제체계 2027년, 대체센터 방안 2027 1분기, 민간 클라우드 이전 확대(2026 50개); 대전센터 2030 폐쇄, 서버환경 2028 완료"
+ },
+ {
+  "jurisdiction": "한국",
+  "instrument": "국가 망보안체계(N2SF) / 금융권 망분리 개선",
+  "milestone": "공공 민간클라우드 이전·생성형 AI 도입 확대와 맞물려 '분리'에서 '등급별 통제+회복력' 패러다임 전환 가속"
+ },
+ {
+  "jurisdiction": "한국",
+  "instrument": "2027 정부예산안(과기정통부) 및 KISA AI 침해대응시스템",
+  "milestone": "2027-01 KISA 특화 LLM 기반 AI 침해대응시스템 가동·AI 에이전트 10종 개발"
+ }
+]

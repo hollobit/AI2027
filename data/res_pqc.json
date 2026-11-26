@@ -1,0 +1,62 @@
+[
+ {
+  "jurisdiction": "미국(NIST)",
+  "milestone": "FIPS 203(ML-KEM)·204(ML-DSA)·205(SLH-DSA) 최종 표준",
+  "date": "2024-08",
+  "status": "확정"
+ },
+ {
+  "jurisdiction": "미국(NIST)",
+  "milestone": "HQC를 백업 KEM으로 선정, 표준 초안 후 최종화 예정(2027 전후)",
+  "date": "2025-03",
+  "status": "선정 완료, 표준화 진행"
+ },
+ {
+  "jurisdiction": "미국(NIST)",
+  "milestone": "IR 8547 초안: 양자취약 알고리즘(RSA·ECC) 2030 폐기 권고(deprecated)·2035 금지(disallowed)",
+  "date": "2030/2035",
+  "status": "초안(2024-11) 기반"
+ },
+ {
+  "jurisdiction": "미국(NSA)",
+  "milestone": "CNSA 2.0 — 국가안보시스템 신규 획득 장비는 2027-01-01부터 CNSA 2.0 준수 요구, 전체 전환 2035",
+  "date": "2027-01-01",
+  "status": "시행 예정"
+ },
+ {
+  "jurisdiction": "EU",
+  "milestone": "조정된 PQC 전환 로드맵: 2026년 말까지 전환 착수(1단계), 고위험 사용사례 2030년 말까지 전환, 가능한 많은 시스템 2035까지",
+  "date": "2026-12 / 2030 / 2035",
+  "status": "2025-06 발표, 2026-09 설문 결과 공개"
+ },
+ {
+  "jurisdiction": "영국(NCSC)",
+  "milestone": "2028까지 목표 정의·전수 탐색·초기 계획, 2031까지 최우선 이전, 2035까지 전체 이전 완료",
+  "date": "2028 / 2031 / 2035",
+  "status": "지침 발표(2025-03)"
+ },
+ {
+  "jurisdiction": "한국",
+  "milestone": "범국가 PQC 전환 마스터플랜(2023): 2035 국가 암호체계 전환; 2025-09 관계부처 종합 추진계획",
+  "date": "2035",
+  "status": "추진 중"
+ },
+ {
+  "jurisdiction": "한국",
+  "milestone": "국가기밀·기반시설 등 중요시스템 전환 목표 2031로 앞당김 보도(국정원은 조기 전환 연도 미확정이라고 언급)",
+  "date": "2031",
+  "status": "단일 보도"
+ },
+ {
+  "jurisdiction": "한국",
+  "milestone": "2026 PQC 시범전환: 통신·금융·교통·국방·우주 5개 분야, 총 45억원(과제당 최대 9억), 사업기간 ~2026-12-15, 결과를 전환 가이드화",
+  "date": "2026-12",
+  "status": "진행 중"
+ },
+ {
+  "jurisdiction": "한국",
+  "milestone": "KpqC 4종(HAETAE, AIMer, SMAUG-T, NTRU+) 표준화·적용; KISA는 2030년부터 기업 자발 전환 지원 목표",
+  "date": "2030",
+  "status": "표준화 진행"
+ }
+]
