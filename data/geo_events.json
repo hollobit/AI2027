@@ -1,0 +1,218 @@
+[
+ {
+  "date": "2027-01",
+  "event": "한국 AI 기본법 과태료 계도기간(최소 1년) 종료 여부 결정",
+  "location": "한국",
+  "type": "regulation",
+  "status": "예상",
+  "relevance": "계도기간 연장 또는 본격 집행 전환",
+  "url": ""
+ },
+ {
+  "date": "2027-01-01",
+  "event": "뉴욕주 개정 RAISE Act 시행(프런티어 AI 투명성·사고보고)",
+  "location": "미국 뉴욕주",
+  "type": "regulation",
+  "status": "확정",
+  "relevance": "미국 내 한국 기업 모델·서비스에 주 단위 의무. 연방 선점 소송과 충돌",
+  "url": ""
+ },
+ {
+  "date": "2027-01-03",
+  "event": "미국 제120대 의회 개원(민주당 다수 보도)",
+  "location": "미국 워싱턴",
+  "type": "election",
+  "status": "확정",
+  "relevance": "칩 수출 허가 의회 심사(AI OVERWATCH)와 청문회 강화로 행정부의 대중 완화 거래 견제",
+  "url": "https://www.atlanticcouncil.org/dispatches/huang-is-back-at-nvidia-but-the-fight-over-who-controls-chip-exports-is-just-beginning/"
+ },
+ {
+  "date": "2027-01-10",
+  "event": "미중 휴전 유예 일괄 만료일(중국 희토류 통제·24% 관세·항만수수료, 미국 계열사 규정)",
+  "location": "미국·중국",
+  "type": "trade",
+  "status": "확정",
+  "relevance": "연장 실패 시 희토류·소재 조달과 대중 수출에 즉각 충격",
+  "url": "https://www.china-briefing.com/news/apec-2026-in-shenzhen-what-the-leaders-meeting-and-trump-xi-talks-mean-for-business/"
+ },
+ {
+  "date": "2027-01-19",
+  "event": "BIS 원격접속 IFR 의견수렴 마감",
+  "location": "미국",
+  "type": "regulation",
+  "status": "확정",
+  "relevance": "한국 클라우드·데이터센터 사업자 의견 제출 기회",
+  "url": "https://www.gtlaw.com/en/insights/2026/11/bis-interim-final-rule-targets-remote-access-to-advanced-semiconductors-rescinds-ai-diffusion-rule"
+ },
+ {
+  "date": "2027-02 (중순)",
+  "event": "BIS 원격접속 규칙의 기존 데이터센터 운영 유예 종료",
+  "location": "미국(역외 적용)",
+  "type": "regulation",
+  "status": "확정",
+  "relevance": "동남아 데이터센터의 중국 고객 정리 시한",
+  "url": "https://www.atlanticcouncil.org/dispatches/huang-is-back-at-nvidia-but-the-fight-over-who-controls-chip-exports-is-just-beginning/"
+ },
+ {
+  "date": "2027-04-18",
+  "event": "프랑스 대선 1차 투표(결선 2027-05-02)",
+  "location": "프랑스",
+  "type": "election",
+  "status": "확정",
+  "relevance": "EU 디지털 주권·AI 규제·대미 관계 노선 변수",
+  "url": "https://www.info.gouv.fr/index.php/actualite/elections-presidentielles-2027"
+ },
+ {
+  "date": "2027-05-03~04",
+  "event": "제2차 유엔 AI 거버넌스 글로벌 대화",
+  "location": "미국 뉴욕(유엔본부)",
+  "type": "ai_governance",
+  "status": "확정",
+  "relevance": "과학패널 보고서 연계. 한국의 중견국 거버넌스 외교 무대",
+  "url": "https://www.un.org/global-dialogue-ai-governance/en/faq"
+ },
+ {
+  "date": "2027-06",
+  "event": "OECD 각료이사회",
+  "location": "프랑스 파리",
+  "type": "ai_governance",
+  "status": "예상",
+  "relevance": "AI 원칙·GPAI",
+  "url": ""
+ },
+ {
+  "date": "2027-06-21~22",
+  "event": "제네바 AI 정상회의(블레츨리–서울–파리–뉴델리 계승)",
+  "location": "스위스 제네바",
+  "type": "summit",
+  "status": "확정",
+  "relevance": "서울 정상회의 공동주최국인 한국의 후속 역할. 2028년은 UAE 개최",
+  "url": "https://www.itu.int/hub/2026/11/the-next-chapter-for-ai-in-geneva/"
+ },
+ {
+  "date": "2027-06-21~24",
+  "event": "ITU AI for Good Global Summit 2027(10주년)",
+  "location": "스위스 제네바",
+  "type": "expo",
+  "status": "확정",
+  "relevance": "AI 표준(ITU-T)·ETRI 표준화 활동 연계",
+  "url": "https://www.itu.int/hub/2026/11/the-next-chapter-for-ai-in-geneva/"
+ },
+ {
+  "date": "2027-06-21~25",
+  "event": "WSIS Forum 2027",
+  "location": "스위스 제네바",
+  "type": "ai_governance",
+  "status": "확정",
+  "relevance": "디지털 협력·WSIS+20 이행",
+  "url": "https://www.itu.int/hub/2026/11/the-next-chapter-for-ai-in-geneva/"
+ },
+ {
+  "date": "H1",
+  "event": "EU AI 기가팩토리 선정 발표",
+  "location": "EU",
+  "type": "ai_governance",
+  "status": "예상",
+  "relevance": "한국 기업(메모리·전력·냉각)의 유럽 인프라 공급 기회",
+  "url": "https://www.sullcrom.com/insights/memo/2026/October/EuroHPC-Joint-Undertaking-Launches-AI-Gigafactories-Call"
+ },
+ {
+  "date": "H1",
+  "event": "미중 휴전 연장 또는 '전략적 안정' 행동계획 발표",
+  "location": "미국·중국",
+  "type": "trade",
+  "status": "예상",
+  "relevance": "대중 수출과 공급망 리스크의 기준선",
+  "url": "https://www.china-briefing.com/news/apec-2026-in-shenzhen-what-the-leaders-meeting-and-trump-xi-talks-mean-for-business/"
+ },
+ {
+  "date": "H1",
+  "event": "G7 정상회의(미국 의장국)",
+  "location": "미국(장소 미발표)",
+  "type": "summit",
+  "status": "예상",
+  "relevance": "AI·에너지·공급망·대중 경제안보 의제. 한국 초청 여부",
+  "url": "https://www.everycrsreport.com/files/2026-11-04_R40977_5b77624b091e5f2cbe2d28c9dc42fcc4e78a395d.html"
+ },
+ {
+  "date": "2027-07",
+  "event": "WAIC 2027 및 WAICO 활동",
+  "location": "중국 상하이",
+  "type": "expo",
+  "status": "예상",
+  "relevance": "중국 진영 AI 거버넌스 확장 신호",
+  "url": "https://news.cgtn.com/news/2026-07-17/29-countries-sign-establishing-World-AI-Cooperation-Organization-pact-1OQDod8zj6U/index.html"
+ },
+ {
+  "date": "2027-08-02",
+  "event": "EU AI Act: 2025-08-02 이전 출시 GPAI 모델 준수 기한",
+  "location": "EU",
+  "type": "regulation",
+  "status": "확정",
+  "relevance": "EU에 서비스하는 한국 모델(EXAONE·HyperCLOVA 등)의 문서화·저작권 정책",
+  "url": ""
+ },
+ {
+  "date": "2027-09",
+  "event": "제82차 유엔총회 고위급 주간",
+  "location": "미국 뉴욕",
+  "type": "summit",
+  "status": "예상",
+  "relevance": "AI 결의·글로벌 대화 후속",
+  "url": ""
+ },
+ {
+  "date": "2027 (가을)",
+  "event": "중국 공산당 제21차 전국대표대회(5년 주기)",
+  "location": "중국 베이징",
+  "type": "election",
+  "status": "예상",
+  "relevance": "시진핑 체제 연장과 기술자립·대외 노선 재확인",
+  "url": ""
+ },
+ {
+  "date": "2027-11",
+  "event": "APEC 정상회의(베트남 의장국)",
+  "location": "베트남(장소 미확인)",
+  "type": "summit",
+  "status": "예상",
+  "relevance": "동남아 데이터센터·원격접속 규칙, 미중 정상회담 계기",
+  "url": "https://en.wikipedia.org/wiki/APEC_China_2026"
+ },
+ {
+  "date": "2027-11-27~28",
+  "event": "G20 정상회의(영국 의장국)",
+  "location": "영국 맨체스터",
+  "type": "summit",
+  "status": "확정",
+  "relevance": "AI·성장 의제, 미중 정상 대면 가능성",
+  "url": "https://www.gov.uk/government/news/manchester-to-host-world-leaders-at-the-2027-g20-summit"
+ },
+ {
+  "date": "2027-12-02",
+  "event": "EU AI Act 부속서 III 고위험 AI 의무 적용(Omnibus 연기분)",
+  "location": "EU",
+  "type": "regulation",
+  "status": "확정",
+  "relevance": "채용·신용·교육·국경 분야 AI 수출기업 준수",
+  "url": ""
+ },
+ {
+  "date": "2027",
+  "event": "유엔 독립 국제 AI 과학패널 첫 종합보고서",
+  "location": "유엔",
+  "type": "ai_governance",
+  "status": "예상",
+  "relevance": "각국 규제 근거 자료",
+  "url": "https://news.un.org/en/story/2026/07/1167853"
+ },
+ {
+  "date": "2027",
+  "event": "ASEAN 의장국(싱가포르 차례로 추정) 정상회의",
+  "location": "싱가포르(추정)",
+  "type": "summit",
+  "status": "예상",
+  "relevance": "동남아 수출통제 공조와 AI 거버넌스",
+  "url": ""
+ }
+]

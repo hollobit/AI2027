@@ -170,6 +170,7 @@
   .ai27-mbar { display: grid; gap: 4px; font-size: 12.5px; }
   .ai27-mbar-track { position: relative; height: 22px; background: color-mix(in oklab, var(--color-fg) 5%, transparent); border-radius: 6px; }
   .ai27-mbar-track span { position: absolute; top: 0; bottom: 0; border-radius: 6px; }
+  .ai27-heat td.h { text-align: center; font-family: var(--ai27-mono); font-size: 12px; min-width: 44px; }
   @media print { .ai27-tablewrap { max-height: none; overflow: visible; } .ai27-controls, .ai27-nav { display: none; } }
 </style>
 
@@ -198,6 +199,9 @@
       <a href="#part7">모델·에이전트</a>
       <a href="#part8">노동·기본사회</a>
       <a href="#part9">코딩·산업·에이전트 경제</a>
+      <a href="#part10">지정학·외교</a>
+      <a href="#part11">반도체·AIDC·전력</a>
+      <a href="#part12">국가 정책·경쟁력</a>
       <a href="report.html">상세 보고서 →</a>
     </nav>
   </header>
@@ -811,6 +815,112 @@
       <table data-source="agentecon_problems" data-row-key="problem" aria-label="생활 속 에이전트 문제">
         <thead><tr><th data-field="likelihood">가능성</th><th data-field="problem">문제</th><th data-field="who">영향 대상</th><th data-field="forecast">2027 모습</th></tr></thead>
         <tbody data-draw="ae-prob-rows"></tbody>
+      </table>
+    </div>
+  </section>
+  <!-- ============ PART 10 ============ -->
+  <section class="ai27-part" id="part10">
+    <div class="ai27-parthead">
+      <span class="ai27-partno" aria-hidden="true">10</span>
+      <h2>AI 지정학과 외교</h2>
+      <p class="ai27-muted">2027년 1월 10일 미중 휴전 유예가 일괄 만료됩니다. 휴전은 연장되지만 칩·클라우드 통제는 강해지는 '관리된 경쟁'이 기준 시나리오입니다. 미국 주도 Pax Silica와 중국 주도 WAICO로 진영이 나뉘고, 6월 제네바 AI 정상회의와 11월 G20(맨체스터)이 주요 외교 일정입니다.</p>
+    </div>
+    <div class="ai27-card" id="geo-scen">
+      <h3>2027 미중·국제 질서 시나리오</h3>
+      <div class="ai27-chart" data-draw="geo-scen-strip" data-source="geo_scenarios" style="min-height:40px"></div>
+      <div class="ai27-grid3" data-draw="geo-scen-cards" data-source="geo_scenarios"></div>
+    </div>
+    <div class="ai27-sub" id="geo-events"><h3>2027 외교·규제 일정</h3><p class="ai27-muted">확정은 날짜·장소가 공식 발표된 일정, 예상은 관례나 보도에 따른 추정입니다.</p></div>
+    <div class="ai27-tablewrap">
+      <table data-source="geo_events" data-row-key="event" aria-label="2027 외교 일정">
+        <thead><tr><th data-field="date">시점</th><th data-field="status">상태</th><th data-field="event">이벤트</th><th data-field="location">장소</th><th data-field="relevance">의미</th></tr></thead>
+        <tbody data-draw="geo-ev-rows"></tbody>
+      </table>
+    </div>
+    <div class="ai27-sub" id="geo-countries"><h3>국가별 2027 입장</h3></div>
+    <div class="ai27-tablewrap">
+      <table data-source="geo_countries" data-row-key="country" aria-label="국가별 입장">
+        <thead><tr><th data-field="country">국가</th><th data-field="stance">입장</th><th data-field="cooperation">협력</th><th data-field="competition">경쟁</th><th data-field="exposure">제재 노출</th><th data-field="moves">2027 행보</th></tr></thead>
+        <tbody data-draw="geo-c-rows"></tbody>
+      </table>
+    </div>
+    <div class="ai27-sub" id="geo-sanctions"><h3>2027 제재·제한 전망</h3></div>
+    <div class="ai27-tablewrap">
+      <table data-source="geo_sanctions" data-row-key="measure" aria-label="2027 제재 전망">
+        <thead><tr><th data-field="likelihood">가능성</th><th data-field="measure">조치</th><th data-field="actor">주체 → 대상</th><th data-field="impact">영향</th></tr></thead>
+        <tbody data-draw="geo-s-rows"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============ PART 11 ============ -->
+  <section class="ai27-part" id="part11">
+    <div class="ai27-parthead">
+      <span class="ai27-partno" aria-hidden="true">11</span>
+      <h2>AI 반도체·메모리·AIDC·전력망</h2>
+      <p class="ai27-muted">메모리 시장은 2026년 +250%의 슈퍼사이클 뒤 2027년에도 공급 부족이 이어질 전망입니다. 하이퍼스케일러 capex는 더 늘지만 증가율은 둔화하고, 전력·변압기·가스터빈이 실질적인 병목입니다. 기준 시나리오는 '감속하는 슈퍼사이클'(55%)입니다.</p>
+    </div>
+    <div class="ai27-card" id="infra-chart">
+      <h3>주요 시장 2026 → 2027 (십억 달러)</h3>
+      <p class="ai27-muted">옅은 막대는 2027 낮음–높음, 진한 막대는 기준값, 회색 선은 2026년입니다. 일부 2027 값은 분석 추정입니다.</p>
+      <div class="ai27-chart" data-draw="infra-bars" data-source="infra_numbers"></div>
+    </div>
+    <div class="ai27-tablewrap">
+      <table data-source="infra_numbers" data-row-key="metric" aria-label="인프라 시장 수치">
+        <thead><tr><th data-field="metric">지표</th><th data-field="y2025">2025</th><th data-field="y2026">2026</th><th data-field="low">2027 낮음</th><th data-field="base">2027 기준</th><th data-field="high">2027 높음</th><th data-field="unit">단위</th></tr></thead>
+        <tbody data-draw="infra-n-rows"></tbody>
+      </table>
+    </div>
+    <div class="ai27-card" id="infra-scen">
+      <h3>2027 인프라 시나리오</h3>
+      <div class="ai27-chart" data-draw="infra-scen-strip" data-source="infra_scenarios" style="min-height:40px"></div>
+      <div class="ai27-grid3" data-draw="infra-scen-cards" data-source="infra_scenarios"></div>
+    </div>
+    <div class="ai27-sub" id="infra-fc"><h3>분야별 2027 전망</h3></div>
+    <div class="ai27-tablewrap">
+      <table data-source="infra_forecasts" data-row-key="text" aria-label="인프라 2027 전망">
+        <thead><tr><th data-field="likelihood">가능성</th><th data-field="segment">분야</th><th data-field="text">전망</th></tr></thead>
+        <tbody data-draw="infra-f-rows"></tbody>
+      </table>
+    </div>
+    <div class="ai27-sub" id="infra-co"><h3>주요 기업 2027 전망</h3></div>
+    <div class="ai27-tablewrap">
+      <table data-source="infra_companies" data-row-key="company" aria-label="주요 기업 전망">
+        <thead><tr><th data-field="company">기업</th><th data-field="segment">분야</th><th data-field="outlook">2027 전망</th></tr></thead>
+        <tbody data-draw="infra-c-rows"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============ PART 12 ============ -->
+  <section class="ai27-part" id="part12">
+    <div class="ai27-parthead">
+      <span class="ai27-partno" aria-hidden="true">12</span>
+      <h2>국가별 AI 정책과 경쟁력</h2>
+      <p class="ai27-muted">경쟁력 점수표는 6개 차원(모델·컴퓨트·인재·자본·제도·도입, 각 0–10)으로 매긴 분석가 판단입니다. 한국은 예산·GPU·모델로 37점에서 40점으로 오를 전망이지만, 인재(5점)와 정부 집행 평가(Oxford 3위에서 8위)가 약점입니다.</p>
+    </div>
+    <div class="ai27-card" id="policy-score">
+      <h3>경쟁력 점수 2026 → 2027 (60점 만점)</h3>
+      <div class="ai27-chart" data-draw="policy-dumb" data-source="policy_scorecard"></div>
+    </div>
+    <div class="ai27-tablewrap">
+      <table data-source="policy_scorecard" data-row-key="country" aria-label="2027 차원별 점수" class="ai27-heat">
+        <thead><tr><th data-field="country">국가</th><th data-field="model_2027">모델</th><th data-field="compute_2027">컴퓨트</th><th data-field="talent_2027">인재</th><th data-field="capital_2027">자본</th><th data-field="regulation_2027">제도</th><th data-field="adoption_2027">도입</th><th data-field="total_2027">합계</th><th data-field="note">비고</th></tr></thead>
+        <tbody data-draw="policy-s-rows"></tbody>
+      </table>
+    </div>
+    <div class="ai27-sub" id="policy-countries"><h3>국가별 정책 현황과 2027 경쟁력 효과</h3></div>
+    <div class="ai27-tablewrap">
+      <table data-source="policy_countries" data-row-key="country" aria-label="국가별 정책">
+        <thead><tr><th data-field="country">국가</th><th data-field="effect">2027 효과</th><th data-field="status">2026 현황</th><th data-field="laws">법·규제</th><th data-field="investment">투자</th><th data-field="rationale">근거</th></tr></thead>
+        <tbody data-draw="policy-c-rows"></tbody>
+      </table>
+    </div>
+    <div class="ai27-sub" id="policy-reg"><h3>규제 접근 비교</h3></div>
+    <div class="ai27-tablewrap">
+      <table data-source="policy_regulation" data-row-key="country" aria-label="규제 비교">
+        <thead><tr><th data-field="country">국가</th><th data-field="approach">접근</th><th data-field="instrument">핵심 수단</th><th data-field="change_2027">2027 변화</th></tr></thead>
+        <tbody data-draw="policy-r-rows"></tbody>
       </table>
     </div>
   </section>
@@ -1635,6 +1745,109 @@
     fill('ae-diff-rows', 'agentecon_diffusion', (tr, r) => { const b = document.createElement('b'); b.textContent = r.base; b.style.color = 'var(--ai27-accent)';
       tr.append(A.td(r.metric, 'wide'), A.td(r.low), A.td(b), A.td(r.high)); });
     fill('ae-prob-rows', 'agentecon_problems', (tr, r) => tr.append(A.td(pill(r.likelihood)), A.td(r.problem, 'mid'), A.td(r.who, 'mid'), A.td(r.forecast, 'wide')));
+  })();
+</script>
+
+<script>
+  // ---------- Parts 10–12 ----------
+  (function () {
+    const A = window.AI27;
+    const LV = { '높음': 'missed', '중간': 'partial', '낮음': 'unclear' };
+    const pill = (t, v) => { const s = document.createElement('span'); s.className = 'ai27-pill'; s.dataset.v = v || LV[t] || 'mostly'; s.textContent = t; return s; };
+    const rowsOf = (id) => { const d = dash.data(id); return d.status === 'ok' ? d.data : null; };
+    const fill = (name, id, build) => dash.draw(name, (tbody) => {
+      const rows = rowsOf(id); if (!rows) return;
+      tbody.replaceChildren(...rows.map((r) => { const tr = document.createElement('tr'); build(tr, r); return tr; }));
+    });
+    const scenario = (sid, id) => {
+      const sc = [dash.colors[0], dash.colors[2] || dash.colors[0], 'var(--color-bad)', dash.colors[4] || 'var(--cds-chart-muted)'];
+      dash.draw(sid + '-strip', (el) => {
+        const got = A.ready(el, [id]); if (!got) return;
+        el.replaceChildren(); const tt = A.tooltip(el);
+        const s = document.createElement('div'); s.className = 'ai27-scen-strip'; s.setAttribute('role', 'img');
+        s.setAttribute('aria-label', '시나리오 확률: ' + got[0].map((r) => r.name + ' ' + r.prob + '%').join(', '));
+        got[0].forEach((r, i) => { const d = document.createElement('div'); d.style.flex = String(r.prob); d.style.background = sc[i % 4];
+          d.textContent = r.prob + '%'; A.attachTip(d, tt, r.name, r.prob + '%'); s.appendChild(d); });
+        el.prepend(s);
+      });
+      dash.draw(sid + '-cards', (el) => {
+        const got = A.ready(el, [id]); if (!got) return;
+        el.replaceChildren(...got[0].map((r, i) => { const c = document.createElement('article'); c.className = 'ai27-card'; c.style.borderTop = '3px solid ' + sc[i % 4];
+          const h = document.createElement('h3'); h.textContent = r.name; const p = document.createElement('span'); p.className = 'ai27-scen-prob'; p.textContent = r.prob + '%';
+          const d = document.createElement('p'); d.className = 'ai27-muted'; d.textContent = r.description; c.append(h, p, d); return c; }));
+      });
+    };
+    // Part 10
+    scenario('geo-scen', 'geo_scenarios');
+    fill('geo-ev-rows', 'geo_events', (tr, r) => {
+      const ev = A.safeUrl(r.url) ? A.link(r.url, r.event) : document.createTextNode(r.event);
+      tr.append(A.td(r.date), A.td(pill(r.status, r.status === '확정' ? 'realized' : 'unclear')), A.td(ev, 'wide'), A.td(r.location, 'mid'), A.td(r.relevance, 'wide'));
+    });
+    fill('geo-c-rows', 'geo_countries', (tr, r) => tr.append(A.td(r.country), A.td(r.stance), A.td(r.cooperation, 'wide'), A.td(r.competition, 'mid'), A.td(r.exposure, 'mid'), A.td(r.moves, 'wide')));
+    fill('geo-s-rows', 'geo_sanctions', (tr, r) => tr.append(A.td(pill(r.likelihood)), A.td(r.measure, 'wide'), A.td(r.actor, 'mid'), A.td(r.impact, 'wide')));
+    // Part 11
+    dash.draw('infra-bars', (el) => {
+      const got = A.ready(el, ['infra_numbers']); if (!got) return;
+      const rows = got[0].filter((r) => /USD bn/.test(r.unit) && r.y2026 != null && !/회계|CY/.test(r.unit));
+      const max = d3.max(rows, (r) => Number(r.high)) || 1;
+      el.replaceChildren(); const tt = A.tooltip(el);
+      const box = document.createElement('div'); box.className = 'ai27-dumb';
+      box.setAttribute('role', 'img'); box.setAttribute('aria-label', '인프라 시장 2027 기준값: ' + rows.map((r) => r.metric + ' ' + r.base).join(', '));
+      rows.forEach((r) => {
+        const w = document.createElement('div'); w.className = 'ai27-mbar';
+        const lab = document.createElement('span'); lab.textContent = r.metric;
+        const t = document.createElement('div'); t.className = 'ai27-mbar-track';
+        const range = document.createElement('span'); range.style.left = (100 * r.low / max) + '%'; range.style.width = (100 * (r.high - r.low) / max) + '%'; range.style.background = 'color-mix(in oklab, ' + dash.colors[0] + ' 22%, transparent)';
+        const base = document.createElement('span'); base.style.left = '0'; base.style.width = (100 * r.base / max) + '%'; base.style.background = dash.colors[0]; base.style.opacity = '0.85';
+        const y = document.createElement('span'); y.style.left = (100 * Number(r.y2026) / max) + '%'; y.style.width = '2px'; y.style.background = 'var(--color-fg-muted)';
+        t.append(range, base, y);
+        const vals = document.createElement('div'); vals.className = 'ai27-dumb-vals';
+        const a = document.createElement('span'); a.textContent = '2026 ' + A.fmt0(Number(r.y2026));
+        const b = document.createElement('span'); b.textContent = '2027 ' + A.fmt0(r.low) + '–' + A.fmt0(r.high) + ' (기준 ' + A.fmt0(r.base) + ')';
+        vals.append(a, b); w.append(lab, t, vals); A.attachTip(w, tt, r.metric, r.note || r.unit); box.appendChild(w);
+      });
+      el.prepend(box);
+    });
+    const num = (v) => (v == null || v === '' ? '—' : (typeof v === 'number' ? A.fmt1(v).replace(/\.0$/, '') : String(v)));
+    fill('infra-n-rows', 'infra_numbers', (tr, r) => { const b = document.createElement('b'); b.textContent = num(r.base); b.style.color = 'var(--ai27-accent)';
+      tr.append(A.td(r.metric, 'mid'), A.td(num(r.y2025)), A.td(num(r.y2026)), A.td(num(r.low)), A.td(b), A.td(num(r.high)), A.td(r.unit, 'mid')); });
+    scenario('infra-scen', 'infra_scenarios');
+    fill('infra-f-rows', 'infra_forecasts', (tr, r) => tr.append(A.td(pill(r.likelihood)), A.td(r.segment), A.td(r.text, 'wide')));
+    fill('infra-c-rows', 'infra_companies', (tr, r) => tr.append(A.td(r.company, 'mid'), A.td(r.segment, 'mid'), A.td(r.outlook, 'wide')));
+    // Part 12
+    dash.draw('policy-dumb', (el) => {
+      const got = A.ready(el, ['policy_scorecard']); if (!got) return;
+      const lo = 25, hi = 60; const x = (v) => (100 * (v - lo) / (hi - lo)) + '%';
+      el.replaceChildren(); const tt = A.tooltip(el);
+      const box = document.createElement('div'); box.className = 'ai27-range';
+      box.setAttribute('role', 'img'); box.setAttribute('aria-label', '국가별 경쟁력 점수 2026→2027: ' + got[0].map((r) => r.country + ' ' + r.total_2026 + '→' + r.total_2027).join(', '));
+      got[0].forEach((r) => {
+        const row = document.createElement('div'); row.className = 'ai27-range-row';
+        const lab = document.createElement('span'); lab.textContent = r.country;
+        const t = document.createElement('div'); t.className = 'ai27-range-track';
+        const a = Number(r.total_2026), b = Number(r.total_2027);
+        const bar = document.createElement('span'); bar.className = 'ai27-range-bar'; bar.style.left = x(Math.min(a, b)); bar.style.width = (100 * Math.abs(b - a) / (hi - lo)) + '%';
+        const d1 = document.createElement('span'); d1.className = 'ai27-range-dot'; d1.style.left = x(a); d1.style.background = 'var(--cds-chart-muted)';
+        const d2 = document.createElement('span'); d2.className = 'ai27-range-dot'; d2.style.left = x(b);
+        if (r.country === '한국') d2.style.background = dash.colors[1] || dash.colors[0];
+        t.append(bar, d1, d2);
+        const v = document.createElement('span'); v.className = 'ai27-bar-val'; v.textContent = a + '→' + b;
+        row.append(lab, t, v); A.attachTip(row, tt, r.country + ' ' + a + ' → ' + b, r.note); box.appendChild(row);
+      });
+      const axis = document.createElement('div'); axis.className = 'ai27-range-axis';
+      const ticks = document.createElement('div'); [25, 35, 45, 55, 60].forEach((t) => { const s = document.createElement('span'); s.textContent = t; ticks.appendChild(s); });
+      axis.append(document.createElement('span'), ticks, document.createElement('span'));
+      el.append(box, axis);
+    });
+    const heat = (v) => { const c = document.createElement('td'); c.className = 'h'; c.textContent = v == null ? '—' : v;
+      if (v != null) c.style.background = 'color-mix(in oklab, ' + dash.colors[0] + ' ' + Math.round(Number(v) * 6) + '%, transparent)'; return c; };
+    fill('policy-s-rows', 'policy_scorecard', (tr, r) => {
+      const tot = document.createElement('b'); tot.textContent = r.total_2027;
+      tr.append(A.td(r.country), heat(r.model_2027), heat(r.compute_2027), heat(r.talent_2027), heat(r.capital_2027), heat(r.regulation_2027), heat(r.adoption_2027), A.td(tot), A.td(r.note, 'wide'));
+    });
+    const EV = { '개선': 'realized', '유지': 'partial', '하락': 'missed' };
+    fill('policy-c-rows', 'policy_countries', (tr, r) => tr.append(A.td(r.country), A.td(pill(r.effect, EV[r.effect] || 'unclear')), A.td(r.status, 'wide'), A.td(r.laws, 'wide'), A.td(r.investment, 'mid'), A.td(r.rationale, 'wide')));
+    fill('policy-r-rows', 'policy_regulation', (tr, r) => tr.append(A.td(r.country, 'mid'), A.td(r.approach, 'wide'), A.td(r.instrument, 'mid'), A.td(r.change_2027, 'wide')));
   })();
 </script>
 

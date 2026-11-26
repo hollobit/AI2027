@@ -1,0 +1,72 @@
+[
+ {
+  "company": "NVIDIA",
+  "segment": "AI 반도체",
+  "outlook": "Rubin 주력·Rubin Ultra 전환으로 DC 매출 성장 지속, 그러나 총이익률 70%대 초반으로 하락 압력(메모리 원가)과 ASIC 경쟁, 중국 매출 0, 경영진 변동이 변수"
+ },
+ {
+  "company": "Broadcom",
+  "segment": "AI 반도체",
+  "outlook": "FY27 AI 매출 약 1,150억 달러(회사 전망), 공급 확보 완료; ASIC 진영 최대 수혜"
+ },
+ {
+  "company": "AMD",
+  "segment": "AI 반도체",
+  "outlook": "MI450 볼륨 램프로 DC GPU 매출 급증하나 NVIDIA 대비 2위 고착; OpenAI 계약(6GW, 2025.10 발표) 이행이 핵심 지표"
+ },
+ {
+  "company": "Alphabet/Google",
+  "segment": "AI 반도체/AIDC",
+  "outlook": "2027 capex 대폭 증가(3,000억 달러 초과 시사 보도), TPU 외부화로 NVIDIA 대안 1순위"
+ },
+ {
+  "company": "Microsoft/Amazon/Meta",
+  "segment": "AIDC",
+  "outlook": "capex 추가 증가하되 FCF 압박으로 채권·리스·SPV 조달 확대; 투자자 ROI 압박 최고조"
+ },
+ {
+  "company": "TSMC",
+  "segment": "AI 반도체(파운드리)",
+  "outlook": "AI 가속기 매출 고성장 지속, 2026~28 capex가 이전 3년보다 크게 증가; 2027에 대해선 '신중' 톤 보도"
+ },
+ {
+  "company": "SK하이닉스",
+  "segment": "메모리",
+  "outlook": "HBM 1위 유지, HBM4E 램프; 이익 사상 최대 경신 가능성 높으나 2027 하반기 가격 둔화가 주가 변수"
+ },
+ {
+  "company": "삼성전자",
+  "segment": "메모리/파운드리",
+  "outlook": "메모리 이익 사상 최고 수준 유지, 파운드리 4/2nm 매출 성장 및 테일러 가동; 2025.7 발표된 Tesla AI칩 위탁(약 165억 달러)은 2027년 이후 테일러 생산 예정으로 알려짐(본 세션 미재확인)"
+ },
+ {
+  "company": "Micron",
+  "segment": "메모리",
+  "outlook": "FY27 실적 FY26 상회 전망, ID1 2027년 중반 웨이퍼 출력, 2027 HBM 물량 대부분 계약"
+ },
+ {
+  "company": "Huawei/Cambricon(중국)",
+  "segment": "AI 반도체",
+  "outlook": "중국 내 점유율 급증, 그러나 SMIC 첨단 캐파(2027 약 8만 wpm 전망)·HBM 제약으로 공급 부족"
+ },
+ {
+  "company": "Intel",
+  "segment": "AI 반도체(파운드리)",
+  "outlook": "14A 리스크 생산 2027년 말, 외부 고객 확약이 투자 결정의 관건"
+ },
+ {
+  "company": "GE Vernova",
+  "segment": "전력망",
+  "outlook": "백로그 2,000억 달러 이상, 가스 슬롯 2030년대 초까지 소진"
+ },
+ {
+  "company": "효성중공업·HD현대일렉트릭·LS일렉트릭",
+  "segment": "전력망",
+  "outlook": "3~4년치 수주잔고 기반 매출·이익 증가 지속, 증설 속도와 환율이 변수"
+ },
+ {
+  "company": "OpenAI(Stargate)",
+  "segment": "AIDC",
+  "outlook": "Abilene 1.2GW 완공 이후 추가 부지 가동, 자금조달(IPO 보도)과 컴퓨트 약정 이행 능력이 시험대"
+ }
+]
