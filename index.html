@@ -237,7 +237,7 @@
       <a href="#part16">사이버 회복력</a>
       <span class="ai27-navgroup">제6부</span>
       <a href="#part21">보완 주제</a>
-      <a href="#part22">ETRI 역할·2027 일정</a>
+      <a href="#part22">AI전략위원회 역할·일정</a>
       <a href="report.html">상세 보고서 →</a>
     </nav>
     <div class="ai27-search" role="search">
@@ -1397,21 +1397,21 @@
   <section class="ai27-part" id="part22">
     <div class="ai27-parthead">
       <span class="ai27-partno" aria-hidden="true">22</span>
-      <h2>종합: ETRI 역할과 2027 주요 일정</h2>
-      <p class="ai27-muted">보고서 22장의 ETRI 역할 종합표와 2027 주요 일정 통합표입니다. 시나리오와 선행 신호는 Part 02에 있습니다.</p>
+      <h2>종합: 국가인공지능전략위원회의 역할과 2027 일정</h2>
+      <p class="ai27-muted">보고서 22장의 제안입니다. 대통령이 위원장인 위원회가 2027년에 계획 수립보다 조정·결정·이행 점검에 무게를 두도록, 분야별 의제와 외부 일정에 맞춘 분기별 안건을 정리했습니다. 시나리오와 선행 신호는 Part 02에 있습니다.</p>
     </div>
-    <div class="ai27-sub" id="etri"><h3>ETRI 역할 종합(제안)</h3></div>
+    <div class="ai27-sub" id="committee"><h3>국가인공지능전략위원회의 역할(제안)</h3></div>
     <div class="ai27-tablewrap">
-      <table data-source="etri_roles" data-row-key="area" aria-label="ETRI 역할 종합">
-        <thead><tr><th data-field="area">분야(장)</th><th data-field="task">핵심 과제</th><th data-field="output">2027 산출물</th><th data-field="kpi">성과 지표(예시)</th></tr></thead>
-        <tbody data-draw="etri-rows"></tbody>
+      <table data-source="committee_roles" data-row-key="area" aria-label="국가인공지능전략위원회 역할">
+        <thead><tr><th data-field="area">분야(장)</th><th data-field="agenda">위원회 핵심 의제</th><th data-field="output">2027 결정·산출물</th><th data-field="kpi">성과 지표(예시)</th></tr></thead>
+        <tbody data-draw="committee-rows"></tbody>
       </table>
     </div>
-    <div class="ai27-sub" id="cal27"><h3>2027 주요 일정 통합</h3></div>
+    <div class="ai27-sub" id="committee-cal"><h3>국가인공지능전략위원회 2027 일정(제안)</h3></div>
     <div class="ai27-tablewrap">
-      <table data-source="cal_2027" data-row-key="event" aria-label="2027 주요 일정">
-        <thead><tr><th data-field="date">시점</th><th data-field="event">일정</th><th data-field="chapter">보고서 장</th></tr></thead>
-        <tbody data-draw="cal-rows"></tbody>
+      <table data-source="committee_schedule" data-row-key="when" aria-label="국가인공지능전략위원회 2027 일정">
+        <thead><tr><th data-field="when">시점</th><th data-field="external">외부 일정(근거)</th><th data-field="agenda">위원회 안건(제안)</th><th data-field="chapter">보고서 장</th></tr></thead>
+        <tbody data-draw="committee-cal-rows"></tbody>
       </table>
     </div>
   </section>
@@ -2667,7 +2667,7 @@
 </script>
 
 <script>
-  // ---------- Part 21–22: gap topics, ETRI roles, 2027 calendar ----------
+  // ---------- Part 21–22: gap topics, national AI strategy committee roles & 2027 schedule ----------
   (function () {
     const A = window.AI27;
     const rowsOf = (id) => { const d = dash.data(id); return d.status === 'ok' ? d.data : null; };
@@ -2677,8 +2677,8 @@
     });
     fill('gap-rows', 'gap_items', (tr, r) => tr.append(A.td(r.topic, 'mid'), A.td(r.date),
       A.td(A.safeUrl(r.url) ? A.link(r.url, r.item) : r.item, 'wide'), A.td(r.outlook || '—', 'wide'), A.td(r.korea)));
-    fill('etri-rows', 'etri_roles', (tr, r) => tr.append(A.td(r.area, 'mid'), A.td(r.task, 'wide'), A.td(r.output, 'wide'), A.td(r.kpi, 'mid')));
-    fill('cal-rows', 'cal_2027', (tr, r) => tr.append(A.td(r.date), A.td(r.event, 'wide'), A.td(r.chapter)));
+    fill('committee-rows', 'committee_roles', (tr, r) => tr.append(A.td(r.area, 'mid'), A.td(r.agenda, 'wide'), A.td(r.output, 'wide'), A.td(r.kpi, 'mid')));
+    fill('committee-cal-rows', 'committee_schedule', (tr, r) => tr.append(A.td(r.when), A.td(r.external, 'wide'), A.td(r.agenda, 'wide'), A.td(r.chapter)));
   })();
 </script>
 
