@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>AI 2027 전망 대시보드</title>
-<meta name="description" content="2026 AI 예측 61건 재채점과 200여 건의 원문 자료로 본 2027 AI 전망: 모델·에이전트, 특화 FM, 소버린 AI, 보안·RSI, 노동·기본사회, 에이전트 경제.">
+<meta name="description" content="2026 AI 예측 61건 재채점과 260여 건의 원문 자료로 본 2027 AI 전망: 모델·에이전트, 보안, 지정학, 인프라, 국가 정책, AI 법칙, 수학·과학, 노동·기본사회.">
 <meta property="og:title" content="AI 2027 전망 대시보드">
-<meta property="og:description" content="2026 AI 예측 61건 재채점과 200여 건의 원문 자료로 본 2027 AI 전망: 모델·에이전트, 특화 FM, 소버린 AI, 보안·RSI, 노동·기본사회, 에이전트 경제.">
+<meta property="og:description" content="2026 AI 예측 61건 재채점과 260여 건의 원문 자료로 본 2027 AI 전망: 모델·에이전트, 보안, 지정학, 인프라, 국가 정책, AI 법칙, 수학·과학, 노동·기본사회.">
 <link rel="stylesheet" href="assets/tokens.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
 <script src="assets/dash-shim.js"></script>
@@ -171,6 +171,11 @@
   .ai27-mbar-track { position: relative; height: 22px; background: color-mix(in oklab, var(--color-fg) 5%, transparent); border-radius: 6px; }
   .ai27-mbar-track span { position: absolute; top: 0; bottom: 0; border-radius: 6px; }
   .ai27-heat td.h { text-align: center; font-family: var(--ai27-mono); font-size: 12px; min-width: 44px; }
+  .ai27-spark-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 14px; }
+  .ai27-spark { border: 1px solid var(--ai27-line); border-radius: var(--cds-radius); padding: 12px 14px; display: grid; gap: 6px; position: relative; background: var(--color-bg); min-width: 0; }
+  .ai27-spark h4 { margin: 0; font-size: 13px; font-weight: 600; }
+  .ai27-spark-vals { display: flex; justify-content: space-between; font-family: var(--ai27-mono); font-size: 11.5px; color: var(--color-fg-muted); }
+  .ai27-spark svg { display: block; width: 100%; height: 96px; overflow: visible; }
   @media print { .ai27-tablewrap { max-height: none; overflow: visible; } .ai27-controls, .ai27-nav { display: none; } }
 </style>
 
@@ -202,6 +207,9 @@
       <a href="#part10">지정학·외교</a>
       <a href="#part11">반도체·AIDC·전력</a>
       <a href="#part12">국가 정책·경쟁력</a>
+      <a href="#part13">AI 발전 법칙</a>
+      <a href="#part14">수학·물리 난제</a>
+      <a href="#part15">AI for Science·문샷</a>
       <a href="report.html">상세 보고서 →</a>
     </nav>
   </header>
@@ -921,6 +929,97 @@
       <table data-source="policy_regulation" data-row-key="country" aria-label="규제 비교">
         <thead><tr><th data-field="country">국가</th><th data-field="approach">접근</th><th data-field="instrument">핵심 수단</th><th data-field="change_2027">2027 변화</th></tr></thead>
         <tbody data-draw="policy-r-rows"></tbody>
+      </table>
+    </div>
+  </section>
+  <!-- ============ PART 13 ============ -->
+  <section class="ai27-part" id="part13">
+    <div class="ai27-parthead">
+      <span class="ai27-partno" aria-hidden="true">13</span>
+      <h2>AI 발전의 '법칙'</h2>
+      <p class="ai27-muted">Epoch 원자료로 직접 회귀 분석했습니다. 종합역량(ECI)은 연 약 17점의 직선 성장을 유지했지만 사이버, 업무 자동화, 추론 연산 같은 개별 영역은 훨씬 가파르게 가속했습니다. 2027년의 메타 변수는 AI R&D 가속이 다른 연구소로 번지는지입니다.</p>
+    </div>
+    <div class="ai27-card" id="laws-spark">
+      <h3>법칙별 추세 (점선 끝점은 2027년 말 기준 전망)</h3>
+      <p class="ai27-muted">METR 시간지평은 로그 눈금입니다. 16시간(960분)을 넘는 값은 현재 과제군으로는 측정할 수 없는 함의값입니다.</p>
+      <div class="ai27-chart" data-draw="laws-sparks" data-source="laws_series"></div>
+    </div>
+    <div class="ai27-tablewrap">
+      <table data-source="laws_table" data-row-key="id" aria-label="AI 발전 법칙">
+        <thead><tr><th data-field="id">ID</th><th data-field="name">법칙</th><th data-field="verdict">2026 판정</th><th data-field="dominant">2027</th><th data-field="low">낮음</th><th data-field="base">기준</th><th data-field="high">높음</th><th data-field="unit">단위</th><th data-field="formula">형태</th></tr></thead>
+        <tbody data-draw="laws-rows"></tbody>
+      </table>
+    </div>
+    <div class="ai27-sub" id="laws-signposts"><h3>선행 신호</h3></div>
+    <div class="ai27-tablewrap">
+      <table data-source="laws_signposts" data-row-key="indicator" aria-label="법칙 선행 신호">
+        <thead><tr><th data-field="indicator">지표</th><th data-field="threshold">기준</th><th data-field="meaning">의미</th></tr></thead>
+        <tbody data-draw="laws-sig-rows"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============ PART 14 ============ -->
+  <section class="ai27-part" id="part14">
+    <div class="ai27-parthead">
+      <span class="ai27-partno" aria-hidden="true">14</span>
+      <h2>수학·물리 난제</h2>
+      <p class="ai27-muted">2026년에는 Erdős 단위거리 추측이 반증됐고, AlphaProof가 미해결 Erdős 문제 9개를 Lean으로 풀었으며, 페르마의 마지막 정리가 완전히 형식화됐습니다. AI는 구성·반례·경계 개선·형식화에 강하고, 새 이론 구축에는 약합니다. 밀레니엄 문제는 2027년에도 닿지 않습니다.</p>
+    </div>
+    <div class="ai27-card" id="mp-counts">
+      <h3>2027 수량 전망</h3>
+      <div class="ai27-tablewrap" style="border:0">
+        <table data-source="mathphys_counts" data-row-key="metric" aria-label="수학·물리 2027 수량 전망">
+          <thead><tr><th data-field="metric">지표</th><th data-field="low">낮음</th><th data-field="base">기준</th><th data-field="high">높음</th></tr></thead>
+          <tbody data-draw="mp-count-rows"></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="ai27-sub" id="mp-ach"><h3>2025–2026 성과와 검증 수준</h3></div>
+    <div class="ai27-tablewrap">
+      <table data-source="mathphys_achievements" data-row-key="problem" aria-label="수학·물리 성과">
+        <thead><tr><th data-field="date">시점</th><th data-field="field">분야</th><th data-field="problem">문제</th><th data-field="system">시스템</th><th data-field="verification">검증</th><th data-field="significance">의미</th><th data-field="result">결과</th></tr></thead>
+        <tbody data-draw="mp-ach-rows"></tbody>
+      </table>
+    </div>
+    <div class="ai27-sub" id="mp-targets"><h3>2027 도전 목표</h3></div>
+    <div class="ai27-tablewrap">
+      <table data-source="mathphys_targets" data-row-key="target" aria-label="2027 도전 목표">
+        <thead><tr><th data-field="likelihood">가능성</th><th data-field="field">분야</th><th data-field="target">목표</th><th data-field="signal">확인 신호</th></tr></thead>
+        <tbody data-draw="mp-tg-rows"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============ PART 15 ============ -->
+  <section class="ai27-part" id="part15">
+    <div class="ai27-parthead">
+      <span class="ai27-partno" aria-hidden="true">15</span>
+      <h2>AI for Science와 국가 문샷</h2>
+      <p class="ai27-muted">AI 연구 동료는 문헌·분석·코드·계산 실험을 수시간~수일 자율 수행하지만, 물리 실험 시간은 줄이지 못해 병목이 '검증'과 '실험실'로 옮겨 갔습니다. K-문샷은 거버넌스를 갖춘 '초기' 단계이고, 미국 Genesis는 1년 만에 297개 과제와 연방 약정 50억 달러 이상으로 순항 중입니다.</p>
+    </div>
+    <div class="ai27-sub" id="moonshots"><h3>국가 문샷 진척과 2027 예상 성과</h3></div>
+    <div class="ai27-tablewrap">
+      <table data-source="moonshot_programs" data-row-key="program" aria-label="국가 문샷">
+        <thead><tr><th data-field="country">국가</th><th data-field="program">프로그램</th><th data-field="status">상태</th><th data-field="goal">목표</th><th data-field="progress">2026 진척</th><th data-field="result_2027">2027 예상 성과</th></tr></thead>
+        <tbody data-draw="ms-rows"></tbody>
+      </table>
+    </div>
+    <div class="ai27-grid2">
+      <div class="ai27-card" id="ai4s-fields">
+        <h3>2027 분야별 기여</h3>
+        <ul class="ai27-list" data-draw="ai4s-field-list" data-source="ai4s_fields"></ul>
+      </div>
+      <div class="ai27-card" id="ai4s-cap">
+        <h3>2027년 AI 연구 동료가 할 수 있는 일과 없는 일</h3>
+        <ul class="ai27-list" data-draw="ai4s-cap-list" data-source="ai4s_capability"></ul>
+      </div>
+    </div>
+    <div class="ai27-sub" id="ai4s-col"><h3>2026 AI 연구 동료와 검증된 성과</h3></div>
+    <div class="ai27-tablewrap">
+      <table data-source="ai4s_colleagues" data-row-key="system" aria-label="AI 연구 동료">
+        <thead><tr><th data-field="system">시스템</th><th data-field="org">주체</th><th data-field="results">검증된 성과</th></tr></thead>
+        <tbody data-draw="ai4s-col-rows"></tbody>
       </table>
     </div>
   </section>
@@ -1848,6 +1947,95 @@
     const EV = { '개선': 'realized', '유지': 'partial', '하락': 'missed' };
     fill('policy-c-rows', 'policy_countries', (tr, r) => tr.append(A.td(r.country), A.td(pill(r.effect, EV[r.effect] || 'unclear')), A.td(r.status, 'wide'), A.td(r.laws, 'wide'), A.td(r.investment, 'mid'), A.td(r.rationale, 'wide')));
     fill('policy-r-rows', 'policy_regulation', (tr, r) => tr.append(A.td(r.country, 'mid'), A.td(r.approach, 'wide'), A.td(r.instrument, 'mid'), A.td(r.change_2027, 'wide')));
+  })();
+</script>
+
+<script>
+  // ---------- Parts 13–15 ----------
+  (function () {
+    const A = window.AI27;
+    const LV = { '높음': 'missed', '중간': 'partial', '낮음': 'unclear' };
+    const pill = (t, v) => { const s = document.createElement('span'); s.className = 'ai27-pill'; s.dataset.v = v || LV[t] || 'mostly'; s.textContent = t; return s; };
+    const rowsOf = (id) => { const d = dash.data(id); return d.status === 'ok' ? d.data : null; };
+    const fill = (name, id, build) => dash.draw(name, (tbody) => {
+      const rows = rowsOf(id); if (!rows) return;
+      tbody.replaceChildren(...rows.map((r) => { const tr = document.createElement('tr'); build(tr, r); return tr; }));
+    });
+    const nv = (v) => (v == null ? '—' : (typeof v === 'number' ? (Math.abs(v) >= 1e6 ? v.toExponential(1) : A.fmt1(v).replace(/\.0$/, '')) : String(v)));
+    const SVGNS = 'http://www.w3.org/2000/svg';
+    dash.draw('laws-sparks', (el) => {
+      const got = A.ready(el, ['laws_series']); if (!got) return;
+      const groups = d3.groups(got[0], (r) => r.series);
+      el.replaceChildren();
+      const grid = document.createElement('div'); grid.className = 'ai27-spark-grid'; el.appendChild(grid);
+      const tt = A.tooltip(el);
+      groups.forEach(([name, pts]) => {
+        pts = pts.slice().sort((a, b) => a.date.localeCompare(b.date));
+        const card = document.createElement('div'); card.className = 'ai27-spark';
+        const h = document.createElement('h4'); h.textContent = name;
+        const svg = document.createElementNS(SVGNS, 'svg');
+        const log = /METR/.test(name);
+        svg.setAttribute('role', 'img'); svg.setAttribute('aria-label', name + ': ' + pts.map((p) => p.date + ' ' + p.value).join(', '));
+        const vals = document.createElement('div'); vals.className = 'ai27-spark-vals';
+        const a = document.createElement('span'); a.textContent = pts[0].date + ' ' + nv(pts[0].value);
+        const b = document.createElement('span'); const last = pts[pts.length - 1]; b.textContent = last.date + ' ' + nv(last.value) + ' ' + (pts[0].unit || '');
+        vals.append(a, b);
+        card.append(h, svg, vals); grid.appendChild(card);
+        const W = Math.max(200, svg.getBoundingClientRect().width || card.clientWidth - 28), H = 96, pad = 6;
+        svg.setAttribute('viewBox', '0 0 ' + W + ' ' + H);
+        const t = (d) => { const [y, m] = d.split('-').map(Number); return y + ((m || 1) - 1) / 12; };
+        const x = d3.scaleLinear().domain(d3.extent(pts, (p) => t(p.date))).range([pad, W - pad]);
+        const yDom = d3.extent(pts, (p) => p.value);
+        const y = (log ? d3.scaleLog().domain([Math.max(1e-3, yDom[0]), yDom[1]]) : d3.scaleLinear().domain([Math.min(0, yDom[0]), yDom[1]])).range([H - pad, pad]);
+        const proj = pts.filter((p) => p.date > '2026-11');
+        const obs = pts.filter((p) => p.date <= '2026-11');
+        const line = (arr) => arr.map((p, i) => (i ? 'L' : 'M') + x(t(p.date)).toFixed(1) + ',' + y(p.value).toFixed(1)).join('');
+        const grid0 = document.createElementNS(SVGNS, 'line'); grid0.setAttribute('x1', pad); grid0.setAttribute('x2', W - pad); grid0.setAttribute('y1', H - pad); grid0.setAttribute('y2', H - pad);
+        grid0.setAttribute('stroke', 'var(--cds-chart-grid)'); svg.appendChild(grid0);
+        const pathO = document.createElementNS(SVGNS, 'path'); pathO.setAttribute('d', line(obs)); pathO.setAttribute('fill', 'none');
+        pathO.setAttribute('stroke', /Cybench/.test(name) ? 'var(--color-bad)' : dash.colors[0]); pathO.setAttribute('stroke-width', '2'); svg.appendChild(pathO);
+        if (proj.length && obs.length) {
+          const pathP = document.createElementNS(SVGNS, 'path'); pathP.setAttribute('d', line([obs[obs.length - 1], ...proj])); pathP.setAttribute('fill', 'none');
+          pathP.setAttribute('stroke', dash.colors[1] || dash.colors[0]); pathP.setAttribute('stroke-width', '2'); pathP.setAttribute('stroke-dasharray', '4 4'); svg.appendChild(pathP);
+        }
+        pts.forEach((p) => {
+          const c = document.createElementNS(SVGNS, 'circle'); c.setAttribute('cx', x(t(p.date))); c.setAttribute('cy', y(p.value)); c.setAttribute('r', 3.5);
+          c.setAttribute('fill', p.date > '2026-11' ? (dash.colors[1] || dash.colors[0]) : dash.colors[0]); c.setAttribute('stroke', 'var(--color-bg)'); c.setAttribute('stroke-width', '1.5');
+          c.addEventListener('pointermove', (ev) => tt.show(ev, p.date + ' · ' + nv(p.value) + ' ' + (p.unit || ''), p.label || (p.date > '2026-11' ? '전망' : '')));
+          c.addEventListener('pointerleave', () => tt.hide());
+          svg.appendChild(c);
+        });
+      });
+    });
+    const VV = { '가속': 'missed', '유지': 'mostly', '둔화': 'partial', '포화': 'unclear', '붕괴': 'missed' };
+    fill('laws-rows', 'laws_table', (tr, r) => {
+      const base = document.createElement('b'); base.textContent = nv(r.base); base.style.color = 'var(--ai27-accent)';
+      tr.append(A.td(r.id), A.td(r.name, 'mid'), A.td(pill(r.verdict, VV[r.verdict])), A.td(r.dominant ? pill('지배', 'realized') : document.createTextNode('')),
+        A.td(nv(r.low)), A.td(base), A.td(nv(r.high)), A.td(r.unit, 'mid'), A.td(r.formula, 'wide'));
+    });
+    fill('laws-sig-rows', 'laws_signposts', (tr, r) => tr.append(A.td(r.indicator, 'mid'), A.td(r.threshold, 'mid'), A.td(r.meaning, 'wide')));
+    fill('mp-count-rows', 'mathphys_counts', (tr, r) => { const b = document.createElement('b'); b.textContent = nv(r.base); b.style.color = 'var(--ai27-accent)';
+      tr.append(A.td(r.metric, 'wide'), A.td(nv(r.low)), A.td(b), A.td(nv(r.high))); });
+    const VF = { 'Lean 검증': 'realized', '전문가 확인': 'mostly', '동료심사': 'mostly', '주장': 'partial', '논란': 'missed' };
+    fill('mp-ach-rows', 'mathphys_achievements', (tr, r) => {
+      const prob = A.safeUrl(r.url) ? A.link(r.url, r.problem) : document.createTextNode(r.problem);
+      tr.append(A.td(r.date), A.td(r.field), A.td(prob, 'mid'), A.td(r.system, 'mid'), A.td(pill(r.verification, VF[r.verification])), A.td(r.significance), A.td(r.result, 'wide'));
+    });
+    fill('mp-tg-rows', 'mathphys_targets', (tr, r) => tr.append(A.td(pill(r.likelihood)), A.td(r.field), A.td(r.target, 'wide'), A.td(r.signal, 'mid')));
+    const SV = { '순항': 'realized', '초기': 'partial', '지연': 'missed', '불분명': 'unclear' };
+    fill('ms-rows', 'moonshot_programs', (tr, r) => tr.append(A.td(r.country), A.td(r.program, 'mid'), A.td(pill(r.status, SV[r.status])), A.td(r.goal, 'wide'), A.td(r.progress, 'wide'), A.td(r.result_2027, 'wide')));
+    dash.draw('ai4s-field-list', (el) => {
+      const got = A.ready(el, ['ai4s_fields']); if (!got) return;
+      el.replaceChildren(...got[0].map((r) => { const li = document.createElement('li'); const b = document.createElement('b'); b.textContent = r.field;
+        const s = document.createElement('span'); s.className = 'ai27-muted'; s.textContent = r.contribution; const p = pill(r.likelihood, r.likelihood === '높음' ? 'realized' : 'partial'); p.style.justifySelf = 'start';
+        li.append(p, b, s); return li; }));
+    });
+    dash.draw('ai4s-cap-list', (el) => {
+      const got = A.ready(el, ['ai4s_capability']); if (!got) return;
+      el.replaceChildren(...got[0].map((r) => { const li = document.createElement('li'); const p = pill(r.kind, r.kind === '할 수 있음' ? 'realized' : 'missed'); p.style.justifySelf = 'start';
+        const s = document.createElement('span'); s.textContent = r.text; li.append(p, s); return li; }));
+    });
+    fill('ai4s-col-rows', 'ai4s_colleagues', (tr, r) => tr.append(A.td(r.system, 'mid'), A.td(r.org, 'mid'), A.td(r.results, 'wide')));
   })();
 </script>
 

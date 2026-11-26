@@ -1,0 +1,211 @@
+[
+ {
+  "id": "L01",
+  "name": "사전학습 컴퓨트 스케일링 법칙(Kaplan/Chinchilla) 및 프런티어 학습 컴퓨트 증가",
+  "verdict": "둔화",
+  "dominant": "",
+  "low": 2e+27,
+  "base": 5e+27,
+  "high": 1e+28,
+  "unit": "2027년 말 최대 단일 학습런 FLOP",
+  "formula": "Loss ∝ C^-α (Chinchilla: N_opt ∝ C^0.5, D_opt ∝ C^0.5, 토큰/파라미터≈20); 프런티어 학습 컴퓨트 C(t) ≈ C0·5^t (Epoch, 2020~)"
+ },
+ {
+  "id": "L02",
+  "name": "추론(테스트타임) 컴퓨트·RL 스케일링 법칙",
+  "verdict": "가속",
+  "dominant": "지배",
+  "low": 25,
+  "base": 35,
+  "high": 50,
+  "unit": "동일 모델 최저–최고 effort 간 AA 지수 격차(점)",
+  "formula": "성능 ≈ a + b·log(추론 토큰/effort); Ord: 동일 이득에 RL 학습 컴퓨트 10,000× ≈ 추론 100×"
+ },
+ {
+  "id": "L03",
+  "name": "METR 과제 시간지평 배가 법칙",
+  "verdict": "가속",
+  "dominant": "지배",
+  "low": 164,
+  "base": 500,
+  "high": 1100,
+  "unit": "2027년 말 50% 시간지평 함의값(시간; Td 196/130/106일, 측정 아님)",
+  "formula": "H50(t) = H0·2^((t−t0)/Td); 장기 Td≈196일(TH1.1), 2024+ 프런티어 회귀 Td≈106일(R²=0.985, 본 분석)"
+ },
+ {
+  "id": "L04",
+  "name": "ECI 종합역량 프런티어 선형 성장 법칙",
+  "verdict": "유지",
+  "dominant": "지배",
+  "low": 186,
+  "base": 192,
+  "high": 199,
+  "unit": "2027년 말 ECI 프런티어",
+  "formula": "ECI_frontier(t) ≈ a + b·t, b≈17.2점/년(2024-04~2026-11, R²=0.991); Epoch 공식 추론시대 기울기 14점/년"
+ },
+ {
+  "id": "L05",
+  "name": "벤치마크 반감기(출시→포화) 단축 법칙",
+  "verdict": "가속",
+  "dominant": "",
+  "low": 6,
+  "base": 9,
+  "high": 15,
+  "unit": "신규 프런티어 벤치마크 50%→90% 도달 기간(개월)",
+  "formula": "포화시간 T_sat 감소: 2023~24년 수년 → 2025~26년 7~18개월; 정답률 logit은 시간에 선형"
+ },
+ {
+  "id": "L06",
+  "name": "코딩 능력·AI 작성 코드 비중 S-곡선",
+  "verdict": "포화",
+  "dominant": "",
+  "low": 80,
+  "base": 90,
+  "high": 95,
+  "unit": "2027년 말 빅테크 신규 코드 중 AI 작성 비중(%)",
+  "formula": "logit(AI 코드 비중) 선형: Google 신규코드 25%(2024-10)→50%(2025가을)→75%(2026-04), 기울기≈1.47/년; SWE-bench Verified logit 기울기≈1.42/년"
+ },
+ {
+  "id": "L07",
+  "name": "사이버 공격 능력 성장 법칙(벤치마크·제로데이)",
+  "verdict": "가속",
+  "dominant": "지배",
+  "low": 14,
+  "base": 22,
+  "high": 40,
+  "unit": "2027년 월평균 제로데이 익스플로잇 건수(GTIG 기준)",
+  "formula": "logit(Cybench) 기울기≈2.16/년(R² .85); UK AISI 사이버 과제 길이 약 8개월 배가(상한); 제로데이 익스플로잇 월 건수 ~2×/년"
+ },
+ {
+  "id": "L08",
+  "name": "공격 시간 압축 법칙(time-to-exploit/브레이크아웃)",
+  "verdict": "가속",
+  "dominant": "지배",
+  "low": 24,
+  "base": 6,
+  "high": 1,
+  "unit": "2027년 공개~대량 악용 중앙 간격(시간, low=느린 시나리오)",
+  "formula": "공격 소요시간 연 2~4배 단축: 브레이크아웃 −65%/년, 침투→유출 4×/년"
+ },
+ {
+  "id": "L09",
+  "name": "동일 성능 가격 하락 법칙(LLMflation)",
+  "verdict": "가속",
+  "dominant": "지배",
+  "low": 10,
+  "base": 40,
+  "high": 100,
+  "unit": "2027년 동일 성능 토큰 단가 하락 배수(×/년)",
+  "formula": "P_fixed(t) = P0·k^-t, Epoch k=9~900×/년(중앙 약 40×/년, GPT-4급 GPQA)"
+ },
+ {
+  "id": "L10",
+  "name": "덴싱 법칙(능력 밀도 배가)",
+  "verdict": "유지",
+  "dominant": "",
+  "low": 3,
+  "base": 4,
+  "high": 6,
+  "unit": "능력 밀도 배가시간(개월)",
+  "formula": "ln(ρ_max) = A·t + B, 배가시간 = ln2/A ≈ 3.3~3.5개월(ρ = 유효 파라미터/실제 파라미터)"
+ },
+ {
+  "id": "L11",
+  "name": "제번스 역설(단가 하락→총지출 증가)",
+  "verdict": "유지",
+  "dominant": "지배",
+  "low": 1.3,
+  "base": 1.6,
+  "high": 2.0,
+  "unit": "2027년 AI capex 증가 배수(전년 대비)",
+  "formula": "총지출 = 단가 × 수요, 수요 탄력성 > 1 → 단가 ↓ 40×에도 지출 ↑"
+ },
+ {
+  "id": "L12",
+  "name": "오픈–폐쇄 / 중국–미국 시차 법칙",
+  "verdict": "유지",
+  "dominant": "",
+  "low": 3,
+  "base": 6,
+  "high": 9,
+  "unit": "2027년 오픈(중국)–폐쇄 프런티어 시차(개월)",
+  "formula": "lag(t) = t_open(ECI=x) − t_closed(ECI=x) ≈ 상수 5~7개월"
+ },
+ {
+  "id": "L13",
+  "name": "프런티어 교체 주기·출시 빈도 법칙",
+  "verdict": "유지",
+  "dominant": "",
+  "low": 30,
+  "base": 45,
+  "high": 60,
+  "unit": "2027년 프런티어 신기록 평균 간격(일)",
+  "formula": "ECI 프런티어 신기록 간격 ≈ 45~50일; 1위 연구소 교체 2~3개월"
+ },
+ {
+  "id": "L14",
+  "name": "AI R&D 가속·재귀적 자기개선(RSI) 피드백 법칙",
+  "verdict": "가속",
+  "dominant": "지배",
+  "low": 1.5,
+  "base": 2.5,
+  "high": 4.0,
+  "unit": "2027년 말 선도 연구소 AI R&D 진전 속도 배수(AI 없음 대비)",
+  "formula": "dC/dt = f(C)·(1+s(C)), s=AI 기인 R&D 속도 증가; METR 측정 진전 속도 배수 1.9×[1.5–2.8]"
+ },
+ {
+  "id": "L15",
+  "name": "하니스·스캐폴드 및 벤더–독립평가 격차 법칙",
+  "verdict": "유지",
+  "dominant": "",
+  "low": 10,
+  "base": 20,
+  "high": 35,
+  "unit": "2027년 동일 모델 하니스/평가조건 간 최대 점수차(pp)",
+  "formula": "점수 = f(모델) + g(하니스) + h(effort); 동일 모델 하니스 효과 ±10~36pp"
+ },
+ {
+  "id": "L16",
+  "name": "하드웨어 법칙: FLOP/$·메모리 벽·전력 제약",
+  "verdict": "유지",
+  "dominant": "",
+  "low": 1.3,
+  "base": 1.45,
+  "high": 1.6,
+  "unit": "2027년 FLOP/$ 개선 배수(×/년)",
+  "formula": "FLOP/$ 1.49×/년(2023~), 메모리 대역폭 1.28×/년(2008~), AI 칩 판매 컴퓨트 2.5×/년(2024~)"
+ },
+ {
+  "id": "L17",
+  "name": "데이터 벽·굿하트(오염) 법칙",
+  "verdict": "유지",
+  "dominant": "",
+  "low": null,
+  "base": null,
+  "high": null,
+  "unit": "정량 예측 없음",
+  "formula": "공개 텍스트 재고 고정 → 합성데이터·RL 환경으로 대체; 벤치마크 최적화 시 지표-능력 괴리 증가"
+ },
+ {
+  "id": "L18",
+  "name": "도입 S-곡선·생산성 J-곡선 법칙",
+  "verdict": "둔화",
+  "dominant": "",
+  "low": 22,
+  "base": 26,
+  "high": 32,
+  "unit": "2027년 말 미국 AI 사용 기업 비율(%, Census BTOS)",
+  "formula": "기업 도입률 A(t)=1/(1+e^-k(t−t0)), 초기 저성장; 개인 활용 ≫ 기업 활용; 시간 절감→산출 전환 지연(J-curve)"
+ },
+ {
+  "id": "L19",
+  "name": "경제적 원격업무 자동화(RLI) 배가 법칙",
+  "verdict": "가속",
+  "dominant": "지배",
+  "low": 55,
+  "base": 70,
+  "high": 85,
+  "unit": "2027년 말 RLI 프런티어(%)",
+  "formula": "RLI(t) 배가시간 ≈101일(R² .971) / logit 기울기 2.77/년(R² .96)"
+ }
+]

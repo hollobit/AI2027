@@ -1,0 +1,52 @@
+[
+ {
+  "indicator": "ECI 프런티어 2027-06 시점 값",
+  "threshold": ">185 (선형 base 182 상회)",
+  "meaning": "업계 전체 초지수 가속(L04 붕괴, L14 확산)"
+ },
+ {
+  "indicator": "OpenAI·Google의 ECI 연간 기울기",
+  "threshold": ">25점/년",
+  "meaning": "RSI 가속이 Anthropic 외 연구소로 전이"
+ },
+ {
+  "indicator": "METR 후속 과제세트(TH2 등) 50% 시간지평",
+  "threshold": ">160h(1 작업월)",
+  "meaning": "시간지평 배가 법칙 유지·자율 연구 가능 수준 접근"
+ },
+ {
+  "indicator": "Remote Labor Index 프런티어",
+  "threshold": ">70% (2027 말)",
+  "meaning": "원격 지식노동 자동화가 로지스틱 상단 진입"
+ },
+ {
+  "indicator": "GTIG 월간 제로데이 익스플로잇 건수",
+  "threshold": "3개월 연속 >25건",
+  "meaning": "사이버 공격 능력 법칙 가속, 방어 우위 상실 신호"
+ },
+ {
+  "indicator": "공개 확인 최대 학습런",
+  "threshold": "≥1e28 FLOP",
+  "meaning": "사전학습 스케일링 재가속(L01 부활)"
+ },
+ {
+  "indicator": "동일 모델 low–max effort 격차(AA)",
+  "threshold": ">35점",
+  "meaning": "추론 컴퓨트가 능력의 지배 변수"
+ },
+ {
+  "indicator": "오픈(중국)–폐쇄 ECI 시차",
+  "threshold": "<90일 또는 >270일",
+  "meaning": "시차 상수 법칙 붕괴(추격 또는 디커플링)"
+ },
+ {
+  "indicator": "Census BTOS AI 사용 기업 비율",
+  "threshold": ">30%",
+  "meaning": "기업 도입 S-곡선 가파른 구간 진입, 생산성 J-곡선 반등"
+ },
+ {
+  "indicator": "AI capex 2027 실적 vs 컨센서스 1.6조 달러",
+  "threshold": "<1.2조 달러",
+  "meaning": "제번스 법칙의 재무적 한계(수익화 실패)"
+ }
+]

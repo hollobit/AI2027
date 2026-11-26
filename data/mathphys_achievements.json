@@ -1,0 +1,202 @@
+[
+ {
+  "date": "2026-11",
+  "field": "물리",
+  "problem": "연구수준 물리 벤치마크 CritPt(71개 미공개 연구과제)",
+  "system": "Muse Wonder Full·GPT-5.6 Sol·Claude Opus 5.5 등",
+  "verification": "전문가 확인",
+  "significance": "낮음",
+  "result": "최고 약 33%(AA 리더보드, 원판). 로컬 집계 12.6→36%로 상승했으나 연구수준 물리는 미포화",
+  "url": "https://artificialanalysis.ai/evaluations/critpt"
+ },
+ {
+  "date": "2026-10",
+  "field": "수학",
+  "problem": "FrontierMath-Erdős 68문제 누적",
+  "system": "OpenAI(12건 일괄 공개)·GPT-6.x Sol·Claude Opus/Sonnet …",
+  "verification": "Lean 검증",
+  "significance": "높음",
+  "result": "Epoch 집계 17/68 해결(#1,#3,#74,#126,#138,#172,#181,#184,#371,#431,#508,#548,#571,#821,#952,#970,#1083). 표준 프로토콜 최고점은 약 10.3%(GPT-6.2 Astra)",
+  "url": "https://epoch.ai/benchmarks/frontiermath-erdos"
+ },
+ {
+  "date": "2026-09",
+  "field": "수학",
+  "problem": "나비에–스토크스 유한시간 특이점(외력 포함)",
+  "system": "OpenAI 내부 시스템(약 1만 동시 에이전트·88시간, GPT-6 Astra로 Lea…",
+  "verification": "논란",
+  "significance": "높음",
+  "result": "매끄러운 외력 하 3차원 비압축 NS의 유한시간 blow-up 증명과 Lean 형식화 주장(Clay 진술 C·D). 전문가들은 '외력 이용 변형 문제'로 의미 제한적이라 평가, Buckmaster·Alpöge와 공로 분쟁, 상금 청구 안 함",
+  "url": "https://openai.com/index/navier-stokes-solution/"
+ },
+ {
+  "date": "2026-08",
+  "field": "수학",
+  "problem": "FrontierMath-Erdős(Bloom 선정 중요·난제 68개, Lean 검증)",
+  "system": "GPT-6 Astra 등(Epoch AI 평가)",
+  "verification": "Lean 검증",
+  "significance": "높음",
+  "result": "표준 프로토콜($300·72시간) 점수 3%(2/68). 추가 시도 포함 5/68, 연산비 22만 달러+",
+  "url": "https://epoch.ai/latest/announcing-frontiermath-erdos"
+ },
+ {
+  "date": "2026-08",
+  "field": "수학",
+  "problem": "페르마의 마지막 정리(FLT) 완전 형식화",
+  "system": "Anthropic Claude(다수 에이전트, Prove2Me)",
+  "verification": "Lean 검증",
+  "significance": "높음",
+  "result": "약 11일·출력 60억 토큰, Lean 1,300만 줄(Mathlib의 5배+), 표준 공리 3개만 사용, Kevin Buzzard 검토. 신규 수학이 아닌 기존 증명 검증",
+  "url": "https://www.anthropic.com/research/formalizing-fermats-last-theorem"
+ },
+ {
+  "date": "2026-07",
+  "field": "수학",
+  "problem": "IMO 2026",
+  "system": "AxiomProver(Lean 4), Claude Fable 5·GPT-5.6 Sol·K…",
+  "verification": "주장",
+  "significance": "낮음",
+  "result": "다수 시스템 42/42 만점 보도, Axiom은 6문제 Lean 증명 공개. IMO 측은 계산량·인간개입 검증 불가 입장",
+  "url": "https://github.com/AxiomMath/IMO2026"
+ },
+ {
+  "date": "2026-07",
+  "field": "수학",
+  "problem": "매트로이드 이론 논문 수준 결과의 독립 재현",
+  "system": "AI 프로토콜 Danus(Cheng·Liu·Gao 실험)",
+  "verification": "주장",
+  "significance": "중간",
+  "result": "인간 저자의 미공개 논문과 동등한 증명과 논문을 AI가 독립 작성했다고 보고 — '논문 단위 자동화' 신호",
+  "url": "https://arxiv.org/abs/2608.02859"
+ },
+ {
+  "date": "2026-05",
+  "field": "수학",
+  "problem": "에르되시 미해결 353문제 + OEIS 추측 492개",
+  "system": "Google DeepMind AlphaProof Nexus",
+  "verification": "Lean 검증",
+  "significance": "높음",
+  "result": "9/353 에르되시 문제(2개는 56년 미해결) 자율 해결, OEIS 추측 44/492 증명, 문제당 수백 달러, Lean 증명 공개",
+  "url": "https://arxiv.org/abs/2605.22763"
+ },
+ {
+  "date": "2026-05",
+  "field": "수학",
+  "problem": "에르되시 단위거리 추측(1946, 문제 #90)",
+  "system": "OpenAI 내부 범용 추론모델",
+  "verification": "전문가 확인",
+  "significance": "높음",
+  "result": "대수적 정수론(가우스 정수의 일반화)으로 격자 구성을 다항식 차수로 개선하는 무한 반례족 → 추측 반증. 외부 수학자 9인 동반논문, Gowers '이정표', Sawin이 δ=0.014로 정량화. Lean 형식화 약 120만 줄",
+  "url": "https://openai.com/index/model-disproves-discrete-geometry-conjecture/"
+ },
+ {
+  "date": "2026-02",
+  "field": "물리",
+  "problem": "단일 마이너스(single-minus) 글루온 트리 진폭",
+  "system": "OpenAI GPT-5.2 Pro(추측) + 내부 모델(증명) + 인간 저자",
+  "verification": "전문가 확인",
+  "significance": "중간",
+  "result": "'0으로 여겨지던 진폭이 0이 아님'을 보이는 일반 공식을 AI가 제안·증명, Berends–Giele 재귀·soft theorem으로 검증, 중력자로 확장",
+  "url": "https://openai.com/index/new-result-theoretical-physics/"
+ },
+ {
+  "date": "2026-02",
+  "field": "수학",
+  "problem": "8차원 구 채우기(Viazovska) 형식검증 완료, 24차원 자동형식화",
+  "system": "Math Inc. Gauss",
+  "verification": "Lean 검증",
+  "significance": "중간",
+  "result": "8차원 프로젝트의 최종 단계를 Gauss가 마무리, 24차원 증명 20만+ 줄을 약 2주 만에 형식화. 인간 프로젝트팀의 '선점' 불만",
+  "url": "https://www.scientificamerican.com/article/what-happens-when-ai-starts-checking-mathematicians-work"
+ },
+ {
+  "date": "2026-01",
+  "field": "수학",
+  "problem": "에르되시 문제 #728 등(대중 LLM 활용)",
+  "system": "GPT-5.2 Pro(Barreto·Price), Harmonic Aristotle로 검증",
+  "verification": "Lean 검증",
+  "significance": "중간",
+  "result": "선행해 없는 문제를 해결하고 Lean 형식화. 2025-12 #333 건은 1977년 Erdős 본인 해법으로 판명(문헌탐색 실패 사례)",
+  "url": "https://www.quantamagazine.org/how-ai-tore-through-a-mathematical-community-20260803/"
+ },
+ {
+  "date": "2026-01",
+  "field": "수학",
+  "problem": "Bloom DB의 'Open' 에르되시 추측 700개 체계 점검",
+  "system": "Google DeepMind Aletheia(Gemini Deep Think 기반) + …",
+  "verification": "전문가 확인",
+  "significance": "중간",
+  "result": "13문제 처리: 4개 신규 자율 해법, 9개 기존 문헌 해법 발견. '미해결 상태는 난이도보다 무명성 탓', '무의식적 표절' 위험 지적",
+  "url": "https://arxiv.org/abs/2601.22401"
+ },
+ {
+  "date": "2026",
+  "field": "물리",
+  "problem": "N=4 초대칭 양-밀스 9루프 6입자 진폭",
+  "system": "Anthropic Claude(2차 보도)",
+  "verification": "주장",
+  "significance": "중간",
+  "result": "Lance Dixon 검증 보도 — 1차 출처 미확인",
+  "url": ""
+ },
+ {
+  "date": "2025-11",
+  "field": "수학",
+  "problem": "해석·조합·기하·정수론 67개 문제의 대규모 탐색",
+  "system": "AlphaEvolve(Georgiev·Gómez-Serrano·Tao·Wagner)",
+  "verification": "전문가 확인",
+  "significance": "중간",
+  "result": "약 75%에서 기존 최고해 재발견, 약 20%에서 개선. Kakeya/Nikodym 관련 구성은 Tao의 후속 연구를 촉발",
+  "url": "https://arxiv.org/abs/2511.02864"
+ },
+ {
+  "date": "2025-10",
+  "field": "수학",
+  "problem": "에르되시 문제 '해결' 주장(GPT-5)",
+  "system": "OpenAI GPT-5",
+  "verification": "논란",
+  "significance": "낮음",
+  "result": "OpenAI 연구자가 '미해결 10문제 해결'을 주장했으나 실제로는 기존 문헌 발견으로 드러나 게시물 삭제 — 문헌탐색 능력은 실재하나 '신규 해결' 과장 논란",
+  "url": "https://scientificamerican.com/article/ai-just-solved-an-80-year-old-erdos-problem-and-mathematicians-are-amazed"
+ },
+ {
+  "date": "2025-09",
+  "field": "물리",
+  "problem": "유체방정식(IPM·Boussinesq 등)의 불안정 특이점(blow-up) 탐색",
+  "system": "Google DeepMind + NYU·Brown·Stanford(Buckmaster, …",
+  "verification": "주장",
+  "significance": "높음",
+  "result": "불안정 자기유사 특이점 새 계열을 체계적으로 발견, 기계정밀도 수준 해로 컴퓨터보조증명의 전 단계 마련(증명 자체는 미완)",
+  "url": "https://arxiv.org/abs/2509.14185"
+ },
+ {
+  "date": "2025-09",
+  "field": "수학",
+  "problem": "강한 소수정리(strong PNT) Lean 형식화",
+  "system": "Math Inc. Gauss",
+  "verification": "Lean 검증",
+  "significance": "중간",
+  "result": "Tao·Kontorovich 프로젝트의 목표를 약 3주 만에 자동형식화로 완료",
+  "url": "https://leanprover-community.github.io/archive/stream/219941-Machine-Learning-for-Theorem-Proving/topic/Math.2C.20Inc.2C.20and.20Gauss.20discussion.html"
+ },
+ {
+  "date": "2025-07",
+  "field": "수학",
+  "problem": "IMO 2025(국제수학올림피아드)",
+  "system": "Gemini Deep Think, OpenAI 실험 모델(외 Harmonic Aristo…",
+  "verification": "전문가 확인",
+  "significance": "중간",
+  "result": "6문제 중 5문제 풀이, 금메달 수준(35/42). Gemini는 IMO 측 채점 인증, OpenAI는 전직 메달리스트 자체 채점",
+  "url": "https://doi.org/10.1038/d41586-025-02343-x"
+ },
+ {
+  "date": "2025-05",
+  "field": "수학",
+  "problem": "4×4 복소 행렬곱 알고리즘 및 50여 개 열린 문제(키싱수 등)",
+  "system": "Google DeepMind AlphaEvolve",
+  "verification": "전문가 확인",
+  "significance": "중간",
+  "result": "4×4 복소행렬곱을 스칼라 곱셈 48회로 수행(Strassen 재귀 49회 개선), 11차원 키싱수 하한 592→593 등 약 20% 문제에서 기존 최고기록 개선",
+  "url": "https://deepmind.google/en/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/"
+ }
+]

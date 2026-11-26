@@ -1,0 +1,44 @@
+[
+ {
+  "metric": "FrontierMath-Erdős 68문제 중 AI 누적 해결 수(2027년 말, 모든 시도 포함)",
+  "low": 25,
+  "base": 35,
+  "high": 50
+ },
+ {
+  "metric": "FrontierMath-Erdős 표준 프로토콜 최고 점수(%)",
+  "low": 20,
+  "base": 35,
+  "high": 60
+ },
+ {
+  "metric": "erdosproblems.com에서 2027년 중 AI 실질 기여로 open→solved 전환되는 문제 수",
+  "low": 60,
+  "base": 150,
+  "high": 300
+ },
+ {
+  "metric": "AI가 핵심 결과를 낸 논문의 최상위 4대 수학지 게재 승인 건수",
+  "low": 0,
+  "base": 2,
+  "high": 6
+ },
+ {
+  "metric": "AI 주도 완전 형식화된 '랜드마크급' 정리(FLT급) 수",
+  "low": 1,
+  "base": 3,
+  "high": 8
+ },
+ {
+  "metric": "AI 기여가 명시된 hep-th/물리 이론 논문 중 '새 결과' 사례(주요 랩 공식 발표 기준)",
+  "low": 5,
+  "base": 15,
+  "high": 40
+ },
+ {
+  "metric": "Clay 연구소가 2027년 중 AI 기여로 수상 결정하는 밀레니엄 문제 수",
+  "low": 0,
+  "base": 0,
+  "high": 0
+ }
+]

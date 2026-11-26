@@ -1,0 +1,317 @@
+[
+ {
+  "series": "METR 50% 시간지평 프런티어",
+  "unit": "분",
+  "date": "2024-05",
+  "value": 9.2,
+  "label": "GPT-4o"
+ },
+ {
+  "series": "METR 50% 시간지평 프런티어",
+  "unit": "분",
+  "date": "2024-06",
+  "value": 11.4,
+  "label": "Claude 3.5 Sonnet"
+ },
+ {
+  "series": "METR 50% 시간지평 프런티어",
+  "unit": "분",
+  "date": "2024-09",
+  "value": 20.3,
+  "label": "o1-preview"
+ },
+ {
+  "series": "METR 50% 시간지평 프런티어",
+  "unit": "분",
+  "date": "2024-12",
+  "value": 38.8,
+  "label": "o1"
+ },
+ {
+  "series": "METR 50% 시간지평 프런티어",
+  "unit": "분",
+  "date": "2025-02",
+  "value": 60.4,
+  "label": "Claude 3.7 Sonnet"
+ },
+ {
+  "series": "METR 50% 시간지평 프런티어",
+  "unit": "분",
+  "date": "2025-04",
+  "value": 119.7,
+  "label": "o3"
+ },
+ {
+  "series": "METR 50% 시간지평 프런티어",
+  "unit": "분",
+  "date": "2025-08",
+  "value": 203.0,
+  "label": "GPT-5 (high)"
+ },
+ {
+  "series": "METR 50% 시간지평 프런티어",
+  "unit": "분",
+  "date": "2025-11",
+  "value": 293.0,
+  "label": "Claude Opus 4.5"
+ },
+ {
+  "series": "METR 50% 시간지평 프런티어",
+  "unit": "분",
+  "date": "2025-12",
+  "value": 352.2,
+  "label": "GPT-5.2 (high)"
+ },
+ {
+  "series": "METR 50% 시간지평 프런티어",
+  "unit": "분",
+  "date": "2026-02",
+  "value": 718.8,
+  "label": "Claude Opus 4.6"
+ },
+ {
+  "series": "METR 50% 시간지평 프런티어",
+  "unit": "분",
+  "date": "2026-04",
+  "value": 1044.8,
+  "label": "Claude Mythos Preview (CI 509–3,304)"
+ },
+ {
+  "series": "METR 50% 시간지평 프런티어",
+  "unit": "분",
+  "date": "2027-12",
+  "value": 30500.0,
+  "label": "외삽 base(Td 130일), 측정 아님"
+ },
+ {
+  "series": "ECI 프런티어(분기말 누적 최고)",
+  "unit": "ECI",
+  "date": "2024-03",
+  "value": 125.59,
+  "label": "Claude 3 Opus"
+ },
+ {
+  "series": "ECI 프런티어(분기말 누적 최고)",
+  "unit": "ECI",
+  "date": "2024-06",
+  "value": 130.0,
+  "label": "Claude 3.5 Sonnet"
+ },
+ {
+  "series": "ECI 프런티어(분기말 누적 최고)",
+  "unit": "ECI",
+  "date": "2024-09",
+  "value": 135.27,
+  "label": "o1-mini"
+ },
+ {
+  "series": "ECI 프런티어(분기말 누적 최고)",
+  "unit": "ECI",
+  "date": "2024-12",
+  "value": 141.16,
+  "label": "o1"
+ },
+ {
+  "series": "ECI 프런티어(분기말 누적 최고)",
+  "unit": "ECI",
+  "date": "2025-03",
+  "value": 143.98,
+  "label": "Gemini 2.5 Pro"
+ },
+ {
+  "series": "ECI 프런티어(분기말 누적 최고)",
+  "unit": "ECI",
+  "date": "2025-06",
+  "value": 147.47,
+  "label": "o3-pro"
+ },
+ {
+  "series": "ECI 프런티어(분기말 누적 최고)",
+  "unit": "ECI",
+  "date": "2025-09",
+  "value": 150.0,
+  "label": "GPT-5"
+ },
+ {
+  "series": "ECI 프런티어(분기말 누적 최고)",
+  "unit": "ECI",
+  "date": "2025-12",
+  "value": 157.35,
+  "label": "GPT-5.2 Pro"
+ },
+ {
+  "series": "ECI 프런티어(분기말 누적 최고)",
+  "unit": "ECI",
+  "date": "2026-03",
+  "value": 160.31,
+  "label": "GPT-5.4 Pro"
+ },
+ {
+  "series": "ECI 프런티어(분기말 누적 최고)",
+  "unit": "ECI",
+  "date": "2026-06",
+  "value": 164.18,
+  "label": "Claude Fable 5"
+ },
+ {
+  "series": "ECI 프런티어(분기말 누적 최고)",
+  "unit": "ECI",
+  "date": "2026-09",
+  "value": 169.21,
+  "label": "GPT-6 Astra"
+ },
+ {
+  "series": "ECI 프런티어(분기말 누적 최고)",
+  "unit": "ECI",
+  "date": "2026-11",
+  "value": 173.4,
+  "label": "Claude Fable 5.2"
+ },
+ {
+  "series": "ECI 프런티어(분기말 누적 최고)",
+  "unit": "ECI",
+  "date": "2027-12",
+  "value": 192.0,
+  "label": "base 전망(17.2점/년)"
+ },
+ {
+  "series": "Google 신규 코드 중 AI 생성 비중",
+  "unit": "%",
+  "date": "2024-10",
+  "value": 25.0,
+  "label": "Q3 2024 실적발표"
+ },
+ {
+  "series": "Google 신규 코드 중 AI 생성 비중",
+  "unit": "%",
+  "date": "2025-10",
+  "value": 50.0,
+  "label": "2025 가을(월 추정)"
+ },
+ {
+  "series": "Google 신규 코드 중 AI 생성 비중",
+  "unit": "%",
+  "date": "2026-04",
+  "value": 75.0,
+  "label": "피차이 블로그"
+ },
+ {
+  "series": "Google 신규 코드 중 AI 생성 비중",
+  "unit": "%",
+  "date": "2027-12",
+  "value": 90.0,
+  "label": "base 전망"
+ },
+ {
+  "series": "Cybench(비가이드) 프런티어",
+  "unit": "%",
+  "date": "2024-02",
+  "value": 10.0,
+  "label": "Claude 3 Opus"
+ },
+ {
+  "series": "Cybench(비가이드) 프런티어",
+  "unit": "%",
+  "date": "2024-06",
+  "value": 17.5,
+  "label": "Claude 3.5 Sonnet"
+ },
+ {
+  "series": "Cybench(비가이드) 프런티어",
+  "unit": "%",
+  "date": "2025-01",
+  "value": 22.5,
+  "label": "o3-mini"
+ },
+ {
+  "series": "Cybench(비가이드) 프런티어",
+  "unit": "%",
+  "date": "2025-05",
+  "value": 38.0,
+  "label": "Claude Opus 4"
+ },
+ {
+  "series": "Cybench(비가이드) 프런티어",
+  "unit": "%",
+  "date": "2025-07",
+  "value": 43.0,
+  "label": "Grok 4"
+ },
+ {
+  "series": "Cybench(비가이드) 프런티어",
+  "unit": "%",
+  "date": "2025-09",
+  "value": 60.0,
+  "label": "Claude Sonnet 4.5"
+ },
+ {
+  "series": "Cybench(비가이드) 프런티어",
+  "unit": "%",
+  "date": "2025-11",
+  "value": 82.0,
+  "label": "Claude Opus 4.5"
+ },
+ {
+  "series": "Cybench(비가이드) 프런티어",
+  "unit": "%",
+  "date": "2026-02",
+  "value": 93.0,
+  "label": "Claude Opus 4.6"
+ },
+ {
+  "series": "Cybench(비가이드) 프런티어",
+  "unit": "%",
+  "date": "2026-04",
+  "value": 100.0,
+  "label": "Mythos Preview(시스템카드, pass@k)"
+ },
+ {
+  "series": "Remote Labor Index 프런티어",
+  "unit": "%",
+  "date": "2025-06",
+  "value": 0.83,
+  "label": "Gemini 2.5 Pro"
+ },
+ {
+  "series": "Remote Labor Index 프런티어",
+  "unit": "%",
+  "date": "2025-08",
+  "value": 1.67,
+  "label": "GPT-5"
+ },
+ {
+  "series": "Remote Labor Index 프런티어",
+  "unit": "%",
+  "date": "2025-11",
+  "value": 3.75,
+  "label": "Claude Opus 4.5"
+ },
+ {
+  "series": "Remote Labor Index 프런티어",
+  "unit": "%",
+  "date": "2026-04",
+  "value": 6.25,
+  "label": "GPT-5.5"
+ },
+ {
+  "series": "Remote Labor Index 프런티어",
+  "unit": "%",
+  "date": "2026-06",
+  "value": 16.1,
+  "label": "Claude Fable 5"
+ },
+ {
+  "series": "Remote Labor Index 프런티어",
+  "unit": "%",
+  "date": "2026-09",
+  "value": 21.25,
+  "label": "Claude Opus 5.5"
+ },
+ {
+  "series": "Remote Labor Index 프런티어",
+  "unit": "%",
+  "date": "2026-11",
+  "value": 41.25,
+  "label": "Claude Fable 5.2"
+ }
+]

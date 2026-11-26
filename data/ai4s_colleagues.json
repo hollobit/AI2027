@@ -1,0 +1,47 @@
+[
+ {
+  "system": "AI co-scientist (Gemini for Science 'Hypothesis G…",
+  "org": "Google / Google DeepMind",
+  "results": "간섬유화 약물 재창출 후보 중 하나가 실험에서 섬유화 관련 반응 91% 억제(Advanced Science, Stanford Peltz). AML 재창출 후보(KIRA6 등, 2차 요약), Imperial College의 cf-PICI 유전자 전달 기전을 독립적으로 재도출(Cell 동시 게재). 세포 노화·ALS·통합스트레스반응(Calico) 가설 실험 …"
+ },
+ {
+  "system": "Kosmos (AI Scientist)",
+  "org": "Edison Scientific (FutureHouse 스핀아웃)",
+  "results": "7개 발견 주장(3개는 미공개 원고 재현, 4개 신규), 진술의 79% 재현 가능(자체 평가). 2026-10-29 Pfizer R&D 전사 배치 계약."
+ },
+ {
+  "system": "Robin / Crow / Finch",
+  "org": "FutureHouse",
+  "results": "Robin: 건성 AMD 치료 후보 ripasudil 발굴(Nature 보고), 워크플로 비용 10.76달러·수작업 대비 약 200배 시간 단축 주장."
+ },
+ {
+  "system": "The AI Scientist-v2",
+  "org": "Sakana AI (+Oxford·UBC 등)",
+  "results": "2025 ICLR 워크숍 동료심사 통과(리뷰 6.33), 2026 Nature 게재(s41586-026-10265-5), 기반 모델이 좋아질수록 논문 품질이 오르는 '과학 스케일링' 보고."
+ },
+ {
+  "system": "ChatGPT for Academic Researchers / OpenAI for Sci…",
+  "org": "OpenAI",
+  "results": "2026-11-16 'Science at the Frontier' 보고: 58만 건 과학 메시지 분석, 68%가 아이디어 개발에 사용, 응답자 자기보고로 'AI 없이는 1.9배 시간 소요'. 실험 검증된 발견 집계는 없음."
+ },
+ {
+  "system": "Claude Science / Claude Code (연구용) · AI for Scien…",
+  "org": "Anthropic",
+  "results": "데이터 분석이 세션의 33.7%(Claude)·48.1%(Claude Code), 생명과학에서 고자율 세션 비율 23.7%/64.1%/73.3%(Claude/Code/Science). 현 능력 전면 확산 시 신규 연구 1건 소요 연구자 시간의 27~52%(중앙값 38%) 대체 가능 추정."
+ },
+ {
+  "system": "Microsoft Discovery",
+  "org": "Microsoft",
+  "results": "PFAS-free 냉각제 후보를 약 200시간 만에 찾고 합성 확인했다는 회사 발표(2025). 2026 독립 검증 자료는 본 조사에서 미확인."
+ },
+ {
+  "system": "Agents4Science 2025 (AI 저자·AI 심사 학회)",
+  "org": "Stanford (James Zou 등)",
+  "results": "315편 투고, 62편 데스크 리젝트, 253편을 LLM 심사자 3명이 평가, 상위 79편 인간 심사, 48편 채택. 완전 AI 생성 논문 채택은 소수(참가팀 보고 5편)."
+ },
+ {
+  "system": "AlphaEvolve / AlphaProof 계열·ERA",
+  "org": "Google DeepMind",
+  "results": "에르되시 미해결 문제 9/353 자율 해결(arXiv 2605.22763, Lean 증명 공개), ERA가 OpenProblems 리더보드 상회 방법 40개(Nature). 세부는 수학 담당 에이전트 범위."
+ }
+]
