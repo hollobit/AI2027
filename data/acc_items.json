@@ -1,0 +1,434 @@
+[
+ {
+  "side": "미국 쪽",
+  "date": "2024-07-09",
+  "actor": "OpenAI",
+  "measure": "미지원 국가·지역(중국 본토·홍콩·마카오, 러시아·이란·북한 등) API 트래픽 차단. 6월 말 개발자에 사전 통보, 미지원 지역 접속·재판매 시 계정 정지 가능",
+  "type": "지역 차단",
+  "url": "https://www.theregister.com/2024/06/25/openai_unsupported_countries/"
+ },
+ {
+  "side": "미국 쪽",
+  "date": "2024-07",
+  "actor": "OpenAI",
+  "measure": "미지원 국가 목록 공식화: ChatGPT·API 모두 중국·이란·북한·러시아 미지원, 우회 접속·제3자 제공 시 계정 차단",
+  "type": "지역 차단",
+  "url": "https://help.openai.com/en/articles/9131992-how-can-i-get-help-with-a-billing-or-api-key-issue"
+ },
+ {
+  "side": "미국 쪽",
+  "date": "2025-09-05",
+  "actor": "Anthropic",
+  "measure": "지역 기준이 아닌 '소유 기준' 첫 차단: 미지원 지역(중국 등) 본사 기업이 직·간접 50% 초과 소유한 법인(해외 자회사·합작사 포함)에 Claude 전 모델·개발도구 판매 금지. 매출 손실 '수억 달러 초반' 추정",
+  "type": "소유 기준 차단",
+  "url": "https://anthropic.com/news/updating-restrictions-of-sales-to-unsupported-regions"
+ },
+ {
+  "side": "미국 쪽",
+  "date": "2025-09",
+  "actor": "Anthropic",
+  "measure": "클라우드 재판매(Bedrock·Vertex 등) 경로 집행 방식은 미공개 — 집행 공백 지적",
+  "type": "소유 기준 차단",
+  "url": "https://tomshardware.com/tech-industry/anthropic-blocks-chinese-firms-from-claude"
+ },
+ {
+  "side": "미국 쪽",
+  "date": "2026-02-23",
+  "actor": "Anthropic",
+  "measure": "증류 공격 공개: DeepSeek·Moonshot·MiniMax가 약 2만 4천 개 위장 계정으로 Claude와 1,600만 회 이상 교환(MiniMax 1,300만+, Moonshot 340만+, DeepSeek 15만+). 한 프록시망이 2만+ 계정 동시 운영. 계정 차단·탐지 강화",
+  "type": "증류 차단",
+  "url": "https://anthropic.com/news/detecting-and-preventing-distillation-attacks"
+ },
+ {
+  "side": "미국 쪽",
+  "date": "2026-02",
+  "actor": "OpenAI",
+  "measure": "미 의회에 DeepSeek가 OpenAI 등 미국 선도 기업 모델 복제(증류)를 노린다는 메모 제출",
+  "type": "증류 차단",
+  "url": "https://www.nbcnews.com/world/asia/chinese-ai-companies-distilled-claude-improve-models-anthropic-says-rcna260386"
+ },
+ {
+  "side": "미국 쪽",
+  "date": "2026-09-10",
+  "actor": "Anthropic",
+  "measure": "위협 인텔리전스 보고서(2025-12~2026-08)에서 '증류'를 7대 차단 영역 중 하나로 분류",
+  "type": "증류 차단",
+  "url": "https://www.anthropic.com/threat-intelligence-report-september-2026"
+ },
+ {
+  "side": "미국 쪽",
+  "date": "2026-07",
+  "actor": "미국 재무부(베선트)",
+  "measure": "증류 기업 제재 경고. 9월 보고서는 DeepSeek 등 중국 6개사(알리바바·Moonshot 포함)를 대규모 증류로 지목",
+  "type": "증류 차단",
+  "url": "https://www.wilsoncenter.org/article/americas-ai-action-plan-after-one-year-what-administration-has-done-and-what-comes-next"
+ },
+ {
+  "side": "미국 쪽",
+  "date": "2026-04-07",
+  "actor": "Anthropic",
+  "measure": "Claude Mythos Preview를 사이버 능력(핵심 인프라 제로데이 수천 건 식별) 때문에 Project Glasswing 참여 방어기관에만 제한 제공",
+  "type": "제한 공개",
+  "url": "https://www.anthropic.com/project/glasswing"
+ },
+ {
+  "side": "미국 쪽",
+  "date": "2026-06-12",
+  "actor": "미국 상무부(러트닉 장관)",
+  "measure": "EAR §744.22(b)·ECRA §4817 근거 'is-informed' 서한으로 Mythos 5·Fable 5의 모든 외국인(미국 내 외국인 직원 포함)에 대한 수출·재수출·이전 허가 의무화. API 원격접속을 '통제 대상 이전'으로 간주한 첫 사례",
+  "type": "수출통제",
+  "url": "https://www.mayerbrown.com/en/insights/publications/2026/06/commerce-department-extends-export-controls-to-advanced-ai-models-authorizes-release-to-specific-trusted-partners"
+ },
+ {
+  "side": "미국 쪽",
+  "date": "2026-06-12",
+  "actor": "Anthropic",
+  "measure": "외국인만 선별 차단이 기술적으로 불가해 Mythos 5·Fable 5를 전 세계(미국 포함) 모든 사용자에게 비활성화. 하위 Claude 모델은 영향 없음",
+  "type": "제한 공개",
+  "url": "https://fortune.com/2026/06/13/anthropic-disables-fable-mythos-export-controls-national-security-threat/"
+ },
+ {
+  "side": "미국 쪽",
+  "date": "2026-06-26",
+  "actor": "미국 상무부",
+  "measure": "2차 서한: 'Annex A' 신뢰 파트너와 그 외국인 직원, Anthropic 외국인 직원은 Mythos 5 허가 면제(Fable 5는 미언급). 약 2주 만의 부분 완화. 위험보고서는 18일간 임시 통제로 기재",
+  "type": "제한 공개",
+  "url": "https://techpolicy.press/commerce-eased-its-block-on-anthropics-mythos-but-major-questions-remain"
+ },
+ {
+  "side": "미국 쪽",
+  "date": "2026-06-26",
+  "actor": "OpenAI",
+  "measure": "정부 요청에 따라 차기 모델을 소수 신뢰 파트너에 먼저 공개하겠다고 발표",
+  "type": "제한 공개",
+  "url": "https://www.mayerbrown.com/en/insights/publications/2026/06/commerce-department-extends-export-controls-to-advanced-ai-models-authorizes-release-to-specific-trusted-partners"
+ },
+ {
+  "side": "미국 쪽",
+  "date": "2026-06",
+  "actor": "Legion LegalTech(소송)",
+  "measure": "캐나다 직원을 둔 Fable 5 고객이 상무부 서한 취소·금지 소송 제기(No. 1:26-cv-02225)",
+  "type": "기타",
+  "url": "https://www.mayerbrown.com/en/insights/publications/2026/06/commerce-department-extends-export-controls-to-advanced-ai-models-authorizes-release-to-specific-trusted-partners"
+ },
+ {
+  "side": "미국 쪽",
+  "date": "2026-11-19",
+  "actor": "미국 상무부 BIS",
+  "measure": "원격접속 IFR 시행(91 FR 74970): 중국 등 D:5 본사 기업에 대규모 컴퓨트를 원격 제공하는 데이터센터향 첨단칩 수출에 허가 필요. 인니·말레이·싱가포르·태국·브라질 허가제(미국 본사 기업은 월간 보고로 면제). AI 확산규칙 폐지. 의견수렴 2027-01-19, 기존 데이터센터 유예 2027-02 중순 종료",
+  "type": "KYC·원격접속",
+  "url": "https://www.gtlaw.com/en/insights/2026/11/bis-interim-final-rule-targets-remote-access-to-advanced-semiconductors-rescinds-ai-diffusion-rule"
+ },
+ {
+  "side": "미국 쪽",
+  "date": "2026-11-23",
+  "actor": "미국 상무부 BIS",
+  "measure": "싱가포르 Megaspeed 등 7개 법인 Entity List 등재(원격접속·칩 우회 연계)",
+  "type": "수출통제",
+  "url": "https://www.faegredrinker.com/en/insights/publications/2026/11/bis-targets-remote-access-to-advanced-ai-chips-adds-megaspeed-network-to-entity-list"
+ },
+ {
+  "side": "미국 쪽",
+  "date": "2026-12(협상)",
+  "actor": "미국 의회",
+  "measure": "FY2027 NDAA 상원안에 Chip Security Act(위치검증)·AI OVERWATCH·MATCH·Remote Access Security Act 포함, 12월 양원 협상",
+  "type": "수출통제",
+  "url": "https://www.atlanticcouncil.org/dispatches/huang-is-back-at-nvidia-but-the-fight-over-who-controls-chip-exports-is-just-beginning/"
+ },
+ {
+  "side": "중국 쪽",
+  "date": "2024-04~2026-08-31",
+  "actor": "중국 국가인터넷정보판공실(CAC)",
+  "measure": "생성형 AI 서비스 비안(備案) 의무: 누적 1,112개 서비스 등록·731개 앱/기능 등기(2026-08-31). 2025년 말 748개, 2026-06-30 988개. 미등록 해외 모델은 중국 내 대중 서비스 불가",
+  "type": "기타",
+  "url": "https://digitalpolicyalert.org/event/43685-cyberspace-administration-issued-filing-information-for-generative-ai-services-for-july-to-august-2026"
+ },
+ {
+  "side": "중국 쪽",
+  "date": "2026-07",
+  "actor": "중국 상무부(MOFCOM)",
+  "measure": "알리바바·바이트댄스·Z.ai 등과 한 달간 회의, 최첨단 모델(오픈웨이트 포함)의 해외 접근 제한 방안 논의(로이터 보도). 미 상무부의 Anthropic 조치 이후",
+  "type": "수출통제",
+  "url": "https://dealroom.co/news/137169-china-weighs-curbs-on-overseas-access-to-frontier-ai-models/"
+ },
+ {
+  "side": "중국 쪽",
+  "date": "2026-10-16",
+  "actor": "중국 상무부·과기부",
+  "measure": "공고 2026년 제48호: 수출제한기술목록에 40개 항목 추가 제안(금지 14·제한 26, 이 중 AI 관련 약 23개 — 대형모델·에이전트·컴퓨팅 클러스터 등). 즉시 '수출 전 등록' 임시 의무. 의견수렴 11-15 마감. 해외 API·앱·SaaS·경량 온디바이스는 대형모델 기술수출 관리에서 제외, 공개된 오픈소스 기술 제외",
+  "type": "수출통제",
+  "url": "https://equalocean.com/news/2026101922309-china-proposes-export-restrictions-23-ai-technologies-keeps-api-services"
+ },
+ {
+  "side": "중국 쪽",
+  "date": "2026-10-16",
+  "actor": "중국 상무부·과기부",
+  "measure": "일부 보도: 중요데이터로 학습한 대형모델 서비스, 10^26 FLOP 이상 모델의 가중치·소스코드·아키텍처를 통제 대상으로 거론(최종본 미확인)",
+  "type": "수출통제",
+  "url": "https://letsdatascience.com/blog/china-drafted-export-controls-ai-model-weights-open-source"
+ },
+ {
+  "side": "중국 쪽",
+  "date": "2026-11-05",
+  "actor": "바이두",
+  "measure": "ERNIE 5.5 Flash Base(280B MoE, 33.5조 토큰, 1M 컨텍스트) 허깅페이스 공개, 라이선스 1.11조에서 사용 지역을 'EU·영국·한국 제외 전 세계'로 정의, 5.3조로 지역 밖 사용·복제·수정·배포·출력물 이용 금지. 연매출 5천만 달러 초과 시 사전 서면 승인, 타 모델 개선 사용 제한",
+  "type": "지역 차단",
+  "url": "https://m.edaily.co.kr/News/Read?newsId=03325926645649656&mediaCodeNo=257"
+ },
+ {
+  "side": "중국 쪽",
+  "date": "2026-11-24",
+  "actor": "바이두",
+  "measure": "후속 ERNIE 5.5 Flash Preview는 지역 제한 없는 Apache 2.0으로 공개. 단 Base 모델은 기존 라이선스 유지",
+  "type": "기타",
+  "url": "https://m.edaily.co.kr/News/Read?newsId=03325926645649656&mediaCodeNo=257"
+ },
+ {
+  "side": "중국 쪽",
+  "date": "2026(연중)",
+  "actor": "중국 정부",
+  "measure": "엔비디아 H200 대중 판매 허용에도 중국이 수입을 거부해 판매 0. 국산 가속기(화웨이 Ascend) 자립 추진",
+  "type": "정부 사용 금지",
+  "url": "https://www.china-briefing.com/news/apec-2026-in-shenzhen-what-the-leaders-meeting-and-trump-xi-talks-mean-for-business/"
+ },
+ {
+  "side": "중국 쪽",
+  "date": "2026-06-07~10",
+  "actor": "중국 AI 기업(Doubao·Yuanbao·Qwen·DeepSeek)",
+  "measure": "가오카오 시험 시간대 사진 문제풀이·작문 기능 일시 중단(2년째)",
+  "type": "기타",
+  "url": "https://www.caixinglobal.com/2026-06-11/chinese-tech-giants-turn-college-admissions-into-latest-ai-battleground-102452924.html"
+ },
+ {
+  "side": "중국 쪽",
+  "date": "2026-10-20",
+  "actor": "중국 외교부(마오닝)",
+  "measure": "미 DHS의 DeepSeek 퇴출 명령에 '국가안보 개념 남용' 반발",
+  "type": "기타",
+  "url": "https://techcrunch.com/2026/10/20/us-orders-federal-agencies-to-remove-chinas-deepseek-ai-from-their-systems/"
+ },
+ {
+  "side": "제3국",
+  "date": "2025-01-28",
+  "actor": "이탈리아 개인정보보호청(Garante)",
+  "measure": "DeepSeek 전국 차단 명령, 애플·구글 앱스토어 다운로드 중단",
+  "type": "앱 삭제·차단",
+  "url": "https://techcrunch.com/2025/02/03/deepseek-the-countries-and-agencies-that-have-banned-the-ai-companys-tech"
+ },
+ {
+  "side": "제3국",
+  "date": "2025-02-04",
+  "actor": "호주 정부",
+  "measure": "모든 정부 시스템·기기에서 DeepSeek 제품 사용 즉시 금지",
+  "type": "정부 사용 금지",
+  "url": "https://www.aljazeera.com/news/2025/1/31/which-countries-have-banned-deepseek-and-why"
+ },
+ {
+  "side": "제3국",
+  "date": "2025-02",
+  "actor": "대만 디지털발전부",
+  "measure": "정부기관 DeepSeek 사용 금지('국가 정보보안 위협')",
+  "type": "정부 사용 금지",
+  "url": "https://www.aljazeera.com/news/2025/1/31/which-countries-have-banned-deepseek-and-why"
+ },
+ {
+  "side": "제3국",
+  "date": "2025-02",
+  "actor": "벨기에·이탈리아·대만",
+  "measure": "정부 공무원 DeepSeek 사용 금지(TechCrunch 집계)",
+  "type": "정부 사용 금지",
+  "url": "https://techcrunch.com/2025/02/03/deepseek-the-countries-and-agencies-that-have-banned-the-ai-companys-tech"
+ },
+ {
+  "side": "제3국",
+  "date": "2025-06-27",
+  "actor": "독일 베를린 데이터보호청(마이케 캄프)",
+  "measure": "DSA 제16조로 DeepSeek를 애플·구글에 '불법 콘텐츠' 신고(중국 이전 GDPR 위반). 5-6 자진 삭제 요구 불응 후. 연방망청과 공조",
+  "type": "앱 삭제·차단",
+  "url": "https://www.datenschutz-berlin.de/fileadmin/user_upload/pdf/pressemitteilungen/2025/20250627-BlnBDI-Press-Release_DeepSeek.pdf"
+ },
+ {
+  "side": "제3국",
+  "date": "2026-01-07",
+  "actor": "각국 규제당국",
+  "measure": "DeepSeek에 대한 정부·규제기관 감시 확대(로이터 집계, 세부 미확인)",
+  "type": "정부 사용 금지",
+  "url": "https://www.insurancejournal.com/news/international/2026/01/07/853376.htm"
+ },
+ {
+  "side": "국가 규제",
+  "date": "2025-02",
+  "actor": "한국 산업부·외교부·국방부 → 18개 부처",
+  "measure": "사내망 DeepSeek 접속 차단이 18개 부처로 확산. 경찰청 PC 5만 2천여 대 차단, 환경부 유해사이트 등록, 행안부는 17개 광역지자체에 민감정보 입력 금지 공문, 국정원 보안 가이드라인 배포",
+  "type": "정부 사용 금지",
+  "url": "https://www.newsis.com/view/NISX20250206_0003056114"
+ },
+ {
+  "side": "국가 규제",
+  "date": "2025-02",
+  "actor": "카카오 등 민간 기업·금융권",
+  "measure": "사내 DeepSeek 사용 금지령",
+  "type": "기타",
+  "url": "https://v.daum.net/v/20250205210524090"
+ },
+ {
+  "side": "국가 규제",
+  "date": "2025-02-15",
+  "actor": "한국 개인정보보호위원회",
+  "measure": "사전 실태점검 후 DeepSeek 국내 앱마켓 신규 다운로드 잠정 중단(DeepSeek 수용). 국외이전 동의·처리방침 미비, 프롬프트 정보를 바이트댄스 계열 볼케이노로 전송한 사실 확인",
+  "type": "앱 삭제·차단",
+  "url": "https://v.daum.net/v/20250217135901030"
+ },
+ {
+  "side": "국가 규제",
+  "date": "2025-04-24~28",
+  "actor": "한국 개인정보보호위원회",
+  "measure": "시정권고(국외이전 법적 근거, 프롬프트 파기, 한국어 처리방침, 아동정보 파기) 수용 후 4-28 다운로드 재개. 중국 3곳·미국 1곳 등 4개 해외업체로 이전, 이전 거부권 부여. 재개 첫날 신규 설치 622건",
+  "type": "법·규제",
+  "url": "https://www.ajunews.com/view/20250428164100969"
+ },
+ {
+  "side": "국가 규제",
+  "date": "2025-06 발의",
+  "actor": "미국 의회(릭 스콧·게리 피터스·하원 중국특위)",
+  "measure": "No Adversarial AI Act: 연방조달보안위(FASC)가 중국·러시아·이란·북한 연계 AI 목록을 180일마다 공개, 연방기관 사용 금지(안보·연구 예외). 통과 여부 미확인",
+  "type": "조달 금지",
+  "url": "https://www.rickscott.senate.gov/2025/6/sen-rick-scott-leads-legislation-to-stop-u-s-government-agencies-from-using-adversarial-ai-technology"
+ },
+ {
+  "side": "국가 규제",
+  "date": "2025-12",
+  "actor": "미국 의회",
+  "measure": "정보기관 국가안보시스템의 DeepSeek 사용 제한 법률 시행",
+  "type": "법·규제",
+  "url": "https://techcrunch.com/2026/10/20/us-orders-federal-agencies-to-remove-chinas-deepseek-ai-from-their-systems/"
+ },
+ {
+  "side": "국가 규제",
+  "date": "2025-01~",
+  "actor": "미국 주정부(텍사스 등)",
+  "measure": "텍사스가 첫 주정부 기기 DeepSeek 금지, 이후 여러 주 확산(주 수 미확인)",
+  "type": "정부 사용 금지",
+  "url": "https://tech.co/news/which-countries-have-banned-deepseek-already"
+ },
+ {
+  "side": "국가 규제",
+  "date": "2026-10-19",
+  "actor": "미국 국토안보부(DHS)",
+  "measure": "연방관보 공고로 연방 민간기관에 DeepSeek 제품과 DeepSeek 기술 기반 제3자 제품의 구매 중단·기존 시스템 제거 명령(예외 신청 가능)",
+  "type": "조달 금지",
+  "url": "https://techcrunch.com/2026/10/20/us-orders-federal-agencies-to-remove-chinas-deepseek-ai-from-their-systems/"
+ },
+ {
+  "side": "국가 규제",
+  "date": "2024-07~",
+  "actor": "중국(만리장성 방화벽+CAC 비안)",
+  "measure": "ChatGPT·Claude·Gemini 등 미국 모델은 중국 미지원·미등록. 제공자 측 차단(OpenAI 미지원 국가)과 중국 측 비안 의무가 이중으로 작동",
+  "type": "허가제",
+  "url": "https://help.openai.com/en/articles/9131992-how-can-i-get-help-with-a-billing-or-api-key-issue"
+ },
+ {
+  "side": "국가 규제",
+  "date": "2026-08-31",
+  "actor": "중국 CAC",
+  "measure": "생성형 AI 비안 누적 1,112개(7~8월 124개 추가, 모바일 7개). 사실상 중국 내 서비스 허가제",
+  "type": "허가제",
+  "url": "https://digitalpolicyalert.org/event/43685-cyberspace-administration-issued-filing-information-for-generative-ai-services-for-july-to-august-2026"
+ },
+ {
+  "side": "국가 규제",
+  "date": "2026-10-16",
+  "actor": "중국 상무부·과기부",
+  "measure": "AI 기술 수출 사전등록 임시 의무(공고 48호)",
+  "type": "수출통제",
+  "url": "https://equalocean.com/news/2026101922309-china-proposes-export-restrictions-23-ai-technologies-keeps-api-services"
+ },
+ {
+  "side": "국가 규제",
+  "date": "2025-01-28",
+  "actor": "이탈리아 Garante",
+  "measure": "DeepSeek 전국 차단·앱스토어 제거",
+  "type": "앱 삭제·차단",
+  "url": "https://techcrunch.com/2025/02/03/deepseek-the-countries-and-agencies-that-have-banned-the-ai-companys-tech"
+ },
+ {
+  "side": "국가 규제",
+  "date": "2025-06-27",
+  "actor": "독일 베를린 데이터보호청",
+  "measure": "DSA 기반 앱스토어 삭제 요구",
+  "type": "앱 삭제·차단",
+  "url": "https://techcrunch.com/2025/06/27/germany-tells-apple-google-to-remove-deepseek-from-the-countrys-app-stores"
+ },
+ {
+  "side": "국가 규제",
+  "date": "2025-02-04",
+  "actor": "호주",
+  "measure": "정부 시스템·기기 DeepSeek 금지",
+  "type": "정부 사용 금지",
+  "url": "https://www.aljazeera.com/news/2025/1/31/which-countries-have-banned-deepseek-and-why"
+ },
+ {
+  "side": "국가 규제",
+  "date": "2025-12 출범·2026-06 확대",
+  "actor": "Pax Silica(미국 주도, 한국 포함 약 24~26개국)",
+  "measure": "적대국의 민감기술 접근 제한·수출통제 정렬을 목표로 한 경제안보 연합(동맹 차원 공조)",
+  "type": "기타",
+  "url": "https://www.bhfs.com/insight/state-department-expands-pax-silica-initiative-at-2026-summit/"
+ },
+ {
+  "side": "한국 영향",
+  "date": "2026-11-05",
+  "actor": "바이두",
+  "measure": "ERNIE 5.5 Flash Base 라이선스가 한국을 사용 지역에서 명시적으로 제외 — 가중치를 받아도 한국 내 사용·미세조정·상용화 불가. NIPA 이경록 단장 '경고 신호', 알리바바 등 중국 모델의 지속적 무료 이용도 장담 어렵다고 언급",
+  "type": "지역 차단",
+  "url": "https://m.edaily.co.kr/News/Read?newsId=03325926645649656&mediaCodeNo=257"
+ },
+ {
+  "side": "한국 영향",
+  "date": "2025-02~04",
+  "actor": "개인정보위·정부부처",
+  "measure": "DeepSeek 신규 다운로드 2개월여 중단 후 재개, 18개 부처 접속 차단 — 한국은 이용자 측 규제의 선행 사례",
+  "type": "정부 사용 금지",
+  "url": "https://www.ajunews.com/view/20250428164100969"
+ },
+ {
+  "side": "한국 영향",
+  "date": "2026-06-12~26",
+  "actor": "미 상무부/Anthropic",
+  "measure": "Mythos 5·Fable 5 전 세계 비활성화로 한국 사용자도 접근 상실, 완화 후에도 Annex A 신뢰 파트너 외 외국인은 허가 대상으로 남음(한국 기관 포함 여부 미확인)",
+  "type": "수출통제",
+  "url": "https://www.mayerbrown.com/en/insights/publications/2026/06/commerce-department-extends-export-controls-to-advanced-ai-models-authorizes-release-to-specific-trusted-partners"
+ },
+ {
+  "side": "한국 영향",
+  "date": "2026-11-19",
+  "actor": "미 BIS",
+  "measure": "원격접속 IFR: 한국은 허가 지정국은 아니나 한국 클라우드·데이터센터의 중국 고객 제공 시 KYC·보고 압력 예상(추론). 2027-01-19 의견수렴이 한국 사업자 의견 제출 기회",
+  "type": "KYC·원격접속",
+  "url": "https://www.gtlaw.com/en/insights/2026/11/bis-interim-final-rule-targets-remote-access-to-advanced-semiconductors-rescinds-ai-diffusion-rule"
+ },
+ {
+  "side": "한국 영향",
+  "date": "2025-10-30",
+  "actor": "NVIDIA·한국 정부",
+  "measure": "GPU 26만 장 이상 공급 발표(정부 최대 5만, 삼성·SK·현대차 각 5만, 네이버 6만+). 원격접속 규칙 아래 '중국 고객 미제공' 증빙 부담 가능(추론)",
+  "type": "KYC·원격접속",
+  "url": "https://nvidianews.nvidia.com/news/south-korea-ai-infrastructure"
+ },
+ {
+  "side": "한국 영향",
+  "date": "2025-09-05",
+  "actor": "Anthropic",
+  "measure": "중국 자본 50% 초과 소유 한국 법인(자회사·합작사)은 Claude 이용 불가 — 국내 중국계 기업·서비스 노출(구체 사례 미확인)",
+  "type": "소유 기준 차단",
+  "url": "https://anthropic.com/news/updating-restrictions-of-sales-to-unsupported-regions"
+ },
+ {
+  "side": "한국 영향",
+  "date": "2026-10-16",
+  "actor": "중국 상무부",
+  "measure": "중국 AI 기술 수출 사전등록: 한국 기업의 중국 모델 현지 배포·기술 라이선스·합작은 통제 대상 가능, API·SaaS 이용은 제외",
+  "type": "수출통제",
+  "url": "https://equalocean.com/news/2026101922309-china-proposes-export-restrictions-23-ai-technologies-keeps-api-services"
+ }
+]
