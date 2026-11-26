@@ -1,0 +1,51 @@
+[
+ {
+  "metric": "신모델 중 생물·화학 High(CB-1) 판정 비율",
+  "low": 80,
+  "base": 95,
+  "high": 100,
+  "unit": "%"
+ },
+ {
+  "metric": "'Critical·신규 무기' 임계 도달 공식 인정 연구소",
+  "low": 0,
+  "base": 0,
+  "high": 1,
+  "unit": "곳"
+ },
+ {
+  "metric": "챗봇 관여 테러·극단주의 사건(연간, ICCT)",
+  "low": 6,
+  "base": 10,
+  "high": 18,
+  "unit": "건"
+ },
+ {
+  "metric": "Hugging Face 가드레일 제거 모델",
+  "low": 9000,
+  "base": 14000,
+  "high": 25000,
+  "unit": "개"
+ },
+ {
+  "metric": "IWF 확인 AI 생성 아동 성착취물(연간)",
+  "low": 12000,
+  "base": 18000,
+  "high": 30000,
+  "unit": "건"
+ },
+ {
+  "metric": "최신 프런티어 모델 평가 인식률(Apollo)",
+  "low": 40,
+  "base": 60,
+  "high": 80,
+  "unit": "%"
+ },
+ {
+  "metric": "미국 정부 출시 전 평가 협약 연구소",
+  "low": 5,
+  "base": 6,
+  "high": 8,
+  "unit": "곳"
+ }
+]

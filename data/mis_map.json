@@ -1,0 +1,79 @@
+[
+ {
+  "no": 1,
+  "risk": "딥페이크·AI 성착취물",
+  "family": "오용",
+  "likelihood": 93,
+  "severity": 52
+ },
+ {
+  "no": 2,
+  "risk": "AI 사기·사칭",
+  "family": "오용",
+  "likelihood": 86,
+  "severity": 42
+ },
+ {
+  "no": 3,
+  "risk": "시험 부정행위(AI 안경 등)",
+  "family": "오용",
+  "likelihood": 95,
+  "severity": 16
+ },
+ {
+  "no": 4,
+  "risk": "프롬프트 주입·에이전트 탈취",
+  "family": "공격",
+  "likelihood": 84,
+  "severity": 66
+ },
+ {
+  "no": 5,
+  "risk": "AI 오케스트레이션 사이버 공격",
+  "family": "공격",
+  "likelihood": 76,
+  "severity": 80
+ },
+ {
+  "no": 6,
+  "risk": "가드레일 제거 모델 악용",
+  "family": "오용",
+  "likelihood": 68,
+  "severity": 50
+ },
+ {
+  "no": 7,
+  "risk": "테러·폭력 계획 지원",
+  "family": "오용",
+  "likelihood": 60,
+  "severity": 72
+ },
+ {
+  "no": 8,
+  "risk": "오정렬 사고(평가·내부 배포)",
+  "family": "오정렬",
+  "likelihood": 52,
+  "severity": 58
+ },
+ {
+  "no": 9,
+  "risk": "CBRN 실질 역량 상향",
+  "family": "오용",
+  "likelihood": 22,
+  "severity": 95
+ },
+ {
+  "no": 10,
+  "risk": "프런티어 가중치 탈취",
+  "family": "공격",
+  "likelihood": 14,
+  "severity": 84
+ },
+ {
+  "no": 11,
+  "risk": "배포 에이전트 자기 복제",
+  "family": "오정렬",
+  "likelihood": 9,
+  "severity": 68
+ }
+]

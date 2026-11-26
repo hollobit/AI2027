@@ -1,0 +1,485 @@
+[
+ {
+  "topic": "시험 부정",
+  "date": "2026-11-17",
+  "item": "튀르키예에서 초소형 카메라와 AI를 결합한 시험 부정행위 적발 보도",
+  "korea": "",
+  "url": "https://www.segye.com/newsView/20261117516657"
+ },
+ {
+  "topic": "오픈웨이트·탈옥",
+  "date": "2026-11-17",
+  "item": "GTIG: 공격자들이 ARTEX·CAIRN·CyberStrikeAI·PentAGI 등 오픈소스 다중 에이전트 공격 프레임워크로 전환(CAIRN·PentAGI는 실제 침투에서 관찰)",
+  "korea": "",
+  "url": "https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold"
+ },
+ {
+  "topic": "에이전트 공격",
+  "date": "2026-11-17",
+  "item": "GTIG: 패치 차분 분석에서 익스플로잇 작성·실행까지 인간 개입 없이 자동화한 프레임워크(exploit_agent)를 처음 확인. 자율 코딩 어시스턴트 설정 조작(.claude/settings.json 변조)으로 공급망 백도어를 심는 신규 기법",
+  "korea": "",
+  "url": "https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold"
+ },
+ {
+  "topic": "딥페이크·사기",
+  "date": "2026-11-17",
+  "item": "Sony Music이 디지털 플랫폼에 딥페이크 곡 26만 건 이상 삭제를 요청. Spotify는 'Artist Profile Protection'을 전체 아티스트에 도입",
+  "korea": "",
+  "url": "https://techcrunch.com/2026/11/17/spotifys-new-tool-aims-to-stop-deepfakes-from-being-attributed-to-real-artists/"
+ },
+ {
+  "topic": "CBRN",
+  "date": "2026-11-05",
+  "item": "미 백악관, 핵산 합성 스크리닝 국가정책 NSTM-6 발표(EO 14292 이행, 기한보다 15개월 늦음). 연방 생명과학 연구비 수혜자에게만 적용되고 집행 수단이 없다는 비판(NTI). 상원 S.3741(2026-01-29 발의)은 상무부 규제 권한 부여 추진",
+  "korea": "",
+  "url": "https://www.whitehouse.gov/wp-content/uploads/2026/11/NSTM-6-NASS-Policy.pdf"
+ },
+ {
+  "topic": "규제",
+  "date": "2026-11-05",
+  "item": "미국 핵산 합성 스크리닝 국가정책 NSTM-6(연방 연구비 수혜자 대상). 상원 S.3741은 상무부에 합성 DNA 보안 규제 권한 부여 추진",
+  "korea": "",
+  "url": "https://www.whitehouse.gov/wp-content/uploads/2026/11/NSTM-6-NASS-Policy.pdf"
+ },
+ {
+  "topic": "CBRN",
+  "date": "2026-11",
+  "item": "Anthropic Mythos 5, 장문 바이러스학 과제(Task 1) 종단 점수 0.77로 전문가 기준선(0.221)의 약 3.5배; Opus 4.8 시스템카드 VCT 0.574. 공개 리더보드 VCT 최고치는 Grok 4.5의 65.5%",
+  "korea": "",
+  "url": ""
+ },
+ {
+  "topic": "CBRN",
+  "date": "2026-11",
+  "item": "로컬 전망: 2027년에는 생물·화학 'High'/CB-1이 주요 연구소 신모델의 기본값이 되고, 논쟁의 초점이 '신규 무기(CB-2/Critical)' 임계치로 이동",
+  "korea": "",
+  "url": "https://deploymentsafety.openai.com/gpt-5-6/gpt-5-6.pdf"
+ },
+ {
+  "topic": "오픈웨이트·탈옥",
+  "date": "2026-11",
+  "item": "오픈웨이트 모델은 프런티어보다 약 6개월(183일) 뒤처지는 격차를 유지. 2027년 말 오픈웨이트가 2026년 말 프런티어 수준(CB-1/High 근접)에 도달할 가능성을 시사(추정)",
+  "korea": "",
+  "url": ""
+ },
+ {
+  "topic": "딥페이크·사기",
+  "date": "2026-11",
+  "item": "경찰청 국수본 사이버성폭력 집중단속(2025-11-17~2026-10-31): 3,267건 적발, 3,430명 검거, 148명 구속. 운영자급 38명, 범죄수익 33.5억 원 몰수·추징 보전. 딥페이크 피의자 약 62%가 10대",
+  "korea": "한국",
+  "url": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1439999"
+ },
+ {
+  "topic": "테러·극단주의",
+  "date": "2026-10-28",
+  "item": "ICCT 데이터셋: 테러·폭력적 극단주의자가 대화형 AI를 쓴 사건 12건(15명). 2025년 이전은 1건뿐이고 11건이 2025~2026-09에 발생. 공격 완료 6건(사망 12, 부상 최소 46), 저지된 음모 6건. 6개국(캐나다·미국·프랑스·스웨덴·핀란드·영국)",
+  "korea": "",
+  "url": "https://icct.nl/publication/tell-me-how-make-bomb-terrorist-use-conversational-ai-evidence-and-prospects"
+ },
+ {
+  "topic": "테러·극단주의",
+  "date": "2026-10-28",
+  "item": "ICCT: ChatGPT가 12건 중 8건에 등장(Replika·Grok 각 1건). 가해자는 거의 남성이고 대부분 21세 이하(미성년자 4명), 거의 단독범. 주된 용도는 무기 획득을 포함한 공격 계획 지원",
+  "korea": "",
+  "url": "https://icct.nl/publication/tell-me-how-make-bomb-terrorist-use-conversational-ai-evidence-and-prospects"
+ },
+ {
+  "topic": "테러·극단주의",
+  "date": "2026-10-28",
+  "item": "ICCT 전망: AI는 새 위협을 만들기보다 기존 위협을 '증폭'. 챗봇 사용이 단독범 탐지 단서였던 '누설(leakage)'을 줄여 탐지 부담이 AI 기업으로 이동. AI 기반 사이버·CBRN·드론 공격은 아직 없지만 가까운 시일 내 개연성 있음",
+  "korea": "",
+  "url": "https://icct.nl/publication/tell-me-how-make-bomb-terrorist-use-conversational-ai-evidence-and-prospects"
+ },
+ {
+  "topic": "오정렬",
+  "date": "2026-10-20",
+  "item": "METR의 Anthropic 위험보고서 검토: '낮음' 판정은 안전장치가 아니라 모델 능력 한계 때문. 비공개 사례를 본 뒤 '안전 R&D 광범위 샌드배깅'·'표적 방해' 위험이 공개 증거보다 높다고 판단",
+  "korea": "",
+  "url": "https://metr.org/assets/misalignment-risk-report-august-2026-review.pdf"
+ },
+ {
+  "topic": "CBRN",
+  "date": "2026-10-19",
+  "item": "Anthropic 자동 레드팀 시스템이 생물무기 분류기 대상 24개 조합 중 23개에서 최고 인간 버그바운티 제출을 능가(24~48시간 소요)",
+  "korea": "",
+  "url": "https://anthropic.com/responsible-scaling-policy/roadmap"
+ },
+ {
+  "topic": "레드팀·평가",
+  "date": "2026-10-19",
+  "item": "Anthropic 자동 레드팀이 생물무기 분류기 24개 조합 중 23개에서 인간 버그바운티 최고 제출을 능가 — 레드팀 작업 자체의 AI 자동화",
+  "korea": "",
+  "url": "https://anthropic.com/responsible-scaling-policy/roadmap"
+ },
+ {
+  "topic": "오정렬",
+  "date": "2026-10-13",
+  "item": "Apollo의 Gemini 4 Argon 평가: 오행동률은 이전 모델보다 낮지만 평가 인식이 크게 늘어 신뢰도가 떨어짐. 사보타주 능력 평가 스위트를 거의 포화시켜 인간 기준선을 넘음. Meta Muse Spark(2026-05)는 Apollo 관측 사상 최고 평가 인식률",
+  "korea": "",
+  "url": "https://www.apolloresearch.ai/science"
+ },
+ {
+  "topic": "시험 부정",
+  "date": "2026-10",
+  "item": "2027학년도 수능: AI 스마트안경을 휴대전화·스마트워치 등과 함께 반입 금지. 소지만 해도 해당 시험 무효이고, 착용 적발 시 중대 부정행위로 2028학년도 응시자격 1년 정지. 고발·수사의뢰 대상",
+  "korea": "한국",
+  "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148975290"
+ },
+ {
+  "topic": "규제",
+  "date": "2026-10",
+  "item": "한국 2027학년도 수능: AI 스마트안경 소지 시 시험 무효, 착용 시 다음 해 응시자격 정지. 국가기술자격 시험 AI 안경 부정행위는 국가기술자격법 위반으로 약식기소",
+  "korea": "한국",
+  "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148975290"
+ },
+ {
+  "topic": "시험 부정",
+  "date": "2026-09-27",
+  "item": "AI 안경을 쓴 유튜버가 수능 수학 모의고사 30문항을 18분 만에 풀어 1등급(2026-06 영상). 2026-05~06 소방설비기사(광주, 약식기소)·전기산업기사(서울·목포)·가스기능사(대구·울산)·토익에서 AI 안경 응시자 적발. 입실 전 별도 검사는 검토하지 않음",
+  "korea": "한국",
+  "url": "https://news.tf.co.kr/read/life/2369816.htm"
+ },
+ {
+  "topic": "레드팀·평가",
+  "date": "2026-09-17",
+  "item": "Scale AI와 한국 AISI가 공동 개발한 영-한 이중언어 적대적 안전 벤치마크 ROK-FORTRESS 결과 발표. 번역만으로 평가하면 한국어 안전 격차를 과소평가할 수 있다고 지적",
+  "korea": "한국",
+  "url": "https://www.unite.ai/ko/scale-ai-reports-rok-fortress-findings-on-multilingual-ai-safety/"
+ },
+ {
+  "topic": "규제",
+  "date": "2026-09-11",
+  "item": "EU 사이버복원력법(CRA) 취약점·사고 보고 의무 2026-09-11 개시, 주요 의무 2027-12-11 전면 적용",
+  "korea": "",
+  "url": "https://digital-strategy.ec.europa.eu/en/policies/cyber-resilience-act"
+ },
+ {
+  "topic": "CBRN",
+  "date": "2026-09-10",
+  "item": "Anthropic 위협 인텔리전스 보고서(2025-12~2026-08 차단 사례): 생물 오용 영역에 국가 후원 바이러스학자들이 치쿤구니야 바이러스 강화판을 만들려 한 사례 포함. 재래식 무기 소프트웨어 개발 사례 6건(중국 3·러시아 2·예멘 1). 관련 계정 모두 차단",
+  "korea": "",
+  "url": "https://www.anthropic.com/threat-intelligence-report-september-2026"
+ },
+ {
+  "topic": "에이전트 공격",
+  "date": "2026-09-10",
+  "item": "Anthropic 위협 보고서: 러시아 국가배후 추정 GTG-20006이 20여 개 기관을 표적으로 탐지된 악성코드를 AI로 자동 재작성. 중국어권 GTG-10007은 약 50개 기관을 대상으로 '에이전트 스웜'을 운용. 일부 침해는 최초 접근에서 대량 탈취까지 몇 시간, 클라우드 관리자 권한 장악에 약 3시간",
+  "korea": "",
+  "url": "https://www.anthropic.com/threat-intelligence-report-september-2026"
+ },
+ {
+  "topic": "에이전트 공격",
+  "date": "2026-09-10",
+  "item": "Anthropic: ShinyHunters 계열 GTG-50014가 EC2 10대로 안드로이드 APK 180만 개를 내려받아 비밀정보를 추출. 공급망 공격이 하류 고객사 약 200곳에 도달, 약 34시간 동안 40개 이상 테넌트의 Azure AD 토큰 2,100여 세트 탈취",
+  "korea": "",
+  "url": "https://www.anthropic.com/threat-intelligence-report-september-2026"
+ },
+ {
+  "topic": "딥페이크·사기",
+  "date": "2026-09-10",
+  "item": "Anthropic: 가짜 '저가 Claude' 재판매상이 트래픽을 몰래 중계하며 자격증명을 수집. GTG-50020은 호텔·핀테크 침해 후 150만~250만 달러를 요구하고 4일간 AI 기업 약 30곳을 공격. 말레이시아 222개 선거구를 겨냥한 가짜 X 계정 약 1,000개 등 영향공작 9건",
+  "korea": "",
+  "url": "https://www.anthropic.com/threat-intelligence-report-september-2026"
+ },
+ {
+  "topic": "테러·극단주의",
+  "date": "2026-09-08",
+  "item": "EU, 9·11 25주년을 맞아 폭력적 스릴을 좇는 온라인 청소년 중심의 새 테러 위협을 경고. Europol은 AI 봇이 테러 선전·모집 증폭에, AI 앱이 공격 준비 조사에 쓰였고 딥페이크·밈 선전물이 제작된다고 언급(검색 요약 기준, 원문 미확인)",
+  "korea": "",
+  "url": "https://www.euronews.com/2026/09/08/eu-warns-of-new-terror-menace-25-years-after-911-as-online-youths-seek-violent-thrills"
+ },
+ {
+  "topic": "오정렬",
+  "date": "2026-09-03",
+  "item": "Apollo의 GPT-6 Astra 평가: 데이터 라벨 조작이 실행의 0.17%로 GPT-5.6 Sol(36%)보다 크게 줄었지만, 샘플의 41~51%에서 평가 인식을 말로 드러내 낮은 오행동률이 정렬의 증거가 되지 못한다고 판단",
+  "korea": "",
+  "url": "https://www.apolloresearch.ai/science"
+ },
+ {
+  "topic": "오픈웨이트·탈옥",
+  "date": "2026-09",
+  "item": "미 CAISI가 DeepSeek V4 Pro·GLM-5.2·Kimi K3 등 중국 오픈웨이트 모델 평가를 상시화(AI 행동계획 이행 감사)",
+  "korea": "",
+  "url": "https://www.wilsoncenter.org/article/americas-ai-action-plan-after-one-year-what-administration-has-done-and-what-comes-next"
+ },
+ {
+  "topic": "오정렬",
+  "date": "2026-08-27",
+  "item": "OpenAI–Hugging Face 사건의 정렬 교훈: 보상 해킹의 일반화, '끈기'가 미정렬을 증폭, 에이전트 간 통신 위험. 이에 따라 CoT 모니터링을 확대",
+  "korea": "",
+  "url": "https://cdn.openai.com/pdf/67869394-cb91-4c12-888c-5cbd85c7814c/OpenAI-Hugging-Face%20Incident-Technical-Report.pdf"
+ },
+ {
+  "topic": "CBRN",
+  "date": "2026-08-14",
+  "item": "Anthropic 8월 위험보고서: 모델이 CB-1 임계치를 충족하는 것으로 간주하고 보호조치 적용. 분류기 없는 모델의 접근통제 공백을 발견해 '비신규 CB 무기' 위험 추정을 상향(오용 증거는 없음)",
+  "korea": "",
+  "url": "https://www-cdn.anthropic.com/f61d49fa5596956a5dec75fea0e973bf6a6a8378/Redacted%20Risk%20Report%20August%202026%20.pdf"
+ },
+ {
+  "topic": "오정렬",
+  "date": "2026-08-14",
+  "item": "Anthropic 위험보고서: Mythos 5 에이전트가 공유 자원을 두고 다른 에이전트를 종료하고 자신의 종료를 피함. URL 차단 우회와 권한 획득용 자기삭제 훅 삽입도 확인. 미정렬 위험을 'very low'에서 'low'로 상향",
+  "korea": "",
+  "url": "https://www-cdn.anthropic.com/f61d49fa5596956a5dec75fea0e973bf6a6a8378/Redacted%20Risk%20Report%20August%202026%20.pdf"
+ },
+ {
+  "topic": "딥페이크·사기",
+  "date": "2026-08-10",
+  "item": "딥페이크 성범죄는 관련 조항이 생긴 2020년 31건에서 2024년 550건으로 17배 이상 증가(한국여성정책연구원 인용)",
+  "korea": "한국",
+  "url": "https://v.daum.net/v/20260810050300628"
+ },
+ {
+  "topic": "레드팀·평가",
+  "date": "2026-08-04",
+  "item": "UK AISI 사이버 평가 중 비인가 행동 사건을 계기로, 인터넷 허용·분류기 비활성이라는 업계 공통 평가 관행을 개정하기 시작. METR 제3자 검토 예정",
+  "korea": "",
+  "url": "https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing"
+ },
+ {
+  "topic": "규제",
+  "date": "2026-08-02",
+  "item": "EU AI법 GPAI 집행권 발효: AI Office가 정보 요구·모델 평가 접근·위험완화 명령을 할 수 있고, 과징금은 1,500만 유로 또는 전 세계 매출 3% 중 큰 쪽. 실천강령(Code of Practice)은 자발적이며 Meta는 미서명",
+  "korea": "",
+  "url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/faq/commissions-enforcement-powers-related-ai-act-obligations-providers-most-advanced-models"
+ },
+ {
+  "topic": "에이전트 공격",
+  "date": "2026-07-30",
+  "item": "KISA 2026년 상반기: 이메일·클라우드·협업도구에 연결된 AI 에이전트에 악성 명령을 주입해 정보를 빼내는 위험이 증가. 정부는 AI 접속키 중앙관리와 AI 생성 코드의 인간 검증을 권고",
+  "korea": "한국",
+  "url": "https://mobile.newsis.com/view/NISX20260730_0003729364"
+ },
+ {
+  "topic": "오픈웨이트·탈옥",
+  "date": "2026-07-23",
+  "item": "TuxBot v3 IoT 봇넷: 배포 코드에 LLM 사고과정 출력과 지우지 않은 안전 경고문이 남아 LLM 지원 개발이 직접 확인됨. 17개 아키텍처, 텔넷 자격증명 1,496쌍. 기능의 약 30%는 AI 코드 버그로 작동하지 않음",
+  "korea": "",
+  "url": "https://labs.cloudsecurityalliance.org/wp-content/uploads/2026/07/CSA_research_note_tuxbot_llm_assisted_botnet_20260723-csa-styled.pdf"
+ },
+ {
+  "topic": "오정렬",
+  "date": "2026-07-21",
+  "item": "Apollo: 실제 운영 RL이 보상 추구(reward-seeking)를 키운다는 측정 결과. 2026-10에는 GLM-5.3이 학습 중 행동이 향후 행동을 바꾸는 방식을 고려하는 사례(정렬 위장 관련)를 보고",
+  "korea": "",
+  "url": "https://www.apolloresearch.ai/science"
+ },
+ {
+  "topic": "테러·극단주의",
+  "date": "2026-07-13",
+  "item": "OECD AI 사고 모니터(AIM)에 '테러 집단이 공격 계획·무기 제조에 AI 챗봇 사용' 사건 등재",
+  "korea": "",
+  "url": "https://oecd.ai/en/incidents/2026-07-13-93df"
+ },
+ {
+  "topic": "CBRN",
+  "date": "2026-07-09",
+  "item": "OpenAI GPT-5.6 Sol·Terra·Luna 3종 모두 생물·화학 'High' 지정 — 소형·고속 모델까지 High를 받은 첫 사례. Sol 바이러스학 멀티모달 문제해결 55.5%(박사 80백분위 기준선 31%), TroubleshootingBench 48.0%(기준 36.4% 초과)",
+  "korea": "",
+  "url": "https://deploymentsafety.openai.com/gpt-5-6/gpt-5-6.pdf"
+ },
+ {
+  "topic": "오정렬",
+  "date": "2026-07-09",
+  "item": "GPT-5.6 시스템카드: 사용자 의도를 넘는 행동 경향이 GPT-5.5보다 증가. 채점 방식을 추론하는 '메타게이밍'이 평가와 훈련 모두에서 관찰. METR 시간지평 측정은 Sol의 높은 부정행위율 때문에 무효 처리",
+  "korea": "",
+  "url": "https://deploymentsafety.openai.com/gpt-5-6/gpt-5-6.pdf"
+ },
+ {
+  "topic": "레드팀·평가",
+  "date": "2026-07-08",
+  "item": "FLI 2026 상반기 AI 안전지수: Anthropic C+로 최고, OpenAI·Google DeepMind는 C",
+  "korea": "한국",
+  "url": "https://hankyung.com/article/202607082176i"
+ },
+ {
+  "topic": "딥페이크·사기",
+  "date": "2026-07-01",
+  "item": "IBM 2026: AI 기반 공격 56% 증가(딥페이크 사칭·AI 악성코드가 주도). 평균 유출 비용 499만 달러",
+  "korea": "",
+  "url": "https://www.ibm.com/reports/data-breach"
+ },
+ {
+  "topic": "규제",
+  "date": "2026-06-29",
+  "item": "EU 디지털 옴니버스 최종 승인: 독립형 고위험 AI 의무는 2027-12-02, 제품 내장형은 2028-08-02로 연기. 누디파이어·CSAM 생성 AI 금지 신설(2026-12 시행). 기존 생성형 AI 워터마크 유예는 2026-12-02까지",
+  "korea": "",
+  "url": "https://eeas.europa.eu/delegations/chile/artificial-intelligence-council-gives-final-green-light-simplify-and-streamline-rules_en"
+ },
+ {
+  "topic": "에이전트 공격",
+  "date": "2026-06-24",
+  "item": "LayerX 'BioShocking' 간접 프롬프트 주입이 AI 브라우저·확장 6종을 침해(ChatGPT Atlas는 패치, Perplexity Comet은 수정 없이 종결, Claude 확장 패치는 실패로 평가). Black Hat 2026에서 Brave는 분석한 모든 AI 브라우저가 취약하고 완전한 해법이 없다고 발표",
+  "korea": "",
+  "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-ai-browser-prompt-injection-20260630-csa-s/"
+ },
+ {
+  "topic": "에이전트 공격",
+  "date": "2026-06-19",
+  "item": "한국·싱가포르 AISI 공동 테스트: 정상 지시를 수행하는 중에도 AI 에이전트가 민감정보를 부적절하게 처리할 수 있음(데이터 유출 위험 보고서)",
+  "korea": "한국",
+  "url": "https://zdnet.co.kr/view/?no=20260619100049"
+ },
+ {
+  "topic": "레드팀·평가",
+  "date": "2026-06-19",
+  "item": "한국 AI안전연구소: 비공개였던 평가 결과를 단계적으로 공개(지난달 42종 모델 평가 실적 공개, 수치는 카카오 '카나나' 외 대부분 비공개). Anthropic과 자율 에이전트 레드팀·한국어 맥락 오남용 평가를, OpenAI와 고위험 분야 협력 MOU를 추진",
+  "korea": "한국",
+  "url": "https://zdnet.co.kr/view/?no=20260619100049"
+ },
+ {
+  "topic": "시험 부정",
+  "date": "2026-06-11",
+  "item": "중국 가오카오(6/7~10): Doubao·Yuanbao·Qwen·DeepSeek가 시험 시간대에 사진 문제풀이·작문 지도 기능을 일시 중단(2025년에 이어 2년째). 교육당국은 전 수험생에게 안경 별도 검사를 안내",
+  "korea": "",
+  "url": "https://www.caixinglobal.com/2026-06-11/chinese-tech-giants-turn-college-admissions-into-latest-ai-battleground-102452924.html"
+ },
+ {
+  "topic": "테러·극단주의",
+  "date": "2026-05-31",
+  "item": "NPR: 친IS 채팅방 이용자가 '검열 없는(uncensored)' AI로 폭발물을 조사했다고 주장(일화적 증거)",
+  "korea": "",
+  "url": "https://www.npr.org/2026/05/31/nx-s1-5816391/ai-safety-concerns-danger-open-weight-models-risks"
+ },
+ {
+  "topic": "오픈웨이트·탈옥",
+  "date": "2026-05-31",
+  "item": "Hugging Face에 등록된 'abliterated'(거부 방향 제거) 모델이 6,000개 이상으로 2024년 약 600개의 10배. DHS 지원 연구센터는 다른 방식보다 abliteration 방식이 많다고 분석. Heretic 도구는 두 줄 지시로 몇 분 만에 가드레일 제거",
+  "korea": "",
+  "url": "https://www.npr.org/2026/05/31/nx-s1-5816391/ai-safety-concerns-danger-open-weight-models-risks"
+ },
+ {
+  "topic": "레드팀·평가",
+  "date": "2026-05-05",
+  "item": "미 CAISI가 Google DeepMind·Microsoft·xAI와 출시 전·후 평가 협약 체결(OpenAI·Anthropic은 2025-09부터). 이로써 5개 연구소 참여. 안전장치를 줄이거나 없앤 모델 접근이 일반적이지만, 자발적 협약이라 결과 공개 의무는 없음",
+  "korea": "",
+  "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-caisi-frontier-ai-testing-agreements-20260/"
+ },
+ {
+  "topic": "시험 부정",
+  "date": "2026-05",
+  "item": "대만 국립대만대 입학시험에서 AI 안경 착용 응시생 적발·0점 처리. 중국 화난농업대는 기말고사에서 금속탐지기로 안경·귀 주변 검사",
+  "korea": "",
+  "url": "https://news.tf.co.kr/read/life/2369816.htm"
+ },
+ {
+  "topic": "오픈웨이트·탈옥",
+  "date": "2026-05",
+  "item": "2026년 논문: 변조 저항 안전장치가 공격 성공률을 일부 10% 미만으로 낮추지만 사전학습에 들어 있는 유해 지식은 제거하지 못함. abliteration 저항 튜닝을 방어책으로 제안",
+  "korea": "",
+  "url": "https://arxiv.org/html/2605.26526"
+ },
+ {
+  "topic": "에이전트 공격",
+  "date": "2026-03-28",
+  "item": "'PleaseFix': 넓은 OAuth 권한을 가진 자율 브라우저 에이전트를 무클릭으로 탈취하는 공격군이 여러 플랫폼에서 독립적으로 악용됨(CSA)",
+  "korea": "",
+  "url": "https://labs.cloudsecurityalliance.org/wp-content/uploads/2026/03/CSA_research_note_PleaseFix_agentic_browser_exploits_20260328-csa-styled.pdf"
+ },
+ {
+  "topic": "오픈웨이트·탈옥",
+  "date": "2026-03-24",
+  "item": "IWF: 범죄자들이 '검열 없는' AI 도구의 편집·파인튜닝 잠재력을 칭찬하고, 프롬프트 하나로 영상 전체를 만드는 '무검열 AI 에이전트'를 논의. 영국 성인의 78%가 출시 전 위해성 시험 의무화를 지지",
+  "korea": "",
+  "url": "https://iwf.org.uk/news-media/news/dangerous-ai-child-sexual-abuse-reaches-record-high-as-public-backs-clampdown-on-uncensored-tools/"
+ },
+ {
+  "topic": "딥페이크·사기",
+  "date": "2026-03-24",
+  "item": "IWF 2025 집계: AI 생성 아동 성착취물 8,029건(+14%). 그중 영상 3,443건으로 2024년 13건의 260배 이상이며, 65%가 최중증 A등급(비AI 영상은 43%)",
+  "korea": "",
+  "url": "https://iwf.org.uk/news-media/news/dangerous-ai-child-sexual-abuse-reaches-record-high-as-public-backs-clampdown-on-uncensored-tools/"
+ },
+ {
+  "topic": "오정렬",
+  "date": "2026-03",
+  "item": "ICML 2026 논문(arXiv 2603.01608): 강한 환경 유인에도 에이전트의 자발적 스키밍은 극소수이며, 이것이 평가 인식 때문일 가능성은 낮다고 분석(반대 증거)",
+  "korea": "",
+  "url": "https://arxiv.org/html/2603.01608"
+ },
+ {
+  "topic": "에이전트 공격",
+  "date": "2026-02-24",
+  "item": "CrowdStrike 2026 GTR: 90개 이상 조직의 정상 GenAI 도구에 악성 프롬프트가 주입됨. AI 활용 공격자 활동은 전년 대비 89% 증가",
+  "korea": "",
+  "url": "https://www.crowdstrike.com/en-us/press-releases/2026-crowdstrike-global-threat-report/"
+ },
+ {
+  "topic": "CBRN",
+  "date": "2026-02-03",
+  "item": "국제 AI 안전보고서 2026: 2025년 다수 기업이 초보자 생물무기 개발 조력 가능성을 배제하지 못해 추가 안전장치를 붙여 출시",
+  "korea": "",
+  "url": "https://arxiv.org/pdf/2602.21012"
+ },
+ {
+  "topic": "규제",
+  "date": "2026-01-22",
+  "item": "한국 AI 기본법 시행: 생성형 AI 결과물 워터마크 표시 의무, 10^26 FLOPs 이상 모델에 안전성 확보 의무. 과태료 계도기간이 최소 1년이라 실질 집행은 2027년부터",
+  "korea": "한국",
+  "url": "https://korea.kr/news/policyNewsView.do?newsId=148958380"
+ },
+ {
+  "topic": "규제",
+  "date": "2026-01-08",
+  "item": "미국 주법: 캘리포니아 SB 53(2026-01-01 시행, 중대 사고 15일 내 보고)과 뉴욕 RAISE Act(72시간 보고, 개정판 2027-01-01 시행 예정). 캘리포니아 SB 243(동반자 챗봇 규제, 불법 딥페이크 수익 1건당 최대 25만 달러)",
+  "korea": "",
+  "url": "https://fpf.org/blog/the-raise-act-vs-sb-53-a-tale-of-two-frontier-ai-laws/"
+ },
+ {
+  "topic": "테러·극단주의",
+  "date": "2026",
+  "item": "ICCT 사례: 2026년 초 캐나다 Tumbler Ridge 학교 총격(사망 8, 부상 27, 총격범이 ChatGPT와 총기 폭력 시나리오를 장시간 대화), 2026-05 파리에서 ChatGPT에 '폭탄 제조법'을 물은 튀니지인 체포, 2026-07 미국 Venice 인종주의 총격 계획범(챗봇으로 선언문 작성), 2026-08 몬트리올 10대 학교 공격 계획",
+  "korea": "",
+  "url": "https://icct.nl/publication/tell-me-how-make-bomb-terrorist-use-conversational-ai-evidence-and-prospects"
+ },
+ {
+  "topic": "시험 부정",
+  "date": "2026",
+  "item": "국가자격시험인 세무사 시험에서 초소형 카메라로 문제를 찍어 AI에 전송한 부정행위가 드러남. 대학가 수법은 AI 안경·초소형 카메라·스마트워치",
+  "korea": "한국",
+  "url": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1440019"
+ },
+ {
+  "topic": "레드팀·평가",
+  "date": "2026",
+  "item": "FAR.AI AI 보안 리더보드 출시: 프런티어 모델 간 안전장치 강도가 최대 100배 차이('가장 약한 모델만큼만 안전')",
+  "korea": "",
+  "url": "https://www.far.ai/news/ai-security-leaderboard"
+ },
+ {
+  "topic": "딥페이크·사기",
+  "date": "2026",
+  "item": "IWF: 2026년 상반기 AI 생성 아동 성착취 이미지 6,310건으로 2025년 전체(4,512건)보다 40% 많음(보도 기준)",
+  "korea": "",
+  "url": "https://www.freepressjournal.in/tech/ai-generated-child-sexual-abuse-images-surge-40-2026-half-year-figures-top-entire-2025-total"
+ },
+ {
+  "topic": "오픈웨이트·탈옥",
+  "date": "2025-12",
+  "item": "UK AISI: 시험한 모든 프런티어 시스템에서 범용 탈옥 발견(생물 오용 정책 우회 포함). 다만 탈옥에 드는 시간·노력은 증가(2025년 자료)",
+  "korea": "",
+  "url": "https://aisi.gov.uk/frontier-ai-trends-report"
+ },
+ {
+  "topic": "레드팀·평가",
+  "date": "2025-11-17",
+  "item": "숭실대 AI안전성연구센터: 국내 LLM 안전성이 해외 대비 약 82% 수준. 상시 레드티밍 인프라가 시급(2025년 자료)",
+  "korea": "한국",
+  "url": "https://byline.network/2025/11/17-529/"
+ },
+ {
+  "topic": "시험 부정",
+  "date": "2025-11-10",
+  "item": "연세대·고려대·서울대에서 생성형 AI를 쓴 집단 부정행위가 잇달아 드러남(서울대 '통계학실험' 재시험, 고려대 시험 무효 후 기말 대면시험 원칙) — 2026학년 평가 개편 논의의 출발점(2025년 자료)",
+  "korea": "한국",
+  "url": "https://www.segye.com/newsView/20251112515442"
+ },
+ {
+  "topic": "딥페이크·사기",
+  "date": "2025",
+  "item": "FBI IC3 AI 기반 사기 피해액 약 8.93억 달러(2025, 2차 인용·미검증)",
+  "korea": "",
+  "url": "https://www.veriff.com/fraud/deepfake-fraud-cost-2026"
+ }
+]
