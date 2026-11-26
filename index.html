@@ -58,6 +58,8 @@
   /* parts */
   .ai27-part { display: grid; gap: 24px; }
   .ai27-parthead { display: grid; grid-template-columns: auto 1fr; gap: 6px 20px; align-items: end; padding-bottom: 18px; border-bottom: 1px solid var(--ai27-line); }
+  .ai27-group { font-family: var(--ai27-display); font-weight: 800; font-size: 1.05rem; letter-spacing: .02em; color: var(--ai27-accent); margin: 72px 0 -8px; padding-top: 14px; border-top: 3px solid var(--ai27-accent); }
+  .ai27-navgroup { align-self: center; font-size: .72rem; font-weight: 700; color: var(--ai27-accent); margin-left: 6px; opacity: .85; }
   .ai27-partno { font-family: var(--ai27-display); font-weight: 900; font-size: clamp(3rem, 8vw, 5.2rem); line-height: .85; color: transparent; -webkit-text-stroke: 1.2px var(--ai27-accent); grid-row: span 2; }
   .ai27-parthead p { grid-column: 2; }
   @media (max-width: 560px) { .ai27-parthead { grid-template-columns: 1fr; } .ai27-partno { grid-row: auto; } .ai27-parthead p { grid-column: 1; } }
@@ -199,7 +201,7 @@
 
 <div class="ai27">
   <header class="ai27-hero" id="top">
-    <span class="ai27-eyebrow">ETRI · AI Outlook · 기준일 2026-11-26</span>
+    <span class="ai27-eyebrow">ETRI · AI Outlook · 기준일 2026-11-27</span>
     <h1>AI 2027 <em>전망</em> 대시보드</h1>
     <p class="ai27-lede" data-read lang="ko">2025년 12월 「Tech Trends 2026: 증명의 해」가 모은 2026년 예측 <b data-draw="lede-n" data-source="kpi_2026" data-field="n" data-row="0" class="dash-skeleton">—</b>건을 다시 채점한 결과, 평균 실현도는 <b data-draw="lede-avg" data-source="kpi_2026" data-field="avg" data-row="0" class="dash-skeleton">—</b>점이며 <b data-draw="lede-hit" data-source="kpi_2026" data-field="hit_share" data-row="0" class="dash-skeleton">—</b>%가 실현 또는 대부분 실현되었습니다. 방향은 대체로 맞았지만 자본과 물리 AI의 규모는 과소평가했고, 조직 변화의 속도는 과대평가했습니다.</p>
     <div class="ai27-ledger" aria-label="분석 흐름">
@@ -208,34 +210,34 @@
       <div><b>2027 · 전망</b><span>리서치·투자·예측시장·연구소 40건을 테마와 시나리오로 종합</span></div>
     </div>
     <nav class="ai27-nav" aria-label="섹션 이동">
+      <span class="ai27-navgroup">제1부</span>
       <a href="#part1">2026 예측 실현도</a>
-      <a href="#bigger">예측보다 컸던 현실</a>
-      <a href="#pred-list">예측별 판정</a>
-      <a href="#part2">2027 전망</a>
-      <a href="#scenarios">시나리오</a>
-      <a href="#quant">수치 전망</a>
-      <a href="#outlook-sources">전망 자료</a>
+      <a href="#part2">2027 전망·시나리오</a>
+      <span class="ai27-navgroup">제2부</span>
       <a href="#part3">모델 성능·소버린</a>
-      <a href="#part4">위험·위협·안전</a>
-      <a href="#part5">지식·창작</a>
-      <a href="#part6">특화 FM</a>
       <a href="#part7">모델·에이전트</a>
-      <a href="#part8">노동·기본사회</a>
-      <a href="#part9">코딩·산업·에이전트 경제</a>
-      <a href="#part10">지정학·외교</a>
-      <a href="#geo-map">국가 관계도</a>
-      <a href="#dip">AI 외교(양자·다자)</a>
-      <a href="#part11">반도체·AIDC·전력</a>
-      <a href="#part12">국가 정책·경쟁력</a>
       <a href="#part13">AI 발전 법칙</a>
+      <a href="#part19">AGI·ASI·RSI</a>
+      <a href="#part6">특화 FM</a>
       <a href="#part14">수학·물리 난제</a>
       <a href="#part15">AI for Science·문샷</a>
-      <a href="#part16">사이버 회복력</a>
+      <span class="ai27-navgroup">제3부</span>
+      <a href="#part9">코딩·산업·에이전트 경제</a>
       <a href="#part17">토큰 경제</a>
       <a href="#part18">기기·온디바이스 AI</a>
-      <a href="#acc-layers">모델 접속 제한</a>
-      <a href="#part19">AGI·ASI·RSI</a>
+      <a href="#part11">반도체·AIDC·전력</a>
+      <a href="#part5">지식·창작</a>
+      <a href="#part8">노동·기본사회</a>
+      <span class="ai27-navgroup">제4부</span>
+      <a href="#part12">국가 정책·경쟁력</a>
+      <a href="#part10">지정학·외교·접속 제한</a>
+      <span class="ai27-navgroup">제5부</span>
+      <a href="#part4">사이버 위협·안전</a>
       <a href="#part20">AI 오용·안전</a>
+      <a href="#part16">사이버 회복력</a>
+      <span class="ai27-navgroup">제6부</span>
+      <a href="#part21">보완 주제</a>
+      <a href="#part22">ETRI 역할·2027 일정</a>
       <a href="report.html">상세 보고서 →</a>
     </nav>
     <div class="ai27-search" role="search">
@@ -244,7 +246,9 @@
       <ul id="q-results" class="q-results" aria-label="검색 결과"></ul>
     </div>
   </header>
+  <p class="ai27-group" role="heading" aria-level="2">제1부 회고와 종합 전망</p>
 
+  <!-- ============ PART 01 (id part1) ============ -->
   <!-- ============ PART 1 ============ -->
   <section class="ai27-part" id="part1">
     <div class="ai27-parthead">
@@ -355,6 +359,7 @@
     </div>
   </section>
 
+  <!-- ============ PART 02 (id part2) ============ -->
   <!-- ============ PART 2 ============ -->
   <section class="ai27-part" id="part2">
     <div class="ai27-parthead">
@@ -487,6 +492,9 @@
     </details>
   </section>
 
+  <p class="ai27-group" role="heading" aria-level="2">제2부 역량: 모델·에이전트·AGI·과학</p>
+
+  <!-- ============ PART 03 (id part3) ============ -->
   <!-- ============ PART 3 ============ -->
   <section class="ai27-part" id="part3">
     <div class="ai27-parthead">
@@ -546,10 +554,655 @@
     </div>
   </section>
 
+  <!-- ============ PART 04 (id part7) ============ -->
+  <!-- ============ PART 7 ============ -->
+  <section class="ai27-part" id="part7">
+    <div class="ai27-parthead">
+      <span class="ai27-partno" aria-hidden="true">04</span>
+      <h2>2027 모델 로드맵과 에이전트 경쟁</h2>
+      <p class="ai27-muted">2026년에는 종합 1위 모델이 2–3개월마다 바뀌었습니다. 2027년에도 미국 랩들은 연 5–7회 프런티어 모델을 낼 것으로 보입니다. 에이전트 경쟁은 모델보다 하네스(실행 환경)와 통제·보안에서 갈립니다. 2027년 모델 이름은 모두 추측입니다.</p>
+    </div>
+    <div class="ai27-card" id="model-forecast">
+      <h3>2027년 말 능력 전망 (Epoch ECI: 낮음–높음 범위, 점은 기준)</h3>
+      <p class="ai27-muted">2026년 11월 프런티어 최고점은 173.4입니다. 오픈웨이트 최고 모델은 약 6개월·12점 뒤에 있을 전망입니다.</p>
+      <div class="ai27-chart" data-draw="model-range" data-source="model_forecast"></div>
+    </div>
+    <div class="ai27-grid2">
+      <div class="ai27-card" id="model-cadence">
+        <h3>2026 프런티어 출시 간격 (중앙값, 개월)</h3>
+        <div class="ai27-chart" data-draw="cadence-bars" data-source="model_cadence"></div>
+      </div>
+      <div class="ai27-card" id="agent-market">
+        <h3>에이전트 시장 규모 (십억 달러)</h3>
+        <p class="ai27-muted">정의가 서로 달라 합산하면 안 됩니다. 옅은 막대는 2027 낮음–높음 범위, 진한 막대는 기준값, 회색 선은 2026년입니다.</p>
+        <div class="ai27-chart" data-draw="agent-market" data-source="agent_market"></div>
+      </div>
+    </div>
+    <div class="ai27-tablewrap">
+      <table data-source="model_forecast" data-row-key="lab" aria-label="2027 기관별 출시 전망">
+        <thead><tr><th data-field="lab">기관</th><th data-field="releases">2027 출시</th><th data-field="quarters">유력 시기</th><th data-field="eci_base">ECI 기준</th><th data-field="confidence">신뢰</th></tr></thead>
+        <tbody data-draw="model-rows"></tbody>
+      </table>
+    </div>
+    <div class="ai27-sub" id="agents"><h3>에이전트 지형: Muse · Hermes · OpenClaw와 코딩 하네스</h3>
+      <p class="ai27-muted">같은 모델도 하네스에 따라 점수가 39점까지 벌어집니다(Harness-Bench v2). 코딩 지출의 70%는 Claude Code와 Codex가 차지합니다(Menlo).</p></div>
+    <div class="ai27-tablewrap">
+      <table data-source="agents_landscape" data-row-key="name" aria-label="에이전트 지형">
+        <thead><tr><th data-field="name">에이전트</th><th data-field="owner">주체</th><th data-field="type">유형</th><th data-field="status">2026 현황</th><th data-field="outlook">2027 전망</th></tr></thead>
+        <tbody data-draw="agent-rows"></tbody>
+      </table>
+    </div>
+    <div class="ai27-grid2">
+      <div class="ai27-card" id="agent-comp">
+        <h3>2027 경쟁 전망</h3>
+        <ul class="ai27-list" data-draw="comp-list" data-source="agent_competition"></ul>
+      </div>
+      <div class="ai27-card" id="agent-inc">
+        <h3>2027 에이전트 사건·문제</h3>
+        <ul class="ai27-list" data-draw="agent-inc-list" data-source="agent_incidents"></ul>
+      </div>
+    </div>
+    <div class="ai27-sub" id="agent-svc"><h3>서비스 다양화: 13개 범주 중 2027년 8개(6–10개)가 운영 규모에 도달</h3></div>
+    <div class="ai27-tablewrap">
+      <table data-source="agent_services" data-row-key="category" aria-label="에이전트 서비스 범주">
+        <thead><tr><th data-field="category">범주</th><th data-field="maturity_2026">2026 성숙도</th><th data-field="outlook">2027 전망</th></tr></thead>
+        <tbody data-draw="svc-rows"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============ PART 05 (id part13) ============ -->
+  <!-- ============ PART 13 ============ -->
+  <section class="ai27-part" id="part13">
+    <div class="ai27-parthead">
+      <span class="ai27-partno" aria-hidden="true">05</span>
+      <h2>AI 발전의 '법칙'</h2>
+      <p class="ai27-muted">Epoch 원자료로 직접 회귀 분석했습니다. 종합역량(ECI)은 연 약 17점의 직선 성장을 유지했지만 사이버, 업무 자동화, 추론 연산 같은 개별 영역은 훨씬 가파르게 가속했습니다. 2027년의 메타 변수는 AI R&D 가속이 다른 연구소로 번지는지입니다.</p>
+    </div>
+    <div class="ai27-card" id="laws-spark">
+      <h3>법칙별 추세 (점선 끝점은 2027년 말 기준 전망)</h3>
+      <p class="ai27-muted">METR 시간지평은 로그 눈금입니다. 16시간(960분)을 넘는 값은 현재 과제군으로는 측정할 수 없는 함의값입니다.</p>
+      <div class="ai27-chart" data-draw="laws-sparks" data-source="laws_series"></div>
+    </div>
+    <div class="ai27-tablewrap">
+      <table data-source="laws_table" data-row-key="id" aria-label="AI 발전 법칙">
+        <thead><tr><th data-field="id">ID</th><th data-field="name">법칙</th><th data-field="verdict">2026 판정</th><th data-field="dominant">2027</th><th data-field="low">낮음</th><th data-field="base">기준</th><th data-field="high">높음</th><th data-field="unit">단위</th><th data-field="formula">형태</th></tr></thead>
+        <tbody data-draw="laws-rows"></tbody>
+      </table>
+    </div>
+    <div class="ai27-sub" id="laws-signposts"><h3>선행 신호</h3></div>
+    <div class="ai27-tablewrap">
+      <table data-source="laws_signposts" data-row-key="indicator" aria-label="법칙 선행 신호">
+        <thead><tr><th data-field="indicator">지표</th><th data-field="threshold">기준</th><th data-field="meaning">의미</th></tr></thead>
+        <tbody data-draw="laws-sig-rows"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============ PART 06 (id part19) ============ -->
+  <!-- ============ PART 19 ============ -->
+  <section class="ai27-part" id="part19">
+    <div class="ai27-parthead">
+      <span class="ai27-partno" aria-hidden="true">06</span>
+      <h2>AGI·ASI·RSI: 2027년 초지능에 얼마나 가까워지나</h2>
+      <p class="ai27-muted">2027년은 'AGI가 온 해'보다 'AI가 AI 연구를 가속하기 시작한 해'가 될 가능성이 큽니다. 프런티어는 초인적 코더의 문턱에 있고, 2027년 말까지 도달 확률은 초인적 AI 연구자 25%, 엄밀한 범용 AGI 12%, 초지능 2%입니다(본 보고서 주관). 핵심 변수는 AI R&D 가속이 여러 연구소로 번지는지입니다.</p>
+    </div>
+    <div class="ai27-card" id="agi-ladder">
+      <h3>AI 역량 사다리와 2027년 위치</h3>
+      <figure class="ai27-figure"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 460" role="img" aria-label="AI 역량 사다리. 2026년 11월 프런티어는 전문가급 과제와 하루 단위 자율 수행을 넘어 초인적 코더 단계에 부분 도달했다. 2027년 말 기준 시나리오는 초인적 코더 단계 안, 가속 시나리오는 초인적 AI 연구자 단계 후반이다. 2027년 말까지 도달 확률은 초인적 코더 50%, 초인적 AI 연구자 25%, 범용 업무 AGI 12%, 초지능 2%." style="max-width:100%;height:auto;font-family:inherit"><line x1="30" y1="300" x2="976" y2="300" style="stroke:var(--color-border-line, var(--line, #dcdfe4));stroke-width:1.5"/><rect x="40" y="260" width="152" height="40" rx="3" style="fill:var(--color-ok, var(--ok, #1f7a4a));fill-opacity:0.14;stroke:var(--color-ok, var(--ok, #1f7a4a));stroke-width:1.4"/><text x="116.0" y="230.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13.5px;font-weight:700">전문가급 과제</text><text x="116.0" y="247.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">박사·올림피아드 문제</text><text x="116.0" y="282.0" text-anchor="middle" style="fill:var(--color-ok, var(--ok, #1f7a4a));font-size:12px;font-weight:700">도달</text><rect x="48" y="374" width="136" height="14" rx="3" style="fill:var(--color-border-line, var(--line, #dcdfe4))"/><rect x="48" y="374" width="134.6" height="14" rx="3" style="fill:var(--ai27-accent, var(--accent, #3d40d4))"/><text x="116.0" y="406.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13px;font-weight:700">99%</text><rect x="196" y="220" width="152" height="80" rx="3" style="fill:var(--color-ok, var(--ok, #1f7a4a));fill-opacity:0.14;stroke:var(--color-ok, var(--ok, #1f7a4a));stroke-width:1.4"/><text x="272.0" y="190.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13.5px;font-weight:700">하루 단위 자율</text><text x="272.0" y="207.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">16시간+ 과제 자율 수행</text><text x="272.0" y="242.0" text-anchor="middle" style="fill:var(--color-ok, var(--ok, #1f7a4a));font-size:12px;font-weight:700">도달</text><rect x="204" y="374" width="136" height="14" rx="3" style="fill:var(--color-border-line, var(--line, #dcdfe4))"/><rect x="204" y="374" width="131.9" height="14" rx="3" style="fill:var(--ai27-accent, var(--accent, #3d40d4))"/><text x="272.0" y="406.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13px;font-weight:700">97%</text><rect x="352" y="180" width="152" height="120" rx="3" style="fill:var(--color-warn, var(--warn, #985a00));fill-opacity:0.14;stroke:var(--color-warn, var(--warn, #985a00));stroke-width:1.4"/><text x="428.0" y="150.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13.5px;font-weight:700">초인적 코더</text><text x="428.0" y="167.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">최고 엔지니어 대체</text><text x="428.0" y="202.0" text-anchor="middle" style="fill:var(--color-warn, var(--warn, #985a00));font-size:12px;font-weight:700">부분</text><rect x="360" y="374" width="136" height="14" rx="3" style="fill:var(--color-border-line, var(--line, #dcdfe4))"/><rect x="360" y="374" width="68.0" height="14" rx="3" style="fill:var(--ai27-accent, var(--accent, #3d40d4))"/><text x="428.0" y="406.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13px;font-weight:700">50%</text><rect x="508" y="140" width="152" height="160" rx="3" style="fill:var(--color-warn, var(--warn, #985a00));fill-opacity:0.14;stroke:var(--color-warn, var(--warn, #985a00));stroke-width:1.4"/><text x="584.0" y="110.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13.5px;font-weight:700">초인적 AI 연구자</text><text x="584.0" y="127.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">AI 연구를 스스로 주도</text><text x="584.0" y="162.0" text-anchor="middle" style="fill:var(--color-warn, var(--warn, #985a00));font-size:12px;font-weight:700">초기 징후</text><rect x="516" y="374" width="136" height="14" rx="3" style="fill:var(--color-border-line, var(--line, #dcdfe4))"/><rect x="516" y="374" width="34.0" height="14" rx="3" style="fill:var(--ai27-accent, var(--accent, #3d40d4))"/><text x="584.0" y="406.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13px;font-weight:700">25%</text><rect x="664" y="100" width="152" height="200" rx="3" style="fill:var(--color-bad, var(--bad, #b3362f));fill-opacity:0.14;stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:1.4"/><text x="740.0" y="70.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13.5px;font-weight:700">범용 업무 AGI</text><text x="740.0" y="87.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">원격 화이트칼라 대부분</text><text x="740.0" y="122.0" text-anchor="middle" style="fill:var(--color-bad, var(--bad, #b3362f));font-size:12px;font-weight:700">미도달</text><rect x="672" y="374" width="136" height="14" rx="3" style="fill:var(--color-border-line, var(--line, #dcdfe4))"/><rect x="672" y="374" width="16.3" height="14" rx="3" style="fill:var(--ai27-accent, var(--accent, #3d40d4))"/><text x="740.0" y="406.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13px;font-weight:700">12%</text><rect x="820" y="60" width="152" height="240" rx="3" style="fill:var(--color-bad, var(--bad, #b3362f));fill-opacity:0.14;stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:1.4"/><text x="896.0" y="30.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13.5px;font-weight:700">초지능 ASI</text><text x="896.0" y="47.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">모든 인지 영역 최고 인간 압도</text><text x="896.0" y="82.0" text-anchor="middle" style="fill:var(--color-bad, var(--bad, #b3362f));font-size:12px;font-weight:700">미도달</text><rect x="828" y="374" width="136" height="14" rx="3" style="fill:var(--color-border-line, var(--line, #dcdfe4))"/><rect x="828" y="374" width="2.7" height="14" rx="3" style="fill:var(--ai27-accent, var(--accent, #3d40d4))"/><text x="896.0" y="406.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13px;font-weight:700">2%</text><line x1="350.0" y1="214" x2="350.0" y2="308" style="stroke:var(--color-fg, var(--fg, #14161c));stroke-width:2.4"/><polygon points="344.0,314 356.0,314 350.0,304" style="fill:var(--color-fg, var(--fg, #14161c))"/><text x="350.0" y="332.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:700">2026-11 현재</text><line x1="467.0" y1="214" x2="467.0" y2="308" style="stroke:var(--ai27-accent, var(--accent, #3d40d4));stroke-width:2.4"/><polygon points="461.0,314 473.0,314 467.0,304" style="fill:var(--ai27-accent, var(--accent, #3d40d4))"/><text x="467.0" y="332.0" text-anchor="middle" style="fill:var(--ai27-accent, var(--accent, #3d40d4));font-size:12px;font-weight:700">2027 말 기준</text><line x1="627.7" y1="174" x2="627.7" y2="308" style="stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:2.4" stroke-dasharray="6 4"/><polygon points="621.7,314 633.7,314 627.7,304" style="fill:var(--color-bad, var(--bad, #b3362f))"/><text x="627.7" y="332.0" text-anchor="middle" style="fill:var(--color-bad, var(--bad, #b3362f));font-size:12px;font-weight:700">2027 말 가속</text><text x="36.0" y="362.0" text-anchor="start" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:12px;font-weight:600">2027년 말까지 도달 확률(본 보고서 주관)</text><text x="586.0" y="446.0" text-anchor="middle" style="fill:var(--color-bad, var(--bad, #b3362f));font-size:12px;font-weight:600">RSI 고리: 초인적 AI 연구자가 등장하면 위 칸으로 가는 속도 자체가 빨라진다</text></svg><figcaption class="ai27-muted">2026년 11월 프런티어는 ③ 초인적 코더 단계에 부분 도달했습니다. 2027년 말 기준 시나리오는 ③단계 안, 가속 시나리오는 ④단계 후반입니다. 막대는 2027년 말까지 도달 확률(주관)입니다.</figcaption></figure>
+    </div>
+    <div class="ai27-tablewrap">
+      <table data-source="agi_ladder" data-row-key="rung" aria-label="AI 역량 사다리">
+        <thead><tr><th data-field="rung">단계</th><th data-field="definition">정의</th><th data-field="status">2026-11</th><th data-field="evidence">근거</th><th data-field="prob">2027 말 도달 확률</th></tr></thead>
+        <tbody data-draw="agi-ladder-rows"></tbody>
+      </table>
+    </div>
+    <div class="ai27-card" id="agi-scen">
+      <h3>2027 AGI·RSI 시나리오</h3>
+      <div class="ai27-chart" data-draw="agi-strip" data-source="agi_scenarios" style="min-height:40px"></div>
+      <div class="ai27-grid3" data-draw="agi-cards" data-source="agi_scenarios"></div>
+    </div>
+    <div class="ai27-grid2">
+      <div class="ai27-card" id="agi-evidence">
+        <h3>2026년 말 현재 위치: 실측 근거</h3>
+        <ul class="ai27-list" data-draw="agi-ev-list" data-source="agi_evidence"></ul>
+      </div>
+      <div class="ai27-card" id="agi-metrics">
+        <h3>2027 수치 전망 (낮음 / 기준 / 높음)</h3>
+        <ul class="ai27-list" data-draw="agi-met-list" data-source="agi_metrics"></ul>
+      </div>
+    </div>
+    <div class="ai27-sub" id="agi-leaders"><h3>연구소 대표들의 시점 발언</h3></div>
+    <div class="ai27-tablewrap">
+      <table data-source="agi_leaders" data-row-key="claim" aria-label="연구소 대표 AGI 발언">
+        <thead><tr><th data-field="who">인물</th><th data-field="org">기관</th><th data-field="claim">주장</th><th data-field="date">시점</th><th data-field="status">2026년 상태</th></tr></thead>
+        <tbody data-draw="agi-lead-rows"></tbody>
+      </table>
+    </div>
+    <div class="ai27-grid2">
+      <div class="ai27-card" id="agi-markets">
+        <h3>예측가·예측시장</h3>
+        <ul class="ai27-list" data-draw="agi-mkt-list" data-source="agi_markets"></ul>
+      </div>
+      <div class="ai27-card" id="agi-watch">
+        <h3>조기경보 지표</h3>
+        <ul class="ai27-list" data-draw="agi-watch-list" data-source="agi_watch"></ul>
+      </div>
+    </div>
+    <div class="ai27-sub" id="agi-fc"><h3>2027 AGI·ASI·RSI 전망</h3></div>
+    <div class="ai27-tablewrap">
+      <table data-source="agi_forecast" data-row-key="text" aria-label="2027 AGI 전망">
+        <thead><tr><th data-field="likelihood">가능성</th><th data-field="area">영역</th><th data-field="text">전망</th></tr></thead>
+        <tbody data-draw="agi-fc-rows"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============ PART 07 (id part6) ============ -->
+  <!-- ============ PART 6 ============ -->
+  <section class="ai27-part" id="part6">
+    <div class="ai27-parthead">
+      <span class="ai27-partno" aria-hidden="true">07</span>
+      <h2>특화 파운데이션 모델</h2>
+      <p class="ai27-muted">기상은 이미 현업 운영 단계이고, 바이오·의료·로봇은 임상·상품화 문턱에 있습니다. 과학 분야에서는 작은 특화 모델이 큰 범용 모델을 이기는 사례가 반복됐지만, 법률·금융·보안에서는 범용 모델 위의 워크플로와 데이터가 가치를 만듭니다.</p>
+    </div>
+    <div class="ai27-grid2">
+      <div class="ai27-card" id="fm-maturity">
+        <h3>분야별 성숙도 (2026)</h3>
+        <p class="ai27-muted">1 연구 → 5 현업 운영. 보고서 분석에 따른 판단입니다.</p>
+        <div class="ai27-chart" data-draw="fm-bars" data-source="fm_domains"></div>
+      </div>
+      <div class="ai27-card" id="fm-korea">
+        <h3>한국·ETRI 기회</h3>
+        <ul class="ai27-list">
+          <li><b>통신망 에이전트 레퍼런스</b><span class="ai27-muted">GSMA 결론은 범용 + 통신 특화 소형 모델의 하이브리드입니다. 3GPP 6G 작업항목 승인(2027-03)에 맞춰 AI-RAN과 경량 통신 FM을 결합합니다.</span></li>
+          <li><b>피지컬 AI 데이터·평가 표준</b><span class="ai27-muted">2027 예산안에 피지컬 AI 트레이닝센터 400억, 핵심기술 550억, 물류 실증 260억 원이 신규 편성됐습니다. 한국어 지시와 현장 데이터 표준, VLA 안전성 인증을 먼저 만듭니다.</span></li>
+          <li><b>과소평가 영역</b><span class="ai27-muted">시계열 FM(전력·반도체 수요)과 소재용 범용 원자간 포텐셜은 국내 공개 성과가 비어 있습니다.</span></li>
+          <li><b>한국판 Genesis Mission</b><span class="ai27-muted">출연연, 국가 GPU, 프런티어 모델을 결합한 국가 AI4S 플랫폼을 만듭니다.</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ai27-tablewrap">
+      <table data-source="fm_domains" data-row-key="domain" aria-label="특화 FM 분야별 현황">
+        <thead><tr><th data-field="domain">분야</th><th data-field="stage">단계</th><th data-field="models">대표 모델</th><th data-field="key_2027">2027 핵심 가능성</th></tr></thead>
+        <tbody data-draw="fm-rows"></tbody>
+      </table>
+    </div>
+    <div class="ai27-sub" id="fm-poss">
+      <h3>2027 가능성 (분야별)</h3>
+      <div class="ai27-controls">
+        <select class="dash-select" id="f-fm" data-draw="fm-options" data-source="fm_possibilities" aria-label="분야"></select>
+        <span class="ai27-muted" data-draw="fm-count"></span>
+      </div>
+    </div>
+    <div class="ai27-tablewrap">
+      <table data-source="fm_possibilities" data-row-key="text" aria-label="특화 FM 2027 가능성">
+        <thead><tr><th data-field="likelihood">가능성</th><th data-field="domain">분야</th><th data-field="text">전망</th><th data-field="signal">확인 신호</th></tr></thead>
+        <tbody data-draw="fm-poss-rows"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============ PART 08 (id part14) ============ -->
+  <!-- ============ PART 14 ============ -->
+  <section class="ai27-part" id="part14">
+    <div class="ai27-parthead">
+      <span class="ai27-partno" aria-hidden="true">08</span>
+      <h2>수학·물리 난제</h2>
+      <p class="ai27-muted">2026년에는 Erdős 단위거리 추측이 반증됐고, AlphaProof가 미해결 Erdős 문제 9개를 Lean으로 풀었으며, 페르마의 마지막 정리가 완전히 형식화됐습니다. AI는 구성·반례·경계 개선·형식화에 강하고, 새 이론 구축에는 약합니다. 밀레니엄 문제는 2027년에도 닿지 않습니다.</p>
+    </div>
+    <div class="ai27-card" id="mp-counts">
+      <h3>2027 수량 전망</h3>
+      <div class="ai27-tablewrap" style="border:0">
+        <table data-source="mathphys_counts" data-row-key="metric" aria-label="수학·물리 2027 수량 전망">
+          <thead><tr><th data-field="metric">지표</th><th data-field="low">낮음</th><th data-field="base">기준</th><th data-field="high">높음</th></tr></thead>
+          <tbody data-draw="mp-count-rows"></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="ai27-sub" id="mp-ach"><h3>2025–2026 성과와 검증 수준</h3></div>
+    <div class="ai27-tablewrap">
+      <table data-source="mathphys_achievements" data-row-key="problem" aria-label="수학·물리 성과">
+        <thead><tr><th data-field="date">시점</th><th data-field="field">분야</th><th data-field="problem">문제</th><th data-field="system">시스템</th><th data-field="verification">검증</th><th data-field="significance">의미</th><th data-field="result">결과</th></tr></thead>
+        <tbody data-draw="mp-ach-rows"></tbody>
+      </table>
+    </div>
+    <div class="ai27-sub" id="mp-targets"><h3>2027 도전 목표</h3></div>
+    <div class="ai27-tablewrap">
+      <table data-source="mathphys_targets" data-row-key="target" aria-label="2027 도전 목표">
+        <thead><tr><th data-field="likelihood">가능성</th><th data-field="field">분야</th><th data-field="target">목표</th><th data-field="signal">확인 신호</th></tr></thead>
+        <tbody data-draw="mp-tg-rows"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============ PART 09 (id part15) ============ -->
+  <!-- ============ PART 15 ============ -->
+  <section class="ai27-part" id="part15">
+    <div class="ai27-parthead">
+      <span class="ai27-partno" aria-hidden="true">09</span>
+      <h2>AI for Science와 국가 문샷</h2>
+      <p class="ai27-muted">AI 연구 동료는 문헌·분석·코드·계산 실험을 수시간~수일 자율 수행하지만, 물리 실험 시간은 줄이지 못해 병목이 '검증'과 '실험실'로 옮겨 갔습니다. K-문샷은 거버넌스를 갖춘 '초기' 단계이고, 미국 Genesis는 1년 만에 297개 과제와 연방 약정 50억 달러 이상으로 순항 중입니다.</p>
+    </div>
+    <div class="ai27-sub" id="moonshots"><h3>국가 문샷 진척과 2027 예상 성과</h3></div>
+    <div class="ai27-tablewrap">
+      <table data-source="moonshot_programs" data-row-key="program" aria-label="국가 문샷">
+        <thead><tr><th data-field="country">국가</th><th data-field="program">프로그램</th><th data-field="status">상태</th><th data-field="goal">목표</th><th data-field="progress">2026 진척</th><th data-field="result_2027">2027 예상 성과</th></tr></thead>
+        <tbody data-draw="ms-rows"></tbody>
+      </table>
+    </div>
+    <div class="ai27-grid2">
+      <div class="ai27-card" id="ai4s-fields">
+        <h3>2027 분야별 기여</h3>
+        <ul class="ai27-list" data-draw="ai4s-field-list" data-source="ai4s_fields"></ul>
+      </div>
+      <div class="ai27-card" id="ai4s-cap">
+        <h3>2027년 AI 연구 동료가 할 수 있는 일과 없는 일</h3>
+        <ul class="ai27-list" data-draw="ai4s-cap-list" data-source="ai4s_capability"></ul>
+      </div>
+    </div>
+    <div class="ai27-sub" id="ai4s-col"><h3>2026 AI 연구 동료와 검증된 성과</h3></div>
+    <div class="ai27-tablewrap">
+      <table data-source="ai4s_colleagues" data-row-key="system" aria-label="AI 연구 동료">
+        <thead><tr><th data-field="system">시스템</th><th data-field="org">주체</th><th data-field="results">검증된 성과</th></tr></thead>
+        <tbody data-draw="ai4s-col-rows"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <p class="ai27-group" role="heading" aria-level="2">제3부 산업·경제·사회</p>
+
+  <!-- ============ PART 10 (id part9) ============ -->
+  <!-- ============ PART 9 ============ -->
+  <section class="ai27-part" id="part9">
+    <div class="ai27-parthead">
+      <span class="ai27-partno" aria-hidden="true">10</span>
+      <h2>코딩 에이전트·산업 확산·조직 변화, 그리고 에이전트 경제</h2>
+      <p class="ai27-muted">Google은 신규 코드의 약 75%를 AI가 쓴다고 밝혔고, 개발자의 66%가 코딩 에이전트를 씁니다. 확산은 '검증 가능한 결과'가 있는 곳부터 빠릅니다. 생활 속 에이전트는 상품 탐색 단계에서는 대중화됐지만, 결제까지 맡기는 단계는 아직 초기입니다.</p>
+    </div>
+    <div class="ai27-grid2">
+      <div class="ai27-card" id="sector-speed">
+        <h3>2027 산업별 에이전트 확산 속도</h3>
+        <p class="ai27-muted">4 매우 빠름 · 3 빠름 · 2 보통. 보고서 분석에 따른 판단입니다.</p>
+        <div class="ai27-chart" data-draw="sector-bars" data-source="sectors_speed"></div>
+      </div>
+      <div class="ai27-card" id="coding-metrics">
+        <h3>바이브 코딩·코딩 에이전트 지표</h3>
+        <div class="ai27-tablewrap" style="border:0">
+          <table data-source="coding_metrics" data-row-key="metric" aria-label="코딩 에이전트 2027 지표">
+            <thead><tr><th data-field="metric">지표</th><th data-field="end2026">2026 말</th><th data-field="base">2027 기준</th><th data-field="range">범위</th></tr></thead>
+            <tbody data-draw="coding-rows"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="ai27-tablewrap">
+      <table data-source="sectors_speed" data-row-key="sector" aria-label="산업별 확산">
+        <thead><tr><th data-field="sector">산업</th><th data-field="speed">2027 속도</th><th data-field="adoption">2026 근거</th><th data-field="milestones">2027 이정표</th></tr></thead>
+        <tbody data-draw="sector-rows"></tbody>
+      </table>
+    </div>
+    <div class="ai27-sub" id="agent-types"><h3>에이전트 유형 14개의 성숙도와 2027 전망</h3></div>
+    <div class="ai27-tablewrap">
+      <table data-source="agent_types" data-row-key="type" aria-label="에이전트 유형">
+        <thead><tr><th data-field="type">유형</th><th data-field="maturity">2026 성숙도</th><th data-field="outlook">2027 전망</th></tr></thead>
+        <tbody data-draw="atype-rows"></tbody>
+      </table>
+    </div>
+    <div class="ai27-sub" id="org-changes"><h3>조직·경영·인사·노무 변화 (2027)</h3>
+      <p class="ai27-muted">관리 범위 확대와 팀장 직급 통합, 신입 채용 동결, CAIO 역할 전환, 노란봉투법 이후 AI 교섭, EU AI Act 고용 분야 고위험 의무(2027-12-02)가 주요 변화입니다.</p></div>
+    <div class="ai27-tablewrap">
+      <table data-source="org_changes" data-row-key="change" aria-label="조직 변화">
+        <thead><tr><th data-field="likelihood">가능성</th><th data-field="area">영역</th><th data-field="change">변화</th></tr></thead>
+        <tbody data-draw="org-rows"></tbody>
+      </table>
+    </div>
+    <div class="ai27-card" id="agentecon-scen">
+      <h3>에이전트 경제 시나리오 (2027)</h3>
+      <div class="ai27-chart" data-draw="ae-strip" data-source="agentecon_scenarios" style="min-height:40px"></div>
+      <div class="ai27-grid3" data-draw="ae-cards" data-source="agentecon_scenarios"></div>
+    </div>
+    <div class="ai27-tablewrap">
+      <table data-source="agentecon_diffusion" data-row-key="metric" aria-label="에이전트 확산 전망">
+        <thead><tr><th data-field="metric">지표</th><th data-field="low">낮음</th><th data-field="base">기준</th><th data-field="high">높음</th></tr></thead>
+        <tbody data-draw="ae-diff-rows"></tbody>
+      </table>
+    </div>
+    <div class="ai27-sub" id="agentecon-problems"><h3>생활 속 에이전트 문제 (2027)</h3></div>
+    <div class="ai27-tablewrap">
+      <table data-source="agentecon_problems" data-row-key="problem" aria-label="생활 속 에이전트 문제">
+        <thead><tr><th data-field="likelihood">가능성</th><th data-field="problem">문제</th><th data-field="who">영향 대상</th><th data-field="forecast">2027 모습</th></tr></thead>
+        <tbody data-draw="ae-prob-rows"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============ PART 11 (id part17) ============ -->
+  <!-- ============ PART 17 ============ -->
+  <section class="ai27-part" id="part17">
+    <div class="ai27-parthead">
+      <span class="ai27-partno" aria-hidden="true">11</span>
+      <h2>토큰 경제</h2>
+      <p class="ai27-muted">같은 성능의 토큰 단가는 연 수십 배 떨어지지만 물량은 연 3~6배 늘어 총지출이 커지는 '제번스 확장'이 기준입니다. 과제당 토큰이 늘어 '단가는 하락, 태스크 비용은 정체'가 기업 체감의 표준이 되고, 관심은 AI FinOps와 '좌석 + 토큰 크레딧 + 결과' 하이브리드 과금으로 옮겨 갑니다.</p>
+    </div>
+    <div class="ai27-card" id="tok-scen">
+      <h3>2027 토큰 경제 시나리오</h3>
+      <div class="ai27-chart" data-draw="tok-strip" data-source="tok_scenarios" style="min-height:40px"></div>
+      <div class="ai27-grid3" data-draw="tok-cards" data-source="tok_scenarios"></div>
+    </div>
+    <div class="ai27-sub" id="tok-metrics"><h3>2027 수치 전망 (낮음 / 기준 / 높음)</h3></div>
+    <div class="ai27-tablewrap">
+      <table data-source="tok_metrics" data-row-key="metric" aria-label="토큰 경제 2027 수치 전망">
+        <thead><tr><th data-field="metric">지표</th><th data-field="low">낮음</th><th data-field="base">기준</th><th data-field="high">높음</th><th data-field="unit">단위</th></tr></thead>
+        <tbody data-draw="tok-met-rows"></tbody>
+      </table>
+    </div>
+    <div class="ai27-grid2">
+      <div class="ai27-card" id="tok-volume">
+        <h3>토큰 물량</h3>
+        <ul class="ai27-list" data-draw="tok-vol-list" data-source="tok_volume"></ul>
+      </div>
+      <div class="ai27-card" id="tok-price">
+        <h3>토큰 가격</h3>
+        <ul class="ai27-list" data-draw="tok-price-list" data-source="tok_price"></ul>
+      </div>
+    </div>
+    <div class="ai27-sub" id="tok-pay"><h3>에이전트 결제와 기계 경제</h3></div>
+    <div class="ai27-tablewrap">
+      <table data-source="tok_payments" data-row-key="item" aria-label="에이전트 결제">
+        <thead><tr><th data-field="item">항목</th><th data-field="status">2026 현황</th><th data-field="outlook">2027 전망</th></tr></thead>
+        <tbody data-draw="tok-pay-rows"></tbody>
+      </table>
+    </div>
+    <div class="ai27-sub" id="tok-fc"><h3>2027 토큰 경제 전망</h3></div>
+    <div class="ai27-tablewrap">
+      <table data-source="tok_forecast" data-row-key="text" aria-label="2027 토큰 경제 전망">
+        <thead><tr><th data-field="likelihood">가능성</th><th data-field="area">영역</th><th data-field="text">전망</th></tr></thead>
+        <tbody data-draw="tok-fc-rows"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============ PART 12 (id part18) ============ -->
+  <!-- ============ PART 18 ============ -->
+  <section class="ai27-part" id="part18">
+    <div class="ai27-parthead">
+      <span class="ai27-partno" aria-hidden="true">12</span>
+      <h2>스마트폰·글래스·웨어러블·온디바이스 AI·AI IoT</h2>
+      <p class="ai27-muted">2027년 기기 AI의 최대 변수는 메모리입니다. 폰·PC 출하는 소폭 회복에 그치지만 생성형 AI폰은 출하의 절반을 넘어 기본 사양이 되고, 스마트 글래스는 40% 안팎 성장합니다. 기기 → 프라이빗 클라우드 → 프런티어의 3단 하이브리드가 표준이 됩니다.</p>
+    </div>
+    <div class="ai27-card" id="dev-scen">
+      <h3>2027 기기 AI 시나리오</h3>
+      <div class="ai27-chart" data-draw="dev-strip" data-source="dev_scenarios" style="min-height:40px"></div>
+      <div class="ai27-grid3" data-draw="dev-cards" data-source="dev_scenarios"></div>
+    </div>
+    <div class="ai27-sub" id="dev-seg"><h3>영역별 2026 현황과 2027 전망</h3></div>
+    <div class="ai27-tablewrap">
+      <table data-source="dev_segments" data-row-key="segment" aria-label="기기 영역별 전망">
+        <thead><tr><th data-field="segment">영역</th><th data-field="status">2026 현황</th><th data-field="outlook">2027 전망</th></tr></thead>
+        <tbody data-draw="dev-seg-rows"></tbody>
+      </table>
+    </div>
+    <div class="ai27-grid2">
+      <div class="ai27-card" id="dev-metrics">
+        <h3>2027 수치 전망 (낮음 / 기준 / 높음)</h3>
+        <ul class="ai27-list" data-draw="dev-met-list" data-source="dev_metrics"></ul>
+      </div>
+      <div class="ai27-card" id="dev-events">
+        <h3>2027 주요 일정</h3>
+        <ul class="ai27-list" data-draw="dev-ev-list" data-source="dev_events"></ul>
+      </div>
+    </div>
+    <div class="ai27-sub" id="dev-issues"><h3>이슈: 프라이버시·가격·보안·메모리</h3></div>
+    <div class="ai27-tablewrap">
+      <table data-source="dev_issues" data-row-key="issue" aria-label="기기 AI 이슈">
+        <thead><tr><th data-field="issue">이슈</th><th data-field="outlook">2027 전망</th></tr></thead>
+        <tbody data-draw="dev-iss-rows"></tbody>
+      </table>
+    </div>
+    <div class="ai27-sub" id="dev-fc"><h3>2027 기기 AI 전망</h3></div>
+    <div class="ai27-tablewrap">
+      <table data-source="dev_forecast" data-row-key="text" aria-label="2027 기기 AI 전망">
+        <thead><tr><th data-field="likelihood">가능성</th><th data-field="area">영역</th><th data-field="text">전망</th></tr></thead>
+        <tbody data-draw="dev-fc-rows"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============ PART 13 (id part11) ============ -->
+  <!-- ============ PART 11 ============ -->
+  <section class="ai27-part" id="part11">
+    <div class="ai27-parthead">
+      <span class="ai27-partno" aria-hidden="true">13</span>
+      <h2>AI 반도체·메모리·AIDC·전력망</h2>
+      <p class="ai27-muted">메모리 시장은 2026년 +250%의 슈퍼사이클 뒤 2027년에도 공급 부족이 이어질 전망입니다. 하이퍼스케일러 capex는 더 늘지만 증가율은 둔화하고, 전력·변압기·가스터빈이 실질적인 병목입니다. 기준 시나리오는 '감속하는 슈퍼사이클'(55%)입니다.</p>
+    </div>
+    <div class="ai27-card" id="infra-chart">
+      <h3>주요 시장 2026 → 2027 (십억 달러)</h3>
+      <p class="ai27-muted">옅은 막대는 2027 낮음–높음, 진한 막대는 기준값, 회색 선은 2026년입니다. 일부 2027 값은 분석 추정입니다.</p>
+      <div class="ai27-chart" data-draw="infra-bars" data-source="infra_numbers"></div>
+    </div>
+    <div class="ai27-tablewrap">
+      <table data-source="infra_numbers" data-row-key="metric" aria-label="인프라 시장 수치">
+        <thead><tr><th data-field="metric">지표</th><th data-field="y2025">2025</th><th data-field="y2026">2026</th><th data-field="low">2027 낮음</th><th data-field="base">2027 기준</th><th data-field="high">2027 높음</th><th data-field="unit">단위</th></tr></thead>
+        <tbody data-draw="infra-n-rows"></tbody>
+      </table>
+    </div>
+    <div class="ai27-card" id="infra-scen">
+      <h3>2027 인프라 시나리오</h3>
+      <div class="ai27-chart" data-draw="infra-scen-strip" data-source="infra_scenarios" style="min-height:40px"></div>
+      <div class="ai27-grid3" data-draw="infra-scen-cards" data-source="infra_scenarios"></div>
+    </div>
+    <div class="ai27-sub" id="infra-fc"><h3>분야별 2027 전망</h3></div>
+    <div class="ai27-tablewrap">
+      <table data-source="infra_forecasts" data-row-key="text" aria-label="인프라 2027 전망">
+        <thead><tr><th data-field="likelihood">가능성</th><th data-field="segment">분야</th><th data-field="text">전망</th></tr></thead>
+        <tbody data-draw="infra-f-rows"></tbody>
+      </table>
+    </div>
+    <div class="ai27-sub" id="infra-co"><h3>주요 기업 2027 전망</h3></div>
+    <div class="ai27-tablewrap">
+      <table data-source="infra_companies" data-row-key="company" aria-label="주요 기업 전망">
+        <thead><tr><th data-field="company">기업</th><th data-field="segment">분야</th><th data-field="outlook">2027 전망</th></tr></thead>
+        <tbody data-draw="infra-c-rows"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============ PART 14 (id part5) ============ -->
+  <!-- ============ PART 5 ============ -->
+  <section class="ai27-part" id="part5">
+    <div class="ai27-parthead">
+      <span class="ai27-partno" aria-hidden="true">14</span>
+      <h2>지식·창작 생태계와 AI 의존</h2>
+      <p class="ai27-muted">논문·특허·저작권과 음악·영상·웹에서 AI 생성물이 빠르게 늘고 있습니다. 2027년에는 '누가 만들었나'보다 출처·검증·보상이 쟁점이 됩니다. 분야별 전망은 위 표에서 '논문·특허·지재권', '창작·AI 의존'을 고르세요.</p>
+    </div>
+    <div class="ai27-grid2">
+      <div class="ai27-card" id="ai-music">
+        <h3>Deezer 업로드 중 완전 AI 곡 비중</h3>
+        <span class="ai27-muted">% · 재생 비중은 1–3%에 그침</span>
+        <div class="ai27-chart" data-draw="music-cols" data-source="ai_music"></div>
+      </div>
+      <div class="ai27-card" id="knowledge-notes">
+        <h3>2026년 지식 생산의 변화</h3>
+        <ul class="ai27-list">
+          <li><b>논문</b><span class="ai27-muted">ICLR 2026 심사평의 약 21%가 완전 AI 생성으로 추정되고, 2027 투고는 4만 건을 넘었습니다. 학회는 저자당 투고 상한을 도입했습니다.</span></li>
+          <li><b>특허</b><span class="ai27-muted">세계 출원 390만 건 중 중국이 48.8%입니다. USPTO는 자연인만 발명자로 인정한다는 원칙을 재확인했습니다.</span></li>
+          <li><b>저작권</b><span class="ai27-muted">Anthropic의 15억 달러 도서 합의가 확정됐고, 음반사는 Suno·Udio와 라이선스로 돌아섰습니다. 미국 소송은 169건입니다.</span></li>
+          <li><b>웹과 의존</b><span class="ai27-muted">새 영어 웹 기사의 약 절반이 AI 작성이고, AI 요약이 뜨면 검색 클릭률이 15%에서 8%로 떨어집니다.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PART 15 (id part8) ============ -->
+  <!-- ============ PART 8 ============ -->
+  <section class="ai27-part" id="part8">
+    <div class="ai27-parthead">
+      <span class="ai27-partno" aria-hidden="true">15</span>
+      <h2>사회경제·노동과 기본소득·기본사회</h2>
+      <p class="ai27-muted">2026년 AI의 노동 충격은 해고가 아니라 '채용 축소'로 나타났습니다. 22–25세 AI 고노출 직군의 고용 격차는 15%에서 19%로 커졌고, 한국 청년 취업자는 46개월 연속 감소했습니다. 기본사회 논의는 전 국민 기본소득보다 지역 기본소득 확대와 제도 틀 마련으로 나아가고 있습니다.</p>
+    </div>
+    <div class="ai27-card" id="labor-scen">
+      <h3>2027 노동시장 시나리오</h3>
+      <div class="ai27-chart" data-draw="labor-strip" data-source="labor_scenarios" style="min-height:40px"></div>
+      <div class="ai27-grid3" data-draw="labor-cards" data-source="labor_scenarios"></div>
+    </div>
+    <div class="ai27-tablewrap">
+      <table data-source="labor_issues" data-row-key="issue" aria-label="2027 노동·사회경제 이슈">
+        <thead><tr><th data-field="likelihood">가능성</th><th data-field="area">분야</th><th data-field="issue">이슈</th><th data-field="detail">내용</th></tr></thead>
+        <tbody data-draw="labor-rows"></tbody>
+      </table>
+    </div>
+    <div class="ai27-grid2">
+      <div class="ai27-card" id="rural-bi">
+        <h3>농어촌 기본소득 시범사업 예산</h3>
+        <span class="ai27-muted">억 원 · 1인당 월 15만 원(지역사랑상품권) · 2027은 정부안(국회 12월 확정)</span>
+        <div class="ai27-chart" data-draw="rural-cols" data-source="rural_bi"></div>
+      </div>
+      <div class="ai27-card" id="bi-forecast">
+        <h3>2027 기본소득·기본사회 전망</h3>
+        <ul class="ai27-list" data-draw="bi-list" data-source="basic_income_forecast"></ul>
+      </div>
+    </div>
+    <div class="ai27-tablewrap">
+      <table data-source="basic_income" data-row-key="item" aria-label="기본소득·기본사회 현황">
+        <thead><tr><th data-field="item">항목</th><th data-field="status">2026 현황</th><th data-field="budget">예산</th><th data-field="next">2027</th></tr></thead>
+        <tbody data-draw="bi-rows"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <p class="ai27-group" role="heading" aria-level="2">제4부 국가·지정학·기술 통제</p>
+
+  <!-- ============ PART 16 (id part12) ============ -->
+  <!-- ============ PART 12 ============ -->
+  <section class="ai27-part" id="part12">
+    <div class="ai27-parthead">
+      <span class="ai27-partno" aria-hidden="true">16</span>
+      <h2>국가별 AI 정책과 경쟁력</h2>
+      <p class="ai27-muted">경쟁력 점수표는 6개 차원(모델·컴퓨트·인재·자본·제도·도입, 각 0–10)으로 매긴 분석가 판단입니다. 한국은 예산·GPU·모델로 37점에서 40점으로 오를 전망이지만, 인재(5점)와 정부 집행 평가(Oxford 3위에서 8위)가 약점입니다.</p>
+    </div>
+    <div class="ai27-card" id="policy-score">
+      <h3>경쟁력 점수 2026 → 2027 (60점 만점)</h3>
+      <div class="ai27-chart" data-draw="policy-dumb" data-source="policy_scorecard"></div>
+    </div>
+    <div class="ai27-tablewrap">
+      <table data-source="policy_scorecard" data-row-key="country" aria-label="2027 차원별 점수" class="ai27-heat">
+        <thead><tr><th data-field="country">국가</th><th data-field="model_2027">모델</th><th data-field="compute_2027">컴퓨트</th><th data-field="talent_2027">인재</th><th data-field="capital_2027">자본</th><th data-field="regulation_2027">제도</th><th data-field="adoption_2027">도입</th><th data-field="total_2027">합계</th><th data-field="note">비고</th></tr></thead>
+        <tbody data-draw="policy-s-rows"></tbody>
+      </table>
+    </div>
+    <div class="ai27-sub" id="policy-countries"><h3>국가별 정책 현황과 2027 경쟁력 효과</h3></div>
+    <div class="ai27-tablewrap">
+      <table data-source="policy_countries" data-row-key="country" aria-label="국가별 정책">
+        <thead><tr><th data-field="country">국가</th><th data-field="effect">2027 효과</th><th data-field="status">2026 현황</th><th data-field="laws">법·규제</th><th data-field="investment">투자</th><th data-field="rationale">근거</th></tr></thead>
+        <tbody data-draw="policy-c-rows"></tbody>
+      </table>
+    </div>
+    <div class="ai27-sub" id="policy-reg"><h3>규제 접근 비교</h3></div>
+    <div class="ai27-tablewrap">
+      <table data-source="policy_regulation" data-row-key="country" aria-label="규제 비교">
+        <thead><tr><th data-field="country">국가</th><th data-field="approach">접근</th><th data-field="instrument">핵심 수단</th><th data-field="change_2027">2027 변화</th></tr></thead>
+        <tbody data-draw="policy-r-rows"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============ PART 17 (id part10) ============ -->
+  <!-- ============ PART 10 ============ -->
+  <section class="ai27-part" id="part10">
+    <div class="ai27-parthead">
+      <span class="ai27-partno" aria-hidden="true">17</span>
+      <h2>AI 지정학과 외교</h2>
+      <p class="ai27-muted">2027년 1월 10일 미중 휴전 유예가 일괄 만료됩니다. 휴전은 연장되지만 칩·클라우드 통제는 강해지는 '관리된 경쟁'이 기준 시나리오입니다. 미국 주도 Pax Silica와 중국 주도 WAICO로 진영이 나뉘고, 6월 제네바 AI 정상회의와 11월 G20(맨체스터)이 주요 외교 일정입니다.</p>
+    </div>
+    <div class="ai27-card" id="geo-map">
+      <h3>2027 국가 간 협력·제재·경쟁 관계도</h3>
+      <figure class="ai27-figure"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 640" role="img" aria-label="2027년 AI 국가 관계도. 미국은 중국에 칩·모델·클라우드 통제를 걸고 중국은 희토류·미국 칩 수입 거부로 맞선다. 한국은 미국·중국 모두와 협력선과 압력선이 동시에 걸려 있다. 미국 축은 영국·캐나다·일본·대만·호주·인도·걸프, 중국 축은 WAICO 29개국이고, 동남아와 EU는 양쪽 사이에서 이중 참여하거나 디지털 주권을 추구한다." style="max-width:100%;height:auto;font-family:inherit"><defs><marker id="m-bad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" style="fill:var(--color-bad, var(--bad, #b3362f))"/></marker><marker id="m-warn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" style="fill:var(--color-warn, var(--warn, #985a00))"/></marker><marker id="m-ok" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" style="fill:var(--color-ok, var(--ok, #1f7a4a))"/></marker></defs><rect x="14" y="160" width="340" height="430" rx="18" style="fill:none;stroke:var(--color-border-line, var(--line, #dcdfe4));stroke-width:1.5;stroke-dasharray:5 6"/><text x="28.0" y="182.0" text-anchor="start" style="fill:var(--ai27-accent, var(--accent, #3d40d4));font-size:12px;font-weight:700">미국 축 · Pax Silica</text><rect x="700" y="160" width="326" height="430" rx="18" style="fill:none;stroke:var(--color-border-line, var(--line, #dcdfe4));stroke-width:1.5;stroke-dasharray:5 6"/><text x="1012.0" y="182.0" text-anchor="end" style="fill:var(--color-bad, var(--bad, #b3362f));font-size:12px;font-weight:700">중국 축 · AI+ · WAICO</text><path d="M228,268 Q520,20 812,268" marker-end="url(#m-bad)" style="fill:none;stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:2.4;"/><rect x="275.6" y="156.0" width="232.8" height="19" rx="4" style="fill:var(--color-panel, var(--paper, #ffffff))"/><text x="392.0" y="170.0" text-anchor="middle" style="fill:var(--color-bad, var(--bad, #b3362f));font-size:11.5px;font-weight:600">칩·모델·클라우드 통제 · Entity List</text><path d="M804,280 Q520,130 236,280" marker-end="url(#m-bad)" style="fill:none;stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:2.4;"/><rect x="579.8" y="212.0" width="168.4" height="19" rx="4" style="fill:var(--color-panel, var(--paper, #ffffff))"/><text x="664.0" y="226.0" text-anchor="middle" style="fill:var(--color-bad, var(--bad, #b3362f));font-size:11.5px;font-weight:600">희토류 · 미국 칩 수입 거부</text><path d="M240,286 L466,286" marker-end="url(#m-warn)" style="fill:none;stroke:var(--color-warn, var(--warn, #985a00));stroke-width:2.2;stroke-dasharray:7 5;"/><path d="M240,314 L472,314" style="fill:none;stroke:var(--color-ok, var(--ok, #1f7a4a));stroke-width:1.6;"/><rect x="222.8" y="256.0" width="260.4" height="19" rx="4" style="fill:var(--color-panel, var(--paper, #ffffff))"/><text x="353.0" y="270.0" text-anchor="middle" style="fill:var(--color-warn, var(--warn, #985a00));font-size:11.5px;font-weight:600">중국 팹 허가 · 232조 관세 · 클라우드 KYC</text><rect x="250.4" y="326.0" width="205.2" height="19" rx="4" style="fill:var(--color-panel, var(--paper, #ffffff))"/><text x="353.0" y="340.0" text-anchor="middle" style="fill:var(--color-ok, var(--ok, #1f7a4a));font-size:11.5px;font-weight:500">Pax Silica · 3,500억 달러 MOU</text><path d="M800,286 L574,286" marker-end="url(#m-warn)" style="fill:none;stroke:var(--color-warn, var(--warn, #985a00));stroke-width:2.2;stroke-dasharray:7 5;"/><path d="M800,314 L568,314" style="fill:none;stroke:var(--color-ok, var(--ok, #1f7a4a));stroke-width:1.6;"/><rect x="613.1" y="256.0" width="147.7" height="19" rx="4" style="fill:var(--color-panel, var(--paper, #ffffff))"/><text x="687.0" y="270.0" text-anchor="middle" style="fill:var(--color-warn, var(--warn, #985a00));font-size:11.5px;font-weight:600">HBM 판로 차단 · 희토류</text><rect x="617.8" y="326.0" width="138.5" height="19" rx="4" style="fill:var(--color-panel, var(--paper, #ffffff))"/><text x="687.0" y="340.0" text-anchor="middle" style="fill:var(--color-ok, var(--ok, #1f7a4a));font-size:11.5px;font-weight:500">범용 교역 · 휴전 채널</text><path d="M190.0,247.0 L190.0,94.0" style="fill:none;stroke:var(--color-ok, var(--ok, #1f7a4a));stroke-width:1.6;"/><path d="M152.8,337.8 L95.6,396.0" marker-end="url(#m-warn)" style="fill:none;stroke:var(--color-warn, var(--warn, #985a00));stroke-width:2.2;stroke-dasharray:7 5;"/><path d="M171.7,349.7 L108.8,521.0" style="fill:none;stroke:var(--color-ok, var(--ok, #1f7a4a));stroke-width:1.6;"/><path d="M203.6,351.2 L248.6,521.0" style="fill:none;stroke:var(--color-ok, var(--ok, #1f7a4a));stroke-width:1.6;"/><path d="M227.1,337.9 L406.5,521.0" style="fill:none;stroke:var(--color-ok, var(--ok, #1f7a4a));stroke-width:1.6;"/><path d="M236.8,324.9 L604.9,521.0" marker-end="url(#m-bad)" style="fill:none;stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:2.4;"/><path d="M860.6,351.9 L895.1,521.0" style="fill:none;stroke:var(--color-ok, var(--ok, #1f7a4a));stroke-width:1.6;"/><path d="M816,337 L688,521" style="fill:none;stroke:var(--color-ok, var(--ok, #1f7a4a));stroke-width:1.6;"/><path d="M520,247 L520,94" style="fill:none;stroke:var(--color-ok, var(--ok, #1f7a4a));stroke-width:1.6;"/><rect x="451.9" y="226.0" width="136.2" height="19" rx="4" style="fill:var(--color-panel, var(--paper, #ffffff))"/><text x="520.0" y="240.0" text-anchor="middle" style="fill:var(--color-ok, var(--ok, #1f7a4a));font-size:11.5px;font-weight:500">소버린 AI · Mistral</text><path d="M500,346 L452,521" style="fill:none;stroke:var(--color-ok, var(--ok, #1f7a4a));stroke-width:1.6;"/><rect x="431.2" y="410.0" width="69.5" height="19" rx="4" style="fill:var(--color-panel, var(--paper, #ffffff))"/><text x="466.0" y="424.0" text-anchor="middle" style="fill:var(--color-ok, var(--ok, #1f7a4a));font-size:11.5px;font-weight:500">공동 AIDC</text><rect x="473.5" y="478.0" width="173.0" height="19" rx="4" style="fill:var(--color-panel, var(--paper, #ffffff))"/><text x="560.0" y="492.0" text-anchor="middle" style="fill:var(--color-bad, var(--bad, #b3362f));font-size:11.5px;font-weight:600">원격접속 허가제 · 밀수 단속</text><rect x="121.9" y="48" width="136.2" height="44" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-fg, var(--fg, #14161c));stroke-width:1.3"/><text x="190.0" y="67.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13.5px;font-weight:700">영국 · 캐나다</text><text x="190.0" y="84.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">기술 번영 협정 · G7</text><rect x="425.5" y="48" width="189.0" height="44" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-fg, var(--fg, #14161c));stroke-width:1.3"/><text x="520.0" y="67.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13.5px;font-weight:700">EU(프랑스·독일)</text><text x="520.0" y="84.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">디지털 주권 · ASML 장비 정렬</text><rect x="20.4" y="398" width="103.2" height="44" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-fg, var(--fg, #14161c));stroke-width:1.3"/><text x="72.0" y="417.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13.5px;font-weight:700">일본</text><text x="72.0" y="434.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">장비 통제 정렬</text><rect x="35.2" y="523" width="129.6" height="44" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-fg, var(--fg, #14161c));stroke-width:1.3"/><text x="100.0" y="542.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13.5px;font-weight:700">대만</text><text x="100.0" y="559.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">TSMC · 232조 쿼터</text><rect x="179.2" y="523" width="151.6" height="44" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-fg, var(--fg, #14161c));stroke-width:1.3"/><text x="255.0" y="542.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13.5px;font-weight:700">호주 · 인도</text><text x="255.0" y="559.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">핵심광물 · AI 파트너십</text><rect x="356.4" y="523" width="147.2" height="44" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-fg, var(--fg, #14161c));stroke-width:1.3"/><text x="430.0" y="542.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13.5px;font-weight:700">UAE · 사우디</text><text x="430.0" y="559.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">Stargate · 조건부 칩</text><rect x="564.3" y="523" width="171.4" height="44" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-fg, var(--fg, #14161c));stroke-width:1.3"/><text x="650.0" y="542.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13.5px;font-weight:700">싱가포르 · 동남아</text><text x="650.0" y="559.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">Pax Silica + WAICO 이중</text><rect x="814.3" y="523" width="171.4" height="44" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-fg, var(--fg, #14161c));stroke-width:1.3"/><text x="900.0" y="542.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13.5px;font-weight:700">WAICO 29개국</text><text x="900.0" y="559.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">글로벌 사우스 · 오픈웨이트</text><circle cx="190" cy="300" r="50" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--ai27-accent, var(--accent, #3d40d4));stroke-width:3"/><text x="190.0" y="302.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:18px;font-weight:700">미국</text><text x="190.0" y="319.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:10.5px;font-weight:400">통제 강화</text><circle cx="850" cy="300" r="50" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:3"/><text x="850.0" y="302.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:18px;font-weight:700">중국</text><text x="850.0" y="319.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:10.5px;font-weight:400">국산화 · 보복</text><circle cx="520" cy="300" r="46" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-warn, var(--warn, #985a00));stroke-width:3"/><text x="520.0" y="302.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:18px;font-weight:700">한국</text><text x="520.0" y="319.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:10.5px;font-weight:400">동맹 기반 헤징</text><line x1="330" y1="618" x2="364" y2="618" style="stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:2.4;"/><text x="372.0" y="622.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:400">통제·제재</text><line x1="480" y1="618" x2="514" y2="618" style="stroke:var(--color-warn, var(--warn, #985a00));stroke-width:2.2;stroke-dasharray:7 5;"/><text x="522.0" y="622.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:400">압력·정렬 요구</text><line x1="630" y1="618" x2="664" y2="618" style="stroke:var(--color-ok, var(--ok, #1f7a4a));stroke-width:1.6;"/><text x="672.0" y="622.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:400">협력</text></svg><figcaption>미국 축(Pax Silica)과 중국 축(AI+·WAICO) 사이에서 한국은 양쪽과 협력선(초록)과 압력선(주황 점선)이 동시에 걸린 위치입니다. 동남아는 이중 참여 지역이지만 미국 원격접속 규칙의 허가 대상이 되었습니다.</figcaption></figure>
+    </div>
+    <div class="ai27-card" id="geo-kr-pressure">
+      <h3>미국 수출통제 강화 → 한국의 글로벌 AI 협력 부담</h3>
+      <p class="ai27-muted">미국의 대중국 통제가 칩에서 클라우드(원격접속)·모델로 넓어지면서, 중국만이 아니라 제3국 데이터센터·동맹국 장비·모델 접근에 조건이 붙습니다. 2027년 볼 일정은 01-10 미중 휴전 유예 만료, 01-19 원격접속 규칙 의견수렴 마감, 2월 중순 기존 데이터센터 유예 종료, 12월 중국 팹 장비 허가입니다.</p>
+      <figure class="ai27-figure"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 450" role="img" aria-label="미국의 대중국 수출통제 강화가 한국으로 전달되는 경로. 원격접속 규칙은 한국 클라우드의 고객 확인 부담이 되어 동남아·걸프 데이터센터 협력을 조건부로 만들고, 연간 장비 허가와 동맹 장비 정렬 요구는 중국 팹과 중국 매출을 압박해 중국 보복 위험을 키운다. 모델 통제는 소버린 AI 다변화 수요를, 232조 관세는 3,500억 달러 MOU를 지렛대로 한 협상을 부른다." style="max-width:100%;height:auto;font-family:inherit"><defs><marker id="m-bad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" style="fill:var(--color-bad, var(--bad, #b3362f))"/></marker><marker id="m-warn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" style="fill:var(--color-warn, var(--warn, #985a00))"/></marker><marker id="m-ok" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" style="fill:var(--color-ok, var(--ok, #1f7a4a))"/></marker></defs><text x="144.0" y="36.0" text-anchor="middle" style="fill:var(--color-bad, var(--bad, #b3362f));font-size:14px;font-weight:700">미국 조치 (2026 말 – 2027)</text><text x="490.0" y="36.0" text-anchor="middle" style="fill:var(--color-warn, var(--warn, #985a00));font-size:14px;font-weight:700">한국에 걸리는 부담</text><text x="896.0" y="36.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:14px;font-weight:700">흔들리는 협력 축</text><path d="M272,90.0 L358,90.0" marker-end="url(#m-bad)" style="fill:none;stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:2.4;"/><path d="M272,164.0 L358,164.0" marker-end="url(#m-bad)" style="fill:none;stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:2.4;"/><path d="M272,238.0 L358,238.0" marker-end="url(#m-bad)" style="fill:none;stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:2.4;"/><path d="M272,312.0 L358,312.0" marker-end="url(#m-bad)" style="fill:none;stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:2.4;"/><path d="M272,386.0 L358,386.0" marker-end="url(#m-bad)" style="fill:none;stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:2.4;"/><path d="M618,90.0 C698,90.0 684,90.0 764,90.0" marker-end="url(#m-warn)" style="fill:none;stroke:var(--color-warn, var(--warn, #985a00));stroke-width:2.2;stroke-dasharray:7 5;"/><rect x="659.7" y="80.0" width="62.6" height="19" rx="4" style="fill:var(--color-panel, var(--paper, #ffffff))"/><text x="691.0" y="94.0" text-anchor="middle" style="fill:var(--color-warn, var(--warn, #985a00));font-size:11px;font-weight:600">투자 위축</text><path d="M618,90.0 C698,90.0 684,164.0 764,164.0" marker-end="url(#m-warn)" style="fill:none;stroke:var(--color-warn, var(--warn, #985a00));stroke-width:2.2;stroke-dasharray:7 5;"/><path d="M618,164.0 C698,164.0 684,238.0 764,238.0" marker-end="url(#m-warn)" style="fill:none;stroke:var(--color-warn, var(--warn, #985a00));stroke-width:2.2;stroke-dasharray:7 5;"/><path d="M618,238.0 C698,238.0 684,238.0 764,238.0" marker-end="url(#m-warn)" style="fill:none;stroke:var(--color-warn, var(--warn, #985a00));stroke-width:2.2;stroke-dasharray:7 5;"/><rect x="645.4" y="228.0" width="91.2" height="19" rx="4" style="fill:var(--color-panel, var(--paper, #ffffff))"/><text x="691.0" y="242.0" text-anchor="middle" style="fill:var(--color-warn, var(--warn, #985a00));font-size:11px;font-weight:600">보복·매출 감소</text><path d="M618,312.0 C698,312.0 684,312.0 764,312.0" marker-end="url(#m-ok)" style="fill:none;stroke:var(--color-ok, var(--ok, #1f7a4a));stroke-width:1.6;"/><rect x="659.7" y="302.0" width="62.6" height="19" rx="4" style="fill:var(--color-panel, var(--paper, #ffffff))"/><text x="691.0" y="316.0" text-anchor="middle" style="fill:var(--color-ok, var(--ok, #1f7a4a));font-size:11px;font-weight:600">대안 수요</text><path d="M618,386.0 C698,386.0 684,386.0 764,386.0" marker-end="url(#m-ok)" style="fill:none;stroke:var(--color-ok, var(--ok, #1f7a4a));stroke-width:1.6;"/><rect x="659.7" y="376.0" width="62.6" height="19" rx="4" style="fill:var(--color-panel, var(--paper, #ffffff))"/><text x="691.0" y="390.0" text-anchor="middle" style="fill:var(--color-ok, var(--ok, #1f7a4a));font-size:11px;font-weight:600">협상 연계</text><rect x="16" y="64" width="256" height="52" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:1.4"/><text x="144.0" y="85.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13px;font-weight:700">원격접속(클라우드) 규칙</text><text x="144.0" y="103.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">2026-11-19 시행 · 유예 2027-02 종료</text><rect x="16" y="138" width="256" height="52" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:1.4"/><text x="144.0" y="159.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13px;font-weight:700">VEU 폐지 → 연간 장비 허가</text><text x="144.0" y="177.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">2027분 허가 12월 결정</text><rect x="16" y="212" width="256" height="52" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:1.4"/><text x="144.0" y="233.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13px;font-weight:700">의회 입법(NDAA)</text><text x="144.0" y="251.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">Chip Security · MATCH Act</text><rect x="16" y="286" width="256" height="52" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:1.4"/><text x="144.0" y="307.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13px;font-weight:700">프런티어 모델 임시 통제</text><text x="144.0" y="325.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">Mythos 5 · 18일 접근 제한</text><rect x="16" y="360" width="256" height="52" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:1.4"/><text x="144.0" y="381.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13px;font-weight:700">232조 반도체 관세 2단계</text><text x="144.0" y="399.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">대만은 쿼터·15% 상한 확보</text><rect x="362" y="64" width="256" height="52" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-warn, var(--warn, #985a00));stroke-width:1.4"/><text x="490.0" y="85.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13px;font-weight:700">클라우드 · 국가 AI컴퓨트센터 KYC</text><text x="490.0" y="103.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">중국 본사 고객 확인 · 월간 보고</text><rect x="362" y="138" width="256" height="52" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-warn, var(--warn, #985a00));stroke-width:1.4"/><text x="490.0" y="159.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13px;font-weight:700">삼성 · SK하이닉스 중국 팹</text><text x="490.0" y="177.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">장비 반입 · 증설 제한</text><rect x="362" y="212" width="256" height="52" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-warn, var(--warn, #985a00));stroke-width:1.4"/><text x="490.0" y="233.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13px;font-weight:700">장비 · 부품 중국 서비스</text><text x="490.0" y="251.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">동맹 정렬 압력</text><rect x="362" y="286" width="256" height="52" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-warn, var(--warn, #985a00));stroke-width:1.4"/><text x="490.0" y="307.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13px;font-weight:700">최신 프런티어 모델 접근</text><text x="490.0" y="325.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">지연 · 조건부 제공</text><rect x="362" y="360" width="256" height="52" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-warn, var(--warn, #985a00));stroke-width:1.4"/><text x="490.0" y="381.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13px;font-weight:700">대미 반도체 수출</text><text x="490.0" y="399.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">'불리하지 않은 대우' 내용이 관건</text><rect x="768" y="64" width="256" height="52" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:1.4"/><text x="896.0" y="85.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13px;font-weight:700">동남아 AIDC 협력</text><text x="896.0" y="103.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">싱가포르·말레이시아 허가제</text><rect x="768" y="138" width="256" height="52" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-warn, var(--warn, #985a00));stroke-width:1.4"/><text x="896.0" y="159.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13px;font-weight:700">UAE · 사우디 공동 AIDC</text><text x="896.0" y="177.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">미국 칩 재수출 조건</text><rect x="768" y="212" width="256" height="52" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:1.4"/><text x="896.0" y="233.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13px;font-weight:700">중국 시장 · 소재</text><text x="896.0" y="251.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">희토류 보복 · 중국산 메모리 공세</text><rect x="768" y="286" width="256" height="52" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-ok, var(--ok, #1f7a4a));stroke-width:1.4"/><text x="896.0" y="307.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13px;font-weight:700">소버린 AI 파트너 다변화</text><text x="896.0" y="325.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">EU·Mistral · 독자 모델 정당성↑</text><rect x="768" y="360" width="256" height="52" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-ok, var(--ok, #1f7a4a));stroke-width:1.4"/><text x="896.0" y="381.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13px;font-weight:700">한미 3,500억 달러 MOU</text><text x="896.0" y="399.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">관세 협상 지렛대</text><line x1="300" y1="430" x2="334" y2="430" style="stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:2.4;"/><text x="342.0" y="434.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:400">통제 전달</text><line x1="450" y1="430" x2="484" y2="430" style="stroke:var(--color-warn, var(--warn, #985a00));stroke-width:2.2;stroke-dasharray:7 5;"/><text x="492.0" y="434.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:400">협력 위축·위험</text><line x1="600" y1="430" x2="634" y2="430" style="stroke:var(--color-ok, var(--ok, #1f7a4a));stroke-width:1.6;"/><text x="642.0" y="434.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:400">대응·대안</text></svg><figcaption>클라우드 규칙 하나가 동남아·걸프 협력을 동시에 조건부로 만들고, 장비 허가와 장비 정렬 요구는 중국 쪽 위험으로 모입니다. 모델 통제와 관세는 소버린 AI 다변화와 MOU 협상이라는 대응을 부릅니다.</figcaption></figure>
+    </div>
+    <div class="ai27-sub" id="dip"><h3>2027 AI 외교: 양자 트랙</h3><p class="ai27-muted">'양자 거래 + 다자 최소합의'의 이중 트랙입니다. 칩 허가·관세·투자 같은 실질 이해는 양자 협상에서 정해집니다. 상태는 확정·예상·추정으로 구분했습니다.</p></div>
+    <div class="ai27-tablewrap">
+      <table data-source="dip_bilateral" data-row-key="pair" aria-label="AI 외교 양자 트랙">
+        <thead><tr><th data-field="pair">양자</th><th data-field="likelihood">가능성</th><th data-field="agenda">2027 의제</th><th data-field="events">계기·일정</th><th data-field="implication">한국 관점</th><th data-field="status">상태</th></tr></thead>
+        <tbody data-draw="dip-bi-rows"></tbody>
+      </table>
+    </div>
+    <div class="ai27-sub" id="dip-multi"><h3>2027 AI 외교: 다자 트랙</h3></div>
+    <div class="ai27-tablewrap">
+      <table data-source="dip_multilateral" data-row-key="forum" aria-label="AI 외교 다자 트랙">
+        <thead><tr><th data-field="forum">무대</th><th data-field="when">일정</th><th data-field="agenda">의제</th><th data-field="outcome">예상 결과</th><th data-field="likelihood">가능성</th><th data-field="korea_role">한국 역할</th></tr></thead>
+        <tbody data-draw="dip-multi-rows"></tbody>
+      </table>
+    </div>
+    <div class="ai27-grid2">
+      <div class="ai27-card" id="dip-cal">
+        <h3>2027 AI 외교 캘린더</h3>
+        <ul class="ai27-list" data-draw="dip-cal-list" data-source="dip_calendar"></ul>
+      </div>
+      <div class="ai27-card" id="dip-fc">
+        <h3>2027 AI 외교 전망</h3>
+        <ul class="ai27-list" data-draw="dip-fc-list" data-source="dip_forecast"></ul>
+      </div>
+    </div>
+    <div class="ai27-card" id="acc-layers">
+      <h3>모델 접속·사용 제한의 네 층과 한국</h3>
+      <figure class="ai27-figure"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 470" role="img" aria-label="AI 모델 접속·사용 제한의 네 층. 미국 쪽은 사업자 약관(중국계 소유 기업 차단), 증류 차단과 신뢰 파트너 우선 공개, 정부의 모델 API 수출통제와 원격접속 KYC, 자국 정부의 DeepSeek 퇴출로 이뤄진다. 중국 쪽은 바이두의 한국 제외 라이선스, 최첨단 모델 해외 접근 제한 논의, AI 기술 수출 사전등록, CAC 허가제로 이뤄진다. 앞의 세 층이 한국 이용자에게 직접 닿는다." style="max-width:100%;height:auto;font-family:inherit"><defs><marker id="acc-arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" style="fill:var(--color-bad, var(--bad, #b3362f))"/></marker></defs><text x="185.0" y="30.0" text-anchor="middle" style="fill:var(--ai27-accent, var(--accent, #3d40d4));font-size:14px;font-weight:700">미국 쪽</text><text x="855.0" y="30.0" text-anchor="middle" style="fill:var(--color-warn, var(--warn, #985a00));font-size:14px;font-weight:700">중국 쪽</text><rect x="20" y="54" width="330" height="74" rx="6" style="fill:var(--ai27-accent, var(--accent, #3d40d4));fill-opacity:0.08;stroke:var(--ai27-accent, var(--accent, #3d40d4));stroke-width:1.3"/><text x="32.0" y="74.0" text-anchor="start" style="fill:var(--ai27-accent, var(--accent, #3d40d4));font-size:12px;font-weight:700">① 라이선스·약관</text><text x="32.0" y="94.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:400">OpenAI 미지원국 차단(2024)</text><text x="32.0" y="112.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:400">Anthropic 중국계 50% 소유 기업 차단(2025)</text><rect x="690" y="54" width="330" height="74" rx="6" style="fill:var(--color-warn, var(--warn, #985a00));fill-opacity:0.08;stroke:var(--color-warn, var(--warn, #985a00));stroke-width:1.3"/><text x="702.0" y="74.0" text-anchor="start" style="fill:var(--color-warn, var(--warn, #985a00));font-size:12px;font-weight:700">① 라이선스·약관</text><text x="702.0" y="94.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:400">바이두 ERNIE 5.5 Base</text><text x="702.0" y="112.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:400">'EU·영국·한국 제외' 라이선스(2026-11)</text><line x1="350" y1="91.0" x2="416" y2="91.0" style="stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:1.8" marker-end="url(#acc-arr)"/><line x1="690" y1="91.0" x2="624" y2="91.0" style="stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:1.8" marker-end="url(#acc-arr)"/><rect x="20" y="146" width="330" height="74" rx="6" style="fill:var(--ai27-accent, var(--accent, #3d40d4));fill-opacity:0.08;stroke:var(--ai27-accent, var(--accent, #3d40d4));stroke-width:1.3"/><text x="32.0" y="166.0" text-anchor="start" style="fill:var(--ai27-accent, var(--accent, #3d40d4));font-size:12px;font-weight:700">② 사업자 접근 정책</text><text x="32.0" y="186.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:400">증류 차단: 위장 계정 2.4만 개 적발(2026-02)</text><text x="32.0" y="204.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:400">신뢰 파트너 우선 공개(OpenAI·Anthropic)</text><rect x="690" y="146" width="330" height="74" rx="6" style="fill:var(--color-warn, var(--warn, #985a00));fill-opacity:0.08;stroke:var(--color-warn, var(--warn, #985a00));stroke-width:1.3"/><text x="702.0" y="166.0" text-anchor="start" style="fill:var(--color-warn, var(--warn, #985a00));font-size:12px;font-weight:700">② 사업자 접근 정책</text><text x="702.0" y="186.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:400">상무부–알리바바·바이트댄스</text><text x="702.0" y="204.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:400">최첨단 모델 해외 접근 제한 논의(2026-07)</text><line x1="350" y1="183.0" x2="416" y2="183.0" style="stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:1.8" marker-end="url(#acc-arr)"/><line x1="690" y1="183.0" x2="624" y2="183.0" style="stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:1.8" marker-end="url(#acc-arr)"/><rect x="20" y="238" width="330" height="74" rx="6" style="fill:var(--ai27-accent, var(--accent, #3d40d4));fill-opacity:0.08;stroke:var(--ai27-accent, var(--accent, #3d40d4));stroke-width:1.3"/><text x="32.0" y="258.0" text-anchor="start" style="fill:var(--ai27-accent, var(--accent, #3d40d4));font-size:12px;font-weight:700">③ 정부 수출통제</text><text x="32.0" y="278.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:400">Mythos 5·Fable 5 API를 '수출'로 통제(2026-06)</text><text x="32.0" y="296.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:400">BIS 원격접속 규칙·KYC(2026-11)</text><rect x="690" y="238" width="330" height="74" rx="6" style="fill:var(--color-warn, var(--warn, #985a00));fill-opacity:0.08;stroke:var(--color-warn, var(--warn, #985a00));stroke-width:1.3"/><text x="702.0" y="258.0" text-anchor="start" style="fill:var(--color-warn, var(--warn, #985a00));font-size:12px;font-weight:700">③ 정부 수출통제</text><text x="702.0" y="278.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:400">공고 48호: AI 기술 23개 항목</text><text x="702.0" y="296.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:400">수출 전 등록(2026-10, API·SaaS 제외)</text><line x1="350" y1="275.0" x2="416" y2="275.0" style="stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:1.8" marker-end="url(#acc-arr)"/><line x1="690" y1="275.0" x2="624" y2="275.0" style="stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:1.8" marker-end="url(#acc-arr)"/><rect x="20" y="330" width="330" height="74" rx="6" style="fill:var(--ai27-accent, var(--accent, #3d40d4));fill-opacity:0.08;stroke:var(--ai27-accent, var(--accent, #3d40d4));stroke-width:1.3"/><text x="32.0" y="350.0" text-anchor="start" style="fill:var(--ai27-accent, var(--accent, #3d40d4));font-size:12px;font-weight:700">④ 자국 시장 차단</text><text x="32.0" y="370.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:400">DHS 연방기관 DeepSeek 퇴출(2026-10)</text><text x="32.0" y="388.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:400">주정부 기기 금지 확산</text><rect x="690" y="330" width="330" height="74" rx="6" style="fill:var(--color-warn, var(--warn, #985a00));fill-opacity:0.08;stroke:var(--color-warn, var(--warn, #985a00));stroke-width:1.3"/><text x="702.0" y="350.0" text-anchor="start" style="fill:var(--color-warn, var(--warn, #985a00));font-size:12px;font-weight:700">④ 자국 시장 차단</text><text x="702.0" y="370.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:400">CAC 생성형 AI 비안 1,112개</text><text x="702.0" y="388.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:400">미국 모델은 미등록·미지원</text><rect x="420" y="54" width="200" height="258" rx="8" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:2"/><text x="520.0" y="139.0" text-anchor="middle" style="fill:var(--color-bad, var(--bad, #b3362f));font-size:15px;font-weight:700">한국 이용자·기업</text><text x="520.0" y="171.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12.5px;font-weight:400">모델 선택지 축소(양쪽 동시)</text><text x="520.0" y="195.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12.5px;font-weight:400">원격접속·소유 기준 증빙 부담</text><text x="520.0" y="219.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12.5px;font-weight:400">오픈웨이트도 라이선스로 차단</text><text x="520.0" y="371.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:12px;font-weight:600">④는 각자 자국 시장을 닫는 층</text></svg><figcaption class="ai27-muted">미국은 모델 API 접속을 '수출'로 통제하기 시작했고(Mythos 5·Fable 5), 중국 바이두는 오픈웨이트 라이선스에서 한국·EU·영국을 뺐습니다. ①–③층이 한국 이용자·기업에 직접 닿습니다.</figcaption></figure>
+    </div>
+    <div class="ai27-sub" id="acc-items"><h3>사업자·국가의 모델 접속·사용 제한 사례</h3></div>
+    <div class="ai27-tablewrap">
+      <table data-source="acc_items" data-row-key="measure" aria-label="모델 접속 사용 제한 사례">
+        <thead><tr><th data-field="side">구분</th><th data-field="date">시점</th><th data-field="actor">주체</th><th data-field="type">유형</th><th data-field="measure">조치</th></tr></thead>
+        <tbody data-draw="acc-item-rows"></tbody>
+      </table>
+    </div>
+    <div class="ai27-sub" id="acc-fc"><h3>2027 모델 접속·사용 제한 전망</h3></div>
+    <div class="ai27-tablewrap">
+      <table data-source="acc_forecast" data-row-key="text" aria-label="2027 모델 접속 제한 전망">
+        <thead><tr><th data-field="likelihood">가능성</th><th data-field="area">영역</th><th data-field="text">전망</th></tr></thead>
+        <tbody data-draw="acc-fc-rows"></tbody>
+      </table>
+    </div>
+    <div class="ai27-card" id="geo-scen">
+      <h3>2027 미중·국제 질서 시나리오</h3>
+      <div class="ai27-chart" data-draw="geo-scen-strip" data-source="geo_scenarios" style="min-height:40px"></div>
+      <div class="ai27-grid3" data-draw="geo-scen-cards" data-source="geo_scenarios"></div>
+    </div>
+    <div class="ai27-sub" id="geo-events"><h3>2027 외교·규제 일정</h3><p class="ai27-muted">확정은 날짜·장소가 공식 발표된 일정, 예상은 관례나 보도에 따른 추정입니다.</p></div>
+    <div class="ai27-tablewrap">
+      <table data-source="geo_events" data-row-key="event" aria-label="2027 외교 일정">
+        <thead><tr><th data-field="date">시점</th><th data-field="status">상태</th><th data-field="event">이벤트</th><th data-field="location">장소</th><th data-field="relevance">의미</th></tr></thead>
+        <tbody data-draw="geo-ev-rows"></tbody>
+      </table>
+    </div>
+    <div class="ai27-sub" id="geo-countries"><h3>국가별 2027 입장</h3></div>
+    <div class="ai27-tablewrap">
+      <table data-source="geo_countries" data-row-key="country" aria-label="국가별 입장">
+        <thead><tr><th data-field="country">국가</th><th data-field="stance">입장</th><th data-field="cooperation">협력</th><th data-field="competition">경쟁</th><th data-field="exposure">제재 노출</th><th data-field="moves">2027 행보</th></tr></thead>
+        <tbody data-draw="geo-c-rows"></tbody>
+      </table>
+    </div>
+    <div class="ai27-sub" id="geo-sanctions"><h3>2027 제재·제한 전망</h3></div>
+    <div class="ai27-tablewrap">
+      <table data-source="geo_sanctions" data-row-key="measure" aria-label="2027 제재 전망">
+        <thead><tr><th data-field="likelihood">가능성</th><th data-field="measure">조치</th><th data-field="actor">주체 → 대상</th><th data-field="impact">영향</th></tr></thead>
+        <tbody data-draw="geo-s-rows"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <p class="ai27-group" role="heading" aria-level="2">제5부 위험·안전</p>
+
+  <!-- ============ PART 18 (id part4) ============ -->
   <!-- ============ PART 4 ============ -->
   <section class="ai27-part" id="part4">
     <div class="ai27-parthead">
-      <span class="ai27-partno" aria-hidden="true">04</span>
+      <span class="ai27-partno" aria-hidden="true">18</span>
       <h2>위험·위협·안전</h2>
       <p class="ai27-muted">재귀적 자기개선(RSI) 지표, 2025–2026 AI 안전·사이버 사고, 그리고 2027 위험 전망입니다. 공격 기법은 다루지 않고 동향과 영향만 정리했습니다.</p>
     </div>
@@ -634,481 +1287,54 @@
     </div>
   </section>
 
-  <!-- ============ PART 5 ============ -->
-  <section class="ai27-part" id="part5">
+  <!-- ============ PART 19 (id part20) ============ -->
+  <!-- ============ PART 20 ============ -->
+  <section class="ai27-part" id="part20">
     <div class="ai27-parthead">
-      <span class="ai27-partno" aria-hidden="true">05</span>
-      <h2>지식·창작 생태계와 AI 의존</h2>
-      <p class="ai27-muted">논문·특허·저작권과 음악·영상·웹에서 AI 생성물이 빠르게 늘고 있습니다. 2027년에는 '누가 만들었나'보다 출처·검증·보상이 쟁점이 됩니다. 분야별 전망은 위 표에서 '논문·특허·지재권', '창작·AI 의존'을 고르세요.</p>
+      <span class="ai27-partno" aria-hidden="true">19</span>
+      <h2>AI 오용·악용·오정렬과 안전</h2>
+      <p class="ai27-muted">2027년 오용의 주류는 새 위협이 아니라 기존 범죄·공격의 증폭입니다. 생물·화학 'High'가 신모델의 기본 등급이 되고, 가드레일을 제거한 오픈웨이트 모델이 6개월 시차로 뒤따릅니다. 가장 큰 구조적 문제는 모델의 평가 인식률(40–50% 이상) 때문에 안전 평가 자체를 믿기 어려워진 점입니다.</p>
     </div>
-    <div class="ai27-grid2">
-      <div class="ai27-card" id="ai-music">
-        <h3>Deezer 업로드 중 완전 AI 곡 비중</h3>
-        <span class="ai27-muted">% · 재생 비중은 1–3%에 그침</span>
-        <div class="ai27-chart" data-draw="music-cols" data-source="ai_music"></div>
-      </div>
-      <div class="ai27-card" id="knowledge-notes">
-        <h3>2026년 지식 생산의 변화</h3>
-        <ul class="ai27-list">
-          <li><b>논문</b><span class="ai27-muted">ICLR 2026 심사평의 약 21%가 완전 AI 생성으로 추정되고, 2027 투고는 4만 건을 넘었습니다. 학회는 저자당 투고 상한을 도입했습니다.</span></li>
-          <li><b>특허</b><span class="ai27-muted">세계 출원 390만 건 중 중국이 48.8%입니다. USPTO는 자연인만 발명자로 인정한다는 원칙을 재확인했습니다.</span></li>
-          <li><b>저작권</b><span class="ai27-muted">Anthropic의 15억 달러 도서 합의가 확정됐고, 음반사는 Suno·Udio와 라이선스로 돌아섰습니다. 미국 소송은 169건입니다.</span></li>
-          <li><b>웹과 의존</b><span class="ai27-muted">새 영어 웹 기사의 약 절반이 AI 작성이고, AI 요약이 뜨면 검색 클릭률이 15%에서 8%로 떨어집니다.</span></li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  <!-- ============ PART 6 ============ -->
-  <section class="ai27-part" id="part6">
-    <div class="ai27-parthead">
-      <span class="ai27-partno" aria-hidden="true">06</span>
-      <h2>특화 파운데이션 모델</h2>
-      <p class="ai27-muted">기상은 이미 현업 운영 단계이고, 바이오·의료·로봇은 임상·상품화 문턱에 있습니다. 과학 분야에서는 작은 특화 모델이 큰 범용 모델을 이기는 사례가 반복됐지만, 법률·금융·보안에서는 범용 모델 위의 워크플로와 데이터가 가치를 만듭니다.</p>
-    </div>
-    <div class="ai27-grid2">
-      <div class="ai27-card" id="fm-maturity">
-        <h3>분야별 성숙도 (2026)</h3>
-        <p class="ai27-muted">1 연구 → 5 현업 운영. 보고서 분석에 따른 판단입니다.</p>
-        <div class="ai27-chart" data-draw="fm-bars" data-source="fm_domains"></div>
-      </div>
-      <div class="ai27-card" id="fm-korea">
-        <h3>한국·ETRI 기회</h3>
-        <ul class="ai27-list">
-          <li><b>통신망 에이전트 레퍼런스</b><span class="ai27-muted">GSMA 결론은 범용 + 통신 특화 소형 모델의 하이브리드입니다. 3GPP 6G 작업항목 승인(2027-03)에 맞춰 AI-RAN과 경량 통신 FM을 결합합니다.</span></li>
-          <li><b>피지컬 AI 데이터·평가 표준</b><span class="ai27-muted">2027 예산안에 피지컬 AI 트레이닝센터 400억, 핵심기술 550억, 물류 실증 260억 원이 신규 편성됐습니다. 한국어 지시와 현장 데이터 표준, VLA 안전성 인증을 먼저 만듭니다.</span></li>
-          <li><b>과소평가 영역</b><span class="ai27-muted">시계열 FM(전력·반도체 수요)과 소재용 범용 원자간 포텐셜은 국내 공개 성과가 비어 있습니다.</span></li>
-          <li><b>한국판 Genesis Mission</b><span class="ai27-muted">출연연, 국가 GPU, 프런티어 모델을 결합한 국가 AI4S 플랫폼을 만듭니다.</span></li>
-        </ul>
-      </div>
+    <div class="ai27-card" id="mis-map">
+      <h3>2027 위험 지도</h3>
+      <figure class="ai27-figure"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 520" role="img" aria-label="2027 AI 오용·공격·오정렬 위험 지도. 발생 가능성과 피해가 모두 큰 영역에 AI 오케스트레이션 사이버 공격, 프롬프트 주입·에이전트 탈취, 테러 계획 지원이 있다. 딥페이크·사기·시험 부정은 자주 일어나지만 피해가 상대적으로 작고, CBRN 역량 상향·가중치 탈취·에이전트 자기 복제는 드물지만 치명적이다." style="max-width:100%;height:auto;font-family:inherit"><rect x="80" y="44" width="560" height="406" style="fill:none;stroke:var(--color-border-line, var(--line, #dcdfe4));stroke-width:1.2"/><line x1="360.0" y1="44" x2="360.0" y2="450" style="stroke:var(--color-border-line, var(--line, #dcdfe4));stroke-dasharray:4 4"/><line x1="80" y1="247.0" x2="640" y2="247.0" style="stroke:var(--color-border-line, var(--line, #dcdfe4));stroke-dasharray:4 4"/><text x="360.0" y="484.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:12.5px;font-weight:600">2027년 눈에 띄는 발생 가능성 →</text><text x="34.0" y="247.0" text-anchor="middle" transform="rotate(-90 34 247.0)" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:12.5px;font-weight:600">피해 규모 →</text><text x="80.0" y="34.0" text-anchor="start" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11.5px;font-weight:600">드물지만 치명적: 사전 차단</text><text x="640.0" y="34.0" text-anchor="end" style="fill:var(--color-bad, var(--bad, #b3362f));font-size:11.5px;font-weight:700">자주·크게: 최우선 대응</text><text x="634.0" y="440.0" text-anchor="end" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11.5px;font-weight:600">자주·작게: 제도·탐지</text><text x="86.0" y="440.0" text-anchor="start" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11.5px;font-weight:600">드물고 작음</text><text x="80.0" y="466.0" text-anchor="start" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">낮음</text><text x="640.0" y="466.0" text-anchor="end" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">높음</text><circle cx="600.8" cy="238.9" r="13" style="fill:var(--ai27-accent, var(--accent, #3d40d4));fill-opacity:0.9;stroke:var(--color-panel, var(--paper, #ffffff));stroke-width:2"/><text x="600.8" y="243.4" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:12px;font-weight:700">1</text><circle cx="561.6" cy="279.5" r="13" style="fill:var(--ai27-accent, var(--accent, #3d40d4));fill-opacity:0.9;stroke:var(--color-panel, var(--paper, #ffffff));stroke-width:2"/><text x="561.6" y="284.0" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:12px;font-weight:700">2</text><circle cx="612.0" cy="385.0" r="13" style="fill:var(--ai27-accent, var(--accent, #3d40d4));fill-opacity:0.9;stroke:var(--color-panel, var(--paper, #ffffff));stroke-width:2"/><text x="612.0" y="389.5" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:12px;font-weight:700">3</text><circle cx="550.4" cy="182.0" r="13" style="fill:var(--color-bad, var(--bad, #b3362f));fill-opacity:0.9;stroke:var(--color-panel, var(--paper, #ffffff));stroke-width:2"/><text x="550.4" y="186.5" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:12px;font-weight:700">4</text><circle cx="505.6" cy="125.2" r="13" style="fill:var(--color-bad, var(--bad, #b3362f));fill-opacity:0.9;stroke:var(--color-panel, var(--paper, #ffffff));stroke-width:2"/><text x="505.6" y="129.7" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:12px;font-weight:700">5</text><circle cx="460.8" cy="247.0" r="13" style="fill:var(--ai27-accent, var(--accent, #3d40d4));fill-opacity:0.9;stroke:var(--color-panel, var(--paper, #ffffff));stroke-width:2"/><text x="460.8" y="251.5" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:12px;font-weight:700">6</text><circle cx="416.0" cy="157.7" r="13" style="fill:var(--ai27-accent, var(--accent, #3d40d4));fill-opacity:0.9;stroke:var(--color-panel, var(--paper, #ffffff));stroke-width:2"/><text x="416.0" y="162.2" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:12px;font-weight:700">7</text><circle cx="371.2" cy="214.5" r="13" style="fill:var(--color-warn, var(--warn, #985a00));fill-opacity:0.9;stroke:var(--color-panel, var(--paper, #ffffff));stroke-width:2"/><text x="371.2" y="219.0" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:12px;font-weight:700">8</text><circle cx="203.2" cy="64.3" r="13" style="fill:var(--ai27-accent, var(--accent, #3d40d4));fill-opacity:0.9;stroke:var(--color-panel, var(--paper, #ffffff));stroke-width:2"/><text x="203.2" y="68.8" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:12px;font-weight:700">9</text><circle cx="158.4" cy="109.0" r="13" style="fill:var(--color-bad, var(--bad, #b3362f));fill-opacity:0.9;stroke:var(--color-panel, var(--paper, #ffffff));stroke-width:2"/><text x="158.4" y="113.5" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:12px;font-weight:700">10</text><circle cx="130.4" cy="173.9" r="13" style="fill:var(--color-warn, var(--warn, #985a00));fill-opacity:0.9;stroke:var(--color-panel, var(--paper, #ffffff));stroke-width:2"/><text x="130.4" y="178.4" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:12px;font-weight:700">11</text><text x="680.0" y="30.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13px;font-weight:700">번호와 위험 유형</text><circle cx="690" cy="48" r="10" style="fill:var(--ai27-accent, var(--accent, #3d40d4))"/><text x="690.0" y="52.5" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:11px;font-weight:700">1</text><text x="710.0" y="52.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12.5px;font-weight:400">딥페이크·AI 성착취물</text><circle cx="690" cy="78" r="10" style="fill:var(--ai27-accent, var(--accent, #3d40d4))"/><text x="690.0" y="82.5" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:11px;font-weight:700">2</text><text x="710.0" y="82.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12.5px;font-weight:400">AI 사기·사칭</text><circle cx="690" cy="108" r="10" style="fill:var(--ai27-accent, var(--accent, #3d40d4))"/><text x="690.0" y="112.5" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:11px;font-weight:700">3</text><text x="710.0" y="112.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12.5px;font-weight:400">시험 부정행위(AI 안경 등)</text><circle cx="690" cy="138" r="10" style="fill:var(--color-bad, var(--bad, #b3362f))"/><text x="690.0" y="142.5" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:11px;font-weight:700">4</text><text x="710.0" y="142.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12.5px;font-weight:400">프롬프트 주입·에이전트 탈취</text><circle cx="690" cy="168" r="10" style="fill:var(--color-bad, var(--bad, #b3362f))"/><text x="690.0" y="172.5" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:11px;font-weight:700">5</text><text x="710.0" y="172.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12.5px;font-weight:400">AI 오케스트레이션 사이버 공격</text><circle cx="690" cy="198" r="10" style="fill:var(--ai27-accent, var(--accent, #3d40d4))"/><text x="690.0" y="202.5" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:11px;font-weight:700">6</text><text x="710.0" y="202.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12.5px;font-weight:400">가드레일 제거 모델 악용</text><circle cx="690" cy="228" r="10" style="fill:var(--ai27-accent, var(--accent, #3d40d4))"/><text x="690.0" y="232.5" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:11px;font-weight:700">7</text><text x="710.0" y="232.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12.5px;font-weight:400">테러·폭력 계획 지원</text><circle cx="690" cy="258" r="10" style="fill:var(--color-warn, var(--warn, #985a00))"/><text x="690.0" y="262.5" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:11px;font-weight:700">8</text><text x="710.0" y="262.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12.5px;font-weight:400">오정렬 사고(평가·내부 배포)</text><circle cx="690" cy="288" r="10" style="fill:var(--ai27-accent, var(--accent, #3d40d4))"/><text x="690.0" y="292.5" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:11px;font-weight:700">9</text><text x="710.0" y="292.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12.5px;font-weight:400">CBRN 실질 역량 상향</text><circle cx="690" cy="318" r="10" style="fill:var(--color-bad, var(--bad, #b3362f))"/><text x="690.0" y="322.5" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:11px;font-weight:700">10</text><text x="710.0" y="322.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12.5px;font-weight:400">프런티어 가중치 탈취</text><circle cx="690" cy="348" r="10" style="fill:var(--color-warn, var(--warn, #985a00))"/><text x="690.0" y="352.5" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:11px;font-weight:700">11</text><text x="710.0" y="352.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12.5px;font-weight:400">배포 에이전트 자기 복제</text><rect x="680" y="380" width="14" height="14" rx="3" style="fill:var(--ai27-accent, var(--accent, #3d40d4))"/><text x="702.0" y="391.0" text-anchor="start" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:12px;font-weight:600">오용</text><rect x="770" y="380" width="14" height="14" rx="3" style="fill:var(--color-bad, var(--bad, #b3362f))"/><text x="792.0" y="391.0" text-anchor="start" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:12px;font-weight:600">공격</text><rect x="860" y="380" width="14" height="14" rx="3" style="fill:var(--color-warn, var(--warn, #985a00))"/><text x="882.0" y="391.0" text-anchor="start" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:12px;font-weight:600">오정렬</text></svg><figcaption class="ai27-muted">가로는 2027년 눈에 띄는 발생 가능성, 세로는 피해 규모입니다(본 보고서 추정). 오른쪽 위가 최우선 대응 영역입니다.</figcaption></figure>
     </div>
     <div class="ai27-tablewrap">
-      <table data-source="fm_domains" data-row-key="domain" aria-label="특화 FM 분야별 현황">
-        <thead><tr><th data-field="domain">분야</th><th data-field="stage">단계</th><th data-field="models">대표 모델</th><th data-field="key_2027">2027 핵심 가능성</th></tr></thead>
-        <tbody data-draw="fm-rows"></tbody>
+      <table data-source="mis_map" data-row-key="no" aria-label="위험 지도 항목">
+        <thead><tr><th data-field="no">번호</th><th data-field="risk">위험</th><th data-field="family">계열</th><th data-field="likelihood">발생 가능성</th><th data-field="severity">피해 규모</th></tr></thead>
+        <tbody data-draw="mis-map-rows"></tbody>
       </table>
     </div>
-    <div class="ai27-sub" id="fm-poss">
-      <h3>2027 가능성 (분야별)</h3>
-      <div class="ai27-controls">
-        <select class="dash-select" id="f-fm" data-draw="fm-options" data-source="fm_possibilities" aria-label="분야"></select>
-        <span class="ai27-muted" data-draw="fm-count"></span>
-      </div>
+    <div class="ai27-card" id="mis-scen">
+      <h3>2027 오용·안전 시나리오</h3>
+      <div class="ai27-chart" data-draw="mis-strip" data-source="mis_scenarios" style="min-height:40px"></div>
+      <div class="ai27-grid3" data-draw="mis-cards" data-source="mis_scenarios"></div>
     </div>
+    <div class="ai27-card" id="mis-metrics">
+      <h3>2027 수치 전망 (낮음 / 기준 / 높음)</h3>
+      <ul class="ai27-list" data-draw="mis-met-list" data-source="mis_metrics"></ul>
+    </div>
+    <div class="ai27-sub" id="mis-items"><h3>2025–2026 근거: CBRN·테러·시험 부정·오픈웨이트·에이전트 공격·오정렬·레드팀·딥페이크·규제</h3></div>
     <div class="ai27-tablewrap">
-      <table data-source="fm_possibilities" data-row-key="text" aria-label="특화 FM 2027 가능성">
-        <thead><tr><th data-field="likelihood">가능성</th><th data-field="domain">분야</th><th data-field="text">전망</th><th data-field="signal">확인 신호</th></tr></thead>
-        <tbody data-draw="fm-poss-rows"></tbody>
+      <table data-source="mis_items" data-row-key="item" aria-label="AI 오용·안전 근거">
+        <thead><tr><th data-field="topic">주제</th><th data-field="date">시점</th><th data-field="item">내용</th><th data-field="korea">한국</th></tr></thead>
+        <tbody data-draw="mis-item-rows"></tbody>
       </table>
     </div>
-  </section>
-
-  <!-- ============ PART 7 ============ -->
-  <section class="ai27-part" id="part7">
-    <div class="ai27-parthead">
-      <span class="ai27-partno" aria-hidden="true">07</span>
-      <h2>2027 모델 로드맵과 에이전트 경쟁</h2>
-      <p class="ai27-muted">2026년에는 종합 1위 모델이 2–3개월마다 바뀌었습니다. 2027년에도 미국 랩들은 연 5–7회 프런티어 모델을 낼 것으로 보입니다. 에이전트 경쟁은 모델보다 하네스(실행 환경)와 통제·보안에서 갈립니다. 2027년 모델 이름은 모두 추측입니다.</p>
-    </div>
-    <div class="ai27-card" id="model-forecast">
-      <h3>2027년 말 능력 전망 (Epoch ECI: 낮음–높음 범위, 점은 기준)</h3>
-      <p class="ai27-muted">2026년 11월 프런티어 최고점은 173.4입니다. 오픈웨이트 최고 모델은 약 6개월·12점 뒤에 있을 전망입니다.</p>
-      <div class="ai27-chart" data-draw="model-range" data-source="model_forecast"></div>
-    </div>
-    <div class="ai27-grid2">
-      <div class="ai27-card" id="model-cadence">
-        <h3>2026 프런티어 출시 간격 (중앙값, 개월)</h3>
-        <div class="ai27-chart" data-draw="cadence-bars" data-source="model_cadence"></div>
-      </div>
-      <div class="ai27-card" id="agent-market">
-        <h3>에이전트 시장 규모 (십억 달러)</h3>
-        <p class="ai27-muted">정의가 서로 달라 합산하면 안 됩니다. 옅은 막대는 2027 낮음–높음 범위, 진한 막대는 기준값, 회색 선은 2026년입니다.</p>
-        <div class="ai27-chart" data-draw="agent-market" data-source="agent_market"></div>
-      </div>
-    </div>
+    <div class="ai27-sub" id="mis-fc"><h3>2027 오용·오정렬·안전 전망</h3></div>
     <div class="ai27-tablewrap">
-      <table data-source="model_forecast" data-row-key="lab" aria-label="2027 기관별 출시 전망">
-        <thead><tr><th data-field="lab">기관</th><th data-field="releases">2027 출시</th><th data-field="quarters">유력 시기</th><th data-field="eci_base">ECI 기준</th><th data-field="confidence">신뢰</th></tr></thead>
-        <tbody data-draw="model-rows"></tbody>
-      </table>
-    </div>
-    <div class="ai27-sub" id="agents"><h3>에이전트 지형: Muse · Hermes · OpenClaw와 코딩 하네스</h3>
-      <p class="ai27-muted">같은 모델도 하네스에 따라 점수가 39점까지 벌어집니다(Harness-Bench v2). 코딩 지출의 70%는 Claude Code와 Codex가 차지합니다(Menlo).</p></div>
-    <div class="ai27-tablewrap">
-      <table data-source="agents_landscape" data-row-key="name" aria-label="에이전트 지형">
-        <thead><tr><th data-field="name">에이전트</th><th data-field="owner">주체</th><th data-field="type">유형</th><th data-field="status">2026 현황</th><th data-field="outlook">2027 전망</th></tr></thead>
-        <tbody data-draw="agent-rows"></tbody>
-      </table>
-    </div>
-    <div class="ai27-grid2">
-      <div class="ai27-card" id="agent-comp">
-        <h3>2027 경쟁 전망</h3>
-        <ul class="ai27-list" data-draw="comp-list" data-source="agent_competition"></ul>
-      </div>
-      <div class="ai27-card" id="agent-inc">
-        <h3>2027 에이전트 사건·문제</h3>
-        <ul class="ai27-list" data-draw="agent-inc-list" data-source="agent_incidents"></ul>
-      </div>
-    </div>
-    <div class="ai27-sub" id="agent-svc"><h3>서비스 다양화: 13개 범주 중 2027년 8개(6–10개)가 운영 규모에 도달</h3></div>
-    <div class="ai27-tablewrap">
-      <table data-source="agent_services" data-row-key="category" aria-label="에이전트 서비스 범주">
-        <thead><tr><th data-field="category">범주</th><th data-field="maturity_2026">2026 성숙도</th><th data-field="outlook">2027 전망</th></tr></thead>
-        <tbody data-draw="svc-rows"></tbody>
-      </table>
-    </div>
-  </section>
-
-  <!-- ============ PART 8 ============ -->
-  <section class="ai27-part" id="part8">
-    <div class="ai27-parthead">
-      <span class="ai27-partno" aria-hidden="true">08</span>
-      <h2>사회경제·노동과 기본소득·기본사회</h2>
-      <p class="ai27-muted">2026년 AI의 노동 충격은 해고가 아니라 '채용 축소'로 나타났습니다. 22–25세 AI 고노출 직군의 고용 격차는 15%에서 19%로 커졌고, 한국 청년 취업자는 46개월 연속 감소했습니다. 기본사회 논의는 전 국민 기본소득보다 지역 기본소득 확대와 제도 틀 마련으로 나아가고 있습니다.</p>
-    </div>
-    <div class="ai27-card" id="labor-scen">
-      <h3>2027 노동시장 시나리오</h3>
-      <div class="ai27-chart" data-draw="labor-strip" data-source="labor_scenarios" style="min-height:40px"></div>
-      <div class="ai27-grid3" data-draw="labor-cards" data-source="labor_scenarios"></div>
-    </div>
-    <div class="ai27-tablewrap">
-      <table data-source="labor_issues" data-row-key="issue" aria-label="2027 노동·사회경제 이슈">
-        <thead><tr><th data-field="likelihood">가능성</th><th data-field="area">분야</th><th data-field="issue">이슈</th><th data-field="detail">내용</th></tr></thead>
-        <tbody data-draw="labor-rows"></tbody>
-      </table>
-    </div>
-    <div class="ai27-grid2">
-      <div class="ai27-card" id="rural-bi">
-        <h3>농어촌 기본소득 시범사업 예산</h3>
-        <span class="ai27-muted">억 원 · 1인당 월 15만 원(지역사랑상품권) · 2027은 정부안(국회 12월 확정)</span>
-        <div class="ai27-chart" data-draw="rural-cols" data-source="rural_bi"></div>
-      </div>
-      <div class="ai27-card" id="bi-forecast">
-        <h3>2027 기본소득·기본사회 전망</h3>
-        <ul class="ai27-list" data-draw="bi-list" data-source="basic_income_forecast"></ul>
-      </div>
-    </div>
-    <div class="ai27-tablewrap">
-      <table data-source="basic_income" data-row-key="item" aria-label="기본소득·기본사회 현황">
-        <thead><tr><th data-field="item">항목</th><th data-field="status">2026 현황</th><th data-field="budget">예산</th><th data-field="next">2027</th></tr></thead>
-        <tbody data-draw="bi-rows"></tbody>
-      </table>
-    </div>
-  </section>
-  <!-- ============ PART 9 ============ -->
-  <section class="ai27-part" id="part9">
-    <div class="ai27-parthead">
-      <span class="ai27-partno" aria-hidden="true">09</span>
-      <h2>코딩 에이전트·산업 확산·조직 변화, 그리고 에이전트 경제</h2>
-      <p class="ai27-muted">Google은 신규 코드의 약 75%를 AI가 쓴다고 밝혔고, 개발자의 66%가 코딩 에이전트를 씁니다. 확산은 '검증 가능한 결과'가 있는 곳부터 빠릅니다. 생활 속 에이전트는 상품 탐색 단계에서는 대중화됐지만, 결제까지 맡기는 단계는 아직 초기입니다.</p>
-    </div>
-    <div class="ai27-grid2">
-      <div class="ai27-card" id="sector-speed">
-        <h3>2027 산업별 에이전트 확산 속도</h3>
-        <p class="ai27-muted">4 매우 빠름 · 3 빠름 · 2 보통. 보고서 분석에 따른 판단입니다.</p>
-        <div class="ai27-chart" data-draw="sector-bars" data-source="sectors_speed"></div>
-      </div>
-      <div class="ai27-card" id="coding-metrics">
-        <h3>바이브 코딩·코딩 에이전트 지표</h3>
-        <div class="ai27-tablewrap" style="border:0">
-          <table data-source="coding_metrics" data-row-key="metric" aria-label="코딩 에이전트 2027 지표">
-            <thead><tr><th data-field="metric">지표</th><th data-field="end2026">2026 말</th><th data-field="base">2027 기준</th><th data-field="range">범위</th></tr></thead>
-            <tbody data-draw="coding-rows"></tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-    <div class="ai27-tablewrap">
-      <table data-source="sectors_speed" data-row-key="sector" aria-label="산업별 확산">
-        <thead><tr><th data-field="sector">산업</th><th data-field="speed">2027 속도</th><th data-field="adoption">2026 근거</th><th data-field="milestones">2027 이정표</th></tr></thead>
-        <tbody data-draw="sector-rows"></tbody>
-      </table>
-    </div>
-    <div class="ai27-sub" id="agent-types"><h3>에이전트 유형 14개의 성숙도와 2027 전망</h3></div>
-    <div class="ai27-tablewrap">
-      <table data-source="agent_types" data-row-key="type" aria-label="에이전트 유형">
-        <thead><tr><th data-field="type">유형</th><th data-field="maturity">2026 성숙도</th><th data-field="outlook">2027 전망</th></tr></thead>
-        <tbody data-draw="atype-rows"></tbody>
-      </table>
-    </div>
-    <div class="ai27-sub" id="org-changes"><h3>조직·경영·인사·노무 변화 (2027)</h3>
-      <p class="ai27-muted">관리 범위 확대와 팀장 직급 통합, 신입 채용 동결, CAIO 역할 전환, 노란봉투법 이후 AI 교섭, EU AI Act 고용 분야 고위험 의무(2027-12-02)가 주요 변화입니다.</p></div>
-    <div class="ai27-tablewrap">
-      <table data-source="org_changes" data-row-key="change" aria-label="조직 변화">
-        <thead><tr><th data-field="likelihood">가능성</th><th data-field="area">영역</th><th data-field="change">변화</th></tr></thead>
-        <tbody data-draw="org-rows"></tbody>
-      </table>
-    </div>
-    <div class="ai27-card" id="agentecon-scen">
-      <h3>에이전트 경제 시나리오 (2027)</h3>
-      <div class="ai27-chart" data-draw="ae-strip" data-source="agentecon_scenarios" style="min-height:40px"></div>
-      <div class="ai27-grid3" data-draw="ae-cards" data-source="agentecon_scenarios"></div>
-    </div>
-    <div class="ai27-tablewrap">
-      <table data-source="agentecon_diffusion" data-row-key="metric" aria-label="에이전트 확산 전망">
-        <thead><tr><th data-field="metric">지표</th><th data-field="low">낮음</th><th data-field="base">기준</th><th data-field="high">높음</th></tr></thead>
-        <tbody data-draw="ae-diff-rows"></tbody>
-      </table>
-    </div>
-    <div class="ai27-sub" id="agentecon-problems"><h3>생활 속 에이전트 문제 (2027)</h3></div>
-    <div class="ai27-tablewrap">
-      <table data-source="agentecon_problems" data-row-key="problem" aria-label="생활 속 에이전트 문제">
-        <thead><tr><th data-field="likelihood">가능성</th><th data-field="problem">문제</th><th data-field="who">영향 대상</th><th data-field="forecast">2027 모습</th></tr></thead>
-        <tbody data-draw="ae-prob-rows"></tbody>
-      </table>
-    </div>
-  </section>
-  <!-- ============ PART 10 ============ -->
-  <section class="ai27-part" id="part10">
-    <div class="ai27-parthead">
-      <span class="ai27-partno" aria-hidden="true">10</span>
-      <h2>AI 지정학과 외교</h2>
-      <p class="ai27-muted">2027년 1월 10일 미중 휴전 유예가 일괄 만료됩니다. 휴전은 연장되지만 칩·클라우드 통제는 강해지는 '관리된 경쟁'이 기준 시나리오입니다. 미국 주도 Pax Silica와 중국 주도 WAICO로 진영이 나뉘고, 6월 제네바 AI 정상회의와 11월 G20(맨체스터)이 주요 외교 일정입니다.</p>
-    </div>
-    <div class="ai27-card" id="geo-map">
-      <h3>2027 국가 간 협력·제재·경쟁 관계도</h3>
-      <figure class="ai27-figure"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 640" role="img" aria-label="2027년 AI 국가 관계도. 미국은 중국에 칩·모델·클라우드 통제를 걸고 중국은 희토류·미국 칩 수입 거부로 맞선다. 한국은 미국·중국 모두와 협력선과 압력선이 동시에 걸려 있다. 미국 축은 영국·캐나다·일본·대만·호주·인도·걸프, 중국 축은 WAICO 29개국이고, 동남아와 EU는 양쪽 사이에서 이중 참여하거나 디지털 주권을 추구한다." style="max-width:100%;height:auto;font-family:inherit"><defs><marker id="m-bad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" style="fill:var(--color-bad, var(--bad, #b3362f))"/></marker><marker id="m-warn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" style="fill:var(--color-warn, var(--warn, #985a00))"/></marker><marker id="m-ok" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" style="fill:var(--color-ok, var(--ok, #1f7a4a))"/></marker></defs><rect x="14" y="160" width="340" height="430" rx="18" style="fill:none;stroke:var(--color-border-line, var(--line, #dcdfe4));stroke-width:1.5;stroke-dasharray:5 6"/><text x="28.0" y="182.0" text-anchor="start" style="fill:var(--ai27-accent, var(--accent, #3d40d4));font-size:12px;font-weight:700">미국 축 · Pax Silica</text><rect x="700" y="160" width="326" height="430" rx="18" style="fill:none;stroke:var(--color-border-line, var(--line, #dcdfe4));stroke-width:1.5;stroke-dasharray:5 6"/><text x="1012.0" y="182.0" text-anchor="end" style="fill:var(--color-bad, var(--bad, #b3362f));font-size:12px;font-weight:700">중국 축 · AI+ · WAICO</text><path d="M228,268 Q520,20 812,268" marker-end="url(#m-bad)" style="fill:none;stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:2.4;"/><rect x="275.6" y="156.0" width="232.8" height="19" rx="4" style="fill:var(--color-panel, var(--paper, #ffffff))"/><text x="392.0" y="170.0" text-anchor="middle" style="fill:var(--color-bad, var(--bad, #b3362f));font-size:11.5px;font-weight:600">칩·모델·클라우드 통제 · Entity List</text><path d="M804,280 Q520,130 236,280" marker-end="url(#m-bad)" style="fill:none;stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:2.4;"/><rect x="579.8" y="212.0" width="168.4" height="19" rx="4" style="fill:var(--color-panel, var(--paper, #ffffff))"/><text x="664.0" y="226.0" text-anchor="middle" style="fill:var(--color-bad, var(--bad, #b3362f));font-size:11.5px;font-weight:600">희토류 · 미국 칩 수입 거부</text><path d="M240,286 L466,286" marker-end="url(#m-warn)" style="fill:none;stroke:var(--color-warn, var(--warn, #985a00));stroke-width:2.2;stroke-dasharray:7 5;"/><path d="M240,314 L472,314" style="fill:none;stroke:var(--color-ok, var(--ok, #1f7a4a));stroke-width:1.6;"/><rect x="222.8" y="256.0" width="260.4" height="19" rx="4" style="fill:var(--color-panel, var(--paper, #ffffff))"/><text x="353.0" y="270.0" text-anchor="middle" style="fill:var(--color-warn, var(--warn, #985a00));font-size:11.5px;font-weight:600">중국 팹 허가 · 232조 관세 · 클라우드 KYC</text><rect x="250.4" y="326.0" width="205.2" height="19" rx="4" style="fill:var(--color-panel, var(--paper, #ffffff))"/><text x="353.0" y="340.0" text-anchor="middle" style="fill:var(--color-ok, var(--ok, #1f7a4a));font-size:11.5px;font-weight:500">Pax Silica · 3,500억 달러 MOU</text><path d="M800,286 L574,286" marker-end="url(#m-warn)" style="fill:none;stroke:var(--color-warn, var(--warn, #985a00));stroke-width:2.2;stroke-dasharray:7 5;"/><path d="M800,314 L568,314" style="fill:none;stroke:var(--color-ok, var(--ok, #1f7a4a));stroke-width:1.6;"/><rect x="613.1" y="256.0" width="147.7" height="19" rx="4" style="fill:var(--color-panel, var(--paper, #ffffff))"/><text x="687.0" y="270.0" text-anchor="middle" style="fill:var(--color-warn, var(--warn, #985a00));font-size:11.5px;font-weight:600">HBM 판로 차단 · 희토류</text><rect x="617.8" y="326.0" width="138.5" height="19" rx="4" style="fill:var(--color-panel, var(--paper, #ffffff))"/><text x="687.0" y="340.0" text-anchor="middle" style="fill:var(--color-ok, var(--ok, #1f7a4a));font-size:11.5px;font-weight:500">범용 교역 · 휴전 채널</text><path d="M190.0,247.0 L190.0,94.0" style="fill:none;stroke:var(--color-ok, var(--ok, #1f7a4a));stroke-width:1.6;"/><path d="M152.8,337.8 L95.6,396.0" marker-end="url(#m-warn)" style="fill:none;stroke:var(--color-warn, var(--warn, #985a00));stroke-width:2.2;stroke-dasharray:7 5;"/><path d="M171.7,349.7 L108.8,521.0" style="fill:none;stroke:var(--color-ok, var(--ok, #1f7a4a));stroke-width:1.6;"/><path d="M203.6,351.2 L248.6,521.0" style="fill:none;stroke:var(--color-ok, var(--ok, #1f7a4a));stroke-width:1.6;"/><path d="M227.1,337.9 L406.5,521.0" style="fill:none;stroke:var(--color-ok, var(--ok, #1f7a4a));stroke-width:1.6;"/><path d="M236.8,324.9 L604.9,521.0" marker-end="url(#m-bad)" style="fill:none;stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:2.4;"/><path d="M860.6,351.9 L895.1,521.0" style="fill:none;stroke:var(--color-ok, var(--ok, #1f7a4a));stroke-width:1.6;"/><path d="M816,337 L688,521" style="fill:none;stroke:var(--color-ok, var(--ok, #1f7a4a));stroke-width:1.6;"/><path d="M520,247 L520,94" style="fill:none;stroke:var(--color-ok, var(--ok, #1f7a4a));stroke-width:1.6;"/><rect x="451.9" y="226.0" width="136.2" height="19" rx="4" style="fill:var(--color-panel, var(--paper, #ffffff))"/><text x="520.0" y="240.0" text-anchor="middle" style="fill:var(--color-ok, var(--ok, #1f7a4a));font-size:11.5px;font-weight:500">소버린 AI · Mistral</text><path d="M500,346 L452,521" style="fill:none;stroke:var(--color-ok, var(--ok, #1f7a4a));stroke-width:1.6;"/><rect x="431.2" y="410.0" width="69.5" height="19" rx="4" style="fill:var(--color-panel, var(--paper, #ffffff))"/><text x="466.0" y="424.0" text-anchor="middle" style="fill:var(--color-ok, var(--ok, #1f7a4a));font-size:11.5px;font-weight:500">공동 AIDC</text><rect x="473.5" y="478.0" width="173.0" height="19" rx="4" style="fill:var(--color-panel, var(--paper, #ffffff))"/><text x="560.0" y="492.0" text-anchor="middle" style="fill:var(--color-bad, var(--bad, #b3362f));font-size:11.5px;font-weight:600">원격접속 허가제 · 밀수 단속</text><rect x="121.9" y="48" width="136.2" height="44" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-fg, var(--fg, #14161c));stroke-width:1.3"/><text x="190.0" y="67.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13.5px;font-weight:700">영국 · 캐나다</text><text x="190.0" y="84.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">기술 번영 협정 · G7</text><rect x="425.5" y="48" width="189.0" height="44" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-fg, var(--fg, #14161c));stroke-width:1.3"/><text x="520.0" y="67.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13.5px;font-weight:700">EU(프랑스·독일)</text><text x="520.0" y="84.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">디지털 주권 · ASML 장비 정렬</text><rect x="20.4" y="398" width="103.2" height="44" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-fg, var(--fg, #14161c));stroke-width:1.3"/><text x="72.0" y="417.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13.5px;font-weight:700">일본</text><text x="72.0" y="434.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">장비 통제 정렬</text><rect x="35.2" y="523" width="129.6" height="44" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-fg, var(--fg, #14161c));stroke-width:1.3"/><text x="100.0" y="542.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13.5px;font-weight:700">대만</text><text x="100.0" y="559.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">TSMC · 232조 쿼터</text><rect x="179.2" y="523" width="151.6" height="44" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-fg, var(--fg, #14161c));stroke-width:1.3"/><text x="255.0" y="542.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13.5px;font-weight:700">호주 · 인도</text><text x="255.0" y="559.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">핵심광물 · AI 파트너십</text><rect x="356.4" y="523" width="147.2" height="44" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-fg, var(--fg, #14161c));stroke-width:1.3"/><text x="430.0" y="542.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13.5px;font-weight:700">UAE · 사우디</text><text x="430.0" y="559.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">Stargate · 조건부 칩</text><rect x="564.3" y="523" width="171.4" height="44" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-fg, var(--fg, #14161c));stroke-width:1.3"/><text x="650.0" y="542.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13.5px;font-weight:700">싱가포르 · 동남아</text><text x="650.0" y="559.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">Pax Silica + WAICO 이중</text><rect x="814.3" y="523" width="171.4" height="44" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-fg, var(--fg, #14161c));stroke-width:1.3"/><text x="900.0" y="542.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13.5px;font-weight:700">WAICO 29개국</text><text x="900.0" y="559.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">글로벌 사우스 · 오픈웨이트</text><circle cx="190" cy="300" r="50" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--ai27-accent, var(--accent, #3d40d4));stroke-width:3"/><text x="190.0" y="302.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:18px;font-weight:700">미국</text><text x="190.0" y="319.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:10.5px;font-weight:400">통제 강화</text><circle cx="850" cy="300" r="50" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:3"/><text x="850.0" y="302.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:18px;font-weight:700">중국</text><text x="850.0" y="319.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:10.5px;font-weight:400">국산화 · 보복</text><circle cx="520" cy="300" r="46" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-warn, var(--warn, #985a00));stroke-width:3"/><text x="520.0" y="302.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:18px;font-weight:700">한국</text><text x="520.0" y="319.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:10.5px;font-weight:400">동맹 기반 헤징</text><line x1="330" y1="618" x2="364" y2="618" style="stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:2.4;"/><text x="372.0" y="622.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:400">통제·제재</text><line x1="480" y1="618" x2="514" y2="618" style="stroke:var(--color-warn, var(--warn, #985a00));stroke-width:2.2;stroke-dasharray:7 5;"/><text x="522.0" y="622.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:400">압력·정렬 요구</text><line x1="630" y1="618" x2="664" y2="618" style="stroke:var(--color-ok, var(--ok, #1f7a4a));stroke-width:1.6;"/><text x="672.0" y="622.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:400">협력</text></svg><figcaption>미국 축(Pax Silica)과 중국 축(AI+·WAICO) 사이에서 한국은 양쪽과 협력선(초록)과 압력선(주황 점선)이 동시에 걸린 위치입니다. 동남아는 이중 참여 지역이지만 미국 원격접속 규칙의 허가 대상이 되었습니다.</figcaption></figure>
-    </div>
-    <div class="ai27-card" id="geo-kr-pressure">
-      <h3>미국 수출통제 강화 → 한국의 글로벌 AI 협력 부담</h3>
-      <p class="ai27-muted">미국의 대중국 통제가 칩에서 클라우드(원격접속)·모델로 넓어지면서, 중국만이 아니라 제3국 데이터센터·동맹국 장비·모델 접근에 조건이 붙습니다. 2027년 볼 일정은 01-10 미중 휴전 유예 만료, 01-19 원격접속 규칙 의견수렴 마감, 2월 중순 기존 데이터센터 유예 종료, 12월 중국 팹 장비 허가입니다.</p>
-      <figure class="ai27-figure"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 450" role="img" aria-label="미국의 대중국 수출통제 강화가 한국으로 전달되는 경로. 원격접속 규칙은 한국 클라우드의 고객 확인 부담이 되어 동남아·걸프 데이터센터 협력을 조건부로 만들고, 연간 장비 허가와 동맹 장비 정렬 요구는 중국 팹과 중국 매출을 압박해 중국 보복 위험을 키운다. 모델 통제는 소버린 AI 다변화 수요를, 232조 관세는 3,500억 달러 MOU를 지렛대로 한 협상을 부른다." style="max-width:100%;height:auto;font-family:inherit"><defs><marker id="m-bad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" style="fill:var(--color-bad, var(--bad, #b3362f))"/></marker><marker id="m-warn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" style="fill:var(--color-warn, var(--warn, #985a00))"/></marker><marker id="m-ok" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" style="fill:var(--color-ok, var(--ok, #1f7a4a))"/></marker></defs><text x="144.0" y="36.0" text-anchor="middle" style="fill:var(--color-bad, var(--bad, #b3362f));font-size:14px;font-weight:700">미국 조치 (2026 말 – 2027)</text><text x="490.0" y="36.0" text-anchor="middle" style="fill:var(--color-warn, var(--warn, #985a00));font-size:14px;font-weight:700">한국에 걸리는 부담</text><text x="896.0" y="36.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:14px;font-weight:700">흔들리는 협력 축</text><path d="M272,90.0 L358,90.0" marker-end="url(#m-bad)" style="fill:none;stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:2.4;"/><path d="M272,164.0 L358,164.0" marker-end="url(#m-bad)" style="fill:none;stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:2.4;"/><path d="M272,238.0 L358,238.0" marker-end="url(#m-bad)" style="fill:none;stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:2.4;"/><path d="M272,312.0 L358,312.0" marker-end="url(#m-bad)" style="fill:none;stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:2.4;"/><path d="M272,386.0 L358,386.0" marker-end="url(#m-bad)" style="fill:none;stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:2.4;"/><path d="M618,90.0 C698,90.0 684,90.0 764,90.0" marker-end="url(#m-warn)" style="fill:none;stroke:var(--color-warn, var(--warn, #985a00));stroke-width:2.2;stroke-dasharray:7 5;"/><rect x="659.7" y="80.0" width="62.6" height="19" rx="4" style="fill:var(--color-panel, var(--paper, #ffffff))"/><text x="691.0" y="94.0" text-anchor="middle" style="fill:var(--color-warn, var(--warn, #985a00));font-size:11px;font-weight:600">투자 위축</text><path d="M618,90.0 C698,90.0 684,164.0 764,164.0" marker-end="url(#m-warn)" style="fill:none;stroke:var(--color-warn, var(--warn, #985a00));stroke-width:2.2;stroke-dasharray:7 5;"/><path d="M618,164.0 C698,164.0 684,238.0 764,238.0" marker-end="url(#m-warn)" style="fill:none;stroke:var(--color-warn, var(--warn, #985a00));stroke-width:2.2;stroke-dasharray:7 5;"/><path d="M618,238.0 C698,238.0 684,238.0 764,238.0" marker-end="url(#m-warn)" style="fill:none;stroke:var(--color-warn, var(--warn, #985a00));stroke-width:2.2;stroke-dasharray:7 5;"/><rect x="645.4" y="228.0" width="91.2" height="19" rx="4" style="fill:var(--color-panel, var(--paper, #ffffff))"/><text x="691.0" y="242.0" text-anchor="middle" style="fill:var(--color-warn, var(--warn, #985a00));font-size:11px;font-weight:600">보복·매출 감소</text><path d="M618,312.0 C698,312.0 684,312.0 764,312.0" marker-end="url(#m-ok)" style="fill:none;stroke:var(--color-ok, var(--ok, #1f7a4a));stroke-width:1.6;"/><rect x="659.7" y="302.0" width="62.6" height="19" rx="4" style="fill:var(--color-panel, var(--paper, #ffffff))"/><text x="691.0" y="316.0" text-anchor="middle" style="fill:var(--color-ok, var(--ok, #1f7a4a));font-size:11px;font-weight:600">대안 수요</text><path d="M618,386.0 C698,386.0 684,386.0 764,386.0" marker-end="url(#m-ok)" style="fill:none;stroke:var(--color-ok, var(--ok, #1f7a4a));stroke-width:1.6;"/><rect x="659.7" y="376.0" width="62.6" height="19" rx="4" style="fill:var(--color-panel, var(--paper, #ffffff))"/><text x="691.0" y="390.0" text-anchor="middle" style="fill:var(--color-ok, var(--ok, #1f7a4a));font-size:11px;font-weight:600">협상 연계</text><rect x="16" y="64" width="256" height="52" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:1.4"/><text x="144.0" y="85.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13px;font-weight:700">원격접속(클라우드) 규칙</text><text x="144.0" y="103.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">2026-11-19 시행 · 유예 2027-02 종료</text><rect x="16" y="138" width="256" height="52" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:1.4"/><text x="144.0" y="159.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13px;font-weight:700">VEU 폐지 → 연간 장비 허가</text><text x="144.0" y="177.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">2027분 허가 12월 결정</text><rect x="16" y="212" width="256" height="52" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:1.4"/><text x="144.0" y="233.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13px;font-weight:700">의회 입법(NDAA)</text><text x="144.0" y="251.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">Chip Security · MATCH Act</text><rect x="16" y="286" width="256" height="52" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:1.4"/><text x="144.0" y="307.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13px;font-weight:700">프런티어 모델 임시 통제</text><text x="144.0" y="325.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">Mythos 5 · 18일 접근 제한</text><rect x="16" y="360" width="256" height="52" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:1.4"/><text x="144.0" y="381.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13px;font-weight:700">232조 반도체 관세 2단계</text><text x="144.0" y="399.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">대만은 쿼터·15% 상한 확보</text><rect x="362" y="64" width="256" height="52" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-warn, var(--warn, #985a00));stroke-width:1.4"/><text x="490.0" y="85.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13px;font-weight:700">클라우드 · 국가 AI컴퓨트센터 KYC</text><text x="490.0" y="103.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">중국 본사 고객 확인 · 월간 보고</text><rect x="362" y="138" width="256" height="52" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-warn, var(--warn, #985a00));stroke-width:1.4"/><text x="490.0" y="159.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13px;font-weight:700">삼성 · SK하이닉스 중국 팹</text><text x="490.0" y="177.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">장비 반입 · 증설 제한</text><rect x="362" y="212" width="256" height="52" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-warn, var(--warn, #985a00));stroke-width:1.4"/><text x="490.0" y="233.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13px;font-weight:700">장비 · 부품 중국 서비스</text><text x="490.0" y="251.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">동맹 정렬 압력</text><rect x="362" y="286" width="256" height="52" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-warn, var(--warn, #985a00));stroke-width:1.4"/><text x="490.0" y="307.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13px;font-weight:700">최신 프런티어 모델 접근</text><text x="490.0" y="325.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">지연 · 조건부 제공</text><rect x="362" y="360" width="256" height="52" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-warn, var(--warn, #985a00));stroke-width:1.4"/><text x="490.0" y="381.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13px;font-weight:700">대미 반도체 수출</text><text x="490.0" y="399.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">'불리하지 않은 대우' 내용이 관건</text><rect x="768" y="64" width="256" height="52" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:1.4"/><text x="896.0" y="85.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13px;font-weight:700">동남아 AIDC 협력</text><text x="896.0" y="103.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">싱가포르·말레이시아 허가제</text><rect x="768" y="138" width="256" height="52" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-warn, var(--warn, #985a00));stroke-width:1.4"/><text x="896.0" y="159.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13px;font-weight:700">UAE · 사우디 공동 AIDC</text><text x="896.0" y="177.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">미국 칩 재수출 조건</text><rect x="768" y="212" width="256" height="52" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:1.4"/><text x="896.0" y="233.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13px;font-weight:700">중국 시장 · 소재</text><text x="896.0" y="251.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">희토류 보복 · 중국산 메모리 공세</text><rect x="768" y="286" width="256" height="52" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-ok, var(--ok, #1f7a4a));stroke-width:1.4"/><text x="896.0" y="307.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13px;font-weight:700">소버린 AI 파트너 다변화</text><text x="896.0" y="325.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">EU·Mistral · 독자 모델 정당성↑</text><rect x="768" y="360" width="256" height="52" rx="9" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-ok, var(--ok, #1f7a4a));stroke-width:1.4"/><text x="896.0" y="381.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13px;font-weight:700">한미 3,500억 달러 MOU</text><text x="896.0" y="399.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">관세 협상 지렛대</text><line x1="300" y1="430" x2="334" y2="430" style="stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:2.4;"/><text x="342.0" y="434.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:400">통제 전달</text><line x1="450" y1="430" x2="484" y2="430" style="stroke:var(--color-warn, var(--warn, #985a00));stroke-width:2.2;stroke-dasharray:7 5;"/><text x="492.0" y="434.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:400">협력 위축·위험</text><line x1="600" y1="430" x2="634" y2="430" style="stroke:var(--color-ok, var(--ok, #1f7a4a));stroke-width:1.6;"/><text x="642.0" y="434.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:400">대응·대안</text></svg><figcaption>클라우드 규칙 하나가 동남아·걸프 협력을 동시에 조건부로 만들고, 장비 허가와 장비 정렬 요구는 중국 쪽 위험으로 모입니다. 모델 통제와 관세는 소버린 AI 다변화와 MOU 협상이라는 대응을 부릅니다.</figcaption></figure>
-    </div>
-    <div class="ai27-sub" id="dip"><h3>2027 AI 외교: 양자 트랙</h3><p class="ai27-muted">'양자 거래 + 다자 최소합의'의 이중 트랙입니다. 칩 허가·관세·투자 같은 실질 이해는 양자 협상에서 정해집니다. 상태는 확정·예상·추정으로 구분했습니다.</p></div>
-    <div class="ai27-tablewrap">
-      <table data-source="dip_bilateral" data-row-key="pair" aria-label="AI 외교 양자 트랙">
-        <thead><tr><th data-field="pair">양자</th><th data-field="likelihood">가능성</th><th data-field="agenda">2027 의제</th><th data-field="events">계기·일정</th><th data-field="implication">한국 관점</th><th data-field="status">상태</th></tr></thead>
-        <tbody data-draw="dip-bi-rows"></tbody>
-      </table>
-    </div>
-    <div class="ai27-sub" id="dip-multi"><h3>2027 AI 외교: 다자 트랙</h3></div>
-    <div class="ai27-tablewrap">
-      <table data-source="dip_multilateral" data-row-key="forum" aria-label="AI 외교 다자 트랙">
-        <thead><tr><th data-field="forum">무대</th><th data-field="when">일정</th><th data-field="agenda">의제</th><th data-field="outcome">예상 결과</th><th data-field="likelihood">가능성</th><th data-field="korea_role">한국 역할</th></tr></thead>
-        <tbody data-draw="dip-multi-rows"></tbody>
-      </table>
-    </div>
-    <div class="ai27-grid2">
-      <div class="ai27-card" id="dip-cal">
-        <h3>2027 AI 외교 캘린더</h3>
-        <ul class="ai27-list" data-draw="dip-cal-list" data-source="dip_calendar"></ul>
-      </div>
-      <div class="ai27-card" id="dip-fc">
-        <h3>2027 AI 외교 전망</h3>
-        <ul class="ai27-list" data-draw="dip-fc-list" data-source="dip_forecast"></ul>
-      </div>
-    </div>
-    <div class="ai27-card" id="acc-layers">
-      <h3>모델 접속·사용 제한의 네 층과 한국</h3>
-      <figure class="ai27-figure"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 470" role="img" aria-label="AI 모델 접속·사용 제한의 네 층. 미국 쪽은 사업자 약관(중국계 소유 기업 차단), 증류 차단과 신뢰 파트너 우선 공개, 정부의 모델 API 수출통제와 원격접속 KYC, 자국 정부의 DeepSeek 퇴출로 이뤄진다. 중국 쪽은 바이두의 한국 제외 라이선스, 최첨단 모델 해외 접근 제한 논의, AI 기술 수출 사전등록, CAC 허가제로 이뤄진다. 앞의 세 층이 한국 이용자에게 직접 닿는다." style="max-width:100%;height:auto;font-family:inherit"><defs><marker id="acc-arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" style="fill:var(--color-bad, var(--bad, #b3362f))"/></marker></defs><text x="185.0" y="30.0" text-anchor="middle" style="fill:var(--ai27-accent, var(--accent, #3d40d4));font-size:14px;font-weight:700">미국 쪽</text><text x="855.0" y="30.0" text-anchor="middle" style="fill:var(--color-warn, var(--warn, #985a00));font-size:14px;font-weight:700">중국 쪽</text><rect x="20" y="54" width="330" height="74" rx="6" style="fill:var(--ai27-accent, var(--accent, #3d40d4));fill-opacity:0.08;stroke:var(--ai27-accent, var(--accent, #3d40d4));stroke-width:1.3"/><text x="32.0" y="74.0" text-anchor="start" style="fill:var(--ai27-accent, var(--accent, #3d40d4));font-size:12px;font-weight:700">① 라이선스·약관</text><text x="32.0" y="94.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:400">OpenAI 미지원국 차단(2024)</text><text x="32.0" y="112.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:400">Anthropic 중국계 50% 소유 기업 차단(2025)</text><rect x="690" y="54" width="330" height="74" rx="6" style="fill:var(--color-warn, var(--warn, #985a00));fill-opacity:0.08;stroke:var(--color-warn, var(--warn, #985a00));stroke-width:1.3"/><text x="702.0" y="74.0" text-anchor="start" style="fill:var(--color-warn, var(--warn, #985a00));font-size:12px;font-weight:700">① 라이선스·약관</text><text x="702.0" y="94.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:400">바이두 ERNIE 5.5 Base</text><text x="702.0" y="112.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:400">'EU·영국·한국 제외' 라이선스(2026-11)</text><line x1="350" y1="91.0" x2="416" y2="91.0" style="stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:1.8" marker-end="url(#acc-arr)"/><line x1="690" y1="91.0" x2="624" y2="91.0" style="stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:1.8" marker-end="url(#acc-arr)"/><rect x="20" y="146" width="330" height="74" rx="6" style="fill:var(--ai27-accent, var(--accent, #3d40d4));fill-opacity:0.08;stroke:var(--ai27-accent, var(--accent, #3d40d4));stroke-width:1.3"/><text x="32.0" y="166.0" text-anchor="start" style="fill:var(--ai27-accent, var(--accent, #3d40d4));font-size:12px;font-weight:700">② 사업자 접근 정책</text><text x="32.0" y="186.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:400">증류 차단: 위장 계정 2.4만 개 적발(2026-02)</text><text x="32.0" y="204.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:400">신뢰 파트너 우선 공개(OpenAI·Anthropic)</text><rect x="690" y="146" width="330" height="74" rx="6" style="fill:var(--color-warn, var(--warn, #985a00));fill-opacity:0.08;stroke:var(--color-warn, var(--warn, #985a00));stroke-width:1.3"/><text x="702.0" y="166.0" text-anchor="start" style="fill:var(--color-warn, var(--warn, #985a00));font-size:12px;font-weight:700">② 사업자 접근 정책</text><text x="702.0" y="186.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:400">상무부–알리바바·바이트댄스</text><text x="702.0" y="204.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:400">최첨단 모델 해외 접근 제한 논의(2026-07)</text><line x1="350" y1="183.0" x2="416" y2="183.0" style="stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:1.8" marker-end="url(#acc-arr)"/><line x1="690" y1="183.0" x2="624" y2="183.0" style="stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:1.8" marker-end="url(#acc-arr)"/><rect x="20" y="238" width="330" height="74" rx="6" style="fill:var(--ai27-accent, var(--accent, #3d40d4));fill-opacity:0.08;stroke:var(--ai27-accent, var(--accent, #3d40d4));stroke-width:1.3"/><text x="32.0" y="258.0" text-anchor="start" style="fill:var(--ai27-accent, var(--accent, #3d40d4));font-size:12px;font-weight:700">③ 정부 수출통제</text><text x="32.0" y="278.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:400">Mythos 5·Fable 5 API를 '수출'로 통제(2026-06)</text><text x="32.0" y="296.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:400">BIS 원격접속 규칙·KYC(2026-11)</text><rect x="690" y="238" width="330" height="74" rx="6" style="fill:var(--color-warn, var(--warn, #985a00));fill-opacity:0.08;stroke:var(--color-warn, var(--warn, #985a00));stroke-width:1.3"/><text x="702.0" y="258.0" text-anchor="start" style="fill:var(--color-warn, var(--warn, #985a00));font-size:12px;font-weight:700">③ 정부 수출통제</text><text x="702.0" y="278.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:400">공고 48호: AI 기술 23개 항목</text><text x="702.0" y="296.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:400">수출 전 등록(2026-10, API·SaaS 제외)</text><line x1="350" y1="275.0" x2="416" y2="275.0" style="stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:1.8" marker-end="url(#acc-arr)"/><line x1="690" y1="275.0" x2="624" y2="275.0" style="stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:1.8" marker-end="url(#acc-arr)"/><rect x="20" y="330" width="330" height="74" rx="6" style="fill:var(--ai27-accent, var(--accent, #3d40d4));fill-opacity:0.08;stroke:var(--ai27-accent, var(--accent, #3d40d4));stroke-width:1.3"/><text x="32.0" y="350.0" text-anchor="start" style="fill:var(--ai27-accent, var(--accent, #3d40d4));font-size:12px;font-weight:700">④ 자국 시장 차단</text><text x="32.0" y="370.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:400">DHS 연방기관 DeepSeek 퇴출(2026-10)</text><text x="32.0" y="388.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:400">주정부 기기 금지 확산</text><rect x="690" y="330" width="330" height="74" rx="6" style="fill:var(--color-warn, var(--warn, #985a00));fill-opacity:0.08;stroke:var(--color-warn, var(--warn, #985a00));stroke-width:1.3"/><text x="702.0" y="350.0" text-anchor="start" style="fill:var(--color-warn, var(--warn, #985a00));font-size:12px;font-weight:700">④ 자국 시장 차단</text><text x="702.0" y="370.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:400">CAC 생성형 AI 비안 1,112개</text><text x="702.0" y="388.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:400">미국 모델은 미등록·미지원</text><rect x="420" y="54" width="200" height="258" rx="8" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:2"/><text x="520.0" y="139.0" text-anchor="middle" style="fill:var(--color-bad, var(--bad, #b3362f));font-size:15px;font-weight:700">한국 이용자·기업</text><text x="520.0" y="171.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12.5px;font-weight:400">모델 선택지 축소(양쪽 동시)</text><text x="520.0" y="195.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12.5px;font-weight:400">원격접속·소유 기준 증빙 부담</text><text x="520.0" y="219.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12.5px;font-weight:400">오픈웨이트도 라이선스로 차단</text><text x="520.0" y="371.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:12px;font-weight:600">④는 각자 자국 시장을 닫는 층</text></svg><figcaption class="ai27-muted">미국은 모델 API 접속을 '수출'로 통제하기 시작했고(Mythos 5·Fable 5), 중국 바이두는 오픈웨이트 라이선스에서 한국·EU·영국을 뺐습니다. ①–③층이 한국 이용자·기업에 직접 닿습니다.</figcaption></figure>
-    </div>
-    <div class="ai27-sub" id="acc-items"><h3>사업자·국가의 모델 접속·사용 제한 사례</h3></div>
-    <div class="ai27-tablewrap">
-      <table data-source="acc_items" data-row-key="measure" aria-label="모델 접속 사용 제한 사례">
-        <thead><tr><th data-field="side">구분</th><th data-field="date">시점</th><th data-field="actor">주체</th><th data-field="type">유형</th><th data-field="measure">조치</th></tr></thead>
-        <tbody data-draw="acc-item-rows"></tbody>
-      </table>
-    </div>
-    <div class="ai27-sub" id="acc-fc"><h3>2027 모델 접속·사용 제한 전망</h3></div>
-    <div class="ai27-tablewrap">
-      <table data-source="acc_forecast" data-row-key="text" aria-label="2027 모델 접속 제한 전망">
+      <table data-source="mis_forecast" data-row-key="text" aria-label="2027 오용 안전 전망">
         <thead><tr><th data-field="likelihood">가능성</th><th data-field="area">영역</th><th data-field="text">전망</th></tr></thead>
-        <tbody data-draw="acc-fc-rows"></tbody>
-      </table>
-    </div>
-    <div class="ai27-card" id="geo-scen">
-      <h3>2027 미중·국제 질서 시나리오</h3>
-      <div class="ai27-chart" data-draw="geo-scen-strip" data-source="geo_scenarios" style="min-height:40px"></div>
-      <div class="ai27-grid3" data-draw="geo-scen-cards" data-source="geo_scenarios"></div>
-    </div>
-    <div class="ai27-sub" id="geo-events"><h3>2027 외교·규제 일정</h3><p class="ai27-muted">확정은 날짜·장소가 공식 발표된 일정, 예상은 관례나 보도에 따른 추정입니다.</p></div>
-    <div class="ai27-tablewrap">
-      <table data-source="geo_events" data-row-key="event" aria-label="2027 외교 일정">
-        <thead><tr><th data-field="date">시점</th><th data-field="status">상태</th><th data-field="event">이벤트</th><th data-field="location">장소</th><th data-field="relevance">의미</th></tr></thead>
-        <tbody data-draw="geo-ev-rows"></tbody>
-      </table>
-    </div>
-    <div class="ai27-sub" id="geo-countries"><h3>국가별 2027 입장</h3></div>
-    <div class="ai27-tablewrap">
-      <table data-source="geo_countries" data-row-key="country" aria-label="국가별 입장">
-        <thead><tr><th data-field="country">국가</th><th data-field="stance">입장</th><th data-field="cooperation">협력</th><th data-field="competition">경쟁</th><th data-field="exposure">제재 노출</th><th data-field="moves">2027 행보</th></tr></thead>
-        <tbody data-draw="geo-c-rows"></tbody>
-      </table>
-    </div>
-    <div class="ai27-sub" id="geo-sanctions"><h3>2027 제재·제한 전망</h3></div>
-    <div class="ai27-tablewrap">
-      <table data-source="geo_sanctions" data-row-key="measure" aria-label="2027 제재 전망">
-        <thead><tr><th data-field="likelihood">가능성</th><th data-field="measure">조치</th><th data-field="actor">주체 → 대상</th><th data-field="impact">영향</th></tr></thead>
-        <tbody data-draw="geo-s-rows"></tbody>
+        <tbody data-draw="mis-fc-rows"></tbody>
       </table>
     </div>
   </section>
 
-  <!-- ============ PART 11 ============ -->
-  <section class="ai27-part" id="part11">
-    <div class="ai27-parthead">
-      <span class="ai27-partno" aria-hidden="true">11</span>
-      <h2>AI 반도체·메모리·AIDC·전력망</h2>
-      <p class="ai27-muted">메모리 시장은 2026년 +250%의 슈퍼사이클 뒤 2027년에도 공급 부족이 이어질 전망입니다. 하이퍼스케일러 capex는 더 늘지만 증가율은 둔화하고, 전력·변압기·가스터빈이 실질적인 병목입니다. 기준 시나리오는 '감속하는 슈퍼사이클'(55%)입니다.</p>
-    </div>
-    <div class="ai27-card" id="infra-chart">
-      <h3>주요 시장 2026 → 2027 (십억 달러)</h3>
-      <p class="ai27-muted">옅은 막대는 2027 낮음–높음, 진한 막대는 기준값, 회색 선은 2026년입니다. 일부 2027 값은 분석 추정입니다.</p>
-      <div class="ai27-chart" data-draw="infra-bars" data-source="infra_numbers"></div>
-    </div>
-    <div class="ai27-tablewrap">
-      <table data-source="infra_numbers" data-row-key="metric" aria-label="인프라 시장 수치">
-        <thead><tr><th data-field="metric">지표</th><th data-field="y2025">2025</th><th data-field="y2026">2026</th><th data-field="low">2027 낮음</th><th data-field="base">2027 기준</th><th data-field="high">2027 높음</th><th data-field="unit">단위</th></tr></thead>
-        <tbody data-draw="infra-n-rows"></tbody>
-      </table>
-    </div>
-    <div class="ai27-card" id="infra-scen">
-      <h3>2027 인프라 시나리오</h3>
-      <div class="ai27-chart" data-draw="infra-scen-strip" data-source="infra_scenarios" style="min-height:40px"></div>
-      <div class="ai27-grid3" data-draw="infra-scen-cards" data-source="infra_scenarios"></div>
-    </div>
-    <div class="ai27-sub" id="infra-fc"><h3>분야별 2027 전망</h3></div>
-    <div class="ai27-tablewrap">
-      <table data-source="infra_forecasts" data-row-key="text" aria-label="인프라 2027 전망">
-        <thead><tr><th data-field="likelihood">가능성</th><th data-field="segment">분야</th><th data-field="text">전망</th></tr></thead>
-        <tbody data-draw="infra-f-rows"></tbody>
-      </table>
-    </div>
-    <div class="ai27-sub" id="infra-co"><h3>주요 기업 2027 전망</h3></div>
-    <div class="ai27-tablewrap">
-      <table data-source="infra_companies" data-row-key="company" aria-label="주요 기업 전망">
-        <thead><tr><th data-field="company">기업</th><th data-field="segment">분야</th><th data-field="outlook">2027 전망</th></tr></thead>
-        <tbody data-draw="infra-c-rows"></tbody>
-      </table>
-    </div>
-  </section>
-
-  <!-- ============ PART 12 ============ -->
-  <section class="ai27-part" id="part12">
-    <div class="ai27-parthead">
-      <span class="ai27-partno" aria-hidden="true">12</span>
-      <h2>국가별 AI 정책과 경쟁력</h2>
-      <p class="ai27-muted">경쟁력 점수표는 6개 차원(모델·컴퓨트·인재·자본·제도·도입, 각 0–10)으로 매긴 분석가 판단입니다. 한국은 예산·GPU·모델로 37점에서 40점으로 오를 전망이지만, 인재(5점)와 정부 집행 평가(Oxford 3위에서 8위)가 약점입니다.</p>
-    </div>
-    <div class="ai27-card" id="policy-score">
-      <h3>경쟁력 점수 2026 → 2027 (60점 만점)</h3>
-      <div class="ai27-chart" data-draw="policy-dumb" data-source="policy_scorecard"></div>
-    </div>
-    <div class="ai27-tablewrap">
-      <table data-source="policy_scorecard" data-row-key="country" aria-label="2027 차원별 점수" class="ai27-heat">
-        <thead><tr><th data-field="country">국가</th><th data-field="model_2027">모델</th><th data-field="compute_2027">컴퓨트</th><th data-field="talent_2027">인재</th><th data-field="capital_2027">자본</th><th data-field="regulation_2027">제도</th><th data-field="adoption_2027">도입</th><th data-field="total_2027">합계</th><th data-field="note">비고</th></tr></thead>
-        <tbody data-draw="policy-s-rows"></tbody>
-      </table>
-    </div>
-    <div class="ai27-sub" id="policy-countries"><h3>국가별 정책 현황과 2027 경쟁력 효과</h3></div>
-    <div class="ai27-tablewrap">
-      <table data-source="policy_countries" data-row-key="country" aria-label="국가별 정책">
-        <thead><tr><th data-field="country">국가</th><th data-field="effect">2027 효과</th><th data-field="status">2026 현황</th><th data-field="laws">법·규제</th><th data-field="investment">투자</th><th data-field="rationale">근거</th></tr></thead>
-        <tbody data-draw="policy-c-rows"></tbody>
-      </table>
-    </div>
-    <div class="ai27-sub" id="policy-reg"><h3>규제 접근 비교</h3></div>
-    <div class="ai27-tablewrap">
-      <table data-source="policy_regulation" data-row-key="country" aria-label="규제 비교">
-        <thead><tr><th data-field="country">국가</th><th data-field="approach">접근</th><th data-field="instrument">핵심 수단</th><th data-field="change_2027">2027 변화</th></tr></thead>
-        <tbody data-draw="policy-r-rows"></tbody>
-      </table>
-    </div>
-  </section>
-  <!-- ============ PART 13 ============ -->
-  <section class="ai27-part" id="part13">
-    <div class="ai27-parthead">
-      <span class="ai27-partno" aria-hidden="true">13</span>
-      <h2>AI 발전의 '법칙'</h2>
-      <p class="ai27-muted">Epoch 원자료로 직접 회귀 분석했습니다. 종합역량(ECI)은 연 약 17점의 직선 성장을 유지했지만 사이버, 업무 자동화, 추론 연산 같은 개별 영역은 훨씬 가파르게 가속했습니다. 2027년의 메타 변수는 AI R&D 가속이 다른 연구소로 번지는지입니다.</p>
-    </div>
-    <div class="ai27-card" id="laws-spark">
-      <h3>법칙별 추세 (점선 끝점은 2027년 말 기준 전망)</h3>
-      <p class="ai27-muted">METR 시간지평은 로그 눈금입니다. 16시간(960분)을 넘는 값은 현재 과제군으로는 측정할 수 없는 함의값입니다.</p>
-      <div class="ai27-chart" data-draw="laws-sparks" data-source="laws_series"></div>
-    </div>
-    <div class="ai27-tablewrap">
-      <table data-source="laws_table" data-row-key="id" aria-label="AI 발전 법칙">
-        <thead><tr><th data-field="id">ID</th><th data-field="name">법칙</th><th data-field="verdict">2026 판정</th><th data-field="dominant">2027</th><th data-field="low">낮음</th><th data-field="base">기준</th><th data-field="high">높음</th><th data-field="unit">단위</th><th data-field="formula">형태</th></tr></thead>
-        <tbody data-draw="laws-rows"></tbody>
-      </table>
-    </div>
-    <div class="ai27-sub" id="laws-signposts"><h3>선행 신호</h3></div>
-    <div class="ai27-tablewrap">
-      <table data-source="laws_signposts" data-row-key="indicator" aria-label="법칙 선행 신호">
-        <thead><tr><th data-field="indicator">지표</th><th data-field="threshold">기준</th><th data-field="meaning">의미</th></tr></thead>
-        <tbody data-draw="laws-sig-rows"></tbody>
-      </table>
-    </div>
-  </section>
-
-  <!-- ============ PART 14 ============ -->
-  <section class="ai27-part" id="part14">
-    <div class="ai27-parthead">
-      <span class="ai27-partno" aria-hidden="true">14</span>
-      <h2>수학·물리 난제</h2>
-      <p class="ai27-muted">2026년에는 Erdős 단위거리 추측이 반증됐고, AlphaProof가 미해결 Erdős 문제 9개를 Lean으로 풀었으며, 페르마의 마지막 정리가 완전히 형식화됐습니다. AI는 구성·반례·경계 개선·형식화에 강하고, 새 이론 구축에는 약합니다. 밀레니엄 문제는 2027년에도 닿지 않습니다.</p>
-    </div>
-    <div class="ai27-card" id="mp-counts">
-      <h3>2027 수량 전망</h3>
-      <div class="ai27-tablewrap" style="border:0">
-        <table data-source="mathphys_counts" data-row-key="metric" aria-label="수학·물리 2027 수량 전망">
-          <thead><tr><th data-field="metric">지표</th><th data-field="low">낮음</th><th data-field="base">기준</th><th data-field="high">높음</th></tr></thead>
-          <tbody data-draw="mp-count-rows"></tbody>
-        </table>
-      </div>
-    </div>
-    <div class="ai27-sub" id="mp-ach"><h3>2025–2026 성과와 검증 수준</h3></div>
-    <div class="ai27-tablewrap">
-      <table data-source="mathphys_achievements" data-row-key="problem" aria-label="수학·물리 성과">
-        <thead><tr><th data-field="date">시점</th><th data-field="field">분야</th><th data-field="problem">문제</th><th data-field="system">시스템</th><th data-field="verification">검증</th><th data-field="significance">의미</th><th data-field="result">결과</th></tr></thead>
-        <tbody data-draw="mp-ach-rows"></tbody>
-      </table>
-    </div>
-    <div class="ai27-sub" id="mp-targets"><h3>2027 도전 목표</h3></div>
-    <div class="ai27-tablewrap">
-      <table data-source="mathphys_targets" data-row-key="target" aria-label="2027 도전 목표">
-        <thead><tr><th data-field="likelihood">가능성</th><th data-field="field">분야</th><th data-field="target">목표</th><th data-field="signal">확인 신호</th></tr></thead>
-        <tbody data-draw="mp-tg-rows"></tbody>
-      </table>
-    </div>
-  </section>
-
-  <!-- ============ PART 15 ============ -->
-  <section class="ai27-part" id="part15">
-    <div class="ai27-parthead">
-      <span class="ai27-partno" aria-hidden="true">15</span>
-      <h2>AI for Science와 국가 문샷</h2>
-      <p class="ai27-muted">AI 연구 동료는 문헌·분석·코드·계산 실험을 수시간~수일 자율 수행하지만, 물리 실험 시간은 줄이지 못해 병목이 '검증'과 '실험실'로 옮겨 갔습니다. K-문샷은 거버넌스를 갖춘 '초기' 단계이고, 미국 Genesis는 1년 만에 297개 과제와 연방 약정 50억 달러 이상으로 순항 중입니다.</p>
-    </div>
-    <div class="ai27-sub" id="moonshots"><h3>국가 문샷 진척과 2027 예상 성과</h3></div>
-    <div class="ai27-tablewrap">
-      <table data-source="moonshot_programs" data-row-key="program" aria-label="국가 문샷">
-        <thead><tr><th data-field="country">국가</th><th data-field="program">프로그램</th><th data-field="status">상태</th><th data-field="goal">목표</th><th data-field="progress">2026 진척</th><th data-field="result_2027">2027 예상 성과</th></tr></thead>
-        <tbody data-draw="ms-rows"></tbody>
-      </table>
-    </div>
-    <div class="ai27-grid2">
-      <div class="ai27-card" id="ai4s-fields">
-        <h3>2027 분야별 기여</h3>
-        <ul class="ai27-list" data-draw="ai4s-field-list" data-source="ai4s_fields"></ul>
-      </div>
-      <div class="ai27-card" id="ai4s-cap">
-        <h3>2027년 AI 연구 동료가 할 수 있는 일과 없는 일</h3>
-        <ul class="ai27-list" data-draw="ai4s-cap-list" data-source="ai4s_capability"></ul>
-      </div>
-    </div>
-    <div class="ai27-sub" id="ai4s-col"><h3>2026 AI 연구 동료와 검증된 성과</h3></div>
-    <div class="ai27-tablewrap">
-      <table data-source="ai4s_colleagues" data-row-key="system" aria-label="AI 연구 동료">
-        <thead><tr><th data-field="system">시스템</th><th data-field="org">주체</th><th data-field="results">검증된 성과</th></tr></thead>
-        <tbody data-draw="ai4s-col-rows"></tbody>
-      </table>
-    </div>
-  </section>
+  <!-- ============ PART 20 (id part16) ============ -->
   <!-- ============ PART 16 ============ -->
   <section class="ai27-part" id="part16">
     <div class="ai27-parthead">
-      <span class="ai27-partno" aria-hidden="true">16</span>
+      <span class="ai27-partno" aria-hidden="true">20</span>
       <h2>사이버 회복력과 디지털 재난안전</h2>
       <p class="ai27-muted">회복력은 사고를 예측하고, 견디고, 복구하고, 적응하는 능력입니다. 2027년은 회복력 규제의 집행 원년입니다(EU 사이버복원력법 12-11, 한국 정보보호수준 평가 04-01). 국정자원 화재 뒤 완전 이중화(2028)까지 2027–28년이 취약 구간이고, 클라우드 장애와 AI 에이전트발 장애가 새로운 단일 장애점입니다.</p>
     </div>
@@ -1149,191 +1375,43 @@
       </table>
     </div>
   </section>
-  <!-- ============ PART 17 ============ -->
-  <section class="ai27-part" id="part17">
+
+  <p class="ai27-group" role="heading" aria-level="2">제6부 보완과 종합</p>
+
+  <!-- ============ PART 21 (id part21) ============ -->
+  <section class="ai27-part" id="part21">
     <div class="ai27-parthead">
-      <span class="ai27-partno" aria-hidden="true">17</span>
-      <h2>토큰 경제</h2>
-      <p class="ai27-muted">같은 성능의 토큰 단가는 연 수십 배 떨어지지만 물량은 연 3~6배 늘어 총지출이 커지는 '제번스 확장'이 기준입니다. 과제당 토큰이 늘어 '단가는 하락, 태스크 비용은 정체'가 기업 체감의 표준이 되고, 관심은 AI FinOps와 '좌석 + 토큰 크레딧 + 결과' 하이브리드 과금으로 옮겨 갑니다.</p>
+      <span class="ai27-partno" aria-hidden="true">21</span>
+      <h2>보완 주제: 북한·국방·인재·데이터·전력·공공·표준·선거·교육</h2>
+      <p class="ai27-muted">보고서 리뷰에서 빠진 것으로 확인돼 추가 조사한 9개 주제입니다. 보고서의 해당 장(11·13–16·19·20장)에 절로 들어가 있습니다. '(추정)'은 근거에서 미루어 본 전망, '(확인 필요)'는 출처가 약한 항목입니다.</p>
     </div>
-    <div class="ai27-card" id="tok-scen">
-      <h3>2027 토큰 경제 시나리오</h3>
-      <div class="ai27-chart" data-draw="tok-strip" data-source="tok_scenarios" style="min-height:40px"></div>
-      <div class="ai27-grid3" data-draw="tok-cards" data-source="tok_scenarios"></div>
-    </div>
-    <div class="ai27-sub" id="tok-metrics"><h3>2027 수치 전망 (낮음 / 기준 / 높음)</h3></div>
     <div class="ai27-tablewrap">
-      <table data-source="tok_metrics" data-row-key="metric" aria-label="토큰 경제 2027 수치 전망">
-        <thead><tr><th data-field="metric">지표</th><th data-field="low">낮음</th><th data-field="base">기준</th><th data-field="high">높음</th><th data-field="unit">단위</th></tr></thead>
-        <tbody data-draw="tok-met-rows"></tbody>
-      </table>
-    </div>
-    <div class="ai27-grid2">
-      <div class="ai27-card" id="tok-volume">
-        <h3>토큰 물량</h3>
-        <ul class="ai27-list" data-draw="tok-vol-list" data-source="tok_volume"></ul>
-      </div>
-      <div class="ai27-card" id="tok-price">
-        <h3>토큰 가격</h3>
-        <ul class="ai27-list" data-draw="tok-price-list" data-source="tok_price"></ul>
-      </div>
-    </div>
-    <div class="ai27-sub" id="tok-pay"><h3>에이전트 결제와 기계 경제</h3></div>
-    <div class="ai27-tablewrap">
-      <table data-source="tok_payments" data-row-key="item" aria-label="에이전트 결제">
-        <thead><tr><th data-field="item">항목</th><th data-field="status">2026 현황</th><th data-field="outlook">2027 전망</th></tr></thead>
-        <tbody data-draw="tok-pay-rows"></tbody>
-      </table>
-    </div>
-    <div class="ai27-sub" id="tok-fc"><h3>2027 토큰 경제 전망</h3></div>
-    <div class="ai27-tablewrap">
-      <table data-source="tok_forecast" data-row-key="text" aria-label="2027 토큰 경제 전망">
-        <thead><tr><th data-field="likelihood">가능성</th><th data-field="area">영역</th><th data-field="text">전망</th></tr></thead>
-        <tbody data-draw="tok-fc-rows"></tbody>
+      <table data-source="gap_items" data-row-key="item" aria-label="보완 주제 근거">
+        <thead><tr><th data-field="topic">주제</th><th data-field="date">시점</th><th data-field="item">내용</th><th data-field="outlook">2027 전망</th><th data-field="korea">한국</th></tr></thead>
+        <tbody data-draw="gap-rows"></tbody>
       </table>
     </div>
   </section>
 
-  <!-- ============ PART 18 ============ -->
-  <section class="ai27-part" id="part18">
+  <!-- ============ PART 22 (id part22) ============ -->
+  <section class="ai27-part" id="part22">
     <div class="ai27-parthead">
-      <span class="ai27-partno" aria-hidden="true">18</span>
-      <h2>스마트폰·글래스·웨어러블·온디바이스 AI·AI IoT</h2>
-      <p class="ai27-muted">2027년 기기 AI의 최대 변수는 메모리입니다. 폰·PC 출하는 소폭 회복에 그치지만 생성형 AI폰은 출하의 절반을 넘어 기본 사양이 되고, 스마트 글래스는 40% 안팎 성장합니다. 기기 → 프라이빗 클라우드 → 프런티어의 3단 하이브리드가 표준이 됩니다.</p>
+      <span class="ai27-partno" aria-hidden="true">22</span>
+      <h2>종합: ETRI 역할과 2027 주요 일정</h2>
+      <p class="ai27-muted">보고서 22장의 ETRI 역할 종합표와 2027 주요 일정 통합표입니다. 시나리오와 선행 신호는 Part 02에 있습니다.</p>
     </div>
-    <div class="ai27-card" id="dev-scen">
-      <h3>2027 기기 AI 시나리오</h3>
-      <div class="ai27-chart" data-draw="dev-strip" data-source="dev_scenarios" style="min-height:40px"></div>
-      <div class="ai27-grid3" data-draw="dev-cards" data-source="dev_scenarios"></div>
-    </div>
-    <div class="ai27-sub" id="dev-seg"><h3>영역별 2026 현황과 2027 전망</h3></div>
+    <div class="ai27-sub" id="etri"><h3>ETRI 역할 종합(제안)</h3></div>
     <div class="ai27-tablewrap">
-      <table data-source="dev_segments" data-row-key="segment" aria-label="기기 영역별 전망">
-        <thead><tr><th data-field="segment">영역</th><th data-field="status">2026 현황</th><th data-field="outlook">2027 전망</th></tr></thead>
-        <tbody data-draw="dev-seg-rows"></tbody>
+      <table data-source="etri_roles" data-row-key="area" aria-label="ETRI 역할 종합">
+        <thead><tr><th data-field="area">분야(장)</th><th data-field="task">핵심 과제</th><th data-field="output">2027 산출물</th><th data-field="kpi">성과 지표(예시)</th></tr></thead>
+        <tbody data-draw="etri-rows"></tbody>
       </table>
     </div>
-    <div class="ai27-grid2">
-      <div class="ai27-card" id="dev-metrics">
-        <h3>2027 수치 전망 (낮음 / 기준 / 높음)</h3>
-        <ul class="ai27-list" data-draw="dev-met-list" data-source="dev_metrics"></ul>
-      </div>
-      <div class="ai27-card" id="dev-events">
-        <h3>2027 주요 일정</h3>
-        <ul class="ai27-list" data-draw="dev-ev-list" data-source="dev_events"></ul>
-      </div>
-    </div>
-    <div class="ai27-sub" id="dev-issues"><h3>이슈: 프라이버시·가격·보안·메모리</h3></div>
+    <div class="ai27-sub" id="cal27"><h3>2027 주요 일정 통합</h3></div>
     <div class="ai27-tablewrap">
-      <table data-source="dev_issues" data-row-key="issue" aria-label="기기 AI 이슈">
-        <thead><tr><th data-field="issue">이슈</th><th data-field="outlook">2027 전망</th></tr></thead>
-        <tbody data-draw="dev-iss-rows"></tbody>
-      </table>
-    </div>
-    <div class="ai27-sub" id="dev-fc"><h3>2027 기기 AI 전망</h3></div>
-    <div class="ai27-tablewrap">
-      <table data-source="dev_forecast" data-row-key="text" aria-label="2027 기기 AI 전망">
-        <thead><tr><th data-field="likelihood">가능성</th><th data-field="area">영역</th><th data-field="text">전망</th></tr></thead>
-        <tbody data-draw="dev-fc-rows"></tbody>
-      </table>
-    </div>
-  </section>
-  <!-- ============ PART 19 ============ -->
-  <section class="ai27-part" id="part19">
-    <div class="ai27-parthead">
-      <span class="ai27-partno" aria-hidden="true">19</span>
-      <h2>AGI·ASI·RSI: 2027년 초지능에 얼마나 가까워지나</h2>
-      <p class="ai27-muted">2027년은 'AGI가 온 해'보다 'AI가 AI 연구를 가속하기 시작한 해'가 될 가능성이 큽니다. 프런티어는 초인적 코더의 문턱에 있고, 2027년 말까지 도달 확률은 초인적 AI 연구자 25%, 엄밀한 범용 AGI 12%, 초지능 2%입니다(본 보고서 주관). 핵심 변수는 AI R&D 가속이 여러 연구소로 번지는지입니다.</p>
-    </div>
-    <div class="ai27-card" id="agi-ladder">
-      <h3>AI 역량 사다리와 2027년 위치</h3>
-      <figure class="ai27-figure"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 460" role="img" aria-label="AI 역량 사다리. 2026년 11월 프런티어는 전문가급 과제와 하루 단위 자율 수행을 넘어 초인적 코더 단계에 부분 도달했다. 2027년 말 기준 시나리오는 초인적 코더 단계 안, 가속 시나리오는 초인적 AI 연구자 단계 후반이다. 2027년 말까지 도달 확률은 초인적 코더 50%, 초인적 AI 연구자 25%, 범용 업무 AGI 12%, 초지능 2%." style="max-width:100%;height:auto;font-family:inherit"><line x1="30" y1="300" x2="976" y2="300" style="stroke:var(--color-border-line, var(--line, #dcdfe4));stroke-width:1.5"/><rect x="40" y="260" width="152" height="40" rx="3" style="fill:var(--color-ok, var(--ok, #1f7a4a));fill-opacity:0.14;stroke:var(--color-ok, var(--ok, #1f7a4a));stroke-width:1.4"/><text x="116.0" y="230.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13.5px;font-weight:700">전문가급 과제</text><text x="116.0" y="247.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">박사·올림피아드 문제</text><text x="116.0" y="282.0" text-anchor="middle" style="fill:var(--color-ok, var(--ok, #1f7a4a));font-size:12px;font-weight:700">도달</text><rect x="48" y="374" width="136" height="14" rx="3" style="fill:var(--color-border-line, var(--line, #dcdfe4))"/><rect x="48" y="374" width="134.6" height="14" rx="3" style="fill:var(--ai27-accent, var(--accent, #3d40d4))"/><text x="116.0" y="406.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13px;font-weight:700">99%</text><rect x="196" y="220" width="152" height="80" rx="3" style="fill:var(--color-ok, var(--ok, #1f7a4a));fill-opacity:0.14;stroke:var(--color-ok, var(--ok, #1f7a4a));stroke-width:1.4"/><text x="272.0" y="190.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13.5px;font-weight:700">하루 단위 자율</text><text x="272.0" y="207.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">16시간+ 과제 자율 수행</text><text x="272.0" y="242.0" text-anchor="middle" style="fill:var(--color-ok, var(--ok, #1f7a4a));font-size:12px;font-weight:700">도달</text><rect x="204" y="374" width="136" height="14" rx="3" style="fill:var(--color-border-line, var(--line, #dcdfe4))"/><rect x="204" y="374" width="131.9" height="14" rx="3" style="fill:var(--ai27-accent, var(--accent, #3d40d4))"/><text x="272.0" y="406.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13px;font-weight:700">97%</text><rect x="352" y="180" width="152" height="120" rx="3" style="fill:var(--color-warn, var(--warn, #985a00));fill-opacity:0.14;stroke:var(--color-warn, var(--warn, #985a00));stroke-width:1.4"/><text x="428.0" y="150.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13.5px;font-weight:700">초인적 코더</text><text x="428.0" y="167.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">최고 엔지니어 대체</text><text x="428.0" y="202.0" text-anchor="middle" style="fill:var(--color-warn, var(--warn, #985a00));font-size:12px;font-weight:700">부분</text><rect x="360" y="374" width="136" height="14" rx="3" style="fill:var(--color-border-line, var(--line, #dcdfe4))"/><rect x="360" y="374" width="68.0" height="14" rx="3" style="fill:var(--ai27-accent, var(--accent, #3d40d4))"/><text x="428.0" y="406.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13px;font-weight:700">50%</text><rect x="508" y="140" width="152" height="160" rx="3" style="fill:var(--color-warn, var(--warn, #985a00));fill-opacity:0.14;stroke:var(--color-warn, var(--warn, #985a00));stroke-width:1.4"/><text x="584.0" y="110.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13.5px;font-weight:700">초인적 AI 연구자</text><text x="584.0" y="127.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">AI 연구를 스스로 주도</text><text x="584.0" y="162.0" text-anchor="middle" style="fill:var(--color-warn, var(--warn, #985a00));font-size:12px;font-weight:700">초기 징후</text><rect x="516" y="374" width="136" height="14" rx="3" style="fill:var(--color-border-line, var(--line, #dcdfe4))"/><rect x="516" y="374" width="34.0" height="14" rx="3" style="fill:var(--ai27-accent, var(--accent, #3d40d4))"/><text x="584.0" y="406.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13px;font-weight:700">25%</text><rect x="664" y="100" width="152" height="200" rx="3" style="fill:var(--color-bad, var(--bad, #b3362f));fill-opacity:0.14;stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:1.4"/><text x="740.0" y="70.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13.5px;font-weight:700">범용 업무 AGI</text><text x="740.0" y="87.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">원격 화이트칼라 대부분</text><text x="740.0" y="122.0" text-anchor="middle" style="fill:var(--color-bad, var(--bad, #b3362f));font-size:12px;font-weight:700">미도달</text><rect x="672" y="374" width="136" height="14" rx="3" style="fill:var(--color-border-line, var(--line, #dcdfe4))"/><rect x="672" y="374" width="16.3" height="14" rx="3" style="fill:var(--ai27-accent, var(--accent, #3d40d4))"/><text x="740.0" y="406.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13px;font-weight:700">12%</text><rect x="820" y="60" width="152" height="240" rx="3" style="fill:var(--color-bad, var(--bad, #b3362f));fill-opacity:0.14;stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:1.4"/><text x="896.0" y="30.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13.5px;font-weight:700">초지능 ASI</text><text x="896.0" y="47.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">모든 인지 영역 최고 인간 압도</text><text x="896.0" y="82.0" text-anchor="middle" style="fill:var(--color-bad, var(--bad, #b3362f));font-size:12px;font-weight:700">미도달</text><rect x="828" y="374" width="136" height="14" rx="3" style="fill:var(--color-border-line, var(--line, #dcdfe4))"/><rect x="828" y="374" width="2.7" height="14" rx="3" style="fill:var(--ai27-accent, var(--accent, #3d40d4))"/><text x="896.0" y="406.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13px;font-weight:700">2%</text><line x1="350.0" y1="214" x2="350.0" y2="308" style="stroke:var(--color-fg, var(--fg, #14161c));stroke-width:2.4"/><polygon points="344.0,314 356.0,314 350.0,304" style="fill:var(--color-fg, var(--fg, #14161c))"/><text x="350.0" y="332.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:700">2026-11 현재</text><line x1="467.0" y1="214" x2="467.0" y2="308" style="stroke:var(--ai27-accent, var(--accent, #3d40d4));stroke-width:2.4"/><polygon points="461.0,314 473.0,314 467.0,304" style="fill:var(--ai27-accent, var(--accent, #3d40d4))"/><text x="467.0" y="332.0" text-anchor="middle" style="fill:var(--ai27-accent, var(--accent, #3d40d4));font-size:12px;font-weight:700">2027 말 기준</text><line x1="627.7" y1="174" x2="627.7" y2="308" style="stroke:var(--color-bad, var(--bad, #b3362f));stroke-width:2.4" stroke-dasharray="6 4"/><polygon points="621.7,314 633.7,314 627.7,304" style="fill:var(--color-bad, var(--bad, #b3362f))"/><text x="627.7" y="332.0" text-anchor="middle" style="fill:var(--color-bad, var(--bad, #b3362f));font-size:12px;font-weight:700">2027 말 가속</text><text x="36.0" y="362.0" text-anchor="start" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:12px;font-weight:600">2027년 말까지 도달 확률(본 보고서 주관)</text><text x="586.0" y="446.0" text-anchor="middle" style="fill:var(--color-bad, var(--bad, #b3362f));font-size:12px;font-weight:600">RSI 고리: 초인적 AI 연구자가 등장하면 위 칸으로 가는 속도 자체가 빨라진다</text></svg><figcaption class="ai27-muted">2026년 11월 프런티어는 ③ 초인적 코더 단계에 부분 도달했습니다. 2027년 말 기준 시나리오는 ③단계 안, 가속 시나리오는 ④단계 후반입니다. 막대는 2027년 말까지 도달 확률(주관)입니다.</figcaption></figure>
-    </div>
-    <div class="ai27-tablewrap">
-      <table data-source="agi_ladder" data-row-key="rung" aria-label="AI 역량 사다리">
-        <thead><tr><th data-field="rung">단계</th><th data-field="definition">정의</th><th data-field="status">2026-11</th><th data-field="evidence">근거</th><th data-field="prob">2027 말 도달 확률</th></tr></thead>
-        <tbody data-draw="agi-ladder-rows"></tbody>
-      </table>
-    </div>
-    <div class="ai27-card" id="agi-scen">
-      <h3>2027 AGI·RSI 시나리오</h3>
-      <div class="ai27-chart" data-draw="agi-strip" data-source="agi_scenarios" style="min-height:40px"></div>
-      <div class="ai27-grid3" data-draw="agi-cards" data-source="agi_scenarios"></div>
-    </div>
-    <div class="ai27-grid2">
-      <div class="ai27-card" id="agi-evidence">
-        <h3>2026년 말 현재 위치: 실측 근거</h3>
-        <ul class="ai27-list" data-draw="agi-ev-list" data-source="agi_evidence"></ul>
-      </div>
-      <div class="ai27-card" id="agi-metrics">
-        <h3>2027 수치 전망 (낮음 / 기준 / 높음)</h3>
-        <ul class="ai27-list" data-draw="agi-met-list" data-source="agi_metrics"></ul>
-      </div>
-    </div>
-    <div class="ai27-sub" id="agi-leaders"><h3>연구소 대표들의 시점 발언</h3></div>
-    <div class="ai27-tablewrap">
-      <table data-source="agi_leaders" data-row-key="claim" aria-label="연구소 대표 AGI 발언">
-        <thead><tr><th data-field="who">인물</th><th data-field="org">기관</th><th data-field="claim">주장</th><th data-field="date">시점</th><th data-field="status">2026년 상태</th></tr></thead>
-        <tbody data-draw="agi-lead-rows"></tbody>
-      </table>
-    </div>
-    <div class="ai27-grid2">
-      <div class="ai27-card" id="agi-markets">
-        <h3>예측가·예측시장</h3>
-        <ul class="ai27-list" data-draw="agi-mkt-list" data-source="agi_markets"></ul>
-      </div>
-      <div class="ai27-card" id="agi-watch">
-        <h3>조기경보 지표</h3>
-        <ul class="ai27-list" data-draw="agi-watch-list" data-source="agi_watch"></ul>
-      </div>
-    </div>
-    <div class="ai27-sub" id="agi-fc"><h3>2027 AGI·ASI·RSI 전망</h3></div>
-    <div class="ai27-tablewrap">
-      <table data-source="agi_forecast" data-row-key="text" aria-label="2027 AGI 전망">
-        <thead><tr><th data-field="likelihood">가능성</th><th data-field="area">영역</th><th data-field="text">전망</th></tr></thead>
-        <tbody data-draw="agi-fc-rows"></tbody>
-      </table>
-    </div>
-  </section>
-
-  <!-- ============ PART 20 ============ -->
-  <section class="ai27-part" id="part20">
-    <div class="ai27-parthead">
-      <span class="ai27-partno" aria-hidden="true">20</span>
-      <h2>AI 오용·악용·오정렬과 안전</h2>
-      <p class="ai27-muted">2027년 오용의 주류는 새 위협이 아니라 기존 범죄·공격의 증폭입니다. 생물·화학 'High'가 신모델의 기본 등급이 되고, 가드레일을 제거한 오픈웨이트 모델이 6개월 시차로 뒤따릅니다. 가장 큰 구조적 문제는 모델의 평가 인식률(40–50% 이상) 때문에 안전 평가 자체를 믿기 어려워진 점입니다.</p>
-    </div>
-    <div class="ai27-card" id="mis-map">
-      <h3>2027 위험 지도</h3>
-      <figure class="ai27-figure"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 520" role="img" aria-label="2027 AI 오용·공격·오정렬 위험 지도. 발생 가능성과 피해가 모두 큰 영역에 AI 오케스트레이션 사이버 공격, 프롬프트 주입·에이전트 탈취, 테러 계획 지원이 있다. 딥페이크·사기·시험 부정은 자주 일어나지만 피해가 상대적으로 작고, CBRN 역량 상향·가중치 탈취·에이전트 자기 복제는 드물지만 치명적이다." style="max-width:100%;height:auto;font-family:inherit"><rect x="80" y="44" width="560" height="406" style="fill:none;stroke:var(--color-border-line, var(--line, #dcdfe4));stroke-width:1.2"/><line x1="360.0" y1="44" x2="360.0" y2="450" style="stroke:var(--color-border-line, var(--line, #dcdfe4));stroke-dasharray:4 4"/><line x1="80" y1="247.0" x2="640" y2="247.0" style="stroke:var(--color-border-line, var(--line, #dcdfe4));stroke-dasharray:4 4"/><text x="360.0" y="484.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:12.5px;font-weight:600">2027년 눈에 띄는 발생 가능성 →</text><text x="34.0" y="247.0" text-anchor="middle" transform="rotate(-90 34 247.0)" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:12.5px;font-weight:600">피해 규모 →</text><text x="80.0" y="34.0" text-anchor="start" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11.5px;font-weight:600">드물지만 치명적: 사전 차단</text><text x="640.0" y="34.0" text-anchor="end" style="fill:var(--color-bad, var(--bad, #b3362f));font-size:11.5px;font-weight:700">자주·크게: 최우선 대응</text><text x="634.0" y="440.0" text-anchor="end" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11.5px;font-weight:600">자주·작게: 제도·탐지</text><text x="86.0" y="440.0" text-anchor="start" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11.5px;font-weight:600">드물고 작음</text><text x="80.0" y="466.0" text-anchor="start" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">낮음</text><text x="640.0" y="466.0" text-anchor="end" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">높음</text><circle cx="600.8" cy="238.9" r="13" style="fill:var(--ai27-accent, var(--accent, #3d40d4));fill-opacity:0.9;stroke:var(--color-panel, var(--paper, #ffffff));stroke-width:2"/><text x="600.8" y="243.4" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:12px;font-weight:700">1</text><circle cx="561.6" cy="279.5" r="13" style="fill:var(--ai27-accent, var(--accent, #3d40d4));fill-opacity:0.9;stroke:var(--color-panel, var(--paper, #ffffff));stroke-width:2"/><text x="561.6" y="284.0" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:12px;font-weight:700">2</text><circle cx="612.0" cy="385.0" r="13" style="fill:var(--ai27-accent, var(--accent, #3d40d4));fill-opacity:0.9;stroke:var(--color-panel, var(--paper, #ffffff));stroke-width:2"/><text x="612.0" y="389.5" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:12px;font-weight:700">3</text><circle cx="550.4" cy="182.0" r="13" style="fill:var(--color-bad, var(--bad, #b3362f));fill-opacity:0.9;stroke:var(--color-panel, var(--paper, #ffffff));stroke-width:2"/><text x="550.4" y="186.5" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:12px;font-weight:700">4</text><circle cx="505.6" cy="125.2" r="13" style="fill:var(--color-bad, var(--bad, #b3362f));fill-opacity:0.9;stroke:var(--color-panel, var(--paper, #ffffff));stroke-width:2"/><text x="505.6" y="129.7" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:12px;font-weight:700">5</text><circle cx="460.8" cy="247.0" r="13" style="fill:var(--ai27-accent, var(--accent, #3d40d4));fill-opacity:0.9;stroke:var(--color-panel, var(--paper, #ffffff));stroke-width:2"/><text x="460.8" y="251.5" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:12px;font-weight:700">6</text><circle cx="416.0" cy="157.7" r="13" style="fill:var(--ai27-accent, var(--accent, #3d40d4));fill-opacity:0.9;stroke:var(--color-panel, var(--paper, #ffffff));stroke-width:2"/><text x="416.0" y="162.2" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:12px;font-weight:700">7</text><circle cx="371.2" cy="214.5" r="13" style="fill:var(--color-warn, var(--warn, #985a00));fill-opacity:0.9;stroke:var(--color-panel, var(--paper, #ffffff));stroke-width:2"/><text x="371.2" y="219.0" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:12px;font-weight:700">8</text><circle cx="203.2" cy="64.3" r="13" style="fill:var(--ai27-accent, var(--accent, #3d40d4));fill-opacity:0.9;stroke:var(--color-panel, var(--paper, #ffffff));stroke-width:2"/><text x="203.2" y="68.8" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:12px;font-weight:700">9</text><circle cx="158.4" cy="109.0" r="13" style="fill:var(--color-bad, var(--bad, #b3362f));fill-opacity:0.9;stroke:var(--color-panel, var(--paper, #ffffff));stroke-width:2"/><text x="158.4" y="113.5" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:12px;font-weight:700">10</text><circle cx="130.4" cy="173.9" r="13" style="fill:var(--color-warn, var(--warn, #985a00));fill-opacity:0.9;stroke:var(--color-panel, var(--paper, #ffffff));stroke-width:2"/><text x="130.4" y="178.4" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:12px;font-weight:700">11</text><text x="680.0" y="30.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:13px;font-weight:700">번호와 위험 유형</text><circle cx="690" cy="48" r="10" style="fill:var(--ai27-accent, var(--accent, #3d40d4))"/><text x="690.0" y="52.5" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:11px;font-weight:700">1</text><text x="710.0" y="52.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12.5px;font-weight:400">딥페이크·AI 성착취물</text><circle cx="690" cy="78" r="10" style="fill:var(--ai27-accent, var(--accent, #3d40d4))"/><text x="690.0" y="82.5" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:11px;font-weight:700">2</text><text x="710.0" y="82.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12.5px;font-weight:400">AI 사기·사칭</text><circle cx="690" cy="108" r="10" style="fill:var(--ai27-accent, var(--accent, #3d40d4))"/><text x="690.0" y="112.5" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:11px;font-weight:700">3</text><text x="710.0" y="112.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12.5px;font-weight:400">시험 부정행위(AI 안경 등)</text><circle cx="690" cy="138" r="10" style="fill:var(--color-bad, var(--bad, #b3362f))"/><text x="690.0" y="142.5" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:11px;font-weight:700">4</text><text x="710.0" y="142.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12.5px;font-weight:400">프롬프트 주입·에이전트 탈취</text><circle cx="690" cy="168" r="10" style="fill:var(--color-bad, var(--bad, #b3362f))"/><text x="690.0" y="172.5" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:11px;font-weight:700">5</text><text x="710.0" y="172.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12.5px;font-weight:400">AI 오케스트레이션 사이버 공격</text><circle cx="690" cy="198" r="10" style="fill:var(--ai27-accent, var(--accent, #3d40d4))"/><text x="690.0" y="202.5" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:11px;font-weight:700">6</text><text x="710.0" y="202.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12.5px;font-weight:400">가드레일 제거 모델 악용</text><circle cx="690" cy="228" r="10" style="fill:var(--ai27-accent, var(--accent, #3d40d4))"/><text x="690.0" y="232.5" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:11px;font-weight:700">7</text><text x="710.0" y="232.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12.5px;font-weight:400">테러·폭력 계획 지원</text><circle cx="690" cy="258" r="10" style="fill:var(--color-warn, var(--warn, #985a00))"/><text x="690.0" y="262.5" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:11px;font-weight:700">8</text><text x="710.0" y="262.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12.5px;font-weight:400">오정렬 사고(평가·내부 배포)</text><circle cx="690" cy="288" r="10" style="fill:var(--ai27-accent, var(--accent, #3d40d4))"/><text x="690.0" y="292.5" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:11px;font-weight:700">9</text><text x="710.0" y="292.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12.5px;font-weight:400">CBRN 실질 역량 상향</text><circle cx="690" cy="318" r="10" style="fill:var(--color-bad, var(--bad, #b3362f))"/><text x="690.0" y="322.5" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:11px;font-weight:700">10</text><text x="710.0" y="322.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12.5px;font-weight:400">프런티어 가중치 탈취</text><circle cx="690" cy="348" r="10" style="fill:var(--color-warn, var(--warn, #985a00))"/><text x="690.0" y="352.5" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:11px;font-weight:700">11</text><text x="710.0" y="352.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12.5px;font-weight:400">배포 에이전트 자기 복제</text><rect x="680" y="380" width="14" height="14" rx="3" style="fill:var(--ai27-accent, var(--accent, #3d40d4))"/><text x="702.0" y="391.0" text-anchor="start" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:12px;font-weight:600">오용</text><rect x="770" y="380" width="14" height="14" rx="3" style="fill:var(--color-bad, var(--bad, #b3362f))"/><text x="792.0" y="391.0" text-anchor="start" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:12px;font-weight:600">공격</text><rect x="860" y="380" width="14" height="14" rx="3" style="fill:var(--color-warn, var(--warn, #985a00))"/><text x="882.0" y="391.0" text-anchor="start" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:12px;font-weight:600">오정렬</text></svg><figcaption class="ai27-muted">가로는 2027년 눈에 띄는 발생 가능성, 세로는 피해 규모입니다(본 보고서 추정). 오른쪽 위가 최우선 대응 영역입니다.</figcaption></figure>
-    </div>
-    <div class="ai27-tablewrap">
-      <table data-source="mis_map" data-row-key="no" aria-label="위험 지도 항목">
-        <thead><tr><th data-field="no">번호</th><th data-field="risk">위험</th><th data-field="family">계열</th><th data-field="likelihood">발생 가능성</th><th data-field="severity">피해 규모</th></tr></thead>
-        <tbody data-draw="mis-map-rows"></tbody>
-      </table>
-    </div>
-    <div class="ai27-card" id="mis-scen">
-      <h3>2027 오용·안전 시나리오</h3>
-      <div class="ai27-chart" data-draw="mis-strip" data-source="mis_scenarios" style="min-height:40px"></div>
-      <div class="ai27-grid3" data-draw="mis-cards" data-source="mis_scenarios"></div>
-    </div>
-    <div class="ai27-card" id="mis-metrics">
-      <h3>2027 수치 전망 (낮음 / 기준 / 높음)</h3>
-      <ul class="ai27-list" data-draw="mis-met-list" data-source="mis_metrics"></ul>
-    </div>
-    <div class="ai27-sub" id="mis-items"><h3>2025–2026 근거: CBRN·테러·시험 부정·오픈웨이트·에이전트 공격·오정렬·레드팀·딥페이크·규제</h3></div>
-    <div class="ai27-tablewrap">
-      <table data-source="mis_items" data-row-key="item" aria-label="AI 오용·안전 근거">
-        <thead><tr><th data-field="topic">주제</th><th data-field="date">시점</th><th data-field="item">내용</th><th data-field="korea">한국</th></tr></thead>
-        <tbody data-draw="mis-item-rows"></tbody>
-      </table>
-    </div>
-    <div class="ai27-sub" id="mis-fc"><h3>2027 오용·오정렬·안전 전망</h3></div>
-    <div class="ai27-tablewrap">
-      <table data-source="mis_forecast" data-row-key="text" aria-label="2027 오용 안전 전망">
-        <thead><tr><th data-field="likelihood">가능성</th><th data-field="area">영역</th><th data-field="text">전망</th></tr></thead>
-        <tbody data-draw="mis-fc-rows"></tbody>
+      <table data-source="cal_2027" data-row-key="event" aria-label="2027 주요 일정">
+        <thead><tr><th data-field="date">시점</th><th data-field="event">일정</th><th data-field="chapter">보고서 장</th></tr></thead>
+        <tbody data-draw="cal-rows"></tbody>
       </table>
     </div>
   </section>
@@ -2585,6 +2663,22 @@
     fill('acc-item-rows', 'acc_items', (tr, r) => tr.append(A.td(r.side, 'mid'), A.td(r.date), A.td(r.actor, 'mid'), A.td(r.type),
       A.td(A.safeUrl(r.url) ? A.link(r.url, r.measure) : r.measure, 'wide')));
     fill('acc-fc-rows', 'acc_forecast', (tr, r) => tr.append(A.td(pill(r.likelihood)), A.td(r.area), A.td(r.text, 'wide')));
+  })();
+</script>
+
+<script>
+  // ---------- Part 21–22: gap topics, ETRI roles, 2027 calendar ----------
+  (function () {
+    const A = window.AI27;
+    const rowsOf = (id) => { const d = dash.data(id); return d.status === 'ok' ? d.data : null; };
+    const fill = (name, id, build) => dash.draw(name, (tbody) => {
+      const rows = rowsOf(id); if (!rows) return;
+      tbody.replaceChildren(...rows.map((r) => { const tr = document.createElement('tr'); build(tr, r); return tr; }));
+    });
+    fill('gap-rows', 'gap_items', (tr, r) => tr.append(A.td(r.topic, 'mid'), A.td(r.date),
+      A.td(A.safeUrl(r.url) ? A.link(r.url, r.item) : r.item, 'wide'), A.td(r.outlook || '—', 'wide'), A.td(r.korea)));
+    fill('etri-rows', 'etri_roles', (tr, r) => tr.append(A.td(r.area, 'mid'), A.td(r.task, 'wide'), A.td(r.output, 'wide'), A.td(r.kpi, 'mid')));
+    fill('cal-rows', 'cal_2027', (tr, r) => tr.append(A.td(r.date), A.td(r.event, 'wide'), A.td(r.chapter)));
   })();
 </script>
 
