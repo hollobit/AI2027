@@ -1,0 +1,90 @@
+[
+ {
+  "domain": "바이오·단백질",
+  "stage": "임상 문턱",
+  "maturity": 3,
+  "models": "IsoDDE (AlphaFold 3 계열 후속), Boltz-2 / BoltzGen, Chai-2, ESMFold2 / ESMC-6B",
+  "key_2027": "오픈 가중치 생체분자 모델(ESMFold2·Boltz 계열)이 사실상 산업 표준이 되어 폐쇄 모델과 성능 격차가 좁혀짐",
+  "status": "구조예측에서 결합친화도·설계·가상세포로 확장. AlphaFold 3(2024) 이후 오픈 복제군(Boltz-2, OpenFold3, Chai-1)이 표준이 됐고, 2026년 2월 Isomorphic Labs가 비공개 통합 설계엔진 IsoDDE를 공개했다(자체 보고: 'Runs N' Poses' 벤치마크에서 학습셋과 가장 다른 구간 정확도를 AF3 대비 2배 이상, 항체-항원 고정밀(DockQ) 영역에서 AF3 대비 2.3배·Boltz-2 대비 19.8배, FE…"
+ },
+ {
+  "domain": "의료",
+  "stage": "허가 多·근거 弱",
+  "maturity": 3,
+  "models": "ChatGPT for Clinicians (GPT-5.4 기반), MedGemma 1.5 (4B 멀티모달), AMIE / AI co-clinician, AI Diagnostic Orchestrator (MAI-DxO)",
+  "key_2027": "임상의용 전문 LLM 제품(ChatGPT for Clinicians·AMIE류)이 유료 기업판·EHR 통합으로 확장되고, 문서화에서 임상 의사결정 지원으로 범위를 넓힘",
+  "status": "임상 LLM은 '벤치마크 포화 → 전문가용 제품화' 단계로 넘어갔다. MedQA(USMLE)는 Gemini 3.1 Pro 97.4%로 사실상 포화, HealthBench는 GPT-5.2 88.0점, 전문가 난도로 재설계된 HealthBench Professional(의사 작성 525개 과제, 15,079개 루브릭 기준, 1/3이 의사의 적대적 테스트)에서는 ChatGPT for Clinicians의 GPT-5.4가 기본 GPT-5.4·타 모델·인간 의사 응답을…"
+ },
+ {
+  "domain": "화학·소재",
+  "stage": "산업 표준 도구화",
+  "maturity": 4,
+  "models": "EquiformerV3-DeNS-OAM / UMA, MatterGen + MatterSim, GNoME, DPA-4.1-max-OAM",
+  "key_2027": "범용 원자간 포텐셜(UMLIP)이 산업 R&D의 기본 도구로 정착하고 벤더 CAE/시뮬레이션 제품에 내장",
+  "status": "범용 원자간 포텐셜(UMLIP)이 사실상의 소재 파운데이션 모델로 자리 잡았다. Matbench Discovery 리더보드에서 Meta FAIR EquiformerV3-DeNS-OAM이 정밀도 0.928·재현율 0.978·R² 0.868, DeepModeling DPA-4.1-max-OAM이 MAE 0.017 eV/atom·DAF 6.16으로 선두권이며, 대부분 오픈 가중치다. 생성 모델 축은 Microsoft MatterGen(안정성 74.4%, 신규성 62…"
+ },
+ {
+  "domain": "기상·기후·지구",
+  "stage": "현업 운영",
+  "maturity": 5,
+  "models": "AIFS Single v2 / AIFS ENS v2, AIGFS v1.1 / AIGEFS / HGEFS, WeatherNext 2 (GenCast 계열), Aurora",
+  "key_2027": "주요 기상청의 기본 예보 산출물이 AI 모델 중심으로 전환되고, 전통 NWP는 관측 동화·검증·극한현상 백업 역할로 재배치",
+  "status": "AI 예보는 '연구'에서 '현업(operational)'으로 완전히 넘어간, 특화 파운데이션 모델의 가장 성숙한 사례다. ECMWF는 AIFS Single을 2025년 2월 25일, AIFS ENS를 2025년 7월 1일 현업화한 뒤 2026년 5월 12일 IFS Cycle 50r1과 함께 AIFS v2를 현업 투입했다(아키텍처 변경 없이 학습데이터 2년 추가, ECMWF 최초의 데이터 기반 적설 예보 포함). AIFS ENS는 중기 상층 변수에서 IFS EN…"
+ },
+ {
+  "domain": "수학·과학발견",
+  "stage": "연구 성과 급증",
+  "maturity": 3,
+  "models": "AlphaProof / AlphaEvolve, Kosmos, Robin / Finch / Crow, ERA",
+  "key_2027": "AI가 주요 수학 학술지에 공저자급 기여로 등재된 정리 증명이 복수 보고되고, Lean 형식화가 검증 표준으로 굳어짐",
+  "status": "수학은 2026년 특화 AI의 성과가 가장 극적으로 가시화된 영역이다. Epoch AI는 2026년 8월 FrontierMath-Erdős(Thomas Bloom이 선정한, 당시 미해결 상태였던 '중요하고 어려운' 에르되시 문제 68개 — erdosproblems.com의 미해결 652개 중 약 10%, 50개는 Lean으로 형식화)를 공개했고, 그중 17개가 이후 해결됐다고 집계한다(Epoch는 에르되시 결과의 검증·재현이 어렵고 표본이 수학 전체를 대표하지…"
+ },
+ {
+  "domain": "시계열·정형",
+  "stage": "조용한 상용화",
+  "maturity": 4,
+  "models": "Chronos-2, TSM, TimesFM, Moirai",
+  "key_2027": "클라우드 사업자의 관리형 예측 서비스에 TSFM이 기본 엔진으로 탑재되어 '예측 모델을 학습시키지 않는' 운영이 일반화",
+  "status": "제로샷 시계열 파운데이션 모델(TSFM)이 '조용히 상용화된' 특화 모델 범주다. arXiv에서 'time series foundation model'을 언급한 논문은 2024년 43편 → 2025년 151편 → 2026년 10월 30일 기준 273편으로 증가했다(3자 집계). 대표 계보는 Google TimesFM(디코더 전용, 200M 초기형; GIFT-Eval 0.82 수준), Amazon Chronos 계열(Chronos-Bolt → Chronos-2)…"
+ },
+ {
+  "domain": "로봇·체화 AI",
+  "stage": "API 상품화",
+  "maturity": 3,
+  "models": "π0.7 / π0.6* / Pi API, Gemini Robotics 2 / ER 2 / On-Device 2, Isaac GR00T N1.6 / N1.7 / N2(프리뷰), Cosmos 3 (Nano 16B / Super 64B)",
+  "key_2027": "로봇 FM을 API·라이선스로 판매하는 사업 모델이 주류가 된다(PI·Google·NVIDIA 3강에 중국 오픈모델이 추격)",
+  "status": "2026년은 VLA(vision-language-action) 로봇 파운데이션 모델이 '연구 데모'에서 'API·라이선스 상품'으로 넘어간 해다. Physical Intelligence는 π0.7(2026-04-16, 처음 보는 로봇에서 일반화)에 이어 2026-10-13 Pi API 베타(데이터 업로드→호스팅 파인튜닝→클라우드 추론)를 열었다. Google DeepMind는 Gemini Robotics 2(2026-07-30)로 전신 제어·멀티로봇 협업으로 …"
+ },
+ {
+  "domain": "월드모델·자율주행",
+  "stage": "데이터 파이프라인",
+  "maturity": 3,
+  "models": "Cosmos 3 / Cosmos Reason 2 / Cosmos Predict 2.5, Genie 3 / Veo 3.1, V-JEPA 2, EMMA / Waymo Driver FM",
+  "key_2027": "Waymo가 주 100만 건을 넘기고 미국 내 20개 이상 도시로 확대된다",
+  "status": "월드모델은 Gartner '2027 10대 전략기술'에 들어갔다(2026-10). 대표 사례는 NVIDIA Cosmos 3(오픈 옴니모달, 2026-06 보고서), Google Genie 3·Veo 3.1, Meta V-JEPA 2, 중국 LingBot-World·PhiZero 등이다. 대시보드 world-model 카테고리 405개 지표의 SOTA 보유는 NVIDIA 86, Alibaba 73, Google 55, Tencent 40 순이다. 물리 이해 지표…"
+ },
+ {
+  "domain": "통신·6G",
+  "stage": "하이브리드 수렴",
+  "maturity": 2,
+  "models": "Large Telecom Model (LTM), OTel 2.0 / 4B SLM, A.X K1(500B)·A.X K2(688B) + 텔코 LLM, 믿:음 / SOTA K(MS 협업)",
+  "key_2027": "3GPP 6G WI(2027-03) 승인과 함께 AI/ML 네이티브 공중인터페이스 범위가 확정된다",
+  "status": "통신 특화 FM은 '범용 프런티어 + 도메인 파인튜닝 하이브리드'로 수렴했다. GSMA Open-Telco LLM Benchmarks 2단계(2025-11) 결론은 이렇다. 전체 성능은 프런티어 모델이 앞서지만, AT&T의 파인튜닝 Gemma가 TeleLogs(5G 장애 원인분석)에서 최고점을 받는 등 운영 정확도는 타깃 파인튜닝이 좌우한다. 따라서 하이브리드 아키텍처가 해법이다. SoftBank LTM은 2026-03-30 기준 제출 모델 84개 중 종합 최…"
+ },
+ {
+  "domain": "반도체·제조",
+  "stage": "자율 에이전트 전환",
+  "maturity": 2,
+  "models": "AgentEngineer / Autopilot, ChipStack AI Super Agent / AuraStack, ChipNeMo / Nemotron 기반 EDA, Industrial Foundation Model / Industrial Copilot",
+  "key_2027": "EDA 에이전트가 정식 출시되고 칩 설계 프런트엔드 검증의 상당 부분을 자동화한다",
+  "status": "EDA 3사(Synopsys·Cadence·Siemens)가 DAC 2026(7월)에서 모두 '장시간 자율 에이전트'로 전환했다. Synopsys AgentEngineer(Autopilot 플랫폼, NVIDIA Nemotron 기반)는 2026년 말 정식 출시가 목표다. 검증 수렴 최대 50배, 커버리지 20%, 생산성 30% 향상을 내세우지만 모두 자사 기준선 대비 수치다. Cadence ChipStack AI Super Agent(2026-02)는 고객 생…"
+ },
+ {
+  "domain": "에너지·금융·법률·보안·국방",
+  "stage": "범용 위 버티컬 앱",
+  "maturity": 3,
+  "models": "Harvey (프런티어 모델 기반 법률 에이전트), Foundation-sec-8B / -Reasoning / 1.1-Instruct, gemini-3.8-flash-cyber, GridFM 2.0",
+  "key_2027": "법률·금융 버티컬 AI 지출이 다시 2배 이상 늘고, Harvey·Legora 등은 '에이전트 워크플로' 과금으로 전환한다",
+  "status": "버티컬 AI 시장은 101억 달러로 전년(35억 달러)의 2.9배가 됐다(Menlo Ventures 2026). 법률이 18억 달러(2.8배)로 의료 다음이다. Harvey는 2026-03 기업가치 110억 달러, ARR 약 3억 달러(2026-05, Sacra 추정), 고객 1,500곳 이상이다. 금융에서는 BloombergGPT 뒤로 사전학습 자체 FM을 이어 가는 곳이 드물다. JPMorgan LLM Suite처럼 '프런티어 모델 + 사내 플랫폼'이 주류…"
+ }
+]

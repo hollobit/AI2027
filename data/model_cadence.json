@@ -1,0 +1,70 @@
+[
+ {
+  "lab": "Meta",
+  "months": 1.1
+ },
+ {
+  "lab": "Anthropic",
+  "months": 1.6
+ },
+ {
+  "lab": "OpenAI",
+  "months": 1.7
+ },
+ {
+  "lab": "MiniMax",
+  "months": 1.9
+ },
+ {
+  "lab": "Zhipu GLM",
+  "months": 2.0
+ },
+ {
+  "lab": "xAI",
+  "months": 2.2
+ },
+ {
+  "lab": "Moonshot Kimi",
+  "months": 2.9
+ },
+ {
+  "lab": "Alibaba Qwen",
+  "months": 3.0
+ },
+ {
+  "lab": "Google DeepMind",
+  "months": 3.3
+ },
+ {
+  "lab": "LG AI연구원",
+  "months": 3.4
+ },
+ {
+  "lab": "DeepSeek",
+  "months": 3.5
+ },
+ {
+  "lab": "ByteDance Seed",
+  "months": 3.5
+ },
+ {
+  "lab": "Microsoft MAI",
+  "months": 4.4
+ },
+ {
+  "lab": "Naver",
+  "months": 5.1
+ },
+ {
+  "lab": "Mistral",
+  "months": 5.9
+ },
+ {
+  "lab": "SKT",
+  "months": 6.2
+ },
+ {
+  "lab": "Upstage",
+  "months": 6.5
+ }
+]

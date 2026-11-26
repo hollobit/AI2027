@@ -1,0 +1,80 @@
+[
+ {
+  "category": "코딩·소프트웨어 엔지니어링 에이전트",
+  "maturity_2026": "주류",
+  "score_2026": 4,
+  "outlook": "시장 $75–90B 기준; 장기(수일) 자율 과제·코드리뷰/배포/SRE까지 확장, 거버넌스(하니스) 경쟁"
+ },
+ {
+  "category": "브라우저·컴퓨터 사용(CUA) 에이전트",
+  "maturity_2026": "초기",
+  "score_2026": 2,
+  "outlook": "OSWorld 포화(86%)에도 인젝션·인증 문제로 소비자 확산은 완만, 기업 RPA 대체 위주로 scaling"
+ },
+ {
+  "category": "딥리서치·지식업무 에이전트",
+  "maturity_2026": "확산",
+  "score_2026": 3,
+  "outlook": "mainstream 진입; 사내 데이터·컨텍스트 계층 결합이 차별화"
+ },
+ {
+  "category": "고객 서비스·콜센터 에이전트",
+  "maturity_2026": "확산",
+  "score_2026": 3,
+  "outlook": "CS 지출 $2.7B(4.3배) 추세로 주류화, 결과 기반 과금 확산"
+ },
+ {
+  "category": "영업·마케팅 에이전트",
+  "maturity_2026": "초기",
+  "score_2026": 2,
+  "outlook": "검증 어려운 주관 업무라 scaling 단계에 그칠 전망"
+ },
+ {
+  "category": "재무·회계·법무 백오피스 에이전트",
+  "maturity_2026": "확산",
+  "score_2026": 3,
+  "outlook": "규칙·문서 기반 검증 가능 업무부터 production; 감사 추적 요구 강화"
+ },
+ {
+  "category": "에이전틱 커머스·결제",
+  "maturity_2026": "시범",
+  "score_2026": 1,
+  "outlook": "early→일부 scaling; 분쟁 규칙·KYA 정비가 선결, 소비자 채택은 아직 낮음(Forrester)"
+ },
+ {
+  "category": "개인 비서·개인 에이전트(상주형)",
+  "maturity_2026": "초기",
+  "score_2026": 2,
+  "outlook": "사용자 수 기준 scaling(수천만~수억 접점), 보안 사고와 규제가 속도 조절"
+ },
+ {
+  "category": "보안·SOC 에이전트(방어/레드팀)",
+  "maturity_2026": "확산",
+  "score_2026": 3,
+  "outlook": "AI 사이버보안 지출 $51B→$86B(Gartner); 공격 측 자율화와 군비경쟁"
+ },
+ {
+  "category": "IT 운영·헬프데스크 에이전트",
+  "maturity_2026": "초기",
+  "score_2026": 2,
+  "outlook": "PoC→운영 전환(I&O 58%가 과제로 꼽음), 2027 scaling"
+ },
+ {
+  "category": "과학·R&D 에이전트",
+  "maturity_2026": "시범",
+  "score_2026": 1,
+  "outlook": "early; AI R&D 자동화(코딩 연구)는 랩 내부에서 빠르게 확산"
+ },
+ {
+  "category": "물리·로봇 에이전트",
+  "maturity_2026": "시범",
+  "score_2026": 1,
+  "outlook": "가정 로봇 과업 성공 12% 수준(AI Index) → 2027년에도 대부분 pilot/early"
+ },
+ {
+  "category": "멀티에이전트 엔터프라이즈 플랫폼·컨트롤 플레인",
+  "maturity_2026": "초기",
+  "score_2026": 2,
+  "outlook": "에이전트 레지스트리·ID·킬스위치 필수화로 scaling(IDC·Capgemini)"
+ }
+]

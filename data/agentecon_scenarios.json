@@ -1,0 +1,20 @@
+[
+ {
+  "order": 1,
+  "name": "A. 보조형 확산·결제 정체 (Assisted, not autonomous)",
+  "prob": 50,
+  "description": "AI가 상품 발견·비교의 관문이 되어 유입 트래픽·영향 매출은 급증하지만, 결제 완결은 신뢰·책임 문제로 온라인 소매의 1% 내외에 머무름. 플랫폼은 발견 수수료·광고로 수익화, 결제는 상인 사이트로 회귀(Shopify·OpenAI 2026-03 패턴)."
+ },
+ {
+  "order": 2,
+  "name": "B. 결제망 주도 상용화 (Network-led takeoff)",
+  "prob": 30,
+  "description": "Visa·Mastercard·Stripe의 토큰·KYA·구매보호가 표준화되고 Muse·Gemini·ChatGPT·Alexa+ 등이 대량 사용자에게 위임 결제를 기본 제공. 반복구매·여행·구독관리에서 에이전트 결제가 2~3%까지 상승, 에이전트 간 B2B 결제와 스테이블코인 소액결제 확대."
+ },
+ {
+  "order": 3,
+  "name": "C. 사고 주도 반발 (Incident-driven backlash)",
+  "prob": 20,
+  "description": "대규모 프롬프트 인젝션 사기·계정 탈취 또는 대형 오구매 사태가 공론화되어 규제·카드사 한도·플랫폼 차단이 강화되고, 소비자 위임 의향이 하락. 에이전트는 기업 내부·저위험 과업 중심으로 후퇴."
+ }
+]

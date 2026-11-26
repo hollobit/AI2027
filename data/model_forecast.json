@@ -1,0 +1,137 @@
+[
+ {
+  "lab": "OpenAI",
+  "releases": "프런티어 5~7회(+티어별 변형 다수)",
+  "quarters": "Q1·Q2·Q3·Q4 매 분기(대형 번호 전환은 Q2~Q3 유력)",
+  "eci_low": 184.0,
+  "eci_base": 190.0,
+  "eci_high": 197.0,
+  "confidence": "중간"
+ },
+ {
+  "lab": "Anthropic",
+  "releases": "프런티어 5~7회(Opus/Sonnet/Fable/Mythos 라인)",
+  "quarters": "Q1~Q4 매 분기; 차세대 세대(6.x 등)는 Q2~Q3 추측",
+  "eci_low": 184.0,
+  "eci_base": 190.0,
+  "eci_high": 197.0,
+  "confidence": "중간"
+ },
+ {
+  "lab": "Google DeepMind",
+  "releases": "Pro/플래그십 2~4회 + Flash 월간 갱신",
+  "quarters": "Q2(I/O 전후)·Q4(Gemini 4.5/5 추측)",
+  "eci_low": 182.0,
+  "eci_base": 188.0,
+  "eci_high": 195.0,
+  "confidence": "중간"
+ },
+ {
+  "lab": "Meta (MSL)",
+  "releases": "4~6회(Muse Spark/Wonder 후속 + 오픈웨이트 1~2회)",
+  "quarters": "Q1~Q4; 오픈웨이트는 Q2·Q4",
+  "eci_low": 172.0,
+  "eci_base": 181.0,
+  "eci_high": 190.0,
+  "confidence": "중간"
+ },
+ {
+  "lab": "xAI",
+  "releases": "4~6회(Grok 4.x 증분 + Grok 5급 1회 가능)",
+  "quarters": "Q1~Q4; Grok 5(명칭 추측)는 Q1~Q2",
+  "eci_low": 170.0,
+  "eci_base": 179.0,
+  "eci_high": 190.0,
+  "confidence": "낮음"
+ },
+ {
+  "lab": "DeepSeek",
+  "releases": "메이저 1~2회(V5 등 추측) + 체크포인트 2~4회",
+  "quarters": "Q1~Q2(메이저), 하반기 갱신",
+  "eci_low": 170.0,
+  "eci_base": 177.0,
+  "eci_high": 184.0,
+  "confidence": "중간"
+ },
+ {
+  "lab": "Moonshot Kimi",
+  "releases": "3~4회(K3.x→K4, 명칭 추측)",
+  "quarters": "Q1·Q2·Q3·Q4",
+  "eci_low": 170.0,
+  "eci_base": 177.0,
+  "eci_high": 184.0,
+  "confidence": "중간"
+ },
+ {
+  "lab": "Alibaba Qwen",
+  "releases": "Max 3~4회 + 오픈웨이트 다수",
+  "quarters": "매 분기",
+  "eci_low": 168.0,
+  "eci_base": 176.0,
+  "eci_high": 183.0,
+  "confidence": "중간"
+ },
+ {
+  "lab": "Zhipu GLM",
+  "releases": "4~6회(0.1 증분, GLM-6 1회 추측)",
+  "quarters": "격월",
+  "eci_low": 166.0,
+  "eci_base": 174.0,
+  "eci_high": 181.0,
+  "confidence": "중간"
+ },
+ {
+  "lab": "ByteDance Seed",
+  "releases": "2~3회(Seed 2.x→3.0 추측)",
+  "quarters": "Q1·Q3",
+  "eci_low": 165.0,
+  "eci_base": 174.0,
+  "eci_high": 182.0,
+  "confidence": "낮음"
+ },
+ {
+  "lab": "MiniMax",
+  "releases": "4~6회",
+  "quarters": "격월",
+  "eci_low": 162.0,
+  "eci_base": 170.0,
+  "eci_high": 178.0,
+  "confidence": "낮음"
+ },
+ {
+  "lab": "Microsoft MAI",
+  "releases": "1~3회",
+  "quarters": "Q2·Q4",
+  "eci_low": 158.0,
+  "eci_base": 166.0,
+  "eci_high": 176.0,
+  "confidence": "낮음"
+ },
+ {
+  "lab": "Mistral",
+  "releases": "1~2회 대형 + 소형/코딩 다수",
+  "quarters": "Q2·Q4",
+  "eci_low": 158.0,
+  "eci_base": 165.0,
+  "eci_high": 172.0,
+  "confidence": "낮음"
+ },
+ {
+  "lab": "Amazon",
+  "releases": "1~2회(Nova 차세대, 명칭 추측)",
+  "quarters": "Q4(re:Invent)",
+  "eci_low": 152.0,
+  "eci_base": 160.0,
+  "eci_high": 170.0,
+  "confidence": "낮음"
+ },
+ {
+  "lab": "한국 독파모(LG·SKT·업스테이지 3팀)",
+  "releases": "팀당 1~2회(3차 결과물), 중형/상용 모델 별도",
+  "quarters": "Q2~Q3(3차 성과 공개), Q4 최종평가 추정",
+  "eci_low": 150.0,
+  "eci_base": 156.0,
+  "eci_high": 162.0,
+  "confidence": "낮음"
+ }
+]
