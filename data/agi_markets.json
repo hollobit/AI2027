@@ -1,0 +1,32 @@
+[
+ {
+  "source": "AI Futures Project 6인",
+  "question": "초인적 AI 연구자 중앙값 / 2027 말 TED-AI",
+  "value": "2027년 5–11월 / 35–65%",
+  "url": ""
+ },
+ {
+  "source": "Kalshi",
+  "question": "OpenAI가 AGI 달성을 발표할까 (OpenAI 자체 발표로 결제)",
+  "value": "2027년 이전 5–11%, 2028년 이전 39–47%, 2030년 이전 ~60–67% (스냅샷별 상이)",
+  "url": "https://kalshi.com/markets/kxoaiagi/openai-achieves-agi/oaiagi"
+ },
+ {
+  "source": "Polymarket (보도)",
+  "question": "OpenAI AGI 2027년 이전",
+  "value": "18% (한 보도) / ~9% (2026-08 다른 보도)",
+  "url": "https://en.coinotag.com/polymarket-openai-agi-odds-18-percent-before-2027"
+ },
+ {
+  "source": "Manifold (보도)",
+  "question": "AGI before 2027",
+  "value": "2% (tech-insider 보도; 기존 수집 strict-AGI 6%와 별개 시장)",
+  "url": "https://tech-insider.org/agi-before-2027-manifold-2-percent-odds/"
+ },
+ {
+  "source": "Metaculus",
+  "question": "AGI 도래",
+  "value": "2030–33년",
+  "url": ""
+ }
+]

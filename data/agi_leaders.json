@@ -1,0 +1,74 @@
+[
+ {
+  "who": "Sam Altman",
+  "org": "OpenAI",
+  "claim": "2025-10 라이브스트림에서 '2026년 9월까지 자동화된 AI 연구 인턴, 2028년 3월까지 정식 자동화 AI 연구자' 목표 제시",
+  "date": "2025-10-28",
+  "status": "[2025년 자료] 목표 원출처. 아래 2026-09 달성 선언 참조",
+  "url": "https://techcrunch.com/2025/10/28/sam-altman-says-openai-will-have-a-legitimate-ai-researcher-by-2028/"
+ },
+ {
+  "who": "OpenAI",
+  "org": "OpenAI",
+  "claim": "'Research acceleration: The view inside OpenAI' — 자체 측정상 '자동화 연구 인턴' 목표 달성 선언. 인간 감독하에 숙련 연구자가 수일 걸리는 잘 정의된 연구 과제 수행. 2026년 8월 중순 기준 인간 1 workday당 에이전트 3.1 wor…",
+  "date": "2026-09-06",
+  "status": "달성 선언(자체 정의·자체 채점이라는 비판 있음). 4–8시간 성공 과제의 과반이 여전히 인간 개입 필요; 7월 사고 후 배포용 모델 RL 학습 약 2주 중단. 다음 목표: 2028-03 자동화 AI 연구자",
+  "url": "https://openai.com/index/research-acceleration-view-inside-openai/"
+ },
+ {
+  "who": "Sam Altman",
+  "org": "OpenAI",
+  "claim": "DevDay 2026 기조연설: '몇 주 전 목표에 도달했다. 이제 AI 연구 인턴이 있다'",
+  "date": "2026-09-29",
+  "status": "인턴 마일스톤 공개 재확인",
+  "url": "https://thenextweb.com/news/sam-altman-openai-ai-research-intern-devday-keynote"
+ },
+ {
+  "who": "Dario Amodei",
+  "org": "Anthropic",
+  "claim": "Dwarkesh 팟캐스트 'We are near the end of the exponential': '데이터센터 속 천재들의 나라'가 1–2년 내 가능(약 50/50), 10년 내 ~90% 확신",
+  "date": "2026-02",
+  "status": "확률 수치는 2차 요약(iTiger, zby) 기반 — 원문 대조 필요. 2027 중반 vs 2028 중반 논의(Fortune)",
+  "url": "https://podcasts.happyscribe.com/dwarkesh-podcast/dario-amodei-we-are-near-the-end-of-the-exponential"
+ },
+ {
+  "who": "Dario Amodei",
+  "org": "Anthropic",
+  "claim": "에세이: 노벨상 수상자 5,000만 명 수준 지적 역량을 가진 데이터센터 시스템",
+  "date": "2026-01-27",
+  "status": "비전 제시 단계",
+  "url": "https://fortune.com/2026/01/27/country-of-geniuses-anthropic-dario-amodei-50-million-nobel-prize-winners/"
+ },
+ {
+  "who": "Elon Musk",
+  "org": "xAI/Tesla",
+  "claim": "AGI 2026 도래 예측(2024년엔 2025라 했다가 연기). 2026-03 'Tesla가 휴머노이드 형태 AGI 최초 개발' 주장; 2026-06엔 4–5년 내 인류 집단지성 추월(≈2030–31)로 후퇴",
+  "date": "2025-12 ~ 2026-06",
+  "status": "반복적 연기 패턴; 2026년 AGI 달성 증거 없음. 2026-06 발언 출처: https://yourstory.com/ai-story/elon-musk-ai-smarter-humanity-4-years",
+  "url": "https://gizmodo.com/elon-musk-predicts-agi-by-2026-he-predicted-agi-by-2025-last-year-2000701007"
+ },
+ {
+  "who": "Mark Zuckerberg",
+  "org": "Meta Superintelligence Labs",
+  "claim": "'개인용 초지능' 비전; 2026 capex 약 $1,450억, 2026년 AI 가속 기대. 구체 AGI 날짜 미제시",
+  "date": "2026-01-28",
+  "status": "제품·인프라 중심. 'Muse Glimmer' 30B 오픈웨이트(2026-08 보도)는 미검증",
+  "url": "https://techcrunch.com/2026/01/28/zuckerberg-teases-agentic-commerce-tools-and-major-ai-rollout-in-2026"
+ },
+ {
+  "who": "Eddie Wu (吴泳铭)",
+  "org": "Alibaba/Qwen",
+  "claim": "Apsara 2026 기조연설: ASI로 가는 기술 경로가 '더 명확해짐'. 재귀적 자기개선(모델이 스스로 약점 파악→실험 설계→데이터 합성→평가) 경로에서 Qwen 팀 '의미 있는 진전'. Qwen 4 학습 중, 5–10조 파라미터 Qwen 4.5/5 계획, 2032년까지 20GW …",
+  "date": "2026-09-22",
+  "status": "AGI/ASI 구체 시점 미제시. Zhenwu V900 칩 2027 Q1 양산 예정",
+  "url": "https://www.alibabacloud.com/blog/aliviews-eddie-wu-shares-alibabas-strategic-full-stack-ai-roadmap-at-the-2026-apsara-conference_603595"
+ },
+ {
+  "who": "Yann LeCun",
+  "org": "AMI Labs",
+  "claim": "LLM 스케일링만으로 인간 수준 AI 불가; JEPA 기반 월드모델 추구. 인간 수준 도달은 '단일 사건이 아니라 매우 점진적'",
+  "date": "2026-01-22",
+  "status": "2026-03 $10.3억 시드(보도)",
+  "url": "https://www.technologyreview.com/2026/01/22/1131661/yann-lecuns-new-venture-ami-labs/454/"
+ }
+]

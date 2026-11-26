@@ -1,0 +1,50 @@
+[
+ {
+  "metric": "Anthropic AI R&D 진척 속도(METR)",
+  "value": "약 1.9배, 80% AI 기여",
+  "date": "2026-10",
+  "url": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment"
+ },
+ {
+  "metric": "OpenAI 에이전트:사람 연구 근무일",
+  "value": "3.1 : 1",
+  "date": "2026-08",
+  "url": "https://openai.com/index/research-acceleration-view-inside-openai/"
+ },
+ {
+  "metric": "METR 50% 시간지평",
+  "value": "17.4시간(측정 천장)",
+  "date": "2026-04",
+  "url": "https://metr.org/time-horizons/"
+ },
+ {
+  "metric": "Remote Labor Index",
+  "value": "41.25%",
+  "date": "2026",
+  "url": ""
+ },
+ {
+  "metric": "ARC-AGI-3",
+  "value": "81.2%",
+  "date": "2026",
+  "url": "https://arcprize.org/leaderboard"
+ },
+ {
+  "metric": "PostTrainBench 최고 에이전트",
+  "value": "23.2% (사람 팀 51.1%)",
+  "date": "2026-03",
+  "url": "https://arxiv.org/abs/2603.08640"
+ },
+ {
+  "metric": "AlphaEvolve",
+  "value": "커널 23% 가속, TPU 설계 상시 도구",
+  "date": "2026-05",
+  "url": "https://deepmind.google/blog/alphaevolve-impact/"
+ },
+ {
+  "metric": "Hendrycks AGI Score",
+  "value": "GPT-5 57% (2026 재채점 없음)",
+  "date": "2025-10",
+  "url": "https://agidefinition.safe.ai/"
+ }
+]

@@ -1,0 +1,58 @@
+[
+ {
+  "metric": "선도 연구소 AI R&D 진척 속도 배수",
+  "low": 1.5,
+  "base": 2.5,
+  "high": 4.0,
+  "unit": "배"
+ },
+ {
+  "metric": "2배 이상 가속이 관측된 연구소 수",
+  "low": 1,
+  "base": 2,
+  "high": 4,
+  "unit": "곳"
+ },
+ {
+  "metric": "OpenAI 에이전트:사람 연구 근무일 비율",
+  "low": 5,
+  "base": 10,
+  "high": 30,
+  "unit": ": 1"
+ },
+ {
+  "metric": "Remote Labor Index",
+  "low": 55,
+  "base": 70,
+  "high": 85,
+  "unit": "%"
+ },
+ {
+  "metric": "ARC-AGI-3",
+  "low": 88,
+  "base": 95,
+  "high": 98,
+  "unit": "%"
+ },
+ {
+  "metric": "PostTrainBench 최고 에이전트(사람 팀 51%)",
+  "low": 30,
+  "base": 45,
+  "high": 60,
+  "unit": "%"
+ },
+ {
+  "metric": "최고 모델 AGI Score(재채점 시)",
+  "low": 65,
+  "base": 75,
+  "high": 85,
+  "unit": "%"
+ },
+ {
+  "metric": "AI R&D 임계 '공식 돌파' 공시 연구소 수",
+  "low": 0,
+  "base": 1,
+  "high": 3,
+  "unit": "곳"
+ }
+]

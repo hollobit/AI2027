@@ -1,0 +1,50 @@
+[
+ {
+  "order": 1,
+  "rung": "① 전문가급 과제",
+  "definition": "박사·올림피아드 수준 문제",
+  "status": "도달",
+  "evidence": "FrontierMath T4·ARC-AGI-2·GPQA 포화",
+  "prob": 99
+ },
+ {
+  "order": 2,
+  "rung": "② 하루 단위 자율",
+  "definition": "16시간+ 과제 자율 수행",
+  "status": "도달",
+  "evidence": "METR 시간지평 17.4h, 측정 천장",
+  "prob": 97
+ },
+ {
+  "order": 3,
+  "rung": "③ 초인적 코더",
+  "definition": "최고 엔지니어 코딩 대체",
+  "status": "부분",
+  "evidence": "OpenAI '연구 인턴' 달성 선언, 병합 코드 대다수 AI 작성",
+  "prob": 50
+ },
+ {
+  "order": 4,
+  "rung": "④ 초인적 AI 연구자",
+  "definition": "AI 연구를 스스로 주도",
+  "status": "초기 징후",
+  "evidence": "METR: Anthropic 1.9배, 80% AI 기여",
+  "prob": 25
+ },
+ {
+  "order": 5,
+  "rung": "⑤ 범용 업무 AGI",
+  "definition": "원격 화이트칼라 대부분 자동화",
+  "status": "미도달",
+  "evidence": "Remote Labor Index 41.25%, 연속 학습 부재",
+  "prob": 12
+ },
+ {
+  "order": 6,
+  "rung": "⑥ 초지능 ASI",
+  "definition": "모든 인지 영역 최고 인간 압도",
+  "status": "미도달",
+  "evidence": "—",
+  "prob": 2
+ }
+]
