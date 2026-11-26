@@ -2,157 +2,209 @@
  {
   "segment": "AI 반도체",
   "text": "Vera Rubin이 2027년 NVIDIA 데이터센터 매출의 주력이 되고 하반기 Rubin Ultra(Kyber 랙) 전환이 시작될 것(로드맵 '정상 진행' 발언 근거, 출시 시점은 추정)",
-  "likelihood": "높음",
-  "rank": 1
+  "likelihood": "높음 ~80%±15",
+  "rank": 1,
+  "prob": 80,
+  "unc": 15
  },
  {
   "segment": "AI 반도체",
   "text": "TSMC CoWoS·N2 증설에도 2027년 상반기까지 첨단 패키징·HBM이 가속기 출하의 병목으로 남을 것",
-  "likelihood": "높음",
-  "rank": 1
+  "likelihood": "높음 ~80%±15",
+  "rank": 1,
+  "prob": 80,
+  "unc": 15
  },
  {
   "segment": "AI 반도체",
   "text": "중국은 NVIDIA 공백을 Huawei Ascend 950계열·Cambricon으로 메우되 SMIC 수율과 HBM 부족으로 물량이 수요에 못 미칠 것",
-  "likelihood": "높음",
-  "rank": 1
+  "likelihood": "높음 ~80%±15",
+  "rank": 1,
+  "prob": 80,
+  "unc": 15
  },
  {
   "segment": "AI 반도체",
   "text": "NVIDIA 데이터센터 매출은 2027년(역년) 5,000억~6,500억 달러 범위로 성장(4Q FY27 1,300억 달러 런레이트 기반 추정)",
-  "likelihood": "중간",
-  "rank": 2
+  "likelihood": "중간 ~50%±15",
+  "rank": 2,
+  "prob": 50,
+  "unc": 15
  },
  {
   "segment": "AI 반도체",
   "text": "Broadcom 중심 맞춤형 ASIC(TPU·MTIA·Trainium·OpenAI XPU) 매출이 2027년 GPU보다 빠르게 성장해 AI 가속기 중 ASIC 비중이 30%를 넘어설 것",
-  "likelihood": "중간",
-  "rank": 2
+  "likelihood": "중간 ~50%±15",
+  "rank": 2,
+  "prob": 50,
+  "unc": 15
  },
  {
   "segment": "AI 반도체",
   "text": "AMD는 MI450/Helios 볼륨 램프로 2027년 데이터센터 GPU 매출이 크게 늘지만 NVIDIA 점유율(약 75~85%)을 근본적으로 흔들지는 못할 것",
-  "likelihood": "중간",
-  "rank": 2
+  "likelihood": "중간 ~50%±15",
+  "rank": 2,
+  "prob": 50,
+  "unc": 15
  },
  {
   "segment": "AI 반도체",
   "text": "Intel 14A가 2027년 중 대형 외부 고객을 공식 확보",
-  "likelihood": "낮음",
-  "rank": 3
+  "likelihood": "낮음 30%±20",
+  "rank": 3,
+  "prob": 30,
+  "unc": 20
  },
  {
   "segment": "AIDC",
   "text": "미국 5대 하이퍼스케일러 capex 2027년 9,500억~1.1조 달러(2026 대비 +25~45%)로 증가하되 증가율은 2026년(+77%)보다 둔화",
-  "likelihood": "높음",
-  "rank": 1
+  "likelihood": "높음 75%±10",
+  "rank": 1,
+  "prob": 75,
+  "unc": 10
  },
  {
   "segment": "AIDC",
   "text": "부채·SPV·프라이빗크레딧 조달 비중 확대, '칩 파이낸싱'이 2027년 자금조달 논쟁의 중심",
-  "likelihood": "높음",
-  "rank": 1
+  "likelihood": "높음 85%±10",
+  "rank": 1,
+  "prob": 85,
+  "unc": 10
  },
  {
   "segment": "AIDC",
   "text": "모듈형(DSX POD 등)·현장발전 결합 AIDC가 표준화되어 가동 시점 단축 경쟁 본격화",
-  "likelihood": "높음",
-  "rank": 1
+  "likelihood": "높음 ~80%±15",
+  "rank": 1,
+  "prob": 80,
+  "unc": 15
  },
  {
   "segment": "AIDC",
   "text": "북미 공실률 1% 내외 유지, 2027년 연간 흡수 35~50GW 수준(상반기 25GW 런레이트 기반 추정, 정의 차이 주의)",
-  "likelihood": "중간",
-  "rank": 2
+  "likelihood": "중간 ~50%±15",
+  "rank": 2,
+  "prob": 50,
+  "unc": 15
  },
  {
   "segment": "AIDC",
   "text": "지역 반대·인허가로 미국에서 대형 DC 프로젝트 취소·지연이 가시화(하이퍼스케일러 2곳 이상)",
-  "likelihood": "중간",
-  "rank": 2
+  "likelihood": "중간 65%±15",
+  "rank": 2,
+  "prob": 65,
+  "unc": 15
  },
  {
   "segment": "AIDC",
   "text": "네오클라우드 통폐합(최소 3건) 및 GPU 담보 대출 스트레스 표면화",
-  "likelihood": "중간",
-  "rank": 2
+  "likelihood": "중간 ~50%±15",
+  "rank": 2,
+  "prob": 50,
+  "unc": 15
  },
  {
   "segment": "AIDC",
   "text": "한국은 AI데이터센터 특별법 시행(2027.2 목표)과 GPU 1만 장 확충으로 비수도권 AIDC 착공이 늘지만 GW급 단일 캠퍼스 가동은 2027년 내 어려움",
-  "likelihood": "중간",
-  "rank": 2
+  "likelihood": "중간 60%±15",
+  "rank": 2,
+  "prob": 60,
+  "unc": 15
  },
  {
   "segment": "메모리",
   "text": "2027년 DRAM·HBM 공급부족 지속(TrendForce·Micron·IEA·KIEP 모두 2027년 타이트 전망), 신규 클린룸은 2027 하반기~2028에 본격 기여",
-  "likelihood": "높음",
-  "rank": 1
+  "likelihood": "높음 88%±10",
+  "rank": 1,
+  "prob": 88,
+  "unc": 10
  },
  {
   "segment": "메모리",
   "text": "메모리 원가 급등으로 스마트폰·PC 출하 감소 및 사양 하향(삼성 MX 3Q26 적자 전환이 신호); IDC 스마트폰 −16.7% 전망은 본 세션 미검증",
-  "likelihood": "높음",
-  "rank": 1
+  "likelihood": "중간 69%±15",
+  "rank": 1,
+  "prob": 69,
+  "unc": 15
  },
  {
   "segment": "메모리",
   "text": "2027년 HBM 시장은 ASP 2배 이상 상승과 비트 성장으로 2026년 대비 1.8~2.5배 확대(TrendForce ASP +121% 기반 추정)",
-  "likelihood": "중간",
-  "rank": 2
+  "likelihood": "중간 ~50%±15",
+  "rank": 2,
+  "prob": 50,
+  "unc": 15
  },
  {
   "segment": "메모리",
   "text": "범용 DRAM 계약가 상승률은 1Q27 +5~10% → 하반기 0~5%로 둔화(2차 보도 인용 TrendForce 경로), 2027 상반기 '가격 상승 둔화'가 메모리주 변동성 요인",
-  "likelihood": "중간",
-  "rank": 2
+  "likelihood": "중간 ~50%±15",
+  "rank": 2,
+  "prob": 50,
+  "unc": 15
  },
  {
   "segment": "메모리",
   "text": "HBM4가 2027년 HBM 출하의 과반, HBM4E는 하반기 Rubin Ultra·맞춤형 ASIC용으로 소량 램프",
-  "likelihood": "중간",
-  "rank": 2
+  "likelihood": "중간 50%±15",
+  "rank": 2,
+  "prob": 50,
+  "unc": 15
  },
  {
   "segment": "메모리",
   "text": "2028년 이후 CXMT·신규 팹·하이퍼스케일러 capex 둔화가 겹치면 공급과잉 반전 가능",
-  "likelihood": "낮음",
-  "rank": 3
+  "likelihood": "낮음 20%±25",
+  "rank": 3,
+  "prob": 20,
+  "unc": 25
  },
  {
   "segment": "전력망",
   "text": "가스터빈 3사(GEV·Siemens Energy·MHI) 백로그는 2027년에도 증가하나 신규 계약 증가율은 둔화, 2029~2031 인도 슬롯 경쟁 지속",
-  "likelihood": "높음",
-  "rank": 1
+  "likelihood": "높음 ~80%±15",
+  "rank": 1,
+  "prob": 80,
+  "unc": 15
  },
  {
   "segment": "전력망",
   "text": "대형 변압기·차단기·케이블 공급부족과 가격 강세가 2027년 내내 지속, 한국 전력기기 수출 최고치 경신",
-  "likelihood": "높음",
-  "rank": 1
+  "likelihood": "높음 82%±10",
+  "rank": 1,
+  "prob": 82,
+  "unc": 10
  },
  {
   "segment": "전력망",
   "text": "미국 전기요금 상승이 정치 쟁점화되어 대형부하 요금 분담(대형부하 요금제)·BYO 전력(자가발전) 조건부 연계가 확산",
-  "likelihood": "높음",
-  "rank": 1
+  "likelihood": "높음 ~80%±15",
+  "rank": 1,
+  "prob": 80,
+  "unc": 15
  },
  {
   "segment": "전력망",
   "text": "기존 원전 업레이트·재가동 PPA는 추가 체결되나 SMR은 2027년 상업운전 없음",
-  "likelihood": "높음",
-  "rank": 1
+  "likelihood": "높음 90%±5",
+  "rank": 1,
+  "prob": 90,
+  "unc": 5
  },
  {
   "segment": "전력망",
   "text": "세계 데이터센터 전력 소비 2027년 약 620~720TWh(IEA 2025년 485TWh→2030년 950TWh 경로 내삽 추정)",
-  "likelihood": "중간",
-  "rank": 2
+  "likelihood": "중간 ~50%±15",
+  "rank": 2,
+  "prob": 50,
+  "unc": 15
  },
  {
   "segment": "전력망",
   "text": "PJM 등에서 2027/28 이후 용량가격 상한 유지·공급 신뢰도 경보로 DC 연계 지연 확대",
-  "likelihood": "중간",
-  "rank": 2
+  "likelihood": "중간 ~50%±15",
+  "rank": 2,
+  "prob": 50,
+  "unc": 15
  }
 ]

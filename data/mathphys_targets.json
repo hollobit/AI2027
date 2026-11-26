@@ -2,120 +2,154 @@
  {
   "field": "물리",
   "target": "산란진폭 부트스트랩의 고루프 계산·새 닫힌 공식(N=4 SYM, QCD·중력 진폭)",
-  "likelihood": "높음",
+  "likelihood": "높음 70%±18",
   "rank": 1,
-  "signal": "hep-th 논문에 AI 기여 명시, Dixon 등 진폭 커뮤니티 검증"
+  "signal": "hep-th 논문에 AI 기여 명시, Dixon 등 진폭 커뮤니티 검증",
+  "prob": 70,
+  "unc": 18
  },
  {
   "field": "수학",
   "target": "FrontierMath-Erdős 잔여 51문제 중 다수 추가 해결 및 erdosproblems.com 미해결 652개의 대량 정리",
-  "likelihood": "높음",
+  "likelihood": "높음 75%±15",
   "rank": 1,
-  "signal": "Epoch 벤치마크 페이지 누적 해결 수, Bloom DB의 open→solved 전환 수"
+  "signal": "Epoch 벤치마크 페이지 누적 해결 수, Bloom DB의 open→solved 전환 수",
+  "prob": 75,
+  "unc": 15
  },
  {
   "field": "수학",
   "target": "극값 조합론·이산기하 경계 개선(작은 램지수 하한, cap set 하한, 12~31차원 키싱수, 구 채우기 밀도, 합-자유 집합, Kakeya류 유한체 구성)",
-  "likelihood": "높음",
+  "likelihood": "높음 90%±8",
   "rank": 1,
-  "signal": "arXiv math.CO 기록 갱신 논문, 키싱수·패킹 표 갱신"
+  "signal": "arXiv math.CO 기록 갱신 논문, 키싱수·패킹 표 갱신",
+  "prob": 90,
+  "unc": 8
  },
  {
   "field": "수학",
   "target": "작은 형식의 행렬곱 텐서 랭크·알고리즘 신기록(예: 5×5, 6×6, 직사각 형식)",
-  "likelihood": "높음",
+  "likelihood": "높음 80%±12",
   "rank": 1,
-  "signal": "Fawzi 등 행렬곱 기록표 갱신"
+  "signal": "Fawzi 등 행렬곱 기록표 갱신",
+  "prob": 80,
+  "unc": 12
  },
  {
   "field": "수학",
   "target": "단위거리 추측급 '명명된 추측' 2~5개 추가 AI 주도 해결(조합론·정수론·이산기하)",
-  "likelihood": "높음",
+  "likelihood": "높음 74%±15",
   "rank": 1,
-  "signal": "Gowers·Alon급 전문가 동반 논문, 상위 학술지 투고"
+  "signal": "Gowers·Alon급 전문가 동반 논문, 상위 학술지 투고",
+  "prob": 74,
+  "unc": 15
  },
  {
   "field": "물리",
   "target": "경계 없는 3D 오일러/Boussinesq 불안정 특이점의 컴퓨터보조 엄밀증명(DeepMind–Buckmaster–Gómez-Serrano 프로그램)",
-  "likelihood": "중간",
+  "likelihood": "중간 ~50%±15",
   "rank": 2,
-  "signal": "arXiv math.AP 컴퓨터보조증명 논문"
+  "signal": "arXiv math.AP 컴퓨터보조증명 논문",
+  "prob": 50,
+  "unc": 15
  },
  {
   "field": "물리",
   "target": "AI 설계 양자오류정정 코드·디코더의 실제 양자 하드웨어 실험 적용",
-  "likelihood": "중간",
+  "likelihood": "중간 62%±15",
   "rank": 2,
-  "signal": "Google·IBM·Quantinuum 논문에서 AI 디코더/코드로 논리오류율 개선 보고"
+  "signal": "Google·IBM·Quantinuum 논문에서 AI 디코더/코드로 논리오류율 개선 보고",
+  "prob": 62,
+  "unc": 15
  },
  {
   "field": "물리",
   "target": "AI 설계 실험(간섭계·양자광학 셋업)이 실제 장치로 구현되어 성능 확인",
-  "likelihood": "중간",
+  "likelihood": "중간 60%±15",
   "rank": 2,
-  "signal": "실험 논문에서 AI 설계안 구현·측정 결과"
+  "signal": "실험 논문에서 AI 설계안 구현·측정 결과",
+  "prob": 60,
+  "unc": 15
  },
  {
   "field": "물리",
   "target": "기호회귀/LLM으로 새 경험법칙(천체물리 스케일링, 재료 물성식) 발견 후 독립 데이터로 확인",
-  "likelihood": "중간",
+  "likelihood": "중간 38%±20",
   "rank": 2,
-  "signal": "Nature/PRL급 게재 + 사전등록된 독립 데이터 검증"
+  "signal": "Nature/PRL급 게재 + 사전등록된 독립 데이터 검증",
+  "prob": 38,
+  "unc": 20
  },
  {
   "field": "물리",
   "target": "연구수준 물리 벤치마크(CritPt·TPBench) 60% 이상",
-  "likelihood": "중간",
+  "likelihood": "중간 50%±20",
   "rank": 2,
-  "signal": "Epoch·AA 리더보드"
+  "signal": "Epoch·AA 리더보드",
+  "prob": 50,
+  "unc": 20
  },
  {
   "field": "수학",
   "target": "AI 주도 결과의 최상위 학술지(Annals·Acta·JAMS·Inventiones) 게재 승인",
-  "likelihood": "중간",
+  "likelihood": "중간 38%±20",
   "rank": 2,
-  "signal": "게재 승인 공지, 학술지 AI 기여 표기 정책"
+  "signal": "게재 승인 공지, 학술지 AI 기여 표기 정책",
+  "prob": 38,
+  "unc": 20
  },
  {
   "field": "수학",
   "target": "대형 정리의 AI 형식화 확산(FLT 정리·Mathlib 통합, 푸앵카레 추측/기하화, 유한단순군 분류 일부, 최근 필즈상 업적)",
-  "likelihood": "중간",
+  "likelihood": "중간 60%±15",
   "rank": 2,
-  "signal": "Lean FRO/Mathlib 공지, Buzzard·Tao 등 검토 의견, '필즈상 증명 검증' 사례"
+  "signal": "Lean FRO/Mathlib 공지, Buzzard·Tao 등 검토 의견, '필즈상 증명 검증' 사례",
+  "prob": 60,
+  "unc": 15
  },
  {
   "field": "수학",
   "target": "OpenAI 외력 나비에–스토크스 증명의 학계 판정(동료심사·독립 재검증)",
-  "likelihood": "중간",
+  "likelihood": "중간 ~50%±15",
   "rank": 2,
-  "signal": "저널 게재, Clay 연구소 입장, Fefferman·Tao 등 공개 평가"
+  "signal": "저널 게재, Clay 연구소 입장, Fefferman·Tao 등 공개 평가",
+  "prob": 50,
+  "unc": 15
  },
  {
   "field": "물리",
   "target": "핵융합 플라즈마 AI 제어의 신규 장치 적용(SPARC 등)",
-  "likelihood": "낮음",
+  "likelihood": "낮음 30%±20",
   "rank": 3,
-  "signal": "CFS·DeepMind TORAX 실증 발표"
+  "signal": "CFS·DeepMind TORAX 실증 발표",
+  "prob": 30,
+  "unc": 20
  },
  {
   "field": "수학",
   "target": "행렬곱 지수 ω의 점근적 개선을 AI가 주도",
-  "likelihood": "낮음",
+  "likelihood": "낮음 15%±12",
   "rank": 3,
-  "signal": "ω<2.371339 갱신 논문에 AI 기여 명시"
+  "signal": "ω<2.371339 갱신 논문에 AI 기여 명시",
+  "prob": 15,
+  "unc": 12
  },
  {
   "field": "수학",
   "target": "외력 없는 R³ 나비에–스토크스 정칙성/blow-up(밀레니엄 문제의 '자연스러운' 형태) 해결",
-  "likelihood": "낮음",
+  "likelihood": "낮음 5%±5",
   "rank": 3,
-  "signal": "무외력 NS blow-up 주장 + 독립 형식검증 + 전문가 합의"
+  "signal": "무외력 NS blow-up 주장 + 독립 형식검증 + 전문가 합의",
+  "prob": 5,
+  "unc": 5
  },
  {
   "field": "수학",
   "target": "리만 가설·P vs NP·BSD·호지·양-밀스 질량간극 중 하나라도 AI 해결",
-  "likelihood": "낮음",
+  "likelihood": "낮음 ~20%±10",
   "rank": 3,
-  "signal": "Lean 형식화 + 다수 전문가 합의(사실상 2027년 내 불가)"
+  "signal": "Lean 형식화 + 다수 전문가 합의(사실상 2027년 내 불가)",
+  "prob": 20,
+  "unc": 10
  }
 ]

@@ -2,91 +2,121 @@
  {
   "area": "경영",
   "change": "'파일럿 정리의 해'. 일부 프로젝트는 취소되지만 살아남은 프로젝트는 P&L 지표로 관리됨. Forrester는 2027년 대기업 최소 3곳이 대표 AI 배포를 철회하거나 1년 연기한다고 예측",
-  "likelihood": "높음",
-  "rank": 1
+  "likelihood": "높음 85%±10",
+  "rank": 1,
+  "prob": 85,
+  "unc": 10
  },
  {
   "area": "경영",
   "change": "CAIO가 '도입 전도사'에서 '에이전트 권한·감사·비용 책임자'로 역할이 바뀜. 에이전트 SRE·AI 운영(AgentOps) 직군 신설",
-  "likelihood": "높음",
-  "rank": 1
+  "likelihood": "높음 72%±20",
+  "rank": 1,
+  "prob": 72,
+  "unc": 20
  },
  {
   "area": "법·규제",
   "change": "2027년 하반기 EU 진출 한국 기업은 채용·인사평가 AI의 위험관리·데이터 거버넌스·인간 감독·로그 보관 의무를 준비해야 함. HR 벤더 계약에 적합성 조항이 들어감",
-  "likelihood": "높음",
-  "rank": 1
+  "likelihood": "높음 ~80%±15",
+  "rank": 1,
+  "prob": 80,
+  "unc": 15
  },
  {
   "area": "법·규제",
   "change": "에이전트 결정(채용 거절·대출 거절·해고 관련 자료)에 대한 책임이 '도입 기업'에 귀속된다는 원칙이 계약·보험으로 먼저 정착함",
-  "likelihood": "높음",
-  "rank": 1
+  "likelihood": "높음 70%±20",
+  "rank": 1,
+  "prob": 70,
+  "unc": 20
  },
  {
   "area": "인사",
   "change": "AI를 명분으로 한 구조조정 발표가 계속 늘지만, 실제로는 초급 채용 동결과 자연감소 미충원 형태가 주류. 발표 후 인력을 재투입하는 사례(Klarna형)도 이어짐",
-  "likelihood": "높음",
-  "rank": 1
+  "likelihood": "높음 82%±10",
+  "rank": 1,
+  "prob": 82,
+  "unc": 10
  },
  {
   "area": "조직",
   "change": "관리 범위(span of control)가 넓어지고 팀장 직급이 통합됨. 'AI 에이전트를 관리하는 개인 기여자(IC)' 모델이 확산",
-  "likelihood": "높음",
-  "rank": 1
+  "likelihood": "높음 72%±20",
+  "rank": 1,
+  "prob": 72,
+  "unc": 20
  },
  {
   "area": "조직",
   "change": "채용 공고와 직무기술서에 '에이전트 감독' 요건이 들어가기 시작하고, 직무 체계(job architecture) 개편이 대기업 인사의 핵심 과제가 됨",
-  "likelihood": "높음",
-  "rank": 1
+  "likelihood": "높음 70%±20",
+  "rank": 1,
+  "prob": 70,
+  "unc": 20
  },
  {
   "area": "경영",
   "change": "인력계획(workforce planning)에 '사람 FTE와 에이전트 용량'을 함께 넣는 통합 계획이 선도 기업에서 시작됨. CFO 산하 AI FinOps 조직 확산",
-  "likelihood": "중간",
-  "rank": 2
+  "likelihood": "중간 45%±20",
+  "rank": 2,
+  "prob": 45,
+  "unc": 20
  },
  {
   "area": "노무",
   "change": "AI 도입에 따른 업무 재편·하청 콜센터 축소 등이 '사용자의 경영상 결정' 관련 교섭 쟁점으로 떠오르고, 원청을 상대로 한 AI 관련 교섭 요구가 증가할 것",
-  "likelihood": "중간",
-  "rank": 2
+  "likelihood": "중간 62%±15",
+  "rank": 2,
+  "prob": 62,
+  "unc": 15
  },
  {
   "area": "노무",
   "change": "국내 대형 사업장 단체협약에 'AI·자동화 도입 시 사전 협의, 고용 보장, 재교육, 감시 금지' 조항이 확산될 것. 특히 금융(점포·상담 축소)과 IT 플랫폼 노조가 선도할 가능성",
-  "likelihood": "중간",
-  "rank": 2
+  "likelihood": "중간 45%±20",
+  "rank": 2,
+  "prob": 45,
+  "unc": 20
  },
  {
   "area": "노무",
   "change": "AI 감시와 평가 도입이 노사협의회 협의 사항이자 분쟁 사유로 늘어남. 고용노동부의 AI 활용 노무관리 가이드라인 필요성이 커짐",
-  "likelihood": "중간",
-  "rank": 2
+  "likelihood": "중간 ~50%±15",
+  "rank": 2,
+  "prob": 50,
+  "unc": 15
  },
  {
   "area": "법·규제",
   "change": "계도기간 종료 이후 고영향 AI(채용·인사 포함) 사업자 책무 이행 점검이 시작되고, HR AI 도입 기업은 영향평가·설명 체계를 마련해야 함",
-  "likelihood": "중간",
-  "rank": 2
+  "likelihood": "중간 ~50%±15",
+  "rank": 2,
+  "prob": 50,
+  "unc": 15
  },
  {
   "area": "인사",
   "change": "'AI-first 인력 정책'이 대기업 표준이 되지만 고객 경험 악화나 품질 문제로 부분 철회하는 사례가 반복됨",
-  "likelihood": "중간",
-  "rank": 2
+  "likelihood": "중간 ~50%±15",
+  "rank": 2,
+  "prob": 50,
+  "unc": 15
  },
  {
   "area": "인사",
   "change": "활동량(토큰·사용 횟수)이 아니라 결과 지표(오류율·처리시간) 중심으로 평가 기준이 바뀜. 섀도 AI와 절감 시간 회수 문제가 쟁점",
-  "likelihood": "중간",
-  "rank": 2
+  "likelihood": "중간 50%±20",
+  "rank": 2,
+  "prob": 50,
+  "unc": 20
  },
  {
   "area": "인사",
   "change": "국내 기업 인사는 '보급률'에서 '업무 재설계'로 초점을 옮기고, 절감 시간을 주4.5일제 등 근로시간 단축과 연계하려는 논의가 활발해짐",
-  "likelihood": "중간",
-  "rank": 2
+  "likelihood": "중간 55%±20",
+  "rank": 2,
+  "prob": 55,
+  "unc": 20
  }
 ]

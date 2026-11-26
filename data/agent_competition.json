@@ -1,57 +1,79 @@
 [
  {
   "text": "코딩 에이전트는 '랩 소유 하니스(Claude Code·Codex·Antigravity·Muse Code·Grok Build)'가 매출의 65~75%를 유지하는 과점 구조가 지속된다(2026 Menlo 70%).",
-  "likelihood": "높음",
-  "rank": 1
+  "likelihood": "높음 72%±15",
+  "rank": 1,
+  "prob": 72,
+  "unc": 15
  },
  {
   "text": "개인/범용 에이전트는 오히려 분화: 빅테크 소비자형(Meta Muse, ChatGPT agent, Gemini)과 오픈소스 자가호스팅형(OpenClaw·Hermes·nanobot 계열)이 병존하며 단일 승자는 2027년 내 나오지 않는다.",
-  "likelihood": "높음",
-  "rank": 1
+  "likelihood": "높음 85%±10",
+  "rank": 1,
+  "prob": 85,
+  "unc": 10
  },
  {
   "text": "OpenClaw Foundation이 OCE 1.0을 출시하고 '에이전트용 쿠버네티스' 성격의 사실상 표준 런타임이 된다.",
-  "likelihood": "중간",
-  "rank": 2
+  "likelihood": "중간 40%±20",
+  "rank": 2,
+  "prob": 40,
+  "unc": 20
  },
  {
   "text": "하니스 차이가 모델 차이만큼 중요해진다: 동일 모델 하니스 격차 최대 39점(Harness-Bench v2), Forrester '플랫폼 결정의 75%가 하니스로 결정'. 모델 중립 하니스와 하니스 벤치마크(AA CAI, Harness-Bench) 인용이 구매 기준이 된다.",
-  "likelihood": "높음",
-  "rank": 1
+  "likelihood": "높음 ~80%±15",
+  "rank": 1,
+  "prob": 80,
+  "unc": 15
  },
  {
   "text": "가격: 좌석 구독에서 '사용량+결과 기반' 과금으로 이동하며, 동일 성능 토큰 단가는 연 30~40배 하락하나 과제당 토큰 증가로 기업 총비용은 증가(IDC: 무공지 에이전트 비용 상승 경험 기업 20%→55%).",
-  "likelihood": "높음",
-  "rank": 1
+  "likelihood": "높음 80%±15",
+  "rank": 1,
+  "prob": 80,
+  "unc": 15
  },
  {
   "text": "MCP가 도구 연결의 사실상 표준으로 정착하고, A2A(에이전트 간)·AP2/ACP/Trusted Agent Protocol/Agent Pay(결제)는 복수 표준이 병존하며 2027년 중 상호호환 프로파일이 등장한다.",
-  "likelihood": "중간",
-  "rank": 2
+  "likelihood": "중간 ~50%±15",
+  "rank": 2,
+  "prob": 50,
+  "unc": 15
  },
  {
   "text": "에이전트 신원·권한(KYA: Know Your Agent) 체계가 결제 네트워크(Visa·Mastercard 에이전트 등록·검증)와 기업 IAM에서 의무화 수준으로 확산; Gartner 2027 전략기술에 'AI 에이전트 아이덴티티'·'에이전트 코딩 하네스' 포함.",
-  "likelihood": "높음",
-  "rank": 1
+  "likelihood": "높음 ~80%±15",
+  "rank": 1,
+  "prob": 80,
+  "unc": 15
  },
  {
   "text": "Visa 또는 Mastercard가 에이전트 구매 분쟁(차지백) 책임 규칙을 공식화한다(State of AI 2026 예측).",
-  "likelihood": "중간",
-  "rank": 2
+  "likelihood": "중간 ~50%±15",
+  "rank": 2,
+  "prob": 50,
+  "unc": 15
  },
  {
   "text": "중국 오픈웨이트 모델+오픈 하니스 조합이 비용 대비 성능에서 서구 랩 하니스를 압박: Harness-Bench v2 모델 평균 상위 10개 중 7개가 중국/오픈 모델(GLM·DeepSeek·Kimi).",
-  "likelihood": "중간",
-  "rank": 2
+  "likelihood": "중간 65%±15",
+  "rank": 2,
+  "prob": 65,
+  "unc": 15
  },
  {
   "text": "독립 코딩 에이전트 기업(Cursor·Cognition·Factory 등) 중 1곳 이상이 인수·합병되거나 랩과 전략적 독점 제휴를 맺는다.",
-  "likelihood": "중간",
-  "rank": 2
+  "likelihood": "중간 62%±15",
+  "rank": 2,
+  "prob": 62,
+  "unc": 15
  },
  {
   "text": "한국: 국내 모델 기반 독자 하니스보다 OpenClaw/Hermes/OpenCode 등 오픈 하니스에 국산 모델을 결합한 공공·기업 에이전트가 주류가 된다",
-  "likelihood": "중간",
-  "rank": 2
+  "likelihood": "중간 45%±25",
+  "rank": 2,
+  "prob": 45,
+  "unc": 25
  }
 ]

@@ -2,61 +2,81 @@
  {
   "area": "RSI",
   "text": "'AI가 AI 연구를 가속한다'는 증거가 두 곳 이상의 연구소에서 나옴",
-  "likelihood": "높음",
-  "rank": 1
+  "likelihood": "높음 72%±15",
+  "rank": 1,
+  "prob": 72,
+  "unc": 15
  },
  {
   "area": "RSI",
   "text": "주요 연구소 모두 코드 대부분을 AI가 작성, 연구자 1인당 추론비가 가장 빠르게 느는 비용 항목",
-  "likelihood": "높음",
-  "rank": 1
+  "likelihood": "높음 78%±15",
+  "rank": 1,
+  "prob": 78,
+  "unc": 15
  },
  {
   "area": "측정",
   "text": "METR 시간지평을 대체할 장기 과제 지표 등장, ARC-AGI-3 등 주요 벤치마크 포화",
-  "likelihood": "높음",
-  "rank": 1
+  "likelihood": "높음 70%±15",
+  "rank": 1,
+  "prob": 70,
+  "unc": 15
  },
  {
   "area": "AGI",
   "text": "엄격한 정의의 범용 AGI(원격 화이트칼라 대부분 자동화)는 2027년 안에 오지 않음",
-  "likelihood": "높음",
-  "rank": 1
+  "likelihood": "높음 93%±7",
+  "rank": 1,
+  "prob": 93,
+  "unc": 7
  },
  {
   "area": "ASI",
   "text": "초지능 도달 증거는 없음",
-  "likelihood": "높음",
-  "rank": 1
+  "likelihood": "높음 95%±5",
+  "rank": 1,
+  "prob": 95,
+  "unc": 5
  },
  {
   "area": "거버넌스",
   "text": "AI R&D 임계 판정과 증거 공개가 규제 쟁점(SB 53·RAISE·EU 실천강령 보고 의무)",
-  "likelihood": "높음",
-  "rank": 1
+  "likelihood": "높음 78%±15",
+  "rank": 1,
+  "prob": 78,
+  "unc": 15
  },
  {
   "area": "거버넌스",
   "text": "연구소 한 곳 이상이 자기개선·AI R&D 임계 근접 또는 돌파를 공식 공시",
-  "likelihood": "중간",
-  "rank": 2
+  "likelihood": "중간 55%±20",
+  "rank": 2,
+  "prob": 55,
+  "unc": 20
  },
  {
   "area": "AGI",
   "text": "한 연구소가 'AGI 달성'에 준하는 선언을 하고 정의 논쟁이 격화",
-  "likelihood": "중간",
-  "rank": 2
+  "likelihood": "중간 40%±20",
+  "rank": 2,
+  "prob": 40,
+  "unc": 20
  },
  {
   "area": "RSI",
   "text": "AI 연구 자동화가 초인적 AI 연구자(SAR) 수준에 도달",
-  "likelihood": "낮음",
-  "rank": 3
+  "likelihood": "낮음 15%±12",
+  "rank": 3,
+  "prob": 15,
+  "unc": 12
  },
  {
   "area": "거버넌스",
   "text": "초지능 개발 금지·일시중지 요구가 주요국 정부 공식 의제가 됨",
-  "likelihood": "낮음",
-  "rank": 3
+  "likelihood": "낮음 17%±15",
+  "rank": 3,
+  "prob": 17,
+  "unc": 15
  }
 ]
