@@ -3,15 +3,15 @@
   "order": 1,
   "name": "가속 (Acceleration)",
   "prob": 30,
-  "description": "METR가 측정한 Anthropic R&D 약 2배 가속이 2027년 상반기 3배 이상으로 확대되고, 자동화 코더→초인적 AI 연구자(SAR)가 2027년 중후반 등장. AI Futures Project 6인 전원의 2027 SAR 중앙값, Amodei의 '2027년 천재들의 나라', State of AI 'AGI 2027' 예측과 정합. capex는 골드만 낙관치($1.4T)에 근접하고, 사이버 사고(가중치 탈취)·자기복제 에이전트 등 보안 사건이 규제 급변을 촉발.",
+  "description": "METR가 측정한 Anthropic R&D 약 2배 가속이 2027년 상반기 3배 이상으로 확대되고, 자동화 코더→초인적 AI 연구자(SAR)가 2027년 중후반 등장. AI Futures Project 6인 전원의 2027 SAR 중앙값, Amodei의 '2027년 천재들의 나라', State of AI 'AGI 2027' 예측과 정합. 빅5 capex는 $1.3T 이상(글로벌 AI capex $1.7T 이상)으로 낙관치에 근접하고, 사이버 사고(가중치 탈취)·자기복제 에이전트 등 보안 사건이 규제 급변을 촉발.",
   "signposts": "METR/외부 평가에서 AI R&D 가속 ≥3배 · 프런티어 랩이 모델 훈련 핵심 기여의 과반을 AI가 자율 수행했다고 공개 · METR 50% 시간지평 1주(40h+) 이상 측정(새 과업군) · OpenAI+Anthropic 합산 run-rate $250B+ · 프런티어 모델 가중치 탈취 또는 자기복제 에이전트 사건"
  },
  {
   "order": 2,
   "name": "기준 (Base)",
   "prob": 50,
-  "description": "능력은 빠르게 오르지만(시간지평 연 3–10배, 기업 AI 지출 지속 고성장) '연구 완전 자동화'는 2028년 이후로 밀림. 하이퍼스케일러 capex 약 $1.1–1.2T, 전력·HBM·지역 반대가 실질 병목. 에이전트는 코딩·고객지원·백오피스에서 ROI를 내지만 EBIT 기여 기업은 소수(맥킨지 37%). Hassabis(2030±1)·Metaculus(2030–33)·Kalshi(2028 전 약 45%) 컨센서스와 정합.",
-  "signposts": "하이퍼스케일러 2027 capex 가이던스 $1.0–1.3T 범위 · METR R&D 가속 1.5–2.5배 유지 · Polymarket/Kalshi 2028 전 AGI 확률 40–55% 유지 · 기업 AI 지출 연 2–3배 성장, 랩 점유율 집중 완화 시작 · 미국 데이터센터 전력 20–30GW(Epoch) 궤도"
+  "description": "'연구 자동화 초입': AI R&D 가속(2–3배)이 두세 연구소로 번지지만 초인적 AI 연구자(연구 완전 자동화)는 2028년 이후. 빅5 하이퍼스케일러 capex 약 $1.0–1.2T(글로벌 $1.6T), 전력·HBM·지역 반대가 실질 병목. 에이전트는 코딩·고객지원·백오피스에서 ROI를 내지만 EBIT 기여 기업은 소수(맥킨지 37%). Hassabis(2030±1)·Metaculus(2030–33)·Kalshi(2028 전 약 45%) 컨센서스와 정합.",
+  "signposts": "빅5 2027 capex 가이던스 $1.0–1.2T 범위 · AI R&D 가속 2–3배가 두세 연구소에서 관측 · Polymarket/Kalshi 2028 전 AGI 확률 40–55% 유지 · 기업 AI 지출 연 2–3배 성장, 랩 점유율 집중 완화 시작 · 미국 데이터센터 전력 20–30GW(Epoch) 궤도"
  },
  {
   "order": 3,
