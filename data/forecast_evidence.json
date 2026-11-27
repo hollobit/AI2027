@@ -4564,6 +4564,25 @@
   "counter": []
  },
  {
+  "chapter": "19장",
+  "text": "상업용 냉장·냉동·HVAC 컨트롤러를 원격 조작하는 공격이 유럽 밖(아시아·북미)으로 번지고, 매장·물류·의료 콜드체인에서 재발",
+  "prob": "높음 78%±12",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "ComplexDiscovery(AP 인용)",
+    "url": "https://complexdiscovery.com/refrigeration-hack-affected-about-700-french-supermarkets-government-says-as-danfoss-interfaces-stay-online/",
+    "title": "Refrigeration hack affected about 700 French supermarkets, government says"
+   },
+   {
+    "org": "BleepingComputer",
+    "url": "https://bleepingcomputer.com/news/security/cyberattack-disrupts-blood-storage-refrigeration-systems-in-france",
+    "title": "Cyberattack disrupts blood storage refrigeration systems in France"
+   }
+  ],
+  "counter": []
+ },
+ {
   "chapter": "20장",
   "text": "생물·화학 High(CB-1)가 주요 연구소 신모델의 기본값이 되고, 논쟁이 Critical(신규 무기) 임계로 이동",
   "prob": "높음 78%±15",

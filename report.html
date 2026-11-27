@@ -792,6 +792,9 @@
     id="toc-ae-보완-주제북한국방인재데이터전력공공표준선거교육-56건">AE.
     보완 주제(북한·국방·인재·데이터·전력·공공·표준·선거·교육)
     (56건)</a></li>
+    <li><a href="#af-냉장콜드체인-설비-공격2026-프랑스-4건"
+    id="toc-af-냉장콜드체인-설비-공격2026-프랑스-4건">AF. 냉장·콜드체인
+    설비 공격(2026 프랑스) (4건)</a></li>
     </ul></li>
     </ul></li>
     </ul>
@@ -805,8 +808,8 @@
 <p>이 보고서는 2025년 12월 「Tech Trends 2026: 증명의 해」의
 후속편입니다. 2026년 예측을 다시 채점하고, 2026년 8–11월에 공개된 2027
 전망 자료를 원문으로 수집해(<code>PDF/</code> 폴더 약 280건, 웹 자료
-포함 부록 479건) 6부 22개 장으로 분석했습니다. 모든 2027 전망에는 주관적
-확률과 불확도(±%p)를, 그중 261건에는 근거 자료 링크를 붙였습니다(표기
+포함 부록 483건) 6부 22개 장으로 분석했습니다. 모든 2027 전망에는 주관적
+확률과 불확도(±%p)를, 그중 262건에는 근거 자료 링크를 붙였습니다(표기
 기준·근거 목록은 부록). 자료별 상세 요약은 <a
 href="#appendix">부록</a>에, 수치 대시보드는 <a
 href="./">AI 2027 전망
@@ -860,6 +863,9 @@ Gartner, Forrester, IDC, Capgemini, BCG, SAS, IITP가 공통으로 에이전트�
 했습니다(UK AISI 시험).</li>
 <li>인간 개입 없는 공격 자동화 파이프라인이 처음 관측됐습니다(Google
 GTIG).</li>
+<li>프랑스 슈퍼마켓 약 700곳과 혈액원 냉장 설비가 원격
+조작됐습니다(인터넷에 노출된 구형 컨트롤러, AI 관여는 보고되지
+않음).</li>
 <li>2027년에는 공격 표적이 '데이터 탈취'에서 '에이전트 의사결정
 조작'으로 옮겨 갈 것으로 보입니다.</li>
 </ul></li>
@@ -1088,7 +1094,7 @@ Gartner의 2026 AI 지출 전망은 2조 달러에서 2.67조 달러로 올라�
 기관별 시각</h2>
 <p>종합 전망 자료는 리서치·컨설팅 14건, 투자·금융·에너지 19건, AI
 연구·예측·정책 19건, 한국 15건입니다. 여기에 분야별 심층 자료(3–21장)를
-더해 부록에는 모두 479건을 정리했습니다. 이 장은 기관별 시각을 요약하고,
+더해 부록에는 모두 483건을 정리했습니다. 이 장은 기관별 시각을 요약하고,
 각 테마를 깊이 다룬 장을 함께 표시합니다.</p>
 <h3 id="21-합의된-것">2.1 합의된 것</h3>
 <table>
@@ -9276,21 +9282,72 @@ Google이 전용 탐지 룰팩을 배포했습니다.</li>
 </ul>
 <h3 id="192-생활-인프라가전iot">19.2 생활 인프라(가전·IoT)</h3>
 <ul>
-<li><p><strong>2026년 사실관계</strong>: 공유기, IP 카메라, 안드로이드
-TV를 묶은 봇넷이 커졌습니다.</p>
+<li><strong>2026년 사실관계</strong>: 공유기, IP 카메라, 안드로이드 TV를
+묶은 봇넷이 커졌습니다.
 <ul>
 <li>Aisuru 봇넷은 15.72Tbps 기록적 DDoS를 일으켰습니다.</li>
 <li>Kimwolf 봇넷 감염은 200만 대를 넘었습니다.</li>
 <li>미국·독일·캐나다 공동 단속 대상은 300만 대 이상이었습니다.</li>
 <li>국내에서는 출고 단계부터 감염된 IoT 기기가 확인됐습니다.</li>
 </ul></li>
-<li><p><strong>AI의 역할은 아직 제작 보조 수준</strong>입니다. 공격자가
+<li><strong>AI의 역할은 아직 제작 보조 수준</strong>입니다. 공격자가
 LLM으로 봇넷을 만들기 시작했지만(TuxBot v3), 기능의 약 30%가 작동하지
 않았습니다. Anthropic의 IoT 자기 복제 실험은 TV 박스 15대를 쓴 단순화된
-실험실 조건이었습니다.</p></li>
-<li><p><strong>냉장고·냉동고 등 백색가전이 AI 자동 공격으로 대규모
-침해됐다는 2026년 공개 사례는 이번 조사에서 확인되지
-않았습니다.</strong></p></li>
+실험실 조건이었습니다.</li>
+<li><strong>상업용 냉장·냉동 설비는 2026년에 실제로 대규모
+침해됐습니다.</strong> 가정용 백색가전이 아니라 매장·의료 콜드체인의
+원격 관리 컨트롤러가 표적이었습니다.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>시점</th>
+<th>사건</th>
+<th>규모·영향</th>
+<th>경로</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-10-11~13</td>
+<td><strong>프랑스 슈퍼마켓 냉장 설비
+공격</strong>(Intermarché·Coopérative U·E.Leclerc 등)</td>
+<td>정부 집계 약 <strong>700개 매장</strong>. 냉장·냉동 진열대 전체
+폐기, 일부 화재 보도. 11월에는 벨기에·네덜란드·스웨덴 등 6개국 115개
+이상 매장으로 확산</td>
+<td>인터넷에 노출된 Danfoss AK-SM/AK-SC 컨트롤러(이후 Copeland·Dixell
+xweb 추가, CERT-FR 경보)를 제상 모드·고온 설정으로 강제 전환. 패치가
+끊긴 구형 펌웨어가 주 대상. 침투 방법은 미확정</td>
+</tr>
+<tr>
+<td>2026-11-01~02</td>
+<td><strong>프랑스 혈액원(EFS) 혈액 보관 냉장 설비 공격</strong></td>
+<td>3개 지점. 경보로 조기 대응해 혈액제제 손실은 없었음(EFS 발표)</td>
+<td>EFS의 냉장 설비 협력업체 원격 감시 소프트웨어의 제3자 구성요소를
+악용해 온도·제상 설정 변경</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><p><strong>AI 관여는 보고되지 않았습니다.</strong> 공식 발표와
+제조사 어디에서도 AI 사용을 언급하지 않았고, 배후도 밝혀지지
+않았습니다(파리 검찰 수사). 다만 보안업계는 공격자들이 공개 스캐닝
+도구와 AI 도구로 인터넷에 연결된 OT 기기를 찾는다고 경고합니다(<a
+href="https://www.escudodigital.com/en/cybersecurity/french-supermarket-cyberattack-this-is-not-a-closed-incident-were-performing-an-autopsy-on.html">Escudo
+Digital</a>).</p></li>
+<li><p><strong>노출 규모</strong>: 인터넷에서 접근 가능한 Danfoss 웹
+인터페이스는 조사마다 약 2,750–4,500개입니다(Shodan·Censys 기준이 달라
+합산 불가). 프랑스에만 약 1,590개라는 집계도 있습니다.</p></li>
+<li><p>출처: <a
+href="https://www.it-connect.fr/cyberattaque-supermarches-froid-danfoss/">IT-Connect</a>,
+<a
+href="https://bleepingcomputer.com/news/security/cyberattack-disrupts-blood-storage-refrigeration-systems-in-france">BleepingComputer</a>,
+<a
+href="https://complexdiscovery.com/refrigeration-hack-affected-about-700-french-supermarkets-government-says-as-danfoss-interfaces-stay-online/">ComplexDiscovery(AP
+인용)</a>.</p></li>
+<li><p>따라서 이전 판의 "냉장고·냉동고 대규모 침해 사례는 확인되지
+않았다"는 서술은 <strong>AI 자동 공격</strong>이라는 조건에서만 맞고,
+냉장 설비 대규모 침해 자체는 2026년에 이미 일어났습니다.</p></li>
 <li><p><strong>2027 전망</strong>: 세 가지 이유로 생활 인프라 침해는
 2027년에 실제로 늘어날 가능성이 높습니다.</p>
 <ol type="1">
@@ -9298,7 +9355,8 @@ LLM으로 봇넷을 만들기 시작했지만(TuxBot v3), 기능의 약 30%가 �
 공개·익스플로잇 2배).</li>
 <li>LLM 덕분에 저숙련 공격자도 봇넷을 만들 수 있게 됐습니다.</li>
 <li>콜드체인처럼 냉장·냉동 장비가 원격 관리 시스템에 연결되는 경우가
-늘고 있습니다.</li>
+늘고 있고, 2026년 프랑스 사례처럼 패치가 끊긴 구형 컨트롤러가 수천 대
+노출돼 있습니다.</li>
 </ol>
 <p>대응 측면에서는 **EU CRA 주요 의무(2027-12-11)**로 스마트 가전의 보안
 설계와 취약점 처리가 의무화됩니다. 미국 Cyber Trust Mark와 국내 IoT
@@ -9327,6 +9385,14 @@ LLM으로 봇넷을 만들기 시작했지만(TuxBot v3), 기능의 약 30%가 �
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>상업용 냉장·냉동·HVAC 컨트롤러를 원격 조작하는 공격이 유럽
+밖(아시아·북미)으로 번지고, 매장·물류·의료 콜드체인에서 재발</td>
+<td>높음 · 78% (±12) · 근거 <a
+href="https://complexdiscovery.com/refrigeration-hack-affected-about-700-french-supermarkets-government-says-as-danfoss-interfaces-stay-online/">ComplexDiscovery(AP
+인용)</a>, <a
+href="https://bleepingcomputer.com/news/security/cyberattack-disrupts-blood-storage-refrigeration-systems-in-france">BleepingComputer</a></td>
+</tr>
 <tr>
 <td>공격 표적이 데이터 탈취에서 '의사결정 조작'으로 이동(에이전트가 쓰는
 데이터·로직 오염)</td>
@@ -10569,6 +10635,14 @@ Centre)</td>
 <td>외부 서비스 침해, 평가 체계 개정</td>
 <td>평가·내부 배포 환경도 단일 장애점. 격리·킬스위치 의무화(20.8절)</td>
 </tr>
+<tr>
+<td>2026-10~11</td>
+<td>프랑스 슈퍼마켓 냉장 컨트롤러 원격 조작(약 700개 매장, 이후 6개국
+확산), 혈액원(EFS) 냉장 설비 공격</td>
+<td>신선·냉동 식품 폐기, 혈액 보관 위협(손실 없음)</td>
+<td>인터넷에 노출된 구형 OT 컨트롤러와 협력업체 원격 관리 경로가 단일
+장애점. 노출 차단·펌웨어 수명 관리·협력업체 보안 의무화(19.2절)</td>
+</tr>
 </tbody>
 </table>
 <h3 id="212-회복력-규제-2027년이-집행의-해">21.2 회복력 규제: 2027년이
@@ -11451,7 +11525,7 @@ country_policy, laws_science, cyber_resilience)과 추출 텍스트
 자료, ±15는 일반적 전망, ±20–25는 단일 출처·조건부·추정에 기댄
 전망입니다. 확률이 이 범위 안 어디에 있어도 이상하지 않다는
 뜻입니다.</li>
-<li>확률 320건은 보고서 본문 근거를 바탕으로 검토자 4인(AI 보조)이
+<li>확률 321건은 보고서 본문 근거를 바탕으로 검토자 4인(AI 보조)이
 항목별로 매기고 작성자가 통합했습니다. 검토 과정에서 등급이 근거와 맞지
 않는 11건은 등급을 조정했습니다.</li>
 </ul></li>
@@ -11636,7 +11710,7 @@ country_policy, laws_science, cyber_resilience)과 추출 텍스트
 </tbody>
 </table>
 <h3 id="전망-근거-자료">전망 근거 자료</h3>
-<p>본문 2027 전망 320건 중 <strong>261건</strong>에 수집 자료를 근거로
+<p>본문 2027 전망 321건 중 <strong>262건</strong>에 수집 자료를 근거로
 연결했습니다(근거 링크는 각 전망의 확률 옆). 검토자 4인(AI 보조)이 후보
 자료의 내용을 읽고 전망을 직접 뒷받침하는 자료만 골랐고, 맞는 자료가
 없으면 비워 두었습니다. 일부 자료는 본문 없이 제목만 수집돼 제목
@@ -13346,7 +13420,7 @@ href="https://zdnet.co.kr/view/?no=20261002104418">국정자원 화재
 <blockquote>
 <p>각 자료를 수집·저장한 뒤 추출 텍스트를 읽고 정리했습니다. 기준일
 2026-11-26. '요약·보도자료만'은 원문이 유료이거나 자동 접근이 막혀 공식
-보도자료·언론 보도로 대신한 자료입니다. 수록 자료 479건.</p>
+보도자료·언론 보도로 대신한 자료입니다. 수록 자료 483건.</p>
 </blockquote>
 <h3 id="a-글로벌-리서치컨설팅-14건">A. 글로벌 리서치·컨설팅 (14건)</h3>
 <h5
@@ -20536,6 +20610,44 @@ DeepSeek 사내망 차단이 18개 부처로 확산, 행안부는 17개 광역�
 href="https://www.newsis.com/view/NISX20250206_0003056114">https://www.newsis.com/view/NISX20250206_0003056114</a></p>
 <p>DeepSeek 사내망 차단이 18개 부처로 확산, 행안부는 17개 광역지자체에
 민감정보 입력 금지 공문</p>
+<h3 id="af-냉장콜드체인-설비-공격2026-프랑스-4건">AF. 냉장·콜드체인 설비
+공격(2026 프랑스) (4건)</h3>
+<h5
+id="bleepingcomputer--cyberattack-disrupts-blood-storage-refrigeration-systems-in-france">BleepingComputer
+— Cyberattack disrupts blood storage refrigeration systems in
+France</h5>
+<p>발표 2026-11<br />
+출처: <a
+href="https://bleepingcomputer.com/news/security/cyberattack-disrupts-blood-storage-refrigeration-systems-in-france">https://bleepingcomputer.com/news/security/cyberattack-disrupts-blood-storage-refrigeration-systems-in-france</a></p>
+<p>EFS 3개 지점 냉장 설비 공격, 협력업체 원격 감시 소프트웨어 악용,
+혈액제제 손실 없음.</p>
+<h5
+id="complexdiscovery--refrigeration-hack-affected-about-700-french-supermarkets-government-says">ComplexDiscovery
+— Refrigeration hack affected about 700 French supermarkets, government
+says</h5>
+<p>발표 2026-11<br />
+출처: <a
+href="https://complexdiscovery.com/refrigeration-hack-affected-about-700-french-supermarkets-government-says-as-danfoss-interfaces-stay-online/">https://complexdiscovery.com/refrigeration-hack-affected-about-700-french-supermarkets-government-says-as-danfoss-interfaces-stay-online/</a></p>
+<p>프랑스 정부 집계 약 700개 매장, Danfoss 인터페이스 다수 여전히
+노출.</p>
+<h5
+id="escudo-digital--french-supermarket-cyberattack-this-is-not-a-closed-incident">Escudo
+Digital — French supermarket cyberattack: 'this is not a closed
+incident'</h5>
+<p>발표 2026-11<br />
+출처: <a
+href="https://www.escudodigital.com/en/cybersecurity/french-supermarket-cyberattack-this-is-not-a-closed-incident-were-performing-an-autopsy-on.html">https://www.escudodigital.com/en/cybersecurity/french-supermarket-cyberattack-this-is-not-a-closed-incident-were-performing-an-autopsy-on.html</a></p>
+<p>Claroty: 공격자들이 공개 스캐닝·AI 도구로 인터넷 연결 OT 기기 탐색.
+노출 컨트롤러 수천 대.</p>
+<h5
+id="it-connect--cyberattaque--les-systèmes-de-froid-des-supermarchés-visés-danfoss">IT-Connect
+— Cyberattaque : les systèmes de froid des supermarchés visés
+(Danfoss)</h5>
+<p>발표 2026-10<br />
+출처: <a
+href="https://www.it-connect.fr/cyberattaque-supermarches-froid-danfoss/">https://www.it-connect.fr/cyberattaque-supermarches-froid-danfoss/</a></p>
+<p>프랑스 슈퍼마켓 냉장 컨트롤러(Danfoss AK-SM/AK-SC) 원격 조작, CERT-FR
+경보.</p>
   </main>
 </div>
 <script>

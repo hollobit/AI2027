@@ -2,97 +2,73 @@
  {
   "area": "CBRN",
   "text": "생물·화학 High(CB-1)가 신모델 기본값, 논쟁은 Critical(신규 무기) 임계로 이동",
-  "likelihood": "높음 78%±15",
-  "rank": 1,
-  "prob": 78,
-  "unc": 15
+  "likelihood": "높음",
+  "rank": 1
  },
  {
   "area": "테러",
   "text": "챗봇 관여 청소년 단독범 폭력 계획 증가, AI 기업 위협 신고 체계가 쟁점",
-  "likelihood": "높음 85%±10",
-  "rank": 1,
-  "prob": 85,
-  "unc": 10
+  "likelihood": "높음",
+  "rank": 1
  },
  {
   "area": "시험",
   "text": "부정 도구가 AI 안경·이어버드로 이동, 시험 기기 검사·대면 평가 강화",
-  "likelihood": "높음 80%±15",
-  "rank": 1,
-  "prob": 80,
-  "unc": 15
+  "likelihood": "높음",
+  "rank": 1
  },
  {
   "area": "오픈웨이트",
   "text": "가드레일 제거 모델 1만 개 이상, 범죄 커뮤니티의 기본 도구화",
-  "likelihood": "높음 80%±10",
-  "rank": 1,
-  "prob": 80,
-  "unc": 10
+  "likelihood": "높음",
+  "rank": 1
  },
  {
   "area": "에이전트",
   "text": "프롬프트 주입으로 에이전트 '행동'(송금·권한 변경·커밋)을 탈취한 사고 공개",
-  "likelihood": "높음 88%±10",
-  "rank": 1,
-  "prob": 88,
-  "unc": 10
+  "likelihood": "높음",
+  "rank": 1
  },
  {
   "area": "오정렬",
   "text": "평가 인식 상승으로 실사용 로그 평가·CoT 모니터링이 표준 요구가 됨",
-  "likelihood": "높음 70%±20",
-  "rank": 1,
-  "prob": 70,
-  "unc": 20
+  "likelihood": "높음",
+  "rank": 1
  },
  {
   "area": "딥페이크",
   "text": "AI 성착취물·딥페이크 성범죄 증가, 10대 가해 비중 높게 유지",
-  "likelihood": "높음 ~80%±15",
-  "rank": 1,
-  "prob": 80,
-  "unc": 15
+  "likelihood": "높음",
+  "rank": 1
  },
  {
   "area": "CBRN",
   "text": "미국 DNA 합성 스크리닝 의무화 입법 진전",
-  "likelihood": "중간 40%±20",
-  "rank": 2,
-  "prob": 40,
-  "unc": 20
+  "likelihood": "중간",
+  "rank": 2
  },
  {
   "area": "오픈웨이트",
   "text": "주요국에서 오픈웨이트 출시 전 위험 평가·공개 제한 정책 등장",
-  "likelihood": "중간 42%±20",
-  "rank": 2,
-  "prob": 42,
-  "unc": 20
+  "likelihood": "중간",
+  "rank": 2
  },
  {
   "area": "레드팀",
   "text": "한국 AI안전연구소의 한국어 오남용·에이전트 레드팀 결과 정례 공개",
-  "likelihood": "중간 45%±20",
-  "rank": 2,
-  "prob": 45,
-  "unc": 20
+  "likelihood": "중간",
+  "rank": 2
  },
  {
   "area": "CBRN",
   "text": "AI가 결정적으로 도운 생물·화학 공격 시도 공개",
-  "likelihood": "낮음 12%±10",
-  "rank": 3,
-  "prob": 12,
-  "unc": 10
+  "likelihood": "낮음",
+  "rank": 3
  },
  {
   "area": "오정렬",
   "text": "배포 에이전트가 의도적으로 감독을 회피해 실제 피해를 낸 사건 확인",
-  "likelihood": "낮음 10%±10",
-  "rank": 3,
-  "prob": 10,
-  "unc": 10
+  "likelihood": "낮음",
+  "rank": 3
  }
 ]
