@@ -753,6 +753,265 @@
   "counter": []
  },
  {
+  "chapter": "6장",
+  "text": "미국 AV 서비스 도시가 2027년 말 40곳 이상(McKinsey 기준, 안전요원 탑승 포함)",
+  "prob": "중간 50%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "McKinsey",
+    "url": "https://www.mckinsey.com/featured-insights/charts/autonomous-mobility-gains-ground",
+    "title": "Autonomous mobility gains ground (chart)"
+   }
+  ],
+  "counter": [
+   {
+    "org": "BCG",
+    "url": "https://www.bcg.com/publications/2026/here-at-last-the-evolution-of-the-robotaxi",
+    "title": "Here at Last: The Evolution of the Robotaxi"
+   }
+  ]
+ },
+ {
+  "chapter": "6장",
+  "text": "Waymo가 도쿄에서 일반 승객 대상 완전 무인 운행을 시작",
+  "prob": "중간 55%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Waymo",
+    "url": "https://waymo.com/blog/2026/09/opening-tokyo-in-2027-with-nihon-kotsu-go/",
+    "title": "Opening Tokyo in 2027 with Nihon Kotsu and GO"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "Waymo 주간 유료 탑승이 2027년 말 150만 건 이상",
+  "prob": "중간 45%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Waymo",
+    "url": "https://waymo.com/blog/2026/02/waymo-raises-usd16-billion-investment-round",
+    "title": "Waymo raises $16 billion investment round"
+   },
+   {
+    "org": "TechCrunch",
+    "url": "https://techcrunch.com/2026/03/27/waymo-skyrocketing-ridership-in-one-chart/",
+    "title": "Waymo's skyrocketing ridership in one chart"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "유럽에서 첫 완전 무인 유료 로보택시 서비스(런던·스위스·독일 중 1곳 이상) 시작",
+  "prob": "중간 45%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Bloomberg Law",
+    "url": "https://news.bloomberglaw.com/tech-and-telecom-law/uber-and-wayve-win-licenses-for-supervised-robotaxis-in-london",
+    "title": "Uber and Wayve Win Licenses for Supervised Robotaxis in London"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "중국 업체(Baidu·Pony.ai·WeRide)의 중동·유럽·동남아 운영 도시가 10곳 이상",
+  "prob": "중간 60%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Pony.ai",
+    "url": "https://www.sec.gov/Archives/edgar/data/0001969302/000110465926129308/tm2629888d1_ex99-1.htm",
+    "title": "Pony AI Inc. Third Quarter 2026 Unaudited Financial Results (6-K Ex.99.1)"
+   },
+   {
+    "org": "Counterpoint",
+    "url": "https://counterpointresearch.com/en/insights/robotaxi-services-market-to-hit-168-billion-dollar-valuation-by-2035-as-industry-reaches-inflection-point-led-by-china-us",
+    "title": "Robotaxi services market to hit $168 billion by 2035"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "중대 사고나 리콜로 한 업체 이상이 미국·중국의 한 도시 이상에서 무인 운행을 중단",
+  "prob": "중간 40%±20",
+  "basis": "추정",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "미국 연방 AV 법률(승용 로보택시 포함)이 제정",
+  "prob": "낮음 20%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Covington",
+    "url": "https://www.cov.com/news-and-insights/insights/2026/06/federal-vehicle-safety-at-midyear-regulatory-relief-legislative-momentum-and-the-road-to-the-broader-av-deployment",
+    "title": "Federal Vehicle Safety at Midyear: Regulatory Relief, Legislative Momentum, and the Road …"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "**서울 자율주행택시가 주간 운행이나 강남 밖 지역으로 확대**",
+  "prob": "중간 60%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "서울시",
+    "url": "https://mediahub.seoul.go.kr/archives/2019107",
+    "title": "강남 심야 자율주행택시 19대로 확대"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "**한국에서 안전요원 없는 레벨4 유상 여객 운송이 일반 도로에서 시작(정부 목표 '2027 레벨4 상용화')**",
+  "prob": "낮음 30%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "대한민국 정책브리핑",
+    "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148971442",
+    "title": "자율주행차 산업경쟁력 제고 방안"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "FDA가 정신건강용 생성형 AI 대화형 기기 지침 초안을 2027년에 공개",
+  "prob": "중간 55%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "RAPS",
+    "url": "https://www.raps.org/resource/fda-s-device-center-releases-guidance-agenda-for-fy-2027.html",
+    "title": ""
+   },
+   {
+    "org": "FDA",
+    "url": "https://www.fda.gov/medical-devices/digital-health-center-excellence/considerations-regulation-generative-ai-enabled-medical-devices-discussion-paper-and-request",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "FDA가 AI 기기 소프트웨어 수명주기 관리 지침을 최종화",
+  "prob": "중간 60%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "RAPS",
+    "url": "https://www.raps.org/resource/fda-s-device-center-releases-guidance-agenda-for-fy-2027.html",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "소비자 건강 챗봇의 부적절한 의료·정신건강 조언을 이유로 한 미국 규제 조치(FTC·주 법무장관)나 대형 소송이 추가로 나옴",
+  "prob": "높음 72%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "FTC",
+    "url": "https://www.ftc.gov/news-events/news/press-releases/2025/09/ftc-launches-inquiry-ai-chatbots-acting-companions",
+    "title": ""
+   },
+   {
+    "org": "Cooley",
+    "url": "https://www.cooley.com/news/insight/2026/2026-09-28-regulating-ai-like-a-doctor-fda-floats-competency-based-path-for-generative-ai-enabled-devices",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "주요 AI 기업 2곳 이상이 의료기록 연동 소비자 건강 기능을 미국 밖(EU·한국 등)으로 확대",
+  "prob": "중간 50%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "OpenAI",
+    "url": "https://openai.com/index/introducing-chatgpt-health/",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "미국 대형 의료기관·보험사가 정기 체크인·추적 관리에 의학 훈련 AI 에이전트를 정식 배치(Forrester 전망의 실현)",
+  "prob": "높음 70%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Forrester",
+    "url": "https://www.forrester.com/blogs/predictions-2027-a-consumer-revolution-is-rewriting-healthcares-rules/",
+    "title": ""
+   },
+   {
+    "org": "Becker's",
+    "url": "https://www.beckershospitalreview.com/strategy/5-big-healthcare-predictions-for-2027-forrester/",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "식약처의 LLM·생성형 AI 디지털의료기기 허가가 2027년 말 누적 3건 이상",
+  "prob": "중간 55%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "식약처",
+    "url": "https://www.mfds.go.kr/brd/m_99/view.do?seq=49815",
+    "title": ""
+   },
+   {
+    "org": "메디칼타임즈",
+    "url": "https://www.medicaltimes.com/Main/News/NewsView.html?ID=1169505",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "한국 비대면진료 플랫폼에 AI 문진·증상 분류 기능이 결합되고, 그 적용 범위를 정하는 정부 지침이 나옴",
+  "prob": "중간 50%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "데일리팜",
+    "url": "https://www.dailypharm.com/user/news/334199",
+    "title": ""
+   },
+   {
+    "org": "데일리팜",
+    "url": "https://m.dailypharm.com/user/news/342816",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
   "chapter": "7장",
   "text": "AI 연구 자체",
   "prob": "높음 70%±15",
@@ -1825,6 +2084,157 @@
   "counter": []
  },
  {
+  "chapter": "9장",
+  "text": "ChatGPT·Google AI 모드·Microsoft Copilot의 'AI 답변 속 광고'가 주요 시장(미국·유럽·한국·일본)에서 표준 광고 상품으로 자리 잡고, 세계 생성형 AI 검색 광고 매출이 100억 달러를 넘음",
+  "prob": "중간 60%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "WPP Media",
+    "url": "https://www.wppmedia.com/news/report-this-year-next-year-midyear-2026",
+    "title": "This Year Next Year: Midyear 2026 Global Advertising Forecast"
+   },
+   {
+    "org": "OpenAI",
+    "url": "https://openai.com/index/chatgpt-ads-expands-26-new-countries/",
+    "title": "ChatGPT ads expands to 26 new countries"
+   },
+   {
+    "org": "Google",
+    "url": "https://blog.google/products/ads-commerce/ads-in-ai-mode-global/",
+    "title": "Ads in AI Mode expand globally"
+   }
+  ],
+  "counter": [
+   {
+    "org": "Dentsu",
+    "url": "https://insight.dentsu.com/ad-spend-may-2026/",
+    "title": "Global Ad Spend Forecasts May 2026"
+   }
+  ]
+ },
+ {
+  "chapter": "9장",
+  "text": "OpenAI 광고 연환산 매출이 2027년 말 50억 달러 이상",
+  "prob": "중간 45%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "OpenAI",
+    "url": "https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads/",
+    "title": "Expanding access to AI with ChatGPT ads"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "9장",
+  "text": "검색 광고 총액은 줄지 않고 성장률만 낮아짐(AI 답변 광고가 기존 검색 광고를 잠식하기보다 얹히는 구도)",
+  "prob": "높음 72%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Dentsu",
+    "url": "https://insight.dentsu.com/ad-spend-may-2026/",
+    "title": "Global Ad Spend Forecasts May 2026"
+   },
+   {
+    "org": "WPP Media",
+    "url": "https://www.wppmedia.com/news/report-this-year-next-year-midyear-2026",
+    "title": "This Year Next Year: Midyear 2026 Global Advertising Forecast"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "9장",
+  "text": "언론사의 Google 검색 유입이 2027년에도 전년 대비 20% 이상 감소하고, AI 챗봇 유입은 그 손실을 메우지 못함",
+  "prob": "중간 60%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Reuters Institute",
+    "url": "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2026/dnr-executive-summary",
+    "title": "Digital News Report 2026: Executive summary"
+   },
+   {
+    "org": "Pew Research Center",
+    "url": "https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/",
+    "title": "Google users are less likely to click on links when an AI summary appears in the results"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "9장",
+  "text": "EU 또는 영국 외 주요국 1곳 이상이 CMA처럼 AI 요약 옵트아웃·출처 표시를 의무화",
+  "prob": "중간 40%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "UK CMA",
+    "url": "https://www.gov.uk/government/news/cma-secures-fairer-deal-for-publishers-and-improves-google-search-services-in-uk",
+    "title": "CMA secures fairer deal for publishers and improves Google search services in UK"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "9장",
+  "text": "'AI 답변 속 광고' 표시·분리 기준(광고와 추천의 구분)이 미국 FTC·EU·한국 공정위 중 1곳 이상의 지침·조사 대상이 됨",
+  "prob": "중간 50%±20",
+  "basis": "추정",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "9장",
+  "text": "**네이버가 상반기에 거래 성과형 과금 광고를 시범 도입하고, AI 브리핑·쇼핑 에이전트 광고가 광고 매출 성장의 주된 동력이 됨**",
+  "prob": "높음 75%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "비즈워치",
+    "url": "https://news.bizwatch.co.kr/article/mobile/2026/11/12/0004",
+    "title": "네이버 2026년 3분기 실적과 컨퍼런스콜"
+   },
+   {
+    "org": "디지털데일리",
+    "url": "https://www.ddaily.co.kr/page/view/2026080709360260626",
+    "title": "네이버 AI 브리핑 광고 성과"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "9장",
+  "text": "**네이버 웹 검색 점유율(인터넷트렌드)이 60% 아래로 떨어짐**",
+  "prob": "낮음 25%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "디지털데일리",
+    "url": "https://www.ddaily.co.kr/page/view/2026071214223169501",
+    "title": "2026년 상반기 국내 검색엔진 점유율"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "9장",
+  "text": "**국내 총광고비 성장률은 4% 안팎에 머물고, 늘어난 몫의 대부분이 AI 검색·커머스·리테일 미디어로 감**",
+  "prob": "높음 70%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "파이낸셜뉴스(KOBACO)",
+    "url": "https://www.fnnews.com/news/202602050952442832",
+    "title": "2025 방송통신광고비 조사와 2026 전망"
+   }
+  ],
+  "counter": []
+ },
+ {
   "chapter": "10장",
   "text": "생성형 AI폰이 세계 출하의 절반을 넘음(약 52%)",
   "prob": "높음 72%±10",
@@ -2319,7 +2729,7 @@
  },
  {
   "chapter": "11장",
-  "text": "- 한국은 AI데이터센터 특별법(2027-02 시행 목표)으로 비수도권 착공이 늘지만, GW급 단일 캠퍼스 가동은 2027년 안에 어려움 _(중간)_",
+  "text": "- 한국은 AI데이터센터 특별법(2027-03-10 시행)으로 비수도권 착공이 늘지만, GW급 단일 캠퍼스 가동은 2027년 안에 어려움 _(중간)_",
   "prob": "중간 60%±15",
   "basis": "일정",
   "support": [
@@ -2417,6 +2827,358 @@
     "org": "Morgan Stanley",
     "url": "https://morganstanley.com/insights/articles/powering-ai-energy-market-outlook-2026",
     "title": "US data center power gap update (Stephen Byrd)"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "11장",
+  "text": "광트랜시버 시장이 2027년에도 50% 이상 성장",
+  "prob": "높음 70%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "LightCounting (Lightwave 보도)",
+    "url": "https://www.lightwaveonline.com/home/news/55410716/ethernet-optical-transceiver-set-to-grow-120-in-2026",
+    "title": "Ethernet optical transceiver set to grow 120% in 2026"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "11장",
+  "text": "CPO는 일부 대형 고객의 스케일아웃·스케일업 스위치에 머물고, 플러그형 광모듈이 주류로 남음(CPO 대량 도입은 2028년 이후)",
+  "prob": "높음 80%±10",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Yole Group (Compound Semiconductor 보도)",
+    "url": "https://compoundsemiconductor.net/article/125273/Photonics_at_the_speed_of_AI",
+    "title": "Photonics at the speed of AI (Co-Packaged Optics for Data Centers 2026)"
+   },
+   {
+    "org": "NVIDIA",
+    "url": "https://nvidia.com/en-us/networking/products/silicon-photonics",
+    "title": "Silicon Photonics (Spectrum-X / Quantum-X Photonics)"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "11장",
+  "text": "통신사 1곳 이상이 상용망에서 AI-RAN 상용 서비스를 시작(Nokia 목표 2027)",
+  "prob": "중간 55%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Nokia",
+    "url": "https://www.nokia.com/newsroom/press-releases/nvidia-and-nokia-to-pioneer-the-ai-platform-for-6g--powering-americas-return-to-telecommunications-leadership/",
+    "title": "NVIDIA and Nokia to pioneer the AI platform for 6G"
+   },
+   {
+    "org": "Light Reading",
+    "url": "https://lightreading.com/ai-machine-learning/softbank-nokia-target-2027-for-commercial-ai-ran-trial-in-japan",
+    "title": "SoftBank, Nokia target 2027 for commercial AI-RAN trial in Japan"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "11장",
+  "text": "한국 메모리·기판 업체가 CPO·광엔진 관련 양산 공급 계약을 1건 이상 공개",
+  "prob": "중간 40%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "TrendForce",
+    "url": "https://www.trendforce.com/news/2026/04/01/news-silicon-photonics-race-intensifies-as-tsmc-targets-2026-coupe-production-samsung-eyes-2029-cpo-turnkey/",
+    "title": "Silicon photonics race intensifies as TSMC targets 2026 COUPE production, Samsung eyes 20…"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "11장",
+  "text": "세계 성장률이 2.5% 이상을 유지해 AI 조정이 오더라도 세계 경기침체로 번지지 않음",
+  "prob": "높음 85%±10",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "IMF WEO",
+    "url": "https://www.imf.org/en/Publications/WEO/Issues/2026/10/13/world-economic-outlook-october-2026",
+    "title": ""
+   },
+   {
+    "org": "Moody's",
+    "url": "https://www.moodys.com/web/en/us/insights/credit-risk/outlooks/2027-global-credit-outlook-credit-will-weaken-as-higher-rates-and-energy-costs-offset-the-ai-tailwind.html",
+    "title": ""
+   }
+  ],
+  "counter": [
+   {
+    "org": "BIS",
+    "url": "https://www.bis.org/publ/arpdf/ar2026e1.htm",
+    "title": ""
+   }
+  ]
+ },
+ {
+  "chapter": "11장",
+  "text": "AI 인프라 조달에서 회사채·사모신용·SPV·리스 비중이 2026년보다 커짐",
+  "prob": "높음 80%±10",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Moody's",
+    "url": "https://www.thestandard.com.hk/finance/article/346773/AI-financing-driving-private-credit-growth-as-refinancing-risks-rise-Moodys-says",
+    "title": ""
+   },
+   {
+    "org": "BIS",
+    "url": "https://www.bis.org/publ/arpdf/ar2026e1.htm",
+    "title": ""
+   },
+   {
+    "org": "IMF GFSR",
+    "url": "https://www.imf.org/en/publications/gfsr/issues/2026/10/13/global-financial-stability-report-october-2026",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "11장",
+  "text": "미국 AI 관련 투자가 2027년 미국 GDP 성장에 0.5%p 이상 기여",
+  "prob": "중간 65%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "BIS",
+    "url": "https://www.bis.org/publ/arpdf/ar2026e1.htm",
+    "title": ""
+   },
+   {
+    "org": "Moody's 국가신용",
+    "url": "https://www.moodys.com/web/en/us/insights/credit-risk/outlooks/2027-global-sovereigns-outlook-stable-as-steady-growth-and-ai-offset-higher-rates-and-geopolitical-risks.html",
+    "title": ""
+   }
+  ],
+  "counter": [
+   {
+    "org": "WEF",
+    "url": "https://www.weforum.org/press/2026/09/chief-economists-expect-global-economy-to-stabilize-but-fiscal-constraints-rising-living-costs-and-ai-investment-uncertainty-threaten-growth-bf0eb0b43f/",
+    "title": ""
+   }
+  ]
+ },
+ {
+  "chapter": "11장",
+  "text": "네오클라우드나 레버리지가 높은 데이터센터 개발사 1곳 이상이 신용등급 하향, 채무조정 또는 대형 고객 계약 축소를 겪음",
+  "prob": "중간 60%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Moody's",
+    "url": "https://www.moodys.com/web/en/us/insights/credit-risk/outlooks/2027-global-credit-outlook-credit-will-weaken-as-higher-rates-and-energy-costs-offset-the-ai-tailwind.html",
+    "title": ""
+   },
+   {
+    "org": "Nasdaq (Microsoft 네오클라우드 보도)",
+    "url": "https://www.nasdaq.com/articles/microsofts-neocloud-pullback-isnt-crack-ai-demand",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "11장",
+  "text": "미국 반도체·AI 주가(필라델피아 반도체지수 기준)가 2027년 중 고점 대비 20% 이상 하락하는 구간이 생김",
+  "prob": "중간 55%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "WEF",
+    "url": "https://www.weforum.org/press/2026/09/chief-economists-expect-global-economy-to-stabilize-but-fiscal-constraints-rising-living-costs-and-ai-investment-uncertainty-threaten-growth-bf0eb0b43f/",
+    "title": ""
+   },
+   {
+    "org": "IMF GFSR",
+    "url": "https://www.imf.org/en/publications/gfsr/issues/2026/10/13/global-financial-stability-report-october-2026",
+    "title": ""
+   }
+  ],
+  "counter": [
+   {
+    "org": "Goldman Sachs (Reuters 보도)",
+    "url": "https://www.timeslive.co.za/news/sci-tech/2026-11-12-ai-to-stay-dominant-force-behind-us-business-investment-in-2027-goldman-says/",
+    "title": ""
+   }
+  ]
+ },
+ {
+  "chapter": "11장",
+  "text": "빅5 하이퍼스케일러 중 1곳 이상이 2027년 capex 가이던스를 연중 하향",
+  "prob": "낮음 30%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Bain",
+    "url": "https://www.bain.com/insights/new-innovation-is-required-to-fund-ais-6-trillion-buildout-technology-report-2026/",
+    "title": ""
+   },
+   {
+    "org": "Moody's",
+    "url": "https://www.moodys.com/web/en/us/insights/credit-risk/outlooks/2027-global-credit-outlook-credit-will-weaken-as-higher-rates-and-energy-costs-offset-the-ai-tailwind.html",
+    "title": ""
+   }
+  ],
+  "counter": [
+   {
+    "org": "Goldman Sachs (Reuters 보도)",
+    "url": "https://www.timeslive.co.za/news/sci-tech/2026-11-12-ai-to-stay-dominant-force-behind-us-business-investment-in-2027-goldman-says/",
+    "title": ""
+   }
+  ]
+ },
+ {
+  "chapter": "11장",
+  "text": "AI 관련 부실이 은행 시스템 위기(대형 은행 구제 또는 투자등급 스프레드 급등)로 번짐",
+  "prob": "낮음 7%±5",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "IMF GFSR",
+    "url": "https://www.imf.org/en/publications/gfsr/issues/2026/10/13/global-financial-stability-report-october-2026",
+    "title": ""
+   },
+   {
+    "org": "Moody's",
+    "url": "https://www.moodys.com/web/en/us/insights/credit-risk/outlooks/2027-global-credit-outlook-credit-will-weaken-as-higher-rates-and-energy-costs-offset-the-ai-tailwind.html",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "11장",
+  "text": "한국 2027 성장률이 2.5–3.5% 범위에 들어감",
+  "prob": "중간 60%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "KDI (JoongAng 보도)",
+    "url": "https://www.koreajoongangdaily.com/business/korean-think-tank-projects-economy-to-grow-39-in-2027-on-aidriven-demand/12978948",
+    "title": ""
+   },
+   {
+    "org": "OECD (Korea Times 보도)",
+    "url": "https://www.koreatimes.co.kr/economy/20260923/oecd-raises-koreas-2026-growth-forecast-to-37",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "11장",
+  "text": "KOSPI가 하루 5% 이상 떨어지는 날이 2027년에 2회 이상 나옴",
+  "prob": "높음 70%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "비즈워치",
+    "url": "https://news.bizwatch.co.kr/article/market/2026/11/06/0041",
+    "title": ""
+   },
+   {
+    "org": "Korea JoongAng Daily",
+    "url": "https://www.koreajoongangdaily.com/business/sk-hynix-samsung-shares-slide-dragging-kospi-nearly-8-lower/12752742",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "11장",
+  "text": "미국 주·지방정부의 데이터센터 모라토리엄이나 대형부하 전용 요금·비용 분담 규칙이 새로 10건 이상 생김",
+  "prob": "높음 80%±10",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Forrester",
+    "url": "https://www.forrester.com/blogs/predictions-2027-ai-slingshots-environmental-sustainability-from-promises-to-action/",
+    "title": ""
+   },
+   {
+    "org": "Data Center Watch",
+    "url": "https://datacenterwatch.org/q1-2026",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "11장",
+  "text": "최소 2개국이 데이터센터에 계통 접속 요금이나 그에 준하는 비용 부담 의무를 도입",
+  "prob": "중간 65%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Forrester",
+    "url": "https://www.forrester.com/blogs/predictions-2027-ai-slingshots-environmental-sustainability-from-promises-to-action/",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "11장",
+  "text": "지역 반대로 저지·지연된 미국 데이터센터 사업이 2027년 연간 2,000억 달러를 넘음(Data Center Watch 집계)",
+  "prob": "중간 55%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Data Center Watch",
+    "url": "https://datacenterwatch.org/q1-2026",
+    "title": ""
+   },
+   {
+    "org": "Gallup",
+    "url": "https://news.gallup.com/poll/709772/americans-oppose-data-centers-area.aspx",
+    "title": ""
+   }
+  ],
+  "counter": [
+   {
+    "org": "Goldman Sachs (Reuters 보도)",
+    "url": "https://www.timeslive.co.za/news/sci-tech/2026-11-12-ai-to-stay-dominant-force-behind-us-business-investment-in-2027-goldman-says/",
+    "title": ""
+   }
+  ]
+ },
+ {
+  "chapter": "11장",
+  "text": "한국 AI데이터센터 특별법 하위법령에 주민 의견수렴·지역기여 절차가 구체화돼 시행(2027-03-10)에 맞춰 공포됨",
+  "prob": "높음 70%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "지디넷코리아",
+    "url": "https://zdnet.co.kr/view/?no=20261005073404",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "11장",
+  "text": "동서울변전소 HVDC 증설이 2027년 안에 주민 합의를 얻어 착공",
+  "prob": "낮음 20%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "한국경제",
+    "url": "https://hankyung.com/article/202607306039i",
+    "title": ""
    }
   ],
   "counter": []
@@ -2862,6 +3624,102 @@
   "counter": []
  },
  {
+  "chapter": "13장",
+  "text": "미국 성인 중 AI에 '기대보다 우려가 크다'는 응답이 2027년 조사에서도 50% 이상",
+  "prob": "높음 80%±10",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Pew Research Center",
+    "url": "https://www.pewresearch.org/short-reads/2026/08/18/young-adults-in-the-us-are-increasingly-wary-of-ai-concerned-it-will-take-jobs/",
+    "title": ""
+   },
+   {
+    "org": "Gallup",
+    "url": "https://news.gallup.com/poll/709772/americans-oppose-data-centers-area.aspx",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "13장",
+  "text": "한국에서 데이터센터·송전망 입지 갈등이 국회 국정감사나 상임위의 독립 의제로 다뤄짐",
+  "prob": "높음 75%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "한국경제",
+    "url": "https://hankyung.com/article/202607306039i",
+    "title": ""
+   },
+   {
+    "org": "뉴스토마토",
+    "url": "https://newstomato.com/ReadNews.aspx?no=1305512",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "13장",
+  "text": "미국 의회에서 AI 특화 신세(토큰세·컴퓨트세·데이터센터 전력세)가 위원회를 통과",
+  "prob": "낮음 8%±7",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "CRS",
+    "url": "https://www.everycrsreport.com/reports/R49520.html",
+    "title": ""
+   }
+  ],
+  "counter": [
+   {
+    "org": "Thomson Reuters",
+    "url": "https://tax.thomsonreuters.com/news/republicans-hesitant-on-ai-taxes-says-expert/",
+    "title": ""
+   }
+  ]
+ },
+ {
+  "chapter": "13장",
+  "text": "데이터센터 세제 혜택 축소·전력 비용 부담이 미국 연방·주 세제 논의의 주된 형태가 되고, 최소 1개 주가 데이터센터 세금 감면을 축소하거나 특별 부담을 입법",
+  "prob": "중간 60%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "CRS",
+    "url": "https://www.everycrsreport.com/reports/R49520.html",
+    "title": ""
+   },
+   {
+    "org": "머니투데이",
+    "url": "https://www.mt.co.kr/world/2026/11/15/2026111323461332980",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "13장",
+  "text": "한국 2027년 세법개정안에 AI·로봇 관련 신세목이 들어감",
+  "prob": "낮음 5%±5",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "택스워치",
+    "url": "https://www.taxwatch.co.kr/article/tax/2026/05/06/0001",
+    "title": ""
+   },
+   {
+    "org": "뉴시스",
+    "url": "https://www.newsis.com/view/NISX20260515_0003631074",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
   "chapter": "14장",
   "text": "예산 확정 후 미션별 신규 R&D 공모·착수(12개 미션 대부분에서 첫 과제 선정)",
   "prob": "높음 80%±15",
@@ -3107,6 +3965,172 @@
     "org": "IDC",
     "url": "https://www.idc.com/resource-center/press-releases/idc-futurescape-2027-predicts-60-of-enterprises-will-run-a-majority-of-their-business-processes-ai-first-by-2029-up-from-13-in-2026/",
     "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "15장",
+  "text": "DHS의 H-1B 청원당 10만 3,265달러 수수료 규칙이 2027년에 최종화",
+  "prob": "중간 50%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "CRS",
+    "url": "https://www.everycrsreport.com/reports/IN12747.html",
+    "title": ""
+   }
+  ],
+  "counter": [
+   {
+    "org": "Staffing Industry Analysts",
+    "url": "https://www.staffingindustry.com/news/global-daily-news/federal-actions-take-severe-toll-on-h-1b-visa-congressional-research-service-finds",
+    "title": ""
+   }
+  ]
+ },
+ {
+  "chapter": "15장",
+  "text": "캐나다가 H-1B 소지자 전용(또는 우선) 영주·취업 경로를 2027년에 실제로 개시",
+  "prob": "중간 55%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "CIC News",
+    "url": "https://www.cicnews.com/2025/11/canada-to-launch-accelerated-pathway-for-h-1b-holders-as-part-of-suite-of-measures-to-attract-skilled-workers-1161634.html",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "15장",
+  "text": "한국 정부가 2026년 해외 우수 인재 유치 실적(목표 600명)과 톱티어 비자 발급 수를 공개하고 목표를 달성",
+  "prob": "중간 40%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "법무부",
+    "url": "https://moj.go.kr/bbs/moj/189/607924/artclView.do",
+    "title": ""
+   },
+   {
+    "org": "법무부·산업부",
+    "url": "https://www.moj.go.kr/bbs/moj/182/608026/artclView.do",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "15장",
+  "text": "글로벌 노스와 사우스의 생성형 AI 사용률 격차(Microsoft 기준)가 12%p 이상으로 유지되거나 커짐",
+  "prob": "높음 75%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Microsoft",
+    "url": "https://blogs.microsoft.com/on-the-issues/2026/09/21/the-continued-state-of-global-ai-diffusion-in-2026/",
+    "title": "The continued state of global AI diffusion in 2026 (AI Diffusion Report Q2 2026)"
+   },
+   {
+    "org": "World Bank",
+    "url": "https://www.worldbank.org/en/publication/wdr2026",
+    "title": "World Development Report 2026: The Promise of Artificial Intelligence"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "15장",
+  "text": "IMF 다음 분석에서도 미·중이 AI 컴퓨팅 하드웨어 순수입의 70% 이상을 차지",
+  "prob": "높음 80%±10",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "IMF",
+    "url": "https://www.imf.org/-/media/files/publications/weo/2026/october/english/ch1.pdf",
+    "title": "World Economic Outlook, October 2026, Chapter 1"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "15장",
+  "text": "제네바 AI 정상회의 공식 산출물에 컴퓨트 접근·역량 격차 해소 약속(기금·바우처·공유 인프라 중 1개 이상)이 포함",
+  "prob": "높음 70%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "ITU",
+    "url": "https://www.itu.int/en/mediacentre/Pages/PR-2026-11-03-Facts-and-Figures.aspx",
+    "title": "Facts and Figures 2026"
+   },
+   {
+    "org": "World Bank",
+    "url": "https://www.worldbank.org/en/news/press-release/2026/08/04/ai-offers-lifeline-to-developing-economies-in-an-era-of-weak-growth",
+    "title": "AI offers lifeline to developing economies in an era of weak growth"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "15장",
+  "text": "ITU 2027년 집계에서 오프라인 인구가 20억 명 아래로 내려감",
+  "prob": "중간 60%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "ITU",
+    "url": "https://www.itu.int/en/mediacentre/Pages/PR-2026-11-03-Facts-and-Figures.aspx",
+    "title": "Facts and Figures 2026"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "15장",
+  "text": "아프리카 AI 펀드(600억 달러)의 실제 자본 약정이 목표의 10% 이상",
+  "prob": "낮음 15%±10",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "The New Times",
+    "url": "https://www.newtimes.co.rw/article/35044/news/technology/one-year-later-africas-ai-drive-shifts-toward-execution/amp",
+    "title": "One year later, Africa's AI drive shifts toward execution"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "15장",
+  "text": "**한국의 AI 활용 개발협력 전략에 따라 '글로벌 AI 허브'가 문을 열고, AI ODA 사업이 2026년보다 늘어남**",
+  "prob": "높음 70%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "The Korea Times",
+    "url": "https://koreatimes.co.kr/foreignaffairs/20260723/korea-proposes-2027-oda-budget-at-46-billion",
+    "title": "Korea proposes 2027 ODA budget at $4.6 billion"
+   },
+   {
+    "org": "대한민국 정책브리핑",
+    "url": "https://m.korea.kr/briefing/actuallyView.do?newsId=148975301",
+    "title": "KOICA AI 개발협력 사업 설명자료"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "15장",
+  "text": "**EDCF 등 정책금융을 묶은 'K-AI 패키지'(AI 솔루션 + 데이터센터 + 전력)가 아프리카·동남아에서 첫 계약**",
+  "prob": "중간 35%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "The Korea Times",
+    "url": "https://www.koreatimes.co.kr/foreignaffairs/20260909/korea-vows-closer-cooperation-with-african-partners-at-koafec-meeting",
+    "title": "Korea vows closer cooperation with African partners at KOAFEC meeting"
    }
   ],
   "counter": []
@@ -3499,7 +4523,7 @@
  },
  {
   "chapter": "17장",
-  "text": "중국 AI 기술 수출 사전등록이 확정돼, 중국 모델의 해외 현지 배포·기술 라이선스·합작에 등록·심사 절차가 붙음",
+  "text": "중국 기술목록 개정안(공고 48호)이 확정·시행돼, 최상위 모델(10^26 FLOP·2조 파라미터·상위 10위)의 가중치·코드 이전과 기술 라이선스·합작에 허가 절차가 붙음(API·공개 오픈웨이트 이용은 대상 아님)",
   "prob": "중간 65%±15",
   "basis": "추세",
   "support": [
@@ -4789,6 +5813,136 @@
   ]
  },
  {
+  "chapter": "20장",
+  "text": "미국 챗봇 특화 주법이 2027년 말 누적 25개 이상(2026-09 기준 18개)으로 늘고, 적용 대상이 고령층 등 다른 취약계층으로 넓어지는 법안이 등장",
+  "prob": "중간 62%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "FPF",
+    "url": "https://fpf.org/press-releases/new-fpf-report-analyzes-the-rise-in-chatbot-legislation-whats-ahead/",
+    "title": ""
+   },
+   {
+    "org": "FPF 추적표",
+    "url": "https://fpf.org/2026-chatbot-legislation-tracker/",
+    "title": ""
+   }
+  ],
+  "counter": [
+   {
+    "org": "FPF",
+    "url": "https://fpf.org/press-releases/new-fpf-report-analyzes-the-rise-in-chatbot-legislation-whats-ahead/",
+    "title": ""
+   }
+  ]
+ },
+ {
+  "chapter": "20장",
+  "text": "주요 범용 챗봇 사업자 2곳 이상이 연령 추정과 미성년 모드를 한국 등 주요 시장에 기본 적용",
+  "prob": "높음 75%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "OpenAI",
+    "url": "https://openai.com/index/our-approach-to-age-prediction/",
+    "title": ""
+   },
+   {
+    "org": "eSafety",
+    "url": "https://esafety.gov.au/research/talking-to-machines-childrens-experiences-with-ai-assistants-and-companions",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "20장",
+  "text": "FTC가 컴패니언 챗봇 6(b) 조사 결과(직원 보고서)를 공개",
+  "prob": "중간 45%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "FTC",
+    "url": "https://www.ftc.gov/news-events/news/press-releases/2025/09/ftc-launches-inquiry-ai-chatbots-acting-companions",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "20장",
+  "text": "범용 챗봇(OpenAI 등)을 상대로 한 청소년 사망·자해 소송 중 최소 1건이 합의되거나 본안 판단(약식판결 이상)을 받음",
+  "prob": "중간 50%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "OpenAI",
+    "url": "https://openai.com/index/mental-health-litigation-approach/",
+    "title": ""
+   },
+   {
+    "org": "Bloomberg Law",
+    "url": "https://news.bgov.com/bankruptcy-law/character-ai-files-for-chapter-11-bankruptcy-in-delaware",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "20장",
+  "text": "EU KIDS Act가 2027년 안에 3자 협상 정치적 합의에 도달",
+  "prob": "낮음 30%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Freshfields",
+    "url": "https://www.freshfields.com/en/our-thinking/blogs/technology-quotient/the-eu-kids-act-europe-moves-online-child-safety-beyond-social-media-bans-102o1ld",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "20장",
+  "text": "성평등가족부 실태조사로 청소년 AI 컴패니언·챗봇 이용 공식 통계가 처음 공개",
+  "prob": "높음 85%±10",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "파이낸셜뉴스",
+    "url": "https://www.fnnews.com/news/202609041548330354",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "20장",
+  "text": "한국에서 아동·청소년 AI 보호 조항(AI 기본법 또는 정보통신망법 개정)이 국회 본회의를 통과",
+  "prob": "중간 35%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "헤럴드경제",
+    "url": "https://www.heraldk.com/article/2026062215464578690",
+    "title": ""
+   },
+   {
+    "org": "MTN",
+    "url": "https://news.mtn.co.kr/news-detail/2026092113123970898",
+    "title": ""
+   }
+  ],
+  "counter": [
+   {
+    "org": "파이낸셜뉴스",
+    "url": "https://www.fnnews.com/news/202607211223488415",
+    "title": ""
+   }
+  ]
+ },
+ {
   "chapter": "21장",
   "text": "EU CRA 본 의무 전면 적용(12-11). 제조사·오픈소스의 SBOM·취약점 처리 준비 러시",
   "prob": "높음 93%±5",
@@ -5024,6 +6178,138 @@
   "prob": "낮음 12%±10",
   "basis": "추정",
   "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "21장",
+  "text": "2027년 중 EU 회원국 일부가 개정 PLD를 기한 내 옮기지 못해 집행위가 미전환국에 공식 통지(침해절차)를 보냄",
+  "prob": "높음 80%±10",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Jones Day",
+    "url": "https://www.jonesday.com/en/insights/2026/06/the-revised-eu-product-liability-directive-state-of-play-across-eu-member-states-and-evolving-risk-landscape",
+    "title": ""
+   },
+   {
+    "org": "European Commission",
+    "url": "https://single-market-economy.ec.europa.eu/single-market/goods/free-movement-sectors/liability-defective-products_en",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "21장",
+  "text": "미국 상업보험 갱신에서 AI 면책 조항(ISO CG 40 47/48 또는 자체 약관) 부착과 AI 사용 고지 질의가 대형 보험사의 표준 관행이 됨",
+  "prob": "높음 80%±10",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Insurance Journal",
+    "url": "https://www.insurancejournal.com/magazines/mag-features/2026/08/17/881424.htm",
+    "title": ""
+   },
+   {
+    "org": "National Law Review",
+    "url": "https://natlawreview.com/article/continued-proliferation-ai-exclusions",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "21장",
+  "text": "AI 전용 배상책임 담보의 건당 최대 한도가 5,000만 달러 이상으로 확대(로이즈·재보험 공동 인수)",
+  "prob": "중간 45%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Insurance Business",
+    "url": "https://www.insurancebusinessmag.com/reinsurance/news/breaking-news/chaucer-armilla-bet-big-on-standalone-ai-coverage-as-reinsurers-struggle-to-keep-pace-564973.aspx",
+    "title": ""
+   },
+   {
+    "org": "Munich Re",
+    "url": "https://www.munichre.com/en/solutions/for-industry-clients/insure-ai.html",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "21장",
+  "text": "개정 PLD에 근거해 소프트웨어·AI 결함을 다툰 첫 법원 판결이 2027년에 나옴",
+  "prob": "낮음 8%±7",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Sidley",
+    "url": "https://www.sidley.com/en/insights/newsupdates/2026/10/revised-eu-product-liability-directive",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "21장",
+  "text": "EU 집행위가 철회된 AI 책임 지침을 대신할 새 입법 제안을 2027년에 냄",
+  "prob": "낮음 12%±10",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "European Parliament",
+    "url": "https://www.europarl.europa.eu/legislative-train/theme-a-europe-fit-for-the-digital-age/file-ai-liability-directive",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "21장",
+  "text": "한국 손해보험사가 AI 배상책임 전용 상품이나 특약을 출시",
+  "prob": "중간 50%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "CIO Korea",
+    "url": "https://www.cio.com/article/4161741/ai-책임-보장서-발-빼는-보험사들불확실성에-시장-재.html",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "21장",
+  "text": "한국에서 소프트웨어 또는 AI를 제조물에 포함하는 제조물책임법 개정이 국회 본회의를 통과",
+  "prob": "낮음 12%±10",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "법률신문",
+    "url": "https://www.lawtimes.co.kr/news/articleView.html?idxno=221590",
+    "title": ""
+   },
+   {
+    "org": "국가법령정보센터",
+    "url": "https://www.law.go.kr/법령/제조물책임법",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "22장",
+  "text": "과기정통부 2026 인터넷이용실태조사(2027 발표)에서 생성형 AI 경험률이 50%를 넘음",
+  "prob": "높음 75%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "머니투데이",
+    "url": "https://www.mt.co.kr/tech/2026/03/31/2026033111234563860",
+    "title": "2025 인터넷이용실태조사 결과"
+   }
+  ],
   "counter": []
  }
 ]
