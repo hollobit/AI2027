@@ -91,11 +91,17 @@
   figure svg { display: block; width: 100%; height: auto; }
   figcaption { font-size: 13px; color: var(--muted); margin-top: 8px; line-height: 1.6; }
   main > figure { max-width: none; }
-  @media print { .rail { display: none; } .wrap { display: block; } main { border: 0; } }
+  .dl { margin: 0 0 18px; font-size: .88rem; } .dl a { font-weight: 600; }
+  @page { size: A4; margin: 16mm 14mm; }
+  @media print { html, body { background: #fff !important; } main { box-shadow: none !important; border-radius: 0 !important; padding: 0 !important; max-width: none !important; } figure, table, blockquote { break-inside: avoid; } h2, h3 { break-after: avoid; } .rail { display: none; } .wrap { display: block; } main { border: 0; } }
 </style>
 
 <div class="wrap">
   <nav class="rail" aria-label="목차">
+    <div class="dl" aria-label="다운로드"><span class="label" style="display:block">Download</span>
+      <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.pdf">PDF</a> ·
+      <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.docx">Word</a> ·
+      <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.md">Markdown</a></div>
     <div class="q" role="search">
       <label class="label" for="q-input" style="display:block">Search</label>
       <input id="q-input" type="search" placeholder="보고서 검색  ( / )" autocomplete="off" aria-describedby="q-info">
