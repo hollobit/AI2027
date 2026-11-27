@@ -7623,6 +7623,101 @@
   "counter": []
  },
  {
+  "chapter": "19장",
+  "text": "2027년 공개 CVE가 15만 건을 넘음(2026-10 월 1.7만 건 속도면 연 약 20만 건)",
+  "prob": "높음 75%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Black Kite",
+    "url": "https://blackkite.com/reports/100k-cve-report-2026",
+    "title": "2026 CVE Report: Vulnerabilities Hit 100,000"
+   },
+   {
+    "org": "The Register",
+    "url": "https://www.theregister.com/security/2026/11/13/this-years-bug-count-just-passed-100k/5309882",
+    "title": "This year's bug count just passed 100K"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "19장",
+  "text": "실제 악용(KEV) 증가율이 CVE 증가율보다 낮게 유지되고, CVE 대비 악용 비율이 2% 미만",
+  "prob": "높음 80%±12",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Black Kite",
+    "url": "https://blackkite.com/reports/100k-cve-report-2026",
+    "title": "2026 CVE Report: Vulnerabilities Hit 100,000"
+   },
+   {
+    "org": "The Register",
+    "url": "https://www.theregister.com/security/2026/11/13/this-years-bug-count-just-passed-100k/5309882",
+    "title": "This year's bug count just passed 100K"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "19장",
+  "text": "AI 탐지 홍수 속에 공개된 취약점 1건이 1,000개 이상 조직을 동시에 덮치는 대량 악용(MOVEit급)으로 번짐",
+  "prob": "중간 55%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "CSA",
+    "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-glasswing-ai-vuln-patching-deficit-2026060/",
+    "title": "Project Glasswing: AI Discovery Outpaces Open Source Patching Capacity"
+   },
+   {
+    "org": "Rapid7",
+    "url": "https://www.rapid7.com/blog/post/tr-q3-2026-threat-update-attackers-exploiting-vulnerabilities-within-3-days/",
+    "title": "Q3 2026 Threat Update"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "19장",
+  "text": "2027년 S3 이상 대형 사고의 대부분이 패치 공개 30일 이상 지난 n-day 또는 패치 불가 노출 장비에서 발생",
+  "prob": "높음 75%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Rapid7",
+    "url": "https://www.rapid7.com/blog/post/tr-q3-2026-threat-update-attackers-exploiting-vulnerabilities-within-3-days/",
+    "title": "Q3 2026 Threat Update"
+   },
+   {
+    "org": "Anthropic",
+    "url": "https://www.anthropic.com/research/glasswing-initial-update",
+    "title": "Project Glasswing initial update"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "19장",
+  "text": "CVE·NVD 체계 개편 본격화(CNA 발급 제한, EUVD·GCVE 등 분산 체계, AI 탐지 취약점 공개 지침 중 1개 이상 공식화)",
+  "prob": "중간 50%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Help Net Security",
+    "url": "https://helpnetsecurity.com/2026/04/16/nist-national-vulnerability-database-nvd-enrichment",
+    "title": "NIST admits defeat on NVD backlog"
+   },
+   {
+    "org": "Anthropic",
+    "url": "https://www.anthropic.com/research/glasswing-initial-update",
+    "title": "Project Glasswing initial update"
+   }
+  ],
+  "counter": []
+ },
+ {
   "chapter": "20장",
   "text": "생물·화학 High(CB-1)가 주요 연구소 신모델의 기본값이 되고, 논쟁이 Critical(신규 무기) 임계로 이동",
   "prob": "높음 78%±15",

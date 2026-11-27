@@ -1660,6 +1660,34 @@
         <tbody data-draw="attack-rows"></tbody>
       </table>
     </div>
+    <div class="ai27-sub" id="cve-heinrich"><h3>CVE 급증과 하인리히 법칙: 2027 대형 사고의 전조인가</h3>
+      <p class="ai27-muted">보고서 19.6절. VulnCheck·Black Kite(2026-11), Rapid7 3분기, Anthropic Glasswing 중간 보고(2026-05), CSA(2026-06). 하인리히 대입과 확률은 분석 추정입니다.</p>
+      <p><b>한 줄 요약</b>: 2026년 CVE는 AI 탐지로 2배 넘게 늘었지만 실제 악용은 약 1.2–1.35배여서 하인리히 비율은 성립하지 않습니다. 전조는 CVE 개수가 아니라 패치가 따라가지 못하는 공백, 공격자로의 탐지 능력 확산, 패치 불가 노출 장비입니다.</p></div>
+    <div class="ai27-tablewrap">
+      <table aria-label="CVE와 하인리히 피라미드"><thead><tr><th>하인리히 층</th><th>사이버 대응물</th><th>2025 → 2026</th><th>증가 배수</th></tr></thead><tbody>
+        <tr><td>300: 위험 상태</td><td>CVE 공개</td><td>48,150 → 약 11.3만(연말 전망, 11월 중순 10만 돌파)</td><td class="mid">약 2.3배</td></tr>
+        <tr><td>29: 경미 사고</td><td>실제 악용(CISA KEV 신규)</td><td>245 → 302(11-18 기준)</td><td class="mid">약 1.2–1.35배</td></tr>
+        <tr><td>1: 대형 사고</td><td>S3·S4 사고</td><td>JLR 25억 달러, 프랑스 냉장 설비 700개 매장, 국내 금융사 16곳</td><td class="mid">비교 집계 없음</td></tr>
+      </tbody></table>
+    </div>
+    <div class="ai27-grid2">
+      <div class="ai27-card"><h3>전조 신호 네 가지</h3>
+        <ul class="ai27-list">
+          <li><span><b>패치 흡수 실패</b>: Glasswing 고위험 530건 중 75건 패치(2026-05). 2026년 CVE의 84%는 NVD 위험 점수 없음</span></li>
+          <li><span><b>악용 시간 &lt; 패치 시간</b>: 공개→악용 평균 3일(Rapid7), 공개 PoC 악용 88%가 48시간 안. Mythos 버그 패치 평균 2주</span></li>
+          <li><span><b>탐지 능력의 확산</b>: Mythos급 능력이 곧 더 널리 보급(Anthropic). 공격자가 먼저 찾으면 제로데이(월 8→11건, 8월 22건)</span></li>
+          <li><span><b>패치 불가 영역</b>: Copeland 냉장 컨트롤러 취약점 공개 몇 분 뒤 허니팟 접촉. 프랑스 냉장 설비·국내 금융권 주변 시스템</span></li>
+        </ul></div>
+      <div class="ai27-card" id="cve-heinrich-fc"><h3>2027 전망</h3>
+        <ul class="ai27-list">
+          <li><span class="ai27-pill" data-v="missed" style="justify-self:start">높음 · 80% (±12)</span><span>실제 악용(KEV) 증가율이 CVE 증가율보다 낮고, CVE 대비 악용 비율 2% 미만</span></li>
+          <li><span class="ai27-pill" data-v="missed" style="justify-self:start">높음 · 75% (±15)</span><span>2027년 공개 CVE 15만 건 초과</span></li>
+          <li><span class="ai27-pill" data-v="missed" style="justify-self:start">높음 · 75% (±15)</span><span>S3 이상 대형 사고의 대부분이 패치 30일 이상 지난 n-day 또는 패치 불가 노출 장비에서 발생</span></li>
+          <li><span class="ai27-pill" data-v="partial" style="justify-self:start">중간 · 55% (±20)</span><span>AI 탐지 홍수 속 공개된 취약점 1건이 1,000개 이상 조직 대량 악용(MOVEit급)</span></li>
+          <li><span class="ai27-pill" data-v="partial" style="justify-self:start">중간 · 50% (±20)</span><span>CVE·NVD 체계 개편 본격화(CNA 발급 제한, 분산 체계, AI 탐지 공개 지침)</span></li>
+          <li><span><b>추적 지표</b>: 악용 확인 후 미패치 기간, 인터넷 노출 미패치 장비 수, 월간 제로데이 건수</span></li>
+        </ul></div>
+    </div>
     <div class="ai27-sub" id="risk-forecast">
       <h3>2027 위험·이슈 전망</h3>
       <div class="ai27-controls">
