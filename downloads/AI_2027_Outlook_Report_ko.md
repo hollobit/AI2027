@@ -3,7 +3,7 @@
 
 기준일 2026-11-27 · 정리: hollobit · 작성 보조: Claude
 
-> 이 보고서는 2025년 12월 「Tech Trends 2026: 증명의 해」의 후속편입니다. 2026년 예측을 다시 채점하고, 2026년 8–11월에 공개된 2027 전망 자료를 원문으로 수집해(`PDF/` 폴더 약 280건, 웹 자료 포함 부록 811건) 6부 23개 장으로 분석했습니다. Gartner·IDC 유료 원문 14건은 사용자 제공본으로 수치를 대조했습니다(2.3절). 모든 2027 전망에는 주관적 확률과 불확도(±%p)를, 그중 332건에는 근거 자료 링크를 붙였습니다(표기 기준·근거 목록은 부록). 자료별 상세 요약은 [부록](#부록-2027-ai-전망-자료별-상세-분석)에, 수치 대시보드는 [AI 2027 전망 대시보드](https://claude.ai/artifact/SeyeszN61LTYiLbt4tbJwP)에 있습니다.
+> 이 보고서는 2025년 12월 「Tech Trends 2026: 증명의 해」의 후속편입니다. 2026년 예측을 다시 채점하고, 2026년 8–11월에 공개된 2027 전망 자료를 원문으로 수집해(`PDF/` 폴더 약 280건, 웹 자료 포함 부록 826건) 6부 23개 장으로 분석했습니다. Gartner·IDC 유료 원문 14건은 사용자 제공본으로 수치를 대조했습니다(2.3절). 모든 2027 전망에는 주관적 확률과 불확도(±%p)를, 그중 332건에는 근거 자료 링크를 붙였습니다(표기 기준·근거 목록은 부록). 자료별 상세 요약은 [부록](#부록-2027-ai-전망-자료별-상세-분석)에, 수치 대시보드는 [AI 2027 전망 대시보드](https://claude.ai/artifact/SeyeszN61LTYiLbt4tbJwP)에 있습니다.
 
 ---
 
@@ -142,7 +142,7 @@
 
 ## 2. 2027 전망 자료 종합: 기관별 시각
 
-종합 전망 자료는 리서치·컨설팅 14건, 투자·금융·에너지 19건, AI 연구·예측·정책 19건, 한국 15건입니다. 여기에 분야별 심층 자료(3–21장)를 더해 부록에는 모두 811건을 정리했습니다. 이 장은 기관별 시각을 요약하고, 각 테마를 깊이 다룬 장을 함께 표시합니다.
+종합 전망 자료는 리서치·컨설팅 14건, 투자·금융·에너지 19건, AI 연구·예측·정책 19건, 한국 15건입니다. 여기에 분야별 심층 자료(3–21장)를 더해 부록에는 모두 826건을 정리했습니다. 이 장은 기관별 시각을 요약하고, 각 테마를 깊이 다룬 장을 함께 표시합니다.
 
 ### 2.1 합의된 것
 
@@ -1228,6 +1228,75 @@ Playground는 25개 벤치마크를 묶은 Robot Intelligence Index(Elo형, 400�
 세 갈래로 갈립니다. **범용 모델 우위는 강해졌습니다.** 실험실 밖 실물 평가(SO-101)에서도 1–3위가 범용 모델이고, Playground 지수의 1·2위도 LLM입니다. 시뮬 일시정지에 기댄 결과라는 반론은 실물 평가가 늘면서 약해졌습니다. **지연 문제는 그대로입니다.** 지연은 15초에서 10초로 줄었을 뿐이고, 실물 RoboDojo-RC에서 Astra는 로봇 전용 모델보다 4배 느리고 60배 비쌉니다. 높은 점수는 여전히 '느려도 되는' 탁상 과제에서 나옵니다. **계층 구조는 성능이 아니라 경제성 근거로 강화됐습니다.** 성능만 보면 코딩 에이전트 단독이 최고이고(Codex 97.3%), 하네스 효과(+31.6%p)가 모델 세대 차이보다 컸습니다. 반면 완수당 비용 41달러 대 0.56달러라는 격차는 '범용 모델이 판단, 소형 정책이 반복 실행'이라는 분업을 비용 면에서 뒷받침합니다. 따라서 2027년의 쟁점은 계층 구조의 필요성보다 **하네스를 누가 만들고 표준화하나**로 옮겨 갈 가능성이 있습니다(분석가 해석).
 
 > **확인 필요**: GPT-6.2 Astra의 AA-Robotics 79점·GPT-6.2 Sol 78점은 Crypto Briefing 보도 기준이며 Artificial Analysis 원문(2026-10-14)은 갱신되지 않았고 별도 리더보드 페이지는 찾지 못했습니다. RoboColosseum SO-101 수치(DCR 1,984, 22.1%)는 OrcaRouter가 2026-11-20 리더보드를 옮긴 값이며 리더보드는 직접 읽지 못했습니다. Ember-0 41.2%·19.6%는 XDOF의 X 게시(검색 요약으로 확인)와 보도 기준이며, 리더보드 표와 사람 기준은 확인하지 못했습니다. 예측 지연 15.0→10.1초는 보도 기준입니다. RoboDojo-RC의 비용·시간(9.46달러·6분, Dream-1 0.15달러·1.4분)과 '같은 모델, 하네스만 차이' 설명은 Cryptopolitan(edgeX 전재)이 인용한 Robocurve X 게시·Drew Nguyen 블로그(미확인) 기준입니다. edgeX 글은 기본 설정을 'Inspect Robots'라 불렀는데, Inspect Robots는 Robocurve의 평가 프레임워크 이름입니다. Playground는 저자를 밝히지 않았고, 'Real robots held at 31% since January' 등 일부 지표의 정의가 불분명해 본문에 쓰지 않았습니다. OpenAI 출시 글에는 로봇 벤치마크가 없습니다.
+
+#### System 1 결정 모델(Jev류)과 2027 로봇 계층 구조
+
+> 자료: TypeSafe AI 'Introducing System One Models and Jev'(2026-09-15), AlternativeTo(Jev 1.14, 2026-10), a16z 투자 발표(2026-10-09), Turing Post(2026-09-18), MindStudio(2026-09-18), Regolo(2026-09-23), AutoTrust JEV-9B 모델 카드(Hugging Face), openroboto-ai/jev-robot-control·robokrunch/jev-physical-ai(GitHub), JevVLA(arXiv 2610.35010), The Hitchhiker's Guide to System 1 Models(arXiv 2610.33775), Leap-VLA(arXiv 2611.01011), EagleVLA(arXiv 2607.12659), NVIDIA GEAR GR00T 2 연구 페이지(2026-11).
+
+**용어부터 구분합니다.** 이 절의 'System 1'은 로봇 계층에서 **수십 ms 주기로 시각-행동을 내는 VLA·WAM**입니다. TypeSafe AI가 2026-09-15 내놓은 Jev의 'System One 모델'은 다릅니다. 프로그램 상태와 질문 목록을 받아 **선택지·점수·예/아니오를 확률과 함께 한 번에 돌려주는 구조화 결정 모델**입니다. 자유 텍스트를 만들지 않고("gives up string generation"), 모터 명령을 내도록 설계되지도 않았습니다. 회사는 새 아키텍처·병렬 샘플러·RLCD(보정된 결정을 위한 강화학습)를 쓴다고 밝혔지만 기술 세부와 공개 벤치마크는 내지 않았습니다. 출시 글에는 로봇 언급이 없습니다. 로봇 쪽 용도는 모두 제3자 실험에서 나왔습니다. 이 보고서는 두 용어가 섞이지 않도록 Jev류를 **'System 1.5'(빠른 판단 계층, 분석가 명명)**로 부릅니다.
+
+| 항목 | 2026 현황 | 신뢰도 |
+|---|---|---|
+| Jev 1.13(TypeSafe) | 2026-09-15 조기 접근. 지연 70–500ms(회사, 미국 서부 노트북에서 측정), 독립 측정 중앙값 350–440ms(Regolo, 보도 기준). 입력 100만 토큰당 0.042달러, 출력 무료. 선택지 상한 255개. 업무 흐름 평가에서 GPT-6 Astra·Fable 5.1 평균 대비 193.6배 빠르고 444.6배 저렴(회사) | 회사 주장 |
+| Jev 1.14 | 2026-10 하순. 경계 상자 하나를 돌려주는 box 타입 신설(첫 '판단 외' 타입), 이미지 입력은 'danger zone' 실험 기능(옵트인 헤더). 회사는 "모든 모델이 텍스트보다 이미지에서 성능이 낮다"고 경고 | 2차 보도(AlternativeTo) |
+| 확산 지표 | 출시 3일 만에 1조 토큰, 포춘 500 기업 25% 통합(a16z 주장). a16z가 투자 주도(금액 미공개) | 투자사 주장 |
+| JEV-9B(AutoTrust, Apache-2.0) | Qwen3.5-9B에 4,020만 파라미터 System 1 어댑터를 붙여 Jev 1.13 출력 분포를 증류. 선택 1순위 일치 90.2%. 단일 결정 약 90ms, 128개 배치 시 결정당 2.5ms. 2026-10-03 비전 판: MuJoCo 로봇 팔 집기·놓기 20개 장면 중 10개 완수(결정당 약 165ms), **8개 모터 명령 직접 선택은 실패**. 브라우저 조작 60개 과제 95% | 모델 카드(자체 보고). TypeSafe와 무관함을 명시 |
+| JEV-27B-VL | Qwen3.8-27B 위 LoRA, 이미지-텍스트 결정. 로봇·체화 데이터 없이 ERQA 53.8%(사고 모드 60.0%) | 보도 기준(목록 사이트) |
+| 로봇 데모 1(openroboto, xArm7·MuJoCo) | 사과를 접시에 놓기. 좌표가 아니라 축별 이동 방향(−/정지/+)과 그리퍼만 선택, 카메라 대신 시뮬 기하 정보 입력. Jev 1.13 성공(113주기, API 비용 0.019달러, 182초), GPT-6 Astra(low) 성공(106주기, 5.93달러, 707초). **1회 시행** | 저장소 1차 확인, 통계 아님 |
+| 로봇 데모 2(robokrunch, AMR 1만 대 함대 트리아지) | 템플릿으로 만든 가상 사고 300건에 상향 보고 여부·담당 팀·긴급도 3개 판단. p50 0.53초, 템플릿 라벨 일치 91.3%, 결정당 0.0000246달러. CPU 위 ModernBERT(p50 169ms)가 3배 빠름 | 저장소 1차 확인, 실로봇·보정 검증 없음 |
+| 파생 연구 | JevVLA(2026-10-26): 고정된 VLA 위에 약 8만 파라미터 에너지 모델로 후보 순위·행동 보정, 5개 벤치마크에서 +1.3–2.3%p. Jev는 '인터페이스에서 영감'만 받은 비공식 연구 | 논문 초록 |
+
+**계층 구조에 넣으면**(지연은 각 출처 값, 배치는 분석가 정리):
+
+```
+System 2   범용 모델(GPT-6.2 Astra·Fable 5.2·Gemini 4)   10–19초/호출   과제 분해·코드·성공 판정
+   │  호출·위임
+System 1.5 구조화 결정 모델(Jev·JEV-9B)                  0.07–0.5초     재시도·사람 호출·중단, 로봇 배정, 신뢰도 게이트
+   │  선택지·점수·확률
+System 1   VLA·WAM(π0.5 47ms, GR00T 2 Turbo 124ms)       20–50Hz        시각-행동 청크
+   │  관절 목표
+System 0   학습형·고전 제어기                              1ms 이하(kHz)   균형·힘·안전 정지
+```
+
+- **겹치는 구간**: Jev의 지연(70–500ms)은 WAM(Cosmos3-Nano 714ms, GR00T 2 Turbo 124ms)과 겹칩니다. 둘을 가르는 것은 속도보다 **출력의 형태**입니다. Jev는 유한한 선택지와 확률을 내고, VLA는 연속 행동을 냅니다.
+- **단일 모델 이중 루프와의 관계**: Leap-VLA(2026-10-31)는 VLM 의미 맥락을 약 1Hz로 캐시하고 행동 전문가를 20–50Hz로 돌려, 1초 갱신에서 LIBERO 평균 95.2%(주기 일치 기준 96.3%)를 냈습니다. EagleVLA(CoRL 2026 Spotlight)는 신뢰도에 따라 VLM과 행동 전문가의 호출을 조절합니다. 두 연구 모두 'VLM을 매 단계 부르지 않는다'는 같은 문제를 모델 안에서 풉니다. Jev류는 같은 문제를 모델 **밖**의 별도 계층으로 풉니다.
+
+**2027 활용 전망**
+
+1. **현장 판단·예외 처리(가장 유력)**: 파지 실패 뒤 재시도·사람 호출·작업 중단을 고르는 일입니다. Astranomy에서 범용 모델 개입의 64%가 파지 실패 수정이었고(6.10절), Ember-0에서 모델의 '완료' 선언 중 실제 완료는 57%였습니다. 이런 판단을 10초대 범용 모델 대신 0.5초 안팎의 결정 모델이 맡을 수 있습니다(분석가 해석).
+2. **로봇 군단 배정·트리아지**: robokrunch 데모가 가리키는 용도입니다. 다만 같은 데모에서 자체 호스팅 소형 분류기가 월 약 100만 건 이상에서 더 쌌습니다. 대규모 함대는 결국 자체 모델로 옮겨 갈 가능성이 큽니다.
+3. **보정된 신뢰도 기반 사람 이관**: 확률이 기준 아래면 사람에게 넘기는 방식은 EU AI법의 사람 감독, 한국 AI기본법의 고영향 AI 책무와 잘 맞습니다. 그러나 Turing Post는 Jev의 'confidence'가 맞을 확률 그 자체가 아니라고 지적했고, 선택지 순서를 바꾸면 확률이 0.84–0.89에서 0.93–0.96으로 움직였습니다(Regolo, 보도 기준). 안전 판단에 쓰려면 현장별 재보정이 먼저입니다.
+4. **증류 교사**: JEV-9B처럼 폐쇄 Jev를 교사로 오픈 소형 모델을 만드는 흐름이 이미 시작됐습니다. 2027년에는 로봇 온보드 칩에 올릴 결정 헤드를 이런 방식으로 만드는 사례가 늘 수 있습니다(추정).
+5. **모터 직접 제어(가능성 낮음)**: JEV-9B에서 8개 모터 명령 직접 선택은 실패했고, openroboto 데모도 주기당 약 1.6초(분석가 계산)로 실시간 제어와 거리가 멉니다. 연속 제어는 VLA·WAM의 몫으로 남을 것입니다.
+
+**2027년에 새로 나올 모델**(6.8–6.10절에 이미 있는 모델은 참조만)
+
+| 모델 | 2026년 말 상태 | 2027 예상 | 구분 |
+|---|---|---|---|
+| Jev 차기판(1.x 이후·Jev 2 등) | 로드맵 미발표. "파이프라인에 더 많은 것이 있다"(회사). box 타입은 System One 모델 확장의 예고편 | 이미지 정식화, 경계 상자 외 공간 타입 추가. 로봇 전용판은 미지수 | 이미지·공간 타입=예고, 로봇용=추정 |
+| 오픈 Jev류(JEV-9B·27B·35B, Openjev 등) | 9B–35B 오픈 가중치 공개, Openjev는 15–30ms 주장(보도 기준) | 온디바이스 크기(1–3B) 판과 로봇 상태 입력 미세조정판 | 추정(추세) |
+| NVIDIA GR00T 2 | 2026-11 발표. 처음 보는 50개 과제 무시연 평균 40%, 시연 1개 71%, 5개 95%. Turbo 2B는 Jetson Thor에서 124ms. 'System 2 에이전트가 GR00T 2를 도구로 호출' 구조. 코드 12월 공개 예정 | 가중치·라이선스 공개와 파트너 채택(6.9–6.10절) | 발표=확정, 공개 범위=예고 |
+| Cosmos 후속(Cosmos 3 다음) | Cosmos 3 오픈(2026-06, 6.9절) | 연 1회 안팎 갱신 추세로 후속판 | 추정(추세) |
+| GPT-6.x·Fable·Gemini 차기, Gemini Robotics 3 | GPT-6.2 Astra(11-17)·Fable 5.2(11-09)·Gemini Robotics 2(07-30) | 플래그십 갱신은 확실시. Gemini Robotics 3라는 이름의 발표는 확인 못 함 | 플래그십=추세, GR 3=추정 |
+| π 후속·Helix 03·GEN-2 | π0.7(04)·Pi API 베타(10-13), Helix 2.5(09-17, 처음 보는 가정 30곳 56%, 보도 기준), GEN-1(04). 후속 예고 없음 | 각 사 6–9개월 주기로 보아 2027년 내 후속 가능성 큼 | 추정(추세) |
+| 단일 모델 이중 루프 VLA | Leap-VLA·EagleVLA(학술) | 상용 VLA가 '느린 의미 루프 + 빠른 행동 루프'를 기본 설계로 채택 | 추정(학술 추세) |
+
+**2027 전망**
+
+| 2027 전망 | 가능성 · 확률(±불확도) |
+|---|---|
+| 선도 로봇·물리 AI 기업(휴머노이드·AMR·로봇 파운데이션 모델 개발사) 1곳 이상이 Jev류 구조화 결정 모델(TypeSafe Jev 또는 오픈 파생)을 제품 스택의 예외 처리·배정 계층에 공식 채택했다고 발표 | 중간 · 40% (±20) · 근거 [a16z](https://a16z.com/announcement/investing-in-typesafe-ai/), [robokrunch](https://github.com/robokrunch/jev-physical-ai), [NVIDIA GR00T 2](https://research.nvidia.com/labs/gear/gr00t-2/)(System 2가 하위 모델을 도구로 호출) · 반론 [robokrunch](https://github.com/robokrunch/jev-physical-ai)(자체 소형 분류기가 대규모에서 더 쌈), [TypeSafe](https://typesafe.ai/blog/introducing-system-one-models-and-jev)(로봇 언급 없음) |
+| TypeSafe가 이미지 입력을 실험('danger zone')에서 정식 기능으로 전환 | 높음 · 75% (±15) · 근거 [AlternativeTo](https://alternativeto.net/news/2026/10/typesafe-ai-ships-jev-1-14-with-new-box-type-composable-images-and-longer-context-length/), [TypeSafe](https://typesafe.ai/blog/introducing-system-one-models-and-jev)("not on images (yet…)") |
+| TypeSafe가 로봇·물리 AI 전용 판(로봇 상태·센서 입력 전용 타입, 로봇 SDK 또는 온디바이스 판)을 공식 공개 | 낮음 · 25% (±15) · 추정 · 근거 [AlternativeTo](https://alternativeto.net/news/2026/10/typesafe-ai-ships-jev-1-14-with-new-box-type-composable-images-and-longer-context-length/)(box 타입), [MindStudio](https://www.mindstudio.ai/blog/jev-system-one-model-launch)(드론·주행 시뮬 데모) · 반론 [a16z](https://a16z.com/announcement/investing-in-typesafe-ai/)(기업 소프트웨어 중심) |
+| 오픈 Jev류 결정 모델(JEV-9B 등)을 쓴 방식이 공개 로봇 벤치마크 리더보드(RoboArena·RoboColosseum SO-101·RoboDojo·AA-Robotics 등)에 등재 | 낮음 · 30% (±15) · 근거 [JEV-9B](https://huggingface.co/autotrust/JEV-9B)(로봇 팔 10/20), [openroboto](https://github.com/openroboto-ai/jev-robot-control) · 반론 [JEV-9B](https://huggingface.co/autotrust/JEV-9B)(모터 직접 선택 실패) |
+| 'System 1 결정 모델' 범주를 겨냥해 정확도·지연·보정 오차를 함께 보고하는 공개 벤치마크 2개 이상 등장 | 중간 · 60% (±20) · 근거 [Hitchhiker's Guide](https://arxiv.org/abs/2610.33775)(5개 계열·70여 재현), [Regolo](https://regolo.ai/jev-and-system-one-models-benchmarks-open-source-alternatives-and-when-to-use-them/)(커뮤니티 평가) · 반론 [AlternativeTo](https://alternativeto.net/news/2026/10/typesafe-ai-ships-jev-1-14-with-new-box-type-composable-images-and-longer-context-length/)(TypeSafe는 공개 벤치마크를 꺼림) |
+
+6.10절 기존 전망과의 관계: '범용 모델(System 2) + 소형 VLA·WAM(System 1) 계층 구조 3곳 이상'(75%)은 그대로 두었습니다. 위 행들은 그 사이에 결정 계층이 따로 생기는지만 다룹니다.
+
+**한국 시사점**: Jev류 결정 헤드는 수천만 파라미터 어댑터(JEV-9B 4,020만)로도 만들 수 있어, 국산 NPU(딥엑스·리벨리온·퓨리오사)에 올리기 좋은 크기입니다. 10장의 K-AI반도체 풀스택 레퍼런스·자율행동체 온디바이스 과제에서 '로봇 예외 판단·사람 이관' 결정 모델과 그 보정 시험을 실증 항목으로 넣을 만합니다.
+
+> **확인 필요**: Jev 지연(70–500ms)·속도·비용 배수는 회사 측정이며 독립 측정 350–440ms는 Regolo 보도 기준입니다. Jev 1.14 출시일(2026-10-20 무렵)과 262k 맥락 길이는 AlternativeTo·MarkTechPost 제목 기준이며 TypeSafe 변경 기록은 직접 읽지 못했습니다(Vercel 게이트웨이는 1.13을 3.2만 토큰으로 표기). 투자 규모는 엇갈립니다. 시드 4,000만 달러(DCVC 주도, Forkast·Turing Post 보도)와 '8.7억 달러, 기업가치 75억 달러'(Newsbytes 제목, 본문 접근 불가)가 함께 보이며 a16z 글은 금액을 밝히지 않았습니다. 창업자 이름은 Diogo Almeida(Turing Post)와 Diego Almeida(MindStudio)로 다르게 표기됩니다. JEV-27B-VL의 ERQA 수치는 목록 사이트 기준입니다. 'Towards Agentic Robots'(arXiv 2610.20442)의 초록에서는 System 2/1/0 계층 정의를 확인하지 못해 근거로 쓰지 않았습니다. Gemini Robotics 2.5라는 제목의 기사(automate.org)가 검색됐으나 본문을 열지 못했습니다. Helix 03·GEN-2·Gemini Robotics 3·π 후속의 공식 예고는 찾지 못했습니다.
+
 
 
 
@@ -4510,7 +4579,7 @@ AI 오용 전반(CBRN·테러·시험 부정·탈옥 모델·오정렬)은 20장
 
 ### 전망 근거 자료
 
-본문 2027 전망 426건 중 **364건**에 수집 자료를 근거로 연결했습니다(근거 링크는 각 전망의 확률 옆). 검토자 4인(AI 보조)이 후보 자료의 내용을 읽고 전망을 직접 뒷받침하는 자료만 골랐고, 맞는 자료가 없으면 비워 두었습니다. 일부 자료는 본문 없이 제목만 수집돼 제목 기준으로 연결했습니다. '반론'은 전망과 반대 방향의 근거입니다.
+본문 2027 전망 431건 중 **369건**에 수집 자료를 근거로 연결했습니다(근거 링크는 각 전망의 확률 옆). 검토자 4인(AI 보조)이 후보 자료의 내용을 읽고 전망을 직접 뒷받침하는 자료만 골랐고, 맞는 자료가 없으면 비워 두었습니다. 일부 자료는 본문 없이 제목만 수집돼 제목 기준으로 연결했습니다. '반론'은 전망과 반대 방향의 근거입니다.
 
 | 근거 자료 | 날짜 | 연결된 전망 수 |
 |---|---|---|
@@ -4857,7 +4926,7 @@ AI 오용 전반(CBRN·테러·시험 부정·탈옥 모델·오정렬)은 20장
 ## 부록: 2027 AI 전망 자료별 상세 분석
 
 > 각 자료를 수집·저장한 뒤 추출 텍스트를 읽고 정리했습니다. 기준일 2026-11-26. '요약·보도자료만'은 원문이 유료이거나 자동 접근이 막혀 공식 보도자료·언론 보도로 대신한 자료입니다.
-수록 자료 811건.
+수록 자료 826건.
 
 
 ### A. 글로벌 리서치·컨설팅 (14건)
@@ -11263,7 +11332,7 @@ S-1 공개 후 지배구조 논란으로 IPO를 철회하고 CEO에서 사임함
 성희롱 신고를 조사하는 과정에서 경비 보고서 부정확성이 드러나 CEO직을 사임함(성희롱 자체는 인정되지 않음)
 
 
-### AM. 2027 공백 보강(거시·반발·광고·자율주행·글로벌 사우스·아동·책임·의료·과세) (150건)
+### AM. 2027 공백 보강(거시·반발·광고·자율주행·글로벌 사우스·아동·책임·의료·과세) (165건)
 
 ##### Morgan Stanley (ANI·Tribune 보도) — China's humanoid robot investment set to accelerate, selective commercial use expected in 2027
 
@@ -11563,6 +11632,19 @@ KOICA AI 사업 예산이 2024년 24억 원, 2025년 127억 원, 2026년 320억 
 
 - **근거·방법**: arXiv 초록
 
+##### NVIDIA GEAR — GR00T 2 (research page)
+
+발표 2026-11-09· 관점 낙관· 원문 전체· 신뢰도 medium  
+출처: <https://research.nvidia.com/labs/gear/gr00t-2/>
+
+영상과 행동 청크를 함께 디노이징하는 월드 액션 모델. 처음 보는 50개 과제 무시연 40%, 시연 1개 71%, 5개 95%. GR00T 2 Turbo(2B)는 Jetson Thor에서 124ms. System 2 추론 에이전트가 GR00T 2를 도구로 호출. 코드 12월 공개 예정.
+
+**핵심 내용**
+
+- GR00T 2 코드·가중치 공개와 파트너 채택 _(2027)_
+
+- **근거·방법**: 자체 실험(과제 선정 편향 지적 보도 있음)
+
 ##### DeepLearning.AI (The Batch) — World models become robot playgrounds
 
 발표 2026-11-06· 관점 중립· 원문 전체· 신뢰도 medium  
@@ -11619,6 +11701,19 @@ Spectrum-X 이더넷 포토닉스를 'Vera Rubin용'으로 양산 중이며 Core
 
 - **근거·방법**: 제품 페이지
 
+##### Lin Yang 외 — Leap-VLA: High-Rate Robot Control from a Low-Rate VLM Backbone (arXiv 2611.01011)
+
+발표 2026-10-31· 관점 중립· 요약·보도자료만· 신뢰도 medium  
+출처: <https://arxiv.org/abs/2611.01011>
+
+VLM 의미 맥락을 약 1Hz로 캐시하고 흐름 정합 행동 전문가를 20–50Hz로 실행. 1초 갱신에서 LIBERO 평균 95.2%(주기 일치 기준 96.3%).
+
+**핵심 내용**
+
+- 단일 모델 내 느린·빠른 이중 루프 VLA 확산 _(2027)_
+
+- **근거·방법**: LIBERO 시뮬
+
 ##### Google — Ads in AI Mode expand globally
 
 발표 2026-10-28· 관점 낙관· 원문 전체· 신뢰도 high  
@@ -11637,6 +11732,24 @@ AI 모드 광고를 호주·캐나다·인도 등 10개국으로 넓히고 4분�
 Genie 4 연구 프리뷰 공개. 오디오 동시 생성, 실행 중 장면 수정, Gemini의 감독 구조. 긴 시뮬레이션에서 드리프트 한계를 Google이 인정. AI Ultra·Gemini API 조기 파트너로 확대 예정.
 
 - **근거·방법**: 보도(검색 요약으로 확인)
+
+##### Wei Wang 외 — JevVLA: Jev-Inspired Energy-Based Adaptation for Vision-Language-Action Policies (arXiv 2610.35010)
+
+발표 2026-10-26· 관점 중립· 요약·보도자료만· 신뢰도 medium  
+출처: <https://arxiv.org/abs/2610.35010>
+
+고정된 VLA 위에 약 8만 파라미터 에너지 모델을 얹어 이산 후보 순위와 연속 행동 보정을 함께 수행. 5개 벤치마크에서 +1.28–2.31%p.
+
+- **근거·방법**: 시뮬 벤치마크 5종
+
+##### Haggai Roitman — The Hitchhiker's Guide to System 1 Models: Fast Decision-Making Beyond LLMs (arXiv 2610.33775)
+
+발표 2026-10-24· 관점 중립· 요약·보도자료만· 신뢰도 medium  
+출처: <https://arxiv.org/abs/2610.33775>
+
+입력을 한 번의 순전파로 타입이 정해진 결정에 사상하는 System 1 모델을 5개 계열로 분류. 보정(RLCD 포함)과 보정된 신뢰도 기반 System 1+2 캐스케이드를 정리, 70여 재현 모델 소개.
+
+- **근거·방법**: 문헌 조사 190편
 
 ##### XDOF — Ember-0: A benchmark for LLMs in the real world
 
@@ -11698,6 +11811,15 @@ Tesla가 프리몬트에서 Optimus '초기 생산'을 시작했고 증산은 �
 - 외부 인도는 2027년 말 무렵 _(2027)_
 
 - **근거·방법**: 실적 발표 보도
+
+##### AlternativeTo — TypeSafe AI ships Jev 1.14 with new box type, composable images, and longer context length
+
+발표 2026-10-20· 관점 중립· 원문 전체· 신뢰도 medium  
+출처: <https://alternativeto.net/news/2026/10/typesafe-ai-ships-jev-1-14-with-new-box-type-composable-images-and-longer-context-length/>
+
+Jev 1.14에서 경계 상자 하나를 돌려주는 box 타입을 신설하고 이미지 입력을 옵트인 실험 기능('danger zone')으로 제공. 회사는 이미지 성능이 텍스트보다 낮다고 경고하고 공개 벤치마크 대신 내부 평가 방법을 공유하겠다고 밝힘.
+
+- **근거·방법**: 회사 변경 기록 요약 보도
 
 ##### Light Reading — SoftBank, Nokia target 2027 for commercial AI-RAN trial in Japan
 
@@ -11833,6 +11955,15 @@ Gemini 4 Argon이 도구 없이 ERQA 87%로 다른 프런티어 모델을 앞섰
 - **근거·방법**: 공개 리더보드(53개 항목, 날짜별 등록)
 - **한국 시사점**: 국내 월드 모델은 리더보드에 없음. 340억 원 월드모델 사업 결과물의 제출 대상
 
+##### a16z — Investing in TypeSafe AI
+
+발표 2026-10-09· 관점 낙관· 원문 전체· 신뢰도 medium  
+출처: <https://a16z.com/announcement/investing-in-typesafe-ai/>
+
+a16z가 TypeSafe 투자를 주도(금액 미공개). Jev가 프런티어 모델 대비 비용 1/100–1/500, 분류 과제에서 약 100배 빠르다고 주장. 출시 3일 만에 1조 토큰, 포춘 500 기업 25% 통합 주장. 로봇 언급 없음.
+
+- **근거·방법**: 투자사 주장
+
 ##### LightCounting (Lightwave 보도) — Ethernet optical transceiver set to grow 120% in 2026
 
 발표 2026-10-08· 관점 낙관· 요약·보도자료만· 신뢰도 medium  
@@ -11855,6 +11986,16 @@ Gemini 4 Argon이 도구 없이 ERQA 87%로 다른 프런티어 모델을 앞섰
 2026년 휴머노이드 스타트업 VC 투자 110억 달러(10월 초까지)로 2025년 연간 기록의 2배 이상. 중국이 약 3분의 2, 미국 12%.
 
 - **근거·방법**: 투자 데이터베이스
+
+##### AutoTrust AI Lab — JEV-9B model card
+
+발표 2026-10-03· 관점 중립· 원문 전체· 신뢰도 medium  
+출처: <https://huggingface.co/autotrust/JEV-9B>
+
+Qwen3.5-9B에 4,020만 파라미터 System 1 어댑터를 붙여 Jev 1.13 출력 분포를 증류한 오픈 모델(Apache-2.0). 단일 결정 약 90ms. 비전 판에서 MuJoCo 로봇 팔 집기·놓기 20개 중 10개 완수(결정당 약 165ms), 8개 모터 명령 직접 선택은 실패.
+
+- **근거·방법**: 자체 보고 벤치마크
+- **한국 시사점**: 소형 어댑터 구조라 국산 NPU 이식 후보
 
 ##### RAPS — FDA's device center releases guidance agenda for FY 2027
 
@@ -11948,6 +12089,15 @@ CDRH FY2027 지침 의제 보도. A 목록에 AI 기기 소프트웨어 수명�
 - **근거·방법**: 주·연방 법안 추적
 - **한국 시사점**: 국내 법안의 최소 요소(고지·위기 대응·미성년 보호) 설계 참고
 
+##### Regolo — Jev and System One Models: benchmarks, open-source alternatives and when to use them
+
+발표 2026-09-23· 관점 중립· 원문 전체· 신뢰도 low  
+출처: <https://regolo.ai/jev-and-system-one-models-benchmarks-open-source-alternatives-and-when-to-use-them/>
+
+독립 측정 지연 중앙값 350–440ms, 선택지 순서에 따른 확률 이동 등 커뮤니티 평가를 정리. Laya·Openjev·Clef-Flash 등 오픈 대안 소개. 자연어 근거가 없어 규제 대응에 한계가 있다고 지적.
+
+- **근거·방법**: 커뮤니티 평가 집계(출처 혼재)
+
 ##### World Economic Forum — Chief Economists Outlook: September 2026
 
 발표 2026-09-22· 관점 신중· 요약·보도자료만· 신뢰도 medium  
@@ -11971,6 +12121,33 @@ CDRH FY2027 지침 의제 보도. A 목록에 AI 기기 소프트웨어 수명�
 2026-06 생성형 AI 사용률(15–64세)이 글로벌 노스 28.8%, 사우스 16.2%, 세계 18.8%입니다. UAE 73.3%, 싱가포르 64.3%가 앞서고 한국은 절대 증가폭(+3.5%p)이 가장 컸습니다.
 
 - **근거·방법**: Microsoft 텔레메트리 기반 추정
+
+##### RoboKrunch — Jev for Physical AI (GitHub)
+
+발표 2026-09-19· 관점 중립· 원문 전체· 신뢰도 low  
+출처: <https://github.com/robokrunch/jev-physical-ai>
+
+AMR 1만 대 함대 트리아지 가상 사고 300건에서 Jev p50 0.53초, 템플릿 라벨 일치 91.3%. CPU ModernBERT가 3배 빠르고 월 약 100만 건 이상에서 자체 호스팅이 유리.
+
+- **근거·방법**: 템플릿 생성 시뮬, 실로봇 없음
+
+##### Turing Post — What is Jev and RLCD
+
+발표 2026-09-18· 관점 중립· 원문 전체· 신뢰도 medium  
+출처: <https://www.turingpost.com/p/what-is-jev-rlcd>
+
+System One 모델과 RLCD를 해설. Jev의 confidence 값이 정답일 확률 그 자체가 아니며 호스팅 API의 계산식이 공개되지 않았다고 지적. 시드 4,000만 달러(DCVC 주도) 보도.
+
+- **근거·방법**: 공개 문서·퀵스타트 분석
+
+##### MindStudio — Jev System One model launch
+
+발표 2026-09-18· 관점 중립· 원문 전체· 신뢰도 low  
+출처: <https://www.mindstudio.ai/blog/jev-system-one-model-launch>
+
+Minecraft·주행 시뮬·드론 시뮬 등 결정 계층 데모 소개. 실하드웨어·실센서·안전 실패 모드에서는 시험되지 않았다고 명시.
+
+- **근거·방법**: 데모 보도
 
 ##### Forrester — Predictions 2027: AI Slingshots Environmental Sustainability From Promises To Action
 
@@ -12001,6 +12178,15 @@ CDRH FY2027 지침 의제 보도. A 목록에 AI 기기 소프트웨어 수명�
 - **근거·방법**: 입법 제안 요약
 - **한국 시사점**: EU 진출 챗봇 서비스의 아동 안전 설계 대비
 
+##### Unite.AI — Figure introduces Helix 2.5, tested zero-shot in 30 unseen homes
+
+발표 2026-09-17· 관점 중립· 원문 전체· 신뢰도 low  
+출처: <https://unite.ai/figure-introduces-helix-2-5-tested-zero-shot-in-30-unseen-homes>
+
+Figure가 Index 인간 행동 데이터로 처음부터 사전학습한 Helix 2.5를 공개. 처음 보는 가정 30곳에서 무적응 성공률 9%→56%. 후속 모델 언급 없음.
+
+- **근거·방법**: 회사 발표 보도
+
 ##### Goldman Sachs (humanoid.guide·24/7 Wall St. 보도) — Goldman raises 2035 humanoid robot forecast to 6.5 million
 
 발표 2026-09-15· 관점 낙관· 요약·보도자료만· 신뢰도 low  
@@ -12014,6 +12200,20 @@ Goldman이 2026년 출하 5.1만→7.5만, 2030년 25.6만→89만, 2035년 140�
 
 - **근거·방법**: 2차 보도
 - **한국 시사점**: 현대차 원가 목표(3만 달러)와 비교 가능
+
+##### TypeSafe AI — Introducing System One Models and Jev
+
+발표 2026-09-15· 관점 낙관· 원문 전체· 신뢰도 medium  
+출처: <https://typesafe.ai/blog/introducing-system-one-models-and-jev>
+
+Jev를 '비정형 상태 입력, 타입이 정해진 확률적 결정 출력'의 System One 모델로 소개. 문자열 생성을 포기하고 병렬 샘플러·RLCD를 쓴다고 밝힘. 지연 70–500ms, 입력 100만 토큰당 0.042달러, 선택지 상한 255. 로봇 언급 없음, 이미지는 미지원('yet').
+
+**핵심 내용**
+
+- 이미지 입력 지원 예고 _(2027)_
+
+- **근거·방법**: 회사 자체 업무 흐름 평가(GPT-6 Astra·Fable 5.1 평균 기준), 미국 서부 노트북 측정
+- **한국 시사점**: 로봇 예외 판단·사람 이관용 소형 결정 모델을 국산 NPU 온디바이스 실증 항목으로 검토.
 
 ##### Waymo — Opening Tokyo in 2027 with Nihon Kotsu and GO
 
@@ -12243,6 +12443,16 @@ Unitree가 커촹반 상장가 150.8위안, 기업가치 약 610억 위안으로
 UMI 장치로 모은 실세계 궤적 10만 시간+로 사전학습한 모바일 조작 VLA. RoboCasa365 57.4%(기존 최고 46.6%), RoboDojo 20.07점(기존 13.07)을 보고하고 데이터·모델 크기에 따른 스케일링을 확인했습니다.
 
 - **근거·방법**: RoboCasa365·RoboDojo·실세계 미지 환경
+
+##### Zebin Yang 외 — EagleVLA: Towards Onboard Real-Time Robot Control via Foresight-Aligned Asynchronous Inference (arXiv 2607.12659)
+
+발표 2026-07-14· 관점 중립· 요약·보도자료만· 신뢰도 medium  
+출처: <https://arxiv.org/abs/2607.12659>
+
+비동기 추론의 지각-실행 어긋남을 미래 보정 모듈과 신뢰도 기반 호출 조절로 해결. Jetson Orin에서 PyTorch 대비 14.71배 가속, LIBERO에서 VLASH 대비 성공률 +14.8%. CoRL 2026 Spotlight.
+
+- **근거·방법**: LIBERO·온보드 측정
+- **한국 시사점**: 온디바이스 VLA 추론 엔진 연구 참고
 
 ##### 디지털데일리(인터넷트렌드) — 2026년 상반기 국내 검색엔진 점유율
 
@@ -12746,6 +12956,15 @@ AI 모델 성능 오류에 따른 계약상 책임·재무 손실·법적 책임
 
 - **근거·방법**: ISO 표준 개발 현황 페이지
 - **한국 시사점**: 국내 휴머노이드 인증 체계 설계 시 기준
+
+##### openroboto-ai — jev-robot-control (GitHub)
+
+발표 2026· 관점 중립· 원문 전체· 신뢰도 low  
+출처: <https://github.com/openroboto-ai/jev-robot-control>
+
+xArm7·MuJoCo 사과 옮기기에서 Jev 1.13·GPT-6 Astra(low)·GPT-4.1 mini를 축별 이동 방향 선택 방식으로 비교. Jev 성공(API 0.019달러, 182초), Astra 성공(5.93달러, 707초). 1회 시행.
+
+- **근거·방법**: 단일 시행 기록·재생 코드
 
 ##### Stanford BEHAVIOR — BEHAVIOR Challenge 2025 Leaderboard
 

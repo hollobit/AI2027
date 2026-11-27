@@ -1700,6 +1700,135 @@
   ]
  },
  {
+  "chapter": "6장",
+  "text": "선도 로봇·물리 AI 기업(휴머노이드·AMR·로봇 파운데이션 모델 개발사) 1곳 이상이 Jev류 구조화 결정 모델(TypeSafe Jev 또는 오픈 파생)을 제품 스택의 예외 처리·배정 계층에 공식 채택했다고 발표",
+  "prob": "중간 40%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "a16z",
+    "url": "https://a16z.com/announcement/investing-in-typesafe-ai/",
+    "title": "Investing in TypeSafe AI"
+   },
+   {
+    "org": "RoboKrunch",
+    "url": "https://github.com/robokrunch/jev-physical-ai",
+    "title": "Jev for Physical AI"
+   },
+   {
+    "org": "NVIDIA",
+    "url": "https://research.nvidia.com/labs/gear/gr00t-2/",
+    "title": "GR00T 2"
+   }
+  ],
+  "counter": [
+   {
+    "org": "RoboKrunch",
+    "url": "https://github.com/robokrunch/jev-physical-ai",
+    "title": "Jev for Physical AI"
+   },
+   {
+    "org": "TypeSafe AI",
+    "url": "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
+    "title": "Introducing System One Models and Jev"
+   }
+  ]
+ },
+ {
+  "chapter": "6장",
+  "text": "TypeSafe가 이미지 입력을 실험('danger zone')에서 정식 기능으로 전환",
+  "prob": "높음 75%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "AlternativeTo",
+    "url": "https://alternativeto.net/news/2026/10/typesafe-ai-ships-jev-1-14-with-new-box-type-composable-images-and-longer-context-length/",
+    "title": "TypeSafe AI ships Jev 1.14"
+   },
+   {
+    "org": "TypeSafe AI",
+    "url": "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
+    "title": "Introducing System One Models and Jev"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "TypeSafe가 로봇·물리 AI 전용 판(로봇 상태·센서 입력 전용 타입, 로봇 SDK 또는 온디바이스 판)을 공식 공개",
+  "prob": "낮음 25%±15",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "AlternativeTo",
+    "url": "https://alternativeto.net/news/2026/10/typesafe-ai-ships-jev-1-14-with-new-box-type-composable-images-and-longer-context-length/",
+    "title": "TypeSafe AI ships Jev 1.14"
+   },
+   {
+    "org": "MindStudio",
+    "url": "https://www.mindstudio.ai/blog/jev-system-one-model-launch",
+    "title": "Jev System One model launch"
+   }
+  ],
+  "counter": [
+   {
+    "org": "a16z",
+    "url": "https://a16z.com/announcement/investing-in-typesafe-ai/",
+    "title": "Investing in TypeSafe AI"
+   }
+  ]
+ },
+ {
+  "chapter": "6장",
+  "text": "오픈 Jev류 결정 모델(JEV-9B 등)을 쓴 방식이 공개 로봇 벤치마크 리더보드(RoboArena·RoboColosseum SO-101·RoboDojo·AA-Robotics 등)에 등재",
+  "prob": "낮음 30%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "AutoTrust",
+    "url": "https://huggingface.co/autotrust/JEV-9B",
+    "title": "JEV-9B model card"
+   },
+   {
+    "org": "openroboto-ai",
+    "url": "https://github.com/openroboto-ai/jev-robot-control",
+    "title": "jev-robot-control"
+   }
+  ],
+  "counter": [
+   {
+    "org": "AutoTrust",
+    "url": "https://huggingface.co/autotrust/JEV-9B",
+    "title": "JEV-9B model card"
+   }
+  ]
+ },
+ {
+  "chapter": "6장",
+  "text": "'System 1 결정 모델' 범주를 겨냥해 정확도·지연·보정 오차를 함께 보고하는 공개 벤치마크 2개 이상 등장",
+  "prob": "중간 60%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Haggai Roitman",
+    "url": "https://arxiv.org/abs/2610.33775",
+    "title": "The Hitchhiker's Guide to System 1 Models"
+   },
+   {
+    "org": "Regolo",
+    "url": "https://regolo.ai/jev-and-system-one-models-benchmarks-open-source-alternatives-and-when-to-use-them/",
+    "title": "Jev and System One Models: benchmarks, open-source alternatives"
+   }
+  ],
+  "counter": [
+   {
+    "org": "AlternativeTo",
+    "url": "https://alternativeto.net/news/2026/10/typesafe-ai-ships-jev-1-14-with-new-box-type-composable-images-and-longer-context-length/",
+    "title": "TypeSafe AI ships Jev 1.14"
+   }
+  ]
+ },
+ {
   "chapter": "7장",
   "text": "AI 연구 자체",
   "prob": "높음 70%±15",
