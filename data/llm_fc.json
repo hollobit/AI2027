@@ -1,0 +1,38 @@
+[
+ {
+  "text": "기업·공공에서 '로컬·온프레미스 오픈웨이트 + 클라우드 프런티어'를 섞는 하이브리드 라우팅이 표준 구조가 됨",
+  "prob": "높음 · 85% (±10) · 근거 [IDC](https://www.idc.com/resource-center/press-releases/idc-futurescape-2027-predicts), [Forrester](https://www.forrester.com/blogs/predictions-2027-disruption-unleashed/)"
+ },
+ {
+  "text": "소형·태스크 특화 모델 사용량이 범용 LLM을 크게 앞섬(Gartner: 3배)",
+  "prob": "높음 · 75% (±15) · 근거 [Gartner](https://www.gartner.com/en/newsroom/press-releases/2025-04-09-gartner-predicts-by-2027-organizations-will-use-small-task-specific-ai-models-three-times-more-than-general-purpose-large-language-models)"
+ },
+ {
+  "text": "오픈웨이트 다운로드·파생의 중국 우위가 유지되고, 미국은 Meta·OpenAI·정부 지원으로 추격",
+  "prob": "높음 · 80% (±10)"
+ },
+ {
+  "text": "2025년 말 프런티어급 성능이 개인용 장비(고사양 PC·Mac·AI 워크스테이션)에서 실용 속도로 실행",
+  "prob": "높음 · 75% (±15)"
+ },
+ {
+  "text": "국내 공공기관에서 N2SF 기밀·민감 등급 업무에 온프레미스 국산 오픈웨이트를 쓰는 사례가 본격화",
+  "prob": "중간 · 60% (±20)"
+ },
+ {
+  "text": "메모리 가격 때문에 '로컬 AI PC' 대중화는 지연되고, 로컬 LLM은 개발자·기업 서버 중심으로 확산",
+  "prob": "중간 · 60% (±15)"
+ },
+ {
+  "text": "오픈웨이트–프런티어 격차가 3개월 이하로 좁혀짐",
+  "prob": "낮음 · 15% (±10)"
+ },
+ {
+  "text": "중국 랩의 개발 지연(증류 차단·컴퓨트 통제)으로 오픈웨이트–프런티어 격차가 9개월 이상으로 벌어짐",
+  "prob": "중간 · 35% (±20) · 근거 [Reuters](https://finance.yahoo.com/news/exclusive-us-chip-curbs-distillation-071923947.html)"
+ },
+ {
+  "text": "미국 또는 동맹국이 최상위 오픈웨이트 공개를 제한하는 규제 도입",
+  "prob": "낮음 · 15% (±10)"
+ }
+]

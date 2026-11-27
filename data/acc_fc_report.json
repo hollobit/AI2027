@@ -1,0 +1,58 @@
+[
+ {
+  "text": "동남아(말레이시아·싱가포르·태국·인도네시아) 데이터센터향 GPU 서버 공급이 허가 체계 정착까지 수개월 지연되고, 중국 기업의 해외 컴퓨트 임차 경로가 크게 줄어듦",
+  "prob": "높음 · 85% (±10) · 근거 [The Next Web](https://thenextweb.com/news/nvidia-halts-server-shipments-southeast-asia), [Reuters](https://finance.yahoo.com/news/exclusive-us-chip-curbs-distillation-071923947.html)"
+ },
+ {
+  "text": "중국계가 소유한 미국·제3국 법인을 통한 칩 구매를 막기 위해 '소유 기준 KYC'가 BIS 규칙이나 NVIDIA 파트너 심사에 도입",
+  "prob": "높음 · 75% (±15) · 근거 [CBS 보도](https://www.yahoo.com/news/us/articles/california-companies-owned-chinese-firms-204123372.html)"
+ },
+ {
+  "text": "미국 랩 전반(Google·Meta 포함)으로 증류 차단이 확대되고, 증류 기업에 대한 제재나 Entity List 등재가 실행",
+  "prob": "높음 · 75% (±15) · 근거 [Reuters](https://finance.yahoo.com/news/exclusive-us-chip-curbs-distillation-071923947.html)"
+ },
+ {
+  "text": "중국 프런티어 랩(Z.ai·Moonshot 등)의 대형 모델 출시 간격이 6개월에서 9–12개월로 늘어남",
+  "prob": "중간 · 55% (±20) · 근거 [Reuters](https://finance.yahoo.com/news/exclusive-us-chip-curbs-distillation-071923947.html)"
+ },
+ {
+  "text": "동남아 정부(싱가포르·말레이시아)가 미국과 '신뢰 접근' 협정을 맺어 허가를 일괄 확보",
+  "prob": "중간 · 45% (±20)"
+ },
+ {
+  "text": "미국이 프런티어 모델 API 접근을 수출통제로 다루는 방식을 제도화(신뢰 파트너 목록, 국가별 등급). 신규 최상위 모델은 '신뢰 파트너 우선 → 일반 공개'의 단계 출시가 표준",
+  "prob": "높음 · 72% (±20) · 근거 [Mayer Brown](https://www.mayerbrown.com/en/insights/publications/2026/06/commerce-department-extends-export-controls-to-advanced-ai-models-authorizes-release-to-specific-trusted-partners), [Anthropic](https://www.anthropic.com/project/glasswing)"
+ },
+ {
+  "text": "BIS 원격접속 규칙의 유예 종료(2027-02)로 동남아·한국 클라우드·데이터센터의 고객 확인(KYC)·소유 구조 증빙이 일상 업무가 됨",
+  "prob": "높음 · 85% (±10) · 근거 [Greenberg Traurig](https://www.gtlaw.com/en/insights/2026/11/bis-interim-final-rule-targets-remote-access-to-advanced-semiconductors-rescinds-ai-diffusion-rule), [NVIDIA·한국 정부](https://nvidianews.nvidia.com/news/south-korea-ai-infrastructure)"
+ },
+ {
+  "text": "미·중 연구소 모두 증류 차단을 강화하고, 미국이 증류 기업에 대한 제재·Entity List 등재를 실행",
+  "prob": "중간 · 69% (±20) · 근거 [Anthropic](https://anthropic.com/news/detecting-and-preventing-distillation-attacks), [미국 재무부(베선트)](https://www.wilsoncenter.org/article/americas-ai-action-plan-after-one-year-what-administration-has-done-and-what-comes-next)"
+ },
+ {
+  "text": "미국 연방·주 정부와 동맹국 공공부문의 중국 모델 사용 금지가 DeepSeek에서 Qwen·Kimi 등으로 확대",
+  "prob": "높음 · 75% (±15) · 근거 [TechCrunch](https://techcrunch.com/2026/10/20/us-orders-federal-agencies-to-remove-chinas-deepseek-ai-from-their-systems/), [미국 재무부(베선트)](https://www.wilsoncenter.org/article/americas-ai-action-plan-after-one-year-what-administration-has-done-and-what-comes-next)"
+ },
+ {
+  "text": "중국 AI 기술 수출 사전등록이 확정돼, 중국 모델의 해외 현지 배포·기술 라이선스·합작에 등록·심사 절차가 붙음",
+  "prob": "중간 · 65% (±15) · 근거 [EqualOcean](https://equalocean.com/news/2026101922309-china-proposes-export-restrictions-23-ai-technologies-keeps-api-services)"
+ },
+ {
+  "text": "바이두처럼 규제가 강한 시장(EU·한국 등)을 라이선스에서 빼는 중국 오픈웨이트가 늘어남",
+  "prob": "중간 · 45% (±20) · 근거 [m.edaily.co.kr](https://m.edaily.co.kr/News/Read?newsId=03325926645649656&mediaCodeNo=257)"
+ },
+ {
+  "text": "중국이 최상위 오픈웨이트의 공개 자체를 늦추거나 일부를 폐쇄형으로 전환",
+  "prob": "중간 · 50% (±20) · 근거 [중국 상무부(MOFCOM)](https://dealroom.co/news/137169-china-weighs-curbs-on-overseas-access-to-frontier-ai-models/), [중국 상무부·과기부](https://letsdatascience.com/blog/china-drafted-export-controls-ai-model-weights-open-source)"
+ },
+ {
+  "text": "한국 공공부문이 해외 모델 사용 기준(데이터 국외이전·보안 등급별 허용 목록)을 공식 지침으로 마련",
+  "prob": "중간 · 55% (±15) · 근거 [news.mtn.co.kr](https://news.mtn.co.kr/news-detail/2026031312382799965), [m.boannews.com](https://m.boannews.com/html/detail.html?idx=140878)"
+ },
+ {
+  "text": "미국이 Mythos급 모델에 대해 동맹국 전체를 허가 면제하는 일반 허가를 만듦",
+  "prob": "낮음 · 12% (±15) · 근거 [Mayer Brown](https://www.mayerbrown.com/en/insights/publications/2026/06/commerce-department-extends-export-controls-to-advanced-ai-models-authorizes-release-to-specific-trusted-partners), [Tech Policy Press](https://techpolicy.press/commerce-eased-its-block-on-anthropics-mythos-but-major-questions-remain)"
+ }
+]

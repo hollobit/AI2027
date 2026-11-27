@@ -1,0 +1,26 @@
+[
+ {
+  "level": "L1 도구",
+  "definition": "문헌 검색·요약·코드 보조",
+  "cases": "연구자 다수가 일상 사용",
+  "outlook": "보편화"
+ },
+ {
+  "level": "L2 연구 동료",
+  "definition": "가설 생성·데이터 분석·실험 설계 제안, 사람이 선택·검증",
+  "cases": "Google AI co-scientist(Nature), Kosmos, FutureHouse Robin, 중국과학원 BioMedAgent(생물정보 과제 77%)",
+  "outlook": "**주류화**: 제약·소재·생물정보에서 표준 도구"
+ },
+ {
+  "level": "L3 폐루프 자율 실험",
+  "definition": "가설 → 로봇 실험 → 재가설을 스스로 반복, 사람은 안전·물리 작업만",
+  "cases": "Chalmers 로봇 과학자 Eve(효모 가설 약 2,000개 자동 검증), Lila·Periodic Labs, 중국 ScienceOne 100(50개 연구소)",
+  "outlook": "특정 분야(소재·화학·효모·세포)에서 확산"
+ },
+ {
+  "level": "L4 독립 과학자",
+  "definition": "중요한 문제를 스스로 고르고, 독립 검증된 새 발견을 논문까지",
+  "cases": "없음. State of AI는 \"전 루프를 스스로 맡은 시스템은 아직 없다\"고 판단",
+  "outlook": "첫 사례 가능성은 낮음"
+ }
+]

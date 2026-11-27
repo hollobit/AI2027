@@ -1,0 +1,74 @@
+[
+ {
+  "when": "2024-07",
+  "actor": "OpenAI",
+  "measure": "중국·러시아·이란·북한 등 미지원 지역의 API·ChatGPT 차단, 우회 접속·재판매 시 계정 정지",
+  "type": "지역 차단"
+ },
+ {
+  "when": "2025-09-05",
+  "actor": "Anthropic",
+  "measure": "**소유 기준 첫 차단**: 중국 등 미지원 지역 본사 기업이 50% 넘게 소유한 법인(해외 자회사·합작사 포함)에 Claude 판매 금지. 클라우드 재판매 경로의 집행 방식은 미공개",
+  "type": "소유 기준"
+ },
+ {
+  "when": "2026-02-23",
+  "actor": "Anthropic",
+  "measure": "증류 공격 공개: DeepSeek·Moonshot·MiniMax가 위장 계정 약 2.4만 개로 Claude와 1,600만 회 이상 교환. 계정 차단·탐지 강화. 미 재무부는 증류 기업 제재를 경고",
+  "type": "증류 차단"
+ },
+ {
+  "when": "2026-04-07",
+  "actor": "Anthropic",
+  "measure": "Mythos Preview를 사이버 능력 때문에 방어기관 참여 프로그램에만 제한 제공",
+  "type": "제한 공개"
+ },
+ {
+  "when": "2026-06-12",
+  "actor": "미국 상무부",
+  "measure": "**Mythos 5·Fable 5에 대한 모든 외국인 접근을 허가 대상으로 지정**('is-informed' 서한). API 원격접속을 '통제 대상 이전'으로 본 첫 사례. Anthropic은 외국인만 골라 막을 수 없어 두 모델을 전 세계에서 비활성화",
+  "type": "정부 수출통제"
+ },
+ {
+  "when": "2026-06-26",
+  "actor": "미국 상무부·OpenAI",
+  "measure": "2차 서한으로 '신뢰 파트너' 목록과 그 외국인 직원에 Mythos 5 면제(약 2주 만의 부분 완화, Fable 5는 미언급). OpenAI도 차기 모델을 신뢰 파트너에 먼저 공개하겠다고 발표",
+  "type": "제한 공개"
+ },
+ {
+  "when": "2026-10-19",
+  "actor": "국토안보부(DHS)",
+  "measure": "연방 민간기관에 DeepSeek 제품과 DeepSeek 기반 제3자 제품의 구매 중단·제거 명령",
+  "type": "정부 사용 금지"
+ },
+ {
+  "when": "2026-11-19",
+  "actor": "상무부 BIS",
+  "measure": "원격접속 규칙 시행: 중국 등 우려국 본사 기업에 대규모 컴퓨트를 원격 제공하는 데이터센터용 첨단칩 수출에 허가 필요. 동남아·브라질 허가제. 의견수렴 2027-01-19, 기존 데이터센터 유예 2027-02 중순 종료",
+  "type": "KYC·수출통제"
+ },
+ {
+  "when": "2026-11-17~26",
+  "actor": "상무부 BIS(세부)",
+  "measure": "허가 문턱은 연결된 데이터센터 합산 약 1,200만 TPP(H100 약 750대). 기존 서비스 제공자는 90일 내 허가 취득(보도 기준). D:5 국가·마카오 소유·통제 여부 KYC 의무. AI 확산 규칙과 데이터센터 VEU 폐지. 말레이시아는 준수를 지시, 싱가포르는 '신뢰 접근' 경로를 협의 중([Reuters](https://finance.yahoo.com/news/exclusive-us-chip-curbs-distillation-071923947.html), [Al Jazeera](https://aljazeera.com/economy/2026/11/17/us-moves-to-block-chinas-remote-access-to-ai-chips-amid-nvidia-scandal))",
+  "type": "KYC·수출통제"
+ },
+ {
+  "when": "2026-11-26",
+  "actor": "NVIDIA(보도)",
+  "measure": "**말레이시아·싱가포르·태국·인도네시아향 서버 선적 중단**을 제조 파트너에 지시. Dell·Supermicro가 4개국 주문 출하 불가를 통보. 새 규칙의 허가 체계가 정리될 때까지의 임시 조치로 보이며 기간 불명(FT 익명 소식통, 회사 무응답)([The Next Web](https://thenextweb.com/news/nvidia-halts-server-shipments-southeast-asia))",
+  "type": "지역 차단(사실상)"
+ },
+ {
+  "when": "2026-11-25",
+  "actor": "CBS 조사 보도",
+  "measure": "NVIDIA '선호·최상위' 파트너인 실리콘밸리 업체 2곳이 **중국 소유**로 드러남: RiCloud AI(선전 상장사 소유, 설립 10주 만에 파트너 지정), Aivres(구 Inspur 미국 법인, 2024–26년 동남아에 첨단기술 56억 달러 수출, 일부가 알리바바·바이트댄스 서비스 업체로). 현행 규칙상 중국계 미국 법인 판매는 국내 판매로 간주돼 위법은 아님([보도](https://www.yahoo.com/news/us/articles/california-companies-owned-chinese-firms-204123372.html))",
+  "type": "소유 기준 공백"
+ },
+ {
+  "when": "2026-11-26",
+  "actor": "Reuters(익명 소식통)",
+  "measure": "증류 차단과 컴퓨트 통제로 **중국 랩 개발 지연**: Z.ai GLM-5.5(약 3T)가 11월 출시 예정에서 2027년 1분기 이후로 밀릴 수 있고(11-23 GLM-5.4 출시), Moonshot은 해외 컴퓨트가 끊기면 대형 출시 간격이 6개월에서 12개월 이상으로 늘 것으로 내부 예상(Kimi K4 2027년 중반 가능). OpenAI·Anthropic 증류가 어려워지자 **Google·Meta 모델로 증류 대상을 옮겼다**는 단일 소식통 보도(회사들 무응답, Moonshot은 7월 증류 부인)([Reuters](https://finance.yahoo.com/news/exclusive-us-chip-curbs-distillation-071923947.html))",
+  "type": "증류 차단"
+ }
+]

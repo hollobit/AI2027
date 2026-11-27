@@ -1,0 +1,44 @@
+[
+ {
+  "when": "2026-01~03",
+  "name": "**Moltbook**(OpenClaw 에이전트 전용 포럼)",
+  "detail": "출시 1주 만에 등록 에이전트 150만 주장. 그러나 보안 조사에서 실제 인간 소유자는 약 1.7만 명(88:1), API 토큰 150만·이메일 3.5만 노출, 인간이 에이전트를 사칭할 수 있었음. 봇 간 프롬프트 인젝션·영향공작 관찰. 2026-03 Meta 인수",
+  "lesson": "'에이전트 인구'는 측정 불가에 가깝고, 신원 검증 없는 에이전트 사회는 곧바로 보안·조작 문제가 됨 ([Wiz](https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys), [Fortune](https://fortune.com/2026/03/11/meta-acquires-motlbook-social-network-for-agents/))"
+ },
+ {
+  "when": "2025–2026",
+  "name": "**AI Village**(Sage)",
+  "detail": "19개 모델이 9개월간 공동 목표 수행. 한 에이전트가 지어낸 연락처를 다른 에이전트가 믿고 확산, 사고 과정 10.9만 건 중 64건에서 '조작 의도→실행'. 2026 시즌은 더 유능해졌지만 모금액은 4분의 1(에이전트끼리만 대화)",
+  "lesson": "에이전트 사회는 **오류·허위의 전파**가 빠르고, 인간 사회와의 연결이 약해지면 성과가 떨어짐 ([LessWrong](https://www.lesswrong.com/posts/QopBrHKDCgi5DPtMX/more-capable-ai-less-money-raised))"
+ },
+ {
+  "when": "2025-12",
+  "name": "**Project Vend 2**(Anthropic)",
+  "detail": "점주·CEO·굿즈 에이전트 3개가 3개 도시 매장 운영. 적자는 줄었지만 분기 매출은 목표의 17.7%, CEO 에이전트는 특혜 요청을 거절보다 8배 많이 승인",
+  "lesson": "'에이전트가 운영하는 회사'는 아직 사람의 경영 판단을 대체하지 못함 ([Anthropic](https://www.anthropic.com/news/project-vend-2))"
+ },
+ {
+  "when": "2024–2025",
+  "name": "Project Sid, AgentSociety(칭화대)",
+  "detail": "Minecraft 1,000명 사회(직업 분화·세금·종교 전파), 1–3만 명 LLM 사회 시뮬레이션",
+  "lesson": "정책·사회 시뮬레이션 도구로서의 가능성"
+ },
+ {
+  "when": "2026",
+  "name": "**프로토콜·결제 인프라**",
+  "detail": "A2A 지지 조직 150개 이상, Agentic AI Foundation으로 이관. AP2 60개 이상 금융기관. x402 누적 약 2억 건·4,200만 달러(대부분 스크립트라는 분석)",
+  "lesson": "에이전트 간 통신·결제의 '배관'은 빠르게 표준화, 실거래 규모는 작음 ([Linux Foundation](https://www.linuxfoundation.org/press/a2a-protocol-surpasses-150-organizations-lands-in-major-cloud-platforms-and-sees-enterprise-production-use-in-first-year), [TRM Labs](https://www.trmlabs.com/trm-tech-blog/whos-actually-paying-measuring-ai-agent-payments-onchain))"
+ },
+ {
+  "when": "2026",
+  "name": "**에이전트 웜·담합 연구**",
+  "detail": "에이전트 생태계를 자기전파하는 공격이 실험에서 63% 성공(AgentWorm). 에이전트 가격 게임에서 비밀 채널 담합이 관찰됐다는 보도(원문 미확인)",
+  "lesson": "에이전트 사회의 위험은 **전염과 담합** ([arXiv](https://arxiv.org/abs/2603.15727))"
+ },
+ {
+  "when": "2026-02",
+  "name": "**한국: '머슴'·'봇마당'**",
+  "detail": "몰트북 열풍 직후 국내 에이전트 전용 커뮤니티 등장(개인 실험, 업스테이지 대표 제작). 보안 우려 제기",
+  "lesson": "국내도 실험은 빠르지만 규모·지속성은 미확인 ([뉴시스](https://mobile.newsis.com/view/NISX20260203_0003500467))"
+ }
+]
