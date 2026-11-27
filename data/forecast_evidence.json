@@ -1829,6 +1829,250 @@
   ]
  },
  {
+  "chapter": "6장",
+  "text": "FDA가 영상 전체를 읽고 판독문(소견 문장) 초안을 생성하는 생성형 AI 기기를 처음 허가(510(k)·De Novo)",
+  "prob": "중간 50%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "STAT",
+    "url": "https://www.statnews.com/2026/06/25/radiology-generative-ai-cognita-aidoc-fda-breakthrough-designation/",
+    "title": ""
+   },
+   {
+    "org": "Aidoc",
+    "url": "https://www.aidoc.com/about/news/aidoc-receives-fda-breakthrough-device-designation-for-ai-that-drafts-radiology-reports/",
+    "title": ""
+   }
+  ],
+  "counter": [
+   {
+    "org": "RSNA",
+    "url": "https://www.rsna.org/-/media/Files/RSNA/government-relations/RSNACommentsFDAGenAI101926.pdf",
+    "title": ""
+   }
+  ]
+ },
+ {
+  "chapter": "6장",
+  "text": "미국 Epic 사용 병원의 앰비언트 AI 도입률이 후속 조사에서 80% 이상으로 집계",
+  "prob": "중간 60%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "TechTarget(AJMC)",
+    "url": "https://www.techtarget.com/searchHealthIT/news/366638553/Two-thirds-of-Epic-hospitals-have-adopted-ambient-AI-tools",
+    "title": ""
+   },
+   {
+    "org": "AMA",
+    "url": "https://ama-assn.org/press-center/ama-press-releases/ama-ai-usage-among-doctors-doubles-confidence-technology-grows",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "미국 대형 보험사가 2027-01 사전승인 API를 가동하고, 병원 측 AI 에이전트가 이 API로 사전승인을 자동 제출하는 상용 사례가 공표('에이전트 대 에이전트')",
+  "prob": "높음 70%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "CMS",
+    "url": "https://www.cms.gov/cms-interoperability-and-prior-authorization-final-rule-cms-0057-f",
+    "title": ""
+   },
+   {
+    "org": "Healthcare IT Today",
+    "url": "https://healthcareittoday.com/2026/09/03/inside-epics-push-to-help-customers-build-their-own-ai-agents-using-agent-factory",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "CMS WISeR(AI 활용 사전승인) 모델이 폐지되지 않고 2027년에도 운영",
+  "prob": "중간 60%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "CMS",
+    "url": "https://www.cms.gov/files/document/wiser-model-rfa.pdf",
+    "title": ""
+   }
+  ],
+  "counter": [
+   {
+    "org": "Georgetown CHIR",
+    "url": "https://medicare.chir.georgetown.edu/new-cms-wiser-model-revives-concerns-of-prior-authorization-and-artificial-intelligence/",
+    "title": ""
+   }
+  ]
+ },
+ {
+  "chapter": "6장",
+  "text": "의료 원무 에이전트 벤치마크(HealthAdminBench류)에서 종단 과업 완료율 60% 이상 공개",
+  "prob": "중간 50%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Stanford HAI",
+    "url": "https://hai.stanford.edu/news/measuring-what-medical-ai-can-actually-do",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "사람 조작 없이 수술 단계를 수행하는 자율 수술 로봇의 첫 인체 임상 착수가 공표",
+  "prob": "낮음 20%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "JHU",
+    "url": "https://hub.jhu.edu/2025/07/09/robot-performs-first-realistic-surgery-without-human-help",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "Intuitive da Vinci 5 누적 설치가 2027년 말 3,000대 이상",
+  "prob": "높음 80%±10",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Intuitive",
+    "url": "https://www.morningstar.com/news/globe-newswire/9849716/intuitive-announces-third-quarter-earnings",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "미국 치과에서 AI 보험 코디네이터·청구 에이전트를 내놓은 업체가 3곳 이상으로 늘고, 판독 AI 결과가 청구 심사 생략·자동 승인에 쓰이는 사례가 확대",
+  "prob": "높음 70%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Overjet",
+    "url": "https://www.healthcaredive.com/press-release/20260922-overjet-introduces-ivy-an-ai-insurance-coordinator-and-the-first-of-its-ai/",
+    "title": ""
+   },
+   {
+    "org": "Pearl",
+    "url": "https://hellopearl.com/news/pearl-expands-dental-ai-capabilities-with-fda-clearance-for-panoramic-x-rays",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "국내 치과 장비·차트 업체가 식약처 허가를 받은 치과 영상 판독 AI를 전자차트에 상용 탑재",
+  "prob": "중간 55%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "헬로티",
+    "url": "https://www.hellot.net/mobile/article.html?no=113124",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "복지부가 의료 AI 성과 기반(기관 단위) 수가 시범사업이나 건정심 안건을 2027년에 공식화",
+  "prob": "중간 45%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "데일리메디",
+    "url": "https://dailymedi.com/news/news_view.php?wr_id=941829",
+    "title": ""
+   },
+   {
+    "org": "뉴시스",
+    "url": "https://mobile.newsis.com/view/NISX20260806_0003738413",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "공공의료 AI 고속도로가 목표대로 2027년 말 책임의료기관 30곳 이상 연결",
+  "prob": "중간 55%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "뉴시스",
+    "url": "https://mobile.newsis.com/view/NISX20260806_0003738413",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "루닛·뷰노 중 한 곳 이상이 2027년 연간 영업흑자",
+  "prob": "낮음 25%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "데일리팜",
+    "url": "https://dailypharm.com/user/news/344509",
+    "title": ""
+   }
+  ],
+  "counter": [
+   {
+    "org": "MTN",
+    "url": "https://news.mtn.co.kr/article/2026111716335234175",
+    "title": ""
+   }
+  ]
+ },
+ {
+  "chapter": "6장",
+  "text": "EU가 의료기기 내장 AI의 고위험 의무 적용(2028-08)을 다시 미루거나 의료기기를 AI Act 범위에서 빼는 결정을 2027년에 내림",
+  "prob": "낮음 25%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Taylor Wessing",
+    "url": "https://www.taylorwessing.com/en/international-life-sciences-newsletter/life-sciences-legal-lens-vol-2/update-ai-enabled-medical-devices-and-ivds-confirmed-as-high-risk",
+    "title": ""
+   },
+   {
+    "org": "DLA Piper",
+    "url": "https://www.dlapiper.com/en-gb/insights/blogs/cortex-life-sciences-insights/2025/digital-omnibus-and-ai-act-updates-key-implications-for-medtech",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "미국에서 의료 AI의 진단·급여 결정 오류 책임을 다룬 주요 사건에 본안 판결(배심 평결 포함)이 나옴",
+  "prob": "낮음 20%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Lokken 일정 명령",
+    "url": "https://litigationtracker.law.georgetown.edu/wp-content/uploads/2023/11/Estate-of-Gene-B.-Lokken-The-et-al-v.-UnitedHealth-Group-Inc.-et-al_2026.09.18_SCHEDULING-ORDER.pdf",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
   "chapter": "7장",
   "text": "AI 연구 자체",
   "prob": "높음 70%±15",

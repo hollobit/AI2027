@@ -3,7 +3,7 @@
 
 기준일 2026-11-27 · 정리: hollobit · 작성 보조: Claude
 
-> 이 보고서는 2025년 12월 「Tech Trends 2026: 증명의 해」의 후속편입니다. 2026년 예측을 다시 채점하고, 2026년 8–11월에 공개된 2027 전망 자료를 원문으로 수집해(`PDF/` 폴더 약 280건, 웹 자료 포함 부록 873건) 6부 23개 장으로 분석했습니다. Gartner·IDC 유료 원문 14건은 사용자 제공본으로 수치를 대조했습니다(2.3절). 모든 2027 전망에는 주관적 확률과 불확도(±%p)를, 그중 332건에는 근거 자료 링크를 붙였습니다(표기 기준·근거 목록은 부록). 자료별 상세 요약은 [부록](#부록-2027-ai-전망-자료별-상세-분석)에, 수치 대시보드는 [AI 2027 전망 대시보드](https://claude.ai/artifact/SeyeszN61LTYiLbt4tbJwP)에 있습니다.
+> 이 보고서는 2025년 12월 「Tech Trends 2026: 증명의 해」의 후속편입니다. 2026년 예측을 다시 채점하고, 2026년 8–11월에 공개된 2027 전망 자료를 원문으로 수집해(`PDF/` 폴더 약 280건, 웹 자료 포함 부록 891건) 6부 23개 장으로 분석했습니다. Gartner·IDC 유료 원문 14건은 사용자 제공본으로 수치를 대조했습니다(2.3절). 모든 2027 전망에는 주관적 확률과 불확도(±%p)를, 그중 332건에는 근거 자료 링크를 붙였습니다(표기 기준·근거 목록은 부록). 자료별 상세 요약은 [부록](#부록-2027-ai-전망-자료별-상세-분석)에, 수치 대시보드는 [AI 2027 전망 대시보드](https://claude.ai/artifact/SeyeszN61LTYiLbt4tbJwP)에 있습니다.
 
 ---
 
@@ -41,6 +41,7 @@
 - **특화 파운데이션 모델(6장)**: 기상은 현업 운영 단계입니다. 바이오·의료·로봇은 임상·상품화 문턱에 있습니다. 통신은 범용 모델과 특화 소형 모델의 하이브리드로 수렴했고, 3GPP 6G 작업항목이 2027년 3월 승인될 예정입니다.
 - **로봇 AI·피지컬 AI(6.8–6.10절)**: VLA·로봇 파운데이션 모델은 2026년에 '데모'에서 '수 시간 연속 작업'으로 올라섰습니다(π0.7, Gemini Robotics 2, GR00T N1.7→GR00T 2, Helix 2.5, GEN-1). 그러나 LIBERO(97–99%)는 포화됐고, 섭동을 주면 30% 아래로 떨어집니다. 미포화 벤치마크는 RoboCasa365 57.4%, BEHAVIOR 41.2%(2위) 수준입니다. 월드 모델도 물리 이해는 사람에 못 미칩니다(Physics-IQ 66.1%, IntPhys 2 57.5% 대 사람 96.4%). 2027년에는 실세계 강화학습 후학습이 표준이 되고(75%), 평가의 중심이 섭동·장기·실세계·안전 지표로 옮겨 갑니다(70%). 휴머노이드 출하는 8만–15만 대(기준 11만 대)로 봅니다. **범용 모델이 로봇 전용 모델을 앞지르기 시작했습니다**(CoRL 2026의 'Astra 쇼크'). NVIDIA RoboLab-120에서 GPT-6 Astra+Codex는 74.8%로 π0.5(28.0%)를 크게 앞섰고, Anthropic RoboDojo에서 Claude Fable 5.2는 64.9%입니다(보도 기준). 다만 호출당 지연이 13–19초로 VLA(47ms)의 약 400배여서, 2027년에는 '범용 모델(계획) + 소형 VLA(실행) + 실시간 제어(안전)' 계층 구조가 표준이 될 가능성이 큽니다(75%). 11월 GPT-6.2 Astra는 실물 벤치마크에서도 1위(SO-101 실환경 보드 완전 성공 22.1%, Ember-0 41.2%)였지만, 같은 모델이 기본 설정 65.7%에서 Codex 하네스 97.3%로 오르는 등(RoboDojo-RC) 점수의 상당 부분이 하네스 효과입니다.
 - **로보택시·소비자 의료 AI(6.11–6.12절)**: 로보택시는 2027년 가장 눈에 띄는 피지컬 AI 상용 배치입니다. Waymo는 미국 15개 도시에서 주 50만 건 이상을 운행하고(보도 기준) 2027년 도쿄 무인 운행을 노리며, 중국 업체는 중동·유럽으로 나갑니다. 수익성과 법제는 아직 따라오지 못합니다. 의료에서는 매주 2억 3천만 명이 ChatGPT에 건강 질문을 하는 등 공개 AI가 진료의 첫 관문이 되고, FDA·식약처의 생성형 AI 의료기기 규제가 2027년 구체화됩니다.
+- **의료 AI(6.13절)**: 2027년 의료 AI는 진료보다 **행정에서 먼저 에이전트화**됩니다. 미국 연방 규칙에 따라 2027-01부터 보험사가 사전승인 API를 운영해야 해, 보험사 에이전트와 병원 에이전트가 사전승인을 주고받는 구조가 퍼집니다. Epic 병원의 62.6%가 이미 앰비언트 AI를 쓰고, 미국 의사의 81%가 AI를 씁니다(보도 기준). 그러나 에이전트 벤치마크에서 긴 임상 과업 완수는 최고 46%이고, 자율 수술은 2026년에도 인체 임상 전입니다. 치과는 영상 판독·보험 청구 AI가 가장 빠르게 상용화됐습니다. 한국은 'AI 기본의료 전략'으로 2027년 공공병원 30곳을 공공의료 AI 플랫폼에 연결하고, AI 수가 방식을 결정해야 합니다.
 
 *제3부 산업·경제·사회(8–13장)*
 - **코딩·산업·조직(8장)**: 선도 기업의 AI 작성 코드 비중은 85–90%가 될 전망입니다. 확산은 SW·고객센터가 가장 빠르고, 의료 행정·금융·법률이 뒤를 잇습니다. 조직은 관리 범위가 넓어지고, 인사는 신입 채용을 줄이며, 노무에서는 노란봉투법 이후 AI 교섭이 쟁점이 됩니다.
@@ -145,7 +146,7 @@
 
 ## 2. 2027 전망 자료 종합: 기관별 시각
 
-종합 전망 자료는 리서치·컨설팅 14건, 투자·금융·에너지 19건, AI 연구·예측·정책 19건, 한국 15건입니다. 여기에 분야별 심층 자료(3–21장)를 더해 부록에는 모두 873건을 정리했습니다. 이 장은 기관별 시각을 요약하고, 각 테마를 깊이 다룬 장을 함께 표시합니다.
+종합 전망 자료는 리서치·컨설팅 14건, 투자·금융·에너지 19건, AI 연구·예측·정책 19건, 한국 15건입니다. 여기에 분야별 심층 자료(3–21장)를 더해 부록에는 모두 891건을 정리했습니다. 이 장은 기관별 시각을 요약하고, 각 테마를 깊이 다룬 장을 함께 표시합니다.
 
 ### 2.1 합의된 것
 
@@ -805,7 +806,7 @@ AGI·ASI라는 말은 정의가 제각각이라 "왔다/안 왔다" 논쟁이 �
 - **진행 중인 사업**
   - AI 특화 FM: 루닛(의과학)과 KAIST(바이오) 컨소시엄이 중간평가를 통과했습니다(2026-03).
   - 복지부 AI 항체 설계 FM(2026-07부터 2028-06까지)
-  - 'AI 기본의료 전략'(2026-07)
+  - 'AI 기본의료 전략'(2026-08-06 국가정책조정회의, 6.13절)
   - 피지컬 AI 월드모델 사업(340억 원, LG전자·KT 컨소시엄과 NC AI 컨소시엄)
   - RLWRLD의 RLDX-1이 RoboCasa에서 SOTA(70.6%)를 기록했습니다(기존 RoboCasa 과제 기준. 2026년 확장판 RoboCasa365의 최고점은 57.4%로 분할이 다릅니다, 6.8절).
 - **과소평가된 영역**: 소재와 시계열(전력·반도체 수요 예측)은 국내 공개 성과가 비어 있습니다.
@@ -1397,6 +1398,126 @@ System 0   학습형·고전 제어기                              1ms 이하(k
 3. **허가 후 실사용 검증**: 6.2절의 '허가와 근거의 괴리'를 줄이려면 디지털의료제품법의 우수관리체계 인증에 실사용 성능 보고를 묶습니다.
 
 > **확인 필요**: Forrester 2027 헬스케어 수치는 공개 블로그·Becker's 요약 기준입니다. FDA FY2027 지침 의제의 공식 제목, 식약처 LLM 가이드라인(2026-06-30) 원문, 국내 첫 생성형 AI 기기의 제품명, 디지털의료제품법 하위 고시 개정 일자, 비대면진료 시행일(2026-12-24)은 보도로만 확인했습니다. ChatGPT Health의 미국 밖 출시 범위는 확인하지 못했습니다.
+
+### 6.13 의료 AI 2027: 병원·제조사·연구자·의료진·치과와 에이전트·피지컬·생성형 AI
+
+> 자료: AJMC(Epic 병원 앰비언트 AI 도입 연구, TechTarget 보도 2026-02), AMA 2026 의사 AI 조사(2026-03), Stanford HAI "Measuring what medical AI can actually do"(2026-10-19), STAT(생성형 판독문 기기 혁신 지정, 2026-06-25), Intuitive 2026년 3분기 실적, CMS CMS-0057-F·WISeR, Lokken 대 UnitedHealth 일정 명령(2026-09-18), Google MedGemma 1.5, Overjet·Pearl 발표, 복지부 'AI 기본의료 전략'(뉴시스), 국내 의료 전문지(데일리메디·머니투데이·MTN·데일리팜). 소비자 의료 AI·FDA 생성형 AI 토론 문서·식약처 LLM 가이드라인은 6.12절, FDA 기기 수는 6.2절 값을 씁니다.
+
+**한 줄 요약.** 2026년 의료 AI는 **기록(생성형)은 일상화, 행정(에이전트)은 시험 단계, 수술·돌봄(피지컬)은 연구 단계**였습니다. 2027년에는 행정 에이전트가 보험사와 병원 양쪽에서 실제 배치되고, 생성형 판독문이 첫 허가 문턱에 서며, 한국은 수가 설계가 성패를 가릅니다.
+
+#### 한눈에 보기: 주체별 2026 현황과 2027 전망
+
+| 주체 | 2026 현황 | 2027 전망 |
+|---|---|---|
+| **병원** | 미국 Epic 사용 병원의 62.6%가 앰비언트 AI 도입(2025-06 기준, AJMC). 비영리 70.2%, 영리 28.8%로 격차 | 기록에서 청구·코딩·사전승인 에이전트로 확장. 도입 격차(농촌·영리·소형)가 정책 쟁점 |
+| **EHR·플랫폼** | Epic이 Art(의료진)·Emmie(환자)·Penny(원무) 에이전트와 고객이 직접 만드는 Agent Factory 공개(2026). Microsoft Dragon Copilot 임상의 10만 명+(2026-03, 회사 발표) | EHR 벤더가 '에이전트 장터'의 관문이 됨. 독립 스크라이브 업체는 진료 지능·임상시험 연계로 차별화 |
+| **의료기기 제조사** | FDA AI 기기 누적 1,600건+(6.2절). 생성형 판독문 기기는 혁신 지정만 있고 허가 없음(Cognita 2026-03, Aidoc 2026-06) | 첫 생성형 판독문 기기 허가가 분기점. 수술 로봇은 da Vinci 5 확산과 데이터 기반 보조 기능 경쟁 |
+| **의료 AI 연구자** | 시험형 벤치마크 포화(6.2절). 실제 EHR 과제는 장기 과업 46%, 원무 종단 과업 36% 수준(Stanford HAI) | 평가 중심이 '정답률'에서 '실행 완료율·안전'으로 이동. 전향적 무작위 연구 확대 |
+| **의료진** | 미국 의사 81%가 AI 사용(2023년 38%), 탈숙련 우려 88%(AMA 2026). 한국 의원·병원 의사 최근 한 달 이용 63%(보도 기준) | 스크라이브는 RCT로 효과 확인, 다음 쟁점은 탈숙련·자동화 편향과 책임 배분 |
+| **치과** | 파노라마·CBCT 판독 AI의 FDA 허가 확대(Pearl·Overjet). 보험 확인·비용 추정 AI 출시(Overjet Ivy, 2026-10) | 판독 AI가 보험 청구 심사와 연동. 국내는 전자차트 내장 AI가 확산 경로 |
+| **환자·보험자** | 미국 CMS WISeR(AI 활용 사전승인) 6개 주 시행(2026-01). 보험사 AI 거절 소송 진행 중 | 2027-01 사전승인 API 의무 시행으로 '에이전트 대 에이전트' 사전승인 시작 |
+| **규제기관** | FDA 생성형 AI 토론 문서(6.12절), EU 의료기기 AI 고위험 의무 2028-08로 연기 합의, 한국 'AI 기본의료 전략'(2026-08) | 미국은 역량 기반 평가 지침화, 한국은 AI 수가 방식 결정이 핵심 |
+
+#### 기술 축별 흐름
+
+**생성형 AI: 기록은 검증됐고, 판독문은 허가 문턱.**
+- **앰비언트 스크라이브**: 병원 단위 도입은 다수가 됐고, 의사 단위 사용은 아직 고르지 않습니다.
+  - 미국 6,500여 병원 중 Epic 사용 병원(42.4%)의 62.6%가 도입했습니다(2025-06 기준). 남부 69.5%, 중서부 54.9%입니다. DAX Copilot·Abridge 등 상위 3개 도구가 구현의 80% 이상입니다([TechTarget, AJMC 연구 보도](https://www.techtarget.com/searchHealthIT/news/366638553/Two-thirds-of-Epic-hospitals-have-adopted-ambient-AI-tools)).
+  - Abridge는 300개 이상 병원 시스템에서 가동 중이고(22.6절), Epic·Oracle Health·athenahealth 안에서 돌아갑니다.
+  - 병원 안 실제 사용률은 기관마다 다릅니다. Memorial Sloan Kettering 조사에서는 임상의 19.8%만 썼습니다(보도 기준).
+- **효과 근거**: 외래 의사 238명을 DAX·Nabla·대조군에 무작위 배정한 연구(NEJM AI, 2025-11)는 두 도구 모두 번아웃 지표 개선을 보였지만, 가끔 생기는 부정확성 때문에 계속 확인해야 한다고 했습니다([PubMed](https://pubmed.ncbi.nlm.nih.gov/41497288/)). 2026년 교차 시험(160명)도 번아웃 감소를 보고했습니다(보도 기준).
+- **판독문 초안**: FDA는 흉부 X선 전체를 읽고 소견 문장을 생성하는 기기 2건에 혁신 의료기기 지정을 줬습니다(Cognita 2026-03, Aidoc First Read 2026-06). 허가는 아직 없습니다([STAT](https://www.statnews.com/2026/06/25/radiology-generative-ai-cognita-aidoc-fda-breakthrough-designation/), [Aidoc](https://www.aidoc.com/about/news/aidoc-receives-fda-breakthrough-device-designation-for-ai-that-drafts-radiology-reports/)). 한국은 같은 유형을 2026-04에 먼저 허가했습니다(6.12절). RSNA는 환각과 자동화 편향 평가를 요구했습니다.
+- **의료 FM**: Google은 CT·MRI 3D와 디지털 병리 전체 슬라이드를 읽는 MedGemma 1.5(4B)와 의료 음성인식 MedASR을 공개했습니다(2026-01-13, [Google Research](https://research.google/blog/next-generation-medical-image-interpretation-with-medgemma-15-and-medical-speech-to-text-with-medasr/)). MedGemma 계열은 1,000만 회 이상 내려받아졌습니다(2026-09, [Google](https://blog.google/innovation-and-ai/technology/health/medgemma-global-healthcare/)). 'MedGemma 2'는 확인되지 않았습니다.
+- **벤치마크**: MedHELM(121개 과제) 승률은 기록 생성 0.74–0.85, 환자 소통 0.76–0.89로 높지만 행정·업무 흐름은 0.53–0.63으로 가장 낮습니다([Stanford HAI](https://hai.stanford.edu/news/measuring-what-medical-ai-can-actually-do)).
+
+**에이전트 AI: 행정이 먼저, 그러나 '끝까지 하는' 능력은 아직.**
+- **EHR 벤더 에이전트**: Epic은 Art·Emmie·Penny 세 에이전트와, 129개 AI 기능을 엮어 병원이 직접 에이전트를 만드는 Agent Factory를 냈습니다. 잘 된 에이전트는 고객 간 공유 라이브러리에 올립니다([Healthcare IT Today](https://healthcareittoday.com/2026/09/03/inside-epics-push-to-help-customers-build-their-own-ai-agents-using-agent-factory)). FTC가 Epic의 데이터 접근 관행을 조사한다는 보도도 있습니다(Reuters 인용, 보도 기준).
+- **실행 격차**: 짧은 과제는 풀리지만 긴 과제는 아직 절반을 못 끝냅니다([Stanford HAI](https://hai.stanford.edu/news/measuring-what-medical-ai-can-actually-do)).
+  - MedAgentBench(300과제): 최고 성공률이 2025년 70% 미만에서 2026년 90% 이상으로 올랐습니다.
+  - PhysicianBench(100과제, 평균 도구 호출 27회): 최고 GPT-5.5가 단일 시도 46%, 세 번 모두 성공 28%입니다. 최고 오픈 모델(DeepSeek V4-Pro)은 19%입니다.
+  - HealthAdminBench(사전승인·이의신청 등 135과제): Claude Opus 4.6이 종단 완료 36.3%입니다. GPT-5.4는 하위 과제 82.8%를 통과하고도 전체 완료는 26.7%입니다.
+  - 실패 유형: 실행 실패의 62%(GPT-5.5)·73%(Claude Opus 4.6)는 **올바른 조치를 기록에 적고도 EHR에 실제 오더를 넣지 않은** 경우입니다.
+- **보험자 대 병원**: 사전승인이 '에이전트 대 에이전트'로 넘어가는 제도 조건이 2027년에 갖춰집니다.
+  - CMS WISeR 모델은 2026-01부터 6개 주 전통 Medicare에서 AI 업체를 통한 사전승인을 시험합니다. 텍사스 초기 승인률은 약 62%, 의사 재검토 후 84%입니다(Washington Post 인용, 보도 기준). 의회에서 폐지 결의안이 나왔습니다([Georgetown CHIR](https://medicare.chir.georgetown.edu/new-cms-wiser-model-revives-concerns-of-prior-authorization-and-artificial-intelligence/)).
+  - CMS-0057-F에 따라 보험사는 **2027-01-01부터 사전승인 API**를 운영해야 합니다([CMS](https://www.cms.gov/cms-interoperability-and-prior-authorization-final-rule-cms-0057-f)). 기계가 읽을 수 있는 통로가 생기면 병원 에이전트와 보험사 에이전트가 직접 주고받는 구조가 됩니다.
+
+**피지컬 AI: 수술 로봇은 확산, 자율 수술은 연구실.**
+- **수술 로봇**: 시장은 커지지만 성장 속도는 둔화 조짐입니다.
+  - Intuitive는 2026년 3분기에 da Vinci 5를 315대 설치했고(전년 240대), da Vinci 설치 기반은 12,094대(+12%), 전 세계 da Vinci 시술은 약 14% 늘었습니다([Intuitive, Morningstar 게재](https://www.morningstar.com/news/globe-newswire/9849716/intuitive-announces-third-quarter-earnings)). da Vinci 5 누적 설치는 2,000대를 넘었습니다(실적 발표, 보도 기준).
+  - 미국 시술 증가율은 10%로 둔화했고(2분기 12%), 해외는 약 20%입니다(MassDevice 보도).
+  - 경쟁: J&J Ottava의 FDA De Novo 허가가 보도됐습니다(보도 기준). 2027년 경쟁 축은 로봇 팔보다 수술 영상·동작 데이터를 쓰는 AI 보조 기능입니다(추정).
+- **자율 수술**: Johns Hopkins 등의 SRT-H는 사람 조작 없이 돼지 적출 담낭 8건의 절제 단계를 수행했습니다(Science Robotics, 2025-07, [JHU](https://hub.jhu.edu/2025/07/09/robot-performs-first-realistic-surgery-without-human-help)). 2026-11 현재 자율 수술의 인체 임상은 확인되지 않습니다. UCSD는 원격조작 휴머노이드로 생체 전임상 최소침습 수술을 처음 했지만 임상은 수년 뒤라고 했습니다(2026-07, ACS 보도).
+- **병원 물류·간호 보조**: Diligent의 Moxi는 Serve Robotics에 인수된 뒤(2026-01, 2,900만 달러) Moxi 2.0 배치를 시작했지만, 배치 병원은 25곳 이상 수준에 머뭅니다([The Robot Report](https://www.therobotreport.com/five-years-operation-shape-diligent-robotics-rollout-moxi-2-0/), [Diligent](https://www.diligentrobots.com/blog/diligent-robotics-a-serve-robotics-company-begins-rolling-out-moxi-20)). 돌봄·재활 휴머노이드는 6.8–6.10절의 장기 과업 성공률(15–65%)과 안전 문제 때문에 2027년에도 시범 단계로 봅니다 (추정).
+
+#### 치과
+
+- **영상 판독**: 치과 AI는 2D 구내 방사선에서 파노라마·CBCT(3D)로 넓어졌습니다.
+  - Pearl의 Second Opinion은 파노라마 영상의 충치·치근단 병소·매복 사랑니 검출로 FDA 510(k) 허가를 받았고(2025-12 발표), CBCT용 3D 제품을 2026-09 미국·캐나다 일반 치과에 출시했습니다([Pearl](https://hellopearl.com/news/pearl-expands-dental-ai-capabilities-with-fda-clearance-for-panoramic-x-rays), [Oral Health Group](https://www.oralhealthgroup.com/dental-industry/timeline-five-fda-clearances-for-3d-dental-ai-as-pearl-launches-cbct-software-for-general-dentists-1003998767)).
+  - Overjet은 CBCT 해부·수복 구조를 찾고 재는 CBCT Assist 허가를 받았고(2025-12-05, 보도 기준), 영국 최대 치과 네트워크 mydentist와 제휴했습니다(2026-02, 보도 기준).
+- **보험 청구**: Overjet은 보험사 쪽 청구 심사 플랫폼과 함께, 진료실 쪽에서 보험 자격 확인·보장 한도 확인·보험사 전화까지 하는 'AI 보험 코디네이터' Ivy를 냈습니다(2026-10-19, [Overjet 보도자료](https://www.healthcaredive.com/press-release/20260922-overjet-introduces-ivy-an-ai-insurance-coordinator-and-the-first-of-its-ai/)). 의과의 사전승인과 같은 '양쪽 AI' 구도가 치과에서 먼저 굳고 있습니다.
+- **로봇**: Perceptive는 2024년 콜롬비아에서 OCT 영상과 AI 계획으로 크라운 삭제를 자동 수행했다고 발표했지만, FDA 허가와 상용 일정은 확인되지 않습니다([IEEE Spectrum](https://spectrum.ieee.org/robot-dentist)). 임플란트 식립 보조 로봇 Neocis Yomi는 이미 상용입니다.
+- **한국**: 오스템임플란트는 전자차트 OneClick에 진료 대화 음성 기록과 영상 기반 충치 위험 분석을 넣겠다고 밝혔습니다(2026-06, [헬로티](https://www.hellot.net/mobile/article.html?no=113124)). 국내 치과는 별도 AI 제품보다 **장비·차트 회사의 내장 기능**으로 AI가 들어옵니다. 덴티움·메디트의 2026년 AI 판독·생성형 설계 발표는 찾지 못했습니다.
+
+#### 제조사·규제·지불
+
+- **FDA**: 기기 목록은 아직 LLM 기반 기기를 따로 표시하지 않고, 향후 표시 방법을 만들겠다고 합니다([FDA](https://www.fda.gov/medical-devices/digital-health-center-excellence/artificial-intelligence-enabled-medical-devices)). 2027년 첫 생성형 판독문 허가가 나오면 그 표시가 시작될 가능성이 큽니다.
+- **EU**: 2026-05-07 디지털 옴니버스 잠정 합의로 의료기기 내장 AI의 고위험 의무는 2027-08-02에서 **2028-08-02**로 미뤄졌고, MDR·IVDR 기기는 고위험 범위에 남았습니다. 2028 일정도 위임법·조화표준 준비에 달려 있습니다([Taylor Wessing](https://www.taylorwessing.com/en/international-life-sciences-newsletter/life-sciences-legal-lens-vol-2/update-ai-enabled-medical-devices-and-ivds-confirmed-as-high-risk)). 업계는 2029년을 요구했습니다.
+- **한국 정책**: 정부는 'AI 기본의료 전략'(2026-08-06 국가정책조정회의)으로 책임의료기관 72곳을 국가 GPU 기반 공공의료 AI 플랫폼에 연결합니다(2026 하반기 9곳, **2027년 30곳**, 2029년 72곳). 한국형 의료 AI 모델 개발은 2027년 본격 시작합니다([뉴시스](https://mobile.newsis.com/view/NISX20260806_0003738413)).
+- **한국 수가**: 복지부 데이터진흥과장은 "사용량에 비례한 수가를 적용하지 않겠다"며 임상 성과와 기관의 보안·표준화·거버넌스 요건을 보는 **기관 단위·성과 기반 수가** 구상을 밝혔습니다. 시행 시점은 나오지 않았고, AI 활용 바우처는 예산 확보 전입니다(2026-10-23, [데일리메디](https://dailymedi.com/news/news_view.php?wr_id=941829)). 현재 AI 기술은 대부분 한시적 비급여입니다.
+- **한국 기업**: 성장은 이어지지만 흑자 전환은 아직입니다.
+  - 루닛: 3분기 매출 222억 원(+13–14%), 영업손실 107억 원(-50%), EBITDA 손실 35억 원(14분기 만의 최소)입니다. 2026-01 유상증자 2,115억 원으로 CB 상환에 대응했고, 2026-11-04 477억 원 CB를 새로 발행하기로 했습니다([데일리팜](https://dailypharm.com/user/news/344509), [MTN](https://news.mtn.co.kr/article/2026111716335234175)).
+  - 뷰노: 3분기 누적 매출 178억 원(-35%), 누적 영업손실 103억 원이고 매출의 87%가 딥카스입니다. 2025년 3분기 흑자는 사업 양도 대금 영향이었습니다.
+  - 딥카스: 2·3차 병원 180곳·6만 5천 병상에서 쓰이고(2026-06), 일반병동 16만 명 전후 비교에서 원내 심정지 21% 감소를 내세웁니다(회사 발표, [머니투데이](https://www.mt.co.kr/article/2026091814250287978)). 신의료기술 평가 결과(2026년 4분기 예정)가 의료 AI 첫 신의료기술 인정이 될지, 핵심 매출 위험이 될지 갈립니다.
+  - 딥노이드·제이엘케이·코어라인소프트의 2026년 3분기 실적은 이번에 확인하지 못했습니다.
+
+#### 의료진·연구자
+
+- **사용률**: 개인 사용은 빠른데 기관 도입은 느립니다.
+  - 미국: AMA 2026 조사(2026-01–02)에서 의사 81%가 AI를 쓰며(2023년 38%), 1인당 용도는 2.3개입니다. 가장 흔한 용도는 연구·진료지침 요약(39%)과 퇴원 안내·경과기록 작성(30%)입니다. 70%는 번아웃 업무 자동화를 기대하지만 88%가 술기 상실을 걱정합니다([AMA](https://ama-assn.org/press-center/ama-press-releases/ama-ai-usage-among-doctors-doubles-confidence-technology-grows)).
+  - 한국: 메디게이트 조사에서 의원·병원 의사의 최근 한 달 이용률이 31%에서 63%로 올랐고, 주 용도는 의약품 정보 검색입니다(2026-07, 보도 기준). 의료기관 시스템에 도입해 쓰는 비율은 20% 미만이라는 조사도 있습니다(보도 기준).
+  - 간호: Microsoft는 간호사용 Dragon Copilot을 미국에서 2025-12 정식 출시했습니다. 간호 기록은 2027년 스크라이브의 다음 확산처입니다(추정).
+- **탈숙련 근거**: AI 보조 대장내시경 도입 뒤 AI 없이 한 검사의 선종 발견율이 28.4%에서 22.4%로 떨어졌다는 관찰 연구가 있습니다(Lancet Gastroenterol Hepatol 2025, [Warwick](https://wrap.warwick.ac.uk/id/eprint/191005)). 후향적 전후 비교이고 반대 결과도 있어, 2027년에는 교차 무작위 연구가 늘 것입니다 (추정).
+- **책임**: 보험사 AI(nH Predict) 거절을 다투는 Lokken 대 UnitedHealth 사건은 집단 인정 신청이 2027-02, 재판 준비일이 2028-02로 밀렸습니다([법원 일정 명령, Georgetown 소송 추적](https://litigationtracker.law.georgetown.edu/wp-content/uploads/2023/11/Estate-of-Gene-B.-Lokken-The-et-al-v.-UnitedHealth-Group-Inc.-et-al_2026.09.18_SCHEDULING-ORDER.pdf)). 2027년 안에 의료 AI 책임에 관한 본안 판결이 나오기는 어렵습니다. 의료 AI 책임·보험은 21장을 봅니다.
+
+#### 2027 전망
+
+| 전망 | 가능성 · 확률(±불확도) |
+|---|---|
+| FDA가 영상 전체를 읽고 판독문(소견 문장) 초안을 생성하는 생성형 AI 기기를 처음 허가(510(k)·De Novo) | 중간 · 50% (±20) · 근거 [STAT](https://www.statnews.com/2026/06/25/radiology-generative-ai-cognita-aidoc-fda-breakthrough-designation/), [Aidoc](https://www.aidoc.com/about/news/aidoc-receives-fda-breakthrough-device-designation-for-ai-that-drafts-radiology-reports/) · 반론 [RSNA](https://www.rsna.org/-/media/Files/RSNA/government-relations/RSNACommentsFDAGenAI101926.pdf) |
+| 미국 Epic 사용 병원의 앰비언트 AI 도입률이 후속 조사에서 80% 이상으로 집계 | 중간 · 60% (±20) · 근거 [TechTarget(AJMC)](https://www.techtarget.com/searchHealthIT/news/366638553/Two-thirds-of-Epic-hospitals-have-adopted-ambient-AI-tools), [AMA](https://ama-assn.org/press-center/ama-press-releases/ama-ai-usage-among-doctors-doubles-confidence-technology-grows) |
+| 미국 대형 보험사가 2027-01 사전승인 API를 가동하고, 병원 측 AI 에이전트가 이 API로 사전승인을 자동 제출하는 상용 사례가 공표('에이전트 대 에이전트') | 높음 · 70% (±15) · 근거 [CMS](https://www.cms.gov/cms-interoperability-and-prior-authorization-final-rule-cms-0057-f), [Healthcare IT Today](https://healthcareittoday.com/2026/09/03/inside-epics-push-to-help-customers-build-their-own-ai-agents-using-agent-factory) |
+| CMS WISeR(AI 활용 사전승인) 모델이 폐지되지 않고 2027년에도 운영 | 중간 · 60% (±20) · 근거 [CMS](https://www.cms.gov/files/document/wiser-model-rfa.pdf) · 반론 [Georgetown CHIR](https://medicare.chir.georgetown.edu/new-cms-wiser-model-revives-concerns-of-prior-authorization-and-artificial-intelligence/) |
+| 의료 원무 에이전트 벤치마크(HealthAdminBench류)에서 종단 과업 완료율 60% 이상 공개 | 중간 · 50% (±20) · 근거 [Stanford HAI](https://hai.stanford.edu/news/measuring-what-medical-ai-can-actually-do) |
+| 사람 조작 없이 수술 단계를 수행하는 자율 수술 로봇의 첫 인체 임상 착수가 공표 | 낮음 · 20% (±15) · 근거 [JHU](https://hub.jhu.edu/2025/07/09/robot-performs-first-realistic-surgery-without-human-help) |
+| Intuitive da Vinci 5 누적 설치가 2027년 말 3,000대 이상 | 높음 · 80% (±10) · 근거 [Intuitive](https://www.morningstar.com/news/globe-newswire/9849716/intuitive-announces-third-quarter-earnings) |
+| 미국 치과에서 AI 보험 코디네이터·청구 에이전트를 내놓은 업체가 3곳 이상으로 늘고, 판독 AI 결과가 청구 심사 생략·자동 승인에 쓰이는 사례가 확대 | 높음 · 70% (±15) · 근거 [Overjet](https://www.healthcaredive.com/press-release/20260922-overjet-introduces-ivy-an-ai-insurance-coordinator-and-the-first-of-its-ai/), [Pearl](https://hellopearl.com/news/pearl-expands-dental-ai-capabilities-with-fda-clearance-for-panoramic-x-rays) |
+| 국내 치과 장비·차트 업체가 식약처 허가를 받은 치과 영상 판독 AI를 전자차트에 상용 탑재 | 중간 · 55% (±20) · 근거 [헬로티](https://www.hellot.net/mobile/article.html?no=113124) |
+| 복지부가 의료 AI 성과 기반(기관 단위) 수가 시범사업이나 건정심 안건을 2027년에 공식화 | 중간 · 45% (±20) · 근거 [데일리메디](https://dailymedi.com/news/news_view.php?wr_id=941829), [뉴시스](https://mobile.newsis.com/view/NISX20260806_0003738413) |
+| 공공의료 AI 고속도로가 목표대로 2027년 말 책임의료기관 30곳 이상 연결 | 중간 · 55% (±20) · 근거 [뉴시스](https://mobile.newsis.com/view/NISX20260806_0003738413) |
+| 루닛·뷰노 중 한 곳 이상이 2027년 연간 영업흑자 | 낮음 · 25% (±15) · 근거 [데일리팜](https://dailypharm.com/user/news/344509) · 반론 [MTN](https://news.mtn.co.kr/article/2026111716335234175) |
+| EU가 의료기기 내장 AI의 고위험 의무 적용(2028-08)을 다시 미루거나 의료기기를 AI Act 범위에서 빼는 결정을 2027년에 내림 | 낮음 · 25% (±15) · 근거 [Taylor Wessing](https://www.taylorwessing.com/en/international-life-sciences-newsletter/life-sciences-legal-lens-vol-2/update-ai-enabled-medical-devices-and-ivds-confirmed-as-high-risk), [DLA Piper](https://www.dlapiper.com/en-gb/insights/blogs/cortex-life-sciences-insights/2025/digital-omnibus-and-ai-act-updates-key-implications-for-medtech) |
+| 미국에서 의료 AI의 진단·급여 결정 오류 책임을 다룬 주요 사건에 본안 판결(배심 평결 포함)이 나옴 | 낮음 · 20% (±15) · 근거 [Lokken 일정 명령](https://litigationtracker.law.georgetown.edu/wp-content/uploads/2023/11/Estate-of-Gene-B.-Lokken-The-et-al-v.-UnitedHealth-Group-Inc.-et-al_2026.09.18_SCHEDULING-ORDER.pdf) |
+
+#### 이슈와 위험
+
+1. **'적어 놓고 실행 안 함'**: 에이전트 실패의 60–70%가 올바른 판단을 하고도 오더를 넣지 않은 경우입니다. 의료에서는 누락이 곧 사고이므로, 에이전트 감사 로그는 '기록'과 '실행'을 따로 검증해야 합니다.
+2. **보험자·병원 AI 군비 경쟁**: 사전승인 자동화가 양쪽에서 동시에 진행되면 처리 속도는 빨라져도 거절·이의신청 총량이 늘 수 있습니다. WISeR 초기 승인률(62%)이 MA(90% 이상)보다 낮다는 보도가 이 위험을 보여 줍니다.
+3. **탈숙련·자동화 편향**: 의사 88%가 우려합니다. 판독문 초안이 정착하면 전공의 수련에서 '처음부터 읽는' 경험이 줄어듭니다.
+4. **도입 격차**: 비영리 병원 70% 대 영리 29%, 도시 65% 대 농촌 54%. 한국도 상급종합병원과 지역 병원 사이에 같은 격차가 생깁니다.
+5. **허가와 지불의 단절**: 한국은 허가가 빨라도(생성형 기기 세계 최초급) 수가가 없어 기업이 적자를 냅니다. 딥카스 평가처럼 한 건의 결정이 기업 존속을 좌우합니다.
+6. **EHR 집중**: 에이전트 장터가 EHR 벤더 안에 생기면 데이터 접근과 경쟁이 한 회사의 정책에 달립니다(FTC 조사 보도).
+7. **평가와 현실의 간극**: 시험형 벤치마크는 포화됐는데 장기 과업은 절반 이하입니다. 허가·구매 기준이 정답률 점수에 머물면 현장 실패를 걸러내지 못합니다.
+
+#### 한국 시사점과 국가인공지능전략위원회 안건
+
+1. **성과 기반 수가를 2027년에 시범으로**: 복지부 구상(기관 단위·성과 기반)을 공공의료 AI 고속도로 30곳에서 먼저 시험합니다. 기록 자동화·환자안전(조기경보)처럼 행위로 나누기 어려운 AI부터 묶습니다(8장 제언과 연결).
+2. **의료 에이전트 실행 검증 기준**: 식약처 LLM 가이드라인(6.12절)을 넘어, EHR에서 오더·청구를 '실행'하는 에이전트의 권한·로그·사람 확인 지점을 정한 시험 기준을 만듭니다. 심평원 청구·사전심사 전산과의 API 표준도 함께 정합니다.
+3. **치과를 빠른 실증 분야로**: 치과는 영상 표준화가 쉽고 비급여 비중이 높아 AI 판독·청구 자동화 효과를 빨리 볼 수 있습니다. 국내 장비사의 전자차트 내장 AI에 식약처 허가·실사용 성능 보고를 묶습니다.
+
+- **위원회 안건(제8조 기준)**: 의료 AI 성과 기반 수가 시범사업(7호 산업·공공 활용)과 의료 에이전트 실행 검증·고영향 AI 요건 연계(10호)를 복지부·식약처·과기정통부 공동 과제로 심의합니다.
+
+> **확인 필요**: AJMC 원문(도입률 62.6%는 TechTarget 보도로 확인, 2025-06 기준)과 AMA 81%·72% 수치 차이(정의 차이로 추정). Dragon Copilot 10만 명은 회사 발표. WISeR 텍사스 승인률은 Washington Post 인용 보도. J&J Ottava De Novo 허가와 UCSD 원격 휴머노이드 수술은 보도로만 봤습니다. Overjet CBCT Assist 허가일, Neocis Yomi 상용 현황, 메디게이트 한국 의사 조사 원문은 확인하지 못했습니다. 루닛 3분기 매출 증가율은 기사별로 13–14%로 다릅니다. 'AI 기본의료 전략' 발표일은 6.4절(2026-07)과 뉴시스(2026-08-06)가 다르니 맞춰야 합니다. 딥카스 신의료기술 평가 결과(2026-11 예정)는 기준일 현재 확인되지 않았습니다. 2026년 자율 수술 인체 임상, MedGemma 2, 덴티움·메디트 AI 발표는 찾지 못했습니다.
+
 
 
 
@@ -4899,7 +5020,7 @@ AI 오용 전반(CBRN·테러·시험 부정·탈옥 모델·오정렬)은 20장
 
 ### 전망 근거 자료
 
-본문 2027 전망 460건 중 **397건**에 수집 자료를 근거로 연결했습니다(근거 링크는 각 전망의 확률 옆). 검토자 4인(AI 보조)이 후보 자료의 내용을 읽고 전망을 직접 뒷받침하는 자료만 골랐고, 맞는 자료가 없으면 비워 두었습니다. 일부 자료는 본문 없이 제목만 수집돼 제목 기준으로 연결했습니다. '반론'은 전망과 반대 방향의 근거입니다.
+본문 2027 전망 474건 중 **411건**에 수집 자료를 근거로 연결했습니다(근거 링크는 각 전망의 확률 옆). 검토자 4인(AI 보조)이 후보 자료의 내용을 읽고 전망을 직접 뒷받침하는 자료만 골랐고, 맞는 자료가 없으면 비워 두었습니다. 일부 자료는 본문 없이 제목만 수집돼 제목 기준으로 연결했습니다. '반론'은 전망과 반대 방향의 근거입니다.
 
 | 근거 자료 | 날짜 | 연결된 전망 수 |
 |---|---|---|
@@ -5246,7 +5367,7 @@ AI 오용 전반(CBRN·테러·시험 부정·탈옥 모델·오정렬)은 20장
 ## 부록: 2027 AI 전망 자료별 상세 분석
 
 > 각 자료를 수집·저장한 뒤 추출 텍스트를 읽고 정리했습니다. 기준일 2026-11-26. '요약·보도자료만'은 원문이 유료이거나 자동 접근이 막혀 공식 보도자료·언론 보도로 대신한 자료입니다.
-수록 자료 873건.
+수록 자료 891건.
 
 
 ### A. 글로벌 리서치·컨설팅 (14건)
@@ -11652,7 +11773,7 @@ S-1 공개 후 지배구조 논란으로 IPO를 철회하고 CEO에서 사임함
 성희롱 신고를 조사하는 과정에서 경비 보고서 부정확성이 드러나 CEO직을 사임함(성희롱 자체는 인정되지 않음)
 
 
-### AM. 2027 공백 보강(거시·반발·광고·자율주행·글로벌 사우스·아동·책임·의료·과세) (212건)
+### AM. 2027 공백 보강(거시·반발·광고·자율주행·글로벌 사우스·아동·책임·의료·과세) (230건)
 
 ##### Morgan Stanley (ANI·Tribune 보도) — China's humanoid robot investment set to accelerate, selective commercial use expected in 2027
 
@@ -11822,6 +11943,20 @@ GPT-6.2 Astra·Sol 출시. 로봇 벤치마크는 없고 AA-3D Elo(Astra 1,318, 
 
 - **근거·방법**: 회사 발표.
 - **한국 시사점**: 국내 모델·로봇 기업의 점수는 없음. 공개 실물 로봇 평가대(국가 구매 휴머노이드 등) 구축 근거.
+
+##### MTN — 사업 리스크에 재무 부담…의료 AI '성장통'
+
+발표 2026-11-17· 관점 신중· 원문 전체· 신뢰도 medium  
+출처: <https://news.mtn.co.kr/article/2026111716335234175>
+
+루닛 3분기 매출 222억 원·영업손실 107억 원, CB 상환 부담과 477억 원 CB 발행. 뷰노 누적 매출 178억 원(-35%), 영업손실 103억 원, 딥카스 평가 결과 위험.
+
+**핵심 내용**
+
+- 국내 의료 AI 흑자 전환 지연 _(2027)_
+
+- **근거·방법**: 공시 기반 보도
+- **한국 시사점**: 외부 자금 의존 축소 과제
 
 ##### Moody's — 2027 Global Sovereigns Outlook: Stable as steady growth and AI offset higher rates and geopolitical risks
 
@@ -12086,6 +12221,20 @@ Genie 4 연구 프리뷰 공개. 오디오 동시 생성, 실행 중 장면 수�
 
 - **근거·방법**: 시뮬 벤치마크 5종
 
+##### 데일리메디 — 의료AI 수가, 사용량보다 임상 성과 기반 보상
+
+발표 2026-10-25· 관점 중립· 원문 전체· 신뢰도 medium  
+출처: <https://dailymedi.com/news/news_view.php?wr_id=941829>
+
+복지부 데이터진흥과장이 사용량 비례 수가 대신 임상 성과와 기관 요건(보안·표준화·거버넌스)을 보는 기관 단위 수가 구상을 밝힘. 시행 시점 미정, 바우처 예산 미확보.
+
+**핵심 내용**
+
+- 성과 기반 AI 수가 시범 _(2027)_
+
+- **근거·방법**: 학회 발언 보도
+- **한국 시사점**: AI 수가 설계 방향
+
 ##### Haggai Roitman — The Hitchhiker's Guide to System 1 Models: Fast Decision-Making Beyond LLMs (arXiv 2610.33775)
 
 발표 2026-10-24· 관점 중립· 요약·보도자료만· 신뢰도 medium  
@@ -12174,6 +12323,34 @@ Tesla가 프리몬트에서 Optimus '초기 생산'을 시작했고 증산은 �
 Jev 1.14에서 경계 상자 하나를 돌려주는 box 타입을 신설하고 이미지 입력을 옵트인 실험 기능('danger zone')으로 제공. 회사는 이미지 성능이 텍스트보다 낮다고 경고하고 공개 벤치마크 대신 내부 평가 방법을 공유하겠다고 밝힘.
 
 - **근거·방법**: 회사 변경 기록 요약 보도
+
+##### Stanford HAI — Measuring what medical AI can actually do
+
+발표 2026-10-19· 관점 신중· 원문 전체· 신뢰도 high  
+출처: <https://hai.stanford.edu/news/measuring-what-medical-ai-can-actually-do>
+
+MedHELM·MedAgentBench·PhysicianBench·HealthAdminBench 결과를 정리. MedAgentBench는 90%+로 올랐지만 장기 과업 PhysicianBench 최고 46%, 원무 HealthAdminBench 종단 완료 36.3%. 실행 실패의 62–73%는 올바른 조치를 기록만 하고 오더를 넣지 않은 경우.
+
+**핵심 내용**
+
+- 의료 에이전트 평가의 중심이 실행 완료율·안전으로 이동 _(2027)_
+
+- **근거·방법**: Stanford 연구진 벤치마크 결과 요약
+- **한국 시사점**: 의료 에이전트 실행 검증 기준 마련 필요
+
+##### Overjet — Overjet Introduces Ivy, an AI Insurance Coordinator
+
+발표 2026-10-19· 관점 낙관· 원문 전체· 신뢰도 medium  
+출처: <https://www.healthcaredive.com/press-release/20260922-overjet-introduces-ivy-an-ai-insurance-coordinator-and-the-first-of-its-ai/>
+
+치과 진료실용 AI 보험 코디네이터. 자격·보장 확인, 보험사 전화, 환자 비용 추정, ReviewPASS 연동으로 수동 심사 생략 여부 확인.
+
+**핵심 내용**
+
+- 치과 청구 에이전트 확산 _(2027)_
+
+- **근거·방법**: 회사 보도자료
+- **한국 시사점**: 국내 치과 청구 자동화 참고
 
 ##### Light Reading — SoftBank, Nokia target 2027 for commercial AI-RAN trial in Japan
 
@@ -12399,6 +12576,20 @@ CDRH FY2027 지침 의제 보도. A 목록에 AI 기기 소프트웨어 수명�
 
 - **근거·방법**: 서비스 개시 도시 집계와 외삽
 
+##### Intuitive Surgical — Intuitive Announces Third Quarter 2026 Earnings
+
+발표 2026-10· 관점 낙관· 원문 전체· 신뢰도 high  
+출처: <https://www.morningstar.com/news/globe-newswire/9849716/intuitive-announces-third-quarter-earnings>
+
+3분기 da Vinci 5 315대 설치(전년 240대), da Vinci 설치 기반 12,094대, 전 세계 시술 약 14%·Ion 31% 증가.
+
+**핵심 내용**
+
+- da Vinci 5 누적 3,000대 이상 _(2027)_
+
+- **근거·방법**: 회사 실적 발표
+- **한국 시사점**: 수술 로봇 데이터·AI 보조 기능 경쟁 대비
+
 ##### 노컷뉴스 — 트렌드 코리아 2027 10대 키워드
 
 발표 2026-09-30· 관점 중립· 요약·보도자료만· 신뢰도 medium  
@@ -12486,6 +12677,20 @@ CDRH FY2027 지침 의제 보도. A 목록에 AI 기기 소프트웨어 수명�
 
 - **근거·방법**: Microsoft 텔레메트리 기반 추정
 
+##### 머니투데이 — 심정지 21% 뚝…의료AI 첫 신의료기술 등재 눈앞, 뷰노
+
+발표 2026-09-20· 관점 낙관· 원문 전체· 신뢰도 medium  
+출처: <https://www.mt.co.kr/article/2026091814250287978>
+
+딥카스가 병원 180곳·6.5만 병상에서 쓰이며, 3개 병원 16만 명 전후 비교에서 원내 심정지 21%·사망률 15% 감소(회사 발표). 신의료기술 평가 결과 2026년 4분기 예상.
+
+**핵심 내용**
+
+- 의료 AI 첫 신의료기술 인정 _(2027)_
+
+- **근거·방법**: 회사 인터뷰
+- **한국 시사점**: AI 신의료기술 평가 선례
+
 ##### RoboKrunch — Jev for Physical AI (GitHub)
 
 발표 2026-09-19· 관점 중립· 원문 전체· 신뢰도 low  
@@ -12512,6 +12717,20 @@ System One 모델과 RLCD를 해설. Jev의 confidence 값이 정답일 확률 �
 Minecraft·주행 시뮬·드론 시뮬 등 결정 계층 데모 소개. 실하드웨어·실센서·안전 실패 모드에서는 시험되지 않았다고 명시.
 
 - **근거·방법**: 데모 보도
+
+##### U.S. District Court, D. Minn. (Georgetown Litigation Tracker) — Estate of Lokken v. UnitedHealth Group — Scheduling Order
+
+발표 2026-09-18· 관점 중립· 원문 전체· 신뢰도 high  
+출처: <https://litigationtracker.law.georgetown.edu/wp-content/uploads/2023/11/Estate-of-Gene-B.-Lokken-The-et-al-v.-UnitedHealth-Group-Inc.-et-al_2026.09.18_SCHEDULING-ORDER.pdf>
+
+보험사 AI(nH Predict) 급여 거절 소송의 일정 재조정. 집단 인정 신청 2027-02-16, 처분적 신청 2027-09-27, 재판 준비 2028-02-07.
+
+**핵심 내용**
+
+- 2027년 안에 본안 판결 가능성 낮음 _(2027)_
+
+- **근거·방법**: 법원 명령
+- **한국 시사점**: 의료 AI 책임 판단의 해외 선례 지연
 
 ##### Forrester — Predictions 2027: AI Slingshots Environmental Sustainability From Promises To Action
 
@@ -12626,6 +12845,20 @@ Jev를 '비정형 상태 입력, 타입이 정해진 확률적 결정 출력'의
 
 - **근거·방법**: 협회 제안
 - **한국 시사점**: 라이선스 자동 점검 필요
+
+##### Healthcare IT Today — Inside Epic's Push to Help Customers Build Their Own AI Agents Using Agent Factory
+
+발표 2026-09-03· 관점 낙관· 요약·보도자료만· 신뢰도 medium  
+출처: <https://healthcareittoday.com/2026/09/03/inside-epics-push-to-help-customers-build-their-own-ai-agents-using-agent-factory>
+
+Epic Agent Factory가 129개 AI 기능을 엮어 고객이 에이전트를 만들고 공유 라이브러리에 올리게 함. Art·Emmie·Penny 에이전트.
+
+**핵심 내용**
+
+- EHR 벤더가 의료 에이전트 장터의 관문 _(2027)_
+
+- **근거·방법**: 업계 매체 취재
+- **한국 시사점**: 국내 EMR 업체의 에이전트 플랫폼 전략
 
 ##### 행정안전부 (보도: 더팩트) — 행안부 내년 예산 84.7조…AI 민원플랫폼 203억
 
@@ -12832,6 +13065,20 @@ Unitree가 커촹반 상장가 150.8위안, 기업가치 약 610억 위안으로
 - **근거·방법**: 공무원 설문 222명
 - **한국 시사점**: 업무 재설계와 책임 규칙 우선
 
+##### 뉴시스 — 복지부 등 범정부 AI 기본의료 전략 발표
+
+발표 2026-08-06· 관점 낙관· 원문 전체· 신뢰도 medium  
+출처: <https://mobile.newsis.com/view/NISX20260806_0003738413>
+
+책임의료기관 72곳을 국가 GPU 기반 공공의료 AI 플랫폼에 연결(2026 하반기 9곳, 2027 30곳, 2029 72곳). 한국형 의료 AI 모델 2027 본격 개발.
+
+**핵심 내용**
+
+- 공공의료 AI 고속도로 30곳 _(2027)_
+
+- **근거·방법**: 정부 발표 보도
+- **한국 시사점**: 지역 공공병원 AI 기반
+
 ##### Bloomberg Law — Uber and Wayve Win Licenses for Supervised Robotaxis in London
 
 발표 2026-08-05· 관점 중립· 요약·보도자료만· 신뢰도 medium  
@@ -13023,6 +13270,20 @@ AI 관련 투자가 2025년 미국 실질 GDP 성장에 약 1%p 기여했지만 
 Figure 03을 스파턴버그 공장 물류 서열 작업에 투입(BMW 최초의 휴머노이드 물류 배치). Figure 02는 2025년 차체 공장에서 X3 3만 대 이상 생산에 참여. 대수·계약 조건 비공개.
 
 - **근거·방법**: 회사 보도자료
+
+##### STAT News — FDA grants breakthrough designation to generative AI radiology report tools (Cognita, Aidoc)
+
+발표 2026-06-25· 관점 중립· 요약·보도자료만· 신뢰도 medium  
+출처: <https://www.statnews.com/2026/06/25/radiology-generative-ai-cognita-aidoc-fda-breakthrough-designation/>
+
+흉부 X선 전체를 읽고 판독문 초안을 생성하는 Cognita(2026-03)·Aidoc First Read(2026-06)가 FDA 혁신 의료기기 지정. 허가는 아직 없음. 기존 검증·규제 틀에 도전.
+
+**핵심 내용**
+
+- FDA 첫 생성형 판독문 기기 허가 여부 _(2027)_
+
+- **근거·방법**: 기자 취재(유료 기사 일부)
+- **한국 시사점**: 한국은 2026-04 유사 기기 허가로 앞섬
 
 ##### NAVER Cloud — Seeing and hearing the field for ourselves: building our own encoders and HyperCLOVA X SEED 4B
 
@@ -13263,6 +13524,20 @@ Snapdragon 8 Gen 3·llama.cpp에서 prefill은 CPU가 NPU보다 최대 1.6배 �
 
 - **근거·방법**: 논문
 
+##### Taylor Wessing — Update: AI-enabled medical devices and IVDs confirmed as high-risk
+
+발표 2026-05· 관점 중립· 요약·보도자료만· 신뢰도 medium  
+출처: <https://www.taylorwessing.com/en/international-life-sciences-newsletter/life-sciences-legal-lens-vol-2/update-ai-enabled-medical-devices-and-ivds-confirmed-as-high-risk>
+
+디지털 옴니버스 잠정 합의(2026-05-07)로 부속서 I 내장 고위험 AI 의무가 2028-08-02로 연기, MDR·IVDR 기기는 고위험 범위에 남음.
+
+**핵심 내용**
+
+- 2028 일정 유지 여부 _(2027)_
+
+- **근거·방법**: 로펌 해설
+- **한국 시사점**: 국내 기업 EU 인증 일정 계획
+
 ##### 1X Technologies — 1X Opens NEO Factory
 
 발표 2026-04-30· 관점 낙관· 요약·보도자료만· 신뢰도 medium  
@@ -13462,6 +13737,20 @@ Ethos-U85를 트랜스포머 워크로드용 임베디드 NPU로 소개하고, �
 - **근거·방법**: 개발사 모델 카드
 - **한국 시사점**: 소형 모델 성능 기준선과 밀도 법칙 추격 속도의 실증 사례
 
+##### American Medical Association — AMA: AI usage among doctors doubles as confidence in technology grows (2026 Physician Survey)
+
+발표 2026-03· 관점 중립· 요약·보도자료만· 신뢰도 high  
+출처: <https://ama-assn.org/press-center/ama-press-releases/ama-ai-usage-among-doctors-doubles-confidence-technology-grows>
+
+2026-01~02 조사에서 의사 81%가 AI 사용(2023년 38%), 1인당 용도 2.3개. 70%가 번아웃 업무 자동화 기대, 88%가 술기 상실 우려.
+
+**핵심 내용**
+
+- 의사 AI 사용 보편화, 탈숙련 우려 확대 _(2027)_
+
+- **근거·방법**: 미국 의사 설문(약 1,300명)
+- **한국 시사점**: 국내 의사 AI 사용 실태의 정기 조사 필요
+
 ##### NVIDIA 외 — World Action Models are Zero-shot Policies (DreamZero)
 
 발표 2026-02-17· 관점 낙관· 원문 전체· 신뢰도 medium  
@@ -13517,6 +13806,20 @@ Ethos-U85를 트랜스포머 워크로드용 임베디드 NPU로 소개하고, �
 160억 달러를 기업가치 1,260억 달러에 유치했습니다. 6개 대도시권에서 주간 유료 탑승 40만 건 이상, 누적 2,000만 건 이상이며 2026년 도쿄·런던 포함 20곳 이상 추가를 계획했습니다.
 
 - **근거·방법**: 회사 공지
+
+##### TechTarget (AJMC 연구 보도) — Two-thirds of Epic hospitals have adopted ambient AI tools
+
+발표 2026-02-02· 관점 중립· 원문 전체· 신뢰도 medium  
+출처: <https://www.techtarget.com/searchHealthIT/news/366638553/Two-thirds-of-Epic-hospitals-have-adopted-ambient-AI-tools>
+
+AJMC 횡단 연구 보도. 6,500여 병원 중 Epic 사용 42.4%, 그중 62.6%가 앰비언트 AI 도입(2025-06). 도시 64.7%·농촌 54.3%, 비영리 70.2%·영리 28.8%.
+
+**핵심 내용**
+
+- 앰비언트 AI 도입률 상승과 도입 격차 쟁점화 _(2027)_
+
+- **근거·방법**: AHA 조사와 Epic 도입 데이터 연결 분석
+- **한국 시사점**: 지역·소형 병원 도입 격차 대비
 
 ##### Insurance Business — Chaucer, Armilla bet big on standalone AI coverage as reinsurers struggle to keep pace
 
@@ -13593,6 +13896,20 @@ Global Risks Perception Survey 기반 연례 위험 보고서입니다. 2026년 
 
 - **근거·방법**: 전 세계 리더·전문가 1,300명 이상 설문(보도 기준)
 - **한국 시사점**: 한국은 지경학 대립(미중 통제)과 AI 위험이 겹치는 위치. 와일드카드 집계의 배경 자료
+
+##### Google Research — Next generation medical image interpretation with MedGemma 1.5 and medical speech to text with MedASR
+
+발표 2026-01-13· 관점 낙관· 원문 전체· 신뢰도 high  
+출처: <https://research.google/blog/next-generation-medical-image-interpretation-with-medgemma-15-and-medical-speech-to-text-with-medasr/>
+
+MedGemma 1.5 4B가 CT·MRI 3D와 병리 전체 슬라이드 해석을 지원하고, 의료 음성인식 MedASR 공개.
+
+**핵심 내용**
+
+- 오픈 의료 FM 기반 병원 자체 개발 확산 _(2027)_
+
+- **근거·방법**: 기술 블로그·기술보고서
+- **한국 시사점**: 한국형 의료 AI 모델 개발(2027)의 비교 기준
 
 ##### OpenAI — Introducing ChatGPT Health
 
@@ -13684,6 +14001,34 @@ xArm7·MuJoCo 사과 옮기기에서 Jev 1.13·GPT-6 Astra(low)·GPT-4.1 mini를
 
 - **근거·방법**: 예측 시장 가격(소규모)
 - **한국 시사점**: 한미 AI 협력 창구가 정부 중심으로 바뀔 가능성
+
+##### Georgetown CHIR — New CMS WISeR Model Revives Concerns of Prior Authorization and Artificial Intelligence
+
+발표 2026· 관점 신중· 요약·보도자료만· 신뢰도 medium  
+출처: <https://medicare.chir.georgetown.edu/new-cms-wiser-model-revives-concerns-of-prior-authorization-and-artificial-intelligence/>
+
+2026-01 6개 주에서 시작한 WISeR(AI 활용 사전승인) 분석. 텍사스 초기 승인 약 62%, 의사 재검토 후 84%(Washington Post 인용). 폐지 법안·결의안 소개.
+
+**핵심 내용**
+
+- WISeR 지속 여부 _(2027)_
+
+- **근거·방법**: 정책 분석과 언론 보도 인용
+- **한국 시사점**: 보험자 AI 심사의 투명성 기준 필요
+
+##### Pearl — Pearl Expands Dental AI Capabilities with FDA Clearance for Panoramic X-Rays
+
+발표 2025-12-18· 관점 낙관· 원문 전체· 신뢰도 high  
+출처: <https://hellopearl.com/news/pearl-expands-dental-ai-capabilities-with-fda-clearance-for-panoramic-x-rays>
+
+Second Opinion이 파노라마 영상의 충치·치근단 병소·매복 사랑니 검출로 FDA 510(k) 허가.
+
+**핵심 내용**
+
+- 치과 판독 AI의 파노라마·CBCT 확장 _(2027)_
+
+- **근거·방법**: 회사 발표
+- **한국 시사점**: 국내 치과 영상 AI 허가 확대 참고
 
 ##### Stanford BEHAVIOR — BEHAVIOR Challenge 2025 Leaderboard
 
@@ -13935,6 +14280,20 @@ Bartz v. Anthropic 저자 집단소송이 15억 달러로 합의됐고, Anthropi
 - **근거·방법**: 벤치마크 이력 회귀
 - **한국 시사점**: 국산 SLM 평가는 벤치마크 외 실사용 시험을 병행해야 함
 
+##### Warwick (Budzyń et al., Lancet Gastroenterol Hepatol) — Endoscopist deskilling after exposure to artificial intelligence in colonoscopy: a multicentre observational study
+
+발표 2025-08· 관점 신중· 요약·보도자료만· 신뢰도 medium  
+출처: <https://wrap.warwick.ac.uk/id/eprint/191005>
+
+AI 보조 대장내시경 노출 뒤 AI 없이 한 검사의 선종 발견율 하락(28.4%→22.4%, 2차 자료 기준). 후향적 전후 비교.
+
+**핵심 내용**
+
+- 탈숙련 검증 무작위 연구 확대 _(2027)_
+
+- **근거·방법**: 다기관 관찰 연구
+- **한국 시사점**: 수련·평가에서 AI 없는 역량 유지
+
 ##### Apple — Apple Intelligence Foundation Language Models Tech Report 2025 (arXiv 2507.13575)
 
 발표 2025-07-17· 관점 중립· 원문 전체· 신뢰도 high  
@@ -14078,3 +14437,17 @@ FBI가 2025-02-21경 가상자산 거래소 Bybit에서 약 15억 달러를 탈�
 
 - **근거·방법**: 위협 모델링·전문가 분석
 - **한국 시사점**: 신뢰 파트너 심사에서 국내 기관의 가중치·접근 보안 수준이 쟁점
+
+##### CMS — CMS Interoperability and Prior Authorization Final Rule (CMS-0057-F)
+
+발표 2024-01-17· 관점 중립· 원문 전체· 신뢰도 high  
+출처: <https://www.cms.gov/cms-interoperability-and-prior-authorization-final-rule-cms-0057-f>
+
+보험사가 2027-01-01부터 사전승인 API 등을 운영해야 하는 최종 규칙. 기계 판독 가능한 사전승인 통로를 만듦.
+
+**핵심 내용**
+
+- 2027 사전승인 API 시행과 에이전트 간 자동 사전승인 _(2027)_
+
+- **근거·방법**: 연방 규칙
+- **한국 시사점**: 심평원 청구·심사 전산과 에이전트 API 표준 검토
