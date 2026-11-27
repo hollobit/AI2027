@@ -873,6 +873,38 @@
         </ul>
       </div>
     </div>
+    <div class="ai27-sub" id="robot-bench"><h3>로봇 AI 벤치마크: 포화된 것과 아직 먼 것</h3>
+      <p class="ai27-muted">보고서 6.8·6.9절. VLA·로봇 파운데이션 모델(π0.7, Gemini Robotics 2, GR00T N1.7, GEN-1)과 월드 모델(Genie 4, Cosmos 3, V-JEPA 2)의 2026년 성적. 회사 자체 실세계 수치는 제3자 재현이 없어 제외했습니다.</p>
+      <p><b>한 줄 요약</b>: 표준 시뮬 벤치마크는 포화됐지만 조금만 바꾸면 급락합니다. 2027년의 관전 포인트는 점수보다 평가 방식의 교체(섭동·장기·실세계·안전)입니다.</p></div>
+    <div class="ai27-tablewrap">
+      <table aria-label="로봇 AI 벤치마크 2026"><thead><tr><th>벤치마크</th><th>측정 대상</th><th>최고 수준</th><th>모델·시점</th><th>상태</th></tr></thead><tbody>
+        <tr><td>LIBERO(4개 스위트 평균)</td><td>시뮬 탁상 조작</td><td>97–99%</td><td>OpenVLA-OFT·X-VLA·GO-2</td><td class="mid">포화</td></tr>
+        <tr><td>CALVIN ABC→D</td><td>장기 연속 지시(최대 5)</td><td>4.75</td><td>Xiaomi-Robotics-0(2026-02)</td><td class="mid">포화 근접</td></tr>
+        <tr><td>LIBERO-Plus</td><td>카메라·자세·조명 섭동</td><td>95% → 30% 미만</td><td>최신 VLA 10종</td><td class="mid">미포화</td></tr>
+        <tr><td>LIBERO-PRO</td><td>물체·지시·환경 변경</td><td>90%+ → 약 0%</td><td>OpenVLA·π0·π0.5</td><td class="mid">미포화</td></tr>
+        <tr><td>RoboCasa365</td><td>주방 50개 과제</td><td>57.4%(미지 복합 32.1%)</td><td>Xiaomi-Robotics-1(2026-07)</td><td class="mid">미포화</td></tr>
+        <tr><td>BEHAVIOR-1K 챌린지</td><td>가사 100개 장기 과업</td><td>12.4% → 41.2%(2위)</td><td>2025 → 2026</td><td class="mid">미포화·최고 개선</td></tr>
+        <tr><td>SafeVLA-Bench</td><td>성공했지만 불안전</td><td>성공 실행의 38–56% 위반</td><td>24개 정책(2026-10)</td><td class="mid">미포화</td></tr>
+        <tr><td>Physics-IQ Verified</td><td>월드 모델 물리 일치(영상→영상)</td><td>66.1%(상한 100%)</td><td>Odyssey-3 Pro</td><td class="mid">격차 34%p</td></tr>
+        <tr><td>IntPhys 2</td><td>직관 물리 위반 탐지</td><td>57.5%(사람 96.4%)</td><td>V-JEPA 2</td><td class="mid">우연 수준 근접</td></tr>
+        <tr><td>VSI-Bench</td><td>영상 공간 지능</td><td>55.0(사람 79.2)</td><td>GPT-5</td><td class="mid">격차 24점</td></tr>
+        <tr><td>Embodied First Exam</td><td>코딩 에이전트의 로봇 제어</td><td>34%</td><td>GPT-6 Astra(2026-11)</td><td class="mid">신규</td></tr>
+      </tbody></table>
+    </div>
+    <div class="ai27-card" id="robot-bench-fc">
+      <h3>2027 전망: 로봇 학습·월드 모델·휴머노이드</h3>
+      <ul class="ai27-list">
+          <li><span class="ai27-pill" data-v="missed" style="justify-self:start">높음 · 80% (±15)</span><span>한 개 이상 회사가 로봇 FM 사전학습 데이터 100만 시간 이상 공개</span></li>
+          <li><span class="ai27-pill" data-v="missed" style="justify-self:start">높음 · 75% (±15)</span><span>실세계 강화학습 후학습이 선도 VLA의 표준 단계</span></li>
+          <li><span class="ai27-pill" data-v="missed" style="justify-self:start">높음 · 70% (±15)</span><span>플래그십 VLA 발표 과반이 LIBERO 대신 섭동·장기·실세계 지표를 주 성적으로 제시</span></li>
+          <li><span class="ai27-pill" data-v="missed" style="justify-self:start">높음 · 70% (±15)</span><span>월드 모델 정책 평가를 선도사 3곳 이상이 공식 사용</span></li>
+          <li><span class="ai27-pill" data-v="missed" style="justify-self:start">높음 · 70% (±15)</span><span>휴머노이드 평균 판매가격 3만 달러 미만</span></li>
+          <li><span class="ai27-pill" data-v="partial" style="justify-self:start">중간 · 50% (±20)</span><span>BEHAVIOR 챌린지 1위 완전 성공률 60% 이상</span></li>
+          <li><span class="ai27-pill" data-v="partial" style="justify-self:start">중간 · 50% (±15)</span><span>휴머노이드 세계 출하 10만 대 이상(범위 8만–15만, 기준 11만)</span></li>
+          <li><span class="ai27-pill" data-v="partial" style="justify-self:start">중간 · 35% (±15)</span><span>Physics-IQ 최고점 80% 이상</span></li>
+          <li><span class="ai27-pill" data-v="unclear" style="justify-self:start">낮음 · 20% (±15)</span><span>범용 VLA가 처음 보는 가정에서 10분+ 과업 80% 성공(제3자 검증)</span></li>
+      </ul>
+    </div>
   </section>
 
   <!-- ============ PART 08 (id part14) ============ -->

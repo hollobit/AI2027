@@ -1012,6 +1012,376 @@
   "counter": []
  },
  {
+  "chapter": "6장",
+  "text": "선도 랩의 플래그십 VLA 발표 과반이 LIBERO 표준 점수 대신 섭동·장기·실세계 지표(LIBERO-Plus/PRO, RoboCasa365, BEHAVIOR, RoboArena 등)를 주 성적으로 제시",
+  "prob": "높음 70%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "LIBERO-Plus (Fei et al.)",
+    "url": "https://arxiv.org/abs/2510.13626",
+    "title": "LIBERO-Plus: In-depth Robustness Analysis of Vision-Language-Action Models"
+   },
+   {
+    "org": "LIBERO-PRO",
+    "url": "https://arxiv.org/abs/2510.03827",
+    "title": "LIBERO-PRO: Towards Robust and Fair Evaluation of VLA Models Beyond Memorization"
+   },
+   {
+    "org": "Xiaomi",
+    "url": "https://arxiv.org/abs/2607.15330",
+    "title": "Xiaomi-Robotics-1"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "실세계 강화학습 후학습이 선도 로봇 FM(PI·Google·NVIDIA·Generalist 중 2곳 이상) 발표의 표준 단계로 명시",
+  "prob": "높음 75%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Physical Intelligence",
+    "url": "https://arxiv.org/abs/2511.14759",
+    "title": "π*0.6: a VLA That Learns From Experience"
+   },
+   {
+    "org": "Physical Intelligence",
+    "url": "https://www.pi.website/research/rlt",
+    "title": "RL Token: Precise Manipulation with Efficient Online RL"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "사전학습 데이터 100만 시간 이상(인간 웨어러블·UMI 포함)을 공개적으로 밝히는 로봇 FM 개발사가 1곳 이상",
+  "prob": "높음 80%±10",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "Generalist",
+    "url": "https://generalistai.com/blog/gen-1",
+    "title": "GEN-1: Scaling Embodied Foundation Models to Mastery"
+   },
+   {
+    "org": "Generalist",
+    "url": "https://generalistai.com/blog/gen-0",
+    "title": "GEN-0: Embodied Foundation Models That Scale with Physical Interaction"
+   },
+   {
+    "org": "Xiaomi",
+    "url": "https://arxiv.org/abs/2607.15330",
+    "title": "Xiaomi-Robotics-1"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "BEHAVIOR 챌린지(또는 후속 대회) 1위의 100개 과제 완전 성공률이 60% 이상",
+  "prob": "중간 50%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "Stanford BEHAVIOR",
+    "url": "https://behavior.stanford.edu/challenge/archive/2025/leaderboard.html",
+    "title": "BEHAVIOR Challenge 2025 Leaderboard"
+   },
+   {
+    "org": "Team IF1001",
+    "url": "https://arxiv.org/abs/2611.13818",
+    "title": "WAM is capable in BEHAVIOR-1K: 2nd-place solution to the 2026 BEHAVIOR Challenge"
+   }
+  ],
+  "counter": [
+   {
+    "org": "Univ. of Notre Dame·UPenn",
+    "url": "https://arxiv.org/abs/2606.00773",
+    "title": "SafeVLA-Bench"
+   }
+  ]
+ },
+ {
+  "chapter": "6장",
+  "text": "RoboArena류 제3자 실세계 평가의 공식 순위 정책이 50개 이상이 되거나, 다른 플랫폼(휴머노이드·모바일 조작)용 실세계 아레나가 새로 운영",
+  "prob": "중간 55%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "RoboArena (Atreya et al.)",
+    "url": "https://arxiv.org/abs/2506.18123",
+    "title": "RoboArena: Distributed Real-World Evaluation of Generalist Robot Policies"
+   },
+   {
+    "org": "NVIDIA",
+    "url": "https://research.nvidia.com/labs/srl/projects/robolab",
+    "title": "RoboLab"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "주요 로봇 평가 리더보드 1곳 이상이 안전 위반률을 성공률과 나란히 공식 지표로 채택",
+  "prob": "중간 45%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "Univ. of Notre Dame·UPenn",
+    "url": "https://arxiv.org/abs/2606.00773",
+    "title": "SafeVLA-Bench"
+   },
+   {
+    "org": "Google DeepMind",
+    "url": "https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/",
+    "title": "Gemini Robotics 2 (ASIMOV-Agentic)"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "ISO 25785-1(동적 안정 이동 로봇 안전)이 국제표준안(DIS) 이상 단계로 진입",
+  "prob": "중간 45%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "ISO",
+    "url": "https://www.iso.org/standard/91469.html",
+    "title": "ISO/CD 25785-1"
+   },
+   {
+    "org": "IEEE (보도: The Robot Report)",
+    "url": "https://www.therobotreport.com/ieee-study-group-publishes-framework-for-humanoid-standards/",
+    "title": "A Pathway Study for Future Humanoid Standards"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "폐쇄 선두 모델(Gemini Robotics·Helix·GEN 계열·π0.7 이후 PI 모델) 중 2개 이상이 같은 제3자 실세계 평가에 점수를 공개",
+  "prob": "낮음 25%±15",
+  "basis": "추정",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "범용 VLA가 처음 보는 가정에서 10분 이상 다단계 과업을 80% 이상 성공했다는 제3자 검증 결과가 나옴",
+  "prob": "낮음 20%±15",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "Physical Intelligence",
+    "url": "https://arxiv.org/abs/2604.15483",
+    "title": "π0.7: a Steerable Generalist Robotic Foundation Model"
+   }
+  ],
+  "counter": [
+   {
+    "org": "LIBERO-PRO",
+    "url": "https://arxiv.org/abs/2510.03827",
+    "title": "LIBERO-PRO"
+   },
+   {
+    "org": "Stanford BEHAVIOR",
+    "url": "https://behavior.stanford.edu/challenge/archive/2025/leaderboard.html",
+    "title": "BEHAVIOR Challenge 2025 Leaderboard"
+   }
+  ]
+ },
+ {
+  "chapter": "6장",
+  "text": "선도 로봇 FM·자율주행 개발사 3곳 이상이 월드 모델 기반 정책 평가 결과를 공식 기술보고서·모델 카드에 사용(실로봇 평가는 병행)",
+  "prob": "높음 70%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "WorldArena",
+    "url": "https://arxiv.org/abs/2602.08971",
+    "title": ""
+   },
+   {
+    "org": "Wayve",
+    "url": "https://www.automotiveworld.com/news/wayve-unveils-gaia-3-for-autonomous-driving-tests/",
+    "title": ""
+   },
+   {
+    "org": "1X",
+    "url": "https://www.1x.tech/discover/1x-world-model",
+    "title": ""
+   }
+  ],
+  "counter": [
+   {
+    "org": "WorldArena",
+    "url": "https://arxiv.org/abs/2602.08971",
+    "title": ""
+   }
+  ]
+ },
+ {
+  "chapter": "6장",
+  "text": "Physics-IQ Verified(영상→영상) 최고점이 2027년 말 80% 이상",
+  "prob": "중간 35%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "Physics-IQ",
+    "url": "https://github.com/google-deepmind/physics-IQ-benchmark",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "IntPhys 2류 직관 물리 과제에서 최고 모델이 85% 이상(사람 96%)",
+  "prob": "낮음 25%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Meta FAIR",
+    "url": "https://arxiv.org/abs/2506.09849",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "VSI-Bench에서 최고 모델이 사람 기준(79.2)에 도달. 단 MMSI-Bench류 다시점 추론은 사람(97%)과 30%p 이상 격차 유지",
+  "prob": "중간 45%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "EASI",
+    "url": "https://arxiv.org/abs/2508.13142",
+    "title": ""
+   },
+   {
+    "org": "MMSI-Bench",
+    "url": "https://arxiv.org/abs/2505.23764",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "세계 휴머노이드 출하가 2027년 10만 대 이상(IDC 또는 Omdia 집계)",
+  "prob": "중간 50%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "IDC",
+    "url": "https://www.idc.com/?p=121156",
+    "title": ""
+   },
+   {
+    "org": "Goldman Sachs(보도)",
+    "url": "https://humanoid.guide/goldman-raises-2035-humanoid-robot-forecast-to-6-5-million/",
+    "title": ""
+   }
+  ],
+  "counter": [
+   {
+    "org": "Morgan Stanley(보도)",
+    "url": "https://www.tribuneindia.com/news/business/chinas-humanoid-robot-investment-set-to-accelerate-selective-commercial-use-expected-in-2027-morgan-stanley",
+    "title": ""
+   }
+  ]
+ },
+ {
+  "chapter": "6장",
+  "text": "2027년 세계 휴머노이드 평균 판매가격이 3만 달러 미만(출하 금액 ÷ 대수)",
+  "prob": "높음 70%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "IDC",
+    "url": "https://www.idc.com/?p=121156",
+    "title": ""
+   },
+   {
+    "org": "Goldman Sachs(보도)",
+    "url": "https://www.techflowpost.com/en-US/article/35745/347-1",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "한 고객 현장에서 휴머노이드 100대 이상이 시범이 아닌 상업 계약으로 상시 투입된 사례 공개",
+  "prob": "중간 60%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Caixin",
+    "url": "https://www.caixinglobal.com/2026-06-10/china-targets-10000-humanoid-robots-in-commercial-use-by-end-2026-102452656.html",
+    "title": ""
+   },
+   {
+    "org": "BMW Group",
+    "url": "https://www.press.bmwgroup.com/global/article/detail/T0458778EN",
+    "title": ""
+   }
+  ],
+  "counter": [
+   {
+    "org": "Morgan Stanley(보도)",
+    "url": "https://www.tribuneindia.com/news/business/chinas-humanoid-robot-investment-set-to-accelerate-selective-commercial-use-expected-in-2027-morgan-stanley",
+    "title": ""
+   }
+  ]
+ },
+ {
+  "chapter": "6장",
+  "text": "가사용 범용 휴머노이드(1X NEO 등, 연구·교육·전시용 제외)의 유료 가정 인도가 누적 1만 대 이상",
+  "prob": "낮음 30%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "1X",
+    "url": "https://www.globenewswire.com/news-release/2026/04/30/3285118/0/en/1X-Opens-NEO-Factory.html",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "Tesla Optimus가 외부 고객에게 유료 인도 시작",
+  "prob": "낮음 25%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "TechCrunch",
+    "url": "https://techcrunch.com/2026/10/21/tesla-stars-optimus-robot-production-in-california-as-profit-falls-43/",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "정부가 국산 휴머노이드 250대 구매(대학·출연연 보급)를 2027년 안에 발주",
+  "prob": "중간 55%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "The Korea Times",
+    "url": "https://www.koreatimes.co.kr/business/tech-science/20260827/korea-to-spend-166-bil-won-through-2030-on-full-stack-humanoid-development",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
   "chapter": "7장",
   "text": "AI 연구 자체",
   "prob": "높음 70%±15",
