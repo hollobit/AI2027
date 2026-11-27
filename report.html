@@ -1086,14 +1086,14 @@ AI 연구를 가속하기 시작한 해'가 될 가능성이 큽니다. 프런�
 3월 승인될 예정입니다.</li>
 <li><strong>로봇 AI·피지컬 AI(6.8–6.10절)</strong>: VLA·로봇 파운데이션
 모델은 2026년에 '데모'에서 '수 시간 연속 작업'으로 올라섰습니다(π0.7,
-Gemini Robotics 2, GR00T N1.7, GEN-1). 그러나 LIBERO(97–99%)는 포화됐고,
-섭동을 주면 30% 아래로 떨어집니다. 미포화 벤치마크는 RoboCasa365 57.4%,
-BEHAVIOR 41.2%(2위) 수준입니다. 월드 모델도 물리 이해는 사람에 못
-미칩니다(Physics-IQ 66.1%, IntPhys 2 57.5% 대 사람 96.4%). 2027년에는
-실세계 강화학습 후학습이 표준이 되고(75%), 평가의 중심이
-섭동·장기·실세계·안전 지표로 옮겨 갑니다(70%). 휴머노이드 출하는
-8만–15만 대(기준 11만 대)로 봅니다. <strong>범용 모델이 로봇 전용 모델을
-앞지르기 시작했습니다</strong>(CoRL 2026의 'Astra 쇼크'). NVIDIA
+Gemini Robotics 2, GR00T N1.7→GR00T 2, Helix 2.5, GEN-1). 그러나
+LIBERO(97–99%)는 포화됐고, 섭동을 주면 30% 아래로 떨어집니다. 미포화
+벤치마크는 RoboCasa365 57.4%, BEHAVIOR 41.2%(2위) 수준입니다. 월드
+모델도 물리 이해는 사람에 못 미칩니다(Physics-IQ 66.1%, IntPhys 2 57.5%
+대 사람 96.4%). 2027년에는 실세계 강화학습 후학습이 표준이 되고(75%),
+평가의 중심이 섭동·장기·실세계·안전 지표로 옮겨 갑니다(70%). 휴머노이드
+출하는 8만–15만 대(기준 11만 대)로 봅니다. <strong>범용 모델이 로봇 전용
+모델을 앞지르기 시작했습니다</strong>(CoRL 2026의 'Astra 쇼크'). NVIDIA
 RoboLab-120에서 GPT-6 Astra+Codex는 74.8%로 π0.5(28.0%)를 크게 앞섰고,
 Anthropic RoboDojo에서 Claude Fable 5.2는 64.9%입니다(보도 기준). 다만
 호출당 지연이 13–19초로 VLA(47ms)의 약 400배여서, 2027년에는 '범용
@@ -4304,8 +4304,9 @@ AI4S 플랫폼의 확산(유럽·일본·한국), 학회의 AI 저자·리뷰 �
 <blockquote>
 <p>자료: Physical Intelligence π*0.6(arXiv 2511.14759)·π0.7(arXiv
 2604.15483), Generalist GEN-0(2025-11-04)·GEN-1(2026-04-02) 블로그,
-Figure Helix 02(2026-01-27), NVIDIA GR00T N1.6·N1.7(연구 페이지·Hugging
-Face), Xiaomi-Robotics-1(arXiv 2607.15330), LIBERO-Plus(arXiv
+Figure Helix 02(2026-01-27)·Helix 2.5(2026-09-17, Unite.AI 보도), NVIDIA
+GR00T N1.6·N1.7(연구 페이지·Hugging Face)·GR00T 2(연구 페이지,
+2026-11-09), Xiaomi-Robotics-1(arXiv 2607.15330), LIBERO-Plus(arXiv
 2510.13626)·LIBERO-PRO(arXiv 2510.03827), RoboArena(arXiv 2506.18123),
 BEHAVIOR Challenge 2025 리더보드·2026 2위 해법(arXiv 2611.13818),
 SafeVLA-Bench(arXiv 2606.00773), ISO/CD 25785-1, IEEE 휴머노이드
@@ -4423,12 +4424,29 @@ SafeVLA-Bench(arXiv 2606.00773), ISO/CD 25785-1, IEEE 휴머노이드
 28Hz</td>
 </tr>
 <tr>
+<td>GR00T 2(NVIDIA)</td>
+<td>2026-11-09</td>
+<td>월드 액션 모델(영상과 행동 청크를 함께 디노이징, DreamZero 계열,
+6.9절). Turbo 2B는 Jetson Thor에서 124ms</td>
+<td>코드 12월 공개 예정(가중치·라이선스 범위 미정)</td>
+<td>처음 보는 50개 과제 무시연 40%, 시연 1개 71%, 5개 95%(자체 실험,
+과제 선정 편향 지적 보도). System 2 에이전트(Astra 등)가 도구로 호출하는
+구조</td>
+</tr>
+<tr>
 <td>Figure Helix → Helix 02</td>
 <td>2025-02 / 2026-01</td>
 <td>S2(추론)·S1(200Hz)·S0(1kHz 전신 제어, 1천만 파라미터)</td>
 <td>비공개</td>
 <td>4분 연속 식기세척기 작업(61개 동작), 물류 분류 40시간 이상 연속
 운영(보도 기준)</td>
+</tr>
+<tr>
+<td>Figure Helix 2.5</td>
+<td>2026-09-17</td>
+<td>Index 인간 행동 데이터로 처음부터 사전학습</td>
+<td>비공개</td>
+<td>처음 보는 가정 30곳 무적응 성공률 9% → 56%(보도 기준)</td>
 </tr>
 <tr>
 <td>Tesla Optimus</td>
@@ -4845,8 +4863,9 @@ GR00T-Dreams 파이프라인의 기반</td>
 </tr>
 <tr>
 <td>DreamZero → GR00T 2(NVIDIA)</td>
-<td>140억 파라미터 '월드 액션 모델'(영상 확산 모델 위에 행동 출력). 연말
-GR00T 2로 제품화 예정(NVIDIA 용어집)</td>
+<td>140억 파라미터 '월드 액션 모델'(영상 확산 모델 위에 행동 출력).
+GR00T 2로 제품화해 2026-11-09 발표(6.8절 계보 표), 코드 12월 공개
+예정</td>
 <td>처음 보는 동작·동사 일반화가 기존 VLA의 2배 이상, 새 로봇에 30분
 데이터로 적응(저자 실험)</td>
 </tr>
