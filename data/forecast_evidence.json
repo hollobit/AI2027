@@ -1408,13 +1408,23 @@
  {
   "chapter": "6장",
   "text": "범용 프런티어 모델 기반 방식이 RoboLab-120에서 성공률 85% 이상(NVIDIA 또는 제3자 보고, 시뮬 일시정지 허용)",
-  "prob": "중간 60%±20",
+  "prob": "중간 65%±20",
   "basis": "추정",
   "support": [
    {
     "org": "NVIDIA",
     "url": "https://research.nvidia.com/labs/srl/projects/astranomy/",
-    "title": "Astranomy: An empirical study of GPT-6 Astra as a native robot policy"
+    "title": "Astranomy"
+   },
+   {
+    "org": "Robocurve",
+    "url": "https://robocurve.org",
+    "title": "RoboDojo-RC Tier 1 leaderboard"
+   },
+   {
+    "org": "Playground",
+    "url": "https://www.withplayground.ai/research/robot-frontier-accelerating",
+    "title": "The Robot Frontier Is Accelerating"
    }
   ],
   "counter": [
@@ -1428,13 +1438,23 @@
  {
   "chapter": "6장",
   "text": "Embodied First Exam 표준 설정 최고 성공률 60% 이상",
-  "prob": "중간 35%±20",
+  "prob": "중간 50%±20",
   "basis": "추정",
   "support": [
    {
     "org": "Kangrui Wang 외",
     "url": "https://arxiv.org/abs/2611.12177",
     "title": "Embodied First Exam"
+   },
+   {
+    "org": "XDOF",
+    "url": "https://www.xdof.ai/blog/evaluating-llms",
+    "title": "Ember-0: A benchmark for LLMs in the real world"
+   },
+   {
+    "org": "Robocurve",
+    "url": "https://robocurve.org",
+    "title": "RoboDojo-RC Tier 1 leaderboard"
    }
   ],
   "counter": [
@@ -1570,6 +1590,114 @@
    }
   ],
   "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "RoboColosseum SO-101 Open Track에서 범용 모델 기반 방식의 전체 과제 성공률 50% 이상",
+  "prob": "중간 40%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "RoboColosseum (NUS MAGIC Lab 외)",
+    "url": "https://arxiv.org/abs/2611.02497",
+    "title": "RoboColosseum: Evaluating Physical Intelligence at Scale In-The-Wild"
+   },
+   {
+    "org": "OrcaRouter",
+    "url": "https://www.orcarouter.ai/blog/gpt-6-2-astra-so101-robotics-leaderboard",
+    "title": "GPT-6.2 Astra tops SO-101 robotics leaderboard (보도)"
+   },
+   {
+    "org": "Playground",
+    "url": "https://www.withplayground.ai/research/robot-frontier-accelerating",
+    "title": "The Robot Frontier Is Accelerating"
+   }
+  ],
+  "counter": [
+   {
+    "org": "RoboColosseum (NUS MAGIC Lab 외)",
+    "url": "https://arxiv.org/abs/2611.02497",
+    "title": "RoboColosseum (현재 22.1%, 로봇별 순위 불일치 W=0.24)"
+   }
+  ]
+ },
+ {
+  "chapter": "6장",
+  "text": "XDOF Ember-0 최고 성공률 70% 이상(XDOF 발표 기준)",
+  "prob": "중간 55%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "XDOF",
+    "url": "https://www.xdof.ai/blog/evaluating-llms",
+    "title": "Ember-0: A benchmark for LLMs in the real world"
+   },
+   {
+    "org": "Crypto Briefing",
+    "url": "https://cryptobriefing.com/gpt-6-2-astra-ember-0-robotics-benchmark/",
+    "title": "GPT-6.2 Astra scores 41.2% on Ember-0"
+   }
+  ],
+  "counter": [
+   {
+    "org": "Playground",
+    "url": "https://www.withplayground.ai/research/robot-frontier-accelerating",
+    "title": "The Robot Frontier Is Accelerating (Ember-0 가사 과제 3%)"
+   }
+  ]
+ },
+ {
+  "chapter": "6장",
+  "text": "Blueprint-Bench 2 최고 점수 0.75 이상(사람 0.586)",
+  "prob": "중간 60%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "Andon Labs",
+    "url": "https://andonlabs.com/evals/blueprint-bench-2",
+    "title": "Blueprint-Bench 2 leaderboard"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "RoboDojo-RC Tier 1 포화(97.3%)로 Robocurve가 더 어려운 등급 또는 후속 실로봇 과제 묶음을 공개하고, 범용 모델 최고가 70% 미만에서 출발",
+  "prob": "높음 70%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Robocurve",
+    "url": "https://robocurve.org",
+    "title": "RoboDojo-RC Tier 1 leaderboard"
+   },
+   {
+    "org": "Playground",
+    "url": "https://www.withplayground.ai/research/robot-frontier-accelerating",
+    "title": "The Robot Frontier Is Accelerating"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "실로봇 정밀·장기 과제에서 최고 시스템의 완전 수행률 50% 이상(Playground Robot Intelligence Index 또는 RoboDojo-RC 기준)",
+  "prob": "중간 45%±25",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "Playground",
+    "url": "https://www.withplayground.ai/research/robot-frontier-accelerating",
+    "title": "The Robot Frontier Is Accelerating"
+   }
+  ],
+  "counter": [
+   {
+    "org": "Playground",
+    "url": "https://www.withplayground.ai/research/robot-frontier-accelerating",
+    "title": "같은 글(2년 추세 외삽 25–29%)"
+   }
+  ]
  },
  {
   "chapter": "7장",
