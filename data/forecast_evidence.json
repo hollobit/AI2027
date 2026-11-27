@@ -1,0 +1,5029 @@
+[
+ {
+  "chapter": "3장",
+  "text": "코딩 에이전트는 랩 소유 하네스가 매출의 65–75%를 유지하는 과점",
+  "prob": "높음 72%±15",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "Menlo Ventures",
+    "url": "https://menlovc.com/wp-content/uploads/2026/11/menlo_ventures_enterprise_ai_report-2026-110326.pdf",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "3장",
+  "text": "개인 에이전트는 빅테크 소비자형(Muse·ChatGPT agent·Gemini)과 오픈소스 자가호스팅형(OpenClaw·Hermes)으로 갈라지고, 2027년 안에 단일 승자는 없음",
+  "prob": "높음 85%±10",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "Meta",
+    "url": "https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/",
+    "title": "Introducing Muse: The World's First Personal AI Agent Built for Everyone"
+   },
+   {
+    "org": "OpenClaw Foundation",
+    "url": "https://openclaw.ai/foundation",
+    "title": "Introducing the OpenClaw Foundation (2026-07-08)"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "3장",
+  "text": "하네스 벤치마크와 모델 중립 하네스의 중요성 확대",
+  "prob": "높음 84%±15",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "Forrester",
+    "url": "https://www.forrester.com/blogs/predictions-2027-disruption-unleashed/",
+    "title": "Predictions 2027: Disruption Unleashed (Predictions 2027: Artificial Intelligence 요약 블로그)"
+   },
+   {
+    "org": "Harness-Bench",
+    "url": "https://www.harness-bench.ai/leaderboard.html",
+    "title": "Harness-Bench v2 leaderboard"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "3장",
+  "text": "좌석 구독에서 사용량·결과 기반 과금으로 이동. 단가는 하락하지만 기업 총비용은 증가",
+  "prob": "높음 80%±15",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "Gartner",
+    "url": "https://www.gartner.com/en/newsroom/press-releases/2026-10-26-gartner-identifies-the-top-ai-trends-in-infrastructure-and-it-operations-for-2027",
+    "title": "Gartner Identifies the Top AI Trends in Infrastructure and IT Operations for 2027"
+   },
+   {
+    "org": "IDC",
+    "url": "https://www.idc.com/resource-center/press-releases/idc-futurescape-2027-predicts-60-of-enterprises-will-run-a-majority-of-their-business-processes-ai-first-by-2029-up-from-13-in-2026/",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "3장",
+  "text": "KYA(에이전트 신원)가 카드 네트워크와 기업 IAM에서 사실상 의무화",
+  "prob": "중간 69%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "IITP 정보통신기획평가원 (보도: ZDNe…",
+    "url": "https://zdnet.co.kr/view?no=20261111120847",
+    "title": "2027 AI·ICT 10대 이슈 — 'AI의 가능성을 AX 생산성으로 입증'"
+   },
+   {
+    "org": "Gartner",
+    "url": "https://www.gartner.com/en/newsroom/press-releases/2026-10-20-gartner-identifies-the-top-strategic-technology-trends-for-2027",
+    "title": "Gartner Identifies the Top Strategic Technology Trends for 2027"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "3장",
+  "text": "OpenClaw가 OCE 1.0으로 '에이전트용 쿠버네티스' 같은 사실상 표준 런타임이 됨",
+  "prob": "중간 40%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "OpenClaw Foundation",
+    "url": "https://openclaw.ai/foundation",
+    "title": "Introducing the OpenClaw Foundation (2026-07-08)"
+   },
+   {
+    "org": "Red Hat",
+    "url": "https://www.redhat.com/en/blog/red-hat-joins-openclaw-foundation-founding-member-advance-open-future-production-ai-agents",
+    "title": "Red Hat joins OpenClaw Foundation as founding member"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "3장",
+  "text": "도구 연결은 MCP로 정착. 결제 프로토콜(AP2·ACP·Visa·Mastercard)은 병존하다 호환 프로파일 등장",
+  "prob": "중간 60%±15",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "Google Cloud",
+    "url": "https://cloud.google.com/blog/products/ai-machine-learning/announcing-agents-to-payments-ap2-protocol",
+    "title": "Powering AI commerce with the new Agent Payments Protocol (AP2)"
+   },
+   {
+    "org": "Digital Commerce 360",
+    "url": "https://www.digitalcommerce360.com/2026/04/02/visa-mastercard-in-agentic-commerce/",
+    "title": "Ecommerce Trends: How Visa and Mastercard are approaching agentic commerce"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "3장",
+  "text": "중국 오픈웨이트 모델과 오픈 하네스 조합이 가성비로 압박(Harness-Bench 모델 상위 10개 중 7개)",
+  "prob": "중간 65%±15",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "Harness-Bench",
+    "url": "https://www.harness-bench.ai/leaderboard.html",
+    "title": "Harness-Bench v2 leaderboard"
+   },
+   {
+    "org": "Forrester",
+    "url": "https://www.forrester.com/blogs/predictions-2027-disruption-unleashed/",
+    "title": "Predictions 2027: Disruption Unleashed (Predictions 2027: Artificial Intelligence 요약 블로그)"
+   }
+  ],
+  "counter": [
+   {
+    "org": "campustechnology.com",
+    "url": "https://campustechnology.com/articles/2026/11/09/report-enterprise-ai-spending-outpaces-adoption-growth.aspx",
+    "title": "기업 AI 지출의 프런티어 랩 집중"
+   }
+  ]
+ },
+ {
+  "chapter": "3장",
+  "text": "독립 코딩 에이전트 기업 1곳 이상이 인수되거나 랩과 독점 제휴",
+  "prob": "중간 62%±15",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "thenextweb.com",
+    "url": "https://thenextweb.com/news/spacex-cursor-acquisition-official-60-billion",
+    "title": "SpaceX의 Cursor 600억 달러 인수"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "3장",
+  "text": "한국은 오픈 하네스에 국산 모델을 결합한 공공·기업 에이전트가 주류(추정)",
+  "prob": "중간 45%±25",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "과학기술정보통신부·NIPA",
+    "url": "https://eiec.kdi.re.kr/policy/materialView.do?num=285937",
+    "title": "보도참고자료: 「독자 AI 파운데이션 모델」 프로젝트 2차 단계평가 결과 상세 공개"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "3장",
+  "text": "스킬·플러그인·MCP 공급망 공격",
+  "prob": "높음 92%±8",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "Cline",
+    "url": "https://cline.bot/blog/post-mortem-unauthorized-cline-cli-npm",
+    "title": "Post-mortem: Unauthorized Cline CLI npm publish on February 17, 2026"
+   },
+   {
+    "org": "Google Cloud (via iTWire…",
+    "url": "https://itwire.com/guest-articles/guest-research/google-cloud-predicts-ai-agents-will-reshape-cyber-attack-and-defence-in-2027",
+    "title": "Google Cloud predicts AI agents will reshape cyber attack and defence in 2027"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "3장",
+  "text": "프로덕션 파괴형 사고(DB·인프라 삭제)",
+  "prob": "높음 88%±10",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "Euronews",
+    "url": "https://euronews.com/next/2026/04/28/an-ai-agent-deleted-a-companys-entire-database-in-9-seconds-then-wrote-an-apology",
+    "title": "An AI agent deleted a company's entire database in 9 seconds, then wrote an apology"
+   },
+   {
+    "org": "Gallagher (Arthur J. Gal…",
+    "url": "https://www.ajg.com/site-content/articles/2026/april/ai-liability-not-so-silent/",
+    "title": "AI Liability: Not So Silent"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "3장",
+  "text": "간접 프롬프트 인젝션에 의한 유출·무단 결제",
+  "prob": "높음 87%±10",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "labs.cloudsecurityalliance",
+    "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-ai-browser-prompt-injection-20260630-csa-s/",
+    "title": "LayerX 'BioShocking' 간접 프롬프트 주입이 AI 브라우저·확장 6종을 침해(ChatGPT A"
+   },
+   {
+    "org": "Guardio Labs",
+    "url": "https://guard.io/labs/scamlexity-we-put-agentic-ai-browsers-to-the-test-they-clicked-they-paid-they-failed",
+    "title": "Scamlexity: We put agentic AI browsers to the test - they clicked, they paid, they failed"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "3장",
+  "text": "에이전트 비용 폭주, LLMJacking",
+  "prob": "높음 84%±12",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "Google Threat Intelligen…",
+    "url": "https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold",
+    "title": "GTIG AI Threat Tracker: Agentic Threat Activity Crosses a Significant Threshold"
+   },
+   {
+    "org": "Gartner",
+    "url": "https://www.gartner.com/en/newsroom/press-releases/2026-10-26-gartner-identifies-the-top-ai-trends-in-infrastructure-and-it-operations-for-2027",
+    "title": "Gartner Identifies the Top AI Trends in Infrastructure and IT Operations for 2027"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "3장",
+  "text": "AI 오케스트레이션 공격의 대중화",
+  "prob": "높음 82%±12",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "Google Threat Intelligen…",
+    "url": "https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold",
+    "title": "GTIG AI Threat Tracker: Agentic Threat Activity Crosses a Significant Threshold"
+   },
+   {
+    "org": "Anthropic",
+    "url": "https://assets.anthropic.com/m/ec212e6566a0d47/original/Disrupting-the-first-reported-AI-orchestrated-cyber-espionage-campaign.pdf",
+    "title": "Disrupting the first reported AI-orchestrated cyber espionage campaign (GTG-1002)"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "3장",
+  "text": "에이전트 커머스 분쟁(오구매·가짜 에이전트)",
+  "prob": "중간 55%±15",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "Air Street Capital (Stat…",
+    "url": "https://www.stateof.ai/predictions",
+    "title": "State of AI Report 2026 — AI predictions for 2027 & scorecard"
+   },
+   {
+    "org": "Palo Alto Networks Unit 42",
+    "url": "https://unit42.paloaltonetworks.com/retail-fraud-agentic-ai/",
+    "title": "The Invisible Death of Customer Loyalty (retail fraud in agentic AI / UCP)"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "3장",
+  "text": "공공서비스 대리 신청 폭증(에이전트 스팸)",
+  "prob": "중간 42%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "Gartner",
+    "url": "https://www.gartner.com/en/newsroom/press-releases/2026-09-15-gartner-unveils-top-strategic-predictions-for-2027-and-beyond",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "3장",
+  "text": "평가 에이전트의 샌드박스 이탈, 멀티에이전트의 비의도 행동",
+  "prob": "중간 55%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "cdn.openai.com",
+    "url": "https://cdn.openai.com/pdf/67869394-cb91-4c12-888c-5cbd85c7814c/OpenAI-Hugging-Face%20Incident-Technical-Report.pdf",
+    "title": "OpenAI–Hugging Face 사건의 정렬 교훈: 보상 해킹의 일반화, '끈기'가 미정렬을 증폭, 에이"
+   },
+   {
+    "org": "aisi.gov.uk",
+    "url": "https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing",
+    "title": "UK AISI 사이버 평가 중 비인가 행동 사건을 계기로, 인터넷 허용·분류기 비활성이라는 업계 공통 평가"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "3장",
+  "text": "환경 밖으로 자기 복제하는 에이전트의 첫 공개 사례",
+  "prob": "낮음 15%±12",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "eWeek (reporting Anthrop…",
+    "url": "https://www.eweek.com/news/anthropic-self-replicating-ai-iot-devices/",
+    "title": "Anthropic Warns AI Could Soon Self-Replicate Across Smart Devices"
+   },
+   {
+    "org": "Air Street Capital (Stat…",
+    "url": "https://www.stateof.ai/predictions",
+    "title": "State of AI Report 2026 — AI predictions for 2027 & scorecard"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "5장",
+  "text": "'AI가 AI 연구를 가속한다'는 증거가 두 곳 이상의 연구소에서 나옴",
+  "prob": "높음 72%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "METR",
+    "url": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment",
+    "title": "Independent Assessment of AI R&D Acceleration at Anthropic in October 2026"
+   },
+   {
+    "org": "Google DeepMind",
+    "url": "https://deepmind.google/blog/alphaevolve-impact/",
+    "title": "DeepMind AlphaEvolve"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "5장",
+  "text": "주요 연구소 모두 코드 작성의 대부분을 AI에 맡기고, 연구 인력 1인당 추론비가 가장 빠르게 느는 비용 항목이 됨",
+  "prob": "높음 78%±15",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "Fortune",
+    "url": "https://fortune.com/2026/01/29/100-percent-of-code-at-anthropic-and-openai-is-now-ai-written-boris-cherny-roon/",
+    "title": "100% of code at Anthropic and OpenAI is now AI-written (Cherny, roon)"
+   },
+   {
+    "org": "The Decoder",
+    "url": "https://the-decoder.com/google-says-75-percent-of-its-new-code-is-now-written-by-ai/",
+    "title": "Google says 75 percent of its new code is now written by AI"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "5장",
+  "text": "METR 시간지평을 대체할 새 장기 과제 지표가 등장하고, 기존 주요 벤치마크(ARC-AGI-3 포함)가 포화",
+  "prob": "높음 70%±15",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "vals.ai",
+    "url": "https://www.vals.ai/benchmarks/swebench",
+    "title": "벤치마크 포화 속도"
+   },
+   {
+    "org": "Epoch AI",
+    "url": "https://epoch.ai/benchmarks/arc-agi-3/review",
+    "title": "ARC-AGI-3 benchmark review (2026-10-30)"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "5장",
+  "text": "엄격한 정의의 범용 AGI(원격 화이트칼라 대부분 자동화)는 2027년 안에 오지 않음",
+  "prob": "높음 93%±7",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Manifold Markets",
+    "url": "https://manifold.markets/event/by-which-years-will-agi-be-released",
+    "title": "By which years will AGI be released (Hendrycks definition >95%)? — snapshot"
+   },
+   {
+    "org": "Polymarket",
+    "url": "https://polymarket.com/predictions/agi",
+    "title": ""
+   }
+  ],
+  "counter": [
+   {
+    "org": "AI Futures Project (Lars…",
+    "url": "https://www.lesswrong.com/posts/f9PajMLmBYzmWzyDv/aifp-looks-like-the-intelligence-explosion-will-happen-in",
+    "title": "Q3.5 Timelines Update: Looks Like the Intelligence Explosion Will Happen in 2027 After All"
+   }
+  ]
+ },
+ {
+  "chapter": "5장",
+  "text": "초지능(ASI) 도달 증거는 없음",
+  "prob": "높음 95%±5",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Epoch AI",
+    "url": "https://epoch.ai/publications/parallelization-constraints-could-delay-a-technological-singularity",
+    "title": "Even after R&D is automated, parallelization constraints could delay a technological sing…"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "5장",
+  "text": "연구소의 AI R&D 임계 판정과 증거 공개가 규제 쟁점이 됨(캘리포니아 SB 53·뉴욕 RAISE·EU GPAI 실천강령의 보고 의무와 연결)",
+  "prob": "높음 78%±15",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "CSET (Georgetown)",
+    "url": "https://cset.georgetown.edu/wp-content/uploads/CSET-When-AI-Builds-AI.pdf",
+    "title": "When AI Builds AI: Findings From a Workshop on Automation of AI R&D"
+   },
+   {
+    "org": "fpf.org",
+    "url": "https://fpf.org/blog/the-raise-act-vs-sb-53-a-tale-of-two-frontier-ai-laws/",
+    "title": "미국 주법: 캘리포니아 SB 53(2026-01-01 시행, 중대 사고 15일 내 보고)과 뉴욕 RAISE"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "5장",
+  "text": "연구소 한 곳 이상이 자기개선·AI R&D 임계 근접 또는 돌파를 공식 공시",
+  "prob": "중간 55%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "METR",
+    "url": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment",
+    "title": "Independent Assessment of AI R&D Acceleration at Anthropic in October 2026"
+   },
+   {
+    "org": "Anthropic",
+    "url": "https://www.anthropic.com/transparency?m=1",
+    "title": "Anthropic RSP — AI R&D 자동화 임계"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "5장",
+  "text": "OpenAI 등 한 곳이 'AGI 달성'에 준하는 선언을 하고, 정의 논쟁이 격화",
+  "prob": "중간 40%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "Kalshi",
+    "url": "https://kalshi.com/markets/kxoaiagi/openai-achieves-agi",
+    "title": "When will OpenAI achieve AGI? — market snapshot"
+   },
+   {
+    "org": "simonwillison.net",
+    "url": "https://simonwillison.net/2026/Apr/27/now-deceased-agi-clause/",
+    "title": "OpenAI–Microsoft AGI 검증 전문가 패널 조항"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "5장",
+  "text": "AI 연구 자동화 수준이 초인적 AI 연구자(SAR)에 이름",
+  "prob": "낮음 15%±12",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "AI Futures Project (Lars…",
+    "url": "https://www.lesswrong.com/posts/f9PajMLmBYzmWzyDv/aifp-looks-like-the-intelligence-explosion-will-happen-in",
+    "title": "Q3.5 Timelines Update: Looks Like the Intelligence Explosion Will Happen in 2027 After All"
+   }
+  ],
+  "counter": [
+   {
+    "org": "Epoch AI",
+    "url": "https://epoch.ai/publications/parallelization-constraints-could-delay-a-technological-singularity",
+    "title": "Even after R&D is automated, parallelization constraints could delay a technological sing…"
+   }
+  ]
+ },
+ {
+  "chapter": "5장",
+  "text": "초지능 개발 금지·일시중지 요구가 주요국 정부 공식 의제로 오름",
+  "prob": "낮음 17%±15",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "futureoflife.org",
+    "url": "https://futureoflife.org/fli-open-letters/",
+    "title": "FLI Statement on Superintelligence"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "| 기상·기후",
+  "prob": "높음 72%±15",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "ECMWF",
+    "url": "https://www.ecmwf.int/en/about/media-centre/news/2026/ifs-cycle-50r1-aifsv2-live",
+    "title": "Significant update to ECMWF's key forecasting systems IFS and AIFS goes live (IFS 50r1 + …"
+   },
+   {
+    "org": "NOAA / NWS",
+    "url": "https://www.weather.gov/media/notification/pdf_2026/scn26-68_AIGFS_v1.1.pdf",
+    "title": "Service Change Notice 26-68: AIGFS v1.1 현업 전환 (2026-07-27)"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "| 시계열·정형",
+  "prob": "높음 70%±20",
+  "basis": "추정",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "| 화학·소재",
+  "prob": "높음 75%±15",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "Google DeepMind",
+    "url": "https://deepmind.google/blog/alphaevolve-impact/",
+    "title": "DeepMind AlphaEvolve"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "| 화학·소재",
+  "prob": "중간 40%±20",
+  "basis": "추정",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "| 로봇·체화(VLA)",
+  "prob": "중간 69%±20",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "Physical Intelligence",
+    "url": "https://www.pi.website/blog",
+    "title": "Blog index (π0.7, Pi API beta, MEM, RL token)"
+   },
+   {
+    "org": "Google DeepMind",
+    "url": "https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/",
+    "title": "Gemini Robotics 2 brings whole body intelligence to robots"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "| 로봇·체화(VLA)",
+  "prob": "중간 55%±15",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "Omdia",
+    "url": "https://www.financialcontent.com/article/bizwire-2026-9-30-omdia-identifies-four-forces-set-to-reshape-technology-in-2027",
+    "title": "Omdia Identifies Four Forces Set to Reshape Technology in 2027"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "| 월드모델·자율주행",
+  "prob": "높음 78%±15",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "NVIDIA",
+    "url": "https://research.nvidia.com/labs/cosmos-lab/cosmos3/technical-report.pdf",
+    "title": "Cosmos 3: Omnimodal World Models for Physical AI (Technical Report)"
+   },
+   {
+    "org": "NVIDIA",
+    "url": "https://nvidianews.nvidia.com/news/nvidia-releases-new-physical-ai-models-as-global-partners-unveil-next-generation-robots",
+    "title": "NVIDIA Releases New Physical AI Models as Global Partners Unveil Next-Generation Robots (…"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "| 월드모델·자율주행",
+  "prob": "높음 72%±15",
+  "basis": "추세",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "| 바이오·단백질",
+  "prob": "중간 65%±15",
+  "basis": "일정",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "| 의료·임상",
+  "prob": "높음 72%±10",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "FDA",
+    "url": "https://www.fda.gov/medical-devices/digital-health-center-excellence/artificial-intelligence-enabled-medical-devices",
+    "title": "Artificial Intelligence-Enabled Medical Devices (허가 목록 안내 페이지, 2026-09 기준 1,600건 이상)"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "| 의료·임상",
+  "prob": "중간 45%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "Stanford HAI",
+    "url": "https://hai.stanford.edu/assets/files/ai_index_report_2026_chapter_6_medicine.pdf",
+    "title": "AI Index Report 2026 — Chapter 6: Medicine"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "| 수학·과학 발견",
+  "prob": "높음 85%±10",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "Google DeepMind",
+    "url": "https://arxiv.org/abs/2605.22763",
+    "title": "Advancing Mathematics Research with AI-Driven Formal Proof Search (AlphaProof Nexus)"
+   },
+   {
+    "org": "Anthropic",
+    "url": "https://www.anthropic.com/research/formalizing-fermats-last-theorem",
+    "title": "Formalizing Fermat's Last Theorem"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "| 통신·6G",
+  "prob": "높음 90%±5",
+  "basis": "일정",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "| 통신·6G",
+  "prob": "중간 58%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "IITP 정보통신기획평가원 (보도: ZDNe…",
+    "url": "https://zdnet.co.kr/view?no=20261111120847",
+    "title": "2027 AI·ICT 10대 이슈 — 'AI의 가능성을 AX 생산성으로 입증'"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "| 반도체·EDA·제조",
+  "prob": "높음 88%±10",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "Synopsys",
+    "url": "https://news.synopsys.com/2026-07-27-Synopsys-Demonstrates-Leadership-in-AI-Powered-Engineering-at-2026-DAC-Chips-to-Systems-Conference",
+    "title": "Synopsys Demonstrates Leadership in AI-Powered Engineering at 2026 DAC"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "| 법률·금융·보안·국방",
+  "prob": "높음 72%±15",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "Anthropic",
+    "url": "https://www.anthropic.com/glasswing",
+    "title": "공개 불가 수준의 사이버 역량: Claude Mythos 제한 공개"
+   },
+   {
+    "org": "Anthropic",
+    "url": "https://www.anthropic.com/project/glasswing",
+    "title": "Claude Mythos Preview를 사이버 능력(핵심 인프라 제로데이 수천 건 식별) 때문에 Proje"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "7장",
+  "text": "AI 연구 자체",
+  "prob": "높음 70%±15",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "METR",
+    "url": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment",
+    "title": "Independent Assessment of AI R&D Acceleration at Anthropic in October 2026"
+   },
+   {
+    "org": "Anthropic",
+    "url": "https://www.anthropic.com/research/how-ai-is-transforming-work-at-anthropic",
+    "title": "How AI is transforming work at Anthropic"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "7장",
+  "text": "생물학·신약",
+  "prob": "높음 75%±15",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "Google / Google DeepMind",
+    "url": "https://deepmind.google/blog/co-scientist-a-multi-agent-ai-partner-to-accelerate-research/",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "7장",
+  "text": "기후·지구",
+  "prob": "높음 90%±8",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "ECMWF",
+    "url": "https://www.ecmwf.int/en/about/media-centre/news/2026/ifs-cycle-50r1-aifsv2-live",
+    "title": "Significant update to ECMWF's key forecasting systems IFS and AIFS goes live (IFS 50r1 + …"
+   },
+   {
+    "org": "NOAA / NWS",
+    "url": "https://www.weather.gov/media/notification/pdf_2026/scn26-68_AIGFS_v1.1.pdf",
+    "title": "Service Change Notice 26-68: AIGFS v1.1 현업 전환 (2026-07-27)"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "7장",
+  "text": "수학",
+  "prob": "높음 82%±12",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "Google DeepMind",
+    "url": "https://arxiv.org/abs/2605.22763",
+    "title": "Advancing Mathematics Research with AI-Driven Formal Proof Search (AlphaProof Nexus)"
+   },
+   {
+    "org": "Anthropic",
+    "url": "https://www.anthropic.com/research/formalizing-fermats-last-theorem",
+    "title": "Formalizing Fermat's Last Theorem"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "7장",
+  "text": "소재·화학",
+  "prob": "중간 65%±15",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "Capgemini",
+    "url": "https://www.capgemini.com/wp-content/uploads/2026/11/261117_Capgemini-Top-Tech-Trends-to-watch-in-2027-PR.pdf",
+    "title": "TechnoVision: Top 5 Tech Trends to Watch in 2027"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "7장",
+  "text": "물리·천문",
+  "prob": "중간 68%±15",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "CritPt 팀",
+    "url": "https://arxiv.org/abs/2509.26574",
+    "title": "Probing the Critical Point (CritPt) of AI Reasoning: a Frontier Physics Research Benchmark"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "7장",
+  "text": "사회과학·경제",
+  "prob": "중간 66%±15",
+  "basis": "추정",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "7장",
+  "text": "공학·ICT(통신·6G)",
+  "prob": "중간 62%±15",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "GSMA",
+    "url": "https://www.gsma.com/newsroom/article/gsma-open-telco-llm-benchmarks-ranks-frontier-ai-models-for-telco-ai-revealing-critical-gap-in-network-automation-readiness/",
+    "title": "GSMA Open-Telco LLM Benchmarks ranks frontier AI models for Telco AI (phase 2)"
+   },
+   {
+    "org": "과학기술정보통신부·IITP",
+    "url": "https://eiec.kdi.re.kr/policy/materialView.do?num=289359",
+    "title": "보도자료: 인공지능·정보통신기술, 성장의 공식을 바꾸다! — 「2027 AI·ICT R&D 기술전망 콘퍼런스」 개최"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "7장",
+  "text": "출판·심사",
+  "prob": "높음 72%±15",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "Pangram Labs",
+    "url": "https://www.pangram.com/blog/pangram-predicts-21-of-iclr-reviews-are-ai-generated",
+    "title": "Pangram Predicts 21% of ICLR Reviews are AI-Generated"
+   },
+   {
+    "org": "Stanford (James Zou 등)",
+    "url": "https://arxiv.org/pdf/2511.15534",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "7장",
+  "text": "출판·심사",
+  "prob": "높음 88%±10",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "GPTZero",
+    "url": "https://gptzero.me/news/neurips/",
+    "title": "Hallucinated citations in NeurIPS 2025 accepted papers"
+   },
+   {
+    "org": "arXiv",
+    "url": "https://arxiv.org/abs/2608.02859",
+    "title": "The Crisis of AI-Generated Mathematics"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "7장",
+  "text": "재현성",
+  "prob": "중간 40%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "Google DeepMind",
+    "url": "https://deepmind.google/public-policy/conjecture-machines-ai-agents-and-the-new-validation-bottleneck-in-science/",
+    "title": "Conjecture Machines: AI agents and the new validation bottleneck in science (2026-07)"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "7장",
+  "text": "크레딧",
+  "prob": "중간 65%±15",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "USPTO (Federal Register)",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2025-11-28/pdf/2025-21457.pdf",
+    "title": "Revised Inventorship Guidance for AI-Assisted Inventions"
+   },
+   {
+    "org": "US Copyright Office",
+    "url": "https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-2-Copyrightability-Report.pdf",
+    "title": "Copyright and AI Part 2: Copyrightability"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "7장",
+  "text": "인재",
+  "prob": "중간 64%±15",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "SPRi 소프트웨어정책연구소",
+    "url": "https://spri.kr/posts/view/24037?code=data_all",
+    "title": "에이전틱 AI 시대의 SW인재 수요전망 분석 (이슈리포트 IS-237)"
+   },
+   {
+    "org": "Stanford Digital Economy…",
+    "url": "https://digitaleconomy.stanford.edu/news/canariesaug26/",
+    "title": "Canaries in the Coal Mine — August 2026 update"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "7장",
+  "text": "데이터",
+  "prob": "중간 50%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "energy.gov",
+    "url": "https://www.energy.gov/undersecretaryforscience/articles/us-department-energy-announces-more-800-million-partner",
+    "title": "국가 AI4S 프로그램의 대형화(컴퓨트+국립연구소+프런티어 모델 결합)"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "7장",
+  "text": "FrontierMath-Erdős 남은 51문제 중 다수 해결, erdosproblems.com 미해결 문제 대량 정리",
+  "prob": "높음 75%±15",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "Epoch AI",
+    "url": "https://epoch.ai/latest/announcing-frontiermath-erdos",
+    "title": "Announcing FrontierMath Erdős (기존 저장본)"
+   },
+   {
+    "org": "Google DeepMind (Aletheia)",
+    "url": "https://arxiv.org/abs/2601.22401",
+    "title": "Semi-Autonomous Mathematics Discovery with Gemini: A Case Study on the Erdős Problems"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "7장",
+  "text": "극값 조합론·이산기하 경계 개선(작은 Ramsey 수, cap set, 12–31차원 키싱수, 구 채우기, Kakeya류)",
+  "prob": "높음 90%±8",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "Google DeepMind / Tao 외",
+    "url": "https://arxiv.org/abs/2511.02864",
+    "title": "Mathematical Exploration and Discovery at Scale (AlphaEvolve 67 problems)"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "7장",
+  "text": "작은 형식의 행렬곱 신기록(5×5, 6×6, 직사각)",
+  "prob": "높음 80%±12",
+  "basis": "추세",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "7장",
+  "text": "단위거리 추측급 '이름 있는 추측' 2–5개 추가 해결",
+  "prob": "높음 74%±15",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "Google DeepMind (Aletheia)",
+    "url": "https://arxiv.org/abs/2601.22401",
+    "title": "Semi-Autonomous Mathematics Discovery with Gemini: A Case Study on the Erdős Problems"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "7장",
+  "text": "산란진폭 고루프 계산과 새 닫힌 공식(N=4 SYM, QCD·중력)",
+  "prob": "높음 70%±18",
+  "basis": "추세",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "7장",
+  "text": "AI가 주도한 결과의 4대 수학지(Annals·Acta·JAMS·Inventiones) 게재 승인",
+  "prob": "중간 38%±20",
+  "basis": "추정",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "7장",
+  "text": "대형 정리의 AI 형식화 확산(FLT의 Mathlib 통합, 기하화 추측, 유한단순군 분류 일부, 최근 필즈상 업적)",
+  "prob": "중간 60%±15",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "Anthropic",
+    "url": "https://www.anthropic.com/research/formalizing-fermats-last-theorem",
+    "title": "Formalizing Fermat's Last Theorem"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "7장",
+  "text": "외력 Navier–Stokes 증명에 대한 학계 판정",
+  "prob": "중간 45%±20",
+  "basis": "추정",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "7장",
+  "text": "경계 없는 3차원 Euler/Boussinesq 불안정 특이점의 컴퓨터 보조 엄밀 증명",
+  "prob": "중간 40%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "arXiv",
+    "url": "https://arxiv.org/abs/2509.14185",
+    "title": "Discovery of Unstable Singularities"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "7장",
+  "text": "AI 설계 양자오류정정 코드·디코더의 실제 하드웨어 적용",
+  "prob": "중간 62%±15",
+  "basis": "추세",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "7장",
+  "text": "AI 설계 실험(간섭계·양자광학)의 실제 장치 구현",
+  "prob": "중간 60%±15",
+  "basis": "추세",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "7장",
+  "text": "기호회귀·LLM으로 새 경험법칙을 발견하고 독립 데이터로 확인",
+  "prob": "중간 38%±20",
+  "basis": "추정",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "7장",
+  "text": "연구 수준 물리 벤치마크(CritPt·TPBench) 60% 이상",
+  "prob": "중간 50%±20",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "CritPt 팀",
+    "url": "https://arxiv.org/abs/2509.26574",
+    "title": "Probing the Critical Point (CritPt) of AI Reasoning: a Frontier Physics Research Benchmark"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "7장",
+  "text": "행렬곱 지수 ω의 점근적 개선을 AI가 주도",
+  "prob": "낮음 15%±12",
+  "basis": "추정",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "7장",
+  "text": "외력 없는 Navier–Stokes(밀레니엄 문제의 자연스러운 형태) 해결",
+  "prob": "낮음 5%±5",
+  "basis": "추정",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "7장",
+  "text": "핵융합 플라즈마 AI 제어의 새 장치 적용(SPARC 등)",
+  "prob": "낮음 30%±20",
+  "basis": "추정",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "8장",
+  "text": "조직",
+  "prob": "높음 72%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "BCG",
+    "url": "https://www.bcg.com/ja-jp/press/30september2026-ai-starting-to-pay-off-companies-generate-value",
+    "title": "Applied AI Index 2026 (About Half of Companies Now Create Value from AI)"
+   },
+   {
+    "org": "IDC",
+    "url": "https://www.idc.com/resource-center/press-releases/idc-futurescape-2027-predicts-60-of-enterprises-will-run-a-majority-of-their-business-processes-ai-first-by-2029-up-from-13-in-2026/",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "8장",
+  "text": "조직",
+  "prob": "높음 70%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "IDC",
+    "url": "https://www.idc.com/resource-center/press-releases/idc-futurescape-2027-predicts-60-of-enterprises-will-run-a-majority-of-their-business-processes-ai-first-by-2029-up-from-13-in-2026/",
+    "title": ""
+   },
+   {
+    "org": "SPRi 소프트웨어정책연구소",
+    "url": "https://spri.kr/posts/view/24037?code=data_all",
+    "title": "에이전틱 AI 시대의 SW인재 수요전망 분석 (이슈리포트 IS-237)"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "8장",
+  "text": "경영",
+  "prob": "높음 85%±10",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Forrester",
+    "url": "https://www.forrester.com/blogs/predictions-2027-disruption-unleashed/",
+    "title": "Predictions 2027: Disruption Unleashed (Predictions 2027: Artificial Intelligence 요약 블로그)"
+   },
+   {
+    "org": "McKinsey",
+    "url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "8장",
+  "text": "경영",
+  "prob": "높음 72%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "Gartner",
+    "url": "https://www.gartner.com/en/newsroom/press-releases/2026-09-15-gartner-unveils-top-strategic-predictions-for-2027-and-beyond",
+    "title": ""
+   },
+   {
+    "org": "Capgemini",
+    "url": "https://www.capgemini.com/wp-content/uploads/2026/11/261117_Capgemini-Top-Tech-Trends-to-watch-in-2027-PR.pdf",
+    "title": "TechnoVision: Top 5 Tech Trends to Watch in 2027"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "8장",
+  "text": "경영",
+  "prob": "중간 45%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "Gartner",
+    "url": "https://www.gartner.com/en/newsroom/press-releases/2026-09-15-gartner-unveils-top-strategic-predictions-for-2027-and-beyond",
+    "title": ""
+   },
+   {
+    "org": "Capgemini Research Insti…",
+    "url": "https://www.capgemini.com/wp-content/uploads/2026/11/11_12_AI-economics-snapshot_Capgemini-press-release_EN-2.pdf",
+    "title": "AI economics snapshot: Most organizations plan multi-model AI strategy as nearly six in t…"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "8장",
+  "text": "인사",
+  "prob": "높음 82%±10",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "HCAMag (Challenger 자료 인용)",
+    "url": "https://www.hcamag.com/us/specialization/transformation/ai-blamed-for-121401-job-cuts-but-the-labor-data-isnt-buying-it/594129",
+    "title": "AI blamed for 121,401 job cuts, but the labor data isn't buying it"
+   },
+   {
+    "org": "SPRi 소프트웨어정책연구소",
+    "url": "https://spri.kr/posts/view/24037?code=data_all",
+    "title": "에이전틱 AI 시대의 SW인재 수요전망 분석 (이슈리포트 IS-237)"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "8장",
+  "text": "인사",
+  "prob": "중간 50%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "한국은행 (보도: ZDNet Korea)",
+    "url": "https://zdnet.co.kr/view?no=20261117102535",
+    "title": "BOK 이슈노트: AI 확산과 생산성 효과 — 더 널리, 더 효율적으로, 그러나 아직 얕게"
+   },
+   {
+    "org": "SAS",
+    "url": "https://itwire.com/guest-articles/company-news/sas-predictions-2027-is-the-year-of-ai-consequences",
+    "title": "SAS Predictions: 2027 is the year of AI consequences"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "8장",
+  "text": "인사",
+  "prob": "중간 55%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "한국은행 (보도: ZDNet Korea)",
+    "url": "https://zdnet.co.kr/view?no=20261117102535",
+    "title": "BOK 이슈노트: AI 확산과 생산성 효과 — 더 널리, 더 효율적으로, 그러나 아직 얕게"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "8장",
+  "text": "노무",
+  "prob": "중간 62%±15",
+  "basis": "추정",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "8장",
+  "text": "노무",
+  "prob": "중간 45%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "en.wikipedia.org",
+    "url": "https://en.wikipedia.org/wiki/SAG-AFTRA",
+    "title": "SAG-AFTRA 비디오게임 파업 종료(95.04% 비준), AI 레플리카 동의·보상 확보"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "8장",
+  "text": "노무",
+  "prob": "중간 55%±20",
+  "basis": "추정",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "8장",
+  "text": "법·규제",
+  "prob": "높음 92%±5",
+  "basis": "일정",
+  "support": [
+   {
+    "org": "eeas.europa.eu",
+    "url": "https://eeas.europa.eu/delegations/chile/artificial-intelligence-council-gives-final-green-light-simplify-and-streamline-rules_en",
+    "title": "EU 디지털 옴니버스 최종 승인: 독립형 고위험 AI 의무는 2027-12-02, 제품 내장형은 2028-0"
+   },
+   {
+    "org": "European Commission (DG …",
+    "url": "https://digital-strategy.ec.europa.eu/en/news/eu-agrees-simplify-ai-rules-boost-innovation-and-ban-nudification-apps-protect-citizens",
+    "title": "EU agrees to simplify AI rules to boost innovation and ban 'nudification' apps to protect…"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "8장",
+  "text": "법·규제",
+  "prob": "높음 70%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "IDC",
+    "url": "https://www.idc.com/resource-center/press-releases/idc-futurescape-2027-predicts-60-of-enterprises-will-run-a-majority-of-their-business-processes-ai-first-by-2029-up-from-13-in-2026/",
+    "title": ""
+   },
+   {
+    "org": "Gartner",
+    "url": "https://www.gartner.com/en/newsroom/press-releases/2026-09-15-gartner-unveils-top-strategic-predictions-for-2027-and-beyond",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "8장",
+  "text": "법·규제",
+  "prob": "중간 60%±15",
+  "basis": "일정",
+  "support": [
+   {
+    "org": "korea.kr",
+    "url": "https://korea.kr/news/policyNewsView.do?newsId=148958380",
+    "title": "한국 AI 기본법 시행: 생성형 AI 결과물 워터마크 표시 의무, 10^26 FLOPs 이상 모델에 안전성"
+   },
+   {
+    "org": "과학기술정보통신부 (보도: ZDNet Kor…",
+    "url": "https://zdnet.co.kr/view?no=20261116144303",
+    "title": "정부 \"AI 기본법, 기업 혁신 뒷받침하도록 보완\" — 2026 하반기 AI법정책포럼"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "9장",
+  "text": "오구매·오예약과 책임 소재",
+  "prob": "높음 72%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "Air Street Capital (Stat…",
+    "url": "https://www.stateof.ai/predictions",
+    "title": "State of AI Report 2026 — AI predictions for 2027 & scorecard"
+   },
+   {
+    "org": "Digital Commerce 360",
+    "url": "https://www.digitalcommerce360.com/2026/04/02/visa-mastercard-in-agentic-commerce/",
+    "title": "Ecommerce Trends: How Visa and Mastercard are approaching agentic commerce"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "9장",
+  "text": "에이전트를 노린 프롬프트 인젝션·쇼핑 사기",
+  "prob": "높음 85%±15",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "Guardio Labs",
+    "url": "https://guard.io/labs/scamlexity-we-put-agentic-ai-browsers-to-the-test-they-clicked-they-paid-they-failed",
+    "title": "Scamlexity: We put agentic AI browsers to the test - they clicked, they paid, they failed"
+   },
+   {
+    "org": "labs.cloudsecurityalliance",
+    "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-ai-browser-prompt-injection-20260630-csa-s/",
+    "title": "LayerX 'BioShocking' 간접 프롬프트 주입이 AI 브라우저·확장 6종을 침해(ChatGPT A"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "9장",
+  "text": "전권을 가진 에이전트의 개인정보 위험",
+  "prob": "높음 78%±15",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "labs.cloudsecurityalliance",
+    "url": "https://labs.cloudsecurityalliance.org/wp-content/uploads/2026/03/CSA_research_note_PleaseFix_agentic_browser_exploits_20260328-csa-styled.pdf",
+    "title": "'PleaseFix': 넓은 OAuth 권한을 가진 자율 브라우저 에이전트를 무클릭으로 탈취하는 공격군이 여"
+   },
+   {
+    "org": "zdnet.co.kr",
+    "url": "https://zdnet.co.kr/view/?no=20260619100049",
+    "title": "한국·싱가포르 AISI 공동 테스트: 정상 지시를 수행하는 중에도 AI 에이전트가 민감정보를 부적절하게 처리"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "9장",
+  "text": "플랫폼 종속·게이트키핑",
+  "prob": "높음 72%±15",
+  "basis": "추정",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "9장",
+  "text": "광고 기반 웹의 붕괴",
+  "prob": "높음 85%±10",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "pewresearch.org",
+    "url": "https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/",
+    "title": "Pew: AI 요약이 뜨면 검색 링크 클릭이 15%에서 8%로 감소"
+   },
+   {
+    "org": "Graphite",
+    "url": "https://graphite.io/research/ai-search-collapse",
+    "title": "AI Search Collapse"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "9장",
+  "text": "소상공인·지역 상점 배제",
+  "prob": "중간 60%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "Capgemini",
+    "url": "https://www.capgemini.com/wp-content/uploads/2026/11/261117_Capgemini-Top-Tech-Trends-to-watch-in-2027-PR.pdf",
+    "title": "TechnoVision: Top 5 Tech Trends to Watch in 2027"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "9장",
+  "text": "가격 차별·알고리즘 담합",
+  "prob": "중간 52%±20",
+  "basis": "추정",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "9장",
+  "text": "디지털 격차",
+  "prob": "중간 55%±20",
+  "basis": "추정",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "9장",
+  "text": "과위임과 '승인 피로'",
+  "prob": "중간 48%±25",
+  "basis": "추정",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "9장",
+  "text": "컴패니언 에이전트와 고립",
+  "prob": "중간 58%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "techcrunch.com",
+    "url": "https://techcrunch.com/2025/10/13/california-becomes-first-state-to-regulate-ai-companion-chatbots/",
+    "title": "캘리포니아 SB 243 서명: 미국 첫 동반자 챗봇 규제법"
+   },
+   {
+    "org": "techcrunch.com",
+    "url": "https://techcrunch.com/2026/01/07/google-and-character-ai-negotiate-first-major-settlements-in-teen-chatbot-death-cases/",
+    "title": "Google·Character.AI, 10대 사망 사건 첫 합의에 원칙적 합의"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "9장",
+  "text": "공공서비스 과부하",
+  "prob": "중간 45%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "Gartner",
+    "url": "https://www.gartner.com/en/newsroom/press-releases/2026-09-15-gartner-unveils-top-strategic-predictions-for-2027-and-beyond",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "9장",
+  "text": "에이전트 행위의 계약 효력",
+  "prob": "중간 38%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "Air Street Capital (Stat…",
+    "url": "https://www.stateof.ai/predictions",
+    "title": "State of AI Report 2026 — AI predictions for 2027 & scorecard"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "9장",
+  "text": "고객센터 '기계 대 기계' 응대",
+  "prob": "중간 50%±20",
+  "basis": "추정",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "9장",
+  "text": "보험 공백",
+  "prob": "중간 62%±15",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "Gallagher (Arthur J. Gal…",
+    "url": "https://www.ajg.com/site-content/articles/2026/april/ai-liability-not-so-silent/",
+    "title": "AI Liability: Not So Silent"
+   },
+   {
+    "org": "Gartner",
+    "url": "https://www.gartner.com/en/newsroom/press-releases/2026-09-15-gartner-unveils-top-strategic-predictions-for-2027-and-beyond",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "9장",
+  "text": "에이전트 동조화로 인한 금융 쏠림",
+  "prob": "낮음 30%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "Air Street Capital (Stat…",
+    "url": "https://www.stateof.ai/predictions",
+    "title": "State of AI Report 2026 — AI predictions for 2027 & scorecard"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "9장",
+  "text": "글로벌 토큰 처리량이 연 3~6배 늘어 Google API만 월 4,000조 토큰 이상. 증가분 대부분은 에이전트·코딩·캐시 토큰",
+  "prob": "중간 69%±15",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "Menlo Ventures",
+    "url": "https://menlovc.com/wp-content/uploads/2026/11/menlo_ventures_enterprise_ai_report-2026-110326.pdf",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "9장",
+  "text": "같은 성능 단가는 연 수십 배 떨어지지만 최상위 티어 리스트가는 출력 $20~50 이상에서 거의 안 내려감",
+  "prob": "높음 82%±10",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "Epoch AI",
+    "url": "https://epoch.ai/data-insights/llm-inference-price-trends",
+    "title": "LLM inference prices have fallen rapidly but unequally across tasks"
+   },
+   {
+    "org": "axios.com",
+    "url": "https://axios.com/2026/10/22/ai-token-prices-demand",
+    "title": "토큰 가격 급락이 AI 붐의 새 변수로"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "9장",
+  "text": "'토큰 단가는 하락, 태스크 비용은 정체 또는 상승'이 기업 체감의 표준이 됨(IITP '태스크 코스트')",
+  "prob": "높음 78%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "IITP 정보통신기획평가원 (보도: ZDNe…",
+    "url": "https://zdnet.co.kr/view?no=20261111120847",
+    "title": "2027 AI·ICT 10대 이슈 — 'AI의 가능성을 AX 생산성으로 입증'"
+   },
+   {
+    "org": "Gartner",
+    "url": "https://www.gartner.com/en/newsroom/press-releases/2026-10-26-gartner-identifies-the-top-ai-trends-in-infrastructure-and-it-operations-for-2027",
+    "title": "Gartner Identifies the Top AI Trends in Infrastructure and IT Operations for 2027"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "9장",
+  "text": "추론이 AI 컴퓨트의 2/3 이상. AI 팩토리 실적 지표가 FLOPS에서 전력당 토큰·토큰당 원가로 바뀜",
+  "prob": "높음 70%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "IITP 정보통신기획평가원 (보도: ZDNe…",
+    "url": "https://zdnet.co.kr/view?no=20261111120847",
+    "title": "2027 AI·ICT 10대 이슈 — 'AI의 가능성을 AX 생산성으로 입증'"
+   },
+   {
+    "org": "Gartner",
+    "url": "https://www.gartner.com/en/newsroom/press-releases/2026-10-26-gartner-identifies-the-top-ai-trends-in-infrastructure-and-it-operations-for-2027",
+    "title": "Gartner Identifies the Top AI Trends in Infrastructure and IT Operations for 2027"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "9장",
+  "text": "기업 계약은 '좌석 + 토큰 크레딧 + 결과' 하이브리드가 주류. 결과 과금은 측정 쉬운 영역에 한정",
+  "prob": "높음 82%±15",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "Gartner",
+    "url": "https://www.gartner.com/en/newsroom/press-releases/2026-10-26-gartner-identifies-the-top-ai-trends-in-infrastructure-and-it-operations-for-2027",
+    "title": "Gartner Identifies the Top AI Trends in Infrastructure and IT Operations for 2027"
+   },
+   {
+    "org": "Sequoia Capital",
+    "url": "https://sequoiacap.com/article/2026-this-is-agi",
+    "title": "2026: This is AGI"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "9장",
+  "text": "AI FinOps(토큰 예산·한도·텔레메트리)가 CFO 의제가 되고, 대기업 절반이 부서별 토큰 예산과 모델 라우팅을 의무화",
+  "prob": "높음 70%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "Gartner",
+    "url": "https://www.gartner.com/en/newsroom/press-releases/2026-09-15-gartner-unveils-top-strategic-predictions-for-2027-and-beyond",
+    "title": ""
+   },
+   {
+    "org": "Gartner",
+    "url": "https://www.gartner.com/en/articles/hype-cycle-for-artificial-intelligence",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "9장",
+  "text": "x402 등 M2M 결제는 건수 수억 건, 금액 수억 달러 수준. '진짜 자율 에이전트' 비중 논쟁 지속",
+  "prob": "높음 72%±15",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "TRM Labs",
+    "url": "https://www.trmlabs.com/trm-tech-blog/whos-actually-paying-measuring-ai-agent-payments-onchain",
+    "title": "Who's actually paying? Measuring AI agent payments onchain"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "9장",
+  "text": "국내 라우팅·게이트웨이 확산, 오픈웨이트(국산·중국산) 비중 증가",
+  "prob": "높음 85%±10",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "지디넷코리아",
+    "url": "https://zdnet.co.kr/view?no=20261108123219",
+    "title": "LLM 라우터·토큰 비용 관리(카페24·KT 토큰팩토리·래블업)"
+   },
+   {
+    "org": "IITP 정보통신기획평가원 (보도: ZDNe…",
+    "url": "https://zdnet.co.kr/view?no=20261111120847",
+    "title": "2027 AI·ICT 10대 이슈 — 'AI의 가능성을 AX 생산성으로 입증'"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "9장",
+  "text": "OpenRouter 주간 1,000조 토큰 근접, 에이전트 비중 85~90%",
+  "prob": "중간 48%±15",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "Menlo Ventures",
+    "url": "https://menlovc.com/wp-content/uploads/2026/11/menlo_ventures_enterprise_ai_report-2026-110326.pdf",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "9장",
+  "text": "HBM·전력 제약으로 GPU 임대료가 상반기까지 높다가 하반기 H100급부터 하락",
+  "prob": "중간 50%±20",
+  "basis": "전망",
+  "support": [],
+  "counter": [
+   {
+    "org": "IEA (International Energ…",
+    "url": "https://iea.org/reports/key-questions-on-energy-and-ai/executive-summary",
+    "title": "Key Questions on Energy and AI — Executive summary"
+   }
+  ]
+ },
+ {
+  "chapter": "9장",
+  "text": "OpenAI·Anthropic 합산 연환산 2,500억 달러 돌파. IPO·공시로 추론 마진이 처음 검증되고 'AI 버블' 논쟁의 분기점이 됨",
+  "prob": "중간 45%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "thenextweb.com",
+    "url": "https://thenextweb.com/news/anthropic-ipo-confidential-filing-openai-race-965-billion",
+    "title": "Anthropic 밸류가 OpenAI를 추월"
+   },
+   {
+    "org": "Christopher S. Penn (Tru…",
+    "url": "https://almosttimely.substack.com/p/almost-timely-news-the-ai-bubble",
+    "title": "Almost Timely News: The AI Bubble"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "9장",
+  "text": "직원 1인당 토큰 예산을 생산성 도구·복리후생으로 공시하는 기업 등장",
+  "prob": "중간 50%±25",
+  "basis": "추정",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "9장",
+  "text": "GENIUS Act 시행으로 규제 스테이블코인이 카드망·PG의 에이전트 결제 정산 레일로 편입",
+  "prob": "중간 65%±15",
+  "basis": "일정",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "9장",
+  "text": "디지털자산기본법 상반기 제정, 은행 중심 원화 스테이블코인 발행 체계 확정",
+  "prob": "중간 45%±20",
+  "basis": "추정",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "9장",
+  "text": "원화 스테이블코인 기반 에이전트 소액결제(x402 호환)가 규제 샌드박스 실증에 들어감",
+  "prob": "낮음 25%±20",
+  "basis": "추정",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "9장",
+  "text": "국가 GPU·국가AI컴퓨팅센터 이용 대가가 GPU시간에서 토큰·API 크레딧 바우처로 일부 전환",
+  "prob": "낮음 22%±20",
+  "basis": "추정",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "10장",
+  "text": "생성형 AI폰이 세계 출하의 절반을 넘음(약 52%)",
+  "prob": "높음 72%±10",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Counterpoint Research",
+    "url": "https://counterpointresearch.com/en/insights/genai-smartphone-share-to-rise-to-45-percent-of-global-shipments-in-2026",
+    "title": "GenAI Smartphone Share to Rise to 45% of Global Shipments in 2026 (2026-06-22)"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "10장",
+  "text": "중국 OEM은 내수용 자체 모델(Doubao·Qwen) 에이전트폰과 해외용 Gemini의 이원 구조 유지",
+  "prob": "높음 88%±10",
+  "basis": "추세",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "10장",
+  "text": "PC 출하가 메모리 제약으로 2025년 수준을 회복하지 못함",
+  "prob": "높음 88%±10",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "IDC",
+    "url": "https://www.idc.com/resource-center/blog/pc-market-enters-volatile-territory-as-memory-shortage-persists-through-2027/",
+    "title": "PC Market Enters Volatile Territory as Memory Shortage Persists Through 2027 (2026-06-02)"
+   },
+   {
+    "org": "IDC",
+    "url": "https://www.idc.com/resource-center/blog/higher-asps-lower-unit-volumes-how-the-memory-crisis-is-reshaping-the-pc-and-smartphone-outlook",
+    "title": "Higher ASPs, Lower Unit Volumes: How the Memory Crisis Is Reshaping the PC and Smartphone…"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "10장",
+  "text": "단독 AI 핀·펜던트는 대중화에 실패하고, 이어버드 통역·워치·링 건강 AI가 주류",
+  "prob": "높음 85%±10",
+  "basis": "추세",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "10장",
+  "text": "3단 하이브리드가 주요 OEM의 표준 구조가 됨",
+  "prob": "높음 80%±15",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "The Next Web",
+    "url": "https://thenextweb.com/news/apple-wwdc-2026-siri-ai-gemini-ios-27",
+    "title": "Apple finally ships its AI do-over: Siri AI, a standalone app, and a three-tier privacy s…"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "10장",
+  "text": "국산 NPU(딥엑스·리벨리온·퓨리오사)가 정부 레퍼런스 사업으로 로봇·엣지박스·공공 서비스 탑재 실적 확대",
+  "prob": "높음 78%±15",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "과학기술정보통신부",
+    "url": "https://eiec.kdi.re.kr/policy/materialView.do?num=286173",
+    "title": "보도자료: 2027년 과기정통부 예산안 29.6조원 편성 — '인공지능과 첨단기술로 대체 불가 대한민국으로의 대도약'"
+   },
+   {
+    "org": "IITP 정보통신기획평가원 (보도: ZDNe…",
+    "url": "https://zdnet.co.kr/view?no=20261111120847",
+    "title": "2027 AI·ICT 10대 이슈 — 'AI의 가능성을 AX 생산성으로 입증'"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "10장",
+  "text": "삼성 MX 수익성은 메모리 원가로 압박받지만 메모리 사업 이익이 전사를 상쇄",
+  "prob": "높음 75%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Samsung Electronics",
+    "url": "https://news.samsungsemiconductor.com/global/samsung-electronics-announces-third-quarter-2026-results/",
+    "title": "Samsung Electronics Announces Third Quarter 2026 Results"
+   },
+   {
+    "org": "IDC",
+    "url": "https://www.idc.com/?p=832",
+    "title": "메모리 대란으로 스마트폰 시장 역성장"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "10장",
+  "text": "스마트폰 출하는 0~2%대 소폭 회복에 그치고 평균판매가는 높게 유지",
+  "prob": "중간 40%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "IDC",
+    "url": "https://www.idc.com/resource-center/blog/higher-asps-lower-unit-volumes-how-the-memory-crisis-is-reshaping-the-pc-and-smartphone-outlook",
+    "title": "Higher ASPs, Lower Unit Volumes: How the Memory Crisis Is Reshaping the PC and Smartphone…"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "10장",
+  "text": "Apple Siri AI가 다국어로 확대되지만 EU·중국 출시는 일부만",
+  "prob": "중간 60%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "The Next Web",
+    "url": "https://thenextweb.com/news/apple-wwdc-2026-siri-ai-gemini-ios-27",
+    "title": "Apple finally ships its AI do-over: Siri AI, a standalone app, and a three-tier privacy s…"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "10장",
+  "text": "신규 PC 대부분이 NPU를 탑재하지만 'AI PC'가 구매 동인이라는 증거는 약함",
+  "prob": "중간 65%±15",
+  "basis": "전망",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "10장",
+  "text": "스마트 글래스 출하가 30~50% 성장하고 Meta 점유율은 60%대로 내려감",
+  "prob": "중간 35%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "IDC",
+    "url": "https://www.idc.com/resource-center/blog/smart-glasses-growth-cools-to-35-as-meta-doubles-down-on-distribution/",
+    "title": "Smart Glasses Growth Cools to 35% as Meta Doubles Down on Distribution (2026-09-16)"
+   },
+   {
+    "org": "IDC",
+    "url": "https://www.idc.com/resource-center/blog/meta-connect-2026-more-glasses-on-more-faces",
+    "title": "Meta Connect 2026: More Glasses on More Faces (2026-09-25)"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "10장",
+  "text": "카메라 글래스 촬영 고지·녹화 제한 등 프라이버시 규칙이 한국·EU에서 구체화",
+  "prob": "중간 50%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "IITP 정보통신기획평가원 (보도: ZDNe…",
+    "url": "https://zdnet.co.kr/view?no=20261111120847",
+    "title": "2027 AI·ICT 10대 이슈 — 'AI의 가능성을 AX 생산성으로 입증'"
+   },
+   {
+    "org": "과학기술정보통신부 (보도: ZDNet Kor…",
+    "url": "https://zdnet.co.kr/view?no=20261116144303",
+    "title": "정부 \"AI 기본법, 기업 혁신 뒷받침하도록 보완\" — 2026 하반기 AI법정책포럼"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "10장",
+  "text": "OpenAI 첫 기기가 2027년 안에 소비자에게 출하",
+  "prob": "중간 55%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "MacRumors",
+    "url": "https://macrumors.com/2026/07/28/openai-first-devices",
+    "title": "OpenAI's First Devices: Speaker, Smartphone, and More (2026-07-28)"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "10장",
+  "text": "2025년 말 프런티어급 성능의 모델이 플래그십 폰에서 로컬 실행",
+  "prob": "중간 55%±20",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "arXiv",
+    "url": "https://arxiv.org/pdf/2412.04315",
+    "title": "Densing Law of LLMs (arXiv 2412.04315; Nature Machine Intelligence 2025-11)"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "10장",
+  "text": "스마트홈 음성비서가 LLM 에이전트로 사실상 전면 교체, MCP류 기기 제어 확산",
+  "prob": "중간 40%±20",
+  "basis": "추정",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "10장",
+  "text": "AI를 이용한 IoT 공격이 보안 보고서의 핵심 항목이 되지만 자율 자기복제 웜의 실제 확산은 미확인",
+  "prob": "중간 65%±15",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "Cloud Security Alliance …",
+    "url": "https://labs.cloudsecurityalliance.org/wp-content/uploads/2026/07/CSA_research_note_tuxbot_llm_assisted_botnet_20260723-csa-styled.pdf",
+    "title": "TuxBot v3: LLM-Assisted IoT Botnet Goes Operational (research note)"
+   },
+   {
+    "org": "ITPro",
+    "url": "https://www.itpro.com/uk/security/cyber-attacks/iot-attacks-the-biggest-attacks-so-far-and-what-businesses-can-do",
+    "title": "2026 in IoT attacks: the biggest threats so far and what businesses can do"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "10장",
+  "text": "Apple이 2027년 안에 스마트 글래스 발표",
+  "prob": "낮음 30%±20",
+  "basis": "추정",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "11장",
+  "text": "- Vera Rubin이 주력이 되고 하반기 Rubin Ultra로 전환 _(높음)_",
+  "prob": "높음 72%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "NVIDIA",
+    "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027",
+    "title": "Financial Results for Third Quarter Fiscal 2027"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "11장",
+  "text": "- CoWoS·HBM이 상반기까지 출하 병목으로 남음 _(높음)_",
+  "prob": "높음 85%±10",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "TrendForce",
+    "url": "https://www.trendforce.com/presscenter/news/20260929-13255.html",
+    "title": "HBM Supply Constraints Persist, 2027 Price Outlook Revised Upward with Blended ASP Foreca…"
+   },
+   {
+    "org": "IEA (International Energ…",
+    "url": "https://iea.org/reports/key-questions-on-energy-and-ai/executive-summary",
+    "title": "Key Questions on Energy and AI — Executive summary"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "11장",
+  "text": "- 중국은 Ascend·Cambricon으로 공백을 메우지만 물량 부족 _(높음)_",
+  "prob": "높음 85%±10",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "중국 정부",
+    "url": "https://www.china-briefing.com/news/apec-2026-in-shenzhen-what-the-leaders-meeting-and-trump-xi-talks-mean-for-business/",
+    "title": "엔비디아 H200 대중 판매 허용에도 중국이 수입을 거부해 판매 0. 국산 가속기(화웨이 Ascend) 자립"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "11장",
+  "text": "- 맞춤형 ASIC 비중이 가속기의 30% 초과 _(중간)_",
+  "prob": "중간 40%±20",
+  "basis": "전망",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "11장",
+  "text": "- AMD는 2위로 고착, NVIDIA 점유율 75–85% 유지 _(중간)_",
+  "prob": "중간 60%±15",
+  "basis": "전망",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "11장",
+  "text": "- Intel 14A 대형 외부 고객 확보 _(낮음)_",
+  "prob": "낮음 30%±20",
+  "basis": "추정",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "11장",
+  "text": "- DRAM·HBM 공급 부족 지속. 신규 클린룸은 2027 하반기~2028에 본격 기여 _(높음)_",
+  "prob": "높음 88%±10",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "TrendForce",
+    "url": "https://www.trendforce.com/presscenter/news/20260929-13255.html",
+    "title": "HBM Supply Constraints Persist, 2027 Price Outlook Revised Upward with Blended ASP Foreca…"
+   },
+   {
+    "org": "IDC",
+    "url": "https://www.idc.com/resource-center/blog/pc-market-enters-volatile-territory-as-memory-shortage-persists-through-2027/",
+    "title": "PC Market Enters Volatile Territory as Memory Shortage Persists Through 2027 (2026-06-02)"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "11장",
+  "text": "- 메모리 원가 급등으로 스마트폰·PC 출하 감소와 사양 하향(삼성 MX 3분기 적자 전환이 신호) _(높음)_",
+  "prob": "중간 69%±15",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "IDC",
+    "url": "https://www.idc.com/resource-center/blog/higher-asps-lower-unit-volumes-how-the-memory-crisis-is-reshaping-the-pc-and-smartphone-outlook",
+    "title": "Higher ASPs, Lower Unit Volumes: How the Memory Crisis Is Reshaping the PC and Smartphone…"
+   },
+   {
+    "org": "Samsung Electronics",
+    "url": "https://news.samsungsemiconductor.com/global/samsung-electronics-announces-third-quarter-2026-results/",
+    "title": "Samsung Electronics Announces Third Quarter 2026 Results"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "11장",
+  "text": "- HBM 시장 1.8–2.5배 확대 _(중간)_",
+  "prob": "중간 55%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "TrendForce",
+    "url": "https://www.trendforce.com/presscenter/news/20260929-13255.html",
+    "title": "HBM Supply Constraints Persist, 2027 Price Outlook Revised Upward with Blended ASP Foreca…"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "11장",
+  "text": "- HBM4가 출하의 과반, HBM4E는 하반기 소량 _(중간)_",
+  "prob": "중간 50%±15",
+  "basis": "전망",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "11장",
+  "text": "- 범용 DRAM 계약가 상승률이 1분기 +5–10%에서 하반기 0–5%로 둔화 _(중간)_",
+  "prob": "중간 45%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "TrendForce",
+    "url": "https://www.trendforce.com/presscenter/news/20260930-13258.html",
+    "title": "4Q26 DRAM/NAND contract price outlook (DRAM +10–15% QoQ, NAND +15–20%)"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "11장",
+  "text": "- 2028년 이후 공급과잉 반전 _(낮음)_",
+  "prob": "낮음 20%±25",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "현대경제연구원",
+    "url": "https://www.hri.co.kr/kor/report/view/97839",
+    "title": "미국 AI 투자붐 조정 가능성에 대비해야 한다 — 미국 AI 투자붐 지속 가능성 점검 및 시사점 (VIP REPORT 26-19)"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "11장",
+  "text": "- 빅5 하이퍼스케일러(빅4 + Oracle) capex 1.0–1.2조 달러(+25–45%, 빅4만은 약 9,500억 달러), 증가율은 2026년(+77%)보다 둔화 _(높음)_",
+  "prob": "높음 75%±10",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "J.P. Morgan Asset Manage…",
+    "url": "https://am.jpmorgan.com/content/dam/jpm-am-aem/global/en/insights/market-insights/investment-outlook-2027.pdf",
+    "title": "2027 Investment Outlook: Still up, but a bumpier path"
+   },
+   {
+    "org": "Goldman Sachs (Reuters 보도)",
+    "url": "https://www.timeslive.co.za/news/sci-tech/2026-11-12-ai-to-stay-dominant-force-behind-us-business-investment-in-2027-goldman-says/",
+    "title": "AI to stay dominant force behind US business investment in 2027, Goldman says"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "11장",
+  "text": "- 부채·SPV·사모신용 조달 비중 확대, '칩 파이낸싱'이 논쟁의 중심 _(높음)_",
+  "prob": "높음 85%±10",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "Morgan Stanley (Family W…",
+    "url": "https://www.familywealthreport.com/printarticle.php?id=209400",
+    "title": "Morgan Stanley Takes Maximum \"Overweight\" Stance On Global Stocks For 2027"
+   },
+   {
+    "org": "J.P. Morgan Private Bank…",
+    "url": "https://www.jpmorgan.com/content/dam/jpmorgan/documents/wealth-management/outlook-2027.pdf",
+    "title": "Outlook 2027: The Price of Progress — The rising cost of capital in a world of AI, fragme…"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "11장",
+  "text": "- 모듈형·현장 발전 결합 AIDC 표준화 _(높음)_",
+  "prob": "높음 70%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "IEA (International Energ…",
+    "url": "https://iea.org/reports/key-questions-on-energy-and-ai/executive-summary",
+    "title": "Key Questions on Energy and AI — Executive summary"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "11장",
+  "text": "- 지역 반대로 대형 프로젝트 취소·지연(하이퍼스케일러 2곳 이상) _(중간)_",
+  "prob": "중간 65%±15",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "Forrester",
+    "url": "https://www.forrester.com/blogs/predictions-2027-clouds-ai-race-gets-messier/",
+    "title": "Predictions 2027: Cloud's AI Race Gets Messier"
+   },
+   {
+    "org": "J.P. Morgan Private Bank…",
+    "url": "https://www.jpmorgan.com/content/dam/jpmorgan/documents/wealth-management/outlook-2027.pdf",
+    "title": "Outlook 2027: The Price of Progress — The rising cost of capital in a world of AI, fragme…"
+   }
+  ],
+  "counter": [
+   {
+    "org": "Goldman Sachs (Reuters 보도)",
+    "url": "https://www.timeslive.co.za/news/sci-tech/2026-11-12-ai-to-stay-dominant-force-behind-us-business-investment-in-2027-goldman-says/",
+    "title": "AI to stay dominant force behind US business investment in 2027, Goldman says"
+   }
+  ]
+ },
+ {
+  "chapter": "11장",
+  "text": "- 네오클라우드 통폐합 3건 이상 _(중간)_",
+  "prob": "중간 55%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "Forrester",
+    "url": "https://www.forrester.com/blogs/predictions-2027-clouds-ai-race-gets-messier/",
+    "title": "Predictions 2027: Cloud's AI Race Gets Messier"
+   },
+   {
+    "org": "J.P. Morgan Private Bank…",
+    "url": "https://www.jpmorgan.com/content/dam/jpmorgan/documents/wealth-management/outlook-2027.pdf",
+    "title": "Outlook 2027: The Price of Progress — The rising cost of capital in a world of AI, fragme…"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "11장",
+  "text": "- 한국은 AI데이터센터 특별법(2027-02 시행 목표)으로 비수도권 착공이 늘지만, GW급 단일 캠퍼스 가동은 2027년 안에 어려움 _(중간)_",
+  "prob": "중간 60%±15",
+  "basis": "일정",
+  "support": [
+   {
+    "org": "hankyung.com",
+    "url": "https://www.hankyung.com/article/2026062586031",
+    "title": "AI 데이터센터 계약전력 20.8GW 투자계획 중 1단계 10.8GW 우선 반영, 2040년 데이터센터 최대"
+   },
+   {
+    "org": "news.mtn.co.kr",
+    "url": "https://news.mtn.co.kr/news-detail/2026063016291781104",
+    "title": "12차 전기본 첫 '지역별 전망' 도입. 수요는 수도권·용인 집중, 송전 부담은 비수도권"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "11장",
+  "text": "- 가스터빈 백로그 증가 지속 _(높음)_",
+  "prob": "높음 85%±10",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "GE Vernova",
+    "url": "https://www.gevernova.com/news/ge-vernova-reports-strong-third-quarter-2026-financial-performance",
+    "title": "GE Vernova reports strong third quarter 2026 financial performance"
+   },
+   {
+    "org": "IEA (International Energ…",
+    "url": "https://iea.org/reports/key-questions-on-energy-and-ai/executive-summary",
+    "title": "Key Questions on Energy and AI — Executive summary"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "11장",
+  "text": "- 변압기·차단기·케이블 공급 부족 지속, 한국 전력기기 수출 최고치 _(높음)_",
+  "prob": "높음 82%±10",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "IEA",
+    "url": "https://www.iea.org/reports/world-energy-outlook-2026/executive-summary",
+    "title": "World Energy Outlook 2026 — Executive summary"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "11장",
+  "text": "- 미국 전기요금이 정치 쟁점이 되며 대형부하 요금제와 자가발전 연계 확산 _(높음)_",
+  "prob": "높음 85%±10",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "IEA",
+    "url": "https://www.iea.org/reports/world-energy-outlook-2026/executive-summary",
+    "title": "World Energy Outlook 2026 — Executive summary"
+   },
+   {
+    "org": "tdworld.com",
+    "url": "https://www.tdworld.com/electric-utility-operations/article/55415092/us-data-center-pipeline-grows-by-54-gw-as-bans-go-into-force",
+    "title": "데이터센터 금지·정치 리스크와 11월 5일 급락"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "11장",
+  "text": "- 원전 업레이트·재가동 PPA 추가, SMR 상업운전은 없음 _(높음)_",
+  "prob": "높음 90%±5",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "Carnegie Endowment",
+    "url": "https://carnegieendowment.org/research/2026/06/beyond-the-hype-assessing-hyperscaler-nuclear-commitments-against-us-energy-realities",
+    "title": "Beyond the Hype: Assessing Hyperscaler Nuclear Commitments Against U.S. Energy Realities"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "11장",
+  "text": "- PJM 연계 지연 확대 _(중간)_",
+  "prob": "중간 62%±15",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "현대경제연구원",
+    "url": "https://www.hri.co.kr/kor/report/view/97839",
+    "title": "미국 AI 투자붐 조정 가능성에 대비해야 한다 — 미국 AI 투자붐 지속 가능성 점검 및 시사점 (VIP REPORT 26-19)"
+   },
+   {
+    "org": "Morgan Stanley",
+    "url": "https://morganstanley.com/insights/articles/powering-ai-energy-market-outlook-2026",
+    "title": "US data center power gap update (Stephen Byrd)"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "12장",
+  "text": "학회·저널 투고 폭증 지속, 투고 상한·AI 사용 공개 의무·AI 탐지 심사 확산",
+  "prob": "높음 88%±10",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "Pangram Labs",
+    "url": "https://www.pangram.com/blog/pangram-predicts-21-of-iclr-reviews-are-ai-generated",
+    "title": "Pangram Predicts 21% of ICLR Reviews are AI-Generated"
+   },
+   {
+    "org": "arXiv",
+    "url": "https://blog.arxiv.org/2025/10/31/attention-authors-updated-practice-for-review-articles-and-position-papers-in-arxiv-cs-category/",
+    "title": "Updated practice for review articles and position papers in arXiv CS"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "12장",
+  "text": "저작권 분쟁은 판결보다 합의·라이선스로 수렴. 미국 소송 200건 돌파",
+  "prob": "높음 80%±10",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "ChatGPT Is Eating the Wo…",
+    "url": "https://chatgptiseatingtheworld.com/",
+    "title": "AI copyright litigation tracker (Nov 2026 snapshot)"
+   },
+   {
+    "org": "techcrunch.com",
+    "url": "https://techcrunch.com/2025/11/25/warner-music-signs-deal-with-ai-music-startup-suno-settles-lawsuit/",
+    "title": "WMG–Suno·WMG–Udio 소송 합의와 라이선스 파트너십"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "12장",
+  "text": "AI를 발명자로 인정하는 국가는 계속 없음. AI 작성 출원 대응 심사 지침 강화",
+  "prob": "높음 92%±5",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "USPTO (Federal Register)",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2025-11-28/pdf/2025-21457.pdf",
+    "title": "Revised Inventorship Guidance for AI-Assisted Inventions"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "12장",
+  "text": "언론사 v. OpenAI MDL 약식판결로 공정이용 판단의 첫 기준점 등장",
+  "prob": "중간 40%±20",
+  "basis": "일정",
+  "support": [
+   {
+    "org": "ChatGPT Is Eating the Wo…",
+    "url": "https://chatgptiseatingtheworld.com/",
+    "title": "AI copyright litigation tracker (Nov 2026 snapshot)"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "12장",
+  "text": "한국 저작권법 개정(AI 학습 보상·TDM) 논의 본격화, 표준계약서 확정",
+  "prob": "중간 55%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "문화체육관광부",
+    "url": "https://www.mcst.go.kr/site/s_notice/press/pressView.jsp?pSeq=22865",
+    "title": "인공지능 학습을 위한 저작물 이용허락 표준계약서(안) 공개"
+   },
+   {
+    "org": "v.daum.net",
+    "url": "https://v.daum.net/v/20260528171513940",
+    "title": "같은 추진방향: 공익 목적 AI 학습에 개인정보 원본 활용 허용 개인정보보호법 개정 추진, 디지털헬스케어법으"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "12장",
+  "text": "영국 TDM 예외 입법",
+  "prob": "낮음 10%±15",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "UK DSIT/DCMS/IPO",
+    "url": "https://assets.publishing.service.gov.uk/media/69ba692226909a14239612e4/CP2602959_-_Report_on_Copyright_and_Artificial_Intelligence_web.pdf",
+    "title": "Report on Copyright and Artificial Intelligence"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "12장",
+  "text": "스트리밍 신규 업로드 중 AI 곡 50% 이상 지속, 청취 비중은 5% 미만",
+  "prob": "높음 72%±15",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "newsroom-deezer.com",
+    "url": "https://newsroom-deezer.com/2026/07/ai-music-exceeds-50-percent-daily-uploads-deezer/",
+    "title": "Deezer 업로드의 AI 비중 처음 50% 돌파(하루 약 9만 곡), 청취자 대상 AI 태그 도입"
+   },
+   {
+    "org": "Deezer",
+    "url": "https://newsroom-deezer.com/2026/04/ai-generated-tracks-represent-44-of-new-uploaded-music/",
+    "title": "AI-generated tracks now represent 44% of all new uploaded music"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "12장",
+  "text": "미국 여러 주로 컴패니언 챗봇 규제 확산, 관련 기업의 합의·구조조정",
+  "prob": "높음 85%±10",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "techcrunch.com",
+    "url": "https://techcrunch.com/2025/10/13/california-becomes-first-state-to-regulate-ai-companion-chatbots/",
+    "title": "캘리포니아 SB 243 서명: 미국 첫 동반자 챗봇 규제법"
+   },
+   {
+    "org": "techcrunch.com",
+    "url": "https://techcrunch.com/2026/01/07/google-and-character-ai-negotiate-first-major-settlements-in-teen-chatbot-death-cases/",
+    "title": "Google·Character.AI, 10대 사망 사건 첫 합의에 원칙적 합의"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "12장",
+  "text": "언론사 검색 유입 감소 지속, AI 기업과의 라이선스·페이월 확산",
+  "prob": "높음 90%±5",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "pewresearch.org",
+    "url": "https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/",
+    "title": "Pew: AI 요약이 뜨면 검색 링크 클릭이 15%에서 8%로 감소"
+   },
+   {
+    "org": "Graphite",
+    "url": "https://graphite.io/research/ai-search-collapse",
+    "title": "AI Search Collapse"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "12장",
+  "text": "AI를 주로 활용한 장편이 극장·대형 OTT에 공개되고 영화제 자격 규정 논쟁",
+  "prob": "높음 72%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "TechCrunch",
+    "url": "https://techcrunch.com/2026/04/16/runway-ceo-says-ai-could-help-hollywood-make-50-films-instead-of-one-100m-blockbuster/",
+    "title": "Runway CEO: AI could help Hollywood make 50 films instead of one"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "12장",
+  "text": "남은 Suno 소송 합의, 메이저 3사 모두 AI 라이선스 관계 형성",
+  "prob": "중간 50%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "techcrunch.com",
+    "url": "https://techcrunch.com/2025/11/25/warner-music-signs-deal-with-ai-music-startup-suno-settles-lawsuit/",
+    "title": "WMG–Suno·WMG–Udio 소송 합의와 라이선스 파트너십"
+   },
+   {
+    "org": "techcrunch.com",
+    "url": "https://techcrunch.com/2026/05/21/spotify-and-universal-music-strike-deal-allowing-fan-made-ai-covers-and-remixes/",
+    "title": "Spotify–UMG, 팬 AI 커버·리믹스 유료 도구 라이선스 합의"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "12장",
+  "text": "한국 AI 기본법 표시 의무 단속 시작, 워터마크 실효성 문제로 개정 추진",
+  "prob": "중간 45%±20",
+  "basis": "일정",
+  "support": [
+   {
+    "org": "korea.kr",
+    "url": "https://korea.kr/news/policyNewsView.do?newsId=148958380",
+    "title": "한국 AI 기본법 시행: 생성형 AI 결과물 워터마크 표시 의무, 10^26 FLOPs 이상 모델에 안전성"
+   },
+   {
+    "org": "과학기술정보통신부 (보도: ZDNet Kor…",
+    "url": "https://zdnet.co.kr/view?no=20261116144303",
+    "title": "정부 \"AI 기본법, 기업 혁신 뒷받침하도록 보완\" — 2026 하반기 AI법정책포럼"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "12장",
+  "text": "ChatGPT 주간 사용자 약 15억 명",
+  "prob": "중간 50%±15",
+  "basis": "추세",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "13장",
+  "text": "청년·신입 채용 절벽의 구조화",
+  "prob": "높음 82%±10",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "Stanford Digital Economy…",
+    "url": "https://digitaleconomy.stanford.edu/news/canariesaug26/",
+    "title": "Canaries in the Coal Mine — August 2026 update"
+   },
+   {
+    "org": "SPRi 소프트웨어정책연구소",
+    "url": "https://spri.kr/posts/view/24037?code=data_all",
+    "title": "에이전틱 AI 시대의 SW인재 수요전망 분석 (이슈리포트 IS-237)"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "13장",
+  "text": "'AI 감원' 명분화 논쟁",
+  "prob": "높음 78%±15",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "HCAMag (Challenger 자료 인용)",
+    "url": "https://www.hcamag.com/us/specialization/transformation/ai-blamed-for-121401-job-cuts-but-the-labor-data-isnt-buying-it/594129",
+    "title": "AI blamed for 121,401 job cuts, but the labor data isn't buying it"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "13장",
+  "text": "중간관리층 축소·조직 평탄화",
+  "prob": "중간 55%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "BCG",
+    "url": "https://www.bcg.com/ja-jp/press/30september2026-ai-starting-to-pay-off-companies-generate-value",
+    "title": "Applied AI Index 2026 (About Half of Companies Now Create Value from AI)"
+   },
+   {
+    "org": "IDC",
+    "url": "https://www.idc.com/resource-center/press-releases/idc-futurescape-2027-predicts-60-of-enterprises-will-run-a-majority-of-their-business-processes-ai-first-by-2029-up-from-13-in-2026/",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "13장",
+  "text": "AI 도입이 단체교섭 의제로(노란봉투법)",
+  "prob": "중간 60%±15",
+  "basis": "추정",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "13장",
+  "text": "창작 노동의 디지털 레플리카·보상 갈등",
+  "prob": "중간 60%±15",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "en.wikipedia.org",
+    "url": "https://en.wikipedia.org/wiki/SAG-AFTRA",
+    "title": "SAG-AFTRA 비디오게임 파업 종료(95.04% 비준), AI 레플리카 동의·보상 확보"
+   },
+   {
+    "org": "techcrunch.com",
+    "url": "https://techcrunch.com/2025/09/30/openai-is-launching-the-sora-app-its-own-tiktok-competitor-alongside-the-sora-2-model/",
+    "title": "OpenAI Sora 2·Sora 앱 출시, AI 배우 Tilly Norwood 공개로 할리우드 반발"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "13장",
+  "text": "알고리즘 관리 규제의 집행",
+  "prob": "중간 60%±15",
+  "basis": "일정",
+  "support": [
+   {
+    "org": "eeas.europa.eu",
+    "url": "https://eeas.europa.eu/delegations/chile/artificial-intelligence-council-gives-final-green-light-simplify-and-streamline-rules_en",
+    "title": "EU 디지털 옴니버스 최종 승인: 독립형 고위험 AI 의무는 2027-12-02, 제품 내장형은 2028-0"
+   },
+   {
+    "org": "European Commission (DG …",
+    "url": "https://digital-strategy.ec.europa.eu/en/news/eu-agrees-simplify-ai-rules-boost-innovation-and-ban-nudification-apps-protect-citizens",
+    "title": "EU agrees to simplify AI rules to boost innovation and ban 'nudification' apps to protect…"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "13장",
+  "text": "정년연장·주4.5일제와 'AI 생산성 분배' 논리의 결합",
+  "prob": "중간 55%±20",
+  "basis": "추정",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "13장",
+  "text": "광범위한 화이트칼라 대량 실업",
+  "prob": "낮음 8%±10",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "HCAMag (Challenger 자료 인용)",
+    "url": "https://www.hcamag.com/us/specialization/transformation/ai-blamed-for-121401-job-cuts-but-the-labor-data-isnt-buying-it/594129",
+    "title": "AI blamed for 121,401 job cuts, but the labor data isn't buying it"
+   },
+   {
+    "org": "SPRi 소프트웨어정책연구소",
+    "url": "https://spri.kr/posts/view/24037?code=data_all",
+    "title": "에이전틱 AI 시대의 SW인재 수요전망 분석 (이슈리포트 IS-237)"
+   }
+  ],
+  "counter": [
+   {
+    "org": "Anthropic",
+    "url": "https://fortune.com/2026/01/27/country-of-geniuses-anthropic-dario-amodei-50-million-nobel-prize-winners/",
+    "title": ""
+   }
+  ]
+ },
+ {
+  "chapter": "13장",
+  "text": "농어촌 기본소득 약 1조 원 확정, 30–35개 군으로 확대. 2027년이 시범 마지막 해라 2028년 본사업 전환 여부가 핵심 쟁점",
+  "prob": "높음 88%±8",
+  "basis": "일정",
+  "support": [
+   {
+    "org": "머니투데이",
+    "url": "https://www.mt.co.kr/article/2026090110103117937",
+    "title": "농어촌기본소득 예산 3047억→1조1658억…공익직불금 3조원 돌파"
+   },
+   {
+    "org": "농림축산식품부",
+    "url": "https://www.mafra.go.kr/bbs/home/792/579390/artclView.do",
+    "title": "'27년 농어촌 기본소득 시범사업, 신규 참여지역 10.8일부터 공모 개시"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "13장",
+  "text": "광역 자체 재원 확대 지자체 추가, 재정자립도에 따른 지역 간 형평성 논쟁 확대",
+  "prob": "높음 80%±10",
+  "basis": "추세",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "13장",
+  "text": "2028년 4월 총선을 앞두고 2027년 하반기 기본소득·기본사회가 여야 핵심 쟁점(재정 건전성 대 AI 불평등 대응)",
+  "prob": "높음 75%±15",
+  "basis": "일정",
+  "support": [
+   {
+    "org": "파이낸셜뉴스",
+    "url": "https://www.fnnews.com/news/202607211641465666",
+    "title": "기본사회기본법 제정 관련 토론회 보도(2026-07-21)"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "13장",
+  "text": "기본사회기본법 국회 통과",
+  "prob": "중간 45%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "파이낸셜뉴스",
+    "url": "https://www.fnnews.com/news/202607211641465666",
+    "title": "기본사회기본법 제정 관련 토론회 보도(2026-07-21)"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "13장",
+  "text": "생애주기별 소득보장(아동·청년·노인)이 2028 예산안에 '기본사회' 이름으로 반영",
+  "prob": "중간 48%±20",
+  "basis": "추정",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "13장",
+  "text": "AI·데이터 배당과 AI 이익 공유 재원(디지털세·초과이윤 과세) 연구 공개. 입법은 미진",
+  "prob": "중간 55%±20",
+  "basis": "추정",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "13장",
+  "text": "AI 기본사회법의 병합·흡수(단독 제정은 낮음)",
+  "prob": "중간 40%±20",
+  "basis": "추정",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "13장",
+  "text": "전 국민 보편 현금 기본소득 법제화",
+  "prob": "낮음 5%±5",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "농림축산식품부",
+    "url": "https://www.mafra.go.kr/bbs/home/792/579390/artclView.do",
+    "title": "'27년 농어촌 기본소득 시범사업, 신규 참여지역 10.8일부터 공모 개시"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "14장",
+  "text": "예산 확정 후 미션별 신규 R&D 공모·착수(12개 미션 대부분에서 첫 과제 선정)",
+  "prob": "높음 80%±15",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "과학기술정보통신부",
+    "url": "https://www.msit.go.kr/bbs/view.do?sCode=user&mId=307&mPid=208&bbsSeqNo=94&nttSeqNo=3187000",
+    "title": "제5회 과학기술관계장관회의 — K-문샷 12대 미션 확정(2026-03-12)"
+   },
+   {
+    "org": "과학기술정보통신부",
+    "url": "https://eiec.kdi.re.kr/policy/materialView.do?num=286173",
+    "title": "보도자료: 2027년 과기정통부 예산안 29.6조원 편성 — '인공지능과 첨단기술로 대체 불가 대한민국으로의 대도약'"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "14장",
+  "text": "NAIS '과학 AI-OS' 1차 공개, KISTI 슈퍼컴 6호기 '한강' 연계 과학 FM 학습 환경",
+  "prob": "중간 55%±15",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "과학기술정보통신부",
+    "url": "https://www.msit.go.kr/bbs/view.do?sCode=user&mId=307&mPid=208&bbsSeqNo=94&nttSeqNo=3187359",
+    "title": "AI로 앞당기고 과학기술로 완성하는 미래 한국, K-문샷 프로젝트 개시(2026-05-28)"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "14장",
+  "text": "'Next-X 휴머노이드 챌린지' 개시와 K-휴머노이드 플랫폼 후보 선정",
+  "prob": "중간 50%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "과학기술정보통신부",
+    "url": "https://eiec.kdi.re.kr/policy/materialView.do?num=286173",
+    "title": "보도자료: 2027년 과기정통부 예산안 29.6조원 편성 — '인공지능과 첨단기술로 대체 불가 대한민국으로의 대도약'"
+   },
+   {
+    "org": "과학기술정보통신부",
+    "url": "https://www.msit.go.kr/bbs/view.do?sCode=user&mId=307&mPid=208&bbsSeqNo=94&nttSeqNo=3187943",
+    "title": "K-문샷 정책 발표회 개최(2026-11-11)"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "14장",
+  "text": "수학·지구과학·이차전지 과학기술×AI FM 첫 공개",
+  "prob": "중간 45%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "과학기술정보통신부",
+    "url": "https://www.msit.go.kr/bbs/view.do?sCode=user&mId=307&mPid=208&bbsSeqNo=94&nttSeqNo=3187359",
+    "title": "AI로 앞당기고 과학기술로 완성하는 미래 한국, K-문샷 프로젝트 개시(2026-05-28)"
+   },
+   {
+    "org": "Stanford HAI",
+    "url": "https://hai.stanford.edu/assets/files/ai_index_report_2026_chapter_5_science.pdf",
+    "title": "과학 특화 모델은 학계·정부·비영리가 주도한다(범용 모델과 정반대)"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "14장",
+  "text": "국산 자율실험실(신약·소재) 파일럿 가동",
+  "prob": "낮음 30%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "과학기술정보통신부",
+    "url": "https://www.msit.go.kr/bbs/view.do?sCode=user&mId=307&mPid=208&bbsSeqNo=94&nttSeqNo=3187359",
+    "title": "AI로 앞당기고 과학기술로 완성하는 미래 한국, K-문샷 프로젝트 개시(2026-05-28)"
+   },
+   {
+    "org": "Capgemini",
+    "url": "https://www.capgemini.com/news/press-releases/technovision-top-5-tech-trends-to-watch-in-2027/",
+    "title": "TechnoVision: Top 5 Tech Trends to Watch in 2027"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "14장",
+  "text": "'연구생산성 2배' KPI 중간 측정치 공개",
+  "prob": "낮음 15%±20",
+  "basis": "추정",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "15장",
+  "text": "생성물 표시·워터마크 의무가 사실상 국제 공통 규범으로 수렴(EU·중국·한국·인도, C2PA)",
+  "prob": "높음 85%±10",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "korea.kr",
+    "url": "https://korea.kr/news/policyNewsView.do?newsId=148958380",
+    "title": "한국 AI 기본법 시행: 생성형 AI 결과물 워터마크 표시 의무, 10^26 FLOPs 이상 모델에 안전성"
+   },
+   {
+    "org": "Gibson Dunn (EU AI Act D…",
+    "url": "https://www.gibsondunn.com/eu-ai-act-omnibus-agreement-postponed-high-risk-deadlines-and-other-key-changes/",
+    "title": "EU AI Act Omnibus Agreement — Postponed High-Risk Deadlines and Other Key Changes"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "15장",
+  "text": "미국 연방 선점법은 통과되지 않고 주법 패치워크 지속",
+  "prob": "높음 90%±10",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "fpf.org",
+    "url": "https://fpf.org/blog/the-raise-act-vs-sb-53-a-tale-of-two-frontier-ai-laws/",
+    "title": "미국 주법: 캘리포니아 SB 53(2026-01-01 시행, 중대 사고 15일 내 보고)과 뉴욕 RAISE"
+   },
+   {
+    "org": "미국 재무부(베선트)",
+    "url": "https://www.wilsoncenter.org/article/americas-ai-action-plan-after-one-year-what-administration-has-done-and-what-comes-next",
+    "title": "증류 기업 제재 경고. 9월 보고서는 DeepSeek 등 중국 6개사(알리바바·Moonshot 포함)를 대규"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "15장",
+  "text": "아시아(한·일·대만)는 '진흥형 기본법' 모델로 수렴. EU형 포괄 규제를 새로 도입하는 아시아 국가는 없음",
+  "prob": "높음 82%±10",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "과학기술정보통신부 (보도: ZDNet Kor…",
+    "url": "https://zdnet.co.kr/view?no=20261116144303",
+    "title": "정부 \"AI 기본법, 기업 혁신 뒷받침하도록 보완\" — 2026 하반기 AI법정책포럼"
+   },
+   {
+    "org": "Cabinet Office, Governme…",
+    "url": "https://www8.cao.go.jp/cstp/ai/ai_plan/aiplan_g_eng_20260714.pdf",
+    "title": "Summary of Japan's Second AI Basic Plan (Cabinet Decision Jul. 14, 2026)"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "15장",
+  "text": "저작권·TDM은 갈라진 채 유지되고(일본·싱가포르 허용, EU 옵트아웃, 영국·호주 보류), 실무는 라이선스 시장으로 수렴",
+  "prob": "높음 80%±15",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "UK DSIT/DCMS/IPO",
+    "url": "https://assets.publishing.service.gov.uk/media/69ba692226909a14239612e4/CP2602959_-_Report_on_Copyright_and_Artificial_Intelligence_web.pdf",
+    "title": "Report on Copyright and Artificial Intelligence"
+   },
+   {
+    "org": "techcrunch.com",
+    "url": "https://techcrunch.com/2025/11/25/warner-music-signs-deal-with-ai-music-startup-suno-settles-lawsuit/",
+    "title": "WMG–Suno·WMG–Udio 소송 합의와 라이선스 파트너십"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "15장",
+  "text": "프런티어 모델 투명성·사고 보고 기준은 수렴하지만 보고 기한(72시간~15일)과 벌칙은 갈라짐",
+  "prob": "중간 55%±15",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "fpf.org",
+    "url": "https://fpf.org/blog/the-raise-act-vs-sb-53-a-tale-of-two-frontier-ai-laws/",
+    "title": "미국 주법: 캘리포니아 SB 53(2026-01-01 시행, 중대 사고 15일 내 보고)과 뉴욕 RAISE"
+   },
+   {
+    "org": "ai-act-service-desk.ec.eur",
+    "url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/faq/commissions-enforcement-powers-related-ai-act-obligations-providers-most-advanced-models",
+    "title": "EU AI법 GPAI 집행권 발효: AI Office가 정보 요구·모델 평가 접근·위험완화 명령을 할 수 있"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "15장",
+  "text": "대서양 간 규제 강도 격차가 줄었다가 EU 고위험 적용(12월) 이후 다시 확대",
+  "prob": "중간 40%±25",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "eeas.europa.eu",
+    "url": "https://eeas.europa.eu/delegations/chile/artificial-intelligence-council-gives-final-green-light-simplify-and-streamline-rules_en",
+    "title": "EU 디지털 옴니버스 최종 승인: 독립형 고위험 AI 의무는 2027-12-02, 제품 내장형은 2028-0"
+   },
+   {
+    "org": "미국 재무부(베선트)",
+    "url": "https://www.wilsoncenter.org/article/americas-ai-action-plan-after-one-year-what-administration-has-done-and-what-comes-next",
+    "title": "증류 기업 제재 경고. 9월 보고서는 DeepSeek 등 중국 6개사(알리바바·Moonshot 포함)를 대규"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "15장",
+  "text": "AISI 네트워크의 평가 방법론 공동화. 중국은 WAICO 축으로 블록화",
+  "prob": "중간 60%±15",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "UK Government",
+    "url": "https://www.gov.uk/government/news/efforts-to-share-best-practices-on-ai-measurement-and-evaluations-driven-forward-through-the-international-network-for-advanced-ai-measurement-evalua",
+    "title": "Best practices on AI measurement and evaluations driven forward through the International…"
+   },
+   {
+    "org": "CGTN",
+    "url": "https://news.cgtn.com/news/2026-07-17/29-countries-sign-establishing-World-AI-Cooperation-Organization-pact-1OQDod8zj6U/index.html",
+    "title": "29 countries sign agreement on establishing World AI Cooperation Organization"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "15장",
+  "text": "에이전트 책임·권한 위임(KYA) 규정이 주요국 가이드라인에 처음 등장",
+  "prob": "중간 58%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "IITP 정보통신기획평가원 (보도: ZDNe…",
+    "url": "https://zdnet.co.kr/view?no=20261111120847",
+    "title": "2027 AI·ICT 10대 이슈 — 'AI의 가능성을 AX 생산성으로 입증'"
+   },
+   {
+    "org": "IDC",
+    "url": "https://www.idc.com/resource-center/press-releases/idc-futurescape-2027-predicts-60-of-enterprises-will-run-a-majority-of-their-business-processes-ai-first-by-2029-up-from-13-in-2026/",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "16장",
+  "text": "1월 10일 직전 휴전 단기(6–12개월) 재연장",
+  "prob": "높음 80%±10",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Tech Times",
+    "url": "https://www.techtimes.com/articles/316674/20260515/trump-xi-close-beijing-summit-warm-rhetoric-nvidia-h200-deliveries-remain-stalled-rare-earth.htm",
+    "title": "Trump and Xi Close Beijing Summit: Warm Rhetoric, Nvidia H200 Deliveries Remain Stalled, …"
+   },
+   {
+    "org": "중국 정부",
+    "url": "https://www.china-briefing.com/news/apec-2026-in-shenzhen-what-the-leaders-meeting-and-trump-xi-talks-mean-for-business/",
+    "title": "엔비디아 H200 대중 판매 허용에도 중국이 수입을 거부해 판매 0. 국산 가속기(화웨이 Ascend) 자립"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "16장",
+  "text": "미국 GPU의 중국 공식 수출이 사실상 0으로 고착, 중국은 국산 가속기 의무화 강화",
+  "prob": "높음 88%±10",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "중국 정부",
+    "url": "https://www.china-briefing.com/news/apec-2026-in-shenzhen-what-the-leaders-meeting-and-trump-xi-talks-mean-for-business/",
+    "title": "엔비디아 H200 대중 판매 허용에도 중국이 수입을 거부해 판매 0. 국산 가속기(화웨이 Ascend) 자립"
+   },
+   {
+    "org": "Tech Times",
+    "url": "https://www.techtimes.com/articles/316674/20260515/trump-xi-close-beijing-summit-warm-rhetoric-nvidia-h200-deliveries-remain-stalled-rare-earth.htm",
+    "title": "Trump and Xi Close Beijing Summit: Warm Rhetoric, Nvidia H200 Deliveries Remain Stalled, …"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "16장",
+  "text": "원격접속 규칙의 지정국 확대와 클라우드 KYC 집행 강화, 동남아 데이터센터 투자 위축",
+  "prob": "높음 72%±15",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "Greenberg Traurig",
+    "url": "https://www.gtlaw.com/en/insights/2026/11/bis-interim-final-rule-targets-remote-access-to-advanced-semiconductors-rescinds-ai-diffusion-rule",
+    "title": "BIS Interim Final Rule Targets Remote Access to Advanced Semiconductors, Rescinds AI Diff…"
+   },
+   {
+    "org": "미국 상무부 BIS",
+    "url": "https://www.faegredrinker.com/en/insights/publications/2026/11/bis-targets-remote-access-to-advanced-ai-chips-adds-megaspeed-network-to-entity-list",
+    "title": "싱가포르 Megaspeed 등 7개 법인 Entity List 등재(원격접속·칩 우회 연계)"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "16장",
+  "text": "연장되더라도 희토류는 '조용한 통제'(허가 지연·선별 승인) 지속",
+  "prob": "높음 85%±10",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "Tech Times",
+    "url": "https://www.techtimes.com/articles/316674/20260515/trump-xi-close-beijing-summit-warm-rhetoric-nvidia-h200-deliveries-remain-stalled-rare-earth.htm",
+    "title": "Trump and Xi Close Beijing Summit: Warm Rhetoric, Nvidia H200 Deliveries Remain Stalled, …"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "16장",
+  "text": "Chip Security Act 입법. 행정부(완화)와 의회(강경)의 통제권 다툼",
+  "prob": "중간 52%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "미국 의회",
+    "url": "https://www.atlanticcouncil.org/dispatches/huang-is-back-at-nvidia-but-the-fight-over-who-controls-chip-exports-is-just-beginning/",
+    "title": "FY2027 NDAA 상원안에 Chip Security Act(위치검증)·AI OVERWATCH·MATCH·"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "16장",
+  "text": "증류·가중치 탈취에 대한 첫 제재(Entity List 또는 OFAC)",
+  "prob": "중간 45%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "미국 재무부(베선트)",
+    "url": "https://www.wilsoncenter.org/article/americas-ai-action-plan-after-one-year-what-administration-has-done-and-what-comes-next",
+    "title": "증류 기업 제재 경고. 9월 보고서는 DeepSeek 등 중국 6개사(알리바바·Moonshot 포함)를 대규"
+   },
+   {
+    "org": "Anthropic",
+    "url": "https://anthropic.com/news/detecting-and-preventing-distillation-attacks",
+    "title": "Detecting and preventing distillation attacks"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "16장",
+  "text": "프런티어 모델 임시 수출통제의 반복이나 제도화. 해외 사용자의 최신 모델 접근 지연",
+  "prob": "중간 55%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "Mayer Brown",
+    "url": "https://www.mayerbrown.com/en/insights/publications/2026/06/commerce-department-extends-export-controls-to-advanced-ai-models-authorizes-release-to-specific-trusted-partners",
+    "title": "Commerce Department Extends Export Controls to Advanced AI Models, Authorizes Release to …"
+   },
+   {
+    "org": "Tech Policy Press",
+    "url": "https://techpolicy.press/commerce-eased-its-block-on-anthropics-mythos-but-major-questions-remain",
+    "title": "Commerce eased its block on Anthropic's Mythos but major questions remain"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "16장",
+  "text": "미국 'AI 풀스택 수출' 첫 국가 패키지 지정(걸프·인도·동남아 유력)",
+  "prob": "중간 60%±15",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "미국 재무부(베선트)",
+    "url": "https://www.wilsoncenter.org/article/americas-ai-action-plan-after-one-year-what-administration-has-done-and-what-comes-next",
+    "title": "증류 기업 제재 경고. 9월 보고서는 DeepSeek 등 중국 6개사(알리바바·Moonshot 포함)를 대규"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "16장",
+  "text": "미중 AI 대화는 핫라인·용어 정의 수준. 개발 감속 합의는 매우 낮음",
+  "prob": "높음 70%±10",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "Tech Times",
+    "url": "https://www.techtimes.com/articles/316674/20260515/trump-xi-close-beijing-summit-warm-rhetoric-nvidia-h200-deliveries-remain-stalled-rare-earth.htm",
+    "title": "Trump and Xi Close Beijing Summit: Warm Rhetoric, Nvidia H200 Deliveries Remain Stalled, …"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "16장",
+  "text": "원격접속 규칙 집행: 지정국 확대, 데이터센터 KYC·월간 보고",
+  "prob": "높음 78%±15",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "Greenberg Traurig",
+    "url": "https://www.gtlaw.com/en/insights/2026/11/bis-interim-final-rule-targets-remote-access-to-advanced-semiconductors-rescinds-ai-diffusion-rule",
+    "title": "BIS Interim Final Rule Targets Remote Access to Advanced Semiconductors, Rescinds AI Diff…"
+   },
+   {
+    "org": "미국 상무부 BIS",
+    "url": "https://www.faegredrinker.com/en/insights/publications/2026/11/bis-targets-remote-access-to-advanced-ai-chips-adds-megaspeed-network-to-entity-list",
+    "title": "싱가포르 Megaspeed 등 7개 법인 Entity List 등재(원격접속·칩 우회 연계)"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "16장",
+  "text": "Entity List 추가(우회·밀수망, 중국 AI 랩·클라우드)",
+  "prob": "높음 93%±5",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "미국 상무부 BIS",
+    "url": "https://www.faegredrinker.com/en/insights/publications/2026/11/bis-targets-remote-access-to-advanced-ai-chips-adds-megaspeed-network-to-entity-list",
+    "title": "싱가포르 Megaspeed 등 7개 법인 Entity List 등재(원격접속·칩 우회 연계)"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "16장",
+  "text": "중국 모델·앱의 공공부문 사용 금지 확대",
+  "prob": "높음 85%±10",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "TechCrunch",
+    "url": "https://techcrunch.com/2026/10/20/us-orders-federal-agencies-to-remove-chinas-deepseek-ai-from-their-systems/",
+    "title": "US orders federal agencies to remove China's DeepSeek AI from their systems"
+   },
+   {
+    "org": "호주 정부",
+    "url": "https://www.aljazeera.com/news/2025/1/31/which-countries-have-banned-deepseek-and-why",
+    "title": "모든 정부 시스템·기기에서 DeepSeek 제품 사용 즉시 금지"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "16장",
+  "text": "중국의 대응: 반독점, 비신뢰기업 명단, 수입 거부, 국산칩 조달 의무",
+  "prob": "높음 88%±10",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "중국 정부",
+    "url": "https://www.china-briefing.com/news/apec-2026-in-shenzhen-what-the-leaders-meeting-and-trump-xi-talks-mean-for-business/",
+    "title": "엔비디아 H200 대중 판매 허용에도 중국이 수입을 거부해 판매 0. 국산 가속기(화웨이 Ascend) 자립"
+   },
+   {
+    "org": "TechCrunch",
+    "url": "https://techcrunch.com/2026/10/20/us-orders-federal-agencies-to-remove-chinas-deepseek-ai-from-their-systems/",
+    "title": "US orders federal agencies to remove China's DeepSeek AI from their systems"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "16장",
+  "text": "Chip Security Act(위치 검증) 입법",
+  "prob": "중간 52%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "미국 의회",
+    "url": "https://www.atlanticcouncil.org/dispatches/huang-is-back-at-nvidia-but-the-fight-over-who-controls-chip-exports-is-just-beginning/",
+    "title": "FY2027 NDAA 상원안에 Chip Security Act(위치검증)·AI OVERWATCH·MATCH·"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "16장",
+  "text": "동맹 장비통제 정렬(MATCH 법안)",
+  "prob": "중간 45%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "미국 의회",
+    "url": "https://www.atlanticcouncil.org/dispatches/huang-is-back-at-nvidia-but-the-fight-over-who-controls-chip-exports-is-just-beginning/",
+    "title": "FY2027 NDAA 상원안에 Chip Security Act(위치검증)·AI OVERWATCH·MATCH·"
+   },
+   {
+    "org": "Pax Silica(미국 주도, 한국 포함 …",
+    "url": "https://www.bhfs.com/insight/state-department-expands-pax-silica-initiative-at-2026-summit/",
+    "title": "적대국의 민감기술 접근 제한·수출통제 정렬을 목표로 한 경제안보 연합(동맹 차원 공조)"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "16장",
+  "text": "희토류 유예 종료 또는 선별 허가",
+  "prob": "높음 70%±15",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "Tech Times",
+    "url": "https://www.techtimes.com/articles/316674/20260515/trump-xi-close-beijing-summit-warm-rhetoric-nvidia-h200-deliveries-remain-stalled-rare-earth.htm",
+    "title": "Trump and Xi Close Beijing Summit: Warm Rhetoric, Nvidia H200 Deliveries Remain Stalled, …"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "16장",
+  "text": "계열사(50%) 규정 시행",
+  "prob": "중간 35%±20",
+  "basis": "추정",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "16장",
+  "text": "증류·가중치 탈취 제재",
+  "prob": "중간 45%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "미국 재무부(베선트)",
+    "url": "https://www.wilsoncenter.org/article/americas-ai-action-plan-after-one-year-what-administration-has-done-and-what-comes-next",
+    "title": "증류 기업 제재 경고. 9월 보고서는 DeepSeek 등 중국 6개사(알리바바·Moonshot 포함)를 대규"
+   },
+   {
+    "org": "Anthropic",
+    "url": "https://anthropic.com/news/detecting-and-preventing-distillation-attacks",
+    "title": "Detecting and preventing distillation attacks"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "16장",
+  "text": "프런티어 모델 임시 수출통제의 제도화",
+  "prob": "중간 45%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "Mayer Brown",
+    "url": "https://www.mayerbrown.com/en/insights/publications/2026/06/commerce-department-extends-export-controls-to-advanced-ai-models-authorizes-release-to-specific-trusted-partners",
+    "title": "Commerce Department Extends Export Controls to Advanced AI Models, Authorizes Release to …"
+   },
+   {
+    "org": "Tech Policy Press",
+    "url": "https://techpolicy.press/commerce-eased-its-block-on-anthropics-mythos-but-major-questions-remain",
+    "title": "Commerce eased its block on Anthropic's Mythos but major questions remain"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "16장",
+  "text": "반도체 232조 2단계 관세, 301조 과잉생산 관세",
+  "prob": "중간 50%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "Focus Taiwan (CNA)",
+    "url": "https://focustaiwan.tw/politics/202611260010",
+    "title": "Vice premier outlines tariffs, support for U.S. investments by Taiwan firms (Section 232/…"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "17장",
+  "text": "미국이 프런티어 모델 API 접근을 수출통제로 다루는 방식을 제도화(신뢰 파트너 목록, 국가별 등급). 신규 최상위 모델은 '신뢰 파트너 우선 → 일반 공개'의 단계 출시가 표준",
+  "prob": "높음 72%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "Mayer Brown",
+    "url": "https://www.mayerbrown.com/en/insights/publications/2026/06/commerce-department-extends-export-controls-to-advanced-ai-models-authorizes-release-to-specific-trusted-partners",
+    "title": "Commerce Department Extends Export Controls to Advanced AI Models, Authorizes Release to …"
+   },
+   {
+    "org": "Anthropic",
+    "url": "https://www.anthropic.com/project/glasswing",
+    "title": "Claude Mythos Preview를 사이버 능력(핵심 인프라 제로데이 수천 건 식별) 때문에 Proje"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "17장",
+  "text": "BIS 원격접속 규칙의 유예 종료(2027-02)로 동남아·한국 클라우드·데이터센터의 고객 확인(KYC)·소유 구조 증빙이 일상 업무가 됨",
+  "prob": "높음 85%±10",
+  "basis": "일정",
+  "support": [
+   {
+    "org": "Greenberg Traurig",
+    "url": "https://www.gtlaw.com/en/insights/2026/11/bis-interim-final-rule-targets-remote-access-to-advanced-semiconductors-rescinds-ai-diffusion-rule",
+    "title": "BIS Interim Final Rule Targets Remote Access to Advanced Semiconductors, Rescinds AI Diff…"
+   },
+   {
+    "org": "NVIDIA·한국 정부",
+    "url": "https://nvidianews.nvidia.com/news/south-korea-ai-infrastructure",
+    "title": "GPU 26만 장 이상 공급 발표(정부 최대 5만, 삼성·SK·현대차 각 5만, 네이버 6만+). 원격접속"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "17장",
+  "text": "미·중 연구소 모두 증류 차단을 강화하고, 미국이 증류 기업에 대한 제재·Entity List 등재를 실행",
+  "prob": "중간 69%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "Anthropic",
+    "url": "https://anthropic.com/news/detecting-and-preventing-distillation-attacks",
+    "title": "Detecting and preventing distillation attacks"
+   },
+   {
+    "org": "미국 재무부(베선트)",
+    "url": "https://www.wilsoncenter.org/article/americas-ai-action-plan-after-one-year-what-administration-has-done-and-what-comes-next",
+    "title": "증류 기업 제재 경고. 9월 보고서는 DeepSeek 등 중국 6개사(알리바바·Moonshot 포함)를 대규"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "17장",
+  "text": "미국 연방·주 정부와 동맹국 공공부문의 중국 모델 사용 금지가 DeepSeek에서 Qwen·Kimi 등으로 확대",
+  "prob": "높음 75%±15",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "TechCrunch",
+    "url": "https://techcrunch.com/2026/10/20/us-orders-federal-agencies-to-remove-chinas-deepseek-ai-from-their-systems/",
+    "title": "US orders federal agencies to remove China's DeepSeek AI from their systems"
+   },
+   {
+    "org": "미국 재무부(베선트)",
+    "url": "https://www.wilsoncenter.org/article/americas-ai-action-plan-after-one-year-what-administration-has-done-and-what-comes-next",
+    "title": "증류 기업 제재 경고. 9월 보고서는 DeepSeek 등 중국 6개사(알리바바·Moonshot 포함)를 대규"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "17장",
+  "text": "중국 AI 기술 수출 사전등록이 확정돼, 중국 모델의 해외 현지 배포·기술 라이선스·합작에 등록·심사 절차가 붙음",
+  "prob": "중간 65%±15",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "EqualOcean",
+    "url": "https://equalocean.com/news/2026101922309-china-proposes-export-restrictions-23-ai-technologies-keeps-api-services",
+    "title": "China Proposes Export Restrictions on 23 AI Technologies, Keeps API Services Outside Larg…"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "17장",
+  "text": "바이두처럼 규제가 강한 시장(EU·한국 등)을 라이선스에서 빼는 중국 오픈웨이트가 늘어남",
+  "prob": "중간 45%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "m.edaily.co.kr",
+    "url": "https://m.edaily.co.kr/News/Read?newsId=03325926645649656&mediaCodeNo=257",
+    "title": "\"AI 모델 공개했지만 한국은 쓰지 마라\"…中 바이두가 던진 AI 주권 경고"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "17장",
+  "text": "중국이 최상위 오픈웨이트의 공개 자체를 늦추거나 일부를 폐쇄형으로 전환",
+  "prob": "중간 50%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "중국 상무부(MOFCOM)",
+    "url": "https://dealroom.co/news/137169-china-weighs-curbs-on-overseas-access-to-frontier-ai-models/",
+    "title": "알리바바·바이트댄스·Z.ai 등과 한 달간 회의, 최첨단 모델(오픈웨이트 포함)의 해외 접근 제한 방안 논의"
+   },
+   {
+    "org": "중국 상무부·과기부",
+    "url": "https://letsdatascience.com/blog/china-drafted-export-controls-ai-model-weights-open-source",
+    "title": "일부 보도: 중요데이터로 학습한 대형모델 서비스, 10^26 FLOP 이상 모델의 가중치·소스코드·아키텍처를"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "17장",
+  "text": "한국 공공부문이 해외 모델 사용 기준(데이터 국외이전·보안 등급별 허용 목록)을 공식 지침으로 마련",
+  "prob": "중간 55%±15",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "news.mtn.co.kr",
+    "url": "https://news.mtn.co.kr/news-detail/2026031312382799965",
+    "title": "N2SF(국가망보안체계): 업무 데이터를 기밀(C)·민감(S)·공개(O)로 등급화해 외부 AI·클라우드 사용"
+   },
+   {
+    "org": "m.boannews.com",
+    "url": "https://m.boannews.com/html/detail.html?idx=140878",
+    "title": "국정원, 차년도 공공기관 보안평가에 N2SF 구축·AI 보안관제 도입 가점, 망분리 지표를 N2SF 적용 지"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "17장",
+  "text": "미국이 Mythos급 모델에 대해 동맹국 전체를 허가 면제하는 일반 허가를 만듦",
+  "prob": "낮음 12%±15",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "Mayer Brown",
+    "url": "https://www.mayerbrown.com/en/insights/publications/2026/06/commerce-department-extends-export-controls-to-advanced-ai-models-authorizes-release-to-specific-trusted-partners",
+    "title": "Commerce Department Extends Export Controls to Advanced AI Models, Authorizes Release to …"
+   },
+   {
+    "org": "Tech Policy Press",
+    "url": "https://techpolicy.press/commerce-eased-its-block-on-anthropics-mythos-but-major-questions-remain",
+    "title": "Commerce eased its block on Anthropic's Mythos but major questions remain"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "18장",
+  "text": "한·미",
+  "prob": "높음 80%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "The White House",
+    "url": "https://www.whitehouse.gov/releases/2025/10/u-s-korea-technology-prosperity-deal",
+    "title": "U.S.-Korea Technology Prosperity Deal"
+   },
+   {
+    "org": "The Star (Reuters)",
+    "url": "https://www.thestar.com.my/tech/tech-news/2026/07/25/south-korea-president-lee-hosts-us-tech-summit-calls-for-new-ai-era",
+    "title": "South Korea President Lee hosts US tech summit, calls for new AI era"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "18장",
+  "text": "한·일",
+  "prob": "중간 60%±20",
+  "basis": "추정",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "18장",
+  "text": "한·중",
+  "prob": "중간 55%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "CGTN",
+    "url": "https://news.cgtn.com/news/2026-07-17/29-countries-sign-establishing-World-AI-Cooperation-Organization-pact-1OQDod8zj6U/index.html",
+    "title": "29 countries sign agreement on establishing World AI Cooperation Organization"
+   },
+   {
+    "org": "m.edaily.co.kr",
+    "url": "https://m.edaily.co.kr/News/Read?newsId=03325926645649656&mediaCodeNo=257",
+    "title": "\"AI 모델 공개했지만 한국은 쓰지 마라\"…中 바이두가 던진 AI 주권 경고"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "18장",
+  "text": "한·영",
+  "prob": "높음 78%±15",
+  "basis": "일정",
+  "support": [
+   {
+    "org": "KDI 경제정보센터",
+    "url": "https://eiec.kdi.re.kr/policy/materialView.do?num=282674",
+    "title": "AI 사전표준화 협력 MoU(국가기술표준원, 2026-06-12, 영·싱·호·캐) 관련 자료"
+   },
+   {
+    "org": "UK Government",
+    "url": "https://www.gov.uk/government/news/manchester-to-host-world-leaders-at-the-2027-g20-summit",
+    "title": "Manchester to host world leaders at the 2027 G20 Summit"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "18장",
+  "text": "한·프랑스/EU",
+  "prob": "중간 55%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "eeas.europa.eu",
+    "url": "https://eeas.europa.eu/delegations/chile/artificial-intelligence-council-gives-final-green-light-simplify-and-streamline-rules_en",
+    "title": "EU 디지털 옴니버스 최종 승인: 독립형 고위험 AI 의무는 2027-12-02, 제품 내장형은 2028-0"
+   },
+   {
+    "org": "과학기술정보통신부 (보도: ZDNet Kor…",
+    "url": "https://zdnet.co.kr/view?no=20261116144303",
+    "title": "정부 \"AI 기본법, 기업 혁신 뒷받침하도록 보완\" — 2026 하반기 AI법정책포럼"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "18장",
+  "text": "한·UAE/사우디",
+  "prob": "중간 55%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "Korea JoongAng Daily",
+    "url": "https://www.koreajoongangdaily.com/korea/uae-ai-mou-7/11233820",
+    "title": "Korea, UAE sign 7 MOUs on AI, space, nuclear at summit"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "18장",
+  "text": "한·싱가포르/ASEAN",
+  "prob": "높음 78%±15",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "AOL (Reuters)",
+    "url": "https://www.aol.com/articles/south-koreas-lee-hold-summit-023235478.html",
+    "title": "South Korea's Lee holds summit with Singapore's Wong on AI, tech cooperation"
+   },
+   {
+    "org": "zdnet.co.kr",
+    "url": "https://zdnet.co.kr/view/?no=20260619100049",
+    "title": "한국·싱가포르 AISI 공동 테스트: 정상 지시를 수행하는 중에도 AI 에이전트가 민감정보를 부적절하게 처리"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "18장",
+  "text": "한·캐나다·호주",
+  "prob": "중간 52%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "KDI 경제정보센터",
+    "url": "https://eiec.kdi.re.kr/policy/materialView.do?num=282674",
+    "title": "AI 사전표준화 협력 MoU(국가기술표준원, 2026-06-12, 영·싱·호·캐) 관련 자료"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "18장",
+  "text": "한·인도",
+  "prob": "중간 50%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "PIB, Government of India",
+    "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2026/feb/doc2026217795001.pdf",
+    "title": "AI Impact Summit 2026 backgrounder: 20,000 additional GPUs"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "18장",
+  "text": "한·독일",
+  "prob": "중간 60%±15",
+  "basis": "일정",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "18장",
+  "text": "미·중",
+  "prob": "높음 78%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Tech Times",
+    "url": "https://www.techtimes.com/articles/316674/20260515/trump-xi-close-beijing-summit-warm-rhetoric-nvidia-h200-deliveries-remain-stalled-rare-earth.htm",
+    "title": "Trump and Xi Close Beijing Summit: Warm Rhetoric, Nvidia H200 Deliveries Remain Stalled, …"
+   },
+   {
+    "org": "미국 의회",
+    "url": "https://www.atlanticcouncil.org/dispatches/huang-is-back-at-nvidia-but-the-fight-over-who-controls-chip-exports-is-just-beginning/",
+    "title": "FY2027 NDAA 상원안에 Chip Security Act(위치검증)·AI OVERWATCH·MATCH·"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "18장",
+  "text": "미·UAE/사우디",
+  "prob": "높음 80%±15",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "Greenberg Traurig",
+    "url": "https://www.gtlaw.com/en/insights/2026/11/bis-interim-final-rule-targets-remote-access-to-advanced-semiconductors-rescinds-ai-diffusion-rule",
+    "title": "BIS Interim Final Rule Targets Remote Access to Advanced Semiconductors, Rescinds AI Diff…"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "18장",
+  "text": "미·일",
+  "prob": "높음 75%±15",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "미국 의회",
+    "url": "https://www.atlanticcouncil.org/dispatches/huang-is-back-at-nvidia-but-the-fight-over-who-controls-chip-exports-is-just-beginning/",
+    "title": "FY2027 NDAA 상원안에 Chip Security Act(위치검증)·AI OVERWATCH·MATCH·"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "18장",
+  "text": "EU·미",
+  "prob": "높음 72%±15",
+  "basis": "일정",
+  "support": [
+   {
+    "org": "ai-act-service-desk.ec.eur",
+    "url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/faq/commissions-enforcement-powers-related-ai-act-obligations-providers-most-advanced-models",
+    "title": "EU AI법 GPAI 집행권 발효: AI Office가 정보 요구·모델 평가 접근·위험완화 명령을 할 수 있"
+   },
+   {
+    "org": "European Commission",
+    "url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
+    "title": "The General-Purpose AI Code of Practice"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "18장",
+  "text": "미·영",
+  "prob": "중간 50%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "TechRepublic",
+    "url": "https://www.techrepublic.com/article/news-uk-us-tech-deal-paused/",
+    "title": "US Puts £31B Tech Deal With UK on Hold"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "18장",
+  "text": "미·인도",
+  "prob": "중간 50%±20",
+  "basis": "추정",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "18장",
+  "text": "중·러",
+  "prob": "중간 55%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "38 North (Stimson)",
+    "url": "https://www.38north.org/2026/02/north-koreas-integration-of-ai-across-cyber-economic-and-military-domains",
+    "title": "North Korea's Integration of AI Across Cyber, Economic, and Military Domains"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "18장",
+  "text": "중·EU, 중·걸프",
+  "prob": "중간 55%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "m.edaily.co.kr",
+    "url": "https://m.edaily.co.kr/News/Read?newsId=03325926645649656&mediaCodeNo=257",
+    "title": "\"AI 모델 공개했지만 한국은 쓰지 마라\"…中 바이두가 던진 AI 주권 경고"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "18장",
+  "text": "유엔 글로벌 대화(2차)",
+  "prob": "높음 92%±5",
+  "basis": "일정",
+  "support": [
+   {
+    "org": "UN News",
+    "url": "https://news.un.org/en/story/2026/07/1167853",
+    "title": "UN chief welcomes first global AI assessment (Scientific Panel preliminary report)"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "18장",
+  "text": "유엔 독립 국제 AI 과학패널",
+  "prob": "높음 80%±10",
+  "basis": "일정",
+  "support": [
+   {
+    "org": "UN News",
+    "url": "https://news.un.org/en/story/2026/07/1167853",
+    "title": "UN chief welcomes first global AI assessment (Scientific Panel preliminary report)"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "18장",
+  "text": "제네바 AI 정상회의",
+  "prob": "높음 90%±5",
+  "basis": "일정",
+  "support": [
+   {
+    "org": "ITU",
+    "url": "https://www.itu.int/hub/2026/11/the-next-chapter-for-ai-in-geneva/",
+    "title": "The next chapter for AI in Geneva"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "18장",
+  "text": "ITU AI for Good·WSIS",
+  "prob": "높음 94%±5",
+  "basis": "일정",
+  "support": [
+   {
+    "org": "ITU",
+    "url": "https://www.itu.int/hub/2026/11/the-next-chapter-for-ai-in-geneva/",
+    "title": "The next chapter for AI in Geneva"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "18장",
+  "text": "국제 평가 네트워크(NAAIMES)",
+  "prob": "높음 80%±10",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "UK Government",
+    "url": "https://www.gov.uk/government/news/efforts-to-share-best-practices-on-ai-measurement-and-evaluations-driven-forward-through-the-international-network-for-advanced-ai-measurement-evalua",
+    "title": "Best practices on AI measurement and evaluations driven forward through the International…"
+   },
+   {
+    "org": "UK AI Security Institute",
+    "url": "https://www.aisi.gov.uk/blog/international-ai-network-consensus-and-open-questions",
+    "title": "International AI network: consensus and open questions"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "18장",
+  "text": "G7(미국 의장국, 2027-01-01 승계)",
+  "prob": "중간 65%±15",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "G7 Research Group (Univ.…",
+    "url": "https://g7.utoronto.ca/evaluations/2026evian/tiritilli-trump-era.html",
+    "title": "G7 in the Trump era (2027 US presidency)"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "18장",
+  "text": "G20(영국)",
+  "prob": "높음 93%±5",
+  "basis": "일정",
+  "support": [
+   {
+    "org": "UK Government",
+    "url": "https://www.gov.uk/government/news/manchester-to-host-world-leaders-at-the-2027-g20-summit",
+    "title": "Manchester to host world leaders at the 2027 G20 Summit"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "18장",
+  "text": "APEC(베트남)",
+  "prob": "높음 93%±5",
+  "basis": "일정",
+  "support": [
+   {
+    "org": "Bernama",
+    "url": "https://www.bernama.com/en/world/news.php?id=2636878",
+    "title": "Vietnam takes over APEC 2027 host role; Leaders' Week in Phu Quoc"
+   },
+   {
+    "org": "VietNamNet",
+    "url": "https://vietnamnet.vn/en/apec-2027-vietnam-aims-to-deliver-a-world-class-high-impact-summit-2486024.html",
+    "title": "APEC 2027: Vietnam aims to deliver a world-class, high-impact summit"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "18장",
+  "text": "OECD·GPAI",
+  "prob": "높음 70%±15",
+  "basis": "일정",
+  "support": [
+   {
+    "org": "Stanford HAI",
+    "url": "https://hai.stanford.edu/assets/files/ai_index_report_2026_chapter_3_responsible_ai.pdf",
+    "title": "AI Index Report 2026 – Chapter 3: Responsible AI"
+   },
+   {
+    "org": "oecd.ai",
+    "url": "https://oecd.ai/en/incidents/2026-07-13-93df",
+    "title": "OECD AI 사고 모니터(AIM)에 '테러 집단이 공격 계획·무기 제조에 AI 챗봇 사용' 사건 등재"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "18장",
+  "text": "유럽평의회 AI 협약",
+  "prob": "중간 40%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "Council of Europe",
+    "url": "https://www.coe.int/en/web/artificial-intelligence/-/european-union-ratifies-the-council-of-europe-framework-convention-on-artificial-intelligence",
+    "title": "European Union ratifies the Council of Europe Framework Convention on Artificial Intellig…"
+   },
+   {
+    "org": "EUR-Lex",
+    "url": "https://eur-lex.europa.eu/eli/dec/2026/1080/oj",
+    "title": "Council Decision (EU) 2026/1080 on the conclusion of the CoE Framework Convention on AI"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "18장",
+  "text": "Pax Silica",
+  "prob": "높음 70%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "Pax Silica(미국 주도, 한국 포함 …",
+    "url": "https://www.bhfs.com/insight/state-department-expands-pax-silica-initiative-at-2026-summit/",
+    "title": "적대국의 민감기술 접근 제한·수출통제 정렬을 목표로 한 경제안보 연합(동맹 차원 공조)"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "18장",
+  "text": "WAICO·BRICS(중국 의장국)",
+  "prob": "중간 50%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "CGTN",
+    "url": "https://news.cgtn.com/news/2026-07-17/29-countries-sign-establishing-World-AI-Cooperation-Organization-pact-1OQDod8zj6U/index.html",
+    "title": "29 countries sign agreement on establishing World AI Cooperation Organization"
+   },
+   {
+    "org": "People's Daily",
+    "url": "https://en.people.cn/n3/2026/0918/c90000-20501291.html",
+    "title": "China's 2027 BRICS chairmanship to further deepen cooperation"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "18장",
+  "text": "수출통제 공조",
+  "prob": "중간 45%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "미국 의회",
+    "url": "https://www.atlanticcouncil.org/dispatches/huang-is-back-at-nvidia-but-the-fight-over-who-controls-chip-exports-is-just-beginning/",
+    "title": "FY2027 NDAA 상원안에 Chip Security Act(위치검증)·AI OVERWATCH·MATCH·"
+   },
+   {
+    "org": "Pax Silica(미국 주도, 한국 포함 …",
+    "url": "https://www.bhfs.com/insight/state-department-expands-pax-silica-initiative-at-2026-summit/",
+    "title": "적대국의 민감기술 접근 제한·수출통제 정렬을 목표로 한 경제안보 연합(동맹 차원 공조)"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "18장",
+  "text": "쿼드",
+  "prob": "중간 55%±20",
+  "basis": "추정",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "18장",
+  "text": "AUKUS Pillar II",
+  "prob": "중간 35%±20",
+  "basis": "추정",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "18장",
+  "text": "미중은 휴전을 단기 재연장하고 AI 대화를 정례화하지만 칩·원격접속 통제는 별도 강화(이중 트랙)",
+  "prob": "높음 78%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Tech Times",
+    "url": "https://www.techtimes.com/articles/316674/20260515/trump-xi-close-beijing-summit-warm-rhetoric-nvidia-h200-deliveries-remain-stalled-rare-earth.htm",
+    "title": "Trump and Xi Close Beijing Summit: Warm Rhetoric, Nvidia H200 Deliveries Remain Stalled, …"
+   },
+   {
+    "org": "미국 의회",
+    "url": "https://www.atlanticcouncil.org/dispatches/huang-is-back-at-nvidia-but-the-fight-over-who-controls-chip-exports-is-just-beginning/",
+    "title": "FY2027 NDAA 상원안에 Chip Security Act(위치검증)·AI OVERWATCH·MATCH·"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "18장",
+  "text": "제네바 정상회의는 구속력 없는 선언으로 끝나고, 미국은 구속적 문안에 반대하거나 서명하지 않음",
+  "prob": "높음 85%±10",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "ITU",
+    "url": "https://www.itu.int/hub/2026/11/the-next-chapter-for-ai-in-geneva/",
+    "title": "The next chapter for AI in Geneva"
+   },
+   {
+    "org": "Human Rights Watch",
+    "url": "https://www.hrw.org/news/2026/09/07/un-talks-on-killer-robots-ends-with-calls-for-negotiations-growing",
+    "title": "UN Talks on Killer Robots End with Calls for Negotiations Growing"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "18장",
+  "text": "유엔 트랙(과학패널 보고서, 5월 대화)은 정례화되지만 실질 규범은 만들지 못함",
+  "prob": "높음 88%±10",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "UN News",
+    "url": "https://news.un.org/en/story/2026/07/1167853",
+    "title": "UN chief welcomes first global AI assessment (Scientific Panel preliminary report)"
+   },
+   {
+    "org": "Carnegie Endowment",
+    "url": "https://carnegieendowment.org/research/2026/11/will-a-un-treaty-on-autonomous-weapons-arrive-too-late",
+    "title": "Will a UN Treaty on Autonomous Weapons Arrive Too Late?"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "18장",
+  "text": "국제 평가 네트워크가 에이전트·사이버 공동 산출물을 내고 '측정·보안'으로 이동",
+  "prob": "높음 78%±15",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "UK Government",
+    "url": "https://www.gov.uk/government/news/efforts-to-share-best-practices-on-ai-measurement-and-evaluations-driven-forward-through-the-international-network-for-advanced-ai-measurement-evalua",
+    "title": "Best practices on AI measurement and evaluations driven forward through the International…"
+   },
+   {
+    "org": "aisi.gov.uk",
+    "url": "https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing",
+    "title": "UK AISI 사이버 평가 중 비인가 행동 사건을 계기로, 인터넷 허용·분류기 비활성이라는 업계 공통 평가"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "18장",
+  "text": "한국은 232조 관세·중국 팹 장비 허가를 기술번영 MOU·3,500억 달러 투자와 묶어 패키지 협상",
+  "prob": "높음 75%±15",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "The White House",
+    "url": "https://www.whitehouse.gov/releases/2025/10/u-s-korea-technology-prosperity-deal",
+    "title": "U.S.-Korea Technology Prosperity Deal"
+   },
+   {
+    "org": "Focus Taiwan (CNA)",
+    "url": "https://focustaiwan.tw/politics/202611260010",
+    "title": "Vice premier outlines tariffs, support for U.S. investments by Taiwan firms (Section 232/…"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "18장",
+  "text": "한국은 WAICO에 가입하지 않고 Pax Silica를 유지하되 중국과 광물·소재 채널을 관리",
+  "prob": "높음 88%±10",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "Pax Silica(미국 주도, 한국 포함 …",
+    "url": "https://www.bhfs.com/insight/state-department-expands-pax-silica-initiative-at-2026-summit/",
+    "title": "적대국의 민감기술 접근 제한·수출통제 정렬을 목표로 한 경제안보 연합(동맹 차원 공조)"
+   },
+   {
+    "org": "CGTN",
+    "url": "https://news.cgtn.com/news/2026-07-17/29-countries-sign-establishing-World-AI-Cooperation-Organization-pact-1OQDod8zj6U/index.html",
+    "title": "29 countries sign agreement on establishing World AI Cooperation Organization"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "18장",
+  "text": "미국은 양자 기술협정을 관세·디지털세와 연계하고, 이행 중단·조건부 재개가 다른 동맹에도 나옴",
+  "prob": "중간 55%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "TechRepublic",
+    "url": "https://www.techrepublic.com/article/news-uk-us-tech-deal-paused/",
+    "title": "US Puts £31B Tech Deal With UK on Hold"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "18장",
+  "text": "걸프와 인도가 미국 'AI 풀스택 수출' 첫 국가 패키지 대상이 됨",
+  "prob": "중간 40%±20",
+  "basis": "추정",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "18장",
+  "text": "EU–미 AI Act 갈등이 GPAI 기한(08-02) 전후로 재점화",
+  "prob": "높음 72%±15",
+  "basis": "일정",
+  "support": [
+   {
+    "org": "ai-act-service-desk.ec.eur",
+    "url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/faq/commissions-enforcement-powers-related-ai-act-obligations-providers-most-advanced-models",
+    "title": "EU AI법 GPAI 집행권 발효: AI Office가 정보 요구·모델 평가 접근·위험완화 명령을 할 수 있"
+   },
+   {
+    "org": "European Commission",
+    "url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
+    "title": "The General-Purpose AI Code of Practice"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "18장",
+  "text": "중국이 BRICS 의장국과 WAICO를 결합해 'AI 오픈소스·역량강화' 블록을 키움(WAICO 40개국 이상)",
+  "prob": "중간 45%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "CGTN",
+    "url": "https://news.cgtn.com/news/2026-07-17/29-countries-sign-establishing-World-AI-Cooperation-Organization-pact-1OQDod8zj6U/index.html",
+    "title": "29 countries sign agreement on establishing World AI Cooperation Organization"
+   },
+   {
+    "org": "People's Daily",
+    "url": "https://en.people.cn/n3/2026/0918/c90000-20501291.html",
+    "title": "China's 2027 BRICS chairmanship to further deepen cooperation"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "18장",
+  "text": "미국 G7은 히로시마 프로세스보다 에너지·인프라·공급망을 앞세움",
+  "prob": "중간 65%±15",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "G7 Research Group (Univ.…",
+    "url": "https://g7.utoronto.ca/evaluations/2026evian/tiritilli-trump-era.html",
+    "title": "G7 in the Trump era (2027 US presidency)"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "18장",
+  "text": "한국이 AI 사전표준화 MoU 4개국과 ITU·ISO/IEC 공동 기고로 중견국 표준 연합의 허브 역할 시도",
+  "prob": "중간 50%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "KDI 경제정보센터",
+    "url": "https://eiec.kdi.re.kr/policy/materialView.do?num=282674",
+    "title": "AI 사전표준화 협력 MoU(국가기술표준원, 2026-06-12, 영·싱·호·캐) 관련 자료"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "18장",
+  "text": "한국이 UAE·사우디 대상 소버린 패키지 수출 계약을 최소 1건 성사",
+  "prob": "중간 40%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "Korea JoongAng Daily",
+    "url": "https://www.koreajoongangdaily.com/korea/uae-ai-mou-7/11233820",
+    "title": "Korea, UAE sign 7 MOUs on AI, space, nuclear at summit"
+   },
+   {
+    "org": "IITP 정보통신기획평가원 (보도: ZDNe…",
+    "url": "https://zdnet.co.kr/view?no=20261111120847",
+    "title": "2027 AI·ICT 10대 이슈 — 'AI의 가능성을 AX 생산성으로 입증'"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "18장",
+  "text": "한국이 유럽평의회 AI 기본협약에 서명",
+  "prob": "낮음 12%±15",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "Council of Europe",
+    "url": "https://www.coe.int/en/web/artificial-intelligence/-/european-union-ratifies-the-council-of-europe-framework-convention-on-artificial-intelligence",
+    "title": "European Union ratifies the Council of Europe Framework Convention on Artificial Intellig…"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "19장",
+  "text": "공격 표적이 데이터 탈취에서 '의사결정 조작'으로 이동(에이전트가 쓰는 데이터·로직 오염)",
+  "prob": "높음 72%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "Google Cloud (via iTWire…",
+    "url": "https://itwire.com/guest-articles/guest-research/google-cloud-predicts-ai-agents-will-reshape-cyber-attack-and-defence-in-2027",
+    "title": "Google Cloud predicts AI agents will reshape cyber attack and defence in 2027"
+   },
+   {
+    "org": "Microsoft",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/10/01/insights-from-the-2026-microsoft-digital-defense-report/",
+    "title": "Insights from the 2026 Microsoft Digital Defense Report (Security blog)"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "19장",
+  "text": "기계 속도 공격으로 주간 스캔·월간 패치 주기가 무력화되고 런타임 자동 방어로 전환",
+  "prob": "높음 70%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "Google Cloud (via iTWire…",
+    "url": "https://itwire.com/guest-articles/guest-research/google-cloud-predicts-ai-agents-will-reshape-cyber-attack-and-defence-in-2027",
+    "title": "Google Cloud predicts AI agents will reshape cyber attack and defence in 2027"
+   },
+   {
+    "org": "Capgemini",
+    "url": "https://www.capgemini.com/wp-content/uploads/2026/11/261117_Capgemini-Top-Tech-Trends-to-watch-in-2027-PR.pdf",
+    "title": "TechnoVision: Top 5 Tech Trends to Watch in 2027"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "19장",
+  "text": "관리되지 않는 에이전트의 난립이 새 섀도 IT가 됨. 에이전트를 1급 신원으로 관리",
+  "prob": "높음 82%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Google Cloud (via iTWire…",
+    "url": "https://itwire.com/guest-articles/guest-research/google-cloud-predicts-ai-agents-will-reshape-cyber-attack-and-defence-in-2027",
+    "title": "Google Cloud predicts AI agents will reshape cyber attack and defence in 2027"
+   },
+   {
+    "org": "Gartner",
+    "url": "https://www.gartner.com/en/newsroom/press-releases/2026-10-20-gartner-identifies-the-top-strategic-technology-trends-for-2027",
+    "title": "Gartner Identifies the Top Strategic Technology Trends for 2027"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "19장",
+  "text": "MCP 도구, 코딩 어시스턴트 설정, 오픈소스 패키지를 통한 공급망 공격 증가",
+  "prob": "높음 88%±10",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "Google Cloud (via iTWire…",
+    "url": "https://itwire.com/guest-articles/guest-research/google-cloud-predicts-ai-agents-will-reshape-cyber-attack-and-defence-in-2027",
+    "title": "Google Cloud predicts AI agents will reshape cyber attack and defence in 2027"
+   },
+   {
+    "org": "Google Threat Intelligen…",
+    "url": "https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold",
+    "title": "GTIG AI Threat Tracker: Agentic Threat Activity Crosses a Significant Threshold"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "19장",
+  "text": "평가·내부 배포 단계에서 에이전트의 비인가 실세계 행동이 추가로 공개",
+  "prob": "높음 85%±10",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "aisi.gov.uk",
+    "url": "https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing",
+    "title": "UK AISI 사이버 평가 중 비인가 행동 사건을 계기로, 인터넷 허용·분류기 비활성이라는 업계 공통 평가"
+   },
+   {
+    "org": "cdn.openai.com",
+    "url": "https://cdn.openai.com/pdf/67869394-cb91-4c12-888c-5cbd85c7814c/OpenAI-Hugging-Face%20Incident-Technical-Report.pdf",
+    "title": "OpenAI–Hugging Face 사건의 정렬 교훈: 보상 해킹의 일반화, '끈기'가 미정렬을 증폭, 에이"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "19장",
+  "text": "생물·화학 'High' 등급이 신모델의 기본값이 되고 논쟁이 'Critical' 임계치로 이동",
+  "prob": "높음 78%±15",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "deploymentsafety.openai.co",
+    "url": "https://deploymentsafety.openai.com/gpt-5-6/gpt-5-6.pdf",
+    "title": "OpenAI GPT-5.6 Sol·Terra·Luna 3종 모두 생물·화학 'High' 지정 — 소형·고속"
+   },
+   {
+    "org": "www-cdn.anthropic.com",
+    "url": "https://www-cdn.anthropic.com/f61d49fa5596956a5dec75fea0e973bf6a6a8378/Redacted%20Risk%20Report%20August%202026%20.pdf",
+    "title": "Anthropic 8월 위험보고서: 모델이 CB-1 임계치를 충족하는 것으로 간주하고 보호조치 적용. 분류기"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "19장",
+  "text": "최소 1개 연구소가 'AI R&D 극적 가속' 임계치 근접·충족을 공식 언급(5장 기준 시나리오)",
+  "prob": "중간 55%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "METR",
+    "url": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment",
+    "title": "Independent Assessment of AI R&D Acceleration at Anthropic in October 2026"
+   },
+   {
+    "org": "AI Futures Project (Lars…",
+    "url": "https://www.lesswrong.com/posts/f9PajMLmBYzmWzyDv/aifp-looks-like-the-intelligence-explosion-will-happen-in",
+    "title": "Q3.5 Timelines Update: Looks Like the Intelligence Explosion Will Happen in 2027 After All"
+   }
+  ],
+  "counter": [
+   {
+    "org": "Anthropic",
+    "url": "https://www.anthropic.com/transparency?m=1",
+    "title": "Anthropic RSP — AI R&D 자동화 임계"
+   }
+  ]
+ },
+ {
+  "chapter": "19장",
+  "text": "IoT·생활가전 대상 AI 자동 익스플로잇이 본격 관측",
+  "prob": "중간 45%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "Cloud Security Alliance …",
+    "url": "https://labs.cloudsecurityalliance.org/wp-content/uploads/2026/07/CSA_research_note_tuxbot_llm_assisted_botnet_20260723-csa-styled.pdf",
+    "title": "TuxBot v3: LLM-Assisted IoT Botnet Goes Operational (research note)"
+   },
+   {
+    "org": "ITPro",
+    "url": "https://www.itpro.com/uk/security/cyber-attacks/iot-attacks-the-biggest-attacks-so-far-and-what-businesses-can-do",
+    "title": "2026 in IoT attacks: the biggest threats so far and what businesses can do"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "19장",
+  "text": "AI 배제 조항 해석에 관한 첫 보험 판례",
+  "prob": "낮음 34%±15",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "Gallagher (Arthur J. Gal…",
+    "url": "https://www.ajg.com/site-content/articles/2026/april/ai-liability-not-so-silent/",
+    "title": "AI Liability: Not So Silent"
+   },
+   {
+    "org": "Gartner",
+    "url": "https://www.gartner.com/en/newsroom/press-releases/2026-09-15-gartner-unveils-top-strategic-predictions-for-2027-and-beyond",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "19장",
+  "text": "AI 주도 공격으로 프런티어 모델 가중치 완전 탈취",
+  "prob": "낮음 7%±7",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "Air Street Capital (Stat…",
+    "url": "https://www.stateof.ai/predictions",
+    "title": "State of AI Report 2026 — AI predictions for 2027 & scorecard"
+   }
+  ],
+  "counter": [
+   {
+    "org": "Anthropic",
+    "url": "https://anthropic.com/responsible-scaling-policy/roadmap",
+    "title": "Anthropic's Frontier Safety Roadmap (updates through Oct 19, 2026)"
+   }
+  ]
+ },
+ {
+  "chapter": "19장",
+  "text": "배포된 에이전트가 환경 밖으로 자기 복제",
+  "prob": "낮음 8%±8",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "Air Street Capital (Stat…",
+    "url": "https://www.stateof.ai/predictions",
+    "title": "State of AI Report 2026 — AI predictions for 2027 & scorecard"
+   },
+   {
+    "org": "eWeek (reporting Anthrop…",
+    "url": "https://www.eweek.com/news/anthropic-self-replicating-ai-iot-devices/",
+    "title": "Anthropic Warns AI Could Soon Self-Replicate Across Smart Devices"
+   }
+  ],
+  "counter": [
+   {
+    "org": "arXiv",
+    "url": "https://arxiv.org/html/2603.01608",
+    "title": "ICML 2026 논문(arXiv 2603.01608): 강한 환경 유인에도 에이전트의 자발적 스키밍은 극소"
+   }
+  ]
+ },
+ {
+  "chapter": "19장",
+  "text": "구속력 있는 국제 감속 합의",
+  "prob": "낮음 5%±5",
+  "basis": "추정",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "20장",
+  "text": "생물·화학 High(CB-1)가 주요 연구소 신모델의 기본값이 되고, 논쟁이 Critical(신규 무기) 임계로 이동",
+  "prob": "높음 78%±15",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "deploymentsafety.openai.co",
+    "url": "https://deploymentsafety.openai.com/gpt-5-6/gpt-5-6.pdf",
+    "title": "OpenAI GPT-5.6 Sol·Terra·Luna 3종 모두 생물·화학 'High' 지정 — 소형·고속"
+   },
+   {
+    "org": "www-cdn.anthropic.com",
+    "url": "https://www-cdn.anthropic.com/f61d49fa5596956a5dec75fea0e973bf6a6a8378/Redacted%20Risk%20Report%20August%202026%20.pdf",
+    "title": "Anthropic 8월 위험보고서: 모델이 CB-1 임계치를 충족하는 것으로 간주하고 보호조치 적용. 분류기"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "20장",
+  "text": "챗봇이 관여한 청소년 단독범 폭력 계획 사례가 계속 늘고, AI 기업의 위협 신고 체계가 쟁점이 됨",
+  "prob": "높음 85%±10",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "ICCT",
+    "url": "https://icct.nl/publication/tell-me-how-make-bomb-terrorist-use-conversational-ai-evidence-and-prospects",
+    "title": "Tell Me How to Make a Bomb: Terrorist Use of Conversational AI — Evidence and Prospects"
+   },
+   {
+    "org": "euronews.com",
+    "url": "https://www.euronews.com/2026/09/08/eu-warns-of-new-terror-menace-25-years-after-911-as-online-youths-seek-violent-thrills",
+    "title": "EU, 9·11 25주년을 맞아 폭력적 스릴을 좇는 온라인 청소년 중심의 새 테러 위협을 경고. Europo"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "20장",
+  "text": "시험 부정 도구가 AI 안경·이어버드로 이동하고, 수능·자격시험·대학 평가가 기기 검사와 대면 평가를 강화",
+  "prob": "높음 80%±15",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "정책브리핑",
+    "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148975290",
+    "title": "2027학년도 수능: AI 스마트안경 반입 금지, 소지 시 해당 시험 무효, 착용 적발 시 2028학년도 응"
+   },
+   {
+    "org": "news.tf.co.kr",
+    "url": "https://news.tf.co.kr/read/life/2369816.htm",
+    "title": "AI 안경 착용 유튜버가 수능 수학 모의고사 30문항 18분 만에 1등급. 2026-05~06 국가기술자격·"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "20장",
+  "text": "가드레일 제거 오픈웨이트 모델이 1만 개 이상으로 늘고 범죄 커뮤니티의 기본 도구가 됨",
+  "prob": "높음 80%±10",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "NPR",
+    "url": "https://www.npr.org/2026/05/31/nx-s1-5816391/ai-safety-concerns-danger-open-weight-models-risks",
+    "title": "These AI models are free, private, and will never say 'no'"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "20장",
+  "text": "프롬프트 주입으로 에이전트의 '행동'(송금·권한 변경·코드 커밋)을 탈취한 사고가 공개",
+  "prob": "높음 88%±10",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "labs.cloudsecurityalliance",
+    "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-ai-browser-prompt-injection-20260630-csa-s/",
+    "title": "LayerX 'BioShocking' 간접 프롬프트 주입이 AI 브라우저·확장 6종을 침해(ChatGPT A"
+   },
+   {
+    "org": "SAS",
+    "url": "https://itwire.com/guest-articles/company-news/sas-predictions-2027-is-the-year-of-ai-consequences",
+    "title": "SAS Predictions: 2027 is the year of AI consequences"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "20장",
+  "text": "평가 인식률 상승으로 '실사용 로그 기반 평가'와 CoT 모니터링이 연구소 안전 체계의 표준 요구가 됨",
+  "prob": "높음 70%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "Apollo Research",
+    "url": "https://www.apolloresearch.ai/science",
+    "title": "Science / system card evaluations page"
+   },
+   {
+    "org": "cdn.openai.com",
+    "url": "https://cdn.openai.com/pdf/67869394-cb91-4c12-888c-5cbd85c7814c/OpenAI-Hugging-Face%20Incident-Technical-Report.pdf",
+    "title": "OpenAI–Hugging Face 사건의 정렬 교훈: 보상 해킹의 일반화, '끈기'가 미정렬을 증폭, 에이"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "20장",
+  "text": "AI 생성 아동 성착취물과 딥페이크 성범죄가 계속 증가하고, 10대 가해자 비중이 높게 유지",
+  "prob": "높음 92%±7",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "freepressjournal.in",
+    "url": "https://www.freepressjournal.in/tech/ai-generated-child-sexual-abuse-images-surge-40-2026-half-year-figures-top-entire-2025-total",
+    "title": "IWF: 2026년 상반기 AI 생성 아동 성착취 이미지 6,310건으로 2025년 전체(4,512건)보다"
+   },
+   {
+    "org": "Internet Watch Foundation",
+    "url": "https://iwf.org.uk/news-media/news/dangerous-ai-child-sexual-abuse-reaches-record-high-as-public-backs-clampdown-on-uncensored-tools/",
+    "title": "'Dangerous' AI child sexual abuse reaches record high as public backs clampdown on 'uncen…"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "20장",
+  "text": "미국에서 DNA 합성 스크리닝 의무화 입법이 진전",
+  "prob": "중간 40%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "White House OSTP",
+    "url": "https://www.whitehouse.gov/wp-content/uploads/2026/11/NSTM-6-NASS-Policy.pdf",
+    "title": "NSTM-6: National Policy for Nucleic Acid Synthesis Screening"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "20장",
+  "text": "오픈웨이트 모델의 출시 전 위험 평가나 공개 제한을 요구하는 공식 정책이 주요국에서 등장",
+  "prob": "중간 42%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "중국 상무부(MOFCOM)",
+    "url": "https://dealroom.co/news/137169-china-weighs-curbs-on-overseas-access-to-frontier-ai-models/",
+    "title": "알리바바·바이트댄스·Z.ai 등과 한 달간 회의, 최첨단 모델(오픈웨이트 포함)의 해외 접근 제한 방안 논의"
+   },
+   {
+    "org": "Internet Watch Foundation",
+    "url": "https://iwf.org.uk/news-media/news/dangerous-ai-child-sexual-abuse-reaches-record-high-as-public-backs-clampdown-on-uncensored-tools/",
+    "title": "'Dangerous' AI child sexual abuse reaches record high as public backs clampdown on 'uncen…"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "20장",
+  "text": "한국 AI안전연구소가 한국어 오남용·에이전트 레드팀 결과를 정례 공개",
+  "prob": "중간 45%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "unite.ai",
+    "url": "https://www.unite.ai/ko/scale-ai-reports-rok-fortress-findings-on-multilingual-ai-safety/",
+    "title": "Scale AI와 한국 AISI가 공동 개발한 영-한 이중언어 적대적 안전 벤치마크 ROK-FORTRESS"
+   },
+   {
+    "org": "zdnet.co.kr",
+    "url": "https://zdnet.co.kr/view/?no=20260619100049",
+    "title": "한국·싱가포르 AISI 공동 테스트: 정상 지시를 수행하는 중에도 AI 에이전트가 민감정보를 부적절하게 처리"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "20장",
+  "text": "AI가 결정적으로 도운 생물·화학 공격 시도가 공개",
+  "prob": "낮음 12%±10",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "www-cdn.anthropic.com",
+    "url": "https://www-cdn.anthropic.com/f61d49fa5596956a5dec75fea0e973bf6a6a8378/Redacted%20Risk%20Report%20August%202026%20.pdf",
+    "title": "Anthropic 8월 위험보고서: 모델이 CB-1 임계치를 충족하는 것으로 간주하고 보호조치 적용. 분류기"
+   }
+  ],
+  "counter": [
+   {
+    "org": "aisi.gov.uk",
+    "url": "https://aisi.gov.uk/frontier-ai-trends-report",
+    "title": "UK AISI: 시험한 모든 프런티어 시스템에서 범용 탈옥 발견(생물 오용 정책 우회 포함). 다만 탈옥에"
+   }
+  ]
+ },
+ {
+  "chapter": "20장",
+  "text": "정렬 실패로 배포된 에이전트가 의도적으로 감독을 회피해 실제 피해를 낸 사건이 확인",
+  "prob": "낮음 10%±10",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "cdn.openai.com",
+    "url": "https://cdn.openai.com/pdf/67869394-cb91-4c12-888c-5cbd85c7814c/OpenAI-Hugging-Face%20Incident-Technical-Report.pdf",
+    "title": "OpenAI–Hugging Face 사건의 정렬 교훈: 보상 해킹의 일반화, '끈기'가 미정렬을 증폭, 에이"
+   },
+   {
+    "org": "METR",
+    "url": "https://metr.org/assets/misalignment-risk-report-august-2026-review.pdf",
+    "title": "METR의 Anthropic 위험보고서 검토: '낮음' 판정은 안전장치가 아니라 모델 능력 한계 때문. 비공"
+   }
+  ],
+  "counter": [
+   {
+    "org": "arXiv",
+    "url": "https://arxiv.org/html/2603.01608",
+    "title": "ICML 2026 논문(arXiv 2603.01608): 강한 환경 유인에도 에이전트의 자발적 스키밍은 극소"
+   }
+  ]
+ },
+ {
+  "chapter": "21장",
+  "text": "EU CRA 본 의무 전면 적용(12-11). 제조사·오픈소스의 SBOM·취약점 처리 준비 러시",
+  "prob": "높음 93%±5",
+  "basis": "일정",
+  "support": [
+   {
+    "org": "European Commission",
+    "url": "https://digital-strategy.ec.europa.eu/en/policies/cyber-resilience-act",
+    "title": "Cyber Resilience Act (policy page)"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "21장",
+  "text": "DORA 직접 감독 2년차. 금융권 멀티클라우드·출구전략 요구",
+  "prob": "높음 90%±5",
+  "basis": "일정",
+  "support": [
+   {
+    "org": "EIOPA/ESAs",
+    "url": "https://www.eiopa.europa.eu/european-supervisory-authorities-designate-critical-ict-third-party-providers-under-digital-2025-11-18_en",
+    "title": "European Supervisory Authorities designate critical ICT third-party providers under DORA"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "21장",
+  "text": "하이퍼스케일러·CDN의 수 시간 이상 글로벌 장애가 최소 2건",
+  "prob": "높음 75%±15",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "Cloudflare",
+    "url": "https://blog.cloudflare.com/18-november-2025-outage/",
+    "title": "Cloudflare outage on November 18, 2025"
+   },
+   {
+    "org": "Forrester",
+    "url": "https://www.forrester.com/blogs/predictions-2027-clouds-ai-race-gets-messier/",
+    "title": "Predictions 2027: Cloud's AI Race Gets Messier"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "21장",
+  "text": "AI 에이전트가 원인인 공개 장애·데이터 손실 증가. 에이전트 권한 통제가 감사·보험 요건이 됨",
+  "prob": "높음 72%±15",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "Euronews",
+    "url": "https://euronews.com/next/2026/04/28/an-ai-agent-deleted-a-companys-entire-database-in-9-seconds-then-wrote-an-apology",
+    "title": "An AI agent deleted a company's entire database in 9 seconds, then wrote an apology"
+   },
+   {
+    "org": "Microsoft",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/10/01/insights-from-the-2026-microsoft-digital-defense-report/",
+    "title": "Insights from the 2026 Microsoft Digital Defense Report (Security blog)"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "21장",
+  "text": "자동 취약점 발견·패치가 일상화되고 '패치 적용 지연'이 핵심 병목으로 부각",
+  "prob": "높음 80%±15",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "Anthropic",
+    "url": "https://www.anthropic.com/project/glasswing",
+    "title": "Claude Mythos Preview를 사이버 능력(핵심 인프라 제로데이 수천 건 식별) 때문에 Proje"
+   },
+   {
+    "org": "Google Threat Intelligen…",
+    "url": "https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold",
+    "title": "GTIG AI Threat Tracker: Agentic Threat Activity Crosses a Significant Threshold"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "21장",
+  "text": "CNSA 2.0 발효와 EU 1단계 착수로 PQC 하이브리드 TLS가 기본값으로 확산",
+  "prob": "높음 72%±15",
+  "basis": "일정",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "21장",
+  "text": "국가 지원 행위자의 핵심 인프라 사전 침투 폭로 지속",
+  "prob": "높음 92%±7",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "Microsoft",
+    "url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-DDR-Exec-Summary.pdf",
+    "title": "Microsoft Digital Defense Report 2026 — Executive Summary"
+   },
+   {
+    "org": "byline.network",
+    "url": "https://byline.network/2026/01/8-432/",
+    "title": "국정원 2026 5대 사이버위협: 북한 9차 당대회 등 안보 변수로 해킹 증가 전망, 금융권·한전 등 대상"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "21장",
+  "text": "KISA AI 침해대응시스템 가동(01월)과 사이버 쉴드 돔 착수",
+  "prob": "높음 88%±7",
+  "basis": "일정",
+  "support": [
+   {
+    "org": "파이낸셜뉴스 (과기정통부·KISA 자료)",
+    "url": "https://www.fnnews.com/news/202604131822482967",
+    "title": "AI시대 해킹 파괴력 10배 강해… 추가피해 예측해 선제 방어 (KISA 2027년 AI 침해대응시스템)"
+   },
+   {
+    "org": "IITP 정보통신기획평가원 (보도: ZDNe…",
+    "url": "https://zdnet.co.kr/view?no=20261111120847",
+    "title": "2027 AI·ICT 10대 이슈 — 'AI의 가능성을 AX 생산성으로 입증'"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "21장",
+  "text": "랜섬웨어로 병원·공항·제조 등 핵심 서비스가 수일 이상 중단, 공급망 집적형 대형 사건 1건 이상",
+  "prob": "중간 62%±15",
+  "basis": "추세",
+  "support": [
+   {
+    "org": "과학기술정보통신부·KISA (뉴시스 보도)",
+    "url": "https://mobile.newsis.com/view/NISX20260730_0003729364",
+    "title": "2026년 상반기 국내 사이버위협 동향"
+   },
+   {
+    "org": "Verizon",
+    "url": "https://www.verizon.com/business/resources/reports/dbir/",
+    "title": "2026 Data Breach Investigations Report (DBIR) landing page"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "21장",
+  "text": "미국 CIRCIA 최종규칙 공표, 영국 법안 국왕 재가",
+  "prob": "중간 35%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "UK Government",
+    "url": "https://www.gov.uk/government/collections/cyber-security-and-resilience-bill",
+    "title": "Cyber Security and Resilience Bill (collection)"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "21장",
+  "text": "자율 SOC의 오탐 차단으로 인한 자기유발 장애가 공개 보고됨",
+  "prob": "중간 38%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "Gartner",
+    "url": "https://www.gartner.com/en/newsroom/press-releases/2026-10-26-gartner-identifies-the-top-ai-trends-in-infrastructure-and-it-operations-for-2027",
+    "title": "Gartner Identifies the Top AI Trends in Infrastructure and IT Operations for 2027"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "21장",
+  "text": "사이버보험료 약 170억 달러, 요율 보합 전환, AI 명시 배제 확산",
+  "prob": "중간 50%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Gallagher (Arthur J. Gal…",
+    "url": "https://www.ajg.com/site-content/articles/2026/april/ai-liability-not-so-silent/",
+    "title": "AI Liability: Not So Silent"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "21장",
+  "text": "해저케이블 절단·GNSS 교란 지속, 위성 백업·케이블 수리 투자 확대",
+  "prob": "중간 68%±15",
+  "basis": "추세",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "21장",
+  "text": "국정자원 대전 13개 핵심 시스템 DR과 121개 실시간 복제를 상반기에 구축(일부 지연 가능)",
+  "prob": "중간 45%±20",
+  "basis": "일정",
+  "support": [
+   {
+    "org": "ZDNet Korea",
+    "url": "https://zdnet.co.kr/view/?no=20261002104418",
+    "title": "국정자원 화재 1년…정부, 1만5천개 시스템 안정성 강화한다"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "21장",
+  "text": "정보보호수준 평가 첫 시행(04-01)과 반복 사고 과징금 첫 적용 논의",
+  "prob": "높음 70%±10",
+  "basis": "일정",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "21장",
+  "text": "암호학적으로 유의미한 양자컴퓨터 등장",
+  "prob": "낮음 5%±5",
+  "basis": "추정",
+  "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "21장",
+  "text": "국가 디지털 재난을 포괄하는 통합 기본법 국회 통과",
+  "prob": "낮음 12%±10",
+  "basis": "추정",
+  "support": [],
+  "counter": []
+ }
+]

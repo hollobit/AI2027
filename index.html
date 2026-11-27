@@ -1397,8 +1397,8 @@
   <section class="ai27-part" id="part22">
     <div class="ai27-parthead">
       <span class="ai27-partno" aria-hidden="true">22</span>
-      <h2>종합: 국가인공지능전략위원회의 역할과 2027 일정</h2>
-      <p class="ai27-muted">보고서 22장의 제안입니다. 인공지능기본법 제7·8·10조(대통령 소속, 제8조제1항 심의·의결 1–13호, 권고·의견표명, 분과·특별위원회)에 맞춰 2027년 안건을 기능별로 배치하고, 외부 일정에 맞춘 분기별 안건을 정리했습니다. 시나리오와 선행 신호는 Part 02에 있습니다.</p>
+      <h2>종합: 국가인공지능전략위원회·2027 일정·전망 근거</h2>
+      <p class="ai27-muted">보고서 22장의 제안과 2027 전망 전체의 확률·근거 표입니다. 인공지능기본법 제7·8·10조(대통령 소속, 제8조제1항 심의·의결 1–13호, 권고·의견표명, 분과·특별위원회)에 맞춰 2027년 안건을 기능별로 배치하고, 외부 일정에 맞춘 분기별 안건을 정리했습니다. 시나리오와 선행 신호는 Part 02에 있습니다.</p>
     </div>
     <div class="ai27-sub" id="committee"><h3>국가인공지능전략위원회의 역할(인공지능기본법 제8조 기준)</h3></div>
     <div class="ai27-tablewrap">
@@ -1414,7 +1414,15 @@
         <tbody data-draw="committee-cal-rows"></tbody>
       </table>
     </div>
-  </section>
+      <div class="ai27-sub" id="fc-evidence"><h3>2027 전망별 확률과 근거 자료</h3>
+      <p class="ai27-muted">보고서 2027 전망 320건의 확률(±불확도)과, 수집 자료 중 전망을 직접 뒷받침하는 근거(최대 2건)·반론을 연결했습니다. 근거가 비어 있는 전망은 수집 자료에 직접 근거가 없는 항목입니다. 대시보드 검색으로 기관명이나 키워드를 찾을 수 있습니다.</p></div>
+    <div class="ai27-tablewrap">
+      <table data-source="forecast_evidence" data-row-key="text" aria-label="전망별 근거 자료">
+        <thead><tr><th data-field="chapter">장</th><th data-field="text">전망</th><th data-field="prob">확률±불확도</th><th data-field="support">근거</th><th data-field="counter">반론</th></tr></thead>
+        <tbody data-draw="fc-ev-rows"></tbody>
+      </table>
+    </div>
+</section>
 
 </div>
 
@@ -2678,6 +2686,9 @@
     fill('gap-rows', 'gap_items', (tr, r) => tr.append(A.td(r.topic, 'mid'), A.td(r.date),
       A.td(A.safeUrl(r.url) ? A.link(r.url, r.item) : r.item, 'wide'), A.td(r.outlook || '—', 'wide'), A.td(r.korea)));
     fill('committee-rows', 'committee_roles', (tr, r) => tr.append(A.td(r.basis), A.td(r.function, 'mid'), A.td(r.agenda, 'wide'), A.td(r.chapter)));
+    const links = (arr) => { if (!arr || !arr.length) return document.createTextNode('—'); const f = document.createDocumentFragment();
+      arr.forEach((e, i) => { if (i) f.append(', '); f.append(A.safeUrl(e.url) ? A.link(e.url, e.org) : document.createTextNode(e.org)); }); return f; };
+    fill('fc-ev-rows', 'forecast_evidence', (tr, r) => tr.append(A.td(r.chapter), A.td(r.text, 'wide'), A.td(r.prob), A.td(links(r.support), 'mid'), A.td(links(r.counter), 'mid')));
     fill('committee-cal-rows', 'committee_schedule', (tr, r) => tr.append(A.td(r.when), A.td(r.external, 'wide'), A.td(r.agenda, 'wide'), A.td(r.chapter)));
   })();
 </script>
