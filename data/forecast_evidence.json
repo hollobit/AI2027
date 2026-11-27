@@ -1382,6 +1382,196 @@
   "counter": []
  },
  {
+  "chapter": "6장",
+  "text": "OpenAI·Anthropic·Google 3사 모두 2027년 플래그십 출시 자료(모델 카드·시스템 카드·출시 글)에 로봇 제어 또는 체화 추론 벤치마크 점수를 포함",
+  "prob": "높음 75%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Google",
+    "url": "https://developers.googleblog.com/en/gemini-4-argon-for-robotics/",
+    "title": "Gemini 4 Argon for Robotics"
+   },
+   {
+    "org": "Humanoids Daily",
+    "url": "https://www.humanoidsdaily.com/news/anthropic-claude-fable-5-2-robotics-robodojo",
+    "title": "Anthropic Claude Fable 5.2 robotics RoboDojo"
+   },
+   {
+    "org": "Fortune",
+    "url": "https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/",
+    "title": "OpenAI disbands its stand-alone robotics team as general AI models start running robots"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "범용 프런티어 모델 기반 방식이 RoboLab-120에서 성공률 85% 이상(NVIDIA 또는 제3자 보고, 시뮬 일시정지 허용)",
+  "prob": "중간 60%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "NVIDIA",
+    "url": "https://research.nvidia.com/labs/srl/projects/astranomy/",
+    "title": "Astranomy: An empirical study of GPT-6 Astra as a native robot policy"
+   }
+  ],
+  "counter": [
+   {
+    "org": "NVIDIA",
+    "url": "https://research.nvidia.com/labs/srl/projects/astranomy/",
+    "title": "Astranomy (FoodPackingByColor 0% 등 한계)"
+   }
+  ]
+ },
+ {
+  "chapter": "6장",
+  "text": "Embodied First Exam 표준 설정 최고 성공률 60% 이상",
+  "prob": "중간 35%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "Kangrui Wang 외",
+    "url": "https://arxiv.org/abs/2611.12177",
+    "title": "Embodied First Exam"
+   }
+  ],
+  "counter": [
+   {
+    "org": "Kangrui Wang 외",
+    "url": "https://arxiv.org/abs/2611.12177",
+    "title": "Embodied First Exam (Realtime 31.5%)"
+   }
+  ]
+ },
+ {
+  "chapter": "6장",
+  "text": "MMSI-Bench 최고 모델 60% 이상(사람 97%와의 30%p 이상 격차는 6.9절 전망대로 유지)",
+  "prob": "중간 50%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "MMSI-Bench authors",
+    "url": "https://github.com/InternRobotics/MMSI-Bench",
+    "title": "MMSI-Bench leaderboard"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "Butter-Bench·AA-Robotics류 실물 로봇 과제에서 범용 모델이 사람 수준 성공률(사람 기준 대비 95% 이상)과 사람의 10배 이내 소요 시간을 함께 달성",
+  "prob": "낮음 15%±10",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "Artificial Analysis",
+    "url": "https://artificialanalysis.ai/articles/aa-robotics",
+    "title": "Introducing AA-Robotics v0.1"
+   },
+   {
+    "org": "Andon Labs",
+    "url": "https://arxiv.org/abs/2510.21860",
+    "title": "Butter-Bench"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "OpenAI가 자체 휴머노이드 로봇을 처음 공개 시연",
+  "prob": "중간 45%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Fortune",
+    "url": "https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/",
+    "title": "OpenAI disbands its stand-alone robotics team as general AI models start running robots"
+   }
+  ],
+  "counter": [
+   {
+    "org": "Fortune",
+    "url": "https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/",
+    "title": "같은 기사(분기 손실·조직 개편)"
+   }
+  ]
+ },
+ {
+  "chapter": "6장",
+  "text": "선도 로봇 기업·랩 3곳 이상이 '범용 모델(System 2) + 소형 VLA·WAM(System 1)' 계층 구조를 제품·공식 아키텍처로 발표",
+  "prob": "높음 75%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Shivaram K. J.",
+    "url": "https://shivaram.net/notes/corl26/day-1/",
+    "title": "CoRL 2026 Day 1 notes (Jim Fan, Hang Zhao)"
+   },
+   {
+    "org": "NVIDIA",
+    "url": "https://research.nvidia.com/labs/srl/projects/astranomy/",
+    "title": "Astranomy"
+   },
+   {
+    "org": "ChinaTalk",
+    "url": "https://www.chinatalk.media/p/we-went-to-austin-to-see-robots",
+    "title": "Robots Still Suck: A CoRL Trip Report"
+   }
+  ],
+  "counter": [
+   {
+    "org": "NVIDIA",
+    "url": "https://research.nvidia.com/labs/srl/projects/astranomy/",
+    "title": "Astranomy (Agentic 74.8% > Orchestrated 66.5%)"
+   }
+  ]
+ },
+ {
+  "chapter": "6장",
+  "text": "범용 프런티어 모델이 시뮬을 멈추지 않은 실시간 조건에서 호출당 1초 미만으로 제어하며 일시정지 조건과 비슷한 성공률(차이 10%p 이내)을 보인 공개 결과",
+  "prob": "낮음 25%±15",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "Anthropic",
+    "url": "https://www.anthropic.com/research/claude-plays-robotics",
+    "title": "How Claude performs on robotics tasks"
+   },
+   {
+    "org": "Kangrui Wang 외",
+    "url": "https://arxiv.org/abs/2611.12177",
+    "title": "Embodied First Exam"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "비공개 테스트셋·실로봇 기반으로 오염을 통제한 체화 벤치마크 2개 이상이 새로 나와 프런티어 모델을 평가",
+  "prob": "높음 70%±15",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "Shivaram K. J.",
+    "url": "https://shivaram.net/notes/corl26/day-1/",
+    "title": "CoRL 2026 Day 1 notes (TTIC talk)"
+   },
+   {
+    "org": "Metric AI Lab",
+    "url": "https://arxiv.org/abs/2608.25940",
+    "title": "A Statistical Audit of Physical AI Benchmark Redundancy"
+   },
+   {
+    "org": "ChinaTalk",
+    "url": "https://www.chinatalk.media/p/we-went-to-austin-to-see-robots",
+    "title": "Robots Still Suck"
+   }
+  ],
+  "counter": []
+ },
+ {
   "chapter": "7장",
   "text": "AI 연구 자체",
   "prob": "높음 70%±15",

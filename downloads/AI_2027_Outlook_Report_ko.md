@@ -3,7 +3,7 @@
 
 기준일 2026-11-27 · 정리: hollobit · 작성 보조: Claude
 
-> 이 보고서는 2025년 12월 「Tech Trends 2026: 증명의 해」의 후속편입니다. 2026년 예측을 다시 채점하고, 2026년 8–11월에 공개된 2027 전망 자료를 원문으로 수집해(`PDF/` 폴더 약 280건, 웹 자료 포함 부록 786건) 6부 23개 장으로 분석했습니다. Gartner·IDC 유료 원문 14건은 사용자 제공본으로 수치를 대조했습니다(2.3절). 모든 2027 전망에는 주관적 확률과 불확도(±%p)를, 그중 332건에는 근거 자료 링크를 붙였습니다(표기 기준·근거 목록은 부록). 자료별 상세 요약은 [부록](#부록-2027-ai-전망-자료별-상세-분석)에, 수치 대시보드는 [AI 2027 전망 대시보드](https://claude.ai/artifact/SeyeszN61LTYiLbt4tbJwP)에 있습니다.
+> 이 보고서는 2025년 12월 「Tech Trends 2026: 증명의 해」의 후속편입니다. 2026년 예측을 다시 채점하고, 2026년 8–11월에 공개된 2027 전망 자료를 원문으로 수집해(`PDF/` 폴더 약 280건, 웹 자료 포함 부록 801건) 6부 23개 장으로 분석했습니다. Gartner·IDC 유료 원문 14건은 사용자 제공본으로 수치를 대조했습니다(2.3절). 모든 2027 전망에는 주관적 확률과 불확도(±%p)를, 그중 332건에는 근거 자료 링크를 붙였습니다(표기 기준·근거 목록은 부록). 자료별 상세 요약은 [부록](#부록-2027-ai-전망-자료별-상세-분석)에, 수치 대시보드는 [AI 2027 전망 대시보드](https://claude.ai/artifact/SeyeszN61LTYiLbt4tbJwP)에 있습니다.
 
 ---
 
@@ -39,8 +39,8 @@
 - **AI 법칙·수학·과학·문샷(4·7·14장)**: 종합역량은 연 약 17점 직선으로 늘지만 사이버·업무 자동화·추론 연산은 가속합니다. AI R&D 가속이 다른 연구소로 번지는지가 2027년의 메타 변수입니다. 수학에서는 Erdős 문제와 이름 있는 추측이 계속 풀리지만 밀레니엄 문제는 범위 밖입니다. AI 연구 동료의 병목은 '검증'과 '실험실'입니다. K-문샷은 거버넌스를 갖춘 초기 단계이고, 미국 Genesis는 1년 만에 297개 과제로 순항 중입니다.
 - **AGI·ASI·RSI(5장)**: 2027년은 'AGI가 온 해'보다 'AI가 AI 연구를 가속하기 시작한 해'가 될 가능성이 큽니다. 프런티어는 초인적 코더의 문턱에 있고(OpenAI '연구 인턴' 달성 선언, METR의 Anthropic 1.9배 가속), 2027년 말까지 도달 확률은 초인적 코더 50%, 초인적 AI 연구자 25%, 엄밀한 범용 AGI 12%, 초지능 2%입니다(주관). 핵심 변수는 AI R&D 가속이 두 곳 이상의 연구소로 번지는지와, 연구소가 그 증거를 공개하는지입니다.
 - **특화 파운데이션 모델(6장)**: 기상은 현업 운영 단계입니다. 바이오·의료·로봇은 임상·상품화 문턱에 있습니다. 통신은 범용 모델과 특화 소형 모델의 하이브리드로 수렴했고, 3GPP 6G 작업항목이 2027년 3월 승인될 예정입니다.
-- **로봇 AI·피지컬 AI(6.8–6.9절)**: VLA·로봇 파운데이션 모델은 2026년에 '데모'에서 '수 시간 연속 작업'으로 올라섰습니다(π0.7, Gemini Robotics 2, GR00T N1.7, GEN-1). 그러나 LIBERO(97–99%)는 포화됐고, 섭동을 주면 30% 아래로 떨어집니다. 미포화 벤치마크는 RoboCasa365 57.4%, BEHAVIOR 41.2%(2위) 수준입니다. 월드 모델도 물리 이해는 사람에 못 미칩니다(Physics-IQ 66.1%, IntPhys 2 57.5% 대 사람 96.4%). 2027년에는 실세계 강화학습 후학습이 표준이 되고(75%), 평가의 중심이 섭동·장기·실세계·안전 지표로 옮겨 갑니다(70%). 휴머노이드 출하는 8만–15만 대(기준 11만 대)로 봅니다.
-- **로보택시·소비자 의료 AI(6.10–6.11절)**: 로보택시는 2027년 가장 눈에 띄는 피지컬 AI 상용 배치입니다. Waymo는 미국 15개 도시에서 주 50만 건 이상을 운행하고(보도 기준) 2027년 도쿄 무인 운행을 노리며, 중국 업체는 중동·유럽으로 나갑니다. 수익성과 법제는 아직 따라오지 못합니다. 의료에서는 매주 2억 3천만 명이 ChatGPT에 건강 질문을 하는 등 공개 AI가 진료의 첫 관문이 되고, FDA·식약처의 생성형 AI 의료기기 규제가 2027년 구체화됩니다.
+- **로봇 AI·피지컬 AI(6.8–6.10절)**: VLA·로봇 파운데이션 모델은 2026년에 '데모'에서 '수 시간 연속 작업'으로 올라섰습니다(π0.7, Gemini Robotics 2, GR00T N1.7, GEN-1). 그러나 LIBERO(97–99%)는 포화됐고, 섭동을 주면 30% 아래로 떨어집니다. 미포화 벤치마크는 RoboCasa365 57.4%, BEHAVIOR 41.2%(2위) 수준입니다. 월드 모델도 물리 이해는 사람에 못 미칩니다(Physics-IQ 66.1%, IntPhys 2 57.5% 대 사람 96.4%). 2027년에는 실세계 강화학습 후학습이 표준이 되고(75%), 평가의 중심이 섭동·장기·실세계·안전 지표로 옮겨 갑니다(70%). 휴머노이드 출하는 8만–15만 대(기준 11만 대)로 봅니다. **범용 모델이 로봇 전용 모델을 앞지르기 시작했습니다**(CoRL 2026의 'Astra 쇼크'). NVIDIA RoboLab-120에서 GPT-6 Astra+Codex는 74.8%로 π0.5(28.0%)를 크게 앞섰고, Anthropic RoboDojo에서 Claude Fable 5.2는 64.9%입니다(보도 기준). 다만 호출당 지연이 13–19초로 VLA(47ms)의 약 400배여서, 2027년에는 '범용 모델(계획) + 소형 VLA(실행) + 실시간 제어(안전)' 계층 구조가 표준이 될 가능성이 큽니다(75%).
+- **로보택시·소비자 의료 AI(6.11–6.12절)**: 로보택시는 2027년 가장 눈에 띄는 피지컬 AI 상용 배치입니다. Waymo는 미국 15개 도시에서 주 50만 건 이상을 운행하고(보도 기준) 2027년 도쿄 무인 운행을 노리며, 중국 업체는 중동·유럽으로 나갑니다. 수익성과 법제는 아직 따라오지 못합니다. 의료에서는 매주 2억 3천만 명이 ChatGPT에 건강 질문을 하는 등 공개 AI가 진료의 첫 관문이 되고, FDA·식약처의 생성형 AI 의료기기 규제가 2027년 구체화됩니다.
 
 *제3부 산업·경제·사회(8–13장)*
 - **코딩·산업·조직(8장)**: 선도 기업의 AI 작성 코드 비중은 85–90%가 될 전망입니다. 확산은 SW·고객센터가 가장 빠르고, 의료 행정·금융·법률이 뒤를 잇습니다. 조직은 관리 범위가 넓어지고, 인사는 신입 채용을 줄이며, 노무에서는 노란봉투법 이후 AI 교섭이 쟁점이 됩니다.
@@ -142,7 +142,7 @@
 
 ## 2. 2027 전망 자료 종합: 기관별 시각
 
-종합 전망 자료는 리서치·컨설팅 14건, 투자·금융·에너지 19건, AI 연구·예측·정책 19건, 한국 15건입니다. 여기에 분야별 심층 자료(3–21장)를 더해 부록에는 모두 786건을 정리했습니다. 이 장은 기관별 시각을 요약하고, 각 테마를 깊이 다룬 장을 함께 표시합니다.
+종합 전망 자료는 리서치·컨설팅 14건, 투자·금융·에너지 19건, AI 연구·예측·정책 19건, 한국 15건입니다. 여기에 분야별 심층 자료(3–21장)를 더해 부록에는 모두 801건을 정리했습니다. 이 장은 기관별 시각을 요약하고, 각 테마를 깊이 다룬 장을 함께 표시합니다.
 
 ### 2.1 합의된 것
 
@@ -1001,7 +1001,7 @@ AGI·ASI라는 말은 정의가 제각각이라 "왔다/안 왔다" 논쟁이 �
 
 | 벤치마크 | 무엇을 재나 | 프런티어 모델 | 사람 | 비고 |
 |---|---|---|---|---|
-| ERQA(Google, 2025) | 로봇 시점 공간·궤적·행동 추론 객관식 | 최신 모델 대부분 40–50%대에 몰림(ERQA-Plus 분석) | 공개 기준선 없음 | 변별력이 떨어져 2026-06 ERQA-Plus가 나옴(최고 Qwen3-VL-32B 83.4%) |
+| ERQA(Google, 2025) | 로봇 시점 공간·궤적·행동 추론 객관식 | 2026 상반기까지 최신 모델 대부분 40–50%대에 몰림(ERQA-Plus 분석). 하반기 Gemini 4 Argon 87.0(6.10절) | 공개 기준선 없음 | 변별력이 떨어져 2026-06 ERQA-Plus가 나옴(최고 Qwen3-VL-32B 83.4%) |
 | Gemini Robotics-ER 2(2026-07-30) | 성공 판정·진행도·계기 판독·ERQA | 진행도 분류 57.4%, 순간 찾기 91.3% | 미공개 | ERQA 등 수치는 그림으로만 제시. Gemini API로 일반 공개 |
 | VSI-Bench(NYU, EASI 집계) | 영상 기반 공간 지능(거리·크기·경로) | GPT-5 55.0, Gemini 2.5 Pro 53.6(2025 하반기) | 79.2 | 약 24점. 거리 측정·공간 관계는 사람 수준 도달 |
 | MMSI-Bench(ICLR 2026) | 여러 이미지 간 공간 추론 | GPT-5 약 40%, 최고 오픈 모델 약 30% | 97% | 공간 지능 벤치마크 중 가장 큰 격차(저자) |
@@ -1076,9 +1076,105 @@ AGI·ASI라는 말은 정의가 제각각이라 "왔다/안 왔다" 논쟁이 �
 
 > **확인 필요**: Genie 4의 2분 일관성과 Gemini 4 Argon의 56%→75%(The Batch 등 보도), Waymo World Model의 Genie 3 기반(보도), V-JEPA 2.1 '+20%p'(초록 기준), VSI-Bench 사람 79.2·GPT-5 55.0(EASI 리더보드 미러, 2026년 모델 점수 미확인), Gemini Robotics-ER 2의 ERQA 수치(그림만 공개), Goldman 2026-09 수치와 연 6% 가격 하락(2차 보도), Morgan Stanley 중국 5만 대(2차 보도), AgiBot 8,600대(회사 인용), Agility 10만 토트(블로그), 중국 1만 대 목표(Caixin 보도), Dealroom 110억 달러(브리핑 요약), 현대차 원가·3만 대 공장의 정의, 한국 예산 수치(정부안 보도). 평균 가격 약 3만 달러는 IDC 금액÷대수로 계산한 값입니다.
 
+### 6.10 프런티어 범용 모델의 로봇 역량: GPT-6 Astra·Claude Fable·Gemini 4의 체화 벤치마크
+
+> 자료: Google Gemini Robotics 기술보고서(ERQA, arXiv 2503.20020)·Gemini 4 Argon for Robotics(2026-10-13), Metric AI Lab 체화 벤치마크 감사(arXiv 2608.25940), GeoThinker-F(arXiv 2610.20592), MMSI-Bench 리더보드(GitHub), Andon Labs Butter-Bench(arXiv 2510.21860), Anthropic Project Fetch 1·2단계(2025-11-12, 2026-06-18)·Embody(2026-07-09), Artificial Analysis AA-Robotics v0.1(2026-10-14), NVIDIA Astranomy(CoRL 2026 LBR, 2026-10-14), Embodied First Exam(arXiv 2611.12177), Humanoids Daily(Fable 5.2 RoboDojo, 2026-11-10), Fortune(2026-11-13), CoRL 2026 참관기(Benjie Holson 2026-11-12, Shivaram K. J. 2026-11-16, ChinaTalk 2026-11-20). VLA 자체의 벤치마크는 6.8절, 월드 모델·물리 이해와 VSI·MMSI의 사람 격차는 6.9절에서 다룹니다.
+
+**한 줄 요약**: 2025년까지 범용 모델은 로봇 시점 문제에서 우연보다 조금 나은 수준이었고, 로봇을 직접 움직이면 사람의 절반도 못 했습니다. 2026년 하반기에는 GPT-6 Astra·Claude Fable 5.2·Gemini 4 Argon이 **시뮬레이션에서 전용 VLA를 2배 이상 앞섰습니다**(RoboLab-120 74.8% 대 π0.5 28.0%). 다만 한 번 판단하는 데 13–19초가 걸리고, 시뮬레이터를 멈춰 놓고 잰 값입니다. 실시간 조건에서는 최고 31.5%입니다. 2027년의 쟁점은 '범용 모델이 VLA를 대체하나'가 아니라 **누가 어느 층을 맡나**입니다.
+
+#### 세대별 비교: 같은 벤치마크, 세 시점
+
+| 벤치마크(측정 대상) | 2025년 초 | 2025년 말 | 2026년 | 사람 |
+|---|---|---|---|---|
+| ERQA(로봇 시점 체화 추론, 400문항, 도구 없음) | Gemini 2.0 Pro Exp 48.3, GPT-4o 47.0, Claude 3.5 Sonnet 35.5(CoT 없이, 2025-03) | 감사 논문 집계 49개 모델 최고 65.0(2026-08 시점) | **Gemini 4 Argon 87.0**, Claude Opus 5.5 82.3, GPT-6 Astra 81.0, Claude Fable 5.1 74.0(Google 차트, 보도 기준) | 미공개 |
+| VSI-Bench(영상 공간 지능) | Gemini 2.5 Pro 53.5 | GPT-5 55.0, Gemini 3 Pro Preview 52.5 | 51개 모델 최고 69.5(2026-08, 모델명 미기재). GPT-6·Fable·Gemini 4 점수 미확인 | 79.2 |
+| MMSI-Bench(다중 이미지 공간 추론) | GPT-4o 30.3, Claude 3.7 Sonnet(Thinking) 30.2, Gemini 2.5 Pro 36.9 | GPT-5 41.9, **Gemini 3 Pro 49.2** | 2026년 모델 미등재 | 97.2 |
+| Butter-Bench(LLM이 실제 로봇으로 버터 전달) | — | Gemini 2.5 Pro 40, Claude Opus 4.1 37, GPT-5 30, Gemini ER 1.5 27(2025-10) | 후속 결과 미확인 | 95 |
+| AA-Robotics v0.1(실제 로봇 팔, 8개 탁상 과제, 부분 점수) | — | — | GPT-6 Astra 69.4, GPT-6.1 Sol 64.6, Gemini 4 Argon 55.3, Claude Opus 5.5 48.8, Claude Fable 5.1 46.3(2026-10-14). Fable 5.2 75(2026-11, 보도 기준) | 점수 미보고. 과제당 약 20초(모델 약 30분) |
+| Embodied First Exam(코딩 에이전트, 47종 로봇, 456개 표준 과제) | — | — | GPT-6 Astra(Codex) 33.6%, Opus 5.5(Claude Code) 25.0%, Argon 24.1%, Kimi 3.1 Pro 10.1%, Qwen3.8 Max 3.7%(2026-11-09) | 미보고 |
+
+- **읽는 법**: ERQA는 1년 반 만에 48점대에서 87점으로 올랐습니다. 그러나 87%는 Google이 자사 출시 글에서 밝힌 값이고 경쟁 모델 수치는 그림에만 있습니다. ERQA 400문항은 공개돼 있어 오염 가능성을 배제할 수 없습니다. 6.9절의 '최신 모델 대부분 40–50%대'는 2026년 상반기까지의 상황입니다.
+- **6.9절 확인 필요 항목 보완**: 2026년 모델의 VSI-Bench 점수는 이번에도 찾지 못했습니다. 다만 2026-08 감사 논문은 51개 모델 가운데 최고 69.5를 기록했습니다(모델명 미기재). 사람(79.2)과의 격차는 약 10점으로 줄었습니다.
+- **중국·오픈 모델**: 공간 벤치마크 종합 순위(4개 벤치마크 Bradley–Terry)에서는 Tencent HY-Embodied-0.5, Qwen3.5-397B, Qwen3-VL-235B가 1–3위이고 Gemini 3.0 Pro가 7위입니다(2026-08). 공간 문항형 벤치마크에서는 체화 특화 후학습의 효과가 큽니다. 반대로 로봇을 직접 움직이는 평가(Embodied First Exam)에서는 중국 모델이 10% 이하입니다.
+
+#### 로봇을 '직접' 다루는 실험: 2025년과 2026년
+
+| 실험 | 2025년 결과 | 2026년 결과 |
+|---|---|---|
+| Project Fetch(Anthropic, 사족 로봇 개가 공을 가져오도록 프로그래밍) | 비전문가 4인 팀 둘. Claude를 쓴 팀이 8개 과제 중 7개(미사용 팀 6개)를 약 절반의 시간에 끝냄. Opus 4.1 단독으로는 로봇 연결에서 막힘 | **Opus 4.7 단독**이 두 팀이 모두 끝낸 4개 과제를 9분 35초에 끝냄(Claude 팀 181분, 미사용 팀 361분). 코드는 1,045줄(Claude 팀 10,309줄). 자율 공 가져오기는 여전히 실패 |
+| Embody(Anthropic, 시뮬·실물 제어 묶음) | Opus 4 종합 0.115 | Mythos Preview 0.389. LIBERO 직접 조작 성공은 0–5.5%. 실물 Go2 사무실 순환 과제는 모든 모델 실패. 실시간 제어에는 약 83Hz가 필요하지만 추론은 0.2–0.4Hz |
+| Butter-Bench(Andon Labs) | 최고 40% 대 사람 95%. 다단계 공간 계획과 사회적 이해에서 약함. 체화 추론 미세조정 모델(Gemini ER 1.5)도 점수가 오르지 않음 | 후속 결과 미확인 |
+| Gemini를 오케스트레이터로 | Gemini Robotics-ER 1.5가 계획·성공 판정을 맡고 VLA가 실행(6.9절) | Gemini 4 Argon이 사진에서 MuJoCo 시뮬레이션을 만들고, 그 데이터로 미세조정한 VLA의 실제 성공률이 56%에서 75%로 상승(Google 시연) |
+
+#### CoRL 2026의 'Astra 쇼크'
+
+2026-11 오스틴 CoRL(로봇 학습 학회)의 화두는 범용 모델이 로봇을 직접 모는 방식이었습니다. 계기는 NVIDIA 연구진의 Astranomy 결과(2026-10-14)였고, 학회 기간 중 Anthropic이 Fable 5.2를 내놓으며(2026-11-09) 로봇 벤치마크 결과를 함께 공개했습니다.
+
+| 방식(RoboLab-120 시뮬, 120개 과제 × 5회) | 성공률 | 호출당 지연 | 성공 1회당 비용 |
+|---|---|---|---|
+| GPT-6 Astra + Codex 세션(에이전트 방식) | **74.8%** | 13.37초 | 36.40달러 |
+| Astra가 WAM 제안을 검토·개입(오케스트레이션) | 66.5% | 11.50 / 2.74초(두 값 의미 미설명) | 17.72달러 |
+| GPT-6 Astra API 직접 호출(말단 장치 목표) | 66.3% | 18.56초 | 1.96달러 |
+| Cosmos3-Nano-Policy(WAM, DROID 미세조정) | 36.8% | 713.76ms | — |
+| π0.5(VLA) | 28.0% | 46.96ms | — |
+
+| 방식(RoboDojo 시뮬 양팔 조작, Anthropic 자체 측정) | Fable 5.2 | Opus 5.5 | Gemini 4 Argon | GPT-6 Astra | Fable 5.1 |
+|---|---|---|---|---|---|
+| 점수(보도 기준) | **64.9%** | 39.4% | 34.2%(High) | 29.8% | 27.6% |
+
+- **설정**: Astranomy는 시뮬 DROID 로봇(Franka 팔)을 15Hz로 제어하되, **추론하는 동안 시뮬레이터를 멈췄습니다**. Astra는 코드가 아니라 도구 호출로 말단 장치 목표·관절 위치를 직접 냅니다. 같은 조건의 직접 제어에서 Astra 72.7%, GPT-6 Sol 33.3%, Claude Opus 5.5 25.3%였습니다(30개 과제 부분집합). 추론 강도를 높이거나 계획을 지시해도 성공률은 거의 변하지 않았습니다.
+- **실패와 한계(저자)**: 추론이 에피소드 시간의 94.9–97.8%를 차지했고, 저자들은 "능력과 실시간 제어·배치 사이에 큰 간극"이 있다고 썼습니다. 오케스트레이션에서 Astra는 14.5%의 단계에 개입했고, 그중 64.4%가 파지 실패를 바로잡는 개입이었습니다. 색깔별 음식 포장 과제는 모든 방식이 0%였습니다.
+- **RoboDojo**: 공개 리더보드(2026-11-03)에서 에이전트 방식 최고는 Q0-Preview(성공률 68.87%)이고 정책 방식 최고는 WALL-OSS(34.97%)입니다. Fable 5.2의 64.9%는 Anthropic이 직접 잰 값이어서 리더보드와 엄밀히 비교할 수 없습니다. 64.9%가 점수인지 성공률인지도 밝히지 않았습니다.
+- **6.8절과의 관계**: RoboLab-120·RoboDojo는 LIBERO·BEHAVIOR와 다른 과제이고 모두 시뮬입니다. VLA(π0.5 47ms)와 Astra 단독(18.56초)의 지연 차이는 약 **400배**(분석가 계산)입니다. 이 결과는 6.8절의 VLA 점수를 무효로 만들지 않습니다. 시간 제한이 없을 때 범용 모델의 판단력이 VLA보다 낫다는 뜻입니다.
+- **학회 반응**: Benjie Holson은 학회 두 달 전 나온 'GPT Astra로 로봇을 직접 모는' 방식이 "많은, 그러나 전부는 아닌" 면에서 기존 방식을 앞섰다고 정리했습니다. 논문·포스터·부스는 대부분 그 이전의 VLA·WAM 연구였고, 제출에서 발표까지의 사이에 연구가 낡는다면 학회가 제대로 작동하느냐는 의문이 나왔다고 전했습니다. 구체적인 학회 운영 개편 논의는 적지 않았습니다. Fei-Fei Li는 기조연설에서 "결과가 숨이 막힐 정도"라고 했습니다.
+- **Jim Fan(NVIDIA) 기조연설**(참관기 기준): 커뮤니티의 반응을 '슬픔의 5단계'로 묘사했습니다. 부정("체리피킹"), 분노, 타협("내 모션 플래너는 아직 필요하겠지?"), 우울("내 박사 연구가 이제 시스템 프롬프트의 농담"), 수용("겨울이 온다")에 이어 6단계로 '축하'를 붙였습니다. 축하의 근거는 빠른 반응 계층이 여전히 필요하다는 점이었고, NVIDIA는 Astra를 20억 파라미터 GR00T 2와 짝지어 씁니다.
+- **실시간 조건의 반증**: 같은 날 Hang Zhao는 시계를 멈추면 대부분의 방식이 60%를 넘지만, 50초 마감을 두면 매 단계 호출 방식은 15–20%로 떨어지고 오케스트레이션은 65%를 유지한다고 보고했습니다(참관기 기준). Astra 실행 중 시뮬 로봇은 에피소드의 97%를 멈춰 있었습니다.
+- **조직 변화**: OpenAI는 2026-11-13 독립 로봇팀을 해체하고 연구 인력은 본 연구조직, 응용·하드웨어 인력은 Applied 조직으로 옮겼습니다. 범용 모델을 로봇에 바로 쓸 수 있게 됐다는 이유입니다. 자체 휴머노이드는 계속 개발하며 Altman은 2027년 첫 공개 시연을 목표로 합니다(Fortune).
+- **창발인가, 학습인가**: ChinaTalk의 참관기("Robots Still Suck")는 "프런티어 랩이 로봇 전문가 없이 로봇 문제를 풀 것인가?"를 묻습니다. Anthropic은 Fable 5.2가 "명시적으로 학습하지 않은 로봇 과제에서도" 나아졌다고 밝혔습니다. 반면 Goodfire의 Aiden Swann은 X에서 "Astra의 로봇 능력은 창발이 아니다"라며 로봇 특화 학습을 근거로 들었습니다. 연구자들은 CAD와 '코드 작성-렌더링-검사' 루프의 강화학습이 공간 추론을 끌어올렸다고 봅니다. 어느 쪽도 확정되지 않았습니다. TTIC 발표("우리는 실제로 무엇을 벤치마크하는가?")는 프런티어 모델이 재학습 없이도 공개 벤치마크로 '연습'할 수 있어 모든 공개 벤치마크가 위험하다고 지적했습니다.
+
+#### 얼마나 좋아졌나: 요약 수치(분석가 계산)
+
+- **ERQA**: Gemini 계열 최고가 48.3(2025-03, CoT 없이)에서 87.0(2026-10)으로 **+38.7%p**, 약 19개월 동안의 변화입니다(87.0은 회사 발표).
+- **MMSI-Bench**: GPT-4o 30.3에서 Gemini 3 Pro 49.2로 +18.9%p입니다. 사람과의 격차는 66.9점에서 48.0점으로 **28% 줄었습니다**.
+- **VSI-Bench**: 사람과의 격차는 GPT-5 기준 24.2점에서 집계 최고 기준 9.7점으로 **약 60% 줄었습니다**. 다만 최고점의 모델명이 공개되지 않았습니다.
+- **로봇 직접 제어**: RoboDojo에서 Fable 5.1에서 5.2로 한 세대 만에 +37.3%p(27.6→64.9), AA-Robotics에서 +29점(46.3→75, 보도 기준)이 올랐습니다. Project Fetch는 1년 만에 '단독으로는 연결도 못함'에서 '사람+Claude 팀보다 18배 빠름'으로 바뀌었습니다.
+- **그대로인 것**: 실시간 조건의 Embodied First Exam은 최고 31.5%입니다. AA-Robotics 과제 시간은 사람의 약 100배이고, 실물 사족 보행 순환 과제(Embody)와 자율 공 가져오기(Fetch)는 성공하지 못했습니다.
+
+#### 왜 범용 모델이 로봇 제어로 직결되지 않나
+
+1. **지연**: 균형·접촉 제어는 수십–수백 Hz가 필요합니다. 범용 모델의 호출 주기는 0.05–0.4Hz입니다. 2026년의 좋은 점수는 대부분 시뮬을 멈추고 얻었습니다.
+2. **데이터·정밀도**: 공 밀기, 서브밀리미터 삽입, 파지 같은 폐루프 정밀 동작에서 실패가 몰립니다(Fetch, Astranomy 개입의 64%가 파지).
+3. **3D·물리 이해**: 다시점 통합(MMSI 49%)과 직관 물리(6.9절 IntPhys 2)가 아직 사람과 크게 차이 납니다.
+4. **안전·비용**: 클라우드 상시 연결이 필요하고, 성공 1회에 최대 36달러가 듭니다. 70kg 휴머노이드의 안전 문제도 남아 있습니다.
+
+**역할 분담(재정의)**: 범용 모델은 **System 2**(과제 분해·코드 작성·성공 판정·예외 처리)를 맡습니다. 소형 VLA·WAM은 **System 1**(수십 ms 단위 시각-행동)을, 학습형·고전 제어기는 **System 0**(kHz급 균형·힘·안전 정지)을 맡습니다. 이 계층은 Figure Helix 02(6.8절)와 Hang Zhao의 '반응 시간별 분할' 제안과 같은 방향입니다. VLA는 사라지기보다 범용 에이전트가 부르는 도구·하위 시스템으로 재정의될 가능성이 큽니다. 다만 Astranomy에서는 에이전트 방식(74.8%)이 오케스트레이션(66.5%)보다 높아, 계층 구조가 항상 낫다는 증거는 아직 없습니다.
+
+#### 2027 전망
+
+| 2027 전망 | 가능성 · 확률(±불확도) |
+|---|---|
+| OpenAI·Anthropic·Google 3사 모두 2027년 플래그십 출시 자료(모델 카드·시스템 카드·출시 글)에 로봇 제어 또는 체화 추론 벤치마크 점수를 포함 | 높음 · 75% (±15) · 근거 [Google](https://developers.googleblog.com/en/gemini-4-argon-for-robotics/), [Humanoids Daily(Anthropic 출시 글 보도)](https://www.humanoidsdaily.com/news/anthropic-claude-fable-5-2-robotics-robodojo), [Fortune](https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/) |
+| 범용 프런티어 모델 기반 방식이 RoboLab-120에서 성공률 85% 이상(NVIDIA 또는 제3자 보고, 시뮬 일시정지 허용) | 중간 · 60% (±20) · 근거 [NVIDIA Astranomy](https://research.nvidia.com/labs/srl/projects/astranomy/) · 반론 [NVIDIA Astranomy](https://research.nvidia.com/labs/srl/projects/astranomy/)(전 방식 0% 과제 존재) |
+| Embodied First Exam 표준 설정 최고 성공률 60% 이상 | 중간 · 35% (±20) · 근거 [Embodied First Exam](https://arxiv.org/abs/2611.12177) · 반론 같은 논문(실시간 31.5%) |
+| MMSI-Bench 최고 모델 60% 이상(사람 97%와의 30%p 이상 격차는 6.9절 전망대로 유지) | 중간 · 50% (±20) · 근거 [MMSI-Bench](https://github.com/InternRobotics/MMSI-Bench) |
+| Butter-Bench·AA-Robotics류 실물 로봇 과제에서 범용 모델이 사람 수준 성공률(사람 기준 대비 95% 이상)과 사람의 10배 이내 소요 시간을 함께 달성 | 낮음 · 15% (±10) · 근거 [Artificial Analysis](https://artificialanalysis.ai/articles/aa-robotics), [Andon Labs](https://arxiv.org/abs/2510.21860) |
+| OpenAI가 자체 휴머노이드 로봇을 처음 공개 시연 | 중간 · 45% (±20) · 근거 [Fortune](https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/) · 반론 같은 기사(비용 압박·조직 개편) |
+| 선도 로봇 기업·랩 3곳 이상이 '범용 모델(System 2) + 소형 VLA·WAM(System 1)' 계층 구조를 제품·공식 아키텍처로 발표 | 높음 · 75% (±15) · 근거 [CoRL 2026 1일차 참관기(NVIDIA GR00T 2+Astra)](https://shivaram.net/notes/corl26/day-1/), [NVIDIA Astranomy](https://research.nvidia.com/labs/srl/projects/astranomy/), [ChinaTalk](https://www.chinatalk.media/p/we-went-to-austin-to-see-robots) · 반론 [NVIDIA Astranomy](https://research.nvidia.com/labs/srl/projects/astranomy/)(에이전트 단독이 더 높음) |
+| 범용 프런티어 모델이 시뮬을 멈추지 않은 실시간 조건에서 호출당 1초 미만으로 제어하며 일시정지 조건과 비슷한 성공률(차이 10%p 이내)을 보인 공개 결과 | 낮음 · 25% (±15) · 근거 [Anthropic](https://www.anthropic.com/research/claude-plays-robotics), [Embodied First Exam](https://arxiv.org/abs/2611.12177) |
+| 비공개 테스트셋·실로봇 기반으로 오염을 통제한 체화 벤치마크 2개 이상이 새로 나와 프런티어 모델을 평가 | 높음 · 70% (±15) · 근거 [CoRL 2026 1일차 참관기(TTIC 발표)](https://shivaram.net/notes/corl26/day-1/), [Metric AI Lab](https://arxiv.org/abs/2608.25940), [ChinaTalk](https://www.chinatalk.media/p/we-went-to-austin-to-see-robots) |
+
+6.9절과의 관계: VSI-Bench 사람 기준 도달은 6.9절의 45%를 그대로 따르고 중복 행을 만들지 않았습니다. 2026-08 집계 최고가 69.5(격차 약 10점)라는 새 자료는 이 확률을 올릴 근거입니다. 다만 모델명과 평가 조건을 확인하지 못해 수치는 바꾸지 않았습니다.
+
+#### 한국 시사점
+
+국내 모델(EXAONE, HyperCLOVA X, 국가대표 AI 모델)이 ERQA·VSI-Bench·RoboLab류 체화 평가에 점수를 낸 사례는 확인하지 못했고, 한국어 체화 벤치마크도 찾지 못했습니다. LG는 EXAONE 4.5(2026-04)를 휴머노이드 KAPEX의 두뇌로 쓰겠다고 밝혔습니다. 국가대표 AI 모델 평가에 체화 항목을 넣고, 2027년 정부 구매 휴머노이드 250대(6.9절)를 AA-Robotics형 공개 실물 시험대로 쓰는 방안을 검토할 만합니다.
+
+> **확인 필요**: Gemini 4 Argon 외 모델의 ERQA 수치(82.3·81.0·74.0)는 Google 차트를 옮긴 2차 보도 기준입니다. Fable 5.2의 AA-Robotics 75점은 보도 기준이며, Artificial Analysis 원문(2026-10-14)에는 없습니다. RoboDojo 수치는 Anthropic 출시 글을 인용한 Humanoids Daily 기준입니다(원문 미확인). Jim Fan·Hang Zhao 발언은 AI로 정리한 참관기 기준이고, Aiden Swann 주장은 ChinaTalk 인용입니다. 감사 논문의 VSI-Bench 69.5·ERQA 65.0은 최고점의 모델명을 밝히지 않았습니다. Astranomy 오케스트레이션 지연의 두 값(11.50/2.74초)은 의미가 설명되지 않았습니다. 2026년 프런티어 모델(GPT-6 Astra, Fable 5.x, Gemini 4)의 VSI-Bench·MMSI-Bench 점수, Gemini Robotics-ER 2의 ERQA 수치, Butter-Bench 2026 후속, GPT-6 Astra 시스템 카드의 체화 평가 포함 여부는 찾지 못했습니다.
 
 
-### 6.10 로보택시·자율주행: 2027년 상용 확장
+
+
+### 6.11 로보택시·자율주행: 2027년 상용 확장
 
 > 자료: Waymo 블로그·안전 허브(2026-02·06·09), Pony.ai 3분기 실적(SEC 6-K, 2026-11-18), Baidu 3분기 실적(2026-11-16, 보도), McKinsey 'Autonomous mobility gains ground'(보도), BCG 'Here at Last: The Evolution of the Robotaxi'(2026-01-06), Counterpoint(2026-04-14), 서울시 미디어허브(2026-08-19), 관계부처 '자율주행차 산업경쟁력 제고 방안'(2025-11-26). McKinsey 원문 페이지는 열리지 않아 보도로 확인한 수치입니다.
 
@@ -1131,7 +1227,7 @@ AGI·ASI라는 말은 정의가 제각각이라 "왔다/안 왔다" 논쟁이 �
 
 > **확인 필요**: McKinsey 도시 수(원문 페이지 미열람), Waymo 주간 50만 건·15개 도시(보도), Baidu 3분기 수치(원문 403), Tesla 무인 도시 수(실적 발표 요약 보도), 국토부 2027 예산 8,801억 원(정부안 보도), 서울 심야 자율주행택시의 시험운전자 탑승 여부(원문에서 확인 필요).
 
-### 6.11 소비자 의료 AI와 규제
+### 6.12 소비자 의료 AI와 규제
 
 > 자료: Forrester Predictions 2027: Healthcare(블로그·Becker's 요약), OpenAI ChatGPT Health 발표(2026-01), FDA CDRH 생성형 AI 기기 토론 문서(2026-08)와 FY2027 지침 의제(RAPS 보도), FDA AI 기기 목록, 식약처 보도자료, 국내 보도(메디칼타임즈·데일리팜). FDA 기기 수는 6.2절·22.6절과 같은 값(1,600건 이상, 2026-09)을 씁니다.
 
@@ -4355,7 +4451,7 @@ AI 오용 전반(CBRN·테러·시험 부정·탈옥 모델·오정렬)은 20장
 
 ### 전망 근거 자료
 
-본문 2027 전망 412건 중 **350건**에 수집 자료를 근거로 연결했습니다(근거 링크는 각 전망의 확률 옆). 검토자 4인(AI 보조)이 후보 자료의 내용을 읽고 전망을 직접 뒷받침하는 자료만 골랐고, 맞는 자료가 없으면 비워 두었습니다. 일부 자료는 본문 없이 제목만 수집돼 제목 기준으로 연결했습니다. '반론'은 전망과 반대 방향의 근거입니다.
+본문 2027 전망 421건 중 **359건**에 수집 자료를 근거로 연결했습니다(근거 링크는 각 전망의 확률 옆). 검토자 4인(AI 보조)이 후보 자료의 내용을 읽고 전망을 직접 뒷받침하는 자료만 골랐고, 맞는 자료가 없으면 비워 두었습니다. 일부 자료는 본문 없이 제목만 수집돼 제목 기준으로 연결했습니다. '반론'은 전망과 반대 방향의 근거입니다.
 
 | 근거 자료 | 날짜 | 연결된 전망 수 |
 |---|---|---|
@@ -4702,7 +4798,7 @@ AI 오용 전반(CBRN·테러·시험 부정·탈옥 모델·오정렬)은 20장
 ## 부록: 2027 AI 전망 자료별 상세 분석
 
 > 각 자료를 수집·저장한 뒤 추출 텍스트를 읽고 정리했습니다. 기준일 2026-11-26. '요약·보도자료만'은 원문이 유료이거나 자동 접근이 막혀 공식 보도자료·언론 보도로 대신한 자료입니다.
-수록 자료 786건.
+수록 자료 801건.
 
 
 ### A. 글로벌 리서치·컨설팅 (14건)
@@ -11108,7 +11204,7 @@ S-1 공개 후 지배구조 논란으로 IPO를 철회하고 CEO에서 사임함
 성희롱 신고를 조사하는 과정에서 경비 보고서 부정확성이 드러나 CEO직을 사임함(성희롱 자체는 인정되지 않음)
 
 
-### AM. 2027 공백 보강(거시·반발·광고·자율주행·글로벌 사우스·아동·책임·의료·과세) (125건)
+### AM. 2027 공백 보강(거시·반발·광고·자율주행·글로벌 사우스·아동·책임·의료·과세) (140건)
 
 ##### Morgan Stanley (ANI·Tribune 보도) — China's humanoid robot investment set to accelerate, selective commercial use expected in 2027
 
@@ -11123,6 +11219,16 @@ S-1 공개 후 지배구조 논란으로 IPO를 철회하고 CEO에서 사임함
 
 - **근거·방법**: 보도
 - **한국 시사점**: 실증 사업 성과지표 설계에 참고
+
+##### ChinaTalk — Robots Still Suck: A CoRL Trip Report
+
+발표 2026-11-20· 관점 신중· 원문 전체· 신뢰도 medium  
+출처: <https://www.chinatalk.media/p/we-went-to-austin-to-see-robots>
+
+오스틴 CoRL 현장 취재입니다. '프런티어 랩이 로봇 전문가 없이 로봇 문제를 풀 것인가'를 묻고, Fable·Astra가 코드·도구 호출로 로봇을 모는 방식, Astra 능력이 창발이 아니라는 반론(Aiden Swann), 중국 하드웨어·데이터 우위를 다룹니다. 로봇 두뇌가 풀려도 실제 영향의 20% 수준이라는 연구자 발언을 전합니다.
+
+- **근거·방법**: 현장 인터뷰
+- **한국 시사점**: 하드웨어·데이터 공급망이 모델보다 오래 가는 경쟁력
 
 ##### The Korea Times — Korean tech giants take different paths in humanoid robot race
 
@@ -11189,6 +11295,28 @@ S-1 공개 후 지배구조 논란으로 IPO를 철회하고 CEO에서 사임함
 - **근거·방법**: 국가신용 분석
 - **한국 시사점**: AI 투자 지속은 한국 수출에 우호적이지만 집중 위험을 키웁니다.
 
+##### Shivaram Kumar Jagannathan (NTU) — CoRL 2026 Day 1 notes
+
+발표 2026-11-16· 관점 중립· 원문 전체· 신뢰도 medium  
+출처: <https://shivaram.net/notes/corl26/day-1/>
+
+CoRL 2026 1일차 정리입니다(AI 보조 작성). Jim Fan은 반응을 '슬픔의 5단계 + 축하'로 묘사했고 NVIDIA는 Astra를 GR00T 2(2B)와 짝짓습니다. Hang Zhao는 50초 마감 조건에서 단계별 호출 방식이 15–20%로 떨어지고 오케스트레이션은 65%를 유지한다고 보고했습니다. TTIC 발표는 공개 벤치마크 전반의 오염 위험을 지적했습니다.
+
+- **근거·방법**: 학회 발표 요약
+
+##### Fortune — Exclusive: OpenAI disbands its stand-alone robotics team as general AI models start running robots
+
+발표 2026-11-13· 관점 중립· 원문 전체· 신뢰도 high  
+출처: <https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/>
+
+OpenAI가 독립 로봇팀을 해체해 연구 인력은 본 연구조직, 응용·하드웨어 인력은 Applied로 옮겼습니다. GPT-6 Astra 같은 범용 모델을 로봇에 바로 쓸 수 있게 됐다는 판단입니다. 자체 휴머노이드는 계속 개발하며 Altman은 2027년 첫 공개 시연을 목표로 합니다.
+
+**핵심 내용**
+
+- OpenAI 휴머노이드 첫 공개 시연 _(2027)_
+
+- **근거·방법**: 독점 취재, 회사 대변인 설명
+
 ##### Moody's — 2027 Global Credit Outlook: Credit will weaken as higher rates and energy costs offset the AI tailwind
 
 발표 2026-11-12· 관점 신중· 요약·보도자료만· 신뢰도 high  
@@ -11218,6 +11346,20 @@ S-1 공개 후 지배구조 논란으로 IPO를 철회하고 CEO에서 사임함
 - **근거·방법**: 실적 발표 보도
 - **한국 시사점**: 국내 검색 광고 과금 체계가 클릭에서 거래 기준으로 옮겨 갑니다.
 
+##### Benjie Holson (General Robots) — Notes from CoRL Part 2 - Wild Uncertainty and Ennui
+
+발표 2026-11-12· 관점 중립· 원문 전체· 신뢰도 medium  
+출처: <https://generalrobots.substack.com/p/notes-from-corl-part-2-wild-uncertainty>
+
+CoRL 2026 참관기입니다. 학회 두 달 전 등장한 'GPT Astra로 로봇을 직접 모는' 방식이 많은 면에서 VLA·WAM을 앞섰고, 학회 중 Anthropic 신모델이 더 높은 점수를 냈다고 씁니다. 발표물 대부분이 그 이전 방식이어서 제출-발표 사이에 연구가 낡는 문제가 제기됐다고 전합니다.
+
+**핵심 내용**
+
+- 내년 CoRL은 크게 달라 보일 것 _(2027)_
+
+- **근거·방법**: 현장 참관
+- **한국 시사점**: 국내 로봇 R&D 과제 기획 주기를 짧게 할 필요
+
 ##### 대한민국 정책브리핑(재정경제부) — '피지컬 AI' 핵심부품 3종 육성한다…내년 개발 본격화
 
 발표 2026-11-11· 관점 중립· 원문 전체· 신뢰도 high  
@@ -11240,6 +11382,15 @@ S-1 공개 후 지배구조 논란으로 IPO를 철회하고 CEO에서 사임함
 Cosmos 3 월드 액션 모델에 시각 이력·진행도 조건화·과제군별 LoRA를 더해 2026 대회 2위. 공식 비공개 테스트에서 Q 0.615, 완전 성공률 41.2%로 2025년 1위(12.4%)의 세 배 수준입니다.
 
 - **근거·방법**: BEHAVIOR 2026 공식 비공개 테스트(과제당 20회)
+
+##### Humanoids Daily (Anthropic 출시 글 보도) — Anthropic Claude Fable 5.2 robotics: RoboDojo
+
+발표 2026-11-10· 관점 낙관· 요약·보도자료만· 신뢰도 medium  
+출처: <https://www.humanoidsdaily.com/news/anthropic-claude-fable-5-2-robotics-robodojo>
+
+Anthropic이 Fable 5.2 출시(2026-11-09)에서 RoboDojo 시뮬 양팔 조작 64.9%(Opus 5.5 39.4%, Gemini 4 Argon 34.2%, GPT-6 Astra 29.8%, Fable 5.1 27.6%)를 보고했다고 전합니다. 모두 Anthropic이 같은 하네스로 직접 측정했고 공개 리더보드 최고 에이전트는 68.87%입니다.
+
+- **근거·방법**: 회사 자체 측정(2차 보도)
 
 ##### 대한민국 정책브리핑(외교부) — KOICA AI 개발협력 사업 설명자료
 
@@ -11409,6 +11560,35 @@ SoftBank과 Nokia가 2027년 상용망 AI-RAN 현장 시험에 합의했습니�
 - **근거·방법**: DHS 자료 인용 분석
 - **한국 시사점**: 미국 경로가 막힌 석·박사 유치 기회
 
+##### NVIDIA — Astranomy: An empirical study of GPT-6 Astra as a native robot policy (CoRL 2026 LBR)
+
+발표 2026-10-14· 관점 낙관· 원문 전체· 신뢰도 high  
+출처: <https://research.nvidia.com/labs/srl/projects/astranomy/>
+
+시뮬 DROID 로봇(Franka)으로 RoboLab-120 120개 과제를 5회씩 평가했습니다. GPT-6 Astra+Codex 에이전트 74.8%, 오케스트레이션 66.5%, API 직접 66.3%로 WAM(Cosmos3-Nano 36.8%)·VLA(π0.5 28.0%)를 앞섰습니다. 다만 추론 중 시뮬을 멈췄고 호출당 13–19초(π0.5 47ms), 추론이 에피소드 시간의 95–98%를 차지해 실시간 배치와 큰 간극이 있다고 저자가 밝혔습니다.
+
+- **근거·방법**: RoboLab-120 시뮬, 고정 시드 5회, 30개 과제 절제 실험
+- **한국 시사점**: 국내 로봇 FM 평가에 범용 모델 기준선과 지연·비용 열을 함께 보고할 필요
+
+##### Artificial Analysis — Welcome to the era of embodied AI: Introducing AA-Robotics v0.1
+
+발표 2026-10-14· 관점 중립· 원문 전체· 신뢰도 high  
+출처: <https://artificialanalysis.ai/articles/aa-robotics>
+
+실제 6축 로봇 팔로 8개 탁상 과제를 제로샷 평가한 연구 프리뷰입니다. GPT-6 Astra 69.4, GPT-6.1 Sol 64.6, Gemini 4 Argon 55.3, Claude Opus 5.5 48.8, Fable 5.1 46.3입니다. 모델은 과제당 약 30분(사람 약 20초), Astra는 과제당 16.36달러로 '실사용에는 너무 느리고 비싸다'고 결론지었습니다.
+
+- **근거·방법**: 실물 로봇 팔, 사람이 종료 상태 채점
+- **한국 시사점**: 정부 구매 로봇을 공개 실물 시험대로 쓰는 모델
+
+##### GeoThinker-F authors — GeoThinker-F: Endogenous Predictive World Representations for Fast Spatial Intelligence
+
+발표 2026-10-14· 관점 중립· 요약·보도자료만· 신뢰도 medium  
+출처: <https://arxiv.org/abs/2610.20592>
+
+공간 지능 모델 논문으로, 비교표에 상용 모델 점수를 싣습니다. VSI-Bench/MMSI-Bench는 GPT-5 55.0/41.8, Gemini-2.5-Pro 53.5/38.0, Gemini-3-Pro-Preview 52.5/45.2, Qwen3-VL-8B 57.7/28.8입니다.
+
+- **근거·방법**: 논문 비교표
+
 ##### IMF — World Economic Outlook, October 2026
 
 발표 2026-10-13· 관점 중립· 요약·보도자료만· 신뢰도 high  
@@ -11452,6 +11632,15 @@ SoftBank과 Nokia가 2027년 상용망 AI-RAN 현장 시험에 합의했습니�
 
 - **근거·방법**: 교역 통계와 거시 모형
 - **한국 시사점**: 한국은 AI 하드웨어 공급국으로서 격차 논의에서 책임 있는 역할을 요구받을 수 있습니다.
+
+##### Google — Gemini 4 Argon for Robotics
+
+발표 2026-10-13· 관점 낙관· 원문 전체· 신뢰도 medium  
+출처: <https://developers.googleblog.com/en/gemini-4-argon-for-robotics/>
+
+Gemini 4 Argon이 도구 없이 ERQA 87%로 다른 프런티어 모델을 앞섰다고 밝힙니다. 사진 한 장에서 MuJoCo 시뮬 에피소드 4,500개 이상을 만들어 VLA 실제 성공률을 56%에서 75%로 올린 시연 등을 제시했지만 평가 프로토콜은 공개하지 않았습니다.
+
+- **근거·방법**: 회사 시연·자체 평가
 
 ##### Google DeepMind — Physics-IQ and Physics-IQ Verified leaderboard
 
@@ -11713,6 +11902,16 @@ CPO 광엔진 매출이 2026년 약 6억 달러에서 2031년 1,121억 달러로
 
 - **근거·방법**: 회사 공지
 
+##### Metric AI Lab — A Statistical Audit of Physical AI Benchmark Redundancy
+
+발표 2026-08-29· 관점 중립· 원문 전체· 신뢰도 medium  
+출처: <https://arxiv.org/abs/2608.25940>
+
+51개 모델 × 12개 체화·공간 벤치마크 행렬을 만들어 중복을 측정했습니다. 가장 가까운 쌍의 상관은 0.88이고 4개 벤치마크(RefSpatial·MindCube·VSI-Bench·BLINK)가 전체 변별력의 78.5%를 담습니다. VSI-Bench 최고 69.5, ERQA 최고 65.0이며 종합 1위는 Tencent HY-Embodied-0.5입니다.
+
+- **근거·방법**: 모델 카드·논문 점수와 자체 재평가
+- **한국 시사점**: 국내 모델 체화 평가 시 소수의 비중복 벤치마크로 시작 가능
+
 ##### The Korea Times — Korea to spend $1.66 bil. won through 2030 on full-stack humanoid development
 
 발표 2026-08-27· 관점 낙관· 요약·보도자료만· 신뢰도 medium  
@@ -11877,6 +12076,19 @@ UMI 장치로 모은 실세계 궤적 10만 시간+로 사전학습한 모바일
 
 - **근거·방법**: 인터넷트렌드 웹 로그 집계
 
+##### Anthropic (Frontier Red Team) — How Claude performs on robotics tasks (Embody)
+
+발표 2026-07-09· 관점 중립· 원문 전체· 신뢰도 high  
+출처: <https://www.anthropic.com/research/claude-plays-robotics>
+
+고전 제어·보행·조작·실물 Go2를 묶은 Embody로 Claude 세대를 비교했습니다. 종합 점수는 Opus 4 0.115에서 Mythos Preview 0.389로 올랐지만 LIBERO 직접 조작 성공은 0–5.5%, 실물 사무실 순환 과제는 모두 실패했습니다. 실시간 제어에 약 83Hz가 필요한데 추론은 0.2–0.4Hz라고 밝힙니다.
+
+**핵심 내용**
+
+- 세대마다 신뢰성 격차가 줄어들 것 _(2027)_
+
+- **근거·방법**: MuJoCo·LIBERO·Unitree G1/Go2 시뮬과 실물
+
 ##### National Law Review — The Continued Proliferation of AI Exclusions
 
 발표 2026-07-01· 관점 신중· 요약·보도자료만· 신뢰도 medium  
@@ -11918,6 +12130,15 @@ AI 관련 투자가 2025년 미국 실질 GDP 성장에 약 1%p 기여했지만 
 Figure 03을 스파턴버그 공장 물류 서열 작업에 투입(BMW 최초의 휴머노이드 물류 배치). Figure 02는 2025년 차체 공장에서 X3 3만 대 이상 생산에 참여. 대수·계약 조건 비공개.
 
 - **근거·방법**: 회사 보도자료
+
+##### Anthropic (Frontier Red Team) — Project Fetch: Phase Two
+
+발표 2026-06-18· 관점 낙관· 원문 전체· 신뢰도 high  
+출처: <https://www.anthropic.com/research/project-fetch-phase-two>
+
+Claude Opus 4.7이 단독으로 1단계의 공통 4개 과제를 9분 35초에 끝냈습니다(Claude 팀 181분, 미사용 팀 361분). 코드는 1,045줄로 Claude 팀의 10분의 1입니다. 자율 공 가져오기는 정밀 폐루프 제어 부족으로 실패했습니다.
+
+- **근거·방법**: 과제당 3회, 로봇 1대
 
 ##### Data Center Watch (10a Labs) — Q1 2026: Data Center Watch Report
 
@@ -12404,6 +12625,19 @@ VSI-Bench 등 8개 공간 지능 벤치마크 종합 평가. GPT-5가 최고였�
 - **근거·방법**: 빨래 개기(실제 가정), 상자 조립(공장), 에스프레소 제조 실세계 실험
 - **한국 시사점**: 국내 현장 실증 사업에서 자율 실행·개입 로그를 학습 데이터로 회수하는 체계 필요
 
+##### Anthropic (Frontier Red Team) — Project Fetch: Can Claude train a robot dog?
+
+발표 2025-11-12· 관점 중립· 원문 전체· 신뢰도 high  
+출처: <https://www.anthropic.com/research/project-fetch-robot-dog>
+
+비로봇 전문가 8명을 Claude 사용·미사용 팀으로 나눠 사족 로봇이 공을 가져오게 했습니다. Claude 팀이 8개 중 7개 과제(미사용 팀 6개)를 약 절반의 시간에 끝냈고, 주된 도움은 로봇·센서 연결이었습니다.
+
+**핵심 내용**
+
+- 모델이 곧 낯선 하드웨어를 스스로 다루게 될 것 _(2027)_
+
+- **근거·방법**: 통제 실험(4인 2팀)
+
 ##### Generalist AI — GEN-0: Embodied Foundation Models That Scale with Physical Interaction
 
 발표 2025-11-04· 관점 낙관· 원문 전체· 신뢰도 medium  
@@ -12427,6 +12661,15 @@ NVIDIA가 Nokia에 10억 달러를 투자하고, T-Mobile US 현장 시험을 20
 
 - **근거·방법**: 회사 공지
 - **한국 시사점**: SKT·KT AI-RAN 실증과 장비 생태계 경쟁에 영향을 줍니다.
+
+##### Andon Labs — Butter-Bench: Evaluating LLM Controlled Robots for Practical Intelligence
+
+발표 2025-10-21· 관점 신중· 요약·보도자료만· 신뢰도 high  
+출처: <https://arxiv.org/abs/2510.21860>
+
+LLM이 저수준 제어와 분리된 상태로 로봇 청소기를 몰아 버터를 전달하는 실물 벤치마크입니다. Gemini 2.5 Pro 40%, Claude Opus 4.1 37%, GPT-5 30%, Gemini ER 1.5 27% 대 사람 95%였고, 체화 추론 미세조정도 점수를 올리지 못했습니다.
+
+- **근거·방법**: 실물 로봇, 사람 기준선
 
 ##### LIBERO-Plus (Fei et al.) — LIBERO-Plus: In-depth Robustness Analysis of Vision-Language-Action Models
 
@@ -12535,6 +12778,15 @@ AI 시장이 2023년 1,890억 달러에서 2033년 4.8조 달러로 커진다고
 - AI 시장 4.8조 달러 _(2033)_
 
 - **근거·방법**: 기업 R&D·시장 자료
+
+##### Google DeepMind (Gemini Robotics Team) — Gemini Robotics: Bringing AI into the Physical World (ERQA 도입)
+
+발표 2025-03-25· 관점 중립· 요약·보도자료만· 신뢰도 high  
+출처: <https://arxiv.org/abs/2503.20020>
+
+체화 추론 벤치마크 ERQA(400문항)를 처음 공개한 기술보고서입니다. CoT 없이 Gemini 2.0 Pro Exp 48.3, GPT-4o 47.0, Gemini 2.0 Flash 46.3, Claude 3.5 Sonnet 35.5였습니다.
+
+- **근거·방법**: ERQA 객관식 평가
 
 ##### European Commission — Liability for defective products (Directive (EU) 2024/2853)
 

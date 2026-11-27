@@ -874,7 +874,7 @@
       </div>
     </div>
     <div class="ai27-sub" id="robot-bench"><h3>로봇 AI 벤치마크: 포화된 것과 아직 먼 것</h3>
-      <p class="ai27-muted">보고서 6.8·6.9절. VLA·로봇 파운데이션 모델(π0.7, Gemini Robotics 2, GR00T N1.7, GEN-1)과 월드 모델(Genie 4, Cosmos 3, V-JEPA 2)의 2026년 성적. 회사 자체 실세계 수치는 제3자 재현이 없어 제외했습니다.</p>
+      <p class="ai27-muted">보고서 6.8–6.10절. VLA·로봇 파운데이션 모델(π0.7, Gemini Robotics 2, GR00T N1.7, GEN-1)과 월드 모델(Genie 4, Cosmos 3, V-JEPA 2)의 2026년 성적. 회사 자체 실세계 수치는 제3자 재현이 없어 제외했습니다.</p>
       <p><b>한 줄 요약</b>: 표준 시뮬 벤치마크는 포화됐지만 조금만 바꾸면 급락합니다. 2027년의 관전 포인트는 점수보다 평가 방식의 교체(섭동·장기·실세계·안전)입니다.</p></div>
     <div class="ai27-tablewrap">
       <table aria-label="로봇 AI 벤치마크 2026"><thead><tr><th>벤치마크</th><th>측정 대상</th><th>최고 수준</th><th>모델·시점</th><th>상태</th></tr></thead><tbody>
@@ -903,6 +903,36 @@
           <li><span class="ai27-pill" data-v="partial" style="justify-self:start">중간 · 50% (±15)</span><span>휴머노이드 세계 출하 10만 대 이상(범위 8만–15만, 기준 11만)</span></li>
           <li><span class="ai27-pill" data-v="partial" style="justify-self:start">중간 · 35% (±15)</span><span>Physics-IQ 최고점 80% 이상</span></li>
           <li><span class="ai27-pill" data-v="unclear" style="justify-self:start">낮음 · 20% (±15)</span><span>범용 VLA가 처음 보는 가정에서 10분+ 과업 80% 성공(제3자 검증)</span></li>
+      </ul>
+    </div>
+    <div class="ai27-sub" id="frontier-robot"><h3>범용 프런티어 모델의 로봇 제어: CoRL 2026 'Astra 쇼크'</h3>
+      <p class="ai27-muted">보고서 6.10절. 자료: NVIDIA Astranomy(RoboLab-120), Anthropic Fable 5.2 출시(RoboDojo, 보도 기준), Artificial Analysis AA-Robotics, Embodied First Exam, CoRL 2026 참관기(Holson, Shivaram), ChinaTalk.</p>
+      <p><b>한 줄 요약</b>: 범용 모델에 카메라와 로봇 API를 주면 처음 보는 복합 과제에서 로봇 전용 모델(VLA)을 크게 앞섭니다. 그러나 호출당 13–19초(VLA 47ms의 약 400배)이고, 시뮬을 멈춘 채 잰 값입니다. VLA는 사라지기보다 범용 에이전트가 쓰는 '빠른 하위 시스템'으로 재정의되고 있습니다.</p></div>
+    <div class="ai27-tablewrap">
+      <table aria-label="범용 모델 로봇 벤치마크"><thead><tr><th>벤치마크</th><th>방식·모델</th><th>점수</th><th>지연</th><th>성공 1회당 비용</th></tr></thead><tbody>
+        <tr><td>RoboLab-120 (NVIDIA Astranomy, 시뮬 120과제)</td><td>GPT-6 Astra + Codex</td><td class="mid">74.8%</td><td>13.37초</td><td>36.40달러</td></tr>
+        <tr><td></td><td>Astra 오케스트레이션(WAM 검토)</td><td class="mid">66.5%</td><td>11.50초</td><td>17.72달러</td></tr>
+        <tr><td></td><td>GPT-6 Astra API 직접</td><td class="mid">66.3%</td><td>18.56초</td><td>1.96달러</td></tr>
+        <tr><td></td><td>Cosmos3-Nano-Policy(WAM)</td><td class="mid">36.8%</td><td>714ms</td><td>—</td></tr>
+        <tr><td></td><td>π0.5(VLA)</td><td class="mid">28.0%</td><td>47ms</td><td>—</td></tr>
+        <tr><td>RoboDojo (Anthropic, 시뮬 양팔, 보도 기준)</td><td>Claude Fable 5.2</td><td class="mid">64.9%</td><td>—</td><td>—</td></tr>
+        <tr><td></td><td>Opus 5.5 / Gemini 4 Argon / GPT-6 Astra / Fable 5.1</td><td class="mid">39.4 / 34.2 / 29.8 / 27.6%</td><td>—</td><td>—</td></tr>
+        <tr><td>ERQA (체화 추론)</td><td>Gemini 4 Argon (2025-03 최고 48.3)</td><td class="mid">87.0</td><td>—</td><td>—</td></tr>
+        <tr><td>AA-Robotics v0.1 (실물 로봇 팔)</td><td>GPT-6 Astra / Gemini 4 Argon / Opus 5.5</td><td class="mid">69.4 / 55.3 / 48.8</td><td>과제당 약 30분(사람 20초)</td><td>—</td></tr>
+        <tr><td>Embodied First Exam (47종 로봇)</td><td>GPT-6 Astra(Codex) / Opus 5.5 / Argon</td><td class="mid">33.6 / 25.0 / 24.1%</td><td>—</td><td>—</td></tr>
+      </tbody></table>
+    </div>
+    <div class="ai27-card" id="frontier-robot-fc">
+      <h3>2027 전망: 범용 모델과 로봇</h3>
+      <ul class="ai27-list">
+          <li><span class="ai27-pill" data-v="missed" style="justify-self:start">높음 · 75% (±15)</span><span>'범용 모델(System 2) + 소형 VLA·WAM(System 1)' 계층 구조를 선도 3곳 이상이 공식 아키텍처로 발표</span></li>
+          <li><span class="ai27-pill" data-v="missed" style="justify-self:start">높음 · 75% (±15)</span><span>OpenAI·Anthropic·Google 모두 플래그십 출시 자료에 로봇·체화 벤치마크 포함</span></li>
+          <li><span class="ai27-pill" data-v="missed" style="justify-self:start">높음 · 70% (±15)</span><span>오염을 통제한 체화 벤치마크(비공개 테스트셋·실로봇) 2개 이상 등장</span></li>
+          <li><span class="ai27-pill" data-v="partial" style="justify-self:start">중간 · 60% (±20)</span><span>범용 모델 기반 방식이 RoboLab-120 85% 이상</span></li>
+          <li><span class="ai27-pill" data-v="partial" style="justify-self:start">중간 · 45% (±20)</span><span>OpenAI 자체 휴머노이드 첫 공개 시연</span></li>
+          <li><span class="ai27-pill" data-v="partial" style="justify-self:start">중간 · 35% (±20)</span><span>Embodied First Exam 최고 60% 이상</span></li>
+          <li><span class="ai27-pill" data-v="unclear" style="justify-self:start">낮음 · 25% (±15)</span><span>실시간(시뮬 비정지) 호출당 1초 미만 제어로 비슷한 성공률</span></li>
+          <li><span class="ai27-pill" data-v="unclear" style="justify-self:start">낮음 · 15% (±10)</span><span>실물 로봇 과제에서 사람 수준 성공률과 10배 이내 시간을 함께 달성</span></li>
       </ul>
     </div>
   </section>
