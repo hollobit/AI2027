@@ -26,18 +26,18 @@
  {
   "area": "AGI",
   "text": "엄격한 정의의 범용 AGI(원격 화이트칼라 대부분 자동화)는 2027년 안에 오지 않음",
-  "likelihood": "높음 93%±7",
+  "likelihood": "높음 88%±7",
   "rank": 1,
-  "prob": 93,
+  "prob": 88,
   "unc": 7
  },
  {
   "area": "ASI",
   "text": "초지능 도달 증거는 없음",
-  "likelihood": "높음 95%±5",
+  "likelihood": "높음 98%±2",
   "rank": 1,
-  "prob": 95,
-  "unc": 5
+  "prob": 98,
+  "unc": 2
  },
  {
   "area": "거버넌스",
@@ -66,9 +66,9 @@
  {
   "area": "RSI",
   "text": "AI 연구 자동화가 초인적 AI 연구자(SAR) 수준에 도달",
-  "likelihood": "낮음 15%±12",
+  "likelihood": "낮음 25%±12",
   "rank": 3,
-  "prob": 15,
+  "prob": 25,
   "unc": 12
  },
  {

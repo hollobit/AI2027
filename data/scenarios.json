@@ -3,8 +3,8 @@
   "order": 1,
   "name": "가속 (Acceleration)",
   "prob": 30,
-  "description": "METR가 측정한 Anthropic R&D 약 2배 가속이 2027년 상반기 3배 이상으로 확대되고, 자동화 코더→초인적 AI 연구자(SAR)가 2027년 중후반 등장. AI Futures Project 6인 전원의 2027 SAR 중앙값, Amodei의 '2027년 천재들의 나라', State of AI 'AGI 2027' 예측과 정합. 빅5 capex는 $1.3T 이상(글로벌 AI capex $1.7T 이상)으로 낙관치에 근접하고, 사이버 사고(가중치 탈취)·자기복제 에이전트 등 보안 사건이 규제 급변을 촉발.",
-  "signposts": "METR/외부 평가에서 AI R&D 가속 ≥3배 · 프런티어 랩이 모델 훈련 핵심 기여의 과반을 AI가 자율 수행했다고 공개 · METR 50% 시간지평 1주(40h+) 이상 측정(새 과업군) · OpenAI+Anthropic 합산 run-rate $250B+ · 프런티어 모델 가중치 탈취 또는 자기복제 에이전트 사건"
+  "description": "METR가 측정한 Anthropic R&D 약 1.9배 가속이 2027년 상반기 3배 이상으로 확대되고, 자동화 코더→초인적 AI 연구자(SAR)가 2027년 중후반 등장. AI Futures Project 6인 전원의 2027 SAR 중앙값, Amodei의 '2027년 천재들의 나라', State of AI 'AGI 2027' 예측과 정합. 빅5 capex는 $1.3T 이상(글로벌 AI capex $1.7T 이상)으로 낙관치에 근접하고, 사이버 사고(가중치 탈취)·자기복제 에이전트 등 보안 사건이 규제 급변을 촉발.",
+  "signposts": "METR/외부 평가에서 AI R&D 가속 ≥3배 · 프런티어 랩이 모델 훈련 핵심 기여의 과반을 AI가 자율 수행했다고 공개 · METR 50% 시간지평 1주(40h+) 이상 측정(새 과업군) · OpenAI+Anthropic 합산 run-rate $400B+(기준 2,800억 달러) · 프런티어 모델 가중치 탈취 또는 자기복제 에이전트 사건"
  },
  {
   "order": 2,

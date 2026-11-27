@@ -8,8 +8,8 @@
   "prob": "높음 · 75% (±15) · 근거 [CBS 보도](https://www.yahoo.com/news/us/articles/california-companies-owned-chinese-firms-204123372.html)"
  },
  {
-  "text": "미국 랩 전반(Google·Meta 포함)으로 증류 차단이 확대되고, 증류 기업에 대한 제재나 Entity List 등재가 실행",
-  "prob": "높음 · 75% (±15) · 근거 [Reuters](https://finance.yahoo.com/news/exclusive-us-chip-curbs-distillation-071923947.html)"
+  "text": "미·중 연구소와 미국 랩 전반(Google·Meta 포함)으로 증류 차단이 확대되고, 미국이 증류 기업에 대한 제재나 Entity List 등재를 실행",
+  "prob": "높음 · 70% (±15) · 근거 [Reuters](https://finance.yahoo.com/news/exclusive-us-chip-curbs-distillation-071923947.html)"
  },
  {
   "text": "중국 프런티어 랩(Z.ai·Moonshot 등)의 대형 모델 출시 간격이 6개월에서 9–12개월로 늘어남",
@@ -26,10 +26,6 @@
  {
   "text": "BIS 원격접속 규칙의 유예 종료(2027-02)로 동남아·한국 클라우드·데이터센터의 고객 확인(KYC)·소유 구조 증빙이 일상 업무가 됨",
   "prob": "높음 · 85% (±10) · 근거 [Greenberg Traurig](https://www.gtlaw.com/en/insights/2026/11/bis-interim-final-rule-targets-remote-access-to-advanced-semiconductors-rescinds-ai-diffusion-rule), [NVIDIA·한국 정부](https://nvidianews.nvidia.com/news/south-korea-ai-infrastructure)"
- },
- {
-  "text": "미·중 연구소 모두 증류 차단을 강화하고, 미국이 증류 기업에 대한 제재·Entity List 등재를 실행",
-  "prob": "중간 · 69% (±20) · 근거 [Anthropic](https://anthropic.com/news/detecting-and-preventing-distillation-attacks), [미국 재무부(베선트)](https://www.wilsoncenter.org/article/americas-ai-action-plan-after-one-year-what-administration-has-done-and-what-comes-next)"
  },
  {
   "text": "미국 연방·주 정부와 동맹국 공공부문의 중국 모델 사용 금지가 DeepSeek에서 Qwen·Kimi 등으로 확대",

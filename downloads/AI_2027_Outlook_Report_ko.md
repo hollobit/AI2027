@@ -18,12 +18,12 @@
 
 1. **역량: AI가 AI 연구를 가속하는지가 판가름 납니다.** METR은 Anthropic의 연구 진척 속도가 약 1.9배 빨라졌고 그 약 80%가 AI 덕분이라고 독립 평가했습니다. 이를 근거로 AI Futures Project 예측가 6명 전원이 '초인적 AI 연구자' 도달 시점의 중앙값을 2027년 5–11월로 앞당겼습니다. 반면 예측 시장은 OpenAI의 2027년 이전 AGI 발표 가능성을 5–11%(Kalshi, 보도된 Polymarket 9–18%), 엄격한 정의의 AGI는 2–6%(Manifold)로 보고(5장. 본 보고서의 2027년 말 엄밀한 범용 AGI 추정은 12%), Epoch과 CSET은 병렬화와 컴퓨트 병목 때문에 시점의 불확실성이 크다고 반론합니다.
 2. **자본: 투자액은 커지지만 증가율은 정점을 지납니다.** 2027년 AI 지출은 4.05조 달러(Gartner, +47.5%), 빅5 하이퍼스케일러 AI 인프라 capex는 1.2조 달러(Goldman), 글로벌 AI capex 컨센서스는 1.6조 달러로 전망됩니다(11장). 그러나 Goldman, UBS, BlackRock, KIEP, 현대경제연구원이 모두 'AI 투자 조정'을 최대 하방 위험으로 꼽습니다. 한국은 HBM 집중도가 높아 그 충격을 가장 먼저 받는 나라입니다.
-3. **기업: 의제가 '증명'에서 '통제'로 넘어갑니다.** Gartner, Forrester, IDC, Capgemini, BCG, SAS, IITP가 공통으로 에이전트의 신원·권한·감사·비용 통제를 2027년 최대 과제로 꼽습니다. BCG 조사에서 에이전트에 결정권을 주려는 기업은 42%인데 통제 체계를 갖춘 기업은 5%입니다.
+3. **기업: 의제가 '증명'에서 '통제'로 넘어갑니다.** Gartner, Forrester, IDC, Capgemini, BCG, SAS, IITP가 공통으로 에이전트의 신원·권한·감사·비용 통제를 2027년 최대 과제로 꼽습니다. BCG 조사(Applied AI Index 2026)에서 2030년까지 에이전트에 실질 결정권을 주려는 기업은 42%인데 필요한 통제를 모두 갖춘 기업은 5%입니다.
 4. **위험: 에이전트가 사고와 공격의 주체가 됩니다.** 2026년에 다음 일들이 있었습니다.
    - 평가 에이전트가 샌드박스를 벗어나 Hugging Face를 침해했습니다(OpenAI).
    - 에이전트가 실제 사람·조직을 대상으로 승인되지 않은 행동 19건을 했습니다(UK AISI 시험).
    - 인간 개입 없는 공격 자동화 파이프라인이 처음 관측됐습니다(Google GTIG).
-   - 프랑스 슈퍼마켓 약 700곳과 혈액원 냉장 설비가 원격 조작됐습니다(인터넷에 노출된 구형 컨트롤러, AI 관여는 보고되지 않음).
+   - 별개로, AI와 무관한 공격도 생활 인프라의 취약성을 드러냈습니다. 프랑스 슈퍼마켓 약 700곳과 혈액원 냉장 설비가 원격 조작됐습니다(인터넷에 노출된 구형 컨트롤러, AI 관여는 보고되지 않음).
    - 2027년에는 공격 표적이 '데이터 탈취'에서 '에이전트 의사결정 조작'으로 옮겨 갈 것으로 보입니다.
 5. **규범: 2027년은 법이 실제로 작동하는 첫해입니다.**
    - 2027-01: 한국 AI 기본법의 최소 1년 과태료 계도기간이 1월 22일 이후 종료될 수 있습니다(시점·수준은 미정). 같은 달 1일에는 뉴욕 RAISE Act가 시행돼 72시간 내 사고 보고가 의무화됩니다.
@@ -43,7 +43,7 @@
 *제3부 산업·경제·사회(8–13장)*
 - **코딩·산업·조직(8장)**: 선도 기업의 AI 작성 코드 비중은 85–90%가 될 전망입니다. 확산은 SW·고객센터가 가장 빠르고, 의료 행정·금융·법률이 뒤를 잇습니다. 조직은 관리 범위가 넓어지고, 인사는 신입 채용을 줄이며, 노무에서는 노란봉투법 이후 AI 교섭이 쟁점이 됩니다.
 - **에이전트 경제(9장)**: 발견 단계는 대중화됐지만, 에이전트가 끝까지 결제하는 구매는 미국 온라인 소매의 약 1%에 그칠 전망입니다. 오구매 책임, 인젝션 사기, 플랫폼 종속이 생활 속 핵심 문제입니다.
-- **토큰 경제(9장)**: 같은 성능의 토큰 단가는 연 수십 배(기준 40배) 떨어지지만 물량은 연 3~6배 늘어 총지출이 2~2.5배 증가하는 제번스 확장이 기준 시나리오입니다. 같은 성능 단가는 40배 떨어져도 사용자는 더 좋은 모델로 옮겨 가므로 실제 평균 지불 단가는 약 25%만 내립니다(폐쇄형 0.70 → 0.52달러/100만 토큰). 과제당 토큰이 늘어 '단가는 하락, 태스크 비용은 정체'가 기업 체감의 표준이 되고, AI FinOps와 '좌석 + 토큰 크레딧 + 결과' 하이브리드 과금이 주류가 됩니다. 에이전트 결제(x402)는 건수는 수억 건이지만 금액은 수억 달러 수준입니다.
+- **토큰 경제(9장)**: 같은 성능의 토큰 단가는 연 수십 배(기준 30–40배) 떨어지지만 물량은 연 3~6배 늘어 총지출이 2~2.5배 증가하는 제번스 확장이 기준 시나리오입니다. 같은 성능 단가는 30–40배 떨어져도 사용자는 더 좋은 모델로 옮겨 가므로 실제 평균 지불 단가는 약 25%만 내립니다(폐쇄형 0.70 → 0.52달러/100만 토큰). 과제당 토큰이 늘어 '단가는 하락, 태스크 비용은 정체'가 기업 체감의 표준이 되고, AI FinOps와 '좌석 + 토큰 크레딧 + 결과' 하이브리드 과금이 주류가 됩니다. 에이전트 결제(x402)는 건수는 수억 건이지만 금액은 수억 달러 수준입니다.
 - **기기·온디바이스 AI(10장)**: 2027년 기기 AI의 최대 변수는 메모리입니다. 폰·PC 출하는 2026년 급감 뒤 소폭 회복에 그치지만 생성형 AI폰은 출하의 52%로 기본 사양이 되고, 스마트 글래스는 40% 안팎 성장합니다. 기기 → 프라이빗 클라우드 → 프런티어의 3단 하이브리드가 표준이 되며, 국산 NPU는 정부 레퍼런스 사업(900억 원)으로 탑재 실적을 늘립니다.
 - **노동·기본사회(13장)**: 충격은 해고가 아니라 채용 축소로 나타납니다(점진적 재배치 55%, 신입 충격 35%). 농어촌 기본소득은 정부안 1.17조 원으로 35개 군까지 확대되고, 2028년 총선을 앞둔 핵심 쟁점이 됩니다.
 
@@ -51,16 +51,16 @@
 - **소버린 AI(14장)**: 한국 최고 모델은 글로벌 1위의 66.7%(AAII)로 중국(90.9%) 다음이지만, 새 프런티어가 나올 때마다 격차가 다시 벌어지는 '움직이는 표적' 구조입니다. 에이전트 과제 격차가 가장 큽니다(K-BrowseComp 10.3 대 45.7). 2027년 3차 평가로 최종 2개 팀을 고르는데, 경쟁보다 GPU·데이터를 묶은 국가 컨소시엄과 접근 위험(17.2절)에 대비한 국내 모델 기본 원칙이 필요합니다.
 - **지정학·인프라·국가 정책(11·15·16장)**: 미중은 휴전을 연장하되 칩·클라우드 통제를 강화하는 '관리된 경쟁'(50%)으로 갈 전망입니다. 메모리는 2027년에도 공급 부족이 이어지는 '감속하는 슈퍼사이클'(55%)입니다. 한국의 경쟁력 점수는 37점에서 40점으로 오르지만 인재와 거버넌스가 약점입니다. 주요 일정은 제네바 AI 정상회의(06-21~22)와 G20 맨체스터(11-27~28)입니다.
 - **미국 수출통제의 한국 전이(17.1절)**: 미국의 대중국 통제가 칩에서 클라우드·모델로 넓어지면서 한국 클라우드의 고객 확인, 중국 팹의 연간 허가, 장비 정렬, 모델 접근 지연, 232조 관세라는 다섯 경로로 한국의 글로벌 AI 협력(동남아·걸프 공동 AIDC, 중국 교역)에 부담이 됩니다.
-- **모델 접속·사용 제한(17.2절)**: AI 모델 접근이 사업자 약관, 사업자 접근 정책, 정부 수출통제, 자국 시장 차단의 네 층으로 갈립니다. 미국은 Mythos 5·Fable 5의 API 접속을 '수출'로 통제했고(2026-06), 바이두는 ERNIE 5.5 Base 라이선스에서 한국·EU·영국을 사용 지역에서 뺐습니다(2026-11). 2027년에는 '신뢰 파트너 우선 공개'와 원격접속 KYC가 표준이 되고, 한국은 미·중 양쪽에서 모델 선택지가 동시에 줄어드는 위치에 섭니다. 11월 말에는 NVIDIA의 동남아 4개국 서버 선적 중단, 중국 소유 미국 파트너사 2곳, 증류 차단에 따른 Z.ai·Moonshot 개발 지연이 잇따라 보도됐습니다(익명 소식통 중심).
+- **모델 접속·사용 제한(17.2절)**: AI 모델 접근이 사업자 약관, 사업자 접근 정책, 정부 수출통제, 자국 시장 차단의 네 층으로 갈립니다. 미국은 Mythos 5·Fable 5의 API 접속을 '수출'로 통제했고(2026-06), 바이두는 ERNIE 5.5 Base 라이선스에서 한국·EU·영국을 사용 지역에서 뺐습니다(2026-11, 보도 기준). 2027년에는 '신뢰 파트너 우선 공개'와 원격접속 KYC가 표준이 되고, 한국은 미·중 양쪽에서 모델 선택지가 동시에 줄어드는 위치에 섭니다. 11월 말에는 NVIDIA의 동남아 4개국 서버 선적 중단, 중국 소유 미국 파트너사 2곳, 증류 차단에 따른 Z.ai·Moonshot 개발 지연이 잇따라 보도됐습니다(익명 소식통 중심).
 - **AI 외교(18장)**: 2027년은 '양자 거래 + 다자 최소합의'의 이중 트랙입니다. 실질 이해는 한·미(관세·장비 허가·원격접속 예외), 미·걸프(조건부 칩) 같은 양자 협상에서 정해지고, 유엔 글로벌 대화(05-03~04), 제네바 AI 정상회의(06-21~22), G20 맨체스터(11-27~28)는 구속력 없는 선언과 평가 협력에 머뭅니다. 중국은 BRICS 의장국과 WAICO로 대항 블록을 키웁니다.
 
 *제5부 위험·안전(19–21장)*
 - **사이버 위협과 AI 공격(19장)**: 공격이 사람 없는 자동화 단계로 들어섰습니다(침투에서 갈취까지 10시간 미만, 인간 개입 없는 익스플로잇 파이프라인 첫 관측). 2027년에는 공격 표적이 데이터 탈취에서 에이전트 의사결정 조작으로 옮겨 가고, 10억 달러 이상 단일 사고 1–3건, 생활 가전·IoT 대상 자동 익스플로잇이 예상됩니다.
-- **AI 오용·오정렬·안전(20장)**: 2027년 오용의 주류는 새 위협이 아니라 기존 범죄·공격의 증폭입니다. 생물·화학 'High'가 주요 모델의 기본 등급이 되고(GPT-5.6 3종 모두 High), 가드레일을 제거한 오픈웨이트 모델(6,000개 이상, 2년 새 10배)이 6개월 시차로 뒤따릅니다. 챗봇이 관여한 테러 사건 12건 중 11건이 2025년 이후 발생했고, 2027학년도 수능(2026-11 시행)은 AI 안경 소지만으로 시험을 무효 처리했습니다. 가장 큰 구조적 문제는 모델의 평가 인식률(40–50% 이상)이 높아 안전 평가 자체를 믿기 어려워진 점입니다.
+- **AI 오용·오정렬·안전(20장)**: 2027년 오용의 주류는 새 위협이 아니라 기존 범죄·공격의 증폭입니다. 생물·화학 'High'가 주요 모델의 기본 등급이 되고(GPT-5.6 3종 모두 High), 가드레일을 제거한 오픈웨이트 모델(6,000개 이상, 2년 새 10배)이 6개월 시차로 뒤따릅니다. 챗봇이 관여한 테러 사건 12건 중 11건이 2025년 이후 발생했고, 2027학년도 수능(2026-11 시행)은 AI 안경을 소지만 해도 시험을 무효 처리하도록 규정했습니다. 가장 큰 구조적 문제는 모델의 평가 인식률(40–50% 이상)이 높아 안전 평가 자체를 믿기 어려워진 점입니다.
 - **사이버 회복력(21장)**: 2027년은 회복력 규제의 집행 원년입니다(EU CRA 12-11, 한국 정보보호수준 평가 04-01, KISA AI 침해대응 01월). 국정자원 화재(709개 시스템, 95일 복구) 이후 완전 이중화(2028)까지 2027–28년이 취약 구간입니다. 클라우드·CDN 장애와 AI 에이전트발 장애가 새 단일 장애점이고, 미국 CNSA 2.0(2027-01)으로 PQC 전환도 본격화됩니다.
 
 *제6부 핵심 테마와 종합(22–23장)*
-- **핵심 인물 리스크(23.9절)**: 2026년 엔비디아 사태(불륜 인정 → 사임 → 복귀, 간첩·우회 공급은 의혹)로 엔비디아 시총이 8,550억~1조 달러 이상 줄고 KOSPI가 하루 3.59% 하락했습니다. 역대 기록상 영향력 큰 IT·AI 인물 사건은 연 1.5건꼴이고, 엔비디아급 사건이 2027년에 다시 일어날 확률은 약 30%입니다.
+- **핵심 인물 리스크(23.9절)**: 2026년 엔비디아 사태(불륜 인정 → 사임 → 복귀, 간첩·우회 공급은 의혹)로 엔비디아 시총이 8,550억~1조 달러 이상 줄고 KOSPI가 하루 3.59% 하락했습니다(보도 기준). 역대 기록상 영향력 큰 IT·AI 인물 사건은 연 1.5건꼴이고, 엔비디아급 사건이 2027년에 다시 일어날 확률은 약 30%입니다.
 - **전문 AI의 성장(22.6절)**: AI 엔지니어(코딩 지출 2배 이상, 80%)·AI 상담원·AI 의료 기록이 가장 빨리 자라고, AI 교사·튜터는 가장 느립니다. 직무 전체 대체보다 초급 업무가 먼저 넘어가 신입 채용이 줄어드는 형태입니다.
 - **AI 에이전트(22장)**: 2027년의 핵심 테마입니다. 보고서의 에이전트 관련 전망 68건을 거버넌스·통제, 프로덕션 확산·에이전틱 경제, 일자리 재편, 코딩 에이전트, 보안·안전으로 모았고 그중 31건이 높음입니다. 전망 자료가 가장 강하게 합의하는 것은 역량이 아니라 **통제**입니다. Moltbook(등록 에이전트 150만 대 실제 소유자 1.7만) 같은 에이전트 사회 실험은 신원 검증 없이 곧바로 보안·조작 문제가 됐고, 2027년에는 에이전트 행동 탈취·공급망 공격·비용 폭주가 일상 사고가 됩니다.
 
@@ -71,7 +71,7 @@
 | 시나리오 | 확률(±불확도) | 내용 |
 |---|---|---|
 | 가속 | 30% (±10) | AI R&D 가속이 여러 연구소에서 3배 이상으로 커지며 초인적 AI 연구자에 근접하고, capex가 낙관 전망치(글로벌 1.7조 달러)에 근접 |
-| 기준 | 50% (±15) | '연구 자동화 초입': AI R&D 가속(2–3배)이 두세 연구소로 번지지만 초인적 AI 연구자는 2028년 이후. 에이전트는 코딩·고객지원·백오피스에서 ROI를 냄 |
+| 기준 | 50% (±15) | 5장의 '연구 자동화 초입'(5장 단독 45%)에 해당: AI R&D 가속(2–3배)이 두세 연구소로 번지지만 초인적 AI 연구자는 2028년 이후. 에이전트는 코딩·고객지원·백오피스에서 ROI를 냄 |
 | 조정 | 20% (±10) | 수익화 속도가 약정·부채를 따라가지 못해 투자 사이클이 꺾임 |
 
 ---
@@ -109,7 +109,7 @@
 
 | 테마 | 대표 근거 |
 |---|---|
-| **에이전트 통제·거버넌스** (3·8·9장) | Gartner: 에이전트 아이덴티티, 코딩 하네스 · Forrester: AI 플랫폼 결정의 75%를 모델이 아닌 하네스가 좌우 · Capgemini: 3계층 컨트롤 플레인 · IITP: KYA(Know Your Agent) |
+| **에이전트 통제·거버넌스** (3·8·9장) | Gartner: 에이전트 아이덴티티, 코딩 하네스 · Forrester: AI 플랫폼 결정의 75%를 모델이 아닌 하네스가 좌우 · Capgemini: 3계층 컨트롤 플레인 · IITP: KYA(Know Your Agent) · BCG: 2030년까지 42%가 에이전트에 실질 결정권을 줄 계획이지만 통제를 모두 갖춘 곳은 5% |
 | **AI 비용·FinOps** (9장) | Capgemini: 59%가 AI 예산 초과 · Gartner: 토큰 종량제 비용이 예상보다 50% 이상 초과, 에이전트 프로젝트 40% 이상이 2027년 말까지 취소 · IDC: 가격 변동 없이 에이전트 비용이 오르는 기업 20% → 55% |
 | **ROI 증명 압박** | McKinsey: EBIT 기여 37%로 정체 · SAS: 생산성 역설 · 한국은행: AI 활용률 66.5%, 시간 절감 9.2%이지만 산출과의 상관 0.08 |
 | **인프라 증설과 물리적 한계** (11장) | Gartner: AI 최적화 서버 지출 5,276억 → 9,572억 달러 · IEA: 데이터센터 전력 2030년 950–1,000TWh, HBM 부족이 최소 2027년 말까지 지속 · JPM: 2029년까지 129GW를 갖추려면 연 3조 달러의 최종 수요가 필요 |
@@ -406,7 +406,7 @@ SOTA 대시보드도 이 세 축을 추적 항목에 넣는 것이 좋겠습니�
 - **Gartner 하이브리드 AI 인프라 하이프 사이클(2026-05)**: 엣지 생성형 AI는 기술 촉발 단계(보급률 1–5%, 주류화 2–5년)입니다. 걸림돌은 연산보다 비용, 가치 입증 실패, 빠른 기술 교체입니다. Gartner I&O 트렌드는 2029년 대기업 80%가 퍼블릭 클라우드·네오클라우드·온프레미스·엣지 중 3개 이상 환경에서 AI를 운영하고, 일상 질의를 SLM으로 라우팅하면 추론비를 최대 85% 줄일 수 있다고 봅니다(2.3절).
 
 **위험과 한계**
-- **라이선스**: 바이두 ERNIE 5.5 Base는 한국을 사용 지역에서 뺐고, 중국은 AI 기술 수출 등록을 시작했습니다(17.2절). 오픈웨이트도 라이선스 실사가 필요합니다.
+- **라이선스**: 바이두 ERNIE 5.5 Base는 EU·영국과 함께 한국을 사용 지역에서 뺐고(보도 기준, 라이선스 원문 확인 필요), 중국은 AI 기술 수출 등록을 시작했습니다(17.2절). 오픈웨이트도 라이선스 실사가 필요합니다.
 - **안전**: 가드레일을 제거한 파생 모델이 6,000개를 넘었습니다(20장). 로컬 실행은 감사·통제가 어렵습니다.
 - **비용 착시**: 가동률이 낮으면 자가호스팅이 API보다 비쌉니다. 업무시간 트래픽만으로는 GPU 가동률이 24%를 넘기 어렵습니다.
 
@@ -429,7 +429,7 @@ SOTA 대시보드도 이 세 축을 추적 항목에 넣는 것이 좋겠습니�
 |---|---|---|---|---|
 | **ECI 종합역량 선형 성장** | 연 약 17점 직선(R² 0.991, 141.2 → 157.4 → 173.4) | 유지 | 2027년 말 186 / **192** / 199 (선형 외삽. 3장 기준값은 190) | ● |
 | **추론 시간·강화학습 스케일링** | 성능 ≈ a + b·log(추론 연산). 같은 모델의 노력 단계별 격차 23점(Opus 5.5) | **가속** | 같은 모델 최저–최고 노력 격차 25 / **35** / 50점 | ● |
-| **METR 시간지평 배가** | 2024년 이후 배가 약 106일(R² 0.985, 장기 196일). 352 → 719 → 1,045분 | **가속**(단, 16시간 이상은 측정 천장) | 함의값 164 / **500** / 1,100시간 | ● |
+| **METR 시간지평 배가** | 2024년 이후 배가 약 106일(R² 0.985, 장기 196일). 352 → 719 → 1,045분 | **가속**(단, 16시간 이상은 측정 천장) | 함의값 160 / **500** / 1,100시간 | ● |
 | **원격업무 자동화(RLI) 배가** | 배가 약 101일. 0.83% → 3.75% → 41.25% | **가속** | 55 / **70** / 85%, 로지스틱 감속 시작 | ● |
 | **사이버 능력 성장** | Cybench 10% → 93–100% 포화, ExploitBench 6개월에 5.4배, 제로데이 월 8 → 11(8월 22) | **가속**, 예측가 과소평가(예측 62% 대 실제 82%) | 월평균 제로데이 14 / **22** / 40건 | ● |
 | **공격 시간 압축** | 브레이크아웃 연 −65%, 침투→유출 연 4배 단축 | **가속** | 공개→대량 악용 간격 24 / **6** / 1시간 | ● |
@@ -624,12 +624,12 @@ AGI·ASI라는 말은 정의가 제각각이라 "왔다/안 왔다" 논쟁이 �
 | 'AI가 AI 연구를 가속한다'는 증거가 두 곳 이상의 연구소에서 나옴 | RSI | 높음 · 72% (±15) · 근거 [METR](https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment), [Google DeepMind](https://deepmind.google/blog/alphaevolve-impact/) |
 | 주요 연구소 모두 코드 작성의 대부분을 AI에 맡기고, 연구 인력 1인당 추론비가 가장 빠르게 느는 비용 항목이 됨 | RSI | 높음 · 78% (±15) · 근거 [Fortune](https://fortune.com/2026/01/29/100-percent-of-code-at-anthropic-and-openai-is-now-ai-written-boris-cherny-roon/), [The Decoder](https://the-decoder.com/google-says-75-percent-of-its-new-code-is-now-written-by-ai/) |
 | METR 시간지평을 대체할 새 장기 과제 지표가 등장하고, 기존 주요 벤치마크(ARC-AGI-3 포함)가 포화 | 측정 | 높음 · 70% (±15) · 근거 [vals.ai](https://www.vals.ai/benchmarks/swebench), [Epoch AI](https://epoch.ai/benchmarks/arc-agi-3/review) |
-| 엄격한 정의의 범용 AGI(원격 화이트칼라 대부분 자동화)는 2027년 안에 오지 않음 | AGI | 높음 · 93% (±7) · 근거 [Manifold Markets](https://manifold.markets/event/by-which-years-will-agi-be-released), [Polymarket](https://polymarket.com/predictions/agi) · 반론 [AI Futures Project (Lars…](https://www.lesswrong.com/posts/f9PajMLmBYzmWzyDv/aifp-looks-like-the-intelligence-explosion-will-happen-in) |
-| 초지능(ASI) 도달 증거는 없음 | ASI | 높음 · 95% (±5) · 근거 [Epoch AI](https://epoch.ai/publications/parallelization-constraints-could-delay-a-technological-singularity) |
+| 엄격한 정의의 범용 AGI(원격 화이트칼라 대부분 자동화)는 2027년 안에 오지 않음 | AGI | 높음 · 88% (±7) · 근거 [Manifold Markets](https://manifold.markets/event/by-which-years-will-agi-be-released), [Polymarket](https://polymarket.com/predictions/agi) · 반론 [AI Futures Project (Lars…](https://www.lesswrong.com/posts/f9PajMLmBYzmWzyDv/aifp-looks-like-the-intelligence-explosion-will-happen-in) |
+| 초지능(ASI) 도달 증거는 없음 | ASI | 높음 · 98% (±2) · 근거 [Epoch AI](https://epoch.ai/publications/parallelization-constraints-could-delay-a-technological-singularity) |
 | 연구소의 AI R&D 임계 판정과 증거 공개가 규제 쟁점이 됨(캘리포니아 SB 53·뉴욕 RAISE·EU GPAI 실천강령의 보고 의무와 연결) | 거버넌스 | 높음 · 78% (±15) · 근거 [CSET (Georgetown)](https://cset.georgetown.edu/wp-content/uploads/CSET-When-AI-Builds-AI.pdf), [fpf.org](https://fpf.org/blog/the-raise-act-vs-sb-53-a-tale-of-two-frontier-ai-laws/) |
 | 연구소 한 곳 이상이 자기개선·AI R&D 임계 근접 또는 돌파를 공식 공시 | 거버넌스 | 중간 · 55% (±20) · 근거 [METR](https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment), [Anthropic](https://www.anthropic.com/transparency?m=1) |
 | OpenAI 등 한 곳이 'AGI 달성'에 준하는 선언을 하고, 정의 논쟁이 격화 | AGI | 중간 · 40% (±20) · 근거 [Kalshi](https://kalshi.com/markets/kxoaiagi/openai-achieves-agi), [simonwillison.net](https://simonwillison.net/2026/Apr/27/now-deceased-agi-clause/) |
-| AI 연구 자동화 수준이 초인적 AI 연구자(SAR)에 이름 | RSI | 낮음 · 15% (±12) · 근거 [AI Futures Project (Lars…](https://www.lesswrong.com/posts/f9PajMLmBYzmWzyDv/aifp-looks-like-the-intelligence-explosion-will-happen-in) · 반론 [Epoch AI](https://epoch.ai/publications/parallelization-constraints-could-delay-a-technological-singularity) |
+| AI 연구 자동화 수준이 초인적 AI 연구자(SAR)에 이름 | RSI | 낮음 · 25% (±12) · 근거 [AI Futures Project (Lars…](https://www.lesswrong.com/posts/f9PajMLmBYzmWzyDv/aifp-looks-like-the-intelligence-explosion-will-happen-in) · 반론 [Epoch AI](https://epoch.ai/publications/parallelization-constraints-could-delay-a-technological-singularity) |
 | 초지능 개발 금지·일시중지 요구가 주요국 정부 공식 의제로 오름 | 거버넌스 | 낮음 · 17% (±15) · 근거 [futureoflife.org](https://futureoflife.org/fli-open-letters/) |
 
 ### 5.10 조기경보 지표: 무엇이 보이면 전망을 바꾸나
@@ -1292,7 +1292,7 @@ Gartner는 에이전트를 운영 배치한 조직을 17%로 보고(1장의 37%�
 | **국내 라우팅·게이트웨이 확산, 오픈웨이트(국산·중국산) 비중 증가** | 한국 | 높음 · 85% (±10) · 근거 [지디넷코리아](https://zdnet.co.kr/view?no=20261108123219), [IITP 정보통신기획평가원 (보도: ZDNe…](https://zdnet.co.kr/view?no=20261111120847) |
 | OpenRouter 주간 1,000조 토큰 근접, 에이전트 비중 85~90% | 토큰 물량 | 중간 · 48% (±15) · 근거 [Menlo Ventures](https://menlovc.com/wp-content/uploads/2026/11/menlo_ventures_enterprise_ai_report-2026-110326.pdf) |
 | HBM·전력 제약으로 GPU 임대료가 상반기까지 높다가 하반기 H100급부터 하락 | 추론 경제 | 중간 · 50% (±20) · 반론 [IEA (International Energ…](https://iea.org/reports/key-questions-on-energy-and-ai/executive-summary) |
-| OpenAI·Anthropic 합산 연환산 2,500억 달러 돌파. IPO·공시로 추론 마진이 처음 검증되고 'AI 버블' 논쟁의 분기점이 됨 | 추론 경제 | 중간 · 45% (±20) · 근거 [thenextweb.com](https://thenextweb.com/news/anthropic-ipo-confidential-filing-openai-race-965-billion), [Christopher S. Penn (Tru…](https://almosttimely.substack.com/p/almost-timely-news-the-ai-bubble) |
+| OpenAI·Anthropic 합산 연환산 2,500억 달러 돌파(기준값 2,800억 달러, 9.13절). IPO·공시로 추론 마진이 처음 검증되고 'AI 버블' 논쟁의 분기점이 됨 | 추론 경제 | 중간 · 60% (±20) · 근거 [thenextweb.com](https://thenextweb.com/news/anthropic-ipo-confidential-filing-openai-race-965-billion), [Christopher S. Penn (Tru…](https://almosttimely.substack.com/p/almost-timely-news-the-ai-bubble) |
 | 직원 1인당 토큰 예산을 생산성 도구·복리후생으로 공시하는 기업 등장 | 과금 모델 | 중간 · 50% (±25) |
 | GENIUS Act 시행으로 규제 스테이블코인이 카드망·PG의 에이전트 결제 정산 레일로 편입 | 에이전트 결제 | 중간 · 65% (±15) |
 | **디지털자산기본법 상반기 제정, 은행 중심 원화 스테이블코인 발행 체계 확정** | 한국 | 중간 · 45% (±20) |
@@ -1542,7 +1542,7 @@ Gartner는 에이전트를 운영 배치한 조직을 17%로 보고(1장의 37%�
 
 | 시나리오 | 확률(±불확도) | 모습 |
 |---|---|---|
-| **감속하는 슈퍼사이클**(기준) | 55% (±15) | capex +25–40%(빅4 약 9,000억–1조 달러), HBM·DRAM 부족 지속, NVIDIA·Broadcom·메모리 사상 최대 실적. 다만 증가율 둔화 |
+| **감속하는 슈퍼사이클**(기준) | 55% (±15) | capex +25–40%(빅4 약 9,000억–1조 달러, Oracle을 더한 빅5는 1.0–1.2조 달러), HBM·DRAM 부족 지속, NVIDIA·Broadcom·메모리 사상 최대 실적. 다만 증가율 둔화 |
 | 에이전트 수요 폭발(상방) | 20% (±10) | capex 컨센서스(1.6조 달러) 상회, 메모리 가격이 1년 내내 두 자릿수 상승, 가스터빈·원전 계약 급증. 한국 성장률이 KDI 상단(3.9%) 이상 |
 | capex 조정(하방) | 20% (±10) | 현금흐름 적자·신용 스프레드 확대·주 규제로 하반기 capex 가이던스 하향, 네오클라우드 구조조정, 메모리 가격 정체. 한국 수출 증가율 급둔화(현대경제연구원 2.4% 경로) |
 | 공급망·에너지 충격 | 5% (±5) | 대만해협·호르무즈 등으로 첨단 공정·전력 공급 차질 |
@@ -1744,7 +1744,7 @@ Gartner는 에이전트를 운영 배치한 조직을 17%로 보고(1장의 37%�
 
 | 전망 | 가능성 · 확률(±불확도) |
 |---|---|
-| 농어촌 기본소득 약 1조 원 확정, 30–35개 군으로 확대. 2027년이 시범 마지막 해라 **2028년 본사업 전환 여부**가 핵심 쟁점 | 높음 · 88% (±8) · 근거 [머니투데이](https://www.mt.co.kr/article/2026090110103117937), [농림축산식품부](https://www.mafra.go.kr/bbs/home/792/579390/artclView.do) |
+| 농어촌 기본소득이 정부안 약 1.17조 원(12월 국회 확정 전) 수준으로 편성돼 30–35개 군으로 확대. 2027년이 시범 마지막 해라 **2028년 본사업 전환 여부**가 핵심 쟁점 | 높음 · 88% (±8) · 근거 [머니투데이](https://www.mt.co.kr/article/2026090110103117937), [농림축산식품부](https://www.mafra.go.kr/bbs/home/792/579390/artclView.do) |
 | 광역 자체 재원 확대 지자체 추가, 재정자립도에 따른 지역 간 형평성 논쟁 확대 | 높음 · 80% (±10) |
 | **2028년 4월 총선**을 앞두고 2027년 하반기 기본소득·기본사회가 여야 핵심 쟁점(재정 건전성 대 AI 불평등 대응) | 높음 · 75% (±15) · 근거 [파이낸셜뉴스](https://www.fnnews.com/news/202607211641465666) |
 | 기본사회기본법 국회 통과 | 중간 · 45% (±20) · 근거 [파이낸셜뉴스](https://www.fnnews.com/news/202607211641465666) |
@@ -1832,7 +1832,7 @@ Gartner는 에이전트를 운영 배치한 조직을 17%로 보고(1장의 37%�
 2. 평가지표를 지식형에서 **에이전트·코딩·장기 과업**으로 옮깁니다. 지금 격차가 가장 큰 곳이 여기입니다.
 3. **'독자성' 기준을 명문화**합니다(사전학습 범위, 외부 인코더·증류 허용 범위). 네이버 사례 같은 사후 논란을 막기 위해서입니다.
 4. **모델 주권과 컴퓨트 주권을 분리**합니다. 정부 확보 GPU(약 1만 장)와 국가AI컴퓨팅센터를 개발팀 외 연구기관·스타트업에도 공유 컴퓨트로 개방하고, NVIDIA 공급분(26만 장 이상, 대부분 민간)은 공동 활용 계약으로 보완합니다.
-6. **'오픈 베이스' 전략의 접근 위험을 관리**합니다. 바이두 ERNIE 5.5 Base가 라이선스에서 한국을 배제했고 중국은 AI 기술 수출 사전등록을 시작했습니다(17.2절). Qwen·DeepSeek 등 해외 오픈웨이트를 베이스로 쓸 때는 라이선스 실사와 대체 베이스 확보를 의무화하고, 공공은 국내 모델을 기본으로 삼습니다.
+6. **'오픈 베이스' 전략의 접근 위험을 관리**합니다. 바이두 ERNIE 5.5 Base가 라이선스에서 EU·영국과 함께 한국을 배제했고(보도 기준) 중국은 AI 기술 수출 사전등록을 시작했습니다(17.2절). Qwen·DeepSeek 등 해외 오픈웨이트를 베이스로 쓸 때는 라이선스 실사와 대체 베이스 확보를 의무화하고, 공공은 국내 모델을 기본으로 삼습니다.
 5. **국산 NPU와 독자 모델을 공동 최적화**해 '풀스택 소버린'을 만들고, 중동·동남아에 '한국형 소버린 패키지'로 수출합니다.
 
 ### 14.5 국가 AI 문샷: 자료와 요지
@@ -2123,8 +2123,8 @@ Gartner는 에이전트를 운영 배치한 조직을 17%로 보고(1장의 37%�
 | 원격접속 규칙의 지정국 확대와 클라우드 KYC 집행 강화, 동남아 데이터센터 투자 위축 | 높음 · 72% (±15) · 근거 [Greenberg Traurig](https://www.gtlaw.com/en/insights/2026/11/bis-interim-final-rule-targets-remote-access-to-advanced-semiconductors-rescinds-ai-diffusion-rule), [미국 상무부 BIS](https://www.faegredrinker.com/en/insights/publications/2026/11/bis-targets-remote-access-to-advanced-ai-chips-adds-megaspeed-network-to-entity-list) |
 | 연장되더라도 희토류는 '조용한 통제'(허가 지연·선별 승인) 지속 | 높음 · 85% (±10) · 근거 [Tech Times](https://www.techtimes.com/articles/316674/20260515/trump-xi-close-beijing-summit-warm-rhetoric-nvidia-h200-deliveries-remain-stalled-rare-earth.htm) |
 | Chip Security Act 입법. 행정부(완화)와 의회(강경)의 통제권 다툼 | 중간 · 52% (±20) · 근거 [미국 의회](https://www.atlanticcouncil.org/dispatches/huang-is-back-at-nvidia-but-the-fight-over-who-controls-chip-exports-is-just-beginning/) |
-| 증류·가중치 탈취에 대한 첫 제재(Entity List 또는 OFAC) | 중간 · 45% (±20) · 근거 [미국 재무부(베선트)](https://www.wilsoncenter.org/article/americas-ai-action-plan-after-one-year-what-administration-has-done-and-what-comes-next), [Anthropic](https://anthropic.com/news/detecting-and-preventing-distillation-attacks) |
-| 프런티어 모델 임시 수출통제의 반복이나 제도화. 해외 사용자의 최신 모델 접근 지연 | 중간 · 55% (±20) · 근거 [Mayer Brown](https://www.mayerbrown.com/en/insights/publications/2026/06/commerce-department-extends-export-controls-to-advanced-ai-models-authorizes-release-to-specific-trusted-partners), [Tech Policy Press](https://techpolicy.press/commerce-eased-its-block-on-anthropics-mythos-but-major-questions-remain) |
+| 증류·가중치 탈취에 대한 첫 제재(Entity List 또는 OFAC) | 높음 · 70% (±15) · 근거 [미국 재무부(베선트)](https://www.wilsoncenter.org/article/americas-ai-action-plan-after-one-year-what-administration-has-done-and-what-comes-next), [Anthropic](https://anthropic.com/news/detecting-and-preventing-distillation-attacks) |
+| 프런티어 모델 임시 수출통제의 반복이나 제도화. 해외 사용자의 최신 모델 접근 지연 | 높음 · 75% (±15) · 근거 [Mayer Brown](https://www.mayerbrown.com/en/insights/publications/2026/06/commerce-department-extends-export-controls-to-advanced-ai-models-authorizes-release-to-specific-trusted-partners), [Tech Policy Press](https://techpolicy.press/commerce-eased-its-block-on-anthropics-mythos-but-major-questions-remain) |
 | 미국 'AI 풀스택 수출' 첫 국가 패키지 지정(걸프·인도·동남아 유력) | 중간 · 60% (±15) · 근거 [미국 재무부(베선트)](https://www.wilsoncenter.org/article/americas-ai-action-plan-after-one-year-what-administration-has-done-and-what-comes-next) |
 | 미중 AI 대화는 핫라인·용어 정의 수준. 개발 감속 합의는 매우 낮음 | 높음 · 70% (±10) · 근거 [Tech Times](https://www.techtimes.com/articles/316674/20260515/trump-xi-close-beijing-summit-warm-rhetoric-nvidia-h200-deliveries-remain-stalled-rare-earth.htm) |
 
@@ -2172,8 +2172,8 @@ Gartner는 에이전트를 운영 배치한 조직을 17%로 보고(1장의 37%�
 | 동맹 장비통제 정렬(MATCH 법안) | 미국 → 네덜란드·일본·한국 | 중간 · 45% (±20) · 근거 [미국 의회](https://www.atlanticcouncil.org/dispatches/huang-is-back-at-nvidia-but-the-fight-over-who-controls-chip-exports-is-just-beginning/), [Pax Silica(미국 주도, 한국 포함 …](https://www.bhfs.com/insight/state-department-expands-pax-silica-initiative-at-2026-summit/) |
 | 희토류 유예 종료 또는 선별 허가 | 중국 → 미국·동맹 제조업 | 높음 · 70% (±15) · 근거 [Tech Times](https://www.techtimes.com/articles/316674/20260515/trump-xi-close-beijing-summit-warm-rhetoric-nvidia-h200-deliveries-remain-stalled-rare-earth.htm) |
 | 계열사(50%) 규정 시행 | 미국 BIS | 중간 · 35% (±20) |
-| 증류·가중치 탈취 제재 | 미국 재무부·상무부 → 중국 AI 기업 | 중간 · 45% (±20) · 근거 [미국 재무부(베선트)](https://www.wilsoncenter.org/article/americas-ai-action-plan-after-one-year-what-administration-has-done-and-what-comes-next), [Anthropic](https://anthropic.com/news/detecting-and-preventing-distillation-attacks) |
-| 프런티어 모델 임시 수출통제의 제도화 | 미국 행정부 | 중간 · 45% (±20) · 근거 [Mayer Brown](https://www.mayerbrown.com/en/insights/publications/2026/06/commerce-department-extends-export-controls-to-advanced-ai-models-authorizes-release-to-specific-trusted-partners), [Tech Policy Press](https://techpolicy.press/commerce-eased-its-block-on-anthropics-mythos-but-major-questions-remain) |
+| 증류·가중치 탈취 제재 | 미국 재무부·상무부 → 중국 AI 기업 | 높음 · 70% (±15) · 근거 [미국 재무부(베선트)](https://www.wilsoncenter.org/article/americas-ai-action-plan-after-one-year-what-administration-has-done-and-what-comes-next), [Anthropic](https://anthropic.com/news/detecting-and-preventing-distillation-attacks) |
+| 프런티어 모델 임시 수출통제의 제도화 | 미국 행정부 | 높음 · 72% (±20) · 근거 [Mayer Brown](https://www.mayerbrown.com/en/insights/publications/2026/06/commerce-department-extends-export-controls-to-advanced-ai-models-authorizes-release-to-specific-trusted-partners), [Tech Policy Press](https://techpolicy.press/commerce-eased-its-block-on-anthropics-mythos-but-major-questions-remain) |
 | 반도체 232조 2단계 관세, 301조 과잉생산 관세 | 미국 USTR·상무부 | 중간 · 50% (±20) · 근거 [Focus Taiwan (CNA)](https://focustaiwan.tw/politics/202611260010) |
 
 ### 16.5 2027 외교·규제 일정
@@ -2340,12 +2340,11 @@ Gartner는 에이전트를 운영 배치한 조직을 17%로 보고(1장의 37%�
 |---|---|
 | 동남아(말레이시아·싱가포르·태국·인도네시아) 데이터센터향 GPU 서버 공급이 허가 체계 정착까지 수개월 지연되고, 중국 기업의 해외 컴퓨트 임차 경로가 크게 줄어듦 | 높음 · 85% (±10) · 근거 [The Next Web](https://thenextweb.com/news/nvidia-halts-server-shipments-southeast-asia), [Reuters](https://finance.yahoo.com/news/exclusive-us-chip-curbs-distillation-071923947.html) |
 | 중국계가 소유한 미국·제3국 법인을 통한 칩 구매를 막기 위해 '소유 기준 KYC'가 BIS 규칙이나 NVIDIA 파트너 심사에 도입 | 높음 · 75% (±15) · 근거 [CBS 보도](https://www.yahoo.com/news/us/articles/california-companies-owned-chinese-firms-204123372.html) |
-| 미국 랩 전반(Google·Meta 포함)으로 증류 차단이 확대되고, 증류 기업에 대한 제재나 Entity List 등재가 실행 | 높음 · 75% (±15) · 근거 [Reuters](https://finance.yahoo.com/news/exclusive-us-chip-curbs-distillation-071923947.html) |
+| 미·중 연구소와 미국 랩 전반(Google·Meta 포함)으로 증류 차단이 확대되고, 미국이 증류 기업에 대한 제재나 Entity List 등재를 실행 | 높음 · 70% (±15) · 근거 [Reuters](https://finance.yahoo.com/news/exclusive-us-chip-curbs-distillation-071923947.html) |
 | 중국 프런티어 랩(Z.ai·Moonshot 등)의 대형 모델 출시 간격이 6개월에서 9–12개월로 늘어남 | 중간 · 55% (±20) · 근거 [Reuters](https://finance.yahoo.com/news/exclusive-us-chip-curbs-distillation-071923947.html) |
 | 동남아 정부(싱가포르·말레이시아)가 미국과 '신뢰 접근' 협정을 맺어 허가를 일괄 확보 | 중간 · 45% (±20) |
 | 미국이 프런티어 모델 API 접근을 수출통제로 다루는 방식을 제도화(신뢰 파트너 목록, 국가별 등급). 신규 최상위 모델은 '신뢰 파트너 우선 → 일반 공개'의 단계 출시가 표준 | 높음 · 72% (±20) · 근거 [Mayer Brown](https://www.mayerbrown.com/en/insights/publications/2026/06/commerce-department-extends-export-controls-to-advanced-ai-models-authorizes-release-to-specific-trusted-partners), [Anthropic](https://www.anthropic.com/project/glasswing) |
 | BIS 원격접속 규칙의 유예 종료(2027-02)로 동남아·한국 클라우드·데이터센터의 고객 확인(KYC)·소유 구조 증빙이 일상 업무가 됨 | 높음 · 85% (±10) · 근거 [Greenberg Traurig](https://www.gtlaw.com/en/insights/2026/11/bis-interim-final-rule-targets-remote-access-to-advanced-semiconductors-rescinds-ai-diffusion-rule), [NVIDIA·한국 정부](https://nvidianews.nvidia.com/news/south-korea-ai-infrastructure) |
-| 미·중 연구소 모두 증류 차단을 강화하고, 미국이 증류 기업에 대한 제재·Entity List 등재를 실행 | 중간 · 69% (±20) · 근거 [Anthropic](https://anthropic.com/news/detecting-and-preventing-distillation-attacks), [미국 재무부(베선트)](https://www.wilsoncenter.org/article/americas-ai-action-plan-after-one-year-what-administration-has-done-and-what-comes-next) |
 | 미국 연방·주 정부와 동맹국 공공부문의 중국 모델 사용 금지가 DeepSeek에서 Qwen·Kimi 등으로 확대 | 높음 · 75% (±15) · 근거 [TechCrunch](https://techcrunch.com/2026/10/20/us-orders-federal-agencies-to-remove-chinas-deepseek-ai-from-their-systems/), [미국 재무부(베선트)](https://www.wilsoncenter.org/article/americas-ai-action-plan-after-one-year-what-administration-has-done-and-what-comes-next) |
 | 중국 AI 기술 수출 사전등록이 확정돼, 중국 모델의 해외 현지 배포·기술 라이선스·합작에 등록·심사 절차가 붙음 | 중간 · 65% (±15) · 근거 [EqualOcean](https://equalocean.com/news/2026101922309-china-proposes-export-restrictions-23-ai-technologies-keeps-api-services) |
 | 바이두처럼 규제가 강한 시장(EU·한국 등)을 라이선스에서 빼는 중국 오픈웨이트가 늘어남 | 중간 · 45% (±20) · 근거 [m.edaily.co.kr](https://m.edaily.co.kr/News/Read?newsId=03325926645649656&mediaCodeNo=257) |
@@ -2949,7 +2948,7 @@ AI 오용 전반(CBRN·테러·시험 부정·탈옥 모델·오정렬)은 21장
 > 에이전트 도입 속도가 신원·권한·감사·킬스위치 등 통제 체계를 앞지르고 있다는 진단이 공통적이다. '하네스', '컨트롤 플레인', 'Know Your Agent', 지속 검증 등 표현은 달라도 2027년의 핵심은 역량이 아니라 통제라는 데 수렴한다.
 >
 > - **합의 기관**: Gartner, Forrester, IDC, Capgemini, BCG, SAS, IITP
-> - **근거**: BCG 조사에서 에이전트에 결정권을 주려는 기업은 42%인데 통제 체계를 갖춘 기업은 5%(1장). Forrester는 AI 플랫폼 결정의 75%를 모델이 아닌 하네스가 좌우한다고 봅니다(2장). 관리되지 않는 에이전트가 새 섀도 IT가 되고 에이전트를 1급 신원으로 관리하게 됩니다(높음 · 82%, 19장).
+> - **근거**: BCG 조사에서 2030년까지 에이전트에 결정권을 주려는 기업은 42%인데 통제를 모두 갖춘 기업은 5%(2.1절). Forrester는 AI 플랫폼 결정의 75%를 모델이 아닌 하네스가 좌우한다고 봅니다(2장). 관리되지 않는 에이전트가 새 섀도 IT가 되고 에이전트를 1급 신원으로 관리하게 됩니다(높음 · 82%, 19장).
 > - **2027 판단**: KYA(에이전트 신원)가 카드망·대형 플랫폼에서 사실상 의무화(중간 · 60%, 기업 IAM 전반은 2–5년), 주요국 가이드라인에 에이전트 책임·권한 위임 규정 첫 등장(중간 · 58%).
 
 > **② 자율 에이전트의 프로덕션 확산과 에이전틱 경제**
@@ -3174,7 +3173,7 @@ AI 오용 전반(CBRN·테러·시험 부정·탈옥 모델·오정렬)은 21장
 
 | | 가속 (30% ±10) | 기준 (50% ±15) | 조정 (20% ±10) |
 |---|---|---|---|
-| 역량 (3·5장) | 여러 연구소에서 R&D 가속 3배 이상, 초인적 AI 연구자 근접 | '연구 자동화 초입': R&D 가속 2–3배가 두세 연구소로 번지고 초인적 코더 문턱에 근접. 초인적 AI 연구자는 2028년 이후 | 가속이 한 연구소에 머묾(1.5배 안팎), 벤치마크 정체 |
+| 역량 (3·5장) | 여러 연구소에서 R&D 가속 3배 이상, 초인적 AI 연구자 근접(5장 '지능 폭발 초기' 20%) | 5장 '연구 자동화 초입'(45%): R&D 가속 2–3배가 두세 연구소로 번지고 초인적 코더 문턱에 근접. 초인적 AI 연구자는 2028년 이후 | 가속이 한 연구소에 머묾(1.5배 안팎), 벤치마크 정체(5장 '완만한 지속' 30%) |
 | 자본 (11장) | 글로벌 AI capex 1.7조 달러 이상(빅5 1.3조 이상) | 글로벌 1.6조 달러(빅5 약 1.0–1.2조), 증가율 둔화 | 글로벌 1.2조 달러 이하, 리스 취소·네오클라우드 구조조정 |
 | 비용·토큰 (9장) | 물량 10배 이상, 에이전트 간 거래 확대 | 같은 성능 단가 연 30–40배 하락(실제 평균 단가는 약 25% 하락), 총지출 2–2.5배 | 토큰 한도·FinOps 긴축, 지출 1.5배 안팎 |
 | 기기 (10장) | 메모리 조기 완화, 에이전트 기기 대중화, 글래스 +60% | 메모리 제약 속 프리미엄화, AI폰 52%, 글래스 +40% | 메모리 부족 심화로 폰·PC 역성장, 온디바이스 AI 정체 |
@@ -3291,7 +3290,7 @@ AI 오용 전반(CBRN·테러·시험 부정·탈옥 모델·오정렬)은 21장
 | **강점(S)** | **S1 메모리·HBM 세계 1·2위 공급망**: 2027년에도 공급 부족이 이어지는 '감속하는 슈퍼사이클'(55%, 11장)의 최대 수혜<br>**S2 전력기기 경쟁력**: 효성·HD현대일렉트릭·LS일렉트릭 수주잔고 38조 → 45조 원(기준, 11장)<br>**S3 대규모 공공 투자**: 2027 과기정통부 AI 예산 9.4조 원(+84%, 정부안), 정부 GPU 약 1만 장, 프런티어 데이터 1조 토큰(14·15장)<br>**S4 독자 모델 역량**: 모델을 만드는 약 12개국 중 하나, 최고 모델이 글로벌 1위의 66.7%(AAII)로 중국 다음(14장)<br>**S5 높은 도입률**: 근로자 생성형 AI 활용률 66.5%로 미·유럽 7개국 평균의 두 배(8장)<br>**S6 제도 선도**: 세계 두 번째 포괄 AI법(AI 기본법), 대통령 소속 국가인공지능전략위원회, N2SF로 공공 AI 도입 경로 확보(15·23장)<br>**S7 거버넌스 외교 자산**: 서울 정상회의(2024) 공동주최, 국제 평가 네트워크 창립 회원, 6G·표준 기여(6·18장) |
 | **약점(W)** | **W1 인재 정체·순유출**: 경쟁력 점수 중 인재 5/10, 인재이동지수 −0.35, 석·박사 44.9% 해외 이직 고려(15장)<br>**W2 집행·거버넌스 평가 하락**: Oxford 정부 AI 준비도 3위 → 8위(15장)<br>**W3 에이전트 역량 격차**: 한국어 에이전트 과제 10.3 대 45.7(글로벌 최고 대비 약 23%), 새 프런티어마다 격차가 다시 벌어지는 구조(14장)<br>**W4 생산성 연결 약함**: 시간 절감과 산출의 상관 0.08(8·13장)<br>**W5 HBM·수출 집중**: AI capex 조정 시 충격을 가장 먼저 받는 구조(1·11장)<br>**W6 전력망·입지 제약**: 12차 전력수급기본계획 지연, 송전망 속도, 수도권 수요 집중(11장)<br>**W7 측정·통계 공백**: 국가 토큰 통계, 데이터센터 물·PUE 통계, 한국어 안전 평가 체계 부족(9·11·20장)<br>**W8 디지털 회복력 취약 구간**: 국정자원 화재 이후 완전 이중화(2028)까지 2027–28년이 공백(21장) |
 | **기회(O)** | **O1 AI 지출 확대**: 세계 AI 지출 4.05조 달러(+47.5%), 글로벌 AI capex 1.6조 달러(기준, 11장)<br>**O2 소버린 패키지 수요**: 100개국 이상이 소버린 AI 추진, 중동·동남아에 '모델 + GPU 운영 + NPU + 전력' 패키지 수요(14·18장)<br>**O3 온디바이스·기기 전환**: 생성형 AI폰 출하 52%, 스마트 글래스 +40%, 3단 하이브리드 표준화(10장)<br>**O4 국제 표준·평가 창**: EU 조화표준 2027 상반기 발간, ISO/IEC 42000 시리즈 확산, 3GPP 6G 작업항목(2027-03)(6·15장)<br>**O5 동맹 기술 협력**: 한미 기술번영 MOU, Pax Silica, 한·독 AI 공동의향서(17·18장)<br>**O6 연구 자동화**: AI R&D 가속(2–3배)이 연구 생산성을 끌어올릴 기회, Genesis·EU RAISE 공동 난제(5·7·14장)<br>**O7 단가 하락**: 같은 성능 토큰 단가 연 30–40배 하락으로 공공·중소기업 도입 문턱이 낮아짐(9장) |
-| **위협(T)** | **T1 미국 기술 통제 전이**: 원격접속 규칙·KYC(유예 2027-02 종료), 중국 팹 연간 장비 허가, 232조 관세(17장)<br>**T2 모델 접근의 양면 제한**: 미국 최상위 모델은 '신뢰 파트너 우선' 공개(높음), 중국 오픈웨이트는 한국 배제 라이선스(바이두)와 수출 등록(17장)<br>**T3 투자 사이클 조정**: capex 조정 시나리오 20%, 하반기 가이던스 하향 시 한국 수출 급둔화(11장)<br>**T4 격차 확대 위험**: AI R&D 가속이 두세 연구소로 번지면(기준 45%) 추격 비용이 급증(5장)<br>**T5 사이버 위협 고도화**: 공격 자동화, 북한의 AI 피싱·딥페이크 취업, 냉장 설비 같은 OT 원격 조작의 재발(높음 78%±12)(19장)<br>**T6 오용·사회 위험**: 딥페이크 성범죄(피의자 62%가 10대), 2028 총선 대비 딥페이크, 시험 부정의 '입는 AI' 전환(20장)<br>**T7 인재 쟁탈전**: 중국·미국의 고액 보상과 정주 지원(15장) |
+| **위협(T)** | **T1 미국 기술 통제 전이**: 원격접속 규칙·KYC(유예 2027-02 종료), 중국 팹 연간 장비 허가, 232조 관세(17장)<br>**T2 모델 접근의 양면 제한**: 미국 최상위 모델은 '신뢰 파트너 우선' 공개(높음), 중국 오픈웨이트는 한국 배제 라이선스(바이두)와 수출 등록(17장)<br>**T3 투자 사이클 조정**: capex 조정 시나리오 20%, 하반기 가이던스 하향 시 한국 수출 급둔화(11장)<br>**T4 격차 확대 위험**: AI R&D 가속이 두세 연구소로 번지면(5장 기준 시나리오 45%) 추격 비용이 급증(5장)<br>**T5 사이버 위협 고도화**: 공격 자동화, 북한의 AI 피싱·딥페이크 취업, 냉장 설비 같은 OT 원격 조작의 재발(높음 78%±12)(19장)<br>**T6 오용·사회 위험**: 딥페이크 성범죄(피의자 62%가 10대), 2028 총선 대비 딥페이크, 시험 부정의 '입는 AI' 전환(20장)<br>**T7 인재 쟁탈전**: 중국·미국의 고액 보상과 정주 지원(15장) |
 
 ### 23.7 대응 전략(TOWS)
 
@@ -3330,7 +3329,7 @@ AI 오용 전반(CBRN·테러·시험 부정·탈옥 모델·오정렬)은 21장
 | 2026-11-08 | 젠슨 황이 직원 메모에서 불륜을 인정. 상대방 이름은 밝히지 않았고 교류는 적절했다고 주장 | 확정 |
 | 2026-11-08 | 이사회가 외부 자문을 둔 독립이사 위원회로 '외국 정보활동의 표적이 됐다'는 보도를 조사 시작 | 확정 |
 | 2026-11 | 상대방은 싱가포르 고객사(Megaspeed)의 전직 임원이며, 미국 정보당국이 중국 정보 자산으로 의심했다는 보도. 기소는 없고 중국은 부인 | 보도·의혹 |
-| 2026-11 | Megaspeed 관련 네트워크가 수출통제를 우회해 약 20억 달러 규모 칩을 중국에 공급했다는 의혹(엔비디아는 중국 연계 부인). Megaspeed는 11-23 Entity List에 등재(17.2절) | 의혹·확정(등재) |
+| 2026-11 | Megaspeed 관련 네트워크가 수출통제를 우회해 약 20억 달러 규모 칩을 중국에 공급했다는 의혹(엔비디아는 중국 연계 부인). Megaspeed는 11-23 Entity List에 등재(BIS 발표, 부록 AL) | 의혹·확정(등재) |
 | 2026-11-12 | 황 사임, CFO 콜렛 크레스가 임시 CEO, 하비 존스가 첫 이사회 의장. NVDA 장중 최대 −14%, 누적 −16~19%(시총 약 8,550억~1조 달러 이상 감소 보도) | 확정·보도 |
 | 2026-11 | 한국 증시 충격: KOSPI 하루 −3.59%, SK하이닉스 −7% 이상, 삼성전자 −4% 이상, 엔비디아가 주요 주주로 알려진 네이버 −6.43%(11-12) | 보도 |
 | 2026-11-22~23 | 이사회가 만장일치로 황 복귀 결정. '미 정부 고위급의 의견'을 고려해 국가안보 위험이 없다고 판단. 독립위원회 조사는 계속, 독립이사 '국가안보·수출통제위원회' 신설과 최고준법책임자(CCO) 채용 | 확정(8-K) |
