@@ -347,6 +347,92 @@
   "counter": []
  },
  {
+  "chapter": "3장",
+  "text": "범정부 AI 공통기반에 독자 AI 파운데이션 모델 1개 이상이 상용 모델과 함께 올라가 업무망에서 운영",
+  "prob": "높음 70%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "보안뉴스",
+    "url": "https://m.boannews.com/html/detail.html?idx=140525",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "3장",
+  "text": "정부의 독자 모델 평가·공통기반 도입 평가가 '표준 하네스 모델 점수'와 '공급사 하네스 시스템 점수'를 분리해 공표",
+  "prob": "낮음 25%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Robocurve",
+    "url": "https://robocurve.org",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "4장",
+  "text": "주요 벤치마크 운영 주체 2곳 이상이 오염·과적합 때문에 비공개 또는 변형 테스트셋으로 바꾸거나, 리더보드 점수를 정정",
+  "prob": "높음 72%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "arXiv (Qin 외)",
+    "url": "https://arxiv.org/abs/2611.21315",
+    "title": ""
+   },
+   {
+    "org": "OpenAI",
+    "url": "https://openai.com/index/evaluating-chain-of-thought-monitorability/",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "4장",
+  "text": "미국 프런티어 연구소 2곳 이상이 시스템 카드에 CoT 감시 가능성 평가 결과를 수치로 싣기 시작",
+  "prob": "중간 60%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "OpenAI",
+    "url": "https://openai.com/index/evaluating-chain-of-thought-monitorability/",
+    "title": ""
+   },
+   {
+    "org": "arXiv (Korbak 외)",
+    "url": "https://arxiv.org/abs/2507.11473",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "4장",
+  "text": "프런티어 연구소 한 곳 이상이 잠재추론(루프형·연속 잠재 사고) 구조를 주력 모델에 썼다고 공식 확인",
+  "prob": "낮음 30%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Alignment Forum (Finnveden 외)",
+    "url": "https://www.alignmentforum.org/posts/6m29SfjbittooYojj/latent-reasoning-architectures-would-likely-undermine-cot-our",
+    "title": ""
+   }
+  ],
+  "counter": [
+   {
+    "org": "OpenAI",
+    "url": "https://openai.com/index/evaluating-chain-of-thought-monitorability/",
+    "title": ""
+   }
+  ]
+ },
+ {
   "chapter": "5장",
   "text": "'AI가 AI 연구를 가속한다'는 증거가 두 곳 이상의 연구소에서 나옴",
   "prob": "높음 72%±15",
@@ -532,6 +618,45 @@
    }
   ],
   "counter": []
+ },
+ {
+  "chapter": "5장",
+  "text": "미국 초지능 금지 법안(Sanders–Casar)이 2027년 안에 상·하원 어느 쪽에서든 위원회를 통과",
+  "prob": "낮음 3%±3",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "The Decoder",
+    "url": "https://the-decoder.com/u-s-bill-proposes-permanent-ban-on-artificial-superintelligence-and-creation-of-new-federal-ai-agency/",
+    "title": ""
+   },
+   {
+    "org": "TechRepublic",
+    "url": "https://www.techrepublic.com/article/news-sanders-casar-ai-superintelligence-ban-2026/",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "5장",
+  "text": "프런티어 연구소 2곳 이상이 외부 평가자 상주 같은 감속·검증 약속을 실제로 이행하고, 평가자 보고서가 1건 이상 공개",
+  "prob": "중간 50%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Dario Amodei",
+    "url": "https://darioamodei.com/post/we-must-pace-the-frontier",
+    "title": ""
+   }
+  ],
+  "counter": [
+   {
+    "org": "Tech Policy Press",
+    "url": "https://techpolicy.press/who-should-pace-the-frontier-not-dario-amodei",
+    "title": ""
+   }
+  ]
  },
  {
   "chapter": "6장",
@@ -807,6 +932,25 @@
  },
  {
   "chapter": "6장",
+  "text": "과기정통부 피지컬AI 얼라이언스와 산업부 M.AX 얼라이언스가 단일 거버넌스로 합쳐지지 않고 병존",
+  "prob": "높음 75%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "디지털데일리",
+    "url": "https://www.ddaily.co.kr/page/view/2026070916162373412",
+    "title": ""
+   },
+   {
+    "org": "지디넷코리아",
+    "url": "https://zdnet.co.kr/view?no=20260901084925",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
   "text": "유럽에서 첫 완전 무인 유료 로보택시 서비스(런던·스위스·독일 중 1곳 이상) 시작",
   "prob": "중간 45%±20",
   "basis": "전망",
@@ -815,6 +959,20 @@
     "org": "Bloomberg Law",
     "url": "https://news.bloomberglaw.com/tech-and-telecom-law/uber-and-wayve-win-licenses-for-supervised-robotaxis-in-london",
     "title": "Uber and Wayve Win Licenses for Supervised Robotaxis in London"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "제조AI 2030 후속 법안(산업디지털전환법·스마트제조혁신법 개정) 중 1건 이상 국회 통과",
+  "prob": "중간 45%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "더팩트",
+    "url": "https://news.tf.co.kr/read/economy/2337574.htm",
+    "title": ""
    }
   ],
   "counter": []
@@ -834,6 +992,20 @@
     "org": "Counterpoint",
     "url": "https://counterpointresearch.com/en/insights/robotaxi-services-market-to-hit-168-billion-dollar-valuation-by-2035-as-industry-reaches-inflection-point-led-by-china-us",
     "title": "Robotaxi services market to hit $168 billion by 2035"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "6장",
+  "text": "제조 데이터 제공 기업의 보상·이익공유 기준(가이드라인 포함)을 정부가 공식 발표",
+  "prob": "낮음 25%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "뉴시스",
+    "url": "https://www.newsis.com/view/NISX20250910_0003323951",
+    "title": ""
    }
   ],
   "counter": []
@@ -4954,6 +5126,100 @@
   "counter": []
  },
  {
+  "chapter": "13장",
+  "text": "'모두의 AI'가 2026-12에 정식 출시되고, 3개 서비스 합산 MAU가 2027년 중 1,000만 명을 넘음",
+  "prob": "중간 50%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "디지털데일리",
+    "url": "https://www.ddaily.co.kr/page/view/2026090413335416118",
+    "title": ""
+   },
+   {
+    "org": "MTN",
+    "url": "https://news.mtn.co.kr/news-detail/2026082809293287753",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "13장",
+  "text": "2027년 상반기 첫 이용 실적 평가에서 사업자 간 GPU 배분이 크게 조정되거나 1곳 이상이 축소·교체",
+  "prob": "중간 40%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "뉴시스",
+    "url": "https://mobile.newsis.com/view/NISX20260721_0003716823",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "13장",
+  "text": "공공 AI 에이전트가 2027년 안에 보조금 자격 확인·신청 대행을 전국 서비스로 제공하되, 최종 제출은 이용자 확인을 거치는 방식으로 정해짐",
+  "prob": "중간 55%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "파이낸셜뉴스",
+    "url": "https://www.fnnews.com/news/202611151918122241",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "13장",
+  "text": "2026 인터넷이용실태조사(2027 발표)에서 생성형 AI 경험률이 50%를 넘음",
+  "prob": "높음 78%±12",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "머니투데이(과기정통부)",
+    "url": "https://www.mt.co.kr/tech/2026/03/31/2026033111234563860",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "13장",
+  "text": "정부 AI 공론장이 2027년에 허위조작정보 외 주제 2개 이상(예: 고용, 아동·청소년, 공공 AI 에이전트)으로 넓어짐",
+  "prob": "높음 70%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "디지털데일리",
+    "url": "https://www.ddaily.co.kr/page/view/2026111117040439833",
+    "title": ""
+   },
+   {
+    "org": "디지털데일리",
+    "url": "https://www.ddaily.co.kr/page/view/2026110418250724054",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "13장",
+  "text": "공론장 숙의 결과가 법령·지침 개정안에 명시적으로 반영되고, 정부가 항목별 수용 여부를 공개",
+  "prob": "낮음 30%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "이투데이",
+    "url": "https://www.etoday.co.kr/news/view/2611756",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
   "chapter": "14장",
   "text": "예산 확정 후 미션별 신규 R&D 공모·착수(12개 미션 대부분에서 첫 과제 선정)",
   "prob": "높음 80%±15",
@@ -5049,6 +5315,122 @@
   "prob": "낮음 15%±20",
   "basis": "추정",
   "support": [],
+  "counter": []
+ },
+ {
+  "chapter": "14장",
+  "text": "독파모 3차 평가나 2027년 후속 지원 사업이 서빙 비용·공공 실사용 같은 채택 지표를 공식 배점에 넣음",
+  "prob": "중간 60%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "아이뉴스24",
+    "url": "https://www.inews24.com/view/2000306",
+    "title": ""
+   },
+   {
+    "org": "SBS Biz",
+    "url": "https://biz.sbs.co.kr/amp/article/20000323661",
+    "title": ""
+   }
+  ],
+  "counter": [
+   {
+    "org": "아이뉴스24",
+    "url": "https://inews24.com/view/2013271",
+    "title": ""
+   }
+  ]
+ },
+ {
+  "chapter": "14장",
+  "text": "2027년 말 범정부 AI 공통기반 탑재 모델 가운데 국산 비중이 절반을 넘음(2026-10 기준 11종 중 4종)",
+  "prob": "중간 50%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "아이뉴스24",
+    "url": "https://inews24.com/view/2013271",
+    "title": ""
+   },
+   {
+    "org": "비즈워치",
+    "url": "https://news.bizwatch.co.kr/article/mobile/2026/11/03/0003",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "14장",
+  "text": "독파모 3차 진출 팀 중 2곳 이상이 30B 이하 경량·증류판을 공개하고 공공 서비스(공통기반·모두의 AI)에 공급",
+  "prob": "중간 65%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "SBS Biz",
+    "url": "https://biz.sbs.co.kr/amp/article/20000323661",
+    "title": ""
+   },
+   {
+    "org": "벤처스퀘어",
+    "url": "https://www.venturesquare.net/en/1101181",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "14장",
+  "text": "개인정보보호위원회가 제28조의12에 따른 첫 심의·의결 결과(요청자·위험요인평가 요약)를 2027년 안에 공개",
+  "prob": "높음 75%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "개인정보 보호법 제28조의12",
+    "url": "https://www.law.go.kr/법령/개인정보보호법",
+    "title": ""
+   },
+   {
+    "org": "참여연대",
+    "url": "https://peoplepower21.org/publiclaw/2027817",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "14장",
+  "text": "디지털헬스케어법(정부 대안)이 2027년 말까지 국회 본회의를 통과",
+  "prob": "중간 50%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "메디게이트뉴스",
+    "url": "https://www.medigatenews.com/news/2493978101",
+    "title": ""
+   }
+  ],
+  "counter": [
+   {
+    "org": "데일리메디",
+    "url": "https://dailymedi.com/news/news_view.php?wr_id=942714",
+    "title": ""
+   }
+  ]
+ },
+ {
+  "chapter": "14장",
+  "text": "국가데이터기본법이 2027년 말까지 국회를 통과",
+  "prob": "중간 40%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "디지털데일리",
+    "url": "https://www.ddaily.co.kr/page/view/2026052810271263721",
+    "title": ""
+   }
+  ],
   "counter": []
  },
  {
@@ -5565,6 +5947,144 @@
    {
     "org": "행정기본법 제20조",
     "url": "https://www.law.go.kr/법령/행정기본법",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "15장",
+  "text": "국정원 단일 클라우드 보안검증 체계가 계획대로 2027년 하반기에 시행됨",
+  "prob": "높음 70%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "뉴시스",
+    "url": "https://mobile.newsis.com/view/NISX20260420_0003597363",
+    "title": ""
+   },
+   {
+    "org": "바이라인네트워크",
+    "url": "https://byline.network/2026/09/18-635/",
+    "title": ""
+   }
+  ],
+  "counter": [
+   {
+    "org": "전자신문",
+    "url": "https://m.etnews.com/20260907000384",
+    "title": ""
+   }
+  ]
+ },
+ {
+  "chapter": "15장",
+  "text": "해외 하이퍼스케일러(AWS·Microsoft·Google) 중 1곳 이상이 2027년 안에 새 체계에서 S등급 공공 클라우드 검증을 받음",
+  "prob": "낮음 25%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "바이라인네트워크",
+    "url": "https://byline.network/2026/09/18-635/",
+    "title": ""
+   },
+   {
+    "org": "전자신문",
+    "url": "https://m.etnews.com/20260907000384",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "15장",
+  "text": "국정원·NIA가 가명·연구용 데이터의 등급 분류 기준(해설서·지침)을 2027년 안에 따로 제시",
+  "prob": "중간 45%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "바이라인네트워크",
+    "url": "https://byline.network/2026/09/18-635/",
+    "title": ""
+   },
+   {
+    "org": "바이라인네트워크",
+    "url": "https://byline.network/2026/10/21-622/",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "15장",
+  "text": "AI ODA의 무상(외교부·KOICA)·유상(EDCF)·수출 실증(과기정통부)을 묶은 국가별 단일 창구 또는 공동 사업 지침이 마련",
+  "prob": "낮음 25%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "KDI 경제정보센터",
+    "url": "https://eiec.kdi.re.kr/policy/materialView.do?num=284645",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "15장",
+  "text": "국민AI서비스혁신추진단이 직접 개발한 대국민 AI 서비스를 2027년 안에 1개 이상 정식 출시",
+  "prob": "높음 70%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "디지털데일리",
+    "url": "https://www.ddaily.co.kr/page/view/2026070909461813533",
+    "title": ""
+   },
+   {
+    "org": "아이뉴스24",
+    "url": "https://inews24.com/view/2021029",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "15장",
+  "text": "사우디 국산 NPU 서버 실증이 2027년 2차 실증 또는 HUMAIN 연계 파일럿으로 이어짐",
+  "prob": "중간 50%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "디지털데일리",
+    "url": "https://www.ddaily.co.kr/page/view/2026071520334747204",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "15장",
+  "text": "PoC를 마친 AI 사업의 ISP·ISMP 면제나 PoC→본사업 연계 발주가 2027년 안에 법령·지침에 반영",
+  "prob": "중간 40%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "전자신문",
+    "url": "https://www.etnews.com/20260810000294",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "15장",
+  "text": "2027년 공공 SaaS 계약액이 300억 원을 넘음(2025년 112억, 2026년 최소 150억 전망)",
+  "prob": "중간 40%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "디지털데일리",
+    "url": "https://www.ddaily.co.kr/page/view/2026051608494544776",
     "title": ""
    }
   ],
@@ -6774,6 +7294,53 @@
   "counter": []
  },
  {
+  "chapter": "18장",
+  "text": "한국 AI안전연구소가 국내외 모델 1건 이상을 출시 전에 평가했다고 공개",
+  "prob": "중간 40%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "머니투데이",
+    "url": "https://www.mt.co.kr/tech/2026/08/07/2026080614255237204",
+    "title": ""
+   },
+   {
+    "org": "지디넷코리아",
+    "url": "https://zdnet.co.kr/view/?no=20261119100529",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "18장",
+  "text": "한국 AI안전연구소가 국제 평가 네트워크 또는 양자(영·싱·일) 공동 평가 산출물에 참여 기관으로 이름을 올림",
+  "prob": "높음 70%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "지디넷코리아",
+    "url": "https://zdnet.co.kr/view/?no=20261119100529",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "18장",
+  "text": "한국이 2028 G20 의장국 우선 의제에 AI(기본사회·역량격차·평가 상호 인정 중 1개 이상)를 넣겠다고 2027년 안에 공식 예고",
+  "prob": "중간 55%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "The Korea Times",
+    "url": "https://www.koreatimes.co.kr/foreignaffairs/20251123/korea-vows-to-host-2028-g20-summit-with-profound-sense-of-responsibility",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
   "chapter": "19장",
   "text": "공격 표적이 데이터 탈취에서 '의사결정 조작'으로 이동(에이전트가 쓰는 데이터·로직 오염)",
   "prob": "높음 72%±20",
@@ -7018,6 +7585,39 @@
     "org": "BleepingComputer",
     "url": "https://bleepingcomputer.com/news/security/cyberattack-disrupts-blood-storage-refrigeration-systems-in-france",
     "title": "Cyberattack disrupts blood storage refrigeration systems in France"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "19장",
+  "text": "금융권 생성형 AI 망분리 예외가 샌드박스를 넘어 감독규정으로 정식 제도화",
+  "prob": "중간 60%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "다음뉴스",
+    "url": "https://v.daum.net/v/20260524120002358",
+    "title": ""
+   },
+   {
+    "org": "아이뉴스24",
+    "url": "https://inews24.com/view/2015035",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "19장",
+  "text": "중소형 금융사 대상 AI 기반 공동 보안관제(또는 외부 노출 자산 상시 점검 의무)가 시행",
+  "prob": "중간 50%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "아이뉴스24",
+    "url": "https://inews24.com/view/2015035",
+    "title": ""
    }
   ],
   "counter": []
@@ -7376,6 +7976,77 @@
     "title": ""
    }
   ]
+ },
+ {
+  "chapter": "20장",
+  "text": "2027-01-22 이후 전면 과태료 부과로 바로 가지 않고, 계도기간 연장 또는 의무별 단계 적용(예: 생성물 표시 먼저)으로 정해짐",
+  "prob": "높음 72%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "전자신문",
+    "url": "https://www.etnews.com/20250917000217",
+    "title": ""
+   },
+   {
+    "org": "ZDNet Korea",
+    "url": "https://zdnet.co.kr/view?no=20261116144303",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "20장",
+  "text": "'고영향 해당'으로 확인된 첫 사례가 2027년 안에 공개됨",
+  "prob": "중간 45%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "메디파나뉴스",
+    "url": "https://www.medipana.com/news/articleView.html?idxno=418809",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "20장",
+  "text": "연구반 논의를 반영한 시행령·고시 개정안(고영향 판단 기준의 '사람 개입' 요건 구체화 포함)이 2027년 중 입법예고됨",
+  "prob": "중간 60%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "ZDNet Korea",
+    "url": "https://zdnet.co.kr/view?no=20261116144303",
+    "title": ""
+   },
+   {
+    "org": "디지털데일리",
+    "url": "https://www.ddaily.co.kr/page/view/2026080510583143366",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "20장",
+  "text": "정부가 'AI 범죄 종합 대응계획'을 공표하고, 해외발 정보조작(FIMI) 대응을 독립 과제로 넣음",
+  "prob": "중간 55%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "SBS Biz",
+    "url": "https://biz.sbs.co.kr/amp/article/20000319122",
+    "title": ""
+   },
+   {
+    "org": "EEAS",
+    "url": "https://www.eeas.europa.eu/eeas/4th-eeas-annual-report-foreign-information-manipulation-and-interference-threats_en",
+    "title": ""
+   }
+  ],
+  "counter": []
  },
  {
   "chapter": "21장",
