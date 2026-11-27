@@ -36,6 +36,13 @@
  },
  {
   "theme": "① 거버넌스·통제",
+  "text": "에이전트 신원 관리의 표준 관행이 업계 합의에 이르지 못하고 벤더별 방식이 병존(Gartner: 에이전트 신원은 기술 촉발, 주류화 2–5년)",
+  "chapter": "2장",
+  "prob": "높음 · 75% (±15)",
+  "evidence": "Gartner G00854164·G00846820(원문)"
+ },
+ {
+  "theme": "① 거버넌스·통제",
   "text": "경영: CAIO 역할이 '도입 전도사'에서 '에이전트 권한·감사·비용 책임자'로 바뀜. AgentOps·에이전트 SRE 직군 신설",
   "chapter": "8장",
   "prob": "높음 · 72% (±20)",
@@ -57,17 +64,17 @@
  },
  {
   "theme": "① 거버넌스·통제",
-  "text": "KYA(에이전트 신원)가 카드 네트워크와 기업 IAM에서 사실상 의무화",
-  "chapter": "3장",
-  "prob": "중간 · 69% (±20)",
-  "evidence": "[IITP 정보통신기획평가원 (보도: ZDNe…](https://zdnet.co.kr/view?no=20261111120847), [Gartner](https://www.gartner.com/en/newsroom/press-releases/2026-10-20-gartner-identifies-the-top-strategic-technology-trends-for-2027)"
- },
- {
-  "theme": "① 거버넌스·통제",
   "text": "보험 공백: 기업·소비자 / AI 배제 조항, 에이전트 책임보험",
   "chapter": "9장",
   "prob": "중간 · 62% (±15)",
   "evidence": "[Gallagher (Arthur J. Gal…](https://www.ajg.com/site-content/articles/2026/april/ai-liability-not-so-silent/), [Gartner](https://www.gartner.com/en/newsroom/press-releases/2026-09-15-gartner-unveils-top-strategic-predictions-for-2027-and-beyond)"
+ },
+ {
+  "theme": "① 거버넌스·통제",
+  "text": "KYA(에이전트 신원)가 카드 네트워크·대형 플랫폼에서 사실상 의무화(기업 IAM 전반은 2–5년, Gartner)",
+  "chapter": "3장",
+  "prob": "중간 · 60% (±20)",
+  "evidence": "[IITP 정보통신기획평가원 (보도: ZDNe…](https://zdnet.co.kr/view?no=20261111120847), [Gartner](https://www.gartner.com/en/newsroom/press-releases/2026-10-20-gartner-identifies-the-top-strategic-technology-trends-for-2027)"
  },
  {
   "theme": "① 거버넌스·통제",
@@ -404,6 +411,13 @@
   "chapter": "3장",
   "prob": "높음 · 82% (±12)",
   "evidence": "[Google Threat Intelligen…](https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold), [Anthropic](https://assets.anthropic.com/m/ec212e6566a0d47/original/Disrupting-the-first-reported-AI-orchestrated-cyber-espionage-campaign.pdf)"
+ },
+ {
+  "theme": "⑤ 보안·안전·오용(에이전트가 공격 표면이자 공격자)",
+  "text": "공개된 에이전트 관련 주요 보안 사고의 과반이 단일 에이전트의 권한 남용·자격증명 오용·프롬프트 주입에서 발생(Gartner: 단일 에이전트 남용 비용이 멀티에이전트의 4배 이상)",
+  "chapter": "2장",
+  "prob": "높음 · 78% (±12)",
+  "evidence": "Gartner G00846820(원문)"
  },
  {
   "theme": "⑤ 보안·안전·오용(에이전트가 공격 표면이자 공격자)",

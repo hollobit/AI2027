@@ -3,7 +3,7 @@
 
 기준일 2026-11-27 · 정리: hollobit · 작성 보조: Claude
 
-> 이 보고서는 2025년 12월 「Tech Trends 2026: 증명의 해」의 후속편입니다. 2026년 예측을 다시 채점하고, 2026년 8–11월에 공개된 2027 전망 자료를 원문으로 수집해(`PDF/` 폴더 약 280건, 웹 자료 포함 부록 661건) 6부 23개 장으로 분석했습니다. 모든 2027 전망에는 주관적 확률과 불확도(±%p)를, 그중 262건에는 근거 자료 링크를 붙였습니다(표기 기준·근거 목록은 부록). 자료별 상세 요약은 [부록](#부록-2027-ai-전망-자료별-상세-분석)에, 수치 대시보드는 [AI 2027 전망 대시보드](https://claude.ai/artifact/SeyeszN61LTYiLbt4tbJwP)에 있습니다.
+> 이 보고서는 2025년 12월 「Tech Trends 2026: 증명의 해」의 후속편입니다. 2026년 예측을 다시 채점하고, 2026년 8–11월에 공개된 2027 전망 자료를 원문으로 수집해(`PDF/` 폴더 약 280건, 웹 자료 포함 부록 661건) 6부 23개 장으로 분석했습니다. Gartner·IDC 유료 원문 14건은 사용자 제공본으로 수치를 대조했습니다(2.3절). 모든 2027 전망에는 주관적 확률과 불확도(±%p)를, 그중 262건에는 근거 자료 링크를 붙였습니다(표기 기준·근거 목록은 부록). 자료별 상세 요약은 [부록](#부록-2027-ai-전망-자료별-상세-분석)에, 수치 대시보드는 [AI 2027 전망 대시보드](https://claude.ai/artifact/SeyeszN61LTYiLbt4tbJwP)에 있습니다.
 
 ---
 
@@ -33,7 +33,7 @@
 **분야별 분석**
 
 *제2부 역량(3–7장)*
-- **오픈웨이트와 로컬 LLM(3.11절)**: 로컬 LLM이 기업·공공의 기본 선택지로 올라섭니다. Ollama 월간 개발자 890만 명, 기업 AI 토큰 중 오픈웨이트 34%(1년 전 23%), 프로덕션 사용자의 42%가 온프레미스입니다. 2027년에는 '로컬 오픈웨이트 + 클라우드 프런티어' 하이브리드가 표준(85%)이 되지만, 병목은 메모리 가격이고 오픈웨이트는 프런티어보다 약 6개월 뒤처집니다.
+- **오픈웨이트와 로컬 LLM(3.11절)**: 로컬 LLM이 기업·공공의 기본 선택지로 올라섭니다. Ollama 월간 개발자 890만 명, 기업 AI 토큰 중 오픈웨이트 34%(1년 전 23%), 프로덕션 사용자의 42%가 온프레미스입니다. 2027년에는 '로컬 오픈웨이트 + 클라우드 프런티어' 하이브리드가 신규 구축의 표준 설계(85%)가 되지만(실제 운영 기업은 아직 소수, Gartner), 병목은 메모리 가격이고 오픈웨이트는 프런티어보다 약 6개월 뒤처집니다.
 - **모델·에이전트 경쟁(3장)**: 미국 랩은 연 5–7회 프런티어 모델을 낼 전망이고, 2027년 말 ECI 기준값은 약 190입니다. 에이전트 경쟁은 하네스·통제·보안에서 갈립니다. 코딩은 랩 하네스의 과점이, 개인 에이전트는 Muse 같은 빅테크형과 OpenClaw·Hermes 같은 오픈형의 병존이 예상됩니다.
 - **AI 과학자(7.7절)**: 2027년 AI 과학자는 가설·분석을 맡는 연구 동료(L2)로는 주류화(85%)되지만, 문제 선택부터 독립 검증까지 혼자 끝내는 발견(L4)은 15%입니다. 학계는 AI 생성 논문을 조이고 있습니다(NeurIPS 2026 포지션 트랙 18.4% 리젝트).
 - **AI 법칙·수학·과학·문샷(4·7·14장)**: 종합역량은 연 약 17점 직선으로 늘지만 사이버·업무 자동화·추론 연산은 가속합니다. AI R&D 가속이 다른 연구소로 번지는지가 2027년의 메타 변수입니다. 수학에서는 Erdős 문제와 이름 있는 추측이 계속 풀리지만 밀레니엄 문제는 범위 밖입니다. AI 연구 동료의 병목은 '검증'과 '실험실'입니다. K-문샷은 거버넌스를 갖춘 초기 단계이고, 미국 Genesis는 1년 만에 297개 과제로 순항 중입니다.
@@ -62,7 +62,7 @@
 *제6부 핵심 테마와 종합(22–23장)*
 - **핵심 인물 리스크(23.9절)**: 2026년 엔비디아 사태(불륜 인정 → 사임 → 복귀, 간첩·우회 공급은 의혹)로 엔비디아 시총이 8,550억~1조 달러 이상 줄고 KOSPI가 하루 3.59% 하락했습니다. 역대 기록상 영향력 큰 IT·AI 인물 사건은 연 1.5건꼴이고, 엔비디아급 사건이 2027년에 다시 일어날 확률은 약 30%입니다.
 - **전문 AI의 성장(22.6절)**: AI 엔지니어(코딩 지출 2배 이상, 80%)·AI 상담원·AI 의료 기록이 가장 빨리 자라고, AI 교사·튜터는 가장 느립니다. 직무 전체 대체보다 초급 업무가 먼저 넘어가 신입 채용이 줄어드는 형태입니다.
-- **AI 에이전트(22장)**: 2027년의 핵심 테마입니다. 보고서의 에이전트 관련 전망 66건을 거버넌스·통제, 프로덕션 확산·에이전틱 경제, 일자리 재편, 코딩 에이전트, 보안·안전으로 모았고 그중 31건이 높음입니다. 전망 자료가 가장 강하게 합의하는 것은 역량이 아니라 **통제**입니다. Moltbook(등록 에이전트 150만 대 실제 소유자 1.7만) 같은 에이전트 사회 실험은 신원 검증 없이 곧바로 보안·조작 문제가 됐고, 2027년에는 에이전트 행동 탈취·공급망 공격·비용 폭주가 일상 사고가 됩니다.
+- **AI 에이전트(22장)**: 2027년의 핵심 테마입니다. 보고서의 에이전트 관련 전망 68건을 거버넌스·통제, 프로덕션 확산·에이전틱 경제, 일자리 재편, 코딩 에이전트, 보안·안전으로 모았고 그중 31건이 높음입니다. 전망 자료가 가장 강하게 합의하는 것은 역량이 아니라 **통제**입니다. Moltbook(등록 에이전트 150만 대 실제 소유자 1.7만) 같은 에이전트 사회 실험은 신원 검증 없이 곧바로 보안·조작 문제가 됐고, 2027년에는 에이전트 행동 탈취·공급망 공격·비용 폭주가 일상 사고가 됩니다.
 
 **한국 SWOT과 대응(23.6–23.8절).** 한국은 메모리·전력기기·대규모 공공 투자·제도(강점)를 갖췄지만 인재·집행·에이전트 역량(약점)이 따라오지 못합니다. 외부에서는 AI 지출 확대와 소버린 수요(기회)와 함께 미국 기술 통제 전이와 미·중 양쪽의 모델 접근 제한(위협)이 커집니다. 2027년 상반기에 한미 '신뢰 파트너' 확보와 공공 국내 모델 기본 원칙을 먼저 정하고, 그 위에서 풀스택 소버린 패키지 수출과 인재 순유입 전환을 확대하는 순서를 권합니다.
 
@@ -114,8 +114,8 @@
 | **ROI 증명 압박** | McKinsey: EBIT 기여 37%로 정체 · SAS: 생산성 역설 · 한국은행: AI 활용률 66.5%, 시간 절감 9.2%이지만 산출과의 상관 0.08 |
 | **인프라 증설과 물리적 한계** (11장) | Gartner: AI 최적화 서버 지출 5,276억 → 9,572억 달러 · IEA: 데이터센터 전력 2030년 950–1,000TWh, HBM 부족이 최소 2027년 말까지 지속 · JPM: 2029년까지 129GW를 갖추려면 연 3조 달러의 최종 수요가 필요 |
 | **소버린 테크** (14·15장) | Gartner: 미국 외 기업 75% 이상이 2030년까지 주권 전략 도입 · Omdia: 100개국 이상 추진 · IITP: '풀스택 소버린' |
-| **물리 AI** (6장) | IITP: 시연에서 임무 완수 단계로 · Omdia: 2030년 휴머노이드 70만 대 이상 · Gartner: 현장 노동자 보조 |
-| **노동 재편** (8·13장) | BCG: 2030년까지 인력 10–15% 감소(중간관리층) · IDC: 초·중급 직무 30%가 에이전트 감독 역할로 전환 · SPRi: 국내 SW 인력은 2029년까지 9.7% 증가 |
+| **물리 AI** (6장) | IITP: 시연에서 임무 완수 단계로 · Omdia: 2030년 휴머노이드 70만 대 이상 · Gartner 하이프 사이클: 피지컬 AI는 기술 촉발·주류 5–10년, 휴머노이드는 10년 이상, 2030년 주요 산업 30%에 실배치(현재 5%) |
+| **노동 재편** (8·13장) | BCG: 2030년까지 인력 10–15% 감소(중간관리층) · IDC: 2029년까지 G2000이 초·중급 실행 직무의 30%를 에이전트 감독·조율 역할로 전환(감축이 아닌 전환) · SPRi: 국내 SW 인력은 2029년까지 9.7% 증가 |
 | **토큰 단가 하락과 총지출 증가(제번스)** (4·9장) | 같은 성능 단가는 연 수십 배 하락, 물량은 연 3–6배 증가 · Gartner: 2027 AI 지출 4.05조 달러 · IDC: 가격 변동 없이 에이전트 비용 상승 |
 | **메모리 제약** (10·11장) | IEA·IDC: HBM·DRAM 부족이 최소 2027년 말까지 지속 · 폰·PC 출하 2026년 급감, 2027년 소폭 회복 |
 | **회복력 규제의 집행** (21장) | EU CRA(2027-12-11), DORA, 한국 정보보호수준 평가(04-01) · 클라우드·CDN 집중 위험 |
@@ -131,6 +131,74 @@
 ---
 
 # 제2부 역량: 모델·에이전트·AGI·과학
+
+### 2.3 애널리스트 원문 대조: Gartner·IDC (2026 하이프 사이클·2027 트렌드)
+
+> 자료: Gartner Top Strategic Technology Trends for 2027(G00855974, 2026-10-16)과 세부편 4건(코딩 에이전트 하네스 G00855971, 에이전트 신원 G00855975, 컨텍스트 플랫폼 G00855977, 월드 모델 G00855979), Top AI Trends in I&O for 2027(G00846101), Hype Cycle 2026 6종(AI 거버넌스 G00854164, 시큐어 AI G00846820, AI 기반 사이버보안 G00854093, 하이브리드 AI 인프라 G00850896, 피지컬 AI G00853852, 피지컬 AI 산업 응용 G00856358), IDC FutureScape: Human-Agent Workforce Strategy 2027(2026-10), IDC Survey Spotlight(2026-11). 유료 원문이라 수치와 판단만 옮기고 원문은 공개하지 않습니다.
+
+**한 줄 요약**: 두 기관 모두 2027년을 '에이전트 통제의 해'로 봅니다. 하이프 사이클에서 에이전트 보안·거버넌스·신원 기술은 대부분 **기술 촉발이나 기대의 정점**에 있고 주류화는 2–5년 뒤입니다. 2027년은 원칙과 시장이 형성되는 해이지, 표준 관행이 완성되는 해가 아닙니다.
+
+**Gartner 2027 10대 전략 기술 트렌드**
+
+| 축 | 트렌드 | 핵심 수치(Gartner) | 관련 장 |
+|---|---|---|---|
+| 텍스트를 넘는 AI | 대형 정량 모델(LQM) | 2030년 예측·모델링 작업의 25%에서 LLM 대체 | 6·7 |
+| | 음성 추론 모델 | 2030년 기업 음성 상호작용의 70% 이상 자율 처리(2026년 10% 미만) | 3·9 |
+| | 월드 모델 | 2030년 로봇 애플리케이션의 40%가 사용(2025년 1% 미만), 학습 비용 3년 안에 10분의 1 | 6 |
+| 자율 에이전트 통제 | AI 컨텍스트 플랫폼 | 갖춘 조직은 2027년 에이전트 정확도 최대 80% 향상, 비용 최대 60% 절감 | 22 |
+| | AI 코딩 에이전트 하네스 | 2026년 말 자율 코딩 에이전트가 공개 커밋의 20%. 리뷰가 새 병목(DevSecOps 85%) | 3·8 |
+| | AI 에이전트 신원 | 2028년 침해의 25%가 에이전트 남용에서 비롯. 기계 신원이 사람의 109배. '유령 에이전트' 위기로 2027년 자율 AI 배포의 80% 롤백 경고 | 19·22 |
+| | 자율 노출 교정 | 평균 미패치 노출 50일 → 2030년 조직 3분의 1이 고위험 취약점을 48시간 안에 처리 | 19·21 |
+| 지속 가능한 민첩성 | 소버린테크 | 2030년 미국 외 기업 75% 이상이 주권 전략. '데이터 레지던시만으로는 부족' | 14·17 |
+| | 일회성 앱 | 2030년 선도 조직이 신규 앱의 80%를 일회성·교체 가능 앱으로 설계 | 8·22 |
+| | 웨트웨어 서비스 | 생체 조직 기반 컴퓨팅의 서비스화(초기) | 11 |
+
+**하이프 사이클로 본 2027년 성숙도**
+
+| 영역 | 기대의 정점(과열) | 기술 촉발(초기) | 환멸·회복 | 주류화 시점 |
+|---|---|---|---|---|
+| AI 거버넌스(32개) | 에이전틱 AI 거버넌스(도입 1% 미만), 소버린 AI(20–50%) | 에이전트 신원, 허위정보 보안(딥페이크 탐지), AI 배상책임보험 | AI TRiSM(환멸) | 고원은 데이터 접근 거버넌스 하나 |
+| 시큐어 AI(24개) | MCP 보안, AI 런타임 방어, 에이전틱 AI 보안 | AI 보안 테스트(레드팀), AI 사용 통제, 에이전트 봇 관리 | — | 2년 미만은 위협 모델링 자동화뿐, 레드팀은 5–10년 |
+| AI 기반 사이버보안(22개) | AI SOC 에이전트(보급 1–5%) | 자율 노출 교정(1% 미만) | — | 대부분 5–10년 |
+| 하이브리드 AI 인프라(28개) | AI 네트워크 패브릭, 소버린 AI, 강화 프라이빗 클라우드, SMR | 엣지 생성형 AI(1–5%) | 직접칩 액체 냉각(회복, 20–50%) | 고원은 GPU 가속기 하나 |
+| 피지컬 AI(28개) | 다기능 로봇, 시뮬레이션 트윈, AI 웨어러블 | 피지컬 AI, 월드 모델, 휴머노이드(10년 이상) | AMR·자율주행(회복) | 6.7절 |
+
+**주요 예측 수치**
+
+| 주제 | 수치 | 출처 |
+|---|---|---|
+| 토큰 비용 | 기업 72%가 이미 토큰 예산 초과, 사람 검토 비용을 빼면 2028년까지 에이전트 비용 최대 60% 과소 집계. 행동당 비용 95% 하락에도 연간 토큰 비용은 487배 늘어 2030년 1,065억 달러 | IDC |
+| 토큰 물량 | 에이전틱 워크플로는 과제당 토큰 5–30배, 개발자 1인당 월 2,000달러 초과 사례 | Gartner I&O |
+| 에이전트 규모 | 활성 에이전트 2025년 3,100만 개 → 2030년 25억 개 | IDC |
+| 조직 | 에이전트에 업무를 배정하지 않은 조직 1년 안에 43% → 3%. 2028년 G2000 50%가 이름·역할을 가진 에이전트 배치 | IDC |
+| 규제 대응 | 2027년 기업 60%가 에이전틱 워크로드 변경 추적, 60%가 에이전트 동의 프레임워크 도입. IT 운영팀 41%는 에이전트 거버넌스 미정의 | IDC |
+| 코드 신뢰 | 개발자 60%가 코드의 4분의 1 이상을 AI로 생성하지만, 80% 이상을 수정 없이 받는 비율은 2.6%(2025년 8%) | IDC |
+| 인프라 운영 | 과반이 2년 안에 에이전트가 AI 인프라 운영의 상당 부분을 맡을 것으로 예상(n=1,014). 2030년 조직 50%가 사람 개입을 최소화한 IT 운영 에이전트 사용 | IDC 설문·Gartner |
+| 하이브리드 | AI 워크로드를 클라우드·온프레미스에 나눠 운영하는 대기업 2026년 10% 미만 → 2030년 80% 이상. 일상 질의를 SLM으로 라우팅하면 추론비 최대 85% 절감 | Gartner |
+| 보안 투자 | 보안 리더 72%가 AI 도구가 가치보다 비싸다고 응답(n=251). 2029년 중대 사고 5건 중 1건은 보안 예산을 AI 사업으로 돌린 결과 | Gartner |
+| 에이전트 피해 | 2027년까지 단일 작업 에이전트 남용 비용이 멀티에이전트 관련 비용의 4배 이상. 배포 전 공격형 테스트를 하지 않으면 2028년 사고 2배 | Gartner |
+| 섀도 AI | 직원의 67%가 회사 기기에서 개인 계정으로 AI 접속 | Gartner |
+| 거버넌스 효과 | 2029년 거버넌스를 갖춘 기업이 AI 도입에서 25% 앞섬, 에이전트 관련 소송으로 합의 비용 15% 증가 | Gartner |
+
+**보고서 수치 대조 결과**
+- **원문 확인**: IDC '초·중급 직무 30% 감독 전환'(2029년, 감축이 아닌 전환), Gartner '토큰 비용 50% 이상 초과'(IT 운영 에이전트·무제한 종량제·구독 대비로 범위를 좁혀 수정), '미국 외 기업 75% 주권 전략', 에이전트 보안·MCP 공급망·보험 공백(19–22장).
+- **수정**: 일회성 앱(2029년·1년 미만 → 2030년·선도 조직 80%, 22.6절), KYA 의무화(69% → 60%, 카드망·대형 플랫폼으로 범위 축소), 월드 모델 합성데이터 표준(78% → 70%, 선도 개발사 한정), 하이브리드 표준(설계 표준과 실제 운영 구분), 자율 SOC(일반화 → 시범 확산).
+- **이번 원문에 없음(보도자료 출처 유지)**: 에이전트 운영 배치 17%·37%, 프로젝트 40% 이상 취소, 일상 결정 15% 자율화, 소형 모델 3배, 대형 SOC 70% 시범, 공공서비스를 막는 에이전트 100억 개(이상 Gartner Top Strategic Predictions·보도자료), IDC 'AI 우선 60%'(Worldwide FutureScape 보도자료).
+
+| 2027 전망(애널리스트 원문 기반) | 가능성 · 확률(±불확도) |
+|---|---|
+| 기업 설문에서 '토큰·AI 예산 초과' 응답이 과반 유지 | 높음 · 80% (±15) |
+| 공개된 에이전트 관련 주요 보안 사고의 과반이 단일 에이전트의 권한 남용·자격증명 오용·프롬프트 주입에서 발생 | 높음 · 78% (±12) |
+| 주요 클라우드·보안 벤더 3곳 이상이 AI 레드팀(적대 프롬프트 자동 테스트)을 기본 기능으로 통합 | 높음 · 80% (±10) |
+| 에이전트 신원 관리의 표준 관행(공통 프로파일·감사 로그 형식)이 업계 합의에 이르지 못하고 벤더별 방식이 병존 | 높음 · 75% (±15) |
+| IT 운영 중대 이슈를 에이전트가 완전 자율 처리하도록 허용한 조직은 10% 미만 | 높음 · 80% (±15) |
+| AI SOC 에이전트가 기대의 정점을 지나 환멸 구간에 진입(Gartner 2027년판 기준) | 중간 · 60% (±20) |
+| 대형 보안·GRC 벤더의 AI 거버넌스 스타트업 인수 3건 이상 | 중간 · 60% (±20) |
+| G20 중 2곳 이상에서 소버린 AI 사업의 예산 삭감·지연·축소 공식 발표 | 중간 · 60% (±20) |
+| 국내 대기업·공공 에이전트 구축 RFP에 온톨로지·지식그래프(컨텍스트 계층) 요건이 흔히 포함 | 중간 · 55% (±20) |
+| 국내 공공·금융 생성형 AI 지침이 '전면 차단'에서 '허용 목록·사용 통제' 방식으로 개정 | 중간 · 55% (±20) |
+| 국내 공공·금융 클라우드·모델 조달에 '킬스위치 금지·이탈 보장' 조항이 표준 계약 요건으로 등장 | 중간 · 50% (±20) |
+| 인공지능기본법 하위 지침이나 업권 가이드라인에 에이전트 행동 로그·변경 추적 요건 명시 | 중간 · 50% (±20) |
 
 ## 3. 모델 성능·출시 로드맵·에이전트 경쟁
 
@@ -247,7 +315,7 @@ SOTA 대시보드도 이 세 축을 추적 항목에 넣는 것이 좋겠습니�
 | 개인 에이전트는 빅테크 소비자형(Muse·ChatGPT agent·Gemini)과 오픈소스 자가호스팅형(OpenClaw·Hermes)으로 갈라지고, 2027년 안에 단일 승자는 없음 | 높음 · 85% (±10) · 근거 [Meta](https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/), [OpenClaw Foundation](https://openclaw.ai/foundation) |
 | 하네스 벤치마크와 모델 중립 하네스의 중요성 확대 | 높음 · 84% (±15) · 근거 [Forrester](https://www.forrester.com/blogs/predictions-2027-disruption-unleashed/), [Harness-Bench](https://www.harness-bench.ai/leaderboard.html) |
 | 좌석 구독에서 사용량·결과 기반 과금으로 이동. 단가는 하락하지만 기업 총비용은 증가 | 높음 · 80% (±15) · 근거 [Gartner](https://www.gartner.com/en/newsroom/press-releases/2026-10-26-gartner-identifies-the-top-ai-trends-in-infrastructure-and-it-operations-for-2027), [IDC](https://www.idc.com/resource-center/press-releases/idc-futurescape-2027-predicts-60-of-enterprises-will-run-a-majority-of-their-business-processes-ai-first-by-2029-up-from-13-in-2026/) |
-| KYA(에이전트 신원)가 카드 네트워크와 기업 IAM에서 사실상 의무화 | 중간 · 69% (±20) · 근거 [IITP 정보통신기획평가원 (보도: ZDNe…](https://zdnet.co.kr/view?no=20261111120847), [Gartner](https://www.gartner.com/en/newsroom/press-releases/2026-10-20-gartner-identifies-the-top-strategic-technology-trends-for-2027) |
+| KYA(에이전트 신원)가 카드 네트워크·대형 플랫폼에서 사실상 의무화(기업 IAM 전반은 2–5년, Gartner) | 중간 · 60% (±20) · 근거 [IITP 정보통신기획평가원 (보도: ZDNe…](https://zdnet.co.kr/view?no=20261111120847), [Gartner](https://www.gartner.com/en/newsroom/press-releases/2026-10-20-gartner-identifies-the-top-strategic-technology-trends-for-2027) |
 | OpenClaw가 OCE 1.0으로 '에이전트용 쿠버네티스' 같은 사실상 표준 런타임이 됨 | 중간 · 40% (±20) · 근거 [OpenClaw Foundation](https://openclaw.ai/foundation), [Red Hat](https://www.redhat.com/en/blog/red-hat-joins-openclaw-foundation-founding-member-advance-open-future-production-ai-agents) |
 | 도구 연결은 MCP로 정착. 결제 프로토콜(AP2·ACP·Visa·Mastercard)은 병존하다 호환 프로파일 등장 | 중간 · 60% (±15) · 근거 [Google Cloud](https://cloud.google.com/blog/products/ai-machine-learning/announcing-agents-to-payments-ap2-protocol), [Digital Commerce 360](https://www.digitalcommerce360.com/2026/04/02/visa-mastercard-in-agentic-commerce/) |
 | 중국 오픈웨이트 모델과 오픈 하네스 조합이 가성비로 압박(Harness-Bench 모델 상위 10개 중 7개) | 중간 · 65% (±15) · 근거 [Harness-Bench](https://www.harness-bench.ai/leaderboard.html), [Forrester](https://www.forrester.com/blogs/predictions-2027-disruption-unleashed/) · 반론 [campustechnology.com](https://campustechnology.com/articles/2026/11/09/report-enterprise-ai-spending-outpaces-adoption-growth.aspx) |
@@ -325,7 +393,7 @@ SOTA 대시보드도 이 세 축을 추적 항목에 넣는 것이 좋겠습니�
 
 | 전망 | 가능성 · 확률(±불확도) |
 |---|---|
-| 기업·공공에서 '로컬·온프레미스 오픈웨이트 + 클라우드 프런티어'를 섞는 하이브리드 라우팅이 표준 구조가 됨 | 높음 · 85% (±10) · 근거 [IDC](https://www.idc.com/resource-center/press-releases/idc-futurescape-2027-predicts), [Forrester](https://www.forrester.com/blogs/predictions-2027-disruption-unleashed/) |
+| 기업·공공에서 '로컬·온프레미스 오픈웨이트 + 클라우드 프런티어'를 섞는 하이브리드 라우팅이 신규 구축의 표준 설계가 됨(실제 하이브리드 운영 기업은 Gartner 기준 2026년 10% 미만 → 2030년 80% 이상) | 높음 · 85% (±10) · 근거 [IDC](https://www.idc.com/resource-center/press-releases/idc-futurescape-2027-predicts), [Forrester](https://www.forrester.com/blogs/predictions-2027-disruption-unleashed/) |
 | 소형·태스크 특화 모델 사용량이 범용 LLM을 크게 앞섬(Gartner: 3배) | 높음 · 75% (±15) · 근거 [Gartner](https://www.gartner.com/en/newsroom/press-releases/2025-04-09-gartner-predicts-by-2027-organizations-will-use-small-task-specific-ai-models-three-times-more-than-general-purpose-large-language-models) |
 | 오픈웨이트 다운로드·파생의 중국 우위가 유지되고, 미국은 Meta·OpenAI·정부 지원으로 추격 | 높음 · 80% (±10) |
 | 2025년 말 프런티어급 성능이 개인용 장비(고사양 PC·Mac·AI 워크스테이션)에서 실용 속도로 실행 | 높음 · 75% (±15) |
@@ -334,6 +402,8 @@ SOTA 대시보드도 이 세 축을 추적 항목에 넣는 것이 좋겠습니�
 | 오픈웨이트–프런티어 격차가 3개월 이하로 좁혀짐 | 낮음 · 15% (±10) |
 | 중국 랩의 개발 지연(증류 차단·컴퓨트 통제)으로 오픈웨이트–프런티어 격차가 9개월 이상으로 벌어짐 | 중간 · 35% (±20) · 근거 [Reuters](https://finance.yahoo.com/news/exclusive-us-chip-curbs-distillation-071923947.html) |
 | 미국 또는 동맹국이 최상위 오픈웨이트 공개를 제한하는 규제 도입 | 낮음 · 15% (±10) |
+
+- **Gartner 하이브리드 AI 인프라 하이프 사이클(2026-05)**: 엣지 생성형 AI는 기술 촉발 단계(보급률 1–5%, 주류화 2–5년)입니다. 걸림돌은 연산보다 비용, 가치 입증 실패, 빠른 기술 교체입니다. Gartner I&O 트렌드는 2029년 대기업 80%가 퍼블릭 클라우드·네오클라우드·온프레미스·엣지 중 3개 이상 환경에서 AI를 운영하고, 일상 질의를 SLM으로 라우팅하면 추론비를 최대 85% 줄일 수 있다고 봅니다(2.3절).
 
 **위험과 한계**
 - **라이선스**: 바이두 ERNIE 5.5 Base는 한국을 사용 지역에서 뺐고, 중국은 AI 기술 수출 등록을 시작했습니다(17.2절). 오픈웨이트도 라이선스 실사가 필요합니다.
@@ -597,7 +667,7 @@ AGI·ASI라는 말은 정의가 제각각이라 "왔다/안 왔다" 논쟁이 �
 | **시계열·정형** | 조용한 상용화 | Chronos-2, TimesFM, Moirai, TabPFN, EXAONE Tabular | 클라우드 예측 서비스의 기본 엔진 _(높음, 70%±20)_ |
 | **화학·소재** | 산업 표준 도구화 | UMA·EquiformerV3, MatterGen/MatterSim, GNoME | 범용 원자간 포텐셜이 CAE에 내장 _(높음, 75%±15)_ · 근거 [Google DeepMind](https://deepmind.google/blog/alphaevolve-impact/), AI 발견 소재의 첫 상용 채택 _(중간, 40%±20)_ |
 | **로봇·체화(VLA)** | API·라이선스 상품화 | π0.7·Pi API, Gemini Robotics 2, GR00T N1.7, Cosmos 3 | 로봇 FM의 API 판매가 주류 _(중간, 69%±20)_ · 근거 [Physical Intelligence](https://www.pi.website/blog), [Google DeepMind](https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/), 휴머노이드 연 10만 대 근접 _(중간, 55%±15)_ · 근거 [Omdia](https://www.financialcontent.com/article/bizwire-2026-9-30-omdia-identifies-four-forces-set-to-reshape-technology-in-2027) |
-| **월드모델·자율주행** | 데이터 생성 파이프라인 | Cosmos 3, Genie 3, V-JEPA 2, Waymo, Tesla FSD v14 | 월드모델이 합성 데이터의 표준 _(높음, 78%±15)_ · 근거 [NVIDIA](https://research.nvidia.com/labs/cosmos-lab/cosmos3/technical-report.pdf), [NVIDIA](https://nvidianews.nvidia.com/news/nvidia-releases-new-physical-ai-models-as-global-partners-unveil-next-generation-robots), Waymo 주 100만 회 운행 _(높음, 72%±15)_ |
+| **월드모델·자율주행** | 데이터 생성 파이프라인 | Cosmos 3, Genie 3, V-JEPA 2, Waymo, Tesla FSD v14 | 월드모델이 선도 로봇·자율주행 개발사 합성 데이터 파이프라인의 표준(Gartner: 월드 모델 보급률 1% 미만, 주류화 5–10년) _(높음, 70%±15)_ · 근거 [NVIDIA](https://research.nvidia.com/labs/cosmos-lab/cosmos3/technical-report.pdf), [NVIDIA](https://nvidianews.nvidia.com/news/nvidia-releases-new-physical-ai-models-as-global-partners-unveil-next-generation-robots), Waymo 주 100만 회 운행 _(높음, 72%±15)_ |
 | **바이오·단백질** | 임상 문턱 | IsoDDE, Boltz-2, Chai-2, ESMFold2, Evo 2, AlphaGenome | AI 설계 약물의 첫 FDA 승인 _(중간, 65%±15)_ |
 | **의료·임상** | 허가는 많지만 근거는 약함 | ChatGPT for Clinicians, MedGemma 1.5(4B), AMIE, MAI-DxO, 병리 FM | FDA AI 기기 2,000건 돌파 _(높음, 72%±10)_ · 근거 [FDA](https://www.fda.gov/medical-devices/digital-health-center-excellence/artificial-intelligence-enabled-medical-devices), 무작위 임상 결과 다수 _(중간, 45%±20)_ · 근거 [Stanford HAI](https://hai.stanford.edu/assets/files/ai_index_report_2026_chapter_6_medicine.pdf) |
 | **수학·과학 발견** | 2026년 최대의 놀라움 | AlphaProof/AlphaEvolve, Kosmos, AI Scientist-v2 | AI 공저 정리 다수, Lean 검증 표준화 _(높음, 85%±10)_ · 근거 [Google DeepMind](https://arxiv.org/abs/2605.22763), [Anthropic](https://www.anthropic.com/research/formalizing-fermats-last-theorem) |
@@ -684,6 +754,44 @@ AGI·ASI라는 말은 정의가 제각각이라 "왔다/안 왔다" 논쟁이 �
 5. **한국판 'Genesis Mission'**: 출연연, 국가 GPU, 프런티어 모델을 결합해 국가 AI4S 플랫폼을 만듭니다.
 
 - **위원회 안건(제8조 기준)**: 통신·피지컬 AI 특화 모델을 국가 R&D 우선 과제로 지정(3호)하고, 피지컬 AI 데이터·평가 표준(6의2호·8호)과 VLA 안전성 시험의 고영향 AI 요건 연계(10호)를 심의합니다.
+
+### 6.7 피지컬 AI: 하이프 사이클로 본 성숙도
+
+> 자료: Gartner Hype Cycle for Physical AI, 2026(G00853852, 2026-07, 28개 기술), Hype Cycle for Physical AI Industry Applications, 2026(G00856358, 2026-09, 22개 기술). 유료 원문이라 수치만 옮깁니다.
+
+**한 줄 요약**: 피지컬 AI는 대부분 기대가 성과를 앞지르는 단계입니다. 가치는 창고·제조·물류처럼 구조화된 반복 환경에서 먼저 나오고, 범용 휴머노이드가 가장 늦습니다.
+
+| 기술 | 하이프 사이클 위치 | 주류 도달 | 보급률 | 보고서 연결 |
+|---|---|---|---|---|
+| 피지컬 AI(상위 개념) | 기술 촉발 | 5–10년 | 1–5% | 2.1 |
+| 휴머노이드 작업 로봇 | 기술 촉발 | 10년 이상 | 1% 미만 | 6.1·14장 |
+| 체화 AI | 기술 촉발 | 2–5년 | 1% 미만 | 6.1 |
+| 구동 제어 정책(VLA 포함) | 기술 촉발 | 2–5년 | 5–20% | 6.1 |
+| 피지컬 AI 에이전트 | 기술 촉발 | 5–10년 | 1–5% | 22장 |
+| 월드 모델 | 기술 촉발 | 5–10년 | 1% 미만 | 6.1 |
+| 다기능 로봇 | 기대의 정점 | 2–5년 | 1–5% | 6.1 |
+| 비전 파운데이션 모델 | 기대의 정점 | 2–5년 | 5–20% | 6.1 |
+| 시뮬레이션 트윈(디지털 트윈 + AI) | 기대의 정점 | 2–5년 | 5–20% | 6.1 |
+| 로봇 오케스트레이션·관리 플랫폼 | 기대의 정점 | 2–5년 | 1–5% | 6.6 |
+| 피지컬 AI 데이터 플랫폼 | 기대의 정점 | 5–10년 | 5–20% | 6.6 |
+| AI 웨어러블 | 기대의 정점 | 5–10년 | 5–20% | 10장 |
+| 엣지 컴퓨팅 | 환멸의 골짜기 진입 | 2–5년 | 5–20% | 10장 |
+| 개별 피킹 창고 로봇 | 환멸의 골짜기 | 5–10년 | 1–5% | 8장 |
+| 자율이동로봇(AMR) | 계몽의 경사 | 2–5년 | 5–20% | 8장 |
+| 자율 드론 | 계몽의 경사 | 2–5년 | 5–20% | 16장 |
+| 자율주행차 | 계몽의 경사 | 5–10년 | 1–5% | 6.1 |
+
+- **계획 가정(Gartner)**: 2030년 주요 산업·소비자 시장의 30% 이상에 피지컬 AI가 실배치됩니다(현재 5%). 2028년 상업 드론 가치의 60%가 드론 서비스(분석·데이터)에서 나옵니다(2026년 약 23%). 2030년 대규모 농업·환경 신규 배치의 40%가 군집 방식을 씁니다(2026년 10% 미만). 피지컬 AI 개념증명의 약 30%는 기대 성과나 ROI를 내지 못합니다.
+- **대수와 배치는 다릅니다**: 휴머노이드 출하는 빠르게 늘지만(2026년 상반기 2.2–2.5만 대, 6.2절), Gartner는 배터리 2–5시간으로 교대 운영이 어렵고, 설비투자 외 가격 모델이 없으며, 현장 저항이 크다고 봅니다. 출하 대수 전망은 '생산적 배치'와 구분해 읽어야 합니다.
+- **병목은 모델보다 데이터·안전·통합**입니다. 로봇 군단 오케스트레이션 표준이 없고, 협동 안전표준(ISO 10218-1:2025)도 아직 널리 쓰이지 않습니다. 6.6절의 데이터·평가 표준 제언과 같은 방향입니다.
+- **산업정책 경쟁**: 일본 경제산업성은 피지컬 AI에 63억 달러를 투입하고, 중국은 2026 정부업무보고에서 휴머노이드를 미래산업 우선순위로 올렸습니다. 한국 K-문샷 피지컬 AI 임무(14장)는 출하 대수보다 '현장 배치 시간·작업 성공률'을 성과지표로 삼는 것이 이 위험을 줄입니다.
+
+| 2027 전망 | 가능성 · 확률(±불확도) |
+|---|---|
+| 휴머노이드 배치의 대부분이 제조·물류의 구조화된 반복 작업과 시연·교육·연구용에 머묾 | 높음 · 85% (±10) |
+| 월드 모델 기반 합성데이터가 선도 로봇·자율주행 개발사 파이프라인의 표준 | 높음 · 70% (±15) |
+| 휴머노이드 연 10만 대 근접(출하 기준) | 중간 · 55% (±15) |
+| Gartner 2027년판에서 휴머노이드 주류 도달 시점이 10년 미만으로 단축 | 낮음 · 25% (±15) |
 
 ---
 
@@ -1134,10 +1242,11 @@ Gartner는 에이전트를 운영 배치한 조직을 17%로 보고(1장의 37%�
 
 ### 9.11 과금 모델: 좌석에서 '좌석 + 토큰 크레딧 + 결과'로
 
-- **예산 초과의 일상화**: 미국 기업 AI 지출은 평균 전년의 4.7배로, 계획(1.9배)을 약 2.5배 넘었습니다. Gartner는 상한 없는 종량제 에이전트를 쓰는 기업이 2027년까지 **비용을 50% 이상 초과**한다고 보고 'No telemetry, no deployment'를 권고합니다.
+- **예산 초과의 일상화**: 미국 기업 AI 지출은 평균 전년의 4.7배로, 계획(1.9배)을 약 2.5배 넘었습니다. Gartner는 IT 운영 에이전트를 상한 없는 토큰 종량제로 쓰는 기업이 2027년까지 구독형 대비 **비용을 50% 이상 초과**한다고 보고(G00846101) 'No telemetry, no deployment'를 권고합니다.
 - **하이브리드가 주류**: AI 에이전트 기업 80곳 중 95%가 구독과 사용량을 섞고, 결과 기반 과금은 3.8%입니다(Orb). 고객지원(해결 건당 과금)에서 결과 과금이 늘고 있습니다. 결과 과금은 토큰 원가가 떨어질수록 마진이 넓어져 공급자 유인이 큽니다.
 - **노동 대체 단가**: 지식노동자 1시간(약 $50)은 에이전트 토큰 약 7,000만 개에 해당합니다(추정). '토큰 예산 대 인건비'가 인력계획 지표로 등장하고 있습니다.
 - **FinOps 도구**: 모델 라우팅(어려운 작업은 고성능, 반복 작업은 경량 모델)이 표준이 됩니다. 국내에서도 KT 토큰팩토리(2026-10-30 정식), 카페24 LLM 라우터(270여 모델)가 나왔습니다.
+- **애널리스트 원문 수치(2.3절)**: IDC는 기업 72%가 이미 토큰 예산을 넘겼고, 사람 검토 비용을 넣지 않으면 2028년까지 에이전트 비용이 최대 60% 과소 집계된다고 봅니다. 에이전트 행동당 비용은 약 95% 떨어지지만 연간 토큰 비용은 2030년 1,065억 달러(487배)로 늘어납니다. Gartner는 에이전틱 워크플로가 과제당 5–30배 토큰을 쓴다고 봅니다.
 - **토큰 예산의 보안 문제**: 탈취 API 키로 토큰을 재판매하는 LLMJacking 시장(100만 토큰당 $0.10~25)과 '비용 소진 공격'이 등장했습니다.
 
 ### 9.12 에이전트 결제와 기계 경제
@@ -1456,7 +1565,7 @@ Gartner는 에이전트를 운영 배치한 조직을 17%로 보고(1장의 37%�
 2. **반도체 의존의 극단화**: 2026년 반도체 수출가격 +145%, 삼성·SK의 코스피 시총 비중 49.7%입니다. 2027 성장률 전망이 KDI 3.9%와 현대경제연구원 2.4%로 갈리는 이유는 결국 AI capex가 이어질지에 대한 가정 차이입니다.
 3. **삼성 파운드리**: 2nm HPC, HBM 베이스다이, 테일러 공장이 반등의 열쇠입니다. 맞춤형 ASIC 물량 일부를 확보하는 것이 TSMC 독점을 완화하는 현실적 경로입니다.
 4. **전력기기 3사**: 수주잔고 38조 원 이상으로 2027 실적 가시성이 높습니다. capex가 조정되더라도 전력 병목 투자는 이어져 상대적으로 방어적입니다. 미국 현지화, ESS, HVDC로 확장할 것을 권합니다.
-5. **새 기회**: 랙 전력밀도가 4배로 오르는 추세라 액침·액체 냉각, 전력반도체(SiC·GaN), 데이터센터용 ESS(배터리 3사)에 기회가 있습니다.
+5. **새 기회**: 선도 GPU 전력이 1,000–1,400W를 넘고 공랭은 랙당 30–40kW에서 한계라, Gartner는 신규 AI 홀의 기본값을 액체 냉각으로 권고합니다(직접칩 액체 냉각 보급률 20–50%). 랙 전력밀도가 4배로 오르는 추세라 액침·액체 냉각, 전력반도체(SiC·GaN), 데이터센터용 ESS(배터리 3사)에 기회가 있습니다.
 6. **국내 AIDC**: 제도(AIDC·전력망 특별법)는 갖췄지만 수도권 계통 포화와 송전망 지연이 핵심 제약입니다. GW급 캠퍼스를 여러 개 유치하는 것은 비현실적이므로 비수도권 분산에너지 특구, 원전 인접 입지, 선택과 집중이 필요합니다.
 7. **공공 GPU**: 정부 GPU 1만 장은 빅테크보다 작은 규모입니다. 민간 26만 장 물량과 연계한 공유 컴퓨트 레이어로 운영하고, 국산 NPU(리벨리온·퓨리오사·딥엑스) 풀스택 실증을 2027년 성과지표로 삼습니다.
 8. **산업 내 양극화 관리**: 메모리 가격 급등은 국내 스마트폰·PC·가전과 AI 도입 기업의 원가 부담으로 번집니다.
@@ -2311,6 +2420,8 @@ Gartner는 에이전트를 운영 배치한 조직을 17%로 보고(1장의 37%�
 | 쿼드 | 마닐라 정상회의(2026-11-17)에서 AI 가속 이니셔티브(8,500만 달러 이상)·핵심광물·사이버 이니셔티브 발표. 인도가 2027년 1분기 차기 개최 희망 | 호주·인도·일본의 Pax Silica 서명으로 AI 공급망 축과 결합 | 중간 · 55% (±20) | 비회원. 쿼드 AI 이니셔티브 사안별 참여 후보 |
 | AUKUS Pillar II | 2026년 현황 미확인 | 기술 협력 문안 유지 | 중간 · 35% (±20) | 사안별 참여 후보 |
 
+- **기업 내부 층위: AI 사용 통제**: 국가 규제와 사업자 약관 아래에 기업의 사용 통제가 있습니다. Gartner는 직원 67%가 회사 기기에서 개인 계정으로 AI에 접속한다고 보고, 일괄 차단은 더 은밀한 비인가 사용을 부른다고 경고합니다. 대안은 섀도 AI를 찾아 허용 목록·데이터 유출 방지로 관리하는 'AI 사용 통제'(기술 촉발, 주류화 2–5년)입니다. 해외 모델 접속 제한을 검토할 때 공공·금융 지침에 반영할 만합니다.
+
 **2027 전망**
 | 전망 | 트랙 | 가능성 · 확률(±불확도) |
 |---|---|---|
@@ -2594,6 +2705,7 @@ AI 오용 전반(CBRN·테러·시험 부정·탈옥 모델·오정렬)은 21장
 
 - **정부 평가**: 미국 CAISI가 Google DeepMind·Microsoft·xAI와 출시 전후 평가 협약을 맺어 **5개 연구소**가 참여합니다(2026-05). 다만 자발적 협약이라 결과 공개 의무가 없습니다. UK AISI는 '인터넷 허용·분류기 비활성' 평가 관행을 개정하기 시작했습니다(2026-08 사고 이후).
 - **한국**: AI안전연구소가 42종 모델 평가 실적을 공개하고 결과를 단계적으로 공개하기 시작했습니다. Anthropic과 자율 에이전트 레드팀·한국어 맥락 오남용 평가를 추진하고, Scale AI와 영-한 이중언어 적대적 안전 벤치마크(ROK-FORTRESS)를 발표했습니다. **번역만으로 평가하면 한국어 안전 격차가 과소평가**된다는 결과입니다. 국내 LLM 안전성은 해외 대비 약 82% 수준이라는 평가도 있습니다(2025).
+- **기업 레드팀은 아직 초기**: Gartner는 2028년까지 배포 전 공격형 테스트를 하지 않은 조직이 사고를 2배 겪는다고 보지만, AI 보안 테스트는 기술 촉발 단계이고 주류화까지 5–10년이 걸린다고 평가합니다. 시범 조직의 절반은 전용 예산이 없습니다. 한국은 공공 레드팀 인프라를 중소·공공기관이 함께 쓰는 공공재로 설계할 필요가 있습니다.
 - **레드팀의 자동화**: Anthropic 자동 레드팀이 사람 버그바운티를 넘어섰습니다. FAR.AI 리더보드에서는 프런티어 모델 간 안전장치 강도가 최대 100배 차이가 납니다('가장 약한 모델만큼만 안전'). FLI 안전지수(2026 상반기)는 Anthropic C+, OpenAI·Google DeepMind C입니다.
 
 ### 20.10 딥페이크·사기·AI 성착취물
@@ -2733,7 +2845,7 @@ AI 오용 전반(CBRN·테러·시험 부정·탈옥 모델·오정렬)은 21장
 |---|---|
 | **방어자 우선 제공**(Glasswing) | '방어자 선행 기간'이 업계 관행이 될지, 공개 모델의 추격으로 그 기간이 짧아질지가 핵심 변수 |
 | **AI 자율 패치**(CodeMender 오픈소스 수정 72건, AIxCC) | 취약점 발견 속도가 패치·배포 속도를 앞질러 격차가 커짐. 자동 패치와 자동 회귀 검증이 오픈소스 유지의 필수 인프라가 됨 |
-| **자율 SOC**(KISA 2027-01, 사이버 쉴드 돔) | 1차 분류와 초동 포렌식 자동화가 일반화. 오탐 자동 차단이 장애를 일으킬 위험도 동반 |
+| **자율 SOC**(KISA 2027-01, 사이버 쉴드 돔) | 1차 분류와 초동 포렌식 자동화가 시범에서 확산 단계로. Gartner는 AI SOC 에이전트를 '기대의 정점'(보급률 1–5%, 주류화 5–10년)에 두고, 대부분 사업이 시범 단계라고 봅니다. 오탐 자동 차단이 장애를 일으킬 위험도 동반 |
 | **AIOps·자가치유** | 변경 위험 예측과 자동 롤백 확대. 그러나 **AWS·Cloudflare 장애는 자동화 자체가 원인**이었음(AIOps의 역설). 형식검증·카오스 공학이 병행돼야 함 |
 | **에이전트·LLM API가 단일 장애점** | 에이전트 권한 최소화, 파괴적 작업 승인 게이트, 모델 다중화(멀티벤더·온프레미스 소형 모델)가 회복력 요건으로 규정화. 소버린 AI의 보안 활용 논거 강화 |
 | AI 레드티밍·훈련 | 자율 공격 에이전트·대량 제로데이 시나리오 기반의 국가·부문 합동 훈련 확대 |
@@ -2757,6 +2869,7 @@ AI 오용 전반(CBRN·테러·시험 부정·탈옥 모델·오정렬)은 21장
 - **보장 공백**: 대기업 평균 한도(미국 1.2억 달러)를 넘는 손실이 연평균 10건이고, 중소기업 가입률은 5–20%에 그칩니다.
 - **AI 관련 청구**: 아직 제한적입니다. 다만 대부분 증권이 AI에 대해 아무 규정도 두지 않은 상태라, 배제 조항과 전용 담보가 늘고 있습니다.
 - **집적 위험**: JLR이나 클라우드 연쇄 장애처럼 비악의적 장애도 보험의 집적 위험이 되고 있습니다.
+- **AI 배상책임보험은 태동기**: Gartner는 환각·편향·IP 침해·에이전트 위험을 보장하는 AI 배상책임 보험을 도입 1% 미만으로 봅니다. 2027년에는 보험사가 상품보다 가입 요건(런타임 방어, 에이전트 권한 통제)을 먼저 내세울 가능성이 큽니다(AI 배상책임 전용 보험이 틈새에 머묾, 높음 · 80% ±10).
 - **한국**: 개인정보 손해배상책임보험 의무가입 외에는 시장이 작습니다. 반복 사고 과징금(매출 3%) 도입 후 수요가 늘 수 있습니다.
 
 ### 21.6 2027 전망
@@ -2828,7 +2941,7 @@ AI 오용 전반(CBRN·테러·시험 부정·탈옥 모델·오정렬)은 21장
 
 > 자료: 이 보고서 3·5·7–10·13·15·17–21장의 에이전트 관련 전망과, 2027 전망 자료의 공통 테마(Gartner·Forrester·IDC·McKinsey·BCG·Capgemini·SAS·IITP·Accenture·State of AI Report). 에이전트 소사이어티 원자료는 `data/raw/collect_agent_society.json`. 확률은 각 장의 값을 그대로 옮겼고, 이 장에서 새로 낸 전망은 '(신규)'로 표시했습니다.
 
-**한 줄 요약**: 2027년은 에이전트가 '시연'에서 '업무와 거래의 실행 주체'로 넘어가는 해입니다. 그러나 수집한 전망 자료가 가장 강하게 합의하는 것은 역량이 아니라 **통제**입니다. 이 보고서의 2027 전망 중 에이전트 관련 **66건**을 모아 보면 31건이 높음(70% 이상)이며, 그 대부분이 보안 사고·책임·권한 통제에 관한 것입니다. 확산의 속도보다 **통제 체계를 얼마나 빨리 갖추느냐**가 2027년의 승부처입니다.
+**한 줄 요약**: 2027년은 에이전트가 '시연'에서 '업무와 거래의 실행 주체'로 넘어가는 해입니다. 그러나 수집한 전망 자료가 가장 강하게 합의하는 것은 역량이 아니라 **통제**입니다. 이 보고서의 2027 전망 중 에이전트 관련 **68건**을 모아 보면 33건이 높음(70% 이상)이며, 그 대부분이 보안 사고·책임·권한 통제에 관한 것입니다. 확산의 속도보다 **통제 체계를 얼마나 빨리 갖추느냐**가 2027년의 승부처입니다.
 
 ### 22.1 네 가지 핵심 테마
 
@@ -2837,7 +2950,7 @@ AI 오용 전반(CBRN·테러·시험 부정·탈옥 모델·오정렬)은 21장
 >
 > - **합의 기관**: Gartner, Forrester, IDC, Capgemini, BCG, SAS, IITP
 > - **근거**: BCG 조사에서 에이전트에 결정권을 주려는 기업은 42%인데 통제 체계를 갖춘 기업은 5%(1장). Forrester는 AI 플랫폼 결정의 75%를 모델이 아닌 하네스가 좌우한다고 봅니다(2장). 관리되지 않는 에이전트가 새 섀도 IT가 되고 에이전트를 1급 신원으로 관리하게 됩니다(높음 · 82%, 19장).
-> - **2027 판단**: KYA(에이전트 신원)가 카드망·기업 IAM에서 사실상 의무화(중간 · 69%), 주요국 가이드라인에 에이전트 책임·권한 위임 규정 첫 등장(중간 · 58%).
+> - **2027 판단**: KYA(에이전트 신원)가 카드망·대형 플랫폼에서 사실상 의무화(중간 · 60%, 기업 IAM 전반은 2–5년), 주요국 가이드라인에 에이전트 책임·권한 위임 규정 첫 등장(중간 · 58%).
 
 > **② 자율 에이전트의 프로덕션 확산과 에이전틱 경제**
 > 에이전트가 업무 프로세스와 거래(구매·결제·발주)를 직접 수행하는 단계로 진입한다는 전망이다. AI-first 프로세스, 에이전틱 커머스, 에이전트 간 자율 거래 등이 2027~2029년 확대된다.
@@ -2862,7 +2975,7 @@ AI 오용 전반(CBRN·테러·시험 부정·탈옥 모델·오정렬)은 21장
 
 ### 22.2 에이전트 관련 2027 전망 모음
 
-보고서 각 장에 흩어진 에이전트 관련 전망 66건을 테마별로 모았습니다(확률 높은 순). 평균 확률은 63%입니다.
+보고서 각 장에 흩어진 에이전트 관련 전망 68건을 테마별로 모았습니다(확률 높은 순). 평균 확률은 63%입니다.
 
 **① 거버넌스·통제**
 
@@ -2873,11 +2986,12 @@ AI 오용 전반(CBRN·테러·시험 부정·탈옥 모델·오정렬)은 21장
 | 관리되지 않는 에이전트의 난립이 새 섀도 IT가 됨. 에이전트를 1급 신원으로 관리 | 19장 | 높음 · 82% (±15) | [Google Cloud (via iTWire…](https://itwire.com/guest-articles/guest-research/google-cloud-predicts-ai-agents-will-reshape-cyber-attack-and-defence-in-2027), [Gartner](https://www.gartner.com/en/newsroom/press-releases/2026-10-20-gartner-identifies-the-top-strategic-technology-trends-for-2027) |
 | 국제 평가 네트워크(NAAIMES): 2026-02 개명(구 AI 안전연구소 네트워크) / 에이전트·사이버 공동 평가. '안전'에서 '측정·보안'으로 / 창립 회원. 한국어·다국어·에이전트 평가 주도 | 18장 | 높음 · 80% (±10) | [UK Government](https://www.gov.uk/government/news/efforts-to-share-best-practices-on-ai-measurement-and-evaluations-driven-forward-through-the-international-network-for-advanced-ai-measurement-evalua), [UK AI Security Institute](https://www.aisi.gov.uk/blog/international-ai-network-consensus-and-open-questions) |
 | 국제 평가 네트워크가 에이전트·사이버 공동 산출물을 내고 '측정·보안'으로 이동: 다자 | 18장 | 높음 · 78% (±15) | [UK Government](https://www.gov.uk/government/news/efforts-to-share-best-practices-on-ai-measurement-and-evaluations-driven-forward-through-the-international-network-for-advanced-ai-measurement-evalua), [aisi.gov.uk](https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing) |
+| 에이전트 신원 관리의 표준 관행이 업계 합의에 이르지 못하고 벤더별 방식이 병존(Gartner: 에이전트 신원은 기술 촉발, 주류화 2–5년) | 2장 | 높음 · 75% (±15) | Gartner G00854164·G00846820(원문) |
 | 경영: CAIO 역할이 '도입 전도사'에서 '에이전트 권한·감사·비용 책임자'로 바뀜. AgentOps·에이전트 SRE 직군 신설 | 8장 | 높음 · 72% (±20) | [Gartner](https://www.gartner.com/en/newsroom/press-releases/2026-09-15-gartner-unveils-top-strategic-predictions-for-2027-and-beyond), [Capgemini](https://www.capgemini.com/wp-content/uploads/2026/11/261117_Capgemini-Top-Tech-Trends-to-watch-in-2027-PR.pdf) |
 | 오구매·오예약과 책임 소재: 소비자, 카드사·PG, 중소 판매자 / 차지백에 '에이전트 거래' 코드가 생기고 구매보호가 표준이 됨. 첫 집단분쟁·분쟁조정 가능 | 9장 | 높음 · 72% (±20) | [Air Street Capital (Stat…](https://www.stateof.ai/predictions), [Digital Commerce 360](https://www.digitalcommerce360.com/2026/04/02/visa-mastercard-in-agentic-commerce/) |
 | 법·규제: 에이전트 결정(채용 거절·해고 자료)의 책임이 도입 기업에 귀속된다는 원칙이 계약·보험으로 먼저 정착 | 8장 | 높음 · 70% (±20) | [IDC](https://www.idc.com/resource-center/press-releases/idc-futurescape-2027-predicts-60-of-enterprises-will-run-a-majority-of-their-business-processes-ai-first-by-2029-up-from-13-in-2026/), [Gartner](https://www.gartner.com/en/newsroom/press-releases/2026-09-15-gartner-unveils-top-strategic-predictions-for-2027-and-beyond) |
-| KYA(에이전트 신원)가 카드 네트워크와 기업 IAM에서 사실상 의무화 | 3장 | 중간 · 69% (±20) | [IITP 정보통신기획평가원 (보도: ZDNe…](https://zdnet.co.kr/view?no=20261111120847), [Gartner](https://www.gartner.com/en/newsroom/press-releases/2026-10-20-gartner-identifies-the-top-strategic-technology-trends-for-2027) |
 | 보험 공백: 기업·소비자 / AI 배제 조항, 에이전트 책임보험 | 9장 | 중간 · 62% (±15) | [Gallagher (Arthur J. Gal…](https://www.ajg.com/site-content/articles/2026/april/ai-liability-not-so-silent/), [Gartner](https://www.gartner.com/en/newsroom/press-releases/2026-09-15-gartner-unveils-top-strategic-predictions-for-2027-and-beyond) |
+| KYA(에이전트 신원)가 카드 네트워크·대형 플랫폼에서 사실상 의무화(기업 IAM 전반은 2–5년, Gartner) | 3장 | 중간 · 60% (±20) | [IITP 정보통신기획평가원 (보도: ZDNe…](https://zdnet.co.kr/view?no=20261111120847), [Gartner](https://www.gartner.com/en/newsroom/press-releases/2026-10-20-gartner-identifies-the-top-strategic-technology-trends-for-2027) |
 | 법·규제: AI 기본법 계도기간이 끝난 뒤 고영향 AI(채용 포함) 책무 이행 점검 시작 | 8장 | 중간 · 60% (±15) | [korea.kr](https://korea.kr/news/policyNewsView.do?newsId=148958380), [과학기술정보통신부 (보도: ZDNet Kor…](https://zdnet.co.kr/view?no=20261116144303) |
 | 에이전트 책임·권한 위임(KYA) 규정이 주요국 가이드라인에 처음 등장 | 15장 | 중간 · 58% (±20) | [IITP 정보통신기획평가원 (보도: ZDNe…](https://zdnet.co.kr/view?no=20261111120847), [IDC](https://www.idc.com/resource-center/press-releases/idc-futurescape-2027-predicts-60-of-enterprises-will-run-a-majority-of-their-business-processes-ai-first-by-2029-up-from-13-in-2026/) |
 | 데이터: 국가 연구데이터를 에이전트가 접근하는 API(MCP류)와 민감데이터 감사형 접근 | 7장 | 중간 · 50% (±20) | [energy.gov](https://www.energy.gov/undersecretaryforscience/articles/us-department-energy-announces-more-800-million-partner) |
@@ -2946,6 +3060,7 @@ AI 오용 전반(CBRN·테러·시험 부정·탈옥 모델·오정렬)은 21장
 | 평가·내부 배포 단계에서 에이전트의 비인가 실세계 행동이 추가로 공개 | 19장 | 높음 · 85% (±10) | [aisi.gov.uk](https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing), [cdn.openai.com](https://cdn.openai.com/pdf/67869394-cb91-4c12-888c-5cbd85c7814c/OpenAI-Hugging-Face%20Incident-Technical-Report.pdf) |
 | 에이전트 비용 폭주, LLMJacking: 기업당 하루 10만 달러 이상 부정 과금, 예산 50% 이상 초과 | 3장 | 높음 · 84% (±12) | [Google Threat Intelligen…](https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold), [Gartner](https://www.gartner.com/en/newsroom/press-releases/2026-10-26-gartner-identifies-the-top-ai-trends-in-infrastructure-and-it-operations-for-2027) |
 | AI 오케스트레이션 공격의 대중화: 19.5절 참고 | 3장 | 높음 · 82% (±12) | [Google Threat Intelligen…](https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold), [Anthropic](https://assets.anthropic.com/m/ec212e6566a0d47/original/Disrupting-the-first-reported-AI-orchestrated-cyber-espionage-campaign.pdf) |
+| 공개된 에이전트 관련 주요 보안 사고의 과반이 단일 에이전트의 권한 남용·자격증명 오용·프롬프트 주입에서 발생(Gartner: 단일 에이전트 남용 비용이 멀티에이전트의 4배 이상) | 2장 | 높음 · 78% (±12) | Gartner G00846820(원문) |
 | 전권을 가진 에이전트의 개인정보 위험: 소비자, 감독기관 / 에이전트 계정 탈취 사고, 감독기관의 첫 조사·가이드 | 9장 | 높음 · 78% (±15) | [labs.cloudsecurityalliance](https://labs.cloudsecurityalliance.org/wp-content/uploads/2026/03/CSA_research_note_PleaseFix_agentic_browser_exploits_20260328-csa-styled.pdf), [zdnet.co.kr](https://zdnet.co.kr/view/?no=20260619100049) |
 | 공격 표적이 데이터 탈취에서 '의사결정 조작'으로 이동(에이전트가 쓰는 데이터·로직 오염) | 19장 | 높음 · 72% (±20) | [Google Cloud (via iTWire…](https://itwire.com/guest-articles/guest-research/google-cloud-predicts-ai-agents-will-reshape-cyber-attack-and-defence-in-2027), [Microsoft](https://www.microsoft.com/en-us/security/blog/2026/10/01/insights-from-the-2026-microsoft-digital-defense-report/) |
 | AI 에이전트가 원인인 공개 장애·데이터 손실 증가. 에이전트 권한 통제가 감사·보험 요건이 됨: 재난·장애 | 21장 | 높음 · 72% (±15) | [Euronews](https://euronews.com/next/2026/04/28/an-ai-agent-deleted-a-companys-entire-database-in-9-seconds-then-wrote-an-apology), [Microsoft](https://www.microsoft.com/en-us/security/blog/2026/10/01/insights-from-the-2026-microsoft-digital-defense-report/) |
@@ -3032,7 +3147,7 @@ AI 오용 전반(CBRN·테러·시험 부정·탈옥 모델·오정렬)은 21장
 | **AI 회계·세무** | Basis 기업가치 11.5억 달러, 미국 상위 25개 회계법인 약 30% 사용. Deloitte·EY·KPMG가 감사 에이전트 도입 | 대형 회계법인 감사·세무 에이전트 전면 배치 | 신고 초안·감사 테스트 **위임** | 중상. Big4 전면 배치(높음 · 70%±15) |
 | **AI 과학자** | L2 연구 동료가 확산(co-scientist·Kosmos·BioMedAgent), L3 폐루프 실험은 분야 한정, L4 독립 과학자는 없음(7.7절) | L2 표준 도구화, L3 분야별 확산 | 가설·분석 **위임**, 문제 선택·검증은 사람 | 중상. L2 주류화(높음 · 85%±10), L4 발견(낮음 · 15%) |
 | **AI 보안 분석가** | 보안팀 40%가 AI를 매일 사용(벤더 설문). Gartner: 2028년 대형 SOC 70%가 AI 에이전트 시범, 측정 가능한 개선은 15%. KISA 에이전트 10종 2027-01 가동 | Tier1 경보 분류 자동화 확대 | Tier1 **위임**, 판단은 사람 | 중간. **과열 대비 성과 제한**(기대의 정점) |
-| **AI 앱 빌더**(비개발자) | Lovable 연환산 4억 달러. Gartner: 2029년 신규 앱의 80%가 1년 미만 일회성 앱 | 일회성 앱·섀도 앱 급증 | 소규모 앱은 **대행** | 강함. 사내 앱 레지스트리 필요(높음 · 75%±15) |
+| **AI 앱 빌더**(비개발자) | Lovable 연환산 4억 달러. Gartner: 2030년 선도 조직이 신규 앱의 80%를 일회성·교체 가능 앱으로 설계(G00855974) | 일회성 앱·섀도 앱 급증 | 소규모 앱은 **대행** | 강함. 사내 앱 레지스트리 필요(높음 · 75%±15) |
 | **AI 영업·마케터** | 리드 발굴·개인화 메일 자동화는 확산되나 성과 측정 불확실 | — | 보조 | 중간 이하(중간 · 45%±20) |
 | **AI 교사·튜터** | Khanmigo 접근 학생 약 100만 명 중 실제 사용 약 15%. AI 디지털교과서는 '교육자료' 전환 후 신청 학교 19% | 정기 사용률 15 / **20** / 30% | 보조 | **약함**. 정기 사용률 30% 돌파(낮음 · 25%±15) |
 
@@ -3563,7 +3678,7 @@ AI 오용 전반(CBRN·테러·시험 부정·탈옥 모델·오정렬)은 21장
 
 ### 한계
 - 세션의 웹 검색 한도(200회)가 소진되어 일부 분야(빅테크 벤더·Big4의 2027 전망, Mandiant·ENISA, 보안업체 전망, 국내 웹툰·K-pop 수치)는 수집하지 못했습니다.
-- Gartner, IDC, Forrester, McKinsey 원문은 유료이거나 자동 접근이 차단돼, 공식 보도자료와 요약으로 분석했습니다.
+- Gartner 원문 12건(2027 전략 기술 트렌드 본편·4편, I&O 트렌드, 하이프 사이클 6종)과 IDC 2건은 사용자가 제공한 원문으로 대조했습니다(2.3절). Forrester, McKinsey 원문과 Gartner Top Strategic Predictions 2027은 공식 보도자료와 요약으로 분석했습니다.
 - 일부 수치는 2차 보도에 기대고 있습니다. 벤더 보고치와 독립 측정치가 다를 때는 둘 다 적었습니다.
 - 시나리오 확률은 수집 자료를 바탕으로 한 주관적 판단입니다.
 
