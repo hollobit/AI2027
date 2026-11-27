@@ -3290,6 +3290,179 @@
   "counter": []
  },
  {
+  "chapter": "10장",
+  "text": "3B 이하 오픈 모델이 MMLU-Pro 73 이상(2024-05 GPT-4o 72.6 수준)을 개발사 보고 기준으로 기록",
+  "prob": "높음 75%±15",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "Alibaba Qwen",
+    "url": "https://huggingface.co/Qwen/Qwen3.5-2B",
+    "title": "Qwen3.5-2B model card"
+   },
+   {
+    "org": "Google",
+    "url": "https://huggingface.co/google/gemma-4-E4B-it",
+    "title": "Gemma 4 E4B model card"
+   },
+   {
+    "org": "Epoch AI",
+    "url": "https://epoch.ai/data-insights/consumer-gpu-model-gap",
+    "title": "Consumer GPU model gap"
+   }
+  ],
+  "counter": [
+   {
+    "org": "Epoch AI",
+    "url": "https://epoch.ai/data-insights/consumer-gpu-model-gap",
+    "title": "Consumer GPU model gap (overfitting caveat)"
+   }
+  ]
+ },
+ {
+  "chapter": "10장",
+  "text": "10B 이하 오픈 모델이 GPQA Diamond 85 이상을 개발사 보고 기준으로 기록(2026년 Qwen3.5-9B 81.7)",
+  "prob": "중간 60%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "Alibaba Qwen",
+    "url": "https://huggingface.co/Qwen/Qwen3.5-9B",
+    "title": "Qwen3.5-9B model card"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "10장",
+  "text": "Gemini Nano 4 이후 세대가 Galaxy S27을 포함한 주요 Android 플래그십의 기본 온디바이스 모델이 됨",
+  "prob": "높음 80%±10",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "9to5Google",
+    "url": "https://9to5google.com/2026/04/02/gemini-nano-4/",
+    "title": "Gemini Nano 4 built on Gemma 4"
+   },
+   {
+    "org": "Android Authority",
+    "url": "https://www.androidauthority.com/galaxy-z-fold-8-flip-8-gemini-nano-4-3690495/",
+    "title": "Galaxy Z Fold 8 / Flip 8 first with Gemini Nano 4"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "10장",
+  "text": "OS 내장 온디바이스 모델의 도구 호출·구조화 출력이 Android(AICore Prompt API)에서도 정식 기능으로 열려, 서드파티 앱 에이전트가 기기 안에서 실행",
+  "prob": "높음 70%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "9to5Google",
+    "url": "https://9to5google.com/2026/04/02/gemini-nano-4/",
+    "title": "Gemini Nano 4 (planned tool calling, structured output)"
+   },
+   {
+    "org": "Apple",
+    "url": "https://machinelearning.apple.com/research/introducing-third-generation-of-apple-foundation-models",
+    "title": "Introducing the third generation of Apple Foundation Models"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "10장",
+  "text": "Apple 외 주요 폰 OEM 또는 Google이 총 15B 이상 희소 MoE(활성 4B 이하)를 기본 온디바이스 모델로 탑재",
+  "prob": "중간 40%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "Apple",
+    "url": "https://machinelearning.apple.com/research/introducing-third-generation-of-apple-foundation-models",
+    "title": "AFM 3 Core Advanced (20B sparse, 1-4B active)"
+   },
+   {
+    "org": "Liquid AI",
+    "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-2-6b",
+    "title": "LFM2.5-2.6B / on-device agents"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "10장",
+  "text": "네이티브 1.58비트(삼진) 모델이 주요 OEM 폰·PC의 기본 탑재 모델로 상용 출하",
+  "prob": "낮음 15%±10",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "PrismML",
+    "url": "https://prismml.com/news/ternary-bonsai",
+    "title": "Introducing Ternary Bonsai"
+   }
+  ],
+  "counter": [
+   {
+    "org": "Apple",
+    "url": "https://arxiv.org/html/2507.13575v1",
+    "title": "Apple Intelligence Foundation Language Models Tech Report 2025 (2-bit QAT)"
+   }
+  ]
+ },
+ {
+  "chapter": "10장",
+  "text": "주요 MCU 업체 1곳 이상이 1억 파라미터 이하 언어·음성 모델을 웨이크워드 이상의 기능(명령 이해·대화)으로 양산 제품에 탑재했다고 발표",
+  "prob": "중간 55%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "IEEE ComSoc Technology Blog",
+    "url": "https://techblog.comsoc.org/2026/11/03/infineon-psoc-mcus-expand-tinyml-into-a-broader-range-of-edge-ai-applications/",
+    "title": "Infineon PSoC MCUs Expand TinyML into a Broader Range of Edge AI Applications"
+   },
+   {
+    "org": "Arm",
+    "url": "https://newsroom.arm.com/blog/arm-embedded-world-2026",
+    "title": "Arm at Embedded World 2026"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "10장",
+  "text": "MLCommons가 MCU·초저전력 기기용 트랜스포머·언어 모델 과제를 포함한 벤치마크 결과를 공개",
+  "prob": "중간 35%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "MLCommons",
+    "url": "https://mlcommons.org/benchmarks/inference-tiny/",
+    "title": "MLPerf Inference: Tiny"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "10장",
+  "text": "국산 SLM(EXAONE·Kanana·HyperCLOVA X SEED·독파모 경량판) 1종 이상이 국산 NPU 위에서 도는 상용 가전·차량·로봇 제품 탑재가 발표됨",
+  "prob": "중간 45%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "카카오",
+    "url": "https://www.kakaocorp.com/page/detail/12089",
+    "title": "카카오, 경량 언어모델 4종 오픈소스로 공개"
+   },
+   {
+    "org": "NAVER Cloud",
+    "url": "https://clova.ai/en/tech-blog/seeing-and-hearing-the-field-for-ourselves-building-our-own-encoders-and-hyperclova-x-seed-4b",
+    "title": "Building our own encoders and HyperCLOVA X SEED 4B"
+   }
+  ],
+  "counter": []
+ },
+ {
   "chapter": "11장",
   "text": "- Vera Rubin이 주력이 되고 하반기 Rubin Ultra로 전환 _(높음)_",
   "prob": "높음 72%±15",
@@ -4948,6 +5121,207 @@
     "org": "The Korea Times",
     "url": "https://www.koreatimes.co.kr/foreignaffairs/20260909/korea-vows-closer-cooperation-with-african-partners-at-koafec-meeting",
     "title": "Korea vows closer cooperation with African partners at KOAFEC meeting"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "15장",
+  "text": "AI 챔피언 2027년 연간 양성 목표(2,000명)를 채워 누적 인증자가 3,000명을 넘음",
+  "prob": "높음 75%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "토큰포스트",
+    "url": "https://www.tokenpost.kr/news/ai/288723",
+    "title": ""
+   },
+   {
+    "org": "경북매일",
+    "url": "https://www.kbmaeil.com/article/20261029500312",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "15장",
+  "text": "'공무원 직접개발·산출물 관리 지침'(등록·3단계 관리)이 2027년 상반기까지 제정·시행됨",
+  "prob": "높음 70%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "노컷뉴스",
+    "url": "https://nocutnews.co.kr/news/6574723",
+    "title": ""
+   },
+   {
+    "org": "ZDNet Korea",
+    "url": "https://zdnet.co.kr/view/?no=20260807142020",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "15장",
+  "text": "업무망 AI 정부 실험실과 내부망 코딩 에이전트가 2027년 안에 개통(시범 포함)",
+  "prob": "중간 60%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "노컷뉴스",
+    "url": "https://nocutnews.co.kr/news/6574723",
+    "title": ""
+   }
+  ],
+  "counter": [
+   {
+    "org": "ZDNet Korea",
+    "url": "https://zdnet.co.kr/view?no=20261113134630",
+    "title": ""
+   }
+  ]
+ },
+ {
+  "chapter": "15장",
+  "text": "AI 정부 실험실 등록 프로젝트가 2027년 말 누적 3,000개를 넘음",
+  "prob": "중간 65%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "노컷뉴스",
+    "url": "https://nocutnews.co.kr/news/6574723",
+    "title": ""
+   },
+   {
+    "org": "노컷뉴스",
+    "url": "https://nocutnews.co.kr/news/6561707",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "15장",
+  "text": "AI 챔피언 인증이 조기승진 가점을 넘어 일반 승진·성과평가·보직에 공식 반영됨",
+  "prob": "중간 45%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "노컷뉴스",
+    "url": "https://nocutnews.co.kr/news/6574723",
+    "title": ""
+   }
+  ],
+  "counter": [
+   {
+    "org": "공노총/뉴시스",
+    "url": "https://mobile.newsis.com/view/NISX20260422_0003601618",
+    "title": ""
+   }
+  ]
+ },
+ {
+  "chapter": "15장",
+  "text": "공무원이 만든 도구 가운데 대국민 서비스나 범정부 공통 서비스로 정식 전환된 사례가 10개 이상 공개됨",
+  "prob": "중간 45%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "전자신문",
+    "url": "https://www.etnews.com/20260722000124",
+    "title": ""
+   },
+   {
+    "org": "KDI/행안부",
+    "url": "https://eiec.kdi.re.kr/policy/materialView.do?num=288372&topic=L",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "15장",
+  "text": "공무원 개발 도구와 관련한 보안·개인정보 사고(유출·노출 포함)가 1건 이상 공개 보도됨",
+  "prob": "중간 50%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "공노총/뉴시스",
+    "url": "https://mobile.newsis.com/view/NISX20260422_0003601618",
+    "title": ""
+   },
+   {
+    "org": "디지털데일리",
+    "url": "https://www.ddaily.co.kr/page/view/2026090412150805096",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "15장",
+  "text": "감사원 감사나 국회(국감)가 공무원 직접개발·공공 AI 도구의 관리(자산·보안·기록·전문인력) 문제를 공식 지적",
+  "prob": "중간 55%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "헤럴드경제",
+    "url": "https://biz.heraldcorp.com/article/10912236",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "15장",
+  "text": "공공 SW 업계 단체가 공무원 직접개발 확대에 대해 공식 의견(성명·건의)을 냄",
+  "prob": "중간 40%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "디지털데일리",
+    "url": "https://www.ddaily.co.kr/page/view/2026100215292065648",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "15장",
+  "text": "공공 AI 윤리기준·공공 AI 영향평가가 2027년 신규 AI 사업에 실제 적용됨",
+  "prob": "높음 70%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "파이낸셜뉴스",
+    "url": "https://fnnews.com/news/202608251631449251",
+    "title": ""
+   },
+   {
+    "org": "다음/정책브리핑",
+    "url": "https://v.daum.net/v/H3JLK5nQZ4",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "15장",
+  "text": "공무원 개발 도구가 원인인 잘못된 처분이 행정심판·소송·국가배상 청구로 공개됨",
+  "prob": "낮음 15%±10",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "국가배상법 제2조",
+    "url": "https://www.law.go.kr/법령/국가배상법",
+    "title": ""
+   },
+   {
+    "org": "행정기본법 제20조",
+    "url": "https://www.law.go.kr/법령/행정기본법",
+    "title": ""
    }
   ],
   "counter": []
@@ -7125,6 +7499,174 @@
     "org": "머니투데이",
     "url": "https://www.mt.co.kr/tech/2026/03/31/2026033111234563860",
     "title": "2025 인터넷이용실태조사 결과"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "23장",
+  "text": "위 와일드카드 18개 중 최소 1개가 2027년에 발생",
+  "prob": "높음 90%±7",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "WEF",
+    "url": "https://www.weforum.org/publications/global-risks-report-2026/global-risks-report-2026-key-findings",
+    "title": "Global Risks Report 2026: Key findings"
+   },
+   {
+    "org": "Eurasia Group",
+    "url": "https://www.eurasiagroup.net/issues/top-risks-2026",
+    "title": "The Top Risks of 2026"
+   }
+  ],
+  "counter": [
+   {
+    "org": "Epoch AI",
+    "url": "https://epoch.ai/gradient-updates/how-well-did-forecasters-predict-2025-ai-progress",
+    "title": "How well did forecasters predict 2025 AI progress?"
+   }
+  ]
+ },
+ {
+  "chapter": "23장",
+  "text": "위 와일드카드 중 3개 이상이 같은 해에 발생",
+  "prob": "중간 45%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "WEF",
+    "url": "https://www.weforum.org/publications/global-risks-report-2026/global-risks-report-2026-key-findings",
+    "title": "Global Risks Report 2026: Key findings"
+   },
+   {
+    "org": "AI Futures Project",
+    "url": "https://ai-2027.com/ai-2027.pdf",
+    "title": "AI 2027"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "23장",
+  "text": "2027년 말 회고에서 본 보고서 전망 표에 없던 사건이 '판도를 바꾼 사건' 3건 이상으로 꼽힘",
+  "prob": "높음 75%±15",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "Epoch AI",
+    "url": "https://epoch.ai/gradient-updates/how-well-did-forecasters-predict-2025-ai-progress",
+    "title": "How well did forecasters predict 2025 AI progress?"
+   },
+   {
+    "org": "AI Futures Project",
+    "url": "https://blog.aifutures.org/p/grading-ai-2027s-2025-predictions",
+    "title": "Grading AI 2027's 2025 Predictions"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "23장",
+  "text": "미국 정부가 동맹국 이용자의 프런티어 모델 접근을 다시 강제 중단",
+  "prob": "낮음 30%±15",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "Manifold Markets",
+    "url": "https://manifold.markets/RafalPastuszak/will-the-us-government-force-anothe",
+    "title": "Will the US government force another frontier AI model shutdown for allied users by mid-2…"
+   },
+   {
+    "org": "Al Jazeera",
+    "url": "https://www.aljazeera.com/economy/2026/6/19/us-export-ban-on-anthropics-ai-models-further-strains-alliances",
+    "title": "US export ban on Anthropic's AI models further strains alliances"
+   }
+  ],
+  "counter": [
+   {
+    "org": "Mayer Brown",
+    "url": "https://www.mayerbrown.com/en/insights/publications/2026/06/commerce-department-extends-export-controls-to-advanced-ai-models-authorizes-release-to-specific-trusted-partners",
+    "title": "Commerce Department extends export controls to advanced AI models, authorizes release to …"
+   }
+  ]
+ },
+ {
+  "chapter": "23장",
+  "text": "북한 연계 단일 탈취 7억 달러 이상, 또는 국내 금융·공공 핵심 시스템 24시간 이상 마비",
+  "prob": "낮음 25%±15",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "FBI IC3",
+    "url": "https://www.ic3.gov/PSA/2025/PSA250226",
+    "title": "North Korea Responsible for $1.5 Billion Bybit Hack (PSA)"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "23장",
+  "text": "반AI 방화·사보타주로 데이터센터·AI 시설의 가동 중단이나 인명 피해가 공개",
+  "prob": "낮음 20%±15",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "Soufan Center",
+    "url": "https://thesoufancenter.org/intelbrief-2026-july-21/",
+    "title": "IntelBrief 2026-07-21 (anti-data center threats)"
+   },
+   {
+    "org": "Tom's Hardware",
+    "url": "https://www.tomshardware.com/tech-industry/data-centers/at-least-37-people-arrested-in-2026-so-far-for-protesting-against-data-centers-most-taken-into-custody-acted-peacefully-only-broke-petty-rules",
+    "title": "At least 37 people arrested in 2026 so far for protesting against data centers"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "23장",
+  "text": "미국 정부의 프런티어 랩 국유화성 조치(국방물자생산법 발동, 강제 지분·통제 협정)",
+  "prob": "낮음 10%±10",
+  "basis": "추정",
+  "support": [],
+  "counter": [
+   {
+    "org": "Manifold Markets",
+    "url": "https://manifold.markets/ookina_inu/any-american-frontier-ai-lab-eg-ope",
+    "title": "Any American frontier AI lab (e.g. OpenAI, Anthropic) nationalized by EOY 2027?"
+   }
+  ]
+ },
+ {
+  "chapter": "23장",
+  "text": "거래 에이전트·알고리즘 동조화가 공식 원인으로 지목된 플래시 크래시",
+  "prob": "낮음 10%±8",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "Bank of England",
+    "url": "https://www.bankofengland.co.uk/financial-stability-in-focus/2025/april-2025",
+    "title": "Financial Stability in Focus: Artificial intelligence in the financial system (April 2025)"
+   },
+   {
+    "org": "Bank of England",
+    "url": "https://www.bankofengland.co.uk/-/media/boe/files/financial-stability-report/2026/financial-stability-report-july-2026.pdf",
+    "title": "Financial Stability Report, July 2026"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "23장",
+  "text": "데이터센터 부하의 급탈락·급증이 원인으로 지목된 광역 정전",
+  "prob": "낮음 8%±7",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "Utility Dive(NERC 인용)",
+    "url": "https://www.utilitydive.com/news/nerc-10-year-peak-demand-forecast-jumps-24-on-new-data-center-loads/810955/",
+    "title": "NERC 10-year peak demand forecast jumps 24% on new data center loads"
    }
   ],
   "counter": []
