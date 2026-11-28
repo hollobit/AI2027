@@ -407,7 +407,7 @@
  },
  {
   "theme": "⑤ 보안·안전·오용(에이전트가 공격 표면이자 공격자)",
-  "text": "AI 오케스트레이션 공격의 대중화: 19.5절 참고",
+  "text": "AI 오케스트레이션 공격의 대중화: 19.7절 참고",
   "chapter": "3장",
   "prob": "높음 · 82% (±12)",
   "evidence": "[Google Threat Intelligen…](https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold), [Anthropic](https://assets.anthropic.com/m/ec212e6566a0d47/original/Disrupting-the-first-reported-AI-orchestrated-cyber-espionage-campaign.pdf)"

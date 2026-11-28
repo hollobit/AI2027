@@ -26,7 +26,7 @@
  {
   "when": "2026",
   "name": "**프로토콜·결제 인프라**",
-  "detail": "A2A 지지 조직 150개 이상, Agentic AI Foundation으로 이관. AP2 60개 이상 금융기관. x402 누적 약 1억 9,890만 건·약 5,270만 달러(2025-05 이후 누적, TRM Labs 집계, 9.12절. 대부분 스크립트라는 분석)",
+  "detail": "A2A 지지 조직 150개 이상, Agentic AI Foundation으로 이관. AP2 60개 이상 금융기관. x402 누적 약 1억 9,890만 건·약 5,270만 달러(2025-05 이후 누적, TRM Labs 집계, 9.8절. 대부분 스크립트라는 분석)",
   "lesson": "에이전트 간 통신·결제의 '배관'은 빠르게 표준화, 실거래 규모는 작음 ([Linux Foundation](https://www.linuxfoundation.org/press/a2a-protocol-surpasses-150-organizations-lands-in-major-cloud-platforms-and-sees-enterprise-production-use-in-first-year), [TRM Labs](https://www.trmlabs.com/trm-tech-blog/whos-actually-paying-measuring-ai-agent-payments-onchain))"
  },
  {
