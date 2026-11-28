@@ -621,6 +621,50 @@
  },
  {
   "chapter": "5장",
+  "text": "프런티어 연구소 1곳 이상이 배포 모델이나 내부 운영 에이전트의 가중치를 운영 중 계속 갱신하는 지속 학습 체계를 공식 공개",
+  "prob": "중간 35%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "arXiv (Continual-ARC)",
+    "url": "https://arxiv.org/abs/2611.14505",
+    "title": "Continual-ARC: Measuring Skill Acquisition over a Working Lifetime"
+   },
+   {
+    "org": "AI Futures Project",
+    "url": "https://ai-2027.com/ai-2027.pdf",
+    "title": "AI 2027"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "5장",
+  "text": "연구소 1곳 이상이 출시 모델의 정렬 학습·안전 평가 일부를 AI 연구 에이전트가 수행했다고 시스템 카드·위험 보고서에 명시",
+  "prob": "높음 75%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Anthropic",
+    "url": "https://www.anthropic.com/news/automated-researchers-mitigate-alignment-failures",
+    "title": "Automated researchers can reliably mitigate alignment failures"
+   },
+   {
+    "org": "arXiv (부트스트랩 감시)",
+    "url": "https://arxiv.org/abs/2606.11998",
+    "title": "Bootstrapped monitoring (Xiao & Phuong)"
+   }
+  ],
+  "counter": [
+   {
+    "org": "arXiv",
+    "url": "https://arxiv.org/abs/2605.06390",
+    "title": "Automated Alignment is Harder Than You Think"
+   }
+  ]
+ },
+ {
+  "chapter": "5장",
   "text": "미국 초지능 금지 법안(Sanders–Casar)이 2027년 안에 상·하원 어느 쪽에서든 위원회를 통과",
   "prob": "낮음 3%±3",
   "basis": "전망",
@@ -4590,6 +4634,40 @@
   "counter": []
  },
  {
+  "chapter": "11장",
+  "text": "2027년 신규 AI 컴퓨트(H100 환산) 중 미국 비중이 65% 이상이고 중국(국산 포함)은 15% 미만(Epoch 집계 기준)",
+  "prob": "높음 75%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Epoch AI",
+    "url": "https://epoch.ai/latest/introducing-the-ai-chip-imports-explorer",
+    "title": "Where are the world's AI chips? (AI Chip Imports Explorer)"
+   }
+  ],
+  "counter": [
+   {
+    "org": "Tech Times (Bloomberg 보도)",
+    "url": "https://www.techtimes.com/articles/318868/20260622/china-ai-data-center-grid-locks-out-nvidia-295-billion-domestic-chip-mandate.htm",
+    "title": "China national AI data center grid, 80% domestic chips"
+   }
+  ]
+ },
+ {
+  "chapter": "11장",
+  "text": "5대 하이퍼스케일러의 세계 AI 컴퓨트 보유 비중이 2027년 말에도 65% 이상",
+  "prob": "높음 70%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Epoch AI",
+    "url": "https://epoch.ai/data-insights/hyperscalers-control-most-compute",
+    "title": "Five hyperscalers now own over two-thirds of global AI compute"
+   }
+  ],
+  "counter": []
+ },
+ {
   "chapter": "12장",
   "text": "학회·저널 투고 폭증 지속, 투고 상한·AI 사용 공개 의무·AI 탐지 심사 확산",
   "prob": "높음 88%±10",
@@ -6349,6 +6427,58 @@
   "counter": []
  },
  {
+  "chapter": "16장",
+  "text": "중국이 국가 단위 프런티어 연구 통합(주요 연구소 합병·단일 국가 연구 조직) 또는 단일 국가 프런티어 학습 클러스터를 공식화",
+  "prob": "낮음 10%±8",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "AI 2027 Tracker",
+    "url": "https://ai2027-tracker.com/predictions/china-centralization/",
+    "title": "China nationalizes/centralizes AI research"
+   },
+   {
+    "org": "CGTN (MIIT)",
+    "url": "https://news.cgtn.com/news/2026-09-14/China-achieves-integrated-coordination-monitoring-of-computing-power-1QqvaGDJFU4/share_amp.html",
+    "title": "China achieves integrated coordination, monitoring of computing power"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "16장",
+  "text": "국가 산력망 투자 계획(국산 기술 비중 기준 포함)이 국무원·국가발전개혁위원회 공식 문서로 확정 발표",
+  "prob": "중간 45%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Tech Times (Bloomberg 보도)",
+    "url": "https://www.techtimes.com/articles/318868/20260622/china-ai-data-center-grid-locks-out-nvidia-295-billion-domestic-chip-mandate.htm",
+    "title": "China AI data center grid locks out Nvidia with $295 billion domestic chip mandate"
+   },
+   {
+    "org": "CGTN (MIIT)",
+    "url": "https://news.cgtn.com/news/2026-09-14/China-achieves-integrated-coordination-monitoring-of-computing-power-1QqvaGDJFU4/share_amp.html",
+    "title": "China achieves integrated coordination, monitoring of computing power"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "16장",
+  "text": "국가 AI 펀드가 DeepSeek 외 프런티어 연구소 1곳 이상의 투자를 선도 투자자로 주도",
+  "prob": "중간 60%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Tech Times (Reuters 보도)",
+    "url": "https://www.techtimes.com/articles/316717/20260516/chinas-state-ai-fund-backs-deepseek-4-billion-round-efficiency-challenge-nvidia-dependent.htm",
+    "title": "China's state AI fund backs DeepSeek in up-to-$4 billion round"
+   }
+  ],
+  "counter": []
+ },
+ {
   "chapter": "17장",
   "text": "미국이 프런티어 모델 API 접근을 수출통제로 다루는 방식을 제도화(신뢰 파트너 목록, 국가별 등급). 신규 최상위 모델은 '신뢰 파트너 우선 → 일반 공개'의 단계 출시가 표준",
   "prob": "높음 72%±20",
@@ -7270,6 +7400,78 @@
   "counter": []
  },
  {
+  "chapter": "18장",
+  "text": "칩 내장 또는 오프칩 검증 시제품(위치 검증·학습/추론 구분·FlexHEG 등)의 공개 실증 결과가 1건 이상 발표(민간·학계 포함)",
+  "prob": "중간 55%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "The Future Society",
+    "url": "https://thefuturesociety.org/international-ai-verification",
+    "title": "How To Make International AI Verification a Reality"
+   },
+   {
+    "org": "arXiv",
+    "url": "https://arxiv.org/html/2604.04712v1",
+    "title": "Hardware-Level Governance of AI Compute: A Feasibility Taxonomy"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "18장",
+  "text": "미국 수출 허가(걸프·동남아 대량 허가 등) 조건에 칩 위치 검증 또는 원격 증명이 1건 이상 명시",
+  "prob": "중간 35%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "MIT Technology Review",
+    "url": "https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking/amp/",
+    "title": "Nvidia chip tracking (Chip Security Act, Fleet Intelligence)"
+   }
+  ],
+  "counter": [
+   {
+    "org": "Semiconductor Industry Association (MIT Technology Review 인용)",
+    "url": "https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking/amp/",
+    "title": "Mandates 'new, untested, and potentially infeasible'"
+   }
+  ]
+ },
+ {
+  "chapter": "18장",
+  "text": "국제 평가 네트워크·유엔 과학패널·제네바 정상회의 공식 문서 중 하나에 AI 검증 기술 연구가 협력 과제로 명시",
+  "prob": "중간 35%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "The Future Society",
+    "url": "https://thefuturesociety.org/international-ai-verification",
+    "title": "How To Make International AI Verification a Reality"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "18장",
+  "text": "Chip Security Act가 제정되고 상무부가 위치 검증 의무 시행 규칙(초안 포함)을 2027년 안에 공고",
+  "prob": "낮음 25%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "MIT Technology Review",
+    "url": "https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking/amp/",
+    "title": "Nvidia chip tracking (Chip Security Act, Fleet Intelligence)"
+   },
+   {
+    "org": "미국 의회 (Atlantic Council)",
+    "url": "https://www.atlanticcouncil.org/dispatches/huang-is-back-at-nvidia-but-the-fight-over-who-controls-chip-exports-is-just-beginning/",
+    "title": "Huang is back at Nvidia, but the fight over who controls chip exports is just beginning"
+   }
+  ],
+  "counter": []
+ },
+ {
   "chapter": "19장",
   "text": "공격 표적이 데이터 탈취에서 '의사결정 조작'으로 이동(에이전트가 쓰는 데이터·로직 오염)",
   "prob": "높음 72%±20",
@@ -7703,6 +7905,50 @@
   "counter": []
  },
  {
+  "chapter": "19장",
+  "text": "프런티어 연구소 1곳 이상이 가중치 보안에서 RAND SL4 상당(국가 사이버 기관의 일반 작전 방어) 달성을 공표",
+  "prob": "낮음 25%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "RAND",
+    "url": "https://www.rand.org/pubs/research_reports/RRA4704-1.html",
+    "title": "Achieving AI Model Weight Security Level 3 (SL3)"
+   },
+   {
+    "org": "Anthropic",
+    "url": "https://anthropic.com/responsible-scaling-policy/roadmap",
+    "title": "Anthropic's Frontier Safety Roadmap"
+   }
+  ],
+  "counter": [
+   {
+    "org": "LessWrong",
+    "url": "https://www.lesswrong.com/posts/6rEywvofYpe5bP2td/ai-companies-aren-t-planning-to-secure-critical-model",
+    "title": "AI companies aren't planning to secure critical model weights"
+   }
+  ]
+ },
+ {
+  "chapter": "19장",
+  "text": "미국에서 프런티어 연구소·빅테크 직원의 AI 기술(모델·학습 인프라) 유출 형사 기소가 1건 이상 새로 공개",
+  "prob": "높음 70%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "미국 법무부",
+    "url": "https://www.justice.gov/opa/pr/former-google-engineer-found-guilty-economic-espionage-and-theft-confidential-ai-technology",
+    "title": "Former Google Engineer Found Guilty of Economic Espionage and Theft of Confidential AI Te…"
+   },
+   {
+    "org": "Bloomberg Law",
+    "url": "https://news.bloomberglaw.com/ip-law/x-ai-researcher-stole-trade-secrets-to-take-to-openai-suit-says",
+    "title": "X.AI Researcher Stole Trade Secrets to Take To OpenAI, Suit Says"
+   }
+  ],
+  "counter": []
+ },
+ {
   "chapter": "20장",
   "text": "생물·화학 High(CB-1)가 주요 연구소 신모델의 기본값이 되고, 논쟁이 Critical(신규 무기) 임계로 이동",
   "prob": "높음 78%±15",
@@ -8127,6 +8373,31 @@
    }
   ],
   "counter": []
+ },
+ {
+  "chapter": "20장",
+  "text": "주요 연구소 1곳 이상이 신모델의 설득·조작 능력이 자체 위험 임계(DeepMind 유해 조작 임계 등)에 도달하거나 조기경보 수준에 들었다고 공시",
+  "prob": "낮음 25%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "arXiv (Google DeepMind)",
+    "url": "https://arxiv.org/abs/2603.25326",
+    "title": "Evaluating Language Models for Harmful Manipulation"
+   },
+   {
+    "org": "UK AISI",
+    "url": "https://aisi.gov.uk/blog/how-do-ai-models-persuade-exploring-the-levers-of-ai-enabled-persuasion-through-large-scale-experiments",
+    "title": "How do AI models persuade? (Science)"
+   }
+  ],
+  "counter": [
+   {
+    "org": "OpenAI",
+    "url": "https://openai.com/index/updating-our-preparedness-framework/",
+    "title": "Our updated Preparedness Framework"
+   }
+  ]
  },
  {
   "chapter": "21장",
@@ -8867,6 +9138,50 @@
     "org": "AI Futures Project",
     "url": "https://ai-2040.com/",
     "title": "AI 2040: Plan A"
+   }
+  ]
+ },
+ {
+  "chapter": "23장",
+  "text": "미 의회에서 프런티어 AI 통제권(행정부의 모델 접근 차단 권한, 연구소 지배구조, 권력 집중)을 주제로 한 청문회가 1회 이상 열림",
+  "prob": "중간 60%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "AI Futures Project",
+    "url": "https://ai-2040.com/",
+    "title": "AI 2040: Plan A"
+   },
+   {
+    "org": "Forethought",
+    "url": "https://forethought.org/research/ai-enabled-coups-how-a-small-group-could-use-ai-to-seize-power",
+    "title": "AI-Enabled Coups: How a Small Group Could Use AI to Seize Power"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "23장",
+  "text": "미국 정부 인사가 참여해 프런티어 연구소의 출시·내부 배포를 심의하는 공식 감독 기구(공동 위원회나 이사회 참관석)가 공개(국유화 미만 단계)",
+  "prob": "낮음 15%±10",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "AI Futures Project",
+    "url": "https://ai-2027.com/ai-2027.pdf",
+    "title": "AI 2027"
+   },
+   {
+    "org": "캘리포니아 법무장관",
+    "url": "https://oag.ca.gov/news/press-releases/attorney-general-bonta-issues-statement-openai%E2%80%99s-recapitalization-plan",
+    "title": "Attorney General Bonta Issues Statement on OpenAI's Recapitalization Plan"
+   }
+  ],
+  "counter": [
+   {
+    "org": "Manifold Markets",
+    "url": "https://manifold.markets/ookina_inu/any-american-frontier-ai-lab-eg-ope",
+    "title": "Any American frontier AI lab nationalized?"
    }
   ]
  }
