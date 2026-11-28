@@ -8665,5 +8665,209 @@
    }
   ],
   "counter": []
+ },
+ {
+  "chapter": "23장",
+  "text": "2027년 말 공개된 선도 연구소 AI R&D 진척 배수 추정치(METR류 독립 평가 또는 연구소 공시)가 시나리오의 2027년 3월 값(4배)에 못 미침",
+  "prob": "높음 85%±10",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "METR",
+    "url": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment",
+    "title": "Independent Assessment of AI R&D Acceleration at Anthropic in October 2026"
+   },
+   {
+    "org": "AI Futures Project",
+    "url": "https://ai-2027.com/ai-2027.pdf",
+    "title": "AI 2027 (scenario, full PDF)"
+   }
+  ],
+  "counter": [
+   {
+    "org": "AI Futures Project",
+    "url": "https://www.lesswrong.com/posts/f9PajMLmBYzmWzyDv/aifp-looks-like-the-intelligence-explosion-will-happen-in",
+    "title": "Q3.5 Timelines Update: Looks Like the Intelligence Explosion Will Happen in 2027 After All"
+   }
+  ]
+ },
+ {
+  "chapter": "23장",
+  "text": "AI Futures Project 저자들이 2027년 중 SAR 중앙값(저자 6인 기준 대부분)을 2028년 이후로 다시 늦춤",
+  "prob": "중간 60%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "AI Futures Project",
+    "url": "https://www.lesswrong.com/posts/ZPSsmRH5oMwLPXys4/q2-5-2026-timelines-update-uplift-and-revenue",
+    "title": "Q2.5 2026 Timelines Update: Uplift and Revenue"
+   },
+   {
+    "org": "AI Futures Project",
+    "url": "https://blog.aifutures.org/p/grading-ai-2027s-2025-predictions",
+    "title": "Grading AI 2027's 2025 Predictions"
+   }
+  ],
+  "counter": [
+   {
+    "org": "AI Futures Project",
+    "url": "https://www.lesswrong.com/posts/f9PajMLmBYzmWzyDv/aifp-looks-like-the-intelligence-explosion-will-happen-in",
+    "title": "Q3.5 Timelines Update: Looks Like the Intelligence Explosion Will Happen in 2027 After All"
+   }
+  ]
+ },
+ {
+  "chapter": "23장",
+  "text": "연구소 1곳 이상이 공개 모델과 별도인 내부 최전선 모델의 존재와 AI R&D 지표를 위험 보고서·시스템 카드·주법 보고(SB 53·RAISE)에서 공식 확인",
+  "prob": "중간 55%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "AI Futures Project",
+    "url": "https://www.lesswrong.com/posts/f9PajMLmBYzmWzyDv/aifp-looks-like-the-intelligence-explosion-will-happen-in",
+    "title": "Q3.5 Timelines Update: Looks Like the Intelligence Explosion Will Happen in 2027 After All"
+   },
+   {
+    "org": "METR",
+    "url": "https://metr.org/assets/misalignment-risk-report-august-2026-review.pdf",
+    "title": "Review of the 'Misalignment in high-stakes settings' section in Anthropic's Risk Report: …"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "23장",
+  "text": "시나리오 2027년 상반기 마일스톤 5개(지속 학습 모델 운영, 프런티어 가중치 탈취 공개, 초인적 코더, Agent-3형 정렬 문제의 공식 확인, 정부의 국가안보 차원 연구소 개입) 중 3개 이상이 2027년 말까지 현실화",
+  "prob": "중간 45%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "AI Futures Project",
+    "url": "https://ai-2027.com/ai-2027.pdf",
+    "title": "AI 2027 (scenario, full PDF)"
+   },
+   {
+    "org": "Apollo Research",
+    "url": "https://www.apolloresearch.ai/science",
+    "title": "Science (evaluations)"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "23장",
+  "text": "미국 정부 보안·정보 인력이 프런티어 연구소의 가중치 보안에 상주하거나 참여하는 공식 협약이 공개",
+  "prob": "낮음 25%±15",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "AI Futures Project",
+    "url": "https://ai-2027.com/ai-2027.pdf",
+    "title": "AI 2027 (scenario, full PDF)"
+   },
+   {
+    "org": "RAND",
+    "url": "https://www.rand.org/pubs/research_reports/RRA2849-1.html",
+    "title": "Securing AI Model Weights"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "23장",
+  "text": "2027년 안에 출마를 선언한 미국 주요 대선 주자 1명 이상이 초지능 감속·국제 합의 또는 AI 이익 배당을 대표 공약으로 내세움",
+  "prob": "중간 45%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "AI Futures Project",
+    "url": "https://ai-2040.com/",
+    "title": "AI 2040: Plan A"
+   },
+   {
+    "org": "The Decoder",
+    "url": "https://the-decoder.com/u-s-bill-proposes-permanent-ban-on-artificial-superintelligence-and-creation-of-new-federal-ai-agency/",
+    "title": "U.S. bill proposes permanent ban on artificial superintelligence"
+   }
+  ],
+  "counter": [
+   {
+    "org": "Richard Ngo",
+    "url": "https://www.lesswrong.com/posts/BBd2EJywf2xXftyFn/selective-optimism-a-critique-of-ai-2040",
+    "title": "Selective optimism: a critique of AI 2040"
+   }
+  ]
+ },
+ {
+  "chapter": "23장",
+  "text": "미국 또는 중국 정부가 데이터센터 검증 기술(추론 전용 검증, 칩 내장 검증 등) R&D를 별도 예산·공식 프로그램으로 발표",
+  "prob": "낮음 30%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "AI Futures Project",
+    "url": "https://ai-2040.com/AI-2040.pdf",
+    "title": "AI 2040: Plan A (PDF)"
+   },
+   {
+    "org": "미국 의회",
+    "url": "https://www.atlanticcouncil.org/dispatches/huang-is-back-at-nvidia-but-the-fight-over-who-controls-chip-exports-is-just-beginning/",
+    "title": "Huang is back at Nvidia, but the fight over who controls chip exports is just beginning (…"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "23장",
+  "text": "프런티어 연구소 1곳 이상이 내부 배포 모델과 공개 모델의 격차나 내부 사용 컴퓨트 비중을 정기 공시",
+  "prob": "낮음 30%±20",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "AI Futures Project",
+    "url": "https://ai-2040.com/AI-2040.pdf",
+    "title": "AI 2040: Plan A (PDF)"
+   },
+   {
+    "org": "Dario Amodei",
+    "url": "https://darioamodei.com/post/we-must-pace-the-frontier",
+    "title": "We Must Pace the Frontier"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "23장",
+  "text": "한국 정부가 국제 AI 개발 검증·컴퓨트 신고 체제 논의에 참여하겠다는 입장을 공식 문서나 정상 성명에 담음",
+  "prob": "낮음 20%±15",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "AI Futures Project",
+    "url": "https://ai-2040.com/AI-2040.pdf",
+    "title": "AI 2040: Plan A (PDF)"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "23장",
+  "text": "미중 정부 간 공식 협의(정상·장관급)에서 AI 개발 검증이나 컴퓨트 신고가 공개 의제로 확인됨",
+  "prob": "낮음 10%±8",
+  "basis": "추정",
+  "support": [
+   {
+    "org": "Tech Times",
+    "url": "https://www.techtimes.com/articles/316674/20260515/trump-xi-close-beijing-summit-warm-rhetoric-nvidia-h200-deliveries-remain-stalled-rare-earth.htm",
+    "title": "Trump-Xi close Beijing summit"
+   }
+  ],
+  "counter": [
+   {
+    "org": "AI Futures Project",
+    "url": "https://ai-2040.com/",
+    "title": "AI 2040: Plan A"
+   }
+  ]
  }
 ]
