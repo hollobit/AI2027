@@ -9481,5 +9481,109 @@
   "kr": 1,
   "impact": null,
   "top30": null
+ },
+ {
+  "id": null,
+  "ch": 20,
+  "sec": "20.9",
+  "text": "ISO/IEC TS 42119-7(레드팀)이 2027년 상반기 안에 발간",
+  "p": 75,
+  "unc": 15,
+  "label": "높음",
+  "primary": "보안 특별위원회",
+  "pcode": "",
+  "related": [
+   "글로벌협력 분과"
+  ],
+  "kr": 0,
+  "impact": null,
+  "top30": null
+ },
+ {
+  "id": null,
+  "ch": 20,
+  "sec": "20.9",
+  "text": "발간 뒤 2027년 안에 AI 보안·레드팀 서비스 기업 3곳 이상이 42119-7 정렬·준용을 공식 표방",
+  "p": 70,
+  "unc": 15,
+  "label": "높음",
+  "primary": "보안 특별위원회",
+  "pcode": "",
+  "related": [
+   "산업AX·생태계 분과"
+  ],
+  "kr": 0,
+  "impact": null,
+  "top30": null
+ },
+ {
+  "id": null,
+  "ch": 20,
+  "sec": "20.9",
+  "text": "한국 고영향 AI 안전성 확보 가이드라인·고시 또는 AI안전연구소 평가 절차가 2027년 안에 42119-7을 인용",
+  "p": 40,
+  "unc": 20,
+  "label": "중간",
+  "primary": "보안 특별위원회",
+  "pcode": "",
+  "related": [
+   "법률 TF",
+   "인공지능책임관협의회"
+  ],
+  "kr": 1,
+  "impact": null,
+  "top30": null
+ },
+ {
+  "id": null,
+  "ch": 20,
+  "sec": "20.9",
+  "text": "국내외 정부·공공기관 조달 제안요청서에 42119-7 준수(또는 준용)를 요구한 첫 사례가 2027년 안에 공개",
+  "p": 35,
+  "unc": 20,
+  "label": "중간",
+  "primary": "공공AX 분과",
+  "pcode": "",
+  "related": [
+   "보안 특별위원회"
+  ],
+  "kr": 0,
+  "impact": null,
+  "top30": null
+ },
+ {
+  "id": null,
+  "ch": 20,
+  "sec": "20.9",
+  "text": "EU AI Office의 범용 모델 지침·실천강령 문서가 2027년 안에 42119-7을 적대적 시험의 참조로 명시",
+  "p": 30,
+  "unc": 15,
+  "label": "낮음",
+  "primary": "글로벌협력 분과",
+  "pcode": "",
+  "related": [
+   "보안 특별위원회"
+  ],
+  "kr": 0,
+  "impact": null,
+  "top30": null
+ },
+ {
+  "id": null,
+  "ch": 20,
+  "sec": "20.9",
+  "text": "42119-7 기반 레드팀 수행기관 적격성·인증 프로그램이 2027년 안에 출범(인증기관·협회)",
+  "p": 25,
+  "unc": 15,
+  "label": "낮음",
+  "primary": "보안 특별위원회",
+  "pcode": "",
+  "related": [
+   "산업AX·생태계 분과",
+   "법률 TF"
+  ],
+  "kr": 0,
+  "impact": null,
+  "top30": null
  }
 ]

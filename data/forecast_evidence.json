@@ -8749,6 +8749,100 @@
   ]
  },
  {
+  "chapter": "20장",
+  "text": "ISO/IEC TS 42119-7(레드팀)이 2027년 상반기 안에 발간",
+  "prob": "높음 75%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "ISO",
+    "url": "https://www.iso.org/standard/91240.html",
+    "title": ""
+   },
+   {
+    "org": "SGS",
+    "url": "https://www.sgs.com/en/news/2026/01/announcing-the-iso-iec-42119-series-a-new-era-for-ai-testing-and-assurance",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "20장",
+  "text": "발간 뒤 2027년 안에 AI 보안·레드팀 서비스 기업 3곳 이상이 42119-7 정렬·준용을 공식 표방",
+  "prob": "높음 70%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "SGS",
+    "url": "https://www.sgs.com/en/news/2026/01/announcing-the-iso-iec-42119-series-a-new-era-for-ai-testing-and-assurance",
+    "title": ""
+   },
+   {
+    "org": "GAICC",
+    "url": "https://gaicc.org/blog/iso-42000-standards-family/",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "20장",
+  "text": "한국 고영향 AI 안전성 확보 가이드라인·고시 또는 AI안전연구소 평가 절차가 2027년 안에 42119-7을 인용",
+  "prob": "중간 40%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "ISO",
+    "url": "https://www.iso.org/standard/91240.html",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "20장",
+  "text": "국내외 정부·공공기관 조달 제안요청서에 42119-7 준수(또는 준용)를 요구한 첫 사례가 2027년 안에 공개",
+  "prob": "중간 35%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "SGS",
+    "url": "https://www.sgs.com/en/news/2026/01/announcing-the-iso-iec-42119-series-a-new-era-for-ai-testing-and-assurance",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "20장",
+  "text": "EU AI Office의 범용 모델 지침·실천강령 문서가 2027년 안에 42119-7을 적대적 시험의 참조로 명시",
+  "prob": "낮음 30%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "GAICC",
+    "url": "https://gaicc.org/blog/iso-42000-standards-family/",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "20장",
+  "text": "42119-7 기반 레드팀 수행기관 적격성·인증 프로그램이 2027년 안에 출범(인증기관·협회)",
+  "prob": "낮음 25%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "SGS",
+    "url": "https://www.sgs.com/en/news/2026/01/announcing-the-iso-iec-42119-series-a-new-era-for-ai-testing-and-assurance",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
   "chapter": "21장",
   "text": "EU CRA 본 의무 전면 적용(12-11). 제조사·오픈소스의 SBOM·취약점 처리 준비 러시",
   "prob": "높음 93%±5",
