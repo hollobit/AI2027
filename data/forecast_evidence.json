@@ -5298,6 +5298,203 @@
   "counter": []
  },
  {
+  "chapter": "13장",
+  "text": "Stanford AI Index 2027이 미국으로 들어오는 AI 인재 유입 지표가 2026년 보고보다 더 낮아졌다고 보고",
+  "prob": "높음 70%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Stanford HAI",
+    "url": "https://hai.stanford.edu/assets/files/ai_index_report_2026_chapter_1_research_development.pdf",
+    "title": ""
+   },
+   {
+    "org": "Bloomberg Law",
+    "url": "https://news.bloomberglaw.com/daily-labor-report/first-circuit-denies-trump-bid-to-pause-order-tossing-h-1b-fee",
+    "title": ""
+   }
+  ],
+  "counter": [
+   {
+    "org": "Carnegie (NYT 보도, The Star 전재)",
+    "url": "https://www.thestar.com.my/tech/tech-news/2026/10/11/in-race-with-us-china-struggles-to-recruit-foreign-ai-researchers",
+    "title": ""
+   }
+  ]
+ },
+ {
+  "chapter": "13장",
+  "text": "2026년(NeurIPS 2026) 기준 분석에서도 중국계 저자 비중이 미국을 앞선다는 결과가 나옴",
+  "prob": "높음 75%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Carnegie (NYT 보도, The Star 전재)",
+    "url": "https://www.thestar.com.my/tech/tech-news/2026/10/11/in-race-with-us-china-struggles-to-recruit-foreign-ai-researchers",
+    "title": ""
+   },
+   {
+    "org": "China Daily",
+    "url": "https://www.chinadaily.com.cn/a/202606/22/WS6a388f95a310986e2b461132.html",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "13장",
+  "text": "National Student Clearinghouse 최종 집계(2027-01 예정)에서 2026년 가을 미국 4년제 학부 컴퓨터·정보과학 등록이 전년 대비 10% 이상 감소로 확정",
+  "prob": "높음 75%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Business Standard (Bloomberg)",
+    "url": "https://business-standard.com/world-news/student-enrolment-in-us-computer-science-programs-falls-as-ai-takes-jobs-126102900433_1.html",
+    "title": ""
+   },
+   {
+    "org": "National Student Clearinghouse",
+    "url": "https://www.studentclearinghouse.org/nscblog/computer-science-enrollment-is-cooling/",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "13장",
+  "text": "OECD가 2027년 상반기에 PISA 2025 '디지털 세계 학습(Learning in the Digital World)' 전체 결과를 공개",
+  "prob": "높음 85%±10",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "OECD",
+    "url": "https://www.oecd.org/en/about/news/press-releases/2026/09/pisa-2025-students-reading-and-mathematics-performance-declined-sharply-across-the-oecd.html",
+    "title": ""
+   },
+   {
+    "org": "OECD",
+    "url": "https://www.oecd.org/en/about/news/speech-statements/2026/09/international-launch-of-pisa-2025.html",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "13장",
+  "text": "EU 회원국 감독기관이 2027년 안에 AI Act 제4조(AI 리터러시) 위반을 이유로 공개 제재(과징금·시정명령)를 1건 이상 발표",
+  "prob": "낮음 10%±10",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Lewis Silkin",
+    "url": "https://lewissilkin.com/insights/2026/07/09/council-of-the-eu-gives-ai-omnibus-final-green-light-102nbb1",
+    "title": ""
+   },
+   {
+    "org": "A&O Shearman",
+    "url": "https://edge.sitecorecloud.io/allenoveryllp1-aoshearmanwe0db-production-ecf3/media/project/aoshearman/pdf-downloads/insights/2026/06/ealert---digital-omnibus-on-ai---the-trilogue-deal-is-done.pdf",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "13장",
+  "text": "한국 AI 중점·선도학교가 2027년에 4,000교 이상으로 늘어남",
+  "prob": "높음 70%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "전자신문",
+    "url": "https://m.etnews.com/20260805000268",
+    "title": ""
+   },
+   {
+    "org": "이투데이",
+    "url": "https://www.etoday.co.kr/news/view/2523891",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "13장",
+  "text": "교육부가 2027년 상반기 안에 초중등 정보·AI 교육과정 개정을 국가교육위원회에 정식 요청",
+  "prob": "중간 50%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "이투데이",
+    "url": "https://www.etoday.co.kr/news/view/2523891",
+    "title": ""
+   }
+  ],
+  "counter": [
+   {
+    "org": "한국경제",
+    "url": "https://www.hankyung.com/article/2026062585521",
+    "title": ""
+   }
+  ]
+ },
+ {
+  "chapter": "13장",
+  "text": "AI 디지털교과서(교육자료)를 쓰는 학교 비율이 2027년에 2025년 1학기 수준(약 32%)을 회복",
+  "prob": "낮음 15%±10",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "뉴스토마토",
+    "url": "https://www.newstomato.com/ReadNews.aspx?no=1279918",
+    "title": ""
+   },
+   {
+    "org": "YTN (감사원 결과)",
+    "url": "https://www.ytn.co.kr/_ln/0101_202512171203169296",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "13장",
+  "text": "K-디지털 트레이닝 AI 훈련 인원 2만 명(2027 정부안)이 국회에서 유지되고 2027년 실적으로 달성",
+  "prob": "중간 60%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "헤럴드경제",
+    "url": "https://www.heraldk.com/article/2026083122004098221",
+    "title": ""
+   },
+   {
+    "org": "더팩트",
+    "url": "https://news.tf.co.kr/read/life/2360334.htm",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "13장",
+  "text": "Stanford AI Index 2027에서 한국 AI 인재이동지수가 여전히 음수(순유출)",
+  "prob": "높음 80%±10",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Korea JoongAng Daily (세계은행 WDR 2026)",
+    "url": "https://www.koreajoongangdaily.com/business/korea-lost-11-top-ai-researchers-a-month-over-13-years-world-bank-says/12810659",
+    "title": ""
+   },
+   {
+    "org": "Stanford HAI",
+    "url": "https://hai.stanford.edu/assets/files/ai_index_report_2026_chapter_1_research_development.pdf",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
   "chapter": "14장",
   "text": "예산 확정 후 미션별 신규 R&D 공모·착수(12개 미션 대부분에서 첫 과제 선정)",
   "prob": "높음 80%±15",
@@ -6823,6 +7020,192 @@
     "org": "Tech Times (Reuters 보도)",
     "url": "https://www.techtimes.com/articles/316717/20260516/chinas-state-ai-fund-backs-deepseek-4-billion-round-efficiency-challenge-nvidia-dependent.htm",
     "title": "China's state AI fund backs DeepSeek in up-to-$4 billion round"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "16장",
+  "text": "CCW GGE가 2027년 안에 자율무기에 관한 법적 구속력 있는 의정서 협상 개시에 합의(또는 그런 권고안을 합의 채택)",
+  "prob": "낮음 12%±8",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "APILS",
+    "url": "https://apils.org/2026/11/21/ccw-seventh-review-conference-a-new-mandate-on-autonomous-weapons-but-no-review/",
+    "title": ""
+   },
+   {
+    "org": "Tech Times",
+    "url": "https://www.techtimes.com/articles/330787/20261116/autonomous-weapons-treaty-stake-ccw-review-conference-opens-monday-us-wants-nonbinding-text.htm",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "16장",
+  "text": "CCW 밖에서 자율무기 금지·규제 조약을 위한 별도 협상 절차(주최국 발표 또는 첫 협상 회의)가 2027년 안에 공식 출범",
+  "prob": "낮음 20%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "UN",
+    "url": "https://press.un.org/en/2026/gadis3782.doc.htm",
+    "title": ""
+   },
+   {
+    "org": "APILS",
+    "url": "https://apils.org/2026/11/21/ccw-seventh-review-conference-a-new-mandate-on-autonomous-weapons-but-no-review/",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "16장",
+  "text": "미국 FY2027 국방수권법(NDAA)이 핵무기 발사·폭발 결정에 AI(자율 기능) 사용을 금지하는 조항을 담아 제정",
+  "prob": "높음 70%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Arms Control Association",
+    "url": "https://www.armscontrol.org/act/2026-07/news/us-senate-panel-approves-ai-autonomous-weapons-rules",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "16장",
+  "text": "미 국방부가 2027년 안에 자율무기 지침 DoDD 3000.09의 개정판 또는 대체 지침을 공개",
+  "prob": "중간 40%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Arms Control Association",
+    "url": "https://www.armscontrol.org/act/2026-07/news/us-senate-panel-approves-ai-autonomous-weapons-rules",
+    "title": ""
+   },
+   {
+    "org": "Holland & Knight",
+    "url": "https://www.hklaw.com/en/insights/publications/2026/02/department-of-wars-ai-first-agenda-a-new-era-for-defense-contractors",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "16장",
+  "text": "Anthropic의 미 국방부 공급망 위험 지정이 2027년 안에 철회·합의·확정 판결로 효력을 잃음",
+  "prob": "낮음 30%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Defense One",
+    "url": "https://www.defenseone.com/threats/2026/09/anthropic-lawsuit-supply-chain-risk/416252/",
+    "title": ""
+   }
+  ],
+  "counter": [
+   {
+    "org": "미 전쟁부",
+    "url": "https://war.gov/News/Releases/Release/Article/4475177/classified-networks-ai-agreements",
+    "title": ""
+   }
+  ]
+ },
+ {
+  "chapter": "16장",
+  "text": "미중이 2027년 안에 군사 AI(핵 지휘통제 포함)를 다루는 정부 간 공식 협의를 열거나 공동 문서를 발표(2024 '핵 결정은 사람이' 합의의 재확인 포함)",
+  "prob": "중간 35%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Brookings",
+    "url": "https://www.brookings.edu/articles/advancing-human-control-of-military-ai/",
+    "title": ""
+   },
+   {
+    "org": "Arms Control Association",
+    "url": "https://www.armscontrol.org/factsheets/human-loop-glance",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "16장",
+  "text": "전쟁이 이어지는 한, 우크라이나 정부가 발표하는 2027년 러시아군 사상 중 드론 비중이 80% 이상으로 유지",
+  "prob": "높음 75%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Al Jazeera",
+    "url": "https://www.aljazeera.com/news/2026/4/10/ukraine-says-russia-suffers-record-losses-of-soldiers",
+    "title": ""
+   },
+   {
+    "org": "UNITED24",
+    "url": "https://united24media.com/war-in-ukraine/ukraines-drones-pass-1-million-verified-hits-in-2026-drive-90-of-battlefield-strikes-20849",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "16장",
+  "text": "국방인공지능법(국방 AI 기본법 제정안)이 2027년 안에 국회 본회의를 통과",
+  "prob": "중간 60%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "한국경제",
+    "url": "https://www.hankyung.com/article/2026020290921",
+    "title": ""
+   },
+   {
+    "org": "지디넷코리아",
+    "url": "https://zdnet.co.kr/view?no=20261113111056",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "16장",
+  "text": "국방부가 2027년 상반기 안에 독자 AI 파운데이션 모델 기반 장병용 생성형 AI를 군 내부망에서 제공 시작",
+  "prob": "중간 40%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "지디넷코리아",
+    "url": "https://zdnet.co.kr/view?no=20261113111056",
+    "title": ""
+   },
+   {
+    "org": "전자신문",
+    "url": "https://www.etnews.com/20261023000175",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "16장",
+  "text": "한국 방산 기업이 2027년 안에 AI 기반 무인체계(배회형·자폭 드론, 무인 차량·함정, AI 대드론) 수출 계약을 1건 이상 공개 체결",
+  "prob": "중간 50%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Korea Times",
+    "url": "https://www.koreatimes.co.kr/amp/southkorea/defense/20260515/korea-us-formalize-drone-alliance-to-counter-evolving-regional-threats",
+    "title": ""
+   },
+   {
+    "org": "머니투데이",
+    "url": "https://www.mt.co.kr/politics/2026/06/26/2026062612010698506",
+    "title": ""
    }
   ],
   "counter": []
