@@ -10486,5 +10486,52 @@
    }
   ],
   "counter": []
+ },
+ {
+  "chapter": "25장",
+  "text": "2027년 행동계획 개정판 또는 연차 시행계획에 미국 수출통제·모델 접근 제한(원격접속·신뢰 파트너) 대응이 별도 과제로 들어감",
+  "prob": "중간 50%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "국가인공지능전략위원회",
+    "url": "https://www.aikorea.go.kr/web/board/brdDetail.do?menu_cd=000011&num=328&currentPage=1&searchData=&searchText=",
+    "title": ""
+   },
+   {
+    "org": "K-AI2026 대시보드",
+    "url": "https://hollobit.github.io/K-AI2026/index.html",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "25장",
+  "text": "2027년 행동계획 개정판 또는 연차 시행계획에 AI 에이전트의 신원·권한·책임(KYA) 과제가 별도 과제로 들어감",
+  "prob": "중간 45%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "K-AI2026 대시보드",
+    "url": "https://hollobit.github.io/K-AI2026/index.html",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "25장",
+  "text": "국가인공지능전략위원회가 2027년 안에 행동계획 과제별 이행 실적(권고 단위 완료 여부)을 공개",
+  "prob": "중간 55%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "K-AI2026 대시보드",
+    "url": "https://hollobit.github.io/K-AI2026/index.html",
+    "title": ""
+   }
+  ],
+  "counter": []
  }
 ]
