@@ -1,7 +1,7 @@
 [
  {
   "theme": "① 거버넌스·통제",
-  "text": "ITU AI for Good·WSIS: 06-21~25 제네바(확정) / 에이전트·멀티모달 평가 표준, ISO/IEC 42001 확산 / 국내 출연연·TTA 의장단·에디터십, 4개국 공동 기고",
+  "text": "ITU AI for Good·WSIS(06-21~25 제네바)에서 에이전트·멀티모달 평가 표준과 ISO/IEC 42001 확산이 다뤄짐",
   "chapter": "18장",
   "prob": "높음 · 94% (±5)",
   "evidence": "[ITU](https://www.itu.int/hub/2026/11/the-next-chapter-for-ai-in-geneva/)"
@@ -22,7 +22,7 @@
  },
  {
   "theme": "① 거버넌스·통제",
-  "text": "국제 평가 네트워크(NAAIMES): 2026-02 개명(구 AI 안전연구소 네트워크) / 에이전트·사이버 공동 평가. '안전'에서 '측정·보안'으로 / 창립 회원. 한국어·다국어·에이전트 평가 주도",
+  "text": "국제 평가 네트워크(NAAIMES, 2026-02 개명)가 에이전트·사이버 공동 평가를 수행하고 '안전'에서 '측정·보안'으로 이동",
   "chapter": "18장",
   "prob": "높음 · 80% (±10)",
   "evidence": "[UK Government](https://www.gov.uk/government/news/efforts-to-share-best-practices-on-ai-measurement-and-evaluations-driven-forward-through-the-international-network-for-advanced-ai-measurement-evalua), [UK AI Security Institute](https://www.aisi.gov.uk/blog/international-ai-network-consensus-and-open-questions)"
@@ -101,7 +101,7 @@
   "theme": "① 거버넌스·통제",
   "text": "공공서비스 대리 신청 폭증(에이전트 스팸): 민원 시스템 과부하, KYA 도입",
   "chapter": "3장",
-  "prob": "중간 · 42% (±20)",
+  "prob": "중간 · 45% (±20)",
   "evidence": "[Gartner](https://www.gartner.com/en/newsroom/press-releases/2026-09-15-gartner-unveils-top-strategic-predictions-for-2027-and-beyond)"
  },
  {
@@ -113,7 +113,7 @@
  },
  {
   "theme": "② 프로덕션 확산과 에이전틱 경제",
-  "text": "／ 반도체·EDA·제조: 장시간 자율 에이전트로 전환 / Synopsys AgentEngineer, Cadence ChipStack, Siemens IFM / EDA 에이전트 정식 출시 _(높음)_ ／",
+  "text": "반도체·EDA·제조: 장시간 자율 에이전트로 전환(Synopsys AgentEngineer, Cadence ChipStack, Siemens IFM 등 EDA 에이전트 정식 출시)",
   "chapter": "6장",
   "prob": "높음 · 88% (±10)",
   "evidence": "[Synopsys](https://news.synopsys.com/2026-07-27-Synopsys-Demonstrates-Leadership-in-AI-Powered-Engineering-at-2026-DAC-Chips-to-Systems-Conference)"
@@ -192,7 +192,7 @@
   "theme": "② 프로덕션 확산과 에이전틱 경제",
   "text": "에이전트 커머스 분쟁(오구매·가짜 에이전트): 차지백 급증, 카드사 규칙 제정",
   "chapter": "3장",
-  "prob": "중간 · 55% (±15)",
+  "prob": "높음 · 72% (±20)",
   "evidence": "[Air Street Capital (Stat…](https://www.stateof.ai/predictions), [Palo Alto Networks Unit 42](https://unit42.paloaltonetworks.com/retail-fraud-agentic-ai/)"
  },
  {
