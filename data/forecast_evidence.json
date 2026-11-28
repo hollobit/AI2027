@@ -5920,6 +5920,119 @@
  },
  {
   "chapter": "15장",
+  "text": "글로벌 노스와 사우스의 생성형 AI 사용률 격차(Microsoft 기준)가 12%p 이상으로 유지되거나 커짐",
+  "prob": "높음 75%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Microsoft",
+    "url": "https://blogs.microsoft.com/on-the-issues/2026/09/21/the-continued-state-of-global-ai-diffusion-in-2026/",
+    "title": "The continued state of global AI diffusion in 2026 (AI Diffusion Report Q2 2026)"
+   },
+   {
+    "org": "World Bank",
+    "url": "https://www.worldbank.org/en/publication/wdr2026",
+    "title": "World Development Report 2026: The Promise of Artificial Intelligence"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "15장",
+  "text": "IMF 다음 분석에서도 미·중이 AI 컴퓨팅 하드웨어 순수입의 70% 이상을 차지",
+  "prob": "높음 80%±10",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "IMF",
+    "url": "https://www.imf.org/-/media/files/publications/weo/2026/october/english/ch1.pdf",
+    "title": "World Economic Outlook, October 2026, Chapter 1"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "15장",
+  "text": "제네바 AI 정상회의 공식 산출물에 컴퓨트 접근·역량 격차 해소 약속(기금·바우처·공유 인프라 중 1개 이상)이 포함",
+  "prob": "높음 70%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "ITU",
+    "url": "https://www.itu.int/en/mediacentre/Pages/PR-2026-11-03-Facts-and-Figures.aspx",
+    "title": "Facts and Figures 2026"
+   },
+   {
+    "org": "World Bank",
+    "url": "https://www.worldbank.org/en/news/press-release/2026/08/04/ai-offers-lifeline-to-developing-economies-in-an-era-of-weak-growth",
+    "title": "AI offers lifeline to developing economies in an era of weak growth"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "15장",
+  "text": "ITU 2027년 집계에서 오프라인 인구가 20억 명 아래로 내려감",
+  "prob": "중간 60%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "ITU",
+    "url": "https://www.itu.int/en/mediacentre/Pages/PR-2026-11-03-Facts-and-Figures.aspx",
+    "title": "Facts and Figures 2026"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "15장",
+  "text": "아프리카 AI 펀드(600억 달러)의 실제 자본 약정이 목표의 10% 이상",
+  "prob": "낮음 15%±10",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "The New Times",
+    "url": "https://www.newtimes.co.rw/article/35044/news/technology/one-year-later-africas-ai-drive-shifts-toward-execution/amp",
+    "title": "One year later, Africa's AI drive shifts toward execution"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "15장",
+  "text": "**한국의 AI 활용 개발협력 전략에 따라 '글로벌 AI 허브'가 문을 열고, AI ODA 사업이 2026년보다 늘어남**",
+  "prob": "높음 70%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "The Korea Times",
+    "url": "https://koreatimes.co.kr/foreignaffairs/20260723/korea-proposes-2027-oda-budget-at-46-billion",
+    "title": "Korea proposes 2027 ODA budget at $4.6 billion"
+   },
+   {
+    "org": "대한민국 정책브리핑",
+    "url": "https://m.korea.kr/briefing/actuallyView.do?newsId=148975301",
+    "title": "KOICA AI 개발협력 사업 설명자료"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "15장",
+  "text": "**EDCF 등 정책금융을 묶은 'K-AI 패키지'(AI 솔루션 + 데이터센터 + 전력)가 아프리카·동남아에서 첫 계약**",
+  "prob": "중간 35%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "The Korea Times",
+    "url": "https://www.koreatimes.co.kr/foreignaffairs/20260909/korea-vows-closer-cooperation-with-african-partners-at-koafec-meeting",
+    "title": "Korea vows closer cooperation with African partners at KOAFEC meeting"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "15장",
   "text": "AI 챔피언 2027년 연간 양성 목표(2,000명)를 채워 누적 인증자가 3,000명을 넘음",
   "prob": "높음 75%±15",
   "basis": "전망",
@@ -6184,6 +6297,20 @@
  },
  {
   "chapter": "15장",
+  "text": "AI ODA의 무상(외교부·KOICA)·유상(EDCF)·수출 실증(과기정통부)을 묶은 국가별 단일 창구 또는 공동 사업 지침이 마련",
+  "prob": "낮음 25%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "KDI 경제정보센터",
+    "url": "https://eiec.kdi.re.kr/policy/materialView.do?num=284645",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "15장",
   "text": "국민AI서비스혁신추진단이 직접 개발한 대국민 AI 서비스를 2027년 안에 1개 이상 정식 출시",
   "prob": "높음 70%±15",
   "basis": "전망",
@@ -6196,6 +6323,20 @@
    {
     "org": "아이뉴스24",
     "url": "https://inews24.com/view/2021029",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "15장",
+  "text": "사우디 국산 NPU 서버 실증이 2027년 2차 실증 또는 HUMAIN 연계 파일럿으로 이어짐",
+  "prob": "중간 50%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "디지털데일리",
+    "url": "https://www.ddaily.co.kr/page/view/2026071520334747204",
     "title": ""
    }
   ],
@@ -7580,147 +7721,6 @@
     "org": "미국 의회 (Atlantic Council)",
     "url": "https://www.atlanticcouncil.org/dispatches/huang-is-back-at-nvidia-but-the-fight-over-who-controls-chip-exports-is-just-beginning/",
     "title": "Huang is back at Nvidia, but the fight over who controls chip exports is just beginning"
-   }
-  ],
-  "counter": []
- },
- {
-  "chapter": "19장",
-  "text": "글로벌 노스와 사우스의 생성형 AI 사용률 격차(Microsoft 기준)가 12%p 이상으로 유지되거나 커짐",
-  "prob": "높음 75%±15",
-  "basis": "전망",
-  "support": [
-   {
-    "org": "Microsoft",
-    "url": "https://blogs.microsoft.com/on-the-issues/2026/09/21/the-continued-state-of-global-ai-diffusion-in-2026/",
-    "title": "The continued state of global AI diffusion in 2026 (AI Diffusion Report Q2 2026)"
-   },
-   {
-    "org": "World Bank",
-    "url": "https://www.worldbank.org/en/publication/wdr2026",
-    "title": "World Development Report 2026: The Promise of Artificial Intelligence"
-   }
-  ],
-  "counter": []
- },
- {
-  "chapter": "19장",
-  "text": "IMF 다음 분석에서도 미·중이 AI 컴퓨팅 하드웨어 순수입의 70% 이상을 차지",
-  "prob": "높음 80%±10",
-  "basis": "전망",
-  "support": [
-   {
-    "org": "IMF",
-    "url": "https://www.imf.org/-/media/files/publications/weo/2026/october/english/ch1.pdf",
-    "title": "World Economic Outlook, October 2026, Chapter 1"
-   }
-  ],
-  "counter": []
- },
- {
-  "chapter": "19장",
-  "text": "제네바 AI 정상회의 공식 산출물에 컴퓨트 접근·역량 격차 해소 약속(기금·바우처·공유 인프라 중 1개 이상)이 포함",
-  "prob": "높음 70%±15",
-  "basis": "전망",
-  "support": [
-   {
-    "org": "ITU",
-    "url": "https://www.itu.int/en/mediacentre/Pages/PR-2026-11-03-Facts-and-Figures.aspx",
-    "title": "Facts and Figures 2026"
-   },
-   {
-    "org": "World Bank",
-    "url": "https://www.worldbank.org/en/news/press-release/2026/08/04/ai-offers-lifeline-to-developing-economies-in-an-era-of-weak-growth",
-    "title": "AI offers lifeline to developing economies in an era of weak growth"
-   }
-  ],
-  "counter": []
- },
- {
-  "chapter": "19장",
-  "text": "ITU 2027년 집계에서 오프라인 인구가 20억 명 아래로 내려감",
-  "prob": "중간 60%±15",
-  "basis": "전망",
-  "support": [
-   {
-    "org": "ITU",
-    "url": "https://www.itu.int/en/mediacentre/Pages/PR-2026-11-03-Facts-and-Figures.aspx",
-    "title": "Facts and Figures 2026"
-   }
-  ],
-  "counter": []
- },
- {
-  "chapter": "19장",
-  "text": "아프리카 AI 펀드(600억 달러)의 실제 자본 약정이 목표의 10% 이상",
-  "prob": "낮음 15%±10",
-  "basis": "전망",
-  "support": [
-   {
-    "org": "The New Times",
-    "url": "https://www.newtimes.co.rw/article/35044/news/technology/one-year-later-africas-ai-drive-shifts-toward-execution/amp",
-    "title": "One year later, Africa's AI drive shifts toward execution"
-   }
-  ],
-  "counter": []
- },
- {
-  "chapter": "19장",
-  "text": "**한국의 AI 활용 개발협력 전략에 따라 '글로벌 AI 허브'가 문을 열고, AI ODA 사업이 2026년보다 늘어남**",
-  "prob": "높음 70%±15",
-  "basis": "전망",
-  "support": [
-   {
-    "org": "The Korea Times",
-    "url": "https://koreatimes.co.kr/foreignaffairs/20260723/korea-proposes-2027-oda-budget-at-46-billion",
-    "title": "Korea proposes 2027 ODA budget at $4.6 billion"
-   },
-   {
-    "org": "대한민국 정책브리핑",
-    "url": "https://m.korea.kr/briefing/actuallyView.do?newsId=148975301",
-    "title": "KOICA AI 개발협력 사업 설명자료"
-   }
-  ],
-  "counter": []
- },
- {
-  "chapter": "19장",
-  "text": "**EDCF 등 정책금융을 묶은 'K-AI 패키지'(AI 솔루션 + 데이터센터 + 전력)가 아프리카·동남아에서 첫 계약**",
-  "prob": "중간 35%±20",
-  "basis": "전망",
-  "support": [
-   {
-    "org": "The Korea Times",
-    "url": "https://www.koreatimes.co.kr/foreignaffairs/20260909/korea-vows-closer-cooperation-with-african-partners-at-koafec-meeting",
-    "title": "Korea vows closer cooperation with African partners at KOAFEC meeting"
-   }
-  ],
-  "counter": []
- },
- {
-  "chapter": "19장",
-  "text": "AI ODA의 무상(외교부·KOICA)·유상(EDCF)·수출 실증(과기정통부)을 묶은 국가별 단일 창구 또는 공동 사업 지침이 마련",
-  "prob": "낮음 25%±15",
-  "basis": "전망",
-  "support": [
-   {
-    "org": "KDI 경제정보센터",
-    "url": "https://eiec.kdi.re.kr/policy/materialView.do?num=284645",
-    "title": ""
-   }
-  ],
-  "counter": []
- },
- {
-  "chapter": "19장",
-  "text": "사우디 국산 NPU 서버 실증이 2027년 2차 실증 또는 HUMAIN 연계 파일럿으로 이어짐",
-  "prob": "중간 50%±20",
-  "basis": "전망",
-  "support": [
-   {
-    "org": "디지털데일리",
-    "url": "https://www.ddaily.co.kr/page/view/2026071520334747204",
-    "title": ""
    }
   ],
   "counter": []
