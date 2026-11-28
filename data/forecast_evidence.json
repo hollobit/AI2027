@@ -7211,6 +7211,172 @@
   "counter": []
  },
  {
+  "chapter": "16장",
+  "text": "NATO가 2027년 안에 책임 있는 AI(RAI) 인증 표준을 공식 발간하거나 공개 요약을 발표",
+  "prob": "낮음 30%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "NATO ACT",
+    "url": "https://www.act.nato.int/article/nato-starts-work-on-artificial-intelligence-certification-standard/",
+    "title": ""
+   },
+   {
+    "org": "NATO",
+    "url": "https://www.nato.int/cps/en/natohq/official_texts_208374.htm",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "16장",
+  "text": "바세나르 체제가 2027년 말까지 AI 모델·AI 전용 소프트웨어 항목을 통제목록에 새로 합의",
+  "prob": "낮음 5%±5",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "바세나르 의장 성명",
+    "url": "https://www.wassenaar.org/app/uploads/2025/12/chair_statement.pdf",
+    "title": ""
+   },
+   {
+    "org": "CSIS",
+    "url": "https://www.csis.org/analysis/rethinking-wassenaar-minus-one-strategy",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "16장",
+  "text": "미 국무부가 2027년 안에 자율체계(무인·자율 무기) 통제를 바꾸는 ITAR·USML 규칙안 또는 최종규칙을 공고",
+  "prob": "중간 40%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Arnold & Porter",
+    "url": "https://www.arnoldporter.com/en/perspectives/advisories/2026/11/department-of-state-proposes-slate-of-revisions-to-the-itar-and-us-munitions-list-and-removes-syria",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "16장",
+  "text": "중국이 2027년 안에 드론·무인체계 관련 수출통제를 다시 강화(품목 추가 또는 특정국 대상 금지·건별 심사 확대)",
+  "prob": "중간 65%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "CGTN",
+    "url": "https://news.cgtn.com/news/2026-10-19/China-optimizes-export-control-measures-for-drone-related-items-1Rn8d2KOWFq/p.html",
+    "title": ""
+   },
+   {
+    "org": "Dronelife",
+    "url": "https://dronelife.com/2026/08/05/china-drone-export-controls-us-manufacturers/",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "16장",
+  "text": "AUKUS가 2027년 안에 Pillar II 두 번째 대표 과제를 지정하거나 일본 등 제3국과의 공식 협력 과제를 발표",
+  "prob": "중간 45%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "호주 국방부",
+    "url": "https://www.defence.gov.au/defence-activities/programs-initiatives/aukus-advanced-capabilities/capability-achievements",
+    "title": ""
+   },
+   {
+    "org": "USNI News",
+    "url": "https://news.usni.org/?p=126147",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "16장",
+  "text": "EU가 2027년 안에 AI Act 국방 예외(제2조 3항)를 보완하는 군민 겸용 AI 지침 또는 국방 AI 공동 원칙을 공식 문서로 채택",
+  "prob": "낮음 25%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "CMS",
+    "url": "https://cms.law/en/gbr/publication/the-eu-s-digital-omnibus-on-ai-what-the-provisional-agreement-really-changes",
+    "title": ""
+   },
+   {
+    "org": "Tech Policy Press",
+    "url": "https://techpolicy.press/europes-ai-act-leaves-a-gap-for-military-ai-entering-civilian-life",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "16장",
+  "text": "Baykar가 2027년 안에 인도네시아 외 국가와 Kızılelma 수출 계약을 1건 이상 공개 체결",
+  "prob": "중간 50%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Quwa",
+    "url": "https://quwa.org/asia-pacific/indonesia-defence-news/indonesia-becomes-global-launch-customer-for-baykars-kizilelma-unmanned-fighter-in-first-ever-export-deal/",
+    "title": ""
+   },
+   {
+    "org": "Al-Monitor",
+    "url": "https://www.al-monitor.com/originals/2026/11/turkeys-unmanned-kizilelma-fighter-jet-enters-military-service-what-know",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "16장",
+  "text": "한국 국방부·방위사업청·국방기술품질원이 2027년 안에 무기체계 탑재 AI의 시험평가·신뢰성 기준을 국방표준서·지침·훈령으로 제정",
+  "prob": "중간 40%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "파이낸셜뉴스",
+    "url": "https://www.fnnews.com/news/202607061039526059",
+    "title": ""
+   },
+   {
+    "org": "보안뉴스",
+    "url": "https://m.boannews.com/html/detail.html?idx=144837",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "16장",
+  "text": "한미 공군이 2027년 안에 자율 협동 플랫폼 실무협의체의 첫 공동 시험·유무인 연동 시연 또는 우선 과제 목록을 공개",
+  "prob": "중간 45%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "헤럴드경제",
+    "url": "https://biz.heraldcorp.com/article/10910860",
+    "title": ""
+   },
+   {
+    "org": "Korea Times",
+    "url": "https://www.koreatimes.co.kr/amp/southkorea/defense/20260515/korea-us-formalize-drone-alliance-to-counter-evolving-regional-threats",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
   "chapter": "17장",
   "text": "미국이 프런티어 모델 API 접근을 수출통제로 다루는 방식을 제도화(신뢰 파트너 목록, 국가별 등급). 신규 최상위 모델은 '신뢰 파트너 우선 → 일반 공개'의 단계 출시가 표준",
   "prob": "높음 72%±20",
