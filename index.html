@@ -1648,14 +1648,37 @@
       </table>
     </div>
     <div class="ai27-sub" id="cve-heinrich"><h3>CVE 급증과 하인리히 법칙: 2027 대형 사고의 전조인가</h3>
-      <p class="ai27-muted">보고서 19.2절. VulnCheck·Black Kite(2026-11), Rapid7 3분기, Anthropic Glasswing 중간 보고(2026-05), CSA(2026-06). 하인리히 대입과 확률은 분석 추정입니다.</p>
-      <p><b>한 줄 요약</b>: 2026년 CVE는 AI 탐지로 2배 넘게 늘었지만 실제 악용은 약 1.2–1.35배여서 하인리히 비율은 성립하지 않습니다. 전조는 CVE 개수가 아니라 패치가 따라가지 못하는 공백, 공격자로의 탐지 능력 확산, 패치 불가 노출 장비입니다.</p></div>
+      <p class="ai27-muted">보고서 19.2절. Black Kite 100K CVE 보고서(2026-11-18, NVD·CISA KEV·EUVD·EPSS 집계), VulnCheck(2026-11), Rapid7 3분기, Anthropic Glasswing 중간 보고(2026-05), CSA(2026-06). 하인리히 대입과 확률은 분석 추정입니다.</p>
+      <p><b>한 줄 요약</b>: 2026년 CVE는 AI 탐지·소급 등록으로 2배 넘게 늘어 장기 추세(5.4년마다 2배)의 2.4배가 됐지만, 실제 악용 등재는 약 1.2–1.3배여서 CVE 대비 KEV 비율은 0.65%(2023)에서 0.32%로 절반이 됐습니다. 하인리히 비율은 성립하지 않습니다. 전조는 CVE 개수가 아니라 패치가 따라가지 못하는 공백, 공격자로의 탐지 능력 확산, 패치 불가 노출 장비입니다.</p></div>
     <div class="ai27-tablewrap">
       <table aria-label="CVE와 하인리히 피라미드"><thead><tr><th>하인리히 층</th><th>사이버 대응물</th><th>2025 → 2026</th><th>증가 배수</th></tr></thead><tbody>
-        <tr><td>300: 위험 상태</td><td>CVE 공개</td><td>48,150 → 약 11.3만(연말 전망, 11월 중순 10만 돌파)</td><td class="mid">약 2.3배</td></tr>
-        <tr><td>29: 경미 사고</td><td>실제 악용(CISA KEV 신규)</td><td>245 → 302(11-18 기준)</td><td class="mid">약 1.2–1.35배</td></tr>
+        <tr><td>300: 위험 상태</td><td>CVE 공개</td><td>48,150 → 100,009(11-18), 연말 약 11.3만</td><td class="mid">약 2.1배(연말 2.3배)</td></tr>
+        <tr><td>29: 경미 사고</td><td>실제 악용(KEV 신규)</td><td>CISA 245 → 302, CISA·EUVD 248 → 316(11-18)</td><td class="mid">약 1.2–1.3배</td></tr>
         <tr><td>1: 대형 사고</td><td>S3·S4 사고</td><td>JLR 25억 달러, 프랑스 냉장 설비 700개 매장, 국내 금융사 16곳</td><td class="mid">비교 집계 없음</td></tr>
       </tbody></table>
+    </div>
+    <div class="ai27-tablewrap">
+      <table aria-label="연도별 CVE·NVD 점수·KEV"><thead><tr><th>연도</th><th>공개 CVE</th><th>NVD CVSS v3 점수 보유</th><th>KEV 신규(CISA·EUVD)</th><th>KEV ÷ CVE</th><th>2027 기준 전망</th></tr></thead><tbody>
+        <tr><td>2023</td><td>28,816</td><td>92.0%</td><td>187</td><td class="mid">0.65%</td><td rowspan="4">CVE 19만(13–25만) · CISA KEV 400(320–500) · 비율 0.21% · NVD 점수 보유 12%</td></tr>
+        <tr><td>2024</td><td>39,953</td><td>58.0%</td><td>186</td><td class="mid">0.47%</td></tr>
+        <tr><td>2025</td><td>48,150</td><td>34.6%</td><td>248</td><td class="mid">0.52%</td></tr>
+        <tr><td>2026(11-18)</td><td>100,009</td><td>15.7%</td><td>316</td><td class="mid">0.32%</td></tr>
+      </tbody></table>
+    </div>
+    <div class="ai27-grid2">
+      <div class="ai27-card"><h3>2026 지형(Black Kite)</h3>
+        <ul class="ai27-list">
+          <li><span><b>가속</b>: 2.5만 건 누적 간격 139 → 86 → 54 → 43일, 하루 311건(4.6분마다 1건)</span></li>
+          <li><span><b>원인</b>: AI 탐지(21개 벤더 고위험 CVE 7월 약 2,500건, 이전 최고의 5배), 오픈소스 CNA 소급 발급 +449%, NVD 보강 축소. 소급 물량 중 KEV·EPSS 10% 초과는 1% 미만</span></li>
+          <li><span><b>공격자가 쓴 것</b>: EPSS 상위 8건 중 3건이 2017–2025년 CVE(Hikvision 카메라 등), AI 노트북 도구 Marimo RCE 포함. KEV 2026 중 27건 랜섬웨어</span></li>
+          <li><span><b>악용 속도</b>: 2026년 공개 후 KEV 등재 213건 중 39%가 하루 안, 중앙값 4일</span></li>
+        </ul></div>
+      <div class="ai27-card"><h3>방어 쪽이 가장 바빴던 제품</h3>
+        <ul class="ai27-list">
+          <li><span>MSSQL 151 · SharePoint 121 · MySQL 65 · MongoDB 45 · Exchange 40</span></li>
+          <li><span><b>Langflow 31</b> · pgAdmin 28 · SolarWinds Serv-U 21 (CVE 수, Black Kite 추적)</span></li>
+          <li><span>AI 에이전트 개발 도구가 표적 목록에 들어왔습니다. 국내는 CVSS 대신 KEV·EPSS로 점검 순서를 정하고, 구형 IP 카메라·에이전트 개발 환경을 자산 목록에 넣어야 합니다.</span></li>
+        </ul></div>
     </div>
     <div class="ai27-grid2">
       <div class="ai27-card"><h3>전조 신호 네 가지</h3>
@@ -1667,9 +1690,13 @@
         </ul></div>
       <div class="ai27-card" id="cve-heinrich-fc"><h3>2027 전망</h3>
         <ul class="ai27-list">
-          <li><span class="ai27-pill" data-v="missed" style="justify-self:start">높음 · 80% (±12)</span><span>실제 악용(KEV) 증가율이 CVE 증가율보다 낮고, CVE 대비 악용 비율 2% 미만</span></li>
-          <li><span class="ai27-pill" data-v="missed" style="justify-self:start">높음 · 75% (±15)</span><span>2027년 공개 CVE 15만 건 초과</span></li>
+          <li><span class="ai27-pill" data-v="missed" style="justify-self:start">높음 · 80% (±12)</span><span>2027년 공개 CVE 15만 건 초과</span></li>
+          <li><span class="ai27-pill" data-v="missed" style="justify-self:start">높음 · 80% (±12)</span><span>NVD CVSS v3 점수 보유 비율이 2027년에도 20% 미만</span></li>
+          <li><span class="ai27-pill" data-v="missed" style="justify-self:start">높음 · 75% (±15)</span><span>KEV 증가율이 CVE 증가율보다 낮고, CVE 대비 KEV 등재 비율이 2026년(약 0.3%) 이하</span></li>
           <li><span class="ai27-pill" data-v="missed" style="justify-self:start">높음 · 75% (±15)</span><span>S3 이상 대형 사고의 대부분이 패치 30일 이상 지난 n-day 또는 패치 불가 노출 장비에서 발생</span></li>
+          <li><span class="ai27-pill" data-v="partial" style="justify-self:start">중간 · 60% (±20)</span><span>CISA KEV 2027 신규 등재 350건 이상</span></li>
+          <li><span class="ai27-pill" data-v="partial" style="justify-self:start">중간 · 60% (±20)</span><span>KEV 등재 CVE 중 공개 하루 안 등재 비율이 2026년(39%)보다 높아짐</span></li>
+          <li><span class="ai27-pill" data-v="partial" style="justify-self:start">중간 · 55% (±20)</span><span>Langflow·Marimo류 AI 개발 도구 취약점 5건 이상 CISA KEV 등재</span></li>
           <li><span class="ai27-pill" data-v="partial" style="justify-self:start">중간 · 55% (±20)</span><span>AI 탐지 홍수 속 공개된 취약점 1건이 1,000개 이상 조직 대량 악용(MOVEit급)</span></li>
           <li><span class="ai27-pill" data-v="partial" style="justify-self:start">중간 · 50% (±20)</span><span>CVE·NVD 체계 개편 본격화(CNA 발급 제한, 분산 체계, AI 탐지 공개 지침)</span></li>
           <li><span><b>추적 지표</b>: 악용 확인 후 미패치 기간, 인터넷 노출 미패치 장비 수, 월간 제로데이 건수</span></li>

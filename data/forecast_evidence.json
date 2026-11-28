@@ -7553,8 +7553,64 @@
  },
  {
   "chapter": "19장",
-  "text": "2027년 공개 CVE가 15만 건을 넘음(2026-10 월 1.7만 건 속도면 연 약 20만 건)",
-  "prob": "높음 75%±15",
+  "text": "2027년 CISA KEV 신규 등재가 350건 이상(2026년은 11-18까지 302건, 연 약 340건 추정)",
+  "prob": "중간 60%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Black Kite",
+    "url": "https://blackkite.com/reports/100k-cve-report-2026",
+    "title": "2026 CVE Report: Vulnerabilities Hit 100,000"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "19장",
+  "text": "NVD가 CVSS v3 점수를 매긴 CVE 비율이 2027년에도 20% 미만(2026년 15.7%)",
+  "prob": "높음 80%±12",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Black Kite",
+    "url": "https://blackkite.com/reports/100k-cve-report-2026",
+    "title": "2026 CVE Report: Vulnerabilities Hit 100,000"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "19장",
+  "text": "2027년 KEV 등재 CVE 중 공개 하루 안에 등재된 비율이 2026년(39%)보다 높아짐",
+  "prob": "중간 60%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Black Kite",
+    "url": "https://blackkite.com/reports/100k-cve-report-2026",
+    "title": "2026 CVE Report: Vulnerabilities Hit 100,000"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "19장",
+  "text": "Langflow·Marimo류 AI 에이전트·노트북 개발 도구의 취약점이 2027년 CISA KEV에 5건 이상 등재",
+  "prob": "중간 55%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Black Kite",
+    "url": "https://blackkite.com/reports/100k-cve-report-2026",
+    "title": "2026 CVE Report: Vulnerabilities Hit 100,000"
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "19장",
+  "text": "2027년 공개 CVE가 15만 건을 넘음(2026-10–11 월 약 1.7만 건 속도가 이어지면 연 약 20만 건)",
+  "prob": "높음 80%±12",
   "basis": "전망",
   "support": [
    {
@@ -7572,8 +7628,8 @@
  },
  {
   "chapter": "19장",
-  "text": "실제 악용(KEV) 증가율이 CVE 증가율보다 낮게 유지되고, CVE 대비 악용 비율이 2% 미만",
-  "prob": "높음 80%±12",
+  "text": "실제 악용(KEV) 증가율이 CVE 증가율보다 낮게 유지되고, CVE 대비 KEV(CISA·EUVD) 등재 비율이 2026년 수준(약 0.3%) 이하",
+  "prob": "높음 75%±15",
   "basis": "전망",
   "support": [
    {
