@@ -6130,25 +6130,6 @@
  },
  {
   "chapter": "16장",
-  "text": "원격접속 규칙의 지정국 확대와 클라우드 KYC 집행 강화, 동남아 데이터센터 투자 위축",
-  "prob": "높음 78%±15",
-  "basis": "추세",
-  "support": [
-   {
-    "org": "Greenberg Traurig",
-    "url": "https://www.gtlaw.com/en/insights/2026/11/bis-interim-final-rule-targets-remote-access-to-advanced-semiconductors-rescinds-ai-diffusion-rule",
-    "title": "BIS Interim Final Rule Targets Remote Access to Advanced Semiconductors, Rescinds AI Diff…"
-   },
-   {
-    "org": "미국 상무부 BIS",
-    "url": "https://www.faegredrinker.com/en/insights/publications/2026/11/bis-targets-remote-access-to-advanced-ai-chips-adds-megaspeed-network-to-entity-list",
-    "title": "싱가포르 Megaspeed 등 7개 법인 Entity List 등재(원격접속·칩 우회 연계)"
-   }
-  ],
-  "counter": []
- },
- {
-  "chapter": "16장",
   "text": "연장되더라도 희토류는 '조용한 통제'(허가 지연·선별 승인) 지속",
   "prob": "높음 85%±10",
   "basis": "추세",
@@ -6157,58 +6138,6 @@
     "org": "Tech Times",
     "url": "https://www.techtimes.com/articles/316674/20260515/trump-xi-close-beijing-summit-warm-rhetoric-nvidia-h200-deliveries-remain-stalled-rare-earth.htm",
     "title": "Trump and Xi Close Beijing Summit: Warm Rhetoric, Nvidia H200 Deliveries Remain Stalled, …"
-   }
-  ],
-  "counter": []
- },
- {
-  "chapter": "16장",
-  "text": "Chip Security Act 입법. 행정부(완화)와 의회(강경)의 통제권 다툼",
-  "prob": "중간 52%±20",
-  "basis": "추정",
-  "support": [
-   {
-    "org": "미국 의회",
-    "url": "https://www.atlanticcouncil.org/dispatches/huang-is-back-at-nvidia-but-the-fight-over-who-controls-chip-exports-is-just-beginning/",
-    "title": "FY2027 NDAA 상원안에 Chip Security Act(위치검증)·AI OVERWATCH·MATCH·"
-   }
-  ],
-  "counter": []
- },
- {
-  "chapter": "16장",
-  "text": "증류·가중치 탈취에 대한 첫 제재(Entity List 또는 OFAC)",
-  "prob": "높음 70%±15",
-  "basis": "추정",
-  "support": [
-   {
-    "org": "미국 재무부(베선트)",
-    "url": "https://www.wilsoncenter.org/article/americas-ai-action-plan-after-one-year-what-administration-has-done-and-what-comes-next",
-    "title": "증류 기업 제재 경고. 9월 보고서는 DeepSeek 등 중국 6개사(알리바바·Moonshot 포함)를 대규"
-   },
-   {
-    "org": "Anthropic",
-    "url": "https://anthropic.com/news/detecting-and-preventing-distillation-attacks",
-    "title": "Detecting and preventing distillation attacks"
-   }
-  ],
-  "counter": []
- },
- {
-  "chapter": "16장",
-  "text": "프런티어 모델 임시 수출통제의 반복이나 제도화. 해외 사용자의 최신 모델 접근 지연",
-  "prob": "높음 72%±20",
-  "basis": "추정",
-  "support": [
-   {
-    "org": "Mayer Brown",
-    "url": "https://www.mayerbrown.com/en/insights/publications/2026/06/commerce-department-extends-export-controls-to-advanced-ai-models-authorizes-release-to-specific-trusted-partners",
-    "title": "Commerce Department Extends Export Controls to Advanced AI Models, Authorizes Release to …"
-   },
-   {
-    "org": "Tech Policy Press",
-    "url": "https://techpolicy.press/commerce-eased-its-block-on-anthropics-mythos-but-major-questions-remain",
-    "title": "Commerce eased its block on Anthropic's Mythos but major questions remain"
    }
   ],
   "counter": []

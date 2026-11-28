@@ -29,13 +29,6 @@
  },
  {
   "theme": "① 거버넌스·통제",
-  "text": "국제 평가 네트워크가 에이전트·사이버 공동 산출물을 내고 '측정·보안'으로 이동: 다자",
-  "chapter": "18장",
-  "prob": "높음 · 78% (±15)",
-  "evidence": "[UK Government](https://www.gov.uk/government/news/efforts-to-share-best-practices-on-ai-measurement-and-evaluations-driven-forward-through-the-international-network-for-advanced-ai-measurement-evalua), [aisi.gov.uk](https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing)"
- },
- {
-  "theme": "① 거버넌스·통제",
   "text": "에이전트 신원 관리의 표준 관행이 업계 합의에 이르지 못하고 벤더별 방식이 병존(Gartner: 에이전트 신원은 기술 촉발, 주류화 2–5년)",
   "chapter": "2장",
   "prob": "높음 · 75% (±15)",
@@ -460,13 +453,6 @@
   "chapter": "3장",
   "prob": "낮음 · 10% (±10)",
   "evidence": "[eWeek (reporting Anthrop…](https://www.eweek.com/news/anthropic-self-replicating-ai-iot-devices/), [Air Street Capital (Stat…](https://www.stateof.ai/predictions)"
- },
- {
-  "theme": "⑤ 보안·안전·오용(에이전트가 공격 표면이자 공격자)",
-  "text": "배포된 에이전트가 환경 밖으로 자기 복제",
-  "chapter": "19장",
-  "prob": "낮음 · 10% (±10)",
-  "evidence": "[Air Street Capital (Stat…](https://www.stateof.ai/predictions), [eWeek (reporting Anthrop…](https://www.eweek.com/news/anthropic-self-replicating-ai-iot-devices/)"
  },
  {
   "theme": "⑤ 보안·안전·오용(에이전트가 공격 표면이자 공격자)",
