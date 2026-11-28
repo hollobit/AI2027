@@ -65,7 +65,7 @@
 - **AI 에이전트(24장)**: 에이전트 관련 전망 66건 중 33건이 높음이며, 가장 강한 합의는 역량이 아니라 통제입니다. 행동 탈취·공급망 공격·비용 폭주가 일상 사고가 되고, 전문 AI는 초급 업무부터 넘겨받습니다(24.6절).
 - **2027 핵심 전망 Top 30(25.2절)**: 선정 시점의 전망 544건을 확률·불확도·중요도·사회적 파급력으로 종합하면, 1위는 광고 기반 웹의 붕괴(85%), 2위는 청년·신입 채용 절벽의 구조화(82%)이고 30건 중 10건이 보안입니다. 저확률·고영향 감시 대상 8건에는 AI가 도운 생물·화학 공격 시도(12%), 초인적 AI 연구자 도달(25%), 동맹국 모델 접근 강제 중단(30%), 가중치 탈취(7%)가 들어갑니다.
 - **AI 2027·AI 2040 시나리오 대조(25.3–25.5절)**: AI 2027의 2025–2026 마일스톤 12개 중 7개가 일치하거나 앞섰고(빗나감 2개), 저자들은 실제 진척을 시나리오 속도의 약 70–90%로 봅니다. 본 보고서는 2027년 초인적 AI 연구자를 25%로 더 느리게 봅니다. 두 시나리오를 점검표로 써서 국제 검증 체제(18.8절), 컴퓨트 점유율(미국 신규 컴퓨트 78%, 11.1절), 가중치 보안·내부자 위협(21.6절), 권력 집중과 통제 주체(25.5절)를 보강했습니다.
-- **위원회 조직과 2027 대처(25.9절)**: 국가인공지능전략위원회는 분과 10개, 특별위원회 2개(보안·지역), 2026-11 승인 TF 7개로 움직입니다. Top 30 전망은 모두 맡을 기구가 있지만, 기술 통제는 가장 작은 글로벌협력 분과(7명)에, AI 안전 집행은 보안 특별위원회·법률 TF·초지능 대응 TF에 나뉘어 있습니다. 새 특별위원회 대신 분과 합동 과제와 보안 특별위원회 소관 확대, 소분과 2개(노동 전환, 의료 AI)를 제안합니다. 전망 601건 전부를 주관·관련 기구에 배정하면 산업AX·생태계 분과(관련 194건)와 글로벌협력 분과(144건)에 가장 많이 걸리고, 법률 TF는 주관 19건에 관련 95건입니다(25.10절, 부록 배정 목록).
+- **위원회 조직과 2027 대처(25.9절)**: 국가인공지능전략위원회는 분과 10개, 특별위원회 2개(보안·지역), 2026-11 승인 TF 7개로 움직입니다. Top 30 전망은 모두 맡을 기구가 있지만, 기술 통제는 가장 작은 글로벌협력 분과(7명)에, AI 안전 집행은 보안 특별위원회·법률 TF·초지능 대응 TF에 나뉘어 있습니다. 새 특별위원회 대신 분과 합동 과제와 보안 특별위원회 소관 확대, 소분과 2개(노동 전환, 의료 AI)를 제안합니다. 전망 606건 전부를 주관·관련 기구에 배정하면 산업AX·생태계 분과(관련 194건)와 글로벌협력 분과(145건)에 가장 많이 걸리고, 법률 TF는 주관 19건에 관련 95건입니다(25.10절, 부록 배정 목록).
 - **핵심 인물 리스크(25.15절)**: 2026년 엔비디아 사태로 KOSPI가 하루 3.59% 하락했습니다(보도 기준). 영향력 큰 IT·AI 인물 사건은 연 1.5건꼴이고, 엔비디아급 사건이 2027년에 다시 일어날 확률은 약 30%입니다.
 
 **예상하지 못한 사건(25.16절).** 2026년의 큰 변화는 대부분 예측 목록 밖에서 왔습니다. 모델 수출통제, 엔비디아 핵심 인물 사태, 냉장 설비 OT 공격은 예측 61건에 없었고, 모두 두 분야의 경계(기술×규제, 기술×금융, 사이버×물리)에서 터졌습니다. 2027년 와일드카드 18개 중 1개 이상이 일어날 확률은 90%여서, 국가인공지능전략위원회의 긴급 안건 절차와 사후 분석 의무화를 제안합니다.
@@ -4417,7 +4417,7 @@ AI 표준화는 2026년에 공적 표준(ISO/IEC·CEN-CENELEC), 사실 표준(MC
 | 시점 | 사실 |
 |---|---|
 | 2025-09 | REAIM(2023년 한국·네덜란드 공동 출범) 글로벌위원회가 비구속 원칙 'Responsible by Design' 발표 후 임무 종료(위원회 활동 종료, REAIM 3차 정상회의는 2026-02 개최, 20.2절) |
-| 2025-07 → 2026-05 | 미 국방부가 Anthropic·Google·OpenAI·xAI와 각 최대 2억 달러 계약(2025-07), 전사 생성형 AI 플랫폼 GenAI.mil(130만 명+). 2026-05 기밀망 프런티어 AI 도입 계약(7–8개사). **Anthropic은 공급망 위험 지정(2026-02-27 발표, 03-05 공식 통보)으로 제외**, OpenAI는 대량 국내감시·자율무기 지휘 금지 조건을 계약에 명시 |
+| 2025-07 → 2026-05 | 미 국방부가 Anthropic·Google·OpenAI·xAI와 각 최대 2억 달러 계약(2025-07), 전사 생성형 AI 플랫폼 GenAI.mil(2026-09 주간 이용자 200만 명+, [Nextgov/FCW](https://www.nextgov.com/artificial-intelligence/2026/09/genaimil-saw-more-2-million-users-one-week-top-dod-official-says/416183/)). 2026-05 기밀망 프런티어 AI 도입 계약(7–8개사). **Anthropic은 공급망 위험 지정(2026-02-27 발표, 03-05 공식 통보)으로 제외**, OpenAI는 대량 국내감시·자율무기 지휘 금지 조건을 계약에 명시 |
 | 2026-09-05 | CCW GGE LAWS 2024–2026 임무 종료. 76개국이 협상 개시 지지, 미·러가 윤리·예측가능성 요건을 빼 문안 약화. 유엔총회 결의 다수 찬성(2025년 결의 표결 수치는 보도마다 다름) |
 | 2026-09 | 한국 2027 국방예산 정부안 73.3조 원(+8.2%). **AI·유무인 복합체계 예산 4,968억 → 7,727억 원(+55.5%)**, 대드론 확대 |
 | 2026 | 국방부: AI 응용제품 신속 상용화(2027년까지 400억 원, 20개 과제), 민간 모델 기반 한국형 국방 AI 통합 플랫폼 추진(GPU·예산이 장벽) |
@@ -4427,7 +4427,7 @@ AI 표준화는 2026년에 공적 표준(ISO/IEC·CEN-CENELEC), 사실 표준(MC
 
 ### 20.2 국방·안보 AI 2027: 전장 자율화, 프런티어 랩의 국방 진입, 통제 규범
 
-> 자료: 미 전쟁부(국방부) FY2027 예산안 개요서·기밀망 AI 협약 발표(05-01), DefenseScoop, Defense One, Greenberg Traurig, Holland & Knight, Arms Control Association, AP(azfamily 게재), NPR, Al Jazeera, UNITED24, Defense News, Jamestown, EU 이사회(SAFE), 스페인 외교부(REAIM 2026), UN 보도자료(제1위원회), APILS(CCW 검토회의), Brookings, 머니투데이, 전자신문, 헤럴드경제, 지디넷코리아, 한국경제, Korea Times. 확률은 본 보고서의 판단입니다.
+> 자료: 미 전쟁부(국방부) FY2027 예산안 개요서·기밀망 AI 협약 발표(05-01), DefenseScoop, Defense One, Greenberg Traurig, Holland & Knight, Arms Control Association, AP(azfamily 게재), NPR, Al Jazeera, UNITED24, Defense News, Jamestown, EU 이사회(SAFE), 스페인 외교부(REAIM 2026), UN 보도자료(제1위원회), APILS(CCW 검토회의), Brookings, 머니투데이, 전자신문, 헤럴드경제, 지디넷코리아, 한국경제, Korea Times. 2026-11-28 보강분(자율전투사령부, Maven 실적, CCA 자율 공중전, Anthropic 소송, 한미 대드론, 안보리 공개토의 등)은 주간 [국방 AI(AI+IT) 뉴스레터](https://crayon-sim.github.io/defense-ai-newsletter/)(2025-05~2026-11, 80호, 기사 975건)를 단서로 삼아 각 기사 원문으로 확인했습니다. 확률은 본 보고서의 판단입니다.
 
 20.1절이 2026년 하반기까지의 사실(CCW GGE 종료, 미 국방부 계약, 한국 2027 국방예산)을 정리했다면, 이 절은 **전장·조달·규범의 세 축이 2027년에 어디로 가는가**를 봅니다. 2026년의 결론은 세 가지입니다. 첫째, **AI가 실제 전쟁의 표적 처리 속도를 바꿨습니다.** 미국의 이란 작전에서는 Maven Smart System이 표적 처리를 맡았고, 우크라이나는 러시아군 사상의 90% 이상을 드론으로 낸다고 발표합니다(우크라이나 정부 발표 기준). 둘째, **프런티어 랩은 국방 시장에 들어왔지만, 사용 조건을 누가 정하는지를 두고 충돌했습니다.** 미 국방부는 '모든 합법적 사용' 조건을 요구했고, 이를 거부한 Anthropic을 공급망 위험으로 지정했습니다. 셋째, **통제 규범은 진척보다 지연이 컸습니다.** CCW 검토회의(11-16~20)는 구속력 있는 조약 협상 위임에 실패하고, GGE에 2027–2028년 '성격을 미리 정하지 않은 문서' 작업만 맡겼습니다.
 
@@ -4435,7 +4435,7 @@ AI 표준화는 2026년에 공적 표준(ISO/IEC·CEN-CENELEC), 사실 표준(MC
 
 | 국가·기구 | 2026 핵심 사실 | 예산·조직 | 2027 관전점 |
 |---|---|---|---|
-| 미국 | 국방장관 AI 전략 메모(01-09): 'AI 우선 전투 조직', 선도 과제(PSP) 7개, AI 구매 계약에 '모든 합법적 사용' 문구를 180일 안에 넣도록 지시([DefenseScoop](https://defensescoop.com/2026/01/13/hegseth-ai-tech-hubs-reorganization-dod-dow/), [Holland & Knight](https://www.hklaw.com/en/insights/publications/2026/02/department-of-wars-ai-first-agenda-a-new-era-for-defense-contractors)). 기밀망 AI 협약 8개사(05-01, Anthropic 제외). GenAI.mil 사용자 130만 명 | FY2027 요청: AI 585억 달러(다년 의무지출 '소버린 AI 무기고' 460억 포함), 자율·원격 체계 540억 달러(Drone Dominance 의무지출 392억 포함)([미 전쟁부 예산 개요](https://comptroller.war.gov/Portals/45/Documents/defbudget/FY2027/FY2027_Budget_Request_Overview_Book.pdf), [Greenberg Traurig](https://www.gtlaw.com/en/insights/2026/5/understanding-the-presidents-fy-2027-budget-request-for-the-department-of-war)) | 민주당 다수 의회(16장 머리말)가 의무지출·예산조정 방식 자율체계 예산을 얼마나 깎는지, DoDD 3000.09 개정 여부, Anthropic 소송 |
+| 미국 | 국방장관 AI 전략 메모(01-09): 'AI 우선 전투 조직', 선도 과제(PSP) 7개, AI 구매 계약에 '모든 합법적 사용' 문구를 180일 안에 넣도록 지시([DefenseScoop](https://defensescoop.com/2026/01/13/hegseth-ai-tech-hubs-reorganization-dod-dow/), [Holland & Knight](https://www.hklaw.com/en/insights/publications/2026/02/department-of-wars-ai-first-agenda-a-new-era-for-defense-contractors)). 기밀망 AI 협약 8개사(05-01, Anthropic 제외). GenAI.mil 주간 이용자 200만 명 이상(09월, Gemini·ChatGPT·Grok 3종, [Nextgov/FCW](https://www.nextgov.com/artificial-intelligence/2026/09/genaimil-saw-more-2-million-users-one-week-top-dod-official-says/416183/)). 11월 CDAO를 '초지능실(SIO)'로 개칭(행정명령 14434의 'AI→초지능(SI)' 용어 전환, 기존 사업은 그대로, [SecurityWeek](https://www.securityweek.com/pentagon-renames-cdao-super-intelligence-office/)). 09-30 4성 제12 통합전투사령부 '자율전투사령부(AUTOWARCOM)'를 2027-10-01까지 창설한다고 발표([Defense One](https://www.defenseone.com/policy/2026/09/hegseth-plans-autonomous-warfare-command/416358/)) | FY2027 요청: AI 585억 달러(다년 의무지출 '소버린 AI 무기고' 460억 포함), 자율·원격 체계 540억 달러(Drone Dominance 의무지출 392억 포함)([미 전쟁부 예산 개요](https://comptroller.war.gov/Portals/45/Documents/defbudget/FY2027/FY2027_Budget_Request_Overview_Book.pdf), [Greenberg Traurig](https://www.gtlaw.com/en/insights/2026/5/understanding-the-presidents-fy-2027-budget-request-for-the-department-of-war)) | 민주당 다수 의회(16장 머리말)가 의무지출·예산조정 방식 자율체계 예산을 얼마나 깎는지, DoDD 3000.09 개정 여부, Anthropic 소송, AUTOWARCOM 창설(의회 승인·예산조정법 재원 필요) |
 | 중국 | 국방과기대 시험에서 운용자 1명이 드론 약 200대를 동시 감독(01월, 국영TV)([Defense News](https://www.defensenews.com/global/asia-pacific/2026/04/07/outpaced-by-the-us-chinas-military-places-selective-bets-on-artificial-intelligence/)). 조달 문서상 DeepSeek를 지휘·무인체계에 도입([Jamestown](https://jamestown.org/deepseek-use-in-prc-military-and-public-security-systems/)) | 국방 AI 예산 비공개. 군민융합으로 민간 모델 흡수 | 대만해협 훈련에서 군집·무인 전력의 공개 시연, 21차 당대회(가을) 전 '지능화' 성과 과시. 실전 데이터는 미국보다 부족하다는 평가 |
 | 러시아·우크라이나 | 우크라이나: 3월 러시아군 사상 3만 5,351명 중 약 96%가 드론 탓이라고 발표([Al Jazeera](https://www.aljazeera.com/news/2026/4/10/ukraine-says-russia-suffers-record-losses-of-soldiers)). 러시아: AI 종말 유도 드론의 민간인 살상 사례 보도 | 우크라이나 무인체계군 별도 군종. 요격 드론 대량 생산(제조사 발표) | 전쟁 지속 시 종말 유도 자율화와 요격 드론이 표준 장비로. 휴전 시 전장 데이터의 수출·이전이 쟁점 |
 | NATO | 앤카라 정상회의(07-07~08)에서 혁신 확대 패키지 승인. DIANA가 의사결정 지원 기업 10곳을 선정해 NATO Maven Smart System과 연결(보도 기준) | 헤이그 합의(2025) GDP 5%(핵심 국방 3.5% + 관련 1.5%) | 2027 알바니아 정상회의에서 개정 AI 전략(2024-07, 공개본은 요약문뿐([NATO](https://www.nato.int/cps/en/natohq/official_texts_227237.htm)) 이행 점검, 동맹국 간 AI 상호운용 기준 |
@@ -4444,8 +4444,8 @@ AI 표준화는 2026년에 공적 표준(ISO/IEC·CEN-CENELEC), 사실 표준(MC
 
 #### 전장(중동·우크라이나·대만해협)의 AI 사용 현황
 
-- **중동(미국–이란)**: 미군은 개전 첫 24시간에 표적 약 1,000개를 타격했다고 밝혔습니다. 2003년 이라크 개전 때의 두 배입니다. CDAO 책임자는 Maven을 '표적 식별에서 타격 실행까지 잇는 단일 도구'로 설명했습니다. 표적 결정에 걸리던 시간이 시간·일 단위에서 분 단위로 줄었다는 것이 군의 설명입니다([AP, azfamily 게재](https://www.azfamily.com/2026/03/26/ai-targeting-system-doubles-pace-us-strikes-iran/)). Maven 안에 Claude가 들어 있다는 보도가 있지만, 어떤 기능을 맡았는지는 공개되지 않았습니다. 미나브 학교 피격(02-28)은 조사 중이며, 국방부는 AI가 표적 선정에 관여했는지 밝히지 않았습니다. 상원 청문회에서는 LUCAS 자폭 드론의 최종 결정을 사람이 하는지가 쟁점이 됐습니다.
-- **우크라이나**: 우크라이나 국방장관 페도로프는 드론이 러시아군 손실의 90% 이상을 낸다고 밝혔습니다. CSIS는 2026년 상반기 러시아 대 우크라이나 사상 비율을 약 8:1로 추정했습니다([UNITED24](https://united24media.com/war-in-ukraine/ukraines-drones-pass-1-million-verified-hits-in-2026-drive-90-of-battlefield-strikes-20849)). 광섬유 드론·전자전 환경에서 AI 종말 유도와 요격 드론이 확산됐고, 러시아 측 AI 유도 드론의 민간인 살상 사례도 보도됐습니다([GV Wire](https://gvwire.com/2026/08/24/a-drone-killed-three-ukrainians-it-was-guided-entirely-by-ai/)). 우크라이나 군 규정은 최종 교전 단계의 완전 자율 살상을 금지하고 사람의 확인을 요구한다고 전해집니다(보도 기준).
+- **중동(미국–이란)**: 미군은 개전 첫 24시간에 표적 약 1,000개를 타격했다고 밝혔습니다. 2003년 이라크 개전 때의 두 배입니다. CDAO 책임자는 Maven을 '표적 식별에서 타격 실행까지 잇는 단일 도구'로 설명했습니다. 표적 결정에 걸리던 시간이 시간·일 단위에서 분 단위로 줄었다는 것이 군의 설명입니다([AP, azfamily 게재](https://www.azfamily.com/2026/03/26/ai-targeting-system-doubles-pace-us-strikes-iran/)). CDAO 책임자는 09월에 Maven이 작전 38일 동안 표적 1만 3,000개 타격을 지원했다고 밝혔고, 이용자는 1월 약 5만 명에서 10만 명 이상으로 늘었습니다. 국방부 부장관 지시(03월)로 Maven을 회계연도 말까지 정규 획득 사업(program of record)으로 전환합니다([DefenseScoop](https://defensescoop.com/2026/09/22/maven-smart-system-ai-james-mazol-cameron-stanley-defensetalks/)). 해병대는 10월 예비군까지 쓰는 전 부대 기업 라이선스를 맺었습니다([Defense News](https://www.defensenews.com/industry/techwatch/2026/10/21/marine-corps-makes-maven-available-service-wide/)). Maven 안에 Claude가 들어 있다는 보도가 있지만, 어떤 기능을 맡았는지는 공개되지 않았습니다. 미나브 학교 피격(02-28)은 조사 중이며, 국방부는 AI가 표적 선정에 관여했는지 밝히지 않았습니다. 상원 청문회에서는 LUCAS 자폭 드론의 최종 결정을 사람이 하는지가 쟁점이 됐습니다.
+- **우크라이나**: 우크라이나 국방장관 페도로프는 드론이 러시아군 손실의 90% 이상을 낸다고 밝혔습니다. CSIS는 2026년 상반기 러시아 대 우크라이나 사상 비율을 약 8:1로 추정했습니다([UNITED24](https://united24media.com/war-in-ukraine/ukraines-drones-pass-1-million-verified-hits-in-2026-drive-90-of-battlefield-strikes-20849)). 광섬유 드론·전자전 환경에서 AI 종말 유도와 요격 드론이 확산됐고, 러시아 측 AI 유도 드론의 민간인 살상 사례도 보도됐습니다([GV Wire](https://gvwire.com/2026/08/24/a-drone-killed-three-ukrainians-it-was-guided-entirely-by-ai/)). Anthropic은 러시아 연계 그룹(GTG-27005)이 Claude로 사람 표적 클래스를 포함해 사람 개입 없이 표적을 고르고 격발 명령을 내리는 소형 모델과 드론 간 통신 소프트웨어를 만들다가, 하드웨어 연동 시험 단계에서 적발돼 차단됐다고 공개했습니다(09-10)([Anthropic](https://www-cdn.anthropic.com/e50be2e51e7695dc4b1366a37a245a597377d3b5/Anthropic-Detecting-and-countering-091026.pdf), [Defense One](https://www.defenseone.com/technology/2026/09/russia-weaponizing-us-built-ai-make-killer-drones-cyberattack-bots-and-fake-news/415949/)). 상용 모델이 자율 살상 기능 개발에 쓰인 첫 공개 사례입니다. 우크라이나 군 규정은 최종 교전 단계의 완전 자율 살상을 금지하고 사람의 확인을 요구한다고 전해집니다(보도 기준).
 - **대만해협**: 중국은 '무인·지능·군집'을 체계 대 체계 전쟁의 핵심으로 내세웁니다. 2027년 쟁점은 대만해협 훈련에서 군집 드론·무인 수상정이 상시 전력으로 등장하는지입니다. TSMC 차질 위험은 25.16절(#16, 5%)에 있습니다.
 
 **판단.** 2026년은 'AI가 쏘는가'보다 '**AI가 표적 처리 속도를 사람이 검토할 수 없을 만큼 올리는가**'가 핵심 쟁점이 된 해입니다. 사람의 승인 절차는 형식상 남아 있지만, 하루 1,000개 표적을 검토하는 구조에서는 자동화 편향이 실질 통제를 약하게 합니다(추정). 2027년 규범 논의의 초점도 '완전 자율무기 금지'에서 '**의사결정 지원 AI의 검토 시간·기록 의무**'로 옮겨 갑니다.
@@ -4455,9 +4455,10 @@ AI 표준화는 2026년에 공적 표준(ISO/IEC·CEN-CENELEC), 사실 표준(MC
 | 쟁점 | 2026 사실 | 2027 관전점 |
 |---|---|---|
 | 사용 조건 | 국방부는 '모든 합법적 사용' 조건을 요구했습니다. Anthropic은 국내 대량감시·완전 자율무기 금지를 고수해 공급망 위험으로 지정됐습니다(02-27 발표, 03월 공식 통보). OpenAI는 같은 시기 기밀망 협약을 맺었습니다(20.1절) | 다른 랩이 계약서에 금지 조건을 둘 수 있는지, 정부가 '합법적 사용' 문구를 연방 조달 표준으로 확장하는지 |
-| Anthropic 소송 | 북부 캘리포니아 연방지법이 10 U.S.C. §3252 근거 지정을 위법 소지로 보고 영구 금지명령(08-27). D.C. 순회항소법원은 연방조달공급망보안법(FASCSA) 근거 지정을 2대1로 유지(09-25)([Defense One](https://www.defenseone.com/threats/2026/09/anthropic-lawsuit-supply-chain-risk/416252/)). Anthropic은 추가 심리를 검토 중입니다 | 전원합의체·대법원 심리 여부, 민주당 의회의 청문회(25.5절 60%) |
+| Anthropic 소송 | 북부 캘리포니아 연방지법이 10 U.S.C. §3252 근거 지정을 위법 소지로 보고 영구 금지명령(08-27). D.C. 순회항소법원은 연방조달공급망보안법(FASCSA) 근거 지정을 2대1로 유지(09-25)([Defense One](https://www.defenseone.com/threats/2026/09/anthropic-lawsuit-supply-chain-risk/416252/)). Anthropic은 10-14 전원합의체 재심리를 신청했고([MLex](https://www.mlex.com/mlex/artificial-intelligence/articles/2537583/anthropic-asks-us-appeals-court-for-en-banc-review-of-supply-chain-decision)), 전직 국가정보장·국가안보보좌관 등 전직 안보 고위 관료 17명이 지지 의견서를 냈습니다([DefenseScoop](https://defensescoop.com/2026/10/21/dc-circuit-decision-anthropic-pentagon-fight/)). 국방부는 기밀망 AI 작업의 약 90%를 09월 중순까지 다른 모델로 옮겼고(연구공학차관 발언, [DefenseScoop](https://defensescoop.com/2026/09/11/dod-poised-to-move-all-classified-ai-workloads-off-anthropic-by-october/)), 항소심 판결 뒤 Claude 운용을 전면 중단했습니다(보도 기준, [MeriTalk](https://www.meritalk.com/articles/dod-halts-use-of-anthropic-ai-after-court-upholds-supply-chain-risk-designation/)) | 전원합의체·대법원 심리 여부, 민주당 의회의 청문회(25.5절 60%) |
 | 기밀망 확장 | 기밀망 AI 협약: SpaceX(xAI)·OpenAI·Google·NVIDIA·Reflection·Microsoft·AWS·Oracle(05-01, 목록은 보도마다 7–8곳)([미 전쟁부](https://war.gov/News/Releases/Release/Article/4475177/classified-networks-ai-agreements), [DefenseScoop](https://defensescoop.com/2026/05/01/dod-expands-classified-ai-work-with-8-companies-excluding-anthropic/)). 새 모델을 공개 후 30일 안에 배치하도록 CDAO에 지시 | 실제 비밀망 인가(ATO) 완료 기업 수, 공개 모델과 군용 모델의 시차 |
 | 방산 스타트업 | Anduril·Shield AI·Saronic·Helsing의 대형 투자 유치가 이어졌습니다(평가액은 보도마다 다름). Palantir는 Maven으로 미군·NATO 양쪽의 표적 처리 기반이 됐습니다 | 의무지출 예산이 신생 기업의 양산 계약으로 이어지는지, 전통 방산(프라임)과의 합병·제휴 |
+| 자율전 조직·획득 | 국방장관이 09-30 4성 '자율전투사령부(AUTOWARCOM)'를 2027-10-01까지 만들겠다고 발표하고, 무인체계 직할 포트폴리오 조직을 'Project Agincourt'로 개편했습니다([Defense One](https://www.defenseone.com/policy/2026/09/hegseth-plans-autonomous-warfare-command/416358/)). 창설에는 의회 승인이 필요하고, 초기 재원(국방자율전투그룹 DAWG 약 540–550억 달러)은 예산조정법안에 걸려 있습니다. 그사이 특수작전사령부 안에 자율전 태스크포스를 두고 DAWG를 흡수했습니다([Breaking Defense](https://breakingdefense.com/2026/10/hegseth-uses-ausa-spotlight-to-highlight-autonomy-generational-defense-investment/), [Defense One](https://www.defenseone.com/threats/2026/10/funding-hegseth-autonomous-command/416800/)). 육군은 미래·자율체계사령부(FASCOM)로 개편했고(10-13)([미 육군](https://www.army.mil/article/296083)), 공군은 2032년까지 CCA 500대와 MQ-9 후속 저가 무인기(MMA) 500대, 모두 1,000대를 목표로 내걸었습니다(09-14)([Air & Space Forces Magazine](https://www.airandspaceforces.com/air-force-autonomous-drones-cca-mma-2032/)). AI 전략 선도 과제 1호 Swarm Forge(군집 드론)는 130여 개 기업을 약 25곳으로 줄였습니다([DVIDS](https://www.dvidshub.net/news/576347/department-war-advances-ai-strategy-with-swarm-forge-autonomous-drone-initiative)) | 민주당 의회가 예산조정법·자율전 예산을 처리하는지, 사령부 공식 창설과 사령관 인준, Swarm Forge 4차 시험(2027-01 예정, 보도 기준 [Defence Industry Europe](https://defence-industry.eu/u-s-tests-drone-swarms-for-near-peer-war-cuts-field-to-some-25-firms/)) 뒤 최종 군집 패키지의 부대 전환 |
 
 이 충돌은 25.5절의 '행정부가 최상위 모델의 사용을 정한다'는 흐름의 국방판입니다. 기업의 사용 정책(헌법·약관)과 국가의 '합법적 사용' 요구가 부딪혔고, 2026년에는 국가가 이겼습니다. 2027년에는 **법원과 의회**가 세 번째 축으로 들어옵니다.
 
@@ -4470,7 +4471,7 @@ AI 표준화는 2026년에 공적 표준(ISO/IEC·CEN-CENELEC), 사실 표준(MC
 | REAIM 3차(02-04~05, 스페인 아코루냐) | 'Pathways to Action' 채택. 참석 85개국 중 당일 약 35개국 서명, 이후 45개국으로 늘었습니다(스페인 외교부 서명국 목록, 2026-11 확인), **미국·중국 불참**. 한국은 서명([스페인 외교부](https://www.exteriores.gob.es/en/REAIM2026/Paginas/default.aspx)) | 2023 헤이그·2024 서울(약 60개국)보다 지지가 줄었습니다. 4차 개최국·일정 미정 |
 | 핵 지휘통제 | 2024 미중 정상의 '핵 사용 결정은 사람이' 합의 이후 정부 간 후속 문서는 없습니다. 미국은 NPT 검토회의 국가보고서(2026)에서 원칙을 재확인했습니다([Arms Control Association](https://www.armscontrol.org/factsheets/human-loop-glance)). Brookings–푸단대 1.5트랙은 핵 지휘체계 대상 AI 사이버공격의 인간 통제와 사고 핫라인을 제안했습니다(09-17)([Brookings](https://www.brookings.edu/articles/advancing-human-control-of-military-ai/)) | 상원 NDAA안은 핵무기 발사·폭발 결정에 자율 기능을 금지([Arms Control Association](https://www.armscontrol.org/act/2026-07/news/us-senate-panel-approves-ai-autonomous-weapons-rules)). 미중 '전략적 안정' 행동계획(16.1절)에 군사 AI가 들어가는지 |
 
-군사 AI 거버넌스는 **미국이 다자 규범에서 빠지는 구도**로 바뀌었습니다. 미국은 2024년에 찬성했던 유엔 군사 AI 결의에 반대했고, REAIM 결과 문서에도 서명하지 않았습니다. 규범을 끌고 가는 쪽은 네덜란드·한국·스페인·오스트리아 같은 중견국입니다. 검증 수단이 없다는 한계는 18.8절의 범용 AI 검증 논의와 같습니다. CBRN 오용은 22.2절, 북한의 AI 사이버 위협은 21.5절에서 다룹니다.
+군사 AI 거버넌스는 **미국이 다자 규범에서 빠지는 구도**로 바뀌었습니다. 미국은 2024년에 찬성했던 유엔 군사 AI 결의에 반대했고, REAIM 결과 문서에도 서명하지 않았습니다. 백악관 과학기술정책실장은 유엔 안보리 AI 공개토의(09-23)에서 '글로벌 거버넌스로 흘러가는 것을 허용할 수 없다'며 국제 통제 체계를 전면 거부했습니다([UN](https://press.un.org/en/sc/16462.doc.htm)). 반면 중국 국방부장은 샹산포럼(09월)에서 군사 AI의 위험 평가와 사용 규칙을 위한 국제 대화를 제안했습니다([The Defense Post](https://thedefensepost.com/2026/09/21/china-military-ai-oversight/)). 미중이 규범 주도권을 두고 엇갈린 신호를 낸 셈입니다. 규범을 끌고 가는 쪽은 네덜란드·한국·스페인·오스트리아 같은 중견국입니다. 검증 수단이 없다는 한계는 18.8절의 범용 AI 검증 논의와 같습니다. CBRN 오용은 22.2절, 북한의 AI 사이버 위협은 21.5절에서 다룹니다.
 
 #### 한국
 
@@ -4478,7 +4479,7 @@ AI 표준화는 2026년에 공적 표준(ISO/IEC·CEN-CENELEC), 사실 표준(MC
 - **드론**: 국방부는 '국방 드론·대드론 발전 정책'(06-26)으로 저가 소모성 드론 2만 대 이상, 교육용 국산 드론 약 6만 대, '50만 드론 전사' 양성, K-LUCAS 장거리 자폭 무인기의 2030년 이전 전력화를 내걸었습니다. 드론작전사령부는 국방부 직할 국방드론본부로 바뀌고, 작전은 각 군으로 넘어갑니다([머니투데이](https://www.mt.co.kr/politics/2026/06/26/2026062612010698506)).
 - **입법**: 국방인공지능법 제정안(01-27, 부승찬·유용원 의원 등 여야 33명)이 국방위에 계류 중입니다. 3년 단위 국방 AI 기본계획과 전 주기 관리를 담습니다([한국경제](https://www.hankyung.com/article/2026020290921)). 시민사회는 국제법 준수·책임성 조항이 약하다고 지적합니다. 국방첨단전력사업법안(08-31)과의 병합 여부도 남았습니다.
 - **위원회**: 심승배 국방·안보 분과장은 독자 AI 파운데이션 모델 3차 모델(2027년 초)이 나오는 즉시 군 데이터로 튜닝해 2027년 상반기 장병용 AI를 제공하자고 제안했습니다. 군 AI 데이터센터 완공 전에는 민간 데이터센터·클라우드 GPU를 쓰고, 현장 시험에서 성능을 입증한 기업과 후속 계약을 맺도록 국가계약법 개정을 추진한다고 밝혔습니다([지디넷코리아](https://zdnet.co.kr/view?no=20261113111056)).
-- **한미·수출**: 국방부와 미 전쟁부는 드론·대드론 공동 공급망과 표준화 의향서에 서명했고(05월)([Korea Times](https://www.koreatimes.co.kr/amp/southkorea/defense/20260515/korea-us-formalize-drone-alliance-to-counter-evolving-regional-threats)), 국장급 국방과학기술 협의체와 드론 공통 표준·인증 실무협의체를 두기로 했습니다(06월). K-방산의 AI 무기 수출은 전시(사우디 WDS의 AI 배회형 유도무기)와 방공·레이더 계약 단계이고, AI 무인체계 단독 수출 계약은 확인하지 못했습니다.
+- **한미·수출**: 국방부와 미 전쟁부는 드론·대드론 공동 공급망과 표준화 의향서에 서명했고(05월)([Korea Times](https://www.koreatimes.co.kr/amp/southkorea/defense/20260515/korea-us-formalize-drone-alliance-to-counter-evolving-regional-threats)), 국장급 국방과학기술 협의체와 드론 공통 표준·인증 실무협의체를 두기로 했습니다(06월). 한국은 호주·폴란드와 함께 미 대드론 합동기관간태스크포스(JIATF-401) 마켓플레이스 구매 협정에 서명했고(05월)([미 육군](https://www.army.mil/article/292660)), 주한 미8군은 미 육군 군단별 자율화 실증에서 유인·무인 회전익 복합(공격헬기 조종사의 무인기 센서 직접 제어)을 맡습니다(10-13)([미 육군](https://www.army.mil/article/296083)). 오산기지에서는 한미가 중형(Group 3) 드론 대응 첫 대드론 훈련 Dragon Flight를 했습니다(08-02~06)([Air & Space Forces Magazine](https://www.airandspaceforces.com/osan-drills-north-korea-growing-drone-threat/)). K-방산의 AI 무기 수출은 전시(사우디 WDS의 AI 배회형 유도무기)와 방공·레이더 계약 단계이고, AI 무인체계 단독 수출 계약은 확인하지 못했습니다.
 
 #### 2027 전망
 
@@ -4488,12 +4489,17 @@ AI 표준화는 2026년에 공적 표준(ISO/IEC·CEN-CENELEC), 사실 표준(MC
 | CCW 밖에서 자율무기 금지·규제 조약을 위한 별도 협상 절차(주최국 발표 또는 첫 협상 회의)가 2027년 안에 공식 출범 | 낮음 · 20% (±15) · 근거 [UN](https://press.un.org/en/2026/gadis3782.doc.htm), [APILS](https://apils.org/2026/11/21/ccw-seventh-review-conference-a-new-mandate-on-autonomous-weapons-but-no-review/) |
 | 미국 FY2027 국방수권법(NDAA)이 핵무기 발사·폭발 결정에 AI(자율 기능) 사용을 금지하는 조항을 담아 제정 | 높음 · 70% (±15) · 근거 [Arms Control Association](https://www.armscontrol.org/act/2026-07/news/us-senate-panel-approves-ai-autonomous-weapons-rules) |
 | 미 국방부가 2027년 안에 자율무기 지침 DoDD 3000.09의 개정판 또는 대체 지침을 공개 | 중간 · 40% (±20) · 근거 [Arms Control Association](https://www.armscontrol.org/act/2026-07/news/us-senate-panel-approves-ai-autonomous-weapons-rules), [Holland & Knight](https://www.hklaw.com/en/insights/publications/2026/02/department-of-wars-ai-first-agenda-a-new-era-for-defense-contractors) |
+| 미 국방부가 2027년 안에 자율전투사령부(AUTOWARCOM)를 4성 통합전투사령부로 공식 창설(사령부 활성화 또는 사령관 인준) | 낮음 · 25% (±15) · 근거 [Defense One](https://www.defenseone.com/threats/2026/10/funding-hegseth-autonomous-command/416800/), [Breaking Defense](https://breakingdefense.com/2026/10/hegseth-uses-ausa-spotlight-to-highlight-autonomy-generational-defense-investment/) · 반론 [Defense One](https://www.defenseone.com/policy/2026/09/hegseth-plans-autonomous-warfare-command/416358/) |
+| 미 국방부가 2027년 상반기 안에 Swarm Forge(AI 전략 선도 과제 1호)의 최종 군집 드론 패키지를 선정하고 작전부대 전환을 발표 | 중간 · 60% (±20) · 근거 [DVIDS](https://www.dvidshub.net/news/576347/department-war-advances-ai-strategy-with-swarm-forge-autonomous-drone-initiative), [Defence Industry Europe](https://defence-industry.eu/u-s-tests-drone-swarms-for-near-peer-war-cuts-field-to-some-25-firms/) |
+| 미 공군이 2027년 안에 CCA(FQ-42A·FQ-44A) 양산기를 처음 인수(인도)했다고 발표 | 중간 · 45% (±20) · 근거 [Breaking Defense](https://breakingdefense.com/2026/09/anduril-officials-say-company-cant-start-on-cca-production-contract-without-fy27-budget/), [Air & Space Forces Magazine](https://www.airandspaceforces.com/air-force-autonomous-drones-cca-mma-2032/) |
+| 미 국방부가 2027년 안에 전사 생성형 AI 플랫폼(GenAI.mil, 현 SI.mil)을 비밀망(SIPRNet) 수준에서 전군 이용자에게 제공 시작 | 중간 · 55% (±20) · 근거 [Nextgov/FCW](https://www.nextgov.com/artificial-intelligence/2026/07/genaimil-records-almost-17m-users-plans-new-model-additions/414568/), [Nextgov/FCW](https://www.nextgov.com/artificial-intelligence/2026/09/genaimil-saw-more-2-million-users-one-week-top-dod-official-says/416183/) |
 | Anthropic의 미 국방부 공급망 위험 지정이 2027년 안에 철회·합의·확정 판결로 효력을 잃음 | 낮음 · 30% (±20) · 근거 [Defense One](https://www.defenseone.com/threats/2026/09/anthropic-lawsuit-supply-chain-risk/416252/) · 반론 [미 전쟁부](https://war.gov/News/Releases/Release/Article/4475177/classified-networks-ai-agreements) |
 | 미중이 2027년 안에 군사 AI(핵 지휘통제 포함)를 다루는 정부 간 공식 협의를 열거나 공동 문서를 발표(2024 '핵 결정은 사람이' 합의의 재확인 포함) | 중간 · 35% (±20) · 근거 [Brookings](https://www.brookings.edu/articles/advancing-human-control-of-military-ai/), [Arms Control Association](https://www.armscontrol.org/factsheets/human-loop-glance) |
 | 전쟁이 이어지는 한, 우크라이나 정부가 발표하는 2027년 러시아군 사상 중 드론 비중이 80% 이상으로 유지 | 높음 · 75% (±15) · 근거 [Al Jazeera](https://www.aljazeera.com/news/2026/4/10/ukraine-says-russia-suffers-record-losses-of-soldiers), [UNITED24](https://united24media.com/war-in-ukraine/ukraines-drones-pass-1-million-verified-hits-in-2026-drive-90-of-battlefield-strikes-20849) |
 | 국방인공지능법(국방 AI 기본법 제정안)이 2027년 안에 국회 본회의를 통과 | 중간 · 60% (±20) · 근거 [한국경제](https://www.hankyung.com/article/2026020290921), [지디넷코리아](https://zdnet.co.kr/view?no=20261113111056) |
 | 국방부가 2027년 상반기 안에 독자 AI 파운데이션 모델 기반 장병용 생성형 AI를 군 내부망에서 제공 시작 | 중간 · 40% (±20) · 근거 [지디넷코리아](https://zdnet.co.kr/view?no=20261113111056), [전자신문](https://www.etnews.com/20261023000175) |
 | 한국 방산 기업이 2027년 안에 AI 기반 무인체계(배회형·자폭 드론, 무인 차량·함정, AI 대드론) 수출 계약을 1건 이상 공개 체결 | 중간 · 50% (±20) · 근거 [Korea Times](https://www.koreatimes.co.kr/amp/southkorea/defense/20260515/korea-us-formalize-drone-alliance-to-counter-evolving-regional-threats), [머니투데이](https://www.mt.co.kr/politics/2026/06/26/2026062612010698506) |
+| 한국이 2027년 안에 미 JIATF-401 대드론 마켓플레이스(또는 FMS 신속 절차)를 통해 대드론·드론 체계 구매를 1건 이상 공개 | 중간 · 35% (±20) · 근거 [미 육군](https://www.army.mil/article/292660), [미 육군](https://www.army.mil/article/294637/drone_marketplace_goes_live_expands_functionality) |
 
 **한국 시사점**
 - **국방 AI의 '사용 조건'을 한국이 먼저 정합니다.** 미국은 '모든 합법적 사용', 랩은 감시·자율무기 금지로 갈라졌습니다. 한국은 국방인공지능법 하위 규정에 의사결정 지원 AI의 인간 검토 시간·기록 보존·사후 감사 의무와 해외 모델 공급사의 사용 제한 조항 처리 원칙을 적습니다. **국방·안보 분과**가 주관하고, **법률 TF**가 국방인공지능법·국방첨단전력사업법의 정합을 검토하며, 해외 모델 접근 위험(17.2절)은 **글로벌 AI 전략적 협력 TF**가 함께 봅니다.
@@ -4521,7 +4527,7 @@ AI 표준화는 2026년에 공적 표준(ISO/IEC·CEN-CENELEC), 사실 표준(MC
 | 영국 | 드론·자율 함정과 유인 전력 혼합, AUKUS 수중 자율 | DIP(06-30): 4년간 드론 50억 파운드 이상, 연간 장비계획(Equipment Programme) 예산의 10% 이상을 AI·자율·무인·양자 등 신기술에(FY26/27 12%, FY28/29 15% 계획, [DIP 표 15](https://assets.publishing.service.gov.uk/media/6a43f5bb1a04d4dae8b81536/The_Defence_Investment_Plan.pdf)), 국방 AI 태스크포스 1억 파운드([영국 국방부](https://www.gov.uk/government/news/uk-drone-transformation-to-strengthen-armed-forces-backed-by-more-than-5-billion), [영국 정부](https://www.gov.uk/government/speeches/defence-investment-plan-oral-statement)) | AUKUS 상호운용 시험 | 우크라이나 Octopus 요격 드론 영국 내 생산 | AUKUS 면허 면제 | 신기술 지출(DIP 표 15) 계획 대비 집행, 차기 구축함을 줄인 드론 전환의 집행 |
 | 프랑스 | 소버린 생성형 AI, 무기·정보체계 탑재 AI | 국방 AI 기구 AMIAD(2024 설립), 국방 전용 기밀 슈퍼컴퓨터 ASGARD(2025-09 가동), 2024–2030 국방 AI 20억 유로 계획, 2025년 예산의 국방 AI 지출 3억 유로([프랑스 국방부](https://www.defense.gouv.fr/sites/default/files/ministere-armees/Communiqu%C3%A9_Projet%20de%20loi%20de%20finance%202025%20le%20budget%20des%20arm%C3%A9es%20conforme%20%C3%A0%20la%20loi%20de%20programmation%20militaire%202024-2030.pdf))([프랑스 국방부](https://www.defense.gouv.fr/en/news/bertrand-rondepierre-our-sovereignty-terms-ai-means-mastering-technologies)) | 국내 인증 | Mistral 3년 전군 계약, Airbus 5,000만 유로(보도 기준) | EU 규칙 | 대선(16.3절) 뒤 국방 AI 예산 유지 여부 |
 | 독일 | 배회형 탄약, 전장 AI | 연방의회 예산위가 중거리 배회형 탄약 5.4억 유로 승인(02-25), Helsing·Stark 각 약 2.7억 유로 기본계약([Bloomberg](https://www.bloomberg.com/news/articles/2026-02-25/germany-set-to-approve-540-million-in-kamikaze-drone-orders)), Rheinmetall도 계약(04-22) | 실사격 시험 실패 보도(Stark) | 국방 스타트업이 전통 방산과 경쟁 | EU 규칙 | 리투아니아 주둔 여단 배치 결과, 후속 대량 발주 |
-| 일본 | AI 지휘통제 통합 플랫폼(표적 선정 지원), 공격 무인기·UUV·요격 드론 | FY2027 요구 8.9조 엔(약 556억 달러, 사상 최대), '새로운 전투 방식' 축에 AI·무인([일본 방위성](https://www.mod.go.jp/en/d_act/d_budget/pdf/fy2027_20261009.pdf), [USNI News](https://news.usni.org/2026/09/01/japan-budget-requests-record-55-6b-for-unmanned-long-range-strike-capabilities)) | — | 방산 수출 확대 준비 | 방위장비 이전 운용지침 개정(04-21): 5유형 제한 폐지, '무기·비무기' 분류, 협정국 17개국, 국회 사후 통보([Jakarta Post](https://www.thejakartapost.com/world/2026/04/21/japan-opens-door-to-global-arms-market-with-overhaul-of-defense-export-rules)) | 안보 3문서 개정과 예산 확정, 무인체계 첫 수출 |
+| 일본 | AI 지휘통제 통합 플랫폼(표적 선정 지원), 공격 무인기·UUV·요격 드론 | FY2027 요구 8.9조 엔(약 556억 달러, 사상 최대), '새로운 전투 방식' 축에 AI·무인([일본 방위성](https://www.mod.go.jp/en/d_act/d_budget/pdf/fy2027_20261009.pdf), [USNI News](https://news.usni.org/2026/09/01/japan-budget-requests-record-55-6b-for-unmanned-long-range-strike-capabilities)) | — | 방산 수출 확대 준비. Sakana AI가 방위성 실증과 연계한 국산 사전학습 모델 개발에 착수(10월, 2027년 봄 소형 모델 공개 계획, 보도 기준 [닛케이](https://www.nikkei.com/article/DGXZQOUC261H80W6A021C2000000/)) | 방위장비 이전 운용지침 개정(04-21): 5유형 제한 폐지, '무기·비무기' 분류, 협정국 17개국, 국회 사후 통보([Jakarta Post](https://www.thejakartapost.com/world/2026/04/21/japan-opens-door-to-global-arms-market-with-overhaul-of-defense-export-rules)) | 안보 3문서 개정과 예산 확정, 무인체계 첫 수출 |
 | 호주 | 초대형 자율 잠수정(Ghost Shark), AUKUS 수중 AI | Anduril Australia에 5년 17억 호주달러 계약(2025)([Shephard](https://www.shephardmedia.com/news/naval-warfare/anduril-australia-wins-a17-billion-ghost-shark-xl-auv-contract/)) | AUKUS 첫 대표 과제 | 시드니 공장, 중소기업 40곳 이상 | 동맹국 수출은 정부 승인 | 2026년 전량 생산 전환의 실제 납품 수 |
 | 인도 | 군집 드론·대드론(신두르 작전 교훈) | 국방 AI 위원회·사업청(2019), FY27 국방예산 7.85조 루피(보도 기준) | — | 국방 스타트업 급성장 | — | 군단당 드론 수천 대 계획(보도 기준)의 예산화 |
 | 이스라엘 | 표적 생성 AI(가자), 전 영역 자율체계 수만 대 투입(국방부 2025-12 발표, [이스라엘 국방부](https://mod.gov.il/en/press-releases/press-room/this-is-the-first-robotics-war-tens-of-thousands-of-autonomous-systems-deployed-across-all-domains)) | 국방부 연구개발국 산하 AI·자율국(2025)([이스라엘 국방부](https://mod.gov.il/en/press-releases/press-room/israel-mod-establishes-ai-and-autonomy-administration)), IDF '무인체계·AI 군' 신설 발표(09-10, 12월 출범 예정)([Breaking Defense](https://breakingdefense.com/2026/09/israeli-military-creates-new-branch-focused-on-ai-drones-and-robotics/)) | 비공개 | 방산·사이버 스타트업 | 유엔 군사 AI 결의 반대(20.2절) | 신설 군의 교전 규칙 공개 여부 |
@@ -4535,7 +4541,7 @@ AI 표준화는 2026년에 공적 표준(ISO/IEC·CEN-CENELEC), 사실 표준(MC
 
 - **대드론은 'AI 대 AI'가 됐습니다.** 러시아는 Shahed 계열에 기계 시각 표적 고정을 넣었고(엣지 AI 모듈 사용 보도), 우크라이나 요격 드론은 Shahed형 무인기를 자율로 격추하기 시작했습니다([우크라이나 국방부](https://mod.gov.ua/en/news/next-generation-interceptors-ukrainian-drones-already-autonomously-take-down-shahed-type-ua-vs)). 부대는 2026년 1–9월 Brave1 Market으로 드론 59만 대 이상을 주문했고, 요격 드론이 최대 품목입니다. 실전 데이터를 묶은 Brave1 Dataroom에서 100개 이상 기업이 요격 AI를 학습시킵니다(보도 기준, [Euromaidan Press](https://euromaidanpress.com/2026/07/12/ai-against-ai-over-ukraine-russias-shahed-now-sees-its-target-and-ukraines-interceptor-sees-shahed/)). 실전 데이터가 합성 훈련 환경을 대신하는 구조입니다.
 - **지휘통제(C2)**: NATO Maven Smart System이 완전 운용 능력에 도달했고(2026-08)([NATO JWC](https://www.jwc.nato.int/?p=12601)), 일본은 FY2027 요구에 통합작전사령부용 AI 의사결정 지원을 넣었습니다. 사람 1명이 여러 대를 지휘하는 '1 대 다' 운용이 2027년의 표준 개념이 됩니다(추정).
-- **수중·유무인 협동**: AUKUS는 무인잠수정용 AI 탑재체를 Pillar II 첫 대표 과제로 지정했고(05-30)([호주 국방부](https://www.defence.gov.au/defence-activities/programs-initiatives/aukus-advanced-capabilities/capability-achievements)), 한미 공군은 자율 협동 플랫폼(CCA 포함) 협력 의향서에 서명해 개발 단계부터 상호운용을 함께 설계하기로 했습니다(10월, 사천에어쇼)([헤럴드경제](https://biz.heraldcorp.com/article/10910860)). 우주·전자전 AI는 공개 자료가 적어 이 절에서 평가하지 않습니다.
+- **수중·유무인 협동**: AUKUS는 무인잠수정용 AI 탑재체를 Pillar II 첫 대표 과제로 지정했고(05-30)([호주 국방부](https://www.defence.gov.au/defence-activities/programs-initiatives/aukus-advanced-capabilities/capability-achievements)), 한미 공군은 자율 협동 플랫폼(CCA 포함) 협력 의향서에 서명해 개발 단계부터 상호운용을 함께 설계하기로 했습니다(10월, 사천에어쇼)([헤럴드경제](https://biz.heraldcorp.com/article/10910860)). 미 공군 CCA는 F-22 조종사의 비행 중 지휘(10-08)에 이어, FQ-44A 2대가 조종사 없이 지상 운용자의 상위 지시만으로 가시권 밖 공중전 전술 기동을 했습니다(10-26, Shield AI Hivemind)([Air & Space Forces Magazine](https://www.airandspaceforces.com/cca-drones-fly-air-combat-maneuvers-autonomy-software/)). 다만 첫 양산 계약(06월)은 FY2027 예산 미처리로 본격 생산이 묶여 있습니다([Breaking Defense](https://breakingdefense.com/2026/09/anduril-officials-say-company-cant-start-on-cca-production-contract-without-fy27-budget/)). 우주·전자전 AI는 공개 자료가 적어 이 절에서 평가하지 않습니다.
 
 #### 국방 AI 표준·인증·시험평가
 
@@ -4549,10 +4555,11 @@ AI 표준화는 2026년에 공적 표준(ISO/IEC·CEN-CENELEC), 사실 표준(MC
 
 #### 국제협력과 경쟁
 
-- **NATO DIANA**: 2026년 코호트는 24개국 150개사(지원 3,680건, 전년의 약 두 배)입니다. 미션 트랙 15개사는 각 30만 유로를 받습니다([NATO](https://nato.int/en/news-and-events/articles/news/2025/12/10/nato-defence-innovation-accelerator-announces-largest-ever-cohort-of-150-innovators-to-work-on-ten-defence-and-security-challenges-in-2026), [The Defense Post](https://thedefensepost.com/2026/09/07/nato-diana-defense-tech-competition/)). 회원국 기업 전용이어서 한국·일본 기업의 직접 참여 경로는 확인하지 못했습니다.
+- **NATO DIANA**: 2026년 코호트는 24개국 150개사(지원 3,680건, 전년의 약 두 배)입니다. 미션 트랙 15개사는 각 30만 유로를 받습니다([NATO](https://nato.int/en/news-and-events/articles/news/2025/12/10/nato-defence-innovation-accelerator-announces-largest-ever-cohort-of-150-innovators-to-work-on-ten-defence-and-security-challenges-in-2026), [The Defense Post](https://thedefensepost.com/2026/09/07/nato-diana-defense-tech-competition/)). 회원국 기업 전용이어서 한국·일본 기업의 직접 참여 경로는 확인하지 못했습니다. OpenAI는 취약점 탐지·수정용 최상위 모델 프로그램 Daybreak를 NATO 회원국 정부로 넓혔고(11-17), NATO 통신정보국(NCIA)은 2027년 말까지 클라우드·우주·AI에 30억 달러 이상을 민간에 발주할 계획입니다([Defense One](https://www.defenseone.com/technology/2026/11/openai-gives-nato-access-most-advanced-cybersecurity-ai/417296/)).
 - **EU–우크라이나**: EDIP 첫 작업계획(03-30)이 2026–2027년 15억 유로를 배정했고, 우크라이나 드론·탄약 지원이 들어갔습니다([EU 집행위원회](https://defence-industry-space.ec.europa.eu/edip-commission-adopts-eu15-billion-work-programme-boost-european-and-ukrainian-defence-industry-2026-03-30_en)).
 - **중·러·북·이란**: 중러 정상 공동성명(05-20)은 AI·디지털 협력과 군 간 협력 심화를 담았고, CCW 자율무기 GGE 등 양자·다자 틀에서 'AI 기술의 군사 응용 문제'에 계속 협력한다고 명시했습니다([중국 외교부](https://www.mfa.gov.cn/web/gjhdq_676201/gj_676203/oz_678770/1206_679110/1207_679122/202605/t20260521_11914932.shtml)). 러시아·이란은 드론 생산을, 북한은 러시아 기술 지원 의혹 속에 AI 자폭 드론을 키웁니다. 미국 진영의 AUKUS·DIANA와 달리 이쪽은 **생산·실전 데이터 공유** 중심입니다(추정).
 - **한미일**: 한미는 드론(05월)·공군 자율 협동 플랫폼(10월) 의향서로 양자 협력을 굳혔고, 한일 국방장관은 AI 등 첨단기술 협력 논의에 합의했습니다(06월 보도). 3국 공동 연구 과제는 아직 없습니다.
+- **미국–걸프**: 미 중부사령부는 UAE와 첫 양자 군사 AI 태스크포스 'Talon Synapse'(아부다비, 양국 약 20명)를 만들어 정보 지원·핵심 기반시설 보호·역내 감시용 AI를 개발합니다(07-28)([Breaking Defense](https://breakingdefense.com/2026/07/centcom-announces-us-uae-task-force-on-ai/)). 칩 수출 허가와 군사 AI 협력이 함께 가는 구도입니다(추정).
 
 #### 방산 AI 산업·시장
 
@@ -6077,26 +6084,26 @@ AI 2040의 경로를 시기별로 정리하면 다음과 같습니다.
 
 > **확인 필요**: 분과·특별위원회 명단은 위원회 누리집(분과위원 소개, 특별위원 소개 2026-03-31 게시)을 2026-11-28에 조회한 값이며, 11-06 TF 개편 뒤에도 갱신되지 않았습니다(2026-11-28 조회 시 조직도·분과장/TF리더·상세업무 어느 페이지에도 11-06 의결 7개 TF가 없음). 지원단장 교체(송상훈 → 김경만, 09-21 시행)는 보도 기준이고, 운영위원회 구성은 검색 요약 기준입니다(누리집 '운영위원회' 메뉴는 열리지 않음). 전문가 자문단 명단, 제조 소분과장, 법률 TF의 11월 이후 존속, 핵심과제 TF 6개의 리더(가동 준비 중으로 미공개), 2차 전체회의 주재자, 보안 특별위원회 2차 회의 여부는 확인하지 못했습니다. 인공지능책임관협의회 1–4차 날짜도 찾지 못했습니다.
 
-### 25.10 2027 전망 601건의 분과·특별위원회·TF 연계
+### 25.10 2027 전망 606건의 분과·특별위원회·TF 연계
 
-> 대상: 본 보고서의 2027 전망 601건 전부. 기구는 25.9절의 실제 조직(분과 10개, 특별위원회 2개, 2026-11 승인 TF 7개)에 법률 TF와 인공지능책임관협의회를 더했습니다. 배정은 본 보고서의 판단입니다.
+> 대상: 본 보고서의 2027 전망 606건 전부. 기구는 25.9절의 실제 조직(분과 10개, 특별위원회 2개, 2026-11 승인 TF 7개)에 법률 TF와 인공지능책임관협의회를 더했습니다. 배정은 본 보고서의 판단입니다.
 
 **배정 방법**
-- 전망마다 **주관 기구 하나**와, 함께 대응하거나 감시해야 하는 **관련 기구 전부**를 표시했습니다. 관련성이 약한 기구는 넣지 않았습니다. 446건(74%)은 두 곳 이상이 관련되고, 4곳 이상이 걸린 전망도 있습니다.
+- 전망마다 **주관 기구 하나**와, 함께 대응하거나 감시해야 하는 **관련 기구 전부**를 표시했습니다. 관련성이 약한 기구는 넣지 않았습니다. 451건(74%)은 두 곳 이상이 관련되고, 4곳 이상이 걸린 전망도 있습니다.
 - 과제가 TF의 임무와 정확히 맞으면 TF를 주관으로, 상시 검토는 분과로 두었습니다. 2026-11 개편으로 위원회가 과제 중심으로 바뀐 점을 반영한 것입니다.
 - 판단이 갈리는 두 영역은 다음 기준으로 나눴습니다. **수출통제**: 규칙의 제정·집행(Entity List, 원격접속 규칙, 계열사 규정, 칩 위치 검증, 동맹 장비통제 정렬)은 상시 대응을 맡는 글로벌협력 분과가 주관하고, 통제가 한국의 모델 접근·풀스택 수출 전략을 바꾸는 역학(프런티어 모델 접근 등급, 동맹 면제, 중국 오픈웨이트 공개 축소, 미중 휴전)은 글로벌 AI 전략적 협력 TF가 주관합니다. **의료**: 병원·보험·제품의 현장 배치는 산업AX·생태계 분과, 임상시험·자율 수술 같은 연구 단계는 과학 분과, 공공의료 연계는 공공AX 분과, 해외 제도는 글로벌협력 분과나 법률 TF, 해외 기업 단일 실적은 '위원회 기능 밖'으로 둡니다.
 - 금융 안정·시장 지표, 기업 제품 출시, 해외 전용 제도처럼 위원회의 법정 기능(제8조) 밖인 전망은 '위원회 기능 밖'으로 두고, 가까운 기구가 있으면 관련 기구로 적었습니다.
-- 한국에 직접 해당하는 전망은 151건입니다. 전체 배정 목록은 부록 '2027 전망의 위원회 기구별 배정 목록'과 대시보드(기구별 필터), `data/committee_map.json`에 있습니다.
+- 한국에 직접 해당하는 전망은 152건입니다. 전체 배정 목록은 부록 '2027 전망의 위원회 기구별 배정 목록'과 대시보드(기구별 필터), `data/committee_map.json`에 있습니다.
 
 | 기구 | 유형 | 주관 | 관련(주관+협업) | 평균 확률 | 대표 전망(영향·확률 순) | Top 30 |
 |---|---|---|---|---|---|---|
 | 기술혁신·인프라 분과 | 분과 | 43 | 105 | 60% | DRAM·HBM 공급 부족 지속. 신규 클린룸은 2027 하… 88%; 원전 업레이트·재가동 PPA 추가, SMR 상업운전은 없음 90%; 빅5 하이퍼스케일러(빅4 + Oracle) capex 1.0… 75% | #5, #12, #13 |
 | 산업AX·생태계 분과 | 분과 | 101 | 194 | 59% | 좌석 구독에서 사용량·결과 기반 과금으로 이동. 단가는 하락… 80%; 중국 OEM은 내수용 자체 모델(Doubao·Qwen) 에이… 88%; 개인 에이전트는 빅테크 소비자형(Muse·ChatGPT ag… 85% | #7, #12, #15, #19, #21 |
-| 공공AX 분과 | 분과 | 25 | 39 | 52% | 공공 AI 윤리기준·공공 AI 영향평가가 2027년 신규 A… 70%; 공공 AI 에이전트가 2027년 안에 보조금 자격 확인·신청… 55%; 국정원 단일 클라우드 보안검증 체계가 계획대로 2027년 하… 70% | — |
+| 공공AX 분과 | 분과 | 25 | 40 | 52% | 공공 AI 윤리기준·공공 AI 영향평가가 2027년 신규 A… 70%; 공공 AI 에이전트가 2027년 안에 보조금 자격 확인·신청… 55%; 국정원 단일 클라우드 보안검증 체계가 계획대로 2027년 하… 70% | — |
 | 데이터 분과 | 분과 | 9 | 21 | 55% | 전권을 가진 에이전트의 개인정보 위험 78%; 개인정보보호위원회가 제28조의12에 따른 첫 심의·의결 결과… 75%; 디지털헬스케어법(정부 대안)이 2027년 말까지 국회 본회의… 50% | #17 |
 | 사회 분과 | 분과 | 45 | 75 | 59% | AI 생성 아동 성착취물과 딥페이크 성범죄가 계속 증가하고,… 92%; 농어촌 기본소득 약 1조 원 확정, 30–35개 군으로 확대… 88%; 2028년 4월 총선을 앞두고 2027년 하반기 기본소득·기… 75% | #1, #2, #8, #20, #24 |
-| 국방·안보 분과 | 분과 | 14 | 53 | 49% | 전쟁이 이어지는 한, 우크라이나 정부가 발표하는 2027년 … 75%; 미국 FY2027 국방수권법(NDAA)이 핵무기 발사·폭발 … 70%; 중·러 55% | #4, #23, #26, #28, #30 |
-| 글로벌협력 분과 | 분과 | 68 | 144 | 56% | 생성물 표시·워터마크 의무가 사실상 국제 공통 규범으로 수렴… 85%; 희토류 유예 종료 또는 선별 허가 70%; 중국의 대응: 반독점, 비신뢰기업 명단, 수입 거부, 국산칩… 88% | #5, #6, #7, #15, #18, #19, #26 |
+| 국방·안보 분과 | 분과 | 15 | 58 | 48% | 전쟁이 이어지는 한, 우크라이나 정부가 발표하는 2027년 … 75%; 미국 FY2027 국방수권법(NDAA)이 핵무기 발사·폭발 … 70%; 중·러 55% | #4, #23, #26, #28, #30 |
+| 글로벌협력 분과 | 분과 | 68 | 145 | 55% | 생성물 표시·워터마크 의무가 사실상 국제 공통 규범으로 수렴… 85%; 희토류 유예 종료 또는 선별 허가 70%; 중국의 대응: 반독점, 비신뢰기업 명단, 수입 거부, 국산칩… 88% | #5, #6, #7, #15, #18, #19, #26 |
 | 과학 분과 | 분과 | 41 | 54 | 58% | 기후·지구 90%; AI 연구 자체 70%; / 기상·기후 72% | #23 |
 | 교육·인재 분과 | 분과 | 12 | 19 | 59% | OECD가 2027년 상반기에 PISA 2025 '디지털 세… 85%; 시험 부정 도구가 AI 안경·이어버드로 이동하고, 수능·자격… 80%; Stanford AI Index 2027에서 한국 AI 인재… 80% | #2 |
 | AI민주주의 분과 | 분과 | 5 | 17 | 51% | 정부가 'AI 범죄 종합 대응계획'을 공표하고, 해외발 정보… 55%; 2027년 안에 출마를 선언한 미국 주요 대선 주자 1명 이… 45%; 미 의회에서 프런티어 AI 통제권(행정부의 모델 접근 차단 … 60% | #1, #6, #20 |
@@ -6111,17 +6118,17 @@ AI 2040의 경로를 시기별로 정리하면 다음과 같습니다.
 | K-AI 풀스택 TF | TF | 9 | 26 | 50% | 중국 오픈웨이트 모델과 오픈 하네스 조합이 가성비로 압박(H… 65%; 국내 라우팅·게이트웨이 확산, 오픈웨이트(국산·중국산) 비중… 85%; 국산 NPU(딥엑스·리벨리온·퓨리오사)가 정부 레퍼런스 사업… 78% | #18 |
 | 법률 TF | TF | 19 | 95 | 48% | 2027-01-22 이후 전면 과태료 부과로 바로 가지 않고… 72%; 아시아(한·일·대만)는 '진흥형 기본법' 모델로 수렴. EU… 82%; 법·규제 70% | #6, #8, #10, #21 |
 | 인공지능책임관협의회 | 협의회 | 1 | 25 | 48% | 2027년 중 분과·특별위원회 체계를 다시 개편(분과·소분과… 55% | — |
-| 위원회 기능 밖 | — | 48 | 48 | 57% | 미국 연방 선점법은 통과되지 않고 주법 패치워크 지속 90%; 미국 전기요금이 정치 쟁점이 되며 대형부하 요금제와 자가발전… 85%; 세계 성장률이 2.5% 이상을 유지해 AI 조정이 오더라도 … 85% | #10, #14, #22, #25 |
+| 위원회 기능 밖 | — | 52 | 52 | 56% | 미국 연방 선점법은 통과되지 않고 주법 패치워크 지속 90%; 미국 전기요금이 정치 쟁점이 되며 대형부하 요금제와 자가발전… 85%; 세계 성장률이 2.5% 이상을 유지해 AI 조정이 오더라도 … 85% | #10, #14, #22, #25 |
 
 ![그림 25-6. 2027 전망의 장별·기구별 연계(주관과 협업 포함 건수). 진할수록 많습니다. 산업AX·생태계 분과와 글로벌협력 분과는 여러 장에 걸쳐 넓게, 보안 특별위원회·사이버 복원력 TF는 21–23장에, 초지능 대응 TF는 4·5·25장에 몰립니다.](https://hollobit.github.io/AI2027/downloads/figures/fig_committee_matrix.png)
 
 **무엇이 보이나**
 1. **산업AX·생태계 분과에 일이 몰립니다.** 주관 101건, 관련 194건으로 전체의 3분의 1이 걸립니다. 로봇·자율주행·의료 배치·에이전트 경제·기기가 모두 이 분과로 가기 때문입니다. 소분과(제조·자율주행·휴머노이드) 외에 에이전트 경제·의료 AI 배치 소분과가 필요합니다(의료 AI는 25.9절의 과학 분과 소분과 제안과 함께 검토).
-2. **기술 통제·지정학은 세 기구가 나눠 맡습니다.** 글로벌협력 분과(관련 144건), 글로벌 AI 전략적 협력 TF(67건), 국방·안보 분과(33건)입니다. 글로벌협력 분과는 위원 7명으로 가장 작아, 실무를 TF에 두는 25.9절 제안이 필요합니다.
+2. **기술 통제·지정학은 세 기구가 나눠 맡습니다.** 글로벌협력 분과(관련 145건), 글로벌 AI 전략적 협력 TF(67건), 국방·안보 분과(33건)입니다. 글로벌협력 분과는 위원 7명으로 가장 작아, 실무를 TF에 두는 25.9절 제안이 필요합니다.
 3. **보안은 두 갈래로 정리됩니다.** AI 고유의 오용·안전(프롬프트 주입, CBRN, 오정렬, 가중치 보안)은 보안 특별위원회(관련 86건), 장애·랜섬웨어·CVE 같은 회복력은 사이버 복원력 TF(48건)입니다.
 4. **법률 TF는 주관보다 협업이 훨씬 많습니다**(주관 19, 관련 95). 거의 모든 분야의 전망이 입법·규제 설계와 이어진다는 뜻으로, 법률 TF가 11월 개편 뒤에도 유지돼야 하는 이유입니다(25.9절 확인 필요).
 5. **얇은 곳이 있습니다.** 청년 도약 TF(관련 4건)와 교육·인재 분과(9건)는 맡는 전망이 적지만 Top 30 2위(청년 채용 절벽 82%)가 걸려 있습니다. 노동 전환 전망 대부분은 사회 분과(관련 73건)에 있어, 청년 도약 TF와 사회 분과의 역할 분담을 명확히 해야 합니다. 데이터 플라이휠 TF는 주관 전망이 없어 1조 토큰 같은 목표를 전망·지표로 따로 둘 필요가 있습니다.
-6. **위원회 기능 밖 48건**은 금융 안정(KOSPI 급락, 은행 위기), 시장 지표, 해외 제도입니다. 이 가운데 AI 관련 금융 위험은 금융위원회와의 정보 공유 창구가 없어(25.9절) 책임관협의회 안건으로 올릴 것을 권합니다.
+6. **위원회 기능 밖 52건**은 금융 안정(KOSPI 급락, 은행 위기), 시장 지표, 해외 제도입니다. 이 가운데 AI 관련 금융 위험은 금융위원회와의 정보 공유 창구가 없어(25.9절) 책임관협의회 안건으로 올릴 것을 권합니다.
 
 
 
@@ -6418,7 +6425,7 @@ AI 2040의 경로를 시기별로 정리하면 다음과 같습니다.
 
 ### 전망 근거 자료
 
-본문 2027 전망 601건 중 **538건**에 수집 자료를 근거로 연결했습니다(근거 링크는 각 전망의 확률 옆). 검토자 4인(AI 보조)이 후보 자료의 내용을 읽고 전망을 직접 뒷받침하는 자료만 골랐고, 맞는 자료가 없으면 비워 두었습니다. 일부 자료는 본문 없이 제목만 수집돼 제목 기준으로 연결했습니다. '반론'은 전망과 반대 방향의 근거입니다.
+본문 2027 전망 606건 중 **543건**에 수집 자료를 근거로 연결했습니다(근거 링크는 각 전망의 확률 옆). 검토자 4인(AI 보조)이 후보 자료의 내용을 읽고 전망을 직접 뒷받침하는 자료만 골랐고, 맞는 자료가 없으면 비워 두었습니다. 일부 자료는 본문 없이 제목만 수집돼 제목 기준으로 연결했습니다. '반론'은 전망과 반대 방향의 근거입니다.
 
 | 근거 자료 | 날짜 | 연결된 전망 수 |
 |---|---|---|
@@ -6757,7 +6764,7 @@ AI 2040의 경로를 시기별로 정리하면 다음과 같습니다.
 
 ### 2027 전망의 위원회 기구별 배정 목록
 
-> 25.10절의 배정 601건 전체입니다. 기구별로 주관 전망을 모았고, 관련 기구 열에는 협업 기구를 모두 적었습니다. 확률은 본문 표 기준입니다.
+> 25.10절의 배정 606건 전체입니다. 기구별로 주관 전망을 모았고, 관련 기구 열에는 협업 기구를 모두 적었습니다. 확률은 본문 표 기준입니다.
 
 #### 기술혁신·인프라 분과(주관 43건)
 
@@ -7007,7 +7014,7 @@ AI 2040의 경로를 시기별로 정리하면 다음과 같습니다.
 | 22.12절 | EU KIDS Act가 2027년 안에 3자 협상 정치적 합의에 도달 | 낮음 · 30% | 글로벌협력 분과 |
 | 24.4절 | 과기정통부 2026 인터넷이용실태조사(2027 발표)에서 생성형 AI 경험률이 50%를 넘음 | 높음 · 75% | — |
 
-#### 국방·안보 분과(주관 14건)
+#### 국방·안보 분과(주관 15건)
 
 | 장·절 | 2027 전망 | 확률 | 관련 기구 |
 |---|---|---|---|
@@ -7021,6 +7028,7 @@ AI 2040의 경로를 시기별로 정리하면 다음과 같습니다.
 | 20.2절 | 국방부가 2027년 상반기 안에 독자 AI 파운데이션 모델 기반 장병용 생성형 AI를 군 내부망에서 제공 시작 | 중간 · 40% | K-AI 풀스택 TF, 보안 특별위원회 |
 | 20.3절 | 미 국무부가 2027년 안에 자율체계(무인·자율 무기) 통제를 바꾸는 ITAR·USML 규칙안 또는 최종규칙을 공고 | 중간 · 40% | 글로벌 AI 전략적 협력 TF, 법률 TF |
 | 20.3절 | 한국 국방부·방위사업청·국방기술품질원이 2027년 안에 무기체계 탑재 AI의 시험평가·신뢰성 기준을 국방표준서·지침·훈령으로 제정 | 중간 · 40% | 보안 특별위원회, 산업AX·생태계 분과 |
+| 20.2절 | 한국이 2027년 안에 미 JIATF-401 대드론 마켓플레이스(또는 FMS 신속 절차)를 통해 대드론·드론 체계 구매를 1건 이상 공개 | 중간 · 35% | 글로벌협력 분과 |
 | 20.2절 | Anthropic의 미 국방부 공급망 위험 지정이 2027년 안에 철회·합의·확정 판결로 효력을 잃음 | 낮음 · 30% | 글로벌 AI 전략적 협력 TF, AI민주주의 분과 |
 | 20.3절 | NATO가 2027년 안에 책임 있는 AI(RAI) 인증 표준을 공식 발간하거나 공개 요약을 발표 | 낮음 · 30% | 글로벌협력 분과 |
 | 20.2절 | CCW GGE가 2027년 안에 자율무기에 관한 법적 구속력 있는 의정서 협상 개시에 합의(또는 그런 권고안을 합의 채택) | 낮음 · 12% | 글로벌협력 분과, 글로벌 AI 전략적 협력 TF |
@@ -7412,7 +7420,7 @@ AI 2040의 경로를 시기별로 정리하면 다음과 같습니다.
 |---|---|---|---|
 | 25.9절 | 2027년 중 분과·특별위원회 체계를 다시 개편(분과·소분과 신설·통폐합 또는 TF의 특별위원회 격상 1건 이상) | 중간 · 55% | 법률 TF |
 
-#### 위원회 기능 밖(주관 48건)
+#### 위원회 기능 밖(주관 52건)
 
 | 장·절 | 2027 전망 | 확률 | 관련 기구 |
 |---|---|---|---|
@@ -7457,6 +7465,10 @@ AI 2040의 경로를 시기별로 정리하면 다음과 같습니다.
 | 13.5절 | 데이터센터 세제 혜택 축소·전력 비용 부담이 미국 연방·주 세제 논의의 주된 형태가 되고, 최소 1개 주가 데이터센터 세금 감면을 축소하거나 특별 부담을 입법 | 중간 · 60% | 지역 특별위원회 |
 | 13.5절 | 미국 의회에서 AI 특화 신세(토큰세·컴퓨트세·데이터센터 전력세)가 위원회를 통과 | 낮음 · 8% | 사회 분과 |
 | 15.4절 | 미국 연방 선점법은 통과되지 않고 주법 패치워크 지속 | 높음 · 90% | 법률 TF |
+| 20.2절 | 미 국방부가 2027년 상반기 안에 Swarm Forge(AI 전략 선도 과제 1호)의 최종 군집 드론 패키지를 선정하고 작전부대 전환을 발표 | 중간 · 60% | 국방·안보 분과 |
+| 20.2절 | 미 국방부가 2027년 안에 전사 생성형 AI 플랫폼(GenAI.mil, 현 SI.mil)을 비밀망(SIPRNet) 수준에서 전군 이용자에게 제공 시작 | 중간 · 55% | 국방·안보 분과, 공공AX 분과 |
+| 20.2절 | 미 공군이 2027년 안에 CCA(FQ-42A·FQ-44A) 양산기를 처음 인수(인도)했다고 발표 | 중간 · 45% | 국방·안보 분과 |
+| 20.2절 | 미 국방부가 2027년 안에 자율전투사령부(AUTOWARCOM)를 4성 통합전투사령부로 공식 창설(사령부 활성화 또는 사령관 인준) | 낮음 · 25% | 국방·안보 분과 |
 | 21.6절 | AI 배제 조항 해석에 관한 첫 보험 판례 | 낮음 · 34% | 법률 TF |
 | 23.6절 | DORA 직접 감독 2년차. 금융권 멀티클라우드·출구전략 요구 | 높음 · 90% | 국가 사이버 복원력 강화 TF |
 | 23.5절 | 미국 상업보험 갱신에서 AI 면책 조항(ISO CG 40 47/48 또는 자체 약관) 부착과 AI 사용 고지 질의가 대형 보험사의 표준 관행이 됨 | 높음 · 80% | 법률 TF |

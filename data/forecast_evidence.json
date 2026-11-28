@@ -8427,6 +8427,107 @@
   "counter": []
  },
  {
+  "chapter": "20장",
+  "text": "미 국방부가 2027년 안에 자율전투사령부(AUTOWARCOM)를 4성 통합전투사령부로 공식 창설(사령부 활성화 또는 사령관 인준)",
+  "prob": "낮음 25%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Defense One",
+    "url": "https://www.defenseone.com/threats/2026/10/funding-hegseth-autonomous-command/416800/",
+    "title": ""
+   },
+   {
+    "org": "Breaking Defense",
+    "url": "https://breakingdefense.com/2026/10/hegseth-uses-ausa-spotlight-to-highlight-autonomy-generational-defense-investment/",
+    "title": ""
+   }
+  ],
+  "counter": [
+   {
+    "org": "Defense One",
+    "url": "https://www.defenseone.com/policy/2026/09/hegseth-plans-autonomous-warfare-command/416358/",
+    "title": ""
+   }
+  ]
+ },
+ {
+  "chapter": "20장",
+  "text": "미 국방부가 2027년 상반기 안에 Swarm Forge(AI 전략 선도 과제 1호)의 최종 군집 드론 패키지를 선정하고 작전부대 전환을 발표",
+  "prob": "중간 60%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "DVIDS",
+    "url": "https://www.dvidshub.net/news/576347/department-war-advances-ai-strategy-with-swarm-forge-autonomous-drone-initiative",
+    "title": ""
+   },
+   {
+    "org": "Defence Industry Europe",
+    "url": "https://defence-industry.eu/u-s-tests-drone-swarms-for-near-peer-war-cuts-field-to-some-25-firms/",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "20장",
+  "text": "미 공군이 2027년 안에 CCA(FQ-42A·FQ-44A) 양산기를 처음 인수(인도)했다고 발표",
+  "prob": "중간 45%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Breaking Defense",
+    "url": "https://breakingdefense.com/2026/09/anduril-officials-say-company-cant-start-on-cca-production-contract-without-fy27-budget/",
+    "title": ""
+   },
+   {
+    "org": "Air & Space Forces Magazine",
+    "url": "https://www.airandspaceforces.com/air-force-autonomous-drones-cca-mma-2032/",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "20장",
+  "text": "미 국방부가 2027년 안에 전사 생성형 AI 플랫폼(GenAI.mil, 현 SI.mil)을 비밀망(SIPRNet) 수준에서 전군 이용자에게 제공 시작",
+  "prob": "중간 55%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Nextgov/FCW",
+    "url": "https://www.nextgov.com/artificial-intelligence/2026/07/genaimil-records-almost-17m-users-plans-new-model-additions/414568/",
+    "title": ""
+   },
+   {
+    "org": "Nextgov/FCW",
+    "url": "https://www.nextgov.com/artificial-intelligence/2026/09/genaimil-saw-more-2-million-users-one-week-top-dod-official-says/416183/",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "20장",
+  "text": "한국이 2027년 안에 미 JIATF-401 대드론 마켓플레이스(또는 FMS 신속 절차)를 통해 대드론·드론 체계 구매를 1건 이상 공개",
+  "prob": "중간 35%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "미 육군",
+    "url": "https://www.army.mil/article/292660",
+    "title": ""
+   },
+   {
+    "org": "미 육군",
+    "url": "https://www.army.mil/article/294637/drone_marketplace_goes_live_expands_functionality",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
   "chapter": "21장",
   "text": "공격 표적이 데이터 탈취에서 '의사결정 조작'으로 이동(에이전트가 쓰는 데이터·로직 오염)",
   "prob": "높음 72%±20",

@@ -10092,5 +10092,91 @@
   "kr": 0,
   "impact": null,
   "top30": null
+ },
+ {
+  "id": null,
+  "ch": 20,
+  "sec": "20.2",
+  "text": "미 국방부가 2027년 안에 자율전투사령부(AUTOWARCOM)를 4성 통합전투사령부로 공식 창설(사령부 활성화 또는 사령관 인준)",
+  "p": 25,
+  "unc": 15,
+  "label": "낮음",
+  "primary": "위원회 기능 밖",
+  "pcode": "",
+  "related": [
+   "국방·안보 분과"
+  ],
+  "kr": 0,
+  "impact": null,
+  "top30": null
+ },
+ {
+  "id": null,
+  "ch": 20,
+  "sec": "20.2",
+  "text": "미 국방부가 2027년 상반기 안에 Swarm Forge(AI 전략 선도 과제 1호)의 최종 군집 드론 패키지를 선정하고 작전부대 전환을 발표",
+  "p": 60,
+  "unc": 20,
+  "label": "중간",
+  "primary": "위원회 기능 밖",
+  "pcode": "",
+  "related": [
+   "국방·안보 분과"
+  ],
+  "kr": 0,
+  "impact": null,
+  "top30": null
+ },
+ {
+  "id": null,
+  "ch": 20,
+  "sec": "20.2",
+  "text": "미 공군이 2027년 안에 CCA(FQ-42A·FQ-44A) 양산기를 처음 인수(인도)했다고 발표",
+  "p": 45,
+  "unc": 20,
+  "label": "중간",
+  "primary": "위원회 기능 밖",
+  "pcode": "",
+  "related": [
+   "국방·안보 분과"
+  ],
+  "kr": 0,
+  "impact": null,
+  "top30": null
+ },
+ {
+  "id": null,
+  "ch": 20,
+  "sec": "20.2",
+  "text": "미 국방부가 2027년 안에 전사 생성형 AI 플랫폼(GenAI.mil, 현 SI.mil)을 비밀망(SIPRNet) 수준에서 전군 이용자에게 제공 시작",
+  "p": 55,
+  "unc": 20,
+  "label": "중간",
+  "primary": "위원회 기능 밖",
+  "pcode": "",
+  "related": [
+   "국방·안보 분과",
+   "공공AX 분과"
+  ],
+  "kr": 0,
+  "impact": null,
+  "top30": null
+ },
+ {
+  "id": null,
+  "ch": 20,
+  "sec": "20.2",
+  "text": "한국이 2027년 안에 미 JIATF-401 대드론 마켓플레이스(또는 FMS 신속 절차)를 통해 대드론·드론 체계 구매를 1건 이상 공개",
+  "p": 35,
+  "unc": 20,
+  "label": "중간",
+  "primary": "국방·안보 분과",
+  "pcode": "",
+  "related": [
+   "글로벌협력 분과"
+  ],
+  "kr": 1,
+  "impact": null,
+  "top30": null
  }
 ]
