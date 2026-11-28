@@ -36,6 +36,12 @@
   "type": "제한 공개"
  },
  {
+  "when": "2026-06-30",
+  "actor": "미국 상무부·Anthropic",
+  "measure": "상무부가 Mythos 5·Fable 5 수출통제를 해제(18일 만). Fable 5는 07-01부터 전 세계 재개, Mythos 5는 일부 미국 기관부터 복원하고 Glasswing 파트너 확대는 정부와 협의([Anthropic](https://www.anthropic.com/news/redeploying-fable-5))",
+  "type": "통제 해제"
+ },
+ {
   "when": "2026-10-19",
   "actor": "국토안보부(DHS)",
   "measure": "연방 민간기관에 DeepSeek 제품과 DeepSeek 기반 제3자 제품의 구매 중단·제거 명령",

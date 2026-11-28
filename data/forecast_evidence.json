@@ -5440,9 +5440,14 @@
  {
   "chapter": "13장",
   "text": "AI 디지털교과서(교육자료)를 쓰는 학교 비율이 2027년에 2025년 1학기 수준(약 32%)을 회복",
-  "prob": "낮음 15%±10",
+  "prob": "낮음 5%±5",
   "basis": "전망",
   "support": [
+   {
+    "org": "매일신문(국정감사)",
+    "url": "https://www.imaeil.com/page/view/2026102017212572879",
+    "title": ""
+   },
    {
     "org": "뉴스토마토",
     "url": "https://www.newstomato.com/ReadNews.aspx?no=1279918",
@@ -6367,8 +6372,8 @@
  },
  {
   "chapter": "15장",
-  "text": "AI Act 조화표준(JTC21) 1건 이상이 2027년 안에 EU 관보(OJEU)에 인용됨(EN 18286 유력)",
-  "prob": "중간 60%±20",
+  "text": "EN 18286(2026-10-14 인용) 외 AI Act 조화표준(JTC21) 1건 이상이 2027년 안에 EU 관보(OJEU)에 인용됨(prEN 18228 유력)",
+  "prob": "중간 45%±20",
   "basis": "전망",
   "support": [
    {
@@ -7237,7 +7242,7 @@
   "support": [
    {
     "org": "바세나르 의장 성명",
-    "url": "https://www.wassenaar.org/app/uploads/2025/12/chair_statement.pdf",
+    "url": "https://www.wassenaar.org/wp-content/uploads/2026/07/chair_statement.pdf",
     "title": ""
    },
    {

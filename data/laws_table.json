@@ -37,11 +37,11 @@
   "name": "ECI 종합역량 프런티어 선형 성장 법칙",
   "verdict": "유지",
   "dominant": "지배",
-  "low": 186,
-  "base": 192,
-  "high": 199,
+  "low": 185,
+  "base": 190,
+  "high": 197,
   "unit": "2027년 말 ECI 프런티어",
-  "formula": "ECI_frontier(t) ≈ a + b·t, b≈17.2점/년(2024-04~2026-11, R²=0.991); Epoch 공식 추론시대 기울기 14점/년"
+  "formula": "ECI_frontier(t) ≈ a + b·t, b≈16점/년(141.2 → 157.4 → 173.4, R²=0.991); Epoch 2026-11-26 스냅샷 기준, 3장과 같은 값"
  },
  {
   "id": "L05",

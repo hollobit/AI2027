@@ -3,7 +3,7 @@
   "benchmark": "Humanity's Last Exam (no tools)",
   "category": "knowledge/reasoning",
   "end2025": "37.5% (Epoch 독립평가)",
-  "now": "73.2% (벤더, max effort) / 54.8% (Epoch 독립)",
+  "now": "74.2% (회사 발표, 도구 사용) · 74.3% (AA 독립) / 54.8% (공식 리더보드 HLE-Rolling)",
   "holder": "Claude Fable 5.2 (벤더) / GPT-6 Astra (Epoch)",
   "status": "진행 중",
   "url": "https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf ; https://epoch.ai/data/benchmark_data.zip"
