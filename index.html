@@ -1475,7 +1475,7 @@
       <p class="ai27-muted ai27-chapref"><a href="chapters/ch15.html">보고서 15장</a></p>
       <p class="ai27-muted">경쟁력 점수표는 6개 차원(모델·컴퓨트·인재·자본·제도·도입, 각 0–10)으로 매긴 분석가 판단입니다. 한국은 예산·GPU·모델로 37점에서 40점으로 오를 전망이지만, 인재(5점)와 정부 집행 평가(Oxford 3위에서 8위)가 약점입니다.</p>
     </div>
-    <nav class="ai27-minitoc" aria-label="이 파트에서"><b>이 파트에서</b> <a href="#policy-score">경쟁력 점수 2026 → 2027 (60점 만점)</a> · <a href="#policy-countries">국가별 정책 현황과 2027 경쟁력 효과</a> · <a href="#policy-reg">규제 접근 비교</a> · <a href="#ai-standards">AI 국제 표준화 2027: 공적·사실 표준, 법과의 연계, 산업 확산, SC 42</a> · <a href="#ai-standards-fc">2027 전망: AI 표준화</a> · <a href="#public-ax">한국 공공 AX: AI 챔피언·공무원 바이브 코딩</a> · <a href="#public-ax-issues">공무원 개발로 생길 문제</a> · <a href="#public-ax-fc">2027 전망</a></nav>
+    <nav class="ai27-minitoc" aria-label="이 파트에서"><b>이 파트에서</b> <a href="#policy-score">경쟁력 점수 2026 → 2027 (60점 만점)</a> · <a href="#policy-countries">국가별 정책 현황과 2027 경쟁력 효과</a> · <a href="#policy-reg">규제 접근 비교</a> · <a href="#ai-standards">AI 국제 표준화 2027: 공적·사실 표준, 법과의 연계, 산업 확산, SC 42</a> · <a href="#ai-standards-fc">2027 전망: AI 표준화</a> · <a href="#agentic-standards">에이전틱 AI·피지컬 AI 표준화 경쟁 2027: 국가·기구 간 경쟁과 상호운용성</a> · <a href="#agentic-standards-fc">2027 전망: 에이전틱·피지컬 AI 표준화</a> · <a href="#public-ax">한국 공공 AX: AI 챔피언·공무원 바이브 코딩</a> · <a href="#public-ax-issues">공무원 개발로 생길 문제</a> · <a href="#public-ax-fc">2027 전망</a></nav>
     <div class="ai27-card" id="policy-score">
       <h3>경쟁력 점수 2026 → 2027 (60점 만점)<a class="ai27-hl" href="#policy-score" aria-label="이 블록 링크">#</a></h3>
       <div class="ai27-chart" data-draw="policy-dumb" data-source="policy_scorecard"></div>
@@ -1551,6 +1551,63 @@
           <li><span class="ai27-pill" data-v="partial" style="justify-self:start">중간 · 50% (±20)</span><span>C2PA 기반 ISO 22144(콘텐츠 자격증명)가 2027년 안에 국제표준(IS)으로 발간</span></li>
           <li><span class="ai27-pill" data-v="missed" style="justify-self:start">높음 · 70% (±15)</span><span>중국이 2027년 안에 AI 관련 강제 국가표준(GB)을 1건 이상 새로 발간(의인화 AI 또는 에이전트 보안)</span></li>
           <li><span class="ai27-pill" data-v="partial" style="justify-self:start">중간 · 45% (±20)</span><span>한국 고영향 AI 책무 고시·가이드라인 개정안 또는 제14조 표준 고시가 ISO/IEC 42001 등 국제표준(KS 부합화 포함)을 이행 근거로 명시</span></li>
+        </ul></div>
+    <div class="ai27-sub" id="agentic-standards"><h3>에이전틱 AI·피지컬 AI 표준화 경쟁 2027: 국가·기구 간 경쟁과 상호운용성<a class="ai27-hl" href="#agentic-standards" aria-label="이 블록 링크">#</a></h3>
+      <p class="ai27-muted"><a href="chapters/ch15.html#s15-10">보고서 15.10절</a>. 중국 GB/Z 185 '智能体互联'(2026-05), NIST NCCoE·CAISI, Linux Foundation AAIF(MCP·A2A)·x402 재단, FIDO(AP2), IETF·W3C·3GPP·IEEE·MLCommons, ISO TC 299(ISO 25785-1)·UL 3300·OpenUSD·LeRobot. 확률은 본 보고서 추정입니다.</p>
+      <p><b>한 줄 요약</b>: 에이전트 상호운용성은 미국 기업 주도의 사실 표준(MCP·A2A·AP2·x402)이 먼저 깔렸고, 중국은 국가 지침형 표준(GB/Z 185)으로 자체 연결 체계를 세웠습니다. 공적 기구는 신원·권한·안전 층을 맡는 쪽으로 갑니다. 피지컬 AI는 '중국은 성능 등급·데이터, 서방은 안전'으로 갈라집니다.</p></div>
+    <div class="ai27-tablewrap">
+      <table aria-label="에이전틱·피지컬 AI 표준화"><thead><tr><th>국가</th><th>주도 기관</th><th>국내 표준</th><th>국제 무대</th><th>2027 관전점</th></tr></thead><tbody>
+        <tr><td>미국</td><td>NIST CAISI(에이전트 표준 이니셔티브, 15.9절), NIST NCCoE</td><td>구속력 없는 지침. NCCoE 개념서(2026-02, OAuth 2.0·SPIFFE·MCP 기반 실증 제안, 의견 마감 04-02), 에이전트 신원관리 10대 설계 원칙(10-27, 블로그 형식)</td><td>업계 재단 우선. NIST가 AAIF 준회원으로 가입(10-22). IETF·OpenID·FIDO 사양을 지침에 인용</td><td>NCCoE 실증 과제 기술서와 SP 초안이 나오는지, 연방 조달이 원칙을 요건으로 쓰는지</td></tr>
+        <tr><td>중국</td><td>국가시장감독총국·국가표준화관리위원회, 중국전자기술표준화연구원(CESI, MIIT 지도), TC260, 3대 통신사</td><td><b>GB/Z 185.1~185.7 등 8건(05-22 공고)</b>: 총체 구조·신원 코드·신원 관리·에이전트 기술(描述)·발견·상호작용·도구 호출. 70여 기관 참여(MIIT 해설). 에이전트 강제 국가표준 추진(15.9절). CAC·NDRC·MIIT 에이전트 지침(05-12)은 2027년 단말·에이전트 보급률 70% 목표</td><td>3GPP CT3 6G AI 프로토콜 연구를 화웨이·차이나모바일 대표가 소개하는 등 통신 표준에서 존재감이 큼. W3C AI Agent Protocol CG는 ANP 제안자가 만듦</td><td>지도기술문서(GB/Z)가 권고 국가표준(GB/T)·강제 표준으로 올라가는지, &#x27;신원 코드&#x27;가 국제 과제로 들어가는지</td></tr>
+        <tr><td>EU</td><td>CEN-CENELEC JTC21, ETSI TC SAI</td><td>에이전트 전용 표준 없음. CEN-CENELEC 기술이사회는 2025-09-30에 핵심 AI Act 표준과 무관한 신규 과제 등록을 미루기로 함. ETSI EN 304 223(AI 보안 기준, 2026-01)이 일반 기준</td><td>SC 42 경유. 에이전트 의제는 주도하지 못함</td><td>조화표준 지연(15.9절)이 풀려야 에이전트 과제를 시작할 수 있음. 2028년 이후 가능성 큼</td></tr>
+        <tr><td>영국</td><td>AISI(평가), BSI, NCSC</td><td>BS ISO/IEC 27090 국내 채택(10월), BSI &#x27;AIUC 에이전틱 AI 인증&#x27;(민간 인증 상품)</td><td>ETSI EN 304 223을 NCSC가 주도</td><td>평가 방법을 표준보다 인증 상품으로 먼저 시장에 내는지</td></tr>
+        <tr><td>일본</td><td>디지털청, J-AISI</td><td>정부 AI &#x27;GENAI&#x27; 에이전트 거버넌스·보안·안전 기준(10월 문서, 11-06 공개, AISI 협력). 공무원 약 18만 명 대상</td><td>ISO/IEC SC 42</td><td>GENAI OSS 2.0(2027-02경)이 지자체·기업의 참조 모델로 퍼지는지</td></tr>
+        <tr><td>한국</td><td>과기정통부(에이전틱AI 얼라이언스, 04-01, 약 250곳), 산업통상부 국표원(산업 AI 표준화 포럼 사실상표준분과, 15.9절)</td><td><b>국가 에이전트 표준(KS)은 확인하지 못함.</b> 얼라이언스 기술분과(LG AI연구원)가 MCP·A2A 동향 분석, 안전·신뢰분과(숭실대·AI안전연구소)가 평가·검증 체계</td><td>ISO/IEC SC 42(에이전트 용어 22989 Amd 2·다중 에이전트 TR 27258, 15.9절)·SC 27 참여. AAIF 회원 명단에서 한국 기관은 확인되지 않음</td><td>국표원이 SC 42 에이전트 과제와 사실상표준(AAIF·IETF·W3C) 참여를 한 전략으로 묶는지, 공공 에이전트 KYA(22장)에 국제 정의를 쓰는지</td></tr>
+      </tbody></table>
+    </div>
+    <div class="ai27-tablewrap">
+      <table aria-label="에이전틱·피지컬 AI 표준화"><thead><tr><th>층</th><th>사양</th><th>관리 주체</th><th>성숙도(2026-11)</th><th>공적 표준화 경로</th></tr></thead><tbody>
+        <tr><td>도구 연결</td><td>MCP</td><td>Linux Foundation AAIF(회원 305곳, 10-22)</td><td>사실상 표준. 공식 적합성 시험 도구(modelcontextprotocol/conformance)와 AAIF의 개인 자격(MCPA)은 있으나 <b>제품 인증 배지는 없음</b></td><td>공적 제출 가능성 낮음(25%, 15.9절). 3GPP CT3가 검토 대상에 포함</td></tr>
+        <tr><td>웹</td><td>WebMCP</td><td>W3C Web Machine Learning CG(편집자 Google)</td><td>CG 보고서 초안. Chrome 146에서 플래그로 시험. Mozilla·지문 추적 우려 제기</td><td>표준 트랙에 오르려면 W3C 워킹그룹(WG) 헌장 필요</td></tr>
+        <tr><td>에이전트 간</td><td>A2A(IBM ACP 흡수), AGNTCY</td><td>AAIF·Linux Foundation</td><td>A2A 지지 150곳 이상(22.3절), A2A TCK(gRPC·JSON-RPC·HTTP+JSON 시험)로 버전 불일치 적발</td><td>IETF agentproto(미설립)와 3GPP CT3가 A2A·MCP를 참조</td></tr>
+        <tr><td>에이전트 간(중국 계열)</td><td>ANP, GB/Z 185 상호작용·발견</td><td>W3C AI Agent Protocol CG / 국가표준화관리위원회</td><td>CG 2026년에 에이전트 권한 사양 추가. GB/Z는 국가 지도기술문서</td><td>3GPP CT3 비교 대상(ANP). 중국 국가표준 → 국제 제안 경로</td></tr>
+        <tr><td>신원·권한</td><td>IETF WIMSE AIMS(15.9절), OAuth 2.1, OpenID AIIM, W3C Agent Identity Registry CG(2026-04), GB/Z 185 신원 코드, ISO/IEC SC 27</td><td>IETF·OpenID·W3C·ISO/IEC·중국</td><td><b>가장 붐비는 층.</b> OpenID가 MCP 보안 상호운용 시험(가트너 IAM 서밋, 12월) 진행. 승인된 공적 표준은 아직 없음</td><td>IETF(RFC)가 가장 앞섬. OpenID·W3C는 사양, ISO/IEC는 용어·관리 지침 쪽</td></tr>
+        <tr><td>결제</td><td>AP2 + Mastercard Verifiable Intent, x402, Visa TAP(9.8절)</td><td><b>AP2는 FIDO Alliance로 기증(04-28)</b>, 결제기술 WG(의장 Mastercard·Visa). <b>x402는 Linux Foundation x402 Foundation</b>(04-02 발표, 07-14 가동, Visa·Mastercard·Google·Stripe·AWS 등)</td><td>사양은 v0.x. 카드망·온체인 두 진영이 각자 재단을 확보</td><td>공적 표준 경로 없음. 금융 규제(KYC·전자금융)가 사실상 기준을 정함</td></tr>
+      </tbody></table>
+    </div>
+    <div class="ai27-tablewrap">
+      <table aria-label="에이전틱·피지컬 AI 표준화"><thead><tr><th>기구</th><th>에이전틱 작업(2026)</th><th>협력·충돌 지점</th></tr></thead><tbody>
+        <tr><td>IETF</td><td>WIMSE 에이전트 신원(15.9절). <b>agentproto BoF(IETF 126, 07-23)</b>: WG 설립 여부를 논의했으나 결론 없이 메일링리스트로 넘김. 09-09 &#x27;제안&#x27; 상태, IETF 127 재시도용 BoF 신청</td><td>의장단은 AAIF의 A2A·MCP와 &quot;조정은 하되 지시할 수 없다&quot;고 밝힘. 사실표준을 다시 만들 것인지가 쟁점</td></tr>
+        <tr><td>3GPP</td><td>SA1 6G 요구 TR 22.870 승인(2026-03), SA2 단말 AI 에이전트 등록·발견, <b>CT3 &#x27;Study on the Protocol for AI in 6G&#x27;(FS_6G_AIP_CT, 5월부터)</b>: A2A·MCP·ANP·AGNTCY 비교</td><td>3GPP 고유 에이전트 프로토콜을 만들지, 외부 사실표준을 참조할지 미정. 6G 사양 동결은 2029년 초 예상</td></tr>
+        <tr><td>W3C</td><td>AI Agent Protocol CG(2025-05), Agent Identity Registry Protocol CG(2026-04), AI Agent Memory Interoperability CG(2026-07), WebMCP(WebML CG)</td><td>CG 산출물은 W3C 권고가 아님. Web &amp; AI 관심그룹이 조정. 정식 WG는 아직 없음</td></tr>
+        <tr><td>IEEE SA</td><td>15.9절의 P3709·P7022·P3931·P3945에 더해 P3777(에이전트 벤치마킹), P1968(자율 에이전트 시스템 거버넌스). 모두 PAR·초안 단계, 발간 0건</td><td>PSDO 경로로 ISO/IEC 진입 가능(15.9절). P3709 PAR 승인 2025-09로 통상 2–4년</td></tr>
+        <tr><td>FIDO·OpenID</td><td>FIDO: AP2·Verifiable Intent로 에이전트 결제 사양. OpenID AIIM: 에이전트 신원 백서(2025-10), MCP 보안 상호운용 시험</td><td>표준 &#x27;개발&#x27;은 OIDF 워킹그룹·IETF로 넘김. 금융·카드망의 실질 기준</td></tr>
+        <tr><td>MLCommons·OWASP·ETSI</td><td>MLCommons &#x27;에이전트 제품 성숙도 사다리&#x27; RC1(2026-02, ARES 협업에 Anthropic·Google·Microsoft·OpenAI). OWASP 에이전틱 앱 Top 10(2025-12). ETSI EN 304 223</td><td>평가·보안 체크리스트가 조달·인증 요건으로 먼저 들어감. SC 42와 리에종(15.9절)</td></tr>
+      </tbody></table>
+    </div>
+    <div class="ai27-tablewrap">
+      <table aria-label="에이전틱·피지컬 AI 표준화"><thead><tr><th>영역</th><th>공적 표준</th><th>사실 표준·데이터 형식</th><th>주도국</th><th>2027 전망</th></tr></thead><tbody>
+        <tr><td>산업·협동 로봇 안전</td><td>ISO 10218-1/-2:2025(6.6절)</td><td>—</td><td>유럽·일본</td><td>채택은 느림(6.6절). EU 기계류 규정 적용(15.9절)과 함께 조화표준화</td></tr>
+        <tr><td>동적 안정 이동 로봇·휴머노이드 안전</td><td><b>ISO 25785-1</b> CD 의견조회 종료 단계(ISO 30.60, 4족·2족·바퀴 균형 로봇 포함). CEN/TC 310이 prEN ISO 25785-1 병행 승인(2026-01-09). <b>ANSI/CAN/UL 3300:2026(08-14, AI 기반 안전 시험 항목 추가)</b>, OSHA NRTL 목록 등재. 중국 &#x27;휴머노이드 기술요구&#x27; 국가표준 의견수렴(2026-03)</td><td>—</td><td>미국(UL)·유럽(ISO/CEN) 대 중국</td><td>DIS 진입 45%(6.7절). 시스템 전체를 다루는 휴머노이드 단일 표준은 2027년에도 없음</td></tr>
+        <tr><td>휴머노이드 부품·성능·지능</td><td>중국 MIIT TC8 표준 5건(11-16): 지능화 능력 등급, 전동 일체형 관절, 휴머노이드·체화지능 손, 훈련장 구축, 훈련 데이터 관리</td><td>IEEE 연구그룹 분업안(ASTM 시험 방법, IEEE 성능 지표, 6.7절), IEEE P3870(6.6절)</td><td><b>중국(속도)</b></td><td>중국은 &#x27;지능 등급&#x27;을 먼저 표준으로 만들어 조달·보조금 기준으로 씀</td></tr>
+        <tr><td>로봇 학습 데이터</td><td>ISO/WD 26264-1(휴머노이드 데이터셋, 6.6절), 중국 훈련 데이터 관리 요구</td><td><b>LeRobot 데이터셋 v3.0</b>(Hugging Face, 2025-09 기준 1.6만 개 이상), Open X-Embodiment·RLDS(Google), DROID</td><td>미국 플랫폼 대 중국 국가표준</td><td>데이터 형식은 LeRobot이 사실상 표준으로 굳고, ISO 작업은 메타데이터·품질 쪽으로 좁혀짐</td></tr>
+        <tr><td>시뮬레이션·디지털 트윈</td><td>—</td><td><b>OpenUSD Core Spec 1.0(AOUSD, 2025-12 비준)</b>: 문법·합성 규칙만, 물리·재질은 후속. NVIDIA Isaac·Cosmos가 생태계를 묶음</td><td>미국(NVIDIA·Pixar·Apple 등)</td><td>Core 1.1(2026 계획)과 물리 계층 사양이 로봇 시뮬 교환의 기준이 됨</td></tr>
+        <tr><td>로봇 FM 평가</td><td>공적 표준 없음(6.7절)</td><td>LIBERO-Plus·RoboArena·BEHAVIOR 등(6.7절)</td><td>미국 연구계</td><td>섭동·실세계 지표로 교체(6.7절). 공적 평가 표준은 2028년 이후</td></tr>
+        <tr><td>자율주행</td><td>ISO/PAS 8800·UNECE ADS(15.9절)</td><td>—</td><td>유럽·UN</td><td>15.9절 참조</td></tr>
+        <tr><td>현장 인증</td><td>한국 KIRIA 휴머노이드 안전인증센터, LG전자와 시범인증 협약(11-13, CLOiD 후보). BSI·TÜV 민간 평가</td><td>—</td><td>한국·독일</td><td>제도 인증보다 시범인증·민간 평가가 먼저 시장 기준이 됨</td></tr>
+      </tbody></table>
+    </div>
+    <div class="ai27-card" id="agentic-standards-fc"><h3>2027 전망: 에이전틱·피지컬 AI 표준화<a class="ai27-hl" href="#agentic-standards-fc" aria-label="이 블록 링크">#</a></h3>
+        <ul class="ai27-list">
+          <li><span class="ai27-pill" data-v="partial" style="justify-self:start">중간 · 40% (±20)</span><span>AAIF(또는 산하 MCP·A2A 프로젝트)가 2027년 안에 제품 대상 적합성 인증(배지·등록부) 프로그램을 공식 출범</span></li>
+          <li><span class="ai27-pill" data-v="partial" style="justify-self:start">중간 · 50% (±20)</span><span>NIST가 2027년 안에 에이전트 신원·권한을 다룬 공식 간행물(SP 또는 NIST IR, 초안 포함)을 1건 이상 공개</span></li>
+          <li><span class="ai27-pill" data-v="partial" style="justify-self:start">중간 · 55% (±20)</span><span>IETF가 2027년 안에 에이전트 통신 프로토콜 워킹그룹(agentproto 또는 후속)을 정식 설립</span></li>
+          <li><span class="ai27-pill" data-v="unclear" style="justify-self:start">낮음 · 30% (±15)</span><span>W3C가 2027년 안에 에이전트 프로토콜 또는 WebMCP를 산출물로 명시한 정식 워킹그룹(WG) 헌장을 승인</span></li>
+          <li><span class="ai27-pill" data-v="partial" style="justify-self:start">중간 · 55% (±20)</span><span>3GPP가 2027년 안에 6G(Rel-21) 규범 작업항목에 AI 에이전트 지원(등록·발견·에이전트 통신 프로토콜)을 포함해 승인</span></li>
+          <li><span class="ai27-pill" data-v="partial" style="justify-self:start">중간 · 60% (±20)</span><span>FIDO Alliance가 2027년 안에 AP2·Verifiable Intent 기반 에이전트 결제 사양의 공개 검토 초안 이상을 발표</span></li>
+          <li><span class="ai27-pill" data-v="unclear" style="justify-self:start">낮음 · 30% (±15)</span><span>IEEE가 2027년 안에 에이전틱 AI 표준(P3709·P7022·P3931·P3945·P3777·P1968 중) 1건 이상을 승인·발간</span></li>
+          <li><span class="ai27-pill" data-v="partial" style="justify-self:start">중간 · 60% (±20)</span><span>중국이 2027년 안에 휴머노이드·체화지능 국가·업계 표준을 10건 이상 새로 발표(2026-11 5건에 이어)</span></li>
+          <li><span class="ai27-pill" data-v="partial" style="justify-self:start">중간 · 50% (±20)</span><span>한국에서 휴머노이드 로봇 안전 시범인증(KIRIA 인증센터 등) 첫 인증서가 2027년 안에 발급</span></li>
         </ul></div>
     <div class="ai27-sub" id="public-ax"><h3>한국 공공 AX: AI 챔피언·공무원 바이브 코딩<a class="ai27-hl" href="#public-ax" aria-label="이 블록 링크">#</a></h3>
       <p class="ai27-muted"><a href="chapters/ch15.html#s15-7">보고서 15.7절</a>. 확률은 분석가 판단입니다.</p>
