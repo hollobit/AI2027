@@ -60,7 +60,7 @@
   "pcode": "INDUS",
   "related": [],
   "kr": 0,
-  "impact": 3.5,
+  "impact": 3.0,
   "top30": null
  },
  {
@@ -345,7 +345,7 @@
   ],
   "kr": 0,
   "impact": 4.0,
-  "top30": 13
+  "top30": 14
  },
  {
   "id": "L488",
@@ -1534,7 +1534,7 @@
  {
   "id": "L961",
   "ch": 9,
-  "sec": null,
+  "sec": "9.3",
   "text": "광고 기반 웹의 붕괴",
   "p": 85,
   "unc": 10,
@@ -1991,7 +1991,7 @@
   "pcode": "INDUS",
   "related": [],
   "kr": 0,
-  "impact": 3.5,
+  "impact": 2.5,
   "top30": null
  },
  {
@@ -2471,7 +2471,7 @@
   "pcode": "INFRA",
   "related": [],
   "kr": 0,
-  "impact": 3.5,
+  "impact": 3.0,
   "top30": null
  },
  {
@@ -2606,7 +2606,7 @@
    "기술혁신·인프라 분과"
   ],
   "kr": 0,
-  "impact": 3.5,
+  "impact": 3.0,
   "top30": null
  },
  {
@@ -2860,7 +2860,7 @@
  {
   "id": "L1489",
   "ch": 13,
-  "sec": null,
+  "sec": "13.2",
   "text": "청년·신입 채용 절벽의 구조화",
   "p": 82,
   "unc": 10,
@@ -3040,7 +3040,7 @@
   ],
   "kr": 1,
   "impact": 3.5,
-  "top30": 20
+  "top30": 21
  },
  {
   "id": "L1540",
@@ -3123,7 +3123,7 @@
   ],
   "kr": 1,
   "impact": 4.5,
-  "top30": null
+  "top30": 29
  },
  {
   "id": "L1670",
@@ -3258,7 +3258,7 @@
   ],
   "kr": 0,
   "impact": 3.5,
-  "top30": 10
+  "top30": 11
  },
  {
   "id": "L1828",
@@ -3381,7 +3381,7 @@
   ],
   "kr": 0,
   "impact": 3.5,
-  "top30": 15
+  "top30": 16
  },
  {
   "id": "L1911",
@@ -3668,7 +3668,7 @@
   ],
   "kr": 0,
   "impact": 4.0,
-  "top30": 18
+  "top30": 19
  },
  {
   "id": "L2127",
@@ -4435,7 +4435,7 @@
   ],
   "kr": 1,
   "impact": 3.5,
-  "top30": 19
+  "top30": 22
  },
  {
   "id": "L2211",
@@ -4600,7 +4600,7 @@
   ],
   "kr": 0,
   "impact": 4.0,
-  "top30": 17
+  "top30": 20
  },
  {
   "id": "L2289",
@@ -4757,7 +4757,7 @@
   ],
   "kr": 0,
   "impact": 4.5,
-  "top30": 30
+  "top30": null
  },
  {
   "id": "L2298",
@@ -4791,7 +4791,7 @@
   ],
   "kr": 0,
   "impact": 4.5,
-  "top30": null
+  "top30": 30
  },
  {
   "id": "L2525",
@@ -4874,7 +4874,7 @@
   ],
   "kr": 0,
   "impact": 3.5,
-  "top30": 11
+  "top30": 13
  },
  {
   "id": "L2530",
@@ -4997,7 +4997,7 @@
   ],
   "kr": 0,
   "impact": 4.5,
-  "top30": 29
+  "top30": null
  },
  {
   "id": "L2643",
@@ -5151,7 +5151,7 @@
   ],
   "kr": 0,
   "impact": 4.0,
-  "top30": 16
+  "top30": 18
  },
  {
   "id": "L2652",
@@ -5319,7 +5319,7 @@
   "related": [],
   "kr": 0,
   "impact": 3.5,
-  "top30": null
+  "top30": 15
  },
  {
   "id": "L1831#gap_A",
@@ -5351,7 +5351,7 @@
   "related": [],
   "kr": 0,
   "impact": 4.0,
-  "top30": 14
+  "top30": 17
  },
  {
   "id": "L1833#gap_A",
@@ -5445,7 +5445,7 @@
   "related": [],
   "kr": 1,
   "impact": 3.5,
-  "top30": 22
+  "top30": null
  },
  {
   "id": "L1882#gap_A",
@@ -5461,7 +5461,7 @@
    "기술혁신·인프라 분과"
   ],
   "kr": 0,
-  "impact": 3.5,
+  "impact": 3.0,
   "top30": null
  },
  {
@@ -6091,7 +6091,7 @@
   "pcode": "SOCIETY",
   "related": [],
   "kr": 1,
-  "impact": 3.5,
+  "impact": 3.0,
   "top30": null
  },
  {
@@ -7167,7 +7167,7 @@
    "산업AX·생태계 분과"
   ],
   "kr": 0,
-  "impact": 3.5,
+  "impact": 2.5,
   "top30": null
  },
  {
@@ -7323,7 +7323,7 @@
  {
   "id": "L4687#wild_G",
   "ch": 25,
-  "sec": "25.2",
+  "sec": "25.16",
   "text": "미국 정부가 동맹국 이용자의 프런티어 모델 접근을 다시 강제 중단",
   "p": 30,
   "unc": 15,
@@ -7405,7 +7405,7 @@
    "보안 특별위원회"
   ],
   "kr": 0,
-  "impact": 4.5,
+  "impact": 4.0,
   "top30": null
  },
  {
@@ -7423,7 +7423,7 @@
    "지역 특별위원회"
   ],
   "kr": 0,
-  "impact": 4.5,
+  "impact": 4.0,
   "top30": null
  },
  {
@@ -8457,7 +8457,7 @@
   ],
   "kr": 1,
   "impact": 3.5,
-  "top30": 21
+  "top30": null
  },
  {
   "id": "L4377#kw_K",
@@ -9107,7 +9107,7 @@
    "보안 특별위원회"
   ],
   "kr": 1,
-  "impact": null,
+  "impact": 3.0,
   "top30": null
  },
  {
@@ -9124,7 +9124,7 @@
    "법률 TF"
   ],
   "kr": 1,
-  "impact": null,
+  "impact": 2.0,
   "top30": null
  },
  {
@@ -9143,7 +9143,7 @@
    "글로벌 AI 전략적 협력 TF"
   ],
   "kr": 1,
-  "impact": null,
+  "impact": 2.5,
   "top30": null
  },
  {
@@ -9160,7 +9160,7 @@
    "인공지능책임관협의회"
   ],
   "kr": 1,
-  "impact": null,
+  "impact": 1.5,
   "top30": null
  },
  {
@@ -9178,7 +9178,7 @@
    "법률 TF"
   ],
   "kr": 0,
-  "impact": null,
+  "impact": 2.5,
   "top30": null
  },
  {
@@ -9196,7 +9196,7 @@
    "법률 TF"
   ],
   "kr": 0,
-  "impact": null,
+  "impact": 3.0,
   "top30": null
  },
  {
@@ -9213,7 +9213,7 @@
    "법률 TF"
   ],
   "kr": 0,
-  "impact": null,
+  "impact": 2.5,
   "top30": null
  },
  {
@@ -9231,7 +9231,7 @@
    "공공AX 분과"
   ],
   "kr": 0,
-  "impact": null,
+  "impact": 2.5,
   "top30": null
  },
  {
@@ -9249,7 +9249,7 @@
    "보안 특별위원회"
   ],
   "kr": 0,
-  "impact": null,
+  "impact": 1.5,
   "top30": null
  },
  {
@@ -9267,7 +9267,7 @@
    "기술혁신·인프라 분과"
   ],
   "kr": 0,
-  "impact": null,
+  "impact": 2.5,
   "top30": null
  },
  {
@@ -9285,7 +9285,7 @@
    "글로벌협력 분과"
   ],
   "kr": 0,
-  "impact": null,
+  "impact": 3.0,
   "top30": null
  },
  {
@@ -9303,7 +9303,7 @@
    "국방·안보 분과"
   ],
   "kr": 0,
-  "impact": null,
+  "impact": 3.0,
   "top30": null
  },
  {
@@ -9321,7 +9321,7 @@
    "인공지능책임관협의회"
   ],
   "kr": 1,
-  "impact": null,
+  "impact": 2.5,
   "top30": null
  },
  {
@@ -9339,7 +9339,7 @@
    "글로벌협력 분과"
   ],
   "kr": 0,
-  "impact": null,
+  "impact": 2.0,
   "top30": null
  },
  {
@@ -9357,7 +9357,7 @@
    "글로벌협력 분과"
   ],
   "kr": 0,
-  "impact": null,
+  "impact": 2.5,
   "top30": null
  },
  {
@@ -9374,7 +9374,7 @@
    "글로벌협력 분과"
   ],
   "kr": 0,
-  "impact": null,
+  "impact": 2.5,
   "top30": null
  },
  {
@@ -9391,7 +9391,7 @@
    "글로벌협력 분과"
   ],
   "kr": 0,
-  "impact": null,
+  "impact": 1.5,
   "top30": null
  },
  {
@@ -9409,7 +9409,7 @@
    "글로벌협력 분과"
   ],
   "kr": 0,
-  "impact": null,
+  "impact": 2.5,
   "top30": null
  },
  {
@@ -9427,7 +9427,7 @@
    "법률 TF"
   ],
   "kr": 0,
-  "impact": null,
+  "impact": 2.5,
   "top30": null
  },
  {
@@ -9444,7 +9444,7 @@
    "산업AX·생태계 분과"
   ],
   "kr": 0,
-  "impact": null,
+  "impact": 1.5,
   "top30": null
  },
  {
@@ -9461,7 +9461,7 @@
    "글로벌협력 분과"
   ],
   "kr": 0,
-  "impact": null,
+  "impact": 2.5,
   "top30": null
  },
  {
@@ -9479,7 +9479,7 @@
    "법률 TF"
   ],
   "kr": 1,
-  "impact": null,
+  "impact": 2.0,
   "top30": null
  },
  {
@@ -9496,7 +9496,7 @@
    "글로벌협력 분과"
   ],
   "kr": 0,
-  "impact": null,
+  "impact": 2.5,
   "top30": null
  },
  {
@@ -9513,7 +9513,7 @@
    "산업AX·생태계 분과"
   ],
   "kr": 0,
-  "impact": null,
+  "impact": 2.0,
   "top30": null
  },
  {
@@ -9531,7 +9531,7 @@
    "인공지능책임관협의회"
   ],
   "kr": 1,
-  "impact": null,
+  "impact": 2.0,
   "top30": null
  },
  {
@@ -9548,7 +9548,7 @@
    "보안 특별위원회"
   ],
   "kr": 0,
-  "impact": null,
+  "impact": 2.0,
   "top30": null
  },
  {
@@ -9565,7 +9565,7 @@
    "보안 특별위원회"
   ],
   "kr": 0,
-  "impact": null,
+  "impact": 2.5,
   "top30": null
  },
  {
@@ -9583,7 +9583,7 @@
    "법률 TF"
   ],
   "kr": 0,
-  "impact": null,
+  "impact": 2.0,
   "top30": null
  },
  {
@@ -9600,7 +9600,7 @@
    "글로벌협력 분과"
   ],
   "kr": 0,
-  "impact": null,
+  "impact": 3.0,
   "top30": null
  },
  {
@@ -9617,7 +9617,7 @@
    "교육·인재 분과"
   ],
   "kr": 0,
-  "impact": null,
+  "impact": 2.5,
   "top30": null
  },
  {
@@ -9634,7 +9634,7 @@
    "청년 도약 TF"
   ],
   "kr": 0,
-  "impact": null,
+  "impact": 3.0,
   "top30": null
  },
  {
@@ -9651,7 +9651,7 @@
    "사회 분과"
   ],
   "kr": 0,
-  "impact": null,
+  "impact": 2.5,
   "top30": null
  },
  {
@@ -9668,7 +9668,7 @@
    "교육·인재 분과"
   ],
   "kr": 0,
-  "impact": null,
+  "impact": 2.0,
   "top30": null
  },
  {
@@ -9685,7 +9685,7 @@
    "지역 특별위원회"
   ],
   "kr": 1,
-  "impact": null,
+  "impact": 2.5,
   "top30": null
  },
  {
@@ -9702,7 +9702,7 @@
    "인공지능책임관협의회"
   ],
   "kr": 0,
-  "impact": null,
+  "impact": 2.5,
   "top30": null
  },
  {
@@ -9719,7 +9719,7 @@
    "데이터 분과"
   ],
   "kr": 0,
-  "impact": null,
+  "impact": 2.5,
   "top30": null
  },
  {
@@ -9736,7 +9736,7 @@
    "교육·인재 분과"
   ],
   "kr": 0,
-  "impact": null,
+  "impact": 2.5,
   "top30": null
  },
  {
@@ -9753,7 +9753,7 @@
    "과학 분과"
   ],
   "kr": 1,
-  "impact": null,
+  "impact": 3.0,
   "top30": null
  },
  {
@@ -9771,7 +9771,7 @@
    "글로벌 AI 전략적 협력 TF"
   ],
   "kr": 0,
-  "impact": null,
+  "impact": 4.0,
   "top30": null
  },
  {
@@ -9789,7 +9789,7 @@
    "법률 TF"
   ],
   "kr": 0,
-  "impact": null,
+  "impact": 3.5,
   "top30": null
  },
  {
@@ -9806,7 +9806,7 @@
    "국가 초지능 대응 TF"
   ],
   "kr": 0,
-  "impact": null,
+  "impact": 3.5,
   "top30": null
  },
  {
@@ -9823,7 +9823,7 @@
    "법률 TF"
   ],
   "kr": 0,
-  "impact": null,
+  "impact": 3.5,
   "top30": null
  },
  {
@@ -9841,7 +9841,7 @@
    "AI민주주의 분과"
   ],
   "kr": 0,
-  "impact": null,
+  "impact": 2.5,
   "top30": null
  },
  {
@@ -9859,7 +9859,7 @@
    "글로벌협력 분과"
   ],
   "kr": 0,
-  "impact": null,
+  "impact": 4.5,
   "top30": null
  },
  {
@@ -9876,8 +9876,8 @@
    "산업AX·생태계 분과"
   ],
   "kr": 0,
-  "impact": null,
-  "top30": null
+  "impact": 4.0,
+  "top30": 10
  },
  {
   "id": null,
@@ -9894,7 +9894,7 @@
    "AI민주주의 분과"
   ],
   "kr": 0,
-  "impact": null,
+  "impact": 3.0,
   "top30": null
  },
  {
@@ -9912,7 +9912,7 @@
    "보안 특별위원회"
   ],
   "kr": 0,
-  "impact": null,
+  "impact": 2.5,
   "top30": null
  },
  {
@@ -9930,7 +9930,7 @@
    "글로벌협력 분과"
   ],
   "kr": 1,
-  "impact": null,
+  "impact": 3.0,
   "top30": null
  },
  {
@@ -9947,7 +9947,7 @@
    "글로벌협력 분과"
   ],
   "kr": 0,
-  "impact": null,
+  "impact": 2.5,
   "top30": null
  },
  {
@@ -9965,7 +9965,7 @@
    "글로벌 AI 전략적 협력 TF"
   ],
   "kr": 0,
-  "impact": null,
+  "impact": 2.5,
   "top30": null
  },
  {
@@ -9983,7 +9983,7 @@
    "법률 TF"
   ],
   "kr": 0,
-  "impact": null,
+  "impact": 2.5,
   "top30": null
  },
  {
@@ -10001,7 +10001,7 @@
    "산업AX·생태계 분과"
   ],
   "kr": 0,
-  "impact": null,
+  "impact": 3.0,
   "top30": null
  },
  {
@@ -10019,7 +10019,7 @@
    "글로벌 AI 전략적 협력 TF"
   ],
   "kr": 0,
-  "impact": null,
+  "impact": 2.5,
   "top30": null
  },
  {
@@ -10037,7 +10037,7 @@
    "국방·안보 분과"
   ],
   "kr": 0,
-  "impact": null,
+  "impact": 2.5,
   "top30": null
  },
  {
@@ -10054,7 +10054,7 @@
    "국방·안보 분과"
   ],
   "kr": 0,
-  "impact": null,
+  "impact": 2.0,
   "top30": null
  },
  {
@@ -10072,7 +10072,7 @@
    "산업AX·생태계 분과"
   ],
   "kr": 1,
-  "impact": null,
+  "impact": 2.5,
   "top30": null
  },
  {
@@ -10090,7 +10090,7 @@
    "산업AX·생태계 분과"
   ],
   "kr": 0,
-  "impact": null,
+  "impact": 2.5,
   "top30": null
  },
  {
@@ -10107,7 +10107,7 @@
    "국방·안보 분과"
   ],
   "kr": 0,
-  "impact": null,
+  "impact": 3.5,
   "top30": null
  },
  {
@@ -10124,7 +10124,7 @@
    "국방·안보 분과"
   ],
   "kr": 0,
-  "impact": null,
+  "impact": 3.0,
   "top30": null
  },
  {
@@ -10141,7 +10141,7 @@
    "국방·안보 분과"
   ],
   "kr": 0,
-  "impact": null,
+  "impact": 3.0,
   "top30": null
  },
  {
@@ -10159,7 +10159,7 @@
    "공공AX 분과"
   ],
   "kr": 0,
-  "impact": null,
+  "impact": 2.5,
   "top30": null
  },
  {
@@ -10176,7 +10176,7 @@
    "글로벌협력 분과"
   ],
   "kr": 1,
-  "impact": null,
+  "impact": 2.5,
   "top30": null
  }
 ]
