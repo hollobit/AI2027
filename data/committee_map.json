@@ -4271,7 +4271,7 @@
  {
   "id": "L2197",
   "ch": 18,
-  "sec": "15.12",
+  "sec": "15.13",
   "text": "Pax Silica",
   "p": 70,
   "unc": 20,
@@ -9319,6 +9319,164 @@
   "related": [
    "글로벌협력 분과",
    "인공지능책임관협의회"
+  ],
+  "kr": 1,
+  "impact": null,
+  "top30": null
+ },
+ {
+  "id": null,
+  "ch": 15,
+  "sec": "15.10",
+  "text": "AAIF(또는 산하 MCP·A2A 프로젝트)가 2027년 안에 제품 대상 적합성 인증(배지·등록부) 프로그램을 공식 출범",
+  "p": 40,
+  "unc": 20,
+  "label": "중간",
+  "primary": "기술혁신·인프라 분과",
+  "pcode": "",
+  "related": [
+   "K-AI 풀스택 TF",
+   "글로벌협력 분과"
+  ],
+  "kr": 0,
+  "impact": null,
+  "top30": null
+ },
+ {
+  "id": null,
+  "ch": 15,
+  "sec": "15.10",
+  "text": "NIST가 2027년 안에 에이전트 신원·권한을 다룬 공식 간행물(SP 또는 NIST IR, 초안 포함)을 1건 이상 공개",
+  "p": 50,
+  "unc": 20,
+  "label": "중간",
+  "primary": "보안 특별위원회",
+  "pcode": "",
+  "related": [
+   "공공AX 분과",
+   "글로벌협력 분과"
+  ],
+  "kr": 0,
+  "impact": null,
+  "top30": null
+ },
+ {
+  "id": null,
+  "ch": 15,
+  "sec": "15.10",
+  "text": "IETF가 2027년 안에 에이전트 통신 프로토콜 워킹그룹(agentproto 또는 후속)을 정식 설립",
+  "p": 55,
+  "unc": 20,
+  "label": "중간",
+  "primary": "기술혁신·인프라 분과",
+  "pcode": "",
+  "related": [
+   "글로벌협력 분과"
+  ],
+  "kr": 0,
+  "impact": null,
+  "top30": null
+ },
+ {
+  "id": null,
+  "ch": 15,
+  "sec": "15.10",
+  "text": "W3C가 2027년 안에 에이전트 프로토콜 또는 WebMCP를 산출물로 명시한 정식 워킹그룹(WG) 헌장을 승인",
+  "p": 30,
+  "unc": 15,
+  "label": "낮음",
+  "primary": "기술혁신·인프라 분과",
+  "pcode": "",
+  "related": [
+   "글로벌협력 분과"
+  ],
+  "kr": 0,
+  "impact": null,
+  "top30": null
+ },
+ {
+  "id": null,
+  "ch": 15,
+  "sec": "15.10",
+  "text": "3GPP가 2027년 안에 6G(Rel-21) 규범 작업항목에 AI 에이전트 지원(등록·발견·에이전트 통신 프로토콜)을 포함해 승인",
+  "p": 55,
+  "unc": 20,
+  "label": "중간",
+  "primary": "기술혁신·인프라 분과",
+  "pcode": "",
+  "related": [
+   "산업AX·생태계 분과",
+   "글로벌협력 분과"
+  ],
+  "kr": 0,
+  "impact": null,
+  "top30": null
+ },
+ {
+  "id": null,
+  "ch": 15,
+  "sec": "15.10",
+  "text": "FIDO Alliance가 2027년 안에 AP2·Verifiable Intent 기반 에이전트 결제 사양의 공개 검토 초안 이상을 발표",
+  "p": 60,
+  "unc": 20,
+  "label": "중간",
+  "primary": "산업AX·생태계 분과",
+  "pcode": "",
+  "related": [
+   "보안 특별위원회",
+   "법률 TF"
+  ],
+  "kr": 0,
+  "impact": null,
+  "top30": null
+ },
+ {
+  "id": null,
+  "ch": 15,
+  "sec": "15.10",
+  "text": "IEEE가 2027년 안에 에이전틱 AI 표준(P3709·P7022·P3931·P3945·P3777·P1968 중) 1건 이상을 승인·발간",
+  "p": 30,
+  "unc": 15,
+  "label": "낮음",
+  "primary": "기술혁신·인프라 분과",
+  "pcode": "",
+  "related": [
+   "산업AX·생태계 분과"
+  ],
+  "kr": 0,
+  "impact": null,
+  "top30": null
+ },
+ {
+  "id": null,
+  "ch": 15,
+  "sec": "15.10",
+  "text": "중국이 2027년 안에 휴머노이드·체화지능 국가·업계 표준을 10건 이상 새로 발표(2026-11 5건에 이어)",
+  "p": 60,
+  "unc": 20,
+  "label": "중간",
+  "primary": "산업AX·생태계 분과",
+  "pcode": "",
+  "related": [
+   "글로벌협력 분과"
+  ],
+  "kr": 0,
+  "impact": null,
+  "top30": null
+ },
+ {
+  "id": null,
+  "ch": 15,
+  "sec": "15.10",
+  "text": "한국에서 휴머노이드 로봇 안전 시범인증(KIRIA 인증센터 등) 첫 인증서가 2027년 안에 발급",
+  "p": 50,
+  "unc": 20,
+  "label": "중간",
+  "primary": "산업AX·생태계 분과",
+  "pcode": "",
+  "related": [
+   "인공지능책임관협의회",
+   "법률 TF"
   ],
   "kr": 1,
   "impact": null,

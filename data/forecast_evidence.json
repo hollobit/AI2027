@@ -6346,6 +6346,178 @@
   "counter": []
  },
  {
+  "chapter": "15장",
+  "text": "AAIF(또는 산하 MCP·A2A 프로젝트)가 2027년 안에 제품 대상 적합성 인증(배지·등록부) 프로그램을 공식 출범",
+  "prob": "중간 40%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "MCP conformance",
+    "url": "https://github.com/modelcontextprotocol/conformance",
+    "title": ""
+   },
+   {
+    "org": "Linux Foundation",
+    "url": "https://www.linuxfoundation.org/press/agentic-ai-foundation-surpasses-300-members-in-less-than-one-year",
+    "title": ""
+   }
+  ],
+  "counter": [
+   {
+    "org": "Forkast",
+    "url": "https://forkast.news/mcp-won-the-protocol-war-now-the-community-needs-testing-infrastructure/",
+    "title": ""
+   }
+  ]
+ },
+ {
+  "chapter": "15장",
+  "text": "NIST가 2027년 안에 에이전트 신원·권한을 다룬 공식 간행물(SP 또는 NIST IR, 초안 포함)을 1건 이상 공개",
+  "prob": "중간 50%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "NIST NCCoE",
+    "url": "https://www.nccoe.nist.gov/sites/default/files/2026-02/accelerating-the-adoption-of-software-and-ai-agent-identity-and-authorization-concept-paper.pdf",
+    "title": ""
+   },
+   {
+    "org": "CSA (NIST 설계 원칙 요약)",
+    "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-nist-agent-identity-design-tenets-20261109/",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "15장",
+  "text": "IETF가 2027년 안에 에이전트 통신 프로토콜 워킹그룹(agentproto 또는 후속)을 정식 설립",
+  "prob": "중간 55%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "IETF agentproto 회의록",
+    "url": "https://datatracker.ietf.org/doc/minutes-126-agentproto-202607230700/",
+    "title": ""
+   },
+   {
+    "org": "IETF BoF 신청",
+    "url": "https://datatracker.ietf.org/doc/bofreq-steele-agentproto/",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "15장",
+  "text": "W3C가 2027년 안에 에이전트 프로토콜 또는 WebMCP를 산출물로 명시한 정식 워킹그룹(WG) 헌장을 승인",
+  "prob": "낮음 30%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "W3C AI Agent Protocol CG",
+    "url": "https://www.w3.org/groups/cg/agentprotocol",
+    "title": ""
+   },
+   {
+    "org": "WebMCP 초안",
+    "url": "https://webmachinelearning.github.io/webmcp",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "15장",
+  "text": "3GPP가 2027년 안에 6G(Rel-21) 규범 작업항목에 AI 에이전트 지원(등록·발견·에이전트 통신 프로토콜)을 포함해 승인",
+  "prob": "중간 55%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "3GPP",
+    "url": "https://www.3gpp.org/technologies/ai-agentic-protocols",
+    "title": ""
+   },
+   {
+    "org": "arXiv",
+    "url": "https://arxiv.org/pdf/2610.05694",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "15장",
+  "text": "FIDO Alliance가 2027년 안에 AP2·Verifiable Intent 기반 에이전트 결제 사양의 공개 검토 초안 이상을 발표",
+  "prob": "중간 60%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "FIDO Alliance",
+    "url": "https://fidoalliance.org/google-donates-agent-payments-protocol-to-fido-alliance/",
+    "title": ""
+   },
+   {
+    "org": "FIDO Alliance",
+    "url": "https://fidoalliance.org/fido-alliance-to-develop-standards-for-trusted-ai-agent-interactions/",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "15장",
+  "text": "IEEE가 2027년 안에 에이전틱 AI 표준(P3709·P7022·P3931·P3945·P3777·P1968 중) 1건 이상을 승인·발간",
+  "prob": "낮음 30%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "IEEE SA P3709",
+    "url": "https://standards.ieee.org/ieee/3709/12159/",
+    "title": ""
+   },
+   {
+    "org": "IEEE AI 표준위원회",
+    "url": "https://sagroups.ieee.org/ai-sc/active-pars",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "15장",
+  "text": "중국이 2027년 안에 휴머노이드·체화지능 국가·업계 표준을 10건 이상 새로 발표(2026-11 5건에 이어)",
+  "prob": "중간 60%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "国家科技信息中心 (MIIT 공고)",
+    "url": "https://www.ncsti.gov.cn/kjdt/kjrd/202611/t20261118_264191.html",
+    "title": ""
+   },
+   {
+    "org": "新华网",
+    "url": "https://www.news.cn/tech/20260302/3d0ff411d1d94995b4f0277d29e58e19/c.html",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "15장",
+  "text": "한국에서 휴머노이드 로봇 안전 시범인증(KIRIA 인증센터 등) 첫 인증서가 2027년 안에 발급",
+  "prob": "중간 50%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "경북매일 (KIRIA·LG전자 협약)",
+    "url": "https://kbmaeil.com/article/20261116500030",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
   "chapter": "16장",
   "text": "1월 10일 직전 휴전 단기(6–12개월) 재연장",
   "prob": "높음 80%±10",
