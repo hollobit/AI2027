@@ -93,7 +93,7 @@
   .dl a { font-weight: 600; text-decoration: none; padding: 3px 10px; border: 1px solid var(--line, #dcdfe4); border-radius: 999px; }
   .dl a:hover { border-color: currentColor; }
   .hl { margin-left: .4em; font-size: .7em; color: var(--muted); text-decoration: none; opacity: 0; transition: opacity .15s; }
-  h2:hover .hl, h3:hover .hl, .hl:focus { opacity: 1; }
+  h2:hover .hl, h3:hover .hl, h4:hover .hl, .hl:focus { opacity: 1; }
   a.xref { color: inherit; text-decoration: underline dotted; text-underline-offset: 3px; }
   @page { size: A4; margin: 16mm 14mm; }
   @media print { .dl { display: none !important; } html, body { background: #fff !important; } main { box-shadow: none !important; border-radius: 0 !important; padding: 0 !important; max-width: none !important; } figure, table, blockquote { break-inside: avoid; } h2, h3 { break-after: avoid; } .rail { display: none; } .wrap { display: block; } main { border: 0; } }
@@ -134,7 +134,7 @@ IoT</a></li><li><a href="ch11.html">11. AI 반도체·메모리·AIDC·전력망
     const v = td.textContent.trim();
     if (v === '높음') td.classList.add('tag-hi'); else if (v === '중간') td.classList.add('tag-mid'); else if (v === '낮음') td.classList.add('tag-lo');
   });
-  document.querySelectorAll('main h2[id], main h3[id]').forEach((h) => {
+  document.querySelectorAll('main h2[id], main h3[id], main h4[id]').forEach((h) => {
     const a = document.createElement('a'); a.className = 'hl'; a.href = '#' + h.id; a.textContent = '#';
     a.setAttribute('aria-label', '이 제목의 링크'); h.appendChild(a);
   });

@@ -8,7 +8,7 @@
 <link rel="canonical" href="https://hollobit.github.io/AI2027/chapters/ch14.html">
 </head>
 <body>
-<style>.chnav{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;font-size:.86rem;margin:0 0 18px;color:var(--muted)}.chnav a{text-decoration:none}.chnav .sp{flex:1}</style><meta name="claude:viewport-fit-sides" content="cover">
+<style>.chnav{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;font-size:.86rem;margin:0 0 18px;color:var(--muted)}.chnav a{text-decoration:none}.chnav .sp{flex:1}.rail ul.sub{margin:2px 0 6px 10px;font-size:.92em;opacity:.85}</style><meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;600&family=Noto+Serif+KR:wght@500;700;900&display=swap">
 <style>
@@ -93,7 +93,7 @@
   .dl a { font-weight: 600; text-decoration: none; padding: 3px 10px; border: 1px solid var(--line, #dcdfe4); border-radius: 999px; }
   .dl a:hover { border-color: currentColor; }
   .hl { margin-left: .4em; font-size: .7em; color: var(--muted); text-decoration: none; opacity: 0; transition: opacity .15s; }
-  h2:hover .hl, h3:hover .hl, .hl:focus { opacity: 1; }
+  h2:hover .hl, h3:hover .hl, h4:hover .hl, .hl:focus { opacity: 1; }
   a.xref { color: inherit; text-decoration: underline dotted; text-underline-offset: 3px; }
   @page { size: A4; margin: 16mm 14mm; }
   @media print { .dl { display: none !important; } html, body { background: #fff !important; } main { box-shadow: none !important; border-radius: 0 !important; padding: 0 !important; max-width: none !important; } figure, table, blockquote { break-inside: avoid; } h2, h3 { break-after: avoid; } .rail { display: none; } .wrap { display: block; } main { border: 0; } }
@@ -107,14 +107,14 @@
       <div id="q-info" class="q-info" aria-live="polite"></div>
       <ul id="q-results" class="q-results" aria-label="검색 결과"></ul>
     </div>
-    <div class="label">Contents</div><ul><li><a href="#s14-1">14.1 한국: 독자 AI 파운데이션 모델(독파모)</a></li><li><a href="#s14-2">14.2 격차의 실체</a></li><li><a href="#s14-3">14.3 세계 동향</a></li><li><a href="#s14-4">14.4 2027 시나리오</a></li><li><a href="#s14-5">14.5 국가 AI 문샷: 자료와 요지</a></li><li><a href="#s14-6">14.6 한눈에 보기</a></li><li><a href="#s14-7">14.7 K-문샷 상세</a></li><li><a href="#s14-8">14.8 미국 Genesis Mission: 1년 성적</a></li><li><a href="#s14-9">14.9 중국 AI+와 유럽</a></li><li><a href="#s14-10">14.10 설계 비교</a></li><li><a href="#s14-11">14.11 K-문샷에 주는 교훈</a></li><li><a href="#s14-12">14.12 데이터 전략: 고품질 데이터·개인정보·저작권</a></li><li><a href="#s14-13">14.13 국가인공지능전략위원회 안건(제안, 인공지능기본법
+    <div class="label">Contents</div><ul><li><a href="#s14-1">14.1 한국: 독자 AI 파운데이션 모델(독파모)</a></li><li><a href="#s14-2">14.2 격차의 실체</a></li><li><a href="#s14-3">14.3 세계 동향</a></li><li><a href="#s14-4">14.4 2027 시나리오</a><ul class="sub"><li><a href="#s14-4-1">공공 채택과 서빙: 2027의 진짜 시험</a></li></ul></li><li><a href="#s14-5">14.5 국가 AI 문샷: 자료와 요지</a></li><li><a href="#s14-6">14.6 한눈에 보기</a></li><li><a href="#s14-7">14.7 K-문샷 상세</a></li><li><a href="#s14-8">14.8 미국 Genesis Mission: 1년 성적</a></li><li><a href="#s14-9">14.9 중국 AI+와 유럽</a></li><li><a href="#s14-10">14.10 설계 비교</a></li><li><a href="#s14-11">14.11 K-문샷에 주는 교훈</a></li><li><a href="#s14-12">14.12 데이터 전략: 고품질 데이터·개인정보·저작권</a><ul class="sub"><li><a href="#s14-12-1">공익·의료 데이터: 법은 열렸고 신뢰가 남았다</a></li></ul></li><li><a href="#s14-13">14.13 국가인공지능전략위원회 안건(제안, 인공지능기본법
 제8조 기준)</a></li></ul></nav>
   <main>
 <div class="dl" aria-label="다운로드">다운로드
       <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.pdf">PDF</a>
       <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.docx">Word</a>
       <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.md">Markdown</a> · <a href="https://hollobit.github.io/AI2027/chapters/">장별 보기</a></div>
-<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch14">전체 보고서에서 보기</a><a href="../">대시보드</a><span class="sp"></span><a href="ch13.html" rel="prev">← 13. 사회경제·노동 이슈, 기본소득·기본사회와 보</a><a href="ch15.html" rel="next">15. 국가별 AI 정책·제도·투자·규제와 경쟁력 →</a></nav><p class="label" style="margin:0 0 4px">제4부 국가·지정학·기술
+<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch14">전체 보고서에서 보기</a><a href="../#ch14">대시보드의 해당 파트</a><span class="sp"></span><a href="ch13.html" rel="prev">← 13. 사회경제·노동 이슈, 기본소득·기본사회와 보</a><a href="ch15.html" rel="next">15. 국가별 AI 정책·제도·투자·규제와 경쟁력 →</a></nav><p class="label" style="margin:0 0 4px">제4부 국가·지정학·기술
 통제</p><h2 id="ch14">14. 소버린 AI와 국가 AI 문샷</h2>
 <h3 id="s14-1">14.1 한국: 독자 AI 파운데이션 모델(독파모)</h3>
 <table>
@@ -292,8 +292,7 @@ ERNIE 5.5 Base가 라이선스에서 EU·영국과 함께 한국을 배제했고
 소버린'을 만들고, 중동·동남아에 '한국형 소버린 패키지'로
 수출합니다.</li>
 </ol>
-<h4 id="공공-채택과-서빙-2027의-진짜-시험">공공 채택과 서빙: 2027의 진짜
-시험</h4>
+<h4 id="s14-4-1">공공 채택과 서빙: 2027의 진짜 시험</h4>
 <ul>
 <li><strong>공공에서 국산 모델 비중</strong>: 범정부 AI 공통기반에
 올라간 LLM 11종 가운데 국산은 4종(Solar Open2, 삼성 LLM, K-EXAONE,
@@ -744,8 +743,7 @@ GPU·모델·데이터 현물 약정 금액으로 바꿔 공개합니다.</li>
 <li><strong>연결</strong>: 저작권·라이선스 쟁점은 12장, 독파모의 데이터
 확보는 <a class="xref" href="#s14-1">14.1</a>절.</li>
 </ul>
-<h4 id="공익의료-데이터-법은-열렸고-신뢰가-남았다">공익·의료 데이터:
-법은 열렸고 신뢰가 남았다</h4>
+<h4 id="s14-12-1">공익·의료 데이터: 법은 열렸고 신뢰가 남았다</h4>
 <ul>
 <li><strong>AI 학습 개인정보 특례(확정)</strong>: 개인정보 보호법
 개정안이 08-20 국회 본회의를 통과해 09-08 공포됐습니다(법률 제21910호,
@@ -862,7 +860,7 @@ Moonshot과의 공동 난제·연구자 교류를 국제협력 안건으로 올�
 </ul>
 <hr />
 
-<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch14">전체 보고서에서 보기</a><a href="../">대시보드</a><span class="sp"></span><a href="ch13.html" rel="prev">← 13. 사회경제·노동 이슈, 기본소득·기본사회와 보</a><a href="ch15.html" rel="next">15. 국가별 AI 정책·제도·투자·규제와 경쟁력 →</a></nav>
+<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch14">전체 보고서에서 보기</a><a href="../#ch14">대시보드의 해당 파트</a><span class="sp"></span><a href="ch13.html" rel="prev">← 13. 사회경제·노동 이슈, 기본소득·기본사회와 보</a><a href="ch15.html" rel="next">15. 국가별 AI 정책·제도·투자·규제와 경쟁력 →</a></nav>
 </main>
 </div>
 <script>
@@ -874,7 +872,7 @@ Moonshot과의 공동 난제·연구자 교류를 국제협력 안건으로 올�
     const v = td.textContent.trim();
     if (v === '높음') td.classList.add('tag-hi'); else if (v === '중간') td.classList.add('tag-mid'); else if (v === '낮음') td.classList.add('tag-lo');
   });
-  document.querySelectorAll('main h2[id], main h3[id]').forEach((h) => {
+  document.querySelectorAll('main h2[id], main h3[id], main h4[id]').forEach((h) => {
     const a = document.createElement('a'); a.className = 'hl'; a.href = '#' + h.id; a.textContent = '#';
     a.setAttribute('aria-label', '이 제목의 링크'); h.appendChild(a);
   });

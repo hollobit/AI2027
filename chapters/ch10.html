@@ -10,7 +10,7 @@ IoT">
 <link rel="canonical" href="https://hollobit.github.io/AI2027/chapters/ch10.html">
 </head>
 <body>
-<style>.chnav{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;font-size:.86rem;margin:0 0 18px;color:var(--muted)}.chnav a{text-decoration:none}.chnav .sp{flex:1}</style><meta name="claude:viewport-fit-sides" content="cover">
+<style>.chnav{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;font-size:.86rem;margin:0 0 18px;color:var(--muted)}.chnav a{text-decoration:none}.chnav .sp{flex:1}.rail ul.sub{margin:2px 0 6px 10px;font-size:.92em;opacity:.85}</style><meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;600&family=Noto+Serif+KR:wght@500;700;900&display=swap">
 <style>
@@ -95,7 +95,7 @@ IoT">
   .dl a { font-weight: 600; text-decoration: none; padding: 3px 10px; border: 1px solid var(--line, #dcdfe4); border-radius: 999px; }
   .dl a:hover { border-color: currentColor; }
   .hl { margin-left: .4em; font-size: .7em; color: var(--muted); text-decoration: none; opacity: 0; transition: opacity .15s; }
-  h2:hover .hl, h3:hover .hl, .hl:focus { opacity: 1; }
+  h2:hover .hl, h3:hover .hl, h4:hover .hl, .hl:focus { opacity: 1; }
   a.xref { color: inherit; text-decoration: underline dotted; text-underline-offset: 3px; }
   @page { size: A4; margin: 16mm 14mm; }
   @media print { .dl { display: none !important; } html, body { background: #fff !important; } main { box-shadow: none !important; border-radius: 0 !important; padding: 0 !important; max-width: none !important; } figure, table, blockquote { break-inside: avoid; } h2, h3 { break-after: avoid; } .rail { display: none; } .wrap { display: block; } main { border: 0; } }
@@ -110,14 +110,15 @@ IoT">
       <ul id="q-results" class="q-results" aria-label="검색 결과"></ul>
     </div>
     <div class="label">Contents</div><ul><li><a href="#s10-1">10.1 영역별 2026 현황과 2027 전망</a></li><li><a href="#s10-2">10.2 소형 언어 모델(SLM)·마이크로 파운데이션 모델과
-온디바이스 추론: 2027 전망</a></li><li><a href="#s10-3">10.3 2027 수치 전망 (낮음 / 기준 / 높음)</a></li><li><a href="#s10-4">10.4 2027 전망</a></li><li><a href="#s10-5">10.5 이슈</a></li><li><a href="#s10-6">10.6 2027 주요 일정 (확정·예상·루머 구분)</a></li><li><a href="#s10-7">10.7 시나리오</a></li><li><a href="#s10-8">10.8 한국 시사점</a></li><li><a href="#s10-9">10.9 국가인공지능전략위원회 안건(제안, 인공지능기본법
+온디바이스 추론: 2027 전망</a><ul class="sub"><li><a href="#s10-2-1">정의와 구분</a></li><li><a href="#s10-2-2">2026 현황: 주요 소형 모델</a></li><li><a href="#s10-2-3">마이크로 FM·TinyML</a></li><li><a href="#s10-2-4">온디바이스 추론 기술 흐름</a></li><li><a href="#s10-2-5">2027 전망</a></li><li><a href="#s10-2-6">한국 시사점</a></li><li><a href="#s10-2-7">국가인공지능전략위원회 안건(제안, 인공지능기본법 제8조
+기준)</a></li></ul></li><li><a href="#s10-3">10.3 2027 수치 전망 (낮음 / 기준 / 높음)</a></li><li><a href="#s10-4">10.4 2027 전망</a></li><li><a href="#s10-5">10.5 이슈</a></li><li><a href="#s10-6">10.6 2027 주요 일정 (확정·예상·루머 구분)</a></li><li><a href="#s10-7">10.7 시나리오</a></li><li><a href="#s10-8">10.8 한국 시사점</a></li><li><a href="#s10-9">10.9 국가인공지능전략위원회 안건(제안, 인공지능기본법
 제8조 기준)</a></li></ul></nav>
   <main>
 <div class="dl" aria-label="다운로드">다운로드
       <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.pdf">PDF</a>
       <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.docx">Word</a>
       <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.md">Markdown</a> · <a href="https://hollobit.github.io/AI2027/chapters/">장별 보기</a></div>
-<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch10">전체 보고서에서 보기</a><a href="../">대시보드</a><span class="sp"></span><a href="ch9.html" rel="prev">← 9. 에이전트·토큰 경제: 생활 속 에이전트와 토큰</a><a href="ch11.html" rel="next">11. AI 반도체·메모리·AIDC·전력망: 투자, →</a></nav><p class="label" style="margin:0 0 4px">제3부 산업·경제·사회</p><h2 id="ch10">10. 스마트폰·AI PC·스마트 글래스·웨어러블·온디바이스 AI·AI
+<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch10">전체 보고서에서 보기</a><a href="../#ch10">대시보드의 해당 파트</a><span class="sp"></span><a href="ch9.html" rel="prev">← 9. 에이전트·토큰 경제: 생활 속 에이전트와 토큰</a><a href="ch11.html" rel="next">11. AI 반도체·메모리·AIDC·전력망: 투자, →</a></nav><p class="label" style="margin:0 0 4px">제3부 산업·경제·사회</p><h2 id="ch10">10. 스마트폰·AI PC·스마트 글래스·웨어러블·온디바이스 AI·AI
 IoT</h2>
 <blockquote>
 <p>자료: IDC(스마트폰·PC 메모리 쇼크, 스마트 글래스·XR 분기 추적),
@@ -224,7 +225,7 @@ Arm·Infineon, arXiv 논문(TinyMyo, VibroFM, 모바일 NPU 분석), Gartner(2�
 칩·메모리에 올리느냐</strong>입니다. 폰은 2–4B 활성 파라미터, MCU는
 수백만–수억 파라미터가 현실적인 범위이고, 그 사이를 희소 MoE와 저비트
 양자화가 메웁니다.</p>
-<h4 id="정의와-구분">정의와 구분</h4>
+<h4 id="s10-2-1">정의와 구분</h4>
 <table>
 <thead>
 <tr>
@@ -271,7 +272,7 @@ FM'(TinyMyo)도 같은 뜻으로 쓰입니다</td>
 </tr>
 </tbody>
 </table>
-<h4 id="2026-현황-주요-소형-모델">2026 현황: 주요 소형 모델</h4>
+<h4 id="s10-2-2">2026 현황: 주요 소형 모델</h4>
 <table>
 <thead>
 <tr>
@@ -390,7 +391,7 @@ Qwen3.5-4B의 MMLU-Pro 79.1은 2024-05 GPT-4o(72.6, MMLU-Pro 원 논문)를
 따라잡는다고 봤지만, 벤치마크 과적합 때문에 실사용 격차는 더 길 수
 있다고 경고했습니다(2025-08). Artificial Analysis도 Qwen3.5 4B·9B의
 AA-Omniscience 환각률이 높다고 지적했습니다(보도 기준).</p>
-<h4 id="마이크로-fmtinyml">마이크로 FM·TinyML</h4>
+<h4 id="s10-2-3">마이크로 FM·TinyML</h4>
 <ul>
 <li><strong>MCU 위 언어 모델</strong>: Infineon은 Embedded World North
 America(2026-09)에서 PSoC Edge E84(Cortex-M55 400MHz + Ethos-U55)로
@@ -419,7 +420,7 @@ v2.0(2026-08)은 PC 로컬 LLM에 이미지 생성·에이전트 과제를 넣�
 <strong>MCU급 트랜스포머·언어 모델을 재는 공인 벤치마크는 아직
 없습니다.</strong></li>
 </ul>
-<h4 id="온디바이스-추론-기술-흐름">온디바이스 추론 기술 흐름</h4>
+<h4 id="s10-2-4">온디바이스 추론 기술 흐름</h4>
 <ul>
 <li><strong>양자화</strong>: Apple은 2025년부터 온디바이스 3B 모델을
 QAT로 <strong>가중치 2비트</strong>(임베딩 4비트, KV 캐시 8비트)로
@@ -452,7 +453,7 @@ Watch의 Gemini Nano를 돌립니다. llama.cpp(GGUF)·Apple
 MLX·ExecuTorch(Arm이 MCU용으로 지원)·ONNX Runtime GenAI가 함께 쓰입니다.
 모델 형식이 런타임마다 갈려 이식 비용이 큽니다.</li>
 </ul>
-<h4 id="2027-전망-4">2027 전망</h4>
+<h4 id="s10-2-5">2027 전망</h4>
 <table>
 <thead>
 <tr>
@@ -545,7 +546,7 @@ On-Device GenAI'(2025-10)는 신규 온디바이스 생성형 AI 기기 중 도�
 인용됩니다(보도 기준). <a class="xref" href="ch3.html#s3-10">3.10</a>절의 '소형·태스크 특화 모델 사용량 3배'
 전망과 같은 방향입니다.</li>
 </ul>
-<h4 id="한국-시사점-2">한국 시사점</h4>
+<h4 id="s10-2-6">한국 시사점</h4>
 <ol type="1">
 <li><strong>크기 목표를 칩과 함께 정해야 합니다</strong>: 2027년
 폰·가전·로봇용 SLM의 실용 범위는 활성 1–4B, MCU급은 1억 파라미터
@@ -567,9 +568,8 @@ Turbo 2B)와 수천만 파라미터 결정 헤드(<a class="xref" href="ch6.html
 같은 조건에서 재는 공개 벤치마크가 없습니다. MLPerf Tiny의 공백을 국내
 표준 시험으로 먼저 메울 수 있습니다.</li>
 </ol>
-<h4
-id="국가인공지능전략위원회-안건제안-인공지능기본법-제8조-기준">국가인공지능전략위원회
-안건(제안, 인공지능기본법 제8조 기준)</h4>
+<h4 id="s10-2-7">국가인공지능전략위원회 안건(제안, 인공지능기본법 제8조
+기준)</h4>
 <ul>
 <li><strong>온디바이스 SLM·마이크로 FM 공동 레퍼런스(3호 연구개발
 전략·7호 산업·공공 활용)</strong>: 국산 SLM 1–4B와 MCU급 마이크로 FM을
@@ -965,7 +965,7 @@ AI반도체(휴머노이드)' 과제와 함께 피지컬 AI의 전용 온디바�
 </ul>
 <hr />
 
-<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch10">전체 보고서에서 보기</a><a href="../">대시보드</a><span class="sp"></span><a href="ch9.html" rel="prev">← 9. 에이전트·토큰 경제: 생활 속 에이전트와 토큰</a><a href="ch11.html" rel="next">11. AI 반도체·메모리·AIDC·전력망: 투자, →</a></nav>
+<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch10">전체 보고서에서 보기</a><a href="../#ch10">대시보드의 해당 파트</a><span class="sp"></span><a href="ch9.html" rel="prev">← 9. 에이전트·토큰 경제: 생활 속 에이전트와 토큰</a><a href="ch11.html" rel="next">11. AI 반도체·메모리·AIDC·전력망: 투자, →</a></nav>
 </main>
 </div>
 <script>
@@ -977,7 +977,7 @@ AI반도체(휴머노이드)' 과제와 함께 피지컬 AI의 전용 온디바�
     const v = td.textContent.trim();
     if (v === '높음') td.classList.add('tag-hi'); else if (v === '중간') td.classList.add('tag-mid'); else if (v === '낮음') td.classList.add('tag-lo');
   });
-  document.querySelectorAll('main h2[id], main h3[id]').forEach((h) => {
+  document.querySelectorAll('main h2[id], main h3[id], main h4[id]').forEach((h) => {
     const a = document.createElement('a'); a.className = 'hl'; a.href = '#' + h.id; a.textContent = '#';
     a.setAttribute('aria-label', '이 제목의 링크'); h.appendChild(a);
   });

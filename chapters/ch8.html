@@ -10,7 +10,7 @@
 <link rel="canonical" href="https://hollobit.github.io/AI2027/chapters/ch8.html">
 </head>
 <body>
-<style>.chnav{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;font-size:.86rem;margin:0 0 18px;color:var(--muted)}.chnav a{text-decoration:none}.chnav .sp{flex:1}</style><meta name="claude:viewport-fit-sides" content="cover">
+<style>.chnav{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;font-size:.86rem;margin:0 0 18px;color:var(--muted)}.chnav a{text-decoration:none}.chnav .sp{flex:1}.rail ul.sub{margin:2px 0 6px 10px;font-size:.92em;opacity:.85}</style><meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;600&family=Noto+Serif+KR:wght@500;700;900&display=swap">
 <style>
@@ -95,7 +95,7 @@
   .dl a { font-weight: 600; text-decoration: none; padding: 3px 10px; border: 1px solid var(--line, #dcdfe4); border-radius: 999px; }
   .dl a:hover { border-color: currentColor; }
   .hl { margin-left: .4em; font-size: .7em; color: var(--muted); text-decoration: none; opacity: 0; transition: opacity .15s; }
-  h2:hover .hl, h3:hover .hl, .hl:focus { opacity: 1; }
+  h2:hover .hl, h3:hover .hl, h4:hover .hl, .hl:focus { opacity: 1; }
   a.xref { color: inherit; text-decoration: underline dotted; text-underline-offset: 3px; }
   @page { size: A4; margin: 16mm 14mm; }
   @media print { .dl { display: none !important; } html, body { background: #fff !important; } main { box-shadow: none !important; border-radius: 0 !important; padding: 0 !important; max-width: none !important; } figure, table, blockquote { break-inside: avoid; } h2, h3 { break-after: avoid; } .rail { display: none; } .wrap { display: block; } main { border: 0; } }
@@ -116,7 +116,7 @@
       <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.pdf">PDF</a>
       <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.docx">Word</a>
       <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.md">Markdown</a> · <a href="https://hollobit.github.io/AI2027/chapters/">장별 보기</a></div>
-<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch8">전체 보고서에서 보기</a><a href="../">대시보드</a><span class="sp"></span><a href="ch7.html" rel="prev">← 7. AI for Science·AI 연구 동료·수</a><a href="ch9.html" rel="next">9. 에이전트·토큰 경제: 생활 속 에이전트와 토큰 →</a></nav><p class="label" style="margin:0 0 4px">제3부 산업·경제·사회</p><h2 id="ch8">8. 바이브 코딩·코딩 에이전트, 산업별 확산, 조직·인사·노무
+<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch8">전체 보고서에서 보기</a><a href="../#ch8">대시보드의 해당 파트</a><span class="sp"></span><a href="ch7.html" rel="prev">← 7. AI for Science·AI 연구 동료·수</a><a href="ch9.html" rel="next">9. 에이전트·토큰 경제: 생활 속 에이전트와 토큰 →</a></nav><p class="label" style="margin:0 0 4px">제3부 산업·경제·사회</p><h2 id="ch8">8. 바이브 코딩·코딩 에이전트, 산업별 확산, 조직·인사·노무
 변화</h2>
 <blockquote>
 <p>자료: Google·Anthropic·OpenAI 공개 발언, Stack Overflow 2026 설문,
@@ -520,7 +520,7 @@ Act 고용 분야 고위험 의무(2027-12-02)와 요구사항을 맞춰 수출 
 </ul>
 <hr />
 
-<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch8">전체 보고서에서 보기</a><a href="../">대시보드</a><span class="sp"></span><a href="ch7.html" rel="prev">← 7. AI for Science·AI 연구 동료·수</a><a href="ch9.html" rel="next">9. 에이전트·토큰 경제: 생활 속 에이전트와 토큰 →</a></nav>
+<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch8">전체 보고서에서 보기</a><a href="../#ch8">대시보드의 해당 파트</a><span class="sp"></span><a href="ch7.html" rel="prev">← 7. AI for Science·AI 연구 동료·수</a><a href="ch9.html" rel="next">9. 에이전트·토큰 경제: 생활 속 에이전트와 토큰 →</a></nav>
 </main>
 </div>
 <script>
@@ -532,7 +532,7 @@ Act 고용 분야 고위험 의무(2027-12-02)와 요구사항을 맞춰 수출 
     const v = td.textContent.trim();
     if (v === '높음') td.classList.add('tag-hi'); else if (v === '중간') td.classList.add('tag-mid'); else if (v === '낮음') td.classList.add('tag-lo');
   });
-  document.querySelectorAll('main h2[id], main h3[id]').forEach((h) => {
+  document.querySelectorAll('main h2[id], main h3[id], main h4[id]').forEach((h) => {
     const a = document.createElement('a'); a.className = 'hl'; a.href = '#' + h.id; a.textContent = '#';
     a.setAttribute('aria-label', '이 제목의 링크'); h.appendChild(a);
   });

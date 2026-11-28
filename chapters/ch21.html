@@ -8,7 +8,7 @@
 <link rel="canonical" href="https://hollobit.github.io/AI2027/chapters/ch21.html">
 </head>
 <body>
-<style>.chnav{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;font-size:.86rem;margin:0 0 18px;color:var(--muted)}.chnav a{text-decoration:none}.chnav .sp{flex:1}</style><meta name="claude:viewport-fit-sides" content="cover">
+<style>.chnav{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;font-size:.86rem;margin:0 0 18px;color:var(--muted)}.chnav a{text-decoration:none}.chnav .sp{flex:1}.rail ul.sub{margin:2px 0 6px 10px;font-size:.92em;opacity:.85}</style><meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;600&family=Noto+Serif+KR:wght@500;700;900&display=swap">
 <style>
@@ -93,7 +93,7 @@
   .dl a { font-weight: 600; text-decoration: none; padding: 3px 10px; border: 1px solid var(--line, #dcdfe4); border-radius: 999px; }
   .dl a:hover { border-color: currentColor; }
   .hl { margin-left: .4em; font-size: .7em; color: var(--muted); text-decoration: none; opacity: 0; transition: opacity .15s; }
-  h2:hover .hl, h3:hover .hl, .hl:focus { opacity: 1; }
+  h2:hover .hl, h3:hover .hl, h4:hover .hl, .hl:focus { opacity: 1; }
   a.xref { color: inherit; text-decoration: underline dotted; text-underline-offset: 3px; }
   @page { size: A4; margin: 16mm 14mm; }
   @media print { .dl { display: none !important; } html, body { background: #fff !important; } main { box-shadow: none !important; border-radius: 0 !important; padding: 0 !important; max-width: none !important; } figure, table, blockquote { break-inside: avoid; } h2, h3 { break-after: avoid; } .rail { display: none; } .wrap { display: block; } main { border: 0; } }
@@ -108,14 +108,14 @@
       <ul id="q-results" class="q-results" aria-label="검색 결과"></ul>
     </div>
     <div class="label">Contents</div><ul><li><a href="#s21-1">21.1 2022–2026 디지털 재난: 무엇이 무너졌나</a></li><li><a href="#s21-2">21.2 회복력 규제: 2027년이 집행의 해</a></li><li><a href="#s21-3">21.3 AI와 회복력: 양날의 칼</a></li><li><a href="#s21-4">21.4 양자내성암호(PQC) 전환</a></li><li><a href="#s21-5">21.5 사이버보험과 AI 책임: 제조물책임지침과 AI 면책
-약관</a></li><li><a href="#s21-6">21.6 2027 전망</a></li><li><a href="#s21-7">21.7 시나리오</a></li><li><a href="#s21-8">21.8 2027 주요 일정</a></li><li><a href="#s21-9">21.9 한국 시사점</a></li><li><a href="#s21-10">21.10 국가인공지능전략위원회 안건(제안, 인공지능기본법
+약관</a><ul class="sub"><li><a href="#s21-5-1">AI 책임과 보험: 제조물책임지침과 AI 면책 약관</a></li></ul></li><li><a href="#s21-6">21.6 2027 전망</a></li><li><a href="#s21-7">21.7 시나리오</a></li><li><a href="#s21-8">21.8 2027 주요 일정</a></li><li><a href="#s21-9">21.9 한국 시사점</a></li><li><a href="#s21-10">21.10 국가인공지능전략위원회 안건(제안, 인공지능기본법
 제8조 기준)</a></li></ul></nav>
   <main>
 <div class="dl" aria-label="다운로드">다운로드
       <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.pdf">PDF</a>
       <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.docx">Word</a>
       <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.md">Markdown</a> · <a href="https://hollobit.github.io/AI2027/chapters/">장별 보기</a></div>
-<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch21">전체 보고서에서 보기</a><a href="../">대시보드</a><span class="sp"></span><a href="ch20.html" rel="prev">← 20. AI 오용·악용·오정렬과 안전: CBRN·테</a><a href="ch22.html" rel="next">22. AI 에이전트: 2027년의 핵심 테마 →</a></nav><p class="label" style="margin:0 0 4px">제5부 위험·안전</p><h2 id="ch21">21. 사이버 회복력과 디지털 재난안전</h2>
+<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch21">전체 보고서에서 보기</a><a href="../#ch21">대시보드의 해당 파트</a><span class="sp"></span><a href="ch20.html" rel="prev">← 20. AI 오용·악용·오정렬과 안전: CBRN·테</a><a href="ch22.html" rel="next">22. AI 에이전트: 2027년의 핵심 테마 →</a></nav><p class="label" style="margin:0 0 4px">제5부 위험·안전</p><h2 id="ch21">21. 사이버 회복력과 디지털 재난안전</h2>
 <blockquote>
 <p>자료: AWS us-east-1 사후 보고, Cloudflare 2025-11 사후 분석, EU
 감독당국(ESAs) DORA 지정 공고, 영국 NCSC 양자내성암호(PQC) 일정, EU PQC
@@ -425,8 +425,7 @@ AI에 대해 아무 규정도 두지 않은 상태라, 배제 조항과 전용 �
 시장이 작습니다. 반복 사고 과징금(매출 3%) 도입 후 수요가 늘 수
 있습니다.</li>
 </ul>
-<h4 id="ai-책임과-보험-제조물책임지침과-ai-면책-약관">AI 책임과 보험:
-제조물책임지침과 AI 면책 약관</h4>
+<h4 id="s21-5-1">AI 책임과 보험: 제조물책임지침과 AI 면책 약관</h4>
 <blockquote>
 <p>자료: EU 개정 제조물책임지침(PLD, Directive (EU) 2024/2853)과 집행위
 안내, Sidley(2026-10)·Jones Day(2026-06) 분석, 유럽의회 Legislative
@@ -866,7 +865,7 @@ href="https://zdnet.co.kr/view/?no=20261002104418">ZDNet Korea</a></td>
 </ul>
 <hr />
 
-<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch21">전체 보고서에서 보기</a><a href="../">대시보드</a><span class="sp"></span><a href="ch20.html" rel="prev">← 20. AI 오용·악용·오정렬과 안전: CBRN·테</a><a href="ch22.html" rel="next">22. AI 에이전트: 2027년의 핵심 테마 →</a></nav>
+<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch21">전체 보고서에서 보기</a><a href="../#ch21">대시보드의 해당 파트</a><span class="sp"></span><a href="ch20.html" rel="prev">← 20. AI 오용·악용·오정렬과 안전: CBRN·테</a><a href="ch22.html" rel="next">22. AI 에이전트: 2027년의 핵심 테마 →</a></nav>
 </main>
 </div>
 <script>
@@ -878,7 +877,7 @@ href="https://zdnet.co.kr/view/?no=20261002104418">ZDNet Korea</a></td>
     const v = td.textContent.trim();
     if (v === '높음') td.classList.add('tag-hi'); else if (v === '중간') td.classList.add('tag-mid'); else if (v === '낮음') td.classList.add('tag-lo');
   });
-  document.querySelectorAll('main h2[id], main h3[id]').forEach((h) => {
+  document.querySelectorAll('main h2[id], main h3[id], main h4[id]').forEach((h) => {
     const a = document.createElement('a'); a.className = 'hl'; a.href = '#' + h.id; a.textContent = '#';
     a.setAttribute('aria-label', '이 제목의 링크'); h.appendChild(a);
   });

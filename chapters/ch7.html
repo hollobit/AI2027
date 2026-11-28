@@ -8,7 +8,7 @@
 <link rel="canonical" href="https://hollobit.github.io/AI2027/chapters/ch7.html">
 </head>
 <body>
-<style>.chnav{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;font-size:.86rem;margin:0 0 18px;color:var(--muted)}.chnav a{text-decoration:none}.chnav .sp{flex:1}</style><meta name="claude:viewport-fit-sides" content="cover">
+<style>.chnav{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;font-size:.86rem;margin:0 0 18px;color:var(--muted)}.chnav a{text-decoration:none}.chnav .sp{flex:1}.rail ul.sub{margin:2px 0 6px 10px;font-size:.92em;opacity:.85}</style><meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;600&family=Noto+Serif+KR:wght@500;700;900&display=swap">
 <style>
@@ -93,7 +93,7 @@
   .dl a { font-weight: 600; text-decoration: none; padding: 3px 10px; border: 1px solid var(--line, #dcdfe4); border-radius: 999px; }
   .dl a:hover { border-color: currentColor; }
   .hl { margin-left: .4em; font-size: .7em; color: var(--muted); text-decoration: none; opacity: 0; transition: opacity .15s; }
-  h2:hover .hl, h3:hover .hl, .hl:focus { opacity: 1; }
+  h2:hover .hl, h3:hover .hl, h4:hover .hl, .hl:focus { opacity: 1; }
   a.xref { color: inherit; text-decoration: underline dotted; text-underline-offset: 3px; }
   @page { size: A4; margin: 16mm 14mm; }
   @media print { .dl { display: none !important; } html, body { background: #fff !important; } main { box-shadow: none !important; border-radius: 0 !important; padding: 0 !important; max-width: none !important; } figure, table, blockquote { break-inside: avoid; } h2, h3 { break-after: avoid; } .rail { display: none; } .wrap { display: block; } main { border: 0; } }
@@ -107,13 +107,13 @@
       <div id="q-info" class="q-info" aria-live="polite"></div>
       <ul id="q-results" class="q-results" aria-label="검색 결과"></ul>
     </div>
-    <div class="label">Contents</div><ul><li><a href="#s7-1">7.1 2026: AI 연구 동료의 현재</a></li><li><a href="#s7-2">7.2 자율 실험실</a></li><li><a href="#s7-3">7.3 국가 AI4S 프로그램</a></li><li><a href="#s7-4">7.4 2027 분야별 기여 전망</a></li><li><a href="#s7-5">7.5 2027년 AI 연구 동료가 할 수 있는 일과 없는 일</a></li><li><a href="#s7-6">7.6 과학 시스템의 변화(2027)</a></li><li><a href="#s7-7">7.7 AI 과학자(AI Scientist): 2027 전망</a></li><li><a href="#s7-8">7.8 수학·물리 난제: 2025–2026 성과와 검증 수준</a></li><li><a href="#s7-9">7.9 AI가 잘하는 것과 못하는 것</a></li><li><a href="#s7-10">7.10 2027년 도전 목표</a></li><li><a href="#s7-11">7.11 수량 전망 (2027, 낮음 / 기준 / 높음)</a></li><li><a href="#s7-12">7.12 규범과 검증</a></li><li><a href="#s7-13">7.13 한국 제언과 국가인공지능전략위원회 안건</a></li></ul></nav>
+    <div class="label">Contents</div><ul><li><a href="#s7-1">7.1 2026: AI 연구 동료의 현재</a></li><li><a href="#s7-2">7.2 자율 실험실</a></li><li><a href="#s7-3">7.3 국가 AI4S 프로그램</a></li><li><a href="#s7-4">7.4 2027 분야별 기여 전망</a></li><li><a href="#s7-5">7.5 2027년 AI 연구 동료가 할 수 있는 일과 없는 일</a></li><li><a href="#s7-6">7.6 과학 시스템의 변화(2027)</a></li><li><a href="#s7-7">7.7 AI 과학자(AI Scientist): 2027 전망</a></li><li><a href="#s7-8">7.8 수학·물리 난제: 2025–2026 성과와 검증 수준</a></li><li><a href="#s7-9">7.9 AI가 잘하는 것과 못하는 것</a></li><li><a href="#s7-10">7.10 2027년 도전 목표</a></li><li><a href="#s7-11">7.11 수량 전망 (2027, 낮음 / 기준 / 높음)</a></li><li><a href="#s7-12">7.12 규범과 검증</a></li><li><a href="#s7-13">7.13 한국 제언과 국가인공지능전략위원회 안건</a><ul class="sub"><li><a href="#s7-13-1">수학·물리 난제 분야</a></li></ul></li></ul></nav>
   <main>
 <div class="dl" aria-label="다운로드">다운로드
       <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.pdf">PDF</a>
       <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.docx">Word</a>
       <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.md">Markdown</a> · <a href="https://hollobit.github.io/AI2027/chapters/">장별 보기</a></div>
-<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch7">전체 보고서에서 보기</a><a href="../">대시보드</a><span class="sp"></span><a href="ch6.html" rel="prev">← 6. 특화 파운데이션 모델: 2026 현황과 202</a><a href="ch8.html" rel="next">8. 바이브 코딩·코딩 에이전트, 산업별 확산, 조 →</a></nav><p class="label" style="margin:0 0 4px">제2부 역량:
+<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch7">전체 보고서에서 보기</a><a href="../#ch7">대시보드의 해당 파트</a><span class="sp"></span><a href="ch6.html" rel="prev">← 6. 특화 파운데이션 모델: 2026 현황과 202</a><a href="ch8.html" rel="next">8. 바이브 코딩·코딩 에이전트, 산업별 확산, 조 →</a></nav><p class="label" style="margin:0 0 4px">제2부 역량:
 모델·에이전트·AGI·과학</p><h2 id="ch7">7. AI for Science·AI 연구 동료·수학 난제</h2>
 <blockquote>
 <p>자료: Google DeepMind(co-scientist Nature 게재, 'Conjecture
@@ -989,7 +989,7 @@ IMU가 공식 지지).</li>
 쿼터(4호·6호)와 연구데이터 개방(6의2호)을 의결하며, K-문샷과의 연계를
 이행점검합니다(2의3호).</li>
 </ul>
-<h4 id="수학물리-난제-분야">수학·물리 난제 분야</h4>
+<h4 id="s7-13-1">수학·물리 난제 분야</h4>
 <ul>
 <li><strong>참여 실적</strong>: DeepMind Aletheia의 Erdős 논문에
 서울대·KIAS·연세대 수학자들이 기여자로 참여했습니다.</li>
@@ -1014,7 +1014,7 @@ IMU가 공식 지지).</li>
 </ul>
 <hr />
 
-<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch7">전체 보고서에서 보기</a><a href="../">대시보드</a><span class="sp"></span><a href="ch6.html" rel="prev">← 6. 특화 파운데이션 모델: 2026 현황과 202</a><a href="ch8.html" rel="next">8. 바이브 코딩·코딩 에이전트, 산업별 확산, 조 →</a></nav>
+<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch7">전체 보고서에서 보기</a><a href="../#ch7">대시보드의 해당 파트</a><span class="sp"></span><a href="ch6.html" rel="prev">← 6. 특화 파운데이션 모델: 2026 현황과 202</a><a href="ch8.html" rel="next">8. 바이브 코딩·코딩 에이전트, 산업별 확산, 조 →</a></nav>
 </main>
 </div>
 <script>
@@ -1026,7 +1026,7 @@ IMU가 공식 지지).</li>
     const v = td.textContent.trim();
     if (v === '높음') td.classList.add('tag-hi'); else if (v === '중간') td.classList.add('tag-mid'); else if (v === '낮음') td.classList.add('tag-lo');
   });
-  document.querySelectorAll('main h2[id], main h3[id]').forEach((h) => {
+  document.querySelectorAll('main h2[id], main h3[id], main h4[id]').forEach((h) => {
     const a = document.createElement('a'); a.className = 'hl'; a.href = '#' + h.id; a.textContent = '#';
     a.setAttribute('aria-label', '이 제목의 링크'); h.appendChild(a);
   });

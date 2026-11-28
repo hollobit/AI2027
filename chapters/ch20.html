@@ -10,7 +10,7 @@
 <link rel="canonical" href="https://hollobit.github.io/AI2027/chapters/ch20.html">
 </head>
 <body>
-<style>.chnav{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;font-size:.86rem;margin:0 0 18px;color:var(--muted)}.chnav a{text-decoration:none}.chnav .sp{flex:1}</style><meta name="claude:viewport-fit-sides" content="cover">
+<style>.chnav{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;font-size:.86rem;margin:0 0 18px;color:var(--muted)}.chnav a{text-decoration:none}.chnav .sp{flex:1}.rail ul.sub{margin:2px 0 6px 10px;font-size:.92em;opacity:.85}</style><meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;600&family=Noto+Serif+KR:wght@500;700;900&display=swap">
 <style>
@@ -95,7 +95,7 @@
   .dl a { font-weight: 600; text-decoration: none; padding: 3px 10px; border: 1px solid var(--line, #dcdfe4); border-radius: 999px; }
   .dl a:hover { border-color: currentColor; }
   .hl { margin-left: .4em; font-size: .7em; color: var(--muted); text-decoration: none; opacity: 0; transition: opacity .15s; }
-  h2:hover .hl, h3:hover .hl, .hl:focus { opacity: 1; }
+  h2:hover .hl, h3:hover .hl, h4:hover .hl, .hl:focus { opacity: 1; }
   a.xref { color: inherit; text-decoration: underline dotted; text-underline-offset: 3px; }
   @page { size: A4; margin: 16mm 14mm; }
   @media print { .dl { display: none !important; } html, body { background: #fff !important; } main { box-shadow: none !important; border-radius: 0 !important; padding: 0 !important; max-width: none !important; } figure, table, blockquote { break-inside: avoid; } h2, h3 { break-after: avoid; } .rail { display: none; } .wrap { display: block; } main { border: 0; } }
@@ -109,14 +109,15 @@
       <div id="q-info" class="q-info" aria-live="polite"></div>
       <ul id="q-results" class="q-results" aria-label="검색 결과"></ul>
     </div>
-    <div class="label">Contents</div><ul><li><a href="#s20-1">20.1 2027 위험 지도</a></li><li><a href="#s20-2">20.2 CBRN(화학·생물·방사능·핵)</a></li><li><a href="#s20-3">20.3 테러·폭력적 극단주의</a></li><li><a href="#s20-4">20.4 시험 부정행위</a></li><li><a href="#s20-5">20.5 가드레일을 제거한 오픈웨이트 모델</a></li><li><a href="#s20-6">20.6 에이전트 탈취와 AI 조율 공격</a></li><li><a href="#s20-7">20.7 오정렬: 평가가 흔들린다</a></li><li><a href="#s20-8">20.8 통제 상실 징후: 실험실 밖으로</a></li><li><a href="#s20-9">20.9 레드팀과 평가 체계</a></li><li><a href="#s20-10">20.10 딥페이크·사기·AI 성착취물</a></li><li><a href="#s20-11">20.11 선거와 영향공작</a></li><li><a href="#s20-12">20.12 아동·청소년과 AI 컴패니언</a></li><li><a href="#s20-13">20.13 2026 말–2027 규제 일정</a></li><li><a href="#s20-14">20.14 2027 수치 전망 (낮음 / 기준 / 높음)</a></li><li><a href="#s20-15">20.15 시나리오</a></li><li><a href="#s20-16">20.16 2027 전망</a></li><li><a href="#s20-17">20.17 한국 시사점</a></li><li><a href="#s20-18">20.18 국가인공지능전략위원회 안건(제안, 인공지능기본법
+    <div class="label">Contents</div><ul><li><a href="#s20-1">20.1 2027 위험 지도</a></li><li><a href="#s20-2">20.2 CBRN(화학·생물·방사능·핵)</a></li><li><a href="#s20-3">20.3 테러·폭력적 극단주의</a></li><li><a href="#s20-4">20.4 시험 부정행위</a></li><li><a href="#s20-5">20.5 가드레일을 제거한 오픈웨이트 모델</a></li><li><a href="#s20-6">20.6 에이전트 탈취와 AI 조율 공격</a></li><li><a href="#s20-7">20.7 오정렬: 평가가 흔들린다</a></li><li><a href="#s20-8">20.8 통제 상실 징후: 실험실 밖으로</a></li><li><a href="#s20-9">20.9 레드팀과 평가 체계</a></li><li><a href="#s20-10">20.10 딥페이크·사기·AI 성착취물</a></li><li><a href="#s20-11">20.11 선거와 영향공작</a><ul class="sub"><li><a href="#s20-11-1">해외발 정보조작(FIMI)과 범부처 대응</a></li></ul></li><li><a href="#s20-12">20.12 아동·청소년과 AI 컴패니언</a></li><li><a href="#s20-13">20.13 2026 말–2027 규제 일정</a><ul class="sub"><li><a href="#s20-13-1">AI 기본법 1년차: 윤리원칙, 첫 고영향 판단, 계도기간
+이후</a></li><li><a href="#s20-13-2">모델 스펙 공개와 내부고발자 보호</a></li></ul></li><li><a href="#s20-14">20.14 2027 수치 전망 (낮음 / 기준 / 높음)</a></li><li><a href="#s20-15">20.15 시나리오</a></li><li><a href="#s20-16">20.16 2027 전망</a></li><li><a href="#s20-17">20.17 한국 시사점</a></li><li><a href="#s20-18">20.18 국가인공지능전략위원회 안건(제안, 인공지능기본법
 제8조 기준)</a></li></ul></nav>
   <main>
 <div class="dl" aria-label="다운로드">다운로드
       <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.pdf">PDF</a>
       <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.docx">Word</a>
       <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.md">Markdown</a> · <a href="https://hollobit.github.io/AI2027/chapters/">장별 보기</a></div>
-<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch20">전체 보고서에서 보기</a><a href="../">대시보드</a><span class="sp"></span><a href="ch19.html" rel="prev">← 19. 사이버 위협과 AI 공격: 공격 자동화·생활</a><a href="ch21.html" rel="next">21. 사이버 회복력과 디지털 재난안전 →</a></nav><p class="label" style="margin:0 0 4px">제5부 위험·안전</p><h2 id="ch20">20. AI 오용·악용·오정렬과 안전: CBRN·테러·시험 부정·탈옥
+<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch20">전체 보고서에서 보기</a><a href="../#ch20">대시보드의 해당 파트</a><span class="sp"></span><a href="ch19.html" rel="prev">← 19. 사이버 위협과 AI 공격: 공격 자동화·생활</a><a href="ch21.html" rel="next">21. 사이버 회복력과 디지털 재난안전 →</a></nav><p class="label" style="margin:0 0 4px">제5부 위험·안전</p><h2 id="ch20">20. AI 오용·악용·오정렬과 안전: CBRN·테러·시험 부정·탈옥
 모델·에이전트 공격·레드팀</h2>
 <blockquote>
 <p>자료: OpenAI GPT-5.6 시스템 카드, Anthropic 위험 보고서(2026-08)·위협
@@ -621,8 +622,7 @@ href="https://openai.com/index/updating-our-preparedness-framework/">OpenAI</a><
 의무, 생성물 표시(AI 기본법)의 선거 적용 기준을 2027년에
 정비합니다.</li>
 </ul>
-<h4 id="해외발-정보조작fimi과-범부처-대응">해외발 정보조작(FIMI)과
-범부처 대응</h4>
+<h4 id="s20-11-1">해외발 정보조작(FIMI)과 범부처 대응</h4>
 <ul>
 <li><strong>국제 동향</strong>: EU 대외관계청(EEAS)의 제4차 FIMI 위협
 보고서(2026-03)는 2025년 사건 540건을 분석했습니다. 그 가운데 약 27%가
@@ -926,8 +926,8 @@ FLOP 이상 모델 안전성 확보 의무의 실질 집행</td>
 <blockquote>
 <p>전체 2027 일정은 <a class="xref" href="ch23.html#s23-11">23.11</a>절에 모았습니다.</p>
 </blockquote>
-<h4 id="ai-기본법-1년차-윤리원칙-첫-고영향-판단-계도기간-이후">AI 기본법
-1년차: 윤리원칙, 첫 고영향 판단, 계도기간 이후</h4>
+<h4 id="s20-13-1">AI 기본법 1년차: 윤리원칙, 첫 고영향 판단, 계도기간
+이후</h4>
 <table>
 <thead>
 <tr>
@@ -1030,8 +1030,7 @@ href="https://www.ddaily.co.kr/page/view/2026080510583143366">디지털데일리
 확정일은 자료마다 08-21과 08-24로 갈립니다. 연구반 출범 시점도 보도마다
 2월과 3월로 다릅니다.</p>
 </blockquote>
-<h4 id="모델-스펙-공개와-내부고발자-보호">모델 스펙 공개와 내부고발자
-보호</h4>
+<h4 id="s20-13-2">모델 스펙 공개와 내부고발자 보호</h4>
 <p>AI 2040은 모델 스펙 공개와 내부고발자 보호를 투명성 묶음의 핵심으로
 봅니다. 모델이 무엇을 따르게 돼 있는지 알아야 어긋남을 셀 수 있고, 내부
 사정은 내부자가 먼저 알기 때문입니다.</p>
@@ -1360,7 +1359,7 @@ AI안전연구소 중심 한국어 오남용 레드팀의 상설 운영과 정�
 </blockquote>
 <hr />
 
-<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch20">전체 보고서에서 보기</a><a href="../">대시보드</a><span class="sp"></span><a href="ch19.html" rel="prev">← 19. 사이버 위협과 AI 공격: 공격 자동화·생활</a><a href="ch21.html" rel="next">21. 사이버 회복력과 디지털 재난안전 →</a></nav>
+<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch20">전체 보고서에서 보기</a><a href="../#ch20">대시보드의 해당 파트</a><span class="sp"></span><a href="ch19.html" rel="prev">← 19. 사이버 위협과 AI 공격: 공격 자동화·생활</a><a href="ch21.html" rel="next">21. 사이버 회복력과 디지털 재난안전 →</a></nav>
 </main>
 </div>
 <script>
@@ -1372,7 +1371,7 @@ AI안전연구소 중심 한국어 오남용 레드팀의 상설 운영과 정�
     const v = td.textContent.trim();
     if (v === '높음') td.classList.add('tag-hi'); else if (v === '중간') td.classList.add('tag-mid'); else if (v === '낮음') td.classList.add('tag-lo');
   });
-  document.querySelectorAll('main h2[id], main h3[id]').forEach((h) => {
+  document.querySelectorAll('main h2[id], main h3[id], main h4[id]').forEach((h) => {
     const a = document.createElement('a'); a.className = 'hl'; a.href = '#' + h.id; a.textContent = '#';
     a.setAttribute('aria-label', '이 제목의 링크'); h.appendChild(a);
   });

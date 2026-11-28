@@ -10,7 +10,7 @@
 <link rel="canonical" href="https://hollobit.github.io/AI2027/chapters/ch19.html">
 </head>
 <body>
-<style>.chnav{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;font-size:.86rem;margin:0 0 18px;color:var(--muted)}.chnav a{text-decoration:none}.chnav .sp{flex:1}</style><meta name="claude:viewport-fit-sides" content="cover">
+<style>.chnav{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;font-size:.86rem;margin:0 0 18px;color:var(--muted)}.chnav a{text-decoration:none}.chnav .sp{flex:1}.rail ul.sub{margin:2px 0 6px 10px;font-size:.92em;opacity:.85}</style><meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;600&family=Noto+Serif+KR:wght@500;700;900&display=swap">
 <style>
@@ -95,7 +95,7 @@
   .dl a { font-weight: 600; text-decoration: none; padding: 3px 10px; border: 1px solid var(--line, #dcdfe4); border-radius: 999px; }
   .dl a:hover { border-color: currentColor; }
   .hl { margin-left: .4em; font-size: .7em; color: var(--muted); text-decoration: none; opacity: 0; transition: opacity .15s; }
-  h2:hover .hl, h3:hover .hl, .hl:focus { opacity: 1; }
+  h2:hover .hl, h3:hover .hl, h4:hover .hl, .hl:focus { opacity: 1; }
   a.xref { color: inherit; text-decoration: underline dotted; text-underline-offset: 3px; }
   @page { size: A4; margin: 16mm 14mm; }
   @media print { .dl { display: none !important; } html, body { background: #fff !important; } main { box-shadow: none !important; border-radius: 0 !important; padding: 0 !important; max-width: none !important; } figure, table, blockquote { break-inside: avoid; } h2, h3 { break-after: avoid; } .rail { display: none; } .wrap { display: block; } main { border: 0; } }
@@ -110,14 +110,14 @@
       <ul id="q-results" class="q-results" aria-label="검색 결과"></ul>
     </div>
     <div class="label">Contents</div><ul><li><a href="#s19-1">19.1 AI 사이버 공격의 자동화</a></li><li><a href="#s19-2">19.2 CVE 급증과 하인리히 법칙: 2027 대형 사고의
-전조인가</a></li><li><a href="#s19-3">19.3 생활 인프라(가전·IoT)</a></li><li><a href="#s19-4">19.4 국내 동향</a></li><li><a href="#s19-5">19.5 북한의 AI 활용 위협</a></li><li><a href="#s19-6">19.6 2027 위험 전망</a></li><li><a href="#s19-7">19.7 2027년 AI 공격·해킹 사건 유형과 피해 규모 예측</a></li><li><a href="#s19-8">19.8 한국 시사점</a></li><li><a href="#s19-9">19.9 국가인공지능전략위원회 안건(제안, 인공지능기본법
+전조인가</a><ul class="sub"><li><a href="#s19-2-1">Black Kite 100K 보고서로 본 2026년 취약점 지형</a></li></ul></li><li><a href="#s19-3">19.3 생활 인프라(가전·IoT)</a></li><li><a href="#s19-4">19.4 국내 동향</a><ul class="sub"><li><a href="#s19-4-1">2026-10 금융권 연쇄 침해와 AI 자율 침투 도구</a></li></ul></li><li><a href="#s19-5">19.5 북한의 AI 활용 위협</a></li><li><a href="#s19-6">19.6 2027 위험 전망</a><ul class="sub"><li><a href="#s19-6-1">가중치 보안 수준과 연구소 내부자 위협</a></li></ul></li><li><a href="#s19-7">19.7 2027년 AI 공격·해킹 사건 유형과 피해 규모 예측</a></li><li><a href="#s19-8">19.8 한국 시사점</a></li><li><a href="#s19-9">19.9 국가인공지능전략위원회 안건(제안, 인공지능기본법
 제8조 기준)</a></li></ul></nav>
   <main>
 <div class="dl" aria-label="다운로드">다운로드
       <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.pdf">PDF</a>
       <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.docx">Word</a>
       <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.md">Markdown</a> · <a href="https://hollobit.github.io/AI2027/chapters/">장별 보기</a></div>
-<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch19">전체 보고서에서 보기</a><a href="../">대시보드</a><span class="sp"></span><a href="ch18.html" rel="prev">← 18. AI 외교: 양자·다자 트랙 전망</a><a href="ch20.html" rel="next">20. AI 오용·악용·오정렬과 안전: CBRN·테 →</a></nav><p class="label" style="margin:0 0 4px">제5부 위험·안전</p><h2 id="ch19">19. 사이버 위협과 AI 공격: 공격 자동화·생활 인프라·피해
+<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch19">전체 보고서에서 보기</a><a href="../#ch19">대시보드의 해당 파트</a><span class="sp"></span><a href="ch18.html" rel="prev">← 18. AI 외교: 양자·다자 트랙 전망</a><a href="ch20.html" rel="next">20. AI 오용·악용·오정렬과 안전: CBRN·테 →</a></nav><p class="label" style="margin:0 0 4px">제5부 위험·안전</p><h2 id="ch19">19. 사이버 위협과 AI 공격: 공격 자동화·생활 인프라·피해
 규모</h2>
 <p>AI 오용 전반(CBRN·테러·시험 부정·탈옥 모델·오정렬)은 20장, RSI는 5장,
 회복력은 21장에서 다룹니다. 이 장은 AI를 이용한 사이버 공격과 생활
@@ -214,8 +214,7 @@ Mythos가 찾은 고위험 버그는 패치까지 평균 2주가 걸리고, 일�
 KEV·주요 소프트웨어 위주로 줄였고, 2026년 CVE의 84%는 NVD 위험 점수가
 없습니다.</li>
 </ul>
-<h4 id="black-kite-100k-보고서로-본-2026년-취약점-지형">Black Kite 100K
-보고서로 본 2026년 취약점 지형</h4>
+<h4 id="s19-2-1">Black Kite 100K 보고서로 본 2026년 취약점 지형</h4>
 <table>
 <thead>
 <tr>
@@ -630,8 +629,7 @@ href="https://complexdiscovery.com/refrigeration-hack-affected-about-700-french-
 <li><strong>예산</strong>: 2027년 AI 사이버 쉴드 돔 사업에 550억 원이
 편성됐습니다.</li>
 </ul>
-<h4 id="2026-10-금융권-연쇄-침해와-ai-자율-침투-도구">2026-10 금융권
-연쇄 침해와 AI 자율 침투 도구</h4>
+<h4 id="s19-4-1">2026-10 금융권 연쇄 침해와 AI 자율 침투 도구</h4>
 <ul>
 <li><strong>사건</strong>: 2026-10 초 신한·KB국민·하나·BNK부산은행,
 저축은행, 캐피탈 등에서 외부 웹서버·대출조회·영업지원 같은 주변 시스템이
@@ -868,8 +866,7 @@ href="https://arxiv.org/html/2603.01608">arXiv</a></td>
 </table>
 <p>오용(CBRN·테러·시험 부정·탈옥 모델·딥페이크)과 오정렬 평가, 레드팀은
 20장에서 따로 다룹니다.</p>
-<h4 id="가중치-보안-수준과-연구소-내부자-위협">가중치 보안 수준과 연구소
-내부자 위협</h4>
+<h4 id="s19-6-1">가중치 보안 수준과 연구소 내부자 위협</h4>
 <p><strong>RAND 보안 수준.</strong> RAND 'Securing AI Model
 Weights'(2024)는 막아야 할 공격자에 따라 SL1(아마추어)–SL5(최정예 국가
 행위자)로 나눕니다. SL4는 사이버 역량이 뛰어난 국가 기관의 일반 작전을,
@@ -1232,7 +1229,7 @@ AI·에이전트 관여 항목을 신설하도록 과기정통부·KISA·국정�
 </ul>
 <hr />
 
-<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch19">전체 보고서에서 보기</a><a href="../">대시보드</a><span class="sp"></span><a href="ch18.html" rel="prev">← 18. AI 외교: 양자·다자 트랙 전망</a><a href="ch20.html" rel="next">20. AI 오용·악용·오정렬과 안전: CBRN·테 →</a></nav>
+<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch19">전체 보고서에서 보기</a><a href="../#ch19">대시보드의 해당 파트</a><span class="sp"></span><a href="ch18.html" rel="prev">← 18. AI 외교: 양자·다자 트랙 전망</a><a href="ch20.html" rel="next">20. AI 오용·악용·오정렬과 안전: CBRN·테 →</a></nav>
 </main>
 </div>
 <script>
@@ -1244,7 +1241,7 @@ AI·에이전트 관여 항목을 신설하도록 과기정통부·KISA·국정�
     const v = td.textContent.trim();
     if (v === '높음') td.classList.add('tag-hi'); else if (v === '중간') td.classList.add('tag-mid'); else if (v === '낮음') td.classList.add('tag-lo');
   });
-  document.querySelectorAll('main h2[id], main h3[id]').forEach((h) => {
+  document.querySelectorAll('main h2[id], main h3[id], main h4[id]').forEach((h) => {
     const a = document.createElement('a'); a.className = 'hl'; a.href = '#' + h.id; a.textContent = '#';
     a.setAttribute('aria-label', '이 제목의 링크'); h.appendChild(a);
   });

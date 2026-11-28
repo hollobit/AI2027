@@ -8,7 +8,7 @@
 <link rel="canonical" href="https://hollobit.github.io/AI2027/chapters/ch15.html">
 </head>
 <body>
-<style>.chnav{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;font-size:.86rem;margin:0 0 18px;color:var(--muted)}.chnav a{text-decoration:none}.chnav .sp{flex:1}</style><meta name="claude:viewport-fit-sides" content="cover">
+<style>.chnav{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;font-size:.86rem;margin:0 0 18px;color:var(--muted)}.chnav a{text-decoration:none}.chnav .sp{flex:1}.rail ul.sub{margin:2px 0 6px 10px;font-size:.92em;opacity:.85}</style><meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;600&family=Noto+Serif+KR:wght@500;700;900&display=swap">
 <style>
@@ -93,7 +93,7 @@
   .dl a { font-weight: 600; text-decoration: none; padding: 3px 10px; border: 1px solid var(--line, #dcdfe4); border-radius: 999px; }
   .dl a:hover { border-color: currentColor; }
   .hl { margin-left: .4em; font-size: .7em; color: var(--muted); text-decoration: none; opacity: 0; transition: opacity .15s; }
-  h2:hover .hl, h3:hover .hl, .hl:focus { opacity: 1; }
+  h2:hover .hl, h3:hover .hl, h4:hover .hl, .hl:focus { opacity: 1; }
   a.xref { color: inherit; text-decoration: underline dotted; text-underline-offset: 3px; }
   @page { size: A4; margin: 16mm 14mm; }
   @media print { .dl { display: none !important; } html, body { background: #fff !important; } main { box-shadow: none !important; border-radius: 0 !important; padding: 0 !important; max-width: none !important; } figure, table, blockquote { break-inside: avoid; } h2, h3 { break-after: avoid; } .rail { display: none; } .wrap { display: block; } main { border: 0; } }
@@ -108,15 +108,17 @@
       <ul id="q-results" class="q-results" aria-label="검색 결과"></ul>
     </div>
     <div class="label">Contents</div><ul><li><a href="#s15-1">15.1 국가별 2026 현황과 2027 일정</a></li><li><a href="#s15-2">15.2 공개 지수에서 본 위치</a></li><li><a href="#s15-3">15.3 경쟁력 점수표 (분석가 판단, 6개 차원 각 0–10, 합계
-60)</a></li><li><a href="#s15-4">15.4 규제 접근 비교와 2027 수렴·분기</a></li><li><a href="#s15-5">15.5 AI 인재: 유출·유치·처우</a></li><li><a href="#s15-6">15.6 공공부문 AI 도입: N2SF와 공공 모델</a></li><li><a href="#s15-7">15.7 한국 공공 AX: AI 챔피언·공무원 바이브 코딩과 2027
-전망</a></li><li><a href="#s15-8">15.8 표준: EU 조화표준과 ISO/IEC 42000 시리즈</a></li><li><a href="#s15-9">15.9 글로벌 사우스와 AI 격차</a></li><li><a href="#s15-10">15.10 한국 시사점</a></li><li><a href="#s15-11">15.11 국가인공지능전략위원회 안건(제안, 인공지능기본법
-제8조 기준)</a></li></ul></nav>
+60)</a></li><li><a href="#s15-4">15.4 규제 접근 비교와 2027 수렴·분기</a></li><li><a href="#s15-5">15.5 AI 인재: 유출·유치·처우</a><ul class="sub"><li><a href="#s15-5-1">미국 H-1B·OPT 비용 급등과 인재 이동</a></li></ul></li><li><a href="#s15-6">15.6 공공부문 AI 도입: N2SF와 공공 모델</a><ul class="sub"><li><a href="#s15-6-1">보안규제 개편: CSAP·국정원 일원화와 &#x27;S등급&#x27; 논쟁</a></li><li><a href="#s15-6-2">범정부 AI 공통기반의 모델 교체와 하네스 분리 평가</a></li></ul></li><li><a href="#s15-7">15.7 한국 공공 AX: AI 챔피언·공무원 바이브 코딩과 2027
+전망</a><ul class="sub"><li><a href="#s15-7-1">2026 현황: 정책·예산·서비스·인력</a></li><li><a href="#s15-7-2">AI 챔피언 인증 제도: 현황과 2027 시나리오</a></li><li><a href="#s15-7-3">챔피언 바이브 코딩 확산 전망</a></li><li><a href="#s15-7-4">공무원 개발로 생길 문제들</a></li><li><a href="#s15-7-5">다양한 관점</a></li><li><a href="#s15-7-6">해외 비교(짧게)</a></li><li><a href="#s15-7-7">공공 AX 조달·실행체계: 한국형 GDS·ISP 관행·구독형
+예산</a></li><li><a href="#s15-7-8">2027 전망</a></li><li><a href="#s15-7-9">한국 시사점</a></li></ul></li><li><a href="#s15-8">15.8 표준: EU 조화표준과 ISO/IEC 42000 시리즈</a></li><li><a href="#s15-9">15.9 글로벌 사우스와 AI 격차</a><ul class="sub"><li><a href="#s15-9-1">AI 풀스택 수출과 AI ODA: 시장 교두보와 수원국 주권
+사이</a></li></ul></li><li><a href="#s15-10">15.10 한국 시사점</a></li><li><a href="#s15-11">15.11 국가인공지능전략위원회 안건(제안, 인공지능기본법
+제8조 기준)</a><ul class="sub"><li><a href="#s15-11-1">공공 AX 안건(15.7절에서 이동)</a></li></ul></li></ul></nav>
   <main>
 <div class="dl" aria-label="다운로드">다운로드
       <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.pdf">PDF</a>
       <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.docx">Word</a>
       <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.md">Markdown</a> · <a href="https://hollobit.github.io/AI2027/chapters/">장별 보기</a></div>
-<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch15">전체 보고서에서 보기</a><a href="../">대시보드</a><span class="sp"></span><a href="ch14.html" rel="prev">← 14. 소버린 AI와 국가 AI 문샷</a><a href="ch16.html" rel="next">16. AI 지정학: 미중 경쟁·블록·제재와 202 →</a></nav><p class="label" style="margin:0 0 4px">제4부 국가·지정학·기술
+<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch15">전체 보고서에서 보기</a><a href="../#ch15">대시보드의 해당 파트</a><span class="sp"></span><a href="ch14.html" rel="prev">← 14. 소버린 AI와 국가 AI 문샷</a><a href="ch16.html" rel="next">16. AI 지정학: 미중 경쟁·블록·제재와 202 →</a></nav><p class="label" style="margin:0 0 4px">제4부 국가·지정학·기술
 통제</p><h2 id="ch15">15. 국가별 AI 정책·제도·투자·규제와 경쟁력</h2>
 <blockquote>
 <p>자료: 일본 제2차 AI 기본계획, 영국 AI Opportunities Action Plan 1년
@@ -693,8 +695,7 @@ href="https://www.idc.com/resource-center/press-releases/idc-futurescape-2027-pr
 <li><strong>과제</strong>: 출연연·대학 AI 연구자의 보수 체계 예외, 공공
 GPU 우선 배정, 해외 연구자 공동 임용, 인재 유출입 통계의 정례 공개.</li>
 </ul>
-<h4 id="미국-h-1bopt-비용-급등과-인재-이동">미국 H-1B·OPT 비용 급등과
-인재 이동</h4>
+<h4 id="s15-5-1">미국 H-1B·OPT 비용 급등과 인재 이동</h4>
 <ul>
 <li><strong>미국의 문턱</strong>: 2025-09 포고로 해외에서 새로 들어오는
 H-1B에 10만 달러 수수료가 붙었고(현재 소송으로 일시 효력 정지), DHS는
@@ -775,8 +776,7 @@ Global Talent 비자 실적은 확인하지 못했습니다.</p>
 에이전트의 '개수' 목표와 공공 모델 조달 기준은 여전히 찾지 못했고, AI
 대민 상담 5개 분야 일정(세금·농업 2027년)만 확인했습니다.</li>
 </ul>
-<h4 id="보안규제-개편-csap국정원-일원화와-s등급-논쟁">보안규제 개편:
-CSAP·국정원 일원화와 'S등급' 논쟁</h4>
+<h4 id="s15-6-1">보안규제 개편: CSAP·국정원 일원화와 'S등급' 논쟁</h4>
 <ul>
 <li><strong>일원화 결정(04-20)</strong>: 과기정통부와 국정원은 공공
 클라우드 진입 절차를 'CSAP 인증 후 국정원 보안검증'의 두 단계에서 국정원
@@ -848,8 +848,7 @@ href="https://byline.network/2026/10/21-622/">바이라인네트워크</a></td>
 '과잉 분류' 사례를 넣고, 실태평가에서 O등급 비율과 분류 근거를 함께
 봅니다. 컨트롤플레인 해외 허용은 원격 조작 권한 범위와 국내 차단
 수단(킬스위치)을 검증 항목으로 명시해 업계 우려에 답합니다.</p>
-<h4 id="범정부-ai-공통기반의-모델-교체와-하네스-분리-평가">범정부 AI
-공통기반의 모델 교체와 하네스 분리 평가</h4>
+<h4 id="s15-6-2">범정부 AI 공통기반의 모델 교체와 하네스 분리 평가</h4>
 <ul>
 <li><strong>현황</strong>: 범정부 AI 공통기반은 업무망 안에 민간
 모델·데이터·GPU를 두고 중앙·지방정부가 함께 씁니다. 2025-11 시범 개시 때
@@ -921,8 +920,7 @@ Korea·뉴시스), KDI 경제정보센터 수록 행안부 보도자료, 강남�
 도구를 범정부 서비스로 키우는 경로를 만들었습니다. 2027년의 쟁점은 확산
 속도가 아니라 <strong>관리</strong>입니다. 만든 도구를 누가
 운영·검증·기록·책임지는지가 아직 정해지지 않았습니다.</p>
-<h4 id="2026-현황-정책예산서비스인력">2026 현황:
-정책·예산·서비스·인력</h4>
+<h4 id="s15-7-1">2026 현황: 정책·예산·서비스·인력</h4>
 <table>
 <thead>
 <tr>
@@ -998,8 +996,7 @@ href="https://mobile.newsis.com/view/NISX20260806_0003739170">뉴시스</a>)</td
 </tr>
 </tbody>
 </table>
-<h4 id="ai-챔피언-인증-제도-현황과-2027-시나리오">AI 챔피언 인증 제도:
-현황과 2027 시나리오</h4>
+<h4 id="s15-7-2">AI 챔피언 인증 제도: 현황과 2027 시나리오</h4>
 <ul>
 <li><strong>설계</strong>: 행안부가 2025-09-24에 발표했고, NIA와 함께
 운영합니다. 4단계 공공 AI 역량 트랙(AI활용·AI융합·AI개발·AI마스터)
@@ -1082,7 +1079,7 @@ href="https://nocutnews.co.kr/news/6574723">노컷뉴스</a>). 수당이나 일�
 커집니다(추정). 블랙 인증을 '운영 중인 도구의 책임자'와 묶어야 인증이
 역량을 반영합니다.</li>
 </ul>
-<h4 id="챔피언-바이브-코딩-확산-전망">챔피언 바이브 코딩 확산 전망</h4>
+<h4 id="s15-7-3">챔피언 바이브 코딩 확산 전망</h4>
 <ul>
 <li><strong>확산 조건</strong>
 <ul>
@@ -1117,7 +1114,7 @@ href="https://zdnet.co.kr/view?no=20261118161643">ZDNet Korea</a>).</li>
 href="https://zdnet.co.kr/view/?no=20260508164256">ZDNet
 Korea</a>).</li>
 </ul>
-<h4 id="공무원-개발로-생길-문제들">공무원 개발로 생길 문제들</h4>
+<h4 id="s15-7-4">공무원 개발로 생길 문제들</h4>
 <p>행안부는 산출물을 3단계로 나눕니다. <strong>실험·검증</strong>은
 사전심의 없이 자체 확인만으로 시작하고, <strong>운영관리</strong>는 소관
 부서가 필요성·정확성·보안·개인정보를 확인하고 운영을 책임지며,
@@ -1260,7 +1257,7 @@ href="https://www.ddaily.co.kr/page/view/2026090412150805096">디지털데일리
 확산은 이미 쟁점입니다 (<a
 href="https://biz.heraldcorp.com/article/10912236">헤럴드경제</a>).</li>
 </ul>
-<h4 id="다양한-관점">다양한 관점</h4>
+<h4 id="s15-7-5">다양한 관점</h4>
 <ul>
 <li><strong>공무원 노조·인사</strong>: 노조의 핵심 요구는 책임
 보호입니다. 공노총은 AI 오류로 공무원이 부당한 책임을 지지 않도록
@@ -1287,7 +1284,7 @@ href="https://www.ddaily.co.kr/page/view/2026072414372745250">디지털데일리
 2027년 실태평가를 N2SF 중심으로 바꾸는 방향(보도 기준)과 보안게이트를
 결합한 <strong>자동 점검</strong>이 현실적인 선택입니다.</li>
 </ul>
-<h4 id="해외-비교짧게">해외 비교(짧게)</h4>
+<h4 id="s15-7-6">해외 비교(짧게)</h4>
 <ul>
 <li><strong>영국</strong>: 정부가 직접 만든 공무원용 AI 도구 묶음
 'Humphrey'(2025-01)를 운영합니다. 의견수렴 분석 도구 Consult는 실제
@@ -1309,8 +1306,8 @@ href="https://www.thestar.com.my/aseanplus/aseanplus-news/2026/06/02/singapore-t
 Star/ST</a>). 한국 공공 GitLab에 '소유자·운영 상태'를 붙이면 같은 기능을
 할 수 있습니다.</li>
 </ul>
-<h4 id="공공-ax-조달실행체계-한국형-gdsisp-관행구독형-예산">공공 AX
-조달·실행체계: 한국형 GDS·ISP 관행·구독형 예산</h4>
+<h4 id="s15-7-7">공공 AX 조달·실행체계: 한국형 GDS·ISP 관행·구독형
+예산</h4>
 <ul>
 <li><strong>한국형 GDS의 출범</strong>: 업계·학계는 영국 GDS처럼
 기획·예산·구축을 원스톱으로 맡는 조직을 요구하면서, 권한이 없으면
@@ -1393,7 +1390,7 @@ SW사업 대가산정 가이드 2025년 개정판의 AI 유형 구분은 원문�
 못했습니다.</li>
 </ul>
 </blockquote>
-<h4 id="2027-전망-5">2027 전망</h4>
+<h4 id="s15-7-8">2027 전망</h4>
 <table>
 <thead>
 <tr>
@@ -1480,7 +1477,7 @@ href="https://www.law.go.kr/법령/행정기본법">행정기본법 제20조</a>
 </tr>
 </tbody>
 </table>
-<h4 id="한국-시사점-3">한국 시사점</h4>
+<h4 id="s15-7-9">한국 시사점</h4>
 <ol type="1">
 <li><strong>등록제와 소유자 표시</strong>: 공공 GitLab에 등록하는 모든
 도구에 운영 책임 부서, 데이터 등급(N2SF), 처분 영향 여부, 마지막
@@ -1729,8 +1726,8 @@ ODA·EDCF와 결합한 경량 패키지(오픈웨이트 + 저전력 추론 + 교
 AI 수치(미확보), 2027 ODA 국회 확정액, 'K-AI 패키지' 공식 명칭과 계약
 현황.</p>
 </blockquote>
-<h4 id="ai-풀스택-수출과-ai-oda-시장-교두보와-수원국-주권-사이">AI
-풀스택 수출과 AI ODA: 시장 교두보와 수원국 주권 사이</h4>
+<h4 id="s15-9-1">AI 풀스택 수출과 AI ODA: 시장 교두보와 수원국 주권
+사이</h4>
 <ul>
 <li><strong>사우디 풀스택 컨소시엄</strong>: 2026-02 아람코 디지털과
 한국 풀스택 AI 컨소시엄(리벨리온·퓨리오사AI·NC AI·업스테이지·LG
@@ -1846,7 +1843,7 @@ KPI와 이행률을 분기마다 공개해 집행·거버넌스 평가(Oxford 8�
 시리즈와 국내 표준의 대응 방향을 정합니다(<a class="xref" href="#s15-8">15.8</a>절).</li>
 </ul>
 <hr />
-<h4 id="공공-ax-안건157절에서-이동">공공 AX 안건(15.7절에서 이동)</h4>
+<h4 id="s15-11-1">공공 AX 안건(15.7절에서 이동)</h4>
 <ul>
 <li><strong>공공 AI 도구 등록·관리 기준(7호 산업·공공 활용·9호
 권고)</strong>: 행안부의 직접개발 지침을 국가기관 전반(지자체·공공기관
@@ -1881,7 +1878,7 @@ KPI와 이행률을 분기마다 공개해 집행·거버넌스 평가(Oxford 8�
 </ul>
 </blockquote>
 
-<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch15">전체 보고서에서 보기</a><a href="../">대시보드</a><span class="sp"></span><a href="ch14.html" rel="prev">← 14. 소버린 AI와 국가 AI 문샷</a><a href="ch16.html" rel="next">16. AI 지정학: 미중 경쟁·블록·제재와 202 →</a></nav>
+<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch15">전체 보고서에서 보기</a><a href="../#ch15">대시보드의 해당 파트</a><span class="sp"></span><a href="ch14.html" rel="prev">← 14. 소버린 AI와 국가 AI 문샷</a><a href="ch16.html" rel="next">16. AI 지정학: 미중 경쟁·블록·제재와 202 →</a></nav>
 </main>
 </div>
 <script>
@@ -1893,7 +1890,7 @@ KPI와 이행률을 분기마다 공개해 집행·거버넌스 평가(Oxford 8�
     const v = td.textContent.trim();
     if (v === '높음') td.classList.add('tag-hi'); else if (v === '중간') td.classList.add('tag-mid'); else if (v === '낮음') td.classList.add('tag-lo');
   });
-  document.querySelectorAll('main h2[id], main h3[id]').forEach((h) => {
+  document.querySelectorAll('main h2[id], main h3[id], main h4[id]').forEach((h) => {
     const a = document.createElement('a'); a.className = 'hl'; a.href = '#' + h.id; a.textContent = '#';
     a.setAttribute('aria-label', '이 제목의 링크'); h.appendChild(a);
   });

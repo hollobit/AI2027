@@ -8,7 +8,7 @@
 <link rel="canonical" href="https://hollobit.github.io/AI2027/chapters/ch23.html">
 </head>
 <body>
-<style>.chnav{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;font-size:.86rem;margin:0 0 18px;color:var(--muted)}.chnav a{text-decoration:none}.chnav .sp{flex:1}</style><meta name="claude:viewport-fit-sides" content="cover">
+<style>.chnav{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;font-size:.86rem;margin:0 0 18px;color:var(--muted)}.chnav a{text-decoration:none}.chnav .sp{flex:1}.rail ul.sub{margin:2px 0 6px 10px;font-size:.92em;opacity:.85}</style><meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;600&family=Noto+Serif+KR:wght@500;700;900&display=swap">
 <style>
@@ -93,7 +93,7 @@
   .dl a { font-weight: 600; text-decoration: none; padding: 3px 10px; border: 1px solid var(--line, #dcdfe4); border-radius: 999px; }
   .dl a:hover { border-color: currentColor; }
   .hl { margin-left: .4em; font-size: .7em; color: var(--muted); text-decoration: none; opacity: 0; transition: opacity .15s; }
-  h2:hover .hl, h3:hover .hl, .hl:focus { opacity: 1; }
+  h2:hover .hl, h3:hover .hl, h4:hover .hl, .hl:focus { opacity: 1; }
   a.xref { color: inherit; text-decoration: underline dotted; text-underline-offset: 3px; }
   @page { size: A4; margin: 16mm 14mm; }
   @media print { .dl { display: none !important; } html, body { background: #fff !important; } main { box-shadow: none !important; border-radius: 0 !important; padding: 0 !important; max-width: none !important; } figure, table, blockquote { break-inside: avoid; } h2, h3 { break-after: avoid; } .rail { display: none; } .wrap { display: block; } main { border: 0; } }
@@ -108,19 +108,19 @@
       <ul id="q-results" class="q-results" aria-label="검색 결과"></ul>
     </div>
     <div class="label">Contents</div><ul><li><a href="#s23-1">23.1 2027 시나리오</a></li><li><a href="#s23-2">23.2 2027 핵심 전망 Top 30: 확률·불확도·중요도·파급력
-종합</a></li><li><a href="#s23-3">23.3 AI 2027 시나리오와의 비교: 2026 채점과 2027
-전개</a></li><li><a href="#s23-4">23.4 AI 2040 시나리오: 2027년 이후의 장기 경로</a></li><li><a href="#s23-5">23.5 권력 집중과 통제 주체: 누가 최상위 AI를
+종합</a><ul class="sub"><li><a href="#s23-2-1">핵심 전망 22건</a></li><li><a href="#s23-2-2">저확률·고영향 감시 대상 8건</a></li></ul></li><li><a href="#s23-3">23.3 AI 2027 시나리오와의 비교: 2026 채점과 2027
+전개</a><ul class="sub"><li><a href="#s23-3-1">2025–2026 마일스톤 채점</a></li><li><a href="#s23-3-2">2027 전개 비교</a></li><li><a href="#s23-3-3">왜 본 보고서는 더 느리게 보나</a></li><li><a href="#s23-3-4">AI 2027이 맞을 경우 무엇이 먼저 보이나</a></li><li><a href="#s23-3-5">2027 전망</a></li></ul></li><li><a href="#s23-4">23.4 AI 2040 시나리오: 2027년 이후의 장기 경로</a></li><li><a href="#s23-5">23.5 권력 집중과 통제 주체: 누가 최상위 AI를
 통제하나</a></li><li><a href="#s23-6">23.6 선행 신호</a></li><li><a href="#s23-7">23.7 한국에 대한 제언</a></li><li><a href="#s23-8">23.8 국가인공지능전략위원회의 역할(인공지능기본법
 기준)</a></li><li><a href="#s23-9">23.9 위원회 조직(분과·특별위원회·TF)과 2027 전망
-연계</a></li><li><a href="#s23-10">23.10 2027 전망 548건의 분과·특별위원회·TF 연계</a></li><li><a href="#s23-11">23.11 국가인공지능전략위원회 2027 일정(제안)</a></li><li><a href="#s23-12">23.12 한국 SWOT 분석(2027 전망 기준)</a></li><li><a href="#s23-13">23.13 대응 전략(TOWS)</a></li><li><a href="#s23-14">23.14 2027 우선 과제와 점검 지표</a></li><li><a href="#s23-15">23.15 핵심 인물 리스크: 2026 엔비디아 사태와 2027
+연계</a><ul class="sub"><li><a href="#s23-9-1">현재 조직(2026-11 기준)</a></li><li><a href="#s23-9-2">2027 전망·대처의 분과별 연계</a></li><li><a href="#s23-9-3">공백: 맡을 기구가 없는 2027 쟁점</a></li><li><a href="#s23-9-4">위원회 자체에 관한 2027 전망</a></li></ul></li><li><a href="#s23-10">23.10 2027 전망 548건의 분과·특별위원회·TF 연계</a></li><li><a href="#s23-11">23.11 국가인공지능전략위원회 2027 일정(제안)</a></li><li><a href="#s23-12">23.12 한국 SWOT 분석(2027 전망 기준)</a></li><li><a href="#s23-13">23.13 대응 전략(TOWS)</a></li><li><a href="#s23-14">23.14 2027 우선 과제와 점검 지표</a></li><li><a href="#s23-15">23.15 핵심 인물 리스크: 2026 엔비디아 사태와 2027
 전망</a></li><li><a href="#s23-16">23.16 예상하지 못한 사건: 2026년의 교훈과 2027
-와일드카드</a></li></ul></nav>
+와일드카드</a><ul class="sub"><li><a href="#s23-16-1">2026년 &#x27;예상하지 못한 사건&#x27; 회고</a></li><li><a href="#s23-16-2">유형화: 왜 예측이 놓쳤나</a></li><li><a href="#s23-16-3">2027 와일드카드 18개</a></li><li><a href="#s23-16-4">2027 전망</a></li><li><a href="#s23-16-5">대응: 예상 밖 사건에 강한 체계</a></li></ul></li></ul></nav>
   <main>
 <div class="dl" aria-label="다운로드">다운로드
       <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.pdf">PDF</a>
       <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.docx">Word</a>
       <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.md">Markdown</a> · <a href="https://hollobit.github.io/AI2027/chapters/">장별 보기</a></div>
-<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch23">전체 보고서에서 보기</a><a href="../">대시보드</a><span class="sp"></span><a href="ch22.html" rel="prev">← 22. AI 에이전트: 2027년의 핵심 테마</a><a href="annex.html" rel="next">부록과 자료 →</a></nav><p class="label" style="margin:0 0 4px">제6부 핵심 테마와 종합</p><h2 id="ch23">23. 종합 시나리오와 한국 시사점</h2>
+<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch23">전체 보고서에서 보기</a><a href="../#ch23">대시보드의 해당 파트</a><span class="sp"></span><a href="ch22.html" rel="prev">← 22. AI 에이전트: 2027년의 핵심 테마</a><a href="annex.html" rel="next">부록과 자료 →</a></nav><p class="label" style="margin:0 0 4px">제6부 핵심 테마와 종합</p><h2 id="ch23">23. 종합 시나리오와 한국 시사점</h2>
 <h3 id="s23-1">23.1 2027 시나리오</h3>
 <table>
 <thead>
@@ -231,7 +231,7 @@ AI 발전 방향·산업 구조·주요 정책을 얼마나 바꾸나), 사회�
 <strong>저확률·고영향 감시 대상 8건</strong>으로 나눴습니다. 감시 대상은
 영향이 큰 순서입니다.</li>
 </ul>
-<h4 id="핵심-전망-22건">핵심 전망 22건</h4>
+<h4 id="s23-2-1">핵심 전망 22건</h4>
 <table>
 <thead>
 <tr>
@@ -452,7 +452,7 @@ AI 발전 방향·산업 구조·주요 정책을 얼마나 바꾸나), 사회�
 </tr>
 </tbody>
 </table>
-<h4 id="저확률고영향-감시-대상-8건">저확률·고영향 감시 대상 8건</h4>
+<h4 id="s23-2-2">저확률·고영향 감시 대상 8건</h4>
 <table>
 <thead>
 <tr>
@@ -602,7 +602,7 @@ DeepCent)과 모델(Agent-1~5)은 '대응하는 현실'과 비교할 뿐 같은 
 <strong>시나리오보다 약 5개월 앞섰다</strong>고 판단을
 뒤집었습니다(<a class="xref" href="ch5.html#s5-3">5.3</a>절). 즉 <strong>역량의 핵심 변수는 시나리오 궤도에,
 지정학과 사회 반응은 그보다 늦게</strong> 움직였습니다.</p>
-<h4 id="20252026-마일스톤-채점">2025–2026 마일스톤 채점</h4>
+<h4 id="s23-3-1">2025–2026 마일스톤 채점</h4>
 <p>판정: 일치(대체로 맞음) / 부분 / 빗나감 / 앞섬(현실이 시나리오보다
 빠르거나 큼).</p>
 <table>
@@ -730,7 +730,7 @@ GPT-5.6 계열 생물·화학·사이버 'High'(<a class="xref" href="ch20.html#
 접근을 끈 사건(2026-06, <a class="xref" href="ch17.html#s17-2">17.2</a>절)이 없습니다. 시나리오는 정부가 2027년에야
 개입한다고 봤습니다.</li>
 </ul>
-<h4 id="2027-전개-비교">2027 전개 비교</h4>
+<h4 id="s23-3-2">2027 전개 비교</h4>
 <table>
 <thead>
 <tr>
@@ -830,8 +830,7 @@ GPT-5.6 계열 생물·화학·사이버 'High'(<a class="xref" href="ch20.html#
 </table>
 <figure><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 740" role="img" aria-label="AI 2027 시나리오와 현실의 비교 타임라인. 위쪽은 2025년 중반부터 2026년 말까지 시나리오 마일스톤 12개의 판정으로, 앞섬 4개(데이터센터 투자, AI 매출, R&amp;D 가속, 저가 모델), 일치 3개, 부분 3개, 빗나감 2개(학습런 규모, 주가와 시위)다. 아래쪽은 시나리오의 2027년 월별 전개와 본 보고서가 대응 전망에 준 확률로, 3월 초인적 코더 50%, 4월 정렬 문제 확인 약 85%, 9월 초인적 AI 연구자 25%, 2월 가중치 탈취 12%이며 결말에 해당하는 종합 가속은 25%다." style="max-width:100%;height:auto;font-family:inherit"><text x="50.0" y="30.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:14px;font-weight:700">2025 중반–2026 말: 시나리오 마일스톤 12개 채점</text><rect x="640.0" y="17.0" width="36.0" height="16" rx="8" style="fill:var(--ai27-accent, var(--accent, #3d40d4))"/><text x="658.0" y="29.0" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:11px;font-weight:700">앞섬</text><rect x="686.0" y="17.0" width="36.0" height="16" rx="8" style="fill:var(--color-ok, var(--ok, #1f7a4a))"/><text x="704.0" y="29.0" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:11px;font-weight:700">일치</text><rect x="732.0" y="17.0" width="36.0" height="16" rx="8" style="fill:var(--color-warn, var(--warn, #985a00))"/><text x="750.0" y="29.0" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:11px;font-weight:700">부분</text><rect x="778.0" y="17.0" width="47.0" height="16" rx="8" style="fill:var(--color-bad, var(--bad, #b3362f))"/><text x="801.5" y="29.0" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:11px;font-weight:700">빗나감</text><text x="837.0" y="29.0" text-anchor="start" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">현실 대비 판정</text><line x1="50" y1="330" x2="1000" y2="330" style="stroke:var(--color-fg-muted, var(--muted, #5b6170));stroke-width:1.5"/><g><title>2025 중반 · 비틀거리는 에이전트 — 부분: OSWorld 65%·SWE-bench 85% 예상 → 2025 중반은 느렸으나 2026-11 포화</title><rect x="56.3" y="270.0" width="134" height="44" rx="6" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-border-line, var(--line, #dcdfe4))"/><text x="123.3" y="287.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:600">비틀거리는 에이전트</text><rect x="105.3" y="293.0" width="36.0" height="16" rx="8" style="fill:var(--color-warn, var(--warn, #985a00))"/><text x="123.3" y="305.0" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:11px;font-weight:700">부분</text></g><g><title>2025 말 · 최대 데이터센터 — 앞섬: 데이터센터 지출 4,000억 달러 예상 → 미국 빅4 capex 2026년 7,370억 달러</title><rect x="203.0" y="270.0" width="134" height="44" rx="6" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-border-line, var(--line, #dcdfe4))"/><text x="270.0" y="287.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:600">최대 데이터센터</text><rect x="252.0" y="293.0" width="36.0" height="16" rx="8" style="fill:var(--ai27-accent, var(--accent, #3d40d4))"/><text x="270.0" y="305.0" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:11px;font-weight:700">앞섬</text></g><g><title>2025 말 · 초대형 학습런 — 빗나감: Agent-0 10^27 FLOP → 최대 단일 학습런 확대가 추세보다 느림</title><rect x="203.0" y="220.0" width="134" height="44" rx="6" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-border-line, var(--line, #dcdfe4))"/><text x="270.0" y="237.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:600">초대형 학습런</text><rect x="246.5" y="243.0" width="47.0" height="16" rx="8" style="fill:var(--color-bad, var(--bad, #b3362f))"/><text x="270.0" y="255.0" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:11px;font-weight:700">빗나감</text></g><g><title>2025–2026 · AI 매출·기업가치 — 앞섬: OpenBrain 2026 매출 약 350억 달러 → Anthropic 약 810억, OpenAI 500억–700억 달러(보도)</title><rect x="349.7" y="270.0" width="134" height="44" rx="6" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-border-line, var(--line, #dcdfe4))"/><text x="416.7" y="287.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:600">AI 매출·기업가치</text><rect x="398.7" y="293.0" width="36.0" height="16" rx="8" style="fill:var(--ai27-accent, var(--accent, #3d40d4))"/><text x="416.7" y="305.0" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:11px;font-weight:700">앞섬</text></g><g><title>2026 초 · R&amp;D 가속 1.5배 — 앞섬: 알고리즘 진척 1.5배 → METR: Anthropic 1.9배, AI 귀속 1.7배</title><rect x="496.3" y="270.0" width="134" height="44" rx="6" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-border-line, var(--line, #dcdfe4))"/><text x="563.3" y="287.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:600">R&amp;D 가속 1.5배</text><rect x="545.3" y="293.0" width="36.0" height="16" rx="8" style="fill:var(--ai27-accent, var(--accent, #3d40d4))"/><text x="563.3" y="305.0" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:11px;font-weight:700">앞섬</text></g><g><title>2026 초 · 에이전트 역량·위험 — 일치: OSWorld 80% 등 → OSWorld-Verified 86.2%, 생물·화학·사이버 'High'</title><rect x="496.3" y="220.0" width="134" height="44" rx="6" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-border-line, var(--line, #dcdfe4))"/><text x="563.3" y="237.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:600">에이전트 역량·위험</text><rect x="545.3" y="243.0" width="36.0" height="16" rx="8" style="fill:var(--color-ok, var(--ok, #1f7a4a))"/><text x="563.3" y="255.0" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:11px;font-weight:700">일치</text></g><g><title>2026 초 · 가중치 보안 의제 — 부분: RAND SL2–SL3 → 탈취 공개 사례 없음, 증류 공격이 제재 의제</title><rect x="496.3" y="170.0" width="134" height="44" rx="6" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-border-line, var(--line, #dcdfe4))"/><text x="563.3" y="187.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:600">가중치 보안 의제</text><rect x="545.3" y="193.0" width="36.0" height="16" rx="8" style="fill:var(--color-warn, var(--warn, #985a00))"/><text x="563.3" y="205.0" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:11px;font-weight:700">부분</text></g><g><title>2026 중반 · 중국의 각성 — 부분: 국가 단일 집중·6개월 격차 → 격차는 맞고 집중은 없음</title><rect x="643.0" y="270.0" width="134" height="44" rx="6" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-border-line, var(--line, #dcdfe4))"/><text x="710.0" y="287.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:600">중국의 각성</text><rect x="692.0" y="293.0" width="36.0" height="16" rx="8" style="fill:var(--color-warn, var(--warn, #985a00))"/><text x="710.0" y="305.0" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:11px;font-weight:700">부분</text></g><g><title>2026 말 · 저가 미니 모델 — 앞섬: Agent-1-mini 10배 저렴 → 같은 성능 단가 8개월에 약 40배 하락</title><rect x="789.7" y="270.0" width="134" height="44" rx="6" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-border-line, var(--line, #dcdfe4))"/><text x="856.7" y="287.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:600">저가 미니 모델</text><rect x="838.7" y="293.0" width="36.0" height="16" rx="8" style="fill:var(--ai27-accent, var(--accent, #3d40d4))"/><text x="856.7" y="305.0" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:11px;font-weight:700">앞섬</text></g><g><title>2026 말 · 신입 일자리 충격 — 일치: 신입 SW 시장 혼란 → 22–25세 고용 격차 약 19%</title><rect x="789.7" y="220.0" width="134" height="44" rx="6" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-border-line, var(--line, #dcdfe4))"/><text x="856.7" y="237.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:600">신입 일자리 충격</text><rect x="838.7" y="243.0" width="36.0" height="16" rx="8" style="fill:var(--color-ok, var(--ok, #1f7a4a))"/><text x="856.7" y="255.0" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:11px;font-weight:700">일치</text></g><g><title>2026 말 · 주가 +30%·시위 — 빗나감: 주식 +30%, 1만 명 시위 → S&amp;P 500 약 +7–10%, 데이터센터 반대로 나타남</title><rect x="789.7" y="170.0" width="134" height="44" rx="6" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-border-line, var(--line, #dcdfe4))"/><text x="856.7" y="187.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:600">주가 +30%·시위</text><rect x="833.2" y="193.0" width="47.0" height="16" rx="8" style="fill:var(--color-bad, var(--bad, #b3362f))"/><text x="856.7" y="205.0" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:11px;font-weight:700">빗나감</text></g><g><title>2026 말 · 국방부 직접 계약 — 일치: 국방부·OpenBrain 계약 → 미 국방부 4개 랩 계약, 기밀망 계약</title><rect x="789.7" y="120.0" width="134" height="44" rx="6" style="fill:var(--color-panel, var(--paper, #ffffff));stroke:var(--color-border-line, var(--line, #dcdfe4))"/><text x="856.7" y="137.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:12px;font-weight:600">국방부 직접 계약</text><rect x="838.7" y="143.0" width="36.0" height="16" rx="8" style="fill:var(--color-ok, var(--ok, #1f7a4a))"/><text x="856.7" y="155.0" text-anchor="middle" style="fill:var(--color-panel, var(--paper, #ffffff));font-size:11px;font-weight:700">일치</text></g><line x1="123.3" y1="314" x2="123.3" y2="330" style="stroke:var(--color-border-line, var(--line, #dcdfe4));stroke-width:1.5"/><circle cx="123.3" cy="330" r="4.5" style="fill:var(--color-fg-muted, var(--muted, #5b6170))"/><text x="123.3" y="350.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:12px;font-weight:600">2025 중반</text><line x1="270.0" y1="314" x2="270.0" y2="330" style="stroke:var(--color-border-line, var(--line, #dcdfe4));stroke-width:1.5"/><circle cx="270.0" cy="330" r="4.5" style="fill:var(--color-fg-muted, var(--muted, #5b6170))"/><text x="270.0" y="350.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:12px;font-weight:600">2025 말</text><line x1="416.7" y1="314" x2="416.7" y2="330" style="stroke:var(--color-border-line, var(--line, #dcdfe4));stroke-width:1.5"/><circle cx="416.7" cy="330" r="4.5" style="fill:var(--color-fg-muted, var(--muted, #5b6170))"/><text x="416.7" y="350.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:12px;font-weight:600">2025–2026</text><line x1="563.3" y1="314" x2="563.3" y2="330" style="stroke:var(--color-border-line, var(--line, #dcdfe4));stroke-width:1.5"/><circle cx="563.3" cy="330" r="4.5" style="fill:var(--color-fg-muted, var(--muted, #5b6170))"/><text x="563.3" y="350.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:12px;font-weight:600">2026 초</text><line x1="710.0" y1="314" x2="710.0" y2="330" style="stroke:var(--color-border-line, var(--line, #dcdfe4));stroke-width:1.5"/><circle cx="710.0" cy="330" r="4.5" style="fill:var(--color-fg-muted, var(--muted, #5b6170))"/><text x="710.0" y="350.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:12px;font-weight:600">2026 중반</text><line x1="856.7" y1="314" x2="856.7" y2="330" style="stroke:var(--color-border-line, var(--line, #dcdfe4));stroke-width:1.5"/><circle cx="856.7" cy="330" r="4.5" style="fill:var(--color-fg-muted, var(--muted, #5b6170))"/><text x="856.7" y="350.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:12px;font-weight:600">2026 말</text><line x1="958" y1="80" x2="958" y2="338" style="stroke:var(--color-fg, var(--fg, #14161c));stroke-width:1.5;stroke-dasharray:4 3"/><text x="958.0" y="74.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:11.5px;font-weight:700">오늘</text><text x="958.0" y="350.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:11px;font-weight:600">2026-11-28</text><text x="1000.0" y="372.0" text-anchor="end" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11.5px;font-weight:600">2027년으로 이어짐 ↓</text><line x1="50" y1="374" x2="1000" y2="374" style="stroke:var(--color-border-line, var(--line, #dcdfe4))"/><text x="50.0" y="402.0" text-anchor="start" style="fill:var(--color-fg, var(--fg, #14161c));font-size:14px;font-weight:700">2027: 시나리오 전개(위)와 본 보고서가 대응 전망에 준 확률(아래 막대)</text><line x1="50" y1="470" x2="820" y2="470" style="stroke:var(--color-fg-muted, var(--muted, #5b6170));stroke-width:1.5"/><line x1="850" y1="470" x2="1000" y2="470" style="stroke:var(--color-fg-muted, var(--muted, #5b6170));stroke-width:1.5;stroke-dasharray:3 3"/><line x1="50" y1="600.0" x2="1000" y2="600.0" style="stroke:var(--color-border-line, var(--line, #dcdfe4));stroke-dasharray:4 4"/><text x="46.0" y="604.0" text-anchor="end" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:10.5px;font-weight:400">50%</text><line x1="50" y1="660" x2="1000" y2="660" style="stroke:var(--color-border-line, var(--line, #dcdfe4))"/><text x="46.0" y="664.0" text-anchor="end" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:10.5px;font-weight:400">0%</text><circle cx="82.1" cy="470" r="4.5" style="fill:var(--color-fg-muted, var(--muted, #5b6170))"/><text x="82.1" y="490.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11.5px;font-weight:600">1월</text><g><title>시나리오 2027 1월: Agent-2 지속 학습·진척 3배 ↔ 지속 학습 모델 운영 약 35%(23.3절, 주관)</title><text x="82.1" y="436.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:11.5px;font-weight:600">지속 학습</text><text x="82.1" y="452.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:11.5px;font-weight:600">3배 가속</text></g><g><title>본 보고서 확률 35% — Agent-2 지속 학습·진척 3배 ↔ 지속 학습 모델 운영 약 35%(23.3절, 주관)</title><path d="M70.1,660 L70.1,622.0 Q70.1,618.0 74.1,618.0 L90.1,618.0 Q94.1,618.0 94.1,622.0 L94.1,660 Z" style="fill:var(--ai27-accent, var(--accent, #3d40d4))"/><text x="82.1" y="612.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:11.5px;font-weight:700">35%</text></g><text x="82.1" y="676.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:10.5px;font-weight:400">지속 학습</text><circle cx="146.2" cy="470" r="4.5" style="fill:var(--color-fg-muted, var(--muted, #5b6170))"/><text x="146.2" y="490.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11.5px;font-weight:600">2월</text><g><title>시나리오 2027 2월: 중국의 Agent-2 가중치 탈취 ↔ 가중치 유출·탈취 공개 확인 12%(23.14절 #8)</title><text x="146.2" y="436.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:11.5px;font-weight:600">가중치</text><text x="146.2" y="452.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:11.5px;font-weight:600">탈취</text></g><g><title>본 보고서 확률 12% — 중국의 Agent-2 가중치 탈취 ↔ 가중치 유출·탈취 공개 확인 12%(23.14절 #8)</title><path d="M134.2,660 L134.2,649.6 Q134.2,645.6 138.2,645.6 L154.2,645.6 Q158.2,645.6 158.2,649.6 L158.2,660 Z" style="fill:var(--ai27-accent, var(--accent, #3d40d4))"/><text x="146.2" y="639.6" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:11.5px;font-weight:700">12%</text></g><text x="146.2" y="676.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:10.5px;font-weight:400">탈취 공개</text><circle cx="210.4" cy="470" r="4.5" style="fill:var(--color-fg-muted, var(--muted, #5b6170))"/><text x="210.4" y="490.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11.5px;font-weight:600">3월</text><g><title>시나리오 2027 3월: Agent-3 초인적 코더 ↔ 초인적 코더 2027년 말까지 50%(5.1절)</title><text x="210.4" y="436.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:11.5px;font-weight:600">초인적</text><text x="210.4" y="452.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:11.5px;font-weight:600">코더</text></g><g><title>본 보고서 확률 50% — Agent-3 초인적 코더 ↔ 초인적 코더 2027년 말까지 50%(5.1절)</title><path d="M198.4,660 L198.4,604.0 Q198.4,600.0 202.4,600.0 L218.4,600.0 Q222.4,600.0 222.4,604.0 L222.4,660 Z" style="fill:var(--ai27-accent, var(--accent, #3d40d4))"/><text x="210.4" y="594.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:11.5px;font-weight:700">50%</text></g><text x="210.4" y="676.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:10.5px;font-weight:400">코더 도달</text><circle cx="274.6" cy="470" r="4.5" style="fill:var(--color-fg-muted, var(--muted, #5b6170))"/><text x="274.6" y="490.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11.5px;font-weight:600">4월</text><g><title>시나리오 2027 4월: Agent-3 정렬 문제 ↔ Agent-3형 정렬 문제 공식 확인 약 85%(23.3절, 주관)</title><text x="274.6" y="436.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:11.5px;font-weight:600">정렬 문제</text><text x="274.6" y="452.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:11.5px;font-weight:600">드러남</text></g><g><title>본 보고서 확률 85% — Agent-3 정렬 문제 ↔ Agent-3형 정렬 문제 공식 확인 약 85%(23.3절, 주관)</title><path d="M262.6,660 L262.6,562.0 Q262.6,558.0 266.6,558.0 L282.6,558.0 Q286.6,558.0 286.6,562.0 L286.6,660 Z" style="fill:var(--ai27-accent, var(--accent, #3d40d4))"/><text x="274.6" y="552.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:11.5px;font-weight:700">85%</text></g><text x="274.6" y="676.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:10.5px;font-weight:400">공식 확인</text><circle cx="338.8" cy="470" r="4.5" style="fill:var(--color-fg-muted, var(--muted, #5b6170))"/><text x="338.8" y="490.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11.5px;font-weight:600">5월</text><g><title>시나리오 2027 5월: 국가안보 의제화·동맹국 소외 ↔ 동맹국 이용자 접근 재차 강제 중단 30%(23.14절 #1)</title><text x="338.8" y="436.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:11.5px;font-weight:600">국가안보</text><text x="338.8" y="452.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:11.5px;font-weight:600">의제화</text></g><g><title>본 보고서 확률 30% — 국가안보 의제화·동맹국 소외 ↔ 동맹국 이용자 접근 재차 강제 중단 30%(23.14절 #1)</title><path d="M326.8,660 L326.8,628.0 Q326.8,624.0 330.8,624.0 L346.8,624.0 Q350.8,624.0 350.8,628.0 L350.8,660 Z" style="fill:var(--ai27-accent, var(--accent, #3d40d4))"/><text x="338.8" y="618.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:11.5px;font-weight:700">30%</text></g><text x="338.8" y="676.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:10.5px;font-weight:400">접근 차단</text><circle cx="402.9" cy="470" r="4.5" style="fill:var(--color-fg-muted, var(--muted, #5b6170))"/><text x="402.9" y="490.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11.5px;font-weight:600">6월</text><g><title>시나리오 2027 6월: 자기개선 AI·사람은 감독만 ↔ 2027년 중반 '연구 자동화 초입' 45%(23.3절)</title><text x="402.9" y="436.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:11.5px;font-weight:600">자기개선</text><text x="402.9" y="452.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:11.5px;font-weight:600">AI</text></g><g><title>본 보고서 확률 45% — 자기개선 AI·사람은 감독만 ↔ 2027년 중반 '연구 자동화 초입' 45%(23.3절)</title><path d="M390.9,660 L390.9,610.0 Q390.9,606.0 394.9,606.0 L410.9,606.0 Q414.9,606.0 414.9,610.0 L414.9,660 Z" style="fill:var(--ai27-accent, var(--accent, #3d40d4))"/><text x="402.9" y="600.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:11.5px;font-weight:700">45%</text></g><text x="402.9" y="676.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:10.5px;font-weight:400">자동화 초입</text><circle cx="467.1" cy="470" r="4.5" style="fill:var(--color-fg-muted, var(--muted, #5b6170))"/><text x="467.1" y="490.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11.5px;font-weight:600">7월</text><g><title>시나리오 2027 7월: OpenBrain 'AGI 달성' 선언 ↔ 'AGI 달성'에 준하는 선언과 정의 논쟁 40%(5.9절)</title><text x="467.1" y="436.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:11.5px;font-weight:600">'AGI 달성'</text><text x="467.1" y="452.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:11.5px;font-weight:600">선언</text></g><g><title>본 보고서 확률 40% — OpenBrain 'AGI 달성' 선언 ↔ 'AGI 달성'에 준하는 선언과 정의 논쟁 40%(5.9절)</title><path d="M455.1,660 L455.1,616.0 Q455.1,612.0 459.1,612.0 L475.1,612.0 Q479.1,612.0 479.1,616.0 L479.1,660 Z" style="fill:var(--ai27-accent, var(--accent, #3d40d4))"/><text x="467.1" y="606.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:11.5px;font-weight:700">40%</text></g><text x="467.1" y="676.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:10.5px;font-weight:400">선언·논쟁</text><circle cx="531.2" cy="470" r="4.5" style="fill:var(--color-fg-muted, var(--muted, #5b6170))"/><text x="531.2" y="490.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11.5px;font-weight:600">8월</text><g><title>시나리오 2027 8월: 군비통제 제안 무산 ↔ 미중 대화는 핫라인 수준, 감속 합의 없음 70%(16.1절)</title><text x="531.2" y="436.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:11.5px;font-weight:600">초지능</text><text x="531.2" y="452.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:11.5px;font-weight:600">지정학</text></g><g><title>본 보고서 확률 70% — 군비통제 제안 무산 ↔ 미중 대화는 핫라인 수준, 감속 합의 없음 70%(16.1절)</title><path d="M519.2,660 L519.2,580.0 Q519.2,576.0 523.2,576.0 L539.2,576.0 Q543.2,576.0 543.2,580.0 L543.2,660 Z" style="fill:var(--ai27-accent, var(--accent, #3d40d4))"/><text x="531.2" y="570.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:11.5px;font-weight:700">70%</text></g><text x="531.2" y="676.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:10.5px;font-weight:400">합의 없음</text><circle cx="595.4" cy="470" r="4.5" style="fill:var(--color-fg-muted, var(--muted, #5b6170))"/><text x="595.4" y="490.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11.5px;font-weight:600">9월</text><g><title>시나리오 2027 9월: Agent-4 초인적 AI 연구자 ↔ SAR 도달 25%(5.9절)</title><text x="595.4" y="436.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:11.5px;font-weight:600">초인적 AI</text><text x="595.4" y="452.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:11.5px;font-weight:600">연구자</text></g><g><title>본 보고서 확률 25% — Agent-4 초인적 AI 연구자 ↔ SAR 도달 25%(5.9절)</title><path d="M583.4,660 L583.4,634.0 Q583.4,630.0 587.4,630.0 L603.4,630.0 Q607.4,630.0 607.4,634.0 L607.4,660 Z" style="fill:var(--ai27-accent, var(--accent, #3d40d4))"/><text x="595.4" y="624.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:11.5px;font-weight:700">25%</text></g><text x="595.4" y="676.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:10.5px;font-weight:400">SAR 도달</text><circle cx="659.6" cy="470" r="4.5" style="fill:var(--color-fg-muted, var(--muted, #5b6170))"/><text x="659.6" y="490.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11.5px;font-weight:600">10월</text><g><title>시나리오 2027 10월: 내부고발·감독위원회·일시중지 요구 ↔ 초지능 금지·일시중지가 정부 공식 의제 17%(5.9절)</title><text x="659.6" y="436.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:11.5px;font-weight:600">내부고발·</text><text x="659.6" y="452.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:11.5px;font-weight:600">감독위</text></g><g><title>본 보고서 확률 17% — 내부고발·감독위원회·일시중지 요구 ↔ 초지능 금지·일시중지가 정부 공식 의제 17%(5.9절)</title><path d="M647.6,660 L647.6,643.6 Q647.6,639.6 651.6,639.6 L667.6,639.6 Q671.6,639.6 671.6,643.6 L671.6,660 Z" style="fill:var(--ai27-accent, var(--accent, #3d40d4))"/><text x="659.6" y="633.6" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:11.5px;font-weight:700">17%</text></g><text x="659.6" y="676.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:10.5px;font-weight:400">중지 의제</text><circle cx="723.8" cy="470" r="3" style="fill:var(--color-border-line, var(--line, #dcdfe4))"/><text x="723.8" y="490.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11.5px;font-weight:600">11월</text><circle cx="787.9" cy="470" r="3" style="fill:var(--color-border-line, var(--line, #dcdfe4))"/><text x="787.9" y="490.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11.5px;font-weight:600">12월</text><circle cx="890.0" cy="470" r="4.5" style="fill:var(--color-fg-muted, var(--muted, #5b6170))"/><text x="890.0" y="490.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11.5px;font-weight:600">전 기간</text><g><title>시나리오 2027 전 기간: 최상위 모델 내부 전용 ↔ 내부 전용 선언 15%(23.14절 #4)</title><text x="890.0" y="436.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:11.5px;font-weight:600">최상위</text><text x="890.0" y="452.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:11.5px;font-weight:600">내부 전용</text></g><g><title>본 보고서 확률 15% — 최상위 모델 내부 전용 ↔ 내부 전용 선언 15%(23.14절 #4)</title><path d="M878.0,660 L878.0,646.0 Q878.0,642.0 882.0,642.0 L898.0,642.0 Q902.0,642.0 902.0,646.0 L902.0,660 Z" style="fill:var(--ai27-accent, var(--accent, #3d40d4))"/><text x="890.0" y="636.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:11.5px;font-weight:700">15%</text></g><text x="890.0" y="676.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:10.5px;font-weight:400">내부 전용</text><circle cx="978.0" cy="470" r="4.5" style="fill:var(--color-fg-muted, var(--muted, #5b6170))"/><text x="978.0" y="490.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11.5px;font-weight:600">결말</text><g><title>시나리오 2027 결말: 경쟁·감속 결말 ↔ 종합 가속 25%(23.1절)</title><text x="978.0" y="436.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:11.5px;font-weight:600">경쟁 또는</text><text x="978.0" y="452.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:11.5px;font-weight:600">감속</text></g><g><title>본 보고서 확률 25% — 경쟁·감속 결말 ↔ 종합 가속 25%(23.1절)</title><path d="M966.0,660 L966.0,634.0 Q966.0,630.0 970.0,630.0 L986.0,630.0 Q990.0,630.0 990.0,634.0 L990.0,660 Z" style="fill:var(--ai27-accent, var(--accent, #3d40d4))"/><text x="978.0" y="624.0" text-anchor="middle" style="fill:var(--color-fg, var(--fg, #14161c));font-size:11.5px;font-weight:700">25%</text></g><text x="978.0" y="676.0" text-anchor="middle" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:10.5px;font-weight:400">종합 가속</text><text x="50.0" y="726.0" text-anchor="start" style="fill:var(--color-fg-muted, var(--muted, #5b6170));font-size:11px;font-weight:400">자료: AI Futures Project 'AI 2027'(2025-04)·자체 채점(2026), 본 보고서 23.3절 표. 판정과 확률은 본 보고서 추정. 막대 아래 글은 대응 전망의 요지.</text></svg><figcaption>그림 23-3. AI 2027 시나리오와 현실: 2025–2026 채점과 2027 전개. 위쪽 마일스톤 12개 중 앞섬 4개, 일치 3개, 부분 3개, 빗나감 2개(학습런 규모, 주가·시위)입니다. 아래쪽은 시나리오의 2027년 월별 사건과 본 보고서가 대응 전망에 준 확률로, 초인적 코더 50%, 초인적 AI 연구자 25%, 가중치 탈취 12%입니다.</figcaption></figure>
 
-<h4 id="왜-본-보고서는-더-느리게-보나">왜 본 보고서는 더 느리게
-보나</h4>
+<h4 id="s23-3-3">왜 본 보고서는 더 느리게 보나</h4>
 <ul>
 <li><strong>증거가 한 연구소, 그것도 비공개 자료에 기댑니다.</strong>
 저자들의 2026-11 당김은 METR 보고서 하나가 가장 큰 근거이고, 그 핵심
@@ -861,8 +860,7 @@ Eli는 2030년대 초까지 갔다가, 1년 안에 다시 2027년으로 돌아�
 예측 시장(Kalshi의 OpenAI AGI 발표 2027 이전 5–11%)과 LEAP 패널은 훨씬
 늦습니다(<a class="xref" href="ch5.html#s5-4">5.4</a>절). 본 보고서의 SAR 25%는 그 사이에 둔 값입니다.</li>
 </ul>
-<h4 id="ai-2027이-맞을-경우-무엇이-먼저-보이나">AI 2027이 맞을 경우
-무엇이 먼저 보이나</h4>
+<h4 id="s23-3-4">AI 2027이 맞을 경우 무엇이 먼저 보이나</h4>
 <p><a class="xref" href="ch5.html#s5-10">5.10</a>절 조기경보 지표를 시나리오 시점에 맞춰 다시 정리했습니다. 2027년
 상반기에 셋 이상이 보이면 5장 '지능 폭발 초기'(20%)와 종합 가속(25%)을
 올립니다.</p>
@@ -886,7 +884,7 @@ Eli는 2030년대 초까지 갔다가, 1년 안에 다시 2027년으로 돌아�
 배수가 1.5배 안팎으로 돌아오면, 시나리오 궤도에서 벗어난 것으로
 봅니다.</li>
 </ol>
-<h4 id="2027-전망-6">2027 전망</h4>
+<h4 id="s23-3-5">2027 전망</h4>
 <table>
 <thead>
 <tr>
@@ -1688,7 +1686,7 @@ href="https://zdnet.co.kr/view/?no=20260325102947">지디넷코리아</a>).
 기한이 있는 <strong>프로젝트(TF) 중심</strong>으로 바꾸고 7개 TF를
 의결했습니다(<a
 href="https://www.ddaily.co.kr/page/view/2026110616082441445">디지털데일리</a>).</p>
-<h4 id="현재-조직2026-11-기준">현재 조직(2026-11 기준)</h4>
+<h4 id="s23-9-1">현재 조직(2026-11 기준)</h4>
 <table>
 <thead>
 <tr>
@@ -1887,7 +1885,7 @@ href="https://www.aikorea.go.kr/web/content.do?menu_cd=000024">누리집
 개정으로 성평등부·공정위·국가데이터처의 참여 기반이 생겼습니다. 에이전트
 담합 안건은 운영세칙상 참여로 처리할 수 있습니다.</li>
 </ul>
-<h4 id="2027-전망대처의-분과별-연계">2027 전망·대처의 분과별 연계</h4>
+<h4 id="s23-9-2">2027 전망·대처의 분과별 연계</h4>
 <p>순위·확률은 <a class="xref" href="#s23-2">23.2</a>절 Top 30입니다. 기구 옆 괄호는 그 기구가 주로 수행할
 제8조제1항 각 호(본 보고서 판단)입니다. 기존 기구를 먼저, 맡을 곳이 없는
 쟁점(공백)은 마지막 행에 적었습니다.</p>
@@ -2051,8 +2049,7 @@ GW / 표준계약 확정</td>
 </tr>
 </tbody>
 </table>
-<h4 id="공백-맡을-기구가-없는-2027-쟁점">공백: 맡을 기구가 없는 2027
-쟁점</h4>
+<h4 id="s23-9-3">공백: 맡을 기구가 없는 2027 쟁점</h4>
 <ol type="1">
 <li><strong>기술 통제(원격접속·KYC·신뢰 파트너)</strong>: 글로벌협력
 분과(7명, 10개 분과 중 가장 작음)는 외교·협력 성격이고, 국방·안보 분과는
@@ -2097,7 +2094,7 @@ TF를 2027-06 이후 상설 분과로 바꿉니다.</li>
 2개 신설안은 철회하고, 소분과 2개(노동 전환, 의료 AI)를 제안합니다.
 <a class="xref" href="#s23-16">23.16</a>절 긴급 안건의 소집 대상은 '보안 특별위원회, 글로벌협력·국방·안보
 분과장, 글로벌 AI 전략적 협력 TF'로 고칩니다.</p>
-<h4 id="위원회-자체에-관한-2027-전망">위원회 자체에 관한 2027 전망</h4>
+<h4 id="s23-9-4">위원회 자체에 관한 2027 전망</h4>
 <table>
 <thead>
 <tr>
@@ -3063,8 +3060,7 @@ Futures Project 'AI 2027' 시나리오, Manifold·Polymarket 시장 스냅숏,
 일어날 확률은 약 90%</strong>, 3개 이상은 약 45%입니다. 대응은 사건을
 맞히는 것보다 <strong>사건이 나면 빨리 판단을 바꾸는 체계</strong>를
 만드는 일입니다.</p>
-<h4 id="2026년-예상하지-못한-사건-회고">2026년 '예상하지 못한 사건'
-회고</h4>
+<h4 id="s23-16-1">2026년 '예상하지 못한 사건' 회고</h4>
 <p>'1장 채점'은 2025년 말 예측 61건 중 해당 항목의 실현도입니다. '목록에
 없음'은 61건 중 그 사건을 다룬 예측이 없다는 뜻입니다.</p>
 <table>
@@ -3168,7 +3164,7 @@ Anthropic이 두 모델을 전 세계에서 비활성화. Mythos 5만 신뢰 파
 </tr>
 </tbody>
 </table>
-<h4 id="유형화-왜-예측이-놓쳤나">유형화: 왜 예측이 놓쳤나</h4>
+<h4 id="s23-16-2">유형화: 왜 예측이 놓쳤나</h4>
 <table>
 <thead>
 <tr>
@@ -3222,7 +3218,7 @@ Anthropic이 두 모델을 전 세계에서 비활성화. Mythos 5만 신뢰 파
 <strong>두 분야의 경계</strong>(기술×통상, 범용×로봇, AI×OT,
 기업×지정학)에서 나왔습니다. 그래서 2027년 와일드카드도 경계 사건 위주로
 골랐습니다.</p>
-<h4 id="2027-와일드카드-18개">2027 와일드카드 18개</h4>
+<h4 id="s23-16-3">2027 와일드카드 18개</h4>
 <p>확률은 2027년 안에 공개·확인될 가능성입니다(주관 추정). 기존 장에
 같은 전망이 있으면 그 값을 그대로 쓰고 장을 적었습니다. 영향은
 상(산업·국가 판도 변화), 중(한 산업·제도 변화), 하(국지적)입니다.</p>
@@ -3478,7 +3474,7 @@ Polymarket의 '2027년 말까지 중국의 대만 침공' 시장은
 달러를 탈취했다고 발표했습니다. 1조 원 이상 단일 탈취가 이미 선례라는
 뜻입니다.</li>
 </ul>
-<h4 id="2027-전망-7">2027 전망</h4>
+<h4 id="s23-16-4">2027 전망</h4>
 <table>
 <thead>
 <tr>
@@ -3570,8 +3566,7 @@ Dive(NERC 인용)</a></td>
 국유화 행의 Manifold 시장은 35–41%(스냅숏)로 본 보고서보다 훨씬 높아
 반론으로 붙였습니다.</li>
 </ul>
-<h4 id="대응-예상-밖-사건에-강한-체계">대응: 예상 밖 사건에 강한
-체계</h4>
+<h4 id="s23-16-5">대응: 예상 밖 사건에 강한 체계</h4>
 <ol type="1">
 <li><strong>경계 사건 조기경보 지표</strong>: <a class="xref" href="#s23-6">23.6</a>절 선행 신호에 경계
 지표 여섯 가지를 더합니다. ① 범용 모델의 도메인 벤치마크 자체 공개(#3),
@@ -3661,7 +3656,7 @@ Forrester의 와일드카드 예측은 찾지 못했습니다. 와일드카드 �
 </blockquote>
 <hr />
 
-<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch23">전체 보고서에서 보기</a><a href="../">대시보드</a><span class="sp"></span><a href="ch22.html" rel="prev">← 22. AI 에이전트: 2027년의 핵심 테마</a><a href="annex.html" rel="next">부록과 자료 →</a></nav>
+<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch23">전체 보고서에서 보기</a><a href="../#ch23">대시보드의 해당 파트</a><span class="sp"></span><a href="ch22.html" rel="prev">← 22. AI 에이전트: 2027년의 핵심 테마</a><a href="annex.html" rel="next">부록과 자료 →</a></nav>
 </main>
 </div>
 <script>
@@ -3673,7 +3668,7 @@ Forrester의 와일드카드 예측은 찾지 못했습니다. 와일드카드 �
     const v = td.textContent.trim();
     if (v === '높음') td.classList.add('tag-hi'); else if (v === '중간') td.classList.add('tag-mid'); else if (v === '낮음') td.classList.add('tag-lo');
   });
-  document.querySelectorAll('main h2[id], main h3[id]').forEach((h) => {
+  document.querySelectorAll('main h2[id], main h3[id], main h4[id]').forEach((h) => {
     const a = document.createElement('a'); a.className = 'hl'; a.href = '#' + h.id; a.textContent = '#';
     a.setAttribute('aria-label', '이 제목의 링크'); h.appendChild(a);
   });

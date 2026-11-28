@@ -8,7 +8,7 @@
 <link rel="canonical" href="https://hollobit.github.io/AI2027/chapters/ch2.html">
 </head>
 <body>
-<style>.chnav{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;font-size:.86rem;margin:0 0 18px;color:var(--muted)}.chnav a{text-decoration:none}.chnav .sp{flex:1}</style><meta name="claude:viewport-fit-sides" content="cover">
+<style>.chnav{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;font-size:.86rem;margin:0 0 18px;color:var(--muted)}.chnav a{text-decoration:none}.chnav .sp{flex:1}.rail ul.sub{margin:2px 0 6px 10px;font-size:.92em;opacity:.85}</style><meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;600&family=Noto+Serif+KR:wght@500;700;900&display=swap">
 <style>
@@ -93,7 +93,7 @@
   .dl a { font-weight: 600; text-decoration: none; padding: 3px 10px; border: 1px solid var(--line, #dcdfe4); border-radius: 999px; }
   .dl a:hover { border-color: currentColor; }
   .hl { margin-left: .4em; font-size: .7em; color: var(--muted); text-decoration: none; opacity: 0; transition: opacity .15s; }
-  h2:hover .hl, h3:hover .hl, .hl:focus { opacity: 1; }
+  h2:hover .hl, h3:hover .hl, h4:hover .hl, .hl:focus { opacity: 1; }
   a.xref { color: inherit; text-decoration: underline dotted; text-underline-offset: 3px; }
   @page { size: A4; margin: 16mm 14mm; }
   @media print { .dl { display: none !important; } html, body { background: #fff !important; } main { box-shadow: none !important; border-radius: 0 !important; padding: 0 !important; max-width: none !important; } figure, table, blockquote { break-inside: avoid; } h2, h3 { break-after: avoid; } .rail { display: none; } .wrap { display: block; } main { border: 0; } }
@@ -114,7 +114,7 @@
       <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.pdf">PDF</a>
       <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.docx">Word</a>
       <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.md">Markdown</a> · <a href="https://hollobit.github.io/AI2027/chapters/">장별 보기</a></div>
-<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch2">전체 보고서에서 보기</a><a href="../">대시보드</a><span class="sp"></span><a href="ch1.html" rel="prev">← 1. 2026년 예측 회고: 무엇이 맞고 무엇이 틀</a><a href="ch3.html" rel="next">3. 모델 성능·출시 로드맵·에이전트 경쟁 →</a></nav><p class="label" style="margin:0 0 4px">제1부 회고와 종합 전망</p><h2 id="ch2">2. 2027 전망 자료 종합: 기관별 시각</h2>
+<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch2">전체 보고서에서 보기</a><a href="../#ch2">대시보드의 해당 파트</a><span class="sp"></span><a href="ch1.html" rel="prev">← 1. 2026년 예측 회고: 무엇이 맞고 무엇이 틀</a><a href="ch3.html" rel="next">3. 모델 성능·출시 로드맵·에이전트 경쟁 →</a></nav><p class="label" style="margin:0 0 4px">제1부 회고와 종합 전망</p><h2 id="ch2">2. 2027 전망 자료 종합: 기관별 시각</h2>
 <p>종합 전망 자료는 리서치·컨설팅 14건, 투자·금융·에너지 19건, AI
 연구·예측·정책 19건, 한국 15건입니다. 여기에 분야별 심층 자료(3–21장)를
 더해 부록에는 모두 1008건을 정리했습니다. 이 장은 기관별 시각을
@@ -526,7 +526,7 @@ FutureScape 보도자료).</li>
 </tbody>
 </table>
 
-<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch2">전체 보고서에서 보기</a><a href="../">대시보드</a><span class="sp"></span><a href="ch1.html" rel="prev">← 1. 2026년 예측 회고: 무엇이 맞고 무엇이 틀</a><a href="ch3.html" rel="next">3. 모델 성능·출시 로드맵·에이전트 경쟁 →</a></nav>
+<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch2">전체 보고서에서 보기</a><a href="../#ch2">대시보드의 해당 파트</a><span class="sp"></span><a href="ch1.html" rel="prev">← 1. 2026년 예측 회고: 무엇이 맞고 무엇이 틀</a><a href="ch3.html" rel="next">3. 모델 성능·출시 로드맵·에이전트 경쟁 →</a></nav>
 </main>
 </div>
 <script>
@@ -538,7 +538,7 @@ FutureScape 보도자료).</li>
     const v = td.textContent.trim();
     if (v === '높음') td.classList.add('tag-hi'); else if (v === '중간') td.classList.add('tag-mid'); else if (v === '낮음') td.classList.add('tag-lo');
   });
-  document.querySelectorAll('main h2[id], main h3[id]').forEach((h) => {
+  document.querySelectorAll('main h2[id], main h3[id], main h4[id]').forEach((h) => {
     const a = document.createElement('a'); a.className = 'hl'; a.href = '#' + h.id; a.textContent = '#';
     a.setAttribute('aria-label', '이 제목의 링크'); h.appendChild(a);
   });

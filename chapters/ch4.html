@@ -8,7 +8,7 @@
 <link rel="canonical" href="https://hollobit.github.io/AI2027/chapters/ch4.html">
 </head>
 <body>
-<style>.chnav{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;font-size:.86rem;margin:0 0 18px;color:var(--muted)}.chnav a{text-decoration:none}.chnav .sp{flex:1}</style><meta name="claude:viewport-fit-sides" content="cover">
+<style>.chnav{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;font-size:.86rem;margin:0 0 18px;color:var(--muted)}.chnav a{text-decoration:none}.chnav .sp{flex:1}.rail ul.sub{margin:2px 0 6px 10px;font-size:.92em;opacity:.85}</style><meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;600&family=Noto+Serif+KR:wght@500;700;900&display=swap">
 <style>
@@ -93,7 +93,7 @@
   .dl a { font-weight: 600; text-decoration: none; padding: 3px 10px; border: 1px solid var(--line, #dcdfe4); border-radius: 999px; }
   .dl a:hover { border-color: currentColor; }
   .hl { margin-left: .4em; font-size: .7em; color: var(--muted); text-decoration: none; opacity: 0; transition: opacity .15s; }
-  h2:hover .hl, h3:hover .hl, .hl:focus { opacity: 1; }
+  h2:hover .hl, h3:hover .hl, h4:hover .hl, .hl:focus { opacity: 1; }
   a.xref { color: inherit; text-decoration: underline dotted; text-underline-offset: 3px; }
   @page { size: A4; margin: 16mm 14mm; }
   @media print { .dl { display: none !important; } html, body { background: #fff !important; } main { box-shadow: none !important; border-radius: 0 !important; padding: 0 !important; max-width: none !important; } figure, table, blockquote { break-inside: avoid; } h2, h3 { break-after: avoid; } .rail { display: none; } .wrap { display: block; } main { border: 0; } }
@@ -107,13 +107,13 @@
       <div id="q-info" class="q-info" aria-live="polite"></div>
       <ul id="q-results" class="q-results" aria-label="검색 결과"></ul>
     </div>
-    <div class="label">Contents</div><ul><li><a href="#s4-1">4.1 법칙 19개의 2026 판정과 2027 전망</a></li><li><a href="#s4-2">4.2 2027년을 지배할 법칙 다섯</a></li><li><a href="#s4-3">4.3 깨지거나 포화되는 법칙</a></li><li><a href="#s4-4">4.4 선행 신호</a></li><li><a href="#s4-5">4.5 시사점</a></li></ul></nav>
+    <div class="label">Contents</div><ul><li><a href="#s4-1">4.1 법칙 19개의 2026 판정과 2027 전망</a></li><li><a href="#s4-2">4.2 2027년을 지배할 법칙 다섯</a></li><li><a href="#s4-3">4.3 깨지거나 포화되는 법칙</a><ul class="sub"><li><a href="#s4-3-1">벤치마크 게이밍과 잠재추론: 측정 자체가 흔들린다</a></li></ul></li><li><a href="#s4-4">4.4 선행 신호</a></li><li><a href="#s4-5">4.5 시사점</a></li></ul></nav>
   <main>
 <div class="dl" aria-label="다운로드">다운로드
       <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.pdf">PDF</a>
       <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.docx">Word</a>
       <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.md">Markdown</a> · <a href="https://hollobit.github.io/AI2027/chapters/">장별 보기</a></div>
-<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch4">전체 보고서에서 보기</a><a href="../">대시보드</a><span class="sp"></span><a href="ch3.html" rel="prev">← 3. 모델 성능·출시 로드맵·에이전트 경쟁</a><a href="ch5.html" rel="next">5. AGI·ASI·RSI: 2027년 초지능에 얼 →</a></nav><p class="label" style="margin:0 0 4px">제2부 역량:
+<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch4">전체 보고서에서 보기</a><a href="../#ch4">대시보드의 해당 파트</a><span class="sp"></span><a href="ch3.html" rel="prev">← 3. 모델 성능·출시 로드맵·에이전트 경쟁</a><a href="ch5.html" rel="next">5. AGI·ASI·RSI: 2027년 초지능에 얼 →</a></nav><p class="label" style="margin:0 0 4px">제2부 역량:
 모델·에이전트·AGI·과학</p><h2 id="ch4">4. AI 발전의 '법칙': 2026년 검증과 2027년의 지배 법칙</h2>
 <blockquote>
 <p>자료: Epoch AI 원자료(ECI·벤치마크, 2026-11-26 스냅샷)를 직접 회귀
@@ -313,8 +313,7 @@ GW급 클러스터가 가동되면 다시 가속할 수 있습니다.</li>
 <li><strong>하드웨어 제약</strong>이 칩에서 전력·HBM으로 옮겨 가 컴퓨트
 증가율의 상한이 됩니다.</li>
 </ul>
-<h4 id="벤치마크-게이밍과-잠재추론-측정-자체가-흔들린다">벤치마크
-게이밍과 잠재추론: 측정 자체가 흔들린다</h4>
+<h4 id="s4-3-1">벤치마크 게이밍과 잠재추론: 측정 자체가 흔들린다</h4>
 <p><a class="xref" href="#s4-1">4.1</a>절 표의 '데이터 벽·굿하트(오염)' 행은 2026년에 정량 근거가
 없었습니다. 하반기에 근거가 나오기 시작했습니다. 측정 문제는 둘로
 나뉩니다. 점수가 능력이 아니라 <strong>기억</strong>을 재는 문제와, 사고
@@ -511,7 +510,7 @@ K3.1 외부 보고서(11-03)는 Benchleaking 논문의 인용으로만 확인했
 </ul>
 <hr />
 
-<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch4">전체 보고서에서 보기</a><a href="../">대시보드</a><span class="sp"></span><a href="ch3.html" rel="prev">← 3. 모델 성능·출시 로드맵·에이전트 경쟁</a><a href="ch5.html" rel="next">5. AGI·ASI·RSI: 2027년 초지능에 얼 →</a></nav>
+<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch4">전체 보고서에서 보기</a><a href="../#ch4">대시보드의 해당 파트</a><span class="sp"></span><a href="ch3.html" rel="prev">← 3. 모델 성능·출시 로드맵·에이전트 경쟁</a><a href="ch5.html" rel="next">5. AGI·ASI·RSI: 2027년 초지능에 얼 →</a></nav>
 </main>
 </div>
 <script>
@@ -523,7 +522,7 @@ K3.1 외부 보고서(11-03)는 Benchleaking 논문의 인용으로만 확인했
     const v = td.textContent.trim();
     if (v === '높음') td.classList.add('tag-hi'); else if (v === '중간') td.classList.add('tag-mid'); else if (v === '낮음') td.classList.add('tag-lo');
   });
-  document.querySelectorAll('main h2[id], main h3[id]').forEach((h) => {
+  document.querySelectorAll('main h2[id], main h3[id], main h4[id]').forEach((h) => {
     const a = document.createElement('a'); a.className = 'hl'; a.href = '#' + h.id; a.textContent = '#';
     a.setAttribute('aria-label', '이 제목의 링크'); h.appendChild(a);
   });
