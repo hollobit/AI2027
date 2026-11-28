@@ -6169,6 +6169,183 @@
   "counter": []
  },
  {
+  "chapter": "15장",
+  "text": "AI Act 조화표준(JTC21) 1건 이상이 2027년 안에 EU 관보(OJEU)에 인용됨(EN 18286 유력)",
+  "prob": "중간 60%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "European Commission",
+    "url": "https://digital-strategy.ec.europa.eu/en/policies/ai-act-standardisation",
+    "title": ""
+   },
+   {
+    "org": "AI Standardisation Watch",
+    "url": "https://krogrules.com/news/edition-16-september-2026",
+    "title": ""
+   }
+  ],
+  "counter": [
+   {
+    "org": "AI Standardisation Watch",
+    "url": "https://krogrules.com/news/edition-16-september-2026",
+    "title": "Edition 16: EN 18286 published but not cited in OJ; M/613 expires 2027-02-28"
+   }
+  ]
+ },
+ {
+  "chapter": "15장",
+  "text": "위험관리(prEN 18228)·사이버보안(prEN 18282)을 포함한 핵심 조화표준이 모두 고위험 의무 적용일(2027-12-02) 전에 발간됨",
+  "prob": "낮음 25%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "AI Standardisation Watch",
+    "url": "https://krogrules.com/news/edition-16-september-2026",
+    "title": ""
+   },
+   {
+    "org": "Orrick",
+    "url": "https://www.orrick.com/fr-FR/Insights/2026/05/EUs-Digital-Omnibus-on-AI-7-Key-Changes-You-Need-to-Know",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "15장",
+  "text": "유럽위원회가 2027년 안에 고위험 요건 1개 이상에 대해 AI Act 제41조 공통사양 이행법을 채택",
+  "prob": "낮음 20%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "AI Act 제41조",
+    "url": "https://artificialintelligenceact.eu/article/41/",
+    "title": ""
+   },
+   {
+    "org": "European Commission",
+    "url": "https://digital-strategy.ec.europa.eu/en/policies/ai-act-standardisation",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "15장",
+  "text": "ISO 서베이 2026(2027년 발표)의 ISO/IEC 42001 인정 인증서가 1,000건 이상(2025년 271건)",
+  "prob": "중간 45%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "DQS (ISO 서베이 2025)",
+    "url": "https://www.dqsglobal.com/es/acerca-de/sala-de-prensa/iso-survey-2025-las-certificaciones-iso-crecen-un-11-en-el-mundo-y-un-28-en-espana",
+    "title": ""
+   },
+   {
+    "org": "BSI",
+    "url": "https://www.bsigroup.com/en-GB/insights-and-media/media-centre/press-releases/2026/november/bsi-awards-its-50th-iso-iec-42001-certificate/",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "15장",
+  "text": "SC 42가 에이전틱 AI를 다룬 산출물(22989 Amd 2 에이전트 용어 또는 다중 에이전트 TR 27258)을 2027년 안에 발간",
+  "prob": "중간 40%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "AI Standardisation Watch",
+    "url": "https://krogrules.com/news/edition-16-september-2026",
+    "title": ""
+   },
+   {
+    "org": "ISO",
+    "url": "https://www.iso.org/standard/95706.html",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "15장",
+  "text": "MCP 또는 A2A가 2027년 안에 JTC 1 PAS·ISO/IEC·ITU-T 등 공적 표준 절차에 정식 제출됨",
+  "prob": "낮음 25%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Linux Foundation",
+    "url": "https://www.linuxfoundation.org/press/linux-foundation-announces-the-formation-of-the-agentic-ai-foundation",
+    "title": ""
+   },
+   {
+    "org": "NIST CAISI",
+    "url": "https://www.nist.gov/caisi/ai-agent-standards-initiative",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "15장",
+  "text": "C2PA 기반 ISO 22144(콘텐츠 자격증명)가 2027년 안에 국제표준(IS)으로 발간",
+  "prob": "중간 50%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "ISO",
+    "url": "https://www.iso.org/standard/90726.html",
+    "title": ""
+   },
+   {
+    "org": "C2PA",
+    "url": "https://c2pa.org/wp-content/uploads/sites/33/2026/07/Content-Credentials-Deployment-Guidance.pdf",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "15장",
+  "text": "중국이 2027년 안에 AI 관련 강제 국가표준(GB)을 1건 이상 새로 발간(의인화 AI 또는 에이전트 보안)",
+  "prob": "높음 70%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "SESEC",
+    "url": "https://sesec.eu/2026/05/21/tc260-standards-week-2026-ai-security-takes-center-stage/",
+    "title": ""
+   },
+   {
+    "org": "CGTN",
+    "url": "https://news.cgtn.com/news/2026-07-28/China-launches-plan-to-draft-mandatory-safety-standard-for-AI-agents-1P9iZyWenD2/share_amp.html",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "15장",
+  "text": "한국 고영향 AI 책무 고시·가이드라인 개정안 또는 제14조 표준 고시가 ISO/IEC 42001 등 국제표준(KS 부합화 포함)을 이행 근거로 명시",
+  "prob": "중간 45%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "법제처 인공지능기본법",
+    "url": "https://www.law.go.kr/법령/인공지능발전과신뢰기반조성등에관한기본법",
+    "title": ""
+   },
+   {
+    "org": "뉴스1 (국표원)",
+    "url": "https://www.news1.kr/economy/trend/6366226",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
   "chapter": "16장",
   "text": "1월 10일 직전 휴전 단기(6–12개월) 재연장",
   "prob": "높음 80%±10",

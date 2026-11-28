@@ -4271,7 +4271,7 @@
  {
   "id": "L2197",
   "ch": 18,
-  "sec": "15.11",
+  "sec": "15.12",
   "text": "Pax Silica",
   "p": 70,
   "unc": 20,
@@ -9157,6 +9157,167 @@
   "primary": "법률 TF",
   "pcode": "TF_LAW",
   "related": [
+   "인공지능책임관협의회"
+  ],
+  "kr": 1,
+  "impact": null,
+  "top30": null
+ },
+ {
+  "id": null,
+  "ch": 15,
+  "sec": "15.9",
+  "text": "AI Act 조화표준(JTC21) 1건 이상이 2027년 안에 EU 관보(OJEU)에 인용됨(EN 18286 유력)",
+  "p": 60,
+  "unc": 20,
+  "label": "중간",
+  "primary": "글로벌협력 분과",
+  "pcode": "",
+  "related": [
+   "글로벌 AI 전략적 협력 TF",
+   "법률 TF"
+  ],
+  "kr": 0,
+  "impact": null,
+  "top30": null
+ },
+ {
+  "id": null,
+  "ch": 15,
+  "sec": "15.9",
+  "text": "위험관리(prEN 18228)·사이버보안(prEN 18282)을 포함한 핵심 조화표준이 모두 고위험 의무 적용일(2027-12-02) 전에 발간됨",
+  "p": 25,
+  "unc": 15,
+  "label": "낮음",
+  "primary": "글로벌협력 분과",
+  "pcode": "",
+  "related": [
+   "글로벌 AI 전략적 협력 TF",
+   "법률 TF"
+  ],
+  "kr": 0,
+  "impact": null,
+  "top30": null
+ },
+ {
+  "id": null,
+  "ch": 15,
+  "sec": "15.9",
+  "text": "유럽위원회가 2027년 안에 고위험 요건 1개 이상에 대해 AI Act 제41조 공통사양 이행법을 채택",
+  "p": 20,
+  "unc": 15,
+  "label": "낮음",
+  "primary": "글로벌협력 분과",
+  "pcode": "",
+  "related": [
+   "법률 TF"
+  ],
+  "kr": 0,
+  "impact": null,
+  "top30": null
+ },
+ {
+  "id": null,
+  "ch": 15,
+  "sec": "15.9",
+  "text": "ISO 서베이 2026(2027년 발표)의 ISO/IEC 42001 인정 인증서가 1,000건 이상(2025년 271건)",
+  "p": 45,
+  "unc": 20,
+  "label": "중간",
+  "primary": "산업AX·생태계 분과",
+  "pcode": "",
+  "related": [
+   "글로벌협력 분과",
+   "공공AX 분과"
+  ],
+  "kr": 0,
+  "impact": null,
+  "top30": null
+ },
+ {
+  "id": null,
+  "ch": 15,
+  "sec": "15.9",
+  "text": "SC 42가 에이전틱 AI를 다룬 산출물(22989 Amd 2 에이전트 용어 또는 다중 에이전트 TR 27258)을 2027년 안에 발간",
+  "p": 40,
+  "unc": 20,
+  "label": "중간",
+  "primary": "글로벌협력 분과",
+  "pcode": "",
+  "related": [
+   "기술혁신·인프라 분과",
+   "보안 특별위원회"
+  ],
+  "kr": 0,
+  "impact": null,
+  "top30": null
+ },
+ {
+  "id": null,
+  "ch": 15,
+  "sec": "15.9",
+  "text": "MCP 또는 A2A가 2027년 안에 JTC 1 PAS·ISO/IEC·ITU-T 등 공적 표준 절차에 정식 제출됨",
+  "p": 25,
+  "unc": 15,
+  "label": "낮음",
+  "primary": "글로벌 AI 전략적 협력 TF",
+  "pcode": "",
+  "related": [
+   "글로벌협력 분과",
+   "기술혁신·인프라 분과"
+  ],
+  "kr": 0,
+  "impact": null,
+  "top30": null
+ },
+ {
+  "id": null,
+  "ch": 15,
+  "sec": "15.9",
+  "text": "C2PA 기반 ISO 22144(콘텐츠 자격증명)가 2027년 안에 국제표준(IS)으로 발간",
+  "p": 50,
+  "unc": 20,
+  "label": "중간",
+  "primary": "사회 분과",
+  "pcode": "",
+  "related": [
+   "문화·콘텐츠 AI TF",
+   "글로벌협력 분과"
+  ],
+  "kr": 0,
+  "impact": null,
+  "top30": null
+ },
+ {
+  "id": null,
+  "ch": 15,
+  "sec": "15.9",
+  "text": "중국이 2027년 안에 AI 관련 강제 국가표준(GB)을 1건 이상 새로 발간(의인화 AI 또는 에이전트 보안)",
+  "p": 70,
+  "unc": 15,
+  "label": "높음",
+  "primary": "글로벌 AI 전략적 협력 TF",
+  "pcode": "",
+  "related": [
+   "글로벌협력 분과",
+   "국방·안보 분과"
+  ],
+  "kr": 0,
+  "impact": null,
+  "top30": null
+ },
+ {
+  "id": null,
+  "ch": 15,
+  "sec": "15.9",
+  "text": "한국 고영향 AI 책무 고시·가이드라인 개정안 또는 제14조 표준 고시가 ISO/IEC 42001 등 국제표준(KS 부합화 포함)을 이행 근거로 명시",
+  "p": 45,
+  "unc": 20,
+  "label": "중간",
+  "primary": "법률 TF",
+  "pcode": "",
+  "related": [
+   "글로벌협력 분과",
    "인공지능책임관협의회"
   ],
   "kr": 1,
