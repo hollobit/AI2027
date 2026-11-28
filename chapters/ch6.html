@@ -1,0 +1,3703 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>6. 특화 파운데이션 모델: 2026 현황과 2027 가능성 · AI 2027 전망 보고서</title>
+<meta name="description" content="6. 특화 파운데이션 모델: 2026 현황과 2027 가능성">
+<link rel="canonical" href="https://hollobit.github.io/AI2027/chapters/ch6.html">
+</head>
+<body>
+<style>.chnav{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;font-size:.86rem;margin:0 0 18px;color:var(--muted)}.chnav a{text-decoration:none}.chnav .sp{flex:1}</style><meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;600&family=Noto+Serif+KR:wght@500;700;900&display=swap">
+<style>
+  /* Observatory report: long-form reading column + sticky contents rail */
+  :root {
+    --bg: #f3f4f1; --paper: #ffffff; --fg: #14161c; --muted: #5b6170; --line: #dcdfe4;
+    --accent: #3d40d4; --accent-2: #c25a22; --soft: #eef0f6; --ok: #1f7a4a; --warn: #985a00; --bad: #b3362f;
+    --display: 'Noto Serif KR', AppleMyungjo, Georgia, serif;
+    --text: 'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', system-ui, sans-serif;
+    --mono: 'IBM Plex Mono', ui-monospace, Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+    --bg: #0b0d12; --paper: #141821; --fg: #eef0f4; --muted: #8f96a5; --line: #262b37;
+    --accent: #8d90f8; --accent-2: #f29a62; --soft: #1b2030; --ok: #4cc38a; --warn: #e5a33b; --bad: #f07b72; color-scheme: dark; } }
+  :root[data-theme="dark"] {
+    --bg: #0b0d12; --paper: #141821; --fg: #eef0f4; --muted: #8f96a5; --line: #262b37;
+    --accent: #8d90f8; --accent-2: #f29a62; --soft: #1b2030; --ok: #4cc38a; --warn: #e5a33b; --bad: #f07b72; color-scheme: dark; }
+  body { background: var(--bg); color: var(--fg); font-family: var(--text); font-size: 15.5px; line-height: 1.75; letter-spacing: -0.005em;
+    padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+  .wrap { max-width: 1180px; margin: 0 auto; padding-block: clamp(20px, 4vw, 48px); display: grid; grid-template-columns: 250px minmax(0, 1fr); gap: 48px; }
+  @media (max-width: 900px) { .wrap { grid-template-columns: minmax(0, 1fr); gap: 24px; } .rail { position: static !important; max-height: none !important; } }
+  .rail { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 20px); align-self: start; max-height: calc(100vh - 40px); overflow: auto; font-size: 13px; }
+  .rail .label { font-family: var(--mono); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
+  .rail ul { list-style: none; margin: 0; padding: 0; }
+  .rail li { margin: 0; }
+  .rail ul ul { padding-left: 12px; border-left: 1px solid var(--line); margin: 2px 0 8px 2px; }
+  .rail ul ul ul { display: none; }
+  .rail a { display: block; padding: 3px 0; color: var(--muted); text-decoration: none; line-height: 1.45; }
+  .rail a:hover, .rail a:focus-visible { color: var(--accent); outline: none; }
+  .rail > ul > li > a { color: var(--fg); font-weight: 500; }
+  main { min-width: 0; background: var(--paper); border: 1px solid var(--line); border-radius: 16px; padding: clamp(22px, 5vw, 60px); }
+  main > * { max-width: 74ch; }
+  main > table, main > .tablewrap, main > details { max-width: none; }
+  h1 { font-family: var(--display); font-weight: 900; font-size: clamp(2.2rem, 5.5vw, 3.5rem); line-height: 1.08; letter-spacing: -0.03em; margin: 0 0 6px; text-wrap: balance; }
+  h1 + h3 { font-family: var(--display); font-weight: 500; font-size: clamp(1.1rem, 2.2vw, 1.4rem); color: var(--accent); margin: 0 0 14px; letter-spacing: -0.01em; }
+  h2 { font-family: var(--display); font-weight: 700; font-size: clamp(1.5rem, 3vw, 2rem); letter-spacing: -0.02em; line-height: 1.25; margin: 2.6em 0 .6em; padding-top: 1.2em; border-top: 1px solid var(--line); text-wrap: balance; scroll-margin-top: 20px; }
+  h3 { font-size: 1.12rem; font-weight: 600; margin: 1.9em 0 .5em; letter-spacing: -0.01em; scroll-margin-top: 20px; }
+  h4 { font-size: 1rem; font-weight: 600; margin: 1.8em 0 .3em; scroll-margin-top: 20px; }
+  p, li { text-wrap: pretty; }
+  strong { font-weight: 600; }
+  a { color: var(--accent); text-underline-offset: 3px; text-decoration-thickness: 1px; overflow-wrap: anywhere; }
+  blockquote { margin: 1.2em 0; padding: 14px 18px; background: var(--soft); border-radius: 10px; color: var(--fg); border: 0; }
+  blockquote p { margin: 0; }
+  hr { border: 0; height: 0; margin: 0; }
+  ul, ol { padding-left: 1.3em; }
+  li + li { margin-top: .25em; }
+  code { font-family: var(--mono); font-size: .86em; background: var(--soft); padding: 1px 6px; border-radius: 5px; overflow-wrap: anywhere; }
+  .tablewrap { overflow-x: auto; margin: 1.2em 0; border: 1px solid var(--line); border-radius: 12px; }
+  table { border-collapse: collapse; width: 100%; font-size: 13.5px; line-height: 1.55; }
+  th { text-align: left; font-family: var(--mono); font-weight: 500; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); padding: 10px 12px; border-bottom: 1px solid var(--line); background: var(--soft); white-space: nowrap; }
+  td { padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; font-variant-numeric: tabular-nums; }
+  tr:last-child td { border-bottom: 0; }
+  td:first-child { font-weight: 500; min-width: 120px; }
+  details { margin: 1em 0; }
+  summary { cursor: pointer; color: var(--muted); }
+  .meta { font-family: var(--mono); font-size: 12px; color: var(--muted); letter-spacing: .04em; }
+  .appendix-head { margin-top: 4em; }
+  h1.part { font-size: clamp(1.25rem, 2.6vw, 1.6rem); font-weight: 800; color: var(--accent); margin: 64px 0 8px; padding-top: 18px; border-top: 3px solid var(--accent); letter-spacing: -0.01em; }
+  #appendix h1 { font-size: clamp(1.6rem, 3.5vw, 2.2rem); margin-top: 0; }
+  #appendix h4 { font-family: var(--display); font-weight: 700; font-size: 1.02rem; padding-top: 1em; border-top: 1px dashed var(--line); }
+  .tag-hi { color: var(--ok); font-weight: 600; } .tag-mid { color: var(--warn); font-weight: 600; } .tag-lo { color: var(--bad); font-weight: 600; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  /* full-text search */
+  .q { margin-bottom: 22px; }
+  .q input { width: 100%; box-sizing: border-box; font: inherit; font-size: 13.5px; color: var(--fg); background: var(--paper); border: 1px solid var(--line); border-radius: 10px; padding: 8px 11px; }
+  .q input:focus { outline: 2px solid var(--accent); outline-offset: 1px; border-color: transparent; }
+  .q-info { font-family: var(--mono); font-size: 11px; color: var(--muted); margin: 6px 2px 0; min-height: 1em; }
+  .q-results { list-style: none; margin: 6px 0 0; padding: 0; max-height: 46vh; overflow: auto; border-left: 1px solid var(--line); }
+  .q-results:empty { display: none; }
+  .q-results button { all: unset; box-sizing: border-box; display: block; width: 100%; cursor: pointer; padding: 6px 8px 6px 10px; border-radius: 0 8px 8px 0; line-height: 1.45; }
+  .q-results button:hover, .q-results button:focus-visible, .q-results button[aria-current="true"] { background: var(--soft); }
+  .q-ctx { display: block; font-size: 11px; color: var(--accent); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .q-snip { display: block; font-size: 12px; color: var(--muted); }
+  .q-snip mark { background: none; color: var(--fg); font-weight: 600; }
+  ::highlight(q-hit) { background-color: rgba(229, 163, 59, .35); }
+  ::highlight(q-active) { background-color: #e5a33b; color: #14161c; }
+  figure { margin: 1.6em 0; max-width: none; }
+  figure svg { display: block; width: 100%; height: auto; }
+  figcaption { font-size: 13px; color: var(--muted); margin-top: 8px; line-height: 1.6; }
+  main > figure { max-width: none; }
+  .dl { display: flex; justify-content: flex-end; align-items: center; gap: 8px; margin: 0 0 14px; font-size: .85rem; color: var(--muted, #5b6170); }
+  .dl a { font-weight: 600; text-decoration: none; padding: 3px 10px; border: 1px solid var(--line, #dcdfe4); border-radius: 999px; }
+  .dl a:hover { border-color: currentColor; }
+  .hl { margin-left: .4em; font-size: .7em; color: var(--muted); text-decoration: none; opacity: 0; transition: opacity .15s; }
+  h2:hover .hl, h3:hover .hl, .hl:focus { opacity: 1; }
+  a.xref { color: inherit; text-decoration: underline dotted; text-underline-offset: 3px; }
+  @page { size: A4; margin: 16mm 14mm; }
+  @media print { .dl { display: none !important; } html, body { background: #fff !important; } main { box-shadow: none !important; border-radius: 0 !important; padding: 0 !important; max-width: none !important; } figure, table, blockquote { break-inside: avoid; } h2, h3 { break-after: avoid; } .rail { display: none; } .wrap { display: block; } main { border: 0; } }
+</style>
+
+<div class="wrap">
+  <nav class="rail" aria-label="목차">
+    <div class="q" role="search">
+      <label class="label" for="q-input" style="display:block">Search</label>
+      <input id="q-input" type="search" placeholder="보고서 검색  ( / )" autocomplete="off" aria-describedby="q-info">
+      <div id="q-info" class="q-info" aria-live="polite"></div>
+      <ul id="q-results" class="q-results" aria-label="검색 결과"></ul>
+    </div>
+    <div class="label">Contents</div><ul><li><a href="#s6-1">6.1 한눈에 보기: 분야별 성숙도</a></li><li><a href="#s6-2">6.2 분야별 핵심 사실</a></li><li><a href="#s6-3">6.3 가로지르는 흐름 다섯 가지</a></li><li><a href="#s6-4">6.4 한국</a></li><li><a href="#s6-5">6.5 전망 종합</a></li><li><a href="#s6-6">6.6 피지컬 AI: 하이프 사이클로 본 성숙도</a></li><li><a href="#s6-7">6.7 로봇 학습·제어 모델: 벤치마크로 본 2026 성능과 2027
+전망</a></li><li><a href="#s6-8">6.8 월드 모델·체화 추론과 2027 피지컬 AI 전망</a></li><li><a href="#s6-9">6.9 프런티어 범용 모델의 로봇 역량: GPT-6 Astra·Claude
+Fable·Gemini 4의 체화 벤치마크</a></li><li><a href="#s6-10">6.10 GPT-6.2 Astra와 2026년 말 로봇 벤치마크 갱신</a></li><li><a href="#s6-11">6.11 System 1 결정 모델(Jev류)과 2027 로봇 계층 구조</a></li><li><a href="#s6-12">6.12 로보택시·자율주행: 2027년 상용 확장</a></li><li><a href="#s6-13">6.13 의료 AI 2027: 병원·제조사·연구자·의료진·치과와
+에이전트·피지컬·생성형 AI</a></li><li><a href="#s6-14">6.14 한국 제언과 국가인공지능전략위원회 안건(특화 FM
+전반)</a></li></ul></nav>
+  <main>
+<div class="dl" aria-label="다운로드">다운로드
+      <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.pdf">PDF</a>
+      <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.docx">Word</a>
+      <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.md">Markdown</a> · <a href="https://hollobit.github.io/AI2027/chapters/">장별 보기</a></div>
+<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch6">전체 보고서에서 보기</a><a href="../">대시보드</a><span class="sp"></span><a href="ch5.html" rel="prev">← 5. AGI·ASI·RSI: 2027년 초지능에 얼</a><a href="ch7.html" rel="next">7. AI for Science·AI 연구 동료·수 →</a></nav><p class="label" style="margin:0 0 4px">제2부 역량:
+모델·에이전트·AGI·과학</p><h2 id="ch6">6. 특화 파운데이션 모델: 2026 현황과 2027 가능성</h2>
+<blockquote>
+<p>자료: Stanford AI Index 2026 Ch.5(Science), ECMWF·NOAA, FDA AI 기기
+목록, Epoch FrontierMath, GSMA Open-Telco 벤치마크, NVIDIA Cosmos 3
+기술보고서, Gemini Robotics 2, Synopsys DAC 2026, LG AI연구원, DOE
+Genesis·GridFM, 과기정통부 2027 예산안. 원문 19건은
+<code>PDF/specialized_fm/</code>에 있습니다.</p>
+</blockquote>
+<h3 id="s6-1">6.1 한눈에 보기: 분야별 성숙도</h3>
+<table>
+<thead>
+<tr>
+<th>분야</th>
+<th>2026 단계</th>
+<th>대표 모델</th>
+<th>2027 핵심 가능성</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>기상·기후</strong></td>
+<td><strong>현업 운영</strong></td>
+<td>ECMWF AIFS v2(오픈), NOAA AIGFS, WeatherNext 2, Aurora</td>
+<td>주요 기상청의 기본 예보가 AI 중심으로 전환 <em>(높음, 72%±15)</em> ·
+근거 <a
+href="https://www.ecmwf.int/en/about/media-centre/news/2026/ifs-cycle-50r1-aifsv2-live">ECMWF</a>,
+<a
+href="https://www.weather.gov/media/notification/pdf_2026/scn26-68_AIGFS_v1.1.pdf">NOAA
+/ NWS</a></td>
+</tr>
+<tr>
+<td><strong>시계열·정형</strong></td>
+<td>조용한 상용화</td>
+<td>Chronos-2, TimesFM, Moirai, TabPFN, EXAONE Tabular</td>
+<td>클라우드 예측 서비스의 기본 엔진 <em>(높음, 70%±20)</em></td>
+</tr>
+<tr>
+<td><strong>화학·소재</strong></td>
+<td>산업 표준 도구화</td>
+<td>UMA·EquiformerV3, MatterGen/MatterSim, GNoME</td>
+<td>범용 원자간 포텐셜이 CAE에 내장 <em>(높음, 75%±15)</em> · 근거 <a
+href="https://deepmind.google/blog/alphaevolve-impact/">Google
+DeepMind</a>, AI 발견 소재의 첫 상용 채택 <em>(중간, 40%±20)</em></td>
+</tr>
+<tr>
+<td><strong>로봇·체화(VLA)</strong></td>
+<td>API·라이선스 상품화</td>
+<td>π0.7·Pi API, Gemini Robotics 2, GR00T N1.7, Cosmos 3</td>
+<td>로봇 FM의 API 판매가 주류 <em>(중간, 69%±20)</em> · 근거 <a
+href="https://www.pi.website/blog">Physical Intelligence</a>, <a
+href="https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/">Google
+DeepMind</a>, 휴머노이드 연 10만 대 이상 <em>(중간, 65%±15, <a class="xref" href="#s6-8">6.8</a>절
+시나리오 합)</em> · 근거 <a
+href="https://www.financialcontent.com/article/bizwire-2026-9-30-omdia-identifies-four-forces-set-to-reshape-technology-in-2027">Omdia</a></td>
+</tr>
+<tr>
+<td><strong>월드모델·자율주행</strong></td>
+<td>데이터 생성 파이프라인</td>
+<td>Cosmos 3, Genie 3, V-JEPA 2, Waymo, Tesla FSD v14</td>
+<td>월드모델이 선도 로봇·자율주행 개발사 합성 데이터 파이프라인의
+표준(Gartner: 월드 모델 보급률 1% 미만, 주류화 5–10년) <em>(높음,
+70%±15)</em> · 근거 <a
+href="https://research.nvidia.com/labs/cosmos-lab/cosmos3/technical-report.pdf">NVIDIA</a>,
+<a
+href="https://nvidianews.nvidia.com/news/nvidia-releases-new-physical-ai-models-as-global-partners-unveil-next-generation-robots">NVIDIA</a>,
+Waymo 주 100만 회 운행 <em>(높음, 72%±15)</em></td>
+</tr>
+<tr>
+<td><strong>바이오·단백질</strong></td>
+<td>임상 문턱</td>
+<td>IsoDDE, Boltz-2, Chai-2, ESMFold2, Evo 2, AlphaGenome</td>
+<td>AI 설계 약물의 첫 FDA 승인 <em>(중간, 65%±15)</em></td>
+</tr>
+<tr>
+<td><strong>의료·임상</strong></td>
+<td>허가는 많지만 근거는 약함</td>
+<td>ChatGPT for Clinicians, MedGemma 1.5(4B), AMIE, MAI-DxO, 병리
+FM</td>
+<td>FDA AI 기기 2,000건 돌파 <em>(중간, 55%±15)</em> · 근거 <a
+href="https://www.fda.gov/medical-devices/digital-health-center-excellence/artificial-intelligence-enabled-medical-devices">FDA</a>,
+무작위 임상 결과 다수 <em>(중간, 45%±20)</em> · 근거 <a
+href="https://hai.stanford.edu/assets/files/ai_index_report_2026_chapter_6_medicine.pdf">Stanford
+HAI</a></td>
+</tr>
+<tr>
+<td><strong>수학·과학 발견</strong></td>
+<td>2026년 최대의 놀라움</td>
+<td>AlphaProof/AlphaEvolve, Kosmos, AI Scientist-v2</td>
+<td>AI 공저 정리 다수, Lean 검증 표준화 <em>(높음, 85%±10)</em> · 근거
+<a href="https://arxiv.org/abs/2605.22763">Google DeepMind</a>, <a
+href="https://www.anthropic.com/research/formalizing-fermats-last-theorem">Anthropic</a></td>
+</tr>
+<tr>
+<td><strong>통신·6G</strong></td>
+<td>하이브리드로 수렴</td>
+<td>SoftBank LTM, AT&amp;T OTel, SKT A.X, KT 믿:음, LG U+ ixi-GEN</td>
+<td>3GPP 6G 작업항목 승인(2027-03) <em>(높음, 90%±5)</em>, AI-RAN 첫
+상용 <em>(중간, 58%±15)</em> · 근거 <a
+href="https://zdnet.co.kr/view?no=20261111120847">IITP
+정보통신기획평가원 (보도: ZDNe…</a></td>
+</tr>
+<tr>
+<td><strong>반도체·EDA·제조</strong></td>
+<td>장시간 자율 에이전트로 전환</td>
+<td>Synopsys AgentEngineer, Cadence ChipStack, Siemens IFM</td>
+<td>EDA 에이전트 정식 출시 <em>(높음, 88%±10)</em> · 근거 <a
+href="https://news.synopsys.com/2026-07-27-Synopsys-Demonstrates-Leadership-in-AI-Powered-Engineering-at-2026-DAC-Chips-to-Systems-Conference">Synopsys</a></td>
+</tr>
+<tr>
+<td><strong>법률·금융·보안·국방</strong></td>
+<td>범용 모델 위의 버티컬 앱</td>
+<td>Harvey, Cisco Foundation-sec, 사이버 특화 Gemini, GridFM</td>
+<td>사이버 특화 모델의 통제형 배포 표준화 <em>(높음, 72%±15)</em> · 근거
+<a href="https://www.anthropic.com/glasswing">Anthropic</a>, <a
+href="https://www.anthropic.com/project/glasswing">Anthropic</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="s6-2">6.2 분야별 핵심 사실</h3>
+<p><strong>기상: 가장 성숙한 사례</strong></p>
+<ul>
+<li>ECMWF는 AIFS v2를 2026-05-12에 현업 투입했습니다. 앙상블 예보는 기존
+물리 모델보다 중기 상층 변수에서 약 25% 나아졌습니다.</li>
+<li>NOAA AIGFS v1.1(2026-07)은 16일 예보를 40분 만에 내고, 연산량은 기존
+GFS의 0.3%입니다.</li>
+<li>한국 기상청은 KIM 단독 운영으로 전환했고(2026-03), 한국형 AI
+기상·기후 FM 사업(2026–2030, GPU 208장)을 시작했습니다.</li>
+</ul>
+<p><strong>의료: 허가와 근거의 괴리</strong></p>
+<ul>
+<li>FDA AI 의료기기는 누적 1,600건을 넘었고(2026-09), 2025년 한 해에만
+258건이 허가됐습니다. 76.6%가 영상의학입니다.</li>
+<li>그러나 임상연구를 갖춘 기기 중 무작위 배정 연구는 2.4%뿐입니다.</li>
+<li>시험형 벤치마크는 포화됐습니다(MedQA 97.4%, HealthBench 88.0). 실제
+중환자실 과제(RealICU)에서는 상위 5개 안에 정답이 있는 비율이 0.51에
+그칩니다.</li>
+<li>실제 ROI가 입증된 분야는 앰비언트 스크라이브입니다. 기록 시간이 최대
+83% 줄었고, ROI는 112%입니다.</li>
+</ul>
+<p><strong>바이오: 임상 문턱에 도달</strong></p>
+<ul>
+<li>Takeda의 zasocitinib가 AI 설계 약물로는 처음 FDA 신약 신청(NDA)
+우선심사를 받았습니다(2026-09).</li>
+<li>Insilico의 렌토서팁은 3상에 들어갔습니다.</li>
+<li>다만 승인 사례는 아직 0건이고, Isomorphic의 첫 임상은 또
+미뤄졌습니다.</li>
+</ul>
+<p><strong>수학·발견: 2026년의 최대 놀라움</strong></p>
+<ul>
+<li>FrontierMath-Erdős 미해결 문제 68개 중 17개가 풀렸습니다(누적 해결
+수 기준. 고정 프로토콜 점수는 3–10.3%로 3장의 10.3%와 측정 방식이
+다름).</li>
+<li>AlphaProof 에이전트는 353개 중 9개를 자율로 풀었고, 증명을 Lean으로
+공개했습니다.</li>
+<li>반면 연구 전 과정을 수행하는 과제에서는 성적이 낮습니다. PaperArena
+38.8%(박사 83.5%), ReplicationBench 20% 미만이고, 참고문헌 환각률은
+44.5%에 이릅니다.</li>
+</ul>
+<p><strong>로봇: 데모에서 상품으로</strong></p>
+<ul>
+<li>Physical Intelligence가 Pi API 베타를 열었습니다(2026-10).</li>
+<li>Gemini Robotics 2는 전신 제어를 지원합니다.</li>
+<li>NVIDIA는 Cosmos 3를 오픈 가중치로 공개했습니다.</li>
+<li>SOTA 대시보드 기준 로봇 분야 SOTA 387개 중 176개를 Physical
+Intelligence가, 64개를 NVIDIA가 보유합니다. 표준 과제(LIBERO 97.4%)는
+포화됐지만 장기 과업은 15–65%에 머물고, '성공'한 실행의 24–26%(GR00T
+N1.5·N1.7, SafeVLA-Bench)는 여전히 안전하지 않습니다. 모델·벤치마크별
+상세와 RoboCasa365 기준 수치(성공 실행의 38–56%)는 <a class="xref" href="#s6-7">6.7</a>절에
+있습니다.</li>
+</ul>
+<p><strong>통신: '범용 + 특화' 하이브리드가 답</strong></p>
+<ul>
+<li>GSMA 2단계 벤치마크에서 종합 성능은 프런티어 모델이 앞섰습니다.
+그러나 5G 장애 원인 분석에서는 AT&amp;T의 파인튜닝 소형 모델이 최고점을
+받았습니다.</li>
+<li>SoftBank LTM은 제출된 84개 모델 중 최상위권입니다.</li>
+<li>3GPP 6G 작업항목은 2027년 3월 승인 예정입니다.</li>
+</ul>
+<h3 id="s6-3">6.3 가로지르는 흐름 다섯 가지</h3>
+<ol type="1">
+<li><p><strong>작은 특화 모델이 큰 범용 모델을 이깁니다.</strong></p>
+<ul>
+<li>단백질: MSAPairformer 1.1억 파라미터가 기존 기법을 앞섰습니다.</li>
+<li>유전체: GPN-Star 2억 파라미터가 400억 파라미터 모델을
+능가했습니다.</li>
+<li>의료: MedGemma 4B가 EHRQA 89.6%를 기록했습니다.</li>
+<li>통신: 운영 과제에서 4B 소형 모델이 최고점을 받았습니다.</li>
+</ul>
+<p>반대 근거도 있습니다. 사이버보안 SOTA 187개 중 137개는 범용 프런티어
+랩이 보유합니다. 법률·금융에서도 가치는 특화 모델보다 <strong>특화
+워크플로와 데이터</strong>에서 나옵니다(Menlo: 버티컬 AI 지출 101억
+달러, 2.9배 증가).</p></li>
+<li><p><strong>과학 특화 모델은 학계·정부·비영리가 주도합니다.</strong>
+범용 모델과 정반대 구조입니다. 미국 DOE Genesis Mission(파트너 약정 8억
+달러 이상, 국립연구소 17곳)이 '국립연구소 + 프런티어 모델 + HPC' 패턴을
+만들고 있습니다.</p></li>
+<li><p><strong>병목이 아키텍처에서 실험 데이터로 옮겨 갔습니다.</strong>
+자율 실험실에 사상 최대 자본이 몰리고 있습니다(Periodic Labs 시리즈 A
+7.5억 달러).</p></li>
+<li><p><strong>'현업 투입' 여부가 성숙도를 가릅니다.</strong> 기상은
+현업 단계입니다. 의료는 허가 단계이고, 바이오·소재는 임상·실증
+단계입니다.</p></li>
+<li><p><strong>사업 모델은 모델 판매가 아니라 파트너십과 내부
+엔진</strong>으로 수렴합니다. Isomorphic은 Lilly·Novartis와 손잡았고,
+로봇 분야는 API로 팝니다.</p></li>
+</ol>
+<h3 id="s6-4">6.4 한국</h3>
+<ul>
+<li><strong>2027 예산안</strong>(국회 심의 중)
+<ul>
+<li>3대 메가프로젝트: 7,956억 원(+167%)</li>
+<li>피지컬 AI 신규 사업: 트레이닝센터 400억 원, 핵심기술 550억 원,
+우정사업본부 물류 실증 260억 원. 2027년까지 산업 현장용 범용 피지컬 AI
+FM 출시가 목표입니다.</li>
+<li>K-AI반도체 풀스택 레퍼런스: 900억 원</li>
+<li>과학기술×AI FM(수학·지구과학·이차전지): 130억 원</li>
+<li>시계열 FM: 35억 원</li>
+</ul></li>
+<li><strong>진행 중인 사업</strong>
+<ul>
+<li>AI 특화 FM: 루닛(의과학)과 KAIST(바이오) 컨소시엄이 중간평가를
+통과했습니다(2026-03).</li>
+<li>복지부 AI 항체 설계 FM(2026-07부터 2028-06까지)</li>
+<li>'AI 기본의료 전략'(2026-08-06 국가정책조정회의, <a class="xref" href="#s6-13">6.13</a>절)</li>
+<li>피지컬 AI 월드모델 사업(340억 원, LG전자·KT 컨소시엄과 NC AI
+컨소시엄)</li>
+<li>RLWRLD의 RLDX-1이 RoboCasa에서 SOTA(70.6%)를 기록했습니다(기존
+RoboCasa 과제 기준. 2026년 확장판 RoboCasa365의 최고점은 57.4%로 분할이
+다릅니다, <a class="xref" href="#s6-7">6.7</a>절).</li>
+</ul></li>
+<li><strong>과소평가된 영역</strong>: 소재와 시계열(전력·반도체 수요
+예측)은 국내 공개 성과가 비어 있습니다.</li>
+</ul>
+<h3 id="s6-5">6.5 전망 종합</h3>
+<ul>
+<li><strong>가능성 높음</strong>: 기상의 AI 기본 예보 전환, 범용 원자간
+포텐셜의 산업 표준화, 로봇 FM의 API 판매, 월드모델 합성 데이터, 3GPP 6G
+AI 네이티브 범위 확정, EDA 에이전트 정식 출시, 국가 AI4S 플랫폼의
+확산(유럽·일본·한국), 학회의 AI 저자·리뷰 규정</li>
+<li><strong>가능성 중간</strong>: AI 설계 약물의 첫 승인, FDA AI 기기
+2,000건, 휴머노이드 연 10만 대, AI-RAN 상용화, 국내 통신 3사의 자율망
+에이전트 상용 적용, AI 발견 소재의 상용 채택, 자율 실험실 기업가치
+조정</li>
+<li><strong>가능성 낮음</strong>: 가정용 범용 휴머노이드 대량 상용화,
+사람 개입 없는 칩 설계, 완전 자율 AI 과학자의 독자적 중요 발견</li>
+</ul>
+<h3 id="s6-6">6.6 피지컬 AI: 하이프 사이클로 본 성숙도</h3>
+<blockquote>
+<p>자료: Gartner Hype Cycle for Physical AI, 2026(G00853852, 2026-07,
+28개 기술), Hype Cycle for Physical AI Industry Applications,
+2026(G00856358, 2026-09, 22개 기술). 유료 원문이라 수치만 옮깁니다.</p>
+</blockquote>
+<p><strong>한 줄 요약</strong>: 피지컬 AI는 대부분 기대가 성과를
+앞지르는 단계입니다. 가치는 창고·제조·물류처럼 구조화된 반복 환경에서
+먼저 나오고, 범용 휴머노이드가 가장 늦습니다.</p>
+<table>
+<thead>
+<tr>
+<th>기술</th>
+<th>하이프 사이클 위치</th>
+<th>주류 도달</th>
+<th>보급률</th>
+<th>보고서 연결</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>피지컬 AI(상위 개념)</td>
+<td>기술 촉발</td>
+<td>5–10년</td>
+<td>1–5%</td>
+<td>2.1</td>
+</tr>
+<tr>
+<td>휴머노이드 작업 로봇</td>
+<td>기술 촉발</td>
+<td>10년 이상</td>
+<td>1% 미만</td>
+<td>6.9·14장</td>
+</tr>
+<tr>
+<td>체화 AI</td>
+<td>기술 촉발</td>
+<td>2–5년</td>
+<td>1% 미만</td>
+<td>6.9·6.10</td>
+</tr>
+<tr>
+<td>구동 제어 정책(VLA 포함)</td>
+<td>기술 촉발</td>
+<td>2–5년</td>
+<td>5–20%</td>
+<td>6.8</td>
+</tr>
+<tr>
+<td>피지컬 AI 에이전트</td>
+<td>기술 촉발</td>
+<td>5–10년</td>
+<td>1–5%</td>
+<td>6.10</td>
+</tr>
+<tr>
+<td>월드 모델</td>
+<td>기술 촉발</td>
+<td>5–10년</td>
+<td>1% 미만</td>
+<td>6.9</td>
+</tr>
+<tr>
+<td>다기능 로봇</td>
+<td>기대의 정점</td>
+<td>2–5년</td>
+<td>1–5%</td>
+<td>6.8</td>
+</tr>
+<tr>
+<td>비전 파운데이션 모델</td>
+<td>기대의 정점</td>
+<td>2–5년</td>
+<td>5–20%</td>
+<td>6.1</td>
+</tr>
+<tr>
+<td>시뮬레이션 트윈(디지털 트윈 + AI)</td>
+<td>기대의 정점</td>
+<td>2–5년</td>
+<td>5–20%</td>
+<td>6.9</td>
+</tr>
+<tr>
+<td>로봇 오케스트레이션·관리 플랫폼</td>
+<td>기대의 정점</td>
+<td>2–5년</td>
+<td>1–5%</td>
+<td>6.6</td>
+</tr>
+<tr>
+<td>피지컬 AI 데이터 플랫폼</td>
+<td>기대의 정점</td>
+<td>5–10년</td>
+<td>5–20%</td>
+<td>6.6</td>
+</tr>
+<tr>
+<td>AI 웨어러블</td>
+<td>기대의 정점</td>
+<td>5–10년</td>
+<td>5–20%</td>
+<td>10장</td>
+</tr>
+<tr>
+<td>엣지 컴퓨팅</td>
+<td>환멸의 골짜기 진입</td>
+<td>2–5년</td>
+<td>5–20%</td>
+<td>10장</td>
+</tr>
+<tr>
+<td>개별 피킹 창고 로봇</td>
+<td>환멸의 골짜기</td>
+<td>5–10년</td>
+<td>1–5%</td>
+<td>6.9</td>
+</tr>
+<tr>
+<td>자율이동로봇(AMR)</td>
+<td>계몽의 경사</td>
+<td>2–5년</td>
+<td>5–20%</td>
+<td>6.9·6.13</td>
+</tr>
+<tr>
+<td>자율 드론</td>
+<td>계몽의 경사</td>
+<td>2–5년</td>
+<td>5–20%</td>
+<td>16.7</td>
+</tr>
+<tr>
+<td>자율주행차</td>
+<td>계몽의 경사</td>
+<td>5–10년</td>
+<td>1–5%</td>
+<td>6.11</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>계획 가정(Gartner)</strong>: 2030년 주요 산업·소비자 시장의
+30% 이상에 피지컬 AI가 실배치됩니다(현재 5%). 2028년 상업 드론 가치의
+60%가 드론 서비스(분석·데이터)에서 나옵니다(2026년 약 23%). 2030년
+대규모 농업·환경 신규 배치의 40%가 군집 방식을 씁니다(2026년 10% 미만).
+피지컬 AI 개념증명의 약 30%는 기대 성과나 ROI를 내지 못합니다.</li>
+<li><strong>대수와 배치는 다릅니다</strong>: 휴머노이드 출하는 빠르게
+늘지만(2026년 상반기 1.9만–2.5만 대, IDC 약 2.5만 대, <a class="xref" href="#s6-8">6.8</a>절), Gartner는
+배터리 2–5시간으로 교대 운영이 어렵고, 설비투자 외 가격 모델이 없으며,
+현장 저항이 크다고 봅니다. 출하 대수 전망은 '생산적 배치'와 구분해
+읽어야 합니다.</li>
+<li><strong>병목은 모델보다 데이터·안전·통합</strong>입니다. 로봇 군단
+오케스트레이션 표준이 없고, 협동 안전표준(ISO 10218-1:2025)도 아직 널리
+쓰이지 않습니다. <a class="xref" href="#s6-14">6.14</a>절의 데이터·평가 표준 제언과 같은 방향입니다.</li>
+<li><strong>산업정책 경쟁</strong>: 일본 경제산업성은 피지컬 AI에 63억
+달러를 투입하고, 중국은 2026 정부업무보고에서 휴머노이드를 미래산업
+우선순위로 올렸습니다. 한국 K-문샷 피지컬 AI 임무(14장)는 출하 대수보다
+'현장 배치 시간·작업 성공률'을 성과지표로 삼는 것이 이 위험을
+줄입니다.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>2027 전망</th>
+<th>가능성 · 확률(±불확도)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>휴머노이드 배치의 대부분이 제조·물류의 구조화된 반복 작업과
+시연·교육·연구용에 머묾</td>
+<td>높음 · 85% (±10)</td>
+</tr>
+<tr>
+<td>월드 모델 기반 합성데이터가 선도 로봇·자율주행 개발사 파이프라인의
+표준</td>
+<td>높음 · 70% (±15)</td>
+</tr>
+<tr>
+<td>휴머노이드 연 10만 대 이상(출하 기준, <a class="xref" href="#s6-8">6.8</a>절 시나리오 합)</td>
+<td>중간 · 65% (±15)</td>
+</tr>
+<tr>
+<td>Gartner 2027년판에서 휴머노이드 주류 도달 시점이 10년 미만으로
+단축</td>
+<td>낮음 · 25% (±15)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="한국-피지컬-ai-정책-제조-ai-2030과-확산의-조건">한국 피지컬 AI
+정책: 제조 AI 2030과 확산의 조건</h4>
+<ul>
+<li><strong>제조AI 2030 전략(2026-06-29)</strong>: 산업통상부가 '3대
+메가프로젝트 국민보고회'에서 과기정통부·중기부와 함께 발표했습니다.
+2030년까지 민관 20조 원을 투입해 부가가치 100조 원 이상을 만들고, AI
+팩토리 수출 100억 달러를 목표로 합니다. 3대 과제는 국가 제조데이터
+관리·활용 체계('제조데이터 도서관'), 제조 특화 AI 두뇌, 지역 제조AI
+확산입니다. 2030년까지 AI 팩토리 500개, 전문인력 3만 명, 제조AI 전문기업
+인증을 내걸고, 산업디지털전환법·스마트제조혁신법 개정을 추진합니다.
+2026년 추경 480억 원을 먼저 넣고 2027년 본예산에서 본격화합니다(<a
+href="https://www.mt.co.kr/article/2026062914212298001">머니투데이</a>,
+<a href="https://news.tf.co.kr/read/economy/2337574.htm">더팩트</a>,
+보도 기준). <a class="xref" href="#s6-8">6.8</a>절의 과기정통부 피지컬 AI 예산(3.1조 원)과는 별개
+축입니다.</li>
+<li><strong>두 개의 얼라이언스</strong>: 과기정통부는 '피지컬AI
+얼라이언스', 산업부는 'M.AX 얼라이언스'(2026-08 기준 1,500개 기업·11개
+분과, 보도 기준)로 같은 영역을 조율합니다. R&amp;D는 과기정통부, 현장
+확산은 산업부가 맡는 구조여서 실무 조율이 어렵다는 지적이 나왔습니다. 첫
+본사업인 경남·전북 AX 연구개발(1.4조 원)은 35개 사업으로 나뉘고 KPI에
+지역 발전 항목이 들어가 재원이 흩어질 수 있다는 우려도 있습니다(<a
+href="https://www.ddaily.co.kr/page/view/2026070916162373412">디지털데일리</a>).
+과기정통부는 2027년부터 '전 부처 CTO'로 공통 기반기술을 먼저 확보하고
+제조·농업·국방·돌봄 부처가 가져다 쓰는 방식을 내세웠습니다(<a
+href="https://zdnet.co.kr/view?no=20260901084925">지디넷코리아</a>).</li>
+<li><strong>SI로 흩어질 위험</strong>: 전문가들은 피지컬 AI가 지난 DX
+전략과 구조가 같다고 봅니다. 공장마다 MES·ERP·SCADA가 연결되지 않는
+문제가 그대로이고, 이기종 호환 SI 체계는 아직 기초 연구 단계입니다(같은
+기사). 표준 공정 모델과 표준 데이터 스키마 없이 AI 팩토리 500개를 세우면
+공장별 맞춤 SI 500건이 되고, <a class="xref" href="#s6-6">6.6</a>절 Gartner의 'PoC 30% 실패'가 한국에서
+반복될 수 있습니다(분석가 판단).</li>
+<li><strong>데이터 제공의 보상</strong>: M.AX 얼라이언스의 데이터 공유
+범위는 기업 자율이고 개별 비밀유지계약으로 맺습니다. 제조 파운데이션
+모델은 AI 팩토리 선도사업 데이터로 2028년까지 만들어 참여 기업에 배포할
+계획입니다(보도 기준). 데이터를 낸 기업에 대한 금전 보상이나 모델 수익
+배분 규정은 공개 자료에서 찾지 못했습니다. 보상 규칙이 없으면 대기업은
+핵심 공정 데이터를 내놓지 않고, 중소기업 데이터만 모이는 역선택이
+생깁니다.</li>
+<li><strong>국방·방산</strong>: 국방부는 판교 AX 거점을 '국방 피지컬AI
+허브'로 키우고, 육군은 병력 감소에 맞춰 피지컬AI·로봇 기반 전력구조
+개편과 전장 특화 월드 모델을 추진합니다. 육군–현대차그룹
+협약(2026-08-14), 팀네이버–KAI, 현대로템·NC AI 국방 국책과제가
+이어졌습니다(보도 기준, <a
+href="https://www.ddaily.co.kr/page/view/2026040918081673815">디지털데일리</a>).
+제조AI 2030 원문에는 방산 항목이 확인되지 않아, 방산 제조 데이터의 보안
+분류가 과제로 남습니다.</li>
+<li><strong>국제표준</strong>: IEEE는 2026-05-14 P4501 '제조 피지컬 AI
+프레임워크·요구사항' 표준 과제를 승인했습니다(C/AISC, 목표 2029–2030).
+휴머노이드는 IEEE P3870(지능형 제어 안전), ISO/TC 299/WG 16(휴머노이드
+데이터셋, ISO/WD 26264-1)에서 진행 중입니다(<a
+href="https://standards.ieee.org/ieee/4501/12576/">IEEE SA</a>, <a
+href="https://arxiv.org/html/2606.19769">arXiv</a>). ISO/IEC JTC 1
+차원의 체화 AI 과제는 확인하지 못했습니다. 제조 데이터 스키마와
+성과지표를 국내 사업 요건으로 먼저 정해 P4501·SC 42에 기고하면 표준과
+사업이 같은 틀을 씁니다.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>2027 전망</th>
+<th>가능성 · 확률(±불확도)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>과기정통부 피지컬AI 얼라이언스와 산업부 M.AX 얼라이언스가 단일
+거버넌스로 합쳐지지 않고 병존</td>
+<td>높음 · 75% (±15) · 근거 <a
+href="https://www.ddaily.co.kr/page/view/2026070916162373412">디지털데일리</a>,
+<a
+href="https://zdnet.co.kr/view?no=20260901084925">지디넷코리아</a></td>
+</tr>
+<tr>
+<td>제조AI 2030 후속 법안(산업디지털전환법·스마트제조혁신법 개정) 중 1건
+이상 국회 통과</td>
+<td>중간 · 45% (±20) · 근거 <a
+href="https://news.tf.co.kr/read/economy/2337574.htm">더팩트</a></td>
+</tr>
+<tr>
+<td>제조 데이터 제공 기업의 보상·이익공유 기준(가이드라인 포함)을 정부가
+공식 발표</td>
+<td>낮음 · 25% (±15) · 근거 <a
+href="https://www.newsis.com/view/NISX20250910_0003323951">뉴시스</a>(공유
+범위 기업 자율)</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>확인 필요</strong>: 제조AI 2030의 '2026-04 보고'는 확인하지
+못했고 공개 발표는 2026-06-29입니다. 2026년 추경 480억 원의 부처별
+배분과 피지컬 AI 추경 사업 간 중복 목록, M.AX 1,500개사, P4501
+의장(Youngjae KIM)의 소속은 원문 확인이 필요합니다.</p>
+</blockquote>
+<h3 id="s6-7">6.7 로봇 학습·제어 모델: 벤치마크로 본 2026 성능과 2027
+전망</h3>
+<blockquote>
+<p>자료: Physical Intelligence π*0.6(arXiv 2511.14759)·π0.7(arXiv
+2604.15483), Generalist GEN-0(2025-11-04)·GEN-1(2026-04-02) 블로그,
+Figure Helix 02(2026-01-27)·Helix 2.5(2026-09-17, Unite.AI 보도), NVIDIA
+GR00T N1.6·N1.7(연구 페이지·Hugging Face)·GR00T 2(연구 페이지,
+2026-11-09), Xiaomi-Robotics-1(arXiv 2607.15330), LIBERO-Plus(arXiv
+2510.13626)·LIBERO-PRO(arXiv 2510.03827), RoboArena(arXiv 2506.18123),
+BEHAVIOR Challenge 2025 리더보드·2026 2위 해법(arXiv 2611.13818),
+SafeVLA-Bench(arXiv 2606.00773), ISO/CD 25785-1, IEEE 휴머노이드
+연구그룹 보고서(2025-09). 월드 모델·체화 추론(ERQA 등)·휴머노이드
+시장·한국 정책은 별도 절에서 다룹니다.</p>
+</blockquote>
+<p><strong>한 줄 요약</strong>: 로봇 학습·제어 모델은 2025–2026년에
+'데모'에서 '수 시간 연속 작업'으로 올라섰습니다. 그러나 성능이 오른 곳은
+주로 학습 분포 안쪽입니다. 표준 시뮬레이션 벤치마크(LIBERO)는 97–99%로
+포화됐고, 같은 과제를 조금만 바꾸면 30% 아래로 떨어집니다. 2027년의 관전
+포인트는 점수 자체보다 <strong>평가 방식의
+교체</strong>(섭동·장기·실세계·안전 지표)입니다.</p>
+<h4 id="모델-계보-3년-만에-세-세대">모델 계보: 3년 만에 세 세대</h4>
+<p>1세대(2023–2024)는 VLM에 행동을 토큰으로 붙였습니다(RT-2, OpenVLA).
+2세대(2024–2025)는 VLM 백본에 연속 행동을 내는 '액션 전문가'(플로우
+매칭·확산)를 붙이고 고수준 추론(System 2)과 저수준 제어(System 1)를
+나눴습니다(π0, GR00T N1, Helix, Gemini Robotics). 3세대(2025-11 이후)는
+<strong>실세계 강화학습 후학습, 인간 영상·웨어러블 데이터, 수십만 시간
+규모 사전학습</strong>이 핵심입니다.</p>
+<table>
+<thead>
+<tr>
+<th>모델</th>
+<th>발표</th>
+<th>구조</th>
+<th>공개</th>
+<th>핵심 주장</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RT-2 (Google DeepMind)</td>
+<td>2023-07</td>
+<td>VLM이 행동을 텍스트 토큰으로 출력</td>
+<td>비공개</td>
+<td>웹 지식이 로봇 행동으로 전이</td>
+</tr>
+<tr>
+<td>OpenVLA (Stanford 등)</td>
+<td>2024-06</td>
+<td>7B, Llama 2 + 비전 인코더, 행동 토큰</td>
+<td>오픈</td>
+<td>Open X-Embodiment 97만 궤적 학습, 오픈 VLA 기준선</td>
+</tr>
+<tr>
+<td>OpenVLA-OFT</td>
+<td>2025-02</td>
+<td>병렬 디코딩·연속 행동·행동 청킹으로 미세조정</td>
+<td>오픈</td>
+<td>LIBERO 4개 스위트 평균 97.1%(OpenVLA 76.5%, π0 94.2%)</td>
+</tr>
+<tr>
+<td>π0 / π0-FAST (Physical Intelligence)</td>
+<td>2024-10 / 2025-01</td>
+<td>VLM(PaliGemma 3B) + 플로우 매칭 액션 전문가 / 주파수(DCT) 행동
+토크나이저</td>
+<td>오픈(openpi)</td>
+<td>범용 정책 + 미세조정으로 빨래 개기 등 정교한 과제</td>
+</tr>
+<tr>
+<td>π0.5</td>
+<td>2025-04</td>
+<td>π0 + 이종 데이터 공동학습</td>
+<td>오픈</td>
+<td>학습에 없던 집에서 청소 과제 수행</td>
+</tr>
+<tr>
+<td>π*0.6 (Recap)</td>
+<td>2025-11</td>
+<td>오프라인 RL 사전학습 + 실세계 RL(이득 조건화)</td>
+<td>비공개</td>
+<td>가장 어려운 과제에서 처리량 2배 이상, 실패율 약 절반</td>
+</tr>
+<tr>
+<td>π0.7</td>
+<td>2026-04</td>
+<td>맥락 조건화(전략·메타데이터·하위목표 이미지)</td>
+<td>비공개(Pi API, 2026-10 베타)</td>
+<td>단일 모델이 RL 전문 모델(π*0.6) 수준, UR5e에 제로샷 이식</td>
+</tr>
+<tr>
+<td>Gemini Robotics / On-Device</td>
+<td>2025-03 / 2025-06</td>
+<td>Gemini 기반 VLA + ER(체화 추론 VLM)</td>
+<td>파트너 한정</td>
+<td>범용성·상호작용·민첩성</td>
+</tr>
+<tr>
+<td>Gemini Robotics 1.5 / ER 1.5</td>
+<td>2025-09</td>
+<td>'생각하고 행동', 체화 간 동작 전이</td>
+<td>ER만 API 공개</td>
+<td>다단계 과업을 ER가 지휘</td>
+</tr>
+<tr>
+<td>Gemini Robotics 2 / ER 2 / On-Device 2</td>
+<td>2026-07</td>
+<td>전신 제어 VLA + 다로봇 협업</td>
+<td>ER 2 공개, VLA는 조기 파트너</td>
+<td>휴머노이드 전신 제어, 새 체화에 200개 미만 예시로 수 시간 적응</td>
+</tr>
+<tr>
+<td>GR00T N1 → N1.5 → N1.6 (NVIDIA)</td>
+<td>2025-03 / 2025-05 / 2025-12</td>
+<td>VLM + 확산 트랜스포머 액션 헤드, N1.6은 Cosmos Reason 계열 백본</td>
+<td>오픈 가중치(비상업)</td>
+<td>휴머노이드 전신 제어, 시뮬-실세계 워크플로</td>
+</tr>
+<tr>
+<td>GR00T N1.7</td>
+<td>2026-04(조기 공개)</td>
+<td>Cosmos-Reason2-2B 백본, 인간 영상 2만 시간(EgoScale) 사전학습</td>
+<td>오픈, 상업 이용 허용</td>
+<td>N1.6과 비슷한 성능, 일반화·지시 따르기 개선, Jetson Thor에서 약
+28Hz</td>
+</tr>
+<tr>
+<td>GR00T 2(NVIDIA)</td>
+<td>2026-11-09</td>
+<td>월드 액션 모델(영상과 행동 청크를 함께 디노이징, DreamZero 계열,
+<a class="xref" href="#s6-8">6.8</a>절). Turbo 2B는 Jetson Thor에서 124ms</td>
+<td>코드 12월 공개 예정(가중치·라이선스 범위 미정)</td>
+<td>처음 보는 50개 과제 무시연 40%, 시연 1개 71%, 5개 95%(자체 실험,
+과제 선정 편향 지적 보도). System 2 에이전트(Astra 등)가 도구로 호출하는
+구조</td>
+</tr>
+<tr>
+<td>Figure Helix → Helix 02</td>
+<td>2025-02 / 2026-01</td>
+<td>S2(추론)·S1(200Hz)·S0(1kHz 전신 제어, 1천만 파라미터)</td>
+<td>비공개</td>
+<td>4분 연속 식기세척기 작업(61개 동작), 물류 분류 40시간 이상 연속
+운영(보도 기준)</td>
+</tr>
+<tr>
+<td>Figure Helix 2.5</td>
+<td>2026-09-17</td>
+<td>Index 인간 행동 데이터로 처음부터 사전학습</td>
+<td>비공개</td>
+<td>처음 보는 가정 30곳 무적응 성공률 9% → 56%(보도 기준)</td>
+</tr>
+<tr>
+<td>Tesla Optimus</td>
+<td>2023–</td>
+<td>영상 입력→제어 출력의 종단 간 신경망(FSD 계열)</td>
+<td>비공개</td>
+<td>공개 벤치마크 없음. 일부 시연은 원격조종 의혹(보도 기준)</td>
+</tr>
+<tr>
+<td>1X Redwood / 1X World Model</td>
+<td>2025-06 / 2026-01</td>
+<td>1.6억 파라미터 온보드 정책 / 영상 월드 모델</td>
+<td>비공개</td>
+<td>가정용 NEO의 자율 작업, 스스로 데이터 수집(회사 주장)</td>
+</tr>
+<tr>
+<td>Generalist GEN-0 → GEN-1</td>
+<td>2025-11 / 2026-04</td>
+<td>감지·행동 토큰을 비동기로 섞는 'Harmonic Reasoning', 10B+</td>
+<td>비공개(조기 접근)</td>
+<td>GEN-0: 실세계 27만 시간, 7B 미만은 학습 정체 / GEN-1: 인간 웨어러블
+50만 시간+, 6개 과제 평균 성공률 64%→99%</td>
+</tr>
+<tr>
+<td>Skild Brain</td>
+<td>2025-07</td>
+<td>체화 무관(omni-bodied) 정책</td>
+<td>비공개</td>
+<td>다리 손상·새 몸체에도 재학습 없이 적응(회사 주장)</td>
+</tr>
+<tr>
+<td>AgiBot GO-1 → GO-2</td>
+<td>2025-03 / 2026-04</td>
+<td>잠재 행동 + 행동 수준 사고연쇄, 비동기 이중 시스템</td>
+<td>GO-1 오픈 / GO-2 비공개</td>
+<td>GO-2: 시뮬 데이터만으로 실세계 82.9%(π0.5 77.5%, 회사 발표)</td>
+</tr>
+<tr>
+<td>Galaxea G0 / WALL-OSS / RDT2</td>
+<td>2025-09 / 2025-09 / 2026-02</td>
+<td>이중 시스템 / 통합 교차 체화 / 7B VLM + UMI 1만 시간</td>
+<td>모두 오픈</td>
+<td>중국계 오픈 VLA의 다변화</td>
+</tr>
+<tr>
+<td>X-VLA</td>
+<td>2025-10</td>
+<td>0.9B, 체화별 소프트 프롬프트</td>
+<td>오픈(LeRobot)</td>
+<td>파라미터 1%(9M)만 조정해 LIBERO 93%, Simpler-WidowX 54%</td>
+</tr>
+<tr>
+<td>SmolVLA (Hugging Face)</td>
+<td>2025-06</td>
+<td>4.5억 파라미터, 커뮤니티 데이터</td>
+<td>오픈</td>
+<td>소비자 GPU에서 학습·구동</td>
+</tr>
+<tr>
+<td>Xiaomi-Robotics-0 → -1</td>
+<td>2026-02 / 2026-07</td>
+<td>UMI 실세계 궤적 10만 시간+ 사전학습</td>
+<td>공개 예정</td>
+<td>RoboCasa365 57.4%(기존 최고 46.6%)</td>
+</tr>
+</tbody>
+</table>
+<p>계보에서 읽히는 점은 세 가지입니다. 첫째, <strong>선두 모델은 다시
+닫히고 있습니다.</strong> π0·π0.5는 공개됐지만 π*0.6·π0.7은 API로만
+팝니다. AgiBot도 GO-1은 열고 GO-2는 닫았습니다. 둘째, 오픈 진영은
+NVIDIA(GR00T N1.7은 상업 이용 허용)와 중국 기업·대학이 받칩니다. 셋째,
+회사가 스스로 낸 실세계 성공률(GEN-1 99%, Helix 02 수십 시간 연속)은
+과제·조건이 회사마다 달라 <strong>서로 비교할 수 없습니다.</strong></p>
+<h4 id="벤치마크-결과-포화된-것과-아직-먼-것">벤치마크 결과: 포화된 것과
+아직 먼 것</h4>
+<table>
+<thead>
+<tr>
+<th>벤치마크</th>
+<th>측정 대상</th>
+<th>최근 최고 수준</th>
+<th>모델·출처·시점</th>
+<th>상태</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LIBERO(4개 스위트 평균)</td>
+<td>시뮬 탁상 조작</td>
+<td>97–99%</td>
+<td>OpenVLA-OFT 97.1%(2025-02), X-VLA 체크포인트 98.1%(저장소), GO-2
+98.5%(회사 발표, 2026-04)</td>
+<td><strong>포화</strong></td>
+</tr>
+<tr>
+<td>SimplerEnv WidowX / Google Robot</td>
+<td>실세계 대응 시뮬</td>
+<td>95.8% / 83.5%(VM)</td>
+<td>X-VLA 미세조정 체크포인트(저장소 기준)</td>
+<td>거의 포화</td>
+</tr>
+<tr>
+<td>CALVIN ABC→D(5개 연속 과업 평균 길이, 최대 5)</td>
+<td>장기 연속 지시</td>
+<td>4.75</td>
+<td>Xiaomi-Robotics-0(2026-02)</td>
+<td><strong>포화 근접</strong></td>
+</tr>
+<tr>
+<td>LIBERO-Plus(7개 섭동)</td>
+<td>카메라·초기자세·조명 등 섭동</td>
+<td>95% → 30% 미만</td>
+<td>최신 VLA 10종(CVPR 2026)</td>
+<td>미포화</td>
+</tr>
+<tr>
+<td>LIBERO-PRO(물체·초기상태·지시·환경 변경)</td>
+<td>암기 여부</td>
+<td>90%+ → 약 0%</td>
+<td>OpenVLA·π0·π0.5(2025-10)</td>
+<td>미포화</td>
+</tr>
+<tr>
+<td>RoboTwin 2.0(50개 양팔 과제)</td>
+<td>양팔 조작, 도메인 무작위화</td>
+<td>쉬움 약 46% / 어려움 약 16%</td>
+<td>π0(TwinVLA 논문 부록, 2025-11, 추출값)</td>
+<td>미포화</td>
+</tr>
+<tr>
+<td>RoboCasa365(50개 과제 평가)</td>
+<td>주방 과제, 미지 복합과제</td>
+<td>전체 57.4%, 미지 복합 32.1%</td>
+<td>Xiaomi-Robotics-1(2026-07). π0 14.8%, π0.5 16.9%</td>
+<td>미포화</td>
+</tr>
+<tr>
+<td>BEHAVIOR-1K 챌린지(100개 가사 과제)</td>
+<td>모바일 조작 장기 과업</td>
+<td>2025: Q 0.26, 완전 성공 12.4% → 2026: 2위 Q 0.615, 완전 성공
+41.2%</td>
+<td>2025 1위 Robot Learning Collective, 2026 2위 IF1001(Cosmos 3
+기반)</td>
+<td>미포화, <strong>가장 빠른 개선</strong></td>
+</tr>
+<tr>
+<td>RoboArena(실세계 분산 쌍대 평가)</td>
+<td>DROID 플랫폼, 평가자가 과제 선택</td>
+<td>24개 정책, 공식 순위 1위 NVIDIA DreamZero, 2위 π0.5-DROID</td>
+<td>2026-11-01 기준(보도 기준)</td>
+<td>상대 순위만 제공</td>
+</tr>
+<tr>
+<td>SafeVLA-Bench</td>
+<td>성공했지만 불안전한 실행</td>
+<td>RoboCasa365 성공 실행의 38–56%가 안전 조항 위반, LIBERO 90%+ 정책도
+전체 실행의 18–28% 불안전</td>
+<td>24개 정책(2026-10)</td>
+<td>미포화</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>포화의 의미</strong>: LIBERO는 2023년에 나온 학습 분포 안쪽
+평가입니다. 97%를 넘긴 모델이 카메라 각도나 로봇 초기 자세만 바뀌어도
+크게 떨어지고(LIBERO-Plus), 물체·배치를 바꾸면 거의 0%가
+됩니다(LIBERO-PRO). LIBERO-Plus는 모델들이 <strong>언어 지시를 사실상
+무시</strong>하는 경향도 보고했습니다. <a class="xref" href="#s6-2">6.2</a>절의 'LIBERO 97.4% 포화'는
+능력의 증거라기보다 벤치마크 수명이 끝났다는 신호로 읽어야 합니다.</li>
+<li><strong>빠르게 오르는 곳</strong>: BEHAVIOR 챌린지의 완전 성공률은
+1년 만에 12.4%에서 41.2%(2위 기준)로 세 배가 됐습니다(대회 규칙 변경
+여부는 확인 필요). RoboCasa365는 반년 사이 최고치가 46.6%에서 57.4%로
+올랐습니다. 다만 학습에 없던 복합 과제는 32.1%입니다.</li>
+<li><strong>실세계 평가</strong>: RoboArena는 대학 7곳의 612회 쌍대
+비교로 시작해(2025-06) 2026년 11월 24개 정책을 순위에 올렸습니다(보도
+기준). 점수는 정책 풀이 바뀌면 크게 흔들려(한 주 만에 244–278점 동시
+상승 후 복귀) 날짜가 다른 점수는 비교할 수 없습니다. NVIDIA RoboLab은
+자사 시뮬 순위가 RoboArena 순위와 강하게 상관된다고 밝혔지만, 리더보드
+제출은 일시 중단 상태입니다.</li>
+<li><strong>회사 자체 실세계 지표</strong>: π*0.6은 실제 가정에서 처음
+보는 빨래 50벌 개기, 공장에서 초콜릿 포장 상자 59개 조립, 하루 종일
+에스프레소 제조를 보고했습니다(회사 블로그). GEN-1은 6개 과제 평균
+99%(사전학습 없이 학습하면 19%), 상자 접기 12.1초(기존 최고 약 34초)를
+주장합니다. Figure는 물류 분류 40시간 이상·약 5만 개 처리를 실시간
+중계했습니다(보도 기준). 모두 <strong>제3자 재현이
+없습니다.</strong></li>
+</ul>
+<h4 id="성능-급성장의-동인">성능 급성장의 동인</h4>
+<ol type="1">
+<li><strong>데이터 규모가 두 자릿수 배로 늘었습니다.</strong> 공개
+데이터는 Open X-Embodiment(2023, 100만+ 궤적·22개 로봇), DROID(2024,
+7.6만 궤적·350시간), AgiBot World(2025, 100만+ 궤적) 수준이었습니다.
+2026년에는 기업 데이터가 이를 크게 넘었습니다. Generalist는 실세계 27만
+시간(2025-11, 주당 1만 시간 추가)에서 인간 웨어러블 50만
+시간+(2026-04)로, Xiaomi는 UMI 10만 시간+(2026-07), NVIDIA는 인간 영상
+2만 시간(N1.7)을 썼습니다. <strong>데이터의 주력이 원격조종에서 인간
+웨어러블·영상으로 옮겨 가고 있습니다.</strong> 원격조종은 사람 시간에
+비례해 선형으로만 늘기 때문입니다.</li>
+<li><strong>로봇 스케일링 법칙의 첫 증거</strong>: GEN-0은 사후학습
+오차가 사전학습 데이터 크기에 대해 거듭제곱 법칙을 따르고, 7B 미만
+모델은 데이터를 더 넣어도 흡수하지 못한다고 보고했습니다.
+Xiaomi-Robotics-1도 데이터·모델 크기에 따라 성능이 오른다고 밝혔습니다.
+언어 모델(4장)의 스케일링이 로봇에서도 재현되기 시작했다는 뜻이지만,
+아직 회사 자체 보고입니다.</li>
+<li><strong>강화학습 후학습</strong>: π*0.6의 Recap은 시연·자율
+실행·사람 개입 데이터를 함께 써서 처리량을 두 배로 올렸습니다. PI의 RL
+토큰(2026-03)은 수 시간, 때로는 수 분의 로봇 데이터로 나사 체결·커넥터
+삽입 같은 정밀 과제를 온라인 RL로 개선합니다. 언어 모델에서 RLHF·RLVR이
+한 역할을 로봇에서 실세계 RL이 맡기 시작했습니다.</li>
+<li><strong>교차 체화</strong>: 같은 체크포인트가 다른 로봇을
+제어합니다. Gemini Robotics 2는 세 체화를 한 모델로 다루고 새 양팔
+로봇에 200개 미만 예시로 적응합니다. π0.7은 UR5e에 제로샷으로
+이식됐습니다. X-VLA는 체화별 소프트 프롬프트로 같은 효과를
+노립니다.</li>
+<li><strong>추론·계획의 분리</strong>: ER·System 2 모델이 과업을 쪼개고
+VLA가 실행하는 구조가 표준이 됐습니다(Gemini Robotics ER, Helix S2, GO-2
+행동 사고연쇄). PI의 MEM(2026-03)은 장·단기 기억으로 10분이 넘는 과업을
+다룹니다.</li>
+</ol>
+<h4 id="한계">한계</h4>
+<ul>
+<li><strong>분포 밖 일반화</strong>: 섭동 벤치마크의 급락(95%→30% 미만,
+90%+→약 0%)은 현재 VLA가 상당 부분 학습 장면을 외운다는 증거입니다.
+π0.7의 '조합적 일반화'도 언론 분석은 "언어 모델 같은 일반화와 그
+결함까지 함께 보여준다"고 평가했습니다(보도 기준).</li>
+<li><strong>안전</strong>: 성공률은 중간 과정을 보지 않습니다.
+SafeVLA-Bench에서 RoboCasa365의 성공 실행 중 38–56%가 접촉력·주변 물체
+이동·파지 안정성 같은 안전 조항을 어겼고, 어떤 과제는 모든 정책의 모든
+성공 실행이 위반이었습니다. <a class="xref" href="#s6-2">6.2</a>절의 '성공 실행의 24–26% 불안전'(GR00T
+계열)과 같은 방향이지만 지표 정의가 다릅니다.</li>
+<li><strong>장기 과업</strong>: BEHAVIOR 100개 가사 과제의 완전 성공률은
+최고 수준도 40%대이고, 미지 복합 주방 과제는 32%입니다. 실세계 장기
+과업은 회사 시연(4분, 10분+)이 대부분입니다.</li>
+<li><strong>표준화된 실세계 평가 부재</strong>: 회사마다 과제·로봇·성공
+정의가 달라 '99%'와 '40시간'을 비교할 수 없습니다. RoboArena는 DROID
+플랫폼 한 종류이고, 폐쇄 선두 모델(Gemini Robotics, Helix, GEN-1)은
+제3자 공개 평가에 거의 나오지 않습니다.</li>
+<li><strong>안전 표준의 지연</strong>: 동적 안정성을 가진 이동
+로봇(휴머노이드 포함) 안전 표준 ISO 25785-1은 아직 위원회 초안(CD)
+단계입니다. IEEE 휴머노이드 연구그룹(2025-09)은 ASTM이 시험 방법, IEEE가
+성능 지표를 맡는 분업을 제안했지만, <strong>로봇 FM(VLA) 자체의 평가
+표준 작업은 확인하지 못했습니다.</strong></li>
+</ul>
+<h4 id="2027-전망">2027 전망</h4>
+<table>
+<thead>
+<tr>
+<th>2027 전망</th>
+<th>가능성 · 확률(±불확도)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>선도 랩의 플래그십 VLA 발표 과반이 LIBERO 표준 점수 대신
+섭동·장기·실세계 지표(LIBERO-Plus/PRO, RoboCasa365, BEHAVIOR, RoboArena
+등)를 주 성적으로 제시</td>
+<td>높음 · 70% (±15) · 근거 <a
+href="https://arxiv.org/abs/2510.13626">LIBERO-Plus</a>, <a
+href="https://arxiv.org/abs/2510.03827">LIBERO-PRO</a>, <a
+href="https://arxiv.org/abs/2607.15330">Xiaomi</a></td>
+</tr>
+<tr>
+<td>실세계 강화학습 후학습이 선도 로봇 FM(PI·Google·NVIDIA·Generalist 중
+2곳 이상) 발표의 표준 단계로 명시</td>
+<td>높음 · 75% (±15) · 근거 <a
+href="https://arxiv.org/abs/2511.14759">Physical Intelligence</a>, <a
+href="https://www.pi.website/research/rlt">Physical
+Intelligence</a></td>
+</tr>
+<tr>
+<td>사전학습 데이터 100만 시간 이상(인간 웨어러블·UMI 포함)을 공개적으로
+밝히는 로봇 FM 개발사가 1곳 이상</td>
+<td>높음 · 80% (±10) · 근거 <a
+href="https://generalistai.com/blog/gen-1">Generalist</a>, <a
+href="https://generalistai.com/blog/gen-0">Generalist</a>, <a
+href="https://arxiv.org/abs/2607.15330">Xiaomi</a></td>
+</tr>
+<tr>
+<td>BEHAVIOR 챌린지(또는 후속 대회) 1위의 100개 과제 완전 성공률이 60%
+이상</td>
+<td>중간 · 50% (±20) · 근거 <a
+href="https://behavior.stanford.edu/challenge/archive/2025/leaderboard.html">Stanford
+BEHAVIOR</a>, <a href="https://arxiv.org/abs/2611.13818">IF1001</a> ·
+반론 <a href="https://arxiv.org/abs/2606.00773">SafeVLA-Bench</a></td>
+</tr>
+<tr>
+<td>RoboArena류 제3자 실세계 평가의 공식 순위 정책이 50개 이상이 되거나,
+다른 플랫폼(휴머노이드·모바일 조작)용 실세계 아레나가 새로 운영</td>
+<td>중간 · 55% (±20) · 근거 <a
+href="https://arxiv.org/abs/2506.18123">RoboArena</a>, <a
+href="https://research.nvidia.com/labs/srl/projects/robolab">NVIDIA
+RoboLab</a></td>
+</tr>
+<tr>
+<td>주요 로봇 평가 리더보드 1곳 이상이 안전 위반률을 성공률과 나란히
+공식 지표로 채택</td>
+<td>중간 · 45% (±20) · 근거 <a
+href="https://arxiv.org/abs/2606.00773">SafeVLA-Bench</a>, <a
+href="https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/">Google
+DeepMind</a></td>
+</tr>
+<tr>
+<td>ISO 25785-1(동적 안정 이동 로봇 안전)이 국제표준안(DIS) 이상 단계로
+진입</td>
+<td>중간 · 45% (±20) · 근거 <a
+href="https://www.iso.org/standard/91469.html">ISO</a>, <a
+href="https://www.therobotreport.com/ieee-study-group-publishes-framework-for-humanoid-standards/">IEEE
+(보도: The Robot Report)</a></td>
+</tr>
+<tr>
+<td>폐쇄 선두 모델(Gemini Robotics·Helix·GEN 계열·π0.7 이후 PI 모델) 중
+2개 이상이 같은 제3자 실세계 평가에 점수를 공개</td>
+<td>낮음 · 25% (±15) · 추정</td>
+</tr>
+<tr>
+<td>범용 VLA가 처음 보는 가정에서 10분 이상 다단계 과업을 80% 이상
+성공했다는 제3자 검증 결과가 나옴</td>
+<td>낮음 · 20% (±15) · 근거 <a
+href="https://arxiv.org/abs/2604.15483">Physical Intelligence</a> · 반론
+<a href="https://arxiv.org/abs/2510.03827">LIBERO-PRO</a>, <a
+href="https://behavior.stanford.edu/challenge/archive/2025/leaderboard.html">Stanford
+BEHAVIOR</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>2027년에 지켜볼 지표</strong></p>
+<ol type="1">
+<li><strong>BEHAVIOR 완전 성공률</strong>: 2025년 12.4% → 2026년
+41.2%(2위). 60%를 넘으면 장기 가사 과업이 시뮬에서 '풀리는 문제'가
+됩니다.</li>
+<li><strong>섭동 하락 폭</strong>: LIBERO-Plus/PRO에서 표준 대비 섭동
+성능 비율. 지금은 1/3 이하입니다. 1/2을 넘으면 일반화가 실제로 개선된
+신호입니다.</li>
+<li><strong>미지 복합 과제 성공률</strong>: RoboCasa365 Composite-Unseen
+32.1%(2026-07)가 50%를 넘는지.</li>
+<li><strong>'성공했지만 불안전' 비율</strong>: SafeVLA-Bench의
+RoboCasa365 성공 실행 중 위반률 38–56%가 20%대로 내려가는지.</li>
+<li><strong>공개 데이터 시간과 제3자 평가 참여</strong>: 개발사가 밝힌
+사전학습 시간(현재 최대 50만 시간+)과 RoboArena 등 공개 평가에 올라온
+폐쇄 모델 수.</li>
+</ol>
+<p><strong>한국 시사점</strong>: 국내 모델(RLWRLD RLDX-1)도 RoboCasa365
+계열 평가와 SafeVLA-Bench에 이름을 올리고 있습니다. 2027 피지컬 AI
+사업(<a class="xref" href="#s6-4">6.4</a>절)의 성과지표는 포화된 LIBERO 점수가 아니라 섭동·미지 과제·안전
+위반률·제3자 실세계 평가로 정하는 것이 맞고, 한국어 지시·국내 현장
+과제를 담은 공개 섭동 벤치마크를 만들면 <a class="xref" href="#s6-14">6.14</a>절의 '데이터·평가 표준
+선점'을 바로 실행할 수 있습니다.</p>
+<blockquote>
+<p><strong>확인 필요</strong>: RoboArena 2026-11-01 순위(DreamZero
+1위·π0.5-DROID 2위, 24개 정책)는 위키 정리본 기준이며 공식 리더보드를
+직접 열지 못했습니다. Figure 40시간·5만 개, Tesla 원격조종 의혹, π0.7
+'5B' 규모, GO-2 82.9%·98.5%는 보도·회사 발표 기준입니다. RoboTwin 2.0 π0
+수치(약 46%/16%)는 타 논문 부록에서 추출한 값입니다. X-VLA SimplerEnv
+95.8%·83.5%와 LIBERO 98.1%는 저장소 체크포인트 값이며 논문 본문
+수치(LIBERO 93%, WidowX 54%)와 설정이 다릅니다. CALVIN 4.75는
+Xiaomi-Robotics-0 초록 문장 해석에 따른 값입니다. BEHAVIOR 2026 1위
+점수와 2025–2026 대회 규칙 차이는 확인하지 못했습니다. <a class="xref" href="#s6-4">6.4</a>절의 RLDX-1
+'RoboCasa 70.6%'는 RoboCasa365 50개 과제 평가(최고 57.4%)와 다른 분할로
+보입니다. 계보 표의 2023–2025 모델 발표 시점과 OXE·DROID·AgiBot World
+규모는 각 원 논문(arXiv) 기준이며 이번 작업에서 다시 열람하지
+않았습니다.</p>
+</blockquote>
+<h3 id="s6-8">6.8 월드 모델·체화 추론과 2027 피지컬 AI 전망</h3>
+<blockquote>
+<p>자료: Physics-IQ 공식 리더보드(Google DeepMind GitHub, 2026-10-12
+항목까지), IntPhys 2(Meta FAIR), WorldArena(칭화대 외, 2026-02),
+DreamZero(2026-02), V-JEPA 2·2.1(Meta), Gemini Robotics-ER 2(Google,
+2026-07-30), EASI·MMSI-Bench·Embodied First Exam(arXiv), IDC 휴머노이드
+상반기 추적(2026-09-29), Goldman Sachs·Morgan Stanley(보도),
+Dealroom(2026-10-06), BMW 보도자료(2026-06-25),
+과기정통부·재정경제부·기획예산처 2027 정부안(보도). VLA·조작
+벤치마크(LIBERO·SimplerEnv·RoboArena 등)는 바로 앞 절에서 다룹니다.</p>
+</blockquote>
+<p><strong>한 줄 요약</strong>: 2026년 월드 모델은 '영상 생성기'에서
+로봇의 <strong>연습장·시험장</strong>으로 쓰임새가 바뀌었습니다. 그러나
+물리 이해 벤치마크에서 최고 모델은 사람 기준의 절반에서 3분의 2
+수준이고, 공간·체화 추론에서도 사람과 20–60%p 차이가 납니다. 2027년에는
+월드 모델이 정책 평가와 합성 데이터의 표준 도구가 되겠지만, 실제 로봇
+평가를 대신하지는 못합니다. 휴머노이드 출하는 10만 대 안팎으로 늘지만,
+돈을 받고 일하는 '생산적 배치'는 그보다 훨씬 적습니다.</p>
+<h4 id="월드-모델-무엇이-나왔고-로봇-학습에-어떻게-쓰이나">월드 모델:
+무엇이 나왔고 로봇 학습에 어떻게 쓰이나</h4>
+<table>
+<thead>
+<tr>
+<th>모델(개발사)</th>
+<th>2026년 상태</th>
+<th>로봇·자율주행에서의 쓰임</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Genie 3 → Genie 4(Google DeepMind)</td>
+<td>Genie 3은 2026-01-29 Project Genie로 AI Ultra 구독자에게 공개. Genie
+4는 2026-10-27 연구 프리뷰. 오디오 동시 생성, 실행 중 장면 수정, 최대 약
+2분 일관성(보도 기준)</td>
+<td>Gemini가 '감독'으로 단계를 계획하고 Genie 4가 화면을 만드는 구조.
+Apptronik Apollo가 체커를 두는 시뮬레이션을 시연했지만 정량 결과는 없음.
+Waymo World Model이 Genie 3 기반(보도 기준)</td>
+</tr>
+<tr>
+<td>Gemini 4 Argon + MuJoCo(Google)</td>
+<td>사진·영상에서 물리 시뮬레이션을 생성</td>
+<td>탁상 사진 1장으로 연습 에피소드 4,500개 이상을 만들고, 이것으로
+미세조정한 정책의 실제 성공률이 56%에서 75%로 올랐다고 보도(The Batch,
+2026-11-06)</td>
+</tr>
+<tr>
+<td>Cosmos 3(NVIDIA)</td>
+<td>오픈 가중치(<a class="xref" href="#s6-2">6.2</a>절). Physics-IQ 상위권</td>
+<td>합성 데이터(Transfer), 추론(Reason), 예측(Predict)을 한 모델로 통합.
+GR00T-Dreams 파이프라인의 기반</td>
+</tr>
+<tr>
+<td>DreamZero → GR00T 2(NVIDIA)</td>
+<td>DreamZero는 140억 파라미터 '월드 액션 모델'(영상 확산 모델 위에 행동
+출력). GR00T 2로 제품화해 2026-11-09 발표(<a class="xref" href="#s6-7">6.7</a>절 계보 표). 경량판 GR00T 2
+Turbo는 20억 파라미터. 코드 12월 공개 예정</td>
+<td>처음 보는 동작·동사 일반화가 기존 VLA의 2배 이상, 새 로봇에 30분
+데이터로 적응(저자 실험)</td>
+</tr>
+<tr>
+<td>V-JEPA 2-AC → 2.1(Meta)</td>
+<td>픽셀을 생성하지 않는 잠재 예측 모델</td>
+<td>62시간 미만의 로봇 영상으로 사후 학습해 새 환경 집기·놓기
+65–80%(2025-06). 2.1은 잡기 성공률을 20%p 더 높였다고 보고(2026-03)</td>
+</tr>
+<tr>
+<td>1X World Model(1X)</td>
+<td>영상 월드 모델 + 역동역학 모델을 NEO 정책으로 사용</td>
+<td>정책 순위를 실제 시험 전에 예측하는 '평가기'로 사용. 상관이 높다는
+것은 회사 주장</td>
+</tr>
+<tr>
+<td>GAIA-3(Wayve)</td>
+<td>150억 파라미터(GAIA-2의 약 2배)</td>
+<td>운전 AI 검증용. 안전 위협 시나리오 생성, 차량 간 시험 이전. 합성
+시험 기각률 5분의 1(회사 발표)</td>
+</tr>
+<tr>
+<td>Marble(World Labs)</td>
+<td>첫 상용 제품, 텍스트·이미지·영상으로 탐색 가능한 3D 환경 생성</td>
+<td>렌더러 단계. 로봇 활용 사례는 확인하지 못함</td>
+</tr>
+</tbody>
+</table>
+<p><strong>세 가지 쓰임새와 그 한계(WorldArena, 14개 모델·RoboTwin 2.0
+양팔 과제)</strong></p>
+<ul>
+<li><strong>합성 데이터 엔진</strong>: 가장 성숙합니다. 실제 데이터로
+학습한 π0.5가 두 과제에서 77%·66%일 때, 최고 월드 모델 데이터는
+45%·71%였습니다. 실제 데이터를 넘어선 경우는 일부 과제뿐입니다.</li>
+<li><strong>정책 평가기</strong>: 일부 모델(CtrlWorld)은 시뮬레이터
+결과와 강하게 상관했지만, Cosmos-Predict 2.5는 약했습니다. 모델마다
+편차가 큽니다.</li>
+<li><strong>직접 계획기</strong>: 가장 약합니다. 월드 모델을 바로 행동
+계획에 쓰면 최고 20–21%로, π0.5에 크게 못 미쳤습니다.</li>
+<li><strong>화질과 쓸모는 다릅니다</strong>: Veo 3.1·Wan 2.6이 화질·사람
+선호에서 1위였지만 체화 지표는 크게 낫지 않았습니다. 종합 점수는 사람
+판단과 r=0.825로 맞지만 행동 계획 성능과는 r=0.360에 그칩니다.</li>
+</ul>
+<h4 id="월드-모델물리-이해-벤치마크-사람-대비-격차">월드 모델·물리 이해
+벤치마크: 사람 대비 격차</h4>
+<table>
+<thead>
+<tr>
+<th>벤치마크</th>
+<th>무엇을 재나</th>
+<th>최고 모델(2026)</th>
+<th>사람·상한</th>
+<th>격차</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Physics-IQ Verified(영상→영상)</td>
+<td>고체·유체·광학 등 실제 촬영과 물리 일치도</td>
+<td>66.1%(Odyssey-3 Pro, 8개 중 선택), 단일 생성 63.4%</td>
+<td>100%(실제 영상 간 물리적 무작위성)</td>
+<td>약 34%p</td>
+</tr>
+<tr>
+<td>Physics-IQ Verified(이미지→영상)</td>
+<td>같은 과제, 첫 장면만 제공</td>
+<td>55.1%(Cosmos3-Super, 8개 중 선택). Veo 3.1 Fast 30.0%, Sora 2
+26.5%</td>
+<td>100%</td>
+<td>약 45%p</td>
+</tr>
+<tr>
+<td>Physics-IQ 원판</td>
+<td>2025-02 첫 공개 때 최고 29.5%(VideoPoet)</td>
+<td>64.5%(Magi-1 + GeoPhys)</td>
+<td>100%</td>
+<td>1년 반에 2배 이상 개선</td>
+</tr>
+<tr>
+<td>IntPhys 2(Meta, 2025-06)</td>
+<td>물체 영속성·불변성·연속성·고체성 위반 탐지</td>
+<td>57.5%(V-JEPA 2), Gemini 2.5 Flash 55.6%, GPT-4o 53.8%</td>
+<td>사람 96.4%, 우연 50%</td>
+<td>약 39%p, 우연 수준에 가까움</td>
+</tr>
+<tr>
+<td>WorldArena(2026-02)</td>
+<td>월드 모델의 데이터·평가·계획 쓸모</td>
+<td>계획기 성공률 20–21%</td>
+<td>π0.5 정책 기준선이 훨씬 높음</td>
+<td>'화질-기능 격차'</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>읽는 법</strong>: Physics-IQ 상위권은 대부분 여러 개를
+생성해 고르는 방식(best-of-N)과 프롬프트 보정의 결과입니다. 같은
+모델이라도 단일 생성은 3–6%p 낮습니다. 상위 10개 중 9개가 2026년 10월에
+등록됐을 만큼 빠르게 오르고 있지만, 영상→영상 모드에서도 상한의 3분의 2
+수준입니다.</li>
+<li><strong>폐쇄형 영상 모델이 물리에 강한 것은 아닙니다</strong>: Veo
+3.1·Sora 2 같은 대중 영상 모델은 이미지→영상 30% 안팎으로, 물리 특화
+학습을 한 Cosmos 3·Odyssey-3보다 낮습니다.</li>
+</ul>
+<h4 id="체화-추론llm-기반-계획-벤치마크-프런티어-모델-대-사람">체화
+추론·LLM 기반 계획 벤치마크: 프런티어 모델 대 사람</h4>
+<table>
+<thead>
+<tr>
+<th>벤치마크</th>
+<th>무엇을 재나</th>
+<th>프런티어 모델</th>
+<th>사람</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ERQA(Google, 2025)</td>
+<td>로봇 시점 공간·궤적·행동 추론 객관식</td>
+<td>2026 상반기까지 최신 모델 대부분 40–50%대에 몰림(ERQA-Plus 분석).
+하반기 Gemini 4 Argon 87.0(<a class="xref" href="#s6-9">6.9</a>절)</td>
+<td>공개 기준선 없음</td>
+<td>변별력이 떨어져 2026-06 ERQA-Plus가 나옴(최고 Qwen3-VL-32B
+83.4%)</td>
+</tr>
+<tr>
+<td>Gemini Robotics-ER 2(2026-07-30)</td>
+<td>성공 판정·진행도·계기 판독·ERQA</td>
+<td>진행도 분류 57.4%, 순간 찾기 91.3%</td>
+<td>미공개</td>
+<td>ERQA 등 수치는 그림으로만 제시. Gemini API로 일반 공개</td>
+</tr>
+<tr>
+<td>VSI-Bench(NYU, EASI 집계)</td>
+<td>영상 기반 공간 지능(거리·크기·경로)</td>
+<td>GPT-5 55.0, Gemini 2.5 Pro 53.6(2025 하반기)</td>
+<td>79.2</td>
+<td>약 24점. 거리 측정·공간 관계는 사람 수준 도달</td>
+</tr>
+<tr>
+<td>MMSI-Bench(ICLR 2026)</td>
+<td>여러 이미지 간 공간 추론</td>
+<td>GPT-5 약 40%, 최고 오픈 모델 약 30%</td>
+<td>97%</td>
+<td>공간 지능 벤치마크 중 가장 큰 격차(저자)</td>
+</tr>
+<tr>
+<td>Embodied First Exam(2026-11)</td>
+<td>코딩 에이전트가 47종 로봇을 제어하는 1,156개 과제</td>
+<td>최고 34%(GPT-6 Astra in Codex, 8개 에이전트 중)</td>
+<td>미보고</td>
+<td>LLM이 '코드로 로봇을 부리는' 능력의 첫 종합 평가</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>패턴</strong>: 측정·인식처럼 정답이 분명한 하위 과제는 사람
+수준에 왔습니다. 관점 전환, 여러 시점 통합, 장기 계획, 물리적 결과
+예측은 여전히 크게 뒤집니다. <a class="xref" href="#s6-2">6.2</a>절의 '장기 과업 15–65%'와 같은
+그림입니다.</li>
+<li><strong>벤치마크 수명이 짧습니다</strong>: ERQA처럼 1년 안에
+변별력을 잃는 경우가 많아, 2027년에는 공개 객관식보다 실로봇·월드 모델
+안에서 행동 결과로 재는 평가로 무게가 옮겨갑니다.</li>
+</ul>
+<h4 id="2027-피지컬-ai-산업-전망">2027 피지컬 AI 산업 전망</h4>
+<p><strong>출하·가격</strong>(<a class="xref" href="#s6-6">6.6</a>절의 Gartner 성숙도와 2026년 상반기
+수치를 전제로 합니다)</p>
+<ul>
+<li><strong>IDC(2026-09-29)</strong>: 2026년 상반기 세계 출하 약 2.5만
+대(+432%), 금액 7.4억 달러 이상. 단순 계산한 평균 가격은 약 3만
+달러입니다. 연구·교육, 공연·전시, 정부 데이터 수집센터 비중이 2025년
+83.8%에서 69%로 줄었습니다. 중국 업체 비중은 95% 이상이고, 2030년 전망은
+75만 대 이상으로 50% 올렸습니다.</li>
+<li><strong>업체</strong>: AgiBot이 상반기 8,600대 이상(약 35%, 회사가
+인용한 IDC 수치)이고, Counterpoint는 9,700대(43.1%)로 봅니다. Unitree는
+2025년 5,500대 이상을 출하했고, 2026-08-19 상하이 커촹반에 610억 위안(약
+90억 달러) 가치로 상장했습니다. UBTech는 2026 상반기 매출이 12.7억
+위안(+104%)이고 대형 휴머노이드가 최대 매출원이 됐습니다(보도
+기준).</li>
+<li><strong>투자기관 전망(보도 기준)</strong>: Goldman Sachs는 2026-09
+보고서에서 2026년 출하 전망을 5.1만에서 7.5만 대로, 2030년을 25.6만에서
+89만 대로, 2035년을 140만에서 650만 대로 올렸습니다. 업계 평균 가격은
+2026–2035년 연 약 6%씩 내린다고 봅니다(2026-11-26 Unitree 분석). Morgan
+Stanley는 중국 2026년 출하 전망을 5만 대로 올렸고, 2026-11-27 보고서에서
+2027년을 '일부 과업의 소규모 상용 배치' 해로 보며 재구매·생산적 가동
+시간·사람 대비 효율을 핵심 지표로 꼽았습니다.</li>
+<li><strong>2027 범위(분석가 추정)</strong>: 2026년 연간 5만–7.5만
+대에서 60–100% 늘면 2027년 **8만–15만 대(기준 11만 대)**입니다. 아래
+시나리오 확률을 합하면 10만 대 이상은 약 65%입니다(가속 20% + 기준 60%
+중 10만 대 이상 구간 약 3/4인 45%). 평균 가격은 2.5만–3만 달러로
+봅니다.</li>
+</ul>
+<p><strong>상용 배치 사례</strong></p>
+<ul>
+<li><strong>Figure–BMW</strong>: Figure 02가 스파턴버그 차체 공장에서
+10개월간 X3 3만 대 이상 생산에 참여했고, 2026-06-25부터 Figure 03이 BMW
+최초로 물류 서열 작업에 투입됐습니다. 대수와 계약 조건은 공개하지
+않았습니다.</li>
+<li><strong>Agility–GXO</strong>: Digit이 RaaS로 상용 운영 중이며 누적
+10만 개 이상의 토트를 옮겼습니다(보도 기준). 2026-06 SPAC 합병을
+발표했고, Digit 5 조기 공급은 2027 상반기입니다.</li>
+<li><strong>Apptronik</strong>: Apollo 2(2026-06-30)는 시범·데이터
+수집용이며 Mercedes-Benz·GXO·Jabil과 시범 중입니다. 공개된 성과 지표는
+없습니다.</li>
+<li><strong>Tesla Optimus</strong>: 2026년 3분기에 프리몬트에서 '초기
+생산'을 시작했고 증산은 느리다고 밝혔습니다. 외부 인도는 2027년 말 무렵,
+텍사스 2공장은 2027년 여름 가동 목표입니다(보도 기준).</li>
+<li><strong>1X NEO(가정용)</strong>: 2만 달러 또는 월 499달러. 첫해
+생산능력 1만 대가 사전 주문으로 다 팔렸다고 밝혔고, 2026-04 헤이워드
+공장을 열었습니다. 2026-11 하순까지 고객 인도는 확인하지
+못했습니다.</li>
+<li><strong>중국</strong>: 공업정보화부·국자위가 2026년 말까지
+휴머노이드 1만 대 상용 투입과 100개 이상 고가치 응용 시나리오를 목표로
+제시했고(보도 기준), 2026-03 휴머노이드·체화 지능 국가 표준 체계를
+냈습니다. UBTech는 2026년 산업용 약 4,000대와 가정용 1,500–2,000대
+인도를 목표로 합니다(Morgan Stanley 인용 보도).</li>
+</ul>
+<p><strong>투자</strong>: Dealroom 집계로 2026년 휴머노이드 스타트업 VC
+투자는 10월 초까지 110억 달러로, 2025년 연간 기록의 2배를 넘었습니다.
+중국이 약 3분의 2, 미국은 12%입니다. 중국 체화 AI 기업은 2026년
+1분기에만 29억 달러를 조달했습니다(보도 기준).</p>
+<h4 id="2027-전망-1">2027 전망</h4>
+<table>
+<thead>
+<tr>
+<th>2027 전망</th>
+<th>가능성 · 확률(±불확도)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>선도 로봇 FM·자율주행 개발사 3곳 이상이 월드 모델 기반 정책 평가
+결과를 공식 기술보고서·모델 카드에 사용(실로봇 평가는 병행)</td>
+<td>높음 · 70% (±15) · 근거 <a
+href="https://arxiv.org/abs/2602.08971">WorldArena</a>, <a
+href="https://www.automotiveworld.com/news/wayve-unveils-gaia-3-for-autonomous-driving-tests/">Wayve</a>,
+<a href="https://www.1x.tech/discover/1x-world-model">1X</a> · 반론 <a
+href="https://arxiv.org/abs/2602.08971">WorldArena</a></td>
+</tr>
+<tr>
+<td>Physics-IQ Verified(영상→영상) 최고점이 2027년 말 80% 이상</td>
+<td>중간 · 35% (±20) · 근거 <a
+href="https://github.com/google-deepmind/physics-IQ-benchmark">Physics-IQ</a>
+· 추정</td>
+</tr>
+<tr>
+<td>IntPhys 2류 직관 물리 과제에서 최고 모델이 85% 이상(사람 96%)</td>
+<td>낮음 · 25% (±15) · 근거 <a
+href="https://arxiv.org/abs/2506.09849">Meta FAIR</a></td>
+</tr>
+<tr>
+<td>VSI-Bench에서 최고 모델이 사람 기준(79.2)에 도달. 단 MMSI-Bench류
+다시점 추론은 사람(97%)과 30%p 이상 격차 유지</td>
+<td>중간 · 45% (±20) · 근거 <a
+href="https://arxiv.org/abs/2508.13142">EASI</a>, <a
+href="https://arxiv.org/abs/2505.23764">MMSI-Bench</a></td>
+</tr>
+<tr>
+<td>세계 휴머노이드 출하가 2027년 10만 대 이상(IDC 또는 Omdia 집계)</td>
+<td>중간 · 65% (±15) · 근거 <a
+href="https://www.idc.com/?p=121156">IDC</a>, <a
+href="https://humanoid.guide/goldman-raises-2035-humanoid-robot-forecast-to-6-5-million/">Goldman
+Sachs(보도)</a> · 반론 <a
+href="https://www.tribuneindia.com/news/business/chinas-humanoid-robot-investment-set-to-accelerate-selective-commercial-use-expected-in-2027-morgan-stanley">Morgan
+Stanley(보도)</a></td>
+</tr>
+<tr>
+<td>2027년 세계 휴머노이드 평균 판매가격이 3만 달러 미만(출하 금액 ÷
+대수)</td>
+<td>높음 · 70% (±15) · 근거 <a
+href="https://www.idc.com/?p=121156">IDC</a>, <a
+href="https://www.techflowpost.com/en-US/article/35745/347-1">Goldman
+Sachs(보도)</a></td>
+</tr>
+<tr>
+<td>한 고객 현장에서 휴머노이드 100대 이상이 시범이 아닌 상업 계약으로
+상시 투입된 사례 공개</td>
+<td>중간 · 60% (±20) · 근거 <a
+href="https://www.caixinglobal.com/2026-06-10/china-targets-10000-humanoid-robots-in-commercial-use-by-end-2026-102452656.html">Caixin</a>,
+<a
+href="https://www.press.bmwgroup.com/global/article/detail/T0458778EN">BMW
+Group</a> · 반론 <a
+href="https://www.tribuneindia.com/news/business/chinas-humanoid-robot-investment-set-to-accelerate-selective-commercial-use-expected-in-2027-morgan-stanley">Morgan
+Stanley(보도)</a></td>
+</tr>
+<tr>
+<td>가사용 범용 휴머노이드(1X NEO 등, 연구·교육·전시용 제외)의 유료 가정
+인도가 누적 1만 대 이상</td>
+<td>낮음 · 30% (±20) · 근거 <a
+href="https://www.globenewswire.com/news-release/2026/04/30/3285118/0/en/1X-Opens-NEO-Factory.html">1X</a></td>
+</tr>
+<tr>
+<td>Tesla Optimus가 외부 고객에게 유료 인도 시작</td>
+<td>낮음 · 25% (±15) · 근거 <a
+href="https://techcrunch.com/2026/10/21/tesla-stars-optimus-robot-production-in-california-as-profit-falls-43/">TechCrunch</a></td>
+</tr>
+<tr>
+<td><strong>정부가 국산 휴머노이드 250대 구매(대학·출연연 보급)를 2027년
+안에 발주</strong></td>
+<td>중간 · 55% (±20) · 근거 <a
+href="https://www.koreatimes.co.kr/business/tech-science/20260827/korea-to-spend-166-bil-won-through-2030-on-full-stack-humanoid-development">The
+Korea Times</a></td>
+</tr>
+</tbody>
+</table>
+<p><a class="xref" href="#s6-6">6.6</a>절과의 관계: 출하 10만 대 이상 65%는 <a class="xref" href="#s6-1">6.1</a>·<a class="xref" href="#s6-6">6.6</a>절 표와 같은 값이며,
+아래 시나리오 확률의 합에서 나옵니다. '배치의 대부분이 구조화된 반복
+작업·시연·연구용'(85%)과도 모순되지 않습니다. 100대 이상 상업 투입
+사례가 나오더라도 전체 출하에서 차지하는 비중은 작다고 봅니다.</p>
+<h4 id="2027-시나리오와-선행-신호">2027 시나리오와 선행 신호</h4>
+<ul>
+<li><strong>가속</strong>(20%): 월드 모델 안에서 학습한 정책이 실제 현장
+성공률을 10%p 이상 올리는 사례가 여러 곳에서 재현되고, 휴머노이드 출하가
+15만 대를 넘습니다. Tesla·Figure가 외부 고객 인도를 시작합니다.</li>
+<li><strong>기준</strong>(60%): 월드 모델은 합성 데이터·정책 순위 매기기
+도구로 표준화되고, 출하는 9만–13만 대입니다. 생산적 배치는 자동차·전자
+공장 물류와 중국 국유기업 현장에 몰립니다.</li>
+<li><strong>조정</strong>(20%): 중국 정책 목표(1만 대 상용 투입)가
+'전시용 구매'였다는 평가가 나오고, 2026년 IPO 붐 뒤 가치 조정이 옵니다.
+출하는 8만 대 아래에 머뭅니다.</li>
+</ul>
+<p><strong>선행 신호</strong></p>
+<ol type="1">
+<li><strong>재구매 공시</strong>: UBTech·AgiBot·Agility의 같은 고객
+재주문과 로봇당 가동 시간 공개(Morgan Stanley가 꼽은 지표).</li>
+<li><strong>월드 모델-실로봇 상관 수치</strong>: Google·NVIDIA·1X가 월드
+모델 평가와 실제 성공률의 상관계수를 공개하는지.</li>
+<li><strong>Physics-IQ·IntPhys 2 최고점</strong>: 영상→영상 70%를
+넘는지, 직관 물리가 우연 수준을 벗어나는지.</li>
+<li><strong>가정용 인도 대수</strong>: 1X NEO의 첫 고객 인도와
+반품·원격조작 비율.</li>
+<li><strong>IDC 2027 상반기 집계</strong>(2027-09 전후): 연구·교육·전시
+비중이 50% 아래로 내려가는지.</li>
+</ol>
+<h4 id="한국-시사점">한국 시사점</h4>
+<ul>
+<li><p><strong>예산(2027 정부안, 국회 심의 전·보도 기준)</strong>:
+과기정통부 피지컬 AI 예산은 2026년 9,000억 원에서 2027년 3.1조 원으로
+늘었습니다. 8대 분야 실증 5,000억 원, 데이터 인프라(트레이닝센터
+400억·데이터 팩토리 450억·데이터 라이브러리 590억 원), AI 휴머노이드
+원천기술 77억 원입니다. 기획예산처는 휴머노이드 풀스택 개발에 2030년까지
+2.3조 원(2027년 6,000억 원)을 배정하고, 국산 휴머노이드를 2027년 250대,
+2030년까지 1,080대 사들여 대학·출연연에 보급합니다. 재정경제부는
+2026-11-11 액추에이터(2027년 300억 원, 2027–2029년 1,000억 원, 국산화율
+80% 목표), 휴머노이드용 이차전지(133억 원, 8시간 연속 구동 목표), 온센서
+AI 반도체(90억 원)를 핵심부품 3종으로 정했습니다. <a class="xref" href="#s6-4">6.4</a>절의 월드모델
+사업(340억 원)과 합치면 '부품-데이터-모델-실증'이 모두 예산에
+들어갔습니다.</p></li>
+<li><p><strong>기업</strong></p>
+<ul>
+<li><strong>현대차·보스턴다이내믹스</strong>: 2028년 메타플랜트(HMGMA)를
+시작으로 아틀라스 2.5만 대 이상을 현대차·기아 공장에 투입하고, 2029년
+하반기 기아 조지아로 넓힙니다. 2027년은 학습센터를 약 10배로 키워 실제
+공정 데이터를 모으는 해입니다. 양산 초기 대당 원가 14만 달러가 5만 대
+이상 생산 시 3만 달러로 내려간다는 계획입니다(보도 기준). 미국 연 3만 대
+공장이 완성 로봇 기준인지 부품 기준인지는 보도마다 다릅니다.</li>
+<li><strong>삼성(레인보우로보틱스)</strong>: 손·팔 정밀 제어에 집중하고,
+월드 모델과 로봇 FM을 연구하며, 100개 이상 공장에서 시험할 계획입니다.
+RB-Y1은 쿠팡 물류센터에서 실증 중이고, CES 2027에서 로봇 전략을 발표할
+전망입니다(보도 기준).</li>
+<li><strong>LG</strong>: CLOiD를 테네시 세탁기 공장에 투입했고, NVIDIA와
+실제·시뮬레이션 학습 데이터 약 50만 시간을 모읍니다. 이족 보행판은 CES
+2027 공개가 예상됩니다(보도 기준).</li>
+<li><strong>네이버랩스</strong>: 2026년 월드 모델·휴머노이드 관련 공개
+성과는 확인하지 못했습니다.</li>
+</ul></li>
+<li><p><strong>격차의 실체</strong>: 한국 기업은 2027년에도 '공장 안
+시범' 단계이고, 중국은 수만 대 규모로 데이터를 모읍니다. 월드 모델
+벤치마크에서 상위권은 NVIDIA·Odyssey·중국 영상 모델이며 한국 모델은 공개
+리더보드에 없습니다.</p></li>
+<li><p><strong>제언</strong></p>
+<ol type="1">
+<li><strong>실증 예산의 성과지표를 '대수'에서 '가동
+시간·재구매'로</strong>: 5,000억 원 실증과 250대 구매 사업에 로봇당
+생산적 가동 시간, 사람 개입 빈도, 현장 재주문을 공개 지표로
+둡니다(<a class="xref" href="#s6-6">6.6</a>절의 Gartner 경고, Morgan Stanley 지표와 같은 방향).</li>
+<li><strong>월드 모델 평가 인프라를 공공재로</strong>:
+트레이닝센터·데이터 팩토리 데이터로 한국 제조·물류 현장의
+Physics-IQ·WorldArena형 평가셋을 만들고, 월드 모델 평가와 실로봇 결과의
+상관을 함께 공개합니다. 340억 원 월드모델 사업의 결과물을 이 평가셋으로
+검증합니다.</li>
+<li><strong>부품 국산화와 온디바이스 연계</strong>:
+액추에이터·배터리·온센서 AI 3종을 10장의 국산 NPU 레퍼런스와 묶어, 정부
+구매 휴머노이드의 국산 부품 비율을 단계별로 높입니다.</li>
+</ol></li>
+<li><p><strong>위원회 안건(제8조 기준)</strong>: (1) 피지컬 AI
+실증·휴머노이드 구매 사업의 공통 성과지표(가동 시간·사람 개입·재구매)와
+월드 모델 평가셋 구축을 국가 R&amp;D 우선 과제로 지정(3호)하고, 현장
+데이터의 공유·표준(6의2호)을 함께 심의합니다. (2) 가정·돌봄 휴머노이드의
+원격조작·영상 수집에 대한 개인정보·안전 기준을 고영향 AI 요건과 연계해
+검토합니다(10호).</p></li>
+</ul>
+<blockquote>
+<p><strong>확인 필요</strong>: Genie 4의 2분 일관성과 Gemini 4 Argon의
+56%→75%(The Batch 등 보도), Waymo World Model의 Genie 3 기반(보도),
+V-JEPA 2.1 '+20%p'(초록 기준), VSI-Bench 사람 79.2·GPT-5 55.0(EASI
+리더보드 미러, 2026년 모델 점수 미확인), Gemini Robotics-ER 2의 ERQA
+수치(그림만 공개), Goldman 2026-09 수치와 연 6% 가격 하락(2차 보도),
+Morgan Stanley 중국 5만 대(2차 보도), AgiBot 8,600대(회사 인용), Agility
+10만 토트(블로그), 중국 1만 대 목표(Caixin 보도), Dealroom 110억
+달러(브리핑 요약), 현대차 원가·3만 대 공장의 정의, 한국 예산 수치(정부안
+보도). 평균 가격 약 3만 달러는 IDC 금액÷대수로 계산한 값입니다.</p>
+</blockquote>
+<h3 id="s6-9">6.9 프런티어 범용 모델의 로봇 역량: GPT-6 Astra·Claude
+Fable·Gemini 4의 체화 벤치마크</h3>
+<blockquote>
+<p>자료: Google Gemini Robotics 기술보고서(ERQA, arXiv
+2503.20020)·Gemini 4 Argon for Robotics(2026-10-13), Metric AI Lab 체화
+벤치마크 감사(arXiv 2608.25940), GeoThinker-F(arXiv 2610.20592),
+MMSI-Bench 리더보드(GitHub), Andon Labs Butter-Bench(arXiv 2510.21860),
+Anthropic Project Fetch 1·2단계(2025-11-12,
+2026-06-18)·Embody(2026-07-09), Artificial Analysis AA-Robotics
+v0.1(2026-10-14), NVIDIA Astranomy(CoRL 2026 LBR, 2026-10-14), Embodied
+First Exam(arXiv 2611.12177), Humanoids Daily(Fable 5.2 RoboDojo,
+2026-11-10), Fortune(2026-11-13), CoRL 2026 참관기(Benjie Holson
+2026-11-12, Shivaram K. J. 2026-11-16, ChinaTalk 2026-11-20). VLA 자체의
+벤치마크는 <a class="xref" href="#s6-7">6.7</a>절, 월드 모델·물리 이해와 VSI·MMSI의 사람 격차는 <a class="xref" href="#s6-8">6.8</a>절에서
+다룹니다.</p>
+</blockquote>
+<p><strong>한 줄 요약</strong>: 2025년까지 범용 모델은 로봇 시점
+문제에서 우연보다 조금 나은 수준이었고, 로봇을 직접 움직이면 사람의
+절반도 못 했습니다. 2026년 하반기에는 GPT-6 Astra·Claude Fable
+5.2·Gemini 4 Argon이 <strong>시뮬레이션에서 전용 VLA를 2배 이상
+앞섰습니다</strong>(RoboLab-120 74.8% 대 π0.5 28.0%). 다만 한 번
+판단하는 데 13–19초가 걸리고, 시뮬레이터를 멈춰 놓고 잰 값입니다. 실시간
+조건에서는 최고 31.5%입니다. 2027년의 쟁점은 '범용 모델이 VLA를
+대체하나'가 아니라 <strong>누가 어느 층을 맡나</strong>입니다.</p>
+<h4 id="세대별-비교-같은-벤치마크-세-시점">세대별 비교: 같은 벤치마크,
+세 시점</h4>
+<table>
+<thead>
+<tr>
+<th>벤치마크(측정 대상)</th>
+<th>2025년 초</th>
+<th>2025년 말</th>
+<th>2026년</th>
+<th>사람</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ERQA(로봇 시점 체화 추론, 400문항, 도구 없음)</td>
+<td>Gemini 2.0 Pro Exp 48.3, GPT-4o 47.0, Claude 3.5 Sonnet 35.5(CoT
+없이, 2025-03)</td>
+<td>감사 논문 집계 49개 모델 최고 65.0(2026-08 시점)</td>
+<td><strong>Gemini 4 Argon 87.0</strong>, Claude Opus 5.5 82.3, GPT-6
+Astra 81.0, Claude Fable 5.1 74.0(Google 차트, 보도 기준)</td>
+<td>미공개</td>
+</tr>
+<tr>
+<td>VSI-Bench(영상 공간 지능)</td>
+<td>Gemini 2.5 Pro 53.5</td>
+<td>GPT-5 55.0, Gemini 3 Pro Preview 52.5</td>
+<td>51개 모델 최고 69.5(2026-08, 모델명 미기재). GPT-6·Fable·Gemini 4
+점수 미확인</td>
+<td>79.2</td>
+</tr>
+<tr>
+<td>MMSI-Bench(다중 이미지 공간 추론)</td>
+<td>GPT-4o 30.3, Claude 3.7 Sonnet(Thinking) 30.2, Gemini 2.5 Pro
+36.9</td>
+<td>GPT-5 41.9, <strong>Gemini 3 Pro 49.2</strong></td>
+<td>2026년 모델 미등재</td>
+<td>97.2</td>
+</tr>
+<tr>
+<td>Butter-Bench(LLM이 실제 로봇으로 버터 전달)</td>
+<td>—</td>
+<td>Gemini 2.5 Pro 40, Claude Opus 4.1 37, GPT-5 30, Gemini ER 1.5
+27(2025-10)</td>
+<td>후속 결과 미확인</td>
+<td>95</td>
+</tr>
+<tr>
+<td>AA-Robotics v0.1(실제 로봇 팔, 8개 탁상 과제, 부분 점수)</td>
+<td>—</td>
+<td>—</td>
+<td>GPT-6 Astra 69.4, GPT-6.1 Sol 64.6, Gemini 4 Argon 55.3, Claude Opus
+5.5 48.8, Claude Fable 5.1 46.3(2026-10-14). Fable 5.2 75(2026-11, 보도
+기준). <strong>GPT-6.2 Astra 79</strong>(8개 중 6개 완수), GPT-6.2 Sol
+78(2026-11-17, 보도 기준)</td>
+<td>점수 미보고. 과제당 약 20초(모델 약 30분)</td>
+</tr>
+<tr>
+<td>AA-Robotics-Sim v0.1(시뮬 Unitree G1 휴머노이드, 10개 가사·산업
+과제, 연습 5회 후 새 장면 10개)</td>
+<td>—</td>
+<td>—</td>
+<td><strong>GPT-6.2 Astra 71.0</strong>(100회 중 61회 성공), GPT-6.2
+Sol(Max) 62.6, Claude Fable 5.2 57.5(2026-11-25)</td>
+<td>미보고</td>
+</tr>
+<tr>
+<td>Blueprint-Bench 2(실내 사진 약 20장으로 평면도 작성, 50개 아파트,
+무작위 0·완벽 1)</td>
+<td>—</td>
+<td>—</td>
+<td>2026-05 상위 GPT-5.5 0.362 → <strong>GPT-6.2 Astra 0.614</strong>,
+Gemini 4 Carbon 0.586, Fable 5.2 0.566, GPT-6 Astra 0.497(2026-11)</td>
+<td>0.586(아파트 12개 부분집합만 측정)</td>
+</tr>
+<tr>
+<td>Ember-0(XDOF, 실물 양팔 YAM, 16개 과제 × 30회, 최종 성공 기준)</td>
+<td>—</td>
+<td>—</td>
+<td>GPT-6 Astra 19.6%(2026-09) → <strong>GPT-6.2 Astra
+41.2%</strong>(2026-11-20, XDOF 발표)</td>
+<td>미보고</td>
+</tr>
+<tr>
+<td>RoboDojo-RC Tier 1(Robocurve, 실물 YAM 팔, 6개 과제 × 20회, 0–1 부분
+점수)</td>
+<td>—</td>
+<td>—</td>
+<td>GPT-6 Astra 42.5% → GPT-6.2 Astra 65.7%(기본 설정),
+<strong>97.3%(Codex)</strong>. Fable 5.2 57.5%, 89.0%(Claude Code).
+Dream-1(로봇 전용) 59.5%</td>
+<td>사람 시연만 있고 점수 미보고</td>
+</tr>
+<tr>
+<td>RoboColosseum SO-101(실물 저가 팔, 평가자 작성 지시, 쌍대 비교
+Elo)</td>
+<td>—</td>
+<td>—</td>
+<td><strong>GPT-6.2 Astra 1,984</strong>(전체 과제 성공 22.1%), Fable
+5.2 1,803, Opus 5.5 1,666, π0.5 1,526, GPT-6 Astra 1,393(2026-11-20,
+보도 기준)</td>
+<td>미보고</td>
+</tr>
+<tr>
+<td>Embodied First Exam(코딩 에이전트, 47종 로봇, 456개 표준 과제)</td>
+<td>—</td>
+<td>—</td>
+<td>GPT-6 Astra(Codex) 33.6%, Opus 5.5(Claude Code) 25.0%, Argon 24.1%,
+Kimi 3.1 Pro 10.1%, Qwen3.8 Max 3.7%(2026-11-09)</td>
+<td>미보고</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>읽는 법</strong>: ERQA는 1년 반 만에 48점대에서 87점으로
+올랐습니다. 그러나 87%는 Google이 자사 출시 글에서 밝힌 값이고 경쟁 모델
+수치는 그림에만 있습니다. ERQA 400문항은 공개돼 있어 오염 가능성을
+배제할 수 없습니다. <a class="xref" href="#s6-8">6.8</a>절의 '최신 모델 대부분 40–50%대'는 2026년
+상반기까지의 상황입니다.</li>
+<li><strong>VSI-Bench 2026 최고점</strong>: 2026년 프런티어 모델별
+VSI-Bench 점수는 공개되지 않았습니다. 2026-08 감사 논문은 51개 모델
+가운데 최고 69.5를 기록했습니다(모델명 미기재). 사람(79.2)과의 격차는 약
+10점으로 줄었습니다.</li>
+<li><strong>중국·오픈 모델</strong>: 공간 벤치마크 종합 순위(4개
+벤치마크 Bradley–Terry)에서는 Tencent HY-Embodied-0.5, Qwen3.5-397B,
+Qwen3-VL-235B가 1–3위이고 Gemini 3.0 Pro가 7위입니다(2026-08). 공간
+문항형 벤치마크에서는 체화 특화 후학습의 효과가 큽니다. 반대로 로봇을
+직접 움직이는 평가(Embodied First Exam)에서는 중국 모델이 10%
+이하입니다.</li>
+</ul>
+<h4 id="로봇을-직접-다루는-실험-2025년과-2026년">로봇을 '직접' 다루는
+실험: 2025년과 2026년</h4>
+<table>
+<thead>
+<tr>
+<th>실험</th>
+<th>2025년 결과</th>
+<th>2026년 결과</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Project Fetch(Anthropic, 사족 로봇 개가 공을 가져오도록
+프로그래밍)</td>
+<td>비전문가 4인 팀 둘. Claude를 쓴 팀이 8개 과제 중 7개(미사용 팀
+6개)를 약 절반의 시간에 끝냄. Opus 4.1 단독으로는 로봇 연결에서
+막힘</td>
+<td><strong>Opus 4.7 단독</strong>이 두 팀이 모두 끝낸 4개 과제를 9분
+35초에 끝냄(Claude 팀 181분, 미사용 팀 361분). 코드는 1,045줄(Claude 팀
+10,309줄). 자율 공 가져오기는 여전히 실패</td>
+</tr>
+<tr>
+<td>Embody(Anthropic, 시뮬·실물 제어 묶음)</td>
+<td>Opus 4 종합 0.115</td>
+<td>Mythos Preview 0.389. LIBERO 직접 조작 성공은 0–5.5%. 실물 Go2
+사무실 순환 과제는 모든 모델 실패. 실시간 제어에는 약 83Hz가 필요하지만
+추론은 0.2–0.4Hz</td>
+</tr>
+<tr>
+<td>Butter-Bench(Andon Labs)</td>
+<td>최고 40% 대 사람 95%. 다단계 공간 계획과 사회적 이해에서 약함. 체화
+추론 미세조정 모델(Gemini ER 1.5)도 점수가 오르지 않음</td>
+<td>후속 결과 미확인</td>
+</tr>
+<tr>
+<td>Gemini를 오케스트레이터로</td>
+<td>Gemini Robotics-ER 1.5가 계획·성공 판정을 맡고 VLA가
+실행(<a class="xref" href="#s6-7">6.7</a>절)</td>
+<td>Gemini 4 Argon이 사진에서 MuJoCo 시뮬레이션을 만들고, 그 데이터로
+미세조정한 VLA의 실제 성공률이 56%에서 75%로 상승(Google 시연)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="corl-2026의-astra-쇼크">CoRL 2026의 'Astra 쇼크'</h4>
+<p>2026-11 오스틴 CoRL(로봇 학습 학회)의 화두는 범용 모델이 로봇을 직접
+모는 방식이었습니다. 계기는 NVIDIA 연구진의 Astranomy
+결과(2026-10-14)였고, 학회 기간 중 Anthropic이 Fable 5.2를
+내놓으며(2026-11-09) 로봇 벤치마크 결과를 함께 공개했습니다.</p>
+<table>
+<thead>
+<tr>
+<th>방식(RoboLab-120 시뮬, 120개 과제 × 5회)</th>
+<th>성공률</th>
+<th>호출당 지연</th>
+<th>성공 1회당 비용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GPT-6 Astra + Codex 세션(에이전트 방식)</td>
+<td><strong>74.8%</strong></td>
+<td>13.37초</td>
+<td>36.40달러</td>
+</tr>
+<tr>
+<td>Astra가 WAM 제안을 검토·개입(오케스트레이션)</td>
+<td>66.5%</td>
+<td>11.50 / 2.74초(두 값 의미 미설명)</td>
+<td>17.72달러</td>
+</tr>
+<tr>
+<td>GPT-6 Astra API 직접 호출(말단 장치 목표)</td>
+<td>66.3%</td>
+<td>18.56초</td>
+<td>1.96달러</td>
+</tr>
+<tr>
+<td>Cosmos3-Nano-Policy(WAM, DROID 미세조정)</td>
+<td>36.8%</td>
+<td>713.76ms</td>
+<td>—</td>
+</tr>
+<tr>
+<td>π0.5(VLA)</td>
+<td>28.0%</td>
+<td>46.96ms</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>방식(RoboDojo 시뮬 양팔 조작, Anthropic 자체 측정)</th>
+<th>Fable 5.2</th>
+<th>Opus 5.5</th>
+<th>Gemini 4 Argon</th>
+<th>GPT-6 Astra</th>
+<th>Fable 5.1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>점수(보도 기준)</td>
+<td><strong>64.9%</strong></td>
+<td>39.4%</td>
+<td>34.2%(High)</td>
+<td>29.8%</td>
+<td>27.6%</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>설정</strong>: Astranomy는 시뮬 DROID 로봇(Franka 팔)을
+15Hz로 제어하되, <strong>추론하는 동안 시뮬레이터를 멈췄습니다</strong>.
+Astra는 코드가 아니라 도구 호출로 말단 장치 목표·관절 위치를 직접
+냅니다. 같은 조건의 직접 제어에서 Astra 72.7%, GPT-6 Sol 33.3%, Claude
+Opus 5.5 25.3%였습니다(30개 과제 부분집합). 추론 강도를 높이거나 계획을
+지시해도 성공률은 거의 변하지 않았습니다.</li>
+<li><strong>실패와 한계(저자)</strong>: 추론이 에피소드 시간의
+94.9–97.8%를 차지했고, 저자들은 "능력과 실시간 제어·배치 사이에 큰
+간극"이 있다고 썼습니다. 오케스트레이션에서 Astra는 14.5%의 단계에
+개입했고, 그중 64.4%가 파지 실패를 바로잡는 개입이었습니다. 색깔별 음식
+포장 과제는 모든 방식이 0%였습니다.</li>
+<li><strong>RoboDojo</strong>: 공개 리더보드(2026-11-03)에서 에이전트
+방식 최고는 Q0-Preview(성공률 68.87%)이고 정책 방식 최고는
+WALL-OSS(34.97%)입니다. Fable 5.2의 64.9%는 Anthropic이 직접 잰 값이어서
+리더보드와 엄밀히 비교할 수 없습니다. 64.9%가 점수인지 성공률인지도
+밝히지 않았습니다. 위 표(Fable 5.2 64.9%, GPT-6 Astra 29.8%)는 시뮬
+결과입니다. Robocurve의 실물판 RoboDojo-RC Tier 1에서는 같은 모델들이
+훨씬 높게 나옵니다(Fable 5.2 Claude Code 89.0%, GPT-6.2 Astra Codex
+97.3%). 과제 묶음·하드웨어·채점이 달라 두 표의 숫자를 서로 비교하면 안
+됩니다(아래 'GPT-6.2 Astra와 2026년 말 로봇 벤치마크 갱신').</li>
+<li><strong><a class="xref" href="#s6-7">6.7</a>절과의 관계</strong>: RoboLab-120·RoboDojo는
+LIBERO·BEHAVIOR와 다른 과제이고 모두 시뮬입니다. VLA(π0.5 47ms)와 Astra
+단독(18.56초)의 지연 차이는 약 <strong>400배</strong>(분석가
+계산)입니다. 이 결과는 <a class="xref" href="#s6-7">6.7</a>절의 VLA 점수를 무효로 만들지 않습니다. 시간
+제한이 없을 때 범용 모델의 판단력이 VLA보다 낫다는 뜻입니다.</li>
+<li><strong>학회 반응</strong>: Benjie Holson은 학회 두 달 전 나온 'GPT
+Astra로 로봇을 직접 모는' 방식이 "많은, 그러나 전부는 아닌" 면에서 기존
+방식을 앞섰다고 정리했습니다. 논문·포스터·부스는 대부분 그 이전의
+VLA·WAM 연구였고, 제출에서 발표까지의 사이에 연구가 낡는다면 학회가
+제대로 작동하느냐는 의문이 나왔다고 전했습니다. 구체적인 학회 운영 개편
+논의는 적지 않았습니다. Fei-Fei Li는 기조연설에서 "결과가 숨이 막힐
+정도"라고 했습니다.</li>
+<li><strong>Jim Fan(NVIDIA) 기조연설</strong>(참관기 기준): 커뮤니티의
+반응을 '슬픔의 5단계'로 묘사했습니다. 부정("체리피킹"), 분노, 타협("내
+모션 플래너는 아직 필요하겠지?"), 우울("내 박사 연구가 이제 시스템
+프롬프트의 농담"), 수용("겨울이 온다")에 이어 6단계로 '축하'를
+붙였습니다. 축하의 근거는 빠른 반응 계층이 여전히 필요하다는 점이었고,
+NVIDIA는 Astra를 20억 파라미터 GR00T 2 Turbo와 짝지어 씁니다.</li>
+<li><strong>실시간 조건의 반증</strong>: 같은 날 Hang Zhao는 시계를
+멈추면 대부분의 방식이 60%를 넘지만, 50초 마감을 두면 매 단계 호출
+방식은 15–20%로 떨어지고 오케스트레이션은 65%를 유지한다고
+보고했습니다(참관기 기준). Astra 실행 중 시뮬 로봇은 에피소드의 97%를
+멈춰 있었습니다.</li>
+<li><strong>조직 변화</strong>: OpenAI는 2026-11-13 독립 로봇팀을
+해체하고 연구 인력은 본 연구조직, 응용·하드웨어 인력은 Applied 조직으로
+옮겼습니다. 범용 모델을 로봇에 바로 쓸 수 있게 됐다는 이유입니다. 자체
+휴머노이드는 계속 개발하며 Altman은 2027년 첫 공개 시연을 목표로
+합니다(Fortune).</li>
+<li><strong>창발인가, 학습인가</strong>: ChinaTalk의 참관기("Robots
+Still Suck")는 "프런티어 랩이 로봇 전문가 없이 로봇 문제를 풀 것인가?"를
+묻습니다. Anthropic은 Fable 5.2가 "명시적으로 학습하지 않은 로봇
+과제에서도" 나아졌다고 밝혔습니다. 반면 Goodfire의 Aiden Swann은 X에서
+"Astra의 로봇 능력은 창발이 아니다"라며 로봇 특화 학습을 근거로
+들었습니다. 연구자들은 CAD와 '코드 작성-렌더링-검사' 루프의 강화학습이
+공간 추론을 끌어올렸다고 봅니다. 어느 쪽도 확정되지 않았습니다. TTIC
+발표("우리는 실제로 무엇을 벤치마크하는가?")는 프런티어 모델이 재학습
+없이도 공개 벤치마크로 '연습'할 수 있어 모든 공개 벤치마크가 위험하다고
+지적했습니다.</li>
+</ul>
+<h4 id="얼마나-좋아졌나-요약-수치분석가-계산">얼마나 좋아졌나: 요약
+수치(분석가 계산)</h4>
+<ul>
+<li><strong>ERQA</strong>: Gemini 계열 최고가 48.3(2025-03, CoT
+없이)에서 87.0(2026-10)으로 <strong>+38.7%p</strong>, 약 19개월 동안의
+변화입니다(87.0은 회사 발표).</li>
+<li><strong>MMSI-Bench</strong>: GPT-4o 30.3에서 Gemini 3 Pro 49.2로
++18.9%p입니다. 사람과의 격차는 66.9점에서 48.0점으로 <strong>28%
+줄었습니다</strong>.</li>
+<li><strong>VSI-Bench</strong>: 사람과의 격차는 GPT-5 기준 24.2점에서
+집계 최고 기준 9.7점으로 <strong>약 60% 줄었습니다</strong>. 다만
+최고점의 모델명이 공개되지 않았습니다.</li>
+<li><strong>로봇 직접 제어</strong>: RoboDojo에서 Fable 5.1에서 5.2로 한
+세대 만에 +37.3%p(27.6→64.9), AA-Robotics에서 +29점(46.3→75, 보도
+기준)이 올랐습니다. 2026-11에는 GPT-6.2 Astra가 Ember-0(실물 양팔 16개
+과제)에서 전작 19.6%의 두 배 이상인 41.2%, AA-Robotics 79(보도 기준)를
+기록했습니다(아래 소절). Project Fetch는 1년 만에 '단독으로는 연결도
+못함'에서 '사람+Claude 팀보다 18배 빠름'으로 바뀌었습니다.</li>
+<li><strong>그대로인 것</strong>: 실시간 조건의 Embodied First Exam은
+최고 31.5%입니다. AA-Robotics 과제 시간은 사람의 약 100배이고, 실물 사족
+보행 순환 과제(Embody)와 자율 공 가져오기(Fetch)는 성공하지
+못했습니다.</li>
+</ul>
+<h4 id="왜-범용-모델이-로봇-제어로-직결되지-않나">왜 범용 모델이 로봇
+제어로 직결되지 않나</h4>
+<ol type="1">
+<li><strong>지연</strong>: 균형·접촉 제어는 수십–수백 Hz가 필요합니다.
+범용 모델의 호출 주기는 0.05–0.4Hz입니다. 2026년의 좋은 점수는 대부분
+시뮬을 멈추고 얻었습니다.</li>
+<li><strong>데이터·정밀도</strong>: 공 밀기, 서브밀리미터 삽입, 파지
+같은 폐루프 정밀 동작에서 실패가 몰립니다(Fetch, Astranomy 개입의 64%가
+파지).</li>
+<li><strong>3D·물리 이해</strong>: 다시점 통합(MMSI 49%)과 직관
+물리(<a class="xref" href="#s6-8">6.8</a>절 IntPhys 2)가 아직 사람과 크게 차이 납니다.</li>
+<li><strong>안전·비용</strong>: 클라우드 상시 연결이 필요하고, 성공
+1회에 최대 36달러가 듭니다. 70kg 휴머노이드의 안전 문제도 남아
+있습니다.</li>
+</ol>
+<p><strong>역할 분담(재정의)</strong>: 범용 모델은 <strong>System
+2</strong>(과제 분해·코드 작성·성공 판정·예외 처리)를 맡습니다. 소형
+VLA·WAM은 <strong>System 1</strong>(수십 ms 단위 시각-행동)을,
+학습형·고전 제어기는 <strong>System 0</strong>(kHz급 균형·힘·안전
+정지)을 맡습니다. 이 계층은 Figure Helix 02(<a class="xref" href="#s6-7">6.7</a>절)와 Hang Zhao의 '반응
+시간별 분할' 제안과 같은 방향입니다. VLA는 사라지기보다 범용 에이전트가
+부르는 도구·하위 시스템으로 재정의될 가능성이 큽니다. 다만
+Astranomy에서는 에이전트 방식(74.8%)이 오케스트레이션(66.5%)보다 높아,
+계층 구조가 항상 낫다는 증거는 아직 없습니다.</p>
+<h4 id="2027-전망-2">2027 전망</h4>
+<table>
+<thead>
+<tr>
+<th>2027 전망</th>
+<th>가능성 · 확률(±불확도)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OpenAI·Anthropic·Google 3사 모두 2027년 플래그십 출시 자료(모델
+카드·시스템 카드·출시 글)에 로봇 제어 또는 체화 추론 벤치마크 점수를
+포함</td>
+<td>높음 · 75% (±15) · 근거 <a
+href="https://developers.googleblog.com/en/gemini-4-argon-for-robotics/">Google</a>,
+<a
+href="https://www.humanoidsdaily.com/news/anthropic-claude-fable-5-2-robotics-robodojo">Humanoids
+Daily(Anthropic 출시 글 보도)</a>, <a
+href="https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/">Fortune</a></td>
+</tr>
+<tr>
+<td>범용 프런티어 모델 기반 방식이 RoboLab-120에서 성공률 85%
+이상(NVIDIA 또는 제3자 보고, 시뮬 일시정지 허용)</td>
+<td>중간 · 65% (±20) · 근거 <a
+href="https://research.nvidia.com/labs/srl/projects/astranomy/">NVIDIA
+Astranomy</a>, <a href="https://robocurve.org">Robocurve</a>(GPT-6
+Astra→6.2 Astra 기본 설정 42.5→65.7%), <a
+href="https://www.withplayground.ai/research/robot-frontier-accelerating">Playground</a>
+· 반론 <a
+href="https://research.nvidia.com/labs/srl/projects/astranomy/">NVIDIA
+Astranomy</a>(전 방식 0% 과제 존재)</td>
+</tr>
+<tr>
+<td>Embodied First Exam 표준 설정 최고 성공률 60% 이상</td>
+<td>중간 · 50% (±20) · 근거 <a
+href="https://arxiv.org/abs/2611.12177">Embodied First Exam</a>, <a
+href="https://www.xdof.ai/blog/evaluating-llms">XDOF</a>(Ember-0 한 세대
+만에 19.6→41.2%), <a href="https://robocurve.org">Robocurve</a>(코딩
+에이전트 하네스 +31.6%p) · 반론 같은 논문(실시간 31.5%)</td>
+</tr>
+<tr>
+<td>MMSI-Bench 최고 모델 60% 이상(사람 97%와의 30%p 이상 격차는 <a class="xref" href="#s6-8">6.8</a>절
+전망대로 유지)</td>
+<td>중간 · 50% (±20) · 근거 <a
+href="https://github.com/InternRobotics/MMSI-Bench">MMSI-Bench</a></td>
+</tr>
+<tr>
+<td>Butter-Bench·AA-Robotics류 실물 로봇 과제에서 범용 모델이 사람 수준
+성공률(사람 기준 대비 95% 이상)과 사람의 10배 이내 소요 시간을 함께
+달성</td>
+<td>낮음 · 15% (±10) · 근거 <a
+href="https://artificialanalysis.ai/articles/aa-robotics">Artificial
+Analysis</a>, <a href="https://arxiv.org/abs/2510.21860">Andon
+Labs</a></td>
+</tr>
+<tr>
+<td>OpenAI가 자체 휴머노이드 로봇을 처음 공개 시연</td>
+<td>중간 · 45% (±20) · 근거 <a
+href="https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/">Fortune</a>
+· 반론 같은 기사(비용 압박·조직 개편)</td>
+</tr>
+<tr>
+<td>선도 로봇 기업·랩 3곳 이상이 '범용 모델(System 2) + 소형
+VLA·WAM(System 1)' 계층 구조를 제품·공식 아키텍처로 발표</td>
+<td>높음 · 75% (±15) · 근거 <a
+href="https://shivaram.net/notes/corl26/day-1/">CoRL 2026 1일차
+참관기(NVIDIA GR00T 2+Astra)</a>, <a
+href="https://research.nvidia.com/labs/srl/projects/astranomy/">NVIDIA
+Astranomy</a>, <a
+href="https://www.chinatalk.media/p/we-went-to-austin-to-see-robots">ChinaTalk</a>
+· 반론 <a
+href="https://research.nvidia.com/labs/srl/projects/astranomy/">NVIDIA
+Astranomy</a>(에이전트 단독이 더 높음)</td>
+</tr>
+<tr>
+<td>범용 프런티어 모델이 시뮬을 멈추지 않은 실시간 조건에서 호출당 1초
+미만으로 제어하며 일시정지 조건과 비슷한 성공률(차이 10%p 이내)을 보인
+공개 결과</td>
+<td>낮음 · 25% (±15) · 근거 <a
+href="https://www.anthropic.com/research/claude-plays-robotics">Anthropic</a>,
+<a href="https://arxiv.org/abs/2611.12177">Embodied First Exam</a></td>
+</tr>
+<tr>
+<td>비공개 테스트셋·실로봇 기반으로 오염을 통제한 체화 벤치마크 2개
+이상이 새로 나와 프런티어 모델을 평가</td>
+<td>높음 · 70% (±15) · 근거 <a
+href="https://shivaram.net/notes/corl26/day-1/">CoRL 2026 1일차
+참관기(TTIC 발표)</a>, <a href="https://arxiv.org/abs/2608.25940">Metric
+AI Lab</a>, <a
+href="https://www.chinatalk.media/p/we-went-to-austin-to-see-robots">ChinaTalk</a></td>
+</tr>
+</tbody>
+</table>
+<p><a class="xref" href="#s6-8">6.8</a>절과의 관계: VSI-Bench 사람 기준 도달 전망은 <a class="xref" href="#s6-8">6.8</a>절(45%)을
+따릅니다. 2026-08 집계 최고 69.5(격차 약 10점)는 상향 요인이지만,
+모델명과 평가 조건이 확인되지 않아 확률에 반영하지 않습니다.</p>
+<h4 id="한국-시사점-1">한국 시사점</h4>
+<p>국내 모델(EXAONE, HyperCLOVA X, 국가대표 AI 모델)이
+ERQA·VSI-Bench·RoboLab류 체화 평가에 점수를 낸 사례는 확인하지 못했고,
+한국어 체화 벤치마크도 찾지 못했습니다. LG는 EXAONE 4.5(2026-04)를
+휴머노이드 KAPEX의 두뇌로 쓰겠다고 밝혔습니다. 국가대표 AI 모델 평가에
+체화 항목을 넣고, 2027년 정부 구매 휴머노이드 250대(<a class="xref" href="#s6-8">6.8</a>절)를
+AA-Robotics형 공개 실물 시험대로 쓰는 방안을 검토할 만합니다.</p>
+<blockquote>
+<p><strong>확인 필요</strong>: Gemini 4 Argon 외 모델의 ERQA
+수치(82.3·81.0·74.0)는 Google 차트를 옮긴 2차 보도 기준입니다. Fable
+5.2의 AA-Robotics 75점은 보도 기준이며, Artificial Analysis
+원문(2026-10-14)에는 없습니다. RoboDojo 수치는 Anthropic 출시 글을
+인용한 Humanoids Daily 기준입니다(원문 미확인). Jim Fan·Hang Zhao 발언은
+AI로 정리한 참관기 기준이고, Aiden Swann 주장은 ChinaTalk 인용입니다.
+감사 논문의 VSI-Bench 69.5·ERQA 65.0은 최고점의 모델명을 밝히지
+않았습니다. Astranomy 오케스트레이션 지연의 두 값(11.50/2.74초)은 의미가
+설명되지 않았습니다. 2026년 프런티어 모델(GPT-6 Astra, Fable 5.x, Gemini
+4)의 VSI-Bench·MMSI-Bench 점수, Gemini Robotics-ER 2의 ERQA 수치,
+Butter-Bench 2026 후속, GPT-6 Astra 시스템 카드의 체화 평가 포함 여부는
+찾지 못했습니다.</p>
+</blockquote>
+<h3 id="s6-10">6.10 GPT-6.2 Astra와 2026년 말 로봇 벤치마크 갱신</h3>
+<blockquote>
+<p>자료: Artificial Analysis AA-Robotics
+v0.1(2026-10-14)·AA-Robotics-Sim v0.1(2026-11-25), Andon Labs
+Blueprint-Bench 2 리더보드, XDOF Ember-0 소개 글(2026-10-23)·리더보드,
+Robocurve RoboDojo-RC Tier 1 리더보드·소개 글(2026-09-23),
+RoboColosseum(arXiv 2611.02497), Playground 'The Robot Frontier Is
+Accelerating'(2026-11-23). 2차 보도: OrcaRouter(2026-11-20, 11-21),
+Crypto Briefing(2026-11-17, 11-20), Cryptopolitan(edgeX 전재,
+2026-11-24).</p>
+</blockquote>
+<p>OpenAI는 2026-11-17 GPT-6.2 Astra·Sol을 내놓았습니다. 출시 글에는
+로봇 벤치마크가 없고, 3D 관련으로 AA-3D Elo(Astra 1,318, Fable 5.2
+1,271, GPT-6.2 Sol 1,259)만 있습니다. 로봇 점수는 모두 출시 뒤 열흘
+사이에 제3자 평가기관이 냈습니다. 여섯 개 결과 모두 GPT-6.2 Astra가
+1위입니다.</p>
+<table>
+<thead>
+<tr>
+<th>벤치마크(운영)</th>
+<th>무엇을 재나</th>
+<th>GPT-6.2 Astra</th>
+<th>전작·비교</th>
+<th>사람 기준</th>
+<th>확인 수준</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AA-Robotics v0.1(Artificial Analysis)</td>
+<td>실물 6축 팔(Hiwonder NexArm), 8개 탁상 과제, 코딩 에이전트로 제로샷,
+0–100 부분 점수</td>
+<td>79, 8개 중 6개 완수</td>
+<td>GPT-6 Astra 69.4, GPT-6.2 Sol 78, Fable 5.2 75</td>
+<td>과제당 약 20초(점수 미보고)</td>
+<td>보도 기준. AA 원문(10-14)은 갱신되지 않았음</td>
+</tr>
+<tr>
+<td>AA-Robotics-Sim v0.1(Artificial Analysis)</td>
+<td>시뮬 Unitree G1 휴머노이드, 10개 과제. 과제당 연습 5회 뒤
+메모·코드만 들고 새 장면 10개에서 평가</td>
+<td>71.0(61/100 성공). 체화 추론 86.0, 집기·놓기 40.0, 조립·도구
+77.3</td>
+<td>Sol(Max) 62.6, Fable 5.2 57.5, Opus 5.5 약 48.2(분석가 계산)</td>
+<td>미보고</td>
+<td>1차 확인</td>
+</tr>
+<tr>
+<td>Blueprint-Bench 2(Andon Labs)</td>
+<td>아파트 실내 사진 약 20장으로 2D 평면도 작성, 50개 아파트. 방 연결
+그래프 유사도 6개 합성, 무작위 0·완벽 1</td>
+<td>0.614(1위)</td>
+<td>GPT-6 Astra 0.497, Gemini 4 Carbon 0.586, Fable 5.2 0.566. Gemini
+Robotics-ER 1.6은 0</td>
+<td>0.586. <strong>아파트 12개 부분집합에서만 측정</strong></td>
+<td>1차 확인</td>
+</tr>
+<tr>
+<td>Ember-0(XDOF)</td>
+<td>실물 양팔 YAM 스테이션 6대, 16개 양손 조작 과제 × 30회, 에피소드
+최대 30분, 최종 성공 기준(부분 점수 없음)</td>
+<td>41.2%</td>
+<td>GPT-6 Astra 19.6%(2026-09 초). 2.1배</td>
+<td>미보고(별도 검토 중)</td>
+<td>XDOF X 게시(OpenAI Developers 재게시)로 확인. 리더보드 표는 읽지
+못함</td>
+</tr>
+<tr>
+<td>RoboDojo-RC Tier 1(Robocurve)</td>
+<td>실물 YAM 팔, RoboDojo 실물 18개 과제 중 <strong>GPT-6 Astra가 가장
+잘한 6개</strong>, 과제당 20회, 사람 채점 0–1 부분 점수</td>
+<td>97.3%(Codex, 20분 제한), 65.7%(기본 설정, 호출 40회 제한)</td>
+<td>GPT-6 Astra 42.5%. Fable 5.2 89.0%(Claude Code)·57.5%(기본). Gemini
+4 Neon 89.7%(Antigravity). Dream-1 59.5%</td>
+<td>사람 시연만, 점수 없음</td>
+<td>1차 확인(리더보드)</td>
+</tr>
+<tr>
+<td>RoboColosseum SO-101 Open Track</td>
+<td>오픈소스 3D 프린팅 팔, 78개 장면, 평가자가 직접 쓴 지시, 블라인드
+쌍대 비교. Elo형 DCR 점수</td>
+<td>DCR 1,984(±96), 전체 과제 성공 22.1%(122회 중 27회)</td>
+<td>Fable 5.2 1,803, Opus 5.5 1,666, π0.5 1,526, GPT-6 Astra 1,393,
+GR00T N1.7 1,233</td>
+<td>미보고</td>
+<td>보도 기준. 논문(11-02)은 확인, 리더보드는 동적 페이지라 읽지
+못함</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>RoboDojo 97%는 무엇인가</strong>: <a class="xref" href="#s6-9">6.9</a>절 표의
+RoboDojo(Anthropic 자체 측정, 시뮬 양팔)와 다른 평가입니다. Robocurve가
+RoboDojo의 <strong>실물</strong> 과제를 고쳐 만든 6개 과제이고,
+'성공률'이 아니라 부분 점수의 평균입니다. 같은 GPT-6.2 Astra가 기본
+설정에서는 65.7%, Codex 안에서는 97.3%였습니다. <strong>31.6%p는 모델이
+아니라 하네스(실행 환경) 효과</strong>입니다. Fable 5.2도 Claude Code로
+57.5%에서 89.0%로 31.5%p 올랐습니다. 따라서 '6.2 Astra가 Fable 5.2를
+크게 앞섰다'보다 '코딩 에이전트 하네스가 실물 로봇 점수를 30%p 올린다'가
+더 정확한 해석입니다(분석가 계산). 같은 하네스끼리 비교하면 격차는
+8.2%p(기본)와 8.3%p(에이전트)입니다. 또 Tier 1은 GPT-6 Astra가 잘한
+과제만 골랐으므로 OpenAI 모델에 유리할 수 있습니다.</li>
+<li><strong>비용·시간</strong>: RoboDojo-RC에서 Codex 안의 Astra는
+시도당 9.46달러·6분, 로봇 전용 모델 Dream-1은 0.15달러·1.4분입니다(2차
+보도). Playground 집계로 완수 과제당 비용은 Astra 41달러, Fable 5.2
+24달러, Dream-1 0.56달러입니다. 범용 모델이 점수는 높지만 <strong>비용은
+약 60–70배</strong>입니다.</li>
+<li><strong>지연</strong>: Astra 계열의 평균 예측 지연은 15.0초에서
+10.1초로 약 33% 줄었습니다(XDOF 발표, 보도 기준). 실시간 제어에 필요한
+수십 ms와는 여전히 두 자릿수 이상 차이가 납니다.</li>
+<li><strong>SO-101의 의미</strong>: 실험실 밖 124곳에서 사람이 직접
+지시를 쓰는 평가입니다. 1–3위가 범용 모델(GPT-6.2 Astra, Fable 5.2, Opus
+5.5)이고 로봇 전용 π0.5는 4위입니다. 그러나 전체 과제 성공은 1위도
+22%입니다. 논문(11-02 기준)은 "어떤 시스템도 어떤 범주에서도 13%를 넘지
+못했다"고 썼고, 로봇별 순위 일치도도 낮았습니다(Kendall W 0.24).</li>
+<li><strong>Blueprint-Bench 2의 '사람 초과'</strong>: 0.614는 사람
+0.586보다 높습니다. 다만 사람 점수는 50개 중 12개 아파트로만 쟀고
+신뢰구간이 없습니다. '사람 수준 도달' 정도로 읽는 것이 안전합니다. Andon
+Labs의 추세선은 월 +0.04입니다.</li>
+<li><strong>Ember-0의 실패 지점</strong>: XDOF 첫 보고(10-23)에서 T셔츠
+펴기는 143회 모두 실패했고, 모델이 '완료'를 선언했을 때 실제로 끝난
+경우는 57%였습니다. GPT-6.2 Astra는 변형 물체 과제에서 처음 성공했다고
+보도됐습니다(성공률 미공개). Playground 집계로 Ember-0에서 Astra는 정밀
+과제 58%, 가사 과제 3%를 성공했고, 성공 1회에 약 42분이 걸렸습니다.
+XDOF는 Ember-0가 곧 포화될 것이라고 밝혔습니다(보도 기준).</li>
+</ul>
+<h4 id="playground-분석-로봇-프런티어의-가속">Playground 분석: 로봇
+프런티어의 가속</h4>
+<p>Playground는 25개 벤치마크를 묶은 Robot Intelligence Index(Elo형,
+400점 차 = 승산 10배)로 최고 정책의 변화를 추적합니다(2026-11-23).</p>
+<ul>
+<li><strong>배가 기간</strong>: 최고 정책이 π0(2024-10 최고)를 이길
+승산은 2년간 약 <strong>5개월마다</strong> 두 배가 됐습니다. 2026-09
+이후에는 약 <strong>5주마다</strong> 두 배입니다. 상대 역량은 최근
+3개월에 9배 이상 올랐습니다(2025-08→2026-08 1년간 2.4배).</li>
+<li><strong>도약 폭</strong>: Fable 5.2와 GPT-6.2 Astra는 8일 사이에
+281점을 더했습니다. 이전에 새 1위가 추세선 위로 뛴 최대 폭은 π0.5의
+55점(2025-04)이었습니다. 현재 상위 10개 정책 중 9개가 최근 3개월에
+나왔고 1·2위는 LLM입니다.</li>
+<li><strong>포화 속도</strong>: 최고 정책이 80% 이상인 과제 비율은 1년간
+17%→25%, 이후 3개월에 25%→43%로 올랐습니다. 지금은 실로봇 138개 과제의
+32%, 시뮬 175개 과제의 65%입니다. 실로봇 정밀 과제는 2025-08–2026-08
+동안 진전이 없다가 그 뒤 3개월에 승산이 21배 올랐습니다.</li>
+<li><strong>코딩과의 관계</strong>: 21개 LLM에서 코딩 백분위와 로봇
+점수의 순위상관은 0.81입니다. 그런데 GPT-6.2 Astra는 코딩 추세보다
+382점, 지능 지수까지 통제해도 362점 위에 있습니다. 저자들은 이 초과분을
+공개 자료로 설명할 수 없다고 썼습니다. <a class="xref" href="#s6-9">6.9</a>절의 '창발인가, 학습인가'
+논쟁에서 로봇 특화 학습 쪽에 무게를 싣는 자료입니다(분석가 해석).</li>
+<li><strong>2027년 말 외삽(저자)</strong>: 2년 추세를 따르면 최고
+시스템은 실로봇 집기·놓기 과제의 약 86%, 정밀 과제의 29%, 장기 과제의
+25%를 완수합니다. 9월 이후 속도를 따르면 셋 다 90%를 넘습니다(그림상
+100·97·93%). 어려운 과제(장기·정밀)의 완수당 시간·비용은 지금 약
+30분·115달러에서, 2년 추세로 11분·42달러, 빠른 추세로 3분·12달러가
+됩니다.</li>
+<li><strong>저자의 단서</strong>: 빠른 추세는 2026-09 이후 출시분만으로
+잡은 것입니다. 예측 구간에는 추세 자체의 불확실성이 들어 있지 않습니다.
+시간·비용 외삽은 시도당 시간·비용이 지금과 같다고 가정합니다. 80% 성공도
+다섯 번에 한 번 실패하므로 사람의 감독이 필요합니다.</li>
+</ul>
+<p><strong>이 보고서의 2027년 판단</strong>: 두 시나리오 사이에서 2년
+추세에 더 무게를 둡니다. 빠른 추세는 3개월치이고, 그 상당 부분이 한 번만
+일어나는 효과(코딩 에이전트 하네스 도입 +30%p, 쉬운 과제 선별)이기
+때문입니다. 2027년 말 실로봇 기준으로 **집기·놓기 85–95%, 정밀·장기 과제
+30–60%**를 기본값으로 봅니다. 사람 대비 속도는 과제당 수 분 수준으로
+좋아져도 사람(약 20초)의 10배 안쪽에는 들기 어렵습니다(앞 전망 표의 15%
+행과 같은 판단).</p>
+<h4 id="2027-전망추가">2027 전망(추가)</h4>
+<table>
+<thead>
+<tr>
+<th>2027 전망</th>
+<th>가능성 · 확률(±불확도)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RoboColosseum SO-101 Open Track에서 범용 모델 기반 방식의 전체 과제
+성공률 50% 이상</td>
+<td>중간 · 40% (±20) · 근거 <a
+href="https://arxiv.org/abs/2611.02497">RoboColosseum</a>, <a
+href="https://www.orcarouter.ai/blog/gpt-6-2-astra-so101-robotics-leaderboard">OrcaRouter(리더보드
+보도)</a>, <a
+href="https://www.withplayground.ai/research/robot-frontier-accelerating">Playground</a>
+· 반론 <a href="https://arxiv.org/abs/2611.02497">RoboColosseum</a>(현재
+22.1%, 평가자 작성 지시·로봇별 순위 불일치)</td>
+</tr>
+<tr>
+<td>XDOF Ember-0 최고 성공률 70% 이상(XDOF 발표 기준)</td>
+<td>중간 · 55% (±20) · 근거 <a
+href="https://www.xdof.ai/blog/evaluating-llms">XDOF</a>, <a
+href="https://cryptobriefing.com/gpt-6-2-astra-ember-0-robotics-benchmark/">Crypto
+Briefing</a>(한 세대 2.1배) · 반론 <a
+href="https://www.withplayground.ai/research/robot-frontier-accelerating">Playground</a>(가사
+과제 3%), XDOF의 포화 예고로 평가 중단 가능</td>
+</tr>
+<tr>
+<td>Blueprint-Bench 2 최고 점수 0.75 이상(사람 0.586)</td>
+<td>중간 · 60% (±20) · 근거 <a
+href="https://andonlabs.com/evals/blueprint-bench-2">Andon Labs</a>(추세
+월 +0.04, 6개월 새 0.36→0.61) · 반론 같은 리더보드(그래프 유사도
+상한·평면도 오류의 꼬리)</td>
+</tr>
+<tr>
+<td>RoboDojo-RC Tier 1 포화(97.3%)로 Robocurve가 더 어려운 등급 또는
+후속 실로봇 과제 묶음을 공개하고, 범용 모델 최고가 70% 미만에서
+출발</td>
+<td>높음 · 70% (±15) · 근거 <a
+href="https://robocurve.org">Robocurve</a>, <a
+href="https://www.withplayground.ai/research/robot-frontier-accelerating">Playground</a>(정밀·장기
+과제 완수 10%)</td>
+</tr>
+<tr>
+<td>실로봇 정밀·장기 과제에서 최고 시스템의 완전 수행률 50%
+이상(Playground Robot Intelligence Index 또는 RoboDojo-RC 기준)</td>
+<td>중간 · 45% (±25) · 근거 <a
+href="https://www.withplayground.ai/research/robot-frontier-accelerating">Playground</a>(빠른
+추세 90%+) · 반론 같은 글(2년 추세 25–29%)</td>
+</tr>
+</tbody>
+</table>
+<p>앞 전망 표와의 관계: 'RoboLab-120 85% 이상'(65%)과 'Embodied First
+Exam 60% 이상'(50%)은 한 세대 만의 Ember-0 2.1배, RoboDojo-RC 기본 설정
++23.2%p, Robot Intelligence Index +317점을 반영한 값입니다. Embodied
+First Exam은 코딩 에이전트 설정이라 하네스 효과가 그대로 들어갑니다.
+'사람 수준 성공률과 사람의 10배 이내 시간'(15%)과 '실시간 1초 미만
+제어'(25%)는 지연이 10초대에 머물러 낮게 둡니다. 'RoboDojo-RC 후속 등급'
+행은 <a class="xref" href="#s6-9">6.9</a>절의 '오염 통제 벤치마크 2개 이상'(70%)과 겹치지 않도록 포화에
+따른 난도 상향만 다룹니다.</p>
+<h4 id="69절-핵심-메시지에-대한-함의">6.9절 핵심 메시지에 대한 함의</h4>
+<p>세 갈래로 갈립니다. <strong>범용 모델 우위는 강해졌습니다.</strong>
+실험실 밖 실물 평가(SO-101)에서도 1–3위가 범용 모델이고, Playground
+지수의 1·2위도 LLM입니다. 시뮬 일시정지에 기댄 결과라는 반론은 실물
+평가가 늘면서 약해졌습니다. <strong>지연 문제는 그대로입니다.</strong>
+지연은 15초에서 10초로 줄었을 뿐이고, 실물 RoboDojo-RC에서 Astra는 로봇
+전용 모델보다 4배 느리고 60배 비쌉니다. 높은 점수는 여전히 '느려도 되는'
+탁상 과제에서 나옵니다. <strong>계층 구조는 성능이 아니라 경제성 근거로
+강화됐습니다.</strong> 성능만 보면 코딩 에이전트 단독이 최고이고(Codex
+97.3%), 하네스 효과(+31.6%p)가 모델 세대 차이보다 컸습니다. 반면 완수당
+비용 41달러 대 0.56달러라는 격차는 '범용 모델이 판단, 소형 정책이 반복
+실행'이라는 분업을 비용 면에서 뒷받침합니다. 따라서 2027년의 쟁점은 계층
+구조의 필요성보다 <strong>하네스를 누가 만들고 표준화하나</strong>로
+옮겨 갈 가능성이 있습니다(분석가 해석).</p>
+<blockquote>
+<p><strong>확인 필요</strong>: GPT-6.2 Astra의 AA-Robotics 79점·GPT-6.2
+Sol 78점은 Crypto Briefing 보도 기준이며 Artificial Analysis
+원문(2026-10-14)은 갱신되지 않았고 별도 리더보드 페이지는 찾지
+못했습니다. RoboColosseum SO-101 수치(DCR 1,984, 22.1%)는 OrcaRouter가
+2026-11-20 리더보드를 옮긴 값이며 리더보드는 직접 읽지 못했습니다.
+Ember-0 41.2%·19.6%는 XDOF의 X 게시(검색 요약으로 확인)와 보도 기준이며,
+리더보드 표와 사람 기준은 확인하지 못했습니다. 예측 지연 15.0→10.1초는
+보도 기준입니다. RoboDojo-RC의 비용·시간(9.46달러·6분, Dream-1
+0.15달러·1.4분)과 '같은 모델, 하네스만 차이' 설명은 Cryptopolitan(edgeX
+전재)이 인용한 Robocurve X 게시·Drew Nguyen 블로그(미확인) 기준입니다.
+edgeX 글은 기본 설정을 'Inspect Robots'라 불렀는데, Inspect Robots는
+Robocurve의 평가 프레임워크 이름입니다. Playground는 저자를 밝히지
+않았고, 'Real robots held at 31% since January' 등 일부 지표의 정의가
+불분명해 본문에 쓰지 않았습니다. OpenAI 출시 글에는 로봇 벤치마크가
+없습니다.</p>
+</blockquote>
+<h3 id="s6-11">6.11 System 1 결정 모델(Jev류)과 2027 로봇 계층 구조</h3>
+<blockquote>
+<p>자료: TypeSafe AI 'Introducing System One Models and
+Jev'(2026-09-15), AlternativeTo(Jev 1.14, 2026-10), a16z 투자
+발표(2026-10-09), Turing Post(2026-09-18), MindStudio(2026-09-18),
+Regolo(2026-09-23), AutoTrust JEV-9B 모델 카드(Hugging Face),
+openroboto-ai/jev-robot-control·robokrunch/jev-physical-ai(GitHub),
+JevVLA(arXiv 2610.35010), The Hitchhiker's Guide to System 1
+Models(arXiv 2610.33775), Leap-VLA(arXiv 2611.01011), EagleVLA(arXiv
+2607.12659), NVIDIA GEAR GR00T 2 연구 페이지(2026-11).</p>
+</blockquote>
+<p><strong>용어부터 구분합니다.</strong> 이 절의 'System 1'은 로봇
+계층에서 <strong>수십 ms 주기로 시각-행동을 내는 VLA·WAM</strong>입니다.
+TypeSafe AI가 2026-09-15 내놓은 Jev의 'System One 모델'은 다릅니다.
+프로그램 상태와 질문 목록을 받아 <strong>선택지·점수·예/아니오를 확률과
+함께 한 번에 돌려주는 구조화 결정 모델</strong>입니다. 자유 텍스트를
+만들지 않고("gives up string generation"), 모터 명령을 내도록 설계되지도
+않았습니다. 회사는 새 아키텍처·병렬 샘플러·RLCD(보정된 결정을 위한
+강화학습)를 쓴다고 밝혔지만 기술 세부와 공개 벤치마크는 내지 않았습니다.
+출시 글에는 로봇 언급이 없습니다. 로봇 쪽 용도는 모두 제3자 실험에서
+나왔습니다. 이 보고서는 두 용어가 섞이지 않도록 Jev류를 **'System
+1.5'(빠른 판단 계층, 분석가 명명)**로 부릅니다.</p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>2026 현황</th>
+<th>신뢰도</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Jev 1.13(TypeSafe)</td>
+<td>2026-09-15 조기 접근. 지연 70–500ms(회사, 미국 서부 노트북에서
+측정), 독립 측정 중앙값 350–440ms(Regolo, 보도 기준). 입력 100만 토큰당
+0.042달러, 출력 무료. 선택지 상한 255개. 업무 흐름 평가에서 GPT-6
+Astra·Fable 5.1 평균 대비 193.6배 빠르고 444.6배 저렴(회사)</td>
+<td>회사 주장</td>
+</tr>
+<tr>
+<td>Jev 1.14</td>
+<td>2026-10 하순. 경계 상자 하나를 돌려주는 box 타입 신설(첫 '판단 외'
+타입), 이미지 입력은 'danger zone' 실험 기능(옵트인 헤더). 회사는 "모든
+모델이 텍스트보다 이미지에서 성능이 낮다"고 경고</td>
+<td>2차 보도(AlternativeTo)</td>
+</tr>
+<tr>
+<td>확산 지표</td>
+<td>출시 3일 만에 1조 토큰, 포춘 500 기업 25% 통합(a16z 주장). a16z가
+투자 주도(금액 미공개)</td>
+<td>투자사 주장</td>
+</tr>
+<tr>
+<td>JEV-9B(AutoTrust, Apache-2.0)</td>
+<td>Qwen3.5-9B에 4,020만 파라미터 System 1 어댑터를 붙여 Jev 1.13 출력
+분포를 증류. 선택 1순위 일치 90.2%. 단일 결정 약 90ms, 128개 배치 시
+결정당 2.5ms. 2026-10-03 비전 판: MuJoCo 로봇 팔 집기·놓기 20개 장면 중
+10개 완수(결정당 약 165ms), <strong>8개 모터 명령 직접 선택은
+실패</strong>. 브라우저 조작 60개 과제 95%</td>
+<td>모델 카드(자체 보고). TypeSafe와 무관함을 명시</td>
+</tr>
+<tr>
+<td>JEV-27B-VL</td>
+<td>Qwen3.8-27B 위 LoRA, 이미지-텍스트 결정. 로봇·체화 데이터 없이 ERQA
+53.8%(사고 모드 60.0%)</td>
+<td>보도 기준(목록 사이트)</td>
+</tr>
+<tr>
+<td>로봇 데모 1(openroboto, xArm7·MuJoCo)</td>
+<td>사과를 접시에 놓기. 좌표가 아니라 축별 이동 방향(−/정지/+)과
+그리퍼만 선택, 카메라 대신 시뮬 기하 정보 입력. Jev 1.13 성공(113주기,
+API 비용 0.019달러, 182초), GPT-6 Astra(low) 성공(106주기, 5.93달러,
+707초). <strong>1회 시행</strong></td>
+<td>저장소 1차 확인, 통계 아님</td>
+</tr>
+<tr>
+<td>로봇 데모 2(robokrunch, AMR 1만 대 함대 트리아지)</td>
+<td>템플릿으로 만든 가상 사고 300건에 상향 보고 여부·담당 팀·긴급도 3개
+판단. p50 0.53초, 템플릿 라벨 일치 91.3%, 결정당 0.0000246달러. CPU 위
+ModernBERT(p50 169ms)가 3배 빠름</td>
+<td>저장소 1차 확인, 실로봇·보정 검증 없음</td>
+</tr>
+<tr>
+<td>파생 연구</td>
+<td>JevVLA(2026-10-26): 고정된 VLA 위에 약 8만 파라미터 에너지 모델로
+후보 순위·행동 보정, 5개 벤치마크에서 +1.3–2.3%p. Jev는 '인터페이스에서
+영감'만 받은 비공식 연구</td>
+<td>논문 초록</td>
+</tr>
+</tbody>
+</table>
+<p><strong>계층 구조에 넣으면</strong>(지연은 각 출처 값, 배치는 분석가
+정리):</p>
+<pre><code>System 2   범용 모델(GPT-6.2 Astra·Fable 5.2·Gemini 4)   10–19초/호출   과제 분해·코드·성공 판정
+   │  호출·위임
+System 1.5 구조화 결정 모델(Jev·JEV-9B)                  0.07–0.5초     재시도·사람 호출·중단, 로봇 배정, 신뢰도 게이트
+   │  선택지·점수·확률
+System 1   VLA·WAM(π0.5 47ms, GR00T 2 Turbo 124ms)       20–50Hz        시각-행동 청크
+   │  관절 목표
+System 0   학습형·고전 제어기                              1ms 이하(kHz)   균형·힘·안전 정지</code></pre>
+<ul>
+<li><strong>겹치는 구간</strong>: Jev의 지연(70–500ms)은
+WAM(Cosmos3-Nano 714ms, GR00T 2 Turbo 124ms)과 겹칩니다. 둘을 가르는
+것은 속도보다 <strong>출력의 형태</strong>입니다. Jev는 유한한 선택지와
+확률을 내고, VLA는 연속 행동을 냅니다.</li>
+<li><strong>단일 모델 이중 루프와의 관계</strong>:
+Leap-VLA(2026-10-31)는 VLM 의미 맥락을 약 1Hz로 캐시하고 행동 전문가를
+20–50Hz로 돌려, 1초 갱신에서 LIBERO 평균 95.2%(주기 일치 기준 96.3%)를
+냈습니다. EagleVLA(CoRL 2026 Spotlight)는 신뢰도에 따라 VLM과 행동
+전문가의 호출을 조절합니다. 두 연구 모두 'VLM을 매 단계 부르지 않는다'는
+같은 문제를 모델 안에서 풉니다. Jev류는 같은 문제를 모델
+<strong>밖</strong>의 별도 계층으로 풉니다.</li>
+</ul>
+<p><strong>2027 활용 전망</strong></p>
+<ol type="1">
+<li><strong>현장 판단·예외 처리(가장 유력)</strong>: 파지 실패 뒤
+재시도·사람 호출·작업 중단을 고르는 일입니다. Astranomy에서 범용 모델
+개입의 64%가 파지 실패 수정이었고(<a class="xref" href="#s6-9">6.9</a>절), Ember-0에서 모델의 '완료' 선언
+중 실제 완료는 57%였습니다. 이런 판단을 10초대 범용 모델 대신 0.5초
+안팎의 결정 모델이 맡을 수 있습니다(분석가 해석).</li>
+<li><strong>로봇 군단 배정·트리아지</strong>: robokrunch 데모가 가리키는
+용도입니다. 다만 같은 데모에서 자체 호스팅 소형 분류기가 월 약 100만 건
+이상에서 더 쌌습니다. 대규모 함대는 결국 자체 모델로 옮겨 갈 가능성이
+큽니다.</li>
+<li><strong>보정된 신뢰도 기반 사람 이관</strong>: 확률이 기준 아래면
+사람에게 넘기는 방식은 EU AI법의 사람 감독, 한국 AI기본법의 고영향 AI
+책무와 잘 맞습니다. 그러나 Turing Post는 Jev의 'confidence'가 맞을 확률
+그 자체가 아니라고 지적했고, 선택지 순서를 바꾸면 확률이 0.84–0.89에서
+0.93–0.96으로 움직였습니다(Regolo, 보도 기준). 안전 판단에 쓰려면 현장별
+재보정이 먼저입니다.</li>
+<li><strong>증류 교사</strong>: JEV-9B처럼 폐쇄 Jev를 교사로 오픈 소형
+모델을 만드는 흐름이 이미 시작됐습니다. 2027년에는 로봇 온보드 칩에 올릴
+결정 헤드를 이런 방식으로 만드는 사례가 늘 수 있습니다(추정).</li>
+<li><strong>모터 직접 제어(가능성 낮음)</strong>: JEV-9B에서 8개 모터
+명령 직접 선택은 실패했고, openroboto 데모도 주기당 약 1.6초(분석가
+계산)로 실시간 제어와 거리가 멉니다. 연속 제어는 VLA·WAM의 몫으로 남을
+것입니다.</li>
+</ol>
+<p><strong>2027년에 새로 나올 모델</strong>(<a class="xref" href="#s6-7">6.7</a>–<a class="xref" href="#s6-10">6.10</a>절에 이미 있는
+모델은 참조만)</p>
+<table>
+<thead>
+<tr>
+<th>모델</th>
+<th>2026년 말 상태</th>
+<th>2027 예상</th>
+<th>구분</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Jev 차기판(1.x 이후·Jev 2 등)</td>
+<td>로드맵 미발표. "파이프라인에 더 많은 것이 있다"(회사). box 타입은
+System One 모델 확장의 예고편</td>
+<td>이미지 정식화, 경계 상자 외 공간 타입 추가. 로봇 전용판은
+미지수</td>
+<td>이미지·공간 타입=예고, 로봇용=추정</td>
+</tr>
+<tr>
+<td>오픈 Jev류(JEV-9B·27B·35B, Openjev 등)</td>
+<td>9B–35B 오픈 가중치 공개, Openjev는 15–30ms 주장(보도 기준)</td>
+<td>온디바이스 크기(1–3B) 판과 로봇 상태 입력 미세조정판</td>
+<td>추정(추세)</td>
+</tr>
+<tr>
+<td>NVIDIA GR00T 2</td>
+<td>2026-11 발표. 처음 보는 50개 과제 무시연 평균 40%, 시연 1개 71%, 5개
+95%. Turbo 2B는 Jetson Thor에서 124ms. 'System 2 에이전트가 GR00T 2를
+도구로 호출' 구조. 코드 12월 공개 예정</td>
+<td>가중치·라이선스 공개와 파트너 채택(<a class="xref" href="#s6-8">6.8</a>–<a class="xref" href="#s6-9">6.9</a>절)</td>
+<td>발표=확정, 공개 범위=예고</td>
+</tr>
+<tr>
+<td>Cosmos 후속(Cosmos 3 다음)</td>
+<td>Cosmos 3 오픈(2026-06, <a class="xref" href="#s6-8">6.8</a>절)</td>
+<td>연 1회 안팎 갱신 추세로 후속판</td>
+<td>추정(추세)</td>
+</tr>
+<tr>
+<td>GPT-6.x·Fable·Gemini 차기, Gemini Robotics 3</td>
+<td>GPT-6.2 Astra(11-17)·Fable 5.2(11-09)·Gemini Robotics 2(07-30)</td>
+<td>플래그십 갱신은 확실시. Gemini Robotics 3라는 이름의 발표는 확인 못
+함</td>
+<td>플래그십=추세, GR 3=추정</td>
+</tr>
+<tr>
+<td>π 후속·Helix 03·GEN-2</td>
+<td>π0.7(04)·Pi API 베타(10-13), Helix 2.5(09-17, 처음 보는 가정 30곳
+56%, 보도 기준), GEN-1(04). 후속 예고 없음</td>
+<td>각 사 6–9개월 주기로 보아 2027년 내 후속 가능성 큼</td>
+<td>추정(추세)</td>
+</tr>
+<tr>
+<td>단일 모델 이중 루프 VLA</td>
+<td>Leap-VLA·EagleVLA(학술)</td>
+<td>상용 VLA가 '느린 의미 루프 + 빠른 행동 루프'를 기본 설계로 채택</td>
+<td>추정(학술 추세)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>2027 전망</strong></p>
+<table>
+<thead>
+<tr>
+<th>2027 전망</th>
+<th>가능성 · 확률(±불확도)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>선도 로봇·물리 AI 기업(휴머노이드·AMR·로봇 파운데이션 모델 개발사)
+1곳 이상이 Jev류 구조화 결정 모델(TypeSafe Jev 또는 오픈 파생)을 제품
+스택의 예외 처리·배정 계층에 공식 채택했다고 발표</td>
+<td>중간 · 40% (±20) · 근거 <a
+href="https://a16z.com/announcement/investing-in-typesafe-ai/">a16z</a>,
+<a href="https://github.com/robokrunch/jev-physical-ai">robokrunch</a>,
+<a href="https://research.nvidia.com/labs/gear/gr00t-2/">NVIDIA GR00T
+2</a>(System 2가 하위 모델을 도구로 호출) · 반론 <a
+href="https://github.com/robokrunch/jev-physical-ai">robokrunch</a>(자체
+소형 분류기가 대규모에서 더 쌈), <a
+href="https://typesafe.ai/blog/introducing-system-one-models-and-jev">TypeSafe</a>(로봇
+언급 없음)</td>
+</tr>
+<tr>
+<td>TypeSafe가 이미지 입력을 실험('danger zone')에서 정식 기능으로
+전환</td>
+<td>높음 · 75% (±15) · 근거 <a
+href="https://alternativeto.net/news/2026/10/typesafe-ai-ships-jev-1-14-with-new-box-type-composable-images-and-longer-context-length/">AlternativeTo</a>,
+<a
+href="https://typesafe.ai/blog/introducing-system-one-models-and-jev">TypeSafe</a>("not
+on images (yet…)")</td>
+</tr>
+<tr>
+<td>TypeSafe가 로봇·물리 AI 전용 판(로봇 상태·센서 입력 전용 타입, 로봇
+SDK 또는 온디바이스 판)을 공식 공개</td>
+<td>낮음 · 25% (±15) · 추정 · 근거 <a
+href="https://alternativeto.net/news/2026/10/typesafe-ai-ships-jev-1-14-with-new-box-type-composable-images-and-longer-context-length/">AlternativeTo</a>(box
+타입), <a
+href="https://www.mindstudio.ai/blog/jev-system-one-model-launch">MindStudio</a>(드론·주행
+시뮬 데모) · 반론 <a
+href="https://a16z.com/announcement/investing-in-typesafe-ai/">a16z</a>(기업
+소프트웨어 중심)</td>
+</tr>
+<tr>
+<td>오픈 Jev류 결정 모델(JEV-9B 등)을 쓴 방식이 공개 로봇 벤치마크
+리더보드(RoboArena·RoboColosseum SO-101·RoboDojo·AA-Robotics 등)에
+등재</td>
+<td>낮음 · 30% (±15) · 근거 <a
+href="https://huggingface.co/autotrust/JEV-9B">JEV-9B</a>(로봇 팔
+10/20), <a
+href="https://github.com/openroboto-ai/jev-robot-control">openroboto</a>
+· 반론 <a href="https://huggingface.co/autotrust/JEV-9B">JEV-9B</a>(모터
+직접 선택 실패)</td>
+</tr>
+<tr>
+<td>'System 1 결정 모델' 범주를 겨냥해 정확도·지연·보정 오차를 함께
+보고하는 공개 벤치마크 2개 이상 등장</td>
+<td>중간 · 60% (±20) · 근거 <a
+href="https://arxiv.org/abs/2610.33775">Hitchhiker's Guide</a>(5개
+계열·70여 재현), <a
+href="https://regolo.ai/jev-and-system-one-models-benchmarks-open-source-alternatives-and-when-to-use-them/">Regolo</a>(커뮤니티
+평가) · 반론 <a
+href="https://alternativeto.net/news/2026/10/typesafe-ai-ships-jev-1-14-with-new-box-type-composable-images-and-longer-context-length/">AlternativeTo</a>(TypeSafe는
+공개 벤치마크를 꺼림)</td>
+</tr>
+</tbody>
+</table>
+<p>앞의 '범용 모델(System 2) + 소형 VLA·WAM(System 1) 계층 구조 3곳
+이상'(75%) 전망과 겹치지 않도록, 위 행들은 그 사이에 결정 계층이 따로
+생기는지만 다룹니다.</p>
+<p><strong>한국 시사점</strong>: Jev류 결정 헤드는 수천만 파라미터
+어댑터(JEV-9B 4,020만)로도 만들 수 있어, 국산
+NPU(딥엑스·리벨리온·퓨리오사)에 올리기 좋은 크기입니다. 10장의
+K-AI반도체 풀스택 레퍼런스·자율행동체 온디바이스 과제에서 '로봇 예외
+판단·사람 이관' 결정 모델과 그 보정 시험을 실증 항목으로 넣을
+만합니다.</p>
+<blockquote>
+<p><strong>확인 필요</strong>: Jev 지연(70–500ms)·속도·비용 배수는 회사
+측정이며 독립 측정 350–440ms는 Regolo 보도 기준입니다. Jev 1.14
+출시일(2026-10-20 무렵)과 262k 맥락 길이는 AlternativeTo·MarkTechPost
+제목 기준이며 TypeSafe 변경 기록은 직접 읽지 못했습니다(Vercel
+게이트웨이는 1.13을 3.2만 토큰으로 표기). 투자 규모는 엇갈립니다. 시드
+4,000만 달러(DCVC 주도, Forkast·Turing Post 보도)와 '8.7억 달러,
+기업가치 75억 달러'(Newsbytes 제목, 본문 접근 불가)가 함께 보이며 a16z
+글은 금액을 밝히지 않았습니다. 창업자 이름은 Diogo Almeida(Turing
+Post)와 Diego Almeida(MindStudio)로 다르게 표기됩니다. JEV-27B-VL의 ERQA
+수치는 목록 사이트 기준입니다. 'Towards Agentic Robots'(arXiv
+2610.20442)의 초록에서는 System 2/1/0 계층 정의를 확인하지 못해 근거로
+쓰지 않았습니다. Gemini Robotics 2.5라는 제목의 기사(automate.org)가
+검색됐으나 본문을 열지 못했습니다. Helix 03·GEN-2·Gemini Robotics 3·π
+후속의 공식 예고는 찾지 못했습니다.</p>
+</blockquote>
+<h3 id="s6-12">6.12 로보택시·자율주행: 2027년 상용 확장</h3>
+<blockquote>
+<p>자료: Waymo 블로그·안전 허브(2026-02·06·09), Pony.ai 3분기 실적(SEC
+6-K, 2026-11-18), Baidu 3분기 실적(2026-11-16, 보도), McKinsey
+'Autonomous mobility gains ground'(보도), BCG 'Here at Last: The
+Evolution of the Robotaxi'(2026-01-06), Counterpoint(2026-04-14), 서울시
+미디어허브(2026-08-19), 관계부처 '자율주행차 산업경쟁력 제고
+방안'(2025-11-26). McKinsey 원문 페이지는 열리지 않아 보도로 확인한
+수치입니다.</p>
+</blockquote>
+<p><strong>한 줄 요약</strong>: 로보택시는 2027년에 가장 눈에 띄는
+피지컬 AI 상용 배치입니다. 미국은 Waymo가 주간 수십만 건을 넘겨 '도시 수
+경쟁'에 들어갔고, 중국 업체는 중동·유럽으로 나갑니다. <a class="xref" href="#s6-6">6.6</a>절의 하이프
+사이클에서 자율주행차가 '계몽의 경사'에 있는 것과 같은 그림입니다. 다만
+수익성과 법제는 아직 따라오지 못합니다.</p>
+<p><strong>2026년 현황</strong></p>
+<ul>
+<li><strong>Waymo</strong>: 미국 15개 도시에서 운영하고 15곳을 다음
+후보로 둡니다(2026-10, 보도 기준). 주간 유료 탑승은 2월에 40만 건(6개
+대도시권)을 넘었고, 4월에 50만 건 이상이라고 Alphabet이 밝혔습니다(보도
+기준). 목표는 2026년 말 주 100만 건입니다(보도 기준). 2026-06까지 무인
+주행 거리는 2억 7,130만 마일입니다. 2026-02에 160억 달러를
+유치했습니다(기업가치 1,260억 달러). 도쿄에서는 니혼교통·GO와 함께
+<strong>2027년 첫 완전 무인 일반 승객 운행</strong>을 목표로
+합니다(국가·지방 승인 조건). 런던은 2026년 목표가 2027년으로 밀린 것으로
+보도됐습니다.</li>
+<li><strong>Tesla</strong>: 3분기 실적 발표에서 안전요원 없는 서비스를
+오스틴 등 텍사스·플로리다 6개 도시에서 운영한다고 밝혔습니다. 무감독
+누적 주행은 약 200만 마일이며, 차량 수·탑승 건수·매출은 공개하지
+않았습니다(보도 기준). Cybercab 생산은 2026년에 시작됐습니다(보도
+기준).</li>
+<li><strong>Zoox</strong>: 2026-07-30 운전대 없는 전용 차량으로 NHTSA의
+첫 상업용 FMVSS 면제를 받았습니다(연 최대 2,500대, 2년, 보도 기준).</li>
+<li><strong>중국 업체</strong>: Baidu Apollo Go는 30개 도시, 누적
+자율주행 3.9억 km 이상(2026-10)이며, 두바이·아부다비에서 완전 무인 상용
+운행 중입니다(보도 기준). Pony.ai는 2026-09 말 로보택시 2,768대를
+운영하고 연말 20개 도시 3,500대를 목표로 합니다. 3분기 로보택시 매출은
+1,780만 달러(+165%)로 아직 작습니다. WeRide는 아부다비·리야드에서 Uber와
+운행합니다(2025년 3분기 기준, 2026년 수치 미확인).</li>
+<li><strong>전망 기관</strong>: McKinsey는 미국의 AV 서비스
+도시(안전요원 탑승 포함)가 2024년 말 3곳에서 2026-09 15곳이 됐고, 이
+속도면 <strong>2026-12 20곳, 2027-12 40곳</strong>이 된다고 봅니다(보도
+기준). BCG는 2035년 세계 로보택시 1.3백만 대(범위 70만–300만 대, 중국
+85만·미국 35만·유럽 12만)를 기준으로 보고, 손익분기에 약 7년과 10–15개
+도시가 필요하다고 봅니다. Counterpoint는 2035년 서비스 시장 1,680억
+달러, 차량 약 360만 대로 봅니다.</li>
+</ul>
+<p><strong>규제</strong></p>
+<ul>
+<li><strong>미국</strong>: 연방 AV 법률은 아직 없습니다. NHTSA는 'AV
+프레임워크' 아래 면제 절차(Part 555 임시 최종규칙, 2026-07-31)를 넓히고
+자동화 차량용 FMVSS 개정안을 냈습니다(보도 기준). 하원은 2026-06 상용
+화물차 AV 법안을 통과시켰지만 상원 처리는 미정입니다.</li>
+<li><strong>중국</strong>: 베이징 자율주행차 조례가 2025-04-01 시행됐고,
+공업정보화부가 2025-12 첫 L3 양산 차종(창안·아크폭스)을 승인했으며 2차
+승인을 진행 중입니다(보도 기준).</li>
+<li><strong>유럽·일본·영국</strong>: 독일 함부르크에서 MOIA가 레벨4 시범
+중이고 EU 완전 무인 승인은 2027년이 목표입니다. 일본은 2023-04부터
+레벨4가 합법입니다. 영국은 자동화 여객 서비스 시범을 2026년 봄으로
+앞당겼고, 런던교통공사는 2026-08 Wayve·Uber 차량 15대에 감독형(운전석
+탑승) 운행을 허가했습니다(보도 기준).</li>
+</ul>
+<p><strong>한국</strong></p>
+<ul>
+<li><strong>서울 강남 심야 자율주행택시</strong>: 2024-09 시작해
+2026-04-06부터 유료(4,800–6,700원)로 바뀌었고, 2026-08-20부터 19대(SWM
+13대, 카카오모빌리티 6대)가 강남 시범운행지구 약 20.4km²에서 평일
+22시–05시 운행합니다. 2026-07 말까지 누적 1만 5,140건(유료 전환 뒤
+6,176건)입니다. 주간 운행은 검토 중입니다.</li>
+<li><strong>정책</strong>: 관계부처는 2025-11-26 '자율주행차 산업경쟁력
+제고 방안'에서 <strong>2027년 레벨4 상용화</strong>를 목표로 광주 도시
+단위 실증, 임시운행허가 신속 처리, 2027년 사고책임 가이드라인을
+내놓았습니다. 레벨4 성능인증과 B2B 판매를 허용한 자율주행자동차법 개정은
+2025-03-20 시행됐고, 국토부는 2026-07 무인 자율주행차 안전운행 요건
+가이드라인을 냈습니다(보도 기준). 2027 정부안에서 국토부 자율주행
+R&amp;D·실증 예산은 731억 원에서 8,801억 원으로 늘었습니다(국회 심의 전,
+보도 기준).</li>
+<li><strong>해외 서비스</strong>: Tesla는 2025-11 한국에 감독형
+FSD(레벨2)를 냈습니다. Waymo·중국 업체의 한국 진출 계획은 확인하지
+못했습니다.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>2026</th>
+<th>2027 낮음 / 기준 / 높음</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>미국 AV 서비스 도시 수(McKinsey 정의, 연말)</td>
+<td>20(전망, 09월 15)</td>
+<td>30 / 40 / 50</td>
+</tr>
+<tr>
+<td>Waymo 미국 운영 도시(연말)</td>
+<td>15(10월)</td>
+<td>20 / 25 / 30</td>
+</tr>
+<tr>
+<td>Waymo 주간 유료 탑승(연말, 만 건)</td>
+<td>50 이상(04월)</td>
+<td>100 / 160 / 250</td>
+</tr>
+<tr>
+<td>Pony.ai 로보택시 대수(연말)</td>
+<td>2,768(09월), 목표 3,500</td>
+<td>5,000 / 7,000 / 10,000</td>
+</tr>
+<tr>
+<td>서울 심야 자율주행택시 대수</td>
+<td>19</td>
+<td>20 / 40 / 80</td>
+</tr>
+</tbody>
+</table>
+<p>2027 값은 모두 분석가 추정입니다. McKinsey 40곳은 현재 속도가
+이어진다는 가정의 외삽입니다.</p>
+<table>
+<thead>
+<tr>
+<th>2027 전망</th>
+<th>가능성 · 확률(±불확도)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>미국 AV 서비스 도시가 2027년 말 40곳 이상(McKinsey 기준, 안전요원
+탑승 포함)</td>
+<td>중간 · 50% (±20) · 근거 <a
+href="https://www.mckinsey.com/featured-insights/charts/autonomous-mobility-gains-ground">McKinsey</a>
+· 반론 <a
+href="https://www.bcg.com/publications/2026/here-at-last-the-evolution-of-the-robotaxi">BCG</a></td>
+</tr>
+<tr>
+<td>Waymo가 도쿄에서 일반 승객 대상 완전 무인 운행을 시작</td>
+<td>중간 · 55% (±20) · 근거 <a
+href="https://waymo.com/blog/2026/09/opening-tokyo-in-2027-with-nihon-kotsu-go/">Waymo</a></td>
+</tr>
+<tr>
+<td>Waymo 주간 유료 탑승이 2027년 말 150만 건 이상</td>
+<td>중간 · 45% (±20) · 근거 <a
+href="https://waymo.com/blog/2026/02/waymo-raises-usd16-billion-investment-round">Waymo</a>,
+<a
+href="https://techcrunch.com/2026/03/27/waymo-skyrocketing-ridership-in-one-chart/">TechCrunch</a></td>
+</tr>
+<tr>
+<td>유럽에서 첫 완전 무인 유료 로보택시 서비스(런던·스위스·독일 중 1곳
+이상) 시작</td>
+<td>중간 · 45% (±20) · 근거 <a
+href="https://news.bloomberglaw.com/tech-and-telecom-law/uber-and-wayve-win-licenses-for-supervised-robotaxis-in-london">Bloomberg
+Law</a></td>
+</tr>
+<tr>
+<td>중국 업체(Baidu·Pony.ai·WeRide)의 중동·유럽·동남아 운영 도시가 10곳
+이상</td>
+<td>중간 · 60% (±20) · 근거 <a
+href="https://www.sec.gov/Archives/edgar/data/0001969302/000110465926129308/tm2629888d1_ex99-1.htm">Pony.ai</a>,
+<a
+href="https://counterpointresearch.com/en/insights/robotaxi-services-market-to-hit-168-billion-dollar-valuation-by-2035-as-industry-reaches-inflection-point-led-by-china-us">Counterpoint</a></td>
+</tr>
+<tr>
+<td>중대 사고나 리콜로 한 업체 이상이 미국·중국의 한 도시 이상에서 무인
+운행을 중단</td>
+<td>중간 · 40% (±20) · 추정</td>
+</tr>
+<tr>
+<td>미국 연방 AV 법률(승용 로보택시 포함)이 제정</td>
+<td>낮음 · 20% (±15) · 근거 <a
+href="https://www.cov.com/news-and-insights/insights/2026/06/federal-vehicle-safety-at-midyear-regulatory-relief-legislative-momentum-and-the-road-to-the-broader-av-deployment">Covington</a></td>
+</tr>
+<tr>
+<td><strong>서울 자율주행택시가 주간 운행이나 강남 밖 지역으로
+확대</strong></td>
+<td>중간 · 60% (±20) · 근거 <a
+href="https://mediahub.seoul.go.kr/archives/2019107">서울시</a></td>
+</tr>
+<tr>
+<td><strong>한국에서 안전요원 없는 레벨4 유상 여객 운송이 일반 도로에서
+시작(정부 목표 '2027 레벨4 상용화')</strong></td>
+<td>낮음 · 30% (±20) · 근거 <a
+href="https://www.korea.kr/news/policyNewsView.do?newsId=148971442">대한민국
+정책브리핑</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>한국 시사점</strong></p>
+<ol type="1">
+<li><strong>목표의 정의를 분명히</strong>: '2027 레벨4 상용화'가
+성능인증 차량 판매인지, 안전요원 없는 유상 운송인지에 따라 달성 여부가
+달라집니다. 도시 수·무인 비율·유상 건수를 함께 성과지표로 둡니다.</li>
+<li><strong>데이터 격차</strong>: 서울 강남의 누적 1.5만 건은 Waymo의
+하루 물량에도 못 미칩니다. 주행 데이터가 모델 성능을 좌우하는 만큼, 광주
+실증도시와 서울 확대 구간에서 운행 데이터를 공동 활용하는 체계(<a class="xref" href="#s6-14">6.14</a>절의
+피지컬 AI 데이터 표준)를 붙입니다.</li>
+<li><strong>해외 업체 진입 대비</strong>: Tesla FSD처럼 해외 서비스가
+먼저 들어오면 국내 사업자는 규모에서 밀립니다. 사고책임
+가이드라인(2027)과 보험·데이터 기록 요건을 해외 사업자에게 같게 적용할
+기준을 미리 정합니다.</li>
+<li><strong>8,801억 원 예산의 쓰임</strong>: 실증 인프라에 그치지 말고
+무인 운행 허가 심사 역량(시험·인증 인력)과 원격 관제 표준에 배정해야
+상용 전환 속도가 빨라집니다.</li>
+</ol>
+<blockquote>
+<p><strong>확인 필요</strong>: McKinsey 도시 수(원문 페이지 미열람),
+Waymo 주간 50만 건·15개 도시(보도), Baidu 3분기 수치(원문 403), Tesla
+무인 도시 수(실적 발표 요약 보도), 국토부 2027 예산 8,801억 원(정부안
+보도), 서울 심야 자율주행택시의 시험운전자 탑승 여부(원문에서 확인
+필요).</p>
+</blockquote>
+<h3 id="s6-13">6.13 의료 AI 2027: 병원·제조사·연구자·의료진·치과와
+에이전트·피지컬·생성형 AI</h3>
+<blockquote>
+<p>자료: AJMC(Epic 병원 앰비언트 AI 도입 연구, TechTarget 보도 2026-02),
+AMA 2026 의사 AI 조사(2026-03), Stanford HAI "Measuring what medical AI
+can actually do"(2026-10-19), STAT(생성형 판독문 기기 혁신 지정,
+2026-06-25), Intuitive 2026년 3분기 실적, CMS CMS-0057-F·WISeR, Lokken
+대 UnitedHealth 일정 명령(2026-09-18), Google MedGemma 1.5,
+Overjet·Pearl 발표, 복지부 'AI 기본의료 전략'(뉴시스), 국내 의료
+전문지(데일리메디·머니투데이·MTN·데일리팜). 소비자 의료 AI·FDA 생성형 AI
+토론 문서·식약처 LLM 가이드라인은 <a class="xref" href="#s6-13">6.13</a>절, FDA 기기 수는 <a class="xref" href="#s6-2">6.2</a>절 값을
+씁니다.</p>
+</blockquote>
+<p><strong>한 줄 요약.</strong> 2026년 의료 AI는 <strong>기록(생성형)은
+일상화, 행정(에이전트)은 시험 단계, 수술·돌봄(피지컬)은 연구
+단계</strong>였습니다. 2027년에는 행정 에이전트가 보험사와 병원 양쪽에서
+실제 배치되고, 생성형 판독문이 첫 허가 문턱에 서며, 한국은 수가 설계가
+성패를 가릅니다.</p>
+<h4 id="소비자-의료-ai와-규제">소비자 의료 AI와 규제</h4>
+<blockquote>
+<p>자료: Forrester Predictions 2027: Healthcare(블로그·Becker's 요약),
+OpenAI ChatGPT Health 발표(2026-01), FDA CDRH 생성형 AI 기기 토론
+문서(2026-08)와 FY2027 지침 의제(RAPS 보도), FDA AI 기기 목록, 식약처
+보도자료, 국내 보도(메디칼타임즈·데일리팜). FDA 기기 수는 <a class="xref" href="#s6-2">6.2</a>절·<a class="xref" href="ch22.html#s22-6">22.6</a>절과
+같은 값(1,600건 이상, 2026-09)을 씁니다.</p>
+</blockquote>
+<p><strong>흐름: 진료의 첫 관문이 AI로.</strong> 의료 AI의 중심이 병원
+안 기록·영상(<a class="xref" href="#s6-2">6.2</a>절)에서 소비자의 첫 질문으로 넓어지고 있습니다.</p>
+<ul>
+<li><strong>이용</strong>: OpenAI는 매주 2억 3천만 명 이상이 ChatGPT에
+건강·웰니스 질문을 한다고 밝히고, 의료기록·Apple Health를 연결하는
+ChatGPT Health를 냈습니다(2026-01-07). 진단·치료용이 아니라고 명시하고,
+연결 데이터는 학습·광고에 쓰지 않는다고 했습니다.</li>
+<li><strong>Forrester 2027 전망</strong>: 미국 소비자 다수가 공개 AI로
+건강 안내를 시작하고(이미 42%가 답변 엔진으로 건강 조언을 구함),
+의료기관과 디지털 경쟁자가 정기 체크인의 약 5분의 1을 의학 훈련된 AI
+에이전트에 맡깁니다. 소비자 25%는 진료 전에 가정용 진단 키트로 AI 정보를
+확인합니다. 감독 없는 에이전트에 청구 거절·지급 승인을 맡기지는 않을
+것으로 봅니다.</li>
+</ul>
+<p><strong>미국 FDA: 틀은 '의사처럼 역량을 평가'하는
+쪽으로.</strong></p>
+<ul>
+<li><strong>토론 문서(2026-08-18)</strong>: CDRH가 『생성형 AI 기반
+의료기기 규제 고려사항』을 내고 2026-10-19까지 의견을
+받았습니다(FDA-2026-N-7874). 열린 입력, 여러 하위 과제, 같은 입력에 다른
+출력, 시간에 따른 변화라는 특성 때문에 <strong>역량 기반 시판 전
+평가</strong>와 <strong>시판 후 모니터링 강화</strong>를 제안합니다.
+지침이 아니라 비구속 문서입니다.</li>
+<li><strong>FY2027 지침 의제(2026-10)</strong>: 최우선(A) 목록에 AI 기기
+소프트웨어 수명주기 관리 지침 최종화와 <strong>정신건강용 생성형 AI
+대화형 기기</strong> 지침 초안이 들어갔습니다. 생성형 AI 기기 위험평가는
+후순위입니다(보도 기준).</li>
+<li><strong>허가 규모</strong>: AI 기기 누적 1,600건 이상(2026-09)으로,
+영상의학이 대부분입니다(<a class="xref" href="#s6-2">6.2</a>절). 소비자 대상 범용 챗봇은 '진단용이
+아님'을 내세워 기기 규제 밖에 있습니다. 이 경계가 2027년의 핵심
+쟁점입니다.</li>
+<li><strong>EU</strong>: 의료기기에 내장된 AI는 AI Act상 제품 내장형
+고위험으로, 디지털 옴니버스 이후 의무 적용이 2028-08로
+미뤄졌습니다(15장). MDR 인증과 AI Act 의무를 한 번에 심사하는 절차
+설계가 과제입니다.</li>
+</ul>
+<p><strong>한국.</strong></p>
+<ul>
+<li><strong>생성형 AI 허가</strong>: 식약처는 2025-01 생성형 AI 의료기기
+허가·심사 가이드라인에 이어 2026-06-30 LLM 기반 디지털의료기기
+가이드라인을 제정했습니다(다회차 대화, 정보 누락·왜곡, 맥락 오인식 검증.
+보도 기준). 2026-04-01에는 흉부 X선 예비 소견서를 생성하는 국내 첫
+생성형 AI 디지털의료기기를 허가했습니다.</li>
+<li><strong>디지털의료제품법</strong>: 2025-01 시행된 법에 근거해
+우수관리체계 인증 가이드라인(2026-08)과 임상자료 면제 확대(2026-07)가
+나왔습니다(보도 기준). 업데이트가 잦은 AI 기기를 기업 관리 역량으로
+심사하는 방식입니다.</li>
+<li><strong>비대면진료 제도화</strong>: 의료법 개정(2025-12-23 공포)으로
+2026-12-24부터 재진·의원급 중심의 비대면진료가 정식 시행됩니다. 처방
+일수·지역 제한은 하위법령에서 미확정이고, 공공 플랫폼은 2028년에
+열립니다(보도 기준). 2027년은 AI 문진·증상 분류가 플랫폼에 결합되는
+첫해가 됩니다.</li>
+</ul>
+<p><strong>2027 전망</strong></p>
+<table>
+<thead>
+<tr>
+<th>전망</th>
+<th>가능성 · 확률(±불확도)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FDA가 정신건강용 생성형 AI 대화형 기기 지침 초안을 2027년에
+공개</td>
+<td>중간 · 55% (±20) · 근거 <a
+href="https://www.raps.org/resource/fda-s-device-center-releases-guidance-agenda-for-fy-2027.html">RAPS</a>,
+<a
+href="https://www.fda.gov/medical-devices/digital-health-center-excellence/considerations-regulation-generative-ai-enabled-medical-devices-discussion-paper-and-request">FDA</a></td>
+</tr>
+<tr>
+<td>FDA가 AI 기기 소프트웨어 수명주기 관리 지침을 최종화</td>
+<td>중간 · 60% (±20) · 근거 <a
+href="https://www.raps.org/resource/fda-s-device-center-releases-guidance-agenda-for-fy-2027.html">RAPS</a></td>
+</tr>
+<tr>
+<td>소비자 건강 챗봇의 부적절한 의료·정신건강 조언을 이유로 한 미국 규제
+조치(FTC·주 법무장관)나 대형 소송이 추가로 나옴</td>
+<td>높음 · 72% (±15) · 근거 <a
+href="https://www.ftc.gov/news-events/news/press-releases/2025/09/ftc-launches-inquiry-ai-chatbots-acting-companions">FTC</a>,
+<a
+href="https://www.cooley.com/news/insight/2026/2026-09-28-regulating-ai-like-a-doctor-fda-floats-competency-based-path-for-generative-ai-enabled-devices">Cooley</a></td>
+</tr>
+<tr>
+<td>주요 AI 기업 2곳 이상이 의료기록 연동 소비자 건강 기능을 미국
+밖(EU·한국 등)으로 확대</td>
+<td>중간 · 50% (±20) · 근거 <a
+href="https://openai.com/index/introducing-chatgpt-health/">OpenAI</a></td>
+</tr>
+<tr>
+<td>미국 대형 의료기관·보험사가 정기 체크인·추적 관리에 의학 훈련 AI
+에이전트를 정식 배치(Forrester 전망의 실현)</td>
+<td>높음 · 70% (±15) · 근거 <a
+href="https://www.forrester.com/blogs/predictions-2027-a-consumer-revolution-is-rewriting-healthcares-rules/">Forrester</a>,
+<a
+href="https://www.beckershospitalreview.com/strategy/5-big-healthcare-predictions-for-2027-forrester/">Becker's</a></td>
+</tr>
+<tr>
+<td>식약처의 LLM·생성형 AI 디지털의료기기 허가가 2027년 말 누적 3건
+이상</td>
+<td>중간 · 55% (±20) · 근거 <a
+href="https://www.mfds.go.kr/brd/m_99/view.do?seq=49815">식약처</a>, <a
+href="https://www.medicaltimes.com/Main/News/NewsView.html?ID=1169505">메디칼타임즈</a></td>
+</tr>
+<tr>
+<td>한국 비대면진료 플랫폼에 AI 문진·증상 분류 기능이 결합되고, 그 적용
+범위를 정하는 정부 지침이 나옴</td>
+<td>중간 · 50% (±20) · 근거 <a
+href="https://www.dailypharm.com/user/news/334199">데일리팜</a>, <a
+href="https://m.dailypharm.com/user/news/342816">데일리팜</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>한국 시사점.</strong></p>
+<ol type="1">
+<li><strong>'의료기기 아님' 경계 기준</strong>: 범용 챗봇의 건강 답변과
+허가 대상 소프트웨어의 경계를 식약처가 사례 중심으로 고시합니다.
+정신건강 대화형 AI는 FDA 지침 초안과 보조를 맞춥니다.</li>
+<li><strong>비대면진료와 AI의 결합 규칙</strong>: 2026-12 시행에 맞춰 AI
+문진의 책임 주체(의사 최종 판단), 기록 보존, 개인 건강 데이터의 외부 AI
+연동 동의 기준을 정합니다.</li>
+<li><strong>허가 후 실사용 검증</strong>: <a class="xref" href="#s6-2">6.2</a>절의 '허가와 근거의 괴리'를
+줄이려면 디지털의료제품법의 우수관리체계 인증에 실사용 성능 보고를
+묶습니다.</li>
+</ol>
+<blockquote>
+<p><strong>확인 필요</strong>: Forrester 2027 헬스케어 수치는 공개
+블로그·Becker's 요약 기준입니다. FDA FY2027 지침 의제의 공식 제목,
+식약처 LLM 가이드라인(2026-06-30) 원문, 국내 첫 생성형 AI 기기의 제품명,
+디지털의료제품법 하위 고시 개정 일자, 비대면진료 시행일(2026-12-24)은
+보도로만 확인했습니다. ChatGPT Health의 미국 밖 출시 범위는 확인하지
+못했습니다.</p>
+</blockquote>
+<h4 id="한눈에-보기-주체별-2026-현황과-2027-전망">한눈에 보기: 주체별
+2026 현황과 2027 전망</h4>
+<table>
+<thead>
+<tr>
+<th>주체</th>
+<th>2026 현황</th>
+<th>2027 전망</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>병원</strong></td>
+<td>미국 Epic 사용 병원의 62.6%가 앰비언트 AI 도입(2025-06 기준, AJMC).
+비영리 70.2%, 영리 28.8%로 격차</td>
+<td>기록에서 청구·코딩·사전승인 에이전트로 확장. 도입
+격차(농촌·영리·소형)가 정책 쟁점</td>
+</tr>
+<tr>
+<td><strong>EHR·플랫폼</strong></td>
+<td>Epic이 Art(의료진)·Emmie(환자)·Penny(원무) 에이전트와 고객이 직접
+만드는 Agent Factory 공개(2026). Microsoft Dragon Copilot 임상의 10만
+명+(2026-03, 회사 발표)</td>
+<td>EHR 벤더가 '에이전트 장터'의 관문이 됨. 독립 스크라이브 업체는 진료
+지능·임상시험 연계로 차별화</td>
+</tr>
+<tr>
+<td><strong>의료기기 제조사</strong></td>
+<td>FDA AI 기기 누적 1,600건+(<a class="xref" href="#s6-2">6.2</a>절). 생성형 판독문 기기는 혁신 지정만
+있고 허가 없음(Cognita 2026-03, Aidoc 2026-06)</td>
+<td>첫 생성형 판독문 기기 허가가 분기점. 수술 로봇은 da Vinci 5 확산과
+데이터 기반 보조 기능 경쟁</td>
+</tr>
+<tr>
+<td><strong>의료 AI 연구자</strong></td>
+<td>시험형 벤치마크 포화(<a class="xref" href="#s6-2">6.2</a>절). 실제 EHR 과제는 장기 과업 46%, 원무
+종단 과업 36% 수준(Stanford HAI)</td>
+<td>평가 중심이 '정답률'에서 '실행 완료율·안전'으로 이동. 전향적 무작위
+연구 확대</td>
+</tr>
+<tr>
+<td><strong>의료진</strong></td>
+<td>미국 의사 81%가 AI 사용(2023년 38%), 탈숙련 우려 88%(AMA 2026). 한국
+의원·병원 의사 최근 한 달 이용 63%(보도 기준)</td>
+<td>스크라이브는 RCT로 효과 확인, 다음 쟁점은 탈숙련·자동화 편향과 책임
+배분</td>
+</tr>
+<tr>
+<td><strong>치과</strong></td>
+<td>파노라마·CBCT 판독 AI의 FDA 허가 확대(Pearl·Overjet). 보험 확인·비용
+추정 AI 출시(Overjet Ivy, 2026-10)</td>
+<td>판독 AI가 보험 청구 심사와 연동. 국내는 전자차트 내장 AI가 확산
+경로</td>
+</tr>
+<tr>
+<td><strong>환자·보험자</strong></td>
+<td>미국 CMS WISeR(AI 활용 사전승인) 6개 주 시행(2026-01). 보험사 AI
+거절 소송 진행 중</td>
+<td>2027-01 사전승인 API 의무 시행으로 '에이전트 대 에이전트' 사전승인
+시작</td>
+</tr>
+<tr>
+<td><strong>규제기관</strong></td>
+<td>FDA 생성형 AI 토론 문서(<a class="xref" href="#s6-13">6.13</a>절), EU 의료기기 AI 고위험 의무
+2028-08로 연기 합의, 한국 'AI 기본의료 전략'(2026-08)</td>
+<td>미국은 역량 기반 평가 지침화, 한국은 AI 수가 방식 결정이 핵심</td>
+</tr>
+</tbody>
+</table>
+<h4 id="기술-축별-흐름">기술 축별 흐름</h4>
+<p><strong>생성형 AI: 기록은 검증됐고, 판독문은 허가 문턱.</strong></p>
+<ul>
+<li><strong>앰비언트 스크라이브</strong>: 병원 단위 도입은 다수가 됐고,
+의사 단위 사용은 아직 고르지 않습니다.
+<ul>
+<li>미국 6,500여 병원 중 Epic 사용 병원(42.4%)의 62.6%가
+도입했습니다(2025-06 기준). 남부 69.5%, 중서부 54.9%입니다. DAX
+Copilot·Abridge 등 상위 3개 도구가 구현의 80% 이상입니다(<a
+href="https://www.techtarget.com/searchHealthIT/news/366638553/Two-thirds-of-Epic-hospitals-have-adopted-ambient-AI-tools">TechTarget,
+AJMC 연구 보도</a>).</li>
+<li>Abridge는 300개 이상 병원 시스템에서 가동 중이고(<a class="xref" href="ch22.html#s22-6">22.6</a>절),
+Epic·Oracle Health·athenahealth 안에서 돌아갑니다.</li>
+<li>병원 안 실제 사용률은 기관마다 다릅니다. Memorial Sloan Kettering
+조사에서는 임상의 19.8%만 썼습니다(보도 기준).</li>
+</ul></li>
+<li><strong>효과 근거</strong>: 외래 의사 238명을 DAX·Nabla·대조군에
+무작위 배정한 연구(NEJM AI, 2025-11)는 두 도구 모두 번아웃 지표 개선을
+보였지만, 가끔 생기는 부정확성 때문에 계속 확인해야 한다고 했습니다(<a
+href="https://pubmed.ncbi.nlm.nih.gov/41497288/">PubMed</a>). 2026년
+교차 시험(160명)도 번아웃 감소를 보고했습니다(보도 기준).</li>
+<li><strong>판독문 초안</strong>: FDA는 흉부 X선 전체를 읽고 소견 문장을
+생성하는 기기 2건에 혁신 의료기기 지정을 줬습니다(Cognita 2026-03, Aidoc
+First Read 2026-06). 허가는 아직 없습니다(<a
+href="https://www.statnews.com/2026/06/25/radiology-generative-ai-cognita-aidoc-fda-breakthrough-designation/">STAT</a>,
+<a
+href="https://www.aidoc.com/about/news/aidoc-receives-fda-breakthrough-device-designation-for-ai-that-drafts-radiology-reports/">Aidoc</a>).
+한국은 같은 유형을 2026-04에 먼저 허가했습니다(<a class="xref" href="#s6-13">6.13</a>절). RSNA는 환각과
+자동화 편향 평가를 요구했습니다.</li>
+<li><strong>의료 FM</strong>: Google은 CT·MRI 3D와 디지털 병리 전체
+슬라이드를 읽는 MedGemma 1.5(4B)와 의료 음성인식 MedASR을
+공개했습니다(2026-01-13, <a
+href="https://research.google/blog/next-generation-medical-image-interpretation-with-medgemma-15-and-medical-speech-to-text-with-medasr/">Google
+Research</a>). MedGemma 계열은 1,000만 회 이상 내려받아졌습니다(2026-09,
+<a
+href="https://blog.google/innovation-and-ai/technology/health/medgemma-global-healthcare/">Google</a>).
+'MedGemma 2'는 확인되지 않았습니다.</li>
+<li><strong>벤치마크</strong>: MedHELM(121개 과제) 승률은 기록 생성
+0.74–0.85, 환자 소통 0.76–0.89로 높지만 행정·업무 흐름은 0.53–0.63으로
+가장 낮습니다(<a
+href="https://hai.stanford.edu/news/measuring-what-medical-ai-can-actually-do">Stanford
+HAI</a>).</li>
+</ul>
+<p><strong>에이전트 AI: 행정이 먼저, 그러나 '끝까지 하는' 능력은
+아직.</strong></p>
+<ul>
+<li><strong>EHR 벤더 에이전트</strong>: Epic은 Art·Emmie·Penny 세
+에이전트와, 129개 AI 기능을 엮어 병원이 직접 에이전트를 만드는 Agent
+Factory를 냈습니다. 잘 된 에이전트는 고객 간 공유 라이브러리에
+올립니다(<a
+href="https://healthcareittoday.com/2026/09/03/inside-epics-push-to-help-customers-build-their-own-ai-agents-using-agent-factory">Healthcare
+IT Today</a>). FTC가 Epic의 데이터 접근 관행을 조사한다는 보도도
+있습니다(Reuters 인용, 보도 기준).</li>
+<li><strong>실행 격차</strong>: 짧은 과제는 풀리지만 긴 과제는 아직
+절반을 못 끝냅니다(<a
+href="https://hai.stanford.edu/news/measuring-what-medical-ai-can-actually-do">Stanford
+HAI</a>).
+<ul>
+<li>MedAgentBench(300과제): 최고 성공률이 2025년 70% 미만에서 2026년 90%
+이상으로 올랐습니다.</li>
+<li>PhysicianBench(100과제, 평균 도구 호출 27회): 최고 GPT-5.5가 단일
+시도 46%, 세 번 모두 성공 28%입니다. 최고 오픈 모델(DeepSeek V4-Pro)은
+19%입니다.</li>
+<li>HealthAdminBench(사전승인·이의신청 등 135과제): Claude Opus 4.6이
+종단 완료 36.3%입니다. GPT-5.4는 하위 과제 82.8%를 통과하고도 전체
+완료는 26.7%입니다.</li>
+<li>실패 유형: 실행 실패의 62%(GPT-5.5)·73%(Claude Opus 4.6)는
+<strong>올바른 조치를 기록에 적고도 EHR에 실제 오더를 넣지 않은</strong>
+경우입니다.</li>
+</ul></li>
+<li><strong>보험자 대 병원</strong>: 사전승인이 '에이전트 대 에이전트'로
+넘어가는 제도 조건이 2027년에 갖춰집니다.
+<ul>
+<li>CMS WISeR 모델은 2026-01부터 6개 주 전통 Medicare에서 AI 업체를 통한
+사전승인을 시험합니다. 텍사스 초기 승인률은 약 62%, 의사 재검토 후
+84%입니다(Washington Post 인용, 보도 기준). 의회에서 폐지 결의안이
+나왔습니다(<a
+href="https://medicare.chir.georgetown.edu/new-cms-wiser-model-revives-concerns-of-prior-authorization-and-artificial-intelligence/">Georgetown
+CHIR</a>).</li>
+<li>CMS-0057-F에 따라 보험사는 <strong>2027-01-01부터 사전승인
+API</strong>를 운영해야 합니다(<a
+href="https://www.cms.gov/cms-interoperability-and-prior-authorization-final-rule-cms-0057-f">CMS</a>).
+기계가 읽을 수 있는 통로가 생기면 병원 에이전트와 보험사 에이전트가 직접
+주고받는 구조가 됩니다.</li>
+</ul></li>
+</ul>
+<p><strong>피지컬 AI: 수술 로봇은 확산, 자율 수술은 연구실.</strong></p>
+<ul>
+<li><strong>수술 로봇</strong>: 시장은 커지지만 성장 속도는 둔화
+조짐입니다.
+<ul>
+<li>Intuitive는 2026년 3분기에 da Vinci 5를 315대 설치했고(전년 240대),
+da Vinci 설치 기반은 12,094대(+12%), 전 세계 da Vinci 시술은 약 14%
+늘었습니다(<a
+href="https://www.morningstar.com/news/globe-newswire/9849716/intuitive-announces-third-quarter-earnings">Intuitive,
+Morningstar 게재</a>). da Vinci 5 누적 설치는 2,000대를 넘었습니다(실적
+발표, 보도 기준).</li>
+<li>미국 시술 증가율은 10%로 둔화했고(2분기 12%), 해외는 약
+20%입니다(MassDevice 보도).</li>
+<li>경쟁: J&amp;J Ottava의 FDA De Novo 허가가 보도됐습니다(보도 기준).
+2027년 경쟁 축은 로봇 팔보다 수술 영상·동작 데이터를 쓰는 AI 보조
+기능입니다(추정).</li>
+</ul></li>
+<li><strong>자율 수술</strong>: Johns Hopkins 등의 SRT-H는 사람 조작
+없이 돼지 적출 담낭 8건의 절제 단계를 수행했습니다(Science Robotics,
+2025-07, <a
+href="https://hub.jhu.edu/2025/07/09/robot-performs-first-realistic-surgery-without-human-help">JHU</a>).
+2026-11 현재 자율 수술의 인체 임상은 확인되지 않습니다. UCSD는 원격조작
+휴머노이드로 생체 전임상 최소침습 수술을 처음 했지만 임상은 수년 뒤라고
+했습니다(2026-07, ACS 보도).</li>
+<li><strong>병원 물류·간호 보조</strong>: Diligent의 Moxi는 Serve
+Robotics에 인수된 뒤(2026-01, 2,900만 달러) Moxi 2.0 배치를 시작했지만,
+배치 병원은 25곳 이상 수준에 머뭅니다(<a
+href="https://www.therobotreport.com/five-years-operation-shape-diligent-robotics-rollout-moxi-2-0/">The
+Robot Report</a>, <a
+href="https://www.diligentrobots.com/blog/diligent-robotics-a-serve-robotics-company-begins-rolling-out-moxi-20">Diligent</a>).
+돌봄·재활 휴머노이드는 <a class="xref" href="#s6-2">6.2</a>절의 장기 과업 성공률(15–65%)과 안전 문제
+때문에 2027년에도 시범 단계로 봅니다 (추정).</li>
+</ul>
+<h4 id="치과">치과</h4>
+<ul>
+<li><strong>영상 판독</strong>: 치과 AI는 2D 구내 방사선에서
+파노라마·CBCT(3D)로 넓어졌습니다.
+<ul>
+<li>Pearl의 Second Opinion은 파노라마 영상의 충치·치근단 병소·매복
+사랑니 검출로 FDA 510(k) 허가를 받았고(2025-12 발표), CBCT용 3D 제품을
+2026-09 미국·캐나다 일반 치과에 출시했습니다(<a
+href="https://hellopearl.com/news/pearl-expands-dental-ai-capabilities-with-fda-clearance-for-panoramic-x-rays">Pearl</a>,
+<a
+href="https://www.oralhealthgroup.com/dental-industry/timeline-five-fda-clearances-for-3d-dental-ai-as-pearl-launches-cbct-software-for-general-dentists-1003998767">Oral
+Health Group</a>).</li>
+<li>Overjet은 CBCT 해부·수복 구조를 찾고 재는 CBCT Assist 허가를
+받았고(2025-12-05, 보도 기준), 영국 최대 치과 네트워크 mydentist와
+제휴했습니다(2026-02, 보도 기준).</li>
+</ul></li>
+<li><strong>보험 청구</strong>: Overjet은 보험사 쪽 청구 심사 플랫폼과
+함께, 진료실 쪽에서 보험 자격 확인·보장 한도 확인·보험사 전화까지 하는
+'AI 보험 코디네이터' Ivy를 냈습니다(2026-10-19, <a
+href="https://www.healthcaredive.com/press-release/20260922-overjet-introduces-ivy-an-ai-insurance-coordinator-and-the-first-of-its-ai/">Overjet
+보도자료</a>). 의과의 사전승인과 같은 '양쪽 AI' 구도가 치과에서 먼저
+굳고 있습니다.</li>
+<li><strong>로봇</strong>: Perceptive는 2024년 콜롬비아에서 OCT 영상과
+AI 계획으로 크라운 삭제를 자동 수행했다고 발표했지만, FDA 허가와 상용
+일정은 확인되지 않습니다(<a
+href="https://spectrum.ieee.org/robot-dentist">IEEE Spectrum</a>).
+임플란트 식립 보조 로봇 Neocis Yomi는 이미 상용입니다.</li>
+<li><strong>한국</strong>: 오스템임플란트는 전자차트 OneClick에 진료
+대화 음성 기록과 영상 기반 충치 위험 분석을 넣겠다고 밝혔습니다(2026-06,
+<a
+href="https://www.hellot.net/mobile/article.html?no=113124">헬로티</a>).
+국내 치과는 별도 AI 제품보다 <strong>장비·차트 회사의 내장
+기능</strong>으로 AI가 들어옵니다. 덴티움·메디트의 2026년 AI 판독·생성형
+설계 발표는 찾지 못했습니다.</li>
+</ul>
+<h4 id="제조사규제지불">제조사·규제·지불</h4>
+<ul>
+<li><strong>FDA</strong>: 기기 목록은 아직 LLM 기반 기기를 따로 표시하지
+않고, 향후 표시 방법을 만들겠다고 합니다(<a
+href="https://www.fda.gov/medical-devices/digital-health-center-excellence/artificial-intelligence-enabled-medical-devices">FDA</a>).
+2027년 첫 생성형 판독문 허가가 나오면 그 표시가 시작될 가능성이
+큽니다.</li>
+<li><strong>EU</strong>: 2026-05-07 디지털 옴니버스 잠정 합의로 의료기기
+내장 AI의 고위험 의무는 2027-08-02에서 <strong>2028-08-02</strong>로
+미뤄졌고, MDR·IVDR 기기는 고위험 범위에 남았습니다. 2028 일정도
+위임법·조화표준 준비에 달려 있습니다(<a
+href="https://www.taylorwessing.com/en/international-life-sciences-newsletter/life-sciences-legal-lens-vol-2/update-ai-enabled-medical-devices-and-ivds-confirmed-as-high-risk">Taylor
+Wessing</a>). 업계는 2029년을 요구했습니다.</li>
+<li><strong>한국 정책</strong>: 정부는 'AI 기본의료 전략'(2026-08-06
+국가정책조정회의)으로 책임의료기관 72곳을 국가 GPU 기반 공공의료 AI
+플랫폼에 연결합니다(2026 하반기 9곳, <strong>2027년 30곳</strong>,
+2029년 72곳). 한국형 의료 AI 모델 개발은 2027년 본격 시작합니다(<a
+href="https://mobile.newsis.com/view/NISX20260806_0003738413">뉴시스</a>).</li>
+<li><strong>한국 수가</strong>: 복지부 데이터진흥과장은 "사용량에 비례한
+수가를 적용하지 않겠다"며 임상 성과와 기관의 보안·표준화·거버넌스 요건을
+보는 <strong>기관 단위·성과 기반 수가</strong> 구상을 밝혔습니다. 시행
+시점은 나오지 않았고, AI 활용 바우처는 예산 확보 전입니다(2026-10-23, <a
+href="https://dailymedi.com/news/news_view.php?wr_id=941829">데일리메디</a>).
+현재 AI 기술은 대부분 한시적 비급여입니다.</li>
+<li><strong>한국 기업</strong>: 성장은 이어지지만 흑자 전환은
+아직입니다.
+<ul>
+<li>루닛: 3분기 매출 222억 원(+13–14%), 영업손실 107억 원(-50%), EBITDA
+손실 35억 원(14분기 만의 최소)입니다. 2026-01 유상증자 2,115억 원으로 CB
+상환에 대응했고, 2026-11-04 477억 원 CB를 새로 발행하기로 했습니다(<a
+href="https://dailypharm.com/user/news/344509">데일리팜</a>, <a
+href="https://news.mtn.co.kr/article/2026111716335234175">MTN</a>).</li>
+<li>뷰노: 3분기 누적 매출 178억 원(-35%), 누적 영업손실 103억 원이고
+매출의 87%가 딥카스입니다. 2025년 3분기 흑자는 사업 양도 대금
+영향이었습니다.</li>
+<li>딥카스: 2·3차 병원 180곳·6만 5천 병상에서 쓰이고(2026-06), 일반병동
+16만 명 전후 비교에서 원내 심정지 21% 감소를 내세웁니다(회사 발표, <a
+href="https://www.mt.co.kr/article/2026091814250287978">머니투데이</a>).
+신의료기술 평가 결과(2026년 4분기 예정)가 의료 AI 첫 신의료기술 인정이
+될지, 핵심 매출 위험이 될지 갈립니다.</li>
+<li>딥노이드·제이엘케이·코어라인소프트의 2026년 3분기 실적은 이번에
+확인하지 못했습니다.</li>
+</ul></li>
+</ul>
+<h4 id="의료진연구자">의료진·연구자</h4>
+<ul>
+<li><strong>사용률</strong>: 개인 사용은 빠른데 기관 도입은 느립니다.
+<ul>
+<li>미국: AMA 2026 조사(2026-01–02)에서 의사 81%가 AI를 쓰며(2023년
+38%), 1인당 용도는 2.3개입니다. 가장 흔한 용도는 연구·진료지침
+요약(39%)과 퇴원 안내·경과기록 작성(30%)입니다. 70%는 번아웃 업무
+자동화를 기대하지만 88%가 술기 상실을 걱정합니다(<a
+href="https://ama-assn.org/press-center/ama-press-releases/ama-ai-usage-among-doctors-doubles-confidence-technology-grows">AMA</a>).</li>
+<li>한국: 메디게이트 조사에서 의원·병원 의사의 최근 한 달 이용률이
+31%에서 63%로 올랐고, 주 용도는 의약품 정보 검색입니다(2026-07, 보도
+기준). 의료기관 시스템에 도입해 쓰는 비율은 20% 미만이라는 조사도
+있습니다(보도 기준).</li>
+<li>간호: Microsoft는 간호사용 Dragon Copilot을 미국에서 2025-12 정식
+출시했습니다. 간호 기록은 2027년 스크라이브의 다음
+확산처입니다(추정).</li>
+</ul></li>
+<li><strong>탈숙련 근거</strong>: AI 보조 대장내시경 도입 뒤 AI 없이 한
+검사의 선종 발견율이 28.4%에서 22.4%로 떨어졌다는 관찰 연구가
+있습니다(Lancet Gastroenterol Hepatol 2025, <a
+href="https://wrap.warwick.ac.uk/id/eprint/191005">Warwick</a>). 후향적
+전후 비교이고 반대 결과도 있어, 2027년에는 교차 무작위 연구가 늘
+것입니다 (추정).</li>
+<li><strong>책임</strong>: 보험사 AI(nH Predict) 거절을 다투는 Lokken 대
+UnitedHealth 사건은 집단 인정 신청이 2027-02, 재판 준비일이 2028-02로
+밀렸습니다(<a
+href="https://litigationtracker.law.georgetown.edu/wp-content/uploads/2023/11/Estate-of-Gene-B.-Lokken-The-et-al-v.-UnitedHealth-Group-Inc.-et-al_2026.09.18_SCHEDULING-ORDER.pdf">법원
+일정 명령, Georgetown 소송 추적</a>). 2027년 안에 의료 AI 책임에 관한
+본안 판결이 나오기는 어렵습니다. 의료 AI 책임·보험은 21장을 봅니다.</li>
+</ul>
+<h4 id="2027-전망-3">2027 전망</h4>
+<table>
+<thead>
+<tr>
+<th>전망</th>
+<th>가능성 · 확률(±불확도)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FDA가 영상 전체를 읽고 판독문(소견 문장) 초안을 생성하는 생성형 AI
+기기를 처음 허가(510(k)·De Novo)</td>
+<td>중간 · 50% (±20) · 근거 <a
+href="https://www.statnews.com/2026/06/25/radiology-generative-ai-cognita-aidoc-fda-breakthrough-designation/">STAT</a>,
+<a
+href="https://www.aidoc.com/about/news/aidoc-receives-fda-breakthrough-device-designation-for-ai-that-drafts-radiology-reports/">Aidoc</a>
+· 반론 <a
+href="https://www.rsna.org/-/media/Files/RSNA/government-relations/RSNACommentsFDAGenAI101926.pdf">RSNA</a></td>
+</tr>
+<tr>
+<td>미국 Epic 사용 병원의 앰비언트 AI 도입률이 후속 조사에서 80%
+이상으로 집계</td>
+<td>중간 · 60% (±20) · 근거 <a
+href="https://www.techtarget.com/searchHealthIT/news/366638553/Two-thirds-of-Epic-hospitals-have-adopted-ambient-AI-tools">TechTarget(AJMC)</a>,
+<a
+href="https://ama-assn.org/press-center/ama-press-releases/ama-ai-usage-among-doctors-doubles-confidence-technology-grows">AMA</a></td>
+</tr>
+<tr>
+<td>미국 대형 보험사가 2027-01 사전승인 API를 가동하고, 병원 측 AI
+에이전트가 이 API로 사전승인을 자동 제출하는 상용 사례가 공표('에이전트
+대 에이전트')</td>
+<td>높음 · 70% (±15) · 근거 <a
+href="https://www.cms.gov/cms-interoperability-and-prior-authorization-final-rule-cms-0057-f">CMS</a>,
+<a
+href="https://healthcareittoday.com/2026/09/03/inside-epics-push-to-help-customers-build-their-own-ai-agents-using-agent-factory">Healthcare
+IT Today</a></td>
+</tr>
+<tr>
+<td>CMS WISeR(AI 활용 사전승인) 모델이 폐지되지 않고 2027년에도
+운영</td>
+<td>중간 · 60% (±20) · 근거 <a
+href="https://www.cms.gov/files/document/wiser-model-rfa.pdf">CMS</a> ·
+반론 <a
+href="https://medicare.chir.georgetown.edu/new-cms-wiser-model-revives-concerns-of-prior-authorization-and-artificial-intelligence/">Georgetown
+CHIR</a></td>
+</tr>
+<tr>
+<td>의료 원무 에이전트 벤치마크(HealthAdminBench류)에서 종단 과업 완료율
+60% 이상 공개</td>
+<td>중간 · 50% (±20) · 근거 <a
+href="https://hai.stanford.edu/news/measuring-what-medical-ai-can-actually-do">Stanford
+HAI</a></td>
+</tr>
+<tr>
+<td>사람 조작 없이 수술 단계를 수행하는 자율 수술 로봇의 첫 인체 임상
+착수가 공표</td>
+<td>낮음 · 20% (±15) · 근거 <a
+href="https://hub.jhu.edu/2025/07/09/robot-performs-first-realistic-surgery-without-human-help">JHU</a></td>
+</tr>
+<tr>
+<td>Intuitive da Vinci 5 누적 설치가 2027년 말 3,000대 이상</td>
+<td>높음 · 80% (±10) · 근거 <a
+href="https://www.morningstar.com/news/globe-newswire/9849716/intuitive-announces-third-quarter-earnings">Intuitive</a></td>
+</tr>
+<tr>
+<td>미국 치과에서 AI 보험 코디네이터·청구 에이전트를 내놓은 업체가 3곳
+이상으로 늘고, 판독 AI 결과가 청구 심사 생략·자동 승인에 쓰이는 사례가
+확대</td>
+<td>높음 · 70% (±15) · 근거 <a
+href="https://www.healthcaredive.com/press-release/20260922-overjet-introduces-ivy-an-ai-insurance-coordinator-and-the-first-of-its-ai/">Overjet</a>,
+<a
+href="https://hellopearl.com/news/pearl-expands-dental-ai-capabilities-with-fda-clearance-for-panoramic-x-rays">Pearl</a></td>
+</tr>
+<tr>
+<td>국내 치과 장비·차트 업체가 식약처 허가를 받은 치과 영상 판독 AI를
+전자차트에 상용 탑재</td>
+<td>중간 · 55% (±20) · 근거 <a
+href="https://www.hellot.net/mobile/article.html?no=113124">헬로티</a></td>
+</tr>
+<tr>
+<td>복지부가 의료 AI 성과 기반(기관 단위) 수가 시범사업이나 건정심
+안건을 2027년에 공식화</td>
+<td>중간 · 45% (±20) · 근거 <a
+href="https://dailymedi.com/news/news_view.php?wr_id=941829">데일리메디</a>,
+<a
+href="https://mobile.newsis.com/view/NISX20260806_0003738413">뉴시스</a></td>
+</tr>
+<tr>
+<td>공공의료 AI 고속도로가 목표대로 2027년 말 책임의료기관 30곳 이상
+연결</td>
+<td>중간 · 55% (±20) · 근거 <a
+href="https://mobile.newsis.com/view/NISX20260806_0003738413">뉴시스</a></td>
+</tr>
+<tr>
+<td>루닛·뷰노 중 한 곳 이상이 2027년 연간 영업흑자</td>
+<td>낮음 · 25% (±15) · 근거 <a
+href="https://dailypharm.com/user/news/344509">데일리팜</a> · 반론 <a
+href="https://news.mtn.co.kr/article/2026111716335234175">MTN</a></td>
+</tr>
+<tr>
+<td>EU가 의료기기 내장 AI의 고위험 의무 적용(2028-08)을 다시 미루거나
+의료기기를 AI Act 범위에서 빼는 결정을 2027년에 내림</td>
+<td>낮음 · 25% (±15) · 근거 <a
+href="https://www.taylorwessing.com/en/international-life-sciences-newsletter/life-sciences-legal-lens-vol-2/update-ai-enabled-medical-devices-and-ivds-confirmed-as-high-risk">Taylor
+Wessing</a>, <a
+href="https://www.dlapiper.com/en-gb/insights/blogs/cortex-life-sciences-insights/2025/digital-omnibus-and-ai-act-updates-key-implications-for-medtech">DLA
+Piper</a></td>
+</tr>
+<tr>
+<td>미국에서 의료 AI의 진단·급여 결정 오류 책임을 다룬 주요 사건에 본안
+판결(배심 평결 포함)이 나옴</td>
+<td>낮음 · 20% (±15) · 근거 <a
+href="https://litigationtracker.law.georgetown.edu/wp-content/uploads/2023/11/Estate-of-Gene-B.-Lokken-The-et-al-v.-UnitedHealth-Group-Inc.-et-al_2026.09.18_SCHEDULING-ORDER.pdf">Lokken
+일정 명령</a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="이슈와-위험">이슈와 위험</h4>
+<ol type="1">
+<li><strong>'적어 놓고 실행 안 함'</strong>: 에이전트 실패의 60–70%가
+올바른 판단을 하고도 오더를 넣지 않은 경우입니다. 의료에서는 누락이 곧
+사고이므로, 에이전트 감사 로그는 '기록'과 '실행'을 따로 검증해야
+합니다.</li>
+<li><strong>보험자·병원 AI 군비 경쟁</strong>: 사전승인 자동화가
+양쪽에서 동시에 진행되면 처리 속도는 빨라져도 거절·이의신청 총량이 늘 수
+있습니다. WISeR 초기 승인률(62%)이 MA(90% 이상)보다 낮다는 보도가 이
+위험을 보여 줍니다.</li>
+<li><strong>탈숙련·자동화 편향</strong>: 의사 88%가 우려합니다. 판독문
+초안이 정착하면 전공의 수련에서 '처음부터 읽는' 경험이 줄어듭니다.</li>
+<li><strong>도입 격차</strong>: 비영리 병원 70% 대 영리 29%, 도시 65% 대
+농촌 54%. 한국도 상급종합병원과 지역 병원 사이에 같은 격차가
+생깁니다.</li>
+<li><strong>허가와 지불의 단절</strong>: 한국은 허가가 빨라도(생성형
+기기 세계 최초급) 수가가 없어 기업이 적자를 냅니다. 딥카스 평가처럼 한
+건의 결정이 기업 존속을 좌우합니다.</li>
+<li><strong>EHR 집중</strong>: 에이전트 장터가 EHR 벤더 안에 생기면
+데이터 접근과 경쟁이 한 회사의 정책에 달립니다(FTC 조사 보도).</li>
+<li><strong>평가와 현실의 간극</strong>: 시험형 벤치마크는 포화됐는데
+장기 과업은 절반 이하입니다. 허가·구매 기준이 정답률 점수에 머물면 현장
+실패를 걸러내지 못합니다.</li>
+</ol>
+<h4 id="한국-시사점과-국가인공지능전략위원회-안건">한국 시사점과
+국가인공지능전략위원회 안건</h4>
+<ol type="1">
+<li><strong>성과 기반 수가를 2027년에 시범으로</strong>: 복지부
+구상(기관 단위·성과 기반)을 공공의료 AI 고속도로 30곳에서 먼저
+시험합니다. 기록 자동화·환자안전(조기경보)처럼 행위로 나누기 어려운
+AI부터 묶습니다(8장 제언과 연결).</li>
+<li><strong>의료 에이전트 실행 검증 기준</strong>: 식약처 LLM
+가이드라인(<a class="xref" href="#s6-13">6.13</a>절)을 넘어, EHR에서 오더·청구를 '실행'하는 에이전트의
+권한·로그·사람 확인 지점을 정한 시험 기준을 만듭니다. 심평원
+청구·사전심사 전산과의 API 표준도 함께 정합니다.</li>
+<li><strong>치과를 빠른 실증 분야로</strong>: 치과는 영상 표준화가 쉽고
+비급여 비중이 높아 AI 판독·청구 자동화 효과를 빨리 볼 수 있습니다. 국내
+장비사의 전자차트 내장 AI에 식약처 허가·실사용 성능 보고를
+묶습니다.</li>
+</ol>
+<ul>
+<li><strong>위원회 안건(제8조 기준)</strong>: 의료 AI 성과 기반 수가
+시범사업(7호 산업·공공 활용)과 의료 에이전트 실행 검증·고영향 AI 요건
+연계(10호)를 복지부·식약처·과기정통부 공동 과제로 심의합니다.</li>
+</ul>
+<blockquote>
+<p><strong>확인 필요</strong>: AJMC 원문(도입률 62.6%는 TechTarget
+보도로 확인, 2025-06 기준)과 AMA 81%·72% 수치 차이(정의 차이로 추정).
+Dragon Copilot 10만 명은 회사 발표. WISeR 텍사스 승인률은 Washington
+Post 인용 보도. J&amp;J Ottava De Novo 허가와 UCSD 원격 휴머노이드
+수술은 보도로만 봤습니다. Overjet CBCT Assist 허가일, Neocis Yomi 상용
+현황, 메디게이트 한국 의사 조사 원문은 확인하지 못했습니다. 루닛 3분기
+매출 증가율은 기사별로 13–14%로 다릅니다. 딥카스 신의료기술 평가
+결과(2026년 4분기 예정, 본문과 동일)는 기준일 현재 확인되지 않았습니다.
+2026년 자율 수술 인체 임상, MedGemma 2, 덴티움·메디트 AI 발표는 찾지
+못했습니다.</p>
+</blockquote>
+<hr />
+<h3 id="s6-14">6.14 한국 제언과 국가인공지능전략위원회 안건(특화 FM
+전반)</h3>
+<ol type="1">
+<li><strong>통신망 에이전트 레퍼런스</strong>: GSMA의 하이브리드 결론과
+2027년 3월 3GPP 6G 작업항목 승인 시점에 맞춰, AI-RAN·6G AI 네이티브
+기술과 통신 특화 경량 FM을 결합한 레퍼런스를 만듭니다.</li>
+<li><strong>피지컬 AI 데이터·평가 표준 선점</strong>: 2027 피지컬 AI
+본사업에 대비해 한국어 지시와 국내 제조·물류 현장 데이터를 담은
+'Physical-AI-ready 데이터' 표준과 벤치마크를 먼저 만듭니다. VLA 안전성
+시험·인증을 AI 기본법의 고영향 AI 요건과 연계합니다.</li>
+<li><strong>국산 NPU와 온디바이스 VLA 연계</strong>: 로봇에 탑재할 추론
+스택을 만듭니다.</li>
+<li><strong>과소평가 영역 집중</strong>: 시계열 FM(전력망·반도체 수요)과
+소재 범용 원자간 포텐셜에 투자합니다.</li>
+<li><strong>한국판 'Genesis Mission'</strong>: 출연연, 국가 GPU,
+프런티어 모델을 결합해 국가 AI4S 플랫폼을 만듭니다.</li>
+</ol>
+<ul>
+<li><strong>위원회 안건(제8조 기준)</strong>: 통신·피지컬 AI 특화 모델을
+국가 R&amp;D 우선 과제로 지정(3호)하고, 피지컬 AI 데이터·평가
+표준(6의2호·8호)과 VLA 안전성 시험의 고영향 AI 요건 연계(10호)를
+심의합니다.</li>
+</ul>
+
+<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch6">전체 보고서에서 보기</a><a href="../">대시보드</a><span class="sp"></span><a href="ch5.html" rel="prev">← 5. AGI·ASI·RSI: 2027년 초지능에 얼</a><a href="ch7.html" rel="next">7. AI for Science·AI 연구 동료·수 →</a></nav>
+</main>
+</div>
+<script>
+  // Wrap tables for horizontal scroll and colour likelihood words; static enhancement only.
+  document.querySelectorAll('main table').forEach((t) => {
+    const w = document.createElement('div'); w.className = 'tablewrap'; t.parentNode.insertBefore(w, t); w.appendChild(t);
+  });
+  document.querySelectorAll('main td').forEach((td) => {
+    const v = td.textContent.trim();
+    if (v === '높음') td.classList.add('tag-hi'); else if (v === '중간') td.classList.add('tag-mid'); else if (v === '낮음') td.classList.add('tag-lo');
+  });
+  document.querySelectorAll('main h2[id], main h3[id]').forEach((h) => {
+    const a = document.createElement('a'); a.className = 'hl'; a.href = '#' + h.id; a.textContent = '#';
+    a.setAttribute('aria-label', '이 제목의 링크'); h.appendChild(a);
+  });
+</script>
+<script>
+/* AI2027 in-page full-text search (shared by dashboard and report).
+ * Uses the CSS Custom Highlight API so matched text is highlighted WITHOUT mutating the DOM
+ * (keeps the dashboard's one-writer rule intact). Falls back to scroll-only where unsupported.
+ * Usage: AI27Search({ root: 'main', input: 'q-input', results: 'q-results', info: 'q-info',
+ *                     exclude: '.rail', reportLink: 'a[href="report.html"]' })
+ */
+window.AI27Search = function (cfg) {
+  const root = document.querySelector(cfg.root);
+  const input = document.getElementById(cfg.input);
+  const out = document.getElementById(cfg.results);
+  const info = document.getElementById(cfg.info);
+  if (!root || !input || !out || !info) return;
+  const BLOCKS = 'h2,h3,h4,p,li,td,th,blockquote,figcaption,summary,dt,dd,article';
+  const MAX_RESULTS = 80;
+  const MAX_RANGES = 3000;
+  const hl = typeof CSS !== 'undefined' && CSS.highlights && typeof Highlight === 'function';
+  let results = [];
+  let active = -1;
+  let timer = 0;
+
+  const norm = (s) => s.toLocaleLowerCase('ko');
+  const terms = (q) => norm(q).split(/\s+/).filter(Boolean).slice(0, 6);
+  const excluded = (el) => (cfg.exclude && el.closest(cfg.exclude)) || el.closest('[data-search-skip]');
+
+  function leafMatches(ts) {
+    const hits = [];
+    root.querySelectorAll(BLOCKS).forEach((el) => {
+      if (excluded(el)) return;
+      const t = norm(el.textContent || '');
+      if (ts.every((w) => t.includes(w))) hits.push(el);
+    });
+    const set = new Set(hits);
+    // keep the innermost matching block only
+    return hits.filter((el) => ![...el.querySelectorAll(BLOCKS)].some((c) => set.has(c)));
+  }
+
+  function headingFor(el, heads) {
+    let h = null;
+    for (const x of heads) {
+      if (x === el || x.compareDocumentPosition(el) & Node.DOCUMENT_POSITION_FOLLOWING) h = x; else break;
+    }
+    return h;
+  }
+
+  function contextOf(el, heads) {
+    const sec = el.closest('section');
+    const h2 = sec && sec.querySelector('h2');
+    const card = el.closest('.ai27-card, .ai27-tablewrap');
+    let h3 = card && card.querySelector('h3');
+    if (!h3 && card && card.previousElementSibling) h3 = card.previousElementSibling.querySelector && card.previousElementSibling.querySelector('h3');
+    if (h2) return [h2.textContent.trim(), h3 ? h3.textContent.trim() : ''].filter(Boolean).join(' › ');
+    const h = headingFor(el, heads);
+    return h ? h.textContent.trim() : '';
+  }
+
+  function rangesIn(el, ts, acc) {
+    const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
+    let n;
+    while ((n = walker.nextNode()) && acc.length < MAX_RANGES) {
+      const t = norm(n.nodeValue);
+      for (const w of ts) {
+        let i = t.indexOf(w);
+        while (i !== -1 && acc.length < MAX_RANGES) {
+          const r = new Range(); r.setStart(n, i); r.setEnd(n, i + w.length); acc.push(r);
+          i = t.indexOf(w, i + w.length);
+        }
+      }
+    }
+    return acc;
+  }
+
+  function snippet(el, ts) {
+    const text = (el.textContent || '').replace(/\s+/g, ' ').trim();
+    const lower = norm(text);
+    const at = Math.max(0, lower.indexOf(ts[0]));
+    const start = Math.max(0, at - 40);
+    const s = (start > 0 ? '…' : '') + text.slice(start, start + 130) + (start + 130 < text.length ? '…' : '');
+    const frag = document.createDocumentFragment();
+    const ls = norm(s);
+    let i = 0;
+    while (i < s.length) {
+      let best = -1; let len = 0;
+      for (const w of ts) { const j = ls.indexOf(w, i); if (j !== -1 && (best === -1 || j < best)) { best = j; len = w.length; } }
+      if (best === -1) { frag.append(s.slice(i)); break; }
+      frag.append(s.slice(i, best));
+      const m = document.createElement('mark'); m.textContent = s.slice(best, best + len); frag.append(m);
+      i = best + len;
+    }
+    return frag;
+  }
+
+  function clear() {
+    results = []; active = -1;
+    out.replaceChildren(); info.textContent = '';
+    if (hl) { CSS.highlights.delete('q-hit'); CSS.highlights.delete('q-active'); }
+  }
+
+  function go(i) {
+    if (!results.length) return;
+    active = (i + results.length) % results.length;
+    const el = results[active].el;
+    const det = el.closest('details'); if (det && !det.open) det.open = true;
+    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    if (hl) CSS.highlights.set('q-active', new Highlight(...rangesIn(el, results[active].ts, [])));
+    out.querySelectorAll('button').forEach((b, k) => b.setAttribute('aria-current', k === active ? 'true' : 'false'));
+    info.textContent = `${active + 1} / ${results.length}${results.length >= MAX_RESULTS ? '+' : ''}건`;
+  }
+
+  function run(q) {
+    const ts = terms(q);
+    if (!ts.length) { clear(); return; }
+    const heads = [...root.querySelectorAll('h2,h3')];
+    const els = leafMatches(ts).slice(0, MAX_RESULTS);
+    results = els.map((el) => ({ el, ts }));
+    active = -1;
+    if (hl) {
+      const acc = [];
+      els.forEach((el) => rangesIn(el, ts, acc));
+      CSS.highlights.set('q-hit', new Highlight(...acc));
+      CSS.highlights.delete('q-active');
+    }
+    info.textContent = els.length ? `${els.length}${els.length >= MAX_RESULTS ? '+' : ''}건` : '결과 없음';
+    out.replaceChildren(...els.map((el, k) => {
+      const li = document.createElement('li');
+      const b = document.createElement('button'); b.type = 'button';
+      const ctx = document.createElement('span'); ctx.className = 'q-ctx'; ctx.textContent = (contextOf(el, heads) || '본문').replace(/\s+/g, ' ');
+      const sn = document.createElement('span'); sn.className = 'q-snip'; sn.append(snippet(el, ts));
+      b.append(ctx, sn); b.addEventListener('click', () => go(k));
+      li.append(b); return li;
+    }));
+    const rl = cfg.reportLink && document.querySelector(cfg.reportLink);
+    if (rl) {
+      const li = document.createElement('li'); li.className = 'q-more';
+      const a = document.createElement('a');
+      a.href = rl.getAttribute('href').split('#')[0] + '#q=' + encodeURIComponent(q.trim());
+      a.target = rl.target || ''; if (a.target) a.rel = 'noopener';
+      a.textContent = `상세 보고서에서 '${q.trim()}' 검색 →`;
+      li.append(a); out.append(li);
+    }
+  }
+
+  input.addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(() => run(input.value), 180); });
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') { e.preventDefault(); if (!results.length) run(input.value); go(e.shiftKey ? active - 1 : active + 1); }
+    if (e.key === 'Escape') { input.value = ''; clear(); }
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === '/' && !/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName)) { e.preventDefault(); input.focus(); }
+  });
+  try {
+    const m = /[#&?]q=([^&]+)/.exec(location.hash + '&' + location.search);
+    if (m) { input.value = decodeURIComponent(m[1]); setTimeout(() => { run(input.value); go(0); }, cfg.delay || 300); }
+  } catch (_) { /* sandboxed location: ignore */ }
+};
+
+AI27Search({ root: 'main', input: 'q-input', results: 'q-results', info: 'q-info' });
+</script>
+
+</body>
+</html>

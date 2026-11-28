@@ -1,0 +1,541 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>요약 (Executive Summary) · AI 2027 전망 보고서</title>
+<meta name="description" content="요약 (Executive Summary)">
+<link rel="canonical" href="https://hollobit.github.io/AI2027/chapters/summary.html">
+</head>
+<body>
+<style>.chnav{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;font-size:.86rem;margin:0 0 18px;color:var(--muted)}.chnav a{text-decoration:none}.chnav .sp{flex:1}</style><meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;600&family=Noto+Serif+KR:wght@500;700;900&display=swap">
+<style>
+  /* Observatory report: long-form reading column + sticky contents rail */
+  :root {
+    --bg: #f3f4f1; --paper: #ffffff; --fg: #14161c; --muted: #5b6170; --line: #dcdfe4;
+    --accent: #3d40d4; --accent-2: #c25a22; --soft: #eef0f6; --ok: #1f7a4a; --warn: #985a00; --bad: #b3362f;
+    --display: 'Noto Serif KR', AppleMyungjo, Georgia, serif;
+    --text: 'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', system-ui, sans-serif;
+    --mono: 'IBM Plex Mono', ui-monospace, Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+    --bg: #0b0d12; --paper: #141821; --fg: #eef0f4; --muted: #8f96a5; --line: #262b37;
+    --accent: #8d90f8; --accent-2: #f29a62; --soft: #1b2030; --ok: #4cc38a; --warn: #e5a33b; --bad: #f07b72; color-scheme: dark; } }
+  :root[data-theme="dark"] {
+    --bg: #0b0d12; --paper: #141821; --fg: #eef0f4; --muted: #8f96a5; --line: #262b37;
+    --accent: #8d90f8; --accent-2: #f29a62; --soft: #1b2030; --ok: #4cc38a; --warn: #e5a33b; --bad: #f07b72; color-scheme: dark; }
+  body { background: var(--bg); color: var(--fg); font-family: var(--text); font-size: 15.5px; line-height: 1.75; letter-spacing: -0.005em;
+    padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+  .wrap { max-width: 1180px; margin: 0 auto; padding-block: clamp(20px, 4vw, 48px); display: grid; grid-template-columns: 250px minmax(0, 1fr); gap: 48px; }
+  @media (max-width: 900px) { .wrap { grid-template-columns: minmax(0, 1fr); gap: 24px; } .rail { position: static !important; max-height: none !important; } }
+  .rail { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 20px); align-self: start; max-height: calc(100vh - 40px); overflow: auto; font-size: 13px; }
+  .rail .label { font-family: var(--mono); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
+  .rail ul { list-style: none; margin: 0; padding: 0; }
+  .rail li { margin: 0; }
+  .rail ul ul { padding-left: 12px; border-left: 1px solid var(--line); margin: 2px 0 8px 2px; }
+  .rail ul ul ul { display: none; }
+  .rail a { display: block; padding: 3px 0; color: var(--muted); text-decoration: none; line-height: 1.45; }
+  .rail a:hover, .rail a:focus-visible { color: var(--accent); outline: none; }
+  .rail > ul > li > a { color: var(--fg); font-weight: 500; }
+  main { min-width: 0; background: var(--paper); border: 1px solid var(--line); border-radius: 16px; padding: clamp(22px, 5vw, 60px); }
+  main > * { max-width: 74ch; }
+  main > table, main > .tablewrap, main > details { max-width: none; }
+  h1 { font-family: var(--display); font-weight: 900; font-size: clamp(2.2rem, 5.5vw, 3.5rem); line-height: 1.08; letter-spacing: -0.03em; margin: 0 0 6px; text-wrap: balance; }
+  h1 + h3 { font-family: var(--display); font-weight: 500; font-size: clamp(1.1rem, 2.2vw, 1.4rem); color: var(--accent); margin: 0 0 14px; letter-spacing: -0.01em; }
+  h2 { font-family: var(--display); font-weight: 700; font-size: clamp(1.5rem, 3vw, 2rem); letter-spacing: -0.02em; line-height: 1.25; margin: 2.6em 0 .6em; padding-top: 1.2em; border-top: 1px solid var(--line); text-wrap: balance; scroll-margin-top: 20px; }
+  h3 { font-size: 1.12rem; font-weight: 600; margin: 1.9em 0 .5em; letter-spacing: -0.01em; scroll-margin-top: 20px; }
+  h4 { font-size: 1rem; font-weight: 600; margin: 1.8em 0 .3em; scroll-margin-top: 20px; }
+  p, li { text-wrap: pretty; }
+  strong { font-weight: 600; }
+  a { color: var(--accent); text-underline-offset: 3px; text-decoration-thickness: 1px; overflow-wrap: anywhere; }
+  blockquote { margin: 1.2em 0; padding: 14px 18px; background: var(--soft); border-radius: 10px; color: var(--fg); border: 0; }
+  blockquote p { margin: 0; }
+  hr { border: 0; height: 0; margin: 0; }
+  ul, ol { padding-left: 1.3em; }
+  li + li { margin-top: .25em; }
+  code { font-family: var(--mono); font-size: .86em; background: var(--soft); padding: 1px 6px; border-radius: 5px; overflow-wrap: anywhere; }
+  .tablewrap { overflow-x: auto; margin: 1.2em 0; border: 1px solid var(--line); border-radius: 12px; }
+  table { border-collapse: collapse; width: 100%; font-size: 13.5px; line-height: 1.55; }
+  th { text-align: left; font-family: var(--mono); font-weight: 500; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); padding: 10px 12px; border-bottom: 1px solid var(--line); background: var(--soft); white-space: nowrap; }
+  td { padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; font-variant-numeric: tabular-nums; }
+  tr:last-child td { border-bottom: 0; }
+  td:first-child { font-weight: 500; min-width: 120px; }
+  details { margin: 1em 0; }
+  summary { cursor: pointer; color: var(--muted); }
+  .meta { font-family: var(--mono); font-size: 12px; color: var(--muted); letter-spacing: .04em; }
+  .appendix-head { margin-top: 4em; }
+  h1.part { font-size: clamp(1.25rem, 2.6vw, 1.6rem); font-weight: 800; color: var(--accent); margin: 64px 0 8px; padding-top: 18px; border-top: 3px solid var(--accent); letter-spacing: -0.01em; }
+  #appendix h1 { font-size: clamp(1.6rem, 3.5vw, 2.2rem); margin-top: 0; }
+  #appendix h4 { font-family: var(--display); font-weight: 700; font-size: 1.02rem; padding-top: 1em; border-top: 1px dashed var(--line); }
+  .tag-hi { color: var(--ok); font-weight: 600; } .tag-mid { color: var(--warn); font-weight: 600; } .tag-lo { color: var(--bad); font-weight: 600; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  /* full-text search */
+  .q { margin-bottom: 22px; }
+  .q input { width: 100%; box-sizing: border-box; font: inherit; font-size: 13.5px; color: var(--fg); background: var(--paper); border: 1px solid var(--line); border-radius: 10px; padding: 8px 11px; }
+  .q input:focus { outline: 2px solid var(--accent); outline-offset: 1px; border-color: transparent; }
+  .q-info { font-family: var(--mono); font-size: 11px; color: var(--muted); margin: 6px 2px 0; min-height: 1em; }
+  .q-results { list-style: none; margin: 6px 0 0; padding: 0; max-height: 46vh; overflow: auto; border-left: 1px solid var(--line); }
+  .q-results:empty { display: none; }
+  .q-results button { all: unset; box-sizing: border-box; display: block; width: 100%; cursor: pointer; padding: 6px 8px 6px 10px; border-radius: 0 8px 8px 0; line-height: 1.45; }
+  .q-results button:hover, .q-results button:focus-visible, .q-results button[aria-current="true"] { background: var(--soft); }
+  .q-ctx { display: block; font-size: 11px; color: var(--accent); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .q-snip { display: block; font-size: 12px; color: var(--muted); }
+  .q-snip mark { background: none; color: var(--fg); font-weight: 600; }
+  ::highlight(q-hit) { background-color: rgba(229, 163, 59, .35); }
+  ::highlight(q-active) { background-color: #e5a33b; color: #14161c; }
+  figure { margin: 1.6em 0; max-width: none; }
+  figure svg { display: block; width: 100%; height: auto; }
+  figcaption { font-size: 13px; color: var(--muted); margin-top: 8px; line-height: 1.6; }
+  main > figure { max-width: none; }
+  .dl { display: flex; justify-content: flex-end; align-items: center; gap: 8px; margin: 0 0 14px; font-size: .85rem; color: var(--muted, #5b6170); }
+  .dl a { font-weight: 600; text-decoration: none; padding: 3px 10px; border: 1px solid var(--line, #dcdfe4); border-radius: 999px; }
+  .dl a:hover { border-color: currentColor; }
+  .hl { margin-left: .4em; font-size: .7em; color: var(--muted); text-decoration: none; opacity: 0; transition: opacity .15s; }
+  h2:hover .hl, h3:hover .hl, .hl:focus { opacity: 1; }
+  a.xref { color: inherit; text-decoration: underline dotted; text-underline-offset: 3px; }
+  @page { size: A4; margin: 16mm 14mm; }
+  @media print { .dl { display: none !important; } html, body { background: #fff !important; } main { box-shadow: none !important; border-radius: 0 !important; padding: 0 !important; max-width: none !important; } figure, table, blockquote { break-inside: avoid; } h2, h3 { break-after: avoid; } .rail { display: none; } .wrap { display: block; } main { border: 0; } }
+</style>
+
+<div class="wrap">
+  <nav class="rail" aria-label="목차">
+    <div class="q" role="search">
+      <label class="label" for="q-input" style="display:block">Search</label>
+      <input id="q-input" type="search" placeholder="보고서 검색  ( / )" autocomplete="off" aria-describedby="q-info">
+      <div id="q-info" class="q-info" aria-live="polite"></div>
+      <ul id="q-results" class="q-results" aria-label="검색 결과"></ul>
+    </div>
+    <div class="label">Contents</div></nav>
+  <main>
+<div class="dl" aria-label="다운로드">다운로드
+      <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.pdf">PDF</a>
+      <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.docx">Word</a>
+      <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.md">Markdown</a> · <a href="https://hollobit.github.io/AI2027/chapters/">장별 보기</a></div>
+<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#summary">전체 보고서에서 보기</a><a href="../">대시보드</a><span class="sp"></span><a href="ch1.html" rel="next">1. 2026년 예측 회고: 무엇이 맞고 무엇이 틀 →</a></nav><h2 id="summary">요약 (Executive Summary)</h2>
+<p><strong>2026년 회고.</strong> 2025년 말에 모은 2026년 예측 61건의
+평균 실현도는 61점입니다. 방향은 대체로 맞았지만 세 가지에서 체계적으로
+빗나갔습니다.</p>
+<ul>
+<li><strong>규모는 과소평가</strong>했습니다. 하이퍼스케일러 capex는
+규모를 약 40% 낮게 봤고(빅4 실제 약 7,250억–7,370억 달러), 휴머노이드는
+"수천 대" 예측과 달리 상반기에만 1.9만–2.5만 대가 출하됐습니다.</li>
+<li><strong>모델 역량도 과소평가</strong>했습니다. HLE는 약 37%에서
+73%(벤더 보고)로 올랐고, FrontierMath Tier 4와 ARC-AGI-2는 사실상
+포화됐습니다.</li>
+<li><strong>반대로 사람과 제도의 변화 속도는 과대평가</strong>했습니다.
+기업 내 AGI 도입, AI IQ 표준, 은행 문의 90%의 챗봇 처리는 실현되지
+않았습니다.</li>
+</ul>
+<p><strong>2027년 전망의 다섯 가지 축.</strong></p>
+<ol type="1">
+<li><strong>역량: AI가 AI 연구를 가속하는지가 판가름 납니다.</strong>
+METR은 Anthropic의 연구 진척이 약 1.9배 빨라졌다고 독립 평가했고, AI
+Futures Project 예측가 6명은 '초인적 AI 연구자' 도달 중앙값을 2027년
+5–11월로 앞당겼습니다. 반면 예측 시장은 2027년 이전 AGI 발표를
+5–11%(Kalshi)로 봅니다.</li>
+<li><strong>자본: 투자액은 커지지만 증가율은 정점을 지납니다.</strong>
+2027년 AI 지출은 4.05조 달러(Gartner, +47.5%), 글로벌 AI capex
+컨센서스는 1.6조 달러입니다. 주요 기관이 모두 'AI 투자 조정'을 최대 하방
+위험으로 꼽고, HBM 집중도가 높은 한국이 그 충격을 가장 먼저
+받습니다.</li>
+<li><strong>기업: 의제가 '증명'에서 '통제'로 넘어갑니다.</strong> 주요
+기관이 공통으로 에이전트의 신원·권한·감사·비용 통제를 최대 과제로
+꼽습니다. 2030년까지 에이전트에 실질 결정권을 주려는 기업은 42%인데
+필요한 통제를 모두 갖춘 기업은 5%입니다(BCG).</li>
+<li><strong>위험: 에이전트가 사고와 공격의 주체가 됩니다.</strong>
+2026년에 평가 에이전트의 샌드박스 탈출(OpenAI)과 인간 개입 없는 공격
+자동화 파이프라인(Google GTIG)이 처음 관측됐습니다. 2027년에는 공격
+표적이 '데이터 탈취'에서 '에이전트 의사결정 조작'으로 옮겨 갈 것으로
+봅니다.</li>
+<li><strong>규범: AI 법이 서류에서 집행으로 넘어가지만, 실제로 집행되는
+조항은 일부입니다.</strong> 한국 AI 기본법은 2027-01-22 이후 전면
+과태료보다 계도 연장·단계 적용 가능성이 크고(높음 · 72%), EU는 고위험
+의무가 연말(2027-12-02)에야 적용돼 범용 AI 의무·금지 조항·생성물 표시가
+중심입니다. 미국은 주법이 이끌며 컴패니언 챗봇 규제가 여러 주로
+번집니다(높음 · 85%, <a class="xref" href="ch12.html#s12-8">12.8</a>절).</li>
+</ol>
+<p><strong>분야별 분석</strong></p>
+<p><em>제1부 회고와 종합 전망(1–2장)</em></p>
+<ul>
+<li><strong>기관별 전망 종합(2장)</strong>: 전망 자료는 에이전트 통제,
+AI 비용(FinOps), 인프라의 물리적 한계, 소버린 테크에 합의하고, AGI
+시점·ROI의 실재·인프라 투자의 지속성에서 갈립니다. Gartner는 에이전트
+프로젝트 40% 이상이 2027년 말까지 취소된다고 봅니다.</li>
+</ul>
+<p><em>제2부 역량: 모델·에이전트·AGI·과학(3–7장)</em></p>
+<ul>
+<li><strong>모델·에이전트 경쟁(<a class="xref" href="ch3.html#s3-2">3.2</a>–<a class="xref" href="ch3.html#s3-7">3.7</a>절)</strong>: 미국 랩은 연 5–7회
+프런티어 모델을 낼 전망이고, 2027년 말 ECI 기준값은 약 190입니다.
+에이전트 경쟁은 모델보다 하네스·통제·보안에서 갈립니다.</li>
+<li><strong>오픈웨이트와 로컬 LLM(<a class="xref" href="ch3.html#s3-10">3.10</a>절)</strong>: 오픈웨이트가 기업 AI
+토큰의 34%(1년 전 23%)를 차지합니다. 2027년에는 '로컬 오픈웨이트 +
+클라우드 프런티어' 하이브리드가 신규 구축의 표준 설계(85%)가 되지만,
+병목은 메모리 가격이고 오픈웨이트는 프런티어보다 약 6개월
+뒤처집니다.</li>
+<li><strong>AI 발전의 법칙(4장)</strong>: 종합역량은 연 약 16점 직선으로
+늘지만 사이버·업무 자동화·추론 연산은 가속합니다. AI R&amp;D 가속의
+확산이 2027년의 메타 변수입니다.</li>
+<li><strong>AGI·ASI·RSI(5장)</strong>: 2027년은 'AGI가 온 해'보다 'AI가
+AI 연구를 가속하기 시작한 해'가 될 것입니다. 2027년 말까지 도달 확률은
+초인적 코더 50%, 초인적 AI 연구자 25%, 엄밀한 범용 AGI 12%, 초지능
+2%입니다(주관). 보고서 제목을 빌린 'AI 2027' 시나리오와 비교하면
+2026년의 AI R&amp;D 가속은 시나리오보다 약 5개월 앞섰지만 중국
+집중화·가중치 탈취·주가 급등은 일어나지 않았고, 본 보고서는 시나리오
+9월의 초인적 AI 연구자를 2027년 안에는 25%로 봅니다(<a class="xref" href="ch23.html#s23-5">23.5</a>절).</li>
+<li><strong>특화 파운데이션 모델(<a class="xref" href="ch6.html#s6-1">6.1</a>–<a class="xref" href="ch6.html#s6-5">6.5</a>절)</strong>: 기상은 현업 운영
+단계이고, 바이오·의료·로봇은 임상·상품화 문턱에 있습니다. 통신은
+범용·특화 소형 모델의 하이브리드로 수렴했고, 3GPP 6G 작업항목이 2027년
+3월 승인될 예정입니다.</li>
+<li><strong>피지컬 AI·로봇(<a class="xref" href="ch6.html#s6-6">6.6</a>–<a class="xref" href="ch6.html#s6-11">6.11</a>절)</strong>: 포화된 LIBERO(97–99%)도
+섭동을 주면 30% 아래로 떨어집니다. 범용 모델이 로봇 전용 모델을 앞지르기
+시작해 '범용 모델(계획) + 소형 VLA(실행) + 실시간 제어' 계층 구조가
+표준이 되고(75%), 휴머노이드 출하는 8만–15만 대(기준 11만 대)로
+봅니다.</li>
+<li><strong>로보택시(<a class="xref" href="ch6.html#s6-12">6.12</a>절)</strong>: 2027년 가장 눈에 띄는 피지컬 AI
+상용 배치입니다. Waymo는 미국 15개 도시에서 운영하며 2027년 도쿄 무인
+운행을 노리고, 중국 업체는 중동·유럽으로 나가지만 수익성과 법제는 아직
+따라오지 못합니다.</li>
+<li><strong>의료 AI(<a class="xref" href="ch6.html#s6-13">6.13</a>절)</strong>: 진료보다 행정에서 먼저
+에이전트화됩니다. 2027-01부터 미국 보험사가 사전승인 API를 운영해야
+하지만, 에이전트 벤치마크에서 긴 임상 과업 완수는 최고 46%입니다. 한국은
+공공의료 AI 플랫폼 연결과 AI 수가 방식을 정해야 합니다.</li>
+<li><strong>AI for Science·수학(7장)</strong>: AI 과학자는 가설·분석을
+맡는 연구 동료(L2)로 주류화(85%)되지만, 혼자 발견까지 끝내는 단계(L4)는
+15%입니다. Erdős 문제는 계속 풀리지만 밀레니엄 문제는 범위 밖이고,
+병목은 '검증'과 '실험실'입니다.</li>
+</ul>
+<p><em>제3부 산업·경제·사회(8–13장)</em></p>
+<ul>
+<li><strong>코딩·산업·조직(8장)</strong>: 선도 기업의 AI 작성 코드
+비중은 85–90%가 될 전망입니다. 확산은 SW·고객센터가 가장 빠르고,
+노란봉투법 이후 AI 교섭이 노무 쟁점이 됩니다.</li>
+<li><strong>에이전트·토큰 경제(<a class="xref" href="ch9.html#s9-1">9.1</a>–<a class="xref" href="ch9.html#s9-8">9.8</a>절)</strong>: 에이전트가 끝까지
+결제하는 구매는 미국 온라인 소매의 약 1%에 그칠 전망입니다. 같은 성능의
+토큰 단가는 연 30–40배 떨어지지만 물량이 연 3–6배 늘어 총지출은 2–2.5배
+증가하고(제번스), 실제 평균 지불 단가는 약 25%만 내립니다.</li>
+<li><strong>AI 검색·광고(<a class="xref" href="ch9.html#s9-9">9.9</a>절)</strong>: 2026년은 AI 답변 안에 광고가
+들어간 첫해입니다(ChatGPT 광고 연환산 10억 달러, 검색 광고의 약 2%).
+2027년에는 '대화 속 추천·거래 과금'으로 옮겨 가며 언론 유입과 국내
+포털의 검색 광고를 흔듭니다.</li>
+<li><strong>기기·온디바이스 AI(10장)</strong>: 최대 변수는 메모리입니다.
+폰 출하는 2년 연속 줄지만(IDC 2027 −1.1%) 생성형 AI폰은 출하의 약 52%로
+절반을 넘고(72%), 3B 이하 모델이 2024년 GPT-4o급 MMLU-Pro에 닿을
+전망입니다(75%, <a class="xref" href="ch10.html#s10-2">10.2</a>절).</li>
+<li><strong>반도체·AIDC·거시금융(11장)</strong>: 메모리는 2027년에도
+공급 부족이 이어지는 '감속하는 슈퍼사이클'(50%)입니다. IMF·BIS·Moody's는
+사모신용과 2027–29 리파이낸싱 벽을 경고하고, 미국 주민 71%가 지역
+데이터센터에 반대해(<a class="xref" href="ch11.html#s11-5">11.5</a>절) 종합 '조정' 시나리오를 30%로 둡니다.</li>
+<li><strong>지식·창작 생태계(12장)</strong>: 투고 폭증·환각 인용으로
+심사 신뢰가 흔들리고, 저작권 분쟁은 판결보다 합의·라이선스로
+수렴합니다(80%). 스트리밍 신규 업로드의 절반 이상이 AI 곡이지만 청취
+비중은 5% 미만에 머물 전망이고(72%), AI 발명자 불인정은
+유지됩니다(92%).</li>
+<li><strong>노동·기본사회·보편적 접근(13장)</strong>: 충격은 해고보다
+채용 축소로 나타납니다(점진적 재배치 55%). '모두의 AI'는 2027년 MAU
+1,000만 명 돌파가 관건이고(50%, <a class="xref" href="ch13.html#s13-6">13.6</a>절), AI 공론장은 주제가
+넓어지겠지만(70%) 숙의 결과의 정책 반영 공개는 30%에
+그칩니다(<a class="xref" href="ch13.html#s13-7">13.7</a>절).</li>
+</ul>
+<p><em>제4부 국가·지정학·기술 통제(14–18장)</em></p>
+<ul>
+<li><strong>소버린 AI·국가 문샷(14장)</strong>: 한국 최고 모델은 글로벌
+1위의 66.7%로 중국 다음이지만, 에이전트 과제 격차가 가장
+큽니다(K-BrowseComp 10.3 대 45.7). 범정부 공통기반의 국산 모델(11종 중
+4종)이 2027년 말 과반이 될 가능성은 50%입니다.</li>
+<li><strong>국가 정책과 공공 AX(<a class="xref" href="ch15.html#s15-3">15.3</a>·<a class="xref" href="ch15.html#s15-7">15.7</a>절)</strong>: 한국 경쟁력
+점수는 37점에서 40점으로 오르지만 인재가 약점입니다. 공공에서는 AI
+챔피언 2027년 목표 2,000명 달성(75%)과 함께, 공무원이 만든 앱의
+보안·개인정보 사고 공개 가능성(50%)과 '고아 앱'을 관리해야 합니다.</li>
+<li><strong>AI 지정학(16장)</strong>: 미중은 휴전을 연장하되 칩·클라우드
+통제를 강화하는 '관리된 경쟁'(50%)으로 갈 전망입니다. 중국은 WAICO로
+대항 블록을 키웁니다.</li>
+<li><strong>기술 통제와 한국(17장)</strong>: 미국 통제가 칩에서
+클라우드·모델로 넓어지며 팹 허가·모델 접근 지연·관세 등으로 한국의 AI
+협력에 부담을 줍니다(<a class="xref" href="ch17.html#s17-1">17.1</a>절). 모델 접근은 약관·접근 정책·수출통제·시장
+차단의 네 층으로 갈려, 한국은 미·중 양쪽에서 선택지가
+줄어듭니다(<a class="xref" href="ch17.html#s17-2">17.2</a>절).</li>
+<li><strong>AI 외교(18장)</strong>: 2027년은 '양자 거래 + 다자
+최소합의'의 이중 트랙입니다. 실질 이해는 한·미, 미·걸프 양자 협상에서
+정해지고, 제네바 AI 정상회의(06-21~22)와 G20 맨체스터(11-27~28)는 구속력
+없는 선언에 머뭅니다.</li>
+</ul>
+<p><em>제5부 위험·안전(19–21장)</em></p>
+<ul>
+<li><strong>사이버 위협(19장)</strong>: 침투에서 갈취까지 10시간 미만인
+자동화 공격이 등장했고, 2027년 10억 달러 초과 단일 사고 1–3건이
+예상됩니다. 2026년 CVE는 10만 건을 넘어 2배가 됐지만 실제 악용 등재는 약
+1.2–1.3배여서(CVE 대비 비율 0.65% → 0.32%) 하인리히 비율을 그대로 적용할
+수 없고, 전조는 패치 공백입니다(<a class="xref" href="ch19.html#s19-2">19.2</a>절).</li>
+<li><strong>AI 오용·오정렬·안전(20장)</strong>: 오용의 주류는 기존
+범죄·공격의 증폭입니다. 생물·화학 'High'가 신모델의 기본 등급이 되고,
+가드레일 제거 오픈웨이트 모델은 6,000개를 넘었으며, 평가 인식률 상승으로
+안전 평가를 믿기 어려워졌습니다. 미국 주 챗봇 법안은 37개 주
+124건입니다(<a class="xref" href="ch20.html#s20-12">20.12</a>절).</li>
+<li><strong>사이버 회복력과 책임(21장)</strong>: 2027년은 회복력 규제의
+집행 원년입니다(EU CRA 12-11). 국정자원 화재(709개 시스템, 95일 복구)
+이후 2027–28년이 취약 구간이고, 미국 보험시장은 AI를 기존 보험에서 빼고
+전용 보험으로 분리합니다(<a class="xref" href="ch21.html#s21-5">21.5</a>절).</li>
+</ul>
+<p><em>제6부 핵심 테마와 종합(22–23장)</em></p>
+<ul>
+<li><strong>AI 에이전트(22장)</strong>: 에이전트 관련 전망 66건 중
+33건이 높음이며, 가장 강한 합의는 역량이 아니라 통제입니다. 행동
+탈취·공급망 공격·비용 폭주가 일상 사고가 되고, 전문 AI는 초급 업무부터
+넘겨받습니다(<a class="xref" href="ch22.html#s22-6">22.6</a>절).</li>
+<li><strong>2027 핵심 전망 Top 30(<a class="xref" href="ch23.html#s23-2">23.2</a>절)</strong>: 전망 544건을
+확률·불확도·중요도·사회적 파급력으로 종합하면, 1위는 광고 기반 웹의
+붕괴(85%), 2위는 청년·신입 채용 절벽의 구조화(82%)이고 30건 중 10건이
+보안입니다. 저확률·고영향 감시 대상 8건에는 AI가 도운 생물·화학 공격
+시도(12%), 초인적 AI 연구자 도달(25%), 동맹국 모델 접근 강제 중단(30%),
+가중치 탈취(7%)가 들어갑니다.</li>
+<li><strong>AI 2027·AI 2040 시나리오 대조(<a class="xref" href="ch23.html#s23-3">23.3</a>–<a class="xref" href="ch23.html#s23-5">23.5</a>절)</strong>: AI
+2027의 2025–2026 마일스톤 12개 중 7개가 일치하거나 앞섰고(빗나감 2개),
+저자들은 실제 진척을 시나리오 속도의 약 70–90%로 봅니다. 본 보고서는
+2027년 초인적 AI 연구자를 25%로 더 느리게 봅니다. 두 시나리오를 점검표로
+써서 국제 검증 체제(<a class="xref" href="ch18.html#s18-8">18.8</a>절), 컴퓨트 점유율(미국 신규 컴퓨트 78%,
+<a class="xref" href="ch11.html#s11-1">11.1</a>절), 가중치 보안·내부자 위협(<a class="xref" href="ch19.html#s19-6">19.6</a>절), 권력 집중과 통제
+주체(<a class="xref" href="ch23.html#s23-5">23.5</a>절)를 보강했습니다.</li>
+<li><strong>위원회 조직과 2027 대처(<a class="xref" href="ch23.html#s23-9">23.9</a>절)</strong>:
+국가인공지능전략위원회는 분과 10개, 특별위원회 2개(보안·지역), 2026-11
+승인 TF 7개로 움직입니다. Top 30 전망은 모두 맡을 기구가 있지만, 기술
+통제는 가장 작은 글로벌협력 분과(7명)에, AI 안전 집행은 보안
+특별위원회·법률 TF·초지능 대응 TF에 나뉘어 있습니다. 새 특별위원회 대신
+분과 합동 과제와 보안 특별위원회 소관 확대, 소분과 2개(노동 전환, 의료
+AI)를 제안합니다. 전망 548건 전부를 주관·관련 기구에 배정하면
+산업AX·생태계 분과(관련 180건)와 글로벌협력 분과(117건)에 가장 많이
+걸리고, 법률 TF는 주관 16건에 관련 81건입니다(<a class="xref" href="ch23.html#s23-10">23.10</a>절, 부록 배정
+목록).</li>
+<li><strong>핵심 인물 리스크(<a class="xref" href="ch23.html#s23-15">23.15</a>절)</strong>: 2026년 엔비디아 사태로
+KOSPI가 하루 3.59% 하락했습니다(보도 기준). 영향력 큰 IT·AI 인물 사건은
+연 1.5건꼴이고, 엔비디아급 사건이 2027년에 다시 일어날 확률은 약
+30%입니다.</li>
+</ul>
+<p><strong>예상하지 못한 사건(<a class="xref" href="ch23.html#s23-16">23.16</a>절).</strong> 2026년의 큰 변화는
+대부분 예측 목록 밖에서 왔습니다. 모델 수출통제, 엔비디아 핵심 인물
+사태, 냉장 설비 OT 공격은 예측 61건에 없었고, 모두 두 분야의
+경계(기술×규제, 기술×금융, 사이버×물리)에서 터졌습니다. 2027년
+와일드카드 18개 중 1개 이상이 일어날 확률은 90%여서,
+국가인공지능전략위원회의 긴급 안건 절차와 사후 분석 의무화를
+제안합니다.</p>
+<p><strong>한국 SWOT과 대응(<a class="xref" href="ch23.html#s23-12">23.12</a>–<a class="xref" href="ch23.html#s23-14">23.14</a>절).</strong> 한국은
+메모리·전력기기·공공 투자·제도(강점)에 비해 인재·집행·에이전트
+역량(약점)이 뒤지고, AI 지출 확대·소버린 수요(기회)와 미국 기술 통제
+전이·모델 접근 제한(위협)이 함께 커집니다. 2027년 상반기에 한미 '신뢰
+파트너' 확보와 공공 국내 모델 기본 원칙을 먼저 정하고, 그 위에서 소버린
+패키지 수출과 인재 순유입 전환을 확대하는 순서를 권합니다.</p>
+<p><strong>시나리오(주관적 확률).</strong> 분야별 시나리오를 묶은 종합
+판단입니다. 종합 '가속'(25%)은 역량·자본·도입을 함께 보므로, 역량만 보는
+5장의 '지능 폭발 초기'(20%)보다 넓습니다.</p>
+<table>
+<thead>
+<tr>
+<th>시나리오</th>
+<th>확률(±불확도)</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>가속</td>
+<td>25% (±10)</td>
+<td>AI R&amp;D 가속이 여러 연구소에서 3배 이상으로 커지며 초인적 AI
+연구자에 근접하고, capex가 낙관 전망치(글로벌 1.7조 달러)에 근접</td>
+</tr>
+<tr>
+<td>기준</td>
+<td>45% (±15)</td>
+<td>5장의 '연구 자동화 초입'(45%)과 같은 판단: AI R&amp;D 가속(2–3배)이
+두세 연구소로 번지지만 초인적 AI 연구자는 2028년 이후. 에이전트는
+코딩·고객지원·백오피스에서 ROI를 냄</td>
+</tr>
+<tr>
+<td>조정</td>
+<td>30% (±10)</td>
+<td>수익화 속도가 약정·부채를 따라가지 못해 투자 사이클이 꺾임.
+사모신용·SPV·리스백으로 쌓인 레버리지가 재평가되며 자산가격 조정이 capex
+축소로 번짐(IMF·BIS·Moody's)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+
+<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#summary">전체 보고서에서 보기</a><a href="../">대시보드</a><span class="sp"></span><a href="ch1.html" rel="next">1. 2026년 예측 회고: 무엇이 맞고 무엇이 틀 →</a></nav>
+</main>
+</div>
+<script>
+  // Wrap tables for horizontal scroll and colour likelihood words; static enhancement only.
+  document.querySelectorAll('main table').forEach((t) => {
+    const w = document.createElement('div'); w.className = 'tablewrap'; t.parentNode.insertBefore(w, t); w.appendChild(t);
+  });
+  document.querySelectorAll('main td').forEach((td) => {
+    const v = td.textContent.trim();
+    if (v === '높음') td.classList.add('tag-hi'); else if (v === '중간') td.classList.add('tag-mid'); else if (v === '낮음') td.classList.add('tag-lo');
+  });
+  document.querySelectorAll('main h2[id], main h3[id]').forEach((h) => {
+    const a = document.createElement('a'); a.className = 'hl'; a.href = '#' + h.id; a.textContent = '#';
+    a.setAttribute('aria-label', '이 제목의 링크'); h.appendChild(a);
+  });
+</script>
+<script>
+/* AI2027 in-page full-text search (shared by dashboard and report).
+ * Uses the CSS Custom Highlight API so matched text is highlighted WITHOUT mutating the DOM
+ * (keeps the dashboard's one-writer rule intact). Falls back to scroll-only where unsupported.
+ * Usage: AI27Search({ root: 'main', input: 'q-input', results: 'q-results', info: 'q-info',
+ *                     exclude: '.rail', reportLink: 'a[href="report.html"]' })
+ */
+window.AI27Search = function (cfg) {
+  const root = document.querySelector(cfg.root);
+  const input = document.getElementById(cfg.input);
+  const out = document.getElementById(cfg.results);
+  const info = document.getElementById(cfg.info);
+  if (!root || !input || !out || !info) return;
+  const BLOCKS = 'h2,h3,h4,p,li,td,th,blockquote,figcaption,summary,dt,dd,article';
+  const MAX_RESULTS = 80;
+  const MAX_RANGES = 3000;
+  const hl = typeof CSS !== 'undefined' && CSS.highlights && typeof Highlight === 'function';
+  let results = [];
+  let active = -1;
+  let timer = 0;
+
+  const norm = (s) => s.toLocaleLowerCase('ko');
+  const terms = (q) => norm(q).split(/\s+/).filter(Boolean).slice(0, 6);
+  const excluded = (el) => (cfg.exclude && el.closest(cfg.exclude)) || el.closest('[data-search-skip]');
+
+  function leafMatches(ts) {
+    const hits = [];
+    root.querySelectorAll(BLOCKS).forEach((el) => {
+      if (excluded(el)) return;
+      const t = norm(el.textContent || '');
+      if (ts.every((w) => t.includes(w))) hits.push(el);
+    });
+    const set = new Set(hits);
+    // keep the innermost matching block only
+    return hits.filter((el) => ![...el.querySelectorAll(BLOCKS)].some((c) => set.has(c)));
+  }
+
+  function headingFor(el, heads) {
+    let h = null;
+    for (const x of heads) {
+      if (x === el || x.compareDocumentPosition(el) & Node.DOCUMENT_POSITION_FOLLOWING) h = x; else break;
+    }
+    return h;
+  }
+
+  function contextOf(el, heads) {
+    const sec = el.closest('section');
+    const h2 = sec && sec.querySelector('h2');
+    const card = el.closest('.ai27-card, .ai27-tablewrap');
+    let h3 = card && card.querySelector('h3');
+    if (!h3 && card && card.previousElementSibling) h3 = card.previousElementSibling.querySelector && card.previousElementSibling.querySelector('h3');
+    if (h2) return [h2.textContent.trim(), h3 ? h3.textContent.trim() : ''].filter(Boolean).join(' › ');
+    const h = headingFor(el, heads);
+    return h ? h.textContent.trim() : '';
+  }
+
+  function rangesIn(el, ts, acc) {
+    const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
+    let n;
+    while ((n = walker.nextNode()) && acc.length < MAX_RANGES) {
+      const t = norm(n.nodeValue);
+      for (const w of ts) {
+        let i = t.indexOf(w);
+        while (i !== -1 && acc.length < MAX_RANGES) {
+          const r = new Range(); r.setStart(n, i); r.setEnd(n, i + w.length); acc.push(r);
+          i = t.indexOf(w, i + w.length);
+        }
+      }
+    }
+    return acc;
+  }
+
+  function snippet(el, ts) {
+    const text = (el.textContent || '').replace(/\s+/g, ' ').trim();
+    const lower = norm(text);
+    const at = Math.max(0, lower.indexOf(ts[0]));
+    const start = Math.max(0, at - 40);
+    const s = (start > 0 ? '…' : '') + text.slice(start, start + 130) + (start + 130 < text.length ? '…' : '');
+    const frag = document.createDocumentFragment();
+    const ls = norm(s);
+    let i = 0;
+    while (i < s.length) {
+      let best = -1; let len = 0;
+      for (const w of ts) { const j = ls.indexOf(w, i); if (j !== -1 && (best === -1 || j < best)) { best = j; len = w.length; } }
+      if (best === -1) { frag.append(s.slice(i)); break; }
+      frag.append(s.slice(i, best));
+      const m = document.createElement('mark'); m.textContent = s.slice(best, best + len); frag.append(m);
+      i = best + len;
+    }
+    return frag;
+  }
+
+  function clear() {
+    results = []; active = -1;
+    out.replaceChildren(); info.textContent = '';
+    if (hl) { CSS.highlights.delete('q-hit'); CSS.highlights.delete('q-active'); }
+  }
+
+  function go(i) {
+    if (!results.length) return;
+    active = (i + results.length) % results.length;
+    const el = results[active].el;
+    const det = el.closest('details'); if (det && !det.open) det.open = true;
+    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    if (hl) CSS.highlights.set('q-active', new Highlight(...rangesIn(el, results[active].ts, [])));
+    out.querySelectorAll('button').forEach((b, k) => b.setAttribute('aria-current', k === active ? 'true' : 'false'));
+    info.textContent = `${active + 1} / ${results.length}${results.length >= MAX_RESULTS ? '+' : ''}건`;
+  }
+
+  function run(q) {
+    const ts = terms(q);
+    if (!ts.length) { clear(); return; }
+    const heads = [...root.querySelectorAll('h2,h3')];
+    const els = leafMatches(ts).slice(0, MAX_RESULTS);
+    results = els.map((el) => ({ el, ts }));
+    active = -1;
+    if (hl) {
+      const acc = [];
+      els.forEach((el) => rangesIn(el, ts, acc));
+      CSS.highlights.set('q-hit', new Highlight(...acc));
+      CSS.highlights.delete('q-active');
+    }
+    info.textContent = els.length ? `${els.length}${els.length >= MAX_RESULTS ? '+' : ''}건` : '결과 없음';
+    out.replaceChildren(...els.map((el, k) => {
+      const li = document.createElement('li');
+      const b = document.createElement('button'); b.type = 'button';
+      const ctx = document.createElement('span'); ctx.className = 'q-ctx'; ctx.textContent = (contextOf(el, heads) || '본문').replace(/\s+/g, ' ');
+      const sn = document.createElement('span'); sn.className = 'q-snip'; sn.append(snippet(el, ts));
+      b.append(ctx, sn); b.addEventListener('click', () => go(k));
+      li.append(b); return li;
+    }));
+    const rl = cfg.reportLink && document.querySelector(cfg.reportLink);
+    if (rl) {
+      const li = document.createElement('li'); li.className = 'q-more';
+      const a = document.createElement('a');
+      a.href = rl.getAttribute('href').split('#')[0] + '#q=' + encodeURIComponent(q.trim());
+      a.target = rl.target || ''; if (a.target) a.rel = 'noopener';
+      a.textContent = `상세 보고서에서 '${q.trim()}' 검색 →`;
+      li.append(a); out.append(li);
+    }
+  }
+
+  input.addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(() => run(input.value), 180); });
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') { e.preventDefault(); if (!results.length) run(input.value); go(e.shiftKey ? active - 1 : active + 1); }
+    if (e.key === 'Escape') { input.value = ''; clear(); }
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === '/' && !/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName)) { e.preventDefault(); input.focus(); }
+  });
+  try {
+    const m = /[#&?]q=([^&]+)/.exec(location.hash + '&' + location.search);
+    if (m) { input.value = decodeURIComponent(m[1]); setTimeout(() => { run(input.value); go(0); }, cfg.delay || 300); }
+  } catch (_) { /* sandboxed location: ignore */ }
+};
+
+AI27Search({ root: 'main', input: 'q-input', results: 'q-results', info: 'q-info' });
+</script>
+
+</body>
+</html>

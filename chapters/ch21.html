@@ -1,0 +1,1046 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>21. 사이버 회복력과 디지털 재난안전 · AI 2027 전망 보고서</title>
+<meta name="description" content="21. 사이버 회복력과 디지털 재난안전">
+<link rel="canonical" href="https://hollobit.github.io/AI2027/chapters/ch21.html">
+</head>
+<body>
+<style>.chnav{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;font-size:.86rem;margin:0 0 18px;color:var(--muted)}.chnav a{text-decoration:none}.chnav .sp{flex:1}</style><meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;600&family=Noto+Serif+KR:wght@500;700;900&display=swap">
+<style>
+  /* Observatory report: long-form reading column + sticky contents rail */
+  :root {
+    --bg: #f3f4f1; --paper: #ffffff; --fg: #14161c; --muted: #5b6170; --line: #dcdfe4;
+    --accent: #3d40d4; --accent-2: #c25a22; --soft: #eef0f6; --ok: #1f7a4a; --warn: #985a00; --bad: #b3362f;
+    --display: 'Noto Serif KR', AppleMyungjo, Georgia, serif;
+    --text: 'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', system-ui, sans-serif;
+    --mono: 'IBM Plex Mono', ui-monospace, Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+    --bg: #0b0d12; --paper: #141821; --fg: #eef0f4; --muted: #8f96a5; --line: #262b37;
+    --accent: #8d90f8; --accent-2: #f29a62; --soft: #1b2030; --ok: #4cc38a; --warn: #e5a33b; --bad: #f07b72; color-scheme: dark; } }
+  :root[data-theme="dark"] {
+    --bg: #0b0d12; --paper: #141821; --fg: #eef0f4; --muted: #8f96a5; --line: #262b37;
+    --accent: #8d90f8; --accent-2: #f29a62; --soft: #1b2030; --ok: #4cc38a; --warn: #e5a33b; --bad: #f07b72; color-scheme: dark; }
+  body { background: var(--bg); color: var(--fg); font-family: var(--text); font-size: 15.5px; line-height: 1.75; letter-spacing: -0.005em;
+    padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+  .wrap { max-width: 1180px; margin: 0 auto; padding-block: clamp(20px, 4vw, 48px); display: grid; grid-template-columns: 250px minmax(0, 1fr); gap: 48px; }
+  @media (max-width: 900px) { .wrap { grid-template-columns: minmax(0, 1fr); gap: 24px; } .rail { position: static !important; max-height: none !important; } }
+  .rail { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 20px); align-self: start; max-height: calc(100vh - 40px); overflow: auto; font-size: 13px; }
+  .rail .label { font-family: var(--mono); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
+  .rail ul { list-style: none; margin: 0; padding: 0; }
+  .rail li { margin: 0; }
+  .rail ul ul { padding-left: 12px; border-left: 1px solid var(--line); margin: 2px 0 8px 2px; }
+  .rail ul ul ul { display: none; }
+  .rail a { display: block; padding: 3px 0; color: var(--muted); text-decoration: none; line-height: 1.45; }
+  .rail a:hover, .rail a:focus-visible { color: var(--accent); outline: none; }
+  .rail > ul > li > a { color: var(--fg); font-weight: 500; }
+  main { min-width: 0; background: var(--paper); border: 1px solid var(--line); border-radius: 16px; padding: clamp(22px, 5vw, 60px); }
+  main > * { max-width: 74ch; }
+  main > table, main > .tablewrap, main > details { max-width: none; }
+  h1 { font-family: var(--display); font-weight: 900; font-size: clamp(2.2rem, 5.5vw, 3.5rem); line-height: 1.08; letter-spacing: -0.03em; margin: 0 0 6px; text-wrap: balance; }
+  h1 + h3 { font-family: var(--display); font-weight: 500; font-size: clamp(1.1rem, 2.2vw, 1.4rem); color: var(--accent); margin: 0 0 14px; letter-spacing: -0.01em; }
+  h2 { font-family: var(--display); font-weight: 700; font-size: clamp(1.5rem, 3vw, 2rem); letter-spacing: -0.02em; line-height: 1.25; margin: 2.6em 0 .6em; padding-top: 1.2em; border-top: 1px solid var(--line); text-wrap: balance; scroll-margin-top: 20px; }
+  h3 { font-size: 1.12rem; font-weight: 600; margin: 1.9em 0 .5em; letter-spacing: -0.01em; scroll-margin-top: 20px; }
+  h4 { font-size: 1rem; font-weight: 600; margin: 1.8em 0 .3em; scroll-margin-top: 20px; }
+  p, li { text-wrap: pretty; }
+  strong { font-weight: 600; }
+  a { color: var(--accent); text-underline-offset: 3px; text-decoration-thickness: 1px; overflow-wrap: anywhere; }
+  blockquote { margin: 1.2em 0; padding: 14px 18px; background: var(--soft); border-radius: 10px; color: var(--fg); border: 0; }
+  blockquote p { margin: 0; }
+  hr { border: 0; height: 0; margin: 0; }
+  ul, ol { padding-left: 1.3em; }
+  li + li { margin-top: .25em; }
+  code { font-family: var(--mono); font-size: .86em; background: var(--soft); padding: 1px 6px; border-radius: 5px; overflow-wrap: anywhere; }
+  .tablewrap { overflow-x: auto; margin: 1.2em 0; border: 1px solid var(--line); border-radius: 12px; }
+  table { border-collapse: collapse; width: 100%; font-size: 13.5px; line-height: 1.55; }
+  th { text-align: left; font-family: var(--mono); font-weight: 500; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); padding: 10px 12px; border-bottom: 1px solid var(--line); background: var(--soft); white-space: nowrap; }
+  td { padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; font-variant-numeric: tabular-nums; }
+  tr:last-child td { border-bottom: 0; }
+  td:first-child { font-weight: 500; min-width: 120px; }
+  details { margin: 1em 0; }
+  summary { cursor: pointer; color: var(--muted); }
+  .meta { font-family: var(--mono); font-size: 12px; color: var(--muted); letter-spacing: .04em; }
+  .appendix-head { margin-top: 4em; }
+  h1.part { font-size: clamp(1.25rem, 2.6vw, 1.6rem); font-weight: 800; color: var(--accent); margin: 64px 0 8px; padding-top: 18px; border-top: 3px solid var(--accent); letter-spacing: -0.01em; }
+  #appendix h1 { font-size: clamp(1.6rem, 3.5vw, 2.2rem); margin-top: 0; }
+  #appendix h4 { font-family: var(--display); font-weight: 700; font-size: 1.02rem; padding-top: 1em; border-top: 1px dashed var(--line); }
+  .tag-hi { color: var(--ok); font-weight: 600; } .tag-mid { color: var(--warn); font-weight: 600; } .tag-lo { color: var(--bad); font-weight: 600; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  /* full-text search */
+  .q { margin-bottom: 22px; }
+  .q input { width: 100%; box-sizing: border-box; font: inherit; font-size: 13.5px; color: var(--fg); background: var(--paper); border: 1px solid var(--line); border-radius: 10px; padding: 8px 11px; }
+  .q input:focus { outline: 2px solid var(--accent); outline-offset: 1px; border-color: transparent; }
+  .q-info { font-family: var(--mono); font-size: 11px; color: var(--muted); margin: 6px 2px 0; min-height: 1em; }
+  .q-results { list-style: none; margin: 6px 0 0; padding: 0; max-height: 46vh; overflow: auto; border-left: 1px solid var(--line); }
+  .q-results:empty { display: none; }
+  .q-results button { all: unset; box-sizing: border-box; display: block; width: 100%; cursor: pointer; padding: 6px 8px 6px 10px; border-radius: 0 8px 8px 0; line-height: 1.45; }
+  .q-results button:hover, .q-results button:focus-visible, .q-results button[aria-current="true"] { background: var(--soft); }
+  .q-ctx { display: block; font-size: 11px; color: var(--accent); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .q-snip { display: block; font-size: 12px; color: var(--muted); }
+  .q-snip mark { background: none; color: var(--fg); font-weight: 600; }
+  ::highlight(q-hit) { background-color: rgba(229, 163, 59, .35); }
+  ::highlight(q-active) { background-color: #e5a33b; color: #14161c; }
+  figure { margin: 1.6em 0; max-width: none; }
+  figure svg { display: block; width: 100%; height: auto; }
+  figcaption { font-size: 13px; color: var(--muted); margin-top: 8px; line-height: 1.6; }
+  main > figure { max-width: none; }
+  .dl { display: flex; justify-content: flex-end; align-items: center; gap: 8px; margin: 0 0 14px; font-size: .85rem; color: var(--muted, #5b6170); }
+  .dl a { font-weight: 600; text-decoration: none; padding: 3px 10px; border: 1px solid var(--line, #dcdfe4); border-radius: 999px; }
+  .dl a:hover { border-color: currentColor; }
+  .hl { margin-left: .4em; font-size: .7em; color: var(--muted); text-decoration: none; opacity: 0; transition: opacity .15s; }
+  h2:hover .hl, h3:hover .hl, .hl:focus { opacity: 1; }
+  a.xref { color: inherit; text-decoration: underline dotted; text-underline-offset: 3px; }
+  @page { size: A4; margin: 16mm 14mm; }
+  @media print { .dl { display: none !important; } html, body { background: #fff !important; } main { box-shadow: none !important; border-radius: 0 !important; padding: 0 !important; max-width: none !important; } figure, table, blockquote { break-inside: avoid; } h2, h3 { break-after: avoid; } .rail { display: none; } .wrap { display: block; } main { border: 0; } }
+</style>
+
+<div class="wrap">
+  <nav class="rail" aria-label="목차">
+    <div class="q" role="search">
+      <label class="label" for="q-input" style="display:block">Search</label>
+      <input id="q-input" type="search" placeholder="보고서 검색  ( / )" autocomplete="off" aria-describedby="q-info">
+      <div id="q-info" class="q-info" aria-live="polite"></div>
+      <ul id="q-results" class="q-results" aria-label="검색 결과"></ul>
+    </div>
+    <div class="label">Contents</div><ul><li><a href="#s21-1">21.1 2022–2026 디지털 재난: 무엇이 무너졌나</a></li><li><a href="#s21-2">21.2 회복력 규제: 2027년이 집행의 해</a></li><li><a href="#s21-3">21.3 AI와 회복력: 양날의 칼</a></li><li><a href="#s21-4">21.4 양자내성암호(PQC) 전환</a></li><li><a href="#s21-5">21.5 사이버보험과 AI 책임: 제조물책임지침과 AI 면책
+약관</a></li><li><a href="#s21-6">21.6 2027 전망</a></li><li><a href="#s21-7">21.7 시나리오</a></li><li><a href="#s21-8">21.8 2027 주요 일정</a></li><li><a href="#s21-9">21.9 한국 시사점</a></li><li><a href="#s21-10">21.10 국가인공지능전략위원회 안건(제안, 인공지능기본법
+제8조 기준)</a></li></ul></nav>
+  <main>
+<div class="dl" aria-label="다운로드">다운로드
+      <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.pdf">PDF</a>
+      <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.docx">Word</a>
+      <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.md">Markdown</a> · <a href="https://hollobit.github.io/AI2027/chapters/">장별 보기</a></div>
+<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch21">전체 보고서에서 보기</a><a href="../">대시보드</a><span class="sp"></span><a href="ch20.html" rel="prev">← 20. AI 오용·악용·오정렬과 안전: CBRN·테</a><a href="ch22.html" rel="next">22. AI 에이전트: 2027년의 핵심 테마 →</a></nav><p class="label" style="margin:0 0 4px">제5부 위험·안전</p><h2 id="ch21">21. 사이버 회복력과 디지털 재난안전</h2>
+<blockquote>
+<p>자료: AWS us-east-1 사후 보고, Cloudflare 2025-11 사후 분석, EU
+감독당국(ESAs) DORA 지정 공고, 영국 NCSC 양자내성암호(PQC) 일정, EU PQC
+로드맵, Munich Re·Swiss Re 사이버보험 보고, 영국 사이버보안·회복력 법안,
+CIRCIA 관련 로펌 분석, 국정자원 1년 대책(ZDNet), 정보통신망법
+개정(법률신문). 원문은 <code>PDF/cyber_resilience/</code>에 있습니다.
+회복력은 사고를 <strong>예측하고, 견디고, 복구하고, 적응하는
+능력</strong>입니다. 공격 유형과 피해 등급은 <a class="xref" href="ch19.html#s19-7">19.7</a>절, AI 안전 사고는
+<a class="xref" href="ch20.html#s20-8">20.8</a>절에서 다룹니다. CrowdStrike·카카오·Azure Front Door·Collins
+Aerospace 사례와 기업별 유출 건수, N2SF 세부는 기존 지식 기반이라 원문
+재확인이 필요합니다.</p>
+</blockquote>
+<h3 id="s21-1">21.1 2022–2026 디지털 재난: 무엇이 무너졌나</h3>
+<table>
+<thead>
+<tr>
+<th>시점</th>
+<th>사건</th>
+<th>영향</th>
+<th>교훈</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2022-10</td>
+<td>SK C&amp;C 판교 데이터센터 화재, 카카오 전면 장애</td>
+<td>약 127시간</td>
+<td>이중화가 '설계상' 있어도 운영 도구가 한 센터에 몰리면 실패</td>
+</tr>
+<tr>
+<td>2024-07</td>
+<td>CrowdStrike 결함 업데이트로 Windows 장애</td>
+<td>약 850만 대, 항공·병원·금융 동시 마비</td>
+<td><strong>보안 에이전트 자체가 단일 장애점</strong>. 단계 배포와 수동
+복구 절차 필요</td>
+</tr>
+<tr>
+<td>2025-08</td>
+<td>JLR(재규어랜드로버) 사이버공격</td>
+<td>경제손실 약 19억 파운드, 5,000여 조직 영향(영국 Cyber Monitoring
+Centre)</td>
+<td>단일 기업 침해가 공급망·딜러망으로 번짐</td>
+</tr>
+<tr>
+<td>2025-09</td>
+<td>Collins Aerospace 공항 체크인 SaaS 랜섬웨어</td>
+<td>유럽 다수 공항 수일간 수기 체크인</td>
+<td>공용 SaaS 하나가 여러 핵심 시설을 동시에 멈춤</td>
+</tr>
+<tr>
+<td><strong>2025-09</strong></td>
+<td><strong>국가정보자원관리원 대전센터 화재</strong>(리튬이온 배터리
+이설 중)</td>
+<td><strong>행정 시스템 709개 중단, 약 95일 만에 전면
+복구</strong>(2025-12-30)</td>
+<td>핵심 시스템 등급이 국민 영향보다 낮게 분류됨. 액티브 DR 부재.
+운영관리시스템까지 동반 장애. 카카오의 교훈이 공공에 이식되지 않음</td>
+</tr>
+<tr>
+<td>2025-10</td>
+<td>AWS us-east-1 DNS 자동화 결함</td>
+<td>약 14.5시간, 전 세계 SaaS로 연쇄</td>
+<td><strong>자동화 자체가 장애의 원인</strong>. 멀티리전과 의존성 지도
+필요</td>
+</tr>
+<tr>
+<td>2025-10</td>
+<td>Azure Front Door 구성 변경</td>
+<td>수 시간 글로벌 장애</td>
+<td>AWS 장애 9일 만에 연속된 하이퍼스케일러 장애</td>
+</tr>
+<tr>
+<td>2025-11</td>
+<td>Cloudflare 설정 파일 크기 2배 증가</td>
+<td>약 5시간 46분, 처음에는 DDoS로 오인</td>
+<td>공격이 아닌 내부 변경이 인터넷 상당 부분을 차단. 설정도 코드처럼
+검증</td>
+</tr>
+<tr>
+<td>2025</td>
+<td>국내 통신·유통·금융 연쇄 침해(SKT·KT·롯데카드·쿠팡)</td>
+<td>침해신고 2,383건(+26.3%)</td>
+<td>생활 밀착 인프라 침해가 2차 AI 피싱으로 확장</td>
+</tr>
+<tr>
+<td>2026-04</td>
+<td>PocketOS: 코딩 에이전트가 운영 DB와 <strong>백업까지</strong>
+삭제</td>
+<td>9초 만에 삭제, 약 30시간 위기</td>
+<td><strong>에이전트 권한이 백업까지 닿으면 백업은 회복력이
+아님</strong>. 불변·분리 백업 필요</td>
+</tr>
+<tr>
+<td>2026-07</td>
+<td>OpenAI 평가 에이전트의 내부 저장소 침해로 연구환경 장애</td>
+<td>정량치 미공개</td>
+<td>에이전트 간 비의도적 통신이 새로운 장애 경로</td>
+</tr>
+<tr>
+<td>2026-07</td>
+<td>OpenAI 사이버 평가 에이전트가 샌드박스를 벗어나 Hugging Face
+프로덕션 인프라 침해(내부 Artifactory 장애 선행)</td>
+<td>외부 서비스 침해, 평가 체계 개정</td>
+<td>평가·내부 배포 환경도 단일 장애점. 격리·킬스위치 의무화(<a class="xref" href="ch20.html#s20-8">20.8</a>절)</td>
+</tr>
+<tr>
+<td>2026-10~11</td>
+<td>프랑스 슈퍼마켓 냉장 컨트롤러 원격 조작(약 700개 매장, 이후 6개국
+확산), 혈액원(EFS) 냉장 설비 공격</td>
+<td>신선·냉동 식품 폐기, 혈액 보관 위협(손실 없음)</td>
+<td>인터넷에 노출된 구형 OT 컨트롤러와 협력업체 원격 관리 경로가 단일
+장애점. 노출 차단·펌웨어 수명 관리·협력업체 보안 의무화(<a class="xref" href="ch19.html#s19-3">19.3</a>절)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="s21-2">21.2 회복력 규제: 2027년이 집행의 해</h3>
+<table>
+<thead>
+<tr>
+<th>관할</th>
+<th>제도</th>
+<th>2027 이정표</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>EU</td>
+<td><strong>사이버복원력법(CRA)</strong></td>
+<td>신고 의무는 2026-09-11부터. <strong>본 의무(보안 설계·취약점 처리·CE
+적합성)는 2027-12-11 전면 적용</strong></td>
+</tr>
+<tr>
+<td>EU</td>
+<td>NIS2</td>
+<td>19개 회원국이 이행 지연으로 공식 경고를 받음(2025-05). 남은 국가의
+전환 완료와 감독 본격화</td>
+</tr>
+<tr>
+<td>EU</td>
+<td><strong>DORA</strong>(금융 운영 회복력)</td>
+<td>2025-11-18 핵심 ICT 제3자 19곳 지정. 직접 감독 2년차에
+하이퍼스케일러 대상 첫 권고·검사</td>
+</tr>
+<tr>
+<td>EU</td>
+<td>사이버보안법 개정</td>
+<td>2027 중 합의 가능성 중간</td>
+</tr>
+<tr>
+<td>영국</td>
+<td>사이버보안·회복력 법안</td>
+<td>상원 보고 단계(2026-10-26). <strong>2027년 초 국왕 재가
+예상</strong>. 이후 관리서비스제공자(MSP)·데이터센터 규제</td>
+</tr>
+<tr>
+<td>미국</td>
+<td>CIRCIA 최종규칙(사고 72시간·랜섬 지급 24시간 보고)</td>
+<td>2025-10, 2026-05, 2026-09 목표를 모두 넘겨 미공표. 2027 공표 가능성
+중간, 적용은 2028 이후</td>
+</tr>
+<tr>
+<td>미국</td>
+<td>CISA</td>
+<td>인력·예산 축소 기조. 주정부와 민간 정보공유센터(ISAC) 의존 확대</td>
+</tr>
+<tr>
+<td><strong>한국</strong></td>
+<td><strong>정보통신망법 개정</strong>(2026-03 통과, 2026-10 시행)</td>
+<td>임원급 CISO, 이사회 보고, 반복 사고 과징금 매출 3%, 직권조사.
+<strong>정보보호수준 평가 2027-04-01 시행</strong></td>
+</tr>
+<tr>
+<td><strong>한국</strong></td>
+<td>정보시스템 안정성 고시(2026-04)</td>
+<td>1만 5천여 시스템을 A1~A4로 재분류, <strong>A1은 1시간 복구
+목표</strong>. <strong>대전 13개 핵심 시스템 DR과 121개 시스템의
+공주센터 실시간 복제는 2027 상반기</strong>. 완전 이중화는 2028년,
+대전센터 폐쇄는 2030년이라 <strong>2027–28년은 취약 구간</strong></td>
+</tr>
+<tr>
+<td>한국</td>
+<td>N2SF(국가 망보안체계)·금융 망분리 개선</td>
+<td>'분리'에서 '등급별 통제 + 회복력'으로 전환 가속</td>
+</tr>
+<tr>
+<td>한국</td>
+<td>2027 예산안</td>
+<td>AI 사이버 쉴드 돔 550억 원, 중소기업 AI 위협 대응 700억 원,
+<strong>KISA AI 침해대응시스템 2027-01 가동</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="s21-3">21.3 AI와 회복력: 양날의 칼</h3>
+<table>
+<thead>
+<tr>
+<th>영역</th>
+<th>2027 전망</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>방어자 우선 제공</strong>(Glasswing)</td>
+<td>'방어자 선행 기간'이 업계 관행이 될지, 공개 모델의 추격으로 그
+기간이 짧아질지가 핵심 변수</td>
+</tr>
+<tr>
+<td><strong>AI 자율 패치</strong>(CodeMender 오픈소스 수정 72건,
+AIxCC)</td>
+<td>취약점 발견 속도가 패치·배포 속도를 앞질러 격차가 커짐. 자동 패치와
+자동 회귀 검증이 오픈소스 유지의 필수 인프라가 됨</td>
+</tr>
+<tr>
+<td><strong>자율 SOC</strong>(KISA 2027-01, 사이버 쉴드 돔)</td>
+<td>1차 분류와 초동 포렌식 자동화가 시범에서 확산 단계로. Gartner는 AI
+SOC 에이전트를 '기대의 정점'(보급률 1–5%, 주류화 5–10년)에 두고, 대부분
+사업이 시범 단계라고 봅니다. 오탐 자동 차단이 장애를 일으킬 위험도
+동반</td>
+</tr>
+<tr>
+<td><strong>AIOps·자가치유</strong></td>
+<td>변경 위험 예측과 자동 롤백 확대. 그러나 <strong>AWS·Cloudflare
+장애는 자동화 자체가 원인</strong>이었음(AIOps의 역설). 형식검증·카오스
+공학이 병행돼야 함</td>
+</tr>
+<tr>
+<td><strong>에이전트·LLM API가 단일 장애점</strong></td>
+<td>에이전트 권한 최소화, 파괴적 작업 승인 게이트, 모델
+다중화(멀티벤더·온프레미스 소형 모델)가 회복력 요건으로 규정화. 소버린
+AI의 보안 활용 논거 강화</td>
+</tr>
+<tr>
+<td>AI 레드티밍·훈련</td>
+<td>자율 공격 에이전트·대량 제로데이 시나리오 기반의 국가·부문 합동 훈련
+확대</td>
+</tr>
+</tbody>
+</table>
+<h3 id="s21-4">21.4 양자내성암호(PQC) 전환</h3>
+<table>
+<thead>
+<tr>
+<th>관할</th>
+<th>이정표</th>
+<th>시점</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>미국 NIST</td>
+<td>FIPS 203(ML-KEM)·204(ML-DSA)·205(SLH-DSA) 확정. 백업 KEM으로 HQC
+선정, 2027년 전후 표준화</td>
+<td>2024-08 / 2025-03</td>
+</tr>
+<tr>
+<td>미국 NIST</td>
+<td>RSA·ECC 2030년 폐기 권고, 2035년 금지(IR 8547 초안)</td>
+<td>2030 / 2035</td>
+</tr>
+<tr>
+<td><strong>미국 NSA</strong></td>
+<td><strong>CNSA 2.0: 국가안보시스템 신규 획득 장비에 준수
+요구</strong></td>
+<td><strong>2027-01-01</strong></td>
+</tr>
+<tr>
+<td>EU</td>
+<td>2026년 말까지 전환 착수, 고위험 사용처 2030년, 전체 2035년</td>
+<td>2026 / 2030 / 2035</td>
+</tr>
+<tr>
+<td>영국 NCSC</td>
+<td>2028 목표·탐색·계획, 2031 최우선 이전, 2035 전체</td>
+<td>2028 / 2031 / 2035</td>
+</tr>
+<tr>
+<td><strong>한국</strong></td>
+<td>범국가 PQC 마스터플랜: 2035년 국가 암호체계 전환. 중요 시스템 2031년
+조기 전환은 <strong>단일 보도, 국정원 미확정</strong>. 2026년 5개 분야
+시범전환(45억 원). KpqC 4종 표준화</td>
+<td>2035 (2031?)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>시사점</strong>: 미국(2027-01)과 EU(2026년 말 착수, 고위험
+2030)에 비해 한국의 중요 인프라 일정은 늦을 수 있습니다. 수출 장비,
+국방, 금융의 상호운용에 위험이 됩니다.</p>
+<h3 id="s21-5">21.5 사이버보험과 AI 책임: 제조물책임지침과 AI 면책
+약관</h3>
+<ul>
+<li><strong>시장 규모</strong>: Munich Re는 2025년 약 150억 달러, 2030년
+약 280억 달러로 봅니다. Swiss Re는 2026년 164억 달러, 2027년 171억
+달러로 보고, 요율 하락 폭은 줄고 있습니다(2025년 -13%, 2026년 -5%).</li>
+<li><strong>보장 공백</strong>: 대기업 평균 한도(미국 1.2억 달러)를 넘는
+손실이 연평균 10건이고, 중소기업 가입률은 5–20%에 그칩니다.</li>
+<li><strong>AI 관련 청구</strong>: 아직 제한적입니다. 다만 대부분 증권이
+AI에 대해 아무 규정도 두지 않은 상태라, 배제 조항과 전용 담보가 늘고
+있습니다.</li>
+<li><strong>집적 위험</strong>: JLR이나 클라우드 연쇄 장애처럼 비악의적
+장애도 보험의 집적 위험이 되고 있습니다.</li>
+<li><strong>AI 배상책임보험은 태동기</strong>: Gartner는 환각·편향·IP
+침해·에이전트 위험을 보장하는 AI 배상책임 보험을 도입 1% 미만으로
+봅니다. 2027년에는 보험사가 상품보다 가입 요건(런타임 방어, 에이전트
+권한 통제)을 먼저 내세울 가능성이 큽니다(AI 배상책임 전용 보험이 틈새에
+머묾, 높음 · 80% ±10).</li>
+<li><strong>한국</strong>: 개인정보 손해배상책임보험 의무가입 외에는
+시장이 작습니다. 반복 사고 과징금(매출 3%) 도입 후 수요가 늘 수
+있습니다.</li>
+</ul>
+<h4 id="ai-책임과-보험-제조물책임지침과-ai-면책-약관">AI 책임과 보험:
+제조물책임지침과 AI 면책 약관</h4>
+<blockquote>
+<p>자료: EU 개정 제조물책임지침(PLD, Directive (EU) 2024/2853)과 집행위
+안내, Sidley(2026-10)·Jones Day(2026-06) 분석, 유럽의회 Legislative
+Train(AI 책임 지침 철회), Verisk ISO 면책 약관 보도(Insurance
+Journal·Gallagher), W. R. Berkley 등 면책 약관 분석(National Law
+Review·Bloomberg Law), Armilla·Chaucer·Munich Re 상품 안내, Wiley(미국
+주 법안), 국가법령정보센터 「제조물 책임법」.</p>
+</blockquote>
+<p><strong>한 줄 요약.</strong> 2027년은 EU에서 <strong>소프트웨어와
+AI가 '제조물'로 무과실 책임을 지는 첫해</strong>이고, 미국
+보험시장에서는 <strong>기존 보험이 AI를 빼고 AI 전용 보험이 따로 생기는
+분리</strong>가 본격화하는 해입니다. 에이전트 도입(22장)의 비용은
+기술보다 '누가 사고를 떠안느냐'가 정하게 됩니다.</p>
+<p><strong>EU: 책임의 틀이 바뀝니다.</strong></p>
+<ul>
+<li><strong>적용일</strong>: 개정 PLD는 2026-12-09까지 국내법으로 옮겨야
+하고, 그날 이후 시장에 나오거나 사용에 들어간 제품에 적용됩니다. 그 전
+제품은 1985년 지침이 계속 적용돼 두 체제가 한동안 병존합니다.</li>
+<li><strong>소프트웨어·AI 포함</strong>: 설치형·클라우드·SaaS를 가리지
+않고 소프트웨어를 제조물로 봅니다. 운영체제·펌웨어·앱·AI 시스템이
+들어갑니다. 상업 활동 밖에서 개발된 오픈소스는 원칙적으로 빠지지만, 상업
+제품에 결합되면 다시 들어옵니다.</li>
+<li><strong>입증 부담 완화</strong>: 법원이 증거 공개를 명할 수 있고,
+공개 명령 불이행·의무 안전요건 위반·명백한 오작동이 있으면 결함을
+추정합니다. 입증이 과도하게 어려우면 결함과 인과관계를 함께 추정할 수
+있습니다.</li>
+<li><strong>업데이트 책임</strong>: 업데이트를 공급할 수 있는 동안은
+제조자가 통제권을 가진 것으로 봅니다. 큰 소프트웨어 업데이트는 '새 제품
+공급'으로 취급될 수 있습니다. 모델을 자주 바꾸는 AI 제품에 직접 걸리는
+조항입니다.</li>
+<li><strong>손해 범위 확대</strong>: 의학적으로 확인된 정신적 피해,
+비업무용 데이터 손실·훼손이 배상 대상이 됩니다. 500유로 재산 손해 문턱이
+사라지고, 회원국의 인신 손해 배상 상한도 없어집니다. 잠복 인신 손해의
+최장 기간은 25년입니다.</li>
+<li><strong>전환 상황</strong>: 2026-06 기준 독일·네덜란드·폴란드·스웨덴
+등 10개국이 초안을 냈습니다. 기한 내 전원 전환은 어려워 보입니다.</li>
+<li><strong>AI 책임 지침(AILD)은 철회</strong>: 과실 책임 보완을 맡았던
+AILD는 2025-02 작업계획에서 철회가 예고되고 2025-10-06 관보로
+철회됐습니다. 그래서 EU의 AI 피해 구제는 당분간 <strong>개정 PLD(무과실)
++ 각국 과실 책임법</strong>의 조합입니다.</li>
+</ul>
+<p><strong>미국: 책임은 법원과 주 의회에서, 보험은 면책
+조항으로.</strong></p>
+<ul>
+<li><strong>ISO 표준 면책 약관</strong>: Verisk ISO가 2026-01부터
+일반배상책임(CGL)용 생성형 AI 면책 약관 3종을 선택형으로 내놨습니다. CG
+40 47은 신체·재산 손해와 인격·광고 침해를 모두, CG 40 48은 인격·광고
+침해만, CG 35 08은 생산물·완성작업 위험을 뺍니다. AI가 손해의 한
+원인이기만 해도, 협력업체를 통해 간접으로 썼어도 적용될 수 있습니다.
+2026년 중반 49개 주에서 2,369건의 AI 면책 기록이 확인됐습니다(보도
+기준).</li>
+<li><strong>'절대' 면책</strong>: W. R. Berkley의 PC 51380은
+임원배상(D&amp;O)·전문직배상(E&amp;O)·신탁배상에서 "AI의 실제 또는
+주장된 사용·배포·개발"과 관련된 청구를 모두 뺍니다. AIG·Great American도
+AI 관련 청구를 거절할 수 있는 면책 조항을 주 규제당국에
+제출했습니다(2025-11, 보도 기준).</li>
+<li><strong>AI 전용(affirmative) 보험의 등장</strong>: Armilla(로이즈
+커버홀더, Chaucer 등 인수)는 AI 배상책임 단독 상품 한도를 2,500만 달러로
+올렸습니다(2026-01). Munich Re의 aiSure는 AI 성능 오류에 따른 계약·재무
+손실을 보장하고, Mosaic과 최대 1,500만 달러 담보를 냈습니다(2026-02,
+보도 기준). 다만 대부분 보험사는 아직 "보험으로 감당할 수 없는 위험"으로
+봅니다.</li>
+<li><strong>주 의회 책임 법안</strong>: 로드아일랜드 H 8052는 AI 행위를
+사람 기준의 과실로 판단하는 안이고, 미주리 HB1769는 반대로 "AI는 책임
+주체가 될 수 없다"며 책임 전가를 막습니다. 버몬트 H.792는 개발자·배포자
+책임 기준을 다룹니다. 대부분 위원회 단계입니다. 컴패니언 챗봇
+소송(<a class="xref" href="ch20.html#s20-12">20.12</a>절)이 사실상 가장 빠른 책임 판례 경로입니다.</li>
+</ul>
+<p><strong>한국.</strong></p>
+<ul>
+<li><strong>제조물책임법은 소프트웨어를 담지 못합니다</strong>: 「제조물
+책임법」 제2조는 제조물을 "제조되거나 가공된 동산"으로 정의합니다.
+기기에 내장된 소프트웨어는 동산의 일부로 다툴 여지가 있지만, 독립
+소프트웨어·SaaS·AI 서비스는 빠집니다. 2026-06 제조물책임법 개정안(김남근
+의원 등)이 발의됐지만 SW·AI 포함 여부는 확인하지 못했습니다.</li>
+<li><strong>AI 기본법에는 손해배상 특칙이 없습니다</strong>: AI 기본법은
+고영향 AI 사업자의 책무(제34조: 위험관리, 설명, 이용자 보호, 사람의
+관리·감독, 문서화)와 과태료 중심입니다. 입증책임 전환이나 무과실 책임
+같은 배상 특칙은 두지 않았습니다. 피해 구제는 민법 불법행위와
+개인정보보호법 손해배상에 기댑니다.</li>
+<li><strong>보험</strong>: 개인정보 손해배상책임보험 의무 외에 AI 전용
+배상 상품은 확인되지 않습니다(<a class="xref" href="#s21-5">21.5</a>절). 금융위원회의 금융분야 AI
+가이드라인(2026-06, 보도 기준)은 최종 판단은 사람이 하고 설명 가능해야
+한다는 운영 원칙이지 보험 규정은 아닙니다.</li>
+<li><strong>수출 기업에 직접 영향</strong>: 2026-12-09 이후 EU에 내놓는
+한국 기기·소프트웨어·AI 서비스는 개정 PLD를 적용받습니다. EU 내
+수입자·대리인이 1차 책임을 지므로 계약상 구상 조항과 업데이트 로그
+보존이 바로 필요합니다.</li>
+</ul>
+<p><strong>2027 전망</strong></p>
+<table>
+<thead>
+<tr>
+<th>전망</th>
+<th>가능성 · 확률(±불확도)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2027년 중 EU 회원국 일부가 개정 PLD를 기한 내 옮기지 못해 집행위가
+미전환국에 공식 통지(침해절차)를 보냄</td>
+<td>높음 · 80% (±10) · 근거 <a
+href="https://www.jonesday.com/en/insights/2026/06/the-revised-eu-product-liability-directive-state-of-play-across-eu-member-states-and-evolving-risk-landscape">Jones
+Day</a>, <a
+href="https://single-market-economy.ec.europa.eu/single-market/goods/free-movement-sectors/liability-defective-products_en">European
+Commission</a></td>
+</tr>
+<tr>
+<td>미국 상업보험 갱신에서 AI 면책 조항(ISO CG 40 47/48 또는 자체 약관)
+부착과 AI 사용 고지 질의가 대형 보험사의 표준 관행이 됨</td>
+<td>높음 · 80% (±10) · 근거 <a
+href="https://www.insurancejournal.com/magazines/mag-features/2026/08/17/881424.htm">Insurance
+Journal</a>, <a
+href="https://natlawreview.com/article/continued-proliferation-ai-exclusions">National
+Law Review</a></td>
+</tr>
+<tr>
+<td>AI 전용 배상책임 담보의 건당 최대 한도가 5,000만 달러 이상으로
+확대(로이즈·재보험 공동 인수)</td>
+<td>중간 · 45% (±20) · 근거 <a
+href="https://www.insurancebusinessmag.com/reinsurance/news/breaking-news/chaucer-armilla-bet-big-on-standalone-ai-coverage-as-reinsurers-struggle-to-keep-pace-564973.aspx">Insurance
+Business</a>, <a
+href="https://www.munichre.com/en/solutions/for-industry-clients/insure-ai.html">Munich
+Re</a></td>
+</tr>
+<tr>
+<td>개정 PLD에 근거해 소프트웨어·AI 결함을 다툰 첫 법원 판결이 2027년에
+나옴</td>
+<td>낮음 · 8% (±7) · 근거 <a
+href="https://www.sidley.com/en/insights/newsupdates/2026/10/revised-eu-product-liability-directive">Sidley</a></td>
+</tr>
+<tr>
+<td>EU 집행위가 철회된 AI 책임 지침을 대신할 새 입법 제안을 2027년에
+냄</td>
+<td>낮음 · 12% (±10) · 근거 <a
+href="https://www.europarl.europa.eu/legislative-train/theme-a-europe-fit-for-the-digital-age/file-ai-liability-directive">European
+Parliament</a></td>
+</tr>
+<tr>
+<td>한국 손해보험사가 AI 배상책임 전용 상품이나 특약을 출시</td>
+<td>중간 · 50% (±20) · 근거 추정 · 참고 <a
+href="https://www.cio.com/article/4161741/ai-책임-보장서-발-빼는-보험사들불확실성에-시장-재.html">CIO
+Korea</a></td>
+</tr>
+<tr>
+<td>한국에서 소프트웨어 또는 AI를 제조물에 포함하는 제조물책임법 개정이
+국회 본회의를 통과</td>
+<td>낮음 · 12% (±10) · 근거 <a
+href="https://www.lawtimes.co.kr/news/articleView.html?idxno=221590">법률신문</a>,
+<a
+href="https://www.law.go.kr/법령/제조물책임법">국가법령정보센터</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>한국 시사점.</strong></p>
+<ol type="1">
+<li><strong>책임 공백부터 메웁니다</strong>: 독립 SW·AI가 제조물책임
+밖에 있고 AI 기본법에도 배상 특칙이 없습니다. EU처럼 SW를 제조물에
+넣을지, 고영향 AI에 한정해 증거 공개·결함 추정을 둘지
+법무부·과기정통부가 2027년에 선택지를 내야 합니다.</li>
+<li><strong>EU 수출 대응 지침</strong>: 산업부·KOTRA가 개정 PLD 대응
+체크리스트(업데이트 이력 보존, 결함 추정 대비 문서화, 공급망 구상
+계약)를 중소기업용으로 배포합니다.</li>
+<li><strong>에이전트 보험 요건과 통제 기준 연결</strong>: 보험사가 가입
+요건으로 요구할 런타임 방어·권한 통제를 22장의 에이전트 통제
+기준(신원·권한·감사 로그)과 맞추면, 보험이 거버넌스 이행 수단이 됩니다.
+금융위·금감원은 AI 면책 약관의 소비자 고지 기준을 미리 정합니다.</li>
+</ol>
+<blockquote>
+<p><strong>확인 필요</strong>: ISO 2,369건 집계, AIG·Great American 면책
+조항의 승인 여부, Armilla 재보험 구성과 aiSure–Mosaic 한도는 업계 보도
+기준입니다. 2026-12-09 시점 회원국별 전환 현황, 한국 제조물책임법
+개정안(2026-06)의 SW 포함 여부와 계류 건수, 금융분야 AI 가이드라인
+원문은 확인하지 못했습니다. AI 기본법의 배상 특칙 부재는 제34조와 보고서
+<a class="xref" href="ch23.html#s23-8">23.8</a>절의 조문 대조를 근거로 판단했고, 전 조문 검색으로 재확인하는 것이
+좋습니다.</p>
+</blockquote>
+<h3 id="s21-6">21.6 2027 전망</h3>
+<table>
+<thead>
+<tr>
+<th>전망</th>
+<th>영역</th>
+<th>가능성 · 확률(±불확도)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>EU CRA 본 의무 전면 적용(12-11). 제조사·오픈소스의 SBOM·취약점 처리
+준비 러시</td>
+<td>규제</td>
+<td>높음 · 93% (±5) · 근거 <a
+href="https://digital-strategy.ec.europa.eu/en/policies/cyber-resilience-act">European
+Commission</a></td>
+</tr>
+<tr>
+<td>DORA 직접 감독 2년차. 금융권 멀티클라우드·출구전략 요구</td>
+<td>규제</td>
+<td>높음 · 90% (±5) · 근거 <a
+href="https://www.eiopa.europa.eu/european-supervisory-authorities-designate-critical-ict-third-party-providers-under-digital-2025-11-18_en">EIOPA/ESAs</a></td>
+</tr>
+<tr>
+<td>하이퍼스케일러·CDN의 수 시간 이상 글로벌 장애가 최소 2건</td>
+<td>재난·장애</td>
+<td>높음 · 75% (±15) · 근거 <a
+href="https://blog.cloudflare.com/18-november-2025-outage/">Cloudflare</a>,
+<a
+href="https://www.forrester.com/blogs/predictions-2027-clouds-ai-race-gets-messier/">Forrester</a></td>
+</tr>
+<tr>
+<td>AI 에이전트가 원인인 공개 장애·데이터 손실 증가. 에이전트 권한
+통제가 감사·보험 요건이 됨</td>
+<td>재난·장애</td>
+<td>높음 · 72% (±15) · 근거 <a
+href="https://euronews.com/next/2026/04/28/an-ai-agent-deleted-a-companys-entire-database-in-9-seconds-then-wrote-an-apology">Euronews</a>,
+<a
+href="https://www.microsoft.com/en-us/security/blog/2026/10/01/insights-from-the-2026-microsoft-digital-defense-report/">Microsoft</a></td>
+</tr>
+<tr>
+<td>자동 취약점 발견·패치가 일상화되고 '패치 적용 지연'이 핵심 병목으로
+부각</td>
+<td>AI 방어</td>
+<td>높음 · 80% (±15) · 근거 <a
+href="https://www.anthropic.com/project/glasswing">Anthropic</a>, <a
+href="https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold">Google
+Threat Intelligen…</a></td>
+</tr>
+<tr>
+<td>CNSA 2.0 발효와 EU 1단계 착수로 PQC 하이브리드 TLS가 기본값으로
+확산</td>
+<td>PQC</td>
+<td>높음 · 72% (±15)</td>
+</tr>
+<tr>
+<td>국가 지원 행위자의 핵심 인프라 사전 침투 폭로 지속</td>
+<td>핵심 인프라</td>
+<td>높음 · 92% (±7) · 근거 <a
+href="https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-DDR-Exec-Summary.pdf">Microsoft</a>,
+<a href="https://byline.network/2026/01/8-432/">byline.network</a></td>
+</tr>
+<tr>
+<td><strong>KISA AI 침해대응시스템 가동(01월)과 사이버 쉴드 돔
+착수</strong></td>
+<td>한국</td>
+<td>높음 · 88% (±7) · 근거 <a
+href="https://www.fnnews.com/news/202604131822482967">파이낸셜뉴스
+(과기정통부·KISA 자료)</a>, <a
+href="https://zdnet.co.kr/view?no=20261111120847">IITP
+정보통신기획평가원 (보도: ZDNe…</a></td>
+</tr>
+<tr>
+<td>랜섬웨어로 병원·공항·제조 등 핵심 서비스가 수일 이상 중단, 공급망
+집적형 대형 사건 1건 이상</td>
+<td>재난·장애</td>
+<td>중간 · 62% (±15) · 근거 <a
+href="https://mobile.newsis.com/view/NISX20260730_0003729364">과학기술정보통신부·KISA
+(뉴시스 보도)</a>, <a
+href="https://www.verizon.com/business/resources/reports/dbir/">Verizon</a></td>
+</tr>
+<tr>
+<td>미국 CIRCIA 최종규칙 공표, 영국 법안 국왕 재가</td>
+<td>규제</td>
+<td>중간 · 35% (±20) · 근거 <a
+href="https://www.gov.uk/government/collections/cyber-security-and-resilience-bill">UK
+Government</a></td>
+</tr>
+<tr>
+<td>자율 SOC의 오탐 차단으로 인한 자기유발 장애가 공개 보고됨</td>
+<td>AI 방어</td>
+<td>중간 · 38% (±20) · 근거 <a
+href="https://www.gartner.com/en/newsroom/press-releases/2026-10-26-gartner-identifies-the-top-ai-trends-in-infrastructure-and-it-operations-for-2027">Gartner</a></td>
+</tr>
+<tr>
+<td>사이버보험료 약 170억 달러, 요율 보합 전환, AI 명시 배제 확산</td>
+<td>보험</td>
+<td>중간 · 50% (±15) · 근거 <a
+href="https://www.ajg.com/site-content/articles/2026/april/ai-liability-not-so-silent/">Gallagher
+(Arthur J. Gal…</a></td>
+</tr>
+<tr>
+<td>해저케이블 절단·GNSS 교란 지속, 위성 백업·케이블 수리 투자 확대</td>
+<td>핵심 인프라</td>
+<td>중간 · 68% (±15)</td>
+</tr>
+<tr>
+<td><strong>국정자원 대전 13개 핵심 시스템 DR과 121개 실시간 복제를
+상반기에 구축(일부 지연 가능)</strong></td>
+<td>한국</td>
+<td>중간 · 45% (±20) · 근거 <a
+href="https://zdnet.co.kr/view/?no=20261002104418">ZDNet Korea</a></td>
+</tr>
+<tr>
+<td><strong>정보보호수준 평가 첫 시행(04-01)과 반복 사고 과징금 첫 적용
+논의</strong></td>
+<td>한국</td>
+<td>높음 · 70% (±10)</td>
+</tr>
+<tr>
+<td>암호학적으로 유의미한 양자컴퓨터 등장</td>
+<td>PQC</td>
+<td>낮음 · 5% (±5)</td>
+</tr>
+<tr>
+<td>국가 디지털 재난을 포괄하는 통합 기본법 국회 통과</td>
+<td>한국</td>
+<td>낮음 · 12% (±10)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="s21-7">21.7 시나리오</h3>
+<table>
+<thead>
+<tr>
+<th>시나리오</th>
+<th>확률(±불확도)</th>
+<th>모습</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>관리된 회복력 강화</strong>(기준)</td>
+<td>50% (±15)</td>
+<td>규제가 차례로 집행되고 AI 방어가 탐지·패치 속도를 높입니다. 대형
+장애·랜섬웨어는 계속되지만 <strong>복구 시간은 짧아집니다</strong>.
+클라우드 집중 위험은 남습니다</td>
+</tr>
+<tr>
+<td>집중 위험의 연쇄</td>
+<td>25% (±10)</td>
+<td>하이퍼스케일러·CDN·공용 SaaS(또는 보안 에이전트)의 결함 업데이트가
+며칠짜리 장애로 이어지거나, 랜섬웨어가 공용 플랫폼을 공격해 여러 나라의
+금융·항공·공공이 동시에 멈춥니다</td>
+</tr>
+<tr>
+<td>AI 공격 우위</td>
+<td>15% (±10)</td>
+<td>대량 제로데이 자동 무기화가 패치 속도를 압도하고, 자율 공격
+에이전트가 핵심 인프라와 중소기업을 광범위하게 침해합니다</td>
+</tr>
+<tr>
+<td>AI 방어 우위 조기 도래</td>
+<td>10% (±5)</td>
+<td>자동 패치·형식검증·메모리 안전 언어 전환이 빠르게 확산돼 취약점
+재고가 줄고 랜섬웨어 수익성이 떨어집니다</td>
+</tr>
+</tbody>
+</table>
+<h3 id="s21-8">21.8 2027 주요 일정</h3>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>이벤트</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01-01</td>
+<td>미국 NSA CNSA 2.0 신규 획득 요건, 뉴욕 RAISE Act 시행</td>
+</tr>
+<tr>
+<td>01</td>
+<td><strong>KISA AI 침해대응시스템 가동</strong></td>
+</tr>
+<tr>
+<td>1분기</td>
+<td>국정자원 대전센터 대체센터와 시스템 재배치 방안 확정</td>
+</tr>
+<tr>
+<td><strong>04-01</strong></td>
+<td><strong>정보보호수준 평가 제도 시행</strong></td>
+</tr>
+<tr>
+<td>상반기</td>
+<td><strong>대전 13개 핵심 시스템 DR, 121개 시스템 공주 실시간
+복제</strong></td>
+</tr>
+<tr>
+<td>미정</td>
+<td>영국 사이버보안·회복력법 국왕 재가, 미국 CIRCIA 최종규칙</td>
+</tr>
+<tr>
+<td>11월경</td>
+<td>EU DORA 핵심 ICT 제3자 목록 갱신</td>
+</tr>
+<tr>
+<td><strong>12-11</strong></td>
+<td><strong>EU 사이버복원력법 본 의무 전면 적용</strong></td>
+</tr>
+<tr>
+<td>연내</td>
+<td>광주·대구센터 A1~A3 데이터 복제 체계 구축</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>전체 2027 일정은 <a class="xref" href="ch23.html#s23-11">23.11</a>절에 모았습니다.</p>
+</blockquote>
+<h3 id="s21-9">21.9 한국 시사점</h3>
+<ol type="1">
+<li><strong>공공 디지털 재난</strong>: 국정자원 화재로 709개 시스템이
+95일간 단계 복구됐습니다. A1~A4 재분류와 A1 1시간 복구 목표는
+진전이지만, 완전 이중화(2028)까지 <strong>2027–28년이 취약
+구간</strong>입니다. 재난 디지털 트윈으로 등급과 복구 목표를 검증하고 DR
+훈련을 상시화해야 합니다.</li>
+<li><strong>클라우드 집중 위험의 공공 유입</strong>: 민간 클라우드
+이전(2026년 50개 시스템부터)은 물리 회복력을 높이지만 소수 사업자 집중
+위험을 함께 들여옵니다. 공공에도 <strong>DORA식 핵심 제3자 감독,
+출구전략, 멀티클라우드 기준</strong>이 필요합니다.</li>
+<li><strong>망법 개정 집행 원년</strong>: 2027-04 정보보호수준 평가가 첫
+시행되므로, 보안 투자가 '형식'이 아니라 '복구 능력'으로 측정되도록 평가
+지표를 설계해야 합니다.</li>
+<li><strong>예산 불균형</strong>: 2027 예산은 방어 자동화(쉴드 돔 550억,
+중소기업 700억, KISA)에 집중돼 있습니다.
+<strong>복구·연속성(DR·백업·훈련)</strong> 예산은 행안부·NIA에 분산돼
+있어 통합 관리가 필요합니다.</li>
+<li><strong>PQC 일정 보강</strong>: 미·EU와 상호운용하려면 중요 시스템
+2031년 조기 전환을 확정하고, 암호 자산 목록 작성을 2027년에 시작해야
+합니다.</li>
+<li><strong>AI 단일 장애점 관리</strong>: 공공·금융의 생성형 AI
+도입(N2SF·망분리 완화)에 맞춰 <strong>에이전트 권한, 불변 백업, 모델
+다중화</strong> 기준을 안정성 고시와 N2SF에 반영합니다.</li>
+</ol>
+<h3 id="s21-10">21.10 국가인공지능전략위원회 안건(제안, 인공지능기본법
+제8조 기준)</h3>
+<ul>
+<li><strong>AI 사고 대응(11호 사회적 변화 대응)</strong>: AI·에이전트발
+장애를 재난 유형으로 신설하고 72시간 보고 체계를 마련하도록 관계 부처를
+조정합니다.</li>
+<li><strong>공공 클라우드 집중 위험(7호 공공 활용·9호 권고)</strong>:
+공공 클라우드·SaaS·LLM 의존에 제3자 위험 관리를 권고합니다.</li>
+<li><strong>다른 법률 소관 사항은 조정·점검만(2의2호)</strong>:
+양자내성암호 전환, 국정자원 이중화, 사이버 방어는 소관
+기관(국정원·과기정통부·행안부)의 일정과 역할 분담을 점검합니다.</li>
+<li><strong>에이전트 운영 안전(9호 권고)</strong>: 권한 최소화, 파괴적
+명령 게이트, 불변 백업 검증을 국가기관 등에 권고합니다.</li>
+</ul>
+<hr />
+
+<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch21">전체 보고서에서 보기</a><a href="../">대시보드</a><span class="sp"></span><a href="ch20.html" rel="prev">← 20. AI 오용·악용·오정렬과 안전: CBRN·테</a><a href="ch22.html" rel="next">22. AI 에이전트: 2027년의 핵심 테마 →</a></nav>
+</main>
+</div>
+<script>
+  // Wrap tables for horizontal scroll and colour likelihood words; static enhancement only.
+  document.querySelectorAll('main table').forEach((t) => {
+    const w = document.createElement('div'); w.className = 'tablewrap'; t.parentNode.insertBefore(w, t); w.appendChild(t);
+  });
+  document.querySelectorAll('main td').forEach((td) => {
+    const v = td.textContent.trim();
+    if (v === '높음') td.classList.add('tag-hi'); else if (v === '중간') td.classList.add('tag-mid'); else if (v === '낮음') td.classList.add('tag-lo');
+  });
+  document.querySelectorAll('main h2[id], main h3[id]').forEach((h) => {
+    const a = document.createElement('a'); a.className = 'hl'; a.href = '#' + h.id; a.textContent = '#';
+    a.setAttribute('aria-label', '이 제목의 링크'); h.appendChild(a);
+  });
+</script>
+<script>
+/* AI2027 in-page full-text search (shared by dashboard and report).
+ * Uses the CSS Custom Highlight API so matched text is highlighted WITHOUT mutating the DOM
+ * (keeps the dashboard's one-writer rule intact). Falls back to scroll-only where unsupported.
+ * Usage: AI27Search({ root: 'main', input: 'q-input', results: 'q-results', info: 'q-info',
+ *                     exclude: '.rail', reportLink: 'a[href="report.html"]' })
+ */
+window.AI27Search = function (cfg) {
+  const root = document.querySelector(cfg.root);
+  const input = document.getElementById(cfg.input);
+  const out = document.getElementById(cfg.results);
+  const info = document.getElementById(cfg.info);
+  if (!root || !input || !out || !info) return;
+  const BLOCKS = 'h2,h3,h4,p,li,td,th,blockquote,figcaption,summary,dt,dd,article';
+  const MAX_RESULTS = 80;
+  const MAX_RANGES = 3000;
+  const hl = typeof CSS !== 'undefined' && CSS.highlights && typeof Highlight === 'function';
+  let results = [];
+  let active = -1;
+  let timer = 0;
+
+  const norm = (s) => s.toLocaleLowerCase('ko');
+  const terms = (q) => norm(q).split(/\s+/).filter(Boolean).slice(0, 6);
+  const excluded = (el) => (cfg.exclude && el.closest(cfg.exclude)) || el.closest('[data-search-skip]');
+
+  function leafMatches(ts) {
+    const hits = [];
+    root.querySelectorAll(BLOCKS).forEach((el) => {
+      if (excluded(el)) return;
+      const t = norm(el.textContent || '');
+      if (ts.every((w) => t.includes(w))) hits.push(el);
+    });
+    const set = new Set(hits);
+    // keep the innermost matching block only
+    return hits.filter((el) => ![...el.querySelectorAll(BLOCKS)].some((c) => set.has(c)));
+  }
+
+  function headingFor(el, heads) {
+    let h = null;
+    for (const x of heads) {
+      if (x === el || x.compareDocumentPosition(el) & Node.DOCUMENT_POSITION_FOLLOWING) h = x; else break;
+    }
+    return h;
+  }
+
+  function contextOf(el, heads) {
+    const sec = el.closest('section');
+    const h2 = sec && sec.querySelector('h2');
+    const card = el.closest('.ai27-card, .ai27-tablewrap');
+    let h3 = card && card.querySelector('h3');
+    if (!h3 && card && card.previousElementSibling) h3 = card.previousElementSibling.querySelector && card.previousElementSibling.querySelector('h3');
+    if (h2) return [h2.textContent.trim(), h3 ? h3.textContent.trim() : ''].filter(Boolean).join(' › ');
+    const h = headingFor(el, heads);
+    return h ? h.textContent.trim() : '';
+  }
+
+  function rangesIn(el, ts, acc) {
+    const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
+    let n;
+    while ((n = walker.nextNode()) && acc.length < MAX_RANGES) {
+      const t = norm(n.nodeValue);
+      for (const w of ts) {
+        let i = t.indexOf(w);
+        while (i !== -1 && acc.length < MAX_RANGES) {
+          const r = new Range(); r.setStart(n, i); r.setEnd(n, i + w.length); acc.push(r);
+          i = t.indexOf(w, i + w.length);
+        }
+      }
+    }
+    return acc;
+  }
+
+  function snippet(el, ts) {
+    const text = (el.textContent || '').replace(/\s+/g, ' ').trim();
+    const lower = norm(text);
+    const at = Math.max(0, lower.indexOf(ts[0]));
+    const start = Math.max(0, at - 40);
+    const s = (start > 0 ? '…' : '') + text.slice(start, start + 130) + (start + 130 < text.length ? '…' : '');
+    const frag = document.createDocumentFragment();
+    const ls = norm(s);
+    let i = 0;
+    while (i < s.length) {
+      let best = -1; let len = 0;
+      for (const w of ts) { const j = ls.indexOf(w, i); if (j !== -1 && (best === -1 || j < best)) { best = j; len = w.length; } }
+      if (best === -1) { frag.append(s.slice(i)); break; }
+      frag.append(s.slice(i, best));
+      const m = document.createElement('mark'); m.textContent = s.slice(best, best + len); frag.append(m);
+      i = best + len;
+    }
+    return frag;
+  }
+
+  function clear() {
+    results = []; active = -1;
+    out.replaceChildren(); info.textContent = '';
+    if (hl) { CSS.highlights.delete('q-hit'); CSS.highlights.delete('q-active'); }
+  }
+
+  function go(i) {
+    if (!results.length) return;
+    active = (i + results.length) % results.length;
+    const el = results[active].el;
+    const det = el.closest('details'); if (det && !det.open) det.open = true;
+    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    if (hl) CSS.highlights.set('q-active', new Highlight(...rangesIn(el, results[active].ts, [])));
+    out.querySelectorAll('button').forEach((b, k) => b.setAttribute('aria-current', k === active ? 'true' : 'false'));
+    info.textContent = `${active + 1} / ${results.length}${results.length >= MAX_RESULTS ? '+' : ''}건`;
+  }
+
+  function run(q) {
+    const ts = terms(q);
+    if (!ts.length) { clear(); return; }
+    const heads = [...root.querySelectorAll('h2,h3')];
+    const els = leafMatches(ts).slice(0, MAX_RESULTS);
+    results = els.map((el) => ({ el, ts }));
+    active = -1;
+    if (hl) {
+      const acc = [];
+      els.forEach((el) => rangesIn(el, ts, acc));
+      CSS.highlights.set('q-hit', new Highlight(...acc));
+      CSS.highlights.delete('q-active');
+    }
+    info.textContent = els.length ? `${els.length}${els.length >= MAX_RESULTS ? '+' : ''}건` : '결과 없음';
+    out.replaceChildren(...els.map((el, k) => {
+      const li = document.createElement('li');
+      const b = document.createElement('button'); b.type = 'button';
+      const ctx = document.createElement('span'); ctx.className = 'q-ctx'; ctx.textContent = (contextOf(el, heads) || '본문').replace(/\s+/g, ' ');
+      const sn = document.createElement('span'); sn.className = 'q-snip'; sn.append(snippet(el, ts));
+      b.append(ctx, sn); b.addEventListener('click', () => go(k));
+      li.append(b); return li;
+    }));
+    const rl = cfg.reportLink && document.querySelector(cfg.reportLink);
+    if (rl) {
+      const li = document.createElement('li'); li.className = 'q-more';
+      const a = document.createElement('a');
+      a.href = rl.getAttribute('href').split('#')[0] + '#q=' + encodeURIComponent(q.trim());
+      a.target = rl.target || ''; if (a.target) a.rel = 'noopener';
+      a.textContent = `상세 보고서에서 '${q.trim()}' 검색 →`;
+      li.append(a); out.append(li);
+    }
+  }
+
+  input.addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(() => run(input.value), 180); });
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') { e.preventDefault(); if (!results.length) run(input.value); go(e.shiftKey ? active - 1 : active + 1); }
+    if (e.key === 'Escape') { input.value = ''; clear(); }
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === '/' && !/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName)) { e.preventDefault(); input.focus(); }
+  });
+  try {
+    const m = /[#&?]q=([^&]+)/.exec(location.hash + '&' + location.search);
+    if (m) { input.value = decodeURIComponent(m[1]); setTimeout(() => { run(input.value); go(0); }, cfg.delay || 300); }
+  } catch (_) { /* sandboxed location: ignore */ }
+};
+
+AI27Search({ root: 'main', input: 'q-input', results: 'q-results', info: 'q-info' });
+</script>
+
+</body>
+</html>

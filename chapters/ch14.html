@@ -1,0 +1,1042 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>14. 소버린 AI와 국가 AI 문샷 · AI 2027 전망 보고서</title>
+<meta name="description" content="14. 소버린 AI와 국가 AI 문샷">
+<link rel="canonical" href="https://hollobit.github.io/AI2027/chapters/ch14.html">
+</head>
+<body>
+<style>.chnav{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;font-size:.86rem;margin:0 0 18px;color:var(--muted)}.chnav a{text-decoration:none}.chnav .sp{flex:1}</style><meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;600&family=Noto+Serif+KR:wght@500;700;900&display=swap">
+<style>
+  /* Observatory report: long-form reading column + sticky contents rail */
+  :root {
+    --bg: #f3f4f1; --paper: #ffffff; --fg: #14161c; --muted: #5b6170; --line: #dcdfe4;
+    --accent: #3d40d4; --accent-2: #c25a22; --soft: #eef0f6; --ok: #1f7a4a; --warn: #985a00; --bad: #b3362f;
+    --display: 'Noto Serif KR', AppleMyungjo, Georgia, serif;
+    --text: 'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', system-ui, sans-serif;
+    --mono: 'IBM Plex Mono', ui-monospace, Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+    --bg: #0b0d12; --paper: #141821; --fg: #eef0f4; --muted: #8f96a5; --line: #262b37;
+    --accent: #8d90f8; --accent-2: #f29a62; --soft: #1b2030; --ok: #4cc38a; --warn: #e5a33b; --bad: #f07b72; color-scheme: dark; } }
+  :root[data-theme="dark"] {
+    --bg: #0b0d12; --paper: #141821; --fg: #eef0f4; --muted: #8f96a5; --line: #262b37;
+    --accent: #8d90f8; --accent-2: #f29a62; --soft: #1b2030; --ok: #4cc38a; --warn: #e5a33b; --bad: #f07b72; color-scheme: dark; }
+  body { background: var(--bg); color: var(--fg); font-family: var(--text); font-size: 15.5px; line-height: 1.75; letter-spacing: -0.005em;
+    padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+  .wrap { max-width: 1180px; margin: 0 auto; padding-block: clamp(20px, 4vw, 48px); display: grid; grid-template-columns: 250px minmax(0, 1fr); gap: 48px; }
+  @media (max-width: 900px) { .wrap { grid-template-columns: minmax(0, 1fr); gap: 24px; } .rail { position: static !important; max-height: none !important; } }
+  .rail { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 20px); align-self: start; max-height: calc(100vh - 40px); overflow: auto; font-size: 13px; }
+  .rail .label { font-family: var(--mono); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
+  .rail ul { list-style: none; margin: 0; padding: 0; }
+  .rail li { margin: 0; }
+  .rail ul ul { padding-left: 12px; border-left: 1px solid var(--line); margin: 2px 0 8px 2px; }
+  .rail ul ul ul { display: none; }
+  .rail a { display: block; padding: 3px 0; color: var(--muted); text-decoration: none; line-height: 1.45; }
+  .rail a:hover, .rail a:focus-visible { color: var(--accent); outline: none; }
+  .rail > ul > li > a { color: var(--fg); font-weight: 500; }
+  main { min-width: 0; background: var(--paper); border: 1px solid var(--line); border-radius: 16px; padding: clamp(22px, 5vw, 60px); }
+  main > * { max-width: 74ch; }
+  main > table, main > .tablewrap, main > details { max-width: none; }
+  h1 { font-family: var(--display); font-weight: 900; font-size: clamp(2.2rem, 5.5vw, 3.5rem); line-height: 1.08; letter-spacing: -0.03em; margin: 0 0 6px; text-wrap: balance; }
+  h1 + h3 { font-family: var(--display); font-weight: 500; font-size: clamp(1.1rem, 2.2vw, 1.4rem); color: var(--accent); margin: 0 0 14px; letter-spacing: -0.01em; }
+  h2 { font-family: var(--display); font-weight: 700; font-size: clamp(1.5rem, 3vw, 2rem); letter-spacing: -0.02em; line-height: 1.25; margin: 2.6em 0 .6em; padding-top: 1.2em; border-top: 1px solid var(--line); text-wrap: balance; scroll-margin-top: 20px; }
+  h3 { font-size: 1.12rem; font-weight: 600; margin: 1.9em 0 .5em; letter-spacing: -0.01em; scroll-margin-top: 20px; }
+  h4 { font-size: 1rem; font-weight: 600; margin: 1.8em 0 .3em; scroll-margin-top: 20px; }
+  p, li { text-wrap: pretty; }
+  strong { font-weight: 600; }
+  a { color: var(--accent); text-underline-offset: 3px; text-decoration-thickness: 1px; overflow-wrap: anywhere; }
+  blockquote { margin: 1.2em 0; padding: 14px 18px; background: var(--soft); border-radius: 10px; color: var(--fg); border: 0; }
+  blockquote p { margin: 0; }
+  hr { border: 0; height: 0; margin: 0; }
+  ul, ol { padding-left: 1.3em; }
+  li + li { margin-top: .25em; }
+  code { font-family: var(--mono); font-size: .86em; background: var(--soft); padding: 1px 6px; border-radius: 5px; overflow-wrap: anywhere; }
+  .tablewrap { overflow-x: auto; margin: 1.2em 0; border: 1px solid var(--line); border-radius: 12px; }
+  table { border-collapse: collapse; width: 100%; font-size: 13.5px; line-height: 1.55; }
+  th { text-align: left; font-family: var(--mono); font-weight: 500; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); padding: 10px 12px; border-bottom: 1px solid var(--line); background: var(--soft); white-space: nowrap; }
+  td { padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; font-variant-numeric: tabular-nums; }
+  tr:last-child td { border-bottom: 0; }
+  td:first-child { font-weight: 500; min-width: 120px; }
+  details { margin: 1em 0; }
+  summary { cursor: pointer; color: var(--muted); }
+  .meta { font-family: var(--mono); font-size: 12px; color: var(--muted); letter-spacing: .04em; }
+  .appendix-head { margin-top: 4em; }
+  h1.part { font-size: clamp(1.25rem, 2.6vw, 1.6rem); font-weight: 800; color: var(--accent); margin: 64px 0 8px; padding-top: 18px; border-top: 3px solid var(--accent); letter-spacing: -0.01em; }
+  #appendix h1 { font-size: clamp(1.6rem, 3.5vw, 2.2rem); margin-top: 0; }
+  #appendix h4 { font-family: var(--display); font-weight: 700; font-size: 1.02rem; padding-top: 1em; border-top: 1px dashed var(--line); }
+  .tag-hi { color: var(--ok); font-weight: 600; } .tag-mid { color: var(--warn); font-weight: 600; } .tag-lo { color: var(--bad); font-weight: 600; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  /* full-text search */
+  .q { margin-bottom: 22px; }
+  .q input { width: 100%; box-sizing: border-box; font: inherit; font-size: 13.5px; color: var(--fg); background: var(--paper); border: 1px solid var(--line); border-radius: 10px; padding: 8px 11px; }
+  .q input:focus { outline: 2px solid var(--accent); outline-offset: 1px; border-color: transparent; }
+  .q-info { font-family: var(--mono); font-size: 11px; color: var(--muted); margin: 6px 2px 0; min-height: 1em; }
+  .q-results { list-style: none; margin: 6px 0 0; padding: 0; max-height: 46vh; overflow: auto; border-left: 1px solid var(--line); }
+  .q-results:empty { display: none; }
+  .q-results button { all: unset; box-sizing: border-box; display: block; width: 100%; cursor: pointer; padding: 6px 8px 6px 10px; border-radius: 0 8px 8px 0; line-height: 1.45; }
+  .q-results button:hover, .q-results button:focus-visible, .q-results button[aria-current="true"] { background: var(--soft); }
+  .q-ctx { display: block; font-size: 11px; color: var(--accent); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .q-snip { display: block; font-size: 12px; color: var(--muted); }
+  .q-snip mark { background: none; color: var(--fg); font-weight: 600; }
+  ::highlight(q-hit) { background-color: rgba(229, 163, 59, .35); }
+  ::highlight(q-active) { background-color: #e5a33b; color: #14161c; }
+  figure { margin: 1.6em 0; max-width: none; }
+  figure svg { display: block; width: 100%; height: auto; }
+  figcaption { font-size: 13px; color: var(--muted); margin-top: 8px; line-height: 1.6; }
+  main > figure { max-width: none; }
+  .dl { display: flex; justify-content: flex-end; align-items: center; gap: 8px; margin: 0 0 14px; font-size: .85rem; color: var(--muted, #5b6170); }
+  .dl a { font-weight: 600; text-decoration: none; padding: 3px 10px; border: 1px solid var(--line, #dcdfe4); border-radius: 999px; }
+  .dl a:hover { border-color: currentColor; }
+  .hl { margin-left: .4em; font-size: .7em; color: var(--muted); text-decoration: none; opacity: 0; transition: opacity .15s; }
+  h2:hover .hl, h3:hover .hl, .hl:focus { opacity: 1; }
+  a.xref { color: inherit; text-decoration: underline dotted; text-underline-offset: 3px; }
+  @page { size: A4; margin: 16mm 14mm; }
+  @media print { .dl { display: none !important; } html, body { background: #fff !important; } main { box-shadow: none !important; border-radius: 0 !important; padding: 0 !important; max-width: none !important; } figure, table, blockquote { break-inside: avoid; } h2, h3 { break-after: avoid; } .rail { display: none; } .wrap { display: block; } main { border: 0; } }
+</style>
+
+<div class="wrap">
+  <nav class="rail" aria-label="목차">
+    <div class="q" role="search">
+      <label class="label" for="q-input" style="display:block">Search</label>
+      <input id="q-input" type="search" placeholder="보고서 검색  ( / )" autocomplete="off" aria-describedby="q-info">
+      <div id="q-info" class="q-info" aria-live="polite"></div>
+      <ul id="q-results" class="q-results" aria-label="검색 결과"></ul>
+    </div>
+    <div class="label">Contents</div><ul><li><a href="#s14-1">14.1 한국: 독자 AI 파운데이션 모델(독파모)</a></li><li><a href="#s14-2">14.2 격차의 실체</a></li><li><a href="#s14-3">14.3 세계 동향</a></li><li><a href="#s14-4">14.4 2027 시나리오</a></li><li><a href="#s14-5">14.5 국가 AI 문샷: 자료와 요지</a></li><li><a href="#s14-6">14.6 한눈에 보기</a></li><li><a href="#s14-7">14.7 K-문샷 상세</a></li><li><a href="#s14-8">14.8 미국 Genesis Mission: 1년 성적</a></li><li><a href="#s14-9">14.9 중국 AI+와 유럽</a></li><li><a href="#s14-10">14.10 설계 비교</a></li><li><a href="#s14-11">14.11 K-문샷에 주는 교훈</a></li><li><a href="#s14-12">14.12 데이터 전략: 고품질 데이터·개인정보·저작권</a></li><li><a href="#s14-13">14.13 국가인공지능전략위원회 안건(제안, 인공지능기본법
+제8조 기준)</a></li></ul></nav>
+  <main>
+<div class="dl" aria-label="다운로드">다운로드
+      <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.pdf">PDF</a>
+      <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.docx">Word</a>
+      <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.md">Markdown</a> · <a href="https://hollobit.github.io/AI2027/chapters/">장별 보기</a></div>
+<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch14">전체 보고서에서 보기</a><a href="../">대시보드</a><span class="sp"></span><a href="ch13.html" rel="prev">← 13. 사회경제·노동 이슈, 기본소득·기본사회와 보</a><a href="ch15.html" rel="next">15. 국가별 AI 정책·제도·투자·규제와 경쟁력 →</a></nav><p class="label" style="margin:0 0 4px">제4부 국가·지정학·기술
+통제</p><h2 id="ch14">14. 소버린 AI와 국가 AI 문샷</h2>
+<h3 id="s14-1">14.1 한국: 독자 AI 파운데이션 모델(독파모)</h3>
+<table>
+<thead>
+<tr>
+<th>시점</th>
+<th>사건</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025-08</td>
+<td>5개 팀 선정(LG AI연구원, SKT, 업스테이지, 네이버클라우드, NC
+AI)</td>
+</tr>
+<tr>
+<td>2026-01-15</td>
+<td>1차 평가에서 LG(90.2점)·업스테이지·SKT 통과. 네이버클라우드는 외부
+인코더 가중치를 동결해 쓴 점이 '독자성' 미충족으로 판정돼 탈락, NC AI도
+탈락</td>
+</tr>
+<tr>
+<td>2026-02-20</td>
+<td>모티프테크놀로지스 추가 선정</td>
+</tr>
+<tr>
+<td>2026-08-18</td>
+<td>2차 평가: SKT 70.6 · 업스테이지 69.9 · LG 69.0 통과, 모티프 65.8
+탈락. 모티프는 AAII 최고점(47)이었지만 국민 사용성 평가에서 최하위</td>
+</tr>
+<tr>
+<td>2027 (예정)</td>
+<td>3차 평가로 최종 2개 팀 선정 → 글로벌 최고 대비 약 95% 수준 모델
+목표. 정부는 경쟁 방식 전면 재편을 검토 중이며, 5조 원 SPC설은
+"미정"이라고 해명</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>예산과 인프라</strong>: 2027년 과기정통부 AI 예산 정부안은
+9.4조 원(+84%, 12월 국회 확정 전)입니다. 최신 GPU 약 1만 장에 3.85조
+원(장비·운영 포함 사업비), 프런티어 데이터(약 1조 토큰)에 8,000억 원이
+편성됐습니다. NVIDIA는 한국에 GPU 26만 장 이상 공급을 약속했습니다.</li>
+<li><strong>2차 평가 모델</strong>: K-EXAONE 2.0(750B-A37B), A.X
+K2(688B-A33B), Solar Open 2(250B-A15B), Motif 3(314B-A13B).</li>
+</ul>
+<h3 id="s14-2">14.2 격차의 실체</h3>
+<ul>
+<li><strong>국가별 최고 모델의 수준(AAII, 글로벌 1위 대비)</strong>:
+중국 90.9%, <strong>한국 66.7%</strong>, 프랑스 59.1%, 캐나다 56.1%,
+인도 27.3%, UAE 24.2%.</li>
+<li><strong>"움직이는 표적" 구조</strong>: 한국의 비율은 2026년 5월
+53.3%에서 8월 72.1%로 좁혀졌다가, 9월 새 프런티어 모델(Claude Fable
+5.1)이 나오자 66.7%로 다시 벌어졌습니다.</li>
+<li><strong>어려운 과제일수록 격차가 커집니다</strong>(한국 기준, 글로벌
+최고 대비).</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>과제</th>
+<th>글로벌 최고 대비</th>
+<th>원점수(비교)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GPQA</td>
+<td>89.6%</td>
+<td>—</td>
+</tr>
+<tr>
+<td>SWE-bench Verified</td>
+<td>73%</td>
+<td>—</td>
+</tr>
+<tr>
+<td>HLE</td>
+<td>52.2%</td>
+<td>—</td>
+</tr>
+<tr>
+<td>한국어 지식 과제(KMMLU-Pro)</td>
+<td>—</td>
+<td>80.5(DeepSeek V4와 동률)</td>
+</tr>
+<tr>
+<td>한국어 에이전트 과제(K-BrowseComp)</td>
+<td>약 23%</td>
+<td>10.3(GPT-5.5는 45.7)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>사실상 모델을 만드는 나라는 약 12개국</strong>입니다. AAII에
+등록된 58개 AI 기업 중 한국 기업이 7개로, 미·중 다음 수준입니다.</li>
+</ul>
+<h3 id="s14-3">14.3 세계 동향</h3>
+<ul>
+<li><strong>중국</strong>: 오픈웨이트의 사실상 '수출국'입니다. 각국
+소버린 모델이 Qwen 등을 베이스로 많이 씁니다. 동시에 공공·국방
+분야에서는 배제 압력을 받습니다.</li>
+<li><strong>EU</strong>: AI 팩토리 19곳과 기가팩토리 최대 7곳(공공 100억
+유로로 민간 200억 유로 이상 유치 목표)을 추진합니다. 상용 생태계는
+Mistral이 중심입니다.</li>
+<li><strong>일본</strong>: 자체 초거대 모델보다 다른 모델 위의
+오케스트레이션(Sakana Fugu)과 경량 일본어 모델로 갑니다.</li>
+<li><strong>인도</strong>: Sarvam 등 언어·음성 특화와 인구 규모의 배포에
+집중합니다.</li>
+<li><strong>UAE·사우디</strong>: 미국 벤더 인프라(Stargate UAE 1GW)와
+자체 오픈모델을 병행합니다.</li>
+<li><strong>벤더 측 상품</strong>: OpenAI for Countries(10개 프로젝트
+목표), Microsoft Sovereign Cloud가 있고, NVIDIA의 데이터센터 매출은
+3분기(FY27) 1,076억 달러입니다.</li>
+</ul>
+<h3 id="s14-4">14.4 2027 시나리오</h3>
+<table>
+<thead>
+<tr>
+<th>시나리오</th>
+<th>확률(±불확도)</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>오픈 베이스 + 로컬 적응</td>
+<td>35% (±10)</td>
+<td>대부분 국가가 Qwen·DeepSeek·Gemma 등에 자국어를 적응. '독자성' 정의
+논쟁. 단 중국 오픈웨이트의 지역 배제 라이선스·수출 등록이 늘면 이 경로의
+위험이 커짐(<a class="xref" href="ch17.html#s17-2">17.2</a>절)</td>
+</tr>
+<tr>
+<td>국가대표 챔피언 1–2개로 통합</td>
+<td>25% (±10) (한국만 보면 약 60%)</td>
+<td>한국, 프랑스, UAE</td>
+</tr>
+<tr>
+<td>컴퓨트 주권 우선</td>
+<td>20% (±10)</td>
+<td>영국, 캐나다, EU, 사우디</td>
+</tr>
+<tr>
+<td>지역 동맹형 공동 모델</td>
+<td>10% (±5)</td>
+<td>OpenEuroLLM, SEA-LION</td>
+</tr>
+<tr>
+<td>벤더 관리형 소버린으로 종속 심화</td>
+<td>10% (±5)</td>
+<td>격차가 다시 벌어질 경우</td>
+</tr>
+</tbody>
+</table>
+<p><strong>한국에 대한 제언</strong></p>
+<ol type="1">
+<li>3차 평가를 '승자 2팀 선발'로 끝내지 말고, GPU와 데이터를 묶은
+<strong>국가 프런티어 컨소시엄</strong>으로 집중하되 오픈웨이트 공개를
+의무화합니다.</li>
+<li>평가지표를 지식형에서 <strong>에이전트·코딩·장기 과업</strong>으로
+옮깁니다. 지금 격차가 가장 큰 곳이 여기입니다.</li>
+<li><strong>'독자성' 기준을 명문화</strong>합니다(사전학습 범위, 외부
+인코더·증류 허용 범위). 네이버 사례 같은 사후 논란을 막기
+위해서입니다.</li>
+<li><strong>모델 주권과 컴퓨트 주권을 분리</strong>합니다. 정부 확보
+GPU(약 1만 장)와 국가AI컴퓨팅센터를 개발팀 외 연구기관·스타트업에도 공유
+컴퓨트로 개방하고, NVIDIA 공급분(26만 장 이상, 대부분 민간)은 공동 활용
+계약으로 보완합니다.</li>
+<li><strong>'오픈 베이스' 전략의 접근 위험을 관리</strong>합니다. 바이두
+ERNIE 5.5 Base가 라이선스에서 EU·영국과 함께 한국을 배제했고(보도 기준)
+중국은 AI 기술 수출 임시 등록을 시작했습니다(<a class="xref" href="ch17.html#s17-2">17.2</a>절). Qwen·DeepSeek 등
+해외 오픈웨이트를 베이스로 쓸 때는 라이선스 실사와 대체 베이스 확보를
+의무화하고, 공공은 국내 모델을 기본으로 삼습니다.</li>
+<li><strong>국산 NPU와 독자 모델을 공동 최적화</strong>해 '풀스택
+소버린'을 만들고, 중동·동남아에 '한국형 소버린 패키지'로
+수출합니다.</li>
+</ol>
+<h4 id="공공-채택과-서빙-2027의-진짜-시험">공공 채택과 서빙: 2027의 진짜
+시험</h4>
+<ul>
+<li><strong>공공에서 국산 모델 비중</strong>: 범정부 AI 공통기반에
+올라간 LLM 11종 가운데 국산은 4종(Solar Open2, 삼성 LLM, K-EXAONE,
+HCX-GOV-Think)이고 외산·외산 기반은 7종(GPT-OSS, Llama 3.3, Gemma 4
+계열, Nemotron 3 Ultra)입니다. 김장겸 의원실이 과기정통부에서 받은
+자료입니다(<a href="https://inews24.com/view/2013271">아이뉴스24</a>,
+2026-10-08). 11-03에는 업스테이지 '솔라 프로 4'가 공통기반에
+추가됐습니다. 공통기반이 GPU를 일괄 관리하므로 기관은 GPU를 따로 사지
+않고 채팅이나 API로 씁니다(<a
+href="https://news.bizwatch.co.kr/article/mobile/2026/11/03/0003">비즈워치</a>).</li>
+<li><strong>사용 유도 방식</strong>: '모두의 AI' 공모는 서비스 전체에서
+국산 모델 50% 이상, 다른 국내 기업 모델 30% 이상을 요구하고, 외산은 꼭
+필요한 고도화 기능에만 최소로 허용합니다. 1차 연도에는 B200 최대 512장을
+2–3개 기업에 나눠 주고, 2027년부터 전 국민 서비스 비용을 예산으로
+지원합니다(<a href="https://biz.sbs.co.kr/amp/article/20000323661">SBS
+Biz</a>, 07-21). 조달 쪽에서는 개정 AI 기본법 시행령(07-21 시행)이
+과기정통부 확인을 받은 AI 제품·서비스를 공공조달에서 우대하는 확인제도를
+만들었습니다(보도 기준, <a
+href="https://mobile.newsis.com/view/NISX20260714_0003708740">뉴시스</a>).</li>
+<li><strong>평가와 채택의 간극</strong>: 2차 평가 배점은 벤치마크 40,
+전문가 35, 사용자 25였습니다. 전문가들은 3차 평가에서 API 지연시간, 서빙
+비용, 에이전트 도구 연동, 공공·산업 실증 결과를 재현 가능한 수치로
+재자고 제안했습니다(<a
+href="https://www.inews24.com/view/2000306">아이뉴스24</a>, 09-01).
+정부는 2027년 이후 지원 방식을 전면 재검토하기로 했지만, 채택(실사용)
+지표의 배점은 11-28 기준 공개되지 않았습니다.</li>
+<li><strong>서빙의 벽</strong>: 2차 평가 모델은 250B–750B
+규모입니다(<a class="xref" href="#s14-1">14.1</a>절). MoE라서 활성 파라미터는 13B–37B이지만 전체 가중치는
+메모리에 올려야 합니다. 750B 모델을 FP8로 서빙하면 가중치만 약
+750GB이고, 80GB GPU 기준 최소 10장, 즉 서버 두 대가 필요합니다(분석가
+계산). 지자체·공공기관이 직접 운영하기 어려워 공통기반 같은 공동
+서빙이나 경량화·증류판이 사실상 전제입니다. 국내 업체가 초대형 모델 서빙
+GPU를 8장에서 2장으로 줄인 사례도 보도됐습니다(보도 기준, <a
+href="https://www.venturesquare.net/en/1101181">벤처스퀘어</a>).</li>
+<li><strong>2027 쟁점</strong>: (1) 3차 평가 또는 후속 사업에 '채택
+지표'(공통기반 호출량, 비용을 내고 쓰는 수요기관 수, 토큰당 원가)를
+넣을지, (2) 공통기반의 '기본 모델'을 국산으로 정하고 외산 선택 시 사유를
+남길지, (3) 독파모 팀에 공공용 경량판(30B 이하) 공개를
+요구할지입니다.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>전망</th>
+<th>가능성 · 확률(±불확도)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>독파모 3차 평가나 2027년 후속 지원 사업이 서빙 비용·공공 실사용 같은
+채택 지표를 공식 배점에 넣음</td>
+<td>중간 · 60% (±20) · 근거 <a
+href="https://www.inews24.com/view/2000306">아이뉴스24</a>, <a
+href="https://biz.sbs.co.kr/amp/article/20000323661">SBS Biz</a> · 반론
+<a href="https://inews24.com/view/2013271">아이뉴스24</a>(업계는 외산
+대체가 당장 어렵다고 봄)</td>
+</tr>
+<tr>
+<td>2027년 말 범정부 AI 공통기반 탑재 모델 가운데 국산 비중이 절반을
+넘음(2026-10 기준 11종 중 4종)</td>
+<td>중간 · 50% (±20) · 근거 <a
+href="https://inews24.com/view/2013271">아이뉴스24</a>, <a
+href="https://news.bizwatch.co.kr/article/mobile/2026/11/03/0003">비즈워치</a></td>
+</tr>
+<tr>
+<td>독파모 3차 진출 팀 중 2곳 이상이 30B 이하 경량·증류판을 공개하고
+공공 서비스(공통기반·모두의 AI)에 공급</td>
+<td>중간 · 65% (±20) · 근거 <a
+href="https://biz.sbs.co.kr/amp/article/20000323661">SBS Biz</a>, <a
+href="https://www.venturesquare.net/en/1101181">벤처스퀘어</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>제언</strong>: 채택 지표를 미리 정의해 3차 평가 공고에
+넣습니다. 공통기반은 국산 모델을 기본값으로 두되 외산을 막지 말고, 외산
+선택 사유와 호출량을 공개합니다. 대형 모델 지원에는 공공용 경량판과 서빙
+레시피 공개를 조건으로 붙입니다.</p>
+<h3 id="s14-5">14.5 국가 AI 문샷: 자료와 요지</h3>
+<blockquote>
+<p>자료: 과기정통부 K-문샷 보도자료 4건(텍스트), DOE Genesis 1주년
+팩트시트·서한·국가 난제, 백악관 행정명령 14363, 중국 국무원 'AI+' 의견,
+일본 내각부 Moonshot Goal 3, 그리고 앞 장들의 수집 자료. 원문은
+<code>PDF/country_policy/*_moonshot_*</code>과
+<code>PDF/_text/*_moonshot_*</code>에 있습니다. 중국 600억 위안 기금,
+프랑스 1,090억 유로 공약, DARPA AIxCC 결과는 검증이 필요합니다. 미션별
+연도 목표가 담긴 K-문샷 로드맵 원문은 확보하지 못했습니다.</p>
+</blockquote>
+<h3 id="s14-6">14.6 한눈에 보기</h3>
+<table>
+<thead>
+<tr>
+<th>프로그램</th>
+<th>출범</th>
+<th>목표</th>
+<th>2026년 11월 상태</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>K-문샷</strong>(한국, AI 기반 임무형 R&amp;D)</td>
+<td>2026-05-27 추진단 출범</td>
+<td>2030년까지 연구생산성 2배(상위 1% 논문 점유율 4.1% → 8.2%),
+2035년까지 8대 분야 <strong>12대 국가 미션</strong> 해결</td>
+<td><strong>초기</strong>(거버넌스 완비, R&amp;D는 2027 예산부터)</td>
+</tr>
+<tr>
+<td>3대 메가프로젝트 + 독자 AI 모델(한국)</td>
+<td>2026</td>
+<td>AIDC·피지컬 AI·차세대 반도체, 최상위급 독자 모델</td>
+<td>계획대로 진행</td>
+</tr>
+<tr>
+<td><strong>Genesis Mission</strong>(미국 DOE, 행정명령 14363)</td>
+<td>2025-11-24</td>
+<td>AI로 10년 안에 미국 과학·공학 생산성 2배</td>
+<td><strong>계획대로 진행</strong></td>
+</tr>
+<tr>
+<td>Stargate(미국 민간)</td>
+<td>2025-01</td>
+<td>4년간 최대 5,000억 달러 AI 인프라</td>
+<td>지연</td>
+</tr>
+<tr>
+<td>American AI Exports(미국)</td>
+<td>2025-07</td>
+<td>풀스택 국가 패키지 수출</td>
+<td>지연(78건 신청, 지정 미공개)</td>
+</tr>
+<tr>
+<td><strong>'AI+' 행동 + 15차 5개년 계획</strong>(중국)</td>
+<td>2025-08 / 2026-03</td>
+<td>2027년 지능형 단말·에이전트 보급률 70% 이상, 2030년 90% 이상</td>
+<td>계획대로 진행</td>
+</tr>
+<tr>
+<td><strong>AI Continent·InvestAI</strong>(EU)</td>
+<td>2025</td>
+<td>2,000억 유로 동원, AI 팩토리 19곳, 기가팩토리 최대 7곳</td>
+<td>계획대로 진행</td>
+</tr>
+<tr>
+<td>AI Opportunities Action Plan(영국)</td>
+<td>2025-01</td>
+<td>공공 컴퓨트 20배, AI 성장존</td>
+<td>지연(50개 중 38개 이행, 성장존 착공 지연)</td>
+</tr>
+<tr>
+<td>Moonshot Goal 3(일본)</td>
+<td>2020</td>
+<td>2050년 사람과 공생하는 AI 로봇</td>
+<td>불분명(PD·PM 재편 중)</td>
+</tr>
+<tr>
+<td>IndiaAI Mission(인도)</td>
+<td>2024-03</td>
+<td>컴퓨트·기초모델·데이터</td>
+<td>계획대로 진행(GPU 5.8만 장 이상)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="s14-7">14.7 K-문샷 상세</h3>
+<ul>
+<li><strong>12대 미션(8대 분야)</strong>: 신약, BCI, 태양전지, 핵융합,
+SMR 선박, 휴머노이드, 피지컬 AI, 우주, 소재, AI 과학자, 반도체,
+양자</li>
+<li><strong>추진 경과</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>시점</th>
+<th>경과</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025-12-16</td>
+<td>대국민 공모</td>
+</tr>
+<tr>
+<td>2026-02-25</td>
+<td>추진전략 수립(국가AI전략위원회)</td>
+</tr>
+<tr>
+<td>2026-03-11</td>
+<td>12대 미션 확정(과기장관회의)</td>
+</tr>
+<tr>
+<td>2026-05-27</td>
+<td>PD 12명 위촉, 부총리 주재 추진단 출범</td>
+</tr>
+<tr>
+<td>2026-06-30</td>
+<td>운영 훈령(제320호) 제정</td>
+</tr>
+<tr>
+<td>2026-08-01</td>
+<td>PD를 국가특임연구원으로 전환(임기 2029-07까지)</td>
+</tr>
+<tr>
+<td>2026-09</td>
+<td>단계별 이행 로드맵 의결</td>
+</tr>
+<tr>
+<td>2026-11-10</td>
+<td>정책 세미나</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>구조</strong>: NST가 11개 미션 PD를, IITP가 피지컬 AI PD를
+관리합니다. 국가과학AI연구센터(NAIS)가 과학 AI 플랫폼 허브입니다. 참여
+의사를 밝힌 기업은 161곳, 파트너십 기업은 88곳입니다. Google DeepMind와
+MOU를 맺었고, KISTI는 NVIDIA·HPE·IonQ와 MOU를 맺었습니다. <strong>ETRI는
+3월 MOU 행사에 참여기관</strong>으로 함께했습니다.</li>
+<li><strong>예산</strong>: K-문샷의 단일 총액은 공개되지 않았습니다.
+2027 정부안의 연계 항목은 NAIS 400억 원에서 618억 원으로 증액,
+자율실험실 93억 원, 과학기술×AI FM 130억 원입니다. 메가프로젝트(7,956억
+원)와 프런티어 모델(5.6조 원)은 별도 항목입니다.</li>
+<li><strong>문제 신호</strong>: 'AI 과학자' 미션 PD를 8월에
+재공모했는데, 사유는 공개되지 않았습니다.</li>
+</ul>
+<p><strong>K-문샷 2027 예상 성과</strong></p>
+<table>
+<thead>
+<tr>
+<th>성과</th>
+<th>가능성 · 확률(±불확도)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>예산 확정 후 미션별 신규 R&amp;D 공모·착수(12개 미션 대부분에서 첫
+과제 선정)</td>
+<td>높음 · 80% (±15) · 근거 <a
+href="https://www.msit.go.kr/bbs/view.do?sCode=user&amp;mId=307&amp;mPid=208&amp;bbsSeqNo=94&amp;nttSeqNo=3187000">과학기술정보통신부</a>,
+<a
+href="https://eiec.kdi.re.kr/policy/materialView.do?num=286173">과학기술정보통신부</a></td>
+</tr>
+<tr>
+<td>NAIS '과학 AI-OS' 1차 공개, KISTI 슈퍼컴 6호기 '한강' 연계 과학 FM
+학습 환경</td>
+<td>중간 · 55% (±15) · 근거 <a
+href="https://www.msit.go.kr/bbs/view.do?sCode=user&amp;mId=307&amp;mPid=208&amp;bbsSeqNo=94&amp;nttSeqNo=3187359">과학기술정보통신부</a></td>
+</tr>
+<tr>
+<td>'Next-X 휴머노이드 챌린지' 개시와 K-휴머노이드 플랫폼 후보 선정</td>
+<td>중간 · 50% (±20) · 근거 <a
+href="https://eiec.kdi.re.kr/policy/materialView.do?num=286173">과학기술정보통신부</a>,
+<a
+href="https://www.msit.go.kr/bbs/view.do?sCode=user&amp;mId=307&amp;mPid=208&amp;bbsSeqNo=94&amp;nttSeqNo=3187943">과학기술정보통신부</a></td>
+</tr>
+<tr>
+<td>수학·지구과학·이차전지 과학기술×AI FM 첫 공개</td>
+<td>중간 · 45% (±20) · 근거 <a
+href="https://www.msit.go.kr/bbs/view.do?sCode=user&amp;mId=307&amp;mPid=208&amp;bbsSeqNo=94&amp;nttSeqNo=3187359">과학기술정보통신부</a>,
+<a
+href="https://hai.stanford.edu/assets/files/ai_index_report_2026_chapter_5_science.pdf">Stanford
+HAI</a></td>
+</tr>
+<tr>
+<td>국산 자율실험실(신약·소재) 파일럿 가동</td>
+<td>낮음 · 30% (±20) · 근거 <a
+href="https://www.msit.go.kr/bbs/view.do?sCode=user&amp;mId=307&amp;mPid=208&amp;bbsSeqNo=94&amp;nttSeqNo=3187359">과학기술정보통신부</a>,
+<a
+href="https://www.capgemini.com/news/press-releases/technovision-top-5-tech-trends-to-watch-in-2027/">Capgemini</a></td>
+</tr>
+<tr>
+<td>'연구생산성 2배' KPI 중간 측정치 공개</td>
+<td>낮음 · 15% (±20)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>메가프로젝트·독자 모델 2027</strong>(가능성 중간): 독파모 3차
+평가와 집중형 체계 출범, 범용 피지컬 AI FM 1차 출시와 우정 물류 실증,
+베라루빈급 GPU 약 1만 장 확보와 국가AI컴퓨팅센터 구축(개소는 2028년 말
+예정), 국산 NPU 레퍼런스. 독자 모델이 글로벌 최상위와 동급에 이를
+가능성은 낮습니다.</p>
+<h3 id="s14-8">14.8 미국 Genesis Mission: 1년 성적</h3>
+<ul>
+<li><strong>진척(1주년, 2026-11-24)</strong>
+<ul>
+<li>국가 난제가 26개에서 33개로 늘었고, 20개 연방기관이 참여합니다.</li>
+<li>369개 기관이 297개 과제를 수행하고, 컨소시엄은 70곳 이상입니다.</li>
+<li>약정은 연방 50억 달러 이상, 산업 24억 달러, 일본 5년간 10억
+달러입니다.</li>
+<li>첫 Genesis 슈퍼컴 <strong>Lux</strong>(ORNL, 220.79 PF)가 가동
+중입니다.</li>
+<li>Open Models Initiative(오픈웨이트 과학 모델)와 Quantum
+Genesis(내결함 양자컴 2028년 목표)를 시작했습니다.</li>
+</ul></li>
+<li><strong>미흡한 점</strong>: 행정명령의 270일 초기운영능력은
+명시적으로 선언되지 않았습니다. FY2027 예산 요청에는 Genesis 전용 항목이
+없습니다.</li>
+<li><strong>2027 예상 성과</strong>
+<ul>
+<li>가능성 높음: 플랫폼 확대와 Lux 후속 슈퍼컴, 오픈 과학
+FM(재료·핵융합·전력망·생물) 다수 공개, 난제 목록 갱신과 2차 대형
+공모</li>
+<li>가능성 중간: 자율실험에서 검증된 신소재·촉매·핵융합 부품 같은
+<strong>'첫 가시적 발견'</strong>, FY2028 전용 예산 반영</li>
+<li>가능성 낮음: '생산성 2배'의 정량 측정 공개</li>
+</ul></li>
+</ul>
+<h3 id="s14-9">14.9 중국 AI+와 유럽</h3>
+<ul>
+<li><strong>중국</strong>
+<ul>
+<li>'AI+' 2027 목표는 지능형 단말·에이전트 보급률 70% 이상입니다. 15차
+5개년 계획에는 AI가 52번 언급됩니다.</li>
+<li>미국과의 모델 격차는 사실상 줄어들었고(AAII 1위의 90.9%), 휴머노이드
+출하의 95% 이상을 차지합니다(IDC 2026 상반기, <a class="xref" href="ch6.html#s6-8">6.8</a>절). 공식 중간 보급률은
+미발표입니다.</li>
+<li>2027: 하위 AI 전문계획 발표와 국산 가속기 기반 오픈웨이트 모델 지속
+공개(가능성 높음). '70% 달성' 선언은 정의가 넓어 발표될 가능성이
+있음(중간).</li>
+</ul></li>
+<li><strong>EU</strong>
+<ul>
+<li>AI 팩토리 19곳이 구축 중이고, 기가팩토리 공모는 2026-11-12에
+마감됐습니다. RAISE는 파일럿 단계입니다.</li>
+<li>2027: 기가팩토리 선정과 첫 착공(가능성 높음), RAISE 정식
+기관화(중간). 기가팩토리에서 유럽산 조 단위 파라미터 모델 학습 완료는
+가능성 낮음.</li>
+</ul></li>
+<li><strong>영국·프랑스·독일·일본</strong>
+<ul>
+<li>영국: 성장존 착공 지연</li>
+<li>프랑스: Mistral 시리즈 D 30억 유로. 대선 이후 전략이 이어질지가
+변수</li>
+<li>독일: 기가팩토리 유치 경쟁</li>
+<li>일본: Moonshot Goal 3 재편, DOE Genesis와 첫 공동 과제
+가능성(중간)</li>
+</ul></li>
+</ul>
+<h3 id="s14-10">14.10 설계 비교</h3>
+<table>
+<thead>
+<tr>
+<th>차원</th>
+<th>비교</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>목표 명확성</td>
+<td>K-문샷은 '2030 생산성 2배'와 미션별 2035 목표를 정량화해
+<strong>설계상 가장 명확</strong>합니다. Genesis는 상위 목표는 같지만
+측정 지표가 비공개입니다</td>
+</tr>
+<tr>
+<td>예산 규모</td>
+<td>미국은 Genesis만 연방 50억 달러 이상에 산업 약정이 더해지고, 민간
+Stargate가 별도입니다. EU는 2,000억 유로(동원 목표)입니다. K-문샷의 직접
+예산은 상대적으로 작고 총액이 공개되지 않았습니다</td>
+</tr>
+<tr>
+<td>거버넌스</td>
+<td>K-문샷은 DARPA형 PD 책임운영과 부총리 주재 범부처 추진단을
+결합했습니다. Genesis는 DOE 단일 실행기관에 백악관 조정을 붙이고,
+행정명령에 60–270일 마감을 명시한 **'명령형 일정'**이 특징입니다</td>
+</tr>
+<tr>
+<td>민관 협력</td>
+<td>Genesis는 컨소시엄 70곳 이상과 산업 약정 24억 달러에 모델·컴퓨트
+현물 기여가 핵심입니다. K-문샷은 참여 의사 161곳이지만 약정 금액이
+공개되지 않았습니다</td>
+</tr>
+<tr>
+<td>개방성</td>
+<td>Genesis는 오픈웨이트 과학 모델을 명시하고 일본을 첫 국제 파트너로
+두었습니다. EU는 오픈소스와 'Buy European'을 내세웁니다</td>
+</tr>
+</tbody>
+</table>
+<h3 id="s14-11">14.11 K-문샷에 주는 교훈</h3>
+<ol type="1">
+<li><strong>PD 권한을 훈령에서 법률 수준으로</strong> 올리고, 미션
+단위로 여러 해 예산을 묶어 2035년까지 연속성을 확보합니다.</li>
+<li><strong>공개 마감과 정기 보고</strong>: Genesis 행정명령처럼
+60–270일 단위 마감을 정하고 부총리 연례 보고로 진도를 공개합니다.</li>
+<li><strong>검증된 발견 KPI</strong>: 논문 점유율만이 아니라 합성된
+신소재 수, 임상 진입 후보물질, 실증로 운전시간 같은 지표를
+넣습니다.</li>
+<li><strong>약정 공개</strong>: 참여 의사를 밝힌 161개 기업의 지원을
+GPU·모델·데이터 현물 약정 금액으로 바꿔 공개합니다.</li>
+<li><strong>과학 AI 전용 GPU 쿼터</strong>: 독파모, 메가프로젝트, K-문샷
+사이의 자원 경합을 줄입니다.</li>
+<li><strong>한·미 Genesis 공동 난제 참여</strong>를 조기에 협상합니다.
+일본(10억 달러)처럼 하는 것이 2027년 최대의 지렛대입니다.</li>
+<li><strong>과학 데이터 개방·표준 우선</strong>: 메타데이터와 출처
+추적이 있어야 AI 과학자·자율실험실 미션이 작동합니다.</li>
+<li><strong>리더십 교체의 투명성</strong>: 'AI 과학자' PD 재공모 같은
+사안의 사유와 인계 절차를 공개합니다.</li>
+</ol>
+<h3 id="s14-12">14.12 데이터 전략: 고품질 데이터·개인정보·저작권</h3>
+<table>
+<thead>
+<tr>
+<th>시점</th>
+<th>정책</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-02</td>
+<td>AI 학습용 데이터 구매비를 R&amp;D 세액공제 대상에 포함(2026-01-01
+이후 발생분)</td>
+</tr>
+<tr>
+<td>2026-04</td>
+<td>과기정통부·NIA 전 부처 AI 학습용 데이터 현황조사</td>
+</tr>
+<tr>
+<td>2026-05-28</td>
+<td>관계부처 'AI 대전환 시대 데이터 정책 추진방향':
+추론·안전·벤치마크·멀티모달 고품질 데이터 구축, 'AI·고가치 공공데이터
+톱100' 개방, 6개 분야 데이터 스페이스, AI허브 통합제공시스템 개편</td>
+</tr>
+<tr>
+<td>2026-05-28</td>
+<td>공익 목적 AI 학습에 개인정보 원본 활용을 허용하는 개인정보보호법
+개정 추진, 디지털헬스케어법으로 보건의료 가명처리 간소화, 합성데이터
+실증</td>
+</tr>
+<tr>
+<td>2026-11</td>
+<td>문체부 'AI 학습을 위한 저작물 이용허락 표준계약서(안)' 공개</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>2027-04-21 개정 AI 기본법 시행(법률 제22076호)</strong>:
+학습용데이터 통합제공시스템을 법에 따로 두고(제15조의2),
+<strong>국가기관 등과 출연금·보조금을 받아 사업하는 자는 사업에서
+구축·산출한 학습용데이터를 통합제공시스템에 연계·제공해야</strong>
+합니다. 영업비밀·제3자 권리·국가안보 등 사유가 있으면 과기정통부와
+협의해 예외로 할 수 있고, 시스템은 '누구든지' 이용할 수 있게 제공되며
+이용 비용을 받을 수 있습니다.</li>
+<li><strong>2027 전망</strong>: 개인정보보호법 AI 특례는 2026-09-08
+공포돼 2027-03-09 시행됩니다(아래 소절). 남은 관건은 디지털헬스케어법의
+국회 처리와 표준계약서 확정입니다. 공공 R&amp;D 학습용데이터의 의무
+제공이 시작되면서 공공 데이터 개방 속도가 빨라질 것입니다(높음 · 75%
+±15). 표준계약서가 확정되면 학습 데이터 라이선스 시장이 열리기
+시작합니다(추정). 프런티어 데이터(약 1조 토큰, 8,000억 원) 구매 집행
+방식은 확인하지 못했습니다.</li>
+<li><strong>연결</strong>: 저작권·라이선스 쟁점은 12장, 독파모의 데이터
+확보는 <a class="xref" href="#s14-1">14.1</a>절.</li>
+</ul>
+<h4 id="공익의료-데이터-법은-열렸고-신뢰가-남았다">공익·의료 데이터:
+법은 열렸고 신뢰가 남았다</h4>
+<ul>
+<li><strong>AI 학습 개인정보 특례(확정)</strong>: 개인정보 보호법
+개정안이 08-20 국회 본회의를 통과해 09-08 공포됐습니다(법률 제21910호,
+<strong>2027-03-09 시행</strong>, korean-law MCP로 확인). 신설된
+제28조의12는 ① 익명·가명으로는 개발이 어렵고 ② 대통령령 기준의
+안전장치를 갖추고 ③ 공공의 이익이나 사회적 이익을 위한 경우,
+개인정보보호위원회 심의·의결을 거쳐 적법하게 수집한 개인정보를 목적 외로
+쓸 수 있게 합니다. 민감정보 등은 위험요인평가를 먼저 하고, 위원회는
+요청자·내용과 평가 요약을 공개해야 합니다(제6항).</li>
+<li><strong>시민사회 우려</strong>: 참여연대 공익법센터는 가명처리 없이
+동의 없는 원본 이용을 허용하고, '공공·사회적 이익' 요건이 포괄적이며,
+정보주체에게 알리지 않고 위원회 심의로 대체한다며 위헌이라고
+비판했습니다(08-20, <a
+href="https://peoplepower21.org/publiclaw/2027817">참여연대</a>). 같은
+특례가 피지컬 AI·디지털헬스·바이오 법안으로 번질 것도 우려합니다.</li>
+<li><strong>디지털헬스케어법(계류)</strong>: 4개
+제정안(안상훈·서영석·권칠승·전진숙 의원안)을 복지부가 정부 대안으로
+묶었습니다. 가명처리·연구 목적 2차 활용, 사망자 의료데이터 활용,
+보험사로의 의료데이터 제공 차단 원칙이 들어 있습니다. 09-16 소위에서
+계속심사로 넘어갔고(<a
+href="https://www.medigatenews.com/news/2493978101">메디게이트뉴스</a>),
+11월 말 소위 재상정이 거론되는 가운데 시민단체는 공청회를 요구합니다.
+복지부는 보건의료정보 심의위원회(정보주체 대표 포함)와 희귀질환 등
+재식별 위험 정보의 동의 요건을 안전장치로 내세웁니다(<a
+href="https://dailymedi.com/news/news_view.php?wr_id=942714">데일리메디</a>,
+11-19).</li>
+<li><strong>공익 데이터 법제</strong>: '공익데이터법'이라는 이름의
+발의안은 찾지 못했습니다. 가장 가까운 것은 국가데이터기본법
+제정안(조승래 의원 대표발의, 05-27)으로, 인구·고용·보건·복지·환경처럼
+공공가치가 큰 데이터를 국가데이터처장이 지정해 통합 관리하고
+국가데이터위원회(40명 이내)와 국가데이터 이용센터를 둡니다(<a
+href="https://www.ddaily.co.kr/page/view/2026052810271263721">디지털데일리</a>).</li>
+<li><strong>커먼즈와 연구 인프라</strong>: 국가통합바이오빅데이터
+플랫폼은 11월 첫 데이터셋 공개를 예고했고(<a
+href="https://news.mtn.co.kr/news-detail/2026091015410156064">MTN</a>),
+의료데이터를 반출하지 않고 쓰는 의료데이터 스페이스에는 27개 의료기관이
+참여합니다(보도 기준). 보건의료데이터 활용 이익의 사회 환원에 국민 83%가
+동의했다는 조사도 보도됐습니다(보도 기준, <a
+href="https://www.dailymedi.com/news/news_view.php?wr_id=938319">데일리메디</a>).
+'의료 데이터 커먼즈'나 '국민 데이터 신탁'을 제도로 만들자는 공식
+정부안·법안은 찾지 못했습니다.</li>
+<li><strong>가명 연구 데이터의 보안 수준</strong>: 연구용 데이터가
+클라우드로 가면 N2SF·새 클라우드 검증 체계의 등급 분류를 받습니다.
+S등급이면 데이터 시스템에 전용 하드웨어가 필요합니다(<a class="xref" href="ch15.html#s15-6">15.6</a>절). 가명
+데이터를 원본과 같은 등급으로 둘지가 연구 현장의 비용을 좌우합니다.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>전망</th>
+<th>가능성 · 확률(±불확도)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>개인정보보호위원회가 제28조의12에 따른 첫 심의·의결
+결과(요청자·위험요인평가 요약)를 2027년 안에 공개</td>
+<td>높음 · 75% (±15) · 근거 <a
+href="https://www.law.go.kr/법령/개인정보보호법">개인정보 보호법
+제28조의12</a>, <a
+href="https://peoplepower21.org/publiclaw/2027817">참여연대</a></td>
+</tr>
+<tr>
+<td>디지털헬스케어법(정부 대안)이 2027년 말까지 국회 본회의를 통과</td>
+<td>중간 · 50% (±20) · 근거 <a
+href="https://www.medigatenews.com/news/2493978101">메디게이트뉴스</a> ·
+반론 <a
+href="https://dailymedi.com/news/news_view.php?wr_id=942714">데일리메디</a>(시민단체
+공청회 요구)</td>
+</tr>
+<tr>
+<td>국가데이터기본법이 2027년 말까지 국회를 통과</td>
+<td>중간 · 40% (±20) · 근거 <a
+href="https://www.ddaily.co.kr/page/view/2026052810271263721">디지털데일리</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>제언</strong>: 제28조의12 시행령에 공공·사회적 이익의 판단
+기준과 정보주체 사후 고지 방식을 구체적으로 적습니다. 의료 데이터는
+'반출 없는 분석 환경 + 이익 환원 원칙'을 묶어 커먼즈로 운영하고, 가명
+연구 데이터에는 원본보다 한 단계 낮은 보안 등급을 허용하는 기준을
+둡니다.</p>
+<blockquote>
+<p><strong>확인 필요</strong>:</p>
+<ul>
+<li>범정부 AI 공통기반 11종 목록(국산 4·외산 7)은 의원실 자료를 전한
+보도입니다. 11월 솔라 프로 4 추가 뒤의 전체 목록과 모델별 호출량은 찾지
+못했습니다(<a class="xref" href="#s14-4">14.4</a>절 소절).</li>
+<li>독파모 3차 평가의 배점·채택 지표, '모두의 AI'의 2027년 추론 GPU
+규모는 11-28 기준 공개 자료가 없습니다. AI 제품·서비스 확인제도의 근거
+조문은 법령 원문에서 확인하지 못했습니다(보도 기준).</li>
+<li>'공익데이터법'이라는 이름의 법안·초안, 의료 데이터 커먼즈·국민
+데이터 신탁의 공식 제안 원문은 찾지 못했습니다. 디지털헬스케어법의 11월
+말 소위 결과도 확인하지 못했습니다.</li>
+</ul>
+</blockquote>
+<h3 id="s14-13">14.13 국가인공지능전략위원회 안건(제안, 인공지능기본법
+제8조 기준)</h3>
+<ul>
+<li><strong>문샷 이행점검(2의3호 성과관리)</strong>: K-문샷 12대 미션의
+단계별 로드맵 이행을 분기마다 점검하고 공개합니다.</li>
+<li><strong>최상위 AI 모델 체계(4호 투자 방향)</strong>: 독파모 3차 평가
+이후 집중형 국가 컨소시엄과 정부 GPU 배분·공유 원칙을
+의결합니다(<a class="xref" href="ch23.html#s23-8">23.8</a>절).</li>
+<li><strong>풀스택 패키지 조정(2의2호 부처 조정)</strong>: AI반도체
+풀스택(900억 원), 과학 AI 운영체제, AI-RAN·6G 연구망, AI 사이버 쉴드
+돔(550억 원)(금액은 2027 정부안)의 부처 간 연계를 조정합니다.</li>
+<li><strong>데이터(6의2호 데이터·5호 규제 개선)</strong>: 개인정보보호법
+AI 학습 특례(제28조의12, 2026-09-08 공포·2027-03-09 시행)의 시행령 기준,
+디지털헬스케어법 처리, 저작물 이용 표준계약서, 공공데이터 톱100 개방을
+심의·점검합니다(<a class="xref" href="#s14-12">14.12</a>절).</li>
+<li><strong>국제협력(8호)</strong>: 미국 Genesis, EU RAISE, 일본
+Moonshot과의 공동 난제·연구자 교류를 국제협력 안건으로 올립니다.</li>
+</ul>
+<hr />
+
+<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch14">전체 보고서에서 보기</a><a href="../">대시보드</a><span class="sp"></span><a href="ch13.html" rel="prev">← 13. 사회경제·노동 이슈, 기본소득·기본사회와 보</a><a href="ch15.html" rel="next">15. 국가별 AI 정책·제도·투자·규제와 경쟁력 →</a></nav>
+</main>
+</div>
+<script>
+  // Wrap tables for horizontal scroll and colour likelihood words; static enhancement only.
+  document.querySelectorAll('main table').forEach((t) => {
+    const w = document.createElement('div'); w.className = 'tablewrap'; t.parentNode.insertBefore(w, t); w.appendChild(t);
+  });
+  document.querySelectorAll('main td').forEach((td) => {
+    const v = td.textContent.trim();
+    if (v === '높음') td.classList.add('tag-hi'); else if (v === '중간') td.classList.add('tag-mid'); else if (v === '낮음') td.classList.add('tag-lo');
+  });
+  document.querySelectorAll('main h2[id], main h3[id]').forEach((h) => {
+    const a = document.createElement('a'); a.className = 'hl'; a.href = '#' + h.id; a.textContent = '#';
+    a.setAttribute('aria-label', '이 제목의 링크'); h.appendChild(a);
+  });
+</script>
+<script>
+/* AI2027 in-page full-text search (shared by dashboard and report).
+ * Uses the CSS Custom Highlight API so matched text is highlighted WITHOUT mutating the DOM
+ * (keeps the dashboard's one-writer rule intact). Falls back to scroll-only where unsupported.
+ * Usage: AI27Search({ root: 'main', input: 'q-input', results: 'q-results', info: 'q-info',
+ *                     exclude: '.rail', reportLink: 'a[href="report.html"]' })
+ */
+window.AI27Search = function (cfg) {
+  const root = document.querySelector(cfg.root);
+  const input = document.getElementById(cfg.input);
+  const out = document.getElementById(cfg.results);
+  const info = document.getElementById(cfg.info);
+  if (!root || !input || !out || !info) return;
+  const BLOCKS = 'h2,h3,h4,p,li,td,th,blockquote,figcaption,summary,dt,dd,article';
+  const MAX_RESULTS = 80;
+  const MAX_RANGES = 3000;
+  const hl = typeof CSS !== 'undefined' && CSS.highlights && typeof Highlight === 'function';
+  let results = [];
+  let active = -1;
+  let timer = 0;
+
+  const norm = (s) => s.toLocaleLowerCase('ko');
+  const terms = (q) => norm(q).split(/\s+/).filter(Boolean).slice(0, 6);
+  const excluded = (el) => (cfg.exclude && el.closest(cfg.exclude)) || el.closest('[data-search-skip]');
+
+  function leafMatches(ts) {
+    const hits = [];
+    root.querySelectorAll(BLOCKS).forEach((el) => {
+      if (excluded(el)) return;
+      const t = norm(el.textContent || '');
+      if (ts.every((w) => t.includes(w))) hits.push(el);
+    });
+    const set = new Set(hits);
+    // keep the innermost matching block only
+    return hits.filter((el) => ![...el.querySelectorAll(BLOCKS)].some((c) => set.has(c)));
+  }
+
+  function headingFor(el, heads) {
+    let h = null;
+    for (const x of heads) {
+      if (x === el || x.compareDocumentPosition(el) & Node.DOCUMENT_POSITION_FOLLOWING) h = x; else break;
+    }
+    return h;
+  }
+
+  function contextOf(el, heads) {
+    const sec = el.closest('section');
+    const h2 = sec && sec.querySelector('h2');
+    const card = el.closest('.ai27-card, .ai27-tablewrap');
+    let h3 = card && card.querySelector('h3');
+    if (!h3 && card && card.previousElementSibling) h3 = card.previousElementSibling.querySelector && card.previousElementSibling.querySelector('h3');
+    if (h2) return [h2.textContent.trim(), h3 ? h3.textContent.trim() : ''].filter(Boolean).join(' › ');
+    const h = headingFor(el, heads);
+    return h ? h.textContent.trim() : '';
+  }
+
+  function rangesIn(el, ts, acc) {
+    const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
+    let n;
+    while ((n = walker.nextNode()) && acc.length < MAX_RANGES) {
+      const t = norm(n.nodeValue);
+      for (const w of ts) {
+        let i = t.indexOf(w);
+        while (i !== -1 && acc.length < MAX_RANGES) {
+          const r = new Range(); r.setStart(n, i); r.setEnd(n, i + w.length); acc.push(r);
+          i = t.indexOf(w, i + w.length);
+        }
+      }
+    }
+    return acc;
+  }
+
+  function snippet(el, ts) {
+    const text = (el.textContent || '').replace(/\s+/g, ' ').trim();
+    const lower = norm(text);
+    const at = Math.max(0, lower.indexOf(ts[0]));
+    const start = Math.max(0, at - 40);
+    const s = (start > 0 ? '…' : '') + text.slice(start, start + 130) + (start + 130 < text.length ? '…' : '');
+    const frag = document.createDocumentFragment();
+    const ls = norm(s);
+    let i = 0;
+    while (i < s.length) {
+      let best = -1; let len = 0;
+      for (const w of ts) { const j = ls.indexOf(w, i); if (j !== -1 && (best === -1 || j < best)) { best = j; len = w.length; } }
+      if (best === -1) { frag.append(s.slice(i)); break; }
+      frag.append(s.slice(i, best));
+      const m = document.createElement('mark'); m.textContent = s.slice(best, best + len); frag.append(m);
+      i = best + len;
+    }
+    return frag;
+  }
+
+  function clear() {
+    results = []; active = -1;
+    out.replaceChildren(); info.textContent = '';
+    if (hl) { CSS.highlights.delete('q-hit'); CSS.highlights.delete('q-active'); }
+  }
+
+  function go(i) {
+    if (!results.length) return;
+    active = (i + results.length) % results.length;
+    const el = results[active].el;
+    const det = el.closest('details'); if (det && !det.open) det.open = true;
+    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    if (hl) CSS.highlights.set('q-active', new Highlight(...rangesIn(el, results[active].ts, [])));
+    out.querySelectorAll('button').forEach((b, k) => b.setAttribute('aria-current', k === active ? 'true' : 'false'));
+    info.textContent = `${active + 1} / ${results.length}${results.length >= MAX_RESULTS ? '+' : ''}건`;
+  }
+
+  function run(q) {
+    const ts = terms(q);
+    if (!ts.length) { clear(); return; }
+    const heads = [...root.querySelectorAll('h2,h3')];
+    const els = leafMatches(ts).slice(0, MAX_RESULTS);
+    results = els.map((el) => ({ el, ts }));
+    active = -1;
+    if (hl) {
+      const acc = [];
+      els.forEach((el) => rangesIn(el, ts, acc));
+      CSS.highlights.set('q-hit', new Highlight(...acc));
+      CSS.highlights.delete('q-active');
+    }
+    info.textContent = els.length ? `${els.length}${els.length >= MAX_RESULTS ? '+' : ''}건` : '결과 없음';
+    out.replaceChildren(...els.map((el, k) => {
+      const li = document.createElement('li');
+      const b = document.createElement('button'); b.type = 'button';
+      const ctx = document.createElement('span'); ctx.className = 'q-ctx'; ctx.textContent = (contextOf(el, heads) || '본문').replace(/\s+/g, ' ');
+      const sn = document.createElement('span'); sn.className = 'q-snip'; sn.append(snippet(el, ts));
+      b.append(ctx, sn); b.addEventListener('click', () => go(k));
+      li.append(b); return li;
+    }));
+    const rl = cfg.reportLink && document.querySelector(cfg.reportLink);
+    if (rl) {
+      const li = document.createElement('li'); li.className = 'q-more';
+      const a = document.createElement('a');
+      a.href = rl.getAttribute('href').split('#')[0] + '#q=' + encodeURIComponent(q.trim());
+      a.target = rl.target || ''; if (a.target) a.rel = 'noopener';
+      a.textContent = `상세 보고서에서 '${q.trim()}' 검색 →`;
+      li.append(a); out.append(li);
+    }
+  }
+
+  input.addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(() => run(input.value), 180); });
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') { e.preventDefault(); if (!results.length) run(input.value); go(e.shiftKey ? active - 1 : active + 1); }
+    if (e.key === 'Escape') { input.value = ''; clear(); }
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === '/' && !/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName)) { e.preventDefault(); input.focus(); }
+  });
+  try {
+    const m = /[#&?]q=([^&]+)/.exec(location.hash + '&' + location.search);
+    if (m) { input.value = decodeURIComponent(m[1]); setTimeout(() => { run(input.value); go(0); }, cfg.delay || 300); }
+  } catch (_) { /* sandboxed location: ignore */ }
+};
+
+AI27Search({ root: 'main', input: 'q-input', results: 'q-results', info: 'q-info' });
+</script>
+
+</body>
+</html>

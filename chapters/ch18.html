@@ -1,0 +1,1090 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>18. AI 외교: 양자·다자 트랙 전망 · AI 2027 전망 보고서</title>
+<meta name="description" content="18. AI 외교: 양자·다자 트랙 전망">
+<link rel="canonical" href="https://hollobit.github.io/AI2027/chapters/ch18.html">
+</head>
+<body>
+<style>.chnav{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;font-size:.86rem;margin:0 0 18px;color:var(--muted)}.chnav a{text-decoration:none}.chnav .sp{flex:1}</style><meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;600&family=Noto+Serif+KR:wght@500;700;900&display=swap">
+<style>
+  /* Observatory report: long-form reading column + sticky contents rail */
+  :root {
+    --bg: #f3f4f1; --paper: #ffffff; --fg: #14161c; --muted: #5b6170; --line: #dcdfe4;
+    --accent: #3d40d4; --accent-2: #c25a22; --soft: #eef0f6; --ok: #1f7a4a; --warn: #985a00; --bad: #b3362f;
+    --display: 'Noto Serif KR', AppleMyungjo, Georgia, serif;
+    --text: 'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', system-ui, sans-serif;
+    --mono: 'IBM Plex Mono', ui-monospace, Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+    --bg: #0b0d12; --paper: #141821; --fg: #eef0f4; --muted: #8f96a5; --line: #262b37;
+    --accent: #8d90f8; --accent-2: #f29a62; --soft: #1b2030; --ok: #4cc38a; --warn: #e5a33b; --bad: #f07b72; color-scheme: dark; } }
+  :root[data-theme="dark"] {
+    --bg: #0b0d12; --paper: #141821; --fg: #eef0f4; --muted: #8f96a5; --line: #262b37;
+    --accent: #8d90f8; --accent-2: #f29a62; --soft: #1b2030; --ok: #4cc38a; --warn: #e5a33b; --bad: #f07b72; color-scheme: dark; }
+  body { background: var(--bg); color: var(--fg); font-family: var(--text); font-size: 15.5px; line-height: 1.75; letter-spacing: -0.005em;
+    padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+  .wrap { max-width: 1180px; margin: 0 auto; padding-block: clamp(20px, 4vw, 48px); display: grid; grid-template-columns: 250px minmax(0, 1fr); gap: 48px; }
+  @media (max-width: 900px) { .wrap { grid-template-columns: minmax(0, 1fr); gap: 24px; } .rail { position: static !important; max-height: none !important; } }
+  .rail { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 20px); align-self: start; max-height: calc(100vh - 40px); overflow: auto; font-size: 13px; }
+  .rail .label { font-family: var(--mono); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
+  .rail ul { list-style: none; margin: 0; padding: 0; }
+  .rail li { margin: 0; }
+  .rail ul ul { padding-left: 12px; border-left: 1px solid var(--line); margin: 2px 0 8px 2px; }
+  .rail ul ul ul { display: none; }
+  .rail a { display: block; padding: 3px 0; color: var(--muted); text-decoration: none; line-height: 1.45; }
+  .rail a:hover, .rail a:focus-visible { color: var(--accent); outline: none; }
+  .rail > ul > li > a { color: var(--fg); font-weight: 500; }
+  main { min-width: 0; background: var(--paper); border: 1px solid var(--line); border-radius: 16px; padding: clamp(22px, 5vw, 60px); }
+  main > * { max-width: 74ch; }
+  main > table, main > .tablewrap, main > details { max-width: none; }
+  h1 { font-family: var(--display); font-weight: 900; font-size: clamp(2.2rem, 5.5vw, 3.5rem); line-height: 1.08; letter-spacing: -0.03em; margin: 0 0 6px; text-wrap: balance; }
+  h1 + h3 { font-family: var(--display); font-weight: 500; font-size: clamp(1.1rem, 2.2vw, 1.4rem); color: var(--accent); margin: 0 0 14px; letter-spacing: -0.01em; }
+  h2 { font-family: var(--display); font-weight: 700; font-size: clamp(1.5rem, 3vw, 2rem); letter-spacing: -0.02em; line-height: 1.25; margin: 2.6em 0 .6em; padding-top: 1.2em; border-top: 1px solid var(--line); text-wrap: balance; scroll-margin-top: 20px; }
+  h3 { font-size: 1.12rem; font-weight: 600; margin: 1.9em 0 .5em; letter-spacing: -0.01em; scroll-margin-top: 20px; }
+  h4 { font-size: 1rem; font-weight: 600; margin: 1.8em 0 .3em; scroll-margin-top: 20px; }
+  p, li { text-wrap: pretty; }
+  strong { font-weight: 600; }
+  a { color: var(--accent); text-underline-offset: 3px; text-decoration-thickness: 1px; overflow-wrap: anywhere; }
+  blockquote { margin: 1.2em 0; padding: 14px 18px; background: var(--soft); border-radius: 10px; color: var(--fg); border: 0; }
+  blockquote p { margin: 0; }
+  hr { border: 0; height: 0; margin: 0; }
+  ul, ol { padding-left: 1.3em; }
+  li + li { margin-top: .25em; }
+  code { font-family: var(--mono); font-size: .86em; background: var(--soft); padding: 1px 6px; border-radius: 5px; overflow-wrap: anywhere; }
+  .tablewrap { overflow-x: auto; margin: 1.2em 0; border: 1px solid var(--line); border-radius: 12px; }
+  table { border-collapse: collapse; width: 100%; font-size: 13.5px; line-height: 1.55; }
+  th { text-align: left; font-family: var(--mono); font-weight: 500; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); padding: 10px 12px; border-bottom: 1px solid var(--line); background: var(--soft); white-space: nowrap; }
+  td { padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; font-variant-numeric: tabular-nums; }
+  tr:last-child td { border-bottom: 0; }
+  td:first-child { font-weight: 500; min-width: 120px; }
+  details { margin: 1em 0; }
+  summary { cursor: pointer; color: var(--muted); }
+  .meta { font-family: var(--mono); font-size: 12px; color: var(--muted); letter-spacing: .04em; }
+  .appendix-head { margin-top: 4em; }
+  h1.part { font-size: clamp(1.25rem, 2.6vw, 1.6rem); font-weight: 800; color: var(--accent); margin: 64px 0 8px; padding-top: 18px; border-top: 3px solid var(--accent); letter-spacing: -0.01em; }
+  #appendix h1 { font-size: clamp(1.6rem, 3.5vw, 2.2rem); margin-top: 0; }
+  #appendix h4 { font-family: var(--display); font-weight: 700; font-size: 1.02rem; padding-top: 1em; border-top: 1px dashed var(--line); }
+  .tag-hi { color: var(--ok); font-weight: 600; } .tag-mid { color: var(--warn); font-weight: 600; } .tag-lo { color: var(--bad); font-weight: 600; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  /* full-text search */
+  .q { margin-bottom: 22px; }
+  .q input { width: 100%; box-sizing: border-box; font: inherit; font-size: 13.5px; color: var(--fg); background: var(--paper); border: 1px solid var(--line); border-radius: 10px; padding: 8px 11px; }
+  .q input:focus { outline: 2px solid var(--accent); outline-offset: 1px; border-color: transparent; }
+  .q-info { font-family: var(--mono); font-size: 11px; color: var(--muted); margin: 6px 2px 0; min-height: 1em; }
+  .q-results { list-style: none; margin: 6px 0 0; padding: 0; max-height: 46vh; overflow: auto; border-left: 1px solid var(--line); }
+  .q-results:empty { display: none; }
+  .q-results button { all: unset; box-sizing: border-box; display: block; width: 100%; cursor: pointer; padding: 6px 8px 6px 10px; border-radius: 0 8px 8px 0; line-height: 1.45; }
+  .q-results button:hover, .q-results button:focus-visible, .q-results button[aria-current="true"] { background: var(--soft); }
+  .q-ctx { display: block; font-size: 11px; color: var(--accent); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .q-snip { display: block; font-size: 12px; color: var(--muted); }
+  .q-snip mark { background: none; color: var(--fg); font-weight: 600; }
+  ::highlight(q-hit) { background-color: rgba(229, 163, 59, .35); }
+  ::highlight(q-active) { background-color: #e5a33b; color: #14161c; }
+  figure { margin: 1.6em 0; max-width: none; }
+  figure svg { display: block; width: 100%; height: auto; }
+  figcaption { font-size: 13px; color: var(--muted); margin-top: 8px; line-height: 1.6; }
+  main > figure { max-width: none; }
+  .dl { display: flex; justify-content: flex-end; align-items: center; gap: 8px; margin: 0 0 14px; font-size: .85rem; color: var(--muted, #5b6170); }
+  .dl a { font-weight: 600; text-decoration: none; padding: 3px 10px; border: 1px solid var(--line, #dcdfe4); border-radius: 999px; }
+  .dl a:hover { border-color: currentColor; }
+  .hl { margin-left: .4em; font-size: .7em; color: var(--muted); text-decoration: none; opacity: 0; transition: opacity .15s; }
+  h2:hover .hl, h3:hover .hl, .hl:focus { opacity: 1; }
+  a.xref { color: inherit; text-decoration: underline dotted; text-underline-offset: 3px; }
+  @page { size: A4; margin: 16mm 14mm; }
+  @media print { .dl { display: none !important; } html, body { background: #fff !important; } main { box-shadow: none !important; border-radius: 0 !important; padding: 0 !important; max-width: none !important; } figure, table, blockquote { break-inside: avoid; } h2, h3 { break-after: avoid; } .rail { display: none; } .wrap { display: block; } main { border: 0; } }
+</style>
+
+<div class="wrap">
+  <nav class="rail" aria-label="목차">
+    <div class="q" role="search">
+      <label class="label" for="q-input" style="display:block">Search</label>
+      <input id="q-input" type="search" placeholder="보고서 검색  ( / )" autocomplete="off" aria-describedby="q-info">
+      <div id="q-info" class="q-info" aria-live="polite"></div>
+      <ul id="q-results" class="q-results" aria-label="검색 결과"></ul>
+    </div>
+    <div class="label">Contents</div><ul><li><a href="#s18-1">18.1 2026년 한국 정상외교 속 AI</a></li><li><a href="#s18-2">18.2 양자 트랙: 한국 관련</a></li><li><a href="#s18-3">18.3 양자 트랙: 주요국 간</a></li><li><a href="#s18-4">18.4 2027 전망</a></li><li><a href="#s18-5">18.5 한국 AI안전연구소의 출시 전 평가와 평가 표준
+주도권</a></li><li><a href="#s18-6">18.6 AI 중견국 연대: 구상과 차별점</a></li><li><a href="#s18-7">18.7 한국 외교 전략</a></li><li><a href="#s18-8">18.8 국제 AI 검증 체제와 검증 기술: 2027년의 출발점</a></li><li><a href="#s18-9">18.9 국가인공지능전략위원회 안건(제안, 인공지능기본법
+제8조 기준)</a></li></ul></nav>
+  <main>
+<div class="dl" aria-label="다운로드">다운로드
+      <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.pdf">PDF</a>
+      <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.docx">Word</a>
+      <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.md">Markdown</a> · <a href="https://hollobit.github.io/AI2027/chapters/">장별 보기</a></div>
+<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch18">전체 보고서에서 보기</a><a href="../">대시보드</a><span class="sp"></span><a href="ch17.html" rel="prev">← 17. 기술 통제와 한국: 수출통제 전이와 모델 접</a><a href="ch19.html" rel="next">19. 사이버 위협과 AI 공격: 공격 자동화·생활 →</a></nav><p class="label" style="margin:0 0 4px">제4부 국가·지정학·기술
+통제</p><h2 id="ch18">18. AI 외교: 양자·다자 트랙 전망</h2>
+<p>2027년 AI 외교는 <strong>'양자 거래 + 다자 최소합의'의 이중
+트랙</strong>이 기본입니다. 실질적인 이해(칩
+허가·관세·투자·데이터센터)는 양자 협상에서 정해집니다. 다자
+무대(유엔·제네바·G20)에서는 구속력 없는 선언과 측정·평가 협력만
+이어집니다. 각 항목은 확정, 예상, 추정으로 구분했습니다.</p>
+<h3 id="s18-1">18.1 2026년 한국 정상외교 속 AI</h3>
+<ul>
+<li><strong>AI 전용 협정</strong>: 한·독일 AI 공동의향서(2026-10-29)만
+확인됐습니다.</li>
+<li><strong>협력 의제로만 등장</strong>:
+<ul>
+<li>한·일: 1월 나라, 5월 안동, 11월 마닐라 정상회담에서 AI 협력
+언급</li>
+<li>한·중: 1월 국빈방문 MOU 14–15건 중 과학기술혁신·디지털기술, 11월
+선전 정상회담</li>
+<li>한·인도: 4월 공동성명에서 AI·반도체 파트너십 언급</li>
+</ul></li>
+<li><strong>합의 없음</strong>: 한·호주는 AI 합의가 확인되지 않아 추정
+비중이 큽니다.</li>
+</ul>
+<h3 id="s18-2">18.2 양자 트랙: 한국 관련</h3>
+<table>
+<thead>
+<tr>
+<th>양자</th>
+<th>2027 의제</th>
+<th>계기·일정</th>
+<th>가능성 · 확률(±불확도)</th>
+<th>한국 관점</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>한·미</strong></td>
+<td>기술번영 MOU(2025-10) 워킹그룹 성과물(AI 표준·평가 공동작업, 풀스택
+공동수출), 232조 관세 쿼터·상한, 중국 팹 2028분 장비 허가(2027-12),
+원격접속 '신뢰 동맹' 예외</td>
+<td>01-19 BIS 의견수렴 마감, 과기공동위·워킹그룹, G7(미국 의장국)</td>
+<td>높음 · 80% (±15) · 근거 <a
+href="https://www.whitehouse.gov/releases/2025/10/u-s-korea-technology-prosperity-deal">The
+White House</a>, <a
+href="https://www.thestar.com.my/tech/tech-news/2026/07/25/south-korea-president-lee-hosts-us-tech-summit-calls-for-new-ai-era">The
+Star (Reuters)</a></td>
+<td>최대 축. '방어 의제'(관세·허가·예외)와 '공세 의제'(공동수출·표준)를
+한 패키지로</td>
+</tr>
+<tr>
+<td>한·일</td>
+<td>한국·일본 AI 안전연구소 공동 평가, 소재·장비 공급망, 미국 장비 정렬
+요구 공동 대응, 히로시마 프로세스</td>
+<td>정상 셔틀회담(2026년 나라·안동·마닐라에서 AI 협력 언급, 5월 '전략적
+AI 파트너십' 제안), 한중일 정상회의(미정)</td>
+<td>중간 · 60% (±20)</td>
+<td>장비 정렬 압력에 공동 대응하면 협상력 상승. 규제 상호운용성</td>
+</tr>
+<tr>
+<td>한·중</td>
+<td>핵심광물 공급 안정, 중국 팹 운영 조율, 중국 오픈웨이트 공공 사용
+마찰, WAICO 참여 권유·BRICS 오픈소스 AI 구상 입장, FTA 2단계</td>
+<td>2026-01 국빈방문 MOU(과학기술혁신·디지털기술) 이행, WAIC 2027(7월
+상하이), APEC 푸꾸옥(11월) 계기</td>
+<td>중간 · 55% (±20) · 근거 <a
+href="https://news.cgtn.com/news/2026-07-17/29-countries-sign-establishing-World-AI-Cooperation-Organization-pact-1OQDod8zj6U/index.html">CGTN</a>,
+<a
+href="https://m.edaily.co.kr/News/Read?newsId=03325926645649656&amp;mediaCodeNo=257">m.edaily.co.kr</a></td>
+<td>'동맹 기반 헤징'. WAICO는 비가입·사안별 관여가 현실적</td>
+</tr>
+<tr>
+<td><strong>한·영</strong></td>
+<td>AI 안전연구소 간 공동 평가·사고보고 프로토콜, AI 사전표준화
+MoU(2026-06, 영·싱·호·캐) 이행, G20 디지털 의제</td>
+<td>G20 정상회의 11-27~28 맨체스터(확정)</td>
+<td>높음 · 78% (±15) · 근거 <a
+href="https://eiec.kdi.re.kr/policy/materialView.do?num=282674">KDI
+경제정보센터</a>, <a
+href="https://www.gov.uk/government/news/manchester-to-host-world-leaders-at-the-2027-g20-summit">UK
+Government</a></td>
+<td>평가 역량을 영국과 공동 산출물로 만드는 것이 비용 대비 효과
+최대</td>
+</tr>
+<tr>
+<td>한·프랑스/EU</td>
+<td>한-EU 디지털 파트너십에서 AI Act–기본법 상호운용성, Horizon Europe
+공동과제, EU 기가팩토리 메모리·전력 공급, 프랑스 대선 후 소버린 협력
+재설정</td>
+<td>프랑스 대선(04-18/05-02), AI Act 기한(08-02, 12-02)</td>
+<td>중간 · 55% (±20) · 근거 <a
+href="https://eeas.europa.eu/delegations/chile/artificial-intelligence-council-gives-final-green-light-simplify-and-streamline-rules_en">eeas.europa.eu</a>,
+<a href="https://zdnet.co.kr/view?no=20261116144303">과학기술정보통신부
+(보도: ZDNet Kor…</a></td>
+<td>EU 수출 AI 제품의 이중 규제 부담 최소화</td>
+</tr>
+<tr>
+<td>한·UAE/사우디</td>
+<td>UAE 전략적 AI 프레임워크(2025-11 MOU 7건) 이행, 사우디 HUMAIN에
+'모델 + GPU 운영 + NPU + 원전·전력' 패키지, 미국 칩 허가 조건 준수</td>
+<td>제네바 정상회의(2028 UAE 준비)</td>
+<td>중간 · 55% (±20) · 근거 <a
+href="https://www.koreajoongangdaily.com/korea/uae-ai-mou-7/11233820">Korea
+JoongAng Daily</a></td>
+<td>걸프는 소버린 패키지 수출 1순위 시장</td>
+</tr>
+<tr>
+<td><strong>한·싱가포르/ASEAN</strong></td>
+<td>AI Verify·안전연구소 협력, 평가 도구 상호운용, 동남아 데이터센터의
+미국 규칙 준수 지원, ASEAN 역량강화·ODA</td>
+<td>정상회담(2026-03-02) 후속, 한-ASEAN 정상회의, APEC</td>
+<td>높음 · 78% (±15) · 근거 <a
+href="https://www.aol.com/articles/south-koreas-lee-hold-summit-023235478.html">AOL
+(Reuters)</a>, <a
+href="https://zdnet.co.kr/view/?no=20260619100049">zdnet.co.kr</a></td>
+<td>동남아는 원격접속 규칙의 최전선. '규칙 준수형 인프라'가 기회</td>
+</tr>
+<tr>
+<td>한·캐나다·호주</td>
+<td>표준 MoU 이행, 캐나다 소버린 컴퓨트·인재, 호주 핵심광물–AI
+데이터센터 연계, 2+2 회의에서 AI·사이버</td>
+<td>G7·APEC 계기, 2+2 회의</td>
+<td>중간 · 52% (±20) · 근거 <a
+href="https://eiec.kdi.re.kr/policy/materialView.do?num=282674">KDI
+경제정보센터</a></td>
+<td>대미 헤징 중인 중견국 공조 파트너, 희토류 리스크 헤지</td>
+</tr>
+<tr>
+<td>한·인도</td>
+<td>AI Impact Summit 후속, 반도체·데이터센터 투자, 인재 교류, 공공
+디지털 인프라(DPI)와 AI 결합</td>
+<td>2026-04 정상회담 공동성명(AI·반도체 파트너십) 후속, 제네바 정상회의,
+G20</td>
+<td>중간 · 50% (±20) · 근거 <a
+href="https://static.pib.gov.in/WriteReadData/specificdocs/documents/2026/feb/doc2026217795001.pdf">PIB,
+Government of India</a></td>
+<td>'미국 정렬'만으로 비치지 않게 하는 균형추</td>
+</tr>
+<tr>
+<td>한·독일</td>
+<td>AI 공동의향서(2026-10-29)와 '강화된 전략적 동반자 관계' 이행,
+제조·산업 AI, 표준(DIN–KATS·TTA), Horizon Europe</td>
+<td>2027 가을 베를린 디지털 서밋(초청)</td>
+<td>중간 · 60% (±15)</td>
+<td>피지컬 AI·제조 데이터 표준 기여 여지</td>
+</tr>
+</tbody>
+</table>
+<h3 id="s18-3">18.3 양자 트랙: 주요국 간</h3>
+<table>
+<thead>
+<tr>
+<th>양자</th>
+<th>2027 전망</th>
+<th>가능성 · 확률(±불확도)</th>
+<th>한국 영향</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>미·중</strong></td>
+<td>휴전 단기 재연장, AI 대화 정례화(핫라인·용어·사고 통보). 그러나
+칩·원격접속 통제는 별도 강화. 개발 속도 제한 합의 가능성은 매우
+낮음</td>
+<td>높음 · 78% (±15) · 근거 <a
+href="https://www.techtimes.com/articles/316674/20260515/trump-xi-close-beijing-summit-warm-rhetoric-nvidia-h200-deliveries-remain-stalled-rare-earth.htm">Tech
+Times</a>, <a
+href="https://www.atlanticcouncil.org/dispatches/huang-is-back-at-nvidia-but-the-fight-over-who-controls-chip-exports-is-just-beginning/">미국
+의회</a></td>
+<td>대화 진전보다 기술통제 강화가 실질 영향</td>
+</tr>
+<tr>
+<td>미·UAE/사우디</td>
+<td>원격접속 규칙하에서 KYC·중국 분리 조건부 대량 허가. 'American AI
+Exports' 첫 국가 패키지 후보</td>
+<td>높음 · 80% (±15) · 근거 <a
+href="https://www.gtlaw.com/en/insights/2026/11/bis-interim-final-rule-targets-remote-access-to-advanced-semiconductors-rescinds-ai-diffusion-rule">Greenberg
+Traurig</a></td>
+<td>걸프 GPU 확대는 한국 HBM·전력장비 수요</td>
+</tr>
+<tr>
+<td>미·일</td>
+<td>장비통제 정렬(도쿄일렉트론), AI·양자 공동연구, G7에서 히로시마
+프로세스 위상 조정</td>
+<td>높음 · 75% (±15) · 근거 <a
+href="https://www.atlanticcouncil.org/dispatches/huang-is-back-at-nvidia-but-the-fight-over-who-controls-chip-exports-is-just-beginning/">미국
+의회</a></td>
+<td>일본이 수용하면 한국도 같은 요구를 받음</td>
+</tr>
+<tr>
+<td>EU·미</td>
+<td>AI Act GPAI 집행 갈등이 2027-08-02 기한 전후로 재점화, 무역 보복
+위협</td>
+<td>높음 · 72% (±15) · 근거 <a
+href="https://ai-act-service-desk.ec.europa.eu/en/ai-act/faq/commissions-enforcement-powers-related-ai-act-obligations-providers-most-advanced-models">ai-act-service-desk.ec.eur</a>,
+<a
+href="https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai">European
+Commission</a></td>
+<td>한국이 '중간 표준'으로 양쪽에 수출할 공간</td>
+</tr>
+<tr>
+<td>미·영</td>
+<td>기술 번영 협정(2025-12 이행 중단) 재개 여부가 무역 조건과 연계</td>
+<td>중간 · 50% (±20) · 근거 <a
+href="https://www.techrepublic.com/article/news-uk-us-tech-deal-paused/">TechRepublic</a></td>
+<td>한미 MOU도 관세·투자 이행과 연계될 위험</td>
+</tr>
+<tr>
+<td>미·인도</td>
+<td>풀스택 수출 패키지, 원격접속 지정국 포함 여부 협상</td>
+<td>중간 · 50% (±20)</td>
+<td>인도 시장의 한국 메모리·장비 기회</td>
+</tr>
+<tr>
+<td>중·러</td>
+<td>군사 AI 규범 공동 입장, BRICS 오픈소스 AI, 반제재 컴퓨트 협력</td>
+<td>중간 · 55% (±20) · 근거 <a
+href="https://www.38north.org/2026/02/north-koreas-integration-of-ai-across-cyber-economic-and-military-domains">38
+North (Stimson)</a></td>
+<td>대북 기술이전·군사 AI 확산 리스크</td>
+</tr>
+<tr>
+<td>중·EU, 중·걸프</td>
+<td>희토류·중국 모델 규제 준수, 중국 스택의 걸프 진출 시도</td>
+<td>중간 · 55% (±20) · 근거 <a
+href="https://m.edaily.co.kr/News/Read?newsId=03325926645649656&amp;mediaCodeNo=257">m.edaily.co.kr</a></td>
+<td>대중 통제 동맹 균열 여부의 신호</td>
+</tr>
+</tbody>
+</table>
+<p><strong>다자 트랙</strong> (전체 2027 일정은 <a class="xref" href="ch23.html#s23-11">23.11</a>절에
+모았습니다.)</p>
+<table>
+<thead>
+<tr>
+<th>무대</th>
+<th>2027 일정</th>
+<th>의제와 예상 결과</th>
+<th>가능성 · 확률(±불확도)</th>
+<th>한국 역할</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>유엔 글로벌 대화(2차)</strong></td>
+<td>05-03~04 뉴욕(확정)</td>
+<td>과학패널 보고서 논의, 역량격차·컴퓨트 접근. 의장 요약 수준</td>
+<td>높음 · 92% (±5) · 근거 <a
+href="https://news.un.org/en/story/2026/07/1167853">UN News</a></td>
+<td>'안전·혁신·포용' 프레임 연결, 개도국 ODA 제안</td>
+</tr>
+<tr>
+<td>유엔 독립 국제 AI 과학패널</td>
+<td>첫 종합보고서(상반기 예상)</td>
+<td>IPCC형 상설 평가 체계의 첫 사이클</td>
+<td>높음 · 80% (±10) · 근거 <a
+href="https://news.un.org/en/story/2026/07/1167853">UN News</a></td>
+<td>패널·검토 참여, 평가 데이터 제공</td>
+</tr>
+<tr>
+<td><strong>제네바 AI 정상회의</strong></td>
+<td>06-21~22(확정, 2028 UAE)</td>
+<td>뉴델리 선언 이행, 영향·포용·과학. 구속력 없는 선언, 미국은 구속 문안
+반대</td>
+<td>높음 · 90% (±5) · 근거 <a
+href="https://www.itu.int/hub/2026/11/the-next-chapter-for-ai-in-geneva/">ITU</a></td>
+<td>서울 프런티어 안전 약속 이행 점검 제안</td>
+</tr>
+<tr>
+<td>ITU AI for Good·WSIS</td>
+<td>06-21~25 제네바(확정)</td>
+<td>에이전트·멀티모달 평가 표준, ISO/IEC 42001 확산</td>
+<td>높음 · 94% (±5) · 근거 <a
+href="https://www.itu.int/hub/2026/11/the-next-chapter-for-ai-in-geneva/">ITU</a></td>
+<td>국내 출연연·TTA 의장단·에디터십, 4개국 공동 기고</td>
+</tr>
+<tr>
+<td>국제 평가 네트워크(NAAIMES)</td>
+<td>2026-02 개명(구 AI 안전연구소 네트워크)</td>
+<td>에이전트·사이버 공동 평가. '안전'에서 '측정·보안'으로</td>
+<td>높음 · 80% (±10) · 근거 <a
+href="https://www.gov.uk/government/news/efforts-to-share-best-practices-on-ai-measurement-and-evaluations-driven-forward-through-the-international-network-for-advanced-ai-measurement-evalua">UK
+Government</a>, <a
+href="https://www.aisi.gov.uk/blog/international-ai-network-consensus-and-open-questions">UK
+AI Security Institute</a></td>
+<td>창립 회원. 한국어·다국어·에이전트 평가 주도</td>
+</tr>
+<tr>
+<td>G7(미국 의장국, 2027-01-01 승계)</td>
+<td>개최지·일자 미발표</td>
+<td>에너지·AI 인프라·공급망 중심. 히로시마 프로세스는 후순위</td>
+<td>중간 · 65% (±15) · 근거 <a
+href="https://g7.utoronto.ca/evaluations/2026evian/tiritilli-trump-era.html">G7
+Research Group (Univ.…</a></td>
+<td>초청국 참여, 보고 프레임워크 유지</td>
+</tr>
+<tr>
+<td><strong>G20(영국)</strong></td>
+<td>11-27~28 맨체스터(확정)</td>
+<td>AI 도입·생산성·인재. 미중 정상 대면 계기</td>
+<td>높음 · 93% (±5) · 근거 <a
+href="https://www.gov.uk/government/news/manchester-to-host-world-leaders-at-the-2027-g20-summit">UK
+Government</a></td>
+<td>역량격차·디지털 인재 공동 제안</td>
+</tr>
+<tr>
+<td><strong>APEC(베트남)</strong></td>
+<td>11월 푸꾸옥</td>
+<td>경주 채택 APEC AI 이니셔티브 이행, 동남아 데이터센터 규칙</td>
+<td>높음 · 93% (±5) · 근거 <a
+href="https://www.bernama.com/en/world/news.php?id=2636878">Bernama</a>,
+<a
+href="https://vietnamnet.vn/en/apec-2027-vietnam-aims-to-deliver-a-world-class-high-impact-summit-2486024.html">VietNamNet</a></td>
+<td>2025 의장국으로 이행 점검 주도</td>
+</tr>
+<tr>
+<td>OECD·GPAI</td>
+<td>각료이사회 6월(예상)</td>
+<td>AI 사고 모니터, 보고 프레임워크, 컴퓨트·에너지 측정</td>
+<td>높음 · 70% (±15) · 근거 <a
+href="https://hai.stanford.edu/assets/files/ai_index_report_2026_chapter_3_responsible_ai.pdf">Stanford
+HAI</a>, <a
+href="https://oecd.ai/en/incidents/2026-07-13-93df">oecd.ai</a></td>
+<td>사고 보고·측정 데이터 제공</td>
+</tr>
+<tr>
+<td>유럽평의회 AI 협약</td>
+<td>서명 21개, EU 승인(2026-04)</td>
+<td>2027년 발효 가능성(불확실)</td>
+<td>중간 · 40% (±20) · 근거 <a
+href="https://www.coe.int/en/web/artificial-intelligence/-/european-union-ratifies-the-council-of-europe-framework-convention-on-artificial-intelligence">Council
+of Europe</a>, <a
+href="https://eur-lex.europa.eu/eli/dec/2026/1080/oj">EUR-Lex</a></td>
+<td>비서명국. 서명 득실 검토</td>
+</tr>
+<tr>
+<td>Pax Silica</td>
+<td>3차 정상회의 미정</td>
+<td>신뢰 공급망 인증, 수출통제 정렬, 회원국 허가 우대 가능</td>
+<td>높음 · 70% (±20) · 근거 <a
+href="https://www.bhfs.com/insight/state-department-expands-pax-silica-initiative-at-2026-summit/">Pax
+Silica(미국 주도, 한국 포함 …</a></td>
+<td>회원 혜택을 232조 협상과 연계</td>
+</tr>
+<tr>
+<td>WAICO·BRICS(중국 의장국)</td>
+<td>WAIC 7월, BRICS 19차 정상회의(뉴델리 선언 2026-09-12로 중국 개최
+확정, 일자·도시 미발표)</td>
+<td>오픈소스 AI 공동체, 글로벌 사우스 역량강화. WAICO 40개국 이상 확대
+가능</td>
+<td>중간 · 50% (±20) · 근거 <a
+href="https://news.cgtn.com/news/2026-07-17/29-countries-sign-establishing-World-AI-Cooperation-Organization-pact-1OQDod8zj6U/index.html">CGTN</a>,
+<a
+href="https://en.people.cn/n3/2026/0918/c90000-20501291.html">People's
+Daily</a></td>
+<td>비가입. 양자 채널로 동향 관리</td>
+</tr>
+<tr>
+<td>수출통제 공조</td>
+<td>MATCH Act(NDAA)</td>
+<td>바세나르 밖 소수국(미·일·네·한) 협의체 강화</td>
+<td>중간 · 45% (±20) · 근거 <a
+href="https://www.atlanticcouncil.org/dispatches/huang-is-back-at-nvidia-but-the-fight-over-who-controls-chip-exports-is-just-beginning/">미국
+의회</a>, <a
+href="https://www.bhfs.com/insight/state-department-expands-pax-silica-initiative-at-2026-summit/">Pax
+Silica(미국 주도, 한국 포함 …</a></td>
+<td>사전 협의 채널 확보</td>
+</tr>
+<tr>
+<td>쿼드</td>
+<td>마닐라 정상회의(2026-11-17)에서 AI 가속 이니셔티브(8,500만 달러
+이상)·핵심광물·사이버 이니셔티브 발표. 인도가 2027년 1분기 차기 개최
+희망</td>
+<td>호주·인도·일본의 Pax Silica 서명으로 AI 공급망 축과 결합</td>
+<td>중간 · 55% (±20)</td>
+<td>비회원. 쿼드 AI 이니셔티브 사안별 참여 후보</td>
+</tr>
+<tr>
+<td>AUKUS Pillar II</td>
+<td>2026년 현황 미확인</td>
+<td>기술 협력 문안 유지</td>
+<td>중간 · 35% (±20)</td>
+<td>사안별 참여 후보</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>기업 내부 층위: AI 사용 통제</strong>: 국가 규제와 사업자
+약관 아래에 기업의 사용 통제가 있습니다. Gartner는 직원 67%가 회사
+기기에서 개인 계정으로 AI에 접속한다고 보고, 일괄 차단은 더 은밀한
+비인가 사용을 부른다고 경고합니다. 대안은 섀도 AI를 찾아 허용
+목록·데이터 유출 방지로 관리하는 'AI 사용 통제'(기술 촉발, 주류화
+2–5년)입니다. 해외 모델 접속 제한을 검토할 때 공공·금융 지침에 반영할
+만합니다.</li>
+</ul>
+<h3 id="s18-4">18.4 2027 전망</h3>
+<table>
+<thead>
+<tr>
+<th>전망</th>
+<th>트랙</th>
+<th>가능성 · 확률(±불확도)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>미중은 휴전을 단기 재연장하고 AI 대화를 정례화하지만 칩·원격접속
+통제는 별도 강화(이중 트랙. 휴전 재연장 자체는 80%, <a class="xref" href="ch16.html#s16-1">16.1</a>절)</td>
+<td>양자</td>
+<td>높음 · 78% (±15) · 근거 <a
+href="https://www.techtimes.com/articles/316674/20260515/trump-xi-close-beijing-summit-warm-rhetoric-nvidia-h200-deliveries-remain-stalled-rare-earth.htm">Tech
+Times</a>, <a
+href="https://www.atlanticcouncil.org/dispatches/huang-is-back-at-nvidia-but-the-fight-over-who-controls-chip-exports-is-just-beginning/">미국
+의회</a></td>
+</tr>
+<tr>
+<td>제네바 정상회의는 구속력 없는 선언으로 끝나고, 미국은 구속적 문안에
+반대하거나 서명하지 않음</td>
+<td>다자</td>
+<td>높음 · 85% (±10) · 근거 <a
+href="https://www.itu.int/hub/2026/11/the-next-chapter-for-ai-in-geneva/">ITU</a>,
+<a
+href="https://www.hrw.org/news/2026/09/07/un-talks-on-killer-robots-ends-with-calls-for-negotiations-growing">Human
+Rights Watch</a></td>
+</tr>
+<tr>
+<td>유엔 트랙(과학패널 보고서, 5월 대화)은 정례화되지만 실질 규범은
+만들지 못함</td>
+<td>다자</td>
+<td>높음 · 88% (±10) · 근거 <a
+href="https://news.un.org/en/story/2026/07/1167853">UN News</a>, <a
+href="https://carnegieendowment.org/research/2026/11/will-a-un-treaty-on-autonomous-weapons-arrive-too-late">Carnegie
+Endowment</a></td>
+</tr>
+<tr>
+<td>국제 평가 네트워크가 에이전트·사이버 공동 산출물을 내고
+'측정·보안'으로 이동</td>
+<td>다자</td>
+<td>높음 · 78% (±15) · 근거 <a
+href="https://www.gov.uk/government/news/efforts-to-share-best-practices-on-ai-measurement-and-evaluations-driven-forward-through-the-international-network-for-advanced-ai-measurement-evalua">UK
+Government</a>, <a
+href="https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing">aisi.gov.uk</a></td>
+</tr>
+<tr>
+<td><strong>한국은 232조 관세·중국 팹 장비 허가를 기술번영 MOU·3,500억
+달러 투자와 묶어 패키지 협상</strong></td>
+<td>한국</td>
+<td>높음 · 75% (±15) · 근거 <a
+href="https://www.whitehouse.gov/releases/2025/10/u-s-korea-technology-prosperity-deal">The
+White House</a>, <a
+href="https://focustaiwan.tw/politics/202611260010">Focus Taiwan
+(CNA)</a></td>
+</tr>
+<tr>
+<td>한국은 WAICO에 가입하지 않고 Pax Silica를 유지하되 중국과 광물·소재
+채널을 관리</td>
+<td>한국</td>
+<td>높음 · 88% (±10) · 근거 <a
+href="https://www.bhfs.com/insight/state-department-expands-pax-silica-initiative-at-2026-summit/">Pax
+Silica(미국 주도, 한국 포함 …</a>, <a
+href="https://news.cgtn.com/news/2026-07-17/29-countries-sign-establishing-World-AI-Cooperation-Organization-pact-1OQDod8zj6U/index.html">CGTN</a></td>
+</tr>
+<tr>
+<td>미국은 양자 기술협정을 관세·디지털세와 연계하고, 이행 중단·조건부
+재개가 다른 동맹에도 나옴</td>
+<td>양자</td>
+<td>중간 · 55% (±20) · 근거 <a
+href="https://www.techrepublic.com/article/news-uk-us-tech-deal-paused/">TechRepublic</a></td>
+</tr>
+<tr>
+<td>걸프와 인도가 모두 미국 'AI 풀스택 수출' 첫 국가 패키지 대상이
+됨(어느 한 곳이라도 지정될 확률은 60%, <a class="xref" href="ch16.html#s16-1">16.1</a>절)</td>
+<td>양자</td>
+<td>중간 · 40% (±20)</td>
+</tr>
+<tr>
+<td>EU–미 AI Act 갈등이 GPAI 기한(08-02) 전후로 재점화</td>
+<td>양자</td>
+<td>높음 · 72% (±15) · 근거 <a
+href="https://ai-act-service-desk.ec.europa.eu/en/ai-act/faq/commissions-enforcement-powers-related-ai-act-obligations-providers-most-advanced-models">ai-act-service-desk.ec.eur</a>,
+<a
+href="https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai">European
+Commission</a></td>
+</tr>
+<tr>
+<td>중국이 BRICS 의장국과 WAICO를 결합해 'AI 오픈소스·역량강화' 블록을
+키움(WAICO 40개국 이상)</td>
+<td>다자</td>
+<td>중간 · 45% (±20) · 근거 <a
+href="https://news.cgtn.com/news/2026-07-17/29-countries-sign-establishing-World-AI-Cooperation-Organization-pact-1OQDod8zj6U/index.html">CGTN</a>,
+<a
+href="https://en.people.cn/n3/2026/0918/c90000-20501291.html">People's
+Daily</a></td>
+</tr>
+<tr>
+<td>미국 G7은 히로시마 프로세스보다 에너지·인프라·공급망을 앞세움</td>
+<td>다자</td>
+<td>중간 · 65% (±15) · 근거 <a
+href="https://g7.utoronto.ca/evaluations/2026evian/tiritilli-trump-era.html">G7
+Research Group (Univ.…</a></td>
+</tr>
+<tr>
+<td>한국이 AI 사전표준화 MoU 4개국과 ITU·ISO/IEC 공동 기고로 중견국 표준
+연합의 허브 역할 시도</td>
+<td>한국</td>
+<td>중간 · 50% (±20) · 근거 <a
+href="https://eiec.kdi.re.kr/policy/materialView.do?num=282674">KDI
+경제정보센터</a></td>
+</tr>
+<tr>
+<td>한국이 UAE·사우디 대상 소버린 패키지 수출 계약을 최소 1건 성사</td>
+<td>한국</td>
+<td>중간 · 40% (±20) · 근거 <a
+href="https://www.koreajoongangdaily.com/korea/uae-ai-mou-7/11233820">Korea
+JoongAng Daily</a>, <a
+href="https://zdnet.co.kr/view?no=20261111120847">IITP
+정보통신기획평가원 (보도: ZDNe…</a></td>
+</tr>
+<tr>
+<td>한국이 유럽평의회 AI 기본협약에 서명</td>
+<td>한국</td>
+<td>낮음 · 12% (±15) · 근거 <a
+href="https://www.coe.int/en/web/artificial-intelligence/-/european-union-ratifies-the-council-of-europe-framework-convention-on-artificial-intelligence">Council
+of Europe</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>외교 시나리오</strong>: 이중 트랙 관리 45%, 블록 경쟁
+심화(Pax Silica 대 WAICO·BRICS) 25%, 다자 복원(유엔·제네바·G20 수렴)
+15%, 미국 거래형 양자주의와 다자 공백 15%.</p>
+<h3 id="s18-5">18.5 한국 AI안전연구소의 출시 전 평가와 평가 표준
+주도권</h3>
+<ul>
+<li><strong>사후 평가에 머무른 실적</strong>: 과기정통부 자료로
+AI안전연구소는 2025-01부터 2026-04까지 국내외 모델 42종을 평가했지만
+<strong>출시 전 평가는 0건</strong>입니다. 정부가 모델을 미리 받아
+시험할 법적·제도적 통로가 없습니다. 미국은 5개사가 CAISI 출시 전 평가에
+참여하고, 백악관이 폐쇄형 모델의 공개 전 최대 30일 접근을
+논의했습니다(2026-08-04). 반면 사후 결과 공개(카카오 카나나)는 한국이
+앞섭니다(<a
+href="https://www.mt.co.kr/tech/2026/08/07/2026080614255237204">머니투데이</a>).</li>
+<li><strong>역량</strong>: 기술 평가 인력 6명, GPU 서버 5대(2대 임차),
+2026년 예산 89억 원입니다. 미국 34명(80명 계획), 일본 31명(올해 60명),
+영국 기술 인력 100명 이상과 비교됩니다(이정헌 의원실 자료, <a
+href="https://zdnet.co.kr/view/?no=20260928132902">지디넷코리아</a>).
+김명주 소장은 "기업이 와서 평가하라고 하지는 않는다"며, 한국 평가 결과의
+해외 인정과 평가 기준 정렬로 기업의 중복 평가 부담을 줄이겠다고
+했습니다. 피해 접수 포털은 이르면 2027년 초 엽니다(<a
+href="https://zdnet.co.kr/view/?no=20261119100529">지디넷코리아</a>).</li>
+<li><strong>사실표준 경쟁</strong>: 국제 평가 네트워크(NAAIMES)는
+'측정·보안'으로 이동했고(위 다자 표), 영국 AISI가 평가 방법론, 미국
+CAISI가 출시 전 시험의 사실표준을 만들고 있습니다. 한국은 SC 42에서
+데이터 품질(ISO/IEC 5259-1)·AI 시험 표준을 주도한 실적이 있습니다.
+그러나 출시 전 평가 실적이 없으면 상호 인정 협상에서 '받는 쪽'이 됩니다.
+평가 실적, 평가 도구 공개, 사고보고 양식이 표준 주도권의 실제
+근거입니다.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>2027 전망</th>
+<th>가능성 · 확률(±불확도)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>한국 AI안전연구소가 국내외 모델 1건 이상을 출시 전에 평가했다고
+공개</td>
+<td>중간 · 40% (±20) · 근거 <a
+href="https://www.mt.co.kr/tech/2026/08/07/2026080614255237204">머니투데이</a>,
+<a
+href="https://zdnet.co.kr/view/?no=20261119100529">지디넷코리아</a></td>
+</tr>
+<tr>
+<td>한국 AI안전연구소가 국제 평가 네트워크 또는 양자(영·싱·일) 공동 평가
+산출물에 참여 기관으로 이름을 올림</td>
+<td>높음 · 70% (±15) · 근거 <a
+href="https://zdnet.co.kr/view/?no=20261119100529">지디넷코리아</a>(싱가포르
+에이전트 공동연구)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="s18-6">18.6 AI 중견국 연대: 구상과 차별점</h3>
+<ul>
+<li><strong>구상</strong>: 「대한민국 인공지능행동계획(2026–2028)」에서
+외교부는 글로벌 AI 외교 플랫폼과 AI 거버넌스 의제 주도를 맡았습니다.
+2026-05-21에는 9개 국제기구·5개 다자개발은행과 국내 '글로벌 AI 허브'
+조성에 합의했습니다(보도 기준). 2026 경향포럼에서는 인도네시아 대통령
+특사가 AI 거버넌스를 위한 중견국 연대를 제안했습니다(<a
+href="https://www.khan.co.kr/article/202606172126005">경향신문</a>).
+다만 '중견국 AI 연대'를 공식 문서로 정리한 외교부 구상은 찾지
+못했습니다.</li>
+<li><strong>회의적 시각</strong>: 중견국이 미중 경쟁을 없앨 수는 없고,
+과거 조정 시도도 실패했다는 반론이 해외 논평에 함께 실립니다(Korea Times
+기고, 2026-02, 보도 기준). Carnegie는 한국 전략을 '이중 풀스택'(국내 전
+단계 역량 + 미국 생태계 정렬)으로 보면서 그 균형이 유지될지는 열린
+질문이라고 봤습니다(<a
+href="https://carnegieendowment.org/research/2026/04/governing-ai-in-the-shadow-of-giants-koreas-strategic-response-to-great-power-ai-competition">Carnegie</a>).</li>
+<li><strong>한국의 차별점</strong>: (1) 2024 서울 정상회의 공동주최와
+군사 AI 유엔 결의 3년 연속 주도, (2) 민주국가로서의 AI 기본법 시행, (3)
+'AI 기본사회'를 내건 ODA(<a class="xref" href="ch15.html#s15-9">15.9</a>절)입니다. 연대의 실체는 선언보다
+<strong>안전 평가 상호 인정</strong>에서 나옵니다. 영·캐·호·싱(표준
+MoU)·일본과 평가 결과를 서로 인정하면 기업은 한 번 평가로 여러 시장에
+들어갑니다.</li>
+<li><strong>G20 연계</strong>: 한국은 2028년 G20 의장국입니다(2025-11
+요하네스버그 선언에 명시). 2027년 영국 의장국 기간에 트로이카로 의제
+준비에 참여하므로, 2027년이 'AI 기본사회·역량격차' 의제를 G20 문서에
+심을 준비 기간입니다(<a
+href="https://www.koreatimes.co.kr/foreignaffairs/20251123/korea-vows-to-host-2028-g20-summit-with-profound-sense-of-responsibility">The
+Korea Times</a>). 아래 전략 3(중견국 연합)의 실행 경로입니다.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>2027 전망</th>
+<th>가능성 · 확률(±불확도)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>한국이 2028 G20 의장국 우선 의제에 AI(기본사회·역량격차·평가 상호
+인정 중 1개 이상)를 넣겠다고 2027년 안에 공식 예고</td>
+<td>중간 · 55% (±20) · 근거 <a
+href="https://www.koreatimes.co.kr/foreignaffairs/20251123/korea-vows-to-host-2028-g20-summit-with-profound-sense-of-responsibility">The
+Korea Times</a></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>확인 필요</strong>: 2026-11 국제표준화 총회에서 한국 대응이
+부족했다는 보도는 찾지 못했습니다. 외교부 '중견국 AI 외교 구상'의 공식
+문서명, 글로벌 AI 허브 참여 기구 명단, Korea Times 기고의 원문 문장은
+확인이 필요합니다.</p>
+</blockquote>
+<h3 id="s18-7">18.7 한국 외교 전략</h3>
+<ol type="1">
+<li><strong>한미 패키지 협상</strong>: 관세·장비 허가·원격접속 예외를
+기술번영 MOU와 3,500억 달러 투자 발표와 묶습니다. 민주당 다수 의회
+채널도 별도로 관리합니다.</li>
+<li><strong>방어선 사전 구축</strong>: 01-19 BIS 의견서를 내고, 클라우드
+KYC를 먼저 갖춰 상호인정을 요구합니다.</li>
+<li><strong>중견국 연합</strong>: 영·캐·호·싱(표준 MoU)과 일본을 묶어
+G20·국제 평가 네트워크·ITU에서 공동 제안합니다.</li>
+<li><strong>서울 계보 활용</strong>: 제네바에서 서울 약속 이행 점검을
+제안하고 2028 UAE 정상회의 준비에 참여합니다.</li>
+<li><strong>소버린 패키지 수출</strong>: UAE·사우디를 1순위로 하고,
+동남아에는 규칙 준수형 인프라로 진출합니다.</li>
+<li><strong>규제 상호운용성</strong>: 기본법 고영향 기준을 EU 부속서
+III·ISO/IEC 42001과 맞춥니다.</li>
+<li><strong>글로벌 사우스 기여</strong>: 유엔 대화와 한-ASEAN·APEC에서
+컴퓨트 바우처·다국어 평가셋·교육 ODA를 제안합니다.</li>
+</ol>
+<h3 id="s18-8">18.8 국제 AI 검증 체제와 검증 기술: 2027년의 출발점</h3>
+<blockquote>
+<p>자료: AI Futures Project 'AI 2040'(<a class="xref" href="ch23.html#s23-4">23.4</a>절), The Future
+Society(2026-09-02), MIRI 국제 협정 초안 요약(2026-05-12), Oxford AIGI
+'Verification for International AI Governance'(2025-07), arXiv
+2604.04712(2026-04), MIT Technology Review(2026-11-12), Tech Times(CHIPS
+R&amp;D, 2026-07-31). 확률은 본 보고서의 추정입니다.</p>
+</blockquote>
+<p><strong>왜 검증인가.</strong> 미중 AI 대화는 핫라인·용어 정의
+수준입니다(<a class="xref" href="ch16.html#s16-1">16.1</a>절). AI 2040은 2029년 미중 합의가 성립하려면 데이터센터
+<strong>추론 전용 검증 장치</strong>와 칩 구매·판매 신고로 숨긴 컴퓨트를
+약 1% 이내로 좁히는 수단이 먼저 있어야 한다고 봅니다(<a class="xref" href="ch23.html#s23-4">23.4</a>절).
+군비통제처럼 "믿되 검증한다"가 가능해야 합의가 나옵니다.</p>
+<p><strong>검증 수단은 세 층입니다.</strong></p>
+<table>
+<thead>
+<tr>
+<th>층</th>
+<th>수단</th>
+<th>2026년 성숙도</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>칩 위치·소유</td>
+<td>핑 지연 기반 위치 검증, 칩 등록·이전 신고</td>
+<td>가장 성숙. NVIDIA는 옵트인 관리 소프트웨어(Fleet Intelligence,
+2025-12 발표)로 칩이 있는 나라를 표시할 수 있다고 밝힘. 차단(킬
+스위치)은 없음</td>
+</tr>
+<tr>
+<td>작업 내용</td>
+<td>칩 내장 원격 증명·기밀 컴퓨팅, 전력·열·네트워크 센서로 학습과 추론
+구분, 학습 증명(proof-of-training)</td>
+<td>연구 단계. FlexHEG(조작 방지 거버넌스 프로세서)는 집중 R&amp;D 약
+18개월이면 시제품이 가능하다는 추정</td>
+</tr>
+<tr>
+<td>제도</td>
+<td>컴퓨트 신고, 상호 사찰, 중립국 검증 시설, IAEA형 기구</td>
+<td>제안 단계. 정부 간 합의는 없음</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>정책 제안</strong>: Oxford AIGI는 컴퓨트 하드웨어를 중심으로
+하면 많은 합의를 지금도 검증할 수 있다고 봤습니다. 2026년 분류
+연구(arXiv 2604.04712)는 조약 검증에 가장 필요한 칩 내 계량·학습
+증명·하드웨어 차단이 가장 덜 성숙했고 정치적 반발도 가장 크다고
+정리했습니다. The Future Society는 학습 규모 상한 검증을 첫 목표로, 기존
+장비에 붙일 수 있는 오프칩 센서를 5년 안 실용화 1순위로 꼽았고, 국제
+평가 네트워크(NAAIMES)에 검증을 새 전문 분야로 두자고 제안했습니다. MIRI
+초안은 미중이 이끄는 기술기구가 10^22 FLOP 넘는 학습을 감시하고, H100
+16개 이상 클러스터를 감시 시설에 모으는 안을 냈습니다(옹호 단체
+초안).</li>
+<li><strong>정부 활동</strong>: Chip Security Act(위치 검증)는 하원
+외교위를 통과했고(2026-03), NDAA 협상에 들어갔습니다(<a class="xref" href="ch16.html#s16-5">16.5</a>절 52%).
+반도체산업협회는 "검증되지 않았고 불가능할 수 있다"고 반대합니다. 미국
+상무부 CHIPS R&amp;D는 위조·악성 부품 식별(OBSIDIA, 최대 3,400만 달러,
+의향서)을 지원하지만 국제 합의 검증용 프로그램은 아닙니다.
+미국·중국·영국 정부의 검증 R&amp;D 전용 프로그램은 찾지 못했습니다. 연구
+자금은 주로 민간 재단(FlexHEG 410만 달러, 2024)입니다.</li>
+<li><strong>2027년 연결 전망</strong>: 정부 검증 R&amp;D 공식
+프로그램(30%), 미중 공식 의제화(10%), 한국 정부 참여 입장(20%)은 <a class="xref" href="ch23.html#s23-4">23.4</a>절
+표에 있습니다. 아래는 그 앞 단계의 지표입니다.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>2027 전망</th>
+<th>가능성 · 확률(±불확도)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>칩 내장 또는 오프칩 검증 시제품(위치 검증·학습/추론 구분·FlexHEG
+등)의 공개 실증 결과가 1건 이상 발표(민간·학계 포함)</td>
+<td>중간 · 55% (±20) · 근거 <a
+href="https://thefuturesociety.org/international-ai-verification">The
+Future Society</a>, <a
+href="https://arxiv.org/html/2604.04712v1">arXiv</a></td>
+</tr>
+<tr>
+<td>미국 수출 허가(걸프·동남아 대량 허가 등) 조건에 칩 위치 검증 또는
+원격 증명이 1건 이상 명시</td>
+<td>중간 · 35% (±20) · 근거 <a
+href="https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking/amp/">MIT
+Technology Review</a> · 반론 반도체산업협회의 실현 가능성 반대</td>
+</tr>
+<tr>
+<td>국제 평가 네트워크·유엔 과학패널·제네바 정상회의 공식 문서 중 하나에
+AI 검증 기술 연구가 협력 과제로 명시</td>
+<td>중간 · 35% (±20) · 근거 <a
+href="https://thefuturesociety.org/international-ai-verification">The
+Future Society</a></td>
+</tr>
+<tr>
+<td>Chip Security Act가 제정되고 상무부가 위치 검증 의무 시행 규칙(초안
+포함)을 2027년 안에 공고</td>
+<td>낮음 · 25% (±15) · 근거 <a
+href="https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking/amp/">MIT
+Technology Review</a>, <a
+href="https://www.atlanticcouncil.org/dispatches/huang-is-back-at-nvidia-but-the-fight-over-who-controls-chip-exports-is-just-beginning/">미국
+의회</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>한국 시사점</strong></p>
+<ul>
+<li><strong>한국은 검증 '대상국'이자 '공급국'입니다.</strong> AI 2040은
+신고 체제가 팹과 데이터센터에서 시작한다고 보고 한국을 칩 공급망 국가로
+꼽습니다(<a class="xref" href="ch23.html#s23-4">23.4</a>절). HBM은 모든 가속기에 들어가므로 칩 등록·이전 신고가
+생기면 한국 메모리·패키징 업체가 자료 제출 주체가 됩니다(추정).</li>
+<li><strong>검증 기술은 산업 기회입니다.</strong> 원격 증명·보안
+요소·전력 계측은 한국 메모리·시스템반도체·전력기기 업체의 기존 역량과
+겹칩니다. 미국 위치 검증 의무가 생기면 국내 데이터센터와 수출 가속기에도
+적용될 수 있으니, 의무가 오기 전에 표준(ITU-T·ISO/IEC)과 시험 기준
+논의에 들어가는 편이 유리합니다.</li>
+<li><strong>중견국 의제로 쓸 수 있습니다.</strong> 미중 합의 전이라도
+검증 연구 공동 시험장, 평가 네트워크의 검증 분과는 중견국이 먼저 제안할
+수 있습니다(<a class="xref" href="#s18-6">18.6</a>절).</li>
+</ul>
+<blockquote>
+<p><strong>확인 필요</strong>: NVIDIA Fleet Intelligence의 출시·적용
+범위는 발표와 보도 기준입니다. FlexHEG '18개월' 추정과 재단 자금은 2차
+자료(Longtermwiki) 기준입니다. 유엔 과학패널 예비 보고의 '미중이 선도
+슈퍼컴퓨터 컴퓨트의 약 90%' 수치는 원문을 확인하지 못해 넣지 않았습니다.
+중국 정부의 검증 관련 공식 입장은 찾지 못했습니다.</p>
+</blockquote>
+<h3 id="s18-9">18.9 국가인공지능전략위원회 안건(제안, 인공지능기본법
+제8조 기준)</h3>
+<p>AI 외교는 8호(국제규범·국제협력)의 핵심 안건입니다. 제네바·G20·유엔
+무대의 범정부 입장, 한미 MOU 표준·평가 트랙(NIST·CAISI) 대응, 한국
+AI안전연구소의 국제 공동 평가 참여, ITU-T·SC 42 표준 외교, 소버린 패키지
+수출, 개도국 AI 평가·표준 교육을 의결하고, 부처 간 역할 분담(2의2호)과
+이행(2의3호)을 분기마다 점검합니다.</p>
+<ul>
+<li><strong>국제 AI 검증 체제 대응(<a class="xref" href="#s18-8">18.8</a>절)</strong>:
+과기정통부·산업부·외교부 합동 검토반을 두고, (1) 칩 위치 검증·컴퓨트
+신고 요구가 한국 메모리·데이터센터에 줄 영향과 협상 입장, (2) 원격
+증명·오프칩 계측 등 검증 기술 R&amp;D와 국제 공동 시험장 참여를 2027년
+안에 의결합니다.</li>
+</ul>
+<hr />
+
+<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch18">전체 보고서에서 보기</a><a href="../">대시보드</a><span class="sp"></span><a href="ch17.html" rel="prev">← 17. 기술 통제와 한국: 수출통제 전이와 모델 접</a><a href="ch19.html" rel="next">19. 사이버 위협과 AI 공격: 공격 자동화·생활 →</a></nav>
+</main>
+</div>
+<script>
+  // Wrap tables for horizontal scroll and colour likelihood words; static enhancement only.
+  document.querySelectorAll('main table').forEach((t) => {
+    const w = document.createElement('div'); w.className = 'tablewrap'; t.parentNode.insertBefore(w, t); w.appendChild(t);
+  });
+  document.querySelectorAll('main td').forEach((td) => {
+    const v = td.textContent.trim();
+    if (v === '높음') td.classList.add('tag-hi'); else if (v === '중간') td.classList.add('tag-mid'); else if (v === '낮음') td.classList.add('tag-lo');
+  });
+  document.querySelectorAll('main h2[id], main h3[id]').forEach((h) => {
+    const a = document.createElement('a'); a.className = 'hl'; a.href = '#' + h.id; a.textContent = '#';
+    a.setAttribute('aria-label', '이 제목의 링크'); h.appendChild(a);
+  });
+</script>
+<script>
+/* AI2027 in-page full-text search (shared by dashboard and report).
+ * Uses the CSS Custom Highlight API so matched text is highlighted WITHOUT mutating the DOM
+ * (keeps the dashboard's one-writer rule intact). Falls back to scroll-only where unsupported.
+ * Usage: AI27Search({ root: 'main', input: 'q-input', results: 'q-results', info: 'q-info',
+ *                     exclude: '.rail', reportLink: 'a[href="report.html"]' })
+ */
+window.AI27Search = function (cfg) {
+  const root = document.querySelector(cfg.root);
+  const input = document.getElementById(cfg.input);
+  const out = document.getElementById(cfg.results);
+  const info = document.getElementById(cfg.info);
+  if (!root || !input || !out || !info) return;
+  const BLOCKS = 'h2,h3,h4,p,li,td,th,blockquote,figcaption,summary,dt,dd,article';
+  const MAX_RESULTS = 80;
+  const MAX_RANGES = 3000;
+  const hl = typeof CSS !== 'undefined' && CSS.highlights && typeof Highlight === 'function';
+  let results = [];
+  let active = -1;
+  let timer = 0;
+
+  const norm = (s) => s.toLocaleLowerCase('ko');
+  const terms = (q) => norm(q).split(/\s+/).filter(Boolean).slice(0, 6);
+  const excluded = (el) => (cfg.exclude && el.closest(cfg.exclude)) || el.closest('[data-search-skip]');
+
+  function leafMatches(ts) {
+    const hits = [];
+    root.querySelectorAll(BLOCKS).forEach((el) => {
+      if (excluded(el)) return;
+      const t = norm(el.textContent || '');
+      if (ts.every((w) => t.includes(w))) hits.push(el);
+    });
+    const set = new Set(hits);
+    // keep the innermost matching block only
+    return hits.filter((el) => ![...el.querySelectorAll(BLOCKS)].some((c) => set.has(c)));
+  }
+
+  function headingFor(el, heads) {
+    let h = null;
+    for (const x of heads) {
+      if (x === el || x.compareDocumentPosition(el) & Node.DOCUMENT_POSITION_FOLLOWING) h = x; else break;
+    }
+    return h;
+  }
+
+  function contextOf(el, heads) {
+    const sec = el.closest('section');
+    const h2 = sec && sec.querySelector('h2');
+    const card = el.closest('.ai27-card, .ai27-tablewrap');
+    let h3 = card && card.querySelector('h3');
+    if (!h3 && card && card.previousElementSibling) h3 = card.previousElementSibling.querySelector && card.previousElementSibling.querySelector('h3');
+    if (h2) return [h2.textContent.trim(), h3 ? h3.textContent.trim() : ''].filter(Boolean).join(' › ');
+    const h = headingFor(el, heads);
+    return h ? h.textContent.trim() : '';
+  }
+
+  function rangesIn(el, ts, acc) {
+    const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
+    let n;
+    while ((n = walker.nextNode()) && acc.length < MAX_RANGES) {
+      const t = norm(n.nodeValue);
+      for (const w of ts) {
+        let i = t.indexOf(w);
+        while (i !== -1 && acc.length < MAX_RANGES) {
+          const r = new Range(); r.setStart(n, i); r.setEnd(n, i + w.length); acc.push(r);
+          i = t.indexOf(w, i + w.length);
+        }
+      }
+    }
+    return acc;
+  }
+
+  function snippet(el, ts) {
+    const text = (el.textContent || '').replace(/\s+/g, ' ').trim();
+    const lower = norm(text);
+    const at = Math.max(0, lower.indexOf(ts[0]));
+    const start = Math.max(0, at - 40);
+    const s = (start > 0 ? '…' : '') + text.slice(start, start + 130) + (start + 130 < text.length ? '…' : '');
+    const frag = document.createDocumentFragment();
+    const ls = norm(s);
+    let i = 0;
+    while (i < s.length) {
+      let best = -1; let len = 0;
+      for (const w of ts) { const j = ls.indexOf(w, i); if (j !== -1 && (best === -1 || j < best)) { best = j; len = w.length; } }
+      if (best === -1) { frag.append(s.slice(i)); break; }
+      frag.append(s.slice(i, best));
+      const m = document.createElement('mark'); m.textContent = s.slice(best, best + len); frag.append(m);
+      i = best + len;
+    }
+    return frag;
+  }
+
+  function clear() {
+    results = []; active = -1;
+    out.replaceChildren(); info.textContent = '';
+    if (hl) { CSS.highlights.delete('q-hit'); CSS.highlights.delete('q-active'); }
+  }
+
+  function go(i) {
+    if (!results.length) return;
+    active = (i + results.length) % results.length;
+    const el = results[active].el;
+    const det = el.closest('details'); if (det && !det.open) det.open = true;
+    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    if (hl) CSS.highlights.set('q-active', new Highlight(...rangesIn(el, results[active].ts, [])));
+    out.querySelectorAll('button').forEach((b, k) => b.setAttribute('aria-current', k === active ? 'true' : 'false'));
+    info.textContent = `${active + 1} / ${results.length}${results.length >= MAX_RESULTS ? '+' : ''}건`;
+  }
+
+  function run(q) {
+    const ts = terms(q);
+    if (!ts.length) { clear(); return; }
+    const heads = [...root.querySelectorAll('h2,h3')];
+    const els = leafMatches(ts).slice(0, MAX_RESULTS);
+    results = els.map((el) => ({ el, ts }));
+    active = -1;
+    if (hl) {
+      const acc = [];
+      els.forEach((el) => rangesIn(el, ts, acc));
+      CSS.highlights.set('q-hit', new Highlight(...acc));
+      CSS.highlights.delete('q-active');
+    }
+    info.textContent = els.length ? `${els.length}${els.length >= MAX_RESULTS ? '+' : ''}건` : '결과 없음';
+    out.replaceChildren(...els.map((el, k) => {
+      const li = document.createElement('li');
+      const b = document.createElement('button'); b.type = 'button';
+      const ctx = document.createElement('span'); ctx.className = 'q-ctx'; ctx.textContent = (contextOf(el, heads) || '본문').replace(/\s+/g, ' ');
+      const sn = document.createElement('span'); sn.className = 'q-snip'; sn.append(snippet(el, ts));
+      b.append(ctx, sn); b.addEventListener('click', () => go(k));
+      li.append(b); return li;
+    }));
+    const rl = cfg.reportLink && document.querySelector(cfg.reportLink);
+    if (rl) {
+      const li = document.createElement('li'); li.className = 'q-more';
+      const a = document.createElement('a');
+      a.href = rl.getAttribute('href').split('#')[0] + '#q=' + encodeURIComponent(q.trim());
+      a.target = rl.target || ''; if (a.target) a.rel = 'noopener';
+      a.textContent = `상세 보고서에서 '${q.trim()}' 검색 →`;
+      li.append(a); out.append(li);
+    }
+  }
+
+  input.addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(() => run(input.value), 180); });
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') { e.preventDefault(); if (!results.length) run(input.value); go(e.shiftKey ? active - 1 : active + 1); }
+    if (e.key === 'Escape') { input.value = ''; clear(); }
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === '/' && !/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName)) { e.preventDefault(); input.focus(); }
+  });
+  try {
+    const m = /[#&?]q=([^&]+)/.exec(location.hash + '&' + location.search);
+    if (m) { input.value = decodeURIComponent(m[1]); setTimeout(() => { run(input.value); go(0); }, cfg.delay || 300); }
+  } catch (_) { /* sandboxed location: ignore */ }
+};
+
+AI27Search({ root: 'main', input: 'q-input', results: 'q-results', info: 'q-info' });
+</script>
+
+</body>
+</html>

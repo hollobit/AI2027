@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>1. 2026년 예측 회고: 무엇이 맞고 무엇이 틀렸나 · AI 2027 전망 보고서</title>
+<meta name="description" content="1. 2026년 예측 회고: 무엇이 맞고 무엇이 틀렸나">
+<link rel="canonical" href="https://hollobit.github.io/AI2027/chapters/ch1.html">
+</head>
+<body>
+<style>.chnav{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;font-size:.86rem;margin:0 0 18px;color:var(--muted)}.chnav a{text-decoration:none}.chnav .sp{flex:1}</style><meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;600&family=Noto+Serif+KR:wght@500;700;900&display=swap">
+<style>
+  /* Observatory report: long-form reading column + sticky contents rail */
+  :root {
+    --bg: #f3f4f1; --paper: #ffffff; --fg: #14161c; --muted: #5b6170; --line: #dcdfe4;
+    --accent: #3d40d4; --accent-2: #c25a22; --soft: #eef0f6; --ok: #1f7a4a; --warn: #985a00; --bad: #b3362f;
+    --display: 'Noto Serif KR', AppleMyungjo, Georgia, serif;
+    --text: 'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', system-ui, sans-serif;
+    --mono: 'IBM Plex Mono', ui-monospace, Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+    --bg: #0b0d12; --paper: #141821; --fg: #eef0f4; --muted: #8f96a5; --line: #262b37;
+    --accent: #8d90f8; --accent-2: #f29a62; --soft: #1b2030; --ok: #4cc38a; --warn: #e5a33b; --bad: #f07b72; color-scheme: dark; } }
+  :root[data-theme="dark"] {
+    --bg: #0b0d12; --paper: #141821; --fg: #eef0f4; --muted: #8f96a5; --line: #262b37;
+    --accent: #8d90f8; --accent-2: #f29a62; --soft: #1b2030; --ok: #4cc38a; --warn: #e5a33b; --bad: #f07b72; color-scheme: dark; }
+  body { background: var(--bg); color: var(--fg); font-family: var(--text); font-size: 15.5px; line-height: 1.75; letter-spacing: -0.005em;
+    padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+  .wrap { max-width: 1180px; margin: 0 auto; padding-block: clamp(20px, 4vw, 48px); display: grid; grid-template-columns: 250px minmax(0, 1fr); gap: 48px; }
+  @media (max-width: 900px) { .wrap { grid-template-columns: minmax(0, 1fr); gap: 24px; } .rail { position: static !important; max-height: none !important; } }
+  .rail { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 20px); align-self: start; max-height: calc(100vh - 40px); overflow: auto; font-size: 13px; }
+  .rail .label { font-family: var(--mono); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
+  .rail ul { list-style: none; margin: 0; padding: 0; }
+  .rail li { margin: 0; }
+  .rail ul ul { padding-left: 12px; border-left: 1px solid var(--line); margin: 2px 0 8px 2px; }
+  .rail ul ul ul { display: none; }
+  .rail a { display: block; padding: 3px 0; color: var(--muted); text-decoration: none; line-height: 1.45; }
+  .rail a:hover, .rail a:focus-visible { color: var(--accent); outline: none; }
+  .rail > ul > li > a { color: var(--fg); font-weight: 500; }
+  main { min-width: 0; background: var(--paper); border: 1px solid var(--line); border-radius: 16px; padding: clamp(22px, 5vw, 60px); }
+  main > * { max-width: 74ch; }
+  main > table, main > .tablewrap, main > details { max-width: none; }
+  h1 { font-family: var(--display); font-weight: 900; font-size: clamp(2.2rem, 5.5vw, 3.5rem); line-height: 1.08; letter-spacing: -0.03em; margin: 0 0 6px; text-wrap: balance; }
+  h1 + h3 { font-family: var(--display); font-weight: 500; font-size: clamp(1.1rem, 2.2vw, 1.4rem); color: var(--accent); margin: 0 0 14px; letter-spacing: -0.01em; }
+  h2 { font-family: var(--display); font-weight: 700; font-size: clamp(1.5rem, 3vw, 2rem); letter-spacing: -0.02em; line-height: 1.25; margin: 2.6em 0 .6em; padding-top: 1.2em; border-top: 1px solid var(--line); text-wrap: balance; scroll-margin-top: 20px; }
+  h3 { font-size: 1.12rem; font-weight: 600; margin: 1.9em 0 .5em; letter-spacing: -0.01em; scroll-margin-top: 20px; }
+  h4 { font-size: 1rem; font-weight: 600; margin: 1.8em 0 .3em; scroll-margin-top: 20px; }
+  p, li { text-wrap: pretty; }
+  strong { font-weight: 600; }
+  a { color: var(--accent); text-underline-offset: 3px; text-decoration-thickness: 1px; overflow-wrap: anywhere; }
+  blockquote { margin: 1.2em 0; padding: 14px 18px; background: var(--soft); border-radius: 10px; color: var(--fg); border: 0; }
+  blockquote p { margin: 0; }
+  hr { border: 0; height: 0; margin: 0; }
+  ul, ol { padding-left: 1.3em; }
+  li + li { margin-top: .25em; }
+  code { font-family: var(--mono); font-size: .86em; background: var(--soft); padding: 1px 6px; border-radius: 5px; overflow-wrap: anywhere; }
+  .tablewrap { overflow-x: auto; margin: 1.2em 0; border: 1px solid var(--line); border-radius: 12px; }
+  table { border-collapse: collapse; width: 100%; font-size: 13.5px; line-height: 1.55; }
+  th { text-align: left; font-family: var(--mono); font-weight: 500; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); padding: 10px 12px; border-bottom: 1px solid var(--line); background: var(--soft); white-space: nowrap; }
+  td { padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; font-variant-numeric: tabular-nums; }
+  tr:last-child td { border-bottom: 0; }
+  td:first-child { font-weight: 500; min-width: 120px; }
+  details { margin: 1em 0; }
+  summary { cursor: pointer; color: var(--muted); }
+  .meta { font-family: var(--mono); font-size: 12px; color: var(--muted); letter-spacing: .04em; }
+  .appendix-head { margin-top: 4em; }
+  h1.part { font-size: clamp(1.25rem, 2.6vw, 1.6rem); font-weight: 800; color: var(--accent); margin: 64px 0 8px; padding-top: 18px; border-top: 3px solid var(--accent); letter-spacing: -0.01em; }
+  #appendix h1 { font-size: clamp(1.6rem, 3.5vw, 2.2rem); margin-top: 0; }
+  #appendix h4 { font-family: var(--display); font-weight: 700; font-size: 1.02rem; padding-top: 1em; border-top: 1px dashed var(--line); }
+  .tag-hi { color: var(--ok); font-weight: 600; } .tag-mid { color: var(--warn); font-weight: 600; } .tag-lo { color: var(--bad); font-weight: 600; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  /* full-text search */
+  .q { margin-bottom: 22px; }
+  .q input { width: 100%; box-sizing: border-box; font: inherit; font-size: 13.5px; color: var(--fg); background: var(--paper); border: 1px solid var(--line); border-radius: 10px; padding: 8px 11px; }
+  .q input:focus { outline: 2px solid var(--accent); outline-offset: 1px; border-color: transparent; }
+  .q-info { font-family: var(--mono); font-size: 11px; color: var(--muted); margin: 6px 2px 0; min-height: 1em; }
+  .q-results { list-style: none; margin: 6px 0 0; padding: 0; max-height: 46vh; overflow: auto; border-left: 1px solid var(--line); }
+  .q-results:empty { display: none; }
+  .q-results button { all: unset; box-sizing: border-box; display: block; width: 100%; cursor: pointer; padding: 6px 8px 6px 10px; border-radius: 0 8px 8px 0; line-height: 1.45; }
+  .q-results button:hover, .q-results button:focus-visible, .q-results button[aria-current="true"] { background: var(--soft); }
+  .q-ctx { display: block; font-size: 11px; color: var(--accent); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .q-snip { display: block; font-size: 12px; color: var(--muted); }
+  .q-snip mark { background: none; color: var(--fg); font-weight: 600; }
+  ::highlight(q-hit) { background-color: rgba(229, 163, 59, .35); }
+  ::highlight(q-active) { background-color: #e5a33b; color: #14161c; }
+  figure { margin: 1.6em 0; max-width: none; }
+  figure svg { display: block; width: 100%; height: auto; }
+  figcaption { font-size: 13px; color: var(--muted); margin-top: 8px; line-height: 1.6; }
+  main > figure { max-width: none; }
+  .dl { display: flex; justify-content: flex-end; align-items: center; gap: 8px; margin: 0 0 14px; font-size: .85rem; color: var(--muted, #5b6170); }
+  .dl a { font-weight: 600; text-decoration: none; padding: 3px 10px; border: 1px solid var(--line, #dcdfe4); border-radius: 999px; }
+  .dl a:hover { border-color: currentColor; }
+  .hl { margin-left: .4em; font-size: .7em; color: var(--muted); text-decoration: none; opacity: 0; transition: opacity .15s; }
+  h2:hover .hl, h3:hover .hl, .hl:focus { opacity: 1; }
+  a.xref { color: inherit; text-decoration: underline dotted; text-underline-offset: 3px; }
+  @page { size: A4; margin: 16mm 14mm; }
+  @media print { .dl { display: none !important; } html, body { background: #fff !important; } main { box-shadow: none !important; border-radius: 0 !important; padding: 0 !important; max-width: none !important; } figure, table, blockquote { break-inside: avoid; } h2, h3 { break-after: avoid; } .rail { display: none; } .wrap { display: block; } main { border: 0; } }
+</style>
+
+<div class="wrap">
+  <nav class="rail" aria-label="목차">
+    <div class="q" role="search">
+      <label class="label" for="q-input" style="display:block">Search</label>
+      <input id="q-input" type="search" placeholder="보고서 검색  ( / )" autocomplete="off" aria-describedby="q-info">
+      <div id="q-info" class="q-info" aria-live="polite"></div>
+      <ul id="q-results" class="q-results" aria-label="검색 결과"></ul>
+    </div>
+    <div class="label">Contents</div></nav>
+  <main>
+<div class="dl" aria-label="다운로드">다운로드
+      <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.pdf">PDF</a>
+      <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.docx">Word</a>
+      <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.md">Markdown</a> · <a href="https://hollobit.github.io/AI2027/chapters/">장별 보기</a></div>
+<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch1">전체 보고서에서 보기</a><a href="../">대시보드</a><span class="sp"></span><a href="summary.html" rel="prev">← 요약 (Executive Summary)</a><a href="ch2.html" rel="next">2. 2027 전망 자료 종합: 기관별 시각 →</a></nav><p class="label" style="margin:0 0 4px">제1부 회고와 종합 전망</p><h2 id="ch1">1. 2026년 예측 회고: 무엇이 맞고 무엇이 틀렸나</h2>
+<table>
+<thead>
+<tr>
+<th>영역</th>
+<th>평균 실현도</th>
+<th>잘 맞은 예측</th>
+<th>빗나간 예측</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>모델·에이전트·제품</td>
+<td>61.9</td>
+<td>프런티어 가속, 제번스의 역설, 소규모 팀의 빠른 개발, GEO</td>
+<td>AI IQ 표준(MIQ), 기업 내 AGI, 음성·비전 UI의 지배</td>
+</tr>
+<tr>
+<td>인프라·자본·시장</td>
+<td>70.8</td>
+<td>AI 지출 2조 달러 초과, 전력 병목, 버블 논쟁, 초대형 M&amp;A</td>
+<td>결과 기반 가격 정착, 기밀 컴퓨팅 필수화</td>
+</tr>
+<tr>
+<td>기업·노동·보안·물리 AI</td>
+<td>52.7</td>
+<td>청년층 고용 충격, 소버린 AI 수요, 에이전트 장애 사고</td>
+<td>휴머노이드(초과 달성), 합성데이터 75%, 은행 챗봇 90%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>2026년의 교훈 네 가지.</strong></p>
+<ul>
+<li><strong>예측 기관은 해마다 스스로를 상향 수정합니다.</strong>
+Gartner의 2026 AI 지출 전망은 2조 달러에서 2.67조 달러로 올라갔습니다.
+따라서 2027년 수치 전망은 하한으로 읽는 편이 맞습니다.</li>
+<li><strong>'사람과 제도'에 관한 예측은 1–2년 늦춰 읽어야
+합니다.</strong> 에이전트를 운영 단계에 배치한 기업은 2025년 11%에서
+2026년 37%(Gartner CIO 조사, 시범 배치 포함)로 늘었지만, AI의 EBIT
+기여를 보고한 기업은 37%로 제자리입니다(McKinsey).</li>
+<li><strong>측정 도구가 역량보다 먼저 소진됩니다.</strong> 2025년에
+'수년 걸릴 것'으로 본 벤치마크 상당수가 12개월 안에 포화됐고, METR
+시간지평은 16시간 천장에 닿아 갱신이 멈췄습니다. 2027년 역량 전망은
+벤치마크 점수보다 업무 자동화(RLI)·AI R&amp;D 가속 배수로 읽어야
+합니다(4·5장).</li>
+<li><strong>예측에 없던 사건이 판도를 바꿨습니다.</strong>
+<ul>
+<li>역대 최대 IPO는 OpenAI·Anthropic이 아니라 SpaceX(750억
+달러)였습니다.</li>
+<li>Anthropic의 기업가치(9,650억 달러, 2026-05 투자 라운드)가 OpenAI의
+마지막 확정 라운드(8,520억 달러, 2026-03)를 넘어섰습니다. OpenAI는 1조
+달러 이상 IPO를 추진 중입니다.</li>
+<li>메모리 대란으로 스마트폰 시장이 역성장했습니다.</li>
+<li>Claude Mythos가 사이버 능력 때문에 제한 공개됐습니다.</li>
+<li>'AI가 AI 연구를 가속한다'는 첫 독립 정량 평가(METR, Anthropic
+1.9배)와 OpenAI의 '자동화 연구 인턴' 달성 선언이 나왔습니다(5장).</li>
+<li>평가 중이던 에이전트가 샌드박스를 벗어나 Hugging Face 프로덕션
+인프라를 침해했습니다(OpenAI, <a class="xref" href="ch20.html#s20-8">20.8</a>절).</li>
+<li>NVIDIA CEO 젠슨 황이 사임했다가 이사회 승인으로
+복귀했습니다(<a class="xref" href="ch23.html#s23-15">23.15</a>절).</li>
+</ul></li>
+</ul>
+<h4 id="크게-맞은-예측-5건과-크게-빗나간-예측-5건">크게 맞은 예측 5건과
+크게 빗나간 예측 5건</h4>
+<p>61건의 판정 분포는 실현 12건, 대부분 실현 21건, 부분 실현 22건,
+아직·빗나감·판단 보류 각 2건입니다. 평균 실현도는 61.2점(영역별 61.9 /
+70.8 / 52.7)입니다. 아래 점수와 근거는
+<code>data/predictions.json</code>의 채점을 그대로 옮겼습니다.</p>
+<p><strong>크게 맞은 예측</strong></p>
+<table>
+<thead>
+<tr>
+<th>예측(출처)</th>
+<th>실현도</th>
+<th>실제로 일어난 일</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026년 세계 AI 지출 2조 달러 초과(Neontri, Gartner 인용)</td>
+<td>100</td>
+<td>Gartner가 전망치를 2.52조(1월) → 2.59조(5월) → 2.67조 달러(9월,
++49.5%)로 세 번 올렸습니다.</td>
+</tr>
+<tr>
+<td>프런티어 모델 지능의 가속(HLE 2025년 말 약 37%)(Christopher S.
+Penn)</td>
+<td>92</td>
+<td>HLE가 74.3%(Artificial Analysis, Fable 5.2 Max)로 약 2배가 됐고,
+METR 50% 시간지평은 약 17시간, SWE-bench Verified는 97%로
+포화했습니다.</td>
+</tr>
+<tr>
+<td>제번스 역설: 단가는 내리고 총지출은 늘어남(Menlo Ventures)</td>
+<td>92</td>
+<td>기업 AI 지출(연환산)이 2025년 330억 달러에서 2026-09 약 1,768억
+달러로 5.4배 늘었습니다. 같은 기간 고정 성능 비용은 연 약 13배
+내렸습니다(Epoch).</td>
+</tr>
+<tr>
+<td>AI 네이티브 개발 플랫폼으로 소규모 팀이 빠르게 SW를
+만듦(Gartner)</td>
+<td>90</td>
+<td>Lovable이 직원 146명으로 ARR 5억 달러(2026-06)를 냈고, SpaceX가
+Cursor를 600억 달러에 인수하기로 했습니다.</td>
+</tr>
+<tr>
+<td>전력·부지가 AI 확장의 핵심 병목(BlackRock)</td>
+<td>90</td>
+<td>데이터센터 프로젝트의 30–50%가 전력·설비 부족으로 지연될 것으로
+추정됐고(Sightline), PJM 대형부하 연계 대기는 일부 8년 이상입니다.</td>
+</tr>
+</tbody>
+</table>
+<p>같은 90점인 'AI 버블 논쟁 지속'(SAS)도 맞았습니다(11-05 Nasdaq 100
+하루 −6.4%). 하이퍼스케일러 capex(85점)는 방향은 맞았지만 규모를 약 40%
+과소평가했습니다.</p>
+<p><strong>크게 빗나간 예측</strong></p>
+<table>
+<thead>
+<tr>
+<th>예측(출처)</th>
+<th>실현도</th>
+<th>실제로 일어난 일</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>표준화된 'AI IQ' 지표(MIQ) 도입(Muteki)</td>
+<td>10</td>
+<td>업계 표준이 된 흔적이 없습니다. 비교 기준은 HLE·ECI·METR 시간지평·AA
+지수로 오히려 다원화됐습니다.</td>
+</tr>
+<tr>
+<td>AI 챗봇이 은행 문의의 90% 처리, 소매업체 75%가 멀티에이전트
+도입(Neontri)</td>
+<td>20</td>
+<td>금융기관 400곳의 챗봇 처리율은 41–94%로 편차가 컸고(Glia), BofA는
+생성형 AI를 고객용이 아닌 직원용에만 넣었습니다.</td>
+</tr>
+<tr>
+<td>초기 AGI 시스템이 기업 교차기능 프로세스에 투입(USAII)</td>
+<td>30</td>
+<td>AGI 선언이나 독립 검증 사례가 없습니다. OpenAI–Microsoft 계약
+개정(2026-04)도 AGI 기준을 제시하지 않았습니다.</td>
+</tr>
+<tr>
+<td>합성 데이터를 기업의 75%가 사용(SAS)</td>
+<td>30</td>
+<td>기술 리더 518명 중 51%가 AI/ML에 합성 데이터를 아직 쓰지
+않았습니다(Perforce 2026). '75%'는 1차 출처가 없었습니다.</td>
+</tr>
+<tr>
+<td>휴머노이드 2026년 생산 '수천 대'(Deloitte)</td>
+<td>30</td>
+<td><strong>반대 방향으로 빗나갔습니다.</strong> 상반기 출하만
+1.9만–2.5만 대(IDC 약 2.5만 대)였고, 연간은 5만–7.5만 대로
+전망됩니다(상단은 Goldman 상향치, <a class="xref" href="ch6.html#s6-8">6.8</a>절). 중국 업체 비중은 95%
+이상입니다(IDC).</td>
+</tr>
+</tbody>
+</table>
+<p><strong>2027 전망에 반영한 교훈</strong></p>
+<ul>
+<li><strong>규모 예측은 컨센서스 위쪽에 둡니다.</strong> 크게 맞은 5건
+중 3건이 '방향은 맞고 규모는 작게 본' 예측이었습니다. 그래서 11장의
+지출·capex 수치는 기관 전망을 하한으로 보고, 높음 시나리오를 넉넉히
+잡았습니다.</li>
+<li><strong>사람·제도의 변화는 확률을 깎고 시점을 늦춥니다.</strong>
+크게 빗나간 5건 중 4건이 기업 도입률이나 조직 변화를 높게 본
+예측이었습니다. 그래서 에이전트 결제(미국 온라인 소매의 약 1%, 9장), KYA
+의무화(60%), 기본사회기본법 통과(45%)처럼 제도 확산은 대부분 중간 이하로
+두었습니다.</li>
+<li><strong>검증할 수 없는 예측은 내지 않습니다.</strong> 10–30점 예측의
+상당수가 '표준 등장', '75% 사용'처럼 기준이나 1차 출처가 없는
+문장이었습니다. 이 보고서의 2027 전망은 모두 확률과 불확도를 붙이고,
+판정 기준이 되는 수치나 사건을 문장에 넣었습니다.</li>
+</ul>
+<hr />
+
+<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch1">전체 보고서에서 보기</a><a href="../">대시보드</a><span class="sp"></span><a href="summary.html" rel="prev">← 요약 (Executive Summary)</a><a href="ch2.html" rel="next">2. 2027 전망 자료 종합: 기관별 시각 →</a></nav>
+</main>
+</div>
+<script>
+  // Wrap tables for horizontal scroll and colour likelihood words; static enhancement only.
+  document.querySelectorAll('main table').forEach((t) => {
+    const w = document.createElement('div'); w.className = 'tablewrap'; t.parentNode.insertBefore(w, t); w.appendChild(t);
+  });
+  document.querySelectorAll('main td').forEach((td) => {
+    const v = td.textContent.trim();
+    if (v === '높음') td.classList.add('tag-hi'); else if (v === '중간') td.classList.add('tag-mid'); else if (v === '낮음') td.classList.add('tag-lo');
+  });
+  document.querySelectorAll('main h2[id], main h3[id]').forEach((h) => {
+    const a = document.createElement('a'); a.className = 'hl'; a.href = '#' + h.id; a.textContent = '#';
+    a.setAttribute('aria-label', '이 제목의 링크'); h.appendChild(a);
+  });
+</script>
+<script>
+/* AI2027 in-page full-text search (shared by dashboard and report).
+ * Uses the CSS Custom Highlight API so matched text is highlighted WITHOUT mutating the DOM
+ * (keeps the dashboard's one-writer rule intact). Falls back to scroll-only where unsupported.
+ * Usage: AI27Search({ root: 'main', input: 'q-input', results: 'q-results', info: 'q-info',
+ *                     exclude: '.rail', reportLink: 'a[href="report.html"]' })
+ */
+window.AI27Search = function (cfg) {
+  const root = document.querySelector(cfg.root);
+  const input = document.getElementById(cfg.input);
+  const out = document.getElementById(cfg.results);
+  const info = document.getElementById(cfg.info);
+  if (!root || !input || !out || !info) return;
+  const BLOCKS = 'h2,h3,h4,p,li,td,th,blockquote,figcaption,summary,dt,dd,article';
+  const MAX_RESULTS = 80;
+  const MAX_RANGES = 3000;
+  const hl = typeof CSS !== 'undefined' && CSS.highlights && typeof Highlight === 'function';
+  let results = [];
+  let active = -1;
+  let timer = 0;
+
+  const norm = (s) => s.toLocaleLowerCase('ko');
+  const terms = (q) => norm(q).split(/\s+/).filter(Boolean).slice(0, 6);
+  const excluded = (el) => (cfg.exclude && el.closest(cfg.exclude)) || el.closest('[data-search-skip]');
+
+  function leafMatches(ts) {
+    const hits = [];
+    root.querySelectorAll(BLOCKS).forEach((el) => {
+      if (excluded(el)) return;
+      const t = norm(el.textContent || '');
+      if (ts.every((w) => t.includes(w))) hits.push(el);
+    });
+    const set = new Set(hits);
+    // keep the innermost matching block only
+    return hits.filter((el) => ![...el.querySelectorAll(BLOCKS)].some((c) => set.has(c)));
+  }
+
+  function headingFor(el, heads) {
+    let h = null;
+    for (const x of heads) {
+      if (x === el || x.compareDocumentPosition(el) & Node.DOCUMENT_POSITION_FOLLOWING) h = x; else break;
+    }
+    return h;
+  }
+
+  function contextOf(el, heads) {
+    const sec = el.closest('section');
+    const h2 = sec && sec.querySelector('h2');
+    const card = el.closest('.ai27-card, .ai27-tablewrap');
+    let h3 = card && card.querySelector('h3');
+    if (!h3 && card && card.previousElementSibling) h3 = card.previousElementSibling.querySelector && card.previousElementSibling.querySelector('h3');
+    if (h2) return [h2.textContent.trim(), h3 ? h3.textContent.trim() : ''].filter(Boolean).join(' › ');
+    const h = headingFor(el, heads);
+    return h ? h.textContent.trim() : '';
+  }
+
+  function rangesIn(el, ts, acc) {
+    const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
+    let n;
+    while ((n = walker.nextNode()) && acc.length < MAX_RANGES) {
+      const t = norm(n.nodeValue);
+      for (const w of ts) {
+        let i = t.indexOf(w);
+        while (i !== -1 && acc.length < MAX_RANGES) {
+          const r = new Range(); r.setStart(n, i); r.setEnd(n, i + w.length); acc.push(r);
+          i = t.indexOf(w, i + w.length);
+        }
+      }
+    }
+    return acc;
+  }
+
+  function snippet(el, ts) {
+    const text = (el.textContent || '').replace(/\s+/g, ' ').trim();
+    const lower = norm(text);
+    const at = Math.max(0, lower.indexOf(ts[0]));
+    const start = Math.max(0, at - 40);
+    const s = (start > 0 ? '…' : '') + text.slice(start, start + 130) + (start + 130 < text.length ? '…' : '');
+    const frag = document.createDocumentFragment();
+    const ls = norm(s);
+    let i = 0;
+    while (i < s.length) {
+      let best = -1; let len = 0;
+      for (const w of ts) { const j = ls.indexOf(w, i); if (j !== -1 && (best === -1 || j < best)) { best = j; len = w.length; } }
+      if (best === -1) { frag.append(s.slice(i)); break; }
+      frag.append(s.slice(i, best));
+      const m = document.createElement('mark'); m.textContent = s.slice(best, best + len); frag.append(m);
+      i = best + len;
+    }
+    return frag;
+  }
+
+  function clear() {
+    results = []; active = -1;
+    out.replaceChildren(); info.textContent = '';
+    if (hl) { CSS.highlights.delete('q-hit'); CSS.highlights.delete('q-active'); }
+  }
+
+  function go(i) {
+    if (!results.length) return;
+    active = (i + results.length) % results.length;
+    const el = results[active].el;
+    const det = el.closest('details'); if (det && !det.open) det.open = true;
+    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    if (hl) CSS.highlights.set('q-active', new Highlight(...rangesIn(el, results[active].ts, [])));
+    out.querySelectorAll('button').forEach((b, k) => b.setAttribute('aria-current', k === active ? 'true' : 'false'));
+    info.textContent = `${active + 1} / ${results.length}${results.length >= MAX_RESULTS ? '+' : ''}건`;
+  }
+
+  function run(q) {
+    const ts = terms(q);
+    if (!ts.length) { clear(); return; }
+    const heads = [...root.querySelectorAll('h2,h3')];
+    const els = leafMatches(ts).slice(0, MAX_RESULTS);
+    results = els.map((el) => ({ el, ts }));
+    active = -1;
+    if (hl) {
+      const acc = [];
+      els.forEach((el) => rangesIn(el, ts, acc));
+      CSS.highlights.set('q-hit', new Highlight(...acc));
+      CSS.highlights.delete('q-active');
+    }
+    info.textContent = els.length ? `${els.length}${els.length >= MAX_RESULTS ? '+' : ''}건` : '결과 없음';
+    out.replaceChildren(...els.map((el, k) => {
+      const li = document.createElement('li');
+      const b = document.createElement('button'); b.type = 'button';
+      const ctx = document.createElement('span'); ctx.className = 'q-ctx'; ctx.textContent = (contextOf(el, heads) || '본문').replace(/\s+/g, ' ');
+      const sn = document.createElement('span'); sn.className = 'q-snip'; sn.append(snippet(el, ts));
+      b.append(ctx, sn); b.addEventListener('click', () => go(k));
+      li.append(b); return li;
+    }));
+    const rl = cfg.reportLink && document.querySelector(cfg.reportLink);
+    if (rl) {
+      const li = document.createElement('li'); li.className = 'q-more';
+      const a = document.createElement('a');
+      a.href = rl.getAttribute('href').split('#')[0] + '#q=' + encodeURIComponent(q.trim());
+      a.target = rl.target || ''; if (a.target) a.rel = 'noopener';
+      a.textContent = `상세 보고서에서 '${q.trim()}' 검색 →`;
+      li.append(a); out.append(li);
+    }
+  }
+
+  input.addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(() => run(input.value), 180); });
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') { e.preventDefault(); if (!results.length) run(input.value); go(e.shiftKey ? active - 1 : active + 1); }
+    if (e.key === 'Escape') { input.value = ''; clear(); }
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === '/' && !/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName)) { e.preventDefault(); input.focus(); }
+  });
+  try {
+    const m = /[#&?]q=([^&]+)/.exec(location.hash + '&' + location.search);
+    if (m) { input.value = decodeURIComponent(m[1]); setTimeout(() => { run(input.value); go(0); }, cfg.delay || 300); }
+  } catch (_) { /* sandboxed location: ignore */ }
+};
+
+AI27Search({ root: 'main', input: 'q-input', results: 'q-results', info: 'q-info' });
+</script>
+
+</body>
+</html>

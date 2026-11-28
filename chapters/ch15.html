@@ -1,0 +1,2061 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>15. 국가별 AI 정책·제도·투자·규제와 경쟁력 · AI 2027 전망 보고서</title>
+<meta name="description" content="15. 국가별 AI 정책·제도·투자·규제와 경쟁력">
+<link rel="canonical" href="https://hollobit.github.io/AI2027/chapters/ch15.html">
+</head>
+<body>
+<style>.chnav{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;font-size:.86rem;margin:0 0 18px;color:var(--muted)}.chnav a{text-decoration:none}.chnav .sp{flex:1}</style><meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;600&family=Noto+Serif+KR:wght@500;700;900&display=swap">
+<style>
+  /* Observatory report: long-form reading column + sticky contents rail */
+  :root {
+    --bg: #f3f4f1; --paper: #ffffff; --fg: #14161c; --muted: #5b6170; --line: #dcdfe4;
+    --accent: #3d40d4; --accent-2: #c25a22; --soft: #eef0f6; --ok: #1f7a4a; --warn: #985a00; --bad: #b3362f;
+    --display: 'Noto Serif KR', AppleMyungjo, Georgia, serif;
+    --text: 'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', system-ui, sans-serif;
+    --mono: 'IBM Plex Mono', ui-monospace, Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+    --bg: #0b0d12; --paper: #141821; --fg: #eef0f4; --muted: #8f96a5; --line: #262b37;
+    --accent: #8d90f8; --accent-2: #f29a62; --soft: #1b2030; --ok: #4cc38a; --warn: #e5a33b; --bad: #f07b72; color-scheme: dark; } }
+  :root[data-theme="dark"] {
+    --bg: #0b0d12; --paper: #141821; --fg: #eef0f4; --muted: #8f96a5; --line: #262b37;
+    --accent: #8d90f8; --accent-2: #f29a62; --soft: #1b2030; --ok: #4cc38a; --warn: #e5a33b; --bad: #f07b72; color-scheme: dark; }
+  body { background: var(--bg); color: var(--fg); font-family: var(--text); font-size: 15.5px; line-height: 1.75; letter-spacing: -0.005em;
+    padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+  .wrap { max-width: 1180px; margin: 0 auto; padding-block: clamp(20px, 4vw, 48px); display: grid; grid-template-columns: 250px minmax(0, 1fr); gap: 48px; }
+  @media (max-width: 900px) { .wrap { grid-template-columns: minmax(0, 1fr); gap: 24px; } .rail { position: static !important; max-height: none !important; } }
+  .rail { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 20px); align-self: start; max-height: calc(100vh - 40px); overflow: auto; font-size: 13px; }
+  .rail .label { font-family: var(--mono); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
+  .rail ul { list-style: none; margin: 0; padding: 0; }
+  .rail li { margin: 0; }
+  .rail ul ul { padding-left: 12px; border-left: 1px solid var(--line); margin: 2px 0 8px 2px; }
+  .rail ul ul ul { display: none; }
+  .rail a { display: block; padding: 3px 0; color: var(--muted); text-decoration: none; line-height: 1.45; }
+  .rail a:hover, .rail a:focus-visible { color: var(--accent); outline: none; }
+  .rail > ul > li > a { color: var(--fg); font-weight: 500; }
+  main { min-width: 0; background: var(--paper); border: 1px solid var(--line); border-radius: 16px; padding: clamp(22px, 5vw, 60px); }
+  main > * { max-width: 74ch; }
+  main > table, main > .tablewrap, main > details { max-width: none; }
+  h1 { font-family: var(--display); font-weight: 900; font-size: clamp(2.2rem, 5.5vw, 3.5rem); line-height: 1.08; letter-spacing: -0.03em; margin: 0 0 6px; text-wrap: balance; }
+  h1 + h3 { font-family: var(--display); font-weight: 500; font-size: clamp(1.1rem, 2.2vw, 1.4rem); color: var(--accent); margin: 0 0 14px; letter-spacing: -0.01em; }
+  h2 { font-family: var(--display); font-weight: 700; font-size: clamp(1.5rem, 3vw, 2rem); letter-spacing: -0.02em; line-height: 1.25; margin: 2.6em 0 .6em; padding-top: 1.2em; border-top: 1px solid var(--line); text-wrap: balance; scroll-margin-top: 20px; }
+  h3 { font-size: 1.12rem; font-weight: 600; margin: 1.9em 0 .5em; letter-spacing: -0.01em; scroll-margin-top: 20px; }
+  h4 { font-size: 1rem; font-weight: 600; margin: 1.8em 0 .3em; scroll-margin-top: 20px; }
+  p, li { text-wrap: pretty; }
+  strong { font-weight: 600; }
+  a { color: var(--accent); text-underline-offset: 3px; text-decoration-thickness: 1px; overflow-wrap: anywhere; }
+  blockquote { margin: 1.2em 0; padding: 14px 18px; background: var(--soft); border-radius: 10px; color: var(--fg); border: 0; }
+  blockquote p { margin: 0; }
+  hr { border: 0; height: 0; margin: 0; }
+  ul, ol { padding-left: 1.3em; }
+  li + li { margin-top: .25em; }
+  code { font-family: var(--mono); font-size: .86em; background: var(--soft); padding: 1px 6px; border-radius: 5px; overflow-wrap: anywhere; }
+  .tablewrap { overflow-x: auto; margin: 1.2em 0; border: 1px solid var(--line); border-radius: 12px; }
+  table { border-collapse: collapse; width: 100%; font-size: 13.5px; line-height: 1.55; }
+  th { text-align: left; font-family: var(--mono); font-weight: 500; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); padding: 10px 12px; border-bottom: 1px solid var(--line); background: var(--soft); white-space: nowrap; }
+  td { padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; font-variant-numeric: tabular-nums; }
+  tr:last-child td { border-bottom: 0; }
+  td:first-child { font-weight: 500; min-width: 120px; }
+  details { margin: 1em 0; }
+  summary { cursor: pointer; color: var(--muted); }
+  .meta { font-family: var(--mono); font-size: 12px; color: var(--muted); letter-spacing: .04em; }
+  .appendix-head { margin-top: 4em; }
+  h1.part { font-size: clamp(1.25rem, 2.6vw, 1.6rem); font-weight: 800; color: var(--accent); margin: 64px 0 8px; padding-top: 18px; border-top: 3px solid var(--accent); letter-spacing: -0.01em; }
+  #appendix h1 { font-size: clamp(1.6rem, 3.5vw, 2.2rem); margin-top: 0; }
+  #appendix h4 { font-family: var(--display); font-weight: 700; font-size: 1.02rem; padding-top: 1em; border-top: 1px dashed var(--line); }
+  .tag-hi { color: var(--ok); font-weight: 600; } .tag-mid { color: var(--warn); font-weight: 600; } .tag-lo { color: var(--bad); font-weight: 600; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  /* full-text search */
+  .q { margin-bottom: 22px; }
+  .q input { width: 100%; box-sizing: border-box; font: inherit; font-size: 13.5px; color: var(--fg); background: var(--paper); border: 1px solid var(--line); border-radius: 10px; padding: 8px 11px; }
+  .q input:focus { outline: 2px solid var(--accent); outline-offset: 1px; border-color: transparent; }
+  .q-info { font-family: var(--mono); font-size: 11px; color: var(--muted); margin: 6px 2px 0; min-height: 1em; }
+  .q-results { list-style: none; margin: 6px 0 0; padding: 0; max-height: 46vh; overflow: auto; border-left: 1px solid var(--line); }
+  .q-results:empty { display: none; }
+  .q-results button { all: unset; box-sizing: border-box; display: block; width: 100%; cursor: pointer; padding: 6px 8px 6px 10px; border-radius: 0 8px 8px 0; line-height: 1.45; }
+  .q-results button:hover, .q-results button:focus-visible, .q-results button[aria-current="true"] { background: var(--soft); }
+  .q-ctx { display: block; font-size: 11px; color: var(--accent); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .q-snip { display: block; font-size: 12px; color: var(--muted); }
+  .q-snip mark { background: none; color: var(--fg); font-weight: 600; }
+  ::highlight(q-hit) { background-color: rgba(229, 163, 59, .35); }
+  ::highlight(q-active) { background-color: #e5a33b; color: #14161c; }
+  figure { margin: 1.6em 0; max-width: none; }
+  figure svg { display: block; width: 100%; height: auto; }
+  figcaption { font-size: 13px; color: var(--muted); margin-top: 8px; line-height: 1.6; }
+  main > figure { max-width: none; }
+  .dl { display: flex; justify-content: flex-end; align-items: center; gap: 8px; margin: 0 0 14px; font-size: .85rem; color: var(--muted, #5b6170); }
+  .dl a { font-weight: 600; text-decoration: none; padding: 3px 10px; border: 1px solid var(--line, #dcdfe4); border-radius: 999px; }
+  .dl a:hover { border-color: currentColor; }
+  .hl { margin-left: .4em; font-size: .7em; color: var(--muted); text-decoration: none; opacity: 0; transition: opacity .15s; }
+  h2:hover .hl, h3:hover .hl, .hl:focus { opacity: 1; }
+  a.xref { color: inherit; text-decoration: underline dotted; text-underline-offset: 3px; }
+  @page { size: A4; margin: 16mm 14mm; }
+  @media print { .dl { display: none !important; } html, body { background: #fff !important; } main { box-shadow: none !important; border-radius: 0 !important; padding: 0 !important; max-width: none !important; } figure, table, blockquote { break-inside: avoid; } h2, h3 { break-after: avoid; } .rail { display: none; } .wrap { display: block; } main { border: 0; } }
+</style>
+
+<div class="wrap">
+  <nav class="rail" aria-label="목차">
+    <div class="q" role="search">
+      <label class="label" for="q-input" style="display:block">Search</label>
+      <input id="q-input" type="search" placeholder="보고서 검색  ( / )" autocomplete="off" aria-describedby="q-info">
+      <div id="q-info" class="q-info" aria-live="polite"></div>
+      <ul id="q-results" class="q-results" aria-label="검색 결과"></ul>
+    </div>
+    <div class="label">Contents</div><ul><li><a href="#s15-1">15.1 국가별 2026 현황과 2027 일정</a></li><li><a href="#s15-2">15.2 공개 지수에서 본 위치</a></li><li><a href="#s15-3">15.3 경쟁력 점수표 (분석가 판단, 6개 차원 각 0–10, 합계
+60)</a></li><li><a href="#s15-4">15.4 규제 접근 비교와 2027 수렴·분기</a></li><li><a href="#s15-5">15.5 AI 인재: 유출·유치·처우</a></li><li><a href="#s15-6">15.6 공공부문 AI 도입: N2SF와 공공 모델</a></li><li><a href="#s15-7">15.7 한국 공공 AX: AI 챔피언·공무원 바이브 코딩과 2027
+전망</a></li><li><a href="#s15-8">15.8 표준: EU 조화표준과 ISO/IEC 42000 시리즈</a></li><li><a href="#s15-9">15.9 글로벌 사우스와 AI 격차</a></li><li><a href="#s15-10">15.10 한국 시사점</a></li><li><a href="#s15-11">15.11 국가인공지능전략위원회 안건(제안, 인공지능기본법
+제8조 기준)</a></li></ul></nav>
+  <main>
+<div class="dl" aria-label="다운로드">다운로드
+      <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.pdf">PDF</a>
+      <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.docx">Word</a>
+      <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.md">Markdown</a> · <a href="https://hollobit.github.io/AI2027/chapters/">장별 보기</a></div>
+<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch15">전체 보고서에서 보기</a><a href="../">대시보드</a><span class="sp"></span><a href="ch14.html" rel="prev">← 14. 소버린 AI와 국가 AI 문샷</a><a href="ch16.html" rel="next">16. AI 지정학: 미중 경쟁·블록·제재와 202 →</a></nav><p class="label" style="margin:0 0 4px">제4부 국가·지정학·기술
+통제</p><h2 id="ch15">15. 국가별 AI 정책·제도·투자·규제와 경쟁력</h2>
+<blockquote>
+<p>자료: 일본 제2차 AI 기본계획, 영국 AI Opportunities Action Plan 1년
+점검, 캐나다 'AI for All', 인도 PIB, EU Apply AI, Oxford Insights 정부
+AI 준비도 2025, UAE 에이전틱 정부, DigiChina(15차 5개년 계획), Stanford
+AI Index 2026과 Vibrancy, 과기정통부. 원문은
+<code>PDF/country_policy/</code>에 있습니다. 호주·싱가포르·이스라엘과
+독일·프랑스 예산 일부는 원문을 확인하지 못했습니다. 미국 중간선거는
+민주당 양원 장악으로 판정됐습니다(공식 인증 전).</p>
+</blockquote>
+<h3 id="s15-1">15.1 국가별 2026 현황과 2027 일정</h3>
+<table>
+<thead>
+<tr>
+<th>국가</th>
+<th>2026 현황</th>
+<th>2027 주요 일정</th>
+<th>경쟁력 효과</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>미국</strong></td>
+<td>모델·컴퓨트·자본 모두 1위. 민간 AI 투자 2,859억 달러(중국의 23배).
+연방은 규제 완화와 수출 촉진, 주는 프런티어 투명성 입법(SB 53·RAISE). AI
+연구자 유입은 2017년 대비 89% 감소. 중간선거로 민주당 양원 장악, 공화당
+행정부와 분점 정부</td>
+<td>뉴욕 RAISE Act 시행(01-01), 주 AI법 위헌 소송 판결, 연방 선점 입법은
+약화</td>
+<td><strong>유지</strong></td>
+</tr>
+<tr>
+<td><strong>중국</strong></td>
+<td>15차 5개년 계획(2026-03)에서 'AI+'를 최우선 국가 과제로 지정. 미국과
+모델 격차 약 6개월(AAII 90.9%). 콘텐츠 표시 규정(2025-09). WAICO
+출범</td>
+<td>AI+ 2027 중간 목표(신세대 지능형 단말·에이전트 보급률 70% 초과,
+국발〔2025〕11호 원문 확인. 2030년 90% 초과), 하위 AI 전문계획</td>
+<td><strong>개선</strong></td>
+</tr>
+<tr>
+<td><strong>한국</strong></td>
+<td>AI 기본법 시행(2026-01-22, 과태료 계도 최소 1년). 2027 과기정통부 AI
+예산 정부안 9.4조 원(+84%, GPU 3.85조·데이터 8,000억). 주목할 만한 모델
+수 세계 3위, 인구당 AI 특허 1위. 반면 Oxford 정부 준비도는 3위에서 8위로
+하락</td>
+<td>예산 국회 확정(12월), 계도기간 종료 후 집행 수준 결정(01-22 이후),
+하위법령 개정(에이전트·피지컬 AI), 독파모 3차</td>
+<td><strong>개선</strong></td>
+</tr>
+<tr>
+<td><strong>EU</strong></td>
+<td>Digital Omnibus(2026-06)로 단순화 전환과 일정 연기</td>
+<td>국가 규제 샌드박스(08-02), 고위험 의무 적용(12-02), 조화표준 확정,
+기가팩토리 선정</td>
+<td>유지</td>
+</tr>
+<tr>
+<td><strong>일본</strong></td>
+<td>제2차 AI 기본계획(2026-07-14). 벌칙 없는 진흥법과 넓은 TDM 허용.
+오케스트레이션(Sakana Fugu)과 일본어 경량 모델</td>
+<td>기본계획 개정, AISI 격상, 분야별 버티컬 AI 전략</td>
+<td>유지</td>
+</tr>
+<tr>
+<td><strong>영국</strong></td>
+<td>Action Plan 약속 50개 중 38개 이행, AI 성장존 5곳(282억 파운드),
+소버린 AI 유닛 최대 5억 파운드. 다만 성장존 착공 지연 비판</td>
+<td>G20 맨체스터(11-27~28), 성장존 추가 지정. TDM 예외 입법은 가능성
+낮음</td>
+<td><strong>개선</strong></td>
+</tr>
+<tr>
+<td><strong>프랑스</strong></td>
+<td>유럽 최강 모델(Mistral, ECI 154.6, 1위의 88.7%). 소버린 풀스택 수출.
+재정·정치 불안</td>
+<td>**대선(04–05월)**이 정책 연속성 위험</td>
+<td>유지</td>
+</tr>
+<tr>
+<td><strong>독일</strong></td>
+<td>산업 AI·제조 데이터 강점, 프런티어 모델 부재. GEMA 판결이 유럽
+학습데이터 규범을 주도</td>
+<td>GEMA 항소심·유럽사법재판소 회부, 기가팩토리</td>
+<td>유지</td>
+</tr>
+<tr>
+<td><strong>캐나다</strong></td>
+<td>'AI for All' 전략(2026-06-04), 포괄 AI법 없음. Cohere(1위의
+56.1%)</td>
+<td>공공 슈퍼컴 조달, 프라이버시법 현대화</td>
+<td>개선</td>
+</tr>
+<tr>
+<td><strong>싱가포르</strong></td>
+<td>오픈 베이스 + 지역어 적응 + 평가셋(SEA-HELM)으로 ASEAN 허브. 정부
+준비도·거버넌스 도구는 최상위</td>
+<td>NAIS 2.0 점검, 에이전틱 AI 거버넌스</td>
+<td>유지</td>
+</tr>
+<tr>
+<td><strong>UAE</strong></td>
+<td>자본·전력·미국 인프라 + 자체 오픈모델(K2·Falcon) 하이브리드. 정부
+서비스 50%를 2년 안에 에이전틱 AI로 전환 목표</td>
+<td>Stargate UAE 추가 가동, 아부다비 AI 네이티브 정부</td>
+<td>개선</td>
+</tr>
+<tr>
+<td><strong>사우디</strong></td>
+<td>자본과 싼 전력으로 컴퓨트 수출국 지향(HUMAIN 2030년 약 3GW)</td>
+<td>HUMAIN 1단계 상업 운영</td>
+<td>개선</td>
+</tr>
+<tr>
+<td><strong>인도</strong></td>
+<td>GPU 3.8만 장에서 5.8만 장 이상으로(2026-02). 뉴델리 정상회의 선언은
+채택 당시 88개국·기구(86개국+국제기구 2곳), 이후 3개국 추가로 91개</td>
+<td>DPDP 규칙 전면 시행(추정), IndiaAI 후속 예산</td>
+<td>개선</td>
+</tr>
+<tr>
+<td><strong>대만</strong></td>
+<td>AI 기본법 시행(2026-01-14), 관련 법 정비 시한 24개월. 하드웨어
+공급망 핵심</td>
+<td>후속 법령·위험분류 프레임워크</td>
+<td>유지</td>
+</tr>
+<tr>
+<td><strong>호주</strong></td>
+<td>도입형. 민간 데이터센터 투자 중심(세부 원문 미확인)</td>
+<td>AI 안전연구소, 프라이버시법 2단계</td>
+<td>유지</td>
+</tr>
+<tr>
+<td><strong>이스라엘</strong></td>
+<td>스타트업·국방·사이버 강점, 국가 컴퓨트 약함</td>
+<td>총선 결과에 따른 정책 변화(원문 미확인)</td>
+<td>유지</td>
+</tr>
+</tbody>
+</table>
+<h3 id="s15-2">15.2 공개 지수에서 본 위치</h3>
+<table>
+<thead>
+<tr>
+<th>지수</th>
+<th>상위권</th>
+<th>한국</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Stanford Global AI Vibrancy(2023 데이터)</td>
+<td>미국, 중국, 영국, 인도, UAE, 프랑스</td>
+<td><strong>7위</strong></td>
+</tr>
+<tr>
+<td>Stanford AI Index 2026 개별 지표</td>
+<td>민간 투자: 미국 2,859억 달러, 중국 124억 달러</td>
+<td>주목할 모델 <strong>3위</strong>, 인구당 AI 특허
+<strong>1위</strong>, AI 도입 증가폭 1위</td>
+</tr>
+<tr>
+<td>Oxford 정부 AI 준비도 2025</td>
+<td>미국(88.36), 영국, 프랑스, 네덜란드, 독일</td>
+<td><strong>8위</strong>(2024년 3위에서 하락)</td>
+</tr>
+<tr>
+<td>Tortoise Global AI Index(2024, 미검증)</td>
+<td>미국, 중국, 싱가포르, 영국, 프랑스</td>
+<td>6위</td>
+</tr>
+<tr>
+<td>Epoch 주목할 모델(2026-01)</td>
+<td>미국 43, 중국 30</td>
+<td><strong>3위(8개)</strong></td>
+</tr>
+<tr>
+<td>국가별 최고 모델(AAII, 1위 대비)</td>
+<td>중국 90.9%</td>
+<td><strong>66.7%</strong>(미국 제외 2위)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="s15-3">15.3 경쟁력 점수표 (분석가 판단, 6개 차원 각 0–10, 합계
+60)</h3>
+<table>
+<thead>
+<tr>
+<th>국가</th>
+<th>2026</th>
+<th><strong>2027</strong></th>
+<th>모델</th>
+<th>컴퓨트</th>
+<th>인재</th>
+<th>자본</th>
+<th>제도</th>
+<th>도입</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>미국</td>
+<td>54</td>
+<td><strong>53</strong></td>
+<td>10</td>
+<td>10</td>
+<td>8</td>
+<td>10</td>
+<td>6</td>
+<td>9</td>
+<td>인재 유입 둔화, 주법 파편화</td>
+</tr>
+<tr>
+<td>중국</td>
+<td>45</td>
+<td><strong>47</strong></td>
+<td>9</td>
+<td>7</td>
+<td>9</td>
+<td>7</td>
+<td>6</td>
+<td>9</td>
+<td>수출통제로 컴퓨트 정체, AI+로 도입 증가</td>
+</tr>
+<tr>
+<td>영국</td>
+<td>41</td>
+<td><strong>43</strong></td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+<td>7</td>
+<td>8</td>
+<td>7</td>
+<td>성장존 실제 집행 시 상승</td>
+</tr>
+<tr>
+<td>UAE</td>
+<td>40</td>
+<td><strong>43</strong></td>
+<td>4</td>
+<td>8</td>
+<td>5</td>
+<td>9</td>
+<td>8</td>
+<td>9</td>
+<td>국부 자본, GW 컴퓨트, 에이전틱 정부</td>
+</tr>
+<tr>
+<td><strong>한국</strong></td>
+<td>37</td>
+<td><strong>40</strong></td>
+<td>7</td>
+<td>7</td>
+<td><strong>5</strong></td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+<td>모델·컴퓨트는 상승, <strong>인재 정체</strong></td>
+</tr>
+<tr>
+<td>EU</td>
+<td>37</td>
+<td>38</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+<td>5</td>
+<td>6</td>
+<td>6</td>
+<td>기가팩토리</td>
+</tr>
+<tr>
+<td>일본</td>
+<td>36</td>
+<td>37</td>
+<td>4</td>
+<td>6</td>
+<td>5</td>
+<td>6</td>
+<td>9</td>
+<td>7</td>
+<td>진흥형 제도는 최상위</td>
+</tr>
+<tr>
+<td>프랑스</td>
+<td>36</td>
+<td>37</td>
+<td>6</td>
+<td>6</td>
+<td>7</td>
+<td>6</td>
+<td>6</td>
+<td>6</td>
+<td>대선 위험은 미반영</td>
+</tr>
+<tr>
+<td>싱가포르</td>
+<td>37</td>
+<td>37</td>
+<td>3</td>
+<td>4</td>
+<td>6</td>
+<td>6</td>
+<td>9</td>
+<td>9</td>
+<td>모델·컴퓨트 구조적 제약</td>
+</tr>
+<tr>
+<td>인도</td>
+<td>33</td>
+<td>36</td>
+<td>4</td>
+<td>6</td>
+<td>7</td>
+<td>6</td>
+<td>7</td>
+<td>6</td>
+<td>GPU 확충, 자체 모델</td>
+</tr>
+<tr>
+<td>이스라엘</td>
+<td>36</td>
+<td>35</td>
+<td>4</td>
+<td>4</td>
+<td>7</td>
+<td>7</td>
+<td>7</td>
+<td>6</td>
+<td>두뇌 유출 위험</td>
+</tr>
+<tr>
+<td>캐나다</td>
+<td>33</td>
+<td>35</td>
+<td>5</td>
+<td>5</td>
+<td>7</td>
+<td>5</td>
+<td>7</td>
+<td>6</td>
+<td>컴퓨트 집행 시 상승</td>
+</tr>
+<tr>
+<td>사우디</td>
+<td>32</td>
+<td>34</td>
+<td>2</td>
+<td>7</td>
+<td>3</td>
+<td>9</td>
+<td>6</td>
+<td>7</td>
+<td>HUMAIN</td>
+</tr>
+<tr>
+<td>독일</td>
+<td>32</td>
+<td>33</td>
+<td>4</td>
+<td>6</td>
+<td>6</td>
+<td>5</td>
+<td>6</td>
+<td>6</td>
+<td>산업 AI 강점</td>
+</tr>
+<tr>
+<td>대만</td>
+<td>31</td>
+<td>32</td>
+<td>3</td>
+<td>6</td>
+<td>5</td>
+<td>5</td>
+<td>7</td>
+<td>6</td>
+<td>국내 가용 컴퓨트 기준</td>
+</tr>
+<tr>
+<td>호주</td>
+<td>29</td>
+<td>30</td>
+<td>2</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>7</td>
+<td>6</td>
+<td>모델 부재</td>
+</tr>
+</tbody>
+</table>
+<p><strong>해석.</strong> 2027년에 점수가 가장 크게 오를 수 있는 나라는
+한국·UAE·인도(+3)와 영국(+2)입니다. 미국은 1위를 유지하지만 인재 유입
+감소와 제도 파편화로 약간 내려갑니다. 한국의 약점은 **인재(5점)**와
+<strong>정부 집행·거버넌스 평가</strong>(Oxford 8위로 하락)입니다.</p>
+<h3 id="s15-4">15.4 규제 접근 비교와 2027 수렴·분기</h3>
+<table>
+<thead>
+<tr>
+<th>국가</th>
+<th>접근</th>
+<th>2027 변화</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>EU</td>
+<td>위험기반 포괄 규제. 2026년 '단순화'로 전환</td>
+<td>샌드박스(08-02), 고위험(12-02), 조화표준</td>
+</tr>
+<tr>
+<td>미국</td>
+<td>연방은 완화·선점 시도, 주는 투명성·차별 규제</td>
+<td>RAISE 시행, 선점 입법 약화로 주법 패치워크 지속</td>
+</tr>
+<tr>
+<td>중국</td>
+<td>콘텐츠·안보 중심 사전 등록·표시 + 국가 주도 진흥</td>
+<td>분야별 규정 추가(미성년자·의인화 AI). 포괄 AI법은 가능성 낮음</td>
+</tr>
+<tr>
+<td><strong>한국</strong></td>
+<td>진흥 + 최소 규제의 포괄 기본법(고영향·생성물 표시·10^26 FLOPs
+안전성). <strong>EU보다 가볍고 일본보다 무거운 중간형</strong></td>
+<td>계도기간 이후 집행 수준, 하위법령 개정, '기존 법률 개정 우선'
+원칙</td>
+</tr>
+<tr>
+<td>일본</td>
+<td>벌칙 없는 진흥법 + 연성 가이드 + 넓은 TDM 허용</td>
+<td>기본계획 개정, AISI 격상</td>
+</tr>
+<tr>
+<td>영국</td>
+<td>포괄법 없는 혁신 친화형, AISI 평가 선도</td>
+<td>프런티어 법안·TDM 입법 모두 가능성 낮음</td>
+</tr>
+<tr>
+<td>대만</td>
+<td>원칙·진흥형 기본법 + 위험분류</td>
+<td>법령 정비 중간 단계</td>
+</tr>
+<tr>
+<td>인도·호주·싱가포르·캐나다</td>
+<td>포괄법 없이 가이드라인과 기존 법 활용</td>
+<td>개인정보법 강화가 실질 규율 수단</td>
+</tr>
+<tr>
+<td>UAE·사우디</td>
+<td>규제보다 국가 주도 도입·투자, 데이터 대사관 개념</td>
+<td>에이전틱 정부 실증</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>2027 수렴·분기 전망</th>
+<th>가능성 · 확률(±불확도)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>생성물 표시·워터마크 의무가 사실상 국제 공통 규범으로
+수렴(EU·중국·한국·인도, C2PA)</td>
+<td>높음 · 85% (±10) · 근거 <a
+href="https://korea.kr/news/policyNewsView.do?newsId=148958380">korea.kr</a>,
+<a
+href="https://www.gibsondunn.com/eu-ai-act-omnibus-agreement-postponed-high-risk-deadlines-and-other-key-changes/">Gibson
+Dunn (EU AI Act D…</a></td>
+</tr>
+<tr>
+<td>미국 연방 선점법은 통과되지 않고 주법 패치워크 지속</td>
+<td>높음 · 90% (±10) · 근거 <a
+href="https://fpf.org/blog/the-raise-act-vs-sb-53-a-tale-of-two-frontier-ai-laws/">fpf.org</a>,
+<a
+href="https://www.wilsoncenter.org/article/americas-ai-action-plan-after-one-year-what-administration-has-done-and-what-comes-next">미국
+재무부(베선트)</a></td>
+</tr>
+<tr>
+<td>아시아(한·일·대만)는 '진흥형 기본법' 모델로 수렴. EU형 포괄 규제를
+새로 도입하는 아시아 국가는 없음</td>
+<td>높음 · 82% (±10) · 근거 <a
+href="https://zdnet.co.kr/view?no=20261116144303">과학기술정보통신부
+(보도: ZDNet Kor…</a>, <a
+href="https://www8.cao.go.jp/cstp/ai/ai_plan/aiplan_g_eng_20260714.pdf">Cabinet
+Office, Governme…</a></td>
+</tr>
+<tr>
+<td>저작권·TDM은 갈라진 채 유지되고(일본·싱가포르 허용, EU 옵트아웃,
+영국·호주 보류), 실무는 라이선스 시장으로 수렴</td>
+<td>높음 · 80% (±15) · 근거 <a
+href="https://assets.publishing.service.gov.uk/media/69ba692226909a14239612e4/CP2602959_-_Report_on_Copyright_and_Artificial_Intelligence_web.pdf">UK
+DSIT/DCMS/IPO</a>, <a
+href="https://techcrunch.com/2025/11/25/warner-music-signs-deal-with-ai-music-startup-suno-settles-lawsuit/">techcrunch.com</a></td>
+</tr>
+<tr>
+<td>프런티어 모델 투명성·사고 보고 기준은 수렴하지만 보고
+기한(72시간~15일)과 벌칙은 갈라짐</td>
+<td>중간 · 55% (±15) · 근거 <a
+href="https://fpf.org/blog/the-raise-act-vs-sb-53-a-tale-of-two-frontier-ai-laws/">fpf.org</a>,
+<a
+href="https://ai-act-service-desk.ec.europa.eu/en/ai-act/faq/commissions-enforcement-powers-related-ai-act-obligations-providers-most-advanced-models">ai-act-service-desk.ec.eur</a></td>
+</tr>
+<tr>
+<td>대서양 간 규제 강도 격차가 줄었다가 EU 고위험 적용(12월) 이후 다시
+확대</td>
+<td>중간 · 40% (±25) · 근거 <a
+href="https://eeas.europa.eu/delegations/chile/artificial-intelligence-council-gives-final-green-light-simplify-and-streamline-rules_en">eeas.europa.eu</a>,
+<a
+href="https://www.wilsoncenter.org/article/americas-ai-action-plan-after-one-year-what-administration-has-done-and-what-comes-next">미국
+재무부(베선트)</a></td>
+</tr>
+<tr>
+<td>AISI 네트워크의 평가 방법론 공동화. 중국은 WAICO 축으로 블록화</td>
+<td>중간 · 60% (±15) · 근거 <a
+href="https://www.gov.uk/government/news/efforts-to-share-best-practices-on-ai-measurement-and-evaluations-driven-forward-through-the-international-network-for-advanced-ai-measurement-evalua">UK
+Government</a>, <a
+href="https://news.cgtn.com/news/2026-07-17/29-countries-sign-establishing-World-AI-Cooperation-Organization-pact-1OQDod8zj6U/index.html">CGTN</a></td>
+</tr>
+<tr>
+<td>에이전트 책임·권한 위임(KYA) 규정이 주요국 가이드라인에 처음
+등장</td>
+<td>중간 · 58% (±20) · 근거 <a
+href="https://zdnet.co.kr/view?no=20261111120847">IITP
+정보통신기획평가원 (보도: ZDNe…</a>, <a
+href="https://www.idc.com/resource-center/press-releases/idc-futurescape-2027-predicts-60-of-enterprises-will-run-a-majority-of-their-business-processes-ai-first-by-2029-up-from-13-in-2026/">IDC</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="s15-5">15.5 AI 인재: 유출·유치·처우</h3>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Stanford AI Index 2026 인재이동지수</td>
+<td>한국 <strong>−0.35(순유출)</strong>, 미국 0.92·영국
+0.62(순유입)</td>
+</tr>
+<tr>
+<td>석·박사 해외 이직 고려</td>
+<td>44.9%</td>
+</tr>
+<tr>
+<td>국내 양성 고급 AI 인재의 해외 정착</td>
+<td>약 40%(추적 데이터 종합 추정, 확인 필요)</td>
+</tr>
+<tr>
+<td>해외 우수인재 유치</td>
+<td>2030년까지 2,000명(2026년 600명), 예산 388억 → 546억 원</td>
+</tr>
+<tr>
+<td>제도</td>
+<td>'톱티어 비자' 대상을 과학기술 교수·연구원으로 확대(2026-05),
+학·석·박 통합과정(입학 후 약 5.5년 박사, 2026-03 고등교육법 개정)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>2027 전망</strong>: 비자·유치 예산은 늘었지만
+연구비·급여·정주 여건이 바뀌지 않으면 순유출이 이어집니다(중국은 해외 AI
+인재에 연봉 수억 원·주거 제공). 2027년에는 누적 유치 실적과
+<strong>정착률</strong>이 정책 평가 지표가 됩니다.</li>
+<li><strong>과제</strong>: 출연연·대학 AI 연구자의 보수 체계 예외, 공공
+GPU 우선 배정, 해외 연구자 공동 임용, 인재 유출입 통계의 정례 공개.</li>
+</ul>
+<h4 id="미국-h-1bopt-비용-급등과-인재-이동">미국 H-1B·OPT 비용 급등과
+인재 이동</h4>
+<ul>
+<li><strong>미국의 문턱</strong>: 2025-09 포고로 해외에서 새로 들어오는
+H-1B에 10만 달러 수수료가 붙었고(현재 소송으로 일시 효력 정지), DHS는
+2026-08-25 상한 대상 청원마다 10만 3,265달러를 받는 규칙안을 냈습니다.
+2026-02부터 임금 수준별 가중 추첨이 도입됐고, 노동부는 표준임금
+인상안(2026-03)을 냈습니다. DHS는 2026-10-08 학교가 OPT 학생 1인당 7만
+달러(STEM OPT 3만 달러)를 내는 규칙안도 냈습니다.</li>
+<li><strong>효과</strong>: CRS(IN12747, 2026-10-14)에 따르면 상한 면제
+기관이 해외 영사 절차로 낸 신규 H-1B 청원은 수수료 시행 후 8개월간 전년
+대비 91% 줄었습니다. FY2027 추첨 등록은 Cognizant 100%, TCS 95%, Infosys
+91% 줄었습니다.</li>
+<li><strong>받는 나라</strong>: 캐나다는 H-1B 소지자 신속 경로를
+약속했지만(2025-11 예산) 2026년 말까지 열지 않았고, 대신 AI 전문가
+취업허가를 최단 20영업일에 내주는 Global Talent Stream 강화(2026-06)와
+해외 연구자 1,000명 이상 유치 예산(17억 캐나다달러)을 냈습니다. 한국은
+톱티어 비자를 교수·연구원으로 넓히고(2026-05), K-Tech Pass에
+정성평가형과 석학유치 연계형을 더했습니다(2026-07). 2026년 유치 목표
+600명의 실적은 공개되지 않았습니다.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>전망</th>
+<th>가능성 · 확률(±불확도)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DHS의 H-1B 청원당 10만 3,265달러 수수료 규칙이 2027년에 최종화</td>
+<td>중간 · 50% (±20) · 근거 <a
+href="https://www.everycrsreport.com/reports/IN12747.html">CRS</a> ·
+반론 10만 달러 포고 소송 <a
+href="https://www.staffingindustry.com/news/global-daily-news/federal-actions-take-severe-toll-on-h-1b-visa-congressional-research-service-finds">Staffing
+Industry Analysts</a></td>
+</tr>
+<tr>
+<td>캐나다가 H-1B 소지자 전용(또는 우선) 영주·취업 경로를 2027년에
+실제로 개시</td>
+<td>중간 · 55% (±20) · 근거 <a
+href="https://www.cicnews.com/2025/11/canada-to-launch-accelerated-pathway-for-h-1b-holders-as-part-of-suite-of-measures-to-attract-skilled-workers-1161634.html">CIC
+News</a></td>
+</tr>
+<tr>
+<td>한국 정부가 2026년 해외 우수 인재 유치 실적(목표 600명)과 톱티어
+비자 발급 수를 공개하고 목표를 달성</td>
+<td>중간 · 40% (±20) · 근거 <a
+href="https://moj.go.kr/bbs/moj/189/607924/artclView.do">법무부</a>, <a
+href="https://www.moj.go.kr/bbs/moj/182/608026/artclView.do">법무부·산업부</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>시사점.</strong> 미국 문턱이 높아진 효과는 인도계 IT
+아웃소싱에서 가장 크고, 프런티어 연구자에게는 상대적으로 작습니다.
+한국이 노릴 대상은 <strong>OPT·H-1B 경로가 막힌 미국 대학 석·박사
+졸업생</strong>입니다. 톱티어 비자에 '미국 박사 졸업 후 2년 이내' 같은
+신속 트랙을 붙이고, 유치 실적과 정착률을 분기마다 공개합니다.</p>
+<blockquote>
+<p><strong>확인 필요</strong>: 'H-1B 청원 91% 감소'는 전체 청원이 아니라
+상한 면제 기관의 해외 영사 절차 신규 청원 기준입니다. FY2027 전체 등록
+수, 10만 달러 포고 소송의 현재 상태, OPT 수수료 규칙의 최종화 여부, 영국
+Global Talent 비자 실적은 확인하지 못했습니다.</p>
+</blockquote>
+<h3 id="s15-6">15.6 공공부문 AI 도입: N2SF와 공공 모델</h3>
+<ul>
+<li><strong>N2SF(국가망보안체계)</strong>: 업무 데이터를
+기밀(C)·민감(S)·공개(O)로 나눠 등급에 따라 외부 AI·클라우드 사용을
+허용하는 체계로, 망분리를 대체합니다(2026-03). KISA가 도입 지원 연합체를
+선정했고(약 45억 원), 국가·공공망 개편 사업이 진행 중입니다.</li>
+<li><strong>평가 연계</strong>: 국정원은 차년도 공공기관 보안평가에 N2SF
+구축·AI 보안관제 도입 가점을 주고, 망분리 지표를 N2SF 지표로 바꿉니다.
+범정부 초거대 AI 공통기반은 N2SF 실증 대상입니다.</li>
+<li><strong>2027 전망</strong>: N2SF가 공공기관 전반으로 확산되면서
+<strong>공공 생성형 AI 도입 속도는 보안평가가 좌우</strong>합니다(추정).
+동시에 해외 모델 사용 기준(<a class="xref" href="ch17.html#s17-2">17.2</a>절)과 결합해 '등급별 허용 모델 목록'이
+필요해집니다.</li>
+<li><strong>공공 AX 상세</strong>: AI 민주정부 전략, AI 챔피언 인증,
+공무원 직접 개발(AI 정부 실험실)과 그 문제는 <a class="xref" href="#s15-7">15.7</a>절에 있습니다. 공공 AI
+에이전트의 '개수' 목표와 공공 모델 조달 기준은 여전히 찾지 못했고, AI
+대민 상담 5개 분야 일정(세금·농업 2027년)만 확인했습니다.</li>
+</ul>
+<h4 id="보안규제-개편-csap국정원-일원화와-s등급-논쟁">보안규제 개편:
+CSAP·국정원 일원화와 'S등급' 논쟁</h4>
+<ul>
+<li><strong>일원화 결정(04-20)</strong>: 과기정통부와 국정원은 공공
+클라우드 진입 절차를 'CSAP 인증 후 국정원 보안검증'의 두 단계에서 국정원
+단일 체계로 바꾸기로 했습니다. 1년 유예 뒤 2027년 7월(하반기) 시행이고,
+기존 CSAP는 남은 유효기간(5년)을 인정합니다. 민간용 인증은 ISMS 안의
+클라우드 자율 인증으로 옮기고, 민관 검증심의위원회를 둡니다(<a
+href="https://mobile.newsis.com/view/NISX20260420_0003597363">뉴시스</a>,
+<a
+href="https://byline.network/2026/04/20-578/">바이라인네트워크</a>).</li>
+<li><strong>등급 개편안(09-17, CSK 2026)</strong>: CSAP 상·중·하를
+N2SF의 C·S·O에 맞춥니다. C는 기관 시설 안의 민관협력형 클라우드, S는 C
+클라우드나 공공 전용 데이터 시스템(전용 하드웨어)을 갖춘 외부 클라우드,
+O는 논리적으로 분리된 민간 클라우드입니다. S등급은 데이터 시스템만
+국내에 두면 운영·관리 시스템과 인력은 보완 대책을 전제로 해외에 둘 수
+있습니다. 공개정보만 처리하는 상용 생성형 AI와 연구협력·교육연구기관
+실험용 외부 클라우드는 검증 예외로 둘 수 있습니다(<a
+href="https://byline.network/2026/09/18-635/">바이라인네트워크</a>).</li>
+<li><strong>물리적 영역분리 논쟁</strong>: 국내 클라우드 업계는
+컨트롤플레인이 해외에 있으면 국내 서버·VM을 해외에서 원격으로 만들고
+지울 수 있다며 반발했습니다. "물리 망분리 요건에 맞춰 10년간 투자해
+왔다"는 역차별 주장과 '소버린 AI를 말하면서 클라우드는 연다'는 모순
+지적도 나왔습니다(<a
+href="https://m.etnews.com/20260907000384">전자신문</a>, 09-07).</li>
+<li><strong>현장 준비도</strong>: CSK 2026 설문의 공공 응답자 59명 중
+79.7%가 N2SF를 검토·정보 수집 단계이거나 계획이 없다고 했고, 최대 난관은
+보안등급 분류와 망 운영정책 수립(54.2%)이었습니다(표본 작음, <a
+href="https://byline.network/2026/10/21-622/">바이라인네트워크</a>).</li>
+<li><strong>2027 쟁점</strong>: 등급 분류 기준이 모호하면 기관은 책임을
+피하려고 업무 데이터를 대부분 S·C로 분류할 수 있습니다. 그러면 N2SF가
+이름만 바뀐 획일적 망분리로 돌아갑니다(추정). 2027년 실태평가가 망분리
+여부 대신 'N2SF 적용 수준'을 보는 만큼, 평가 항목이 과잉 분류를
+감점하는지가 갈림길입니다. 가명·연구용 데이터의 등급 완화도 같은
+문제입니다(<a class="xref" href="ch14.html#s14-12">14.12</a>절).</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>전망</th>
+<th>가능성 · 확률(±불확도)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>국정원 단일 클라우드 보안검증 체계가 계획대로 2027년 하반기에
+시행됨</td>
+<td>높음 · 70% (±15) · 근거 <a
+href="https://mobile.newsis.com/view/NISX20260420_0003597363">뉴시스</a>,
+<a href="https://byline.network/2026/09/18-635/">바이라인네트워크</a> ·
+반론 <a href="https://m.etnews.com/20260907000384">전자신문</a>(국내
+업계 반발)</td>
+</tr>
+<tr>
+<td>해외 하이퍼스케일러(AWS·Microsoft·Google) 중 1곳 이상이 2027년 안에
+새 체계에서 S등급 공공 클라우드 검증을 받음</td>
+<td>낮음 · 25% (±15) · 근거 <a
+href="https://byline.network/2026/09/18-635/">바이라인네트워크</a>, <a
+href="https://m.etnews.com/20260907000384">전자신문</a></td>
+</tr>
+<tr>
+<td>국정원·NIA가 가명·연구용 데이터의 등급 분류 기준(해설서·지침)을
+2027년 안에 따로 제시</td>
+<td>중간 · 45% (±20) · 근거 <a
+href="https://byline.network/2026/09/18-635/">바이라인네트워크</a>, <a
+href="https://byline.network/2026/10/21-622/">바이라인네트워크</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>제언</strong>: 등급 분류 해설서에 업무 유형별 기본 등급과
+'과잉 분류' 사례를 넣고, 실태평가에서 O등급 비율과 분류 근거를 함께
+봅니다. 컨트롤플레인 해외 허용은 원격 조작 권한 범위와 국내 차단
+수단(킬스위치)을 검증 항목으로 명시해 업계 우려에 답합니다.</p>
+<h4 id="범정부-ai-공통기반의-모델-교체와-하네스-분리-평가">범정부 AI
+공통기반의 모델 교체와 하네스 분리 평가</h4>
+<ul>
+<li><strong>현황</strong>: 범정부 AI 공통기반은 업무망 안에 민간
+모델·데이터·GPU를 두고 중앙·지방정부가 함께 씁니다. 2025-11 시범 개시 때
+삼성SDS·네이버클라우드 챗서비스 2종이 들어갔고, 2026-10 기준으로는 LLM
+11종 가운데 국산 4종(K-EXAONE·Solar Open2 등 독자 AI 파운데이션 모델
+포함)이 올라가 있습니다(<a class="xref" href="ch14.html#s14-4">14.4</a>절, 보도 기준, <a
+href="https://m.boannews.com/html/detail.html?idx=140525">보안뉴스</a>,
+<a href="https://biz.sbs.co.kr/amp/article/20000274018">SBS Biz</a>).
+공공 AI법이 범정부 생성형 AI 플랫폼의 법적 근거를 담았습니다(보도
+기준).</li>
+<li><strong>라우터가 왜 쟁점인가</strong>: 여러 모델이 한 기반에
+올라가면 '질의별로 어느 모델을 쓰느냐'를 정하는 라우터가 사실상 조달
+결정권을 갖습니다. 위 하이브리드 라우팅 전망(85%)이 공공에서 구현되는
+지점이고, 국산 모델 사용 비중도 라우터 설정이 정합니다. 그러나 '스마트
+라우터'라는 명칭의 공식 계획 문서는 공개 자료에서 찾지 못했습니다.</li>
+<li><strong>하네스 차이가 모델 차이보다 큽니다</strong>: 같은 GPT-6.2
+Astra가 기본 설정 65.7%, Codex 안에서 97.3%였습니다(<a class="xref" href="ch6.html#s6-9">6.9</a>절 RoboDojo-RC,
++31.6%p). <a class="xref" href="ch3.html#s3-11">3.11</a>절은 '모델 × 하네스 × 추론 노력' 단위 독립 측정을
+제안합니다(근거는 <a class="xref" href="ch3.html#s3-1">3.1</a>절). 여기에 더해 공통기반에 들어갈 모델은 (1) 표준
+하네스(공통 프롬프트·도구·호출 한도)에서 잰 모델 점수와 (2) 공급사
+하네스에서 잰 시스템 점수를 따로 공표해야 합니다. 두 값을 섞으면 독자
+모델 단계평가가 모델이 아니라 SI 역량을 재게 됩니다.</li>
+<li><strong>국가 보안 하네스</strong>: 공통기반의 라우터·도구
+호출·로그·권한 통제 층을 정부가 소유하는 '보안 하네스'로 두면, 모델은
+교체 가능한 부품이 됩니다. N2SF 등급(<a class="xref" href="#s15-6">15.6</a>절)별 허용 모델 목록, 도구 호출
+감사 로그, 프롬프트 주입 차단을 이 층에서 일괄 적용합니다. 특정 공급사의
+에이전트 프레임워크에 묶이는 것도 막을 수 있습니다(분석가 제안).</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>2027 전망</th>
+<th>가능성 · 확률(±불확도)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>범정부 AI 공통기반이 질의별 모델 배정(라우터) 기준이나 모델별
+호출량을 2027년 안에 공개</td>
+<td>중간 · 40% (±20) · 근거 <a
+href="https://m.boannews.com/html/detail.html?idx=140525">보안뉴스</a></td>
+</tr>
+<tr>
+<td>정부의 독자 모델 평가·공통기반 도입 평가가 '표준 하네스 모델 점수'와
+'공급사 하네스 시스템 점수'를 분리해 공표</td>
+<td>낮음 · 25% (±15) · 근거 <a
+href="https://robocurve.org">Robocurve</a>(하네스 +31.6%p)</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>확인 필요</strong>: '스마트 라우터'의 공식 명칭·사업명·예산,
+공통기반의 라우팅 방식은 행안부·NIA 원문에서 찾지 못했습니다(탑재 모델
+수는 <a class="xref" href="ch14.html#s14-4">14.4</a>절 의원실 자료 보도 기준).</p>
+</blockquote>
+<h3 id="s15-7">15.7 한국 공공 AX: AI 챔피언·공무원 바이브 코딩과 2027
+전망</h3>
+<blockquote>
+<p>자료: 행정안전부 발표와 그 보도(파이낸셜뉴스·노컷뉴스·전자신문·ZDNet
+Korea·뉴시스), KDI 경제정보센터 수록 행안부 보도자료, 강남구청 보도자료,
+한국행정연구원·공노총 조사, 국가법령정보(korean-law MCP로 조문 확인).
+수치 대부분은 행안부 보도자료를 옮긴 언론 보도로 확인했으며, 보도자료
+원문 PDF는 보지 못했습니다. 바이브 코딩 일반론은 <a class="xref" href="ch8.html#s8-1">8.1</a>절, N2SF는 <a class="xref" href="#s15-6">15.6</a>절,
+공공 SW 대가 체계는 <a class="xref" href="ch8.html#s8-5">8.5</a>절을 따릅니다.</p>
+</blockquote>
+<p><strong>요약</strong>: 2026년 한국 공공 AX는 '시스템을 사서 쓰는
+것'에서 '공무원이 직접 만드는 것'으로 넓어졌습니다. 행안부는 AI 챔피언
+인증으로 인력을 늘리고, AI 정부 실험실로 개발 환경을 제공하며, 우수
+도구를 범정부 서비스로 키우는 경로를 만들었습니다. 2027년의 쟁점은 확산
+속도가 아니라 <strong>관리</strong>입니다. 만든 도구를 누가
+운영·검증·기록·책임지는지가 아직 정해지지 않았습니다.</p>
+<h4 id="2026-현황-정책예산서비스인력">2026 현황:
+정책·예산·서비스·인력</h4>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>2026 현황</th>
+<th>2027 계획·일정</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>전략</td>
+<td>'세계 최고의 AI 민주정부 실현 전략'을 국무회의에 보고(08-25).
+후속으로 '공무원의 AI 활용 직접개발 활성화 및 확산 방안' 보고(09-08) (<a
+href="https://fnnews.com/news/202608251631449251">파이낸셜뉴스</a>, <a
+href="https://nocutnews.co.kr/news/6574723">노컷뉴스</a>)</td>
+<td>AI 대민 상담을 세금·농업 분야부터 2027년 완성.
+정부24·국민비서·혜택알리미를 2027년 말까지 하나의 AI 창구로 통합</td>
+</tr>
+<tr>
+<td>예산(행안부 정부안)</td>
+<td>총 84조 7,036억 원(+10.1%). AI 행정업무 적용('온AI' 확산 등) 187억 →
+<strong>542억 원</strong>, AI 통합민원플랫폼 18억 → <strong>203억
+원</strong> (<a
+href="https://news.tf.co.kr/read/life/2360906.htm">더팩트</a>)</td>
+<td>국회 확정액은 12월에 나옴. 실험실·챔피언 사업의 개별 예산은 찾지
+못함</td>
+</tr>
+<tr>
+<td>공무원용 AI</td>
+<td>업무관리 AI '온AI'를 12월까지 47개 중앙행정기관에 도입. 범정부 AI
+공통기반(업무망 안에 GPU·모델 설치, 보도 기준)</td>
+<td>지자체 확산 일정은 확인하지 못함</td>
+</tr>
+<tr>
+<td>직접개발 기반</td>
+<td><strong>AI 정부 실험실</strong>(인터넷망, 07-03 시범). 09-03 기준
+개발 공무원 2,073명, 프로젝트 770개(376개 공개). 산출물은 공공 GitLab에
+등록 (<a href="https://nocutnews.co.kr/news/6574723">노컷뉴스</a>)</td>
+<td>업무망 실험실과 보안 점검 시스템 구축. 동시 이용 200명 → 2027년
+<strong>6,000명</strong>(09-08). 앞선 보도(07–08월)는 3,000명</td>
+</tr>
+<tr>
+<td>인력</td>
+<td><strong>AI 챔피언</strong> 인증 누적 약 1,450명(2025 – 2026-09-01,
+보도 기준) (<a
+href="https://www.kbmaeil.com/article/20261029500312">경북매일</a>)</td>
+<td>연간 양성 목표 2027년 2,000명. 2030년까지 누적 2만 명</td>
+</tr>
+<tr>
+<td>윤리·영향평가</td>
+<td>'공공 AI 윤리기준' 마련(10월, 6대 가치·68개 점검항목, "최종
+책임·통제는 사람") (<a
+href="https://v.daum.net/v/H3JLK5nQZ4">다음/정책브리핑</a>)</td>
+<td>윤리기준·'공공 AI 영향평가'를 2027년 신규 AI 사업부터 적용</td>
+</tr>
+<tr>
+<td>대형 정보화</td>
+<td>차세대 지방행정공통시스템(2,857억 원)이 <strong>AI 코딩을 공식
+개발체계로 요구</strong>. 폐쇄망에 개발환경을 두고 외부 상용 LLM API
+전송은 금지. 검증 책임은 사업자 (<a
+href="https://zdnet.co.kr/view?no=20261113134630">ZDNet Korea</a>)</td>
+<td>2027–2029년 단계적 확대. 국정원 보안성 검토에 따라 범위 조정
+가능</td>
+</tr>
+<tr>
+<td>현장 인식</td>
+<td>공무원 526명 중 83.3%가 생성형 AI를 '매일·자주' 사용. 최대 우려는
+'오류 시 책임 소재 불분명'(49.8%) (<a
+href="https://mobile.newsis.com/view/NISX20260422_0003601618">공노총/뉴시스</a>)</td>
+<td>행정연구원 조사에서 장애요인 1위는 'AI 적합 업무 부족'(중앙 36.5%,
+지방 30.8%) (<a
+href="https://mobile.newsis.com/view/NISX20260806_0003739170">뉴시스</a>)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="ai-챔피언-인증-제도-현황과-2027-시나리오">AI 챔피언 인증 제도:
+현황과 2027 시나리오</h4>
+<ul>
+<li><strong>설계</strong>: 행안부가 2025-09-24에 발표했고, NIA와 함께
+운영합니다. 4단계 공공 AI 역량 트랙(AI활용·AI융합·AI개발·AI마스터)
+가운데 실습 과제 수행평가를 통과하면 인증합니다. AI 자격증·학위 보유자는
+지정 실습을 이수하면 '자격연계형' 인증을 받습니다 (<a
+href="https://www.fnnews.com/news/202509232004444014">파이낸셜뉴스</a>).</li>
+<li><strong>등급</strong>: 그린(생성형 AI로 업무 효율화), 블루(AX 사업
+기획부터 PoC·구축까지), 블랙(기관 AX를 이끌고 자문·내부 교육을 맡는 거점
+리더)입니다 (<a
+href="https://www.sidae.com/article/2026090713470096843">시대일보</a>).</li>
+<li><strong>양성 목표</strong>: 2025년 300명(시범), 2026년 1,000명,
+2027년 2,000명, 2028년 5,000명, 2029년 5,700명, 2030년 6,000명, 누적 2만
+명입니다. 경찰·소방·교육청을 뺀 행정·공공기관 종사자 약 92만 명의
+2%입니다 (<a
+href="https://www.tokenpost.kr/news/ai/288723">토큰포스트</a>).</li>
+<li><strong>2026 실적</strong>: 누적 인증자는 약 1,450명으로, 2026년 말
+누적 목표(1,300명)를 9월에 이미 넘었습니다(보도 기준). 서울시와 25개
+자치구의 블루 인증자는 18명입니다 (<a
+href="https://www.gangnam.go.kr/board/B_000031/1075349/view.do?mid=ID01_0313">강남구청</a>).
+블랙을 목표로 하는 고급과정은 225명이 지원해 48명이 입교했고, 20일 동안
+바이브 코딩·에이전트 프로젝트를 수행합니다 (<a
+href="https://www.heraldk.com/article/2026050618245358893">헤럴드경제</a>).
+2인 1팀 해커톤에는 200팀이 지원했습니다 (<a
+href="https://m.etnews.com/20260617000430">전자신문</a>).</li>
+<li><strong>인센티브</strong>: 5급 조기승진제(첨단과학기술인재 분야,
+선발 10명) 성과심사에서 <strong>블랙 인증자에게 가점</strong>을 줍니다.
+특별성과 포상금·연수·학습비 지원 확대와 정부혁신 평가 AX 부문 신설도
+예고됐습니다 (<a
+href="https://nocutnews.co.kr/news/6574723">노컷뉴스</a>). 수당이나 일반
+승진 가점은 확인되지 않았습니다.</li>
+</ul>
+<p><strong>2027 시나리오</strong> (서로 배타적이지 않음, 분석가
+판단)</p>
+<table>
+<thead>
+<tr>
+<th>시나리오</th>
+<th>내용</th>
+<th>확률</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A. 양적 확대</td>
+<td>2027년 연간 목표 2,000명을 채워 누적 3,000명을 넘음. 그린 비중이
+가장 큼</td>
+<td>75%</td>
+</tr>
+<tr>
+<td>B. 인사 연동 공식화</td>
+<td>조기승진 가점을 넘어 승진 심사·성과평가·보직 배치에 인증을 공식
+반영(인사처 규정·지침)</td>
+<td>45%</td>
+</tr>
+<tr>
+<td>C. 등급 고도화</td>
+<td>블랙 위에 '운영 책임(앱 소유자)' 요건을 붙이거나, 재인증·유효기간을
+도입</td>
+<td>30%</td>
+</tr>
+<tr>
+<td>D. 형식화·'자격증 인플레'</td>
+<td>그린이 교육 이수증처럼 대량 발급되고 실제 도구 운영 실적과 무관해짐.
+기관 평가 반영이 이를 부추김</td>
+<td>50%</td>
+</tr>
+<tr>
+<td>E. 민간 자격 연계 확대</td>
+<td>자격연계형 인증 대상 민간 자격이 늘고 NIA 외
+교육기관(국가공무원인재개발원·지방자치인재개발원)이 등급 평가를 일부
+맡음</td>
+<td>40%</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>판단</strong>: 목표 인원은 채울 가능성이 높습니다. 위험은
+인원이 아니라 <strong>인증과 실적의 분리</strong>입니다. 2028년
+목표(5,000명)로 가는 길에 기관 평가 반영이 겹치면 시나리오 D 압력이
+커집니다(추정). 블랙 인증을 '운영 중인 도구의 책임자'와 묶어야 인증이
+역량을 반영합니다.</li>
+</ul>
+<h4 id="챔피언-바이브-코딩-확산-전망">챔피언 바이브 코딩 확산 전망</h4>
+<ul>
+<li><strong>확산 조건</strong>
+<ul>
+<li><strong>망</strong>: 지금 실험실은 인터넷망에 있어 공개(O) 등급
+데이터만 다룰 수 있습니다. 2027년 업무망 실험실과 '보안게이트'(인터넷망
+코드·라이브러리를 내부망으로 옮길 때 악성코드·취약점 검사)가 열려야
+민감(S) 업무로 넓어집니다 (<a
+href="https://zdnet.co.kr/view/?no=20260807142020">ZDNet Korea</a>).
+내부망 코딩 에이전트 PoC는 2026년 말 목표입니다.</li>
+<li><strong>모델·도구</strong>: N2SF 등급에 따라 기밀·민감 데이터는
+내부망 모델(국산 오픈웨이트, <a class="xref" href="ch3.html#s3-10">3.10</a>절)만 쓸 수 있습니다. 내부망 모델의
+코딩 성능이 상용 프런티어보다 낮아 업무망 개발 생산성은 인터넷망보다
+떨어질 것으로 봅니다(추정).</li>
+<li><strong>비용·데이터</strong>: 설명회 참석자 244명이 꼽은 장애요인은
+개발환경·구독료 부족(68%), 보안지침 적용 어려움(59%), 데이터
+연계(40%)입니다. 행안부는 공공데이터와 행정서비스를 API·MCP로
+제공하겠다고 했습니다 (<a
+href="https://nocutnews.co.kr/news/6574723">노컷뉴스</a>).</li>
+</ul></li>
+<li><strong>규모 추정(2027 말, 분석가 추정)</strong>: 실험실 가입자는
+처음 두 달 동안 월 약 1,000명씩 늘었습니다. 증가 속도가 절반으로 줄어도
+2027년 말 <strong>가입 공무원 8,000–20,000명, 프로젝트
+3,000–8,000개</strong>입니다. 2단계(운영관리)로 넘어가는 도구는 5–10%인
+수백 개, 3단계(정식 정보화 사업)로 전환되는 도구는 수십 개로 봅니다.
+상위 사례는 광진구청 도구(법령 비교·한글 문서 처리 등, 국무총리
+기관표창)처럼 개인이 만든 뒤 범정부로 확산되는 형태입니다 (<a
+href="https://zdnet.co.kr/view?no=20261118161643">ZDNet Korea</a>).</li>
+<li><strong>장애 요인</strong>: 업무망 이전 지연(국정원 보안성 검토),
+구독료 예산, 관리자의 이해 부족, 그리고 <strong>보상
+구조</strong>입니다. 광진구청 류승인 주무관은 "AI를 잘 쓰기만 하면
+오히려 일이 늘어난다"고 말했습니다 (<a
+href="https://zdnet.co.kr/view/?no=20260508164256">ZDNet
+Korea</a>).</li>
+</ul>
+<h4 id="공무원-개발로-생길-문제들">공무원 개발로 생길 문제들</h4>
+<p>행안부는 산출물을 3단계로 나눕니다. <strong>실험·검증</strong>은
+사전심의 없이 자체 확인만으로 시작하고, <strong>운영관리</strong>는 소관
+부서가 필요성·정확성·보안·개인정보를 확인하고 운영을 책임지며,
+<strong>정보화사업</strong>은 대규모·대국민 서비스에 해당합니다 (<a
+href="https://nocutnews.co.kr/news/6574723">노컷뉴스</a>). 아래 문제는
+대부분 1단계와 2단계 사이, 그리고 2단계 안에서 생깁니다.</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>문제</th>
+<th>발생 경로</th>
+<th>2027 가능성</th>
+<th>완화책</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>섀도 IT·섀도 AI</strong></td>
+<td>실험실의 비용·망 제약을 피해 개인 계정·개인 PC·외부 SaaS로 만든
+도구가 공공 GitLab에 등록되지 않고 쓰임</td>
+<td>높음</td>
+<td>실험실 밖 개발도 신고하는 등록제. 구독료 공동 조달로 우회 동기를
+줄임</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>민감·기밀 데이터 입력, 개인정보</strong></td>
+<td>인터넷망 실험실이나 외부 모델에 민원인 정보·S등급 문서를 올림.
+공노총 조사의 우려 2위</td>
+<td>중간–높음</td>
+<td>N2SF 등급별 데이터 반입 차단(DLP), 가명처리 도구 제공, 개인정보 영향
+자체점검표</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>취약 코드·프롬프트 인젝션</strong></td>
+<td>AI 생성 코드의 보안 결함(<a class="xref" href="ch8.html#s8-1">8.1</a>절 45%), 검증 안 된 외부 라이브러리,
+민원 문서·웹 내용으로 에이전트를 조작. MCP 연결이 늘수록 권한 노출
+범위가 커짐</td>
+<td>높음</td>
+<td>보안게이트 의무 통과, 에이전트 최소 권한·읽기 전용 기본값, 공통
+정적분석</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>고아 앱(유지보수 책임 공백)</strong></td>
+<td>1–2년 순환보직으로 개발자가 떠난 뒤 도구가 그대로 쓰이지만 고칠
+사람이 없음. 외부 API·모델 버전 변경으로 조용히 고장</td>
+<td>높음</td>
+<td>도구마다 '운영 책임 부서' 지정, 인수인계 체크리스트, 미사용·무소유
+도구 자동 폐기</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>행정 오류와 법적 책임</strong></td>
+<td>검증 없는 도구가 대상자 선별·금액 계산에 쓰여 잘못된 처분이 남.
+공무원 과실로 위법하게 손해를 주면 국가배상 대상이고, 고의·중과실이면
+구상할 수 있음(국가배상법 제2조). 완전 자동 처분은 법률 근거가 있어야
+하고 재량 처분은 불가(행정기본법 제20조). '참고용' 도구가 사실상 자동
+처분이 될 위험</td>
+<td>중간</td>
+<td>처분에 영향을 주는 도구는 2단계 이상 의무, 사람 최종 확인 기록,
+적극행정 면책 요건 명시</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>고영향 AI 해당</strong></td>
+<td>공공서비스 자격 확인·결정·비용징수 등 국가기관등의 의사결정은 고영향
+AI 영역(AI 기본법 제2조제4호 자목)이고, 국가기관등도 인공지능사업자에
+포함됨(제2조제7호). 공무원이 만든 복지 선별 보조 도구가 여기에 걸릴 수
+있음</td>
+<td>중간</td>
+<td>도구 등록 시 고영향 사전 검토 항목, 공공 AI 영향평가와 연결</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>기록관리</strong></td>
+<td>공공기록물법은 업무상 생산한 '모든 형태의 기록정보'를 기록물로
+봄(제3조). 프롬프트·생성 결과·도구가 만든 데이터가 기록 시스템 밖 개인
+저장소에 남음</td>
+<td>높음</td>
+<td>공공 GitLab과 기록관리시스템 연계, 도구 산출물의 기록물 분류
+기준</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>접근성·전자정부 표준</strong></td>
+<td>대국민 서비스로 전환할 때 장애인 동등 접근(장애인차별금지법 제21조)
+기준을 맞추지 못함. 정부 표준 프레임워크·UI 표준과 다른 구조</td>
+<td>중간</td>
+<td>3단계 전환 시 접근성 검사 자동화, 공통 UI 템플릿</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>자산화·회계·감사</strong></td>
+<td>예산 없이 만든 도구가 정보자산 목록·SW 자산 대장에 없고, 개인
+구독료·클라우드 비용이 불투명. 운영비가 생기면 예산 근거가 없음</td>
+<td>중간</td>
+<td>2단계 진입 시 정보자원 등록, 소규모 운영비 항목 신설</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>라이선스·저작권</strong></td>
+<td>바이브 코딩이 끌어온 오픈소스의 고지·소스 공개 의무를 모른 채 공개
+GitLab에 올리거나 배포. 한국오픈소스협회는 공무원 대상 라이선스 교육
+트랙을 제안 (<a
+href="https://www.ddaily.co.kr/page/view/2026090412150805096">디지털데일리</a>)</td>
+<td>중간</td>
+<td>저장소 등록 시 라이선스 자동 스캔, 공공 저작물 이용허락 표준</td>
+</tr>
+<tr>
+<td>11</td>
+<td><strong>업무 편중·번아웃</strong></td>
+<td>퇴근 후 개발에 의존하는 '바텀업' 구조. 도구를 만든 사람에게
+운영·문의·추가 개발이 몰림. 성과가 나도 보상이 없음</td>
+<td>높음</td>
+<td>개발 시간을 공식 업무로 인정, 블랙 인증자 정원·직무 지정,
+포상금</td>
+</tr>
+<tr>
+<td>12</td>
+<td><strong>중복 개발·시장 갈등</strong></td>
+<td>기관마다 비슷한 도구를 따로 만듦(프로젝트 770개). 대국민 서비스로
+커지면 민간 SW 사업을 대체해 업계와 충돌. 업계에는 "AI 예산은 늘어도 SW
+기업이 클 시장이 없다"는 우려가 있음(보도 기준)</td>
+<td>중간</td>
+<td>공공 GitLab 검색·재사용 의무, 3단계 전환 시 민간 조달 우선 검토
+기준</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>진단</strong>: 2026년의 규칙은 '시작은 쉽게, 확산은 검토
+후'입니다. 실험 단계의 문턱을 낮춘 것은 맞지만, 2027년 업무망 확대와
+함께 <strong>2단계(운영관리) 진입 기준과 퇴출 기준</strong>이 문제
+대부분을 좌우합니다. 고용노동부 산하 8개 기관이 AI에 164억 원을 쓰면서
+4곳에 AI 전문 인력이 없었다는 국회 지적처럼, 운영·검증 역량 없는 AI
+확산은 이미 쟁점입니다 (<a
+href="https://biz.heraldcorp.com/article/10912236">헤럴드경제</a>).</li>
+</ul>
+<h4 id="다양한-관점">다양한 관점</h4>
+<ul>
+<li><strong>공무원 노조·인사</strong>: 노조의 핵심 요구는 책임
+보호입니다. 공노총은 AI 오류로 공무원이 부당한 책임을 지지 않도록
+적극행정 운영규정 개정을 요구했습니다. 개발 시간 인정과 보상이 없으면
+소수 챔피언에게 일이 몰리고, 인증이 승진과 묶이면 형평 논란(직렬·기관 간
+기회 차이)이 생깁니다.</li>
+<li><strong>감사원·국회</strong>: 감사는 결과보다 절차를 봅니다. 예산
+없이 만든 시스템의 자산 관리, 개인정보 처리, 기록 누락이 먼저 지적될
+가능성이 큽니다. 2026년 국감에서 공무원 직접개발을 따로 다룬 질의는 찾지
+못했습니다.</li>
+<li><strong>민간 SI·SW 업계</strong>: 공공 AI 예산 확대는 환영하지만
+'공무원이 직접 만든다'는 흐름이 대국민 서비스로 커지면 시장 축소로
+봅니다. 동시에 차세대 지방행정처럼 발주자가 AI 코딩을 요구하면서
+사업자에게 검증 책임과 토큰 비용을 지우는 구조에도 부담을 느낍니다.
+대기업 참여제한 조정안은 합의 뒤 1년 7개월째 표류 중입니다(보도 기준, <a
+href="https://www.ddaily.co.kr/page/view/2026072414372745250">디지털데일리</a>).</li>
+<li><strong>시민</strong>: 빠른 개선(민원 응답, 정보 탐색)은 이득입니다.
+반면 기관마다 도구 품질이 달라 <strong>지역·기관 간 서비스
+격차</strong>가 생기고, 잘못된 안내에 대한 구제 경로가 불분명합니다.
+공공 AI 윤리기준의 '사람의 최종 책임'은 실제 처분 기록으로 확인할 수
+있어야 의미가 있습니다.</li>
+<li><strong>보안 기관(국정원·KISA)</strong>: N2SF는 등급별 사용을
+허용하지만, 수천 명이 만드는 도구를 한 건씩 보안성 검토할 수는 없습니다.
+2027년 실태평가를 N2SF 중심으로 바꾸는 방향(보도 기준)과 보안게이트를
+결합한 <strong>자동 점검</strong>이 현실적인 선택입니다.</li>
+</ul>
+<h4 id="해외-비교짧게">해외 비교(짧게)</h4>
+<ul>
+<li><strong>영국</strong>: 정부가 직접 만든 공무원용 AI 도구 묶음
+'Humphrey'(2025-01)를 운영합니다. 의견수렴 분석 도구 Consult는 실제
+평가에서 F1 0.76을 냈습니다 (<a
+href="https://www.gov.uk/government/news/government-built-humphrey-ai-tool-reviews-responses-to-consultation-for-first-time-in-bid-to-save-millions">GOV.UK</a>).
+중앙 전문조직(i.AI)이 만들고 부처는 쓰는 구조로, 한국의 '공무원이 만들고
+중앙이 키우는' 구조와 반대입니다.</li>
+<li><strong>미국</strong>: 연방기관 AI 사용 사례 목록(OMB M-25-21)은
+2025년 3,611건으로 2024년(2,133건)보다 늘었습니다 (<a
+href="https://cdt.org/?p=113605">CDT</a>). 고영향 사례는
+445건(12.3%)입니다 (<a
+href="https://www.brookings.edu/articles/assessing-the-state-of-ai-adoption-across-the-federal-government/">Brookings</a>).
+<strong>공개 목록</strong>이 관리의 기본 도구입니다.</li>
+<li><strong>싱가포르</strong>: 공무원 15만 명 중 절반 이상이 정부 AI
+비서 Pair를 정기적으로 씁니다. GovTech는 에이전트의 소유자와 활동을
+추적하는 <strong>AI 에이전트 레지스트리</strong>를 만들고
+있습니다(2026-06, <a
+href="https://www.thestar.com.my/aseanplus/aseanplus-news/2026/06/02/singapore-to-create-a-registry-of-ai-agents-for-150000-public-officers-amid-ai-push">The
+Star/ST</a>). 한국 공공 GitLab에 '소유자·운영 상태'를 붙이면 같은 기능을
+할 수 있습니다.</li>
+</ul>
+<h4 id="공공-ax-조달실행체계-한국형-gdsisp-관행구독형-예산">공공 AX
+조달·실행체계: 한국형 GDS·ISP 관행·구독형 예산</h4>
+<ul>
+<li><strong>한국형 GDS의 출범</strong>: 업계·학계는 영국 GDS처럼
+기획·예산·구축을 원스톱으로 맡는 조직을 요구하면서, 권한이 없으면
+'옥상옥'이 되고 직접개발 범위를 정하지 않으면 공공 SW 시장이 줄어든다고
+경고했습니다(<a
+href="https://www.etnews.com/20260605000225">전자신문</a>, 06-07).
+과기정통부는 국무총리훈령으로 장관 직속 '국민AI서비스혁신추진단'을
+만들기로 했고(07-03 행정예고, 개발 인력 70–90명 계획, <a
+href="https://www.ddaily.co.kr/page/view/2026070909461813533">디지털데일리</a>),
+11-01 김세웅 전 카카오 부사장을 단장으로 선임했습니다(임기 2028-09-30).
+임기제로 채용한 민간 개발자 26명이 전체 인력의 약 43%입니다(<a
+href="https://inews24.com/view/2021029">아이뉴스24</a>). 서비스 개발은
+2027년 상반기에 본격화합니다. 행안부의 공무원 직접개발(<a class="xref" href="#s15-7">15.7</a>절 위)과
+과기정통부 추진단이 나란히 있어 역할 구분이 과제입니다.</li>
+<li><strong>ISP→PoC→본사업 반복</strong>: 500억 원 이상 사업은 ISP,
+예비타당성조사, ISMP를 거쳐 본사업까지 최대 4년 이상 걸립니다. 국회
+토론회 발제는 PoC를 마친 사업의 ISP·ISMP 면제, PoC 성공 시 추가 입찰
+없는 본사업 전환(조건부 연계 발주), 정부 차원의 'AI 선도 도입 예산 풀'을
+제안했습니다(<a
+href="https://www.etnews.com/20260810000294">전자신문</a>, 08-10).
+과기정통부는 대부분이 기획예산처 예산 편성권과 닿아 있고 수의계약 연결은
+공정성과 충돌할 수 있다고 답했습니다(보도 기준).</li>
+<li><strong>구독형 예산</strong>: '2026 공공부문 SW 수요예보'에서 SaaS
+구매 수요가 처음 따로 집계돼 406억 원(SW 구매의 9.5%)이었고, 그중 AI
+SaaS가 51.6%입니다. 공공 SaaS 계약은 2024년 76억, 2025년 112억 원이었고
+2026년 1분기 49.3억 원(+116%)으로, NIA는 2026년 최소 150억 원을
+전망합니다(<a
+href="https://www.ddaily.co.kr/page/view/2026051608494544776">디지털데일리</a>).
+그러나 토큰 종량 과금은 연 단위 고정 예산과 맞지 않습니다.</li>
+<li><strong>AI 솔루션 가치산정</strong>: SW사업 대가산정 가이드 2025년
+개정판은 AI 커스터마이징을 기본형·데이터형·모델형으로 나눴습니다(보도
+기준). 모델 사용료(토큰), 재학습, 성능 유지 같은 운영 단계 비용의 기준은
+아직 약합니다. IT서비스 업계는 발주기관의 산출내역서 공개를
+요구합니다(<a
+href="https://www.ddaily.co.kr/page/view/2026042510561099735">디지털데일리</a>).</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>전망</th>
+<th>가능성 · 확률(±불확도)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>국민AI서비스혁신추진단이 직접 개발한 대국민 AI 서비스를 2027년 안에
+1개 이상 정식 출시</td>
+<td>높음 · 70% (±15) · 근거 <a
+href="https://www.ddaily.co.kr/page/view/2026070909461813533">디지털데일리</a>,
+<a href="https://inews24.com/view/2021029">아이뉴스24</a></td>
+</tr>
+<tr>
+<td>PoC를 마친 AI 사업의 ISP·ISMP 면제나 PoC→본사업 연계 발주가 2027년
+안에 법령·지침에 반영</td>
+<td>중간 · 40% (±20) · 근거 <a
+href="https://www.etnews.com/20260810000294">전자신문</a> · 반론 같은
+기사의 정부 측 신중론(보도 기준)</td>
+</tr>
+<tr>
+<td>2027년 공공 SaaS 계약액이 300억 원을 넘음(2025년 112억, 2026년 최소
+150억 전망)</td>
+<td>중간 · 40% (±20) · 근거 <a
+href="https://www.ddaily.co.kr/page/view/2026051608494544776">디지털데일리</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>제언</strong>: 추진단과 행안부 실험실의 역할을 '범정부 공통
+서비스(추진단)·기관 업무 도구(실험실)·대규모 시스템(민간 조달)'으로
+나누고 공개합니다. PoC 성공 사업은 ISP를 줄이되 경쟁 입찰을 유지하는
+'간이 ISP'로 공정성 문제를 피합니다. AI 사업 예산에 토큰·구독 비용을
+별도 항목(상한 포함)으로 두고, 대가산정 가이드에 운영 단계 AI 비용
+기준을 넣습니다.</p>
+<blockquote>
+<p><strong>확인 필요</strong>:</p>
+<ul>
+<li>유전체 등 연구용 데이터를 클라우드로 옮길 때 고보안(S) 등급을 요구한
+구체 사례(2026-04)는 공개 보도에서 찾지 못했습니다.</li>
+<li>국민AI서비스혁신추진단 근거 훈령 번호(보도상 제948호)와 첫 과제,
+SW사업 대가산정 가이드 2025년 개정판의 AI 유형 구분은 원문으로 확인하지
+못했습니다.</li>
+</ul>
+</blockquote>
+<h4 id="2027-전망-5">2027 전망</h4>
+<table>
+<thead>
+<tr>
+<th>전망</th>
+<th>가능성 · 확률(±불확도)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AI 챔피언 2027년 연간 양성 목표(2,000명)를 채워 누적 인증자가
+3,000명을 넘음</td>
+<td>높음 · 75% (±15) · 근거 <a
+href="https://www.tokenpost.kr/news/ai/288723">토큰포스트</a>, <a
+href="https://www.kbmaeil.com/article/20261029500312">경북매일</a></td>
+</tr>
+<tr>
+<td>'공무원 직접개발·산출물 관리 지침'(등록·3단계 관리)이 2027년
+상반기까지 제정·시행됨</td>
+<td>높음 · 70% (±15) · 근거 <a
+href="https://nocutnews.co.kr/news/6574723">노컷뉴스</a>, <a
+href="https://zdnet.co.kr/view/?no=20260807142020">ZDNet Korea</a></td>
+</tr>
+<tr>
+<td>업무망 AI 정부 실험실과 내부망 코딩 에이전트가 2027년 안에 개통(시범
+포함)</td>
+<td>중간 · 60% (±20) · 근거 <a
+href="https://nocutnews.co.kr/news/6574723">노컷뉴스</a> · 반론 <a
+href="https://zdnet.co.kr/view?no=20261113134630">ZDNet Korea</a>(국정원
+보안성 검토에 따른 범위 조정)</td>
+</tr>
+<tr>
+<td>AI 정부 실험실 등록 프로젝트가 2027년 말 누적 3,000개를 넘음</td>
+<td>중간 · 65% (±20) · 근거 <a
+href="https://nocutnews.co.kr/news/6574723">노컷뉴스</a>, <a
+href="https://nocutnews.co.kr/news/6561707">노컷뉴스</a></td>
+</tr>
+<tr>
+<td>AI 챔피언 인증이 조기승진 가점을 넘어 일반 승진·성과평가·보직에 공식
+반영됨</td>
+<td>중간 · 45% (±20) · 근거 <a
+href="https://nocutnews.co.kr/news/6574723">노컷뉴스</a> · 반론 <a
+href="https://mobile.newsis.com/view/NISX20260422_0003601618">공노총/뉴시스</a></td>
+</tr>
+<tr>
+<td>공무원이 만든 도구 가운데 대국민 서비스나 범정부 공통 서비스로 정식
+전환된 사례가 10개 이상 공개됨</td>
+<td>중간 · 45% (±20) · 근거 <a
+href="https://www.etnews.com/20260722000124">전자신문</a>, <a
+href="https://eiec.kdi.re.kr/policy/materialView.do?num=288372&amp;topic=L">KDI/행안부</a></td>
+</tr>
+<tr>
+<td>공무원 개발 도구와 관련한 보안·개인정보 사고(유출·노출 포함)가 1건
+이상 공개 보도됨</td>
+<td>중간 · 50% (±20) · 근거 <a
+href="https://mobile.newsis.com/view/NISX20260422_0003601618">공노총/뉴시스</a>,
+<a
+href="https://www.ddaily.co.kr/page/view/2026090412150805096">디지털데일리</a></td>
+</tr>
+<tr>
+<td>감사원 감사나 국회(국감)가 공무원 직접개발·공공 AI 도구의
+관리(자산·보안·기록·전문인력) 문제를 공식 지적</td>
+<td>중간 · 55% (±20) · 근거 <a
+href="https://biz.heraldcorp.com/article/10912236">헤럴드경제</a></td>
+</tr>
+<tr>
+<td>공공 SW 업계 단체가 공무원 직접개발 확대에 대해 공식
+의견(성명·건의)을 냄</td>
+<td>중간 · 40% (±20) · 근거 <a
+href="https://www.ddaily.co.kr/page/view/2026100215292065648">디지털데일리</a></td>
+</tr>
+<tr>
+<td>공공 AI 윤리기준·공공 AI 영향평가가 2027년 신규 AI 사업에 실제
+적용됨</td>
+<td>높음 · 70% (±15) · 근거 <a
+href="https://fnnews.com/news/202608251631449251">파이낸셜뉴스</a>, <a
+href="https://v.daum.net/v/H3JLK5nQZ4">다음/정책브리핑</a></td>
+</tr>
+<tr>
+<td>공무원 개발 도구가 원인인 잘못된 처분이 행정심판·소송·국가배상
+청구로 공개됨</td>
+<td>낮음 · 15% (±10) · 근거 <a
+href="https://www.law.go.kr/법령/국가배상법">국가배상법 제2조</a>, <a
+href="https://www.law.go.kr/법령/행정기본법">행정기본법 제20조</a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="한국-시사점-3">한국 시사점</h4>
+<ol type="1">
+<li><strong>등록제와 소유자 표시</strong>: 공공 GitLab에 등록하는 모든
+도구에 운영 책임 부서, 데이터 등급(N2SF), 처분 영향 여부, 마지막
+점검일을 붙입니다. 싱가포르 에이전트 레지스트리와 미국 사용 사례
+목록처럼 기관별 현황을 공개합니다.</li>
+<li><strong>2단계 문턱과 퇴출 규칙</strong>: 처분·개인정보·대국민 영향이
+있는 도구는 2단계(운영관리) 심사를 의무로 하고, 6개월 동안 소유자가
+없거나 점검되지 않은 도구는 자동으로 멈춥니다(고아 앱 대책).</li>
+<li><strong>인증을 실적과 묶기</strong>: 블랙 인증은 '운영 중인 도구의
+책임자' 요건과 재인증 주기를 붙입니다. 기관 평가에는 인증 인원 대신 운영
+도구 수와 재사용 횟수를 반영해 자격증 인플레를 막습니다.</li>
+<li><strong>개발 시간과 면책을 제도화</strong>: 개발 시간을 공식 업무로
+인정하고, 절차를 지킨 실험의 적극행정 면책 요건을 지침에 구체적으로
+씁니다. 구독료·코딩 도구는 중앙에서 공동 조달합니다.</li>
+<li><strong>법령 체크리스트 자동화</strong>: 등록 단계에서 행정기본법
+제20조(자동 처분), AI 기본법 고영향 영역, 공공기록물법, 장애인차별금지법
+제21조, 오픈소스 라이선스를 자동 점검 항목으로 넣습니다.</li>
+</ol>
+<h3 id="s15-8">15.8 표준: EU 조화표준과 ISO/IEC 42000 시리즈</h3>
+<table>
+<thead>
+<tr>
+<th>시점</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025-05 / 2025-07</td>
+<td>ISO/IEC 42005(AI 영향평가)·42006(AI 경영시스템 심사·인증기관
+요구사항) 발간</td>
+</tr>
+<tr>
+<td>2025-10</td>
+<td>CEN·CENELEC이 시한을 놓친 JTC21 표준 개발을 가속하는 특별조치
+채택</td>
+</tr>
+<tr>
+<td>2026-07-24</td>
+<td><strong>EN 18286(AI 품질경영시스템, AI Act 제17조)</strong> 발간.
+JTC21 요청 표준 중 첫 발간</td>
+</tr>
+<tr>
+<td>2026-12 / 2027-02</td>
+<td>prEN 18228(위험관리) 2026-12, prEN 18284(데이터
+품질)·18285(적합성평가) 2027-02 예상</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>2027 전망</strong>: 핵심 조화표준이 상반기에 차례로 나오고,
+EU 관보(OJEU) 인용 시점이 고위험 의무 적용(2027-12-02)과 맞물립니다.
+ISO/IEC 42001 인증 시장이 커지면서 한국 인증기관 인정 체계 정비가
+필요합니다.</li>
+<li><strong>한국 과제</strong>: EN 표준과 KS·TTA 표준의 대응표를 만들어
+EU 수출 기업의 이중 부담을 줄이고, ISO/IEC JTC 1/SC 42에서 에이전트·평가
+표준을 주도합니다. 한국 KS·TTA 대응 현황과 국내 기관의 SC 42 역할은 이번
+조사에서 확인하지 못했습니다.</li>
+</ul>
+<h3 id="s15-9">15.9 글로벌 사우스와 AI 격차</h3>
+<blockquote>
+<p>자료: World Bank 세계개발보고서 2026 'The Promise of Artificial
+Intelligence'(2026-08-04), IMF 세계경제전망 2026-10 1장, ITU Facts and
+Figures 2026(2026-11-03), Microsoft AI 확산 보고서 2026년
+2분기(2026-09-21), UNCTAD 기술혁신보고서 2025, OECD 디지털경제사회전망
+2026(2026-11-05), UNECA 아프리카 경제보고서 2026(2026-04-02). 인도는
+<a class="xref" href="#s15-1">15.1</a>절 표를 참조합니다.</p>
+</blockquote>
+<p><strong>한 줄 요약</strong>: AI 격차는 '쓰는 나라와 못 쓰는 나라'보다
+'만드는 나라와 받아 쓰는 나라'의 격차로 굳어지고 있습니다. 컴퓨트·자본은
+미·중에, 하드웨어 공급은 한국·대만에 몰려 있습니다. 개도국에는 큰
+모델보다 저비용 '작은 AI'가 현실적인 경로라는 것이 World Bank의
+결론입니다.</p>
+<p><strong>핵심 수치</strong></p>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>값</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>생성형 AI로 자동화될 위험이 있는 일자리 비중</td>
+<td>고소득국 14.2% 대 저·중소득국 4.5%</td>
+<td>World Bank WDR 2026</td>
+</tr>
+<tr>
+<td>생성형 AI로 생산성이 의미 있게 오를 수 있는 일자리</td>
+<td>고소득국 18.7% 대 개도국 16.2%</td>
+<td>World Bank WDR 2026</td>
+</tr>
+<tr>
+<td>AI 관련 컴퓨팅 하드웨어 순수입 중 미·중 비중(2025)</td>
+<td>75% 이상(2024년 이후 신규 데이터센터의 57%)</td>
+<td>IMF WEO 2026-10 1장</td>
+</tr>
+<tr>
+<td>AI 컴퓨팅 하드웨어 순교역 중 대만·한국 공급 비중</td>
+<td>62%</td>
+<td>IMF WEO 2026-10 1장</td>
+</tr>
+<tr>
+<td>세계 성장의 95%를 차지하는 국가 수</td>
+<td>32개국(4월 54개국)</td>
+<td>IMF 2026-10(보도 기준)</td>
+</tr>
+<tr>
+<td>생성형 AI 사용률(15–64세, 2026-06)</td>
+<td>글로벌 노스 28.8% 대 사우스 16.2%(세계 18.8%)</td>
+<td>Microsoft AI 확산 보고서</td>
+</tr>
+<tr>
+<td>인터넷 이용률</td>
+<td>고소득국 93% 대 저소득국 32%, 오프라인 20억 명</td>
+<td>ITU 2026</td>
+</tr>
+<tr>
+<td>5G 커버리지</td>
+<td>고소득국 86% 대 저소득국 4%</td>
+<td>ITU 2026</td>
+</tr>
+<tr>
+<td>최빈국 모바일 브로드밴드 요금(1인당 GNI 대비, 중간값)</td>
+<td>6.1%(목표 2%)</td>
+<td>ITU 2026</td>
+</tr>
+<tr>
+<td>아프리카의 세계 데이터센터 용량 비중</td>
+<td>약 1% 이하</td>
+<td>Xalam Analytics(보도 기준)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>읽는 법</strong></p>
+<ul>
+<li><strong>자동화 위험이 낮다는 것이 좋은 소식만은 아닙니다</strong>:
+저·중소득국은 사무·전문직 비중이 낮아 자동화 위험이 작지만, 같은 이유로
+생산성 이득도 작습니다. World Bank는 증기기관이 저소득국에 닿기까지 약
+80년, 전기 40년, 인터넷 20년이 걸렸고, ChatGPT는 출시 6개월 만에
+트래픽의 절반이 중소득국에서 나왔다고 봅니다. 확산은 빨라졌지만
+전력·통신·기술·제도가 없으면 이득이 생기지 않습니다. 사하라 이남
+아프리카 농촌 학교의 약 1/3은 안정적인 전기가, 2/3 이상은 인터넷이
+없습니다.</li>
+<li><strong>'작은 AI'</strong>: World Bank는 큰 모델이나 대형 데이터센터
+대신 문자·음성·피처폰으로 쓰는 저비용 도구로 시작하라고 권합니다. 단계는
+'도입 → 적응 → 고도화'이고, 전력(Mission 300), 연결, 현지어 데이터,
+컴퓨트 접근을 먼저 갖추라고 합니다.</li>
+<li><strong>집중</strong>: UNCTAD는 미·중 중심의 100개 기업이 세계 기업
+R&amp;D의 40%를 차지하고, 118개국(대부분 글로벌 사우스)이 주요 AI
+거버넌스 논의에 빠져 있다고 봅니다(보도 기준). OECD는 회원국 안에서도
+AI를 쓰는 기업이 대기업 52% 대 전체 20%로 갈려, 지원 없이는 2030년까지
+대기업 쏠림이 이어진다고 봅니다(보도 기준).</li>
+<li><strong>아프리카</strong>: UNECA 2026 보고서는 데이터·프런티어
+기술을 생산성 정체의 탈출구로 보고 공동 데이터센터 인프라를 권합니다.
+2025-04 키갈리 선언의 '아프리카 AI 펀드'(600억 달러)는 2026-04까지 자본
+약정이 보고되지 않았습니다(보도 기준).</li>
+<li><strong>2027 일정</strong>: 제네바 AI 정상회의(2027-06-21~22)가
+뉴델리 정상회의(2026-02, 뉴델리 선언 채택 당시
+88개국·기구(86개국+국제기구 2곳), 이후 3개국 추가로 91개)를 잇습니다.
+컴퓨트 접근과 역량 격차가 유엔 글로벌 대화(18장)와 함께 주요 의제가
+됩니다.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>2027 전망</th>
+<th>가능성 · 확률(±불확도)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>글로벌 노스와 사우스의 생성형 AI 사용률 격차(Microsoft 기준)가 12%p
+이상으로 유지되거나 커짐</td>
+<td>높음 · 75% (±15) · 근거 <a
+href="https://blogs.microsoft.com/on-the-issues/2026/09/21/the-continued-state-of-global-ai-diffusion-in-2026/">Microsoft</a>,
+<a href="https://www.worldbank.org/en/publication/wdr2026">World
+Bank</a></td>
+</tr>
+<tr>
+<td>IMF 다음 분석에서도 미·중이 AI 컴퓨팅 하드웨어 순수입의 70% 이상을
+차지</td>
+<td>높음 · 80% (±10) · 근거 <a
+href="https://www.imf.org/-/media/files/publications/weo/2026/october/english/ch1.pdf">IMF</a></td>
+</tr>
+<tr>
+<td>제네바 AI 정상회의 공식 산출물에 컴퓨트 접근·역량 격차 해소
+약속(기금·바우처·공유 인프라 중 1개 이상)이 포함</td>
+<td>높음 · 70% (±15) · 근거 <a
+href="https://www.itu.int/en/mediacentre/Pages/PR-2026-11-03-Facts-and-Figures.aspx">ITU</a>,
+<a
+href="https://www.worldbank.org/en/news/press-release/2026/08/04/ai-offers-lifeline-to-developing-economies-in-an-era-of-weak-growth">World
+Bank</a></td>
+</tr>
+<tr>
+<td>ITU 2027년 집계에서 오프라인 인구가 20억 명 아래로 내려감</td>
+<td>중간 · 60% (±15) · 근거 <a
+href="https://www.itu.int/en/mediacentre/Pages/PR-2026-11-03-Facts-and-Figures.aspx">ITU</a></td>
+</tr>
+<tr>
+<td>아프리카 AI 펀드(600억 달러)의 실제 자본 약정이 목표의 10% 이상</td>
+<td>낮음 · 15% (±10) · 근거 <a
+href="https://www.newtimes.co.rw/article/35044/news/technology/one-year-later-africas-ai-drive-shifts-toward-execution/amp">The
+New Times</a></td>
+</tr>
+<tr>
+<td><strong>한국의 AI 활용 개발협력 전략에 따라 '글로벌 AI 허브'가 문을
+열고, AI ODA 사업이 2026년보다 늘어남</strong></td>
+<td>높음 · 70% (±15) · 근거 <a
+href="https://koreatimes.co.kr/foreignaffairs/20260723/korea-proposes-2027-oda-budget-at-46-billion">The
+Korea Times</a>, <a
+href="https://m.korea.kr/briefing/actuallyView.do?newsId=148975301">대한민국
+정책브리핑</a></td>
+</tr>
+<tr>
+<td><strong>EDCF 등 정책금융을 묶은 'K-AI 패키지'(AI 솔루션 + 데이터센터
++ 전력)가 아프리카·동남아에서 첫 계약</strong></td>
+<td>중간 · 35% (±20) · 근거 <a
+href="https://www.koreatimes.co.kr/foreignaffairs/20260909/korea-vows-closer-cooperation-with-african-partners-at-koafec-meeting">The
+Korea Times</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>한국 시사점</strong></p>
+<ol type="1">
+<li><strong>공급자 위치를 외교 자산으로</strong>: IMF는 AI 하드웨어
+순교역의 62%를 대만·한국이 공급한다고 봅니다. 한국은 '격차의 수혜국'으로
+보일 수 있으므로, 메모리·장비 수출과 개도국 역량 지원을 함께 내놓는 것이
+제네바 정상회의와 유엔 무대(18장)에서 신뢰를 얻는 길입니다.</li>
+<li><strong>AI ODA의 방향</strong>: 2027 ODA 정부안은 6조 3,084억
+원(+8,712억 원)이고, 국제개발협력위원회가 2026-07 'AI 활용 개발협력
+추진전략'을 의결했습니다(보도 기준). KOICA의 AI 사업 예산은 24억
+원(2024)에서 320억 원(2026)으로 늘었습니다. World Bank 권고처럼 대형
+인프라보다 한국어 외 현지어 데이터, 피처폰·음성 기반 '작은 AI', 공공
+디지털 행정에 무게를 둡니다.</li>
+<li><strong>소버린 패키지와 연결</strong>: 14·18장의 '모델 + GPU 운영 +
+NPU + 전력' 패키지는 UAE·사우디 같은 자본 보유국용입니다. 저소득국에는
+ODA·EDCF와 결합한 경량 패키지(오픈웨이트 + 저전력 추론 + 교육)가 따로
+필요합니다. 2026-09 한-아프리카 경제협력회의(KOAFEC)에서 제안한 'K-AI
+패키지'가 그 시험대입니다.</li>
+</ol>
+<blockquote>
+<p><strong>확인 필요</strong>: IMF '32개국이 성장의 95%'(IMF 원문 문장
+미확인, AP 보도), UNCTAD·OECD 수치(원문 페이지 403), UNECA 보고서 자체의
+AI 수치(미확보), 2027 ODA 국회 확정액, 'K-AI 패키지' 공식 명칭과 계약
+현황.</p>
+</blockquote>
+<h4 id="ai-풀스택-수출과-ai-oda-시장-교두보와-수원국-주권-사이">AI
+풀스택 수출과 AI ODA: 시장 교두보와 수원국 주권 사이</h4>
+<ul>
+<li><strong>사우디 풀스택 컨소시엄</strong>: 2026-02 아람코 디지털과
+한국 풀스택 AI 컨소시엄(리벨리온·퓨리오사AI·NC AI·업스테이지·LG
+AI연구원·유라클·메가존클라우드)이 협약을 맺었습니다. 과기정통부는
+반도체·모델·인프라를 묶은 첫 실질적 패키지 진출로 평가했습니다.
+메가존클라우드 컨소시엄(KRFSAI)이 2026년 AI 반도체 해외실증(서버형)
+주관사로 4–12월 1차 실증을 맡았고, 아람코는 PoC 뒤 PIF 산하 HUMAIN과의
+협력을 검토한다고 밝혔습니다(보도 기준, <a
+href="https://view.asiae.co.kr/en/article/2026020211071192006">아시아경제</a>,
+<a
+href="https://www.ddaily.co.kr/page/view/2026071520334747204">디지털데일리</a>).
+리야드 LEAP 2026(08-31~09-03)에는 '한국 풀스택 AI 컨소시엄' 공동관이
+섰습니다(<a
+href="https://koreatimes.co.kr/business/companies/20260831/nc-ai-takes-physical-ai-to-saudi-tech-showcase">The
+Korea Times</a>). 계약 금액은 공개되지 않았습니다.</li>
+<li><strong>AI ODA 추진전략(2026-07-23)</strong>: 제58차
+국제개발협력위원회가 확정했습니다. 목표는 '글로벌 AI 기본사회'이고,
+협력국 준비 수준에 따라 기반 구축부터 현지형 모델까지 단계적으로
+지원합니다. 5대 과제에는 협력국 AI 거버넌스 지원, AI 융합·특화 사업, ODA
+투명성 제고가 들어 있고, 2027년 개소할 글로벌 AI 허브가 거점입니다(<a
+href="https://eiec.kdi.re.kr/policy/materialView.do?num=284645">KDI
+경제정보센터</a>). 외교부는 이와 별도로 '무상분야 AI ODA 추진전략'을
+세웠습니다.</li>
+<li><strong>쟁점 1, 운용 주권 대 시장 교두보</strong>: 풀스택 수출은
+한국 칩·모델에 묶인 운영을 남기고, ODA는 수원국의 자립을 목표로 합니다.
+같은 사업이 두 목표를 함께 내걸면 수원국은 '구속성 원조'로 읽습니다.
+자본 보유국(사우디·UAE)에는 상업 패키지, 저소득국에는 오픈웨이트·현지
+운영 인력 이양을 기본으로 하는 경량 패키지로 나눠야 합니다(위 시사점
+3).</li>
+<li><strong>쟁점 2, 집행 체계</strong>: 무상은 외교부·KOICA, 유상은
+재정경제부·EDCF, 수출 실증은 과기정통부·NIPA로 나뉘어 있습니다. 같은
+나라에 세 경로가 따로 들어가면 데이터센터·모델·교육이 서로 맞지
+않습니다. 국가별 단일 창구나 공동 사업 지침이 있는지는 공개 자료로
+확인되지 않습니다.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>2027 전망</th>
+<th>가능성 · 확률(±불확도)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AI ODA의 무상(외교부·KOICA)·유상(EDCF)·수출 실증(과기정통부)을 묶은
+국가별 단일 창구 또는 공동 사업 지침이 마련</td>
+<td>낮음 · 25% (±15) · 근거 <a
+href="https://eiec.kdi.re.kr/policy/materialView.do?num=284645">KDI
+경제정보센터</a></td>
+</tr>
+<tr>
+<td>사우디 국산 NPU 서버 실증이 2027년 2차 실증 또는 HUMAIN 연계
+파일럿으로 이어짐</td>
+<td>중간 · 50% (±20) · 근거 <a
+href="https://www.ddaily.co.kr/page/view/2026071520334747204">디지털데일리</a></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>확인 필요</strong>: 아람코 디지털 협약의 법적 성격(MOU
+여부)과 금액, 1차 실증 결과, AI ODA 추진전략 5대 과제의 원문 명칭과
+부처별 역할, 무상분야 전략의 발표일.</p>
+</blockquote>
+<h3 id="s15-10">15.10 한국 시사점</h3>
+<ol type="1">
+<li><strong>강점 확대</strong>: 2027 과기정통부 AI 예산 정부안(9.4조
+원), GPU(약 1만 장), 데이터(1조 토큰)는 미·중을 빼면 최대급 공공
+투입입니다. 모델·컴퓨트 점수가 가장 크게 오를 수 있습니다.</li>
+<li><strong>상대적 하락 위험</strong>: Oxford 정부 AI 준비도가 3위에서
+8위로 떨어졌습니다. 투자에 비해 거버넌스·집행 체계 평가가 약점이므로,
+국가AI전략위원회의 실행 KPI를 공개해야 합니다.</li>
+<li><strong>규제 타이밍</strong>: EU 고위험 의무가 2027년 12월로
+늦춰지면서 한국의 고영향 규율이 먼저 적용되는 구도입니다. 계도기간
+이후에도 과태료는 '중대 사고'에 한정하고, 고영향 기준을 EU 부속서 III와
+ISO/IEC 42001에 맞춥니다.</li>
+<li><strong>프런티어 모델</strong>: 독파모를 경쟁형에서 집중형 국가
+컨소시엄으로 바꾸고, 오픈웨이트 공개와 독자성 기준을 명문화하고,
+에이전트·코딩 평가를 도입합니다.</li>
+<li><strong>인재</strong>: 미국의 AI 연구자 유입이 89% 줄고 H-1B 비용이
+오른 지금이 해외 인재 유치 기회입니다. 프런티어 인재 예산(250억 원)을
+크게 늘리고, AI 톱티어 비자와 연봉 상한 예외를 결합합니다.</li>
+<li><strong>도입</strong>: 활용률(66.5%)은 최고 수준이지만 생산성 상관은
+0.08입니다. '보급'에서 '업무 재설계'로 옮겨 가야 합니다. 공공부문
+에이전트 전환 목표(UAE 50% 참고)와 중소기업 AX 바우처를 연계합니다.</li>
+<li><strong>저작권·데이터</strong>: 문체부 표준계약서를 확정하고
+공공·방송·출판 학습데이터 라이선스 풀을 만들어, 일본식 허용과 EU식
+옵트아웃 사이의 <strong>'계약형' 모델</strong>로 차별화합니다.</li>
+<li><strong>국제 거버넌스</strong>: 서울 정상회의(2024) 계승국으로서
+제네바 정상회의, G20, AISI 네트워크에서 평가 공동화를 주도합니다. '제3의
+소버린 패키지(모델 + GPU 운영 + NPU)'를 수출합니다.</li>
+<li><strong>2027 상반기 모니터링 지표</strong>
+<ul>
+<li>국회에서 확정된 AI 예산</li>
+<li>계도기간 이후 집행 방침</li>
+<li>프런티어 체계(독파모 3차) 발표</li>
+<li>GPU 1만 장 조달 일정</li>
+<li>한국 최고 모델의 프런티어 대비 비율(66.7%) 유지 여부</li>
+</ul></li>
+</ol>
+<h3 id="s15-11">15.11 국가인공지능전략위원회 안건(제안, 인공지능기본법
+제8조 기준)</h3>
+<ul>
+<li><strong>이행점검 공개(1호·2의3호)</strong>: 기본계획·행동계획 과제별
+KPI와 이행률을 분기마다 공개해 집행·거버넌스 평가(Oxford 8위)를
+보완합니다.</li>
+<li><strong>입법 원칙 운영(5호 규제 개선)</strong>: 'AI 입법은 기존 법률
+개정 우선' 원칙에 따라 개정 대상 법률 목록과 일정을 의결합니다.</li>
+<li><strong>인재(5의2호 인력 제도·5의3호 전문인력 양성)</strong>: 연구자
+보수 특례, 해외 공동 임용, 정착률 KPI를 의결합니다(<a class="xref" href="#s15-5">15.5</a>절).</li>
+<li><strong>공공 활용 기준(7호)</strong>: 공공 AI의 보안 등급별 허용
+모델 기준과 N2SF 연계를 심의합니다(<a class="xref" href="#s15-6">15.6</a>절).</li>
+<li><strong>표준(8호 국제규범)</strong>: EU 조화표준·ISO/IEC 42000
+시리즈와 국내 표준의 대응 방향을 정합니다(<a class="xref" href="#s15-8">15.8</a>절).</li>
+</ul>
+<hr />
+<h4 id="공공-ax-안건157절에서-이동">공공 AX 안건(15.7절에서 이동)</h4>
+<ul>
+<li><strong>공공 AI 도구 등록·관리 기준(7호 산업·공공 활용·9호
+권고)</strong>: 행안부의 직접개발 지침을 국가기관 전반(지자체·공공기관
+포함)에 적용하도록 권고하고, 등록 항목(소유자·데이터 등급·처분
+영향·고영향 여부)과 공개 범위를 의결합니다. 주관은 행안부, 협조는
+국정원·개인정보위·국가기록원입니다(지침 제정·시행 높음 · 70%).</li>
+<li><strong>공공 AI 인재 인증의 인사 연계(5의3호 전문인력 양성·2의2호
+조정)</strong>: 행안부 AI 챔피언과 인사처 인사제도(조기승진·성과평가)의
+연계 원칙, 재인증, 직렬·기관 형평 기준을 조정합니다(인사 반영 공식화
+중간 · 45%).</li>
+</ul>
+<blockquote>
+<p><strong>확인 필요</strong>:</p>
+<ul>
+<li>AI 챔피언 누적 인증자 '약 1,450명'(2026-09-01)은 지역 언론
+보도입니다. 행안부·NIA 공식 집계와 등급별(그린·블루·블랙) 인원은 찾지
+못했습니다.</li>
+<li>5급 조기승진 블랙 가점은 09-08 국무회의 보고를 전한 노컷뉴스
+기사로만 확인했습니다. 인사처 공고문 원문은 보지 못했습니다.</li>
+<li>AI 정부 실험실의 2027년 동시 이용 목표는 보도마다 다릅니다(07–08월
+3,000명, 09-08 6,000명).</li>
+<li>'공무원 직접개발·산출물 관리 지침'(가칭 '공공 AX 업무 지침')은
+2026년 하반기 제정 예정이었지만, 11-28 기준 제정·시행 여부를 확인하지
+못했습니다.</li>
+<li>2027 예산안의 AI 정부 실험실·AI 챔피언·범정부 AI 공통기반 개별
+금액과 국회 확정액, 온AI 이용자 수, '공공 AI 대전환 챌린지'(11-25 결선)
+결과는 찾지 못했습니다.</li>
+<li>공무원 직접개발에 대한 SW 업계의 공식 반발, 감사원 감사, 2026년 국감
+질의는 찾지 못했습니다. 위 관점은 분석가 판단입니다.</li>
+<li>영국 Redbox 퇴역과 싱가포르 Pair 사용률(절반 이상 vs 5명 중 4명)은
+출처마다 다릅니다.</li>
+</ul>
+</blockquote>
+
+<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch15">전체 보고서에서 보기</a><a href="../">대시보드</a><span class="sp"></span><a href="ch14.html" rel="prev">← 14. 소버린 AI와 국가 AI 문샷</a><a href="ch16.html" rel="next">16. AI 지정학: 미중 경쟁·블록·제재와 202 →</a></nav>
+</main>
+</div>
+<script>
+  // Wrap tables for horizontal scroll and colour likelihood words; static enhancement only.
+  document.querySelectorAll('main table').forEach((t) => {
+    const w = document.createElement('div'); w.className = 'tablewrap'; t.parentNode.insertBefore(w, t); w.appendChild(t);
+  });
+  document.querySelectorAll('main td').forEach((td) => {
+    const v = td.textContent.trim();
+    if (v === '높음') td.classList.add('tag-hi'); else if (v === '중간') td.classList.add('tag-mid'); else if (v === '낮음') td.classList.add('tag-lo');
+  });
+  document.querySelectorAll('main h2[id], main h3[id]').forEach((h) => {
+    const a = document.createElement('a'); a.className = 'hl'; a.href = '#' + h.id; a.textContent = '#';
+    a.setAttribute('aria-label', '이 제목의 링크'); h.appendChild(a);
+  });
+</script>
+<script>
+/* AI2027 in-page full-text search (shared by dashboard and report).
+ * Uses the CSS Custom Highlight API so matched text is highlighted WITHOUT mutating the DOM
+ * (keeps the dashboard's one-writer rule intact). Falls back to scroll-only where unsupported.
+ * Usage: AI27Search({ root: 'main', input: 'q-input', results: 'q-results', info: 'q-info',
+ *                     exclude: '.rail', reportLink: 'a[href="report.html"]' })
+ */
+window.AI27Search = function (cfg) {
+  const root = document.querySelector(cfg.root);
+  const input = document.getElementById(cfg.input);
+  const out = document.getElementById(cfg.results);
+  const info = document.getElementById(cfg.info);
+  if (!root || !input || !out || !info) return;
+  const BLOCKS = 'h2,h3,h4,p,li,td,th,blockquote,figcaption,summary,dt,dd,article';
+  const MAX_RESULTS = 80;
+  const MAX_RANGES = 3000;
+  const hl = typeof CSS !== 'undefined' && CSS.highlights && typeof Highlight === 'function';
+  let results = [];
+  let active = -1;
+  let timer = 0;
+
+  const norm = (s) => s.toLocaleLowerCase('ko');
+  const terms = (q) => norm(q).split(/\s+/).filter(Boolean).slice(0, 6);
+  const excluded = (el) => (cfg.exclude && el.closest(cfg.exclude)) || el.closest('[data-search-skip]');
+
+  function leafMatches(ts) {
+    const hits = [];
+    root.querySelectorAll(BLOCKS).forEach((el) => {
+      if (excluded(el)) return;
+      const t = norm(el.textContent || '');
+      if (ts.every((w) => t.includes(w))) hits.push(el);
+    });
+    const set = new Set(hits);
+    // keep the innermost matching block only
+    return hits.filter((el) => ![...el.querySelectorAll(BLOCKS)].some((c) => set.has(c)));
+  }
+
+  function headingFor(el, heads) {
+    let h = null;
+    for (const x of heads) {
+      if (x === el || x.compareDocumentPosition(el) & Node.DOCUMENT_POSITION_FOLLOWING) h = x; else break;
+    }
+    return h;
+  }
+
+  function contextOf(el, heads) {
+    const sec = el.closest('section');
+    const h2 = sec && sec.querySelector('h2');
+    const card = el.closest('.ai27-card, .ai27-tablewrap');
+    let h3 = card && card.querySelector('h3');
+    if (!h3 && card && card.previousElementSibling) h3 = card.previousElementSibling.querySelector && card.previousElementSibling.querySelector('h3');
+    if (h2) return [h2.textContent.trim(), h3 ? h3.textContent.trim() : ''].filter(Boolean).join(' › ');
+    const h = headingFor(el, heads);
+    return h ? h.textContent.trim() : '';
+  }
+
+  function rangesIn(el, ts, acc) {
+    const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
+    let n;
+    while ((n = walker.nextNode()) && acc.length < MAX_RANGES) {
+      const t = norm(n.nodeValue);
+      for (const w of ts) {
+        let i = t.indexOf(w);
+        while (i !== -1 && acc.length < MAX_RANGES) {
+          const r = new Range(); r.setStart(n, i); r.setEnd(n, i + w.length); acc.push(r);
+          i = t.indexOf(w, i + w.length);
+        }
+      }
+    }
+    return acc;
+  }
+
+  function snippet(el, ts) {
+    const text = (el.textContent || '').replace(/\s+/g, ' ').trim();
+    const lower = norm(text);
+    const at = Math.max(0, lower.indexOf(ts[0]));
+    const start = Math.max(0, at - 40);
+    const s = (start > 0 ? '…' : '') + text.slice(start, start + 130) + (start + 130 < text.length ? '…' : '');
+    const frag = document.createDocumentFragment();
+    const ls = norm(s);
+    let i = 0;
+    while (i < s.length) {
+      let best = -1; let len = 0;
+      for (const w of ts) { const j = ls.indexOf(w, i); if (j !== -1 && (best === -1 || j < best)) { best = j; len = w.length; } }
+      if (best === -1) { frag.append(s.slice(i)); break; }
+      frag.append(s.slice(i, best));
+      const m = document.createElement('mark'); m.textContent = s.slice(best, best + len); frag.append(m);
+      i = best + len;
+    }
+    return frag;
+  }
+
+  function clear() {
+    results = []; active = -1;
+    out.replaceChildren(); info.textContent = '';
+    if (hl) { CSS.highlights.delete('q-hit'); CSS.highlights.delete('q-active'); }
+  }
+
+  function go(i) {
+    if (!results.length) return;
+    active = (i + results.length) % results.length;
+    const el = results[active].el;
+    const det = el.closest('details'); if (det && !det.open) det.open = true;
+    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    if (hl) CSS.highlights.set('q-active', new Highlight(...rangesIn(el, results[active].ts, [])));
+    out.querySelectorAll('button').forEach((b, k) => b.setAttribute('aria-current', k === active ? 'true' : 'false'));
+    info.textContent = `${active + 1} / ${results.length}${results.length >= MAX_RESULTS ? '+' : ''}건`;
+  }
+
+  function run(q) {
+    const ts = terms(q);
+    if (!ts.length) { clear(); return; }
+    const heads = [...root.querySelectorAll('h2,h3')];
+    const els = leafMatches(ts).slice(0, MAX_RESULTS);
+    results = els.map((el) => ({ el, ts }));
+    active = -1;
+    if (hl) {
+      const acc = [];
+      els.forEach((el) => rangesIn(el, ts, acc));
+      CSS.highlights.set('q-hit', new Highlight(...acc));
+      CSS.highlights.delete('q-active');
+    }
+    info.textContent = els.length ? `${els.length}${els.length >= MAX_RESULTS ? '+' : ''}건` : '결과 없음';
+    out.replaceChildren(...els.map((el, k) => {
+      const li = document.createElement('li');
+      const b = document.createElement('button'); b.type = 'button';
+      const ctx = document.createElement('span'); ctx.className = 'q-ctx'; ctx.textContent = (contextOf(el, heads) || '본문').replace(/\s+/g, ' ');
+      const sn = document.createElement('span'); sn.className = 'q-snip'; sn.append(snippet(el, ts));
+      b.append(ctx, sn); b.addEventListener('click', () => go(k));
+      li.append(b); return li;
+    }));
+    const rl = cfg.reportLink && document.querySelector(cfg.reportLink);
+    if (rl) {
+      const li = document.createElement('li'); li.className = 'q-more';
+      const a = document.createElement('a');
+      a.href = rl.getAttribute('href').split('#')[0] + '#q=' + encodeURIComponent(q.trim());
+      a.target = rl.target || ''; if (a.target) a.rel = 'noopener';
+      a.textContent = `상세 보고서에서 '${q.trim()}' 검색 →`;
+      li.append(a); out.append(li);
+    }
+  }
+
+  input.addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(() => run(input.value), 180); });
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') { e.preventDefault(); if (!results.length) run(input.value); go(e.shiftKey ? active - 1 : active + 1); }
+    if (e.key === 'Escape') { input.value = ''; clear(); }
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === '/' && !/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName)) { e.preventDefault(); input.focus(); }
+  });
+  try {
+    const m = /[#&?]q=([^&]+)/.exec(location.hash + '&' + location.search);
+    if (m) { input.value = decodeURIComponent(m[1]); setTimeout(() => { run(input.value); go(0); }, cfg.delay || 300); }
+  } catch (_) { /* sandboxed location: ignore */ }
+};
+
+AI27Search({ root: 'main', input: 'q-input', results: 'q-results', info: 'q-info' });
+</script>
+
+</body>
+</html>

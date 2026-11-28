@@ -1,0 +1,6781 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>부록과 자료 · AI 2027 전망 보고서</title>
+<meta name="description" content="부록과 자료">
+<link rel="canonical" href="https://hollobit.github.io/AI2027/chapters/annex.html">
+</head>
+<body>
+<style>.chnav{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;font-size:.86rem;margin:0 0 18px;color:var(--muted)}.chnav a{text-decoration:none}.chnav .sp{flex:1}</style><meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;600&family=Noto+Serif+KR:wght@500;700;900&display=swap">
+<style>
+  /* Observatory report: long-form reading column + sticky contents rail */
+  :root {
+    --bg: #f3f4f1; --paper: #ffffff; --fg: #14161c; --muted: #5b6170; --line: #dcdfe4;
+    --accent: #3d40d4; --accent-2: #c25a22; --soft: #eef0f6; --ok: #1f7a4a; --warn: #985a00; --bad: #b3362f;
+    --display: 'Noto Serif KR', AppleMyungjo, Georgia, serif;
+    --text: 'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', system-ui, sans-serif;
+    --mono: 'IBM Plex Mono', ui-monospace, Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+    --bg: #0b0d12; --paper: #141821; --fg: #eef0f4; --muted: #8f96a5; --line: #262b37;
+    --accent: #8d90f8; --accent-2: #f29a62; --soft: #1b2030; --ok: #4cc38a; --warn: #e5a33b; --bad: #f07b72; color-scheme: dark; } }
+  :root[data-theme="dark"] {
+    --bg: #0b0d12; --paper: #141821; --fg: #eef0f4; --muted: #8f96a5; --line: #262b37;
+    --accent: #8d90f8; --accent-2: #f29a62; --soft: #1b2030; --ok: #4cc38a; --warn: #e5a33b; --bad: #f07b72; color-scheme: dark; }
+  body { background: var(--bg); color: var(--fg); font-family: var(--text); font-size: 15.5px; line-height: 1.75; letter-spacing: -0.005em;
+    padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+  .wrap { max-width: 1180px; margin: 0 auto; padding-block: clamp(20px, 4vw, 48px); display: grid; grid-template-columns: 250px minmax(0, 1fr); gap: 48px; }
+  @media (max-width: 900px) { .wrap { grid-template-columns: minmax(0, 1fr); gap: 24px; } .rail { position: static !important; max-height: none !important; } }
+  .rail { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 20px); align-self: start; max-height: calc(100vh - 40px); overflow: auto; font-size: 13px; }
+  .rail .label { font-family: var(--mono); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
+  .rail ul { list-style: none; margin: 0; padding: 0; }
+  .rail li { margin: 0; }
+  .rail ul ul { padding-left: 12px; border-left: 1px solid var(--line); margin: 2px 0 8px 2px; }
+  .rail ul ul ul { display: none; }
+  .rail a { display: block; padding: 3px 0; color: var(--muted); text-decoration: none; line-height: 1.45; }
+  .rail a:hover, .rail a:focus-visible { color: var(--accent); outline: none; }
+  .rail > ul > li > a { color: var(--fg); font-weight: 500; }
+  main { min-width: 0; background: var(--paper); border: 1px solid var(--line); border-radius: 16px; padding: clamp(22px, 5vw, 60px); }
+  main > * { max-width: 74ch; }
+  main > table, main > .tablewrap, main > details { max-width: none; }
+  h1 { font-family: var(--display); font-weight: 900; font-size: clamp(2.2rem, 5.5vw, 3.5rem); line-height: 1.08; letter-spacing: -0.03em; margin: 0 0 6px; text-wrap: balance; }
+  h1 + h3 { font-family: var(--display); font-weight: 500; font-size: clamp(1.1rem, 2.2vw, 1.4rem); color: var(--accent); margin: 0 0 14px; letter-spacing: -0.01em; }
+  h2 { font-family: var(--display); font-weight: 700; font-size: clamp(1.5rem, 3vw, 2rem); letter-spacing: -0.02em; line-height: 1.25; margin: 2.6em 0 .6em; padding-top: 1.2em; border-top: 1px solid var(--line); text-wrap: balance; scroll-margin-top: 20px; }
+  h3 { font-size: 1.12rem; font-weight: 600; margin: 1.9em 0 .5em; letter-spacing: -0.01em; scroll-margin-top: 20px; }
+  h4 { font-size: 1rem; font-weight: 600; margin: 1.8em 0 .3em; scroll-margin-top: 20px; }
+  p, li { text-wrap: pretty; }
+  strong { font-weight: 600; }
+  a { color: var(--accent); text-underline-offset: 3px; text-decoration-thickness: 1px; overflow-wrap: anywhere; }
+  blockquote { margin: 1.2em 0; padding: 14px 18px; background: var(--soft); border-radius: 10px; color: var(--fg); border: 0; }
+  blockquote p { margin: 0; }
+  hr { border: 0; height: 0; margin: 0; }
+  ul, ol { padding-left: 1.3em; }
+  li + li { margin-top: .25em; }
+  code { font-family: var(--mono); font-size: .86em; background: var(--soft); padding: 1px 6px; border-radius: 5px; overflow-wrap: anywhere; }
+  .tablewrap { overflow-x: auto; margin: 1.2em 0; border: 1px solid var(--line); border-radius: 12px; }
+  table { border-collapse: collapse; width: 100%; font-size: 13.5px; line-height: 1.55; }
+  th { text-align: left; font-family: var(--mono); font-weight: 500; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); padding: 10px 12px; border-bottom: 1px solid var(--line); background: var(--soft); white-space: nowrap; }
+  td { padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; font-variant-numeric: tabular-nums; }
+  tr:last-child td { border-bottom: 0; }
+  td:first-child { font-weight: 500; min-width: 120px; }
+  details { margin: 1em 0; }
+  summary { cursor: pointer; color: var(--muted); }
+  .meta { font-family: var(--mono); font-size: 12px; color: var(--muted); letter-spacing: .04em; }
+  .appendix-head { margin-top: 4em; }
+  h1.part { font-size: clamp(1.25rem, 2.6vw, 1.6rem); font-weight: 800; color: var(--accent); margin: 64px 0 8px; padding-top: 18px; border-top: 3px solid var(--accent); letter-spacing: -0.01em; }
+  #appendix h1 { font-size: clamp(1.6rem, 3.5vw, 2.2rem); margin-top: 0; }
+  #appendix h4 { font-family: var(--display); font-weight: 700; font-size: 1.02rem; padding-top: 1em; border-top: 1px dashed var(--line); }
+  .tag-hi { color: var(--ok); font-weight: 600; } .tag-mid { color: var(--warn); font-weight: 600; } .tag-lo { color: var(--bad); font-weight: 600; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  /* full-text search */
+  .q { margin-bottom: 22px; }
+  .q input { width: 100%; box-sizing: border-box; font: inherit; font-size: 13.5px; color: var(--fg); background: var(--paper); border: 1px solid var(--line); border-radius: 10px; padding: 8px 11px; }
+  .q input:focus { outline: 2px solid var(--accent); outline-offset: 1px; border-color: transparent; }
+  .q-info { font-family: var(--mono); font-size: 11px; color: var(--muted); margin: 6px 2px 0; min-height: 1em; }
+  .q-results { list-style: none; margin: 6px 0 0; padding: 0; max-height: 46vh; overflow: auto; border-left: 1px solid var(--line); }
+  .q-results:empty { display: none; }
+  .q-results button { all: unset; box-sizing: border-box; display: block; width: 100%; cursor: pointer; padding: 6px 8px 6px 10px; border-radius: 0 8px 8px 0; line-height: 1.45; }
+  .q-results button:hover, .q-results button:focus-visible, .q-results button[aria-current="true"] { background: var(--soft); }
+  .q-ctx { display: block; font-size: 11px; color: var(--accent); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .q-snip { display: block; font-size: 12px; color: var(--muted); }
+  .q-snip mark { background: none; color: var(--fg); font-weight: 600; }
+  ::highlight(q-hit) { background-color: rgba(229, 163, 59, .35); }
+  ::highlight(q-active) { background-color: #e5a33b; color: #14161c; }
+  figure { margin: 1.6em 0; max-width: none; }
+  figure svg { display: block; width: 100%; height: auto; }
+  figcaption { font-size: 13px; color: var(--muted); margin-top: 8px; line-height: 1.6; }
+  main > figure { max-width: none; }
+  .dl { display: flex; justify-content: flex-end; align-items: center; gap: 8px; margin: 0 0 14px; font-size: .85rem; color: var(--muted, #5b6170); }
+  .dl a { font-weight: 600; text-decoration: none; padding: 3px 10px; border: 1px solid var(--line, #dcdfe4); border-radius: 999px; }
+  .dl a:hover { border-color: currentColor; }
+  .hl { margin-left: .4em; font-size: .7em; color: var(--muted); text-decoration: none; opacity: 0; transition: opacity .15s; }
+  h2:hover .hl, h3:hover .hl, .hl:focus { opacity: 1; }
+  a.xref { color: inherit; text-decoration: underline dotted; text-underline-offset: 3px; }
+  @page { size: A4; margin: 16mm 14mm; }
+  @media print { .dl { display: none !important; } html, body { background: #fff !important; } main { box-shadow: none !important; border-radius: 0 !important; padding: 0 !important; max-width: none !important; } figure, table, blockquote { break-inside: avoid; } h2, h3 { break-after: avoid; } .rail { display: none; } .wrap { display: block; } main { border: 0; } }
+</style>
+
+<div class="wrap">
+  <nav class="rail" aria-label="목차">
+    <div class="q" role="search">
+      <label class="label" for="q-input" style="display:block">Search</label>
+      <input id="q-input" type="search" placeholder="보고서 검색  ( / )" autocomplete="off" aria-describedby="q-info">
+      <div id="q-info" class="q-info" aria-live="polite"></div>
+      <ul id="q-results" class="q-results" aria-label="검색 결과"></ul>
+    </div>
+    <div class="label">Contents</div><ul><li><a href="#표기-기준">표기 기준</a></li><li><a href="#용어-풀이">용어 풀이</a></li><li><a href="#전망-근거-자료">전망 근거 자료</a></li><li><a href="#2027-전망의-위원회-기구별-배정-목록">2027 전망의 위원회 기구별
+배정 목록</a></li><li><a href="#한계-1">한계</a></li></ul></nav>
+  <main>
+<div class="dl" aria-label="다운로드">다운로드
+      <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.pdf">PDF</a>
+      <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.docx">Word</a>
+      <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.md">Markdown</a> · <a href="https://hollobit.github.io/AI2027/chapters/">장별 보기</a></div>
+<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#annex">전체 보고서에서 보기</a><a href="../">대시보드</a><span class="sp"></span><a href="ch23.html" rel="prev">← 23. 종합 시나리오와 한국 시사점</a><a href="appendix.html" rel="next">부록: 2027 AI 전망 자료별 상세 분석 →</a></nav><p class="label" style="margin:0 0 4px">제6부 핵심 테마와 종합</p><h2 id="annex">부록과 자료</h2>
+<ul>
+<li>자료별 상세 분석: <a href="appendix.html#appendix">아래 부록</a></li>
+<li>원문 파일: <code>PDF/</code> (global_research, invest_finance,
+ai_research_policy, korea, models_sovereign, risk_security, creative_ip,
+specialized_fm, socioeconomic, sectors_org, geopolitics, infra_chips,
+country_policy, laws_science, cyber_resilience)과 추출 텍스트
+<code>PDF/_text/</code></li>
+<li>원자료(JSON): <code>data/raw/collect_*.json</code>, SOTA 대시보드
+스냅샷 <code>data/raw/sota_2026-11-26/</code>, Epoch 데이터
+<code>data/raw/epoch_2026-11/</code></li>
+</ul>
+<h3 id="표기-기준">표기 기준</h3>
+<ul>
+<li><strong>가능성 · 확률(±불확도)</strong>: 각 전망에 2027년 말까지 그
+서술대로 일어날 <strong>주관적 확률</strong>과 그 추정의
+<strong>불확도</strong>(± %p)를 붙였습니다. 예: '높음 · 82% (±10)'.
+<ul>
+<li>등급과 확률의 대응: 높음 70–95%, 중간 35–69%, 낮음 5–34%.</li>
+<li>불확도: ±5는 법정·확정 일정, ±10은 강한 정량 추세나 일치하는 복수
+자료, ±15는 일반적 전망, ±20–25는 단일 출처·조건부·추정에 기댄
+전망입니다. 확률이 이 범위 안 어디에 있어도 이상하지 않다는
+뜻입니다.</li>
+<li>확률 518건은 보고서 본문 근거를 바탕으로 검토자 4인(AI 보조)이
+항목별로 매기고 작성자가 통합했습니다. 검토 과정에서 등급이 근거와 맞지
+않는 11건은 등급을 조정했습니다.</li>
+</ul></li>
+<li><strong>시나리오 확률(±)</strong>: 시나리오 확률 옆 ±는
+불확도입니다(확률 10% 이하 ±5, 35% 이하 ±10, 그 이상 ±15). 시나리오
+확률의 합은 100%를 기준으로 합니다.</li>
+<li><strong>확정·예상·추정</strong>: 확정은 공식 발표된 일정·사실,
+예상은 관행이나 보도로 시점이 거의 정해진 것, 추정은 본 보고서의
+분석입니다.</li>
+<li><strong>낮음 / 기준 / 높음</strong>: 수치 전망의 하단·중심·상단
+값이며, 기준값을 굵게 표시합니다. 낮음–높음은 대략 80% 구간(10–90
+백분위)으로, 수치 전망의 불확도에 해당합니다.</li>
+<li><strong>금액 단위</strong>: 특별한 표시가 없으면 달러 금액은 미국
+달러, '정부안'은 국회 확정 전 예산입니다.</li>
+</ul>
+<h3 id="용어-풀이">용어 풀이</h3>
+<table>
+<thead>
+<tr>
+<th>용어</th>
+<th>뜻</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AAII</td>
+<td>Artificial Analysis Intelligence Index. 여러 벤치마크를 묶은 모델
+종합 지능 지수</td>
+</tr>
+<tr>
+<td>ECI</td>
+<td>Epoch Capabilities Index. Epoch AI가 벤치마크를 통합해 만든 모델
+역량 지수</td>
+</tr>
+<tr>
+<td>RLI</td>
+<td>Remote Labor Index. 실제 원격 업무를 AI가 얼마나 완수하는지 재는
+지표</td>
+</tr>
+<tr>
+<td>METR 시간지평</td>
+<td>사람이 걸리는 시간 기준으로, AI가 50% 성공률로 완수하는 과제의
+길이</td>
+</tr>
+<tr>
+<td>HLE·ARC-AGI·FrontierMath</td>
+<td>각각 전문가 지식·추상 추론·연구 수준 수학을 재는 고난도
+벤치마크</td>
+</tr>
+<tr>
+<td>하네스</td>
+<td>모델을 둘러싼 도구·프롬프트·실행 환경. 같은 모델도 하네스에 따라
+성능이 크게 달라짐</td>
+</tr>
+<tr>
+<td>밀도(Densing) 법칙</td>
+<td>같은 성능을 내는 데 필요한 파라미터가 일정 주기로 절반이 된다는
+경험칙</td>
+</tr>
+<tr>
+<td>LLMflation</td>
+<td>같은 성능의 모델 사용 가격이 매년 급락하는 현상</td>
+</tr>
+<tr>
+<td>제번스 역설</td>
+<td>단가가 내려가면 사용량이 더 크게 늘어 총지출이 오히려 커지는
+현상</td>
+</tr>
+<tr>
+<td>RSI</td>
+<td>재귀적 자기개선. AI가 다음 AI의 연구·개발을 맡아 발전 속도가 스스로
+빨라지는 과정</td>
+</tr>
+<tr>
+<td>SC·SAR·TED-AI</td>
+<td>초인적 코더, 초인적 AI 연구자, 원격 화이트칼라 업무 대부분을
+자동화하는 AI(5장 역량 사다리)</td>
+</tr>
+<tr>
+<td>RSP·ASL·CB-1</td>
+<td>Anthropic의 책임 있는 확장 정책과 그 위험 등급. CB-1은 기존
+생물·화학 무기 제조 조력 수준</td>
+</tr>
+<tr>
+<td>CCL·Preparedness High/Critical</td>
+<td>Google DeepMind·OpenAI 안전 프레임워크의 위험 임계 등급</td>
+</tr>
+<tr>
+<td>RSO</td>
+<td>책임 있는 확장 책임자. 연구소 안에서 위험 임계 도달을 판정하는
+직책</td>
+</tr>
+<tr>
+<td>평가 인식</td>
+<td>모델이 자신이 시험받고 있음을 알아차리는 현상. 높을수록 평가 결과를
+믿기 어려움</td>
+</tr>
+<tr>
+<td>abliterated 모델</td>
+<td>거부(안전) 방향을 제거해 가드레일을 없앤 오픈웨이트 파생 모델</td>
+</tr>
+<tr>
+<td>증류(distillation)</td>
+<td>다른 모델의 출력을 대량으로 받아 자기 모델을 학습시키는 방법. 무단
+증류는 약관 위반</td>
+</tr>
+<tr>
+<td>MCP</td>
+<td>Model Context Protocol. 에이전트가 외부 도구·데이터에 연결하는
+표준</td>
+</tr>
+<tr>
+<td>KYA</td>
+<td>Know Your Agent. 에이전트의 신원·권한·위임을 확인하는 체계</td>
+</tr>
+<tr>
+<td>x402·AP2</td>
+<td>에이전트가 직접 결제하는 프로토콜(HTTP 402 기반 결제, 에이전트 결제
+프로토콜)</td>
+</tr>
+<tr>
+<td>FinOps</td>
+<td>클라우드·AI 비용을 계측·통제하는 운영 방식</td>
+</tr>
+<tr>
+<td>AIDC·HBM·NPU</td>
+<td>AI 데이터센터, 고대역폭 메모리, 신경망 처리 장치</td>
+</tr>
+<tr>
+<td>MoE</td>
+<td>전문가 혼합 구조. 전체 파라미터 중 일부만 활성화해 비용을 줄이는
+모델 구조</td>
+</tr>
+<tr>
+<td>BIS·EAR·Entity List</td>
+<td>미국 상무부 산업안보국, 수출관리규정, 수출 제한 대상 목록</td>
+</tr>
+<tr>
+<td>VEU</td>
+<td>검증된 최종 사용자 제도. 중국 내 한국 팹에 장비 반입을 일괄 허용하던
+방식(2025-12 폐지)</td>
+</tr>
+<tr>
+<td>원격접속 규칙</td>
+<td>미국 첨단칩 데이터센터가 우려국 기업에 컴퓨트를 원격 제공하는 것을
+통제하는 규칙(2026-11)</td>
+</tr>
+<tr>
+<td>신뢰 파트너</td>
+<td>미국 정부가 프런티어 모델 접근을 허용한 기관 목록(<a class="xref" href="ch17.html#s17-2">17.2</a>절)</td>
+</tr>
+<tr>
+<td>GPAI</td>
+<td>EU AI Act의 범용 AI 모델. 시스템적 위험 모델에는 추가 의무</td>
+</tr>
+<tr>
+<td>CRA·DORA</td>
+<td>EU 사이버복원력법(디지털 제품 보안), EU 디지털 운영
+복원력법(금융)</td>
+</tr>
+<tr>
+<td>PQC·CNSA 2.0</td>
+<td>양자내성암호, 미국 국가안보 시스템용 차세대 암호 요건</td>
+</tr>
+<tr>
+<td>N2SF</td>
+<td>국가망보안체계. 데이터 등급(기밀·민감·공개)에 따라 외부 AI·클라우드
+사용을 허용</td>
+</tr>
+<tr>
+<td>비안(備案)</td>
+<td>중국 생성형 AI 서비스 등록제. 사실상 허가제로 작동</td>
+</tr>
+<tr>
+<td>Pax Silica·WAICO</td>
+<td>미국 주도 신뢰 공급망 연합, 중국 주도 세계 AI 협력기구</td>
+</tr>
+<tr>
+<td>독파모</td>
+<td>독자 AI 파운데이션 모델 사업(과기정통부)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="전망-근거-자료">전망 근거 자료</h3>
+<p>본문 2027 전망 548건 중 <strong>485건</strong>에 수집 자료를 근거로
+연결했습니다(근거 링크는 각 전망의 확률 옆). 검토자 4인(AI 보조)이 후보
+자료의 내용을 읽고 전망을 직접 뒷받침하는 자료만 골랐고, 맞는 자료가
+없으면 비워 두었습니다. 일부 자료는 본문 없이 제목만 수집돼 제목
+기준으로 연결했습니다. '반론'은 전망과 반대 방향의 근거입니다.</p>
+<table>
+<thead>
+<tr>
+<th>근거 자료</th>
+<th>날짜</th>
+<th>연결된 전망 수</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IITP 정보통신기획평가원 (보도: ZDNe…: <a
+href="https://zdnet.co.kr/view?no=20261111120847">2027 AI·ICT 10대 이슈
+— 'AI의 가능성을 AX 생산성으로 입증'</a></td>
+<td>2026-11</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Gartner: <a
+href="https://www.gartner.com/en/newsroom/press-releases/2026-09-15-gartner-unveils-top-strategic-predictions-for-2027-and-beyond"><span>https://www.gartner.com/en/newsroom/press-releases/2026-09-15-gartner-unveils-top-strategic-predictions-for-2027-and-beyond</span></a></td>
+<td>2026-09-15</td>
+<td>8</td>
+</tr>
+<tr>
+<td>미국 의회: <a
+href="https://www.atlanticcouncil.org/dispatches/huang-is-back-at-nvidia-but-the-fight-over-who-controls-chip-exports-is-just-beginning/">FY2027
+NDAA 상원안에 Chip Security Act(위치검증)·AI OVERWATCH·MATCH·</a></td>
+<td>2026-12(협상)</td>
+<td>7</td>
+</tr>
+<tr>
+<td>Air Street Capital (Stat…: <a
+href="https://www.stateof.ai/predictions">State of AI Report 2026 — AI
+predictions for 2027 &amp; scorecard</a></td>
+<td>2026-10-15</td>
+<td>7</td>
+</tr>
+<tr>
+<td>Tech Times: <a
+href="https://www.techtimes.com/articles/316674/20260515/trump-xi-close-beijing-summit-warm-rhetoric-nvidia-h200-deliveries-remain-stalled-rare-earth.htm">Trump
+and Xi Close Beijing Summit: Warm Rhetoric, Nvidia H200 Deliveries
+Remain Stalled, Rare-Earth Flows Lag</a></td>
+<td>—</td>
+<td>7</td>
+</tr>
+<tr>
+<td>Gartner: <a
+href="https://www.gartner.com/en/newsroom/press-releases/2026-10-26-gartner-identifies-the-top-ai-trends-in-infrastructure-and-it-operations-for-2027">Gartner
+Identifies the Top AI Trends in Infrastructure and IT Operations for
+2027</a></td>
+<td>2026-10-26</td>
+<td>6</td>
+</tr>
+<tr>
+<td>IDC: <a
+href="https://www.idc.com/resource-center/press-releases/idc-futurescape-2027-predicts-60-of-enterprises-will-run-a-majority-of-their-business-processes-ai-first-by-2029-up-from-13-in-2026/"><span>https://www.idc.com/resource-center/press-releases/idc-futurescape-2027-predicts-60-of-enterprises-will-run-a-majority-of-their-business-processes-ai-first-by-2029-up-from-13-in-2026/</span></a></td>
+<td>2026-10</td>
+<td>6</td>
+</tr>
+<tr>
+<td>미국 재무부(베선트): <a
+href="https://www.wilsoncenter.org/article/americas-ai-action-plan-after-one-year-what-administration-has-done-and-what-comes-next">증류
+기업 제재 경고. 9월 보고서는 DeepSeek 등 중국 6개사(알리바바·Moonshot
+포함)를 대규</a></td>
+<td>2026-09-09</td>
+<td>6</td>
+</tr>
+<tr>
+<td>과학기술정보통신부 (보도: ZDNet Kor…: <a
+href="https://zdnet.co.kr/view?no=20261116144303">정부 "AI 기본법, 기업
+혁신 뒷받침하도록 보완" — 2026 하반기 AI법정책포럼</a></td>
+<td>2026-11-16</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Google Cloud (via iTWire…: <a
+href="https://itwire.com/guest-articles/guest-research/google-cloud-predicts-ai-agents-will-reshape-cyber-attack-and-defence-in-2027">Google
+Cloud predicts AI agents will reshape cyber attack and defence in
+2027</a></td>
+<td>2026-11-12</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Goldman Sachs (Reuters 보도): <a
+href="https://www.timeslive.co.za/news/sci-tech/2026-11-12-ai-to-stay-dominant-force-behind-us-business-investment-in-2027-goldman-says/">AI
+to stay dominant force behind US business investment in 2027, Goldman
+says</a></td>
+<td>2026-11-12</td>
+<td>5</td>
+</tr>
+<tr>
+<td>SPRi 소프트웨어정책연구소: <a
+href="https://spri.kr/posts/view/24037?code=data_all">에이전틱 AI 시대의
+SW인재 수요전망 분석 (이슈리포트 IS-237)</a></td>
+<td>2026-11-06</td>
+<td>5</td>
+</tr>
+<tr>
+<td>CGTN: <a
+href="https://news.cgtn.com/news/2026-07-17/29-countries-sign-establishing-World-AI-Cooperation-Organization-pact-1OQDod8zj6U/index.html">29
+countries sign agreement on establishing World AI Cooperation
+Organization</a></td>
+<td>—</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Google Threat Intelligen…: <a
+href="https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold">GTIG
+AI Threat Tracker: Agentic Threat Activity Crosses a Significant
+Threshold</a></td>
+<td>2026-11-17</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Capgemini: <a
+href="https://www.capgemini.com/wp-content/uploads/2026/11/261117_Capgemini-Top-Tech-Trends-to-watch-in-2027-PR.pdf">TechnoVision:
+Top 5 Tech Trends to Watch in 2027</a></td>
+<td>2026-11-17</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Moody's: <a
+href="https://www.moodys.com/web/en/us/insights/credit-risk/outlooks/2027-global-credit-outlook-credit-will-weaken-as-higher-rates-and-energy-costs-offset-the-ai-tailwind.html"><span>https://www.moodys.com/web/en/us/insights/credit-risk/outlooks/2027-global-credit-outlook-credit-will-weaken-as-higher-rates-and-energy-costs-offset-the-ai-tailwind.html</span></a></td>
+<td>2026-11-12</td>
+<td>4</td>
+</tr>
+<tr>
+<td>METR: <a
+href="https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment">Independent
+Assessment of AI R&amp;D Acceleration at Anthropic in October
+2026</a></td>
+<td>2026-11-05</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Greenberg Traurig: <a
+href="https://www.gtlaw.com/en/insights/2026/11/bis-interim-final-rule-targets-remote-access-to-advanced-semiconductors-rescinds-ai-diffusion-rule">BIS
+Interim Final Rule Targets Remote Access to Advanced Semiconductors,
+Rescinds AI Diffusion Rule</a></td>
+<td>2026-11</td>
+<td>4</td>
+</tr>
+<tr>
+<td>cdn.openai.com: <a
+href="https://cdn.openai.com/pdf/67869394-cb91-4c12-888c-5cbd85c7814c/OpenAI-Hugging-Face%20Incident-Technical-Report.pdf">OpenAI–Hugging
+Face 사건의 정렬 교훈: 보상 해킹의 일반화, '끈기'가 미정렬을 증폭,
+에이</a></td>
+<td>2026-08-27</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Mayer Brown: <a
+href="https://www.mayerbrown.com/en/insights/publications/2026/06/commerce-department-extends-export-controls-to-advanced-ai-models-authorizes-release-to-specific-trusted-partners">Commerce
+Department Extends Export Controls to Advanced AI Models, Authorizes
+Release to Specific Trusted Partners</a></td>
+<td>2026-06-30</td>
+<td>4</td>
+</tr>
+<tr>
+<td>eeas.europa.eu: <a
+href="https://eeas.europa.eu/delegations/chile/artificial-intelligence-council-gives-final-green-light-simplify-and-streamline-rules_en">EU
+디지털 옴니버스 최종 승인: 독립형 고위험 AI 의무는 2027-12-02, 제품
+내장형은 2028-0</a></td>
+<td>2026-06-29</td>
+<td>4</td>
+</tr>
+<tr>
+<td>IEA (International Energ…: <a
+href="https://iea.org/reports/key-questions-on-energy-and-ai/executive-summary">Key
+Questions on Energy and AI — Executive summary</a></td>
+<td>2026-04-16</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Gallagher (Arthur J. Gal…: <a
+href="https://www.ajg.com/site-content/articles/2026/april/ai-liability-not-so-silent/">AI
+Liability: Not So Silent</a></td>
+<td>2026-04-01</td>
+<td>4</td>
+</tr>
+<tr>
+<td>중국 정부: <a
+href="https://www.china-briefing.com/news/apec-2026-in-shenzhen-what-the-leaders-meeting-and-trump-xi-talks-mean-for-business/">엔비디아
+H200 대중 판매 허용에도 중국이 수입을 거부해 판매 0. 국산 가속기(화웨이
+Ascend) 자립</a></td>
+<td>2026(연중)</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Pax Silica(미국 주도, 한국 포함 …: <a
+href="https://www.bhfs.com/insight/state-department-expands-pax-silica-initiative-at-2026-summit/">적대국의
+민감기술 접근 제한·수출통제 정렬을 목표로 한 경제안보 연합(동맹 차원
+공조)</a></td>
+<td>—</td>
+<td>4</td>
+</tr>
+<tr>
+<td>미국 상무부 BIS: <a
+href="https://www.faegredrinker.com/en/insights/publications/2026/11/bis-targets-remote-access-to-advanced-ai-chips-adds-megaspeed-network-to-entity-list">싱가포르
+Megaspeed 등 7개 법인 Entity List 등재(원격접속·칩 우회 연계)</a></td>
+<td>2026-11-23</td>
+<td>3</td>
+</tr>
+<tr>
+<td>AI Futures Project (Lars…: <a
+href="https://www.lesswrong.com/posts/f9PajMLmBYzmWzyDv/aifp-looks-like-the-intelligence-explosion-will-happen-in">Q3.5
+Timelines Update: Looks Like the Intelligence Explosion Will Happen in
+2027 After All</a></td>
+<td>2026-11-11</td>
+<td>3</td>
+</tr>
+<tr>
+<td>m.edaily.co.kr: <a
+href="https://m.edaily.co.kr/News/Read?newsId=03325926645649656&amp;mediaCodeNo=257">"AI
+모델 공개했지만 한국은 쓰지 마라"…中 바이두가 던진 AI 주권 경고</a></td>
+<td>2026-11-05</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Menlo Ventures: <a
+href="https://menlovc.com/wp-content/uploads/2026/11/menlo_ventures_enterprise_ai_report-2026-110326.pdf"><span>https://menlovc.com/wp-content/uploads/2026/11/menlo_ventures_enterprise_ai_report-2026-110326.pdf</span></a></td>
+<td>2026-11-03</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Forrester: <a
+href="https://www.forrester.com/blogs/predictions-2027-clouds-ai-race-gets-messier/">Predictions
+2027: Cloud's AI Race Gets Messier</a></td>
+<td>2026-11-02</td>
+<td>3</td>
+</tr>
+<tr>
+<td>J.P. Morgan Private Bank…: <a
+href="https://www.jpmorgan.com/content/dam/jpmorgan/documents/wealth-management/outlook-2027.pdf">Outlook
+2027: The Price of Progress — The rising cost of capital in a world of
+AI, fragmentation and inflation</a></td>
+<td>2026-11-01</td>
+<td>3</td>
+</tr>
+<tr>
+<td>TechCrunch: <a
+href="https://techcrunch.com/2026/10/20/us-orders-federal-agencies-to-remove-chinas-deepseek-ai-from-their-systems/">US
+orders federal agencies to remove China's DeepSeek AI from their
+systems</a></td>
+<td>2026-10-20</td>
+<td>3</td>
+</tr>
+<tr>
+<td>IMF GFSR: <a
+href="https://www.imf.org/en/publications/gfsr/issues/2026/10/13/global-financial-stability-report-october-2026"><span>https://www.imf.org/en/publications/gfsr/issues/2026/10/13/global-financial-stability-report-october-2026</span></a></td>
+<td>2026-10-13</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Forrester: <a
+href="https://www.forrester.com/blogs/predictions-2027-disruption-unleashed/">Predictions
+2027: Disruption Unleashed (Predictions 2027: Artificial Intelligence
+요약 블로그)</a></td>
+<td>2026-10</td>
+<td>3</td>
+</tr>
+<tr>
+<td>과학기술정보통신부: <a
+href="https://eiec.kdi.re.kr/policy/materialView.do?num=286173">보도자료:
+2027년 과기정통부 예산안 29.6조원 편성 — '인공지능과 첨단기술로 대체
+불가 대한민국으로의 대도약'</a></td>
+<td>2026-08-31</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="http://www-cdn.anthropic.com">www-cdn.anthropic.com</a>: <a
+href="https://www-cdn.anthropic.com/f61d49fa5596956a5dec75fea0e973bf6a6a8378/Redacted%20Risk%20Report%20August%202026%20.pdf">Anthropic
+8월 위험보고서: 모델이 CB-1 임계치를 충족하는 것으로 간주하고 보호조치
+적용. 분류기</a></td>
+<td>2026-08-14</td>
+<td>3</td>
+</tr>
+<tr>
+<td>aisi.gov.uk: <a
+href="https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing">UK
+AISI 사이버 평가 중 비인가 행동 사건을 계기로, 인터넷 허용·분류기
+비활성이라는 업계 공통 평가 </a></td>
+<td>2026-08-04</td>
+<td>3</td>
+</tr>
+<tr>
+<td>ai-act-service-desk.ec.eur: <a
+href="https://ai-act-service-desk.ec.europa.eu/en/ai-act/faq/commissions-enforcement-powers-related-ai-act-obligations-providers-most-advanced-models">EU
+AI법 GPAI 집행권 발효: AI Office가 정보 요구·모델 평가 접근·위험완화
+명령을 할 수 있</a></td>
+<td>2026-08-02</td>
+<td>3</td>
+</tr>
+<tr>
+<td>BIS: <a
+href="https://www.bis.org/publ/arpdf/ar2026e1.htm"><span>https://www.bis.org/publ/arpdf/ar2026e1.htm</span></a></td>
+<td>2026-06-28</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Tech Policy Press: <a
+href="https://techpolicy.press/commerce-eased-its-block-on-anthropics-mythos-but-major-questions-remain">Commerce
+eased its block on Anthropic's Mythos but major questions
+remain</a></td>
+<td>2026-06-27</td>
+<td>3</td>
+</tr>
+<tr>
+<td>labs.cloudsecurityalliance: <a
+href="https://labs.cloudsecurityalliance.org/research/csa-research-note-ai-browser-prompt-injection-20260630-csa-s/">LayerX
+'BioShocking' 간접 프롬프트 주입이 AI 브라우저·확장 6종을 침해(ChatGPT
+A</a></td>
+<td>2026-06-24</td>
+<td>3</td>
+</tr>
+<tr>
+<td>zdnet.co.kr: <a
+href="https://zdnet.co.kr/view/?no=20260619100049">한국·싱가포르 AISI
+공동 테스트: 정상 지시를 수행하는 중에도 AI 에이전트가 민감정보를
+부적절하게 처리</a></td>
+<td>2026-06-19</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Anthropic: <a
+href="https://www.anthropic.com/project/glasswing">Claude Mythos
+Preview를 사이버 능력(핵심 인프라 제로데이 수천 건 식별) 때문에
+Proje</a></td>
+<td>2026-04-07</td>
+<td>3</td>
+</tr>
+<tr>
+<td>korea.kr: <a
+href="https://korea.kr/news/policyNewsView.do?newsId=148958380">한국 AI
+기본법 시행: 생성형 AI 결과물 워터마크 표시 의무, 10^26 FLOPs 이상
+모델에 안전성 </a></td>
+<td>2026-01-21</td>
+<td>3</td>
+</tr>
+<tr>
+<td>fpf.org: <a
+href="https://fpf.org/blog/the-raise-act-vs-sb-53-a-tale-of-two-frontier-ai-laws/">미국
+주법: 캘리포니아 SB 53(2026-01-01 시행, 중대 사고 15일 내 보고)과 뉴욕
+RAISE </a></td>
+<td>2026-01-08</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Anthropic: <a
+href="https://www.anthropic.com/research/formalizing-fermats-last-theorem">Formalizing
+Fermat's Last Theorem</a></td>
+<td>—</td>
+<td>3</td>
+</tr>
+<tr>
+<td>HCAMag (Challenger 자료 인용): <a
+href="https://www.hcamag.com/us/specialization/transformation/ai-blamed-for-121401-job-cuts-but-the-labor-data-isnt-buying-it/594129">AI
+blamed for 121,401 job cuts, but the labor data isn't buying it</a></td>
+<td>—</td>
+<td>3</td>
+</tr>
+<tr>
+<td>pewresearch.org: <a
+href="https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/">Pew:
+AI 요약이 뜨면 검색 링크 클릭이 15%에서 8%로 감소</a></td>
+<td>—</td>
+<td>3</td>
+</tr>
+<tr>
+<td>IDC: <a
+href="https://www.idc.com/resource-center/blog/higher-asps-lower-unit-volumes-how-the-memory-crisis-is-reshaping-the-pc-and-smartphone-outlook">Higher
+ASPs, Lower Unit Volumes: How the Memory Crisis Is Reshaping the PC and
+Smartphone Outlook (2026-02-26)</a></td>
+<td>—</td>
+<td>3</td>
+</tr>
+<tr>
+<td>TrendForce: <a
+href="https://www.trendforce.com/presscenter/news/20260929-13255.html">HBM
+Supply Constraints Persist, 2027 Price Outlook Revised Upward with
+Blended ASP Forecast to Rise 121% YoY</a></td>
+<td>—</td>
+<td>3</td>
+</tr>
+<tr>
+<td>techcrunch.com: <a
+href="https://techcrunch.com/2025/11/25/warner-music-signs-deal-with-ai-music-startup-suno-settles-lawsuit/">WMG–Suno·WMG–Udio
+소송 합의와 라이선스 파트너십</a></td>
+<td>—</td>
+<td>3</td>
+</tr>
+<tr>
+<td>과학기술정보통신부: <a
+href="https://www.msit.go.kr/bbs/view.do?sCode=user&amp;mId=307&amp;mPid=208&amp;bbsSeqNo=94&amp;nttSeqNo=3187359">AI로
+앞당기고 과학기술로 완성하는 미래 한국, K-문샷 프로젝트
+개시(2026-05-28)</a></td>
+<td>—</td>
+<td>3</td>
+</tr>
+<tr>
+<td>UK Government: <a
+href="https://www.gov.uk/government/news/efforts-to-share-best-practices-on-ai-measurement-and-evaluations-driven-forward-through-the-international-network-for-advanced-ai-measurement-evalua">Best
+practices on AI measurement and evaluations driven forward through the
+International Network for Advanced AI Measurement, Evaluation
+an</a></td>
+<td>—</td>
+<td>3</td>
+</tr>
+<tr>
+<td>KDI 경제정보센터: <a
+href="https://eiec.kdi.re.kr/policy/materialView.do?num=282674">AI
+사전표준화 협력 MoU(국가기술표준원, 2026-06-12, 영·싱·호·캐) 관련
+자료</a></td>
+<td>—</td>
+<td>3</td>
+</tr>
+<tr>
+<td>UN News: <a href="https://news.un.org/en/story/2026/07/1167853">UN
+chief welcomes first global AI assessment (Scientific Panel preliminary
+report)</a></td>
+<td>—</td>
+<td>3</td>
+</tr>
+<tr>
+<td>ITU: <a
+href="https://www.itu.int/hub/2026/11/the-next-chapter-for-ai-in-geneva/">The
+next chapter for AI in Geneva</a></td>
+<td>—</td>
+<td>3</td>
+</tr>
+<tr>
+<td>IEA: <a
+href="https://www.iea.org/reports/world-energy-outlook-2026/executive-summary">World
+Energy Outlook 2026 — Executive summary</a></td>
+<td>2026-11-19</td>
+<td>2</td>
+</tr>
+<tr>
+<td>CRS: <a
+href="https://www.everycrsreport.com/reports/R49520.html"><span>https://www.everycrsreport.com/reports/R49520.html</span></a></td>
+<td>2026-11-18</td>
+<td>2</td>
+</tr>
+<tr>
+<td>현대경제연구원: <a
+href="https://www.hri.co.kr/kor/report/view/97839">미국 AI 투자붐 조정
+가능성에 대비해야 한다 — 미국 AI 투자붐 지속 가능성 점검 및 시사점 (VIP
+REPORT 26-19)</a></td>
+<td>2026-11-13</td>
+<td>2</td>
+</tr>
+<tr>
+<td>SAS: <a
+href="https://itwire.com/guest-articles/company-news/sas-predictions-2027-is-the-year-of-ai-consequences">SAS
+Predictions: 2027 is the year of AI consequences</a></td>
+<td>2026-11-11</td>
+<td>2</td>
+</tr>
+<tr>
+<td>ITU: <a
+href="https://www.itu.int/en/mediacentre/Pages/PR-2026-11-03-Facts-and-Figures.aspx">Facts
+and Figures 2026</a></td>
+<td>2026-11-03</td>
+<td>2</td>
+</tr>
+<tr>
+<td>한국은행 (보도: ZDNet Korea): <a
+href="https://zdnet.co.kr/view?no=20261117102535">BOK 이슈노트: AI
+확산과 생산성 효과 — 더 널리, 더 효율적으로, 그러나 아직 얕게</a></td>
+<td>2026-11</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Gartner: <a
+href="https://www.gartner.com/en/newsroom/press-releases/2026-10-20-gartner-identifies-the-top-strategic-technology-trends-for-2027">Gartner
+Identifies the Top Strategic Technology Trends for 2027</a></td>
+<td>2026-10-20</td>
+<td>2</td>
+</tr>
+<tr>
+<td>eWeek (reporting Anthrop…: <a
+href="https://www.eweek.com/news/anthropic-self-replicating-ai-iot-devices/">Anthropic
+Warns AI Could Soon Self-Replicate Across Smart Devices</a></td>
+<td>2026-10-13</td>
+<td>2</td>
+</tr>
+<tr>
+<td>RAPS: <a
+href="https://www.raps.org/resource/fda-s-device-center-releases-guidance-agenda-for-fy-2027.html"><span>https://www.raps.org/resource/fda-s-device-center-releases-guidance-agenda-for-fy-2027.html</span></a></td>
+<td>2026-10-02</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Microsoft: <a
+href="https://www.microsoft.com/en-us/security/blog/2026/10/01/insights-from-the-2026-microsoft-digital-defense-report/">Insights
+from the 2026 Microsoft Digital Defense Report (Security blog)</a></td>
+<td>2026-10-01</td>
+<td>2</td>
+</tr>
+<tr>
+<td>FPF: <a
+href="https://fpf.org/press-releases/new-fpf-report-analyzes-the-rise-in-chatbot-legislation-whats-ahead/"><span>https://fpf.org/press-releases/new-fpf-report-analyzes-the-rise-in-chatbot-legislation-whats-ahead/</span></a></td>
+<td>2026-09-23</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Forrester: <a
+href="https://www.forrester.com/blogs/predictions-2027-ai-slingshots-environmental-sustainability-from-promises-to-action/"><span>https://www.forrester.com/blogs/predictions-2027-ai-slingshots-environmental-sustainability-from-promises-to-action/</span></a></td>
+<td>2026-09-17</td>
+<td>2</td>
+</tr>
+<tr>
+<td>BCG: <a
+href="https://www.bcg.com/ja-jp/press/30september2026-ai-starting-to-pay-off-companies-generate-value">Applied
+AI Index 2026 (About Half of Companies Now Create Value from
+AI)</a></td>
+<td>2026-09</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Epoch AI: <a
+href="https://epoch.ai/publications/parallelization-constraints-could-delay-a-technological-singularity">Even
+after R&amp;D is automated, parallelization constraints could delay a
+technological singularity</a></td>
+<td>2026-07-29</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Cloud Security Alliance …: <a
+href="https://labs.cloudsecurityalliance.org/wp-content/uploads/2026/07/CSA_research_note_tuxbot_llm_assisted_botnet_20260723-csa-styled.pdf">TuxBot
+v3: LLM-Assisted IoT Botnet Goes Operational (research note)</a></td>
+<td>2026-07-23</td>
+<td>2</td>
+</tr>
+<tr>
+<td>deploymentsafety.openai.co: <a
+href="https://deploymentsafety.openai.com/gpt-5-6/gpt-5-6.pdf">OpenAI
+GPT-5.6 Sol·Terra·Luna 3종 모두 생물·화학 'High' 지정 — 소형·고속
+</a></td>
+<td>2026-07-09</td>
+<td>2</td>
+</tr>
+<tr>
+<td>중국 상무부(MOFCOM): <a
+href="https://dealroom.co/news/137169-china-weighs-curbs-on-overseas-access-to-frontier-ai-models/">알리바바·바이트댄스·Z.ai
+등과 한 달간 회의, 최첨단 모델(오픈웨이트 포함)의 해외 접근 제한 방안
+논의</a></td>
+<td>2026-07</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Data Center Watch: <a
+href="https://datacenterwatch.org/q1-2026"><span>https://datacenterwatch.org/q1-2026</span></a></td>
+<td>2026-06-16</td>
+<td>2</td>
+</tr>
+<tr>
+<td>WPP Media: <a
+href="https://www.wppmedia.com/news/report-this-year-next-year-midyear-2026">This
+Year Next Year: Midyear 2026 Global Advertising Forecast</a></td>
+<td>2026-06-16</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Dentsu: <a
+href="https://insight.dentsu.com/ad-spend-may-2026/">Global Ad Spend
+Forecasts May 2026</a></td>
+<td>2026-05-27</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Gallup: <a
+href="https://news.gallup.com/poll/709772/americans-oppose-data-centers-area.aspx"><span>https://news.gallup.com/poll/709772/americans-oppose-data-centers-area.aspx</span></a></td>
+<td>2026-05-13</td>
+<td>2</td>
+</tr>
+<tr>
+<td>ITPro: <a
+href="https://www.itpro.com/uk/security/cyber-attacks/iot-attacks-the-biggest-attacks-so-far-and-what-businesses-can-do">2026
+in IoT attacks: the biggest threats so far and what businesses can
+do</a></td>
+<td>2026-05-08</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Google DeepMind: <a
+href="https://deepmind.google/blog/alphaevolve-impact/">DeepMind
+AlphaEvolve</a></td>
+<td>2026-05-07</td>
+<td>2</td>
+</tr>
+<tr>
+<td>European Commission (DG …: <a
+href="https://digital-strategy.ec.europa.eu/en/news/eu-agrees-simplify-ai-rules-boost-innovation-and-ban-nudification-apps-protect-citizens">EU
+agrees to simplify AI rules to boost innovation and ban 'nudification'
+apps to protect citizens (press release)</a></td>
+<td>2026-05-07</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Euronews: <a
+href="https://euronews.com/next/2026/04/28/an-ai-agent-deleted-a-companys-entire-database-in-9-seconds-then-wrote-an-apology">An
+AI agent deleted a company's entire database in 9 seconds, then wrote an
+apology</a></td>
+<td>2026-04-28</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Internet Watch Foundation: <a
+href="https://iwf.org.uk/news-media/news/dangerous-ai-child-sexual-abuse-reaches-record-high-as-public-backs-clampdown-on-uncensored-tools/">'Dangerous'
+AI child sexual abuse reaches record high as public backs clampdown on
+'uncensored' tools</a></td>
+<td>2026-03-24</td>
+<td>2</td>
+</tr>
+<tr>
+<td>arXiv: <a href="https://arxiv.org/html/2603.01608">ICML 2026
+논문(arXiv 2603.01608): 강한 환경 유인에도 에이전트의 자발적 스키밍은
+극소</a></td>
+<td>2026-03</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Anthropic: <a
+href="https://anthropic.com/news/detecting-and-preventing-distillation-attacks">Detecting
+and preventing distillation attacks</a></td>
+<td>2026-02-23</td>
+<td>2</td>
+</tr>
+<tr>
+<td>FTC: <a
+href="https://www.ftc.gov/news-events/news/press-releases/2025/09/ftc-launches-inquiry-ai-chatbots-acting-companions"><span>https://www.ftc.gov/news-events/news/press-releases/2025/09/ftc-launches-inquiry-ai-chatbots-acting-companions</span></a></td>
+<td>2025-09-11</td>
+<td>2</td>
+</tr>
+<tr>
+<td>OpenClaw Foundation: <a
+href="https://openclaw.ai/foundation">Introducing the OpenClaw
+Foundation (2026-07-08)</a></td>
+<td>—</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Harness-Bench: <a
+href="https://www.harness-bench.ai/leaderboard.html">Harness-Bench v2
+leaderboard</a></td>
+<td>—</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Digital Commerce 360: <a
+href="https://www.digitalcommerce360.com/2026/04/02/visa-mastercard-in-agentic-commerce/">Ecommerce
+Trends: How Visa and Mastercard are approaching agentic
+commerce</a></td>
+<td>—</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Guardio Labs: <a
+href="https://guard.io/labs/scamlexity-we-put-agentic-ai-browsers-to-the-test-they-clicked-they-paid-they-failed">Scamlexity:
+We put agentic AI browsers to the test - they clicked, they paid, they
+failed</a></td>
+<td>—</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Anthropic: <a
+href="https://www.anthropic.com/transparency?m=1">Anthropic RSP — AI
+R&amp;D 자동화 임계</a></td>
+<td>2026</td>
+<td>2</td>
+</tr>
+<tr>
+<td>ECMWF: <a
+href="https://www.ecmwf.int/en/about/media-centre/news/2026/ifs-cycle-50r1-aifsv2-live">Significant
+update to ECMWF's key forecasting systems IFS and AIFS goes live (IFS
+50r1 + AIFS v2, 2026-05-12)</a></td>
+<td>—</td>
+<td>2</td>
+</tr>
+<tr>
+<td>NOAA / NWS: <a
+href="https://www.weather.gov/media/notification/pdf_2026/scn26-68_AIGFS_v1.1.pdf">Service
+Change Notice 26-68: AIGFS v1.1 현업 전환 (2026-07-27)</a></td>
+<td>—</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Google DeepMind: <a
+href="https://arxiv.org/abs/2605.22763">Advancing Mathematics Research
+with AI-Driven Formal Proof Search (AlphaProof Nexus)</a></td>
+<td>—</td>
+<td>2</td>
+</tr>
+<tr>
+<td>CritPt 팀: <a href="https://arxiv.org/abs/2509.26574">Probing the
+Critical Point (CritPt) of AI Reasoning: a Frontier Physics Research
+Benchmark</a></td>
+<td>—</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Pangram Labs: <a
+href="https://www.pangram.com/blog/pangram-predicts-21-of-iclr-reviews-are-ai-generated">Pangram
+Predicts 21% of ICLR Reviews are AI-Generated</a></td>
+<td>—</td>
+<td>2</td>
+</tr>
+<tr>
+<td>USPTO (Federal Register): <a
+href="https://www.govinfo.gov/content/pkg/FR-2025-11-28/pdf/2025-21457.pdf">Revised
+Inventorship Guidance for AI-Assisted Inventions</a></td>
+<td>—</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Stanford Digital Economy…: <a
+href="https://digitaleconomy.stanford.edu/news/canariesaug26/">Canaries
+in the Coal Mine — August 2026 update</a></td>
+<td>—</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Google DeepMind (Aletheia): <a
+href="https://arxiv.org/abs/2601.22401">Semi-Autonomous Mathematics
+Discovery with Gemini: A Case Study on the Erdős Problems</a></td>
+<td>—</td>
+<td>2</td>
+</tr>
+<tr>
+<td>en.wikipedia.org: <a
+href="https://en.wikipedia.org/wiki/SAG-AFTRA">SAG-AFTRA 비디오게임 파업
+종료(95.04% 비준), AI 레플리카 동의·보상 확보</a></td>
+<td>—</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Graphite: <a
+href="https://graphite.io/research/ai-search-collapse">AI Search
+Collapse</a></td>
+<td>—</td>
+<td>2</td>
+</tr>
+<tr>
+<td>techcrunch.com: <a
+href="https://techcrunch.com/2025/10/13/california-becomes-first-state-to-regulate-ai-companion-chatbots/">캘리포니아
+SB 243 서명: 미국 첫 동반자 챗봇 규제법</a></td>
+<td>—</td>
+<td>2</td>
+</tr>
+<tr>
+<td>techcrunch.com: <a
+href="https://techcrunch.com/2026/01/07/google-and-character-ai-negotiate-first-major-settlements-in-teen-chatbot-death-cases/">Google·Character.AI,
+10대 사망 사건 첫 합의에 원칙적 합의</a></td>
+<td>—</td>
+<td>2</td>
+</tr>
+<tr>
+<td>IDC: <a
+href="https://www.idc.com/resource-center/blog/pc-market-enters-volatile-territory-as-memory-shortage-persists-through-2027/">PC
+Market Enters Volatile Territory as Memory Shortage Persists Through
+2027 (2026-06-02)</a></td>
+<td>—</td>
+<td>2</td>
+</tr>
+<tr>
+<td>The Next Web: <a
+href="https://thenextweb.com/news/apple-wwdc-2026-siri-ai-gemini-ios-27">Apple
+finally ships its AI do-over: Siri AI, a standalone app, and a
+three-tier privacy stack (2026-06-08)</a></td>
+<td>—</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Samsung Electronics: <a
+href="https://news.samsungsemiconductor.com/global/samsung-electronics-announces-third-quarter-2026-results/">Samsung
+Electronics Announces Third Quarter 2026 Results</a></td>
+<td>—</td>
+<td>2</td>
+</tr>
+<tr>
+<td>ChatGPT Is Eating the Wo…: <a
+href="https://chatgptiseatingtheworld.com/">AI copyright litigation
+tracker (Nov 2026 snapshot)</a></td>
+<td>—</td>
+<td>2</td>
+</tr>
+<tr>
+<td>UK DSIT/DCMS/IPO: <a
+href="https://assets.publishing.service.gov.uk/media/69ba692226909a14239612e4/CP2602959_-_Report_on_Copyright_and_Artificial_Intelligence_web.pdf">Report
+on Copyright and Artificial Intelligence</a></td>
+<td>—</td>
+<td>2</td>
+</tr>
+<tr>
+<td>농림축산식품부: <a
+href="https://www.mafra.go.kr/bbs/home/792/579390/artclView.do">'27년
+농어촌 기본소득 시범사업, 신규 참여지역 10.8일부터 공모 개시</a></td>
+<td>—</td>
+<td>2</td>
+</tr>
+<tr>
+<td>파이낸셜뉴스: <a
+href="https://www.fnnews.com/news/202607211641465666">기본사회기본법
+제정 관련 토론회 보도(2026-07-21)</a></td>
+<td>—</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Focus Taiwan (CNA): <a
+href="https://focustaiwan.tw/politics/202611260010">Vice premier
+outlines tariffs, support for U.S. investments by Taiwan firms (Section
+232/301)</a></td>
+<td>—</td>
+<td>2</td>
+</tr>
+<tr>
+<td>The White House: <a
+href="https://www.whitehouse.gov/releases/2025/10/u-s-korea-technology-prosperity-deal">U.S.-Korea
+Technology Prosperity Deal</a></td>
+<td>—</td>
+<td>2</td>
+</tr>
+<tr>
+<td>UK Government: <a
+href="https://www.gov.uk/government/news/manchester-to-host-world-leaders-at-the-2027-g20-summit">Manchester
+to host world leaders at the 2027 G20 Summit</a></td>
+<td>—</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Korea JoongAng Daily: <a
+href="https://www.koreajoongangdaily.com/korea/uae-ai-mou-7/11233820">Korea,
+UAE sign 7 MOUs on AI, space, nuclear at summit</a></td>
+<td>—</td>
+<td>2</td>
+</tr>
+<tr>
+<td>European Commission: <a
+href="https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai">The
+General-Purpose AI Code of Practice</a></td>
+<td>—</td>
+<td>2</td>
+</tr>
+<tr>
+<td>TechRepublic: <a
+href="https://www.techrepublic.com/article/news-uk-us-tech-deal-paused/">US
+Puts £31B Tech Deal With UK on Hold</a></td>
+<td>—</td>
+<td>2</td>
+</tr>
+<tr>
+<td>G7 Research Group (Univ.…: <a
+href="https://g7.utoronto.ca/evaluations/2026evian/tiritilli-trump-era.html">G7
+in the Trump era (2027 US presidency)</a></td>
+<td>—</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Council of Europe: <a
+href="https://www.coe.int/en/web/artificial-intelligence/-/european-union-ratifies-the-council-of-europe-framework-convention-on-artificial-intelligence">European
+Union ratifies the Council of Europe Framework Convention on Artificial
+Intelligence</a></td>
+<td>—</td>
+<td>2</td>
+</tr>
+<tr>
+<td>People's Daily: <a
+href="https://en.people.cn/n3/2026/0918/c90000-20501291.html">China's
+2027 BRICS chairmanship to further deepen cooperation</a></td>
+<td>—</td>
+<td>2</td>
+</tr>
+<tr>
+<td>WEF: <a
+href="https://www.weforum.org/press/2026/09/chief-economists-expect-global-economy-to-stabilize-but-fiscal-constraints-rising-living-costs-and-ai-investment-uncertainty-threaten-growth-bf0eb0b43f/"><span>https://www.weforum.org/press/2026/09/chief-economists-expect-global-economy-to-stabilize-but-fiscal-constraints-rising-living-costs-and-ai-investment-uncertainty-threaten-growth-bf0eb0b43f/</span></a></td>
+<td>—</td>
+<td>2</td>
+</tr>
+<tr>
+<td>한국경제: <a
+href="https://hankyung.com/article/202607306039i"><span>https://hankyung.com/article/202607306039i</span></a></td>
+<td>—</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Manifold Markets: <a
+href="https://manifold.markets/event/by-which-years-will-agi-be-released">By
+which years will AGI be released (Hendrycks definition &gt;95%)? —
+snapshot</a></td>
+<td>2026-11-26</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Kalshi: <a
+href="https://kalshi.com/markets/kxoaiagi/openai-achieves-agi">When will
+OpenAI achieve AGI? — market snapshot</a></td>
+<td>2026-11-26</td>
+<td>1</td>
+</tr>
+<tr>
+<td>European Commission: <a
+href="https://digital-strategy.ec.europa.eu/en/policies/cyber-resilience-act">Cyber
+Resilience Act (policy page)</a></td>
+<td>2026-11-23</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Pony.ai: <a
+href="https://www.sec.gov/Archives/edgar/data/0001969302/000110465926129308/tm2629888d1_ex99-1.htm">Pony
+AI Inc. Third Quarter 2026 Unaudited Financial Results (6-K
+Ex.99.1)</a></td>
+<td>2026-11-18</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Morgan Stanley (Family W…: <a
+href="https://www.familywealthreport.com/printarticle.php?id=209400">Morgan
+Stanley Takes Maximum "Overweight" Stance On Global Stocks For
+2027</a></td>
+<td>2026-11-17</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Moody's 국가신용: <a
+href="https://www.moodys.com/web/en/us/insights/credit-risk/outlooks/2027-global-sovereigns-outlook-stable-as-steady-growth-and-ai-offset-higher-rates-and-geopolitical-risks.html"><span>https://www.moodys.com/web/en/us/insights/credit-risk/outlooks/2027-global-sovereigns-outlook-stable-as-steady-growth-and-ai-offset-higher-rates-and-geopolitical-risks.html</span></a></td>
+<td>2026-11-16</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Capgemini Research Insti…: <a
+href="https://www.capgemini.com/wp-content/uploads/2026/11/11_12_AI-economics-snapshot_Capgemini-press-release_EN-2.pdf">AI
+economics snapshot: Most organizations plan multi-model AI strategy as
+nearly six in ten faced higher AI costs than expected</a></td>
+<td>2026-11-12</td>
+<td>1</td>
+</tr>
+<tr>
+<td>비즈워치: <a
+href="https://news.bizwatch.co.kr/article/mobile/2026/11/12/0004">네이버
+2026년 3분기 실적과 컨퍼런스콜</a></td>
+<td>2026-11-12</td>
+<td>1</td>
+</tr>
+<tr>
+<td>과학기술정보통신부·IITP: <a
+href="https://eiec.kdi.re.kr/policy/materialView.do?num=289359">보도자료:
+인공지능·정보통신기술, 성장의 공식을 바꾸다! — 「2027 AI·ICT R&amp;D
+기술전망 콘퍼런스」 개최</a></td>
+<td>2026-11-11</td>
+<td>1</td>
+</tr>
+<tr>
+<td>J.P. Morgan Asset Manage…: <a
+href="https://am.jpmorgan.com/content/dam/jpm-am-aem/global/en/insights/market-insights/investment-outlook-2027.pdf">2027
+Investment Outlook: Still up, but a bumpier path</a></td>
+<td>2026-11-10</td>
+<td>1</td>
+</tr>
+<tr>
+<td>대한민국 정책브리핑: <a
+href="https://m.korea.kr/briefing/actuallyView.do?newsId=148975301">KOICA
+AI 개발협력 사업 설명자료</a></td>
+<td>2026-11-09</td>
+<td>1</td>
+</tr>
+<tr>
+<td>White House OSTP: <a
+href="https://www.whitehouse.gov/wp-content/uploads/2026/11/NSTM-6-NASS-Policy.pdf">NSTM-6:
+National Policy for Nucleic Acid Synthesis Screening</a></td>
+<td>2026-11-05</td>
+<td>1</td>
+</tr>
+<tr>
+<td>NVIDIA: <a
+href="https://nvidia.com/en-us/networking/products/silicon-photonics">Silicon
+Photonics (Spectrum-X / Quantum-X Photonics)</a></td>
+<td>2026-11-01</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Carnegie Endowment: <a
+href="https://carnegieendowment.org/research/2026/11/will-a-un-treaty-on-autonomous-weapons-arrive-too-late">Will
+a UN Treaty on Autonomous Weapons Arrive Too Late?</a></td>
+<td>2026-11</td>
+<td>1</td>
+</tr>
+<tr>
+<td>ComplexDiscovery(AP 인용): <a
+href="https://complexdiscovery.com/refrigeration-hack-affected-about-700-french-supermarkets-government-says-as-danfoss-interfaces-stay-online/">Refrigeration
+hack affected about 700 French supermarkets, government says</a></td>
+<td>2026-11</td>
+<td>1</td>
+</tr>
+<tr>
+<td>BleepingComputer: <a
+href="https://bleepingcomputer.com/news/security/cyberattack-disrupts-blood-storage-refrigeration-systems-in-france">Cyberattack
+disrupts blood storage refrigeration systems in France</a></td>
+<td>2026-11</td>
+<td>1</td>
+</tr>
+<tr>
+<td>ICCT: <a
+href="https://icct.nl/publication/tell-me-how-make-bomb-terrorist-use-conversational-ai-evidence-and-prospects">Tell
+Me How to Make a Bomb: Terrorist Use of Conversational AI — Evidence and
+Prospects</a></td>
+<td>2026-10-28</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Google: <a
+href="https://blog.google/products/ads-commerce/ads-in-ai-mode-global/">Ads
+in AI Mode expand globally</a></td>
+<td>2026-10-28</td>
+<td>1</td>
+</tr>
+<tr>
+<td>OpenAI: <a
+href="https://openai.com/index/chatgpt-ads-expands-26-new-countries/">ChatGPT
+ads expands to 26 new countries</a></td>
+<td>2026-10-21</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Sidley: <a
+href="https://www.sidley.com/en/insights/newsupdates/2026/10/revised-eu-product-liability-directive"><span>https://www.sidley.com/en/insights/newsupdates/2026/10/revised-eu-product-liability-directive</span></a></td>
+<td>2026-10-21</td>
+<td>1</td>
+</tr>
+<tr>
+<td>METR: <a
+href="https://metr.org/assets/misalignment-risk-report-august-2026-review.pdf">METR의
+Anthropic 위험보고서 검토: '낮음' 판정은 안전장치가 아니라 모델 능력
+한계 때문. 비공</a></td>
+<td>2026-10-20</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Anthropic: <a
+href="https://anthropic.com/responsible-scaling-policy/roadmap">Anthropic's
+Frontier Safety Roadmap (updates through Oct 19, 2026)</a></td>
+<td>2026-10-19</td>
+<td>1</td>
+</tr>
+<tr>
+<td>EqualOcean: <a
+href="https://equalocean.com/news/2026101922309-china-proposes-export-restrictions-23-ai-technologies-keeps-api-services">China
+Proposes Export Restrictions on 23 AI Technologies, Keeps API Services
+Outside Large-Model Transfer Rules</a></td>
+<td>2026-10-16</td>
+<td>1</td>
+</tr>
+<tr>
+<td>중국 상무부·과기부: <a
+href="https://letsdatascience.com/blog/china-drafted-export-controls-ai-model-weights-open-source">일부
+보도: 중요데이터로 학습한 대형모델 서비스, 10^26 FLOP 이상 모델의
+가중치·소스코드·아키텍처를</a></td>
+<td>2026-10-16</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Apollo Research: <a
+href="https://www.apolloresearch.ai/science">Science / system card
+evaluations page</a></td>
+<td>2026-10-15</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Light Reading: <a
+href="https://lightreading.com/ai-machine-learning/softbank-nokia-target-2027-for-commercial-ai-ran-trial-in-japan">SoftBank,
+Nokia target 2027 for commercial AI-RAN trial in Japan</a></td>
+<td>2026-10-15</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Forrester: <a
+href="https://www.forrester.com/blogs/predictions-2027-a-consumer-revolution-is-rewriting-healthcares-rules/"><span>https://www.forrester.com/blogs/predictions-2027-a-consumer-revolution-is-rewriting-healthcares-rules/</span></a></td>
+<td>2026-10-14</td>
+<td>1</td>
+</tr>
+<tr>
+<td>CRS: <a
+href="https://www.everycrsreport.com/reports/IN12747.html"><span>https://www.everycrsreport.com/reports/IN12747.html</span></a></td>
+<td>2026-10-14</td>
+<td>1</td>
+</tr>
+<tr>
+<td>IMF WEO: <a
+href="https://www.imf.org/en/Publications/WEO/Issues/2026/10/13/world-economic-outlook-october-2026"><span>https://www.imf.org/en/Publications/WEO/Issues/2026/10/13/world-economic-outlook-october-2026</span></a></td>
+<td>2026-10-13</td>
+<td>1</td>
+</tr>
+<tr>
+<td>IMF: <a
+href="https://www.imf.org/-/media/files/publications/weo/2026/october/english/ch1.pdf">World
+Economic Outlook, October 2026, Chapter 1</a></td>
+<td>2026-10-13</td>
+<td>1</td>
+</tr>
+<tr>
+<td>LightCounting (Lightwave 보도): <a
+href="https://www.lightwaveonline.com/home/news/55410716/ethernet-optical-transceiver-set-to-grow-120-in-2026">Ethernet
+optical transceiver set to grow 120% in 2026</a></td>
+<td>2026-10-08</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Gartner: <a
+href="https://www.gartner.com/en/articles/hype-cycle-for-artificial-intelligence"><span>https://www.gartner.com/en/articles/hype-cycle-for-artificial-intelligence</span></a></td>
+<td>2026-10-01</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Microsoft: <a
+href="https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-DDR-Exec-Summary.pdf">Microsoft
+Digital Defense Report 2026 — Executive Summary</a></td>
+<td>2026-10-01</td>
+<td>1</td>
+</tr>
+<tr>
+<td>McKinsey: <a
+href="https://www.mckinsey.com/featured-insights/charts/autonomous-mobility-gains-ground">Autonomous
+mobility gains ground (chart)</a></td>
+<td>2026-10-01</td>
+<td>1</td>
+</tr>
+<tr>
+<td>정책브리핑: <a
+href="https://www.korea.kr/news/policyNewsView.do?newsId=148975290">2027학년도
+수능: AI 스마트안경 반입 금지, 소지 시 해당 시험 무효, 착용 적발 시
+2028학년도 응</a></td>
+<td>2026-10</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Omdia: <a
+href="https://www.financialcontent.com/article/bizwire-2026-9-30-omdia-identifies-four-forces-set-to-reshape-technology-in-2027">Omdia
+Identifies Four Forces Set to Reshape Technology in 2027</a></td>
+<td>2026-09-30</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Bain: <a
+href="https://www.bain.com/insights/new-innovation-is-required-to-fund-ais-6-trillion-buildout-technology-report-2026/"><span>https://www.bain.com/insights/new-innovation-is-required-to-fund-ais-6-trillion-buildout-technology-report-2026/</span></a></td>
+<td>2026-09-29</td>
+<td>1</td>
+</tr>
+<tr>
+<td>news.tf.co.kr: <a
+href="https://news.tf.co.kr/read/life/2369816.htm">AI 안경 착용 유튜버가
+수능 수학 모의고사 30문항 18분 만에 1등급. 2026-05~06
+국가기술자격·</a></td>
+<td>2026-09-27</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Microsoft: <a
+href="https://blogs.microsoft.com/on-the-issues/2026/09/21/the-continued-state-of-global-ai-diffusion-in-2026/">The
+continued state of global AI diffusion in 2026 (AI Diffusion Report Q2
+2026)</a></td>
+<td>2026-09-21</td>
+<td>1</td>
+</tr>
+<tr>
+<td>unite.ai: <a
+href="https://www.unite.ai/ko/scale-ai-reports-rok-fortress-findings-on-multilingual-ai-safety/">Scale
+AI와 한국 AISI가 공동 개발한 영-한 이중언어 적대적 안전 벤치마크
+ROK-FORTRESS </a></td>
+<td>2026-09-17</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Freshfields: <a
+href="https://www.freshfields.com/en/our-thinking/blogs/technology-quotient/the-eu-kids-act-europe-moves-online-child-safety-beyond-social-media-bans-102o1ld"><span>https://www.freshfields.com/en/our-thinking/blogs/technology-quotient/the-eu-kids-act-europe-moves-online-child-safety-beyond-social-media-bans-102o1ld</span></a></td>
+<td>2026-09-17</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Waymo: <a
+href="https://waymo.com/blog/2026/09/opening-tokyo-in-2027-with-nihon-kotsu-go/">Opening
+Tokyo in 2027 with Nihon Kotsu and GO</a></td>
+<td>2026-09-14</td>
+<td>1</td>
+</tr>
+<tr>
+<td>The Korea Times: <a
+href="https://www.koreatimes.co.kr/foreignaffairs/20260909/korea-vows-closer-cooperation-with-african-partners-at-koafec-meeting">Korea
+vows closer cooperation with African partners at KOAFEC meeting</a></td>
+<td>2026-09-09</td>
+<td>1</td>
+</tr>
+<tr>
+<td>euronews.com: <a
+href="https://www.euronews.com/2026/09/08/eu-warns-of-new-terror-menace-25-years-after-911-as-online-youths-seek-violent-thrills">EU,
+9·11 25주년을 맞아 폭력적 스릴을 좇는 온라인 청소년 중심의 새 테러
+위협을 경고. Europo</a></td>
+<td>2026-09-08</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Human Rights Watch: <a
+href="https://www.hrw.org/news/2026/09/07/un-talks-on-killer-robots-ends-with-calls-for-negotiations-growing">UN
+Talks on Killer Robots End with Calls for Negotiations Growing</a></td>
+<td>2026-09-07</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Yole Group (Compound Semiconductor 보도): <a
+href="https://compoundsemiconductor.net/article/125273/Photonics_at_the_speed_of_AI">Photonics
+at the speed of AI (Co-Packaged Optics for Data Centers 2026)</a></td>
+<td>2026-09-01</td>
+<td>1</td>
+</tr>
+<tr>
+<td>OpenAI: <a
+href="https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads/">Expanding
+access to AI with ChatGPT ads</a></td>
+<td>2026-08-31</td>
+<td>1</td>
+</tr>
+<tr>
+<td>과학기술정보통신부·NIPA: <a
+href="https://eiec.kdi.re.kr/policy/materialView.do?num=285937">보도참고자료:
+「독자 AI 파운데이션 모델」 프로젝트 2차 단계평가 결과 상세
+공개</a></td>
+<td>2026-08-27</td>
+<td>1</td>
+</tr>
+<tr>
+<td>서울시: <a href="https://mediahub.seoul.go.kr/archives/2019107">강남
+심야 자율주행택시 19대로 확대</a></td>
+<td>2026-08-19</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Pew Research Center: <a
+href="https://www.pewresearch.org/short-reads/2026/08/18/young-adults-in-the-us-are-increasingly-wary-of-ai-concerned-it-will-take-jobs/"><span>https://www.pewresearch.org/short-reads/2026/08/18/young-adults-in-the-us-are-increasingly-wary-of-ai-concerned-it-will-take-jobs/</span></a></td>
+<td>2026-08-18</td>
+<td>1</td>
+</tr>
+<tr>
+<td>FDA: <a
+href="https://www.fda.gov/medical-devices/digital-health-center-excellence/considerations-regulation-generative-ai-enabled-medical-devices-discussion-paper-and-request"><span>https://www.fda.gov/medical-devices/digital-health-center-excellence/considerations-regulation-generative-ai-enabled-medical-devices-discussion-paper-and-request</span></a></td>
+<td>2026-08-18</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Insurance Journal: <a
+href="https://www.insurancejournal.com/magazines/mag-features/2026/08/17/881424.htm"><span>https://www.insurancejournal.com/magazines/mag-features/2026/08/17/881424.htm</span></a></td>
+<td>2026-08-17</td>
+<td>1</td>
+</tr>
+<tr>
+<td>디지털데일리: <a
+href="https://www.ddaily.co.kr/page/view/2026080709360260626">네이버 AI
+브리핑 광고 성과</a></td>
+<td>2026-08-07</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Bloomberg Law: <a
+href="https://news.bloomberglaw.com/tech-and-telecom-law/uber-and-wayve-win-licenses-for-supervised-robotaxis-in-london">Uber
+and Wayve Win Licenses for Supervised Robotaxis in London</a></td>
+<td>2026-08-05</td>
+<td>1</td>
+</tr>
+<tr>
+<td>World Bank: <a
+href="https://www.worldbank.org/en/publication/wdr2026">World
+Development Report 2026: The Promise of Artificial Intelligence</a></td>
+<td>2026-08-04</td>
+<td>1</td>
+</tr>
+<tr>
+<td>eSafety: <a
+href="https://esafety.gov.au/research/talking-to-machines-childrens-experiences-with-ai-assistants-and-companions"><span>https://esafety.gov.au/research/talking-to-machines-childrens-experiences-with-ai-assistants-and-companions</span></a></td>
+<td>2026-08-01</td>
+<td>1</td>
+</tr>
+<tr>
+<td>과학기술정보통신부·KISA (뉴시스 보도): <a
+href="https://mobile.newsis.com/view/NISX20260730_0003729364">2026년
+상반기 국내 사이버위협 동향</a></td>
+<td>2026-07-30</td>
+<td>1</td>
+</tr>
+<tr>
+<td>The Korea Times: <a
+href="https://koreatimes.co.kr/foreignaffairs/20260723/korea-proposes-2027-oda-budget-at-46-billion">Korea
+proposes 2027 ODA budget at $4.6 billion</a></td>
+<td>2026-07-23</td>
+<td>1</td>
+</tr>
+<tr>
+<td>oecd.ai: <a href="https://oecd.ai/en/incidents/2026-07-13-93df">OECD
+AI 사고 모니터(AIM)에 '테러 집단이 공격 계획·무기 제조에 AI 챗봇 사용'
+사건 등재</a></td>
+<td>2026-07-13</td>
+<td>1</td>
+</tr>
+<tr>
+<td>디지털데일리: <a
+href="https://www.ddaily.co.kr/page/view/2026071214223169501">2026년
+상반기 국내 검색엔진 점유율</a></td>
+<td>2026-07-12</td>
+<td>1</td>
+</tr>
+<tr>
+<td>National Law Review: <a
+href="https://natlawreview.com/article/continued-proliferation-ai-exclusions"><span>https://natlawreview.com/article/continued-proliferation-ai-exclusions</span></a></td>
+<td>2026-07-01</td>
+<td>1</td>
+</tr>
+<tr>
+<td>news.mtn.co.kr: <a
+href="https://news.mtn.co.kr/news-detail/2026063016291781104">12차
+전기본 첫 '지역별 전망' 도입. 수요는 수도권·용인 집중, 송전 부담은
+비수도권</a></td>
+<td>2026-06-30</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Covington: <a
+href="https://www.cov.com/news-and-insights/insights/2026/06/federal-vehicle-safety-at-midyear-regulatory-relief-legislative-momentum-and-the-road-to-the-broader-av-deployment">Federal
+Vehicle Safety at Midyear: Regulatory Relief, Legislative Momentum, and
+the Road to Broader AV Deployment</a></td>
+<td>2026-06-30</td>
+<td>1</td>
+</tr>
+<tr>
+<td>hankyung.com: <a
+href="https://www.hankyung.com/article/2026062586031">AI 데이터센터
+계약전력 20.8GW 투자계획 중 1단계 10.8GW 우선 반영, 2040년 데이터센터
+최대</a></td>
+<td>2026-06-25</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Reuters Institute: <a
+href="https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2026/dnr-executive-summary">Digital
+News Report 2026: Executive summary</a></td>
+<td>2026-06-16</td>
+<td>1</td>
+</tr>
+<tr>
+<td>UK CMA: <a
+href="https://www.gov.uk/government/news/cma-secures-fairer-deal-for-publishers-and-improves-google-search-services-in-uk">CMA
+secures fairer deal for publishers and improves Google search services
+in UK</a></td>
+<td>2026-06-03</td>
+<td>1</td>
+</tr>
+<tr>
+<td>NPR: <a
+href="https://www.npr.org/2026/05/31/nx-s1-5816391/ai-safety-concerns-danger-open-weight-models-risks">These
+AI models are free, private, and will never say 'no'</a></td>
+<td>2026-05-31</td>
+<td>1</td>
+</tr>
+<tr>
+<td>v.daum.net: <a href="https://v.daum.net/v/20260528171513940">같은
+추진방향: 공익 목적 AI 학습에 개인정보 원본 활용 허용 개인정보보호법
+개정 추진, 디지털헬스케어법으</a></td>
+<td>2026-05-28</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Gibson Dunn (EU AI Act D…: <a
+href="https://www.gibsondunn.com/eu-ai-act-omnibus-agreement-postponed-high-risk-deadlines-and-other-key-changes/">EU
+AI Act Omnibus Agreement — Postponed High-Risk Deadlines and Other Key
+Changes</a></td>
+<td>2026-05-27</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Verizon: <a
+href="https://www.verizon.com/business/resources/reports/dbir/">2026
+Data Breach Investigations Report (DBIR) landing page</a></td>
+<td>2026-05-01</td>
+<td>1</td>
+</tr>
+<tr>
+<td>simonwillison.net: <a
+href="https://simonwillison.net/2026/Apr/27/now-deceased-agi-clause/">OpenAI–Microsoft
+AGI 검증 전문가 패널 조항</a></td>
+<td>2026-04-27</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Counterpoint: <a
+href="https://counterpointresearch.com/en/insights/robotaxi-services-market-to-hit-168-billion-dollar-valuation-by-2035-as-industry-reaches-inflection-point-led-by-china-us">Robotaxi
+services market to hit $168 billion by 2035</a></td>
+<td>2026-04-14</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Stanford HAI: <a
+href="https://hai.stanford.edu/assets/files/ai_index_report_2026_chapter_3_responsible_ai.pdf">AI
+Index Report 2026 – Chapter 3: Responsible AI</a></td>
+<td>2026-04-13</td>
+<td>1</td>
+</tr>
+<tr>
+<td>파이낸셜뉴스 (과기정통부·KISA 자료): <a
+href="https://www.fnnews.com/news/202604131822482967">AI시대 해킹 파괴력
+10배 강해… 추가피해 예측해 선제 방어 (KISA 2027년 AI
+침해대응시스템)</a></td>
+<td>2026-04-13</td>
+<td>1</td>
+</tr>
+<tr>
+<td>The New Times: <a
+href="https://www.newtimes.co.rw/article/35044/news/technology/one-year-later-africas-ai-drive-shifts-toward-execution/amp">One
+year later, Africa's AI drive shifts toward execution</a></td>
+<td>2026-04-10</td>
+<td>1</td>
+</tr>
+<tr>
+<td>TrendForce: <a
+href="https://www.trendforce.com/news/2026/04/01/news-silicon-photonics-race-intensifies-as-tsmc-targets-2026-coupe-production-samsung-eyes-2029-cpo-turnkey/">Silicon
+photonics race intensifies as TSMC targets 2026 COUPE production,
+Samsung eyes 2029 CPO turnkey</a></td>
+<td>2026-04-01</td>
+<td>1</td>
+</tr>
+<tr>
+<td>식약처: <a
+href="https://www.mfds.go.kr/brd/m_99/view.do?seq=49815"><span>https://www.mfds.go.kr/brd/m_99/view.do?seq=49815</span></a></td>
+<td>2026-04-01</td>
+<td>1</td>
+</tr>
+<tr>
+<td>머니투데이: <a
+href="https://www.mt.co.kr/tech/2026/03/31/2026033111234563860">2025
+인터넷이용실태조사 결과</a></td>
+<td>2026-03-31</td>
+<td>1</td>
+</tr>
+<tr>
+<td>labs.cloudsecurityalliance: <a
+href="https://labs.cloudsecurityalliance.org/wp-content/uploads/2026/03/CSA_research_note_PleaseFix_agentic_browser_exploits_20260328-csa-styled.pdf">'PleaseFix':
+넓은 OAuth 권한을 가진 자율 브라우저 에이전트를 무클릭으로 탈취하는
+공격군이 여</a></td>
+<td>2026-03-28</td>
+<td>1</td>
+</tr>
+<tr>
+<td>futureoflife.org: <a
+href="https://futureoflife.org/fli-open-letters/">FLI Statement on
+Superintelligence</a></td>
+<td>2026-03-24</td>
+<td>1</td>
+</tr>
+<tr>
+<td>news.mtn.co.kr: <a
+href="https://news.mtn.co.kr/news-detail/2026031312382799965">N2SF(국가망보안체계):
+업무 데이터를 기밀(C)·민감(S)·공개(O)로 등급화해 외부 AI·클라우드
+사용</a></td>
+<td>2026-03-13</td>
+<td>1</td>
+</tr>
+<tr>
+<td>38 North (Stimson): <a
+href="https://www.38north.org/2026/02/north-koreas-integration-of-ai-across-cyber-economic-and-military-domains">North
+Korea's Integration of AI Across Cyber, Economic, and Military
+Domains</a></td>
+<td>2026-02-27</td>
+<td>1</td>
+</tr>
+<tr>
+<td>파이낸셜뉴스(KOBACO): <a
+href="https://www.fnnews.com/news/202602050952442832">2025
+방송통신광고비 조사와 2026 전망</a></td>
+<td>2026-02-05</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Waymo: <a
+href="https://waymo.com/blog/2026/02/waymo-raises-usd16-billion-investment-round">Waymo
+raises $16 billion investment round</a></td>
+<td>2026-02-02</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Insurance Business: <a
+href="https://www.insurancebusinessmag.com/reinsurance/news/breaking-news/chaucer-armilla-bet-big-on-standalone-ai-coverage-as-reinsurers-struggle-to-keep-pace-564973.aspx"><span>https://www.insurancebusinessmag.com/reinsurance/news/breaking-news/chaucer-armilla-bet-big-on-standalone-ai-coverage-as-reinsurers-struggle-to-keep-pace-564973.aspx</span></a></td>
+<td>2026-02-01</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Anthropic: <a
+href="https://fortune.com/2026/01/27/country-of-geniuses-anthropic-dario-amodei-50-million-nobel-prize-winners/"><span>https://fortune.com/2026/01/27/country-of-geniuses-anthropic-dario-amodei-50-million-nobel-prize-winners/</span></a></td>
+<td>2026-01-27</td>
+<td>1</td>
+</tr>
+<tr>
+<td>OpenAI: <a
+href="https://openai.com/index/our-approach-to-age-prediction/"><span>https://openai.com/index/our-approach-to-age-prediction/</span></a></td>
+<td>2026-01-20</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Sequoia Capital: <a
+href="https://sequoiacap.com/article/2026-this-is-agi">2026: This is
+AGI</a></td>
+<td>2026-01-14</td>
+<td>1</td>
+</tr>
+<tr>
+<td>byline.network: <a
+href="https://byline.network/2026/01/8-432/">국정원 2026 5대 사이버위협:
+북한 9차 당대회 등 안보 변수로 해킹 증가 전망, 금융권·한전 등 대상
+</a></td>
+<td>2026-01-08</td>
+<td>1</td>
+</tr>
+<tr>
+<td>OpenAI: <a
+href="https://openai.com/index/introducing-chatgpt-health/"><span>https://openai.com/index/introducing-chatgpt-health/</span></a></td>
+<td>2026-01-07</td>
+<td>1</td>
+</tr>
+<tr>
+<td>BCG: <a
+href="https://www.bcg.com/publications/2026/here-at-last-the-evolution-of-the-robotaxi">Here
+at Last: The Evolution of the Robotaxi</a></td>
+<td>2026-01-06</td>
+<td>1</td>
+</tr>
+<tr>
+<td>CSET (Georgetown): <a
+href="https://cset.georgetown.edu/wp-content/uploads/CSET-When-AI-Builds-AI.pdf">When
+AI Builds AI: Findings From a Workshop on Automation of AI
+R&amp;D</a></td>
+<td>2026-01-01</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Munich Re: <a
+href="https://www.munichre.com/en/solutions/for-industry-clients/insure-ai.html"><span>https://www.munichre.com/en/solutions/for-industry-clients/insure-ai.html</span></a></td>
+<td>2026-01-01</td>
+<td>1</td>
+</tr>
+<tr>
+<td>aisi.gov.uk: <a
+href="https://aisi.gov.uk/frontier-ai-trends-report">UK AISI: 시험한
+모든 프런티어 시스템에서 범용 탈옥 발견(생물 오용 정책 우회 포함). 다만
+탈옥에 </a></td>
+<td>2025-12-01</td>
+<td>1</td>
+</tr>
+<tr>
+<td>대한민국 정책브리핑: <a
+href="https://www.korea.kr/news/policyNewsView.do?newsId=148971442">자율주행차
+산업경쟁력 제고 방안</a></td>
+<td>2025-11-26</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Anthropic: <a
+href="https://assets.anthropic.com/m/ec212e6566a0d47/original/Disrupting-the-first-reported-AI-orchestrated-cyber-espionage-campaign.pdf">Disrupting
+the first reported AI-orchestrated cyber espionage campaign
+(GTG-1002)</a></td>
+<td>2025-11-13</td>
+<td>1</td>
+</tr>
+<tr>
+<td>NVIDIA·한국 정부: <a
+href="https://nvidianews.nvidia.com/news/south-korea-ai-infrastructure">GPU
+26만 장 이상 공급 발표(정부 최대 5만, 삼성·SK·현대차 각 5만, 네이버
+6만+). 원격접속 </a></td>
+<td>2025-10-30</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Nokia: <a
+href="https://www.nokia.com/newsroom/press-releases/nvidia-and-nokia-to-pioneer-the-ai-platform-for-6g--powering-americas-return-to-telecommunications-leadership/">NVIDIA
+and Nokia to pioneer the AI platform for 6G</a></td>
+<td>2025-10-28</td>
+<td>1</td>
+</tr>
+<tr>
+<td>European Parliament: <a
+href="https://www.europarl.europa.eu/legislative-train/theme-a-europe-fit-for-the-digital-age/file-ai-liability-directive"><span>https://www.europarl.europa.eu/legislative-train/theme-a-europe-fit-for-the-digital-age/file-ai-liability-directive</span></a></td>
+<td>2025-10-06</td>
+<td>1</td>
+</tr>
+<tr>
+<td>호주 정부: <a
+href="https://www.aljazeera.com/news/2025/1/31/which-countries-have-banned-deepseek-and-why">모든
+정부 시스템·기기에서 DeepSeek 제품 사용 즉시 금지</a></td>
+<td>2025-02-04</td>
+<td>1</td>
+</tr>
+<tr>
+<td>European Commission: <a
+href="https://single-market-economy.ec.europa.eu/single-market/goods/free-movement-sectors/liability-defective-products_en"><span>https://single-market-economy.ec.europa.eu/single-market/goods/free-movement-sectors/liability-defective-products_en</span></a></td>
+<td>2024-12-08</td>
+<td>1</td>
+</tr>
+<tr>
+<td>arXiv: <a href="https://arxiv.org/pdf/2412.04315">Densing Law of
+LLMs (arXiv 2412.04315; Nature Machine Intelligence 2025-11)</a></td>
+<td>2024-12</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Meta: <a
+href="https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/">Introducing
+Muse: The World's First Personal AI Agent Built for Everyone</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Red Hat: <a
+href="https://www.redhat.com/en/blog/red-hat-joins-openclaw-foundation-founding-member-advance-open-future-production-ai-agents">Red
+Hat joins OpenClaw Foundation as founding member</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Google Cloud: <a
+href="https://cloud.google.com/blog/products/ai-machine-learning/announcing-agents-to-payments-ap2-protocol">Powering
+AI commerce with the new Agent Payments Protocol (AP2)</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>campustechnology.com: <a
+href="https://campustechnology.com/articles/2026/11/09/report-enterprise-ai-spending-outpaces-adoption-growth.aspx">기업
+AI 지출의 프런티어 랩 집중</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>thenextweb.com: <a
+href="https://thenextweb.com/news/spacex-cursor-acquisition-official-60-billion">SpaceX의
+Cursor 600억 달러 인수</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Cline: <a
+href="https://cline.bot/blog/post-mortem-unauthorized-cline-cli-npm">Post-mortem:
+Unauthorized Cline CLI npm publish on February 17, 2026</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Palo Alto Networks Unit 42: <a
+href="https://unit42.paloaltonetworks.com/retail-fraud-agentic-ai/">The
+Invisible Death of Customer Loyalty (retail fraud in agentic AI /
+UCP)</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Fortune: <a
+href="https://fortune.com/2026/01/29/100-percent-of-code-at-anthropic-and-openai-is-now-ai-written-boris-cherny-roon/">100%
+of code at Anthropic and OpenAI is now AI-written (Cherny,
+roon)</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>The Decoder: <a
+href="https://the-decoder.com/google-says-75-percent-of-its-new-code-is-now-written-by-ai/">Google
+says 75 percent of its new code is now written by AI</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>vals.ai: <a href="https://www.vals.ai/benchmarks/swebench">벤치마크
+포화 속도</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Epoch AI: <a
+href="https://epoch.ai/benchmarks/arc-agi-3/review">ARC-AGI-3 benchmark
+review (2026-10-30)</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Polymarket: <a
+href="https://polymarket.com/predictions/agi"><span>https://polymarket.com/predictions/agi</span></a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Physical Intelligence: <a href="https://www.pi.website/blog">Blog
+index (π0.7, Pi API beta, MEM, RL token)</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Google DeepMind: <a
+href="https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/">Gemini
+Robotics 2 brings whole body intelligence to robots</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>NVIDIA: <a
+href="https://research.nvidia.com/labs/cosmos-lab/cosmos3/technical-report.pdf">Cosmos
+3: Omnimodal World Models for Physical AI (Technical Report)</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>NVIDIA: <a
+href="https://nvidianews.nvidia.com/news/nvidia-releases-new-physical-ai-models-as-global-partners-unveil-next-generation-robots">NVIDIA
+Releases New Physical AI Models as Global Partners Unveil
+Next-Generation Robots (CES 2026)</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>FDA: <a
+href="https://www.fda.gov/medical-devices/digital-health-center-excellence/artificial-intelligence-enabled-medical-devices">Artificial
+Intelligence-Enabled Medical Devices (허가 목록 안내 페이지, 2026-09
+기준 1,600건 이상)</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Stanford HAI: <a
+href="https://hai.stanford.edu/assets/files/ai_index_report_2026_chapter_6_medicine.pdf">AI
+Index Report 2026 — Chapter 6: Medicine</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Synopsys: <a
+href="https://news.synopsys.com/2026-07-27-Synopsys-Demonstrates-Leadership-in-AI-Powered-Engineering-at-2026-DAC-Chips-to-Systems-Conference">Synopsys
+Demonstrates Leadership in AI-Powered Engineering at 2026 DAC</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Anthropic: <a href="https://www.anthropic.com/glasswing">공개 불가
+수준의 사이버 역량: Claude Mythos 제한 공개</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Anthropic: <a
+href="https://www.anthropic.com/research/how-ai-is-transforming-work-at-anthropic">How
+AI is transforming work at Anthropic</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Google / Google DeepMind: <a
+href="https://deepmind.google/blog/co-scientist-a-multi-agent-ai-partner-to-accelerate-research/"><span>https://deepmind.google/blog/co-scientist-a-multi-agent-ai-partner-to-accelerate-research/</span></a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>GSMA: <a
+href="https://www.gsma.com/newsroom/article/gsma-open-telco-llm-benchmarks-ranks-frontier-ai-models-for-telco-ai-revealing-critical-gap-in-network-automation-readiness/">GSMA
+Open-Telco LLM Benchmarks ranks frontier AI models for Telco AI (phase
+2)</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Stanford (James Zou 등): <a
+href="https://arxiv.org/pdf/2511.15534"><span>https://arxiv.org/pdf/2511.15534</span></a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>GPTZero: <a href="https://gptzero.me/news/neurips/">Hallucinated
+citations in NeurIPS 2025 accepted papers</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>arXiv: <a href="https://arxiv.org/abs/2608.02859">The Crisis of
+AI-Generated Mathematics</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Google DeepMind: <a
+href="https://deepmind.google/public-policy/conjecture-machines-ai-agents-and-the-new-validation-bottleneck-in-science/">Conjecture
+Machines: AI agents and the new validation bottleneck in science
+(2026-07)</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>US Copyright Office: <a
+href="https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-2-Copyrightability-Report.pdf">Copyright
+and AI Part 2: Copyrightability</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>energy.gov: <a
+href="https://www.energy.gov/undersecretaryforscience/articles/us-department-energy-announces-more-800-million-partner">국가
+AI4S 프로그램의 대형화(컴퓨트+국립연구소+프런티어 모델 결합)</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Epoch AI: <a
+href="https://epoch.ai/latest/announcing-frontiermath-erdos">Announcing
+FrontierMath Erdős (기존 저장본)</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Google DeepMind / Tao 외: <a
+href="https://arxiv.org/abs/2511.02864">Mathematical Exploration and
+Discovery at Scale (AlphaEvolve 67 problems)</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>arXiv: <a href="https://arxiv.org/abs/2509.14185">Discovery of
+Unstable Singularities</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>McKinsey: <a
+href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai"><span>https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai</span></a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Epoch AI: <a
+href="https://epoch.ai/data-insights/llm-inference-price-trends">LLM
+inference prices have fallen rapidly but unequally across tasks</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>axios.com: <a
+href="https://axios.com/2026/10/22/ai-token-prices-demand">토큰 가격
+급락이 AI 붐의 새 변수로</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>TRM Labs: <a
+href="https://www.trmlabs.com/trm-tech-blog/whos-actually-paying-measuring-ai-agent-payments-onchain">Who's
+actually paying? Measuring AI agent payments onchain</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>지디넷코리아: <a
+href="https://zdnet.co.kr/view?no=20261108123219">LLM 라우터·토큰 비용
+관리(카페24·KT 토큰팩토리·래블업)</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>thenextweb.com: <a
+href="https://thenextweb.com/news/anthropic-ipo-confidential-filing-openai-race-965-billion">Anthropic
+밸류가 OpenAI를 추월</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Christopher S. Penn (Tru…: <a
+href="https://almosttimely.substack.com/p/almost-timely-news-the-ai-bubble">Almost
+Timely News: The AI Bubble</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Counterpoint Research: <a
+href="https://counterpointresearch.com/en/insights/genai-smartphone-share-to-rise-to-45-percent-of-global-shipments-in-2026">GenAI
+Smartphone Share to Rise to 45% of Global Shipments in 2026
+(2026-06-22)</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>IDC: <a href="https://www.idc.com/?p=832">메모리 대란으로 스마트폰
+시장 역성장</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>IDC: <a
+href="https://www.idc.com/resource-center/blog/smart-glasses-growth-cools-to-35-as-meta-doubles-down-on-distribution/">Smart
+Glasses Growth Cools to 35% as Meta Doubles Down on Distribution
+(2026-09-16)</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>IDC: <a
+href="https://www.idc.com/resource-center/blog/meta-connect-2026-more-glasses-on-more-faces">Meta
+Connect 2026: More Glasses on More Faces (2026-09-25)</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>MacRumors: <a
+href="https://macrumors.com/2026/07/28/openai-first-devices">OpenAI's
+First Devices: Speaker, Smartphone, and More (2026-07-28)</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>NVIDIA: <a
+href="https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027">Financial
+Results for Third Quarter Fiscal 2027</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>TrendForce: <a
+href="https://www.trendforce.com/presscenter/news/20260930-13258.html">4Q26
+DRAM/NAND contract price outlook (DRAM +10–15% QoQ, NAND
++15–20%)</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>GE Vernova: <a
+href="https://www.gevernova.com/news/ge-vernova-reports-strong-third-quarter-2026-financial-performance">GE
+Vernova reports strong third quarter 2026 financial performance</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>tdworld.com: <a
+href="https://www.tdworld.com/electric-utility-operations/article/55415092/us-data-center-pipeline-grows-by-54-gw-as-bans-go-into-force">데이터센터
+금지·정치 리스크와 11월 5일 급락</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Carnegie Endowment: <a
+href="https://carnegieendowment.org/research/2026/06/beyond-the-hype-assessing-hyperscaler-nuclear-commitments-against-us-energy-realities">Beyond
+the Hype: Assessing Hyperscaler Nuclear Commitments Against U.S. Energy
+Realities</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Morgan Stanley: <a
+href="https://morganstanley.com/insights/articles/powering-ai-energy-market-outlook-2026">US
+data center power gap update (Stephen Byrd)</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>arXiv: <a
+href="https://blog.arxiv.org/2025/10/31/attention-authors-updated-practice-for-review-articles-and-position-papers-in-arxiv-cs-category/">Updated
+practice for review articles and position papers in arXiv CS</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>문화체육관광부: <a
+href="https://www.mcst.go.kr/site/s_notice/press/pressView.jsp?pSeq=22865">인공지능
+학습을 위한 저작물 이용허락 표준계약서(안) 공개</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>newsroom-deezer.com: <a
+href="https://newsroom-deezer.com/2026/07/ai-music-exceeds-50-percent-daily-uploads-deezer/">Deezer
+업로드의 AI 비중 처음 50% 돌파(하루 약 9만 곡), 청취자 대상 AI 태그
+도입</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Deezer: <a
+href="https://newsroom-deezer.com/2026/04/ai-generated-tracks-represent-44-of-new-uploaded-music/">AI-generated
+tracks now represent 44% of all new uploaded music</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>TechCrunch: <a
+href="https://techcrunch.com/2026/04/16/runway-ceo-says-ai-could-help-hollywood-make-50-films-instead-of-one-100m-blockbuster/">Runway
+CEO: AI could help Hollywood make 50 films instead of one</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>techcrunch.com: <a
+href="https://techcrunch.com/2026/05/21/spotify-and-universal-music-strike-deal-allowing-fan-made-ai-covers-and-remixes/">Spotify–UMG,
+팬 AI 커버·리믹스 유료 도구 라이선스 합의</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>techcrunch.com: <a
+href="https://techcrunch.com/2025/09/30/openai-is-launching-the-sora-app-its-own-tiktok-competitor-alongside-the-sora-2-model/">OpenAI
+Sora 2·Sora 앱 출시, AI 배우 Tilly Norwood 공개로 할리우드 반발</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>머니투데이: <a
+href="https://www.mt.co.kr/article/2026090110103117937">농어촌기본소득
+예산 3047억→1조1658억…공익직불금 3조원 돌파</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>과학기술정보통신부: <a
+href="https://www.msit.go.kr/bbs/view.do?sCode=user&amp;mId=307&amp;mPid=208&amp;bbsSeqNo=94&amp;nttSeqNo=3187000">제5회
+과학기술관계장관회의 — K-문샷 12대 미션 확정(2026-03-12)</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>과학기술정보통신부: <a
+href="https://www.msit.go.kr/bbs/view.do?sCode=user&amp;mId=307&amp;mPid=208&amp;bbsSeqNo=94&amp;nttSeqNo=3187943">K-문샷
+정책 발표회 개최(2026-11-11)</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Stanford HAI: <a
+href="https://hai.stanford.edu/assets/files/ai_index_report_2026_chapter_5_science.pdf">과학
+특화 모델은 학계·정부·비영리가 주도한다(범용 모델과 정반대)</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Capgemini: <a
+href="https://www.capgemini.com/news/press-releases/technovision-top-5-tech-trends-to-watch-in-2027/">TechnoVision:
+Top 5 Tech Trends to Watch in 2027</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Cabinet Office, Governme…: <a
+href="https://www8.cao.go.jp/cstp/ai/ai_plan/aiplan_g_eng_20260714.pdf">Summary
+of Japan's Second AI Basic Plan (Cabinet Decision Jul. 14,
+2026)</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>m.boannews.com: <a
+href="https://m.boannews.com/html/detail.html?idx=140878">국정원, 차년도
+공공기관 보안평가에 N2SF 구축·AI 보안관제 도입 가점, 망분리 지표를 N2SF
+적용 지</a></td>
+<td>2026</td>
+<td>1</td>
+</tr>
+<tr>
+<td>The Star (Reuters): <a
+href="https://www.thestar.com.my/tech/tech-news/2026/07/25/south-korea-president-lee-hosts-us-tech-summit-calls-for-new-ai-era">South
+Korea President Lee hosts US tech summit, calls for new AI era</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>AOL (Reuters): <a
+href="https://www.aol.com/articles/south-koreas-lee-hold-summit-023235478.html">South
+Korea's Lee holds summit with Singapore's Wong on AI, tech
+cooperation</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>PIB, Government of India: <a
+href="https://static.pib.gov.in/WriteReadData/specificdocs/documents/2026/feb/doc2026217795001.pdf">AI
+Impact Summit 2026 backgrounder: 20,000 additional GPUs</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>UK AI Security Institute: <a
+href="https://www.aisi.gov.uk/blog/international-ai-network-consensus-and-open-questions">International
+AI network: consensus and open questions</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Bernama: <a
+href="https://www.bernama.com/en/world/news.php?id=2636878">Vietnam
+takes over APEC 2027 host role; Leaders' Week in Phu Quoc</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>VietNamNet: <a
+href="https://vietnamnet.vn/en/apec-2027-vietnam-aims-to-deliver-a-world-class-high-impact-summit-2486024.html">APEC
+2027: Vietnam aims to deliver a world-class, high-impact summit</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>EUR-Lex: <a
+href="https://eur-lex.europa.eu/eli/dec/2026/1080/oj">Council Decision
+(EU) 2026/1080 on the conclusion of the CoE Framework Convention on
+AI</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>freepressjournal.in: <a
+href="https://www.freepressjournal.in/tech/ai-generated-child-sexual-abuse-images-surge-40-2026-half-year-figures-top-entire-2025-total">IWF:
+2026년 상반기 AI 생성 아동 성착취 이미지 6,310건으로 2025년
+전체(4,512건)보다 </a></td>
+<td>2026</td>
+<td>1</td>
+</tr>
+<tr>
+<td>EIOPA/ESAs: <a
+href="https://www.eiopa.europa.eu/european-supervisory-authorities-designate-critical-ict-third-party-providers-under-digital-2025-11-18_en">European
+Supervisory Authorities designate critical ICT third-party providers
+under DORA</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Cloudflare: <a
+href="https://blog.cloudflare.com/18-november-2025-outage/">Cloudflare
+outage on November 18, 2025</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>UK Government: <a
+href="https://www.gov.uk/government/collections/cyber-security-and-resilience-bill">Cyber
+Security and Resilience Bill (collection)</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>ZDNet Korea: <a
+href="https://zdnet.co.kr/view/?no=20261002104418">국정자원 화재
+1년…정부, 1만5천개 시스템 안정성 강화한다</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Moody's: <a
+href="https://www.thestandard.com.hk/finance/article/346773/AI-financing-driving-private-credit-growth-as-refinancing-risks-rise-Moodys-says"><span>https://www.thestandard.com.hk/finance/article/346773/AI-financing-driving-private-credit-growth-as-refinancing-risks-rise-Moodys-says</span></a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Nasdaq (Microsoft 네오클라우드 보도): <a
+href="https://www.nasdaq.com/articles/microsofts-neocloud-pullback-isnt-crack-ai-demand"><span>https://www.nasdaq.com/articles/microsofts-neocloud-pullback-isnt-crack-ai-demand</span></a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>KDI (JoongAng 보도): <a
+href="https://www.koreajoongangdaily.com/business/korean-think-tank-projects-economy-to-grow-39-in-2027-on-aidriven-demand/12978948"><span>https://www.koreajoongangdaily.com/business/korean-think-tank-projects-economy-to-grow-39-in-2027-on-aidriven-demand/12978948</span></a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>OECD (Korea Times 보도): <a
+href="https://www.koreatimes.co.kr/economy/20260923/oecd-raises-koreas-2026-growth-forecast-to-37"><span>https://www.koreatimes.co.kr/economy/20260923/oecd-raises-koreas-2026-growth-forecast-to-37</span></a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>비즈워치: <a
+href="https://news.bizwatch.co.kr/article/market/2026/11/06/0041"><span>https://news.bizwatch.co.kr/article/market/2026/11/06/0041</span></a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Korea JoongAng Daily: <a
+href="https://www.koreajoongangdaily.com/business/sk-hynix-samsung-shares-slide-dragging-kospi-nearly-8-lower/12752742"><span>https://www.koreajoongangdaily.com/business/sk-hynix-samsung-shares-slide-dragging-kospi-nearly-8-lower/12752742</span></a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>지디넷코리아: <a
+href="https://zdnet.co.kr/view/?no=20261005073404"><span>https://zdnet.co.kr/view/?no=20261005073404</span></a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>뉴스토마토: <a
+href="https://newstomato.com/ReadNews.aspx?no=1305512"><span>https://newstomato.com/ReadNews.aspx?no=1305512</span></a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>TechCrunch: <a
+href="https://techcrunch.com/2026/03/27/waymo-skyrocketing-ridership-in-one-chart/">Waymo's
+skyrocketing ridership in one chart</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>World Bank: <a
+href="https://www.worldbank.org/en/news/press-release/2026/08/04/ai-offers-lifeline-to-developing-economies-in-an-era-of-weak-growth">AI
+offers lifeline to developing economies in an era of weak
+growth</a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>FPF 추적표: <a
+href="https://fpf.org/2026-chatbot-legislation-tracker/"><span>https://fpf.org/2026-chatbot-legislation-tracker/</span></a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>OpenAI: <a
+href="https://openai.com/index/mental-health-litigation-approach/"><span>https://openai.com/index/mental-health-litigation-approach/</span></a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Bloomberg Law: <a
+href="https://news.bgov.com/bankruptcy-law/character-ai-files-for-chapter-11-bankruptcy-in-delaware"><span>https://news.bgov.com/bankruptcy-law/character-ai-files-for-chapter-11-bankruptcy-in-delaware</span></a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>파이낸셜뉴스: <a
+href="https://www.fnnews.com/news/202609041548330354"><span>https://www.fnnews.com/news/202609041548330354</span></a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>헤럴드경제: <a
+href="https://www.heraldk.com/article/2026062215464578690"><span>https://www.heraldk.com/article/2026062215464578690</span></a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>MTN: <a
+href="https://news.mtn.co.kr/news-detail/2026092113123970898"><span>https://news.mtn.co.kr/news-detail/2026092113123970898</span></a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>파이낸셜뉴스: <a
+href="https://www.fnnews.com/news/202607211223488415"><span>https://www.fnnews.com/news/202607211223488415</span></a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Jones Day: <a
+href="https://www.jonesday.com/en/insights/2026/06/the-revised-eu-product-liability-directive-state-of-play-across-eu-member-states-and-evolving-risk-landscape"><span>https://www.jonesday.com/en/insights/2026/06/the-revised-eu-product-liability-directive-state-of-play-across-eu-member-states-and-evolving-risk-landscape</span></a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>CIO Korea: <a
+href="https://www.cio.com/article/4161741/ai-책임-보장서-발-빼는-보험사들불확실성에-시장-재.html"><span>https://www.cio.com/article/4161741/ai-책임-보장서-발-빼는-보험사들불확실성에-시장-재.html</span></a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>법률신문: <a
+href="https://www.lawtimes.co.kr/news/articleView.html?idxno=221590"><span>https://www.lawtimes.co.kr/news/articleView.html?idxno=221590</span></a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>국가법령정보센터: <a
+href="https://www.law.go.kr/법령/제조물책임법"><span>https://www.law.go.kr/법령/제조물책임법</span></a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Cooley: <a
+href="https://www.cooley.com/news/insight/2026/2026-09-28-regulating-ai-like-a-doctor-fda-floats-competency-based-path-for-generative-ai-enabled-devices"><span>https://www.cooley.com/news/insight/2026/2026-09-28-regulating-ai-like-a-doctor-fda-floats-competency-based-path-for-generative-ai-enabled-devices</span></a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Becker's: <a
+href="https://www.beckershospitalreview.com/strategy/5-big-healthcare-predictions-for-2027-forrester/"><span>https://www.beckershospitalreview.com/strategy/5-big-healthcare-predictions-for-2027-forrester/</span></a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>메디칼타임즈: <a
+href="https://www.medicaltimes.com/Main/News/NewsView.html?ID=1169505"><span>https://www.medicaltimes.com/Main/News/NewsView.html?ID=1169505</span></a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>데일리팜: <a
+href="https://www.dailypharm.com/user/news/334199"><span>https://www.dailypharm.com/user/news/334199</span></a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>데일리팜: <a
+href="https://m.dailypharm.com/user/news/342816"><span>https://m.dailypharm.com/user/news/342816</span></a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Thomson Reuters: <a
+href="https://tax.thomsonreuters.com/news/republicans-hesitant-on-ai-taxes-says-expert/"><span>https://tax.thomsonreuters.com/news/republicans-hesitant-on-ai-taxes-says-expert/</span></a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>머니투데이: <a
+href="https://www.mt.co.kr/world/2026/11/15/2026111323461332980"><span>https://www.mt.co.kr/world/2026/11/15/2026111323461332980</span></a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>택스워치: <a
+href="https://www.taxwatch.co.kr/article/tax/2026/05/06/0001"><span>https://www.taxwatch.co.kr/article/tax/2026/05/06/0001</span></a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>뉴시스: <a
+href="https://www.newsis.com/view/NISX20260515_0003631074"><span>https://www.newsis.com/view/NISX20260515_0003631074</span></a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Staffing Industry Analysts: <a
+href="https://www.staffingindustry.com/news/global-daily-news/federal-actions-take-severe-toll-on-h-1b-visa-congressional-research-service-finds"><span>https://www.staffingindustry.com/news/global-daily-news/federal-actions-take-severe-toll-on-h-1b-visa-congressional-research-service-finds</span></a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>CIC News: <a
+href="https://www.cicnews.com/2025/11/canada-to-launch-accelerated-pathway-for-h-1b-holders-as-part-of-suite-of-measures-to-attract-skilled-workers-1161634.html"><span>https://www.cicnews.com/2025/11/canada-to-launch-accelerated-pathway-for-h-1b-holders-as-part-of-suite-of-measures-to-attract-skilled-workers-1161634.html</span></a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>법무부: <a
+href="https://moj.go.kr/bbs/moj/189/607924/artclView.do"><span>https://moj.go.kr/bbs/moj/189/607924/artclView.do</span></a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+<tr>
+<td>법무부·산업부: <a
+href="https://www.moj.go.kr/bbs/moj/182/608026/artclView.do"><span>https://www.moj.go.kr/bbs/moj/182/608026/artclView.do</span></a></td>
+<td>—</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2027-전망의-위원회-기구별-배정-목록">2027 전망의 위원회 기구별
+배정 목록</h3>
+<blockquote>
+<p><a class="xref" href="ch23.html#s23-10">23.10</a>절의 배정 548건 전체입니다. 기구별로 주관 전망을 모았고, 관련
+기구 열에는 협업 기구를 모두 적었습니다. 확률은 본문 표 기준입니다.</p>
+</blockquote>
+<h4 id="기술혁신인프라-분과주관-38건">기술혁신·인프라 분과(주관
+38건)</h4>
+<table>
+<thead>
+<tr>
+<th>장·절</th>
+<th>2027 전망</th>
+<th>확률</th>
+<th>관련 기구</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="xref" href="ch3.html#s3-6">3.6</a>절</td>
+<td>하네스 벤치마크와 모델 중립 하네스의 중요성 확대</td>
+<td>높음 · 84%</td>
+<td>산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch4.html#s4-3">4.3</a>절</td>
+<td>주요 벤치마크 운영 주체 2곳 이상이 오염·과적합 때문에 비공개 또는
+변형 테스트셋으로 바꾸거나, 리더보드 점수를 정정</td>
+<td>높음 · 72%</td>
+<td>국가 초지능 대응 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-1">6.1</a>절</td>
+<td>/ 통신·6G</td>
+<td>높음 · 90%</td>
+<td>산업AX·생태계 분과, 글로벌협력 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-1">6.1</a>절</td>
+<td>/ 반도체·EDA·제조</td>
+<td>높음 · 88%</td>
+<td>산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-1">6.1</a>절</td>
+<td>/ 통신·6G</td>
+<td>중간 · 58%</td>
+<td>산업AX·생태계 분과, 글로벌협력 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-9">6.9</a>절</td>
+<td>MMSI-Bench 최고 모델 60% 이상(사람 97%와의 30%p 이상 격차는 <a class="xref" href="ch6.html#s6-8">6.8</a>절
+전망대로 유지)</td>
+<td>중간 · 50%</td>
+<td>산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-8">6.8</a>절</td>
+<td>VSI-Bench에서 최고 모델이 사람 기준(79.2)에 도달. 단 MMSI-Bench류
+다시점 추론은 사람(97%)과 30%p 이상 격차 유지</td>
+<td>중간 · 45%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-8">6.8</a>절</td>
+<td>Physics-IQ Verified(영상→영상) 최고점이 2027년 말 80% 이상</td>
+<td>중간 · 35%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-8">6.8</a>절</td>
+<td>IntPhys 2류 직관 물리 과제에서 최고 모델이 85% 이상(사람 96%)</td>
+<td>낮음 · 25%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch9.html#s9-11">9.11</a>절</td>
+<td>같은 성능 단가는 연 수십 배 떨어지지만 최상위 티어 리스트가는 출력
+$20~50 이상에서 거의 안 내려감</td>
+<td>높음 · 82%</td>
+<td>산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch9.html#s9-11">9.11</a>절</td>
+<td>추론이 AI 컴퓨트의 2/3 이상. AI 팩토리 실적 지표가 FLOPS에서 전력당
+토큰·토큰당 원가로 바뀜</td>
+<td>높음 · 70%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch9.html#s9-11">9.11</a>절</td>
+<td>글로벌 토큰 처리량이 연 3~6배 늘어 Google API만 월 4,000조 토큰
+이상. 증가분 대부분은 에이전트·코딩·캐시 토큰</td>
+<td>중간 · 69%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch9.html#s9-11">9.11</a>절</td>
+<td>HBM·전력 제약으로 GPU 임대료가 상반기까지 높다가 하반기 H100급부터
+하락</td>
+<td>중간 · 50%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch9.html#s9-11">9.11</a>절</td>
+<td>OpenRouter 주간 1,000조 토큰 근접, 에이전트 비중 85~90%</td>
+<td>중간 · 48%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch9.html#s9-11">9.11</a>절</td>
+<td>국가 GPU·국가AI컴퓨팅센터 이용 대가가 GPU시간에서 토큰·API 크레딧
+바우처로 일부 전환</td>
+<td>낮음 · 22%</td>
+<td>인공지능책임관협의회, K-AI 풀스택 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch10.html#s10-2">10.2</a>절</td>
+<td>3B 이하 오픈 모델이 MMLU-Pro 73 이상(2024-05 GPT-4o 72.6 수준)을
+개발사 보고 기준으로 기록</td>
+<td>높음 · 75%</td>
+<td>산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch10.html#s10-2">10.2</a>절</td>
+<td>10B 이하 오픈 모델이 GPQA Diamond 85 이상을 개발사 보고 기준으로
+기록(2026년 Qwen3.5-9B 81.7)</td>
+<td>중간 · 60%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch10.html#s10-2">10.2</a>절</td>
+<td>MLCommons가 MCU·초저전력 기기용 트랜스포머·언어 모델 과제를 포함한
+벤치마크 결과를 공개</td>
+<td>중간 · 35%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch10.html#s10-2">10.2</a>절</td>
+<td>네이티브 1.58비트(삼진) 모델이 주요 OEM 폰·PC의 기본 탑재 모델로
+상용 출하</td>
+<td>낮음 · 15%</td>
+<td>산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch11.html#s11-2">11.2</a>절</td>
+<td>원전 업레이트·재가동 PPA 추가, SMR 상업운전은 없음</td>
+<td>높음 · 90%</td>
+<td>지역 특별위원회</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch11.html#s11-2">11.2</a>절</td>
+<td>DRAM·HBM 공급 부족 지속. 신규 클린룸은 2027 하반기~2028에 본격
+기여</td>
+<td>높음 · 88%</td>
+<td>산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch11.html#s11-2">11.2</a>절</td>
+<td>CoWoS·HBM이 상반기까지 출하 병목으로 남음</td>
+<td>높음 · 85%</td>
+<td>산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td>11장</td>
+<td>가스터빈 백로그 증가 지속</td>
+<td>높음 · 85%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch11.html#s11-2">11.2</a>절</td>
+<td>변압기·차단기·케이블 공급 부족 지속, 한국 전력기기 수출 최고치</td>
+<td>높음 · 82%</td>
+<td>산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch11.html#s11-2">11.2</a>절</td>
+<td>CPO는 일부 대형 고객의 스케일아웃·스케일업 스위치에 머물고, 플러그형
+광모듈이 주류로 남음(CPO 대량 도입은 2028년 이후)</td>
+<td>높음 · 80%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch11.html#s11-2">11.2</a>절</td>
+<td>빅5 하이퍼스케일러(빅4 + Oracle) capex 1.0–1.2조 달러(+25–45%,
+빅4만은 약 9,500억 달러), 증가율은 2026년(+77%)보다 둔화</td>
+<td>높음 · 75%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch11.html#s11-2">11.2</a>절</td>
+<td>Vera Rubin이 주력이 되고 하반기 Rubin Ultra로 전환</td>
+<td>높음 · 72%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch11.html#s11-2">11.2</a>절</td>
+<td>모듈형·현장 발전 결합 AIDC 표준화</td>
+<td>높음 · 70%</td>
+<td>지역 특별위원회</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch11.html#s11-2">11.2</a>절</td>
+<td>광트랜시버 시장이 2027년에도 50% 이상 성장</td>
+<td>높음 · 70%</td>
+<td>산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch11.html#s11-1">11.1</a>절</td>
+<td>5대 하이퍼스케일러의 세계 AI 컴퓨트 보유 비중이 2027년 말에도 65%
+이상</td>
+<td>높음 · 70%</td>
+<td>국가 초지능 대응 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch11.html#s11-5">11.5</a>절</td>
+<td>최소 2개국이 데이터센터에 계통 접속 요금이나 그에 준하는 비용 부담
+의무를 도입</td>
+<td>중간 · 65%</td>
+<td>지역 특별위원회</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch11.html#s11-2">11.2</a>절</td>
+<td>AMD는 2위로 고착, NVIDIA 점유율 75–85% 유지</td>
+<td>중간 · 60%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch11.html#s11-2">11.2</a>절</td>
+<td>HBM 시장 1.8–2.5배 확대</td>
+<td>중간 · 55%</td>
+<td>산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch11.html#s11-2">11.2</a>절</td>
+<td>통신사 1곳 이상이 상용망에서 AI-RAN 상용 서비스를 시작(Nokia 목표
+2027)</td>
+<td>중간 · 55%</td>
+<td>산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch11.html#s11-2">11.2</a>절</td>
+<td>HBM4가 출하의 과반, HBM4E는 하반기 소량</td>
+<td>중간 · 50%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch11.html#s11-2">11.2</a>절</td>
+<td>맞춤형 ASIC 비중이 가속기의 30% 초과</td>
+<td>중간 · 40%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch11.html#s11-2">11.2</a>절</td>
+<td>한국 메모리·기판 업체가 CPO·광엔진 관련 양산 공급 계약을 1건 이상
+공개</td>
+<td>중간 · 40%</td>
+<td>산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch13.html#s13-6">13.6</a>절</td>
+<td>2027년 상반기 첫 이용 실적 평가에서 사업자 간 GPU 배분이 크게
+조정되거나 1곳 이상이 축소·교체</td>
+<td>중간 · 40%</td>
+<td>K-AI 풀스택 TF, 인공지능책임관협의회</td>
+</tr>
+</tbody>
+</table>
+<h4 id="산업ax생태계-분과주관-95건">산업AX·생태계 분과(주관 95건)</h4>
+<table>
+<thead>
+<tr>
+<th>장·절</th>
+<th>2027 전망</th>
+<th>확률</th>
+<th>관련 기구</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="xref" href="ch3.html#s3-6">3.6</a>절</td>
+<td>개인 에이전트는 빅테크 소비자형(Muse·ChatGPT agent·Gemini)과
+오픈소스 자가호스팅형(OpenClaw·Hermes)으로 갈라지고, 2027년 안에 단일
+승자는 없음</td>
+<td>높음 · 85%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch3.html#s3-6">3.6</a>절</td>
+<td>좌석 구독에서 사용량·결과 기반 과금으로 이동. 단가는 하락하지만 기업
+총비용은 증가</td>
+<td>높음 · 80%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch3.html#s3-6">3.6</a>절</td>
+<td>코딩 에이전트는 랩 소유 하네스가 매출의 65–75%를 유지하는 과점</td>
+<td>높음 · 72%</td>
+<td>기술혁신·인프라 분과</td>
+</tr>
+<tr>
+<td>3장</td>
+<td>KYA(에이전트 신원)가 카드 네트워크와 기업 IAM에서 사실상 의무화</td>
+<td>중간 · 69%</td>
+<td>보안 특별위원회, 법률 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch3.html#s3-6">3.6</a>절</td>
+<td>도구 연결은 MCP로 정착. 결제 프로토콜(AP2·ACP·Visa·Mastercard)은
+병존하다 호환 프로파일 등장</td>
+<td>중간 · 60%</td>
+<td>글로벌협력 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch3.html#s3-6">3.6</a>절</td>
+<td>OpenClaw가 OCE 1.0으로 '에이전트용 쿠버네티스' 같은 사실상 표준
+런타임이 됨</td>
+<td>중간 · 40%</td>
+<td>기술혁신·인프라 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-7">6.7</a>절</td>
+<td>사전학습 데이터 100만 시간 이상(인간 웨어러블·UMI 포함)을 공개적으로
+밝히는 로봇 FM 개발사가 1곳 이상</td>
+<td>높음 · 80%</td>
+<td>데이터 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-1">6.1</a>절</td>
+<td>/ 월드모델·자율주행</td>
+<td>높음 · 78%</td>
+<td>데이터 분과, 기술혁신·인프라 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-7">6.7</a>절</td>
+<td>실세계 강화학습 후학습이 선도 로봇 FM(PI·Google·NVIDIA·Generalist 중
+2곳 이상) 발표의 표준 단계로 명시</td>
+<td>높음 · 75%</td>
+<td>기술혁신·인프라 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-9">6.9</a>절</td>
+<td>OpenAI·Anthropic·Google 3사 모두 2027년 플래그십 출시 자료(모델
+카드·시스템 카드·출시 글)에 로봇 제어 또는 체화 추론 벤치마크 점수를
+포함</td>
+<td>높음 · 75%</td>
+<td>기술혁신·인프라 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-9">6.9</a>절</td>
+<td>선도 로봇 기업·랩 3곳 이상이 '범용 모델(System 2) + 소형
+VLA·WAM(System 1)' 계층 구조를 제품·공식 아키텍처로 발표</td>
+<td>높음 · 75%</td>
+<td>기술혁신·인프라 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-6">6.6</a>절</td>
+<td>과기정통부 피지컬AI 얼라이언스와 산업부 M.AX 얼라이언스가 단일
+거버넌스로 합쳐지지 않고 병존</td>
+<td>높음 · 75%</td>
+<td>인공지능책임관협의회</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-1">6.1</a>절</td>
+<td>/ 월드모델·자율주행</td>
+<td>높음 · 72%</td>
+<td>데이터 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-1">6.1</a>절</td>
+<td>/ 법률·금융·보안·국방</td>
+<td>높음 · 72%</td>
+<td>보안 특별위원회, 국방·안보 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-1">6.1</a>절</td>
+<td>/ 시계열·정형</td>
+<td>높음 · 70%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-13">6.13</a>절</td>
+<td>미국 대형 의료기관·보험사가 정기 체크인·추적 관리에 의학 훈련 AI
+에이전트를 정식 배치(Forrester 전망의 실현)</td>
+<td>높음 · 70%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-7">6.7</a>절</td>
+<td>선도 랩의 플래그십 VLA 발표 과반이 LIBERO 표준 점수 대신
+섭동·장기·실세계 지표(LIBERO-Plus/PRO, RoboCasa365, BEHAVIOR, RoboArena
+등)를 주 성적으로 제시</td>
+<td>높음 · 70%</td>
+<td>기술혁신·인프라 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-8">6.8</a>절</td>
+<td>선도 로봇 FM·자율주행 개발사 3곳 이상이 월드 모델 기반 정책 평가
+결과를 공식 기술보고서·모델 카드에 사용(실로봇 평가는 병행)</td>
+<td>높음 · 70%</td>
+<td>기술혁신·인프라 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-8">6.8</a>절</td>
+<td>2027년 세계 휴머노이드 평균 판매가격이 3만 달러 미만(출하 금액 ÷
+대수)</td>
+<td>높음 · 70%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-9">6.9</a>절</td>
+<td>비공개 테스트셋·실로봇 기반으로 오염을 통제한 체화 벤치마크 2개
+이상이 새로 나와 프런티어 모델을 평가</td>
+<td>높음 · 70%</td>
+<td>기술혁신·인프라 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-10">6.10</a>절</td>
+<td>RoboDojo-RC Tier 1 포화(97.3%)로 Robocurve가 더 어려운 등급 또는
+후속 실로봇 과제 묶음을 공개하고, 범용 모델 최고가 70% 미만에서
+출발</td>
+<td>높음 · 70%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-13">6.13</a>절</td>
+<td>미국 대형 보험사가 2027-01 사전승인 API를 가동하고, 병원 측 AI
+에이전트가 이 API로 사전승인을 자동 제출하는 상용 사례가 공표('에이전트
+대 에이전트')</td>
+<td>높음 · 70%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-13">6.13</a>절</td>
+<td>미국 치과에서 AI 보험 코디네이터·청구 에이전트를 내놓은 업체가 3곳
+이상으로 늘고, 판독 AI 결과가 청구 심사 생략·자동 승인에 쓰이는 사례가
+확대</td>
+<td>높음 · 70%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-1">6.1</a>절</td>
+<td>/ 로봇·체화(VLA)</td>
+<td>중간 · 69%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-8">6.8</a>절</td>
+<td>세계 휴머노이드 출하가 2027년 10만 대 이상(IDC 또는 Omdia 집계)</td>
+<td>중간 · 65%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-9">6.9</a>절</td>
+<td>범용 프런티어 모델 기반 방식이 RoboLab-120에서 성공률 85%
+이상(NVIDIA 또는 제3자 보고, 시뮬 일시정지 허용)</td>
+<td>중간 · 65%</td>
+<td>기술혁신·인프라 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-12">6.12</a>절</td>
+<td>중국 업체(Baidu·Pony.ai·WeRide)의 중동·유럽·동남아 운영 도시가 10곳
+이상</td>
+<td>중간 · 60%</td>
+<td>글로벌협력 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-12">6.12</a>절</td>
+<td><strong>서울 자율주행택시가 주간 운행이나 강남 밖 지역으로
+확대</strong></td>
+<td>중간 · 60%</td>
+<td>지역 특별위원회, 법률 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-13">6.13</a>절</td>
+<td>FDA가 AI 기기 소프트웨어 수명주기 관리 지침을 최종화</td>
+<td>중간 · 60%</td>
+<td>법률 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-8">6.8</a>절</td>
+<td>한 고객 현장에서 휴머노이드 100대 이상이 시범이 아닌 상업 계약으로
+상시 투입된 사례 공개</td>
+<td>중간 · 60%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-10">6.10</a>절</td>
+<td>Blueprint-Bench 2 최고 점수 0.75 이상(사람 0.586)</td>
+<td>중간 · 60%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-11">6.11</a>절</td>
+<td>'System 1 결정 모델' 범주를 겨냥해 정확도·지연·보정 오차를 함께
+보고하는 공개 벤치마크 2개 이상 등장</td>
+<td>중간 · 60%</td>
+<td>기술혁신·인프라 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-13">6.13</a>절</td>
+<td>미국 Epic 사용 병원의 앰비언트 AI 도입률이 후속 조사에서 80%
+이상으로 집계</td>
+<td>중간 · 60%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-1">6.1</a>절</td>
+<td>/ 로봇·체화(VLA)</td>
+<td>중간 · 55%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-1">6.1</a>절</td>
+<td>/ 의료·임상</td>
+<td>중간 · 55%</td>
+<td>과학 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-1">6.1</a>절</td>
+<td>/ 의료·임상</td>
+<td>중간 · 55%</td>
+<td>과학 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-12">6.12</a>절</td>
+<td>Waymo가 도쿄에서 일반 승객 대상 완전 무인 운행을 시작</td>
+<td>중간 · 55%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-13">6.13</a>절</td>
+<td>FDA가 정신건강용 생성형 AI 대화형 기기 지침 초안을 2027년에
+공개</td>
+<td>중간 · 55%</td>
+<td>사회 분과, 법률 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-13">6.13</a>절</td>
+<td>식약처의 LLM·생성형 AI 디지털의료기기 허가가 2027년 말 누적 3건
+이상</td>
+<td>중간 · 55%</td>
+<td>과학 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-7">6.7</a>절</td>
+<td>RoboArena류 제3자 실세계 평가의 공식 순위 정책이 50개 이상이 되거나,
+다른 플랫폼(휴머노이드·모바일 조작)용 실세계 아레나가 새로 운영</td>
+<td>중간 · 55%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-8">6.8</a>절</td>
+<td>정부가 국산 휴머노이드 250대 구매(대학·출연연 보급)를 2027년 안에
+발주</td>
+<td>중간 · 55%</td>
+<td>공공AX 분과, 과학 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-10">6.10</a>절</td>
+<td>XDOF Ember-0 최고 성공률 70% 이상(XDOF 발표 기준)</td>
+<td>중간 · 55%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-13">6.13</a>절</td>
+<td>국내 치과 장비·차트 업체가 식약처 허가를 받은 치과 영상 판독 AI를
+전자차트에 상용 탑재</td>
+<td>중간 · 55%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-12">6.12</a>절</td>
+<td>미국 AV 서비스 도시가 2027년 말 40곳 이상(McKinsey 기준, 안전요원
+탑승 포함)</td>
+<td>중간 · 50%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-13">6.13</a>절</td>
+<td>한국 비대면진료 플랫폼에 AI 문진·증상 분류 기능이 결합되고, 그 적용
+범위를 정하는 정부 지침이 나옴</td>
+<td>중간 · 50%</td>
+<td>법률 TF, 데이터 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-7">6.7</a>절</td>
+<td>BEHAVIOR 챌린지(또는 후속 대회) 1위의 100개 과제 완전 성공률이 60%
+이상</td>
+<td>중간 · 50%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-9">6.9</a>절</td>
+<td>Embodied First Exam 표준 설정 최고 성공률 60% 이상</td>
+<td>중간 · 50%</td>
+<td>기술혁신·인프라 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-13">6.13</a>절</td>
+<td>FDA가 영상 전체를 읽고 판독문(소견 문장) 초안을 생성하는 생성형 AI
+기기를 처음 허가(510(k)·De Novo)</td>
+<td>중간 · 50%</td>
+<td>과학 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-13">6.13</a>절</td>
+<td>의료 원무 에이전트 벤치마크(HealthAdminBench류)에서 종단 과업 완료율
+60% 이상 공개</td>
+<td>중간 · 50%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-12">6.12</a>절</td>
+<td>Waymo 주간 유료 탑승이 2027년 말 150만 건 이상</td>
+<td>중간 · 45%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-12">6.12</a>절</td>
+<td>유럽에서 첫 완전 무인 유료 로보택시 서비스(런던·스위스·독일 중 1곳
+이상) 시작</td>
+<td>중간 · 45%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-7">6.7</a>절</td>
+<td>주요 로봇 평가 리더보드 1곳 이상이 안전 위반률을 성공률과 나란히
+공식 지표로 채택</td>
+<td>중간 · 45%</td>
+<td>보안 특별위원회</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-7">6.7</a>절</td>
+<td>ISO 25785-1(동적 안정 이동 로봇 안전)이 국제표준안(DIS) 이상 단계로
+진입</td>
+<td>중간 · 45%</td>
+<td>글로벌협력 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-10">6.10</a>절</td>
+<td>실로봇 정밀·장기 과제에서 최고 시스템의 완전 수행률 50%
+이상(Playground Robot Intelligence Index 또는 RoboDojo-RC 기준)</td>
+<td>중간 · 45%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-13">6.13</a>절</td>
+<td>복지부가 의료 AI 성과 기반(기관 단위) 수가 시범사업이나 건정심
+안건을 2027년에 공식화</td>
+<td>중간 · 45%</td>
+<td>공공AX 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-6">6.6</a>절</td>
+<td>제조AI 2030 후속 법안(산업디지털전환법·스마트제조혁신법 개정) 중 1건
+이상 국회 통과</td>
+<td>중간 · 45%</td>
+<td>법률 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-12">6.12</a>절</td>
+<td>중대 사고나 리콜로 한 업체 이상이 미국·중국의 한 도시 이상에서 무인
+운행을 중단</td>
+<td>중간 · 40%</td>
+<td>보안 특별위원회, 법률 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-10">6.10</a>절</td>
+<td>RoboColosseum SO-101 Open Track에서 범용 모델 기반 방식의 전체 과제
+성공률 50% 이상</td>
+<td>중간 · 40%</td>
+<td>기술혁신·인프라 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-11">6.11</a>절</td>
+<td>선도 로봇·물리 AI 기업(휴머노이드·AMR·로봇 파운데이션 모델 개발사)
+1곳 이상이 Jev류 구조화 결정 모델(TypeSafe Jev 또는 오픈 파생)을 제품
+스택의 예외 처리·배정 계층에 공식 채택했다고 발표</td>
+<td>중간 · 40%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-12">6.12</a>절</td>
+<td><strong>한국에서 안전요원 없는 레벨4 유상 여객 운송이 일반 도로에서
+시작(정부 목표 '2027 레벨4 상용화')</strong></td>
+<td>낮음 · 30%</td>
+<td>법률 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-8">6.8</a>절</td>
+<td>가사용 범용 휴머노이드(1X NEO 등, 연구·교육·전시용 제외)의 유료 가정
+인도가 누적 1만 대 이상</td>
+<td>낮음 · 30%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-11">6.11</a>절</td>
+<td>오픈 Jev류 결정 모델(JEV-9B 등)을 쓴 방식이 공개 로봇 벤치마크
+리더보드(RoboArena·RoboColosseum SO-101·RoboDojo·AA-Robotics 등)에
+등재</td>
+<td>낮음 · 30%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-7">6.7</a>절</td>
+<td>폐쇄 선두 모델(Gemini Robotics·Helix·GEN 계열·π0.7 이후 PI 모델) 중
+2개 이상이 같은 제3자 실세계 평가에 점수를 공개</td>
+<td>낮음 · 25%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-8">6.8</a>절</td>
+<td>Tesla Optimus가 외부 고객에게 유료 인도 시작</td>
+<td>낮음 · 25%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-9">6.9</a>절</td>
+<td>범용 프런티어 모델이 시뮬을 멈추지 않은 실시간 조건에서 호출당 1초
+미만으로 제어하며 일시정지 조건과 비슷한 성공률(차이 10%p 이내)을 보인
+공개 결과</td>
+<td>낮음 · 25%</td>
+<td>기술혁신·인프라 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-13">6.13</a>절</td>
+<td>루닛·뷰노 중 한 곳 이상이 2027년 연간 영업흑자</td>
+<td>낮음 · 25%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-12">6.12</a>절</td>
+<td>미국 연방 AV 법률(승용 로보택시 포함)이 제정</td>
+<td>낮음 · 20%</td>
+<td>법률 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-7">6.7</a>절</td>
+<td>범용 VLA가 처음 보는 가정에서 10분 이상 다단계 과업을 80% 이상
+성공했다는 제3자 검증 결과가 나옴</td>
+<td>낮음 · 20%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-9">6.9</a>절</td>
+<td>Butter-Bench·AA-Robotics류 실물 로봇 과제에서 범용 모델이 사람 수준
+성공률(사람 기준 대비 95% 이상)과 사람의 10배 이내 소요 시간을 함께
+달성</td>
+<td>낮음 · 15%</td>
+<td>기술혁신·인프라 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch3.html#s3-10">3.10</a>절</td>
+<td>경영</td>
+<td>높음 · 85%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch3.html#s3-10">3.10</a>절</td>
+<td>경영</td>
+<td>높음 · 72%</td>
+<td>인공지능책임관협의회</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch3.html#s3-10">3.10</a>절</td>
+<td>경영</td>
+<td>중간 · 45%</td>
+<td>사회 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch9.html#s9-11">9.11</a>절</td>
+<td>기업 계약은 '좌석 + 토큰 크레딧 + 결과' 하이브리드가 주류. 결과
+과금은 측정 쉬운 영역에 한정</td>
+<td>높음 · 82%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch9.html#s9-11">9.11</a>절</td>
+<td>'토큰 단가는 하락, 태스크 비용은 정체 또는 상승'이 기업 체감의
+표준이 됨(IITP '태스크 코스트')</td>
+<td>높음 · 78%</td>
+<td>기술혁신·인프라 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch9.html#s9-9">9.9</a>절</td>
+<td><strong>네이버가 상반기에 거래 성과형 과금 광고를 시범 도입하고, AI
+브리핑·쇼핑 에이전트 광고가 광고 매출 성장의 주된 동력이
+됨</strong></td>
+<td>높음 · 75%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch9.html#s9-3">9.3</a>절</td>
+<td>플랫폼 종속·게이트키핑</td>
+<td>높음 · 72%</td>
+<td>법률 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch9.html#s9-11">9.11</a>절</td>
+<td>x402 등 M2M 결제는 건수 수억 건, 금액 수억 달러 수준. '진짜 자율
+에이전트' 비중 논쟁 지속</td>
+<td>높음 · 72%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch9.html#s9-11">9.11</a>절</td>
+<td>AI FinOps(토큰 예산·한도·텔레메트리)가 CFO 의제가 되고, 대기업
+절반이 부서별 토큰 예산과 모델 라우팅을 의무화</td>
+<td>높음 · 70%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch9.html#s9-9">9.9</a>절</td>
+<td>ChatGPT·Google AI 모드·Microsoft Copilot의 'AI 답변 속 광고'가 주요
+시장(미국·유럽·한국·일본)에서 표준 광고 상품으로 자리 잡고, 세계 생성형
+AI 검색 광고 매출이 100억 달러를 넘음</td>
+<td>중간 · 60%</td>
+<td>사회 분과, 법률 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch9.html#s9-11">9.11</a>절</td>
+<td>직원 1인당 토큰 예산을 생산성 도구·복리후생으로 공시하는 기업
+등장</td>
+<td>중간 · 50%</td>
+<td>사회 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch9.html#s9-11">9.11</a>절</td>
+<td>원화 스테이블코인 기반 에이전트 소액결제(x402 호환)가 규제 샌드박스
+실증에 들어감</td>
+<td>낮음 · 25%</td>
+<td>법률 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch9.html#s9-9">9.9</a>절</td>
+<td><strong>네이버 웹 검색 점유율(인터넷트렌드)이 60% 아래로
+떨어짐</strong></td>
+<td>낮음 · 25%</td>
+<td>K-AI 풀스택 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch10.html#s10-4">10.4</a>절</td>
+<td>중국 OEM은 내수용 자체 모델(Doubao·Qwen) 에이전트폰과 해외용
+Gemini의 이원 구조 유지</td>
+<td>높음 · 88%</td>
+<td>글로벌협력 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch10.html#s10-4">10.4</a>절</td>
+<td>단독 AI 핀·펜던트는 대중화에 실패하고, 이어버드 통역·워치·링 건강
+AI가 주류</td>
+<td>높음 · 85%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch10.html#s10-4">10.4</a>절</td>
+<td>3단 하이브리드가 주요 OEM의 표준 구조가 됨</td>
+<td>높음 · 80%</td>
+<td>기술혁신·인프라 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch10.html#s10-4">10.4</a>절</td>
+<td>생성형 AI폰이 세계 출하의 절반을 넘음(약 52%)</td>
+<td>높음 · 72%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch10.html#s10-2">10.2</a>절</td>
+<td>OS 내장 온디바이스 모델의 도구 호출·구조화 출력이 Android(AICore
+Prompt API)에서도 정식 기능으로 열려, 서드파티 앱 에이전트가 기기 안에서
+실행</td>
+<td>높음 · 70%</td>
+<td>기술혁신·인프라 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch10.html#s10-4">10.4</a>절</td>
+<td>신규 PC 대부분이 NPU를 탑재하지만 'AI PC'가 구매 동인이라는 증거는
+약함</td>
+<td>중간 · 65%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch10.html#s10-4">10.4</a>절</td>
+<td>2025년 말 프런티어급 성능의 모델이 플래그십 폰에서 로컬 실행</td>
+<td>중간 · 55%</td>
+<td>기술혁신·인프라 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch10.html#s10-2">10.2</a>절</td>
+<td>주요 MCU 업체 1곳 이상이 1억 파라미터 이하 언어·음성 모델을
+웨이크워드 이상의 기능(명령 이해·대화)으로 양산 제품에 탑재했다고
+발표</td>
+<td>중간 · 55%</td>
+<td>기술혁신·인프라 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch10.html#s10-4">10.4</a>절</td>
+<td>스마트홈 음성비서가 LLM 에이전트로 사실상 전면 교체, MCP류 기기 제어
+확산</td>
+<td>중간 · 40%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch10.html#s10-2">10.2</a>절</td>
+<td>Apple 외 주요 폰 OEM 또는 Google이 총 15B 이상 희소 MoE(활성 4B
+이하)를 기본 온디바이스 모델로 탑재</td>
+<td>중간 · 40%</td>
+<td>기술혁신·인프라 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch10.html#s10-4">10.4</a>절</td>
+<td>스마트 글래스 출하가 30~50% 성장하고 Meta 점유율은 60%대로
+내려감</td>
+<td>중간 · 35%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch11.html#s11-2">11.2</a>절</td>
+<td>메모리 원가 급등으로 스마트폰·PC 출하 감소와 사양 하향(삼성 MX 3분기
+적자 전환이 신호)</td>
+<td>중간 · 69%</td>
+<td>기술혁신·인프라 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch14.html#s14-7">14.7</a>절</td>
+<td>'Next-X 휴머노이드 챌린지' 개시와 K-휴머노이드 플랫폼 후보 선정</td>
+<td>중간 · 50%</td>
+<td>과학 분과</td>
+</tr>
+</tbody>
+</table>
+<h4 id="공공ax-분과주관-24건">공공AX 분과(주관 24건)</h4>
+<table>
+<thead>
+<tr>
+<th>장·절</th>
+<th>2027 전망</th>
+<th>확률</th>
+<th>관련 기구</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="xref" href="ch3.html#s3-7">3.7</a>절</td>
+<td>공공서비스 대리 신청 폭증(에이전트 스팸)</td>
+<td>중간 · 45%</td>
+<td>보안 특별위원회, 인공지능책임관협의회</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch15.html#s15-6">15.6</a>절</td>
+<td>범정부 AI 공통기반이 질의별 모델 배정(라우터) 기준이나 모델별
+호출량을 2027년 안에 공개</td>
+<td>중간 · 40%</td>
+<td>인공지능책임관협의회</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch15.html#s15-6">15.6</a>절</td>
+<td>정부의 독자 모델 평가·공통기반 도입 평가가 '표준 하네스 모델 점수'와
+'공급사 하네스 시스템 점수'를 분리해 공표</td>
+<td>낮음 · 25%</td>
+<td>K-AI 풀스택 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-13">6.13</a>절</td>
+<td>공공의료 AI 고속도로가 목표대로 2027년 말 책임의료기관 30곳 이상
+연결</td>
+<td>중간 · 55%</td>
+<td>데이터 분과, 지역 특별위원회</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch9.html#s9-3">9.3</a>절</td>
+<td>공공서비스 과부하</td>
+<td>중간 · 45%</td>
+<td>인공지능책임관협의회, 보안 특별위원회</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch13.html#s13-6">13.6</a>절</td>
+<td>공공 AI 에이전트가 2027년 안에 보조금 자격 확인·신청 대행을 전국
+서비스로 제공하되, 최종 제출은 이용자 확인을 거치는 방식으로 정해짐</td>
+<td>중간 · 55%</td>
+<td>사회 분과, 인공지능책임관협의회</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch13.html#s13-6">13.6</a>절</td>
+<td>'모두의 AI'가 2026-12에 정식 출시되고, 3개 서비스 합산 MAU가 2027년
+중 1,000만 명을 넘음</td>
+<td>중간 · 50%</td>
+<td>사회 분과, K-AI 풀스택 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch15.html#s15-7">15.7</a>절</td>
+<td>AI 챔피언 2027년 연간 양성 목표(2,000명)를 채워 누적 인증자가
+3,000명을 넘음</td>
+<td>높음 · 75%</td>
+<td>교육·인재 분과, 인공지능책임관협의회</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch15.html#s15-7">15.7</a>절</td>
+<td>'공무원 직접개발·산출물 관리 지침'(등록·3단계 관리)이 2027년
+상반기까지 제정·시행됨</td>
+<td>높음 · 70%</td>
+<td>인공지능책임관협의회</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch15.html#s15-7">15.7</a>절</td>
+<td>공공 AI 윤리기준·공공 AI 영향평가가 2027년 신규 AI 사업에 실제
+적용됨</td>
+<td>높음 · 70%</td>
+<td>법률 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch15.html#s15-6">15.6</a>절</td>
+<td>국정원 단일 클라우드 보안검증 체계가 계획대로 2027년 하반기에
+시행됨</td>
+<td>높음 · 70%</td>
+<td>보안 특별위원회, 국방·안보 분과, 국가 사이버 복원력 강화 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch15.html#s15-7">15.7</a>절</td>
+<td>국민AI서비스혁신추진단이 직접 개발한 대국민 AI 서비스를 2027년 안에
+1개 이상 정식 출시</td>
+<td>높음 · 70%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch15.html#s15-7">15.7</a>절</td>
+<td>AI 정부 실험실 등록 프로젝트가 2027년 말 누적 3,000개를 넘음</td>
+<td>중간 · 65%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch15.html#s15-7">15.7</a>절</td>
+<td>업무망 AI 정부 실험실과 내부망 코딩 에이전트가 2027년 안에 개통(시범
+포함)</td>
+<td>중간 · 60%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch15.html#s15-7">15.7</a>절</td>
+<td>감사원 감사나 국회(국감)가 공무원 직접개발·공공 AI 도구의
+관리(자산·보안·기록·전문인력) 문제를 공식 지적</td>
+<td>중간 · 55%</td>
+<td>인공지능책임관협의회</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch15.html#s15-7">15.7</a>절</td>
+<td>공무원 개발 도구와 관련한 보안·개인정보 사고(유출·노출 포함)가 1건
+이상 공개 보도됨</td>
+<td>중간 · 50%</td>
+<td>보안 특별위원회, 국가 사이버 복원력 강화 TF, 데이터 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch15.html#s15-7">15.7</a>절</td>
+<td>AI 챔피언 인증이 조기승진 가점을 넘어 일반 승진·성과평가·보직에 공식
+반영됨</td>
+<td>중간 · 45%</td>
+<td>교육·인재 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch15.html#s15-7">15.7</a>절</td>
+<td>공무원이 만든 도구 가운데 대국민 서비스나 범정부 공통 서비스로 정식
+전환된 사례가 10개 이상 공개됨</td>
+<td>중간 · 45%</td>
+<td>인공지능책임관협의회</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch15.html#s15-7">15.7</a>절</td>
+<td>공공 SW 업계 단체가 공무원 직접개발 확대에 대해 공식
+의견(성명·건의)을 냄</td>
+<td>중간 · 40%</td>
+<td>산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch15.html#s15-7">15.7</a>절</td>
+<td>PoC를 마친 AI 사업의 ISP·ISMP 면제나 PoC→본사업 연계 발주가 2027년
+안에 법령·지침에 반영</td>
+<td>중간 · 40%</td>
+<td>인공지능책임관협의회</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch15.html#s15-7">15.7</a>절</td>
+<td>2027년 공공 SaaS 계약액이 300억 원을 넘음(2025년 112억, 2026년 최소
+150억 전망)</td>
+<td>중간 · 40%</td>
+<td>산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch15.html#s15-6">15.6</a>절</td>
+<td>해외 하이퍼스케일러(AWS·Microsoft·Google) 중 1곳 이상이 2027년 안에
+새 체계에서 S등급 공공 클라우드 검증을 받음</td>
+<td>낮음 · 25%</td>
+<td>보안 특별위원회, K-AI 풀스택 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch15.html#s15-7">15.7</a>절</td>
+<td>공무원 개발 도구가 원인인 잘못된 처분이 행정심판·소송·국가배상
+청구로 공개됨</td>
+<td>낮음 · 15%</td>
+<td>법률 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch17.html#s17-2">17.2</a>절</td>
+<td>한국 공공부문이 해외 모델 사용 기준(데이터 국외이전·보안 등급별 허용
+목록)을 공식 지침으로 마련</td>
+<td>중간 · 55%</td>
+<td>국방·안보 분과, 인공지능책임관협의회, 보안 특별위원회, 글로벌 AI
+전략적 협력 TF</td>
+</tr>
+</tbody>
+</table>
+<h4 id="데이터-분과주관-9건">데이터 분과(주관 9건)</h4>
+<table>
+<thead>
+<tr>
+<th>장·절</th>
+<th>2027 전망</th>
+<th>확률</th>
+<th>관련 기구</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="xref" href="ch6.html#s6-13">6.13</a>절</td>
+<td>주요 AI 기업 2곳 이상이 의료기록 연동 소비자 건강 기능을 미국
+밖(EU·한국 등)으로 확대</td>
+<td>중간 · 50%</td>
+<td>산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-6">6.6</a>절</td>
+<td>제조 데이터 제공 기업의 보상·이익공유 기준(가이드라인 포함)을 정부가
+공식 발표</td>
+<td>낮음 · 25%</td>
+<td>산업AX·생태계 분과, 데이터 플라이휠 TF</td>
+</tr>
+<tr>
+<td>7장</td>
+<td>데이터</td>
+<td>중간 · 50%</td>
+<td>과학 분과, 데이터 플라이휠 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch9.html#s9-3">9.3</a>절</td>
+<td>전권을 가진 에이전트의 개인정보 위험</td>
+<td>높음 · 78%</td>
+<td>보안 특별위원회, 법률 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch10.html#s10-4">10.4</a>절</td>
+<td>카메라 글래스 촬영 고지·녹화 제한 등 프라이버시 규칙이 한국·EU에서
+구체화</td>
+<td>중간 · 50%</td>
+<td>법률 TF, 사회 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch14.html#s14-12">14.12</a>절</td>
+<td>개인정보보호위원회가 제28조의12에 따른 첫 심의·의결
+결과(요청자·위험요인평가 요약)를 2027년 안에 공개</td>
+<td>높음 · 75%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch14.html#s14-12">14.12</a>절</td>
+<td>디지털헬스케어법(정부 대안)이 2027년 말까지 국회 본회의를 통과</td>
+<td>중간 · 50%</td>
+<td>산업AX·생태계 분과, 법률 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch14.html#s14-12">14.12</a>절</td>
+<td>국가데이터기본법이 2027년 말까지 국회를 통과</td>
+<td>중간 · 40%</td>
+<td>법률 TF, 데이터 플라이휠 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch15.html#s15-6">15.6</a>절</td>
+<td>국정원·NIA가 가명·연구용 데이터의 등급 분류 기준(해설서·지침)을
+2027년 안에 따로 제시</td>
+<td>중간 · 45%</td>
+<td>공공AX 분과, 데이터 플라이휠 TF</td>
+</tr>
+</tbody>
+</table>
+<h4 id="사회-분과주관-44건">사회 분과(주관 44건)</h4>
+<table>
+<thead>
+<tr>
+<th>장·절</th>
+<th>2027 전망</th>
+<th>확률</th>
+<th>관련 기구</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="xref" href="ch3.html#s3-7">3.7</a>절</td>
+<td>에이전트 커머스 분쟁(오구매·가짜 에이전트)</td>
+<td>높음 · 72%</td>
+<td>산업AX·생태계 분과, 법률 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-13">6.13</a>절</td>
+<td>소비자 건강 챗봇의 부적절한 의료·정신건강 조언을 이유로 한 미국 규제
+조치(FTC·주 법무장관)나 대형 소송이 추가로 나옴</td>
+<td>높음 · 72%</td>
+<td>산업AX·생태계 분과, 법률 TF</td>
+</tr>
+<tr>
+<td>8장</td>
+<td>조직</td>
+<td>높음 · 72%</td>
+<td>산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td>8장</td>
+<td>조직</td>
+<td>높음 · 70%</td>
+<td>산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td>8장</td>
+<td>노무</td>
+<td>중간 · 62%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch8.html#s8-4">8.4</a>절</td>
+<td>인사</td>
+<td>중간 · 55%</td>
+<td>산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td>8장</td>
+<td>노무</td>
+<td>중간 · 55%</td>
+<td>법률 TF, 데이터 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch8.html#s8-4">8.4</a>절</td>
+<td>인사</td>
+<td>중간 · 50%</td>
+<td>산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td>8장</td>
+<td>노무</td>
+<td>중간 · 45%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch9.html#s9-3">9.3</a>절</td>
+<td>오구매·오예약과 책임 소재</td>
+<td>높음 · 72%</td>
+<td>산업AX·생태계 분과, 법률 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch9.html#s9-3">9.3</a>절</td>
+<td>소상공인·지역 상점 배제</td>
+<td>중간 · 60%</td>
+<td>산업AX·생태계 분과, 지역 특별위원회</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch9.html#s9-3">9.3</a>절</td>
+<td>컴패니언 에이전트와 고립</td>
+<td>중간 · 58%</td>
+<td>법률 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch9.html#s9-3">9.3</a>절</td>
+<td>디지털 격차</td>
+<td>중간 · 55%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch9.html#s9-3">9.3</a>절</td>
+<td>가격 차별·알고리즘 담합</td>
+<td>중간 · 52%</td>
+<td>법률 TF, 산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch9.html#s9-3">9.3</a>절</td>
+<td>고객센터 '기계 대 기계' 응대</td>
+<td>중간 · 50%</td>
+<td>산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch9.html#s9-9">9.9</a>절</td>
+<td>'AI 답변 속 광고' 표시·분리 기준(광고와 추천의 구분)이 미국
+FTC·EU·한국 공정위 중 1곳 이상의 지침·조사 대상이 됨</td>
+<td>중간 · 50%</td>
+<td>법률 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch9.html#s9-3">9.3</a>절</td>
+<td>과위임과 '승인 피로'</td>
+<td>중간 · 48%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch12.html#s12-8">12.8</a>절</td>
+<td>미국 여러 주로 컴패니언 챗봇 규제 확산, 관련 기업의
+합의·구조조정</td>
+<td>높음 · 85%</td>
+<td>—</td>
+</tr>
+<tr>
+<td>13장</td>
+<td>농어촌 기본소득 약 1조 원 확정, 30–35개 군으로 확대. 2027년이 시범
+마지막 해라 2028년 본사업 전환 여부가 핵심 쟁점</td>
+<td>높음 · 88%</td>
+<td>지역 특별위원회</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch13.html#s13-3">13.3</a>절</td>
+<td>미국 성인 중 AI에 '기대보다 우려가 크다'는 응답이 2027년 조사에서도
+50% 이상</td>
+<td>높음 · 80%</td>
+<td>AI민주주의 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch13.html#s13-2">13.2</a>절</td>
+<td>'AI 감원' 명분화 논쟁</td>
+<td>높음 · 78%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch13.html#s13-6">13.6</a>절</td>
+<td>2026 인터넷이용실태조사(2027 발표)에서 생성형 AI 경험률이 50%를
+넘음</td>
+<td>높음 · 78%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch13.html#s13-5">13.5</a>절</td>
+<td>2028년 4월 총선을 앞두고 2027년 하반기 기본소득·기본사회가 여야 핵심
+쟁점(재정 건전성 대 AI 불평등 대응)</td>
+<td>높음 · 75%</td>
+<td>AI민주주의 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch13.html#s13-2">13.2</a>절</td>
+<td>AI 도입이 단체교섭 의제로(노란봉투법)</td>
+<td>중간 · 60%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch13.html#s13-2">13.2</a>절</td>
+<td>알고리즘 관리 규제의 집행</td>
+<td>중간 · 60%</td>
+<td>글로벌협력 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch13.html#s13-2">13.2</a>절</td>
+<td>중간관리층 축소·조직 평탄화</td>
+<td>중간 · 55%</td>
+<td>산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch13.html#s13-2">13.2</a>절</td>
+<td>정년연장·주4.5일제와 'AI 생산성 분배' 논리의 결합</td>
+<td>중간 · 55%</td>
+<td>청년 도약 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch13.html#s13-5">13.5</a>절</td>
+<td>AI·데이터 배당과 AI 이익 공유 재원(디지털세·초과이윤 과세) 연구
+공개. 입법은 미진</td>
+<td>중간 · 55%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch13.html#s13-5">13.5</a>절</td>
+<td>생애주기별 소득보장(아동·청년·노인)이 2028 예산안에 '기본사회'
+이름으로 반영</td>
+<td>중간 · 48%</td>
+<td>인공지능책임관협의회</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch13.html#s13-5">13.5</a>절</td>
+<td>기본사회기본법 국회 통과</td>
+<td>중간 · 45%</td>
+<td>법률 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch13.html#s13-5">13.5</a>절</td>
+<td>AI 기본사회법의 병합·흡수(단독 제정은 낮음)</td>
+<td>중간 · 40%</td>
+<td>법률 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch13.html#s13-2">13.2</a>절</td>
+<td>광범위한 화이트칼라 대량 실업</td>
+<td>낮음 · 8%</td>
+<td>청년 도약 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch13.html#s13-5">13.5</a>절</td>
+<td>전 국민 보편 현금 기본소득 법제화</td>
+<td>낮음 · 5%</td>
+<td>법률 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch13.html#s13-5">13.5</a>절</td>
+<td>한국 2027년 세법개정안에 AI·로봇 관련 신세목이 들어감</td>
+<td>낮음 · 5%</td>
+<td>법률 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch20.html#s20-16">20.16</a>절</td>
+<td>AI 생성 아동 성착취물과 딥페이크 성범죄가 계속 증가하고, 10대 가해자
+비중이 높게 유지</td>
+<td>높음 · 92%</td>
+<td>보안 특별위원회, 법률 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch20.html#s20-16">20.16</a>절</td>
+<td>챗봇이 관여한 청소년 단독범 폭력 계획 사례가 계속 늘고, AI 기업의
+위협 신고 체계가 쟁점이 됨</td>
+<td>높음 · 85%</td>
+<td>보안 특별위원회</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch20.html#s20-12">20.12</a>절</td>
+<td>성평등가족부 실태조사로 청소년 AI 컴패니언·챗봇 이용 공식 통계가
+처음 공개</td>
+<td>높음 · 85%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch20.html#s20-12">20.12</a>절</td>
+<td>주요 범용 챗봇 사업자 2곳 이상이 연령 추정과 미성년 모드를 한국 등
+주요 시장에 기본 적용</td>
+<td>높음 · 75%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch20.html#s20-12">20.12</a>절</td>
+<td>미국 챗봇 특화 주법이 2027년 말 누적 25개 이상(2026-09 기준
+18개)으로 늘고, 적용 대상이 고령층 등 다른 취약계층으로 넓어지는 법안이
+등장</td>
+<td>중간 · 62%</td>
+<td>법률 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch20.html#s20-12">20.12</a>절</td>
+<td>범용 챗봇(OpenAI 등)을 상대로 한 청소년 사망·자해 소송 중 최소 1건이
+합의되거나 본안 판단(약식판결 이상)을 받음</td>
+<td>중간 · 50%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch20.html#s20-12">20.12</a>절</td>
+<td>FTC가 컴패니언 챗봇 6(b) 조사 결과(직원 보고서)를 공개</td>
+<td>중간 · 45%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch20.html#s20-12">20.12</a>절</td>
+<td>한국에서 아동·청소년 AI 보호 조항(AI 기본법 또는 정보통신망법
+개정)이 국회 본회의를 통과</td>
+<td>중간 · 35%</td>
+<td>법률 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch20.html#s20-12">20.12</a>절</td>
+<td>EU KIDS Act가 2027년 안에 3자 협상 정치적 합의에 도달</td>
+<td>낮음 · 30%</td>
+<td>글로벌협력 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch22.html#s22-4">22.4</a>절</td>
+<td>과기정통부 2026 인터넷이용실태조사(2027 발표)에서 생성형 AI 경험률이
+50%를 넘음</td>
+<td>높음 · 75%</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="국방안보-분과주관-3건">국방·안보 분과(주관 3건)</h4>
+<table>
+<thead>
+<tr>
+<th>장·절</th>
+<th>2027 전망</th>
+<th>확률</th>
+<th>관련 기구</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="xref" href="ch18.html#s18-3">18.3</a>절</td>
+<td>중·러</td>
+<td>중간 · 55%</td>
+<td>글로벌협력 분과, 글로벌 AI 전략적 협력 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch18.html#s18-3">18.3</a>절</td>
+<td>AUKUS Pillar II</td>
+<td>중간 · 35%</td>
+<td>글로벌협력 분과, 글로벌 AI 전략적 협력 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch19.html#s19-6">19.6</a>절</td>
+<td>미국에서 프런티어 연구소·빅테크 직원의 AI 기술(모델·학습 인프라)
+유출 형사 기소가 1건 이상 새로 공개</td>
+<td>높음 · 70%</td>
+<td>보안 특별위원회, 글로벌 AI 전략적 협력 TF</td>
+</tr>
+</tbody>
+</table>
+<h4 id="글로벌협력-분과주관-59건">글로벌협력 분과(주관 59건)</h4>
+<table>
+<thead>
+<tr>
+<th>장·절</th>
+<th>2027 전망</th>
+<th>확률</th>
+<th>관련 기구</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="xref" href="ch6.html#s6-13">6.13</a>절</td>
+<td>EU가 의료기기 내장 AI의 고위험 의무 적용(2028-08)을 다시 미루거나
+의료기기를 AI Act 범위에서 빼는 결정을 2027년에 내림</td>
+<td>낮음 · 25%</td>
+<td>법률 TF, 산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch2.html#s2-2">2.2</a>절</td>
+<td>법·규제</td>
+<td>높음 · 92%</td>
+<td>법률 TF, 사회 분과, 산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch15.html#s15-4">15.4</a>절</td>
+<td>생성물 표시·워터마크 의무가 사실상 국제 공통 규범으로
+수렴(EU·중국·한국·인도, C2PA)</td>
+<td>높음 · 85%</td>
+<td>법률 TF, AI민주주의 분과, 문화·콘텐츠 AI TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch15.html#s15-9">15.9</a>절</td>
+<td>IMF 다음 분석에서도 미·중이 AI 컴퓨팅 하드웨어 순수입의 70% 이상을
+차지</td>
+<td>높음 · 80%</td>
+<td>기술혁신·인프라 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch15.html#s15-9">15.9</a>절</td>
+<td>글로벌 노스와 사우스의 생성형 AI 사용률 격차(Microsoft 기준)가 12%p
+이상으로 유지되거나 커짐</td>
+<td>높음 · 75%</td>
+<td>사회 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch15.html#s15-9">15.9</a>절</td>
+<td>제네바 AI 정상회의 공식 산출물에 컴퓨트 접근·역량 격차 해소
+약속(기금·바우처·공유 인프라 중 1개 이상)이 포함</td>
+<td>높음 · 70%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch15.html#s15-9">15.9</a>절</td>
+<td><strong>한국의 AI 활용 개발협력 전략에 따라 '글로벌 AI 허브'가 문을
+열고, AI ODA 사업이 2026년보다 늘어남</strong></td>
+<td>높음 · 70%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch15.html#s15-9">15.9</a>절</td>
+<td>ITU 2027년 집계에서 오프라인 인구가 20억 명 아래로 내려감</td>
+<td>중간 · 60%</td>
+<td>사회 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch15.html#s15-4">15.4</a>절</td>
+<td>프런티어 모델 투명성·사고 보고 기준은 수렴하지만 보고
+기한(72시간~15일)과 벌칙은 갈라짐</td>
+<td>중간 · 55%</td>
+<td>보안 특별위원회, 법률 TF, 국가 초지능 대응 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch15.html#s15-4">15.4</a>절</td>
+<td>대서양 간 규제 강도 격차가 줄었다가 EU 고위험 적용(12월) 이후 다시
+확대</td>
+<td>중간 · 40%</td>
+<td>법률 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch15.html#s15-9">15.9</a>절</td>
+<td>AI ODA의 무상(외교부·KOICA)·유상(EDCF)·수출 실증(과기정통부)을 묶은
+국가별 단일 창구 또는 공동 사업 지침이 마련</td>
+<td>낮음 · 25%</td>
+<td>인공지능책임관협의회, 글로벌 AI 전략적 협력 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch15.html#s15-9">15.9</a>절</td>
+<td>아프리카 AI 펀드(600억 달러)의 실제 자본 약정이 목표의 10% 이상</td>
+<td>낮음 · 15%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch16.html#s16-5">16.5</a>절</td>
+<td>Entity List 추가(우회·밀수망, 중국 AI 랩·클라우드)</td>
+<td>높음 · 93%</td>
+<td>국방·안보 분과, 글로벌 AI 전략적 협력 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch16.html#s16-5">16.5</a>절</td>
+<td>중국의 대응: 반독점, 비신뢰기업 명단, 수입 거부, 국산칩 조달
+의무</td>
+<td>높음 · 88%</td>
+<td>글로벌 AI 전략적 협력 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch16.html#s16-1">16.1</a>절</td>
+<td>연장되더라도 희토류는 '조용한 통제'(허가 지연·선별 승인) 지속</td>
+<td>높음 · 85%</td>
+<td>산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch16.html#s16-5">16.5</a>절</td>
+<td>원격접속 규칙 집행: 지정국 확대, 데이터센터 KYC·월간 보고</td>
+<td>높음 · 78%</td>
+<td>국방·안보 분과, 기술혁신·인프라 분과, 글로벌 AI 전략적 협력 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch16.html#s16-5">16.5</a>절</td>
+<td>희토류 유예 종료 또는 선별 허가</td>
+<td>높음 · 70%</td>
+<td>산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch16.html#s16-5">16.5</a>절</td>
+<td>증류·가중치 탈취 제재</td>
+<td>높음 · 70%</td>
+<td>보안 특별위원회, 글로벌 AI 전략적 협력 TF, 국방·안보 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch16.html#s16-1">16.1</a>절</td>
+<td>Chip Security Act(위치 검증) 입법</td>
+<td>중간 · 52%</td>
+<td>국방·안보 분과, 글로벌 AI 전략적 협력 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch16.html#s16-5">16.5</a>절</td>
+<td>반도체 232조 2단계 관세, 301조 과잉생산 관세</td>
+<td>중간 · 50%</td>
+<td>산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch16.html#s16-5">16.5</a>절</td>
+<td>계열사(50%) 규정 시행</td>
+<td>중간 · 35%</td>
+<td>국방·안보 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch17.html#s17-2">17.2</a>절</td>
+<td>BIS 원격접속 규칙의 유예 종료(2027-02)로 동남아·한국
+클라우드·데이터센터의 고객 확인(KYC)·소유 구조 증빙이 일상 업무가
+됨</td>
+<td>높음 · 85%</td>
+<td>국방·안보 분과, 기술혁신·인프라 분과, 글로벌 AI 전략적 협력 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch18.html#s18-3">18.3</a>절</td>
+<td>ITU AI for Good·WSIS</td>
+<td>높음 · 94%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch18.html#s18-3">18.3</a>절</td>
+<td>G20(영국)</td>
+<td>높음 · 93%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch18.html#s18-3">18.3</a>절</td>
+<td>APEC(베트남)</td>
+<td>높음 · 93%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch18.html#s18-3">18.3</a>절</td>
+<td>유엔 글로벌 대화(2차)</td>
+<td>높음 · 92%</td>
+<td>—</td>
+</tr>
+<tr>
+<td>18장</td>
+<td>제네바 AI 정상회의</td>
+<td>높음 · 90%</td>
+<td>보안 특별위원회</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch18.html#s18-4">18.4</a>절</td>
+<td>유엔 트랙(과학패널 보고서, 5월 대화)은 정례화되지만 실질 규범은
+만들지 못함</td>
+<td>높음 · 88%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch18.html#s18-4">18.4</a>절</td>
+<td>제네바 정상회의는 구속력 없는 선언으로 끝나고, 미국은 구속적 문안에
+반대하거나 서명하지 않음</td>
+<td>높음 · 85%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch18.html#s18-3">18.3</a>절</td>
+<td>유엔 독립 국제 AI 과학패널</td>
+<td>높음 · 80%</td>
+<td>국가 초지능 대응 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch18.html#s18-2">18.2</a>절</td>
+<td>한·영</td>
+<td>높음 · 78%</td>
+<td>보안 특별위원회</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch18.html#s18-2">18.2</a>절</td>
+<td>한·싱가포르/ASEAN</td>
+<td>높음 · 78%</td>
+<td>보안 특별위원회</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch18.html#s18-3">18.3</a>절</td>
+<td>미·일</td>
+<td>높음 · 75%</td>
+<td>글로벌 AI 전략적 협력 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch18.html#s18-3">18.3</a>절</td>
+<td>EU·미</td>
+<td>높음 · 72%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch18.html#s18-4">18.4</a>절</td>
+<td>EU–미 AI Act 갈등이 GPAI 기한(08-02) 전후로 재점화</td>
+<td>높음 · 72%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch18.html#s18-3">18.3</a>절</td>
+<td>OECD·GPAI</td>
+<td>높음 · 70%</td>
+<td>보안 특별위원회</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch18.html#s18-3">18.3</a>절</td>
+<td>G7(미국 의장국, 2027-01-01 승계)</td>
+<td>중간 · 65%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch18.html#s18-4">18.4</a>절</td>
+<td>미국 G7은 히로시마 프로세스보다 에너지·인프라·공급망을 앞세움</td>
+<td>중간 · 65%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch15.html#s15-4">15.4</a>절</td>
+<td>한·일</td>
+<td>중간 · 60%</td>
+<td>보안 특별위원회, 산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch18.html#s18-1">18.1</a>절</td>
+<td>한·독일</td>
+<td>중간 · 60%</td>
+<td>산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch18.html#s18-1">18.1</a>절</td>
+<td>한·중</td>
+<td>중간 · 55%</td>
+<td>글로벌 AI 전략적 협력 TF, 공공AX 분과, 산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch18.html#s18-2">18.2</a>절</td>
+<td>한·프랑스/EU</td>
+<td>중간 · 55%</td>
+<td>법률 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch18.html#s18-3">18.3</a>절</td>
+<td>중·EU, 중·걸프</td>
+<td>중간 · 55%</td>
+<td>글로벌 AI 전략적 협력 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch18.html#s18-3">18.3</a>절</td>
+<td>쿼드</td>
+<td>중간 · 55%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch18.html#s18-4">18.4</a>절</td>
+<td>미국은 양자 기술협정을 관세·디지털세와 연계하고, 이행 중단·조건부
+재개가 다른 동맹에도 나옴</td>
+<td>중간 · 55%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch18.html#s18-6">18.6</a>절</td>
+<td>한국이 2028 G20 의장국 우선 의제에 AI(기본사회·역량격차·평가 상호
+인정 중 1개 이상)를 넣겠다고 2027년 안에 공식 예고</td>
+<td>중간 · 55%</td>
+<td>사회 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch18.html#s18-2">18.2</a>절</td>
+<td>한·캐나다·호주</td>
+<td>중간 · 52%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch18.html#s18-1">18.1</a>절</td>
+<td>한·인도</td>
+<td>중간 · 50%</td>
+<td>교육·인재 분과, 산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch18.html#s18-3">18.3</a>절</td>
+<td>미·영</td>
+<td>중간 · 50%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch18.html#s18-3">18.3</a>절</td>
+<td>WAICO·BRICS(중국 의장국)</td>
+<td>중간 · 50%</td>
+<td>글로벌 AI 전략적 협력 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch18.html#s18-4">18.4</a>절</td>
+<td>한국이 AI 사전표준화 MoU 4개국과 ITU·ISO/IEC 공동 기고로 중견국 표준
+연합의 허브 역할 시도</td>
+<td>중간 · 50%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch18.html#s18-3">18.3</a>절</td>
+<td>수출통제 공조</td>
+<td>중간 · 45%</td>
+<td>국방·안보 분과, 글로벌 AI 전략적 협력 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch18.html#s18-4">18.4</a>절</td>
+<td>중국이 BRICS 의장국과 WAICO를 결합해 'AI 오픈소스·역량강화' 블록을
+키움(WAICO 40개국 이상)</td>
+<td>중간 · 45%</td>
+<td>글로벌 AI 전략적 협력 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch18.html#s18-3">18.3</a>절</td>
+<td>유럽평의회 AI 협약</td>
+<td>중간 · 40%</td>
+<td>법률 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch18.html#s18-8">18.8</a>절</td>
+<td>미국 수출 허가(걸프·동남아 대량 허가 등) 조건에 칩 위치 검증 또는
+원격 증명이 1건 이상 명시</td>
+<td>중간 · 35%</td>
+<td>국방·안보 분과, 글로벌 AI 전략적 협력 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch18.html#s18-8">18.8</a>절</td>
+<td>국제 평가 네트워크·유엔 과학패널·제네바 정상회의 공식 문서 중 하나에
+AI 검증 기술 연구가 협력 과제로 명시</td>
+<td>중간 · 35%</td>
+<td>국가 초지능 대응 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch18.html#s18-8">18.8</a>절</td>
+<td>Chip Security Act가 제정되고 상무부가 위치 검증 의무 시행 규칙(초안
+포함)을 2027년 안에 공고</td>
+<td>낮음 · 25%</td>
+<td>국방·안보 분과, 글로벌 AI 전략적 협력 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch18.html#s18-4">18.4</a>절</td>
+<td>한국이 유럽평의회 AI 기본협약에 서명</td>
+<td>낮음 · 12%</td>
+<td>법률 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch23.html#s23-4">23.4</a>절</td>
+<td>한국 정부가 국제 AI 개발 검증·컴퓨트 신고 체제 논의에 참여하겠다는
+입장을 공식 문서나 정상 성명에 담음</td>
+<td>낮음 · 20%</td>
+<td>국가 초지능 대응 TF, 글로벌 AI 전략적 협력 TF</td>
+</tr>
+</tbody>
+</table>
+<h4 id="과학-분과주관-40건">과학 분과(주관 40건)</h4>
+<table>
+<thead>
+<tr>
+<th>장·절</th>
+<th>2027 전망</th>
+<th>확률</th>
+<th>관련 기구</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="xref" href="ch6.html#s6-1">6.1</a>절</td>
+<td>/ 수학·과학 발견</td>
+<td>높음 · 85%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-1">6.1</a>절</td>
+<td>/ 화학·소재</td>
+<td>높음 · 75%</td>
+<td>산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-1">6.1</a>절</td>
+<td>/ 기상·기후</td>
+<td>높음 · 72%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-1">6.1</a>절</td>
+<td>/ 바이오·단백질</td>
+<td>중간 · 65%</td>
+<td>산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-1">6.1</a>절</td>
+<td>/ 화학·소재</td>
+<td>중간 · 40%</td>
+<td>산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-13">6.13</a>절</td>
+<td>사람 조작 없이 수술 단계를 수행하는 자율 수술 로봇의 첫 인체 임상
+착수가 공표</td>
+<td>낮음 · 20%</td>
+<td>산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch7.html#s7-4">7.4</a>절</td>
+<td>기후·지구</td>
+<td>높음 · 90%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch7.html#s7-10">7.10</a>절</td>
+<td>극값 조합론·이산기하 경계 개선(작은 Ramsey 수, cap set, 12–31차원
+키싱수, 구 채우기, Kakeya류)</td>
+<td>높음 · 90%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch7.html#s7-6">7.6</a>절</td>
+<td>출판·심사</td>
+<td>높음 · 88%</td>
+<td>—</td>
+</tr>
+<tr>
+<td>7장</td>
+<td>수학</td>
+<td>높음 · 82%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch7.html#s7-10">7.10</a>절</td>
+<td>작은 형식의 행렬곱 신기록(5×5, 6×6, 직사각)</td>
+<td>높음 · 80%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch7.html#s7-4">7.4</a>절</td>
+<td>생물학·신약</td>
+<td>높음 · 75%</td>
+<td>산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch7.html#s7-10">7.10</a>절</td>
+<td>FrontierMath-Erdős 남은 51문제 중 다수 해결, erdosproblems.com
+미해결 문제 대량 정리</td>
+<td>높음 · 75%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch7.html#s7-10">7.10</a>절</td>
+<td>단위거리 추측급 '이름 있는 추측' 2–5개 추가 해결</td>
+<td>높음 · 74%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch7.html#s7-6">7.6</a>절</td>
+<td>출판·심사</td>
+<td>높음 · 72%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch5.html#s5-1">5.1</a>절</td>
+<td>AI 연구 자체</td>
+<td>높음 · 70%</td>
+<td>국가 초지능 대응 TF, 기술혁신·인프라 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch7.html#s7-10">7.10</a>절</td>
+<td>산란진폭 고루프 계산과 새 닫힌 공식(N=4 SYM, QCD·중력)</td>
+<td>높음 · 70%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch7.html#s7-4">7.4</a>절</td>
+<td>물리·천문</td>
+<td>중간 · 68%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch7.html#s7-4">7.4</a>절</td>
+<td>사회과학·경제</td>
+<td>중간 · 66%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch7.html#s7-4">7.4</a>절</td>
+<td>소재·화학</td>
+<td>중간 · 65%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch7.html#s7-6">7.6</a>절</td>
+<td>크레딧</td>
+<td>중간 · 65%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch7.html#s7-4">7.4</a>절</td>
+<td>공학·ICT(통신·6G)</td>
+<td>중간 · 62%</td>
+<td>기술혁신·인프라 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch7.html#s7-10">7.10</a>절</td>
+<td>AI 설계 양자오류정정 코드·디코더의 실제 하드웨어 적용</td>
+<td>중간 · 62%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch7.html#s7-10">7.10</a>절</td>
+<td>대형 정리의 AI 형식화 확산(FLT의 Mathlib 통합, 기하화 추측,
+유한단순군 분류 일부, 최근 필즈상 업적)</td>
+<td>중간 · 60%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch7.html#s7-10">7.10</a>절</td>
+<td>AI 설계 실험(간섭계·양자광학)의 실제 장치 구현</td>
+<td>중간 · 60%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch7.html#s7-10">7.10</a>절</td>
+<td>연구 수준 물리 벤치마크(CritPt·TPBench) 60% 이상</td>
+<td>중간 · 50%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch7.html#s7-10">7.10</a>절</td>
+<td>외력 Navier–Stokes 증명에 대한 학계 판정</td>
+<td>중간 · 45%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch7.html#s7-4">7.4</a>절</td>
+<td>재현성</td>
+<td>중간 · 40%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch7.html#s7-10">7.10</a>절</td>
+<td>경계 없는 3차원 Euler/Boussinesq 불안정 특이점의 컴퓨터 보조 엄밀
+증명</td>
+<td>중간 · 40%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch7.html#s7-10">7.10</a>절</td>
+<td>AI가 주도한 결과의 4대 수학지(Annals·Acta·JAMS·Inventiones) 게재
+승인</td>
+<td>중간 · 38%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch7.html#s7-10">7.10</a>절</td>
+<td>기호회귀·LLM으로 새 경험법칙을 발견하고 독립 데이터로 확인</td>
+<td>중간 · 38%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch7.html#s7-10">7.10</a>절</td>
+<td>핵융합 플라즈마 AI 제어의 새 장치 적용(SPARC 등)</td>
+<td>낮음 · 30%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch7.html#s7-10">7.10</a>절</td>
+<td>행렬곱 지수 ω의 점근적 개선을 AI가 주도</td>
+<td>낮음 · 15%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch7.html#s7-10">7.10</a>절</td>
+<td>외력 없는 Navier–Stokes(밀레니엄 문제의 자연스러운 형태) 해결</td>
+<td>낮음 · 5%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch12.html#s12-4">12.4</a>절</td>
+<td>학회·저널 투고 폭증 지속, 투고 상한·AI 사용 공개 의무·AI 탐지 심사
+확산</td>
+<td>높음 · 88%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch14.html#s14-7">14.7</a>절</td>
+<td>예산 확정 후 미션별 신규 R&amp;D 공모·착수(12개 미션 대부분에서 첫
+과제 선정)</td>
+<td>높음 · 80%</td>
+<td>인공지능책임관협의회, 기술혁신·인프라 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch14.html#s14-7">14.7</a>절</td>
+<td>NAIS '과학 AI-OS' 1차 공개, KISTI 슈퍼컴 6호기 '한강' 연계 과학 FM
+학습 환경</td>
+<td>중간 · 55%</td>
+<td>기술혁신·인프라 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch14.html#s14-7">14.7</a>절</td>
+<td>수학·지구과학·이차전지 과학기술×AI FM 첫 공개</td>
+<td>중간 · 45%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch14.html#s14-7">14.7</a>절</td>
+<td>국산 자율실험실(신약·소재) 파일럿 가동</td>
+<td>낮음 · 30%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch14.html#s14-7">14.7</a>절</td>
+<td>'연구생산성 2배' KPI 중간 측정치 공개</td>
+<td>낮음 · 15%</td>
+<td>인공지능책임관협의회</td>
+</tr>
+</tbody>
+</table>
+<h4 id="교육인재-분과주관-5건">교육·인재 분과(주관 5건)</h4>
+<table>
+<thead>
+<tr>
+<th>장·절</th>
+<th>2027 전망</th>
+<th>확률</th>
+<th>관련 기구</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>7장</td>
+<td>인재</td>
+<td>중간 · 64%</td>
+<td>과학 분과, 사회 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch15.html#s15-5">15.5</a>절</td>
+<td>캐나다가 H-1B 소지자 전용(또는 우선) 영주·취업 경로를 2027년에
+실제로 개시</td>
+<td>중간 · 55%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch15.html#s15-5">15.5</a>절</td>
+<td>DHS의 H-1B 청원당 10만 3,265달러 수수료 규칙이 2027년에 최종화</td>
+<td>중간 · 50%</td>
+<td>글로벌협력 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch15.html#s15-5">15.5</a>절</td>
+<td>한국 정부가 2026년 해외 우수 인재 유치 실적(목표 600명)과 톱티어
+비자 발급 수를 공개하고 목표를 달성</td>
+<td>중간 · 40%</td>
+<td>글로벌협력 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch20.html#s20-16">20.16</a>절</td>
+<td>시험 부정 도구가 AI 안경·이어버드로 이동하고, 수능·자격시험·대학
+평가가 기기 검사와 대면 평가를 강화</td>
+<td>높음 · 80%</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="ai민주주의-분과주관-5건">AI민주주의 분과(주관 5건)</h4>
+<table>
+<thead>
+<tr>
+<th>장·절</th>
+<th>2027 전망</th>
+<th>확률</th>
+<th>관련 기구</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="xref" href="ch13.html#s13-7">13.7</a>절</td>
+<td>정부 AI 공론장이 2027년에 허위조작정보 외 주제 2개 이상(예: 고용,
+아동·청소년, 공공 AI 에이전트)으로 넓어짐</td>
+<td>높음 · 70%</td>
+<td>사회 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch13.html#s13-7">13.7</a>절</td>
+<td>공론장 숙의 결과가 법령·지침 개정안에 명시적으로 반영되고, 정부가
+항목별 수용 여부를 공개</td>
+<td>낮음 · 30%</td>
+<td>법률 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch20.html#s20-11">20.11</a>절</td>
+<td>정부가 'AI 범죄 종합 대응계획'을 공표하고, 해외발 정보조작(FIMI)
+대응을 독립 과제로 넣음</td>
+<td>중간 · 55%</td>
+<td>보안 특별위원회, 국방·안보 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch23.html#s23-5">23.5</a>절</td>
+<td>미 의회에서 프런티어 AI 통제권(행정부의 모델 접근 차단 권한, 연구소
+지배구조, 권력 집중)을 주제로 한 청문회가 1회 이상 열림</td>
+<td>중간 · 60%</td>
+<td>국가 초지능 대응 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch23.html#s23-4">23.4</a>절</td>
+<td>2027년 안에 출마를 선언한 미국 주요 대선 주자 1명 이상이 초지능
+감속·국제 합의 또는 AI 이익 배당을 대표 공약으로 내세움</td>
+<td>중간 · 45%</td>
+<td>국가 초지능 대응 TF</td>
+</tr>
+</tbody>
+</table>
+<h4 id="보안-특별위원회주관-34건">보안 특별위원회(주관 34건)</h4>
+<table>
+<thead>
+<tr>
+<th>장·절</th>
+<th>2027 전망</th>
+<th>확률</th>
+<th>관련 기구</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="xref" href="ch3.html#s3-7">3.7</a>절</td>
+<td>스킬·플러그인·MCP 공급망 공격</td>
+<td>높음 · 92%</td>
+<td>국가 사이버 복원력 강화 TF, 산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch3.html#s3-7">3.7</a>절</td>
+<td>간접 프롬프트 인젝션에 의한 유출·무단 결제</td>
+<td>높음 · 87%</td>
+<td>사회 분과, 산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch3.html#s3-7">3.7</a>절</td>
+<td>에이전트 비용 폭주, LLMJacking</td>
+<td>높음 · 84%</td>
+<td>산업AX·생태계 분과, 국가 사이버 복원력 강화 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch3.html#s3-7">3.7</a>절</td>
+<td>AI 오케스트레이션 공격의 대중화</td>
+<td>높음 · 82%</td>
+<td>국가 사이버 복원력 강화 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch3.html#s3-7">3.7</a>절</td>
+<td>평가 에이전트의 샌드박스 이탈, 멀티에이전트의 비의도 행동</td>
+<td>중간 · 55%</td>
+<td>국가 초지능 대응 TF, 법률 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch3.html#s3-7">3.7</a>절</td>
+<td>환경 밖으로 자기 복제하는 에이전트의 첫 공개 사례</td>
+<td>낮음 · 10%</td>
+<td>국가 초지능 대응 TF, 법률 TF, 국가 사이버 복원력 강화 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch4.html#s4-3">4.3</a>절</td>
+<td>미국 프런티어 연구소 2곳 이상이 시스템 카드에 CoT 감시 가능성 평가
+결과를 수치로 싣기 시작</td>
+<td>중간 · 60%</td>
+<td>국가 초지능 대응 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch9.html#s9-3">9.3</a>절</td>
+<td>에이전트를 노린 프롬프트 인젝션·쇼핑 사기</td>
+<td>높음 · 85%</td>
+<td>사회 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch15.html#s15-4">15.4</a>절</td>
+<td>AISI 네트워크의 평가 방법론 공동화. 중국은 WAICO 축으로 블록화</td>
+<td>중간 · 60%</td>
+<td>글로벌협력 분과, 국가 초지능 대응 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch18.html#s18-3">18.3</a>절</td>
+<td>국제 평가 네트워크(NAAIMES)</td>
+<td>높음 · 80%</td>
+<td>글로벌협력 분과, 국가 초지능 대응 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch18.html#s18-4">18.4</a>절</td>
+<td>국제 평가 네트워크가 에이전트·사이버 공동 산출물을 내고
+'측정·보안'으로 이동</td>
+<td>높음 · 78%</td>
+<td>글로벌협력 분과, 국가 초지능 대응 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch18.html#s18-5">18.5</a>절</td>
+<td>한국 AI안전연구소가 국제 평가 네트워크 또는 양자(영·싱·일) 공동 평가
+산출물에 참여 기관으로 이름을 올림</td>
+<td>높음 · 70%</td>
+<td>글로벌협력 분과, 국가 초지능 대응 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch18.html#s18-5">18.5</a>절</td>
+<td>한국 AI안전연구소가 국내외 모델 1건 이상을 출시 전에 평가했다고
+공개</td>
+<td>중간 · 40%</td>
+<td>국가 초지능 대응 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch19.html#s19-6">19.6</a>절</td>
+<td>MCP 도구, 코딩 어시스턴트 설정, 오픈소스 패키지를 통한 공급망 공격
+증가</td>
+<td>높음 · 88%</td>
+<td>국가 사이버 복원력 강화 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch19.html#s19-6">19.6</a>절</td>
+<td>평가·내부 배포 단계에서 에이전트의 비인가 실세계 행동이 추가로
+공개</td>
+<td>높음 · 85%</td>
+<td>국가 초지능 대응 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch19.html#s19-6">19.6</a>절</td>
+<td>관리되지 않는 에이전트의 난립이 새 섀도 IT가 됨. 에이전트를 1급
+신원으로 관리</td>
+<td>높음 · 82%</td>
+<td>국가 사이버 복원력 강화 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch19.html#s19-6">19.6</a>절</td>
+<td>생물·화학 'High' 등급이 신모델의 기본값이 되고 논쟁이 'Critical'
+임계치로 이동</td>
+<td>높음 · 78%</td>
+<td>국가 초지능 대응 TF, 국방·안보 분과, 과학 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch19.html#s19-6">19.6</a>절</td>
+<td>공격 표적이 데이터 탈취에서 '의사결정 조작'으로 이동(에이전트가 쓰는
+데이터·로직 오염)</td>
+<td>높음 · 72%</td>
+<td>국가 사이버 복원력 강화 TF, 데이터 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch19.html#s19-4">19.4</a>절</td>
+<td>금융권 생성형 AI 망분리 예외가 샌드박스를 넘어 감독규정으로 정식
+제도화</td>
+<td>중간 · 60%</td>
+<td>법률 TF, 국가 사이버 복원력 강화 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch19.html#s19-6">19.6</a>절</td>
+<td>프런티어 연구소 1곳 이상이 가중치 보안에서 RAND SL4 상당(국가 사이버
+기관의 일반 작전 방어) 달성을 공표</td>
+<td>낮음 · 25%</td>
+<td>국가 초지능 대응 TF, 국방·안보 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch19.html#s19-6">19.6</a>절</td>
+<td>배포된 에이전트가 환경 밖으로 자기 복제</td>
+<td>낮음 · 10%</td>
+<td>국가 초지능 대응 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch19.html#s19-6">19.6</a>절</td>
+<td>AI 주도 공격으로 프런티어 모델 가중치 완전 탈취</td>
+<td>낮음 · 7%</td>
+<td>국가 초지능 대응 TF, 국방·안보 분과, 국가 사이버 복원력 강화 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch20.html#s20-16">20.16</a>절</td>
+<td>프롬프트 주입으로 에이전트의 '행동'(송금·권한 변경·코드 커밋)을
+탈취한 사고가 공개</td>
+<td>높음 · 88%</td>
+<td>국가 사이버 복원력 강화 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch20.html#s20-16">20.16</a>절</td>
+<td>가드레일 제거 오픈웨이트 모델이 1만 개 이상으로 늘고 범죄 커뮤니티의
+기본 도구가 됨</td>
+<td>높음 · 80%</td>
+<td>법률 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch20.html#s20-16">20.16</a>절</td>
+<td>생물·화학 High(CB-1)가 주요 연구소 신모델의 기본값이 되고, 논쟁이
+Critical(신규 무기) 임계로 이동</td>
+<td>높음 · 78%</td>
+<td>국방·안보 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch20.html#s20-16">20.16</a>절</td>
+<td>평가 인식률 상승으로 '실사용 로그 기반 평가'와 CoT 모니터링이 연구소
+안전 체계의 표준 요구가 됨</td>
+<td>높음 · 70%</td>
+<td>국가 초지능 대응 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch20.html#s20-16">20.16</a>절</td>
+<td>한국 AI안전연구소가 한국어 오남용·에이전트 레드팀 결과를 정례
+공개</td>
+<td>중간 · 45%</td>
+<td>국가 초지능 대응 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch20.html#s20-16">20.16</a>절</td>
+<td>오픈웨이트 모델의 출시 전 위험 평가나 공개 제한을 요구하는 공식
+정책이 주요국에서 등장</td>
+<td>중간 · 42%</td>
+<td>법률 TF, 글로벌협력 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch20.html#s20-16">20.16</a>절</td>
+<td>미국에서 DNA 합성 스크리닝 의무화 입법이 진전</td>
+<td>중간 · 40%</td>
+<td>과학 분과, 국방·안보 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch20.html#s20-9">20.9</a>절</td>
+<td>주요 연구소 1곳 이상이 신모델의 설득·조작 능력이 자체 위험
+임계(DeepMind 유해 조작 임계 등)에 도달하거나 조기경보 수준에 들었다고
+공시</td>
+<td>낮음 · 25%</td>
+<td>AI민주주의 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch20.html#s20-16">20.16</a>절</td>
+<td>AI가 결정적으로 도운 생물·화학 공격 시도가 공개</td>
+<td>낮음 · 12%</td>
+<td>국방·안보 분과, 과학 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch20.html#s20-16">20.16</a>절</td>
+<td>정렬 실패로 배포된 에이전트가 의도적으로 감독을 회피해 실제 피해를
+낸 사건이 확인</td>
+<td>낮음 · 10%</td>
+<td>국가 초지능 대응 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch23.html#s23-3">23.3</a>절</td>
+<td>미국 정부 보안·정보 인력이 프런티어 연구소의 가중치 보안에
+상주하거나 참여하는 공식 협약이 공개</td>
+<td>낮음 · 25%</td>
+<td>국가 초지능 대응 TF, 국방·안보 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch23.html#s23-9">23.9</a>절</td>
+<td>기술 통제·외교나 AI 안전을 소관으로 하는 세 번째 특별위원회
+신설</td>
+<td>낮음 · 25%</td>
+<td>글로벌협력 분과, 법률 TF, 글로벌 AI 전략적 협력 TF</td>
+</tr>
+</tbody>
+</table>
+<h4 id="지역-특별위원회주관-8건">지역 특별위원회(주관 8건)</h4>
+<table>
+<thead>
+<tr>
+<th>장·절</th>
+<th>2027 전망</th>
+<th>확률</th>
+<th>관련 기구</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="xref" href="ch11.html#s11-5">11.5</a>절</td>
+<td>미국 주·지방정부의 데이터센터 모라토리엄이나 대형부하 전용 요금·비용
+분담 규칙이 새로 10건 이상 생김</td>
+<td>높음 · 80%</td>
+<td>기술혁신·인프라 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch11.html#s11-5">11.5</a>절</td>
+<td>한국 AI데이터센터 특별법 하위법령에 주민 의견수렴·지역기여 절차가
+구체화돼 시행(2027-03-10)에 맞춰 공포됨</td>
+<td>높음 · 70%</td>
+<td>기술혁신·인프라 분과, 법률 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch11.html#s11-2">11.2</a>절</td>
+<td>지역 반대로 대형 프로젝트 취소·지연(하이퍼스케일러 2곳 이상)</td>
+<td>중간 · 65%</td>
+<td>기술혁신·인프라 분과, 사회 분과</td>
+</tr>
+<tr>
+<td>11장</td>
+<td>한국은 AI데이터센터 특별법(2027-03-10 시행)으로 비수도권 착공이
+늘지만, GW급 단일 캠퍼스 가동은 2027년 안에 어려움</td>
+<td>중간 · 60%</td>
+<td>기술혁신·인프라 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch11.html#s11-5">11.5</a>절</td>
+<td>지역 반대로 저지·지연된 미국 데이터센터 사업이 2027년 연간 2,000억
+달러를 넘음(Data Center Watch 집계)</td>
+<td>중간 · 55%</td>
+<td>기술혁신·인프라 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch11.html#s11-5">11.5</a>절</td>
+<td>동서울변전소 HVDC 증설이 2027년 안에 주민 합의를 얻어 착공</td>
+<td>낮음 · 20%</td>
+<td>기술혁신·인프라 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch13.html#s13-5">13.5</a>절</td>
+<td>광역 자체 재원 확대 지자체 추가, 재정자립도에 따른 지역 간 형평성
+논쟁 확대</td>
+<td>높음 · 80%</td>
+<td>사회 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch13.html#s13-3">13.3</a>절</td>
+<td>한국에서 데이터센터·송전망 입지 갈등이 국회 국정감사나 상임위의 독립
+의제로 다뤄짐</td>
+<td>높음 · 75%</td>
+<td>AI민주주의 분과</td>
+</tr>
+</tbody>
+</table>
+<h4 id="청년-도약-tf주관-2건">청년 도약 TF(주관 2건)</h4>
+<table>
+<thead>
+<tr>
+<th>장·절</th>
+<th>2027 전망</th>
+<th>확률</th>
+<th>관련 기구</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="xref" href="ch8.html#s8-4">8.4</a>절</td>
+<td>인사</td>
+<td>높음 · 82%</td>
+<td>사회 분과</td>
+</tr>
+<tr>
+<td>13장</td>
+<td>청년·신입 채용 절벽의 구조화</td>
+<td>높음 · 82%</td>
+<td>사회 분과, 교육·인재 분과</td>
+</tr>
+</tbody>
+</table>
+<h4 id="국가-초지능-대응-tf주관-30건">국가 초지능 대응 TF(주관
+30건)</h4>
+<table>
+<thead>
+<tr>
+<th>장·절</th>
+<th>2027 전망</th>
+<th>확률</th>
+<th>관련 기구</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="xref" href="ch4.html#s4-3">4.3</a>절</td>
+<td>프런티어 연구소 한 곳 이상이 잠재추론(루프형·연속 잠재 사고) 구조를
+주력 모델에 썼다고 공식 확인</td>
+<td>낮음 · 30%</td>
+<td>보안 특별위원회</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch5.html#s5-9">5.9</a>절</td>
+<td>초지능(ASI) 도달 증거는 없음</td>
+<td>높음 · 98%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch5.html#s5-9">5.9</a>절</td>
+<td>엄격한 정의의 범용 AGI(원격 화이트칼라 대부분 자동화)는 2027년 안에
+오지 않음</td>
+<td>높음 · 88%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch5.html#s5-9">5.9</a>절</td>
+<td>주요 연구소 모두 코드 작성의 대부분을 AI에 맡기고, 연구 인력 1인당
+추론비가 가장 빠르게 느는 비용 항목이 됨</td>
+<td>높음 · 78%</td>
+<td>기술혁신·인프라 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch5.html#s5-9">5.9</a>절</td>
+<td>연구소의 AI R&amp;D 임계 판정과 증거 공개가 규제 쟁점이
+됨(캘리포니아 SB 53·뉴욕 RAISE·EU GPAI 실천강령의 보고 의무와 연결)</td>
+<td>높음 · 78%</td>
+<td>법률 TF, 보안 특별위원회, 글로벌협력 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch5.html#s5-6">5.6</a>절</td>
+<td>연구소 1곳 이상이 출시 모델의 정렬 학습·안전 평가 일부를 AI 연구
+에이전트가 수행했다고 시스템 카드·위험 보고서에 명시</td>
+<td>높음 · 75%</td>
+<td>보안 특별위원회</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch5.html#s5-9">5.9</a>절</td>
+<td>'AI가 AI 연구를 가속한다'는 증거가 두 곳 이상의 연구소에서 나옴</td>
+<td>높음 · 72%</td>
+<td>기술혁신·인프라 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch5.html#s5-9">5.9</a>절</td>
+<td>METR 시간지평을 대체할 새 장기 과제 지표가 등장하고, 기존 주요
+벤치마크(ARC-AGI-3 포함)가 포화</td>
+<td>높음 · 70%</td>
+<td>기술혁신·인프라 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch5.html#s5-9">5.9</a>절</td>
+<td>연구소 한 곳 이상이 자기개선·AI R&amp;D 임계 근접 또는 돌파를 공식
+공시</td>
+<td>중간 · 55%</td>
+<td>보안 특별위원회, 법률 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch5.html#s5-8">5.8</a>절</td>
+<td>프런티어 연구소 2곳 이상이 외부 평가자 상주 같은 감속·검증 약속을
+실제로 이행하고, 평가자 보고서가 1건 이상 공개</td>
+<td>중간 · 50%</td>
+<td>보안 특별위원회</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch5.html#s5-9">5.9</a>절</td>
+<td>OpenAI 등 한 곳이 'AGI 달성'에 준하는 선언을 하고, 정의 논쟁이
+격화</td>
+<td>중간 · 40%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch5.html#s5-6">5.6</a>절</td>
+<td>프런티어 연구소 1곳 이상이 배포 모델이나 내부 운영 에이전트의
+가중치를 운영 중 계속 갱신하는 지속 학습 체계를 공식 공개</td>
+<td>중간 · 35%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch5.html#s5-9">5.9</a>절</td>
+<td>AI 연구 자동화 수준이 초인적 AI 연구자(SAR)에 이름</td>
+<td>낮음 · 25%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch5.html#s5-9">5.9</a>절</td>
+<td>초지능 개발 금지·일시중지 요구가 주요국 정부 공식 의제로 오름</td>
+<td>낮음 · 17%</td>
+<td>글로벌협력 분과, 법률 TF, AI민주주의 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch5.html#s5-8">5.8</a>절</td>
+<td>미국 초지능 금지 법안(Sanders–Casar)이 2027년 안에 상·하원 어느
+쪽에서든 위원회를 통과</td>
+<td>낮음 · 3%</td>
+<td>법률 TF, 글로벌협력 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch16.html#s16-3">16.3</a>절</td>
+<td>중국이 국가 단위 프런티어 연구 통합(주요 연구소 합병·단일 국가 연구
+조직) 또는 단일 국가 프런티어 학습 클러스터를 공식화</td>
+<td>낮음 · 10%</td>
+<td>글로벌 AI 전략적 협력 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch18.html#s18-8">18.8</a>절</td>
+<td>칩 내장 또는 오프칩 검증 시제품(위치 검증·학습/추론 구분·FlexHEG
+등)의 공개 실증 결과가 1건 이상 발표(민간·학계 포함)</td>
+<td>중간 · 55%</td>
+<td>기술혁신·인프라 분과, 글로벌협력 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch19.html#s19-6">19.6</a>절</td>
+<td>최소 1개 연구소가 'AI R&amp;D 극적 가속' 임계치 근접·충족을 공식
+언급(5장 기준 시나리오)</td>
+<td>중간 · 55%</td>
+<td>보안 특별위원회</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch19.html#s19-6">19.6</a>절</td>
+<td>구속력 있는 국제 감속 합의</td>
+<td>낮음 · 5%</td>
+<td>글로벌협력 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch23.html#s23-16">23.16</a>절</td>
+<td>위 와일드카드 18개 중 최소 1개가 2027년에 발생</td>
+<td>높음 · 90%</td>
+<td>보안 특별위원회</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch23.html#s23-3">23.3</a>절</td>
+<td>2027년 말 공개된 선도 연구소 AI R&amp;D 진척 배수 추정치(METR류 독립
+평가 또는 연구소 공시)가 시나리오의 2027년 3월 값(4배)에 못 미침</td>
+<td>높음 · 85%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch23.html#s23-16">23.16</a>절</td>
+<td>2027년 말 회고에서 본 보고서 전망 표에 없던 사건이 '판도를 바꾼
+사건' 3건 이상으로 꼽힘</td>
+<td>높음 · 75%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch23.html#s23-3">23.3</a>절</td>
+<td>AI Futures Project 저자들이 2027년 중 SAR 중앙값(저자 6인 기준
+대부분)을 2028년 이후로 다시 늦춤</td>
+<td>중간 · 60%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch23.html#s23-3">23.3</a>절</td>
+<td>연구소 1곳 이상이 공개 모델과 별도인 내부 최전선 모델의 존재와 AI
+R&amp;D 지표를 위험 보고서·시스템 카드·주법 보고(SB 53·RAISE)에서 공식
+확인</td>
+<td>중간 · 55%</td>
+<td>보안 특별위원회</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch23.html#s23-16">23.16</a>절</td>
+<td>위 와일드카드 중 3개 이상이 같은 해에 발생</td>
+<td>중간 · 45%</td>
+<td>보안 특별위원회</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch23.html#s23-3">23.3</a>절</td>
+<td>시나리오 2027년 상반기 마일스톤 5개(지속 학습 모델 운영, 프런티어
+가중치 탈취 공개, 초인적 코더, Agent-3형 정렬 문제의 공식 확인, 정부의
+국가안보 차원 연구소 개입) 중 3개 이상이 2027년 말까지 현실화</td>
+<td>중간 · 45%</td>
+<td>보안 특별위원회, 국방·안보 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch23.html#s23-4">23.4</a>절</td>
+<td>미국 또는 중국 정부가 데이터센터 검증 기술(추론 전용 검증, 칩 내장
+검증 등) R&amp;D를 별도 예산·공식 프로그램으로 발표</td>
+<td>낮음 · 30%</td>
+<td>글로벌협력 분과, 기술혁신·인프라 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch23.html#s23-4">23.4</a>절</td>
+<td>프런티어 연구소 1곳 이상이 내부 배포 모델과 공개 모델의 격차나 내부
+사용 컴퓨트 비중을 정기 공시</td>
+<td>낮음 · 30%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch23.html#s23-5">23.5</a>절</td>
+<td>미국 정부 인사가 참여해 프런티어 연구소의 출시·내부 배포를 심의하는
+공식 감독 기구(공동 위원회나 이사회 참관석)가 공개(국유화 미만
+단계)</td>
+<td>낮음 · 15%</td>
+<td>AI민주주의 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch23.html#s23-16">23.16</a>절</td>
+<td>미국 정부의 프런티어 랩 국유화성 조치(국방물자생산법 발동, 강제
+지분·통제 협정)</td>
+<td>낮음 · 10%</td>
+<td>AI민주주의 분과</td>
+</tr>
+</tbody>
+</table>
+<h4 id="글로벌-ai-전략적-협력-tf주관-31건">글로벌 AI 전략적 협력 TF(주관
+31건)</h4>
+<table>
+<thead>
+<tr>
+<th>장·절</th>
+<th>2027 전망</th>
+<th>확률</th>
+<th>관련 기구</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="xref" href="ch11.html#s11-2">11.2</a>절</td>
+<td>중국은 Ascend·Cambricon으로 공백을 메우지만 물량 부족</td>
+<td>높음 · 85%</td>
+<td>기술혁신·인프라 분과, 글로벌협력 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch11.html#s11-1">11.1</a>절</td>
+<td>2027년 신규 AI 컴퓨트(H100 환산) 중 미국 비중이 65% 이상이고
+중국(국산 포함)은 15% 미만(Epoch 집계 기준)</td>
+<td>높음 · 75%</td>
+<td>기술혁신·인프라 분과, 국가 초지능 대응 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch15.html#s15-9">15.9</a>절</td>
+<td><strong>EDCF 등 정책금융을 묶은 'K-AI 패키지'(AI 솔루션 + 데이터센터
++ 전력)가 아프리카·동남아에서 첫 계약</strong></td>
+<td>중간 · 35%</td>
+<td>글로벌협력 분과, K-AI 풀스택 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch16.html#s16-1">16.1</a>절</td>
+<td>미국 GPU의 중국 공식 수출이 사실상 0으로 고착, 중국은 국산 가속기
+의무화 강화</td>
+<td>높음 · 88%</td>
+<td>글로벌협력 분과, 기술혁신·인프라 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch16.html#s16-5">16.5</a>절</td>
+<td>중국 모델·앱의 공공부문 사용 금지 확대</td>
+<td>높음 · 85%</td>
+<td>공공AX 분과, 국방·안보 분과, 글로벌협력 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch16.html#s16-1">16.1</a>절</td>
+<td>1월 10일 직전 휴전 단기(6–12개월) 재연장</td>
+<td>높음 · 80%</td>
+<td>글로벌협력 분과, 산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch16.html#s16-5">16.5</a>절</td>
+<td>프런티어 모델 임시 수출통제의 제도화</td>
+<td>높음 · 72%</td>
+<td>글로벌협력 분과, 국가 초지능 대응 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch16.html#s16-1">16.1</a>절</td>
+<td>미중 AI 대화는 핫라인·용어 정의 수준. 개발 감속 합의는 매우
+낮음</td>
+<td>높음 · 70%</td>
+<td>글로벌협력 분과, 국가 초지능 대응 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch16.html#s16-1">16.1</a>절</td>
+<td>미국 'AI 풀스택 수출' 첫 국가 패키지 지정(걸프·인도·동남아
+유력)</td>
+<td>중간 · 60%</td>
+<td>K-AI 풀스택 TF, 글로벌협력 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch16.html#s16-3">16.3</a>절</td>
+<td>국가 AI 펀드가 DeepSeek 외 프런티어 연구소 1곳 이상의 투자를 선도
+투자자로 주도</td>
+<td>중간 · 60%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch16.html#s16-5">16.5</a>절</td>
+<td>동맹 장비통제 정렬(MATCH 법안)</td>
+<td>중간 · 45%</td>
+<td>글로벌협력 분과, 국방·안보 분과, 산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch16.html#s16-3">16.3</a>절</td>
+<td>국가 산력망 투자 계획(국산 기술 비중 기준 포함)이
+국무원·국가발전개혁위원회 공식 문서로 확정 발표</td>
+<td>중간 · 45%</td>
+<td>기술혁신·인프라 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch17.html#s17-2">17.2</a>절</td>
+<td>미국 연방·주 정부와 동맹국 공공부문의 중국 모델 사용 금지가
+DeepSeek에서 Qwen·Kimi 등으로 확대</td>
+<td>높음 · 75%</td>
+<td>공공AX 분과, 국방·안보 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch17.html#s17-2">17.2</a>절</td>
+<td>미국이 프런티어 모델 API 접근을 수출통제로 다루는 방식을 제도화(신뢰
+파트너 목록, 국가별 등급). 신규 최상위 모델은 '신뢰 파트너 우선 → 일반
+공개'의 단계 출시가 표준</td>
+<td>높음 · 72%</td>
+<td>글로벌협력 분과, K-AI 풀스택 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch17.html#s17-2">17.2</a>절</td>
+<td>중국 기술목록 개정안(공고 48호)이 확정·시행돼, 최상위 모델(10^26
+FLOP·2조 파라미터·상위 10위)의 가중치·코드 이전과 기술 라이선스·합작에
+허가 절차가 붙음(API·공개 오픈웨이트 이용은 대상 아님)</td>
+<td>중간 · 65%</td>
+<td>글로벌협력 분과, K-AI 풀스택 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch17.html#s17-2">17.2</a>절</td>
+<td>중국이 최상위 오픈웨이트의 공개 자체를 늦추거나 일부를 폐쇄형으로
+전환</td>
+<td>중간 · 50%</td>
+<td>K-AI 풀스택 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch17.html#s17-2">17.2</a>절</td>
+<td>바이두처럼 규제가 강한 시장(EU·한국 등)을 라이선스에서 빼는 중국
+오픈웨이트가 늘어남</td>
+<td>중간 · 45%</td>
+<td>K-AI 풀스택 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch17.html#s17-2">17.2</a>절</td>
+<td>미국이 Mythos급 모델에 대해 동맹국 전체를 허가 면제하는 일반 허가를
+만듦</td>
+<td>낮음 · 12%</td>
+<td>글로벌협력 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch18.html#s18-4">18.4</a>절</td>
+<td>한국은 WAICO에 가입하지 않고 Pax Silica를 유지하되 중국과 광물·소재
+채널을 관리</td>
+<td>높음 · 88%</td>
+<td>글로벌협력 분과, 산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td>18장</td>
+<td>한·미</td>
+<td>높음 · 80%</td>
+<td>글로벌협력 분과, 산업AX·생태계 분과, K-AI 풀스택 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch18.html#s18-3">18.3</a>절</td>
+<td>미·UAE/사우디</td>
+<td>높음 · 80%</td>
+<td>글로벌협력 분과, 산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td>18장</td>
+<td>미·중</td>
+<td>높음 · 78%</td>
+<td>글로벌협력 분과, 국가 초지능 대응 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch18.html#s18-4">18.4</a>절</td>
+<td>미중은 휴전을 단기 재연장하고 AI 대화를 정례화하지만 칩·원격접속
+통제는 별도 강화(이중 트랙. 휴전 재연장 자체는 80%, <a class="xref" href="ch16.html#s16-1">16.1</a>절)</td>
+<td>높음 · 78%</td>
+<td>글로벌협력 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch18.html#s18-4">18.4</a>절</td>
+<td>한국은 232조 관세·중국 팹 장비 허가를 기술번영 MOU·3,500억 달러
+투자와 묶어 패키지 협상</td>
+<td>높음 · 75%</td>
+<td>글로벌협력 분과, 산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch15.html#s15-11">15.11</a>절</td>
+<td>Pax Silica</td>
+<td>높음 · 70%</td>
+<td>글로벌협력 분과, 산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch18.html#s18-2">18.2</a>절</td>
+<td>한·UAE/사우디</td>
+<td>중간 · 55%</td>
+<td>K-AI 풀스택 TF, 글로벌협력 분과, 기술혁신·인프라 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch18.html#s18-3">18.3</a>절</td>
+<td>미·인도</td>
+<td>중간 · 50%</td>
+<td>글로벌협력 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch18.html#s18-4">18.4</a>절</td>
+<td>걸프와 인도가 모두 미국 'AI 풀스택 수출' 첫 국가 패키지 대상이
+됨(어느 한 곳이라도 지정될 확률은 60%, <a class="xref" href="ch16.html#s16-1">16.1</a>절)</td>
+<td>중간 · 40%</td>
+<td>글로벌협력 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch18.html#s18-4">18.4</a>절</td>
+<td>한국이 UAE·사우디 대상 소버린 패키지 수출 계약을 최소 1건 성사</td>
+<td>중간 · 40%</td>
+<td>K-AI 풀스택 TF, 글로벌협력 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch23.html#s23-2">23.2</a>절</td>
+<td>미국 정부가 동맹국 이용자의 프런티어 모델 접근을 다시 강제 중단</td>
+<td>낮음 · 30%</td>
+<td>국방·안보 분과, 글로벌협력 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch23.html#s23-4">23.4</a>절</td>
+<td>미중 정부 간 공식 협의(정상·장관급)에서 AI 개발 검증이나 컴퓨트
+신고가 공개 의제로 확인됨</td>
+<td>낮음 · 10%</td>
+<td>국가 초지능 대응 TF, 글로벌협력 분과</td>
+</tr>
+</tbody>
+</table>
+<h4 id="국가-사이버-복원력-강화-tf주관-34건">국가 사이버 복원력 강화
+TF(주관 34건)</h4>
+<table>
+<thead>
+<tr>
+<th>장·절</th>
+<th>2027 전망</th>
+<th>확률</th>
+<th>관련 기구</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="xref" href="ch3.html#s3-7">3.7</a>절</td>
+<td>프로덕션 파괴형 사고(DB·인프라 삭제)</td>
+<td>높음 · 88%</td>
+<td>보안 특별위원회, 법률 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch10.html#s10-4">10.4</a>절</td>
+<td>AI를 이용한 IoT 공격이 보안 보고서의 핵심 항목이 되지만 자율
+자기복제 웜의 실제 확산은 미확인</td>
+<td>중간 · 65%</td>
+<td>보안 특별위원회, 산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch19.html#s19-2">19.2</a>절</td>
+<td>2027년 공개 CVE가 15만 건을 넘음(2026-10–11 월 약 1.7만 건 속도가
+이어지면 연 약 20만 건)</td>
+<td>높음 · 80%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch19.html#s19-2">19.2</a>절</td>
+<td>NVD가 CVSS v3 점수를 매긴 CVE 비율이 2027년에도 20% 미만(2026년
+15.7%)</td>
+<td>높음 · 80%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch19.html#s19-6">19.6</a>절</td>
+<td>상업용 냉장·냉동·HVAC 컨트롤러를 원격 조작하는 공격이 유럽
+밖(아시아·북미)으로 번지고, 매장·물류·의료 콜드체인에서 재발</td>
+<td>높음 · 78%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch19.html#s19-2">19.2</a>절</td>
+<td>실제 악용(KEV) 증가율이 CVE 증가율보다 낮게 유지되고, CVE 대비
+KEV(CISA·EUVD) 등재 비율이 2026년 수준(약 0.3%) 이하</td>
+<td>높음 · 75%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch19.html#s19-2">19.2</a>절</td>
+<td>2027년 S3 이상 대형 사고의 대부분이 패치 공개 30일 이상 지난 n-day
+또는 패치 불가 노출 장비에서 발생</td>
+<td>높음 · 75%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch19.html#s19-6">19.6</a>절</td>
+<td>기계 속도 공격으로 주간 스캔·월간 패치 주기가 무력화되고 런타임 자동
+방어로 전환</td>
+<td>높음 · 70%</td>
+<td>보안 특별위원회</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch19.html#s19-2">19.2</a>절</td>
+<td>2027년 CISA KEV 신규 등재가 350건 이상(2026년은 11-18까지 302건, 연
+약 340건 추정)</td>
+<td>중간 · 60%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch19.html#s19-2">19.2</a>절</td>
+<td>2027년 KEV 등재 CVE 중 공개 하루 안에 등재된 비율이 2026년(39%)보다
+높아짐</td>
+<td>중간 · 60%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch19.html#s19-2">19.2</a>절</td>
+<td>AI 탐지 홍수 속에 공개된 취약점 1건이 1,000개 이상 조직을 동시에
+덮치는 대량 악용(MOVEit급)으로 번짐</td>
+<td>중간 · 55%</td>
+<td>보안 특별위원회</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch19.html#s19-2">19.2</a>절</td>
+<td>Langflow·Marimo류 AI 에이전트·노트북 개발 도구의 취약점이 2027년
+CISA KEV에 5건 이상 등재</td>
+<td>중간 · 55%</td>
+<td>보안 특별위원회</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch19.html#s19-4">19.4</a>절</td>
+<td>중소형 금융사 대상 AI 기반 공동 보안관제(또는 외부 노출 자산 상시
+점검 의무)가 시행</td>
+<td>중간 · 50%</td>
+<td>보안 특별위원회</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch19.html#s19-2">19.2</a>절</td>
+<td>CVE·NVD 체계 개편 본격화(CNA 발급 제한, EUVD·GCVE 등 분산 체계, AI
+탐지 취약점 공개 지침 중 1개 이상 공식화)</td>
+<td>중간 · 50%</td>
+<td>글로벌협력 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch19.html#s19-6">19.6</a>절</td>
+<td>IoT·생활가전 대상 AI 자동 익스플로잇이 본격 관측</td>
+<td>중간 · 45%</td>
+<td>보안 특별위원회</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch21.html#s21-6">21.6</a>절</td>
+<td>EU CRA 본 의무 전면 적용(12-11). 제조사·오픈소스의 SBOM·취약점 처리
+준비 러시</td>
+<td>높음 · 93%</td>
+<td>글로벌협력 분과, 산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch21.html#s21-6">21.6</a>절</td>
+<td>국가 지원 행위자의 핵심 인프라 사전 침투 폭로 지속</td>
+<td>높음 · 92%</td>
+<td>국방·안보 분과, 보안 특별위원회</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch21.html#s21-6">21.6</a>절</td>
+<td>KISA AI 침해대응시스템 가동(01월)과 사이버 쉴드 돔 착수</td>
+<td>높음 · 88%</td>
+<td>보안 특별위원회</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch21.html#s21-6">21.6</a>절</td>
+<td>자동 취약점 발견·패치가 일상화되고 '패치 적용 지연'이 핵심 병목으로
+부각</td>
+<td>높음 · 80%</td>
+<td>보안 특별위원회</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch21.html#s21-6">21.6</a>절</td>
+<td>하이퍼스케일러·CDN의 수 시간 이상 글로벌 장애가 최소 2건</td>
+<td>높음 · 75%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch21.html#s21-6">21.6</a>절</td>
+<td>AI 에이전트가 원인인 공개 장애·데이터 손실 증가. 에이전트 권한
+통제가 감사·보험 요건이 됨</td>
+<td>높음 · 72%</td>
+<td>보안 특별위원회</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch21.html#s21-6">21.6</a>절</td>
+<td>CNSA 2.0 발효와 EU 1단계 착수로 PQC 하이브리드 TLS가 기본값으로
+확산</td>
+<td>높음 · 72%</td>
+<td>보안 특별위원회, 국방·안보 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch21.html#s21-6">21.6</a>절</td>
+<td>정보보호수준 평가 첫 시행(04-01)과 반복 사고 과징금 첫 적용
+논의</td>
+<td>높음 · 70%</td>
+<td>보안 특별위원회</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch21.html#s21-6">21.6</a>절</td>
+<td>해저케이블 절단·GNSS 교란 지속, 위성 백업·케이블 수리 투자 확대</td>
+<td>중간 · 68%</td>
+<td>국방·안보 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch21.html#s21-6">21.6</a>절</td>
+<td>랜섬웨어로 병원·공항·제조 등 핵심 서비스가 수일 이상 중단, 공급망
+집적형 대형 사건 1건 이상</td>
+<td>중간 · 62%</td>
+<td>보안 특별위원회</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch21.html#s21-6">21.6</a>절</td>
+<td>국정자원 대전 13개 핵심 시스템 DR과 121개 실시간 복제를 상반기에
+구축(일부 지연 가능)</td>
+<td>중간 · 45%</td>
+<td>공공AX 분과, 인공지능책임관협의회, 보안 특별위원회</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch21.html#s21-6">21.6</a>절</td>
+<td>자율 SOC의 오탐 차단으로 인한 자기유발 장애가 공개 보고됨</td>
+<td>중간 · 38%</td>
+<td>보안 특별위원회</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch21.html#s21-6">21.6</a>절</td>
+<td>미국 CIRCIA 최종규칙 공표, 영국 법안 국왕 재가</td>
+<td>중간 · 35%</td>
+<td>글로벌협력 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch21.html#s21-6">21.6</a>절</td>
+<td>국가 디지털 재난을 포괄하는 통합 기본법 국회 통과</td>
+<td>낮음 · 12%</td>
+<td>법률 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch21.html#s21-6">21.6</a>절</td>
+<td>암호학적으로 유의미한 양자컴퓨터 등장</td>
+<td>낮음 · 5%</td>
+<td>국방·안보 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch23.html#s23-9">23.9</a>절</td>
+<td>국가 사이버 복원력 강화 TF의 '초지능시대 국가 사이버 복원력 강화
+전략(안)'이 2027-06 이전에 위원회(전체회의·보안 특별위원회) 의결이나
+공식 발표로 공개</td>
+<td>높음 · 70%</td>
+<td>보안 특별위원회</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch23.html#s23-16">23.16</a>절</td>
+<td>북한 연계 단일 탈취 7억 달러 이상, 또는 국내 금융·공공 핵심 시스템
+24시간 이상 마비</td>
+<td>낮음 · 25%</td>
+<td>국방·안보 분과, 보안 특별위원회</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch23.html#s23-16">23.16</a>절</td>
+<td>반AI 방화·사보타주로 데이터센터·AI 시설의 가동 중단이나 인명 피해가
+공개</td>
+<td>낮음 · 20%</td>
+<td>사회 분과, 지역 특별위원회</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch23.html#s23-16">23.16</a>절</td>
+<td>데이터센터 부하의 급탈락·급증이 원인으로 지목된 광역 정전</td>
+<td>낮음 · 8%</td>
+<td>기술혁신·인프라 분과, 지역 특별위원회</td>
+</tr>
+</tbody>
+</table>
+<h4 id="문화콘텐츠-ai-tf주관-13건">문화·콘텐츠 AI TF(주관 13건)</h4>
+<table>
+<thead>
+<tr>
+<th>장·절</th>
+<th>2027 전망</th>
+<th>확률</th>
+<th>관련 기구</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>9장</td>
+<td>광고 기반 웹의 붕괴</td>
+<td>높음 · 85%</td>
+<td>사회 분과, AI민주주의 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch9.html#s9-9">9.9</a>절</td>
+<td>언론사의 Google 검색 유입이 2027년에도 전년 대비 20% 이상 감소하고,
+AI 챗봇 유입은 그 손실을 메우지 못함</td>
+<td>중간 · 60%</td>
+<td>사회 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch9.html#s9-9">9.9</a>절</td>
+<td>EU 또는 영국 외 주요국 1곳 이상이 CMA처럼 AI 요약 옵트아웃·출처
+표시를 의무화</td>
+<td>중간 · 40%</td>
+<td>법률 TF, 글로벌협력 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch12.html#s12-8">12.8</a>절</td>
+<td>언론사 검색 유입 감소 지속, AI 기업과의 라이선스·페이월 확산</td>
+<td>높음 · 90%</td>
+<td>사회 분과</td>
+</tr>
+<tr>
+<td>12장</td>
+<td>저작권 분쟁은 판결보다 합의·라이선스로 수렴. 미국 소송 200건
+돌파</td>
+<td>높음 · 80%</td>
+<td>데이터 분과, 법률 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch12.html#s12-8">12.8</a>절</td>
+<td>스트리밍 신규 업로드 중 AI 곡 50% 이상 지속, 청취 비중은 5%
+미만</td>
+<td>높음 · 72%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch12.html#s12-8">12.8</a>절</td>
+<td>AI를 주로 활용한 장편이 극장·대형 OTT에 공개되고 영화제 자격 규정
+논쟁</td>
+<td>높음 · 72%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch12.html#s12-4">12.4</a>절</td>
+<td>한국 저작권법 개정(AI 학습 보상·TDM) 논의 본격화, 표준계약서
+확정</td>
+<td>중간 · 55%</td>
+<td>데이터 분과, 법률 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch12.html#s12-8">12.8</a>절</td>
+<td>남은 Suno 소송 합의, 메이저 3사 모두 AI 라이선스 관계 형성</td>
+<td>중간 · 50%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch12.html#s12-4">12.4</a>절</td>
+<td>언론사 v. OpenAI MDL 약식판결로 공정이용 판단의 첫 기준점 등장</td>
+<td>중간 · 40%</td>
+<td>데이터 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch12.html#s12-4">12.4</a>절</td>
+<td>영국 TDM 예외 입법</td>
+<td>낮음 · 10%</td>
+<td>글로벌협력 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch13.html#s13-2">13.2</a>절</td>
+<td>창작 노동의 디지털 레플리카·보상 갈등</td>
+<td>중간 · 60%</td>
+<td>사회 분과, 법률 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch15.html#s15-4">15.4</a>절</td>
+<td>저작권·TDM은 갈라진 채 유지되고(일본·싱가포르 허용, EU 옵트아웃,
+영국·호주 보류), 실무는 라이선스 시장으로 수렴</td>
+<td>높음 · 80%</td>
+<td>글로벌협력 분과</td>
+</tr>
+</tbody>
+</table>
+<h4 id="k-ai-풀스택-tf주관-9건">K-AI 풀스택 TF(주관 9건)</h4>
+<table>
+<thead>
+<tr>
+<th>장·절</th>
+<th>2027 전망</th>
+<th>확률</th>
+<th>관련 기구</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="xref" href="ch3.html#s3-6">3.6</a>절</td>
+<td>중국 오픈웨이트 모델과 오픈 하네스 조합이 가성비로
+압박(Harness-Bench 모델 상위 10개 중 7개)</td>
+<td>중간 · 65%</td>
+<td>글로벌 AI 전략적 협력 TF, 기술혁신·인프라 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch3.html#s3-6">3.6</a>절</td>
+<td>한국은 오픈 하네스에 국산 모델을 결합한 공공·기업 에이전트가
+주류(추정)</td>
+<td>중간 · 45%</td>
+<td>공공AX 분과, 산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch9.html#s9-11">9.11</a>절</td>
+<td>국내 라우팅·게이트웨이 확산, 오픈웨이트(국산·중국산) 비중 증가</td>
+<td>높음 · 85%</td>
+<td>산업AX·생태계 분과, 글로벌 AI 전략적 협력 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch10.html#s10-4">10.4</a>절</td>
+<td>국산 NPU(딥엑스·리벨리온·퓨리오사)가 정부 레퍼런스 사업으로
+로봇·엣지박스·공공 서비스 탑재 실적 확대</td>
+<td>높음 · 78%</td>
+<td>기술혁신·인프라 분과, 공공AX 분과, 산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch10.html#s10-2">10.2</a>절</td>
+<td>국산 SLM(EXAONE·Kanana·HyperCLOVA X SEED·독파모 경량판) 1종 이상이
+국산 NPU 위에서 도는 상용 가전·차량·로봇 제품 탑재가 발표됨</td>
+<td>중간 · 45%</td>
+<td>산업AX·생태계 분과, 기술혁신·인프라 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch14.html#s14-4">14.4</a>절</td>
+<td>독파모 3차 진출 팀 중 2곳 이상이 30B 이하 경량·증류판을 공개하고
+공공 서비스(공통기반·모두의 AI)에 공급</td>
+<td>중간 · 65%</td>
+<td>공공AX 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch14.html#s14-4">14.4</a>절</td>
+<td>독파모 3차 평가나 2027년 후속 지원 사업이 서빙 비용·공공 실사용 같은
+채택 지표를 공식 배점에 넣음</td>
+<td>중간 · 60%</td>
+<td>공공AX 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch14.html#s14-4">14.4</a>절</td>
+<td>2027년 말 범정부 AI 공통기반 탑재 모델 가운데 국산 비중이 절반을
+넘음(2026-10 기준 11종 중 4종)</td>
+<td>중간 · 50%</td>
+<td>공공AX 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch15.html#s15-9">15.9</a>절</td>
+<td>사우디 국산 NPU 서버 실증이 2027년 2차 실증 또는 HUMAIN 연계
+파일럿으로 이어짐</td>
+<td>중간 · 50%</td>
+<td>글로벌 AI 전략적 협력 TF, 기술혁신·인프라 분과</td>
+</tr>
+</tbody>
+</table>
+<h4 id="법률-tf주관-16건">법률 TF(주관 16건)</h4>
+<table>
+<thead>
+<tr>
+<th>장·절</th>
+<th>2027 전망</th>
+<th>확률</th>
+<th>관련 기구</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="xref" href="ch6.html#s6-13">6.13</a>절</td>
+<td>미국에서 의료 AI의 진단·급여 결정 오류 책임을 다룬 주요 사건에 본안
+판결(배심 평결 포함)이 나옴</td>
+<td>낮음 · 20%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch2.html#s2-2">2.2</a>절</td>
+<td>법·규제</td>
+<td>높음 · 70%</td>
+<td>사회 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch2.html#s2-2">2.2</a>절</td>
+<td>법·규제</td>
+<td>중간 · 60%</td>
+<td>사회 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch9.html#s9-3">9.3</a>절</td>
+<td>에이전트 행위의 계약 효력</td>
+<td>중간 · 38%</td>
+<td>사회 분과, 산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch12.html#s12-4">12.4</a>절</td>
+<td>AI를 발명자로 인정하는 국가는 계속 없음. AI 작성 출원 대응 심사 지침
+강화</td>
+<td>높음 · 92%</td>
+<td>과학 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch12.html#s12-8">12.8</a>절</td>
+<td>한국 AI 기본법 표시 의무 단속 시작, 워터마크 실효성 문제로 개정
+추진</td>
+<td>중간 · 45%</td>
+<td>AI민주주의 분과, 문화·콘텐츠 AI TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch15.html#s15-4">15.4</a>절</td>
+<td>아시아(한·일·대만)는 '진흥형 기본법' 모델로 수렴. EU형 포괄 규제를
+새로 도입하는 아시아 국가는 없음</td>
+<td>높음 · 82%</td>
+<td>글로벌협력 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch15.html#s15-4">15.4</a>절</td>
+<td>에이전트 책임·권한 위임(KYA) 규정이 주요국 가이드라인에 처음
+등장</td>
+<td>중간 · 58%</td>
+<td>산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch20.html#s20-13">20.13</a>절</td>
+<td>2027-01-22 이후 전면 과태료 부과로 바로 가지 않고, 계도기간 연장
+또는 의무별 단계 적용(예: 생성물 표시 먼저)으로 정해짐</td>
+<td>높음 · 72%</td>
+<td>산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch20.html#s20-13">20.13</a>절</td>
+<td>연구반 논의를 반영한 시행령·고시 개정안(고영향 판단 기준의 '사람
+개입' 요건 구체화 포함)이 2027년 중 입법예고됨</td>
+<td>중간 · 60%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch20.html#s20-13">20.13</a>절</td>
+<td>'고영향 해당'으로 확인된 첫 사례가 2027년 안에 공개됨</td>
+<td>중간 · 45%</td>
+<td>보안 특별위원회</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch21.html#s21-5">21.5</a>절</td>
+<td>2027년 중 EU 회원국 일부가 개정 PLD를 기한 내 옮기지 못해 집행위가
+미전환국에 공식 통지(침해절차)를 보냄</td>
+<td>높음 · 80%</td>
+<td>글로벌협력 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch21.html#s21-5">21.5</a>절</td>
+<td>EU 집행위가 철회된 AI 책임 지침을 대신할 새 입법 제안을 2027년에
+냄</td>
+<td>낮음 · 12%</td>
+<td>글로벌협력 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch21.html#s21-5">21.5</a>절</td>
+<td>한국에서 소프트웨어 또는 AI를 제조물에 포함하는 제조물책임법 개정이
+국회 본회의를 통과</td>
+<td>낮음 · 12%</td>
+<td>사회 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch21.html#s21-5">21.5</a>절</td>
+<td>개정 PLD에 근거해 소프트웨어·AI 결함을 다툰 첫 법원 판결이 2027년에
+나옴</td>
+<td>낮음 · 8%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch23.html#s23-9">23.9</a>절</td>
+<td>시행령 제8조 등 위원회 하부 조직 조항의 개정 공포</td>
+<td>낮음 · 15%</td>
+<td>인공지능책임관협의회</td>
+</tr>
+</tbody>
+</table>
+<h4 id="인공지능책임관협의회주관-1건">인공지능책임관협의회(주관
+1건)</h4>
+<table>
+<thead>
+<tr>
+<th>장·절</th>
+<th>2027 전망</th>
+<th>확률</th>
+<th>관련 기구</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="xref" href="ch23.html#s23-9">23.9</a>절</td>
+<td>2027년 중 분과·특별위원회 체계를 다시 개편(분과·소분과 신설·통폐합
+또는 TF의 특별위원회 격상 1건 이상)</td>
+<td>중간 · 55%</td>
+<td>법률 TF</td>
+</tr>
+</tbody>
+</table>
+<h4 id="위원회-기능-밖주관-48건">위원회 기능 밖(주관 48건)</h4>
+<table>
+<thead>
+<tr>
+<th>장·절</th>
+<th>2027 전망</th>
+<th>확률</th>
+<th>관련 기구</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="xref" href="ch3.html#s3-6">3.6</a>절</td>
+<td>독립 코딩 에이전트 기업 1곳 이상이 인수되거나 랩과 독점 제휴</td>
+<td>중간 · 62%</td>
+<td>산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-13">6.13</a>절</td>
+<td>Intuitive da Vinci 5 누적 설치가 2027년 말 3,000대 이상</td>
+<td>높음 · 80%</td>
+<td>산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-11">6.11</a>절</td>
+<td>TypeSafe가 이미지 입력을 실험('danger zone')에서 정식 기능으로
+전환</td>
+<td>높음 · 75%</td>
+<td>산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-13">6.13</a>절</td>
+<td>CMS WISeR(AI 활용 사전승인) 모델이 폐지되지 않고 2027년에도
+운영</td>
+<td>중간 · 60%</td>
+<td>산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-9">6.9</a>절</td>
+<td>OpenAI가 자체 휴머노이드 로봇을 처음 공개 시연</td>
+<td>중간 · 45%</td>
+<td>산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch6.html#s6-11">6.11</a>절</td>
+<td>TypeSafe가 로봇·물리 AI 전용 판(로봇 상태·센서 입력 전용 타입, 로봇
+SDK 또는 온디바이스 판)을 공식 공개</td>
+<td>낮음 · 25%</td>
+<td>산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch9.html#s9-9">9.9</a>절</td>
+<td>검색 광고 총액은 줄지 않고 성장률만 낮아짐(AI 답변 광고가 기존 검색
+광고를 잠식하기보다 얹히는 구도)</td>
+<td>높음 · 72%</td>
+<td>산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch9.html#s9-9">9.9</a>절</td>
+<td><strong>국내 총광고비 성장률은 4% 안팎에 머물고, 늘어난 몫의
+대부분이 AI 검색·커머스·리테일 미디어로 감</strong></td>
+<td>높음 · 70%</td>
+<td>산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch9.html#s9-11">9.11</a>절</td>
+<td>GENIUS Act 시행으로 규제 스테이블코인이 카드망·PG의 에이전트 결제
+정산 레일로 편입</td>
+<td>중간 · 65%</td>
+<td>산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch2.html#s2-3">2.3</a>절</td>
+<td>보험 공백</td>
+<td>중간 · 62%</td>
+<td>법률 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch9.html#s9-11">9.11</a>절</td>
+<td>OpenAI·Anthropic 합산 연환산 2,500억 달러 돌파(기준값 2,800억 달러,
+<a class="xref" href="ch9.html#s9-10">9.10</a>절). IPO·공시로 추론 마진이 처음 검증되고 'AI 버블' 논쟁의 분기점이
+됨</td>
+<td>중간 · 60%</td>
+<td>산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch9.html#s9-11">9.11</a>절</td>
+<td>디지털자산기본법 상반기 제정, 은행 중심 원화 스테이블코인 발행 체계
+확정</td>
+<td>중간 · 45%</td>
+<td>산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch9.html#s9-9">9.9</a>절</td>
+<td>OpenAI 광고 연환산 매출이 2027년 말 50억 달러 이상</td>
+<td>중간 · 45%</td>
+<td>산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch9.html#s9-3">9.3</a>절</td>
+<td>에이전트 동조화로 인한 금융 쏠림</td>
+<td>낮음 · 30%</td>
+<td>산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch10.html#s10-4">10.4</a>절</td>
+<td>PC 출하가 메모리 제약으로 2025년 수준을 회복하지 못함</td>
+<td>높음 · 88%</td>
+<td>산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch10.html#s10-2">10.2</a>절</td>
+<td>Gemini Nano 4 이후 세대가 Galaxy S27을 포함한 주요 Android
+플래그십의 기본 온디바이스 모델이 됨</td>
+<td>높음 · 80%</td>
+<td>산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch10.html#s10-4">10.4</a>절</td>
+<td>삼성 MX 수익성은 메모리 원가로 압박받지만 메모리 사업 이익이 전사를
+상쇄</td>
+<td>높음 · 75%</td>
+<td>산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch10.html#s10-4">10.4</a>절</td>
+<td>스마트폰 출하가 2027년에도 감소(IDC 기준 −1.1%, 2년 연속)하고
+평균판매가는 높게 유지</td>
+<td>높음 · 70%</td>
+<td>산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch10.html#s10-4">10.4</a>절</td>
+<td>Apple Siri AI가 다국어로 확대되지만 EU·중국 출시는 일부만</td>
+<td>중간 · 60%</td>
+<td>산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch10.html#s10-4">10.4</a>절</td>
+<td>OpenAI 첫 기기가 2027년 안에 소비자에게 출하</td>
+<td>중간 · 55%</td>
+<td>산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch10.html#s10-4">10.4</a>절</td>
+<td>Apple이 2027년 안에 스마트 글래스 발표</td>
+<td>낮음 · 30%</td>
+<td>산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch11.html#s11-2">11.2</a>절</td>
+<td>부채·SPV·사모신용 조달 비중 확대, '칩 파이낸싱'이 논쟁의 중심</td>
+<td>높음 · 85%</td>
+<td>기술혁신·인프라 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch11.html#s11-2">11.2</a>절</td>
+<td>미국 전기요금이 정치 쟁점이 되며 대형부하 요금제와 자가발전 연계
+확산</td>
+<td>높음 · 85%</td>
+<td>기술혁신·인프라 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch11.html#s11-6">11.6</a>절</td>
+<td>세계 성장률이 2.5% 이상을 유지해 AI 조정이 오더라도 세계 경기침체로
+번지지 않음</td>
+<td>높음 · 85%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch11.html#s11-6">11.6</a>절</td>
+<td>AI 인프라 조달에서 회사채·사모신용·SPV·리스 비중이 2026년보다
+커짐</td>
+<td>높음 · 80%</td>
+<td>기술혁신·인프라 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch11.html#s11-6">11.6</a>절</td>
+<td>KOSPI가 하루 5% 이상 떨어지는 날이 2027년에 2회 이상 나옴</td>
+<td>높음 · 70%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch11.html#s11-6">11.6</a>절</td>
+<td>미국 AI 관련 투자가 2027년 미국 GDP 성장에 0.5%p 이상 기여</td>
+<td>중간 · 65%</td>
+<td>—</td>
+</tr>
+<tr>
+<td>11장</td>
+<td>PJM 연계 지연 확대</td>
+<td>중간 · 62%</td>
+<td>기술혁신·인프라 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch11.html#s11-6">11.6</a>절</td>
+<td>네오클라우드나 레버리지가 높은 데이터센터 개발사 1곳 이상이 신용등급
+하향, 채무조정 또는 대형 고객 계약 축소를 겪음</td>
+<td>중간 · 60%</td>
+<td>기술혁신·인프라 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch11.html#s11-6">11.6</a>절</td>
+<td>한국 2027 성장률이 2.5–3.5% 범위에 들어감</td>
+<td>중간 · 60%</td>
+<td>—</td>
+</tr>
+<tr>
+<td>11장</td>
+<td>네오클라우드 통폐합 3건 이상</td>
+<td>중간 · 55%</td>
+<td>기술혁신·인프라 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch11.html#s11-6">11.6</a>절</td>
+<td>미국 반도체·AI 주가(필라델피아 반도체지수 기준)가 2027년 중 고점
+대비 20% 이상 하락하는 구간이 생김</td>
+<td>중간 · 55%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch11.html#s11-2">11.2</a>절</td>
+<td>범용 DRAM 계약가 상승률이 1분기 +5–10%에서 하반기 0–5%로 둔화</td>
+<td>중간 · 45%</td>
+<td>기술혁신·인프라 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch11.html#s11-2">11.2</a>절</td>
+<td>Intel 14A 대형 외부 고객 확보</td>
+<td>낮음 · 30%</td>
+<td>기술혁신·인프라 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch11.html#s11-6">11.6</a>절</td>
+<td>빅5 하이퍼스케일러 중 1곳 이상이 2027년 capex 가이던스를 연중
+하향</td>
+<td>낮음 · 30%</td>
+<td>기술혁신·인프라 분과</td>
+</tr>
+<tr>
+<td>11장</td>
+<td>2028년 이후 공급과잉 반전</td>
+<td>낮음 · 20%</td>
+<td>기술혁신·인프라 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch11.html#s11-6">11.6</a>절</td>
+<td>AI 관련 부실이 은행 시스템 위기(대형 은행 구제 또는 투자등급
+스프레드 급등)로 번짐</td>
+<td>낮음 · 7%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch12.html#s12-8">12.8</a>절</td>
+<td>ChatGPT 주간 사용자 약 15억 명</td>
+<td>중간 · 50%</td>
+<td>산업AX·생태계 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch13.html#s13-5">13.5</a>절</td>
+<td>데이터센터 세제 혜택 축소·전력 비용 부담이 미국 연방·주 세제 논의의
+주된 형태가 되고, 최소 1개 주가 데이터센터 세금 감면을 축소하거나 특별
+부담을 입법</td>
+<td>중간 · 60%</td>
+<td>지역 특별위원회</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch13.html#s13-5">13.5</a>절</td>
+<td>미국 의회에서 AI 특화 신세(토큰세·컴퓨트세·데이터센터 전력세)가
+위원회를 통과</td>
+<td>낮음 · 8%</td>
+<td>사회 분과</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch15.html#s15-4">15.4</a>절</td>
+<td>미국 연방 선점법은 통과되지 않고 주법 패치워크 지속</td>
+<td>높음 · 90%</td>
+<td>법률 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch19.html#s19-6">19.6</a>절</td>
+<td>AI 배제 조항 해석에 관한 첫 보험 판례</td>
+<td>낮음 · 34%</td>
+<td>법률 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch21.html#s21-6">21.6</a>절</td>
+<td>DORA 직접 감독 2년차. 금융권 멀티클라우드·출구전략 요구</td>
+<td>높음 · 90%</td>
+<td>국가 사이버 복원력 강화 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch21.html#s21-5">21.5</a>절</td>
+<td>미국 상업보험 갱신에서 AI 면책 조항(ISO CG 40 47/48 또는 자체 약관)
+부착과 AI 사용 고지 질의가 대형 보험사의 표준 관행이 됨</td>
+<td>높음 · 80%</td>
+<td>법률 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch21.html#s21-6">21.6</a>절</td>
+<td>사이버보험료 약 170억 달러, 요율 보합 전환, AI 명시 배제 확산</td>
+<td>중간 · 50%</td>
+<td>국가 사이버 복원력 강화 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch21.html#s21-5">21.5</a>절</td>
+<td>한국 손해보험사가 AI 배상책임 전용 상품이나 특약을 출시</td>
+<td>중간 · 50%</td>
+<td>법률 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch21.html#s21-5">21.5</a>절</td>
+<td>AI 전용 배상책임 담보의 건당 최대 한도가 5,000만 달러 이상으로
+확대(로이즈·재보험 공동 인수)</td>
+<td>중간 · 45%</td>
+<td>법률 TF</td>
+</tr>
+<tr>
+<td><a class="xref" href="ch23.html#s23-16">23.16</a>절</td>
+<td>거래 에이전트·알고리즘 동조화가 공식 원인으로 지목된 플래시
+크래시</td>
+<td>낮음 · 10%</td>
+<td>보안 특별위원회</td>
+</tr>
+</tbody>
+</table>
+<h3 id="한계-1">한계</h3>
+<ul>
+<li>세션의 웹 검색 한도(200회)가 소진되어 일부 분야(빅테크 벤더·Big4의
+2027 전망, Mandiant·ENISA, 보안업체 전망, 국내 웹툰·K-pop 수치)는
+수집하지 못했습니다.</li>
+<li>Gartner 원문 12건(2027 전략 기술 트렌드 본편·4편, I&amp;O 트렌드,
+하이프 사이클 6종)과 IDC 2건은 사용자가 제공한 원문으로
+대조했습니다(<a class="xref" href="ch2.html#s2-3">2.3</a>절). Forrester, McKinsey 원문과 Gartner Top Strategic
+Predictions 2027은 공식 보도자료와 요약으로 분석했습니다.</li>
+<li>일부 수치는 2차 보도에 기대고 있습니다. 벤더 보고치와 독립 측정치가
+다를 때는 둘 다 적었습니다.</li>
+<li>시나리오 확률은 수집 자료를 바탕으로 한 주관적 판단입니다.</li>
+</ul>
+
+<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#annex">전체 보고서에서 보기</a><a href="../">대시보드</a><span class="sp"></span><a href="ch23.html" rel="prev">← 23. 종합 시나리오와 한국 시사점</a><a href="appendix.html" rel="next">부록: 2027 AI 전망 자료별 상세 분석 →</a></nav>
+</main>
+</div>
+<script>
+  // Wrap tables for horizontal scroll and colour likelihood words; static enhancement only.
+  document.querySelectorAll('main table').forEach((t) => {
+    const w = document.createElement('div'); w.className = 'tablewrap'; t.parentNode.insertBefore(w, t); w.appendChild(t);
+  });
+  document.querySelectorAll('main td').forEach((td) => {
+    const v = td.textContent.trim();
+    if (v === '높음') td.classList.add('tag-hi'); else if (v === '중간') td.classList.add('tag-mid'); else if (v === '낮음') td.classList.add('tag-lo');
+  });
+  document.querySelectorAll('main h2[id], main h3[id]').forEach((h) => {
+    const a = document.createElement('a'); a.className = 'hl'; a.href = '#' + h.id; a.textContent = '#';
+    a.setAttribute('aria-label', '이 제목의 링크'); h.appendChild(a);
+  });
+</script>
+<script>
+/* AI2027 in-page full-text search (shared by dashboard and report).
+ * Uses the CSS Custom Highlight API so matched text is highlighted WITHOUT mutating the DOM
+ * (keeps the dashboard's one-writer rule intact). Falls back to scroll-only where unsupported.
+ * Usage: AI27Search({ root: 'main', input: 'q-input', results: 'q-results', info: 'q-info',
+ *                     exclude: '.rail', reportLink: 'a[href="report.html"]' })
+ */
+window.AI27Search = function (cfg) {
+  const root = document.querySelector(cfg.root);
+  const input = document.getElementById(cfg.input);
+  const out = document.getElementById(cfg.results);
+  const info = document.getElementById(cfg.info);
+  if (!root || !input || !out || !info) return;
+  const BLOCKS = 'h2,h3,h4,p,li,td,th,blockquote,figcaption,summary,dt,dd,article';
+  const MAX_RESULTS = 80;
+  const MAX_RANGES = 3000;
+  const hl = typeof CSS !== 'undefined' && CSS.highlights && typeof Highlight === 'function';
+  let results = [];
+  let active = -1;
+  let timer = 0;
+
+  const norm = (s) => s.toLocaleLowerCase('ko');
+  const terms = (q) => norm(q).split(/\s+/).filter(Boolean).slice(0, 6);
+  const excluded = (el) => (cfg.exclude && el.closest(cfg.exclude)) || el.closest('[data-search-skip]');
+
+  function leafMatches(ts) {
+    const hits = [];
+    root.querySelectorAll(BLOCKS).forEach((el) => {
+      if (excluded(el)) return;
+      const t = norm(el.textContent || '');
+      if (ts.every((w) => t.includes(w))) hits.push(el);
+    });
+    const set = new Set(hits);
+    // keep the innermost matching block only
+    return hits.filter((el) => ![...el.querySelectorAll(BLOCKS)].some((c) => set.has(c)));
+  }
+
+  function headingFor(el, heads) {
+    let h = null;
+    for (const x of heads) {
+      if (x === el || x.compareDocumentPosition(el) & Node.DOCUMENT_POSITION_FOLLOWING) h = x; else break;
+    }
+    return h;
+  }
+
+  function contextOf(el, heads) {
+    const sec = el.closest('section');
+    const h2 = sec && sec.querySelector('h2');
+    const card = el.closest('.ai27-card, .ai27-tablewrap');
+    let h3 = card && card.querySelector('h3');
+    if (!h3 && card && card.previousElementSibling) h3 = card.previousElementSibling.querySelector && card.previousElementSibling.querySelector('h3');
+    if (h2) return [h2.textContent.trim(), h3 ? h3.textContent.trim() : ''].filter(Boolean).join(' › ');
+    const h = headingFor(el, heads);
+    return h ? h.textContent.trim() : '';
+  }
+
+  function rangesIn(el, ts, acc) {
+    const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
+    let n;
+    while ((n = walker.nextNode()) && acc.length < MAX_RANGES) {
+      const t = norm(n.nodeValue);
+      for (const w of ts) {
+        let i = t.indexOf(w);
+        while (i !== -1 && acc.length < MAX_RANGES) {
+          const r = new Range(); r.setStart(n, i); r.setEnd(n, i + w.length); acc.push(r);
+          i = t.indexOf(w, i + w.length);
+        }
+      }
+    }
+    return acc;
+  }
+
+  function snippet(el, ts) {
+    const text = (el.textContent || '').replace(/\s+/g, ' ').trim();
+    const lower = norm(text);
+    const at = Math.max(0, lower.indexOf(ts[0]));
+    const start = Math.max(0, at - 40);
+    const s = (start > 0 ? '…' : '') + text.slice(start, start + 130) + (start + 130 < text.length ? '…' : '');
+    const frag = document.createDocumentFragment();
+    const ls = norm(s);
+    let i = 0;
+    while (i < s.length) {
+      let best = -1; let len = 0;
+      for (const w of ts) { const j = ls.indexOf(w, i); if (j !== -1 && (best === -1 || j < best)) { best = j; len = w.length; } }
+      if (best === -1) { frag.append(s.slice(i)); break; }
+      frag.append(s.slice(i, best));
+      const m = document.createElement('mark'); m.textContent = s.slice(best, best + len); frag.append(m);
+      i = best + len;
+    }
+    return frag;
+  }
+
+  function clear() {
+    results = []; active = -1;
+    out.replaceChildren(); info.textContent = '';
+    if (hl) { CSS.highlights.delete('q-hit'); CSS.highlights.delete('q-active'); }
+  }
+
+  function go(i) {
+    if (!results.length) return;
+    active = (i + results.length) % results.length;
+    const el = results[active].el;
+    const det = el.closest('details'); if (det && !det.open) det.open = true;
+    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    if (hl) CSS.highlights.set('q-active', new Highlight(...rangesIn(el, results[active].ts, [])));
+    out.querySelectorAll('button').forEach((b, k) => b.setAttribute('aria-current', k === active ? 'true' : 'false'));
+    info.textContent = `${active + 1} / ${results.length}${results.length >= MAX_RESULTS ? '+' : ''}건`;
+  }
+
+  function run(q) {
+    const ts = terms(q);
+    if (!ts.length) { clear(); return; }
+    const heads = [...root.querySelectorAll('h2,h3')];
+    const els = leafMatches(ts).slice(0, MAX_RESULTS);
+    results = els.map((el) => ({ el, ts }));
+    active = -1;
+    if (hl) {
+      const acc = [];
+      els.forEach((el) => rangesIn(el, ts, acc));
+      CSS.highlights.set('q-hit', new Highlight(...acc));
+      CSS.highlights.delete('q-active');
+    }
+    info.textContent = els.length ? `${els.length}${els.length >= MAX_RESULTS ? '+' : ''}건` : '결과 없음';
+    out.replaceChildren(...els.map((el, k) => {
+      const li = document.createElement('li');
+      const b = document.createElement('button'); b.type = 'button';
+      const ctx = document.createElement('span'); ctx.className = 'q-ctx'; ctx.textContent = (contextOf(el, heads) || '본문').replace(/\s+/g, ' ');
+      const sn = document.createElement('span'); sn.className = 'q-snip'; sn.append(snippet(el, ts));
+      b.append(ctx, sn); b.addEventListener('click', () => go(k));
+      li.append(b); return li;
+    }));
+    const rl = cfg.reportLink && document.querySelector(cfg.reportLink);
+    if (rl) {
+      const li = document.createElement('li'); li.className = 'q-more';
+      const a = document.createElement('a');
+      a.href = rl.getAttribute('href').split('#')[0] + '#q=' + encodeURIComponent(q.trim());
+      a.target = rl.target || ''; if (a.target) a.rel = 'noopener';
+      a.textContent = `상세 보고서에서 '${q.trim()}' 검색 →`;
+      li.append(a); out.append(li);
+    }
+  }
+
+  input.addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(() => run(input.value), 180); });
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') { e.preventDefault(); if (!results.length) run(input.value); go(e.shiftKey ? active - 1 : active + 1); }
+    if (e.key === 'Escape') { input.value = ''; clear(); }
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === '/' && !/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName)) { e.preventDefault(); input.focus(); }
+  });
+  try {
+    const m = /[#&?]q=([^&]+)/.exec(location.hash + '&' + location.search);
+    if (m) { input.value = decodeURIComponent(m[1]); setTimeout(() => { run(input.value); go(0); }, cfg.delay || 300); }
+  } catch (_) { /* sandboxed location: ignore */ }
+};
+
+AI27Search({ root: 'main', input: 'q-input', results: 'q-results', info: 'q-info' });
+</script>
+
+</body>
+</html>

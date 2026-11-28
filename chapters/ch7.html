@@ -1,0 +1,1194 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>7. AI for Science·AI 연구 동료·수학 난제 · AI 2027 전망 보고서</title>
+<meta name="description" content="7. AI for Science·AI 연구 동료·수학 난제">
+<link rel="canonical" href="https://hollobit.github.io/AI2027/chapters/ch7.html">
+</head>
+<body>
+<style>.chnav{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;font-size:.86rem;margin:0 0 18px;color:var(--muted)}.chnav a{text-decoration:none}.chnav .sp{flex:1}</style><meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;600&family=Noto+Serif+KR:wght@500;700;900&display=swap">
+<style>
+  /* Observatory report: long-form reading column + sticky contents rail */
+  :root {
+    --bg: #f3f4f1; --paper: #ffffff; --fg: #14161c; --muted: #5b6170; --line: #dcdfe4;
+    --accent: #3d40d4; --accent-2: #c25a22; --soft: #eef0f6; --ok: #1f7a4a; --warn: #985a00; --bad: #b3362f;
+    --display: 'Noto Serif KR', AppleMyungjo, Georgia, serif;
+    --text: 'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', system-ui, sans-serif;
+    --mono: 'IBM Plex Mono', ui-monospace, Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+    --bg: #0b0d12; --paper: #141821; --fg: #eef0f4; --muted: #8f96a5; --line: #262b37;
+    --accent: #8d90f8; --accent-2: #f29a62; --soft: #1b2030; --ok: #4cc38a; --warn: #e5a33b; --bad: #f07b72; color-scheme: dark; } }
+  :root[data-theme="dark"] {
+    --bg: #0b0d12; --paper: #141821; --fg: #eef0f4; --muted: #8f96a5; --line: #262b37;
+    --accent: #8d90f8; --accent-2: #f29a62; --soft: #1b2030; --ok: #4cc38a; --warn: #e5a33b; --bad: #f07b72; color-scheme: dark; }
+  body { background: var(--bg); color: var(--fg); font-family: var(--text); font-size: 15.5px; line-height: 1.75; letter-spacing: -0.005em;
+    padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+  .wrap { max-width: 1180px; margin: 0 auto; padding-block: clamp(20px, 4vw, 48px); display: grid; grid-template-columns: 250px minmax(0, 1fr); gap: 48px; }
+  @media (max-width: 900px) { .wrap { grid-template-columns: minmax(0, 1fr); gap: 24px; } .rail { position: static !important; max-height: none !important; } }
+  .rail { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 20px); align-self: start; max-height: calc(100vh - 40px); overflow: auto; font-size: 13px; }
+  .rail .label { font-family: var(--mono); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
+  .rail ul { list-style: none; margin: 0; padding: 0; }
+  .rail li { margin: 0; }
+  .rail ul ul { padding-left: 12px; border-left: 1px solid var(--line); margin: 2px 0 8px 2px; }
+  .rail ul ul ul { display: none; }
+  .rail a { display: block; padding: 3px 0; color: var(--muted); text-decoration: none; line-height: 1.45; }
+  .rail a:hover, .rail a:focus-visible { color: var(--accent); outline: none; }
+  .rail > ul > li > a { color: var(--fg); font-weight: 500; }
+  main { min-width: 0; background: var(--paper); border: 1px solid var(--line); border-radius: 16px; padding: clamp(22px, 5vw, 60px); }
+  main > * { max-width: 74ch; }
+  main > table, main > .tablewrap, main > details { max-width: none; }
+  h1 { font-family: var(--display); font-weight: 900; font-size: clamp(2.2rem, 5.5vw, 3.5rem); line-height: 1.08; letter-spacing: -0.03em; margin: 0 0 6px; text-wrap: balance; }
+  h1 + h3 { font-family: var(--display); font-weight: 500; font-size: clamp(1.1rem, 2.2vw, 1.4rem); color: var(--accent); margin: 0 0 14px; letter-spacing: -0.01em; }
+  h2 { font-family: var(--display); font-weight: 700; font-size: clamp(1.5rem, 3vw, 2rem); letter-spacing: -0.02em; line-height: 1.25; margin: 2.6em 0 .6em; padding-top: 1.2em; border-top: 1px solid var(--line); text-wrap: balance; scroll-margin-top: 20px; }
+  h3 { font-size: 1.12rem; font-weight: 600; margin: 1.9em 0 .5em; letter-spacing: -0.01em; scroll-margin-top: 20px; }
+  h4 { font-size: 1rem; font-weight: 600; margin: 1.8em 0 .3em; scroll-margin-top: 20px; }
+  p, li { text-wrap: pretty; }
+  strong { font-weight: 600; }
+  a { color: var(--accent); text-underline-offset: 3px; text-decoration-thickness: 1px; overflow-wrap: anywhere; }
+  blockquote { margin: 1.2em 0; padding: 14px 18px; background: var(--soft); border-radius: 10px; color: var(--fg); border: 0; }
+  blockquote p { margin: 0; }
+  hr { border: 0; height: 0; margin: 0; }
+  ul, ol { padding-left: 1.3em; }
+  li + li { margin-top: .25em; }
+  code { font-family: var(--mono); font-size: .86em; background: var(--soft); padding: 1px 6px; border-radius: 5px; overflow-wrap: anywhere; }
+  .tablewrap { overflow-x: auto; margin: 1.2em 0; border: 1px solid var(--line); border-radius: 12px; }
+  table { border-collapse: collapse; width: 100%; font-size: 13.5px; line-height: 1.55; }
+  th { text-align: left; font-family: var(--mono); font-weight: 500; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); padding: 10px 12px; border-bottom: 1px solid var(--line); background: var(--soft); white-space: nowrap; }
+  td { padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; font-variant-numeric: tabular-nums; }
+  tr:last-child td { border-bottom: 0; }
+  td:first-child { font-weight: 500; min-width: 120px; }
+  details { margin: 1em 0; }
+  summary { cursor: pointer; color: var(--muted); }
+  .meta { font-family: var(--mono); font-size: 12px; color: var(--muted); letter-spacing: .04em; }
+  .appendix-head { margin-top: 4em; }
+  h1.part { font-size: clamp(1.25rem, 2.6vw, 1.6rem); font-weight: 800; color: var(--accent); margin: 64px 0 8px; padding-top: 18px; border-top: 3px solid var(--accent); letter-spacing: -0.01em; }
+  #appendix h1 { font-size: clamp(1.6rem, 3.5vw, 2.2rem); margin-top: 0; }
+  #appendix h4 { font-family: var(--display); font-weight: 700; font-size: 1.02rem; padding-top: 1em; border-top: 1px dashed var(--line); }
+  .tag-hi { color: var(--ok); font-weight: 600; } .tag-mid { color: var(--warn); font-weight: 600; } .tag-lo { color: var(--bad); font-weight: 600; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  /* full-text search */
+  .q { margin-bottom: 22px; }
+  .q input { width: 100%; box-sizing: border-box; font: inherit; font-size: 13.5px; color: var(--fg); background: var(--paper); border: 1px solid var(--line); border-radius: 10px; padding: 8px 11px; }
+  .q input:focus { outline: 2px solid var(--accent); outline-offset: 1px; border-color: transparent; }
+  .q-info { font-family: var(--mono); font-size: 11px; color: var(--muted); margin: 6px 2px 0; min-height: 1em; }
+  .q-results { list-style: none; margin: 6px 0 0; padding: 0; max-height: 46vh; overflow: auto; border-left: 1px solid var(--line); }
+  .q-results:empty { display: none; }
+  .q-results button { all: unset; box-sizing: border-box; display: block; width: 100%; cursor: pointer; padding: 6px 8px 6px 10px; border-radius: 0 8px 8px 0; line-height: 1.45; }
+  .q-results button:hover, .q-results button:focus-visible, .q-results button[aria-current="true"] { background: var(--soft); }
+  .q-ctx { display: block; font-size: 11px; color: var(--accent); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .q-snip { display: block; font-size: 12px; color: var(--muted); }
+  .q-snip mark { background: none; color: var(--fg); font-weight: 600; }
+  ::highlight(q-hit) { background-color: rgba(229, 163, 59, .35); }
+  ::highlight(q-active) { background-color: #e5a33b; color: #14161c; }
+  figure { margin: 1.6em 0; max-width: none; }
+  figure svg { display: block; width: 100%; height: auto; }
+  figcaption { font-size: 13px; color: var(--muted); margin-top: 8px; line-height: 1.6; }
+  main > figure { max-width: none; }
+  .dl { display: flex; justify-content: flex-end; align-items: center; gap: 8px; margin: 0 0 14px; font-size: .85rem; color: var(--muted, #5b6170); }
+  .dl a { font-weight: 600; text-decoration: none; padding: 3px 10px; border: 1px solid var(--line, #dcdfe4); border-radius: 999px; }
+  .dl a:hover { border-color: currentColor; }
+  .hl { margin-left: .4em; font-size: .7em; color: var(--muted); text-decoration: none; opacity: 0; transition: opacity .15s; }
+  h2:hover .hl, h3:hover .hl, .hl:focus { opacity: 1; }
+  a.xref { color: inherit; text-decoration: underline dotted; text-underline-offset: 3px; }
+  @page { size: A4; margin: 16mm 14mm; }
+  @media print { .dl { display: none !important; } html, body { background: #fff !important; } main { box-shadow: none !important; border-radius: 0 !important; padding: 0 !important; max-width: none !important; } figure, table, blockquote { break-inside: avoid; } h2, h3 { break-after: avoid; } .rail { display: none; } .wrap { display: block; } main { border: 0; } }
+</style>
+
+<div class="wrap">
+  <nav class="rail" aria-label="목차">
+    <div class="q" role="search">
+      <label class="label" for="q-input" style="display:block">Search</label>
+      <input id="q-input" type="search" placeholder="보고서 검색  ( / )" autocomplete="off" aria-describedby="q-info">
+      <div id="q-info" class="q-info" aria-live="polite"></div>
+      <ul id="q-results" class="q-results" aria-label="검색 결과"></ul>
+    </div>
+    <div class="label">Contents</div><ul><li><a href="#s7-1">7.1 2026: AI 연구 동료의 현재</a></li><li><a href="#s7-2">7.2 자율 실험실</a></li><li><a href="#s7-3">7.3 국가 AI4S 프로그램</a></li><li><a href="#s7-4">7.4 2027 분야별 기여 전망</a></li><li><a href="#s7-5">7.5 2027년 AI 연구 동료가 할 수 있는 일과 없는 일</a></li><li><a href="#s7-6">7.6 과학 시스템의 변화(2027)</a></li><li><a href="#s7-7">7.7 AI 과학자(AI Scientist): 2027 전망</a></li><li><a href="#s7-8">7.8 수학·물리 난제: 2025–2026 성과와 검증 수준</a></li><li><a href="#s7-9">7.9 AI가 잘하는 것과 못하는 것</a></li><li><a href="#s7-10">7.10 2027년 도전 목표</a></li><li><a href="#s7-11">7.11 수량 전망 (2027, 낮음 / 기준 / 높음)</a></li><li><a href="#s7-12">7.12 규범과 검증</a></li><li><a href="#s7-13">7.13 한국 제언과 국가인공지능전략위원회 안건</a></li></ul></nav>
+  <main>
+<div class="dl" aria-label="다운로드">다운로드
+      <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.pdf">PDF</a>
+      <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.docx">Word</a>
+      <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.md">Markdown</a> · <a href="https://hollobit.github.io/AI2027/chapters/">장별 보기</a></div>
+<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch7">전체 보고서에서 보기</a><a href="../">대시보드</a><span class="sp"></span><a href="ch6.html" rel="prev">← 6. 특화 파운데이션 모델: 2026 현황과 202</a><a href="ch8.html" rel="next">8. 바이브 코딩·코딩 에이전트, 산업별 확산, 조 →</a></nav><p class="label" style="margin:0 0 4px">제2부 역량:
+모델·에이전트·AGI·과학</p><h2 id="ch7">7. AI for Science·AI 연구 동료·수학 난제</h2>
+<blockquote>
+<p>자료: Google DeepMind(co-scientist Nature 게재, 'Conjecture
+Machines'), Anthropic('연구자는 Claude를 어떻게 쓰나'), OpenAI('Science
+at the Frontier'), Elsevier·Springer Nature 설문, Scientific American,
+Agents4Science(Stanford), 백악관 Genesis Mission, DOE FY2027 예산, EU
+RAISE, 영국 AI for Science 전략, 베이징 AI 연구 계획, 과기정통부 2027
+예산안. 원문은 <code>PDF/laws_science/*_ai4s_*</code>에 있습니다.
+설문·생산성 수치 대부분은 자기 보고나 벤더 연구입니다. 한국 예산은 국회
+심의 전 정부안입니다. 분야별 특화 모델은 6장, 수학·물리는 <a class="xref" href="#s7-8">7.8</a>절 이하에서
+다룹니다.</p>
+</blockquote>
+<h3 id="s7-1">7.1 2026: AI 연구 동료의 현재</h3>
+<table>
+<thead>
+<tr>
+<th>시스템</th>
+<th>주체</th>
+<th>검증된 성과</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>AI co-scientist</strong></td>
+<td>Google·DeepMind</td>
+<td>Nature 게재(2026-05-19), 개인 연구자용 '가설 생성' 도구로 공개.
+간섬유화 약물 재창출 후보가 실험에서 섬유화 반응을 91% 억제. 미국
+국립연구소(Genesis)가 기업용 프리뷰 파트너</td>
+</tr>
+<tr>
+<td><strong>Kosmos</strong></td>
+<td>Edison Scientific(FutureHouse)</td>
+<td>발견 7건 주장(3건은 미공개 원고 재현, 4건 신규). 재현 가능성
+79%(자체 평가). Pfizer R&amp;D 전사 배치(2026-10)</td>
+</tr>
+<tr>
+<td><strong>Robin·Crow·Finch</strong></td>
+<td>FutureHouse</td>
+<td>건성 황반변성 치료 후보 ripasudil 발굴(Nature 보고). 워크플로 비용
+약 11달러</td>
+</tr>
+<tr>
+<td><strong>AI Scientist-v2</strong></td>
+<td>Sakana AI</td>
+<td>ICLR 워크숍 동료심사 통과, Nature 게재(2026)</td>
+</tr>
+<tr>
+<td><strong>ChatGPT 연구자용</strong></td>
+<td>OpenAI</td>
+<td>과학 메시지 58만 건 분석, 68%가 아이디어 개발에 사용. 응답자는 'AI
+없으면 1.9배 오래 걸린다'고 자기 보고</td>
+</tr>
+<tr>
+<td><strong>Claude(연구)</strong></td>
+<td>Anthropic</td>
+<td>세션의 33.7%(Claude), 48.1%(Claude Code)가 데이터 분석. 연구 시간의
+27–52%(중앙값 38%)를 AI가 맡을 수 있다고 추정. 가설 생성은 가장
+중요하다고 꼽히지만 실제 세션 비중은 4.2%</td>
+</tr>
+<tr>
+<td><strong>AlphaEvolve·AlphaProof·ERA</strong></td>
+<td>Google DeepMind</td>
+<td>Erdős 미해결 9/353 자율 해결(Lean), ERA가 OpenProblems 리더보드를
+넘는 방법 40개</td>
+</tr>
+<tr>
+<td><strong>Agents4Science</strong></td>
+<td>Stanford</td>
+<td>315편 투고 중 48편 채택. 심사자 평가는 "기술적으로 맞지만 흥미롭지도
+중요하지도 않다"</td>
+</tr>
+</tbody>
+</table>
+<p><strong>도입 현황</strong></p>
+<ul>
+<li><strong>이용률</strong>: 연구자의 AI 이용률은 58%(Elsevier)에서
+69%(Springer Nature)이고, 46.6%가 집중 사용자입니다(Google·MIT 637명
+설문).</li>
+<li><strong>새 병목은 '검증'과 '실험실'입니다.</strong>
+<ul>
+<li>시간을 절약한 연구자의 89%가 절약분의 10% 이상을 AI 결과 검증에
+씁니다.</li>
+<li>44%는 병목이 물리 실험으로 옮겨 갔다고 답했습니다.</li>
+<li>41%는 검증하지 못한 가설이 쌓이고 있다고 답했습니다.</li>
+<li>DeepMind의 표현으로는 **"속도를 정하는 것은 실험실"**입니다.</li>
+</ul></li>
+</ul>
+<h3 id="s7-2">7.2 자율 실험실</h3>
+<table>
+<thead>
+<tr>
+<th>이름</th>
+<th>2027 관전 포인트</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Periodic Labs(전 OpenAI 연구진, 시리즈 A 7.5억 달러)</td>
+<td>첫 동료심사 소재 발견 공개 여부. 성과가 미달하면 기업가치
+조정(중간)</td>
+</tr>
+<tr>
+<td>Lila Sciences</td>
+<td>'AI Science Factory' 규모 확장, 제약 파트너십, 독립 검증 논문</td>
+</tr>
+<tr>
+<td>A-Lab(로렌스버클리)</td>
+<td>Genesis·American Science Cloud와 연결된 국립연구소 자율실험
+네트워크로 확대(추정)</td>
+</tr>
+<tr>
+<td>CuspAI</td>
+<td>탄소포집·배터리 소재 후보의 실험 검증 공개</td>
+</tr>
+<tr>
+<td>영국 자율실험실 공모</td>
+<td>국가 자율실험실 네트워크 구축</td>
+</tr>
+<tr>
+<td><strong>한국 국산 자율실험실·AI 신약 거점</strong></td>
+<td>착수·장비 구축 단계. 2027년의 현실적 목표는 발견보다
+인프라·표준·데이터 파이프라인</td>
+</tr>
+</tbody>
+</table>
+<h3 id="s7-3">7.3 국가 AI4S 프로그램</h3>
+<table>
+<thead>
+<tr>
+<th>국가</th>
+<th>프로그램</th>
+<th>규모</th>
+<th>2027</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>미국</strong></td>
+<td>Genesis Mission(DOE 주도)</td>
+<td>연방 약정 50억 달러 이상(2026-07), 파트너 8억 달러 이상, 18개
+과제·278개 사업(2026-07 기준, 이후 297개 과제로 확대: <a class="xref" href="ch14.html#s14-8">14.8</a>절), 플랫폼
+가동</td>
+<td>FY2027 예산 요청에 Genesis 항목은 없고, 대신 DOE AI·양자 신설 조직에
+12억 달러를 요청. 국립연구소의 co-scientist·자율실험 첫 성과</td>
+</tr>
+<tr>
+<td><strong>영국</strong></td>
+<td>AI for Science 전략(2025-11)</td>
+<td>최대 1.37억 파운드, 소버린 AI 유닛 5억 파운드</td>
+<td>미션별 자율실험실·데이터셋, Isambard-AI 과학 FM</td>
+</tr>
+<tr>
+<td><strong>EU</strong></td>
+<td>RAISE</td>
+<td>파일럿 1.07억 유로 + 컴퓨트 접근 6억 유로</td>
+<td>파일럿 과제 착수, 차기 FP10에서 상설화 논의(추정)</td>
+</tr>
+<tr>
+<td><strong>일본</strong></td>
+<td>제2차 AI 기본계획 'AI for Science'</td>
+<td>2026년도 예산 요구 355억 엔(확정액 미확인)</td>
+<td>FugakuNEXT 연계 과학 FM</td>
+</tr>
+<tr>
+<td><strong>중국</strong></td>
+<td>'AI+'(AI4S 우선), 베이징·광둥 지방 계획</td>
+<td>AI4S 총액 비공개(참고: 국가자연과학기금 2026년 전체 418.6억
+위안)</td>
+<td>15차 5개년 계획 연동, 지방정부 간 경쟁형 투자</td>
+</tr>
+<tr>
+<td><strong>한국</strong></td>
+<td>과학기술×AI(국가과학AI연구센터, 자율실험실)</td>
+<td>연구센터 400억 → <strong>618억 원</strong>, 국산 자율실험실
+93억(신규), AI 자율실험 신약 거점 160억(신규), 과학기술×AI FM 130억.
+과기정통부 R&amp;D 14.1조 원</td>
+<td>출연연 공동 AI 연구 플랫폼과 자율실험실 착수. 2027년 성과는 인프라와
+FM 1차 공개 수준(추정)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="s7-4">7.4 2027 분야별 기여 전망</h3>
+<table>
+<thead>
+<tr>
+<th>분야</th>
+<th>2027 기여</th>
+<th>가능성 · 확률(±불확도)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>AI 연구 자체</strong></td>
+<td>AI가 AI 연구를 가속하는 피드백이 가장 강합니다(METR 1.9배). 실험
+설계·코드·평가는 대부분 에이전트가, 사람은 방향과 자원 배분을
+맡습니다</td>
+<td>높음 · 70% (±15) · 근거 <a
+href="https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment">METR</a>,
+<a
+href="https://www.anthropic.com/research/how-ai-is-transforming-work-at-anthropic">Anthropic</a></td>
+</tr>
+<tr>
+<td><strong>생물학·신약</strong></td>
+<td>co-scientist류 가설 수십 건이 세포·동물 수준에서 검증돼 논문이
+됩니다. 첫 AI 발굴 약물 승인은 불확실합니다</td>
+<td>높음 · 75% (±15) · 근거 <a
+href="https://deepmind.google/blog/co-scientist-a-multi-agent-ai-partner-to-accelerate-research/">Google
+/ Google DeepMind</a></td>
+</tr>
+<tr>
+<td><strong>기후·지구</strong></td>
+<td>AI 기상예보 현업 확대(앙상블·계절 예측), 지역 다운스케일링. 운영화가
+가장 진전된 분야입니다</td>
+<td>높음 · 90% (±8) · 근거 <a
+href="https://www.ecmwf.int/en/about/media-centre/news/2026/ifs-cycle-50r1-aifsv2-live">ECMWF</a>,
+<a
+href="https://www.weather.gov/media/notification/pdf_2026/scn26-68_AIGFS_v1.1.pdf">NOAA
+/ NWS</a></td>
+</tr>
+<tr>
+<td><strong>수학</strong></td>
+<td>Lean 형식검증과 결합해 미해결 문제 해결이 계속 늘고, 수학자의 일상
+도구가 됩니다(<a class="xref" href="#s7-8">7.8</a>절 이하)</td>
+<td>높음 · 82% (±12) · 근거 <a
+href="https://arxiv.org/abs/2605.22763">Google DeepMind</a>, <a
+href="https://www.anthropic.com/research/formalizing-fermats-last-theorem">Anthropic</a></td>
+</tr>
+<tr>
+<td>소재·화학</td>
+<td>자율실험실과 생성 모델로 합성·특성 확인 사이클 단축. 실온 초전도
+같은 혁신 소재 확인은 가능성 낮음</td>
+<td>중간 · 65% (±15) · 근거 <a
+href="https://www.capgemini.com/wp-content/uploads/2026/11/261117_Capgemini-Top-Tech-Trends-to-watch-in-2027-PR.pdf">Capgemini</a></td>
+</tr>
+<tr>
+<td>물리·천문</td>
+<td>데이터 분석·대리 모델·코드는 일상화. 이론적 발견은 제한적</td>
+<td>중간 · 68% (±15) · 근거 <a
+href="https://arxiv.org/abs/2509.26574">CritPt 팀</a></td>
+</tr>
+<tr>
+<td>사회과학·경제</td>
+<td>설문·텍스트·시뮬레이션 에이전트로 산출이 급증하고 품질·재현성 논란도
+커짐</td>
+<td>중간 · 66% (±15)</td>
+</tr>
+<tr>
+<td><strong>공학·ICT(통신·6G)</strong></td>
+<td>코드·시뮬레이션·표준문서 분석 자동화. AI-RAN·6G의 링크·스케줄러
+설계·검증 보조, 표준 기고문 작성 보조. 병목은 실측 테스트베드</td>
+<td>중간 · 62% (±15) · 근거 <a
+href="https://www.gsma.com/newsroom/article/gsma-open-telco-llm-benchmarks-ranks-frontier-ai-models-for-telco-ai-revealing-critical-gap-in-network-automation-readiness/">GSMA</a>,
+<a
+href="https://eiec.kdi.re.kr/policy/materialView.do?num=289359">과학기술정보통신부·IITP</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="s7-5">7.5 2027년 AI 연구 동료가 할 수 있는 일과 없는 일</h3>
+<ul>
+<li><strong>할 수 있는 일</strong>
+<ul>
+<li>문헌 수천 편을 근거와 연결해 가설 후보를 순위화</li>
+<li>데이터 분석·통계·코드를 수시간~수일 동안 자율 수행</li>
+<li>계산 과학에서 아이디어부터 논문 초안까지 종단 수행</li>
+<li>Lean과 결합한 수학 증명</li>
+<li>자율실험실과 연결한 설계–합성–측정 폐루프(제한된 화학·소재·단백질
+공간)</li>
+<li>심사 보조(오류·인용·통계 검사), 재현 자동화, 표준 기고문 초안</li>
+</ul></li>
+<li><strong>할 수 없는 일</strong>
+<ul>
+<li><strong>물리 실험·임상시험의 시간 자체는 줄이지 못합니다.</strong>
+실험 과학의 가속은 2–4배가 상한입니다.</li>
+<li>무엇이 중요한 문제인지 판단하기 어렵습니다(Agents4Science: '맞지만
+중요하지 않은' 논문).</li>
+<li>인용·사실 환각을 스스로 완전히 없애지 못합니다(환각 참조 44.5%
+사례).</li>
+<li>종단 연구 과제의 신뢰도는 박사급에 미치지 못합니다(PaperArena 38.8%
+대 83.5%).</li>
+<li>연구 책임, 저자 자격, 윤리·생물보안 승인의 주체가 될 수
+없습니다.</li>
+<li>정답이 불분명한 분야에서는 검증 가능한 결론을 내지 못합니다.</li>
+</ul></li>
+</ul>
+<h3 id="s7-6">7.6 과학 시스템의 변화(2027)</h3>
+<table>
+<thead>
+<tr>
+<th>영역</th>
+<th>변화</th>
+<th>가능성 · 확률(±불확도)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>출판·심사</td>
+<td>AI 보조 심사(오류·인용 검사)가 공식 도구가 되고, AI 사용 공개 양식이
+표준화되며, 본 학회에 사람 저자가 책임지는 AI 주도 논문이 채택됨(AI
+저자를 밝힌 완전 AI 생성 논문의 본 트랙 채택은 <a class="xref" href="#s7-7">7.7</a>절, 낮음 · 30%)</td>
+<td>높음 · 72% (±15) · 근거 <a
+href="https://www.pangram.com/blog/pangram-predicts-21-of-iclr-reviews-are-ai-generated">Pangram
+Labs</a>, <a href="https://arxiv.org/pdf/2511.15534">Stanford (James Zou
+등)</a></td>
+</tr>
+<tr>
+<td>출판·심사</td>
+<td>AI 생성 저품질 논문·페이퍼밀 적발과 철회 증가, 연구 주제 동질화
+우려</td>
+<td>높음 · 88% (±10) · 근거 <a
+href="https://gptzero.me/news/neurips/">GPTZero</a>, <a
+href="https://arxiv.org/abs/2608.02859">arXiv</a></td>
+</tr>
+<tr>
+<td>재현성</td>
+<td>코드·데이터·에이전트 로그 제출 의무화, 기관 단위 검증 인프라
+투자</td>
+<td>중간 · 40% (±20) · 근거 <a
+href="https://deepmind.google/public-policy/conjecture-machines-ai-agents-and-the-new-validation-bottleneck-in-science/">Google
+DeepMind</a></td>
+</tr>
+<tr>
+<td>크레딧</td>
+<td>AI 저자는 계속 불인정, 기여도 표기와 AI 로그 첨부 규범 확산. 논문 수
+지표의 신뢰도 하락</td>
+<td>중간 · 65% (±15) · 근거 <a
+href="https://www.govinfo.gov/content/pkg/FR-2025-11-28/pdf/2025-21457.pdf">USPTO
+(Federal Register)</a>, <a
+href="https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-2-Copyrightability-Report.pdf">US
+Copyright Office</a></td>
+</tr>
+<tr>
+<td>인재</td>
+<td>문제 설정·실험 설계·검증 전문가 수요 증가, 반복 분석 인력 수요 감소.
+주니어 탈숙련 논쟁</td>
+<td>중간 · 64% (±15) · 근거 <a
+href="https://spri.kr/posts/view/24037?code=data_all">SPRi
+소프트웨어정책연구소</a>, <a
+href="https://digitaleconomy.stanford.edu/news/canariesaug26/">Stanford
+Digital Economy…</a></td>
+</tr>
+<tr>
+<td>데이터</td>
+<td>국가 연구데이터를 에이전트가 접근하는 API(MCP류)와 민감데이터 감사형
+접근</td>
+<td>중간 · 50% (±20) · 근거 <a
+href="https://www.energy.gov/undersecretaryforscience/articles/us-department-energy-announces-more-800-million-partner">energy.gov</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="s7-7">7.7 AI 과학자(AI Scientist): 2027 전망</h3>
+<blockquote>
+<p>자료: <a class="xref" href="#s7-1">7.1</a>–<a class="xref" href="#s7-6">7.6</a>절, NeurIPS·ICML·ICLR 2026 정책 발표, State of AI 예측
+점검(2026-07), LABBench2, Chalmers(Eve), 중국과학원(ScienceOne
+100·BioMedAgent), 과기정통부(자율실험실 협의체·AI 소재 R&amp;D 전략).
+원자료는 <code>data/raw/collect_ai_scientist.json</code>.</p>
+</blockquote>
+<p><strong>요지</strong>: 2027년의 AI 과학자는 **'가설·분석·코드·문헌을
+맡는 유능한 연구 동료'**까지는 확실히 가지만, **'문제 선택부터 독립
+검증된 발견까지 혼자 끝내는 과학자'**는 아직 아닙니다. 병목은 지능보다
+<strong>검증과 실험실</strong>이고, 학계는 AI 생성 논문을 막는 쪽으로
+규칙을 조이고 있습니다.</p>
+<p><strong>자율성 단계로 본 2026년 위치</strong></p>
+<table>
+<thead>
+<tr>
+<th>단계</th>
+<th>정의</th>
+<th>2026 사례</th>
+<th>2027 판단</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>L1 도구</td>
+<td>문헌 검색·요약·코드 보조</td>
+<td>연구자 다수가 일상 사용</td>
+<td>보편화</td>
+</tr>
+<tr>
+<td>L2 연구 동료</td>
+<td>가설 생성·데이터 분석·실험 설계 제안, 사람이 선택·검증</td>
+<td>Google AI co-scientist(Nature), Kosmos, FutureHouse Robin,
+중국과학원 BioMedAgent(생물정보 과제 77%)</td>
+<td><strong>주류화</strong>: 제약·소재·생물정보에서 표준 도구</td>
+</tr>
+<tr>
+<td>L3 폐루프 자율 실험</td>
+<td>가설 → 로봇 실험 → 재가설을 스스로 반복, 사람은 안전·물리
+작업만</td>
+<td>Chalmers 로봇 과학자 Eve(효모 가설 약 2,000개 자동 검증),
+Lila·Periodic Labs, 중국 ScienceOne 100(50개 연구소)</td>
+<td>특정 분야(소재·화학·효모·세포)에서 확산</td>
+</tr>
+<tr>
+<td>L4 독립 과학자</td>
+<td>중요한 문제를 스스로 고르고, 독립 검증된 새 발견을 논문까지</td>
+<td>없음. State of AI는 "전 루프를 스스로 맡은 시스템은 아직 없다"고
+판단</td>
+<td>첫 사례 가능성은 낮음</td>
+</tr>
+</tbody>
+</table>
+<p><strong>학계의 반응(2026)</strong>: NeurIPS 2026 포지션 트랙은 투고
+969편 중 178편(18.4%)을 AI 생성 의심으로 데스크 리젝트했고 본문의
+'실질적 인간 작성'을 요구했습니다. ICML 2026은 심사자 LLM 정책 위반으로
+497편, ICLR 2026은 환각 인용 등으로 779편을 데스크 리젝트했습니다.
+2026년에 완전 AI 생성 논문이 주요 학회 본 트랙에 채택됐다는 확인 사례는
+없습니다. 측정도 어려워져 새 생물 연구 벤치마크(LABBench2)에서는
+프런티어 모델 정확도가 26–46% 떨어졌습니다.</p>
+<p><strong>2027 전망</strong></p>
+<table>
+<thead>
+<tr>
+<th>전망</th>
+<th>가능성 · 확률(±불확도)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>제약·소재·생물정보 기업과 국립연구소에서 L2 연구 동료가 표준 도구가
+됨(전사 배치 사례 다수)</td>
+<td>높음 · 85% (±10)</td>
+</tr>
+<tr>
+<td>주요 학회·학술지가 AI 기여 공개 양식과 AI 생성 논문 제한을 강화하고,
+AI 심사 보조는 제한적으로 허용</td>
+<td>높음 · 85% (±10)</td>
+</tr>
+<tr>
+<td>AI 과학자 시스템이 낸 가설이 독립 실험실에서 재현돼 상위 학술지에
+실리는 사례가 여러 건</td>
+<td>높음 · 75% (±15)</td>
+</tr>
+<tr>
+<td>중국이 국가 차원의 AI 과학자·지능형 실험실 성과를 대대적으로
+발표(중국과학원 원사: 2026 말–2027 공학적 돌파 예상)</td>
+<td>높음 · 70% (±15)</td>
+</tr>
+<tr>
+<td>자율실험실(L3)이 발견한 소재·분자가 산업 파트너의 개발 단계에
+진입</td>
+<td>중간 · 55% (±20)</td>
+</tr>
+<tr>
+<td>OpenAI 등이 '자동화 연구자' 단계(인턴 다음)에 근접했다고
+공개(5장)</td>
+<td>중간 · 40% (±20)</td>
+</tr>
+<tr>
+<td>완전 AI 생성 논문이 주요 학회 본 트랙에 공식 채택(AI 저자임을 밝힌
+상태로)</td>
+<td>낮음 · 30% (±20)</td>
+</tr>
+<tr>
+<td>AI가 문제 선택부터 독립 검증까지 맡은 '중요한 발견'(L4)이 학계에서
+인정</td>
+<td>낮음 · 15% (±10)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>한국</strong>: 과기정통부는 80여 개 기관이 참여하는 국내 첫
+자율실험실 협의체를 출범했고(2026-08), 'AI 소재 R&amp;D 플랫폼 전략'으로
+소재 AI 연구 동료와 학습 데이터 1,000만 건(5년)을 목표로 합니다. K-문샷
+신약 미션은 AI 설계와 로봇 실험을 잇는 자율실험실을 핵심 인프라로 삼고,
+출연연 과학 AI 에이전트와 'AI Co-Scientist Challenge'를 추진합니다.
+2027년 한국의 현실적 목표는 L2의 전면 보급과 L3의 분야별 실증입니다.</p>
+<blockquote>
+<p><strong>확인 필요</strong>: Agents4Science 2026 결과,
+PaperBench·MLE-bench 등 2026 최고 점수, Lila·Periodic Labs의 2026 하반기
+성과, 연구소 대표들의 2027 AI 과학자 전망은 확인하지 못했습니다.</p>
+</blockquote>
+<h3 id="s7-8">7.8 수학·물리 난제: 2025–2026 성과와 검증 수준</h3>
+<blockquote>
+<p>자료: DeepMind(AlphaEvolve, AlphaProof Nexus, Aletheia, 불안정
+특이점), Anthropic(FLT Lean 형식화), Epoch FrontierMath-Erdős, CritPt
+벤치마크, Quanta, arXiv 'AI 생성 수학의 위기'. 원문은
+<code>PDF/laws_science/*_mathphys_*</code>에 있습니다. OpenAI 페이지
+2건은 봇 차단으로 저장하지 못해 페이지 확인과 보도로 대신했습니다.
+2025년 일부 성과(IMO 2025, AlphaEvolve 48회·키싱수 593, GPT-5 2025년
+10월 논란, Gauss 강한 소수정리)는 검색 요약 수준이라 원문 재확인이
+필요합니다.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>시점</th>
+<th>분야</th>
+<th>성과</th>
+<th>시스템</th>
+<th>검증</th>
+<th>의미</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025-05</td>
+<td>수학</td>
+<td>4×4 복소 행렬곱을 곱셈 48회로(Strassen 49회 개선), 11차원 키싱수
+하한 593. 50여 개 문제 중 약 20%에서 기록 개선</td>
+<td>DeepMind AlphaEvolve</td>
+<td>전문가 확인</td>
+<td>중</td>
+</tr>
+<tr>
+<td>2025-07</td>
+<td>수학</td>
+<td>IMO 2025 금메달 수준(35/42)</td>
+<td>Gemini Deep Think, OpenAI</td>
+<td>전문가 확인</td>
+<td>중</td>
+</tr>
+<tr>
+<td>2025-09</td>
+<td>물리</td>
+<td>유체 방정식의 <strong>불안정 특이점</strong> 새 계열 발견. 컴퓨터
+보조 증명의 전 단계</td>
+<td>DeepMind + NYU·Brown</td>
+<td>주장(증명 미완)</td>
+<td>높음</td>
+</tr>
+<tr>
+<td>2025-10</td>
+<td>수학</td>
+<td>'Erdős 문제 10개 해결' 주장이 기존 문헌 발견으로 드러나 철회</td>
+<td>OpenAI GPT-5</td>
+<td><strong>논란</strong></td>
+<td>낮음</td>
+</tr>
+<tr>
+<td>2026-01</td>
+<td>수학</td>
+<td>Erdős 추측 700개 점검: 4개 신규 자율 해법, 9개는 기존 문헌 발견</td>
+<td>DeepMind Aletheia(한국 수학자 참여)</td>
+<td>전문가 확인</td>
+<td>중</td>
+</tr>
+<tr>
+<td>2026-02</td>
+<td>물리</td>
+<td>'0으로 여겨지던' 단일 마이너스 글루온 진폭의 일반 공식
+제안·증명</td>
+<td>GPT-5.2 Pro + 인간 저자</td>
+<td>전문가 확인</td>
+<td>중</td>
+</tr>
+<tr>
+<td>2026-02</td>
+<td>수학</td>
+<td>8차원 구 채우기 형식검증 완료, 24차원 증명 20만 줄 이상을 약 2주
+만에 형식화</td>
+<td>Math Inc. Gauss</td>
+<td>Lean</td>
+<td>중</td>
+</tr>
+<tr>
+<td><strong>2026-05</strong></td>
+<td>수학</td>
+<td><strong>Erdős 단위거리 추측(1946) 반증</strong>. 대수적 정수론으로
+무한 반례족 구성. 외부 수학자 9인 동반 논문, Gowers는 '이정표'로
+평가</td>
+<td>OpenAI 내부 추론 모델</td>
+<td>전문가 확인</td>
+<td><strong>높음</strong></td>
+</tr>
+<tr>
+<td><strong>2026-05</strong></td>
+<td>수학</td>
+<td>미해결 Erdős 353문제 중 9개 자율 해결(2개는 56년 미해결), OEIS 추측
+44/492 증명, 문제당 수백 달러</td>
+<td>DeepMind AlphaProof Nexus</td>
+<td><strong>Lean</strong></td>
+<td><strong>높음</strong></td>
+</tr>
+<tr>
+<td>2026-07</td>
+<td>수학</td>
+<td>IMO 2026 만점 보도 다수(Axiom은 6문제 Lean 증명 공개). IMO는
+계산량·인간 개입을 검증할 수 없다는 입장</td>
+<td>여러 시스템</td>
+<td>주장</td>
+<td>낮음</td>
+</tr>
+<tr>
+<td><strong>2026-08</strong></td>
+<td>수학</td>
+<td><strong>페르마의 마지막 정리 완전 형식화</strong>: 11일, Lean
+1,300만 줄(Mathlib의 5배 이상), Buzzard 검토. 새 수학이 아니라 기존
+증명의 검증</td>
+<td>Anthropic Claude(다중 에이전트)</td>
+<td><strong>Lean</strong></td>
+<td><strong>높음</strong></td>
+</tr>
+<tr>
+<td>2026-09</td>
+<td>수학</td>
+<td>매끄러운 <strong>외력</strong>이 있는 3차원 Navier–Stokes의 유한시간
+blow-up 증명과 Lean 형식화 주장. 전문가들은 실제 밀레니엄 문제와 거리가
+먼 변형이라고 봄. 공로 분쟁. OpenAI는 상금을 청구하지 않음</td>
+<td>OpenAI 내부 시스템(약 1만 동시 에이전트)</td>
+<td><strong>논란</strong></td>
+<td>높음</td>
+</tr>
+<tr>
+<td>2026-10</td>
+<td>수학</td>
+<td>FrontierMath-Erdős 68문제 중 <strong>17개 해결</strong>(8월 출시 때
+5개). 고정 프로토콜 최고 점수는 3–10%</td>
+<td>GPT-6 계열 등</td>
+<td>Lean</td>
+<td>높음</td>
+</tr>
+<tr>
+<td>2026-11</td>
+<td>물리</td>
+<td>연구 수준 물리 벤치마크 CritPt 최고 약 33%(미포화)</td>
+<td>프런티어 모델</td>
+<td>—</td>
+<td>낮음</td>
+</tr>
+</tbody>
+</table>
+<h3 id="s7-9">7.9 AI가 잘하는 것과 못하는 것</h3>
+<ul>
+<li><strong>잘함</strong>
+<ul>
+<li>구성과 반례 탐색(조합론·이산기하의 상한·하한)</li>
+<li>프로그램 탐색으로 알고리즘 기록 갱신</li>
+<li><strong>잊힌 기존 해법 찾기</strong>(문헌 탐색)</li>
+<li>기계로 검증 가능한 문제(Lean·조합론·정수론)</li>
+<li><strong>구조가 알려진 증명의 형식화</strong>(FLT·구 채우기)</li>
+</ul></li>
+<li><strong>못함</strong>
+<ul>
+<li>새 이론 구축</li>
+<li>어떤 질문이 중요한지 판단하기</li>
+<li><strong>사람이 읽을 수 있는 증명</strong> 쓰기(Navier–Stokes 증명은
+"사실상 읽을 수 없다"는 평)</li>
+<li>실험이 필요한 과학</li>
+</ul></li>
+<li><strong>물리는 수학보다 늦습니다.</strong> 검증된 사례는 산란진폭
+공식과 유체 특이점 탐색 정도이고, CritPt 33%는 미포화 상태입니다.</li>
+</ul>
+<h3 id="s7-10">7.10 2027년 도전 목표</h3>
+<table>
+<thead>
+<tr>
+<th>목표</th>
+<th>분야</th>
+<th>가능성 · 확률(±불확도)</th>
+<th>확인 신호</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FrontierMath-Erdős 남은 51문제 중 다수 해결, erdosproblems.com
+미해결 문제 대량 정리</td>
+<td>수학</td>
+<td>높음 · 75% (±15) · 근거 <a
+href="https://epoch.ai/latest/announcing-frontiermath-erdos">Epoch
+AI</a>, <a href="https://arxiv.org/abs/2601.22401">Google DeepMind
+(Aletheia)</a></td>
+<td>Epoch 누적 해결 수, '미해결→해결' 전환 수</td>
+</tr>
+<tr>
+<td>극값 조합론·이산기하 경계 개선(작은 Ramsey 수, cap set, 12–31차원
+키싱수, 구 채우기, Kakeya류)</td>
+<td>수학</td>
+<td>높음 · 90% (±8) · 근거 <a
+href="https://arxiv.org/abs/2511.02864">Google DeepMind / Tao
+외</a></td>
+<td>arXiv 기록 갱신, 키싱수·패킹 표</td>
+</tr>
+<tr>
+<td>작은 형식의 행렬곱 신기록(5×5, 6×6, 직사각)</td>
+<td>수학</td>
+<td>높음 · 80% (±12)</td>
+<td>행렬곱 기록표</td>
+</tr>
+<tr>
+<td>단위거리 추측급 <strong>'이름 있는 추측' 2–5개 추가
+해결</strong></td>
+<td>수학</td>
+<td>높음 · 74% (±15) · 근거 <a
+href="https://arxiv.org/abs/2601.22401">Google DeepMind
+(Aletheia)</a></td>
+<td>전문가 동반 논문, 상위 학술지 투고</td>
+</tr>
+<tr>
+<td>산란진폭 고루프 계산과 새 닫힌 공식(N=4 SYM, QCD·중력)</td>
+<td>물리</td>
+<td>높음 · 70% (±18)</td>
+<td>진폭 커뮤니티 검증</td>
+</tr>
+<tr>
+<td>AI가 주도한 결과의 4대 수학지(Annals·Acta·JAMS·Inventiones) 게재
+승인</td>
+<td>수학</td>
+<td>중간 · 38% (±20)</td>
+<td>게재 승인 공지</td>
+</tr>
+<tr>
+<td>대형 정리의 AI 형식화 확산(FLT의 Mathlib 통합, 기하화 추측,
+유한단순군 분류 일부, 최근 필즈상 업적)</td>
+<td>수학</td>
+<td>중간 · 60% (±15) · 근거 <a
+href="https://www.anthropic.com/research/formalizing-fermats-last-theorem">Anthropic</a></td>
+<td>Lean FRO·Buzzard·Tao 검토</td>
+</tr>
+<tr>
+<td>외력 Navier–Stokes 증명에 대한 학계 판정</td>
+<td>수학</td>
+<td>중간 · 45% (±20)</td>
+<td>저널 게재, Clay 연구소·Fefferman·Tao 평가</td>
+</tr>
+<tr>
+<td><strong>경계 없는 3차원 Euler/Boussinesq 불안정 특이점의 컴퓨터 보조
+엄밀 증명</strong></td>
+<td>물리·해석</td>
+<td>중간 · 40% (±20) · 근거 <a
+href="https://arxiv.org/abs/2509.14185">arXiv</a></td>
+<td>arXiv math.AP</td>
+</tr>
+<tr>
+<td>AI 설계 양자오류정정 코드·디코더의 실제 하드웨어 적용</td>
+<td>물리</td>
+<td>중간 · 62% (±15)</td>
+<td>Google·IBM·Quantinuum 논리오류율 개선</td>
+</tr>
+<tr>
+<td>AI 설계 실험(간섭계·양자광학)의 실제 장치 구현</td>
+<td>물리</td>
+<td>중간 · 60% (±15)</td>
+<td>실험 논문</td>
+</tr>
+<tr>
+<td>기호회귀·LLM으로 새 경험법칙을 발견하고 독립 데이터로 확인</td>
+<td>물리</td>
+<td>중간 · 38% (±20)</td>
+<td>사전등록 독립 검증</td>
+</tr>
+<tr>
+<td>연구 수준 물리 벤치마크(CritPt·TPBench) 60% 이상</td>
+<td>물리</td>
+<td>중간 · 50% (±20) · 근거 <a
+href="https://arxiv.org/abs/2509.26574">CritPt 팀</a></td>
+<td>리더보드</td>
+</tr>
+<tr>
+<td>행렬곱 지수 ω의 점근적 개선을 AI가 주도</td>
+<td>수학</td>
+<td>낮음 · 15% (±12)</td>
+<td>ω 갱신 논문</td>
+</tr>
+<tr>
+<td>외력 없는 Navier–Stokes(밀레니엄 문제의 자연스러운 형태) 해결</td>
+<td>수학</td>
+<td>낮음 · 5% (±5)</td>
+<td>독립 형식검증 + 전문가 합의</td>
+</tr>
+<tr>
+<td>핵융합 플라즈마 AI 제어의 새 장치 적용(SPARC 등)</td>
+<td>물리</td>
+<td>낮음 · 30% (±20)</td>
+<td>실증 발표</td>
+</tr>
+</tbody>
+</table>
+<h3 id="s7-11">7.11 수량 전망 (2027, 낮음 / 기준 / 높음)</h3>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>2027</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FrontierMath-Erdős 68문제 중 AI 누적 해결 수(2027년 말)</td>
+<td>25 / <strong>35</strong> / 50</td>
+</tr>
+<tr>
+<td>FrontierMath-Erdős 고정 프로토콜 최고 점수</td>
+<td>20% / <strong>35%</strong> / 60%</td>
+</tr>
+<tr>
+<td>erdosproblems.com에서 AI 기여로 '해결' 전환되는 문제 수</td>
+<td>60 / <strong>150</strong> / 300</td>
+</tr>
+<tr>
+<td>AI 핵심 결과의 4대 수학지 게재 승인</td>
+<td>0 / <strong>2</strong> / 6</td>
+</tr>
+<tr>
+<td>AI가 완전 형식화한 랜드마크급 정리(FLT급)</td>
+<td>1 / <strong>3</strong> / 8</td>
+</tr>
+<tr>
+<td>AI 기여가 명시된 물리 이론 '새 결과' 논문</td>
+<td>5 / <strong>15</strong> / 40</td>
+</tr>
+<tr>
+<td>Clay 연구소의 밀레니엄 문제 수상 결정</td>
+<td><strong>0</strong> (게재 후 2년 규정)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>2027년에 닿지 않을 것</strong>: 리만 가설, P vs NP, 호지
+추측, BSD 추측(일반형), 양-밀스 질량간극, 외력 없는 Navier–Stokes,
+양자중력 같은 '새 이론 건설', 실험 없이 확정되는 새 물리 법칙(암흑물질
+정체 등).</p>
+<h3 id="s7-12">7.12 규범과 검증</h3>
+<ul>
+<li><strong>Lean 형식검증이 사실상 표준</strong>이 됐습니다. Epoch는
+Lean 증명만 정답으로 인정합니다. 다만 진술을 형식화하는 단계의 오류
+가능성은 남습니다.</li>
+<li><strong>형식화 비용이 비대칭적입니다.</strong> 18쪽 논문이 Lean으로
+120만 줄이 됩니다.</li>
+<li><strong>AI 저자 불인정</strong>: London Mathematical Society는 AI를
+저자로 인정하지 않고, 증명에 AI를 쓴 경우 공개를 의무화합니다. Leiden
+선언(2026-06)은 공개·인간 책임·귀속 원칙을 제안했습니다(국제수학연맹
+IMU가 공식 지지).</li>
+<li><strong>위험</strong>: 공로 분쟁(Navier–Stokes), '무의식적 표절'과
+문헌 누락, 아무도 읽지 않은 100–200쪽 AI 논문으로 인한 검증 부담 전가,
+'AI 생성 수학의 위기'론</li>
+<li><strong>경시대회의 한계</strong>: IMO는 AI 참가 결과의 계산량과 인간
+개입을 검증할 수 없다고 밝혔습니다.</li>
+</ul>
+<h3 id="s7-13">7.13 한국 제언과 국가인공지능전략위원회 안건</h3>
+<ol type="1">
+<li><strong>연구 동료 운영 인프라</strong>: 출연연 공용 에이전트
+플랫폼을 만듭니다. 보안망 안의 자체 모델과 상용 프런티어 API를
+이중화하고, 연구데이터·장비 API(MCP류)를 표준화하며, 로그와 출처를
+추적합니다.</li>
+<li><strong>도메인 동료</strong>: 통신·6G·AI-RAN·반도체 연구에서
+시뮬레이터(링크·시스템 레벨)와 테스트베드에 연결된 **'폐루프 연구
+에이전트'**를 시범 구축합니다. 통신 연구는 물리 실험이 아닌 단계의
+비중이 높아 가속할 여지가 큽니다.</li>
+<li><strong>검증·평가 국가 인프라</strong>: 한국어·국내 데이터 기반 과학
+에이전트 벤치마크, 재현성 자동 점검, 환각 인용 검사, AI 기여 공개 양식을
+만들고 표준(TTA·ISO/IEC JTC 1/SC 42) 의제로 연결합니다.</li>
+<li><strong>도입 순서(2027 상반기)</strong>
+<ul>
+<li>문헌·특허 조사와 데이터 분석부터 연구원 전원에게 개방합니다.</li>
+<li>가설은 '복수 가설 + 근거 + 반증 실험안' 형식으로 받아 연구책임자가
+채택합니다.</li>
+<li>코드와 실험은 샌드박스에서 실행합니다.</li>
+<li>결과는 사람이 다시 검증한 뒤 기록합니다. 검증에 쓴 시간도 공식
+업무량으로 인정합니다.</li>
+</ul></li>
+<li><strong>컴퓨트·데이터</strong>: 국가 GPU 중 과학 에이전트용 추론
+쿼터를 출연연에 배정하고, 연구데이터를 에이전트가 쓸 수
+있게(메타데이터·API·접근 감사) 정비합니다. 보안 과제는 온프레미스 모델을
+씁니다.</li>
+<li><strong>IP·크레딧</strong>: 발명자는 자연인 원칙을 유지하고, AI 사용
+내역을 연구노트와 직무발명 신고에 기록합니다. 성과평가는 논문 수보다
+검증된 발견, 재현 가능한 산출물, 표준 기여에 가중치를 둡니다.</li>
+<li><strong>인재</strong>: 주니어 연구원에게 '에이전트 없는 기초 훈련'
+구간을 두고 실험 설계·검증 교육을 병행해 탈숙련을 막습니다.</li>
+<li><strong>리스크 관리</strong>: 연구 주제 동질화, 외산 모델
+의존(유출·가격·수출통제), 환각 인용, 과잉 논문으로 인한 평가 왜곡,
+생물보안 이중용도에 대비합니다. 기관 AI 연구윤리 가이드와 레드팀을
+2027년 안에 만듭니다.</li>
+<li><strong>2027 현실적 목표(추정)</strong>
+<ul>
+<li>출연연 연구자 과반이 매주 AI 동료를 사용</li>
+<li>출연연에서 AI가 주도한 가설의 실험 검증 사례 수 건~수십 건 확보</li>
+<li>국가과학AI연구센터와 공용 플랫폼 연동 시범 가동</li>
+</ul></li>
+</ol>
+<ul>
+<li><strong>위원회 안건(제8조 기준)</strong>: 출연연 공용 연구 에이전트
+플랫폼을 국가 R&amp;D 전략에 넣고(3호), 과학 에이전트용 GPU
+쿼터(4호·6호)와 연구데이터 개방(6의2호)을 의결하며, K-문샷과의 연계를
+이행점검합니다(2의3호).</li>
+</ul>
+<h4 id="수학물리-난제-분야">수학·물리 난제 분야</h4>
+<ul>
+<li><strong>참여 실적</strong>: DeepMind Aletheia의 Erdős 논문에
+서울대·KIAS·연세대 수학자들이 기여자로 참여했습니다.</li>
+<li><strong>국가 공백</strong>: 국가 차원의 'AI 수학' 전용 프로그램은
+확인되지 않았습니다. 공백이자 기회입니다.</li>
+<li><strong>제안</strong>
+<ul>
+<li>KIAS·NIMS 'AI–수학 협업 센터'를 만들어 Erdős류 문제를 공동으로
+공략하고 Lean 검증 인력을 양성합니다.</li>
+<li>Lean·Mathlib 한국 커뮤니티를 키우고 형식화 데이터셋을 만듭니다.</li>
+<li>IBS 이론물리와 대학 hep-th 그룹이 산란진폭·격자 QCD에 프런티어
+모델을 결합합니다.</li>
+<li>KSTAR·PAL-XFEL·RAON 같은 대형 시설에 AI 실험 설계·제어 에이전트를
+붙입니다.</li>
+<li>KISTI 슈퍼컴과 국가 AI 컴퓨팅을 '추론 연산 공용 풀'로 배분합니다.
+문제 하나에 수백~22만 달러 규모의 연산이 듭니다.</li>
+</ul></li>
+<li><strong>위원회 안건(제8조 3호·8호)</strong>: Lean 기반 검증
+파이프라인과 AI 기여 표기 메타데이터 같은 '검증 가능한 AI 과학' 표준화를
+국가 표준 전략에 넣고 ISO/IEC JTC 1/SC 42 등에 제안하도록
+지원합니다.</li>
+</ul>
+<hr />
+
+<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch7">전체 보고서에서 보기</a><a href="../">대시보드</a><span class="sp"></span><a href="ch6.html" rel="prev">← 6. 특화 파운데이션 모델: 2026 현황과 202</a><a href="ch8.html" rel="next">8. 바이브 코딩·코딩 에이전트, 산업별 확산, 조 →</a></nav>
+</main>
+</div>
+<script>
+  // Wrap tables for horizontal scroll and colour likelihood words; static enhancement only.
+  document.querySelectorAll('main table').forEach((t) => {
+    const w = document.createElement('div'); w.className = 'tablewrap'; t.parentNode.insertBefore(w, t); w.appendChild(t);
+  });
+  document.querySelectorAll('main td').forEach((td) => {
+    const v = td.textContent.trim();
+    if (v === '높음') td.classList.add('tag-hi'); else if (v === '중간') td.classList.add('tag-mid'); else if (v === '낮음') td.classList.add('tag-lo');
+  });
+  document.querySelectorAll('main h2[id], main h3[id]').forEach((h) => {
+    const a = document.createElement('a'); a.className = 'hl'; a.href = '#' + h.id; a.textContent = '#';
+    a.setAttribute('aria-label', '이 제목의 링크'); h.appendChild(a);
+  });
+</script>
+<script>
+/* AI2027 in-page full-text search (shared by dashboard and report).
+ * Uses the CSS Custom Highlight API so matched text is highlighted WITHOUT mutating the DOM
+ * (keeps the dashboard's one-writer rule intact). Falls back to scroll-only where unsupported.
+ * Usage: AI27Search({ root: 'main', input: 'q-input', results: 'q-results', info: 'q-info',
+ *                     exclude: '.rail', reportLink: 'a[href="report.html"]' })
+ */
+window.AI27Search = function (cfg) {
+  const root = document.querySelector(cfg.root);
+  const input = document.getElementById(cfg.input);
+  const out = document.getElementById(cfg.results);
+  const info = document.getElementById(cfg.info);
+  if (!root || !input || !out || !info) return;
+  const BLOCKS = 'h2,h3,h4,p,li,td,th,blockquote,figcaption,summary,dt,dd,article';
+  const MAX_RESULTS = 80;
+  const MAX_RANGES = 3000;
+  const hl = typeof CSS !== 'undefined' && CSS.highlights && typeof Highlight === 'function';
+  let results = [];
+  let active = -1;
+  let timer = 0;
+
+  const norm = (s) => s.toLocaleLowerCase('ko');
+  const terms = (q) => norm(q).split(/\s+/).filter(Boolean).slice(0, 6);
+  const excluded = (el) => (cfg.exclude && el.closest(cfg.exclude)) || el.closest('[data-search-skip]');
+
+  function leafMatches(ts) {
+    const hits = [];
+    root.querySelectorAll(BLOCKS).forEach((el) => {
+      if (excluded(el)) return;
+      const t = norm(el.textContent || '');
+      if (ts.every((w) => t.includes(w))) hits.push(el);
+    });
+    const set = new Set(hits);
+    // keep the innermost matching block only
+    return hits.filter((el) => ![...el.querySelectorAll(BLOCKS)].some((c) => set.has(c)));
+  }
+
+  function headingFor(el, heads) {
+    let h = null;
+    for (const x of heads) {
+      if (x === el || x.compareDocumentPosition(el) & Node.DOCUMENT_POSITION_FOLLOWING) h = x; else break;
+    }
+    return h;
+  }
+
+  function contextOf(el, heads) {
+    const sec = el.closest('section');
+    const h2 = sec && sec.querySelector('h2');
+    const card = el.closest('.ai27-card, .ai27-tablewrap');
+    let h3 = card && card.querySelector('h3');
+    if (!h3 && card && card.previousElementSibling) h3 = card.previousElementSibling.querySelector && card.previousElementSibling.querySelector('h3');
+    if (h2) return [h2.textContent.trim(), h3 ? h3.textContent.trim() : ''].filter(Boolean).join(' › ');
+    const h = headingFor(el, heads);
+    return h ? h.textContent.trim() : '';
+  }
+
+  function rangesIn(el, ts, acc) {
+    const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
+    let n;
+    while ((n = walker.nextNode()) && acc.length < MAX_RANGES) {
+      const t = norm(n.nodeValue);
+      for (const w of ts) {
+        let i = t.indexOf(w);
+        while (i !== -1 && acc.length < MAX_RANGES) {
+          const r = new Range(); r.setStart(n, i); r.setEnd(n, i + w.length); acc.push(r);
+          i = t.indexOf(w, i + w.length);
+        }
+      }
+    }
+    return acc;
+  }
+
+  function snippet(el, ts) {
+    const text = (el.textContent || '').replace(/\s+/g, ' ').trim();
+    const lower = norm(text);
+    const at = Math.max(0, lower.indexOf(ts[0]));
+    const start = Math.max(0, at - 40);
+    const s = (start > 0 ? '…' : '') + text.slice(start, start + 130) + (start + 130 < text.length ? '…' : '');
+    const frag = document.createDocumentFragment();
+    const ls = norm(s);
+    let i = 0;
+    while (i < s.length) {
+      let best = -1; let len = 0;
+      for (const w of ts) { const j = ls.indexOf(w, i); if (j !== -1 && (best === -1 || j < best)) { best = j; len = w.length; } }
+      if (best === -1) { frag.append(s.slice(i)); break; }
+      frag.append(s.slice(i, best));
+      const m = document.createElement('mark'); m.textContent = s.slice(best, best + len); frag.append(m);
+      i = best + len;
+    }
+    return frag;
+  }
+
+  function clear() {
+    results = []; active = -1;
+    out.replaceChildren(); info.textContent = '';
+    if (hl) { CSS.highlights.delete('q-hit'); CSS.highlights.delete('q-active'); }
+  }
+
+  function go(i) {
+    if (!results.length) return;
+    active = (i + results.length) % results.length;
+    const el = results[active].el;
+    const det = el.closest('details'); if (det && !det.open) det.open = true;
+    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    if (hl) CSS.highlights.set('q-active', new Highlight(...rangesIn(el, results[active].ts, [])));
+    out.querySelectorAll('button').forEach((b, k) => b.setAttribute('aria-current', k === active ? 'true' : 'false'));
+    info.textContent = `${active + 1} / ${results.length}${results.length >= MAX_RESULTS ? '+' : ''}건`;
+  }
+
+  function run(q) {
+    const ts = terms(q);
+    if (!ts.length) { clear(); return; }
+    const heads = [...root.querySelectorAll('h2,h3')];
+    const els = leafMatches(ts).slice(0, MAX_RESULTS);
+    results = els.map((el) => ({ el, ts }));
+    active = -1;
+    if (hl) {
+      const acc = [];
+      els.forEach((el) => rangesIn(el, ts, acc));
+      CSS.highlights.set('q-hit', new Highlight(...acc));
+      CSS.highlights.delete('q-active');
+    }
+    info.textContent = els.length ? `${els.length}${els.length >= MAX_RESULTS ? '+' : ''}건` : '결과 없음';
+    out.replaceChildren(...els.map((el, k) => {
+      const li = document.createElement('li');
+      const b = document.createElement('button'); b.type = 'button';
+      const ctx = document.createElement('span'); ctx.className = 'q-ctx'; ctx.textContent = (contextOf(el, heads) || '본문').replace(/\s+/g, ' ');
+      const sn = document.createElement('span'); sn.className = 'q-snip'; sn.append(snippet(el, ts));
+      b.append(ctx, sn); b.addEventListener('click', () => go(k));
+      li.append(b); return li;
+    }));
+    const rl = cfg.reportLink && document.querySelector(cfg.reportLink);
+    if (rl) {
+      const li = document.createElement('li'); li.className = 'q-more';
+      const a = document.createElement('a');
+      a.href = rl.getAttribute('href').split('#')[0] + '#q=' + encodeURIComponent(q.trim());
+      a.target = rl.target || ''; if (a.target) a.rel = 'noopener';
+      a.textContent = `상세 보고서에서 '${q.trim()}' 검색 →`;
+      li.append(a); out.append(li);
+    }
+  }
+
+  input.addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(() => run(input.value), 180); });
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') { e.preventDefault(); if (!results.length) run(input.value); go(e.shiftKey ? active - 1 : active + 1); }
+    if (e.key === 'Escape') { input.value = ''; clear(); }
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === '/' && !/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName)) { e.preventDefault(); input.focus(); }
+  });
+  try {
+    const m = /[#&?]q=([^&]+)/.exec(location.hash + '&' + location.search);
+    if (m) { input.value = decodeURIComponent(m[1]); setTimeout(() => { run(input.value); go(0); }, cfg.delay || 300); }
+  } catch (_) { /* sandboxed location: ignore */ }
+};
+
+AI27Search({ root: 'main', input: 'q-input', results: 'q-results', info: 'q-info' });
+</script>
+
+</body>
+</html>

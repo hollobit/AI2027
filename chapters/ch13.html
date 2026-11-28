@@ -1,0 +1,1039 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>13. 사회경제·노동 이슈, 기본소득·기본사회와 보편적 AI
+접근 · AI 2027 전망 보고서</title>
+<meta name="description" content="13. 사회경제·노동 이슈, 기본소득·기본사회와 보편적 AI
+접근">
+<link rel="canonical" href="https://hollobit.github.io/AI2027/chapters/ch13.html">
+</head>
+<body>
+<style>.chnav{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;font-size:.86rem;margin:0 0 18px;color:var(--muted)}.chnav a{text-decoration:none}.chnav .sp{flex:1}</style><meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;600&family=Noto+Serif+KR:wght@500;700;900&display=swap">
+<style>
+  /* Observatory report: long-form reading column + sticky contents rail */
+  :root {
+    --bg: #f3f4f1; --paper: #ffffff; --fg: #14161c; --muted: #5b6170; --line: #dcdfe4;
+    --accent: #3d40d4; --accent-2: #c25a22; --soft: #eef0f6; --ok: #1f7a4a; --warn: #985a00; --bad: #b3362f;
+    --display: 'Noto Serif KR', AppleMyungjo, Georgia, serif;
+    --text: 'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', system-ui, sans-serif;
+    --mono: 'IBM Plex Mono', ui-monospace, Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+    --bg: #0b0d12; --paper: #141821; --fg: #eef0f4; --muted: #8f96a5; --line: #262b37;
+    --accent: #8d90f8; --accent-2: #f29a62; --soft: #1b2030; --ok: #4cc38a; --warn: #e5a33b; --bad: #f07b72; color-scheme: dark; } }
+  :root[data-theme="dark"] {
+    --bg: #0b0d12; --paper: #141821; --fg: #eef0f4; --muted: #8f96a5; --line: #262b37;
+    --accent: #8d90f8; --accent-2: #f29a62; --soft: #1b2030; --ok: #4cc38a; --warn: #e5a33b; --bad: #f07b72; color-scheme: dark; }
+  body { background: var(--bg); color: var(--fg); font-family: var(--text); font-size: 15.5px; line-height: 1.75; letter-spacing: -0.005em;
+    padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+  .wrap { max-width: 1180px; margin: 0 auto; padding-block: clamp(20px, 4vw, 48px); display: grid; grid-template-columns: 250px minmax(0, 1fr); gap: 48px; }
+  @media (max-width: 900px) { .wrap { grid-template-columns: minmax(0, 1fr); gap: 24px; } .rail { position: static !important; max-height: none !important; } }
+  .rail { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 20px); align-self: start; max-height: calc(100vh - 40px); overflow: auto; font-size: 13px; }
+  .rail .label { font-family: var(--mono); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
+  .rail ul { list-style: none; margin: 0; padding: 0; }
+  .rail li { margin: 0; }
+  .rail ul ul { padding-left: 12px; border-left: 1px solid var(--line); margin: 2px 0 8px 2px; }
+  .rail ul ul ul { display: none; }
+  .rail a { display: block; padding: 3px 0; color: var(--muted); text-decoration: none; line-height: 1.45; }
+  .rail a:hover, .rail a:focus-visible { color: var(--accent); outline: none; }
+  .rail > ul > li > a { color: var(--fg); font-weight: 500; }
+  main { min-width: 0; background: var(--paper); border: 1px solid var(--line); border-radius: 16px; padding: clamp(22px, 5vw, 60px); }
+  main > * { max-width: 74ch; }
+  main > table, main > .tablewrap, main > details { max-width: none; }
+  h1 { font-family: var(--display); font-weight: 900; font-size: clamp(2.2rem, 5.5vw, 3.5rem); line-height: 1.08; letter-spacing: -0.03em; margin: 0 0 6px; text-wrap: balance; }
+  h1 + h3 { font-family: var(--display); font-weight: 500; font-size: clamp(1.1rem, 2.2vw, 1.4rem); color: var(--accent); margin: 0 0 14px; letter-spacing: -0.01em; }
+  h2 { font-family: var(--display); font-weight: 700; font-size: clamp(1.5rem, 3vw, 2rem); letter-spacing: -0.02em; line-height: 1.25; margin: 2.6em 0 .6em; padding-top: 1.2em; border-top: 1px solid var(--line); text-wrap: balance; scroll-margin-top: 20px; }
+  h3 { font-size: 1.12rem; font-weight: 600; margin: 1.9em 0 .5em; letter-spacing: -0.01em; scroll-margin-top: 20px; }
+  h4 { font-size: 1rem; font-weight: 600; margin: 1.8em 0 .3em; scroll-margin-top: 20px; }
+  p, li { text-wrap: pretty; }
+  strong { font-weight: 600; }
+  a { color: var(--accent); text-underline-offset: 3px; text-decoration-thickness: 1px; overflow-wrap: anywhere; }
+  blockquote { margin: 1.2em 0; padding: 14px 18px; background: var(--soft); border-radius: 10px; color: var(--fg); border: 0; }
+  blockquote p { margin: 0; }
+  hr { border: 0; height: 0; margin: 0; }
+  ul, ol { padding-left: 1.3em; }
+  li + li { margin-top: .25em; }
+  code { font-family: var(--mono); font-size: .86em; background: var(--soft); padding: 1px 6px; border-radius: 5px; overflow-wrap: anywhere; }
+  .tablewrap { overflow-x: auto; margin: 1.2em 0; border: 1px solid var(--line); border-radius: 12px; }
+  table { border-collapse: collapse; width: 100%; font-size: 13.5px; line-height: 1.55; }
+  th { text-align: left; font-family: var(--mono); font-weight: 500; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); padding: 10px 12px; border-bottom: 1px solid var(--line); background: var(--soft); white-space: nowrap; }
+  td { padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; font-variant-numeric: tabular-nums; }
+  tr:last-child td { border-bottom: 0; }
+  td:first-child { font-weight: 500; min-width: 120px; }
+  details { margin: 1em 0; }
+  summary { cursor: pointer; color: var(--muted); }
+  .meta { font-family: var(--mono); font-size: 12px; color: var(--muted); letter-spacing: .04em; }
+  .appendix-head { margin-top: 4em; }
+  h1.part { font-size: clamp(1.25rem, 2.6vw, 1.6rem); font-weight: 800; color: var(--accent); margin: 64px 0 8px; padding-top: 18px; border-top: 3px solid var(--accent); letter-spacing: -0.01em; }
+  #appendix h1 { font-size: clamp(1.6rem, 3.5vw, 2.2rem); margin-top: 0; }
+  #appendix h4 { font-family: var(--display); font-weight: 700; font-size: 1.02rem; padding-top: 1em; border-top: 1px dashed var(--line); }
+  .tag-hi { color: var(--ok); font-weight: 600; } .tag-mid { color: var(--warn); font-weight: 600; } .tag-lo { color: var(--bad); font-weight: 600; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  /* full-text search */
+  .q { margin-bottom: 22px; }
+  .q input { width: 100%; box-sizing: border-box; font: inherit; font-size: 13.5px; color: var(--fg); background: var(--paper); border: 1px solid var(--line); border-radius: 10px; padding: 8px 11px; }
+  .q input:focus { outline: 2px solid var(--accent); outline-offset: 1px; border-color: transparent; }
+  .q-info { font-family: var(--mono); font-size: 11px; color: var(--muted); margin: 6px 2px 0; min-height: 1em; }
+  .q-results { list-style: none; margin: 6px 0 0; padding: 0; max-height: 46vh; overflow: auto; border-left: 1px solid var(--line); }
+  .q-results:empty { display: none; }
+  .q-results button { all: unset; box-sizing: border-box; display: block; width: 100%; cursor: pointer; padding: 6px 8px 6px 10px; border-radius: 0 8px 8px 0; line-height: 1.45; }
+  .q-results button:hover, .q-results button:focus-visible, .q-results button[aria-current="true"] { background: var(--soft); }
+  .q-ctx { display: block; font-size: 11px; color: var(--accent); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .q-snip { display: block; font-size: 12px; color: var(--muted); }
+  .q-snip mark { background: none; color: var(--fg); font-weight: 600; }
+  ::highlight(q-hit) { background-color: rgba(229, 163, 59, .35); }
+  ::highlight(q-active) { background-color: #e5a33b; color: #14161c; }
+  figure { margin: 1.6em 0; max-width: none; }
+  figure svg { display: block; width: 100%; height: auto; }
+  figcaption { font-size: 13px; color: var(--muted); margin-top: 8px; line-height: 1.6; }
+  main > figure { max-width: none; }
+  .dl { display: flex; justify-content: flex-end; align-items: center; gap: 8px; margin: 0 0 14px; font-size: .85rem; color: var(--muted, #5b6170); }
+  .dl a { font-weight: 600; text-decoration: none; padding: 3px 10px; border: 1px solid var(--line, #dcdfe4); border-radius: 999px; }
+  .dl a:hover { border-color: currentColor; }
+  .hl { margin-left: .4em; font-size: .7em; color: var(--muted); text-decoration: none; opacity: 0; transition: opacity .15s; }
+  h2:hover .hl, h3:hover .hl, .hl:focus { opacity: 1; }
+  a.xref { color: inherit; text-decoration: underline dotted; text-underline-offset: 3px; }
+  @page { size: A4; margin: 16mm 14mm; }
+  @media print { .dl { display: none !important; } html, body { background: #fff !important; } main { box-shadow: none !important; border-radius: 0 !important; padding: 0 !important; max-width: none !important; } figure, table, blockquote { break-inside: avoid; } h2, h3 { break-after: avoid; } .rail { display: none; } .wrap { display: block; } main { border: 0; } }
+</style>
+
+<div class="wrap">
+  <nav class="rail" aria-label="목차">
+    <div class="q" role="search">
+      <label class="label" for="q-input" style="display:block">Search</label>
+      <input id="q-input" type="search" placeholder="보고서 검색  ( / )" autocomplete="off" aria-describedby="q-info">
+      <div id="q-info" class="q-info" aria-live="polite"></div>
+      <ul id="q-results" class="q-results" aria-label="검색 결과"></ul>
+    </div>
+    <div class="label">Contents</div><ul><li><a href="#s13-1">13.1 2026년에 관측된 것</a></li><li><a href="#s13-2">13.2 노동 이슈 전망</a></li><li><a href="#s13-3">13.3 사회경제 이슈</a></li><li><a href="#s13-4">13.4 기본소득·기본사회: 2026 현황</a></li><li><a href="#s13-5">13.5 기본소득·기본사회 전망</a></li><li><a href="#s13-6">13.6 보편적 AI 접근: &#x27;모두의 AI&#x27;와 디지털 포용</a></li><li><a href="#s13-7">13.7 AI 공론장과 숙의: 시민 참여의 실험</a></li><li><a href="#s13-8">13.8 교육: AI 학교·평가 변화</a></li><li><a href="#s13-9">13.9 한국 정책 옵션</a></li><li><a href="#s13-10">13.10 국가인공지능전략위원회 안건(제안, 인공지능기본법
+제8조 기준)</a></li></ul></nav>
+  <main>
+<div class="dl" aria-label="다운로드">다운로드
+      <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.pdf">PDF</a>
+      <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.docx">Word</a>
+      <a href="https://hollobit.github.io/AI2027/downloads/AI_2027_Outlook_Report_ko.md">Markdown</a> · <a href="https://hollobit.github.io/AI2027/chapters/">장별 보기</a></div>
+<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch13">전체 보고서에서 보기</a><a href="../">대시보드</a><span class="sp"></span><a href="ch12.html" rel="prev">← 12. 지식·창작 생태계: 논문·특허·저작권·창작 </a><a href="ch14.html" rel="next">14. 소버린 AI와 국가 AI 문샷 →</a></nav><p class="label" style="margin:0 0 4px">제3부 산업·경제·사회</p><h2 id="ch13">13. 사회경제·노동 이슈, 기본소득·기본사회와 보편적 AI
+접근</h2>
+<blockquote>
+<p>자료: Stanford Digital Economy Lab 'Canaries' 업데이트(2026-08),
+Challenger 감원 보고(2026-10), 통계청, 한국은행 이슈노트,
+현대경제연구원, KDI·KIEP, 농식품부 농어촌 기본소득 공모,
+기본사회위원회·국회 의안, Anthropic Economic Futures. 원문은
+<code>PDF/socioeconomic/</code>에 있습니다.</p>
+</blockquote>
+<h3 id="s13-1">13.1 2026년에 관측된 것</h3>
+<ul>
+<li><strong>충격은 해고가 아니라 '채용 축소'로 나타났습니다.</strong> AI
+노출이 큰 직군에서 22–25세의 고용 격차가 15%에서 약 19%로
+커졌습니다(Stanford, ADP 급여 데이터 2026-06까지). 다만 연구진은 인과
+추정이 아니라고 밝혔습니다.</li>
+<li><strong>'AI 사유 감원'은 실제보다 명분일 수 있습니다.</strong>
+<ul>
+<li>미국에서 AI를 사유로 든 감원 발표는 2026년 1–10월 121,401명으로,
+전체 감원의 약 20%였습니다(Challenger).</li>
+<li>월별로는 5월 38,579명이 정점이었고, 10월에는 1,265명(3% 미만)으로
+줄었습니다.</li>
+<li>미국 실업률은 10월 4.1%로 완만합니다.</li>
+<li>McKinsey 조사에서도 실제 감원은 14%로, 예상(32%)보다 훨씬
+적었습니다. 그런데 다음 해 감원 예상은 39%로 오히려 올랐습니다.</li>
+</ul></li>
+<li><strong>한국</strong>
+<ul>
+<li>실업률 2.0%, 청년 실업률 5.2%입니다(2026-10).</li>
+<li>청년 취업자는 46개월 연속 감소했고, 고용 증가는 60세 이상이
+이끌었습니다(현대경제연구원).</li>
+<li>근로자의 66.5%가 업무에 AI를 쓰고 시간을 9.2% 절감하지만, 절감
+시간과 산출의 상관은 0.08에 그쳤습니다(한국은행).</li>
+<li>반도체 산출 10억 원당 취업유발은 2.4명으로, 전 산업 평균 8.2명보다
+훨씬 적습니다. 성장이 고용으로 번지지 않는 구조입니다.</li>
+</ul></li>
+</ul>
+<h3 id="s13-2">13.2 노동 이슈 전망</h3>
+<table>
+<thead>
+<tr>
+<th>이슈</th>
+<th>가능성 · 확률(±불확도)</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>청년·신입 채용 절벽의 구조화</td>
+<td>높음 · 82% (±10) · 근거 <a
+href="https://digitaleconomy.stanford.edu/news/canariesaug26/">Stanford
+Digital Economy…</a>, <a
+href="https://spri.kr/posts/view/24037?code=data_all">SPRi
+소프트웨어정책연구소</a></td>
+<td>22–25세 격차 20% 초과, 한국 청년 취업자 감소 50개월 초과 가능.
+사무·SW·마케팅·고객지원 신입 공고 급감</td>
+</tr>
+<tr>
+<td>'AI 감원' 명분화 논쟁</td>
+<td>높음 · 78% (±15) · 근거 <a
+href="https://www.hcamag.com/us/specialization/transformation/ai-blamed-for-121401-job-cuts-but-the-labor-data-isnt-buying-it/594129">HCAMag
+(Challenger 자료 인용)</a></td>
+<td>발표와 실측의 괴리. 감원 사유 공시 의무화 요구 확산</td>
+</tr>
+<tr>
+<td>중간관리층 축소·조직 평탄화</td>
+<td>중간 · 55% (±20) · 근거 <a
+href="https://www.bcg.com/ja-jp/press/30september2026-ai-starting-to-pay-off-companies-generate-value">BCG</a>,
+<a
+href="https://www.idc.com/resource-center/press-releases/idc-futurescape-2027-predicts-60-of-enterprises-will-run-a-majority-of-their-business-processes-ai-first-by-2029-up-from-13-in-2026/">IDC</a></td>
+<td>에이전트가 보고·조정·1차 검토를 흡수하고 '에이전트 감독' 직무가
+신설됨</td>
+</tr>
+<tr>
+<td>AI 도입이 단체교섭 의제로(노란봉투법)</td>
+<td>중간 · 60% (±15)</td>
+<td>원청 교섭 범위가 넓어진 상태에서
+금융·콜센터·자동차(로봇)·IT서비스·방송의 AI 도입이 쟁점화</td>
+</tr>
+<tr>
+<td>창작 노동의 디지털 레플리카·보상 갈등</td>
+<td>중간 · 60% (±15) · 근거 <a
+href="https://en.wikipedia.org/wiki/SAG-AFTRA">en.wikipedia.org</a>, <a
+href="https://techcrunch.com/2025/09/30/openai-is-launching-the-sora-app-its-own-tiktok-competitor-alongside-the-sora-2-model/">techcrunch.com</a></td>
+<td>배우·성우·작가 노조가 동의와 최저 보상 기준 요구</td>
+</tr>
+<tr>
+<td>알고리즘 관리 규제의 집행</td>
+<td>중간 · 60% (±15) · 근거 <a
+href="https://eeas.europa.eu/delegations/chile/artificial-intelligence-council-gives-final-green-light-simplify-and-streamline-rules_en">eeas.europa.eu</a>,
+<a
+href="https://digital-strategy.ec.europa.eu/en/news/eu-agrees-simplify-ai-rules-boost-innovation-and-ban-nudification-apps-protect-citizens">European
+Commission (DG …</a></td>
+<td>EU 플랫폼노동지침 전환(2026-12), EU AI Act 고용 분야 고위험
+규칙(2027-12)</td>
+</tr>
+<tr>
+<td>정년연장·주4.5일제와 'AI 생산성 분배' 논리의 결합</td>
+<td>중간 · 55% (±20)</td>
+<td>청년 채용 잠식 우려와 맞물려 세대 갈등</td>
+</tr>
+<tr>
+<td>광범위한 화이트칼라 대량 실업</td>
+<td>낮음 · 8% (±10) · 근거 <a
+href="https://www.hcamag.com/us/specialization/transformation/ai-blamed-for-121401-job-cuts-but-the-labor-data-isnt-buying-it/594129">HCAMag
+(Challenger 자료 인용)</a>, <a
+href="https://spri.kr/posts/view/24037?code=data_all">SPRi
+소프트웨어정책연구소</a> · 반론 <a
+href="https://fortune.com/2026/01/27/country-of-geniuses-anthropic-dario-amodei-50-million-nobel-prize-winners/">Anthropic</a></td>
+<td>미국 실업률 5% 초과, 한국 3.5% 초과 수준</td>
+</tr>
+</tbody>
+</table>
+<p><strong>노동시장 시나리오</strong></p>
+<table>
+<thead>
+<tr>
+<th>시나리오</th>
+<th>확률(±불확도)</th>
+<th>모습</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>점진적 재배치</td>
+<td>55% (±15)</td>
+<td>미국 실업률 4–4.6%, 한국 2.5–3.2%. 효과는 신입 채용 축소와 직무
+재편으로 나타남</td>
+</tr>
+<tr>
+<td>신입·청년 충격 심화</td>
+<td>35% (±10)</td>
+<td>대졸 신입과 사무·SW·고객지원·번역 채용 급감. 한국 청년 '쉬었음'
+증가, 청년 실업률 6% 안팎</td>
+</tr>
+<tr>
+<td>광범위한 대체</td>
+<td>10% (±5)</td>
+<td>장시간 사무업무를 에이전트가 안정적으로 수행. 미국 실업률 5% 이상,
+AI 사유 감원이 30% 이상 지속</td>
+</tr>
+</tbody>
+</table>
+<h3 id="s13-3">13.3 사회경제 이슈</h3>
+<ul>
+<li><strong>가능성 높음</strong>
+<ul>
+<li><strong>AI 이익의 자본·소수 기업 집중과 'K자형' 분배</strong>:
+성장률은 3%대인데 체감 경기와 청년 고용은 부진한 괴리가 정치 쟁점이
+됩니다.</li>
+<li><strong>데이터센터 입지 갈등</strong>: 전력·물 문제와 지역 수용성이
+쟁점이 되고, 미국에서는 전기요금이 선거 이슈가 됩니다.</li>
+<li><strong>컴패니언 AI·정신건강·청소년 보호</strong>: 고립된 청년과
+노인의 AI 의존이 복지 의제가 됩니다.</li>
+<li><strong>숙련 경로의 붕괴</strong>: 초급 실무경험이 사라지면서
+도제·현장실습의 공백이 생깁니다.</li>
+</ul></li>
+<li><strong>가능성 중간</strong>
+<ul>
+<li><strong>AI 포퓰리즘</strong>: 반(反)빅테크 정서가 커지고, 주 단위 AI
+감원 고지법과 로봇세 법안이 나옵니다.</li>
+<li><strong>AI 투자 조정의 충격</strong>: 한국은 반도체 수출을 거쳐
+성장과 고용에 먼저 충격을 받습니다.</li>
+<li><strong>과세 기반 잠식</strong>: AI 배당·로봇세·컴퓨트세 논의가
+커집니다.</li>
+<li><strong>초고령화</strong>: AI·로봇으로 돌봄 인력을 대체할 때 돌봄의
+질이 쟁점이 됩니다.</li>
+</ul></li>
+</ul>
+<h4 id="거시-시각-ai와-노동소득분배율">거시 시각: AI와
+노동소득분배율</h4>
+<ul>
+<li>BIS는 AI가 '변혁적'으로 확산하는 시나리오에서 노동소득분배율이 크게
+떨어지고(모형상 0에 가까워짐), 수요 제약이 걸리는 시나리오에서는 하락
+폭이 그보다 작다고 봤습니다. 성장이 커져도 분배가 따라오지 않을 수
+있다는 경고입니다[원문].</li>
+<li>2026년 현재 거시 수치로는 아직 확인되지 않습니다. 총생산성 효과
+추정치가 대부분 1% 미만이고(BIS), 미국 성장 기여는 생산성이 아니라
+<strong>투자 지출</strong>에서 나옵니다. 2027년의 분배 문제는 '기계가
+노동을 대체'하기보다 **'자본 이익과 주가 상승이 소수 기업·주주에게
+집중'**하는 형태로 나타날 가능성이 큽니다(추정).</li>
+<li>WEF 수석이코노미스트의 78%는 데이터센터 투자가 세계 성장의 큰 몫을
+차지할 것으로 봤지만, 61%는 일자리 창출에서는 그렇지 않을 것으로
+봤습니다(보도 기준). 한국의 '반도체 산출 10억 원당 취업유발
+2.4명'(<a class="xref" href="#s13-1">13.1</a>절)과 같은 구조입니다.</li>
+</ul>
+<h4 id="사회적-수용성과-ai-반발">사회적 수용성과 AI 반발</h4>
+<ul>
+<li>미국인의 52%가 AI에 '기대보다 우려가 크다'고 답했습니다(2021년 37%).
+30세 미만에서도 처음으로 과반(55%)이 우려가 더 크다고 답했습니다(Pew,
+2026-06 조사, 3,488명)[원문]. 지역 데이터센터 반대는
+71%입니다(Gallup).</li>
+<li>Economist 'The World Ahead 2027'은 AI와 빅테크에 대한 반발이
+2027년에 커진다고 봤습니다(2차 보도만 확인). 반발의 축은 일자리(청년),
+전기요금·물(지역), 정신건강·아동(가족)으로 나뉩니다.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>전망</th>
+<th>가능성 · 확률(±불확도)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>미국 성인 중 AI에 '기대보다 우려가 크다'는 응답이 2027년 조사에서도
+50% 이상</td>
+<td>높음 · 80% (±10) · 근거 <a
+href="https://www.pewresearch.org/short-reads/2026/08/18/young-adults-in-the-us-are-increasingly-wary-of-ai-concerned-it-will-take-jobs/">Pew
+Research Center</a>, <a
+href="https://news.gallup.com/poll/709772/americans-oppose-data-centers-area.aspx">Gallup</a></td>
+</tr>
+<tr>
+<td>한국에서 데이터센터·송전망 입지 갈등이 국회 국정감사나 상임위의 독립
+의제로 다뤄짐</td>
+<td>높음 · 75% (±15) · 근거 <a
+href="https://hankyung.com/article/202607306039i">한국경제</a>, <a
+href="https://newstomato.com/ReadNews.aspx?no=1305512">뉴스토마토</a></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>한국 시사점</strong>: 한국의 AI 수용 여론은 아직 미국보다
+우호적이지만, 반발이 생기면 송전망·입지에서 먼저 나옵니다. 국가 AI
+전략의 성과 지표에 '주민 수용성'(분쟁 건수, 사전 협의 기간)을 넣을 것을
+권합니다.</li>
+</ul>
+<blockquote>
+<p><strong>확인 필요</strong>: 한국의 AI 인식 조사(우려·기대 비율)는
+이번에 찾지 못했습니다. BIS 노동분배율 시나리오에는 구체적 수치가
+없습니다.</p>
+</blockquote>
+<hr />
+<h3 id="s13-4">13.4 기본소득·기본사회: 2026 현황</h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>2026 현황</th>
+<th>2027</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>기본사회위원회</strong>(대통령 직속)</td>
+<td>2026-04-14 출범. 위원 43명</td>
+<td>중장기 계획·성과지표 마련. 기본법이 생기면 종합계획 본격화</td>
+</tr>
+<tr>
+<td><strong>기본사회기본법</strong></td>
+<td>의원안 2건 이상이 행안위 소위에 계류</td>
+<td>2027년 중 통과 가능성 중간(재정 추계와 야당 반대가 변수)</td>
+</tr>
+<tr>
+<td><strong>AI 기본사회법안</strong>(의안 2221011, 2026-09)</td>
+<td>과방위 소위 회부(11-13). AI 기본서비스 접근권·설명·이의제기권
+포함</td>
+<td>단독 제정보다 병합·흡수 가능성이 큼</td>
+</tr>
+<tr>
+<td><strong>농어촌 기본소득 시범사업</strong></td>
+<td>인구감소지역 군 주민에게 1인당 월 15만 원(지역사랑상품권). 10개
+군에서 17개 군으로 확대, 3,047억 원</td>
+<td><strong>정부안 1조 1,658억 원(약 3.8배), 35개 군, 국비 비율 40%에서
+50%로</strong>(국회 12월 확정)</td>
+</tr>
+<tr>
+<td><strong>전남광주 광역 확대</strong></td>
+<td>2027 예산안 약 4,330억 원으로 16개 군 70.9만 명 전원 지급 추진</td>
+<td>첫 '전 군 지급' 광역 사례. 반면 경남·경북은 1개 군만 신청해 형평성
+논란</td>
+</tr>
+<tr>
+<td><strong>새로운 소득보장 형태</strong></td>
+<td>데이터 공유 배당, 햇빛소득, 참여소득 검토</td>
+<td>연구용역·공론화 수준</td>
+</tr>
+<tr>
+<td><strong>AI 포용사회 예산</strong></td>
+<td>2027 과기정통부 정부안 1.2조 원(국회 12월 확정)(전 국민 AI 서비스
+2,500억 원 포함)</td>
+<td>소득보장이 아니라 접근성·역량 중심</td>
+</tr>
+</tbody>
+</table>
+<p><strong>해외</strong>: 국가 단위 보편 기본소득은 어디에도 없습니다.
+논의는 임금보험, 재교육, 실업보험 현대화, AI 기업이 출연하는 '경제 전환
+펀드' 쪽으로 움직입니다(Anthropic Economic Futures, WEF의 AI 배당
+언급).</p>
+<h3 id="s13-5">13.5 기본소득·기본사회 전망</h3>
+<table>
+<thead>
+<tr>
+<th>전망</th>
+<th>가능성 · 확률(±불확도)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>농어촌 기본소득이 정부안 약 1.17조 원(12월 국회 확정 전) 수준으로
+편성돼 30–35개 군으로 확대. 2027년이 시범 마지막 해라 <strong>2028년
+본사업 전환 여부</strong>가 핵심 쟁점</td>
+<td>높음 · 88% (±8) · 근거 <a
+href="https://www.mt.co.kr/article/2026090110103117937">머니투데이</a>,
+<a
+href="https://www.mafra.go.kr/bbs/home/792/579390/artclView.do">농림축산식품부</a></td>
+</tr>
+<tr>
+<td>광역 자체 재원 확대 지자체 추가, 재정자립도에 따른 지역 간 형평성
+논쟁 확대</td>
+<td>높음 · 80% (±10)</td>
+</tr>
+<tr>
+<td><strong>2028년 4월 총선</strong>을 앞두고 2027년 하반기
+기본소득·기본사회가 여야 핵심 쟁점(재정 건전성 대 AI 불평등 대응)</td>
+<td>높음 · 75% (±15) · 근거 <a
+href="https://www.fnnews.com/news/202607211641465666">파이낸셜뉴스</a></td>
+</tr>
+<tr>
+<td>기본사회기본법 국회 통과</td>
+<td>중간 · 45% (±20) · 근거 <a
+href="https://www.fnnews.com/news/202607211641465666">파이낸셜뉴스</a></td>
+</tr>
+<tr>
+<td>생애주기별 소득보장(아동·청년·노인)이 2028 예산안에 '기본사회'
+이름으로 반영</td>
+<td>중간 · 48% (±20)</td>
+</tr>
+<tr>
+<td>AI·데이터 배당과 AI 이익 공유 재원(디지털세·초과이윤 과세) 연구
+공개. 입법은 미진</td>
+<td>중간 · 55% (±20)</td>
+</tr>
+<tr>
+<td>AI 기본사회법의 병합·흡수(단독 제정은 낮음)</td>
+<td>중간 · 40% (±20)</td>
+</tr>
+<tr>
+<td>전 국민 보편 현금 기본소득 법제화</td>
+<td>낮음 · 5% (±5) · 근거 <a
+href="https://www.mafra.go.kr/bbs/home/792/579390/artclView.do">농림축산식품부</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>정리.</strong> 2027년의 기본사회 논의는 '전 국민 기본소득'이
+아니라 세 갈래로 진전될 것입니다. 지역 단위 현물성 기본소득의 확대,
+기본사회기본법이라는 제도 틀, AI 이익 공유에 대한 연구입니다. 본격적인
+승부처는 2028년 총선과 시범사업 평가 결과입니다.</p>
+<h4 id="ai-과세와-노동자-기금-기본소득-재원-논의">AI 과세와 노동자 기금:
+기본소득 재원 논의</h4>
+<p>미국 의회조사국(CRS)의 R49520 『Taxing AI: Alternative
+Approaches』(2026-11-18)는 발의된 AI 과세안을 처음으로 한데
+비교했습니다. 기본소득·기본사회의 재원 논쟁(<a class="xref" href="#s13-4">13.4</a>–<a class="xref" href="#s13-5">13.5</a>절)에 바로 쓸 수
+있는 목록입니다.</p>
+<table>
+<thead>
+<tr>
+<th>유형</th>
+<th>법안·제안(발의자)</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AI 기업·서비스 과세</td>
+<td>'AI for America'·AI Horizon Fund(Kelly 상원의원)</td>
+<td>디지털 광고 매출 5%, 연산 처리 100만 단위(1단위=10KB)당 1.10달러,
+매출의 40%를 넘는 AI 개발사 이익에 50% 초과이윤세</td>
+</tr>
+<tr>
+<td>토큰세</td>
+<td>H.R. 10044(Casar 하원의원)</td>
+<td>AI 사용량(토큰)에 과세. 세율 미제시</td>
+</tr>
+<tr>
+<td>국부펀드</td>
+<td>S. 4825 미국 AI 국부펀드법(Sanders 상원의원)</td>
+<td>AI 기업이 세금을 주식으로 내고, 이를 국부펀드로 운용</td>
+</tr>
+<tr>
+<td>전력 과세</td>
+<td>H.R. 10102(Salinas 하원의원), Warren 상원의원 구상</td>
+<td>데이터센터 전력 kWh당 1센트 등</td>
+</tr>
+<tr>
+<td>세제 혜택 회수</td>
+<td>S. 5054(Warner), S. 5418(Hawley), Wyden 초안(2026-08)</td>
+<td>데이터센터 보너스 감가상각·기회특구 혜택 배제, 총수입세</td>
+</tr>
+<tr>
+<td>노동 전환</td>
+<td>S. 5055 국가 노동전환기금법(Warner)</td>
+<td>AI 과세 재원을 노동 전환에 연결</td>
+</tr>
+</tbody>
+</table>
+<p>CRS의 판단은 신중합니다. 토큰은 시스템마다 정의가 달라 단위 과세가
+어렵고, 칩 과세는 수입 서버에 내장돼 걸기 어렵습니다. 컴퓨트세·주식
+납부·로봇 자산세는 헌법상 '직접세' 논란이 있습니다. 상대적으로 실행
+가능한 것은 디지털서비스세형 과세, 데이터센터 전력·물 과세,
+총수입세입니다. CRS는 표적 과세가 일자리 대체라는 큰 문제를 풀지는
+못한다고 덧붙였습니다. 세수 추계는 없습니다.</p>
+<p>한국에서는 2026년 들어 'AI 국민배당'론과 휴머노이드 현장 투입을
+계기로 AI·로봇세 논쟁이 커졌습니다. 다만 쟁점은 새 세목보다
+R&amp;D·설비투자 세액공제 중첩으로 낮아진 대형 플랫폼 기업의 실효세율,
+그리고 임금근로자 중심 사회보험의 재원 잠식입니다. 법조계에서는 로봇세의
+조세법률주의 위배 가능성도 지적합니다(보도 기준).</p>
+<table>
+<thead>
+<tr>
+<th>전망</th>
+<th>가능성 · 확률(±불확도)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>미국 의회에서 AI 특화 신세(토큰세·컴퓨트세·데이터센터 전력세)가
+위원회를 통과</td>
+<td>낮음 · 8% (±7) · 근거 <a
+href="https://www.everycrsreport.com/reports/R49520.html">CRS</a> · 반론
+<a
+href="https://tax.thomsonreuters.com/news/republicans-hesitant-on-ai-taxes-says-expert/">Thomson
+Reuters</a></td>
+</tr>
+<tr>
+<td>데이터센터 세제 혜택 축소·전력 비용 부담이 미국 연방·주 세제 논의의
+주된 형태가 되고, 최소 1개 주가 데이터센터 세금 감면을 축소하거나 특별
+부담을 입법</td>
+<td>중간 · 60% (±20) · 근거 <a
+href="https://www.everycrsreport.com/reports/R49520.html">CRS</a>, <a
+href="https://www.mt.co.kr/world/2026/11/15/2026111323461332980">머니투데이</a></td>
+</tr>
+<tr>
+<td>한국 2027년 세법개정안에 AI·로봇 관련 신세목이 들어감</td>
+<td>낮음 · 5% (±5) · 근거 <a
+href="https://www.taxwatch.co.kr/article/tax/2026/05/06/0001">택스워치</a>,
+<a
+href="https://www.newsis.com/view/NISX20260515_0003631074">뉴시스</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>시사점.</strong> 한국의 현실적 선택지는 신세목이 아니라
+<strong>세액공제 구조 재설계</strong>(AI 투자 공제의 고용 연계),
+<strong>데이터센터 전력 원가 반영</strong>(11장), <strong>AI 이익 공유
+연구</strong>(<a class="xref" href="#s13-5">13.5</a>절 '연구 공개, 입법 미진' 전망)입니다. 기본사회 재원
+논의에서 CRS의 유형 분류를 그대로 비교 틀로 쓸 수 있습니다.</p>
+<blockquote>
+<p><strong>확인 필요</strong>: CRS 본문의 법안 번호·세율은 HTML 원문으로
+확인했지만, Casar·Warren 안의 세율과 Wyden 초안의 세부는 원문에
+없습니다. 한국 'AI 국민배당'의 제안 주체와 내용은 보도 제목만
+확인했습니다.</p>
+</blockquote>
+<h3 id="s13-6">13.6 보편적 AI 접근: '모두의 AI'와 디지털 포용</h3>
+<p>'AI 기본사회'의 첫 실물은 현금이 아니라 <strong>전 국민 무료
+AI</strong>입니다. <a class="xref" href="#s13-4">13.4</a>절의 AI 포용사회 예산 가운데 '전 국민 AI 서비스
+2,500억 원'이 이 사업입니다.</p>
+<table>
+<thead>
+<tr>
+<th>시점</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-06</td>
+<td>과기정통부가 '모두의 AI' 추진 발표. 범용 AI 챗봇과 공공 AI
+에이전트를 무료로 제공한다는 계획(보도 기준)</td>
+</tr>
+<tr>
+<td>2026-07-21</td>
+<td>사업설명회. 공모 마감 08-11, 2–3개 사업자 선정. 기본 기능은
+무료·무제한이고 고도화 기능은 유료 허용. <strong>국산 모델 50% 이상,
+타사 국산 모델 30% 이상, 외산 20% 이하</strong> 요건. 올해 B200 512장
+지원, 2030년까지 5년 사업. 매년 실제 이용 실적으로 평가해 교체 가능</td>
+</tr>
+<tr>
+<td>2026-07-21</td>
+<td>AI 기본법·시행령 개정 시행. 'AI 취약계층'을 장애인·65세
+이상·기초수급·차상위에서 <strong>구직자(수급자격자), 경력보유여성,
+농어업인, 다문화가족, 북한이탈주민, 한부모가족</strong>까지 넓힘(시행령
+제1조의2). 이용비용 지원 대상에 이공계인력·지역균형인재도
+추가(제15조의2)</td>
+</tr>
+<tr>
+<td>2026-08-28</td>
+<td>SK텔레콤·KT·카카오 3개 컨소시엄 선정(6곳 응모, 점수 비공개)</td>
+</tr>
+<tr>
+<td>2026-10–11</td>
+<td>비공개 베타(CBT). 사업자별 MAU 목표는 SKT·KT 연내 약 500만, 카카오
+1,000만(보도 기준)</td>
+</tr>
+<tr>
+<td>2026-12</td>
+<td>정식 출시 예정. 2027 예산은 약 2,500억 원(GPU 약 1,700억, 컨소시엄
+직접 지원 약 300억, 공공·특화 에이전트 약 500억, 보도 기준)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>쟁점 1: '무료'가 수요를 만들까</strong>
+<ul>
+<li>2025 인터넷이용실태조사에서 생성형 AI 경험률은 44.5%였습니다.
+미이용자(55.5%)의 <strong>49.5%는 '관심 또는 필요가 없어서'</strong>
+쓰지 않는다고 답했습니다. 10대(68.2%)와 20대(56.0%)에서 이 답이 가장
+많았고, 60대(25.3%)와 70대 이상(26.1%)은 '방법을 몰라서'가 상대적으로
+많았습니다.</li>
+<li>미국도 비슷합니다. 비이용자의 83%가 '관심 없음'을 이유로 들었고,
+65세 이상의 77%가 챗봇을 쓰지 않습니다(Pew, 2026-02 조사)[원문].</li>
+<li>가격 장벽만 없애서는 고령층의 '방법 모름'도, 청년층의 '필요 없음'도
+풀리지 않습니다. SKT 컨소시엄이 전화·문자 접속을 내건 것처럼, 접근
+경로와 쓸 일(공공 서비스 대리 신청)을 함께 줘야 합니다.</li>
+</ul></li>
+<li><strong>쟁점 2: 세금으로 내는 이용료</strong>: 전문가들은 이 사업이
+무료 서비스라기보다 공공구매·공급자 보조에 가깝다고 지적합니다. 지원이
+끝나는 2030년 이후에도 이용자가 남을지 검증해야 한다고
+봅니다(디지털데일리). 행정정보 연계 범위, 대리 신청 오류의 책임, 위임
+권한 철회 같은 기준은 11월 현재 정해지지 않았습니다.</li>
+<li><strong>쟁점 3: 비슷한 사업과의 혼선</strong>
+<ul>
+<li>취약계층에게 유료 AI 구독료를 주는 안이 국민참여예산 제안으로
+검토됐습니다(약 10만 명, 월 20달러 1년, 약 500억 원, 2026-06 보도).</li>
+<li>기업용 'AI 바우처'(중소기업 솔루션 도입 지원)와 시행령 제15조의2의
+개인 이용비용 지원도 따로 있습니다.</li>
+<li>대상(전 국민 대 취약계층), 방식(국산 서비스 무료 대 해외 서비스 구독
+지원), 담당(중앙부처 대 지자체 공고)이 겹칩니다.</li>
+</ul></li>
+<li><strong>해외</strong>: 정부가 전 국민 AI 서비스를 운영하는 나라는
+찾지 못했습니다. 인도에서는 OpenAI가 ChatGPT Go를 1년 무료로
+풀었습니다(2025-11, 기업 판촉). 에스토니아 'AI Leap'은 고교생·교사에게
+OpenAI·Anthropic 도구를 무료로 제공합니다(2025-09). 모두 대상이나 기간이
+한정돼 있습니다. 한국의 방식(국산 모델 의무 비중 + 공공 에이전트 + 정부
+운영비)은 드문 사례입니다.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>전망</th>
+<th>가능성 · 확률(±불확도)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>'모두의 AI'가 2026-12에 정식 출시되고, 3개 서비스 합산 MAU가 2027년
+중 1,000만 명을 넘음</td>
+<td>중간 · 50% (±20) · 근거 <a
+href="https://www.ddaily.co.kr/page/view/2026090413335416118">디지털데일리</a>,
+<a
+href="https://news.mtn.co.kr/news-detail/2026082809293287753">MTN</a></td>
+</tr>
+<tr>
+<td>2027년 상반기 첫 이용 실적 평가에서 사업자 간 GPU 배분이 크게
+조정되거나 1곳 이상이 축소·교체</td>
+<td>중간 · 40% (±20) · 근거 <a
+href="https://mobile.newsis.com/view/NISX20260721_0003716823">뉴시스</a></td>
+</tr>
+<tr>
+<td>공공 AI 에이전트가 2027년 안에 보조금 자격 확인·신청 대행을 전국
+서비스로 제공하되, 최종 제출은 이용자 확인을 거치는 방식으로 정해짐</td>
+<td>중간 · 55% (±20) · 근거 <a
+href="https://www.fnnews.com/news/202611151918122241">파이낸셜뉴스</a></td>
+</tr>
+<tr>
+<td>2026 인터넷이용실태조사(2027 발표)에서 생성형 AI 경험률이 50%를
+넘음</td>
+<td>높음 · 78% (±12) · 근거 <a
+href="https://www.mt.co.kr/tech/2026/03/31/2026033111234563860">머니투데이(과기정통부)</a></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>한국 시사점</strong>: 성과 지표를 MAU에서 <strong>취약계층
+이용률</strong>과 <strong>공공 서비스 대리 처리 건수</strong>로 넓혀야
+합니다. 취약계층 이용비용 지원(시행령 제15조의2)과 모두의 AI를 한 창구로
+묶어 혼선을 줄이고, 2030년 이후의 운영 재원 원칙(정부 부담, 유료화,
+광고)을 2027년 안에 정할 것을 권합니다.</li>
+</ul>
+<blockquote>
+<p><strong>확인 필요</strong>: 6월 정부 방침의 공식 발표문은 찾지 못하고
+보도로만 확인했습니다. 2027 예산 세부(2,500억 원 구성)는 기사 일문일답
+기준입니다. 정식 출시 날짜는 11월 현재 공개되지 않았습니다.</p>
+</blockquote>
+<h3 id="s13-7">13.7 AI 공론장과 숙의: 시민 참여의 실험</h3>
+<p>AI의 사회적 쟁점을 시민이 직접 숙의하는 제도는 2026년에 처음 시범
+단계에 들어섰습니다. 근거는 '대한민국 인공지능 행동계획'(2026-02-25)의
+'AI 공론장 설계 및 운영' 과제입니다.</p>
+<ul>
+<li><strong>추진 경과</strong>
+<ul>
+<li>위원회는 2026-02 'AI 민주주의 분과'를 신설했습니다.</li>
+<li>03-27 방송미디어통신위원회와 'K-공론장' 간담회를 열었습니다.</li>
+<li>AI민주주의분과와 과기정통부가 AI 기반 공론장을 준비해 왔습니다.
+시민이 온라인에서 의제를 학습하고 의견을 내면, AI가 의견 분포를
+시각화하고 토론 의제를 뽑습니다. 그 결과를 오프라인 숙의로 잇는
+구조입니다(디지털데일리, 11-04).</li>
+</ul></li>
+<li><strong>첫 시범: 허위조작정보</strong>: 11-12 한양대에서 'AI 이슈
+공론화 시민토론회'가 열렸습니다. 주제는 'AI 기술과 허위조작정보'였고
+시민토론단 100명이 참여했습니다. 온라인으로는 '모두아이' 누리집에서
+누구나 의견을 낼 수 있습니다. 결과는 "전문가 검토를 거쳐 정책
+수립·검토에 활용"한다고 합니다.</li>
+<li><strong>같은 시기의 다른 숙의</strong>: 국무조정실 숙의공론화
+플랫폼에서도 'AI 기본사회'(기본사회위원회 주관, 9–10월 숙의, 11월 초
+정책의제 제안)와 '모두의 토론회'(행정안전부)가 진행됐습니다(이투데이,
+08-06). AI 의제가 여러 공론 창구로 흩어져 있습니다.</li>
+<li><strong>과거의 교훈</strong>: 청와대 국민청원(2017–2022)은 참여는
+많았지만 답변이 정책으로 이어지지 않는다는 비판 속에 폐지됐습니다. 후속
+'국민제안'의 온라인 투표는 중복 투표 논란으로 결과를 쓰지
+못했습니다(보도 기준). 대만 vTaiwan은 Polis로 합의점을 찾아 법안에
+반영한 성공 사례지만, 정부가 응답할 의무가 없어 활동이 시들었다는 평가를
+받습니다(추정).</li>
+<li><strong>해외 AI 숙의 실험</strong>: Anthropic과 Collective
+Intelligence Project는 미국인 약 1,000명이 Polis로 AI 헌법을 쓰게
+했습니다. 참여자들이 낸 진술은 1,127건, 투표는 38,252건이었고, 그
+헌법으로 실제 모델을 학습해 비교했습니다(2023)[원문]. CIP의 'Alignment
+Assemblies'는 대만 정부·OpenAI와도 시범을 했습니다.</li>
+<li><strong>쟁점</strong>
+<ul>
+<li><strong>정당성 세탁</strong>: 결과가 정책에 어떻게 반영됐는지
+공개하지 않으면 '숙의했다'는 외양만 남습니다.</li>
+<li><strong>지속성</strong>: 정권이 바뀌어도 이어지려면 위원회 규정이나
+AI 기본법 하위법령에 근거를 둬야 합니다.</li>
+<li><strong>AI 요약의 중립성</strong>: 의견을 요약·군집하는 AI 자체가
+의제를 왜곡할 수 있어, 알고리즘과 원자료를 공개해야 합니다.</li>
+</ul></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>전망</th>
+<th>가능성 · 확률(±불확도)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>정부 AI 공론장이 2027년에 허위조작정보 외 주제 2개 이상(예: 고용,
+아동·청소년, 공공 AI 에이전트)으로 넓어짐</td>
+<td>높음 · 70% (±15) · 근거 <a
+href="https://www.ddaily.co.kr/page/view/2026111117040439833">디지털데일리</a>,
+<a
+href="https://www.ddaily.co.kr/page/view/2026110418250724054">디지털데일리</a></td>
+</tr>
+<tr>
+<td>공론장 숙의 결과가 법령·지침 개정안에 명시적으로 반영되고, 정부가
+항목별 수용 여부를 공개</td>
+<td>낮음 · 30% (±15) · 근거 <a
+href="https://www.etoday.co.kr/news/view/2611756">이투데이</a></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>한국 시사점</strong>: 국가인공지능전략위원회가 공론장 결과에
+대한 <strong>응답 의무</strong>(채택·불채택 이유를 기한 안에 공개)를
+운영 규정에 넣으면 정당성 세탁 우려를 줄일 수 있습니다. 의견 분석 AI는
+국산 모델로 운영하고 그 방법을 공개하면, 공론장 자체가 '신뢰할 수 있는
+AI'의 시범 사례가 됩니다.</li>
+</ul>
+<blockquote>
+<p><strong>확인 필요</strong>: 온라인 공론장의 정확한 개설일(10월 개설
+보도)은 공식 자료로 확인하지 못했습니다. '모두아이' 누리집의 참여 규모도
+공개되지 않았습니다. 국민제안 투표 논란과 vTaiwan 쇠퇴 평가는 이번에
+원문으로 다시 확인하지 않았습니다.</p>
+</blockquote>
+<h3 id="s13-8">13.8 교육: AI 학교·평가 변화</h3>
+<ul>
+<li><strong>현황(2026)</strong>: AI 중점학교·AI·디지털 선도학교
+3,307교(전체의 27.7%), 디지털새싹 약 31.7만 명, AI 활용 선도교사 7,000명
+연수 계획. 대화형 AI 대입정보 서비스 정식 개시, 학·석·박 통합과정
+도입.</li>
+<li><strong>AI 디지털교과서</strong>: 과학 과목 도입이 2027년으로
+조정됐습니다. 법적 지위 변경(교육자료) 이후의 실제 활용률은 확인하지
+못했습니다.</li>
+<li><strong>평가</strong>: 2025년 대학가 생성형 AI 집단 부정행위 이후
+대면·구술 평가가 늘었고, 2027학년도 수능은 AI 스마트안경 소지만으로
+시험을 무효 처리했습니다(<a class="xref" href="ch20.html#s20-4">20.4</a>절).</li>
+<li><strong>2027 전망</strong>: 학교 AI 확산은 교사 연수와 인프라가
+좌우하고, 평가는 '결과물'에서 '과정·대면'으로 옮겨 갑니다. 신입 일자리
+충격(<a class="xref" href="#s13-2">13.2</a>절)과 맞물려 'AI 감독자'형 직무 교육이 직업교육의 축이
+됩니다(추정).</li>
+</ul>
+<h3 id="s13-9">13.9 한국 정책 옵션</h3>
+<ol type="1">
+<li><strong>청년 일경험 보장</strong>: AI를 도입하는 기업에 신입
+채용이나 도제형 실습을 세액공제와 연계합니다. 공공부문의 AI 감독·검증
+인턴십도 늘립니다.</li>
+<li><strong>AI 고용영향 모니터링</strong>: AI 노출 직군별·연령별 고용을
+분기마다 공표합니다(Stanford 방식). 300인 이상 기업에는 AI 사유 감원
+신고 항목을 둡니다.</li>
+<li><strong>농어촌 기본소득의 엄밀한 평가</strong>: 무작위·준실험 설계와
+대조군을 확보하고, 국비 비율과 광역 간 형평성 기준을 정비합니다.</li>
+<li><strong>법안 정리</strong>: 기본사회기본법과 AI 기본사회법을
+병합하고, AI 이익 공유(데이터 배당·컴퓨트 공공지분) 연구를 법정 계획에
+넣습니다.</li>
+<li><strong>고용보험 현대화</strong>: 특고·플랫폼·프리랜서 창작자까지
+적용을 넓히고, 소득 기반 고용보험과 임금보험을 검토합니다.</li>
+<li><strong>AI 도입 노사협의 가이드라인</strong>: 노란봉투법 이후의
+사전협의 원칙과 재배치·재훈련 기금을 마련합니다.</li>
+<li><strong>데이터센터 지역 상생 조건</strong>: 고용, 전력요금 환원,
+용수 관리를 입지 조건으로 겁니다.</li>
+<li><strong>세대 영향평가</strong>: 정년연장과 주4.5일제를 설계할 때
+청년 채용에 미치는 영향을 평가합니다.</li>
+<li><strong>AI 포용사회 예산 재배분</strong>: 1.2조 원(2027 정부안)의
+일부를 전직·재훈련 바우처로 돌립니다.</li>
+<li><strong>보편적 AI 접근의 성과 지표(<a class="xref" href="#s13-6">13.6</a>절)</strong>: '모두의 AI'
+성과를 MAU에서 취약계층 이용률과 공공 서비스 대리 처리 건수로 넓히고,
+취약계층 이용비용 지원과 한 창구로 묶습니다. 2030년 이후 운영 재원
+원칙도 2027년 안에 정합니다.</li>
+<li><strong>공론장 응답 의무(<a class="xref" href="#s13-7">13.7</a>절)</strong>: AI 공론장 숙의 결과에
+대해 채택·불채택 이유를 기한 안에 공개하는 원칙을 둡니다.</li>
+</ol>
+<h3 id="s13-10">13.10 국가인공지능전략위원회 안건(제안, 인공지능기본법
+제8조 기준)</h3>
+<ul>
+<li><strong>AI 고용영향 통계(2의2호 부처 조정)</strong>: AI 노출
+직군별·연령별 고용을 분기마다 공표하도록 고용노동부·통계청·과기정통부의
+역할을 나눕니다. 청년 채용 절벽의 구조화(높음 · 82%)를 실측으로 확인하는
+장치입니다.</li>
+<li><strong>신입 충격 대응(11호 고영향 AI의 사회적 변화 대응)</strong>:
+AI 도입 기업의 신입 채용·도제형 실습을 세액공제와 연계하는 방안과 공공
+'AI 감독·검증' 인턴십을 재정경제부·고용노동부와 조정합니다.</li>
+<li><strong>AI 감독자 양성(5의3호 전문인력 양성)</strong>: 'AI 감독자'
+도제식 훈련과 학교 AI 확산(교사 연수·인프라)을 전문인력 양성 과제로
+의결합니다.</li>
+<li><strong>AI 포용사회 예산(4호 투자 방향)</strong>: 2027 AI 포용사회
+예산 1.2조 원(정부안) 중 일부를 전직·재훈련 바우처로 돌리는 방향을 2028
+예산에 반영합니다.</li>
+<li><strong>법안 정리 의견(9호 의견표명)</strong>: 기본소득·기본사회는
+위원회의 법정 기능 밖입니다. 다만 AI 기본사회법안(AI 기본서비스
+접근권·설명·이의제기권)이 AI 기본법과 겹치므로, 기본사회기본법과의 병합
+방향에 대해 의견을 냅니다.</li>
+<li><strong>데이터센터 지역 상생(5의2호 입지 제도·6호 인프라)</strong>:
+고용, 전력요금 환원, 용수 관리를 AI데이터센터 입지 조건으로 거는 원칙을
+의결합니다.</li>
+<li><strong>보편적 AI 접근(11호 사회적 변화 대응·4호 투자
+방향)</strong>: '모두의 AI' 이용 실적 평가에 취약계층 이용률·대리 처리
+건수를 넣고, 2030년 이후 운영 재원 원칙을 2027년 안에 정하도록
+권고합니다(<a class="xref" href="#s13-6">13.6</a>절).</li>
+<li><strong>공론장 결과 응답(위원회 운영 규정)</strong>: 위원회가 AI
+공론장 결과에 응답 의무(채택·불채택 이유 공개)를 운영 규정에 두고, 의견
+분석 AI의 모델·방법을 공개합니다(<a class="xref" href="#s13-7">13.7</a>절).</li>
+</ul>
+<hr />
+
+<nav class="chnav" aria-label="장 이동"><a href="index.html">장 목록</a><a href="../report.html#ch13">전체 보고서에서 보기</a><a href="../">대시보드</a><span class="sp"></span><a href="ch12.html" rel="prev">← 12. 지식·창작 생태계: 논문·특허·저작권·창작 </a><a href="ch14.html" rel="next">14. 소버린 AI와 국가 AI 문샷 →</a></nav>
+</main>
+</div>
+<script>
+  // Wrap tables for horizontal scroll and colour likelihood words; static enhancement only.
+  document.querySelectorAll('main table').forEach((t) => {
+    const w = document.createElement('div'); w.className = 'tablewrap'; t.parentNode.insertBefore(w, t); w.appendChild(t);
+  });
+  document.querySelectorAll('main td').forEach((td) => {
+    const v = td.textContent.trim();
+    if (v === '높음') td.classList.add('tag-hi'); else if (v === '중간') td.classList.add('tag-mid'); else if (v === '낮음') td.classList.add('tag-lo');
+  });
+  document.querySelectorAll('main h2[id], main h3[id]').forEach((h) => {
+    const a = document.createElement('a'); a.className = 'hl'; a.href = '#' + h.id; a.textContent = '#';
+    a.setAttribute('aria-label', '이 제목의 링크'); h.appendChild(a);
+  });
+</script>
+<script>
+/* AI2027 in-page full-text search (shared by dashboard and report).
+ * Uses the CSS Custom Highlight API so matched text is highlighted WITHOUT mutating the DOM
+ * (keeps the dashboard's one-writer rule intact). Falls back to scroll-only where unsupported.
+ * Usage: AI27Search({ root: 'main', input: 'q-input', results: 'q-results', info: 'q-info',
+ *                     exclude: '.rail', reportLink: 'a[href="report.html"]' })
+ */
+window.AI27Search = function (cfg) {
+  const root = document.querySelector(cfg.root);
+  const input = document.getElementById(cfg.input);
+  const out = document.getElementById(cfg.results);
+  const info = document.getElementById(cfg.info);
+  if (!root || !input || !out || !info) return;
+  const BLOCKS = 'h2,h3,h4,p,li,td,th,blockquote,figcaption,summary,dt,dd,article';
+  const MAX_RESULTS = 80;
+  const MAX_RANGES = 3000;
+  const hl = typeof CSS !== 'undefined' && CSS.highlights && typeof Highlight === 'function';
+  let results = [];
+  let active = -1;
+  let timer = 0;
+
+  const norm = (s) => s.toLocaleLowerCase('ko');
+  const terms = (q) => norm(q).split(/\s+/).filter(Boolean).slice(0, 6);
+  const excluded = (el) => (cfg.exclude && el.closest(cfg.exclude)) || el.closest('[data-search-skip]');
+
+  function leafMatches(ts) {
+    const hits = [];
+    root.querySelectorAll(BLOCKS).forEach((el) => {
+      if (excluded(el)) return;
+      const t = norm(el.textContent || '');
+      if (ts.every((w) => t.includes(w))) hits.push(el);
+    });
+    const set = new Set(hits);
+    // keep the innermost matching block only
+    return hits.filter((el) => ![...el.querySelectorAll(BLOCKS)].some((c) => set.has(c)));
+  }
+
+  function headingFor(el, heads) {
+    let h = null;
+    for (const x of heads) {
+      if (x === el || x.compareDocumentPosition(el) & Node.DOCUMENT_POSITION_FOLLOWING) h = x; else break;
+    }
+    return h;
+  }
+
+  function contextOf(el, heads) {
+    const sec = el.closest('section');
+    const h2 = sec && sec.querySelector('h2');
+    const card = el.closest('.ai27-card, .ai27-tablewrap');
+    let h3 = card && card.querySelector('h3');
+    if (!h3 && card && card.previousElementSibling) h3 = card.previousElementSibling.querySelector && card.previousElementSibling.querySelector('h3');
+    if (h2) return [h2.textContent.trim(), h3 ? h3.textContent.trim() : ''].filter(Boolean).join(' › ');
+    const h = headingFor(el, heads);
+    return h ? h.textContent.trim() : '';
+  }
+
+  function rangesIn(el, ts, acc) {
+    const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
+    let n;
+    while ((n = walker.nextNode()) && acc.length < MAX_RANGES) {
+      const t = norm(n.nodeValue);
+      for (const w of ts) {
+        let i = t.indexOf(w);
+        while (i !== -1 && acc.length < MAX_RANGES) {
+          const r = new Range(); r.setStart(n, i); r.setEnd(n, i + w.length); acc.push(r);
+          i = t.indexOf(w, i + w.length);
+        }
+      }
+    }
+    return acc;
+  }
+
+  function snippet(el, ts) {
+    const text = (el.textContent || '').replace(/\s+/g, ' ').trim();
+    const lower = norm(text);
+    const at = Math.max(0, lower.indexOf(ts[0]));
+    const start = Math.max(0, at - 40);
+    const s = (start > 0 ? '…' : '') + text.slice(start, start + 130) + (start + 130 < text.length ? '…' : '');
+    const frag = document.createDocumentFragment();
+    const ls = norm(s);
+    let i = 0;
+    while (i < s.length) {
+      let best = -1; let len = 0;
+      for (const w of ts) { const j = ls.indexOf(w, i); if (j !== -1 && (best === -1 || j < best)) { best = j; len = w.length; } }
+      if (best === -1) { frag.append(s.slice(i)); break; }
+      frag.append(s.slice(i, best));
+      const m = document.createElement('mark'); m.textContent = s.slice(best, best + len); frag.append(m);
+      i = best + len;
+    }
+    return frag;
+  }
+
+  function clear() {
+    results = []; active = -1;
+    out.replaceChildren(); info.textContent = '';
+    if (hl) { CSS.highlights.delete('q-hit'); CSS.highlights.delete('q-active'); }
+  }
+
+  function go(i) {
+    if (!results.length) return;
+    active = (i + results.length) % results.length;
+    const el = results[active].el;
+    const det = el.closest('details'); if (det && !det.open) det.open = true;
+    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    if (hl) CSS.highlights.set('q-active', new Highlight(...rangesIn(el, results[active].ts, [])));
+    out.querySelectorAll('button').forEach((b, k) => b.setAttribute('aria-current', k === active ? 'true' : 'false'));
+    info.textContent = `${active + 1} / ${results.length}${results.length >= MAX_RESULTS ? '+' : ''}건`;
+  }
+
+  function run(q) {
+    const ts = terms(q);
+    if (!ts.length) { clear(); return; }
+    const heads = [...root.querySelectorAll('h2,h3')];
+    const els = leafMatches(ts).slice(0, MAX_RESULTS);
+    results = els.map((el) => ({ el, ts }));
+    active = -1;
+    if (hl) {
+      const acc = [];
+      els.forEach((el) => rangesIn(el, ts, acc));
+      CSS.highlights.set('q-hit', new Highlight(...acc));
+      CSS.highlights.delete('q-active');
+    }
+    info.textContent = els.length ? `${els.length}${els.length >= MAX_RESULTS ? '+' : ''}건` : '결과 없음';
+    out.replaceChildren(...els.map((el, k) => {
+      const li = document.createElement('li');
+      const b = document.createElement('button'); b.type = 'button';
+      const ctx = document.createElement('span'); ctx.className = 'q-ctx'; ctx.textContent = (contextOf(el, heads) || '본문').replace(/\s+/g, ' ');
+      const sn = document.createElement('span'); sn.className = 'q-snip'; sn.append(snippet(el, ts));
+      b.append(ctx, sn); b.addEventListener('click', () => go(k));
+      li.append(b); return li;
+    }));
+    const rl = cfg.reportLink && document.querySelector(cfg.reportLink);
+    if (rl) {
+      const li = document.createElement('li'); li.className = 'q-more';
+      const a = document.createElement('a');
+      a.href = rl.getAttribute('href').split('#')[0] + '#q=' + encodeURIComponent(q.trim());
+      a.target = rl.target || ''; if (a.target) a.rel = 'noopener';
+      a.textContent = `상세 보고서에서 '${q.trim()}' 검색 →`;
+      li.append(a); out.append(li);
+    }
+  }
+
+  input.addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(() => run(input.value), 180); });
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') { e.preventDefault(); if (!results.length) run(input.value); go(e.shiftKey ? active - 1 : active + 1); }
+    if (e.key === 'Escape') { input.value = ''; clear(); }
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === '/' && !/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName)) { e.preventDefault(); input.focus(); }
+  });
+  try {
+    const m = /[#&?]q=([^&]+)/.exec(location.hash + '&' + location.search);
+    if (m) { input.value = decodeURIComponent(m[1]); setTimeout(() => { run(input.value); go(0); }, cfg.delay || 300); }
+  } catch (_) { /* sandboxed location: ignore */ }
+};
+
+AI27Search({ root: 'main', input: 'q-input', results: 'q-results', info: 'q-info' });
+</script>
+
+</body>
+</html>
