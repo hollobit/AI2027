@@ -16,7 +16,7 @@
  {
   "theme": "① 거버넌스·통제",
   "text": "관리되지 않는 에이전트의 난립이 새 섀도 IT가 됨. 에이전트를 1급 신원으로 관리",
-  "chapter": "20장",
+  "chapter": "21장",
   "prob": "높음 · 82% (±15)",
   "evidence": "[Google Cloud (via iTWire…](https://itwire.com/guest-articles/guest-research/google-cloud-predicts-ai-agents-will-reshape-cyber-attack-and-defence-in-2027), [Gartner](https://www.gartner.com/en/newsroom/press-releases/2026-10-20-gartner-identifies-the-top-strategic-technology-trends-for-2027)"
  },
@@ -359,14 +359,14 @@
  {
   "theme": "⑤ 보안·안전·오용(에이전트가 공격 표면이자 공격자)",
   "text": "MCP 도구, 코딩 어시스턴트 설정, 오픈소스 패키지를 통한 공급망 공격 증가",
-  "chapter": "20장",
+  "chapter": "21장",
   "prob": "높음 · 88% (±10)",
   "evidence": "[Google Cloud (via iTWire…](https://itwire.com/guest-articles/guest-research/google-cloud-predicts-ai-agents-will-reshape-cyber-attack-and-defence-in-2027), [Google Threat Intelligen…](https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold)"
  },
  {
   "theme": "⑤ 보안·안전·오용(에이전트가 공격 표면이자 공격자)",
   "text": "프롬프트 주입으로 에이전트의 '행동'(송금·권한 변경·코드 커밋)을 탈취한 사고가 공개: 에이전트",
-  "chapter": "21장",
+  "chapter": "22장",
   "prob": "높음 · 88% (±10)",
   "evidence": "[labs.cloudsecurityalliance](https://labs.cloudsecurityalliance.org/research/csa-research-note-ai-browser-prompt-injection-20260630-csa-s/), [SAS](https://itwire.com/guest-articles/company-news/sas-predictions-2027-is-the-year-of-ai-consequences)"
  },
@@ -387,7 +387,7 @@
  {
   "theme": "⑤ 보안·안전·오용(에이전트가 공격 표면이자 공격자)",
   "text": "평가·내부 배포 단계에서 에이전트의 비인가 실세계 행동이 추가로 공개",
-  "chapter": "20장",
+  "chapter": "21장",
   "prob": "높음 · 85% (±10)",
   "evidence": "[aisi.gov.uk](https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing), [cdn.openai.com](https://cdn.openai.com/pdf/67869394-cb91-4c12-888c-5cbd85c7814c/OpenAI-Hugging-Face%20Incident-Technical-Report.pdf)"
  },
@@ -400,7 +400,7 @@
  },
  {
   "theme": "⑤ 보안·안전·오용(에이전트가 공격 표면이자 공격자)",
-  "text": "AI 오케스트레이션 공격의 대중화: 20.7절 참고",
+  "text": "AI 오케스트레이션 공격의 대중화: 21.7절 참고",
   "chapter": "3장",
   "prob": "높음 · 82% (±12)",
   "evidence": "[Google Threat Intelligen…](https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold), [Anthropic](https://assets.anthropic.com/m/ec212e6566a0d47/original/Disrupting-the-first-reported-AI-orchestrated-cyber-espionage-campaign.pdf)"
@@ -422,14 +422,14 @@
  {
   "theme": "⑤ 보안·안전·오용(에이전트가 공격 표면이자 공격자)",
   "text": "공격 표적이 데이터 탈취에서 '의사결정 조작'으로 이동(에이전트가 쓰는 데이터·로직 오염)",
-  "chapter": "20장",
+  "chapter": "21장",
   "prob": "높음 · 72% (±20)",
   "evidence": "[Google Cloud (via iTWire…](https://itwire.com/guest-articles/guest-research/google-cloud-predicts-ai-agents-will-reshape-cyber-attack-and-defence-in-2027), [Microsoft](https://www.microsoft.com/en-us/security/blog/2026/10/01/insights-from-the-2026-microsoft-digital-defense-report/)"
  },
  {
   "theme": "⑤ 보안·안전·오용(에이전트가 공격 표면이자 공격자)",
   "text": "AI 에이전트가 원인인 공개 장애·데이터 손실 증가. 에이전트 권한 통제가 감사·보험 요건이 됨: 재난·장애",
-  "chapter": "22장",
+  "chapter": "23장",
   "prob": "높음 · 72% (±15)",
   "evidence": "[Euronews](https://euronews.com/next/2026/04/28/an-ai-agent-deleted-a-companys-entire-database-in-9-seconds-then-wrote-an-apology), [Microsoft](https://www.microsoft.com/en-us/security/blog/2026/10/01/insights-from-the-2026-microsoft-digital-defense-report/)"
  },
@@ -443,7 +443,7 @@
  {
   "theme": "⑤ 보안·안전·오용(에이전트가 공격 표면이자 공격자)",
   "text": "한국 AI안전연구소가 한국어 오남용·에이전트 레드팀 결과를 정례 공개: 레드팀",
-  "chapter": "21장",
+  "chapter": "22장",
   "prob": "중간 · 45% (±20)",
   "evidence": "[unite.ai](https://www.unite.ai/ko/scale-ai-reports-rok-fortress-findings-on-multilingual-ai-safety/), [zdnet.co.kr](https://zdnet.co.kr/view/?no=20260619100049)"
  },
@@ -457,7 +457,7 @@
  {
   "theme": "⑤ 보안·안전·오용(에이전트가 공격 표면이자 공격자)",
   "text": "정렬 실패로 배포된 에이전트가 의도적으로 감독을 회피해 실제 피해를 낸 사건이 확인: 오정렬",
-  "chapter": "21장",
+  "chapter": "22장",
   "prob": "낮음 · 10% (±10)",
   "evidence": "[cdn.openai.com](https://cdn.openai.com/pdf/67869394-cb91-4c12-888c-5cbd85c7814c/OpenAI-Hugging-Face%20Incident-Technical-Report.pdf), [METR](https://metr.org/assets/misalignment-risk-report-august-2026-review.pdf)"
  }

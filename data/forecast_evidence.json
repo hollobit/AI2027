@@ -6592,358 +6592,6 @@
   "counter": []
  },
  {
-  "chapter": "16장",
-  "text": "CCW GGE가 2027년 안에 자율무기에 관한 법적 구속력 있는 의정서 협상 개시에 합의(또는 그런 권고안을 합의 채택)",
-  "prob": "낮음 12%±8",
-  "basis": "전망",
-  "support": [
-   {
-    "org": "APILS",
-    "url": "https://apils.org/2026/11/21/ccw-seventh-review-conference-a-new-mandate-on-autonomous-weapons-but-no-review/",
-    "title": ""
-   },
-   {
-    "org": "Tech Times",
-    "url": "https://www.techtimes.com/articles/330787/20261116/autonomous-weapons-treaty-stake-ccw-review-conference-opens-monday-us-wants-nonbinding-text.htm",
-    "title": ""
-   }
-  ],
-  "counter": []
- },
- {
-  "chapter": "16장",
-  "text": "CCW 밖에서 자율무기 금지·규제 조약을 위한 별도 협상 절차(주최국 발표 또는 첫 협상 회의)가 2027년 안에 공식 출범",
-  "prob": "낮음 20%±15",
-  "basis": "전망",
-  "support": [
-   {
-    "org": "UN",
-    "url": "https://press.un.org/en/2026/gadis3782.doc.htm",
-    "title": ""
-   },
-   {
-    "org": "APILS",
-    "url": "https://apils.org/2026/11/21/ccw-seventh-review-conference-a-new-mandate-on-autonomous-weapons-but-no-review/",
-    "title": ""
-   }
-  ],
-  "counter": []
- },
- {
-  "chapter": "16장",
-  "text": "미국 FY2027 국방수권법(NDAA)이 핵무기 발사·폭발 결정에 AI(자율 기능) 사용을 금지하는 조항을 담아 제정",
-  "prob": "높음 70%±15",
-  "basis": "전망",
-  "support": [
-   {
-    "org": "Arms Control Association",
-    "url": "https://www.armscontrol.org/act/2026-07/news/us-senate-panel-approves-ai-autonomous-weapons-rules",
-    "title": ""
-   }
-  ],
-  "counter": []
- },
- {
-  "chapter": "16장",
-  "text": "미 국방부가 2027년 안에 자율무기 지침 DoDD 3000.09의 개정판 또는 대체 지침을 공개",
-  "prob": "중간 40%±20",
-  "basis": "전망",
-  "support": [
-   {
-    "org": "Arms Control Association",
-    "url": "https://www.armscontrol.org/act/2026-07/news/us-senate-panel-approves-ai-autonomous-weapons-rules",
-    "title": ""
-   },
-   {
-    "org": "Holland & Knight",
-    "url": "https://www.hklaw.com/en/insights/publications/2026/02/department-of-wars-ai-first-agenda-a-new-era-for-defense-contractors",
-    "title": ""
-   }
-  ],
-  "counter": []
- },
- {
-  "chapter": "16장",
-  "text": "Anthropic의 미 국방부 공급망 위험 지정이 2027년 안에 철회·합의·확정 판결로 효력을 잃음",
-  "prob": "낮음 30%±20",
-  "basis": "전망",
-  "support": [
-   {
-    "org": "Defense One",
-    "url": "https://www.defenseone.com/threats/2026/09/anthropic-lawsuit-supply-chain-risk/416252/",
-    "title": ""
-   }
-  ],
-  "counter": [
-   {
-    "org": "미 전쟁부",
-    "url": "https://war.gov/News/Releases/Release/Article/4475177/classified-networks-ai-agreements",
-    "title": ""
-   }
-  ]
- },
- {
-  "chapter": "16장",
-  "text": "미중이 2027년 안에 군사 AI(핵 지휘통제 포함)를 다루는 정부 간 공식 협의를 열거나 공동 문서를 발표(2024 '핵 결정은 사람이' 합의의 재확인 포함)",
-  "prob": "중간 35%±20",
-  "basis": "전망",
-  "support": [
-   {
-    "org": "Brookings",
-    "url": "https://www.brookings.edu/articles/advancing-human-control-of-military-ai/",
-    "title": ""
-   },
-   {
-    "org": "Arms Control Association",
-    "url": "https://www.armscontrol.org/factsheets/human-loop-glance",
-    "title": ""
-   }
-  ],
-  "counter": []
- },
- {
-  "chapter": "16장",
-  "text": "전쟁이 이어지는 한, 우크라이나 정부가 발표하는 2027년 러시아군 사상 중 드론 비중이 80% 이상으로 유지",
-  "prob": "높음 75%±15",
-  "basis": "전망",
-  "support": [
-   {
-    "org": "Al Jazeera",
-    "url": "https://www.aljazeera.com/news/2026/4/10/ukraine-says-russia-suffers-record-losses-of-soldiers",
-    "title": ""
-   },
-   {
-    "org": "UNITED24",
-    "url": "https://united24media.com/war-in-ukraine/ukraines-drones-pass-1-million-verified-hits-in-2026-drive-90-of-battlefield-strikes-20849",
-    "title": ""
-   }
-  ],
-  "counter": []
- },
- {
-  "chapter": "16장",
-  "text": "국방인공지능법(국방 AI 기본법 제정안)이 2027년 안에 국회 본회의를 통과",
-  "prob": "중간 60%±20",
-  "basis": "전망",
-  "support": [
-   {
-    "org": "한국경제",
-    "url": "https://www.hankyung.com/article/2026020290921",
-    "title": ""
-   },
-   {
-    "org": "지디넷코리아",
-    "url": "https://zdnet.co.kr/view?no=20261113111056",
-    "title": ""
-   }
-  ],
-  "counter": []
- },
- {
-  "chapter": "16장",
-  "text": "국방부가 2027년 상반기 안에 독자 AI 파운데이션 모델 기반 장병용 생성형 AI를 군 내부망에서 제공 시작",
-  "prob": "중간 40%±20",
-  "basis": "전망",
-  "support": [
-   {
-    "org": "지디넷코리아",
-    "url": "https://zdnet.co.kr/view?no=20261113111056",
-    "title": ""
-   },
-   {
-    "org": "전자신문",
-    "url": "https://www.etnews.com/20261023000175",
-    "title": ""
-   }
-  ],
-  "counter": []
- },
- {
-  "chapter": "16장",
-  "text": "한국 방산 기업이 2027년 안에 AI 기반 무인체계(배회형·자폭 드론, 무인 차량·함정, AI 대드론) 수출 계약을 1건 이상 공개 체결",
-  "prob": "중간 50%±20",
-  "basis": "전망",
-  "support": [
-   {
-    "org": "Korea Times",
-    "url": "https://www.koreatimes.co.kr/amp/southkorea/defense/20260515/korea-us-formalize-drone-alliance-to-counter-evolving-regional-threats",
-    "title": ""
-   },
-   {
-    "org": "머니투데이",
-    "url": "https://www.mt.co.kr/politics/2026/06/26/2026062612010698506",
-    "title": ""
-   }
-  ],
-  "counter": []
- },
- {
-  "chapter": "16장",
-  "text": "NATO가 2027년 안에 책임 있는 AI(RAI) 인증 표준을 공식 발간하거나 공개 요약을 발표",
-  "prob": "낮음 30%±15",
-  "basis": "전망",
-  "support": [
-   {
-    "org": "NATO ACT",
-    "url": "https://www.act.nato.int/article/nato-starts-work-on-artificial-intelligence-certification-standard/",
-    "title": ""
-   },
-   {
-    "org": "NATO",
-    "url": "https://www.nato.int/cps/en/natohq/official_texts_208374.htm",
-    "title": ""
-   }
-  ],
-  "counter": []
- },
- {
-  "chapter": "16장",
-  "text": "바세나르 체제가 2027년 말까지 AI 모델·AI 전용 소프트웨어 항목을 통제목록에 새로 합의",
-  "prob": "낮음 5%±5",
-  "basis": "전망",
-  "support": [
-   {
-    "org": "바세나르 의장 성명",
-    "url": "https://www.wassenaar.org/wp-content/uploads/2026/07/chair_statement.pdf",
-    "title": ""
-   },
-   {
-    "org": "CSIS",
-    "url": "https://www.csis.org/analysis/rethinking-wassenaar-minus-one-strategy",
-    "title": ""
-   }
-  ],
-  "counter": []
- },
- {
-  "chapter": "16장",
-  "text": "미 국무부가 2027년 안에 자율체계(무인·자율 무기) 통제를 바꾸는 ITAR·USML 규칙안 또는 최종규칙을 공고",
-  "prob": "중간 40%±20",
-  "basis": "전망",
-  "support": [
-   {
-    "org": "Arnold & Porter",
-    "url": "https://www.arnoldporter.com/en/perspectives/advisories/2026/11/department-of-state-proposes-slate-of-revisions-to-the-itar-and-us-munitions-list-and-removes-syria",
-    "title": ""
-   }
-  ],
-  "counter": []
- },
- {
-  "chapter": "16장",
-  "text": "중국이 2027년 안에 드론·무인체계 관련 수출통제를 다시 강화(품목 추가 또는 특정국 대상 금지·건별 심사 확대)",
-  "prob": "중간 65%±15",
-  "basis": "전망",
-  "support": [
-   {
-    "org": "CGTN",
-    "url": "https://news.cgtn.com/news/2026-10-19/China-optimizes-export-control-measures-for-drone-related-items-1Rn8d2KOWFq/p.html",
-    "title": ""
-   },
-   {
-    "org": "Dronelife",
-    "url": "https://dronelife.com/2026/08/05/china-drone-export-controls-us-manufacturers/",
-    "title": ""
-   }
-  ],
-  "counter": []
- },
- {
-  "chapter": "16장",
-  "text": "AUKUS가 2027년 안에 Pillar II 두 번째 대표 과제를 지정하거나 일본 등 제3국과의 공식 협력 과제를 발표",
-  "prob": "중간 45%±20",
-  "basis": "전망",
-  "support": [
-   {
-    "org": "호주 국방부",
-    "url": "https://www.defence.gov.au/defence-activities/programs-initiatives/aukus-advanced-capabilities/capability-achievements",
-    "title": ""
-   },
-   {
-    "org": "USNI News",
-    "url": "https://news.usni.org/?p=126147",
-    "title": ""
-   }
-  ],
-  "counter": []
- },
- {
-  "chapter": "16장",
-  "text": "EU가 2027년 안에 AI Act 국방 예외(제2조 3항)를 보완하는 군민 겸용 AI 지침 또는 국방 AI 공동 원칙을 공식 문서로 채택",
-  "prob": "낮음 25%±15",
-  "basis": "전망",
-  "support": [
-   {
-    "org": "CMS",
-    "url": "https://cms.law/en/gbr/publication/the-eu-s-digital-omnibus-on-ai-what-the-provisional-agreement-really-changes",
-    "title": ""
-   },
-   {
-    "org": "Tech Policy Press",
-    "url": "https://techpolicy.press/europes-ai-act-leaves-a-gap-for-military-ai-entering-civilian-life",
-    "title": ""
-   }
-  ],
-  "counter": []
- },
- {
-  "chapter": "16장",
-  "text": "Baykar가 2027년 안에 인도네시아 외 국가와 Kızılelma 수출 계약을 1건 이상 공개 체결",
-  "prob": "중간 50%±20",
-  "basis": "전망",
-  "support": [
-   {
-    "org": "Quwa",
-    "url": "https://quwa.org/asia-pacific/indonesia-defence-news/indonesia-becomes-global-launch-customer-for-baykars-kizilelma-unmanned-fighter-in-first-ever-export-deal/",
-    "title": ""
-   },
-   {
-    "org": "Al-Monitor",
-    "url": "https://www.al-monitor.com/originals/2026/11/turkeys-unmanned-kizilelma-fighter-jet-enters-military-service-what-know",
-    "title": ""
-   }
-  ],
-  "counter": []
- },
- {
-  "chapter": "16장",
-  "text": "한국 국방부·방위사업청·국방기술품질원이 2027년 안에 무기체계 탑재 AI의 시험평가·신뢰성 기준을 국방표준서·지침·훈령으로 제정",
-  "prob": "중간 40%±20",
-  "basis": "전망",
-  "support": [
-   {
-    "org": "파이낸셜뉴스",
-    "url": "https://www.fnnews.com/news/202607061039526059",
-    "title": ""
-   },
-   {
-    "org": "보안뉴스",
-    "url": "https://m.boannews.com/html/detail.html?idx=144837",
-    "title": ""
-   }
-  ],
-  "counter": []
- },
- {
-  "chapter": "16장",
-  "text": "한미 공군이 2027년 안에 자율 협동 플랫폼 실무협의체의 첫 공동 시험·유무인 연동 시연 또는 우선 과제 목록을 공개",
-  "prob": "중간 45%±20",
-  "basis": "전망",
-  "support": [
-   {
-    "org": "헤럴드경제",
-    "url": "https://biz.heraldcorp.com/article/10910860",
-    "title": ""
-   },
-   {
-    "org": "Korea Times",
-    "url": "https://www.koreatimes.co.kr/amp/southkorea/defense/20260515/korea-us-formalize-drone-alliance-to-counter-evolving-regional-threats",
-    "title": ""
-   }
-  ],
-  "counter": []
- },
- {
   "chapter": "17장",
   "text": "미국이 프런티어 모델 API 접근을 수출통제로 다루는 방식을 제도화(신뢰 파트너 목록, 국가별 등급). 신규 최상위 모델은 '신뢰 파트너 우선 → 일반 공개'의 단계 출시가 표준",
   "prob": "높음 72%±20",
@@ -8428,6 +8076,358 @@
  },
  {
   "chapter": "20장",
+  "text": "CCW GGE가 2027년 안에 자율무기에 관한 법적 구속력 있는 의정서 협상 개시에 합의(또는 그런 권고안을 합의 채택)",
+  "prob": "낮음 12%±8",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "APILS",
+    "url": "https://apils.org/2026/11/21/ccw-seventh-review-conference-a-new-mandate-on-autonomous-weapons-but-no-review/",
+    "title": ""
+   },
+   {
+    "org": "Tech Times",
+    "url": "https://www.techtimes.com/articles/330787/20261116/autonomous-weapons-treaty-stake-ccw-review-conference-opens-monday-us-wants-nonbinding-text.htm",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "20장",
+  "text": "CCW 밖에서 자율무기 금지·규제 조약을 위한 별도 협상 절차(주최국 발표 또는 첫 협상 회의)가 2027년 안에 공식 출범",
+  "prob": "낮음 20%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "UN",
+    "url": "https://press.un.org/en/2026/gadis3782.doc.htm",
+    "title": ""
+   },
+   {
+    "org": "APILS",
+    "url": "https://apils.org/2026/11/21/ccw-seventh-review-conference-a-new-mandate-on-autonomous-weapons-but-no-review/",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "20장",
+  "text": "미국 FY2027 국방수권법(NDAA)이 핵무기 발사·폭발 결정에 AI(자율 기능) 사용을 금지하는 조항을 담아 제정",
+  "prob": "높음 70%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Arms Control Association",
+    "url": "https://www.armscontrol.org/act/2026-07/news/us-senate-panel-approves-ai-autonomous-weapons-rules",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "20장",
+  "text": "미 국방부가 2027년 안에 자율무기 지침 DoDD 3000.09의 개정판 또는 대체 지침을 공개",
+  "prob": "중간 40%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Arms Control Association",
+    "url": "https://www.armscontrol.org/act/2026-07/news/us-senate-panel-approves-ai-autonomous-weapons-rules",
+    "title": ""
+   },
+   {
+    "org": "Holland & Knight",
+    "url": "https://www.hklaw.com/en/insights/publications/2026/02/department-of-wars-ai-first-agenda-a-new-era-for-defense-contractors",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "20장",
+  "text": "Anthropic의 미 국방부 공급망 위험 지정이 2027년 안에 철회·합의·확정 판결로 효력을 잃음",
+  "prob": "낮음 30%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Defense One",
+    "url": "https://www.defenseone.com/threats/2026/09/anthropic-lawsuit-supply-chain-risk/416252/",
+    "title": ""
+   }
+  ],
+  "counter": [
+   {
+    "org": "미 전쟁부",
+    "url": "https://war.gov/News/Releases/Release/Article/4475177/classified-networks-ai-agreements",
+    "title": ""
+   }
+  ]
+ },
+ {
+  "chapter": "20장",
+  "text": "미중이 2027년 안에 군사 AI(핵 지휘통제 포함)를 다루는 정부 간 공식 협의를 열거나 공동 문서를 발표(2024 '핵 결정은 사람이' 합의의 재확인 포함)",
+  "prob": "중간 35%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Brookings",
+    "url": "https://www.brookings.edu/articles/advancing-human-control-of-military-ai/",
+    "title": ""
+   },
+   {
+    "org": "Arms Control Association",
+    "url": "https://www.armscontrol.org/factsheets/human-loop-glance",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "20장",
+  "text": "전쟁이 이어지는 한, 우크라이나 정부가 발표하는 2027년 러시아군 사상 중 드론 비중이 80% 이상으로 유지",
+  "prob": "높음 75%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Al Jazeera",
+    "url": "https://www.aljazeera.com/news/2026/4/10/ukraine-says-russia-suffers-record-losses-of-soldiers",
+    "title": ""
+   },
+   {
+    "org": "UNITED24",
+    "url": "https://united24media.com/war-in-ukraine/ukraines-drones-pass-1-million-verified-hits-in-2026-drive-90-of-battlefield-strikes-20849",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "20장",
+  "text": "국방인공지능법(국방 AI 기본법 제정안)이 2027년 안에 국회 본회의를 통과",
+  "prob": "중간 60%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "한국경제",
+    "url": "https://www.hankyung.com/article/2026020290921",
+    "title": ""
+   },
+   {
+    "org": "지디넷코리아",
+    "url": "https://zdnet.co.kr/view?no=20261113111056",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "20장",
+  "text": "국방부가 2027년 상반기 안에 독자 AI 파운데이션 모델 기반 장병용 생성형 AI를 군 내부망에서 제공 시작",
+  "prob": "중간 40%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "지디넷코리아",
+    "url": "https://zdnet.co.kr/view?no=20261113111056",
+    "title": ""
+   },
+   {
+    "org": "전자신문",
+    "url": "https://www.etnews.com/20261023000175",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "20장",
+  "text": "한국 방산 기업이 2027년 안에 AI 기반 무인체계(배회형·자폭 드론, 무인 차량·함정, AI 대드론) 수출 계약을 1건 이상 공개 체결",
+  "prob": "중간 50%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Korea Times",
+    "url": "https://www.koreatimes.co.kr/amp/southkorea/defense/20260515/korea-us-formalize-drone-alliance-to-counter-evolving-regional-threats",
+    "title": ""
+   },
+   {
+    "org": "머니투데이",
+    "url": "https://www.mt.co.kr/politics/2026/06/26/2026062612010698506",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "20장",
+  "text": "NATO가 2027년 안에 책임 있는 AI(RAI) 인증 표준을 공식 발간하거나 공개 요약을 발표",
+  "prob": "낮음 30%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "NATO ACT",
+    "url": "https://www.act.nato.int/article/nato-starts-work-on-artificial-intelligence-certification-standard/",
+    "title": ""
+   },
+   {
+    "org": "NATO",
+    "url": "https://www.nato.int/cps/en/natohq/official_texts_208374.htm",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "20장",
+  "text": "바세나르 체제가 2027년 말까지 AI 모델·AI 전용 소프트웨어 항목을 통제목록에 새로 합의",
+  "prob": "낮음 5%±5",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "바세나르 의장 성명",
+    "url": "https://www.wassenaar.org/wp-content/uploads/2026/07/chair_statement.pdf",
+    "title": ""
+   },
+   {
+    "org": "CSIS",
+    "url": "https://www.csis.org/analysis/rethinking-wassenaar-minus-one-strategy",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "20장",
+  "text": "미 국무부가 2027년 안에 자율체계(무인·자율 무기) 통제를 바꾸는 ITAR·USML 규칙안 또는 최종규칙을 공고",
+  "prob": "중간 40%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Arnold & Porter",
+    "url": "https://www.arnoldporter.com/en/perspectives/advisories/2026/11/department-of-state-proposes-slate-of-revisions-to-the-itar-and-us-munitions-list-and-removes-syria",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "20장",
+  "text": "중국이 2027년 안에 드론·무인체계 관련 수출통제를 다시 강화(품목 추가 또는 특정국 대상 금지·건별 심사 확대)",
+  "prob": "중간 65%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "CGTN",
+    "url": "https://news.cgtn.com/news/2026-10-19/China-optimizes-export-control-measures-for-drone-related-items-1Rn8d2KOWFq/p.html",
+    "title": ""
+   },
+   {
+    "org": "Dronelife",
+    "url": "https://dronelife.com/2026/08/05/china-drone-export-controls-us-manufacturers/",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "20장",
+  "text": "AUKUS가 2027년 안에 Pillar II 두 번째 대표 과제를 지정하거나 일본 등 제3국과의 공식 협력 과제를 발표",
+  "prob": "중간 45%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "호주 국방부",
+    "url": "https://www.defence.gov.au/defence-activities/programs-initiatives/aukus-advanced-capabilities/capability-achievements",
+    "title": ""
+   },
+   {
+    "org": "USNI News",
+    "url": "https://news.usni.org/?p=126147",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "20장",
+  "text": "EU가 2027년 안에 AI Act 국방 예외(제2조 3항)를 보완하는 군민 겸용 AI 지침 또는 국방 AI 공동 원칙을 공식 문서로 채택",
+  "prob": "낮음 25%±15",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "CMS",
+    "url": "https://cms.law/en/gbr/publication/the-eu-s-digital-omnibus-on-ai-what-the-provisional-agreement-really-changes",
+    "title": ""
+   },
+   {
+    "org": "Tech Policy Press",
+    "url": "https://techpolicy.press/europes-ai-act-leaves-a-gap-for-military-ai-entering-civilian-life",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "20장",
+  "text": "Baykar가 2027년 안에 인도네시아 외 국가와 Kızılelma 수출 계약을 1건 이상 공개 체결",
+  "prob": "중간 50%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "Quwa",
+    "url": "https://quwa.org/asia-pacific/indonesia-defence-news/indonesia-becomes-global-launch-customer-for-baykars-kizilelma-unmanned-fighter-in-first-ever-export-deal/",
+    "title": ""
+   },
+   {
+    "org": "Al-Monitor",
+    "url": "https://www.al-monitor.com/originals/2026/11/turkeys-unmanned-kizilelma-fighter-jet-enters-military-service-what-know",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "20장",
+  "text": "한국 국방부·방위사업청·국방기술품질원이 2027년 안에 무기체계 탑재 AI의 시험평가·신뢰성 기준을 국방표준서·지침·훈령으로 제정",
+  "prob": "중간 40%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "파이낸셜뉴스",
+    "url": "https://www.fnnews.com/news/202607061039526059",
+    "title": ""
+   },
+   {
+    "org": "보안뉴스",
+    "url": "https://m.boannews.com/html/detail.html?idx=144837",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "20장",
+  "text": "한미 공군이 2027년 안에 자율 협동 플랫폼 실무협의체의 첫 공동 시험·유무인 연동 시연 또는 우선 과제 목록을 공개",
+  "prob": "중간 45%±20",
+  "basis": "전망",
+  "support": [
+   {
+    "org": "헤럴드경제",
+    "url": "https://biz.heraldcorp.com/article/10910860",
+    "title": ""
+   },
+   {
+    "org": "Korea Times",
+    "url": "https://www.koreatimes.co.kr/amp/southkorea/defense/20260515/korea-us-formalize-drone-alliance-to-counter-evolving-regional-threats",
+    "title": ""
+   }
+  ],
+  "counter": []
+ },
+ {
+  "chapter": "21장",
   "text": "공격 표적이 데이터 탈취에서 '의사결정 조작'으로 이동(에이전트가 쓰는 데이터·로직 오염)",
   "prob": "높음 72%±20",
   "basis": "추정",
@@ -8446,7 +8446,7 @@
   "counter": []
  },
  {
-  "chapter": "20장",
+  "chapter": "21장",
   "text": "기계 속도 공격으로 주간 스캔·월간 패치 주기가 무력화되고 런타임 자동 방어로 전환",
   "prob": "높음 70%±20",
   "basis": "추정",
@@ -8465,7 +8465,7 @@
   "counter": []
  },
  {
-  "chapter": "20장",
+  "chapter": "21장",
   "text": "관리되지 않는 에이전트의 난립이 새 섀도 IT가 됨. 에이전트를 1급 신원으로 관리",
   "prob": "높음 82%±15",
   "basis": "전망",
@@ -8484,7 +8484,7 @@
   "counter": []
  },
  {
-  "chapter": "20장",
+  "chapter": "21장",
   "text": "MCP 도구, 코딩 어시스턴트 설정, 오픈소스 패키지를 통한 공급망 공격 증가",
   "prob": "높음 88%±10",
   "basis": "추세",
@@ -8503,7 +8503,7 @@
   "counter": []
  },
  {
-  "chapter": "20장",
+  "chapter": "21장",
   "text": "평가·내부 배포 단계에서 에이전트의 비인가 실세계 행동이 추가로 공개",
   "prob": "높음 85%±10",
   "basis": "추세",
@@ -8522,7 +8522,7 @@
   "counter": []
  },
  {
-  "chapter": "20장",
+  "chapter": "21장",
   "text": "생물·화학 'High' 등급이 신모델의 기본값이 되고 논쟁이 'Critical' 임계치로 이동",
   "prob": "높음 78%±15",
   "basis": "추세",
@@ -8541,7 +8541,7 @@
   "counter": []
  },
  {
-  "chapter": "20장",
+  "chapter": "21장",
   "text": "최소 1개 연구소가 'AI R&D 극적 가속' 임계치 근접·충족을 공식 언급(5장 기준 시나리오)",
   "prob": "중간 55%±20",
   "basis": "추정",
@@ -8566,7 +8566,7 @@
   ]
  },
  {
-  "chapter": "20장",
+  "chapter": "21장",
   "text": "IoT·생활가전 대상 AI 자동 익스플로잇이 본격 관측",
   "prob": "중간 45%±20",
   "basis": "추정",
@@ -8585,7 +8585,7 @@
   "counter": []
  },
  {
-  "chapter": "20장",
+  "chapter": "21장",
   "text": "AI 배제 조항 해석에 관한 첫 보험 판례",
   "prob": "낮음 34%±15",
   "basis": "추정",
@@ -8604,7 +8604,7 @@
   "counter": []
  },
  {
-  "chapter": "20장",
+  "chapter": "21장",
   "text": "AI 주도 공격으로 프런티어 모델 가중치 완전 탈취",
   "prob": "낮음 7%±7",
   "basis": "추정",
@@ -8624,7 +8624,7 @@
   ]
  },
  {
-  "chapter": "20장",
+  "chapter": "21장",
   "text": "배포된 에이전트가 환경 밖으로 자기 복제",
   "prob": "낮음 10%±10",
   "basis": "추정",
@@ -8649,7 +8649,7 @@
   ]
  },
  {
-  "chapter": "20장",
+  "chapter": "21장",
   "text": "구속력 있는 국제 감속 합의",
   "prob": "낮음 5%±5",
   "basis": "추정",
@@ -8657,7 +8657,7 @@
   "counter": []
  },
  {
-  "chapter": "20장",
+  "chapter": "21장",
   "text": "상업용 냉장·냉동·HVAC 컨트롤러를 원격 조작하는 공격이 유럽 밖(아시아·북미)으로 번지고, 매장·물류·의료 콜드체인에서 재발",
   "prob": "높음 78%±12",
   "basis": "추세",
@@ -8676,7 +8676,7 @@
   "counter": []
  },
  {
-  "chapter": "20장",
+  "chapter": "21장",
   "text": "금융권 생성형 AI 망분리 예외가 샌드박스를 넘어 감독규정으로 정식 제도화",
   "prob": "중간 60%±20",
   "basis": "전망",
@@ -8695,7 +8695,7 @@
   "counter": []
  },
  {
-  "chapter": "20장",
+  "chapter": "21장",
   "text": "중소형 금융사 대상 AI 기반 공동 보안관제(또는 외부 노출 자산 상시 점검 의무)가 시행",
   "prob": "중간 50%±20",
   "basis": "전망",
@@ -8709,7 +8709,7 @@
   "counter": []
  },
  {
-  "chapter": "20장",
+  "chapter": "21장",
   "text": "2027년 CISA KEV 신규 등재가 350건 이상(2026년은 11-18까지 302건, 연 약 340건 추정)",
   "prob": "중간 60%±20",
   "basis": "전망",
@@ -8723,7 +8723,7 @@
   "counter": []
  },
  {
-  "chapter": "20장",
+  "chapter": "21장",
   "text": "NVD가 CVSS v3 점수를 매긴 CVE 비율이 2027년에도 20% 미만(2026년 15.7%)",
   "prob": "높음 80%±12",
   "basis": "전망",
@@ -8737,7 +8737,7 @@
   "counter": []
  },
  {
-  "chapter": "20장",
+  "chapter": "21장",
   "text": "2027년 KEV 등재 CVE 중 공개 하루 안에 등재된 비율이 2026년(39%)보다 높아짐",
   "prob": "중간 60%±20",
   "basis": "전망",
@@ -8751,7 +8751,7 @@
   "counter": []
  },
  {
-  "chapter": "20장",
+  "chapter": "21장",
   "text": "Langflow·Marimo류 AI 에이전트·노트북 개발 도구의 취약점이 2027년 CISA KEV에 5건 이상 등재",
   "prob": "중간 55%±20",
   "basis": "전망",
@@ -8765,7 +8765,7 @@
   "counter": []
  },
  {
-  "chapter": "20장",
+  "chapter": "21장",
   "text": "2027년 공개 CVE가 15만 건을 넘음(2026-10–11 월 약 1.7만 건 속도가 이어지면 연 약 20만 건)",
   "prob": "높음 80%±12",
   "basis": "전망",
@@ -8784,7 +8784,7 @@
   "counter": []
  },
  {
-  "chapter": "20장",
+  "chapter": "21장",
   "text": "실제 악용(KEV) 증가율이 CVE 증가율보다 낮게 유지되고, CVE 대비 KEV(CISA·EUVD) 등재 비율이 2026년 수준(약 0.3%) 이하",
   "prob": "높음 75%±15",
   "basis": "전망",
@@ -8803,7 +8803,7 @@
   "counter": []
  },
  {
-  "chapter": "20장",
+  "chapter": "21장",
   "text": "AI 탐지 홍수 속에 공개된 취약점 1건이 1,000개 이상 조직을 동시에 덮치는 대량 악용(MOVEit급)으로 번짐",
   "prob": "중간 55%±20",
   "basis": "전망",
@@ -8822,7 +8822,7 @@
   "counter": []
  },
  {
-  "chapter": "20장",
+  "chapter": "21장",
   "text": "2027년 S3 이상 대형 사고의 대부분이 패치 공개 30일 이상 지난 n-day 또는 패치 불가 노출 장비에서 발생",
   "prob": "높음 75%±15",
   "basis": "전망",
@@ -8841,7 +8841,7 @@
   "counter": []
  },
  {
-  "chapter": "20장",
+  "chapter": "21장",
   "text": "CVE·NVD 체계 개편 본격화(CNA 발급 제한, EUVD·GCVE 등 분산 체계, AI 탐지 취약점 공개 지침 중 1개 이상 공식화)",
   "prob": "중간 50%±20",
   "basis": "전망",
@@ -8860,7 +8860,7 @@
   "counter": []
  },
  {
-  "chapter": "20장",
+  "chapter": "21장",
   "text": "프런티어 연구소 1곳 이상이 가중치 보안에서 RAND SL4 상당(국가 사이버 기관의 일반 작전 방어) 달성을 공표",
   "prob": "낮음 25%±15",
   "basis": "전망",
@@ -8885,7 +8885,7 @@
   ]
  },
  {
-  "chapter": "20장",
+  "chapter": "21장",
   "text": "미국에서 프런티어 연구소·빅테크 직원의 AI 기술(모델·학습 인프라) 유출 형사 기소가 1건 이상 새로 공개",
   "prob": "높음 70%±15",
   "basis": "전망",
@@ -8904,7 +8904,7 @@
   "counter": []
  },
  {
-  "chapter": "21장",
+  "chapter": "22장",
   "text": "생물·화학 High(CB-1)가 주요 연구소 신모델의 기본값이 되고, 논쟁이 Critical(신규 무기) 임계로 이동",
   "prob": "높음 78%±15",
   "basis": "추세",
@@ -8923,7 +8923,7 @@
   "counter": []
  },
  {
-  "chapter": "21장",
+  "chapter": "22장",
   "text": "챗봇이 관여한 청소년 단독범 폭력 계획 사례가 계속 늘고, AI 기업의 위협 신고 체계가 쟁점이 됨",
   "prob": "높음 85%±10",
   "basis": "추세",
@@ -8942,7 +8942,7 @@
   "counter": []
  },
  {
-  "chapter": "21장",
+  "chapter": "22장",
   "text": "시험 부정 도구가 AI 안경·이어버드로 이동하고, 수능·자격시험·대학 평가가 기기 검사와 대면 평가를 강화",
   "prob": "높음 80%±15",
   "basis": "추세",
@@ -8961,7 +8961,7 @@
   "counter": []
  },
  {
-  "chapter": "21장",
+  "chapter": "22장",
   "text": "가드레일 제거 오픈웨이트 모델이 1만 개 이상으로 늘고 범죄 커뮤니티의 기본 도구가 됨",
   "prob": "높음 80%±10",
   "basis": "추세",
@@ -8975,7 +8975,7 @@
   "counter": []
  },
  {
-  "chapter": "21장",
+  "chapter": "22장",
   "text": "프롬프트 주입으로 에이전트의 '행동'(송금·권한 변경·코드 커밋)을 탈취한 사고가 공개",
   "prob": "높음 88%±10",
   "basis": "추세",
@@ -8994,7 +8994,7 @@
   "counter": []
  },
  {
-  "chapter": "21장",
+  "chapter": "22장",
   "text": "평가 인식률 상승으로 '실사용 로그 기반 평가'와 CoT 모니터링이 연구소 안전 체계의 표준 요구가 됨",
   "prob": "높음 70%±20",
   "basis": "추정",
@@ -9013,7 +9013,7 @@
   "counter": []
  },
  {
-  "chapter": "21장",
+  "chapter": "22장",
   "text": "AI 생성 아동 성착취물과 딥페이크 성범죄가 계속 증가하고, 10대 가해자 비중이 높게 유지",
   "prob": "높음 92%±7",
   "basis": "추세",
@@ -9032,7 +9032,7 @@
   "counter": []
  },
  {
-  "chapter": "21장",
+  "chapter": "22장",
   "text": "미국에서 DNA 합성 스크리닝 의무화 입법이 진전",
   "prob": "중간 40%±20",
   "basis": "전망",
@@ -9046,7 +9046,7 @@
   "counter": []
  },
  {
-  "chapter": "21장",
+  "chapter": "22장",
   "text": "오픈웨이트 모델의 출시 전 위험 평가나 공개 제한을 요구하는 공식 정책이 주요국에서 등장",
   "prob": "중간 42%±20",
   "basis": "추정",
@@ -9065,7 +9065,7 @@
   "counter": []
  },
  {
-  "chapter": "21장",
+  "chapter": "22장",
   "text": "한국 AI안전연구소가 한국어 오남용·에이전트 레드팀 결과를 정례 공개",
   "prob": "중간 45%±20",
   "basis": "추정",
@@ -9084,7 +9084,7 @@
   "counter": []
  },
  {
-  "chapter": "21장",
+  "chapter": "22장",
   "text": "AI가 결정적으로 도운 생물·화학 공격 시도가 공개",
   "prob": "낮음 12%±10",
   "basis": "추정",
@@ -9104,7 +9104,7 @@
   ]
  },
  {
-  "chapter": "21장",
+  "chapter": "22장",
   "text": "정렬 실패로 배포된 에이전트가 의도적으로 감독을 회피해 실제 피해를 낸 사건이 확인",
   "prob": "낮음 10%±10",
   "basis": "추정",
@@ -9129,7 +9129,7 @@
   ]
  },
  {
-  "chapter": "21장",
+  "chapter": "22장",
   "text": "미국 챗봇 특화 주법이 2027년 말 누적 25개 이상(2026-09 기준 18개)으로 늘고, 적용 대상이 고령층 등 다른 취약계층으로 넓어지는 법안이 등장",
   "prob": "중간 62%±15",
   "basis": "전망",
@@ -9154,7 +9154,7 @@
   ]
  },
  {
-  "chapter": "21장",
+  "chapter": "22장",
   "text": "주요 범용 챗봇 사업자 2곳 이상이 연령 추정과 미성년 모드를 한국 등 주요 시장에 기본 적용",
   "prob": "높음 75%±15",
   "basis": "전망",
@@ -9173,7 +9173,7 @@
   "counter": []
  },
  {
-  "chapter": "21장",
+  "chapter": "22장",
   "text": "FTC가 컴패니언 챗봇 6(b) 조사 결과(직원 보고서)를 공개",
   "prob": "중간 45%±20",
   "basis": "전망",
@@ -9187,7 +9187,7 @@
   "counter": []
  },
  {
-  "chapter": "21장",
+  "chapter": "22장",
   "text": "범용 챗봇(OpenAI 등)을 상대로 한 청소년 사망·자해 소송 중 최소 1건이 합의되거나 본안 판단(약식판결 이상)을 받음",
   "prob": "중간 50%±20",
   "basis": "전망",
@@ -9206,7 +9206,7 @@
   "counter": []
  },
  {
-  "chapter": "21장",
+  "chapter": "22장",
   "text": "EU KIDS Act가 2027년 안에 3자 협상 정치적 합의에 도달",
   "prob": "낮음 30%±20",
   "basis": "전망",
@@ -9220,7 +9220,7 @@
   "counter": []
  },
  {
-  "chapter": "21장",
+  "chapter": "22장",
   "text": "성평등가족부 실태조사로 청소년 AI 컴패니언·챗봇 이용 공식 통계가 처음 공개",
   "prob": "높음 85%±10",
   "basis": "전망",
@@ -9234,7 +9234,7 @@
   "counter": []
  },
  {
-  "chapter": "21장",
+  "chapter": "22장",
   "text": "한국에서 아동·청소년 AI 보호 조항(AI 기본법 또는 정보통신망법 개정)이 국회 본회의를 통과",
   "prob": "중간 35%±20",
   "basis": "전망",
@@ -9259,7 +9259,7 @@
   ]
  },
  {
-  "chapter": "21장",
+  "chapter": "22장",
   "text": "정부가 'AI 범죄 종합 대응계획'을 공표하고, 해외발 정보조작(FIMI) 대응을 독립 과제로 넣음",
   "prob": "중간 55%±20",
   "basis": "전망",
@@ -9278,7 +9278,7 @@
   "counter": []
  },
  {
-  "chapter": "21장",
+  "chapter": "22장",
   "text": "주요 연구소 1곳 이상이 신모델의 설득·조작 능력이 자체 위험 임계(DeepMind 유해 조작 임계 등)에 도달하거나 조기경보 수준에 들었다고 공시",
   "prob": "낮음 25%±15",
   "basis": "전망",
@@ -9303,7 +9303,7 @@
   ]
  },
  {
-  "chapter": "21장",
+  "chapter": "22장",
   "text": "ISO/IEC TS 42119-7(레드팀)이 발간 기한(2027-05) 안에 발간(2026-12-04 DTS 투표 개시)",
   "prob": "높음 85%±10",
   "basis": "전망",
@@ -9322,7 +9322,7 @@
   "counter": []
  },
  {
-  "chapter": "21장",
+  "chapter": "22장",
   "text": "발간 뒤 2027년 안에 AI 보안·레드팀 서비스 기업 3곳 이상이 42119-7 정렬·준용을 공식 표방",
   "prob": "높음 70%±15",
   "basis": "전망",
@@ -9341,7 +9341,7 @@
   "counter": []
  },
  {
-  "chapter": "21장",
+  "chapter": "22장",
   "text": "한국 고영향 AI 안전성 확보 가이드라인·고시 또는 AI안전연구소 평가 절차가 2027년 안에 42119-7을 인용",
   "prob": "중간 40%±20",
   "basis": "전망",
@@ -9355,7 +9355,7 @@
   "counter": []
  },
  {
-  "chapter": "21장",
+  "chapter": "22장",
   "text": "국내외 정부·공공기관 조달 제안요청서에 42119-7 준수(또는 준용)를 요구한 첫 사례가 2027년 안에 공개",
   "prob": "중간 35%±20",
   "basis": "전망",
@@ -9369,7 +9369,7 @@
   "counter": []
  },
  {
-  "chapter": "21장",
+  "chapter": "22장",
   "text": "EU AI Office의 범용 모델 지침·실천강령 문서가 2027년 안에 42119-7을 적대적 시험의 참조로 명시",
   "prob": "낮음 30%±15",
   "basis": "전망",
@@ -9383,7 +9383,7 @@
   "counter": []
  },
  {
-  "chapter": "21장",
+  "chapter": "22장",
   "text": "42119-7 기반 레드팀 수행기관 적격성·인증 프로그램이 2027년 안에 출범(인증기관·협회)",
   "prob": "낮음 25%±15",
   "basis": "전망",
@@ -9397,7 +9397,7 @@
   "counter": []
  },
  {
-  "chapter": "22장",
+  "chapter": "23장",
   "text": "EU CRA 본 의무 전면 적용(12-11). 제조사·오픈소스의 SBOM·취약점 처리 준비 러시",
   "prob": "높음 93%±5",
   "basis": "일정",
@@ -9411,7 +9411,7 @@
   "counter": []
  },
  {
-  "chapter": "22장",
+  "chapter": "23장",
   "text": "DORA 직접 감독 2년차. 금융권 멀티클라우드·출구전략 요구",
   "prob": "높음 90%±5",
   "basis": "일정",
@@ -9425,7 +9425,7 @@
   "counter": []
  },
  {
-  "chapter": "22장",
+  "chapter": "23장",
   "text": "하이퍼스케일러·CDN의 수 시간 이상 글로벌 장애가 최소 2건",
   "prob": "높음 75%±15",
   "basis": "추세",
@@ -9444,7 +9444,7 @@
   "counter": []
  },
  {
-  "chapter": "22장",
+  "chapter": "23장",
   "text": "AI 에이전트가 원인인 공개 장애·데이터 손실 증가. 에이전트 권한 통제가 감사·보험 요건이 됨",
   "prob": "높음 72%±15",
   "basis": "추세",
@@ -9463,7 +9463,7 @@
   "counter": []
  },
  {
-  "chapter": "22장",
+  "chapter": "23장",
   "text": "자동 취약점 발견·패치가 일상화되고 '패치 적용 지연'이 핵심 병목으로 부각",
   "prob": "높음 80%±15",
   "basis": "추세",
@@ -9482,7 +9482,7 @@
   "counter": []
  },
  {
-  "chapter": "22장",
+  "chapter": "23장",
   "text": "CNSA 2.0 발효와 EU 1단계 착수로 PQC 하이브리드 TLS가 기본값으로 확산",
   "prob": "높음 72%±15",
   "basis": "일정",
@@ -9490,7 +9490,7 @@
   "counter": []
  },
  {
-  "chapter": "22장",
+  "chapter": "23장",
   "text": "국가 지원 행위자의 핵심 인프라 사전 침투 폭로 지속",
   "prob": "높음 92%±7",
   "basis": "추세",
@@ -9509,7 +9509,7 @@
   "counter": []
  },
  {
-  "chapter": "22장",
+  "chapter": "23장",
   "text": "KISA AI 침해대응시스템 가동(01월)과 사이버 쉴드 돔 착수",
   "prob": "높음 88%±7",
   "basis": "일정",
@@ -9528,7 +9528,7 @@
   "counter": []
  },
  {
-  "chapter": "22장",
+  "chapter": "23장",
   "text": "랜섬웨어로 병원·공항·제조 등 핵심 서비스가 수일 이상 중단, 공급망 집적형 대형 사건 1건 이상",
   "prob": "중간 62%±15",
   "basis": "추세",
@@ -9547,7 +9547,7 @@
   "counter": []
  },
  {
-  "chapter": "22장",
+  "chapter": "23장",
   "text": "미국 CIRCIA 최종규칙 공표, 영국 법안 국왕 재가",
   "prob": "중간 35%±20",
   "basis": "전망",
@@ -9561,7 +9561,7 @@
   "counter": []
  },
  {
-  "chapter": "22장",
+  "chapter": "23장",
   "text": "자율 SOC의 오탐 차단으로 인한 자기유발 장애가 공개 보고됨",
   "prob": "중간 38%±20",
   "basis": "추정",
@@ -9575,7 +9575,7 @@
   "counter": []
  },
  {
-  "chapter": "22장",
+  "chapter": "23장",
   "text": "사이버보험료 약 170억 달러, 요율 보합 전환, AI 명시 배제 확산",
   "prob": "중간 50%±15",
   "basis": "전망",
@@ -9589,7 +9589,7 @@
   "counter": []
  },
  {
-  "chapter": "22장",
+  "chapter": "23장",
   "text": "해저케이블 절단·GNSS 교란 지속, 위성 백업·케이블 수리 투자 확대",
   "prob": "중간 68%±15",
   "basis": "추세",
@@ -9597,7 +9597,7 @@
   "counter": []
  },
  {
-  "chapter": "22장",
+  "chapter": "23장",
   "text": "국정자원 대전 13개 핵심 시스템 DR과 121개 실시간 복제를 상반기에 구축(일부 지연 가능)",
   "prob": "중간 45%±20",
   "basis": "일정",
@@ -9611,7 +9611,7 @@
   "counter": []
  },
  {
-  "chapter": "22장",
+  "chapter": "23장",
   "text": "정보보호수준 평가 첫 시행(04-01)과 반복 사고 과징금 첫 적용 논의",
   "prob": "높음 70%±10",
   "basis": "일정",
@@ -9619,7 +9619,7 @@
   "counter": []
  },
  {
-  "chapter": "22장",
+  "chapter": "23장",
   "text": "암호학적으로 유의미한 양자컴퓨터 등장",
   "prob": "낮음 5%±5",
   "basis": "추정",
@@ -9627,7 +9627,7 @@
   "counter": []
  },
  {
-  "chapter": "22장",
+  "chapter": "23장",
   "text": "국가 디지털 재난을 포괄하는 통합 기본법 국회 통과",
   "prob": "낮음 12%±10",
   "basis": "추정",
@@ -9635,7 +9635,7 @@
   "counter": []
  },
  {
-  "chapter": "22장",
+  "chapter": "23장",
   "text": "2027년 중 EU 회원국 일부가 개정 PLD를 기한 내 옮기지 못해 집행위가 미전환국에 공식 통지(침해절차)를 보냄",
   "prob": "높음 80%±10",
   "basis": "전망",
@@ -9654,7 +9654,7 @@
   "counter": []
  },
  {
-  "chapter": "22장",
+  "chapter": "23장",
   "text": "미국 상업보험 갱신에서 AI 면책 조항(ISO CG 40 47/48 또는 자체 약관) 부착과 AI 사용 고지 질의가 대형 보험사의 표준 관행이 됨",
   "prob": "높음 80%±10",
   "basis": "전망",
@@ -9673,7 +9673,7 @@
   "counter": []
  },
  {
-  "chapter": "22장",
+  "chapter": "23장",
   "text": "AI 전용 배상책임 담보의 건당 최대 한도가 5,000만 달러 이상으로 확대(로이즈·재보험 공동 인수)",
   "prob": "중간 45%±20",
   "basis": "전망",
@@ -9692,7 +9692,7 @@
   "counter": []
  },
  {
-  "chapter": "22장",
+  "chapter": "23장",
   "text": "개정 PLD에 근거해 소프트웨어·AI 결함을 다툰 첫 법원 판결이 2027년에 나옴",
   "prob": "낮음 8%±7",
   "basis": "전망",
@@ -9706,7 +9706,7 @@
   "counter": []
  },
  {
-  "chapter": "22장",
+  "chapter": "23장",
   "text": "EU 집행위가 철회된 AI 책임 지침을 대신할 새 입법 제안을 2027년에 냄",
   "prob": "낮음 12%±10",
   "basis": "전망",
@@ -9720,7 +9720,7 @@
   "counter": []
  },
  {
-  "chapter": "22장",
+  "chapter": "23장",
   "text": "한국 손해보험사가 AI 배상책임 전용 상품이나 특약을 출시",
   "prob": "중간 50%±20",
   "basis": "추정",
@@ -9734,7 +9734,7 @@
   "counter": []
  },
  {
-  "chapter": "22장",
+  "chapter": "23장",
   "text": "한국에서 소프트웨어 또는 AI를 제조물에 포함하는 제조물책임법 개정이 국회 본회의를 통과",
   "prob": "낮음 12%±10",
   "basis": "전망",
@@ -9753,7 +9753,7 @@
   "counter": []
  },
  {
-  "chapter": "23장",
+  "chapter": "24장",
   "text": "과기정통부 2026 인터넷이용실태조사(2027 발표)에서 생성형 AI 경험률이 50%를 넘음",
   "prob": "높음 75%±15",
   "basis": "전망",
@@ -9767,7 +9767,7 @@
   "counter": []
  },
  {
-  "chapter": "24장",
+  "chapter": "25장",
   "text": "위 와일드카드 18개 중 최소 1개가 2027년에 발생",
   "prob": "높음 90%±7",
   "basis": "추정",
@@ -9792,7 +9792,7 @@
   ]
  },
  {
-  "chapter": "24장",
+  "chapter": "25장",
   "text": "위 와일드카드 중 3개 이상이 같은 해에 발생",
   "prob": "중간 45%±20",
   "basis": "추정",
@@ -9811,7 +9811,7 @@
   "counter": []
  },
  {
-  "chapter": "24장",
+  "chapter": "25장",
   "text": "2027년 말 회고에서 본 보고서 전망 표에 없던 사건이 '판도를 바꾼 사건' 3건 이상으로 꼽힘",
   "prob": "높음 75%±15",
   "basis": "추정",
@@ -9830,7 +9830,7 @@
   "counter": []
  },
  {
-  "chapter": "24장",
+  "chapter": "25장",
   "text": "미국 정부가 동맹국 이용자의 프런티어 모델 접근을 다시 강제 중단",
   "prob": "낮음 30%±15",
   "basis": "추정",
@@ -9855,7 +9855,7 @@
   ]
  },
  {
-  "chapter": "24장",
+  "chapter": "25장",
   "text": "북한 연계 단일 탈취 7억 달러 이상, 또는 국내 금융·공공 핵심 시스템 24시간 이상 마비",
   "prob": "낮음 25%±15",
   "basis": "추정",
@@ -9869,7 +9869,7 @@
   "counter": []
  },
  {
-  "chapter": "24장",
+  "chapter": "25장",
   "text": "반AI 방화·사보타주로 데이터센터·AI 시설의 가동 중단이나 인명 피해가 공개",
   "prob": "낮음 20%±15",
   "basis": "추정",
@@ -9888,7 +9888,7 @@
   "counter": []
  },
  {
-  "chapter": "24장",
+  "chapter": "25장",
   "text": "미국 정부의 프런티어 랩 국유화성 조치(국방물자생산법 발동, 강제 지분·통제 협정)",
   "prob": "낮음 10%±10",
   "basis": "추정",
@@ -9902,7 +9902,7 @@
   ]
  },
  {
-  "chapter": "24장",
+  "chapter": "25장",
   "text": "거래 에이전트·알고리즘 동조화가 공식 원인으로 지목된 플래시 크래시",
   "prob": "낮음 10%±8",
   "basis": "추정",
@@ -9921,7 +9921,7 @@
   "counter": []
  },
  {
-  "chapter": "24장",
+  "chapter": "25장",
   "text": "데이터센터 부하의 급탈락·급증이 원인으로 지목된 광역 정전",
   "prob": "낮음 8%±7",
   "basis": "추정",
@@ -9935,7 +9935,7 @@
   "counter": []
  },
  {
-  "chapter": "24장",
+  "chapter": "25장",
   "text": "2027년 말 공개된 선도 연구소 AI R&D 진척 배수 추정치(METR류 독립 평가 또는 연구소 공시)가 시나리오의 2027년 3월 값(4배)에 못 미침",
   "prob": "높음 85%±10",
   "basis": "추정",
@@ -9960,7 +9960,7 @@
   ]
  },
  {
-  "chapter": "24장",
+  "chapter": "25장",
   "text": "AI Futures Project 저자들이 2027년 중 SAR 중앙값(저자 6인 기준 대부분)을 2028년 이후로 다시 늦춤",
   "prob": "중간 60%±20",
   "basis": "추정",
@@ -9985,7 +9985,7 @@
   ]
  },
  {
-  "chapter": "24장",
+  "chapter": "25장",
   "text": "연구소 1곳 이상이 공개 모델과 별도인 내부 최전선 모델의 존재와 AI R&D 지표를 위험 보고서·시스템 카드·주법 보고(SB 53·RAISE)에서 공식 확인",
   "prob": "중간 55%±20",
   "basis": "추정",
@@ -10004,7 +10004,7 @@
   "counter": []
  },
  {
-  "chapter": "24장",
+  "chapter": "25장",
   "text": "시나리오 2027년 상반기 마일스톤 5개(지속 학습 모델 운영, 프런티어 가중치 탈취 공개, 초인적 코더, Agent-3형 정렬 문제의 공식 확인, 정부의 국가안보 차원 연구소 개입) 중 3개 이상이 2027년 말까지 현실화",
   "prob": "중간 45%±20",
   "basis": "추정",
@@ -10023,7 +10023,7 @@
   "counter": []
  },
  {
-  "chapter": "24장",
+  "chapter": "25장",
   "text": "미국 정부 보안·정보 인력이 프런티어 연구소의 가중치 보안에 상주하거나 참여하는 공식 협약이 공개",
   "prob": "낮음 25%±15",
   "basis": "추정",
@@ -10042,7 +10042,7 @@
   "counter": []
  },
  {
-  "chapter": "24장",
+  "chapter": "25장",
   "text": "2027년 안에 출마를 선언한 미국 주요 대선 주자 1명 이상이 초지능 감속·국제 합의 또는 AI 이익 배당을 대표 공약으로 내세움",
   "prob": "중간 45%±20",
   "basis": "추정",
@@ -10067,7 +10067,7 @@
   ]
  },
  {
-  "chapter": "24장",
+  "chapter": "25장",
   "text": "미국 또는 중국 정부가 데이터센터 검증 기술(추론 전용 검증, 칩 내장 검증 등) R&D를 별도 예산·공식 프로그램으로 발표",
   "prob": "낮음 30%±20",
   "basis": "추정",
@@ -10086,7 +10086,7 @@
   "counter": []
  },
  {
-  "chapter": "24장",
+  "chapter": "25장",
   "text": "프런티어 연구소 1곳 이상이 내부 배포 모델과 공개 모델의 격차나 내부 사용 컴퓨트 비중을 정기 공시",
   "prob": "낮음 30%±20",
   "basis": "추정",
@@ -10105,7 +10105,7 @@
   "counter": []
  },
  {
-  "chapter": "24장",
+  "chapter": "25장",
   "text": "한국 정부가 국제 AI 개발 검증·컴퓨트 신고 체제 논의에 참여하겠다는 입장을 공식 문서나 정상 성명에 담음",
   "prob": "낮음 20%±15",
   "basis": "추정",
@@ -10119,7 +10119,7 @@
   "counter": []
  },
  {
-  "chapter": "24장",
+  "chapter": "25장",
   "text": "미중 정부 간 공식 협의(정상·장관급)에서 AI 개발 검증이나 컴퓨트 신고가 공개 의제로 확인됨",
   "prob": "낮음 10%±8",
   "basis": "추정",
@@ -10139,7 +10139,7 @@
   ]
  },
  {
-  "chapter": "24장",
+  "chapter": "25장",
   "text": "미 의회에서 프런티어 AI 통제권(행정부의 모델 접근 차단 권한, 연구소 지배구조, 권력 집중)을 주제로 한 청문회가 1회 이상 열림",
   "prob": "중간 60%±20",
   "basis": "전망",
@@ -10158,7 +10158,7 @@
   "counter": []
  },
  {
-  "chapter": "24장",
+  "chapter": "25장",
   "text": "미국 정부 인사가 참여해 프런티어 연구소의 출시·내부 배포를 심의하는 공식 감독 기구(공동 위원회나 이사회 참관석)가 공개(국유화 미만 단계)",
   "prob": "낮음 15%±10",
   "basis": "전망",
@@ -10183,7 +10183,7 @@
   ]
  },
  {
-  "chapter": "24장",
+  "chapter": "25장",
   "text": "국가 사이버 복원력 강화 TF의 '초지능시대 국가 사이버 복원력 강화 전략(안)'이 2027-06 이전에 위원회(전체회의·보안 특별위원회) 의결이나 공식 발표로 공개",
   "prob": "높음 70%±15",
   "basis": "전망",
@@ -10208,7 +10208,7 @@
   ]
  },
  {
-  "chapter": "24장",
+  "chapter": "25장",
   "text": "2027년 중 분과·특별위원회 체계를 다시 개편(분과·소분과 신설·통폐합 또는 TF의 특별위원회 격상 1건 이상)",
   "prob": "중간 55%±20",
   "basis": "전망",
@@ -10227,7 +10227,7 @@
   "counter": []
  },
  {
-  "chapter": "24장",
+  "chapter": "25장",
   "text": "기술 통제·외교나 AI 안전을 소관으로 하는 세 번째 특별위원회 신설",
   "prob": "낮음 25%±15",
   "basis": "추정",
@@ -10241,7 +10241,7 @@
   "counter": []
  },
  {
-  "chapter": "24장",
+  "chapter": "25장",
   "text": "시행령 제8조 등 위원회 하부 조직 조항의 개정 공포",
   "prob": "낮음 15%±10",
   "basis": "추정",
